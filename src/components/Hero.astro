@@ -1,0 +1,191 @@
+---
+// Full-screen hero. A looping pasta-tossing video sits behind a warm scrim;
+// a custom canvas "flour dust" drifts in shafts of light across the top.
+---
+
+<section class="hero" id="top">
+  <!-- Background video (graceful fallback to gradient if it can't load) -->
+  <div class="hero__bg" data-parallax="0.18">
+    <img
+      class="hero__video"
+      src="/images/cooking-class.jpg"
+      alt="A Florentine kitchen bench laid with wooden boards, rolling pins, fresh dough, eggs and flour"
+      fetchpriority="high"
+      decoding="async"
+    />
+    <div class="hero__scrim"></div>
+  </div>
+
+  <!-- Flour dust particle field -->
+  <canvas class="hero__flour" data-flour aria-hidden="true"></canvas>
+
+  <div class="shell hero__content">
+    <p class="eyebrow hero__eyebrow" data-reveal>Firenze · since 1978 · a family kitchen</p>
+    <h1 class="hero__title">
+      <span data-reveal style="--reveal-delay:80ms">Flour, eggs,</span>
+      <span data-reveal style="--reveal-delay:220ms">and your two</span>
+      <span class="hero__title-ital ital" data-reveal style="--reveal-delay:360ms">hands.</span>
+    </h1>
+    <p class="hero__lede" data-reveal style="--reveal-delay:520ms">
+      Roll real Tuscan pasta beside a Florentine nonna — in our sun-lit kitchen
+      off Piazza Santo Spirito, or live online with a kit shipped to your door.
+    </p>
+    <div class="hero__actions" data-reveal style="--reveal-delay:640ms">
+      <button class="btn btn--solid" data-open-booking>
+        Reserve your table
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <a class="btn btn--ghost" href="#experiences">
+        <span class="btn__play" aria-hidden="true">▶</span>
+        See the classes
+      </a>
+    </div>
+
+    <ul class="hero__proof" data-reveal style="--reveal-delay:760ms">
+      <li><strong>4.97★</strong> from 2,300+ guests</li>
+      <li><strong>3 hrs</strong> hands-on, then you eat it all</li>
+      <li><strong>max 8</strong> at the table, never more</li>
+    </ul>
+  </div>
+
+  <a href="#experiences" class="hero__scroll" aria-label="Scroll to experiences">
+    <span></span>
+  </a>
+</section>
+
+<script>
+  // ---- Flour-dust canvas: soft motes drifting in a light shaft ----
+  const initFlour = () => {
+    const canvas = document.querySelector<HTMLCanvasElement>('[data-flour]');
+    if (!canvas) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    let w = 0, h = 0, raf = 0;
+    const motes: { x: number; y: number; r: number; vx: number; vy: number; a: number; tw: number }[] = [];
+
+    const resize = () => {
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      w = canvas.clientWidth;
+      h = canvas.clientHeight;
+      canvas.width = w * dpr;
+      canvas.height = h * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    };
+
+    const seed = () => {
+      motes.length = 0;
+      const count = Math.round((w * h) / 16000);
+      for (let i = 0; i < count; i++) {
+        motes.push({
+          x: Math.random() * w,
+          y: Math.random() * h,
+          r: Math.random() * 1.8 + 0.4,
+          vx: (Math.random() - 0.5) * 0.18,
+          vy: Math.random() * 0.22 + 0.04,
+          a: Math.random() * 0.5 + 0.15,
+          tw: Math.random() * Math.PI * 2,
+        });
+      }
+    };
+
+    const tick = () => {
+      ctx.clearRect(0, 0, w, h);
+      for (const m of motes) {
+        m.x += m.vx + Math.sin(m.tw) * 0.12;
+        m.y += m.vy;
+        m.tw += 0.01;
+        if (m.y > h + 4) { m.y = -4; m.x = Math.random() * w; }
+        if (m.x > w + 4) m.x = -4;
+        if (m.x < -4) m.x = w + 4;
+        const flick = m.a * (0.6 + 0.4 * Math.sin(m.tw * 1.7));
+        ctx.beginPath();
+        ctx.arc(m.x, m.y, m.r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(255, 250, 235, ${flick})`;
+        ctx.fill();
+      }
+      raf = requestAnimationFrame(tick);
+    };
+
+    resize(); seed(); tick();
+    let t: number;
+    window.addEventListener('resize', () => {
+      window.clearTimeout(t);
+      t = window.setTimeout(() => { resize(); seed(); }, 200);
+    });
+    document.addEventListener('astro:before-swap', () => cancelAnimationFrame(raf), { once: true });
+  };
+  initFlour();
+</script>
+
+<style>
+  .hero {
+    position: relative;
+    min-height: 100svh;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: clamp(3rem, 8vh, 7rem);
+    overflow: hidden;
+    color: var(--flour);
+    isolation: isolate;
+  }
+  .hero__bg { position: absolute; inset: -8% 0 0 0; z-index: -2; will-change: transform; }
+  .hero__video { width: 100%; height: 116%; object-fit: cover; }
+  .hero__scrim {
+    position: absolute; inset: 0;
+    background:
+      linear-gradient(180deg, rgba(33,44,31,0.55) 0%, rgba(33,44,31,0.15) 32%, rgba(33,44,31,0.35) 60%, rgba(33,44,31,0.92) 100%),
+      radial-gradient(120% 80% at 80% 0%, rgba(255,199,44,0.22), transparent 55%);
+  }
+  .hero__flour { position: absolute; inset: 0; z-index: -1; width: 100%; height: 60%; pointer-events: none; }
+
+  .hero__content { position: relative; }
+  .hero__eyebrow { color: var(--yolk); margin-bottom: 1.4rem; }
+  .hero__title {
+    font-size: var(--step-5);
+    font-weight: 800;
+    line-height: 0.92;
+    text-shadow: 0 4px 40px rgba(0,0,0,0.3);
+  }
+  .hero__title span { display: block; }
+  .hero__title-ital { color: var(--yolk); }
+  .hero__lede {
+    max-width: 34ch;
+    margin-top: 1.6rem;
+    font-size: var(--step-1);
+    line-height: 1.45;
+    color: rgba(249,246,240,0.92);
+  }
+  .hero__actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2.2rem; }
+
+  .btn {
+    display: inline-flex; align-items: center; gap: 0.6rem;
+    font-weight: 700; font-size: var(--step-0);
+    padding: 1rem 1.7rem; border-radius: 100px;
+    transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease), background 0.3s;
+  }
+  .btn--solid { background: var(--terracotta); color: #fff; box-shadow: var(--shadow-md); }
+  .btn--solid svg { transition: transform 0.4s var(--ease); }
+  .btn--solid:hover { transform: translateY(-3px); background: var(--terracotta-deep); }
+  .btn--solid:hover svg { transform: translateX(5px); }
+  .btn--ghost { border: 1.5px solid rgba(249,246,240,0.5); color: var(--flour); backdrop-filter: blur(4px); }
+  .btn--ghost:hover { transform: translateY(-3px); border-color: var(--yolk); color: var(--yolk); }
+  .btn__play { font-size: 0.7em; }
+
+  .hero__proof {
+    display: flex; flex-wrap: wrap; gap: 1.4rem 2.4rem;
+    margin-top: 2.6rem; padding-top: 1.6rem;
+    border-top: 1px solid rgba(249,246,240,0.22);
+    font-size: var(--step--1); color: rgba(249,246,240,0.82);
+  }
+  .hero__proof strong { display: block; font-family: var(--serif); font-size: 1.5rem; color: var(--flour); }
+
+  .hero__scroll {
+    position: absolute; left: 50%; bottom: 1.4rem; translate: -50% 0;
+    width: 26px; height: 42px; border: 1.5px solid rgba(249,246,240,0.5);
+    border-radius: 100px; display: grid; justify-items: center; padding-top: 7px;
+  }
+  .hero__scroll span { width: 4px; height: 8px; border-radius: 4px; background: var(--yolk); animation: scrolldot 1.7s var(--ease) infinite; }
+  @keyframes scrolldot { 0% { transform: translateY(0); opacity: 1; } 70% { transform: translateY(12px); opacity: 0; } 100% { opacity: 0; } }
+</style>

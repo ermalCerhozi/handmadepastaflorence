@@ -1,0 +1,70 @@
+---
+// Custom line-art icons (no emoji). Consistent stroke + rounded joins, terracotta.
+const icons: Record<string, string> = {
+  rollingPin: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <rect x="13" y="16" width="22" height="11" rx="5.5"/>
+    <path d="M6 21.5h7M35 21.5h7"/>
+    <path d="M9 35c3.2-2.4 6.4-2.4 9.6 0s6.4 2.4 9.6 0 6.4-2.4 9.6 0"/>
+  </svg>`,
+  wineGlass: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M15 11h18l-1.6 8.2a7.5 7.5 0 0 1-14.8 0L15 11z"/>
+    <path d="M24 27v9"/>
+    <path d="M17 37h14"/>
+    <path d="M16.2 16h15.6"/>
+  </svg>`,
+  group: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <circle cx="18" cy="16" r="5"/>
+    <path d="M9 36c0-5.5 4-9.5 9-9.5s9 4 9 9.5"/>
+    <circle cx="32" cy="18.5" r="4.2"/>
+    <path d="M28.5 27.6c4.6-1.1 8.6 1.9 9.5 6.9"/>
+  </svg>`,
+  duomo: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M6 40h36"/>
+    <rect x="9" y="14" width="7" height="26"/>
+    <path d="M9 20h7M9 26h7M9 32h7"/>
+    <path d="M22 40V26h16v14"/>
+    <path d="M22 26c0-7 3.6-11 8-11s8 4 8 11"/>
+    <path d="M30 15v-3"/>
+  </svg>`,
+};
+
+const points = [
+  { key: 'rollingPin', t: 'Learn by doing', d: 'No watching a chef perform. From minute one your hands are in the flour, shaping every piece yourself.' },
+  { key: 'wineGlass', t: 'Eat what you make', d: 'Every class ends at the table — your fresh pasta, a Tuscan sauce, and a glass of local wine.' },
+  { key: 'group', t: 'Small groups only', d: 'Never more than eight at the board, so the nonna can actually lean over and fix your fold.' },
+  { key: 'duomo', t: 'Real Florence', d: 'A working family kitchen in the Oltrarno — market trips, nonna’s recipes, no tourist conveyor belt.' },
+];
+---
+
+<section class="why" aria-label="Why cook with us">
+  <div class="shell why__grid">
+    {points.map((p, i) => (
+      <article class="why__item" data-reveal style={`--reveal-delay:${i * 80}ms`}>
+        <span class="why__icon" set:html={icons[p.key]} />
+        <h3 class="why__t">{p.t}</h3>
+        <p class="why__d">{p.d}</p>
+      </article>
+    ))}
+  </div>
+</section>
+
+<style>
+  .why { padding-block: clamp(2.5rem, 6vh, 4.5rem); border-block: 1px solid var(--paper-line); background: var(--flour-deep); }
+  .why__grid {
+    display: grid; gap: clamp(1.4rem, 3vw, 2.5rem);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  }
+  .why__icon {
+    display: inline-grid; place-items: center; width: 56px; height: 56px; border-radius: 16px;
+    background: var(--flour); border: 1px solid var(--paper-line); margin-bottom: 1rem;
+    color: var(--terracotta); box-shadow: var(--shadow-sm);
+    transition: transform 0.5s var(--ease), background 0.4s var(--ease), color 0.4s var(--ease);
+  }
+  .why__icon :global(svg) { width: 30px; height: 30px; }
+  .why__item:hover .why__icon { transform: translateY(-4px) rotate(-4deg); background: var(--olive); color: var(--yolk); }
+  .why__t { font-size: var(--step-1); color: var(--olive); margin-bottom: 0.5rem; }
+  .why__d { font-size: var(--step--1); color: var(--charcoal-soft); line-height: 1.6; }
+  @media (min-width: 720px) {
+    .why__item + .why__item { padding-left: clamp(1.4rem, 3vw, 2.5rem); border-left: 1px solid var(--paper-line); }
+  }
+</style>

@@ -1,0 +1,543 @@
+---
+// Frictionless 4-step booking drawer (off-canvas, right side on desktop / full-screen on mobile).
+// State + pricing handled client-side; all UI is mock-functional.
+---
+
+<div class="bk" data-booking hidden>
+  <div class="bk__scrim" data-close-booking></div>
+
+  <aside class="bk__panel" role="dialog" aria-modal="true" aria-label="Book a pasta class">
+    <!-- Header: progress + close -->
+    <header class="bk__top">
+      <div class="bk__steps" data-steps>
+        <span class="bk__step is-active" data-step-dot="1">Experience</span>
+        <span class="bk__step" data-step-dot="2">Date &amp; time</span>
+        <span class="bk__step" data-step-dot="3">Customize</span>
+        <span class="bk__step" data-step-dot="4">Checkout</span>
+      </div>
+      <button class="bk__close" data-close-booking aria-label="Close booking">✕</button>
+    </header>
+    <div class="bk__progress"><span data-progress></span></div>
+
+    <div class="bk__scroll">
+      <!-- ===== Step 1 ===== -->
+      <section class="bk__view is-active" data-view="1">
+        <p class="bk__kicker">Step 1</p>
+        <h2 class="bk__h">Choose your experience</h2>
+        <div class="bk__choices">
+          <button class="choice" data-choice="florence" data-price="95">
+            <span class="choice__emoji">🍝</span>
+            <span class="choice__t">In-Person · Florence</span>
+            <span class="choice__d">Three hands-on hours in our Oltrarno kitchen, ending in a long lunch.</span>
+            <span class="choice__p">from €95<small>/person</small></span>
+            <span class="choice__check" aria-hidden="true">✓</span>
+          </button>
+          <button class="choice" data-choice="online" data-price="68">
+            <span class="choice__emoji">💻</span>
+            <span class="choice__t">Live Online</span>
+            <span class="choice__d">Cook live from anywhere with a kit shipped to your door.</span>
+            <span class="choice__p">from €68<small>/person</small></span>
+            <span class="choice__check" aria-hidden="true">✓</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- ===== Step 2 ===== -->
+      <section class="bk__view" data-view="2">
+        <p class="bk__kicker">Step 2</p>
+        <h2 class="bk__h">Pick a date &amp; time</h2>
+
+        <div class="cal">
+          <div class="cal__bar">
+            <button class="cal__nav" data-cal-prev aria-label="Previous month">←</button>
+            <strong data-cal-label>—</strong>
+            <button class="cal__nav" data-cal-next aria-label="Next month">→</button>
+          </div>
+          <div class="cal__dow"><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span></div>
+          <div class="cal__grid" data-cal-grid></div>
+        </div>
+
+        <div class="slots" data-slots hidden>
+          <p class="slots__label">Available times <span data-slot-date></span></p>
+          <div class="slots__row" data-slot-row></div>
+          <div class="tz" data-tz hidden>
+            <span class="tz__row"><i>🇮🇹 Florence</i><b data-tz-florence>—</b></span>
+            <span class="tz__arrow">→</span>
+            <span class="tz__row"><i data-tz-name>Your time</i><b data-tz-local>—</b></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Step 3 ===== -->
+      <section class="bk__view" data-view="3">
+        <p class="bk__kicker">Step 3</p>
+        <h2 class="bk__h">Make it yours</h2>
+        <div class="adds">
+          <label class="add" data-addon="kit" data-add-price="34" data-online-only>
+            <span class="add__main">
+              <span class="add__t">Ship me the ingredient kit</span>
+              <span class="add__d">00 flour, semola, rolling pin & recipe cards, chilled to your door.</span>
+            </span>
+            <span class="add__price">+€34</span>
+            <span class="switch"><input type="checkbox" /><span class="switch__track"></span></span>
+          </label>
+          <label class="add" data-addon="wine" data-add-price="18">
+            <span class="add__main">
+              <span class="add__t">Add a wine pairing</span>
+              <span class="add__d">Two Tuscan pours chosen to match your menu (in-person) or a bottle shipped (online).</span>
+            </span>
+            <span class="add__price">+€18</span>
+            <span class="switch"><input type="checkbox" /><span class="switch__track"></span></span>
+          </label>
+          <label class="add" data-addon="gf" data-add-price="0">
+            <span class="add__main">
+              <span class="add__t">Gluten-free preference</span>
+              <span class="add__d">We’ll prep a dedicated GF flour blend and a clean station. No charge.</span>
+            </span>
+            <span class="add__price">Free</span>
+            <span class="switch"><input type="checkbox" /><span class="switch__track"></span></span>
+          </label>
+        </div>
+        <div class="qty">
+          <span class="qty__label">Guests</span>
+          <div class="qty__ctrl">
+            <button data-qty="-1" aria-label="Fewer guests">−</button>
+            <strong data-qty-val>2</strong>
+            <button data-qty="1" aria-label="More guests">+</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Step 4 ===== -->
+      <section class="bk__view" data-view="4">
+        <p class="bk__kicker">Step 4</p>
+        <h2 class="bk__h">One last step</h2>
+        <div class="pay">
+          <button class="pay__wallet pay__wallet--apple"> Pay</button>
+          <button class="pay__wallet pay__wallet--google">G&nbsp;Pay</button>
+        </div>
+        <div class="pay__or"><span>or pay by card</span></div>
+        <div class="cardform">
+          <label class="field field--full"><span>Email for your confirmation</span><input type="email" placeholder="you@example.com" /></label>
+          <label class="field field--full"><span>Card number</span><input inputmode="numeric" placeholder="1234  5678  9012  3456" /></label>
+          <label class="field"><span>Expiry</span><input placeholder="MM / YY" /></label>
+          <label class="field"><span>CVC</span><input inputmode="numeric" placeholder="123" /></label>
+        </div>
+        <p class="pay__trust">🔒 Secured by Stripe · free cancellation up to 72h before</p>
+      </section>
+    </div>
+
+    <!-- ===== Sticky order summary + nav ===== -->
+    <footer class="bk__bottom">
+      <div class="summary" data-summary>
+        <button class="summary__toggle" data-summary-toggle aria-expanded="false">
+          <span class="summary__chev" aria-hidden="true">⌃</span> Order summary
+        </button>
+        <ul class="summary__lines" data-summary-lines></ul>
+        <div class="summary__total">
+          <span>Total</span>
+          <strong data-total>€0</strong>
+        </div>
+      </div>
+      <div class="bk__actions">
+        <button class="bk__back" data-prev hidden>Back</button>
+        <button class="bk__next" data-next disabled>Continue</button>
+      </div>
+    </footer>
+  </aside>
+</div>
+
+<script>
+  type State = {
+    step: number;
+    experience: 'florence' | 'online' | null;
+    basePrice: number;
+    date: string | null;
+    time: string | null;
+    guests: number;
+    addons: Record<string, number>;
+  };
+
+  const setupBooking = () => {
+    const root = document.querySelector<HTMLElement>('[data-booking]');
+    if (!root) return;
+
+    const state: State = {
+      step: 1, experience: null, basePrice: 0,
+      date: null, time: null, guests: 2, addons: {},
+    };
+
+    const $ = <T extends Element = HTMLElement>(s: string, r: ParentNode = root) => r.querySelector<T>(s);
+    const $$ = <T extends Element = HTMLElement>(s: string, r: ParentNode = root) => Array.from(r.querySelectorAll<T>(s));
+
+    /* ---------- open / close ---------- */
+    const open = (prefill?: string | null) => {
+      root.hidden = false;
+      document.body.style.overflow = 'hidden';
+      requestAnimationFrame(() => root.classList.add('is-open'));
+      if (prefill === 'florence' || prefill === 'online') {
+        const btn = $(`[data-choice="${prefill}"]`);
+        btn?.click();
+      }
+    };
+    const close = () => {
+      root.classList.remove('is-open');
+      document.body.style.overflow = '';
+      window.setTimeout(() => { root.hidden = true; }, 480);
+    };
+    document.querySelectorAll('[data-open-booking]').forEach((b) =>
+      b.addEventListener('click', () => open((b as HTMLElement).dataset.prefill)));
+    $$('[data-close-booking]').forEach((b) => b.addEventListener('click', close));
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !root.hidden) close(); });
+
+    /* ---------- step navigation ---------- */
+    const goTo = (n: number) => {
+      state.step = Math.min(4, Math.max(1, n));
+      $$('[data-view]').forEach((v) => v.classList.toggle('is-active', v.dataset.view === String(state.step)));
+      $$('[data-step-dot]').forEach((d) => {
+        const dn = Number(d.dataset.stepDot);
+        d.classList.toggle('is-active', dn === state.step);
+        d.classList.toggle('is-done', dn < state.step);
+      });
+      const prog = $('[data-progress]');
+      if (prog) prog.style.transform = `scaleX(${state.step / 4})`;
+      const back = $('[data-prev]');
+      if (back) back.hidden = state.step === 1;
+      const next = $<HTMLButtonElement>('[data-next]');
+      if (next) next.textContent = state.step === 4 ? 'Confirm & pay' : 'Continue';
+      $('.bk__scroll')!.scrollTop = 0;
+      validate();
+    };
+
+    /* ---------- validation per step ---------- */
+    const validate = () => {
+      const next = $<HTMLButtonElement>('[data-next]');
+      if (!next) return;
+      let ok = true;
+      if (state.step === 1) ok = !!state.experience;
+      if (state.step === 2) ok = !!state.date && !!state.time;
+      next.disabled = !ok;
+    };
+
+    $('[data-next]')?.addEventListener('click', () => {
+      if (state.step === 4) {
+        const next = $<HTMLButtonElement>('[data-next]')!;
+        next.textContent = 'Booked! 🎉  Check your inbox';
+        next.disabled = true;
+        return;
+      }
+      goTo(state.step + 1);
+    });
+    $('[data-prev]')?.addEventListener('click', () => goTo(state.step - 1));
+
+    /* ---------- step 1: experience ---------- */
+    $$('[data-choice]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        $$('[data-choice]').forEach((b) => b.classList.remove('is-sel'));
+        btn.classList.add('is-sel');
+        state.experience = btn.dataset.choice as 'florence' | 'online';
+        state.basePrice = Number(btn.dataset.price);
+        // online-only add-ons
+        $$('[data-online-only]').forEach((a) => {
+          (a as HTMLElement).style.display = state.experience === 'online' ? '' : 'none';
+        });
+        validate();
+        render();
+      });
+    });
+
+    /* ---------- step 2: calendar ---------- */
+    const today = new Date(); today.setHours(0, 0, 0, 0);
+    let view = new Date(today.getFullYear(), today.getMonth(), 1);
+    const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+
+    const buildCal = () => {
+      const grid = $('[data-cal-grid]')!;
+      const label = $('[data-cal-label]')!;
+      label.textContent = `${MONTHS[view.getMonth()]} ${view.getFullYear()}`;
+      grid.innerHTML = '';
+      const first = new Date(view.getFullYear(), view.getMonth(), 1);
+      const offset = (first.getDay() + 6) % 7; // Mon-first
+      const days = new Date(view.getFullYear(), view.getMonth() + 1, 0).getDate();
+      for (let i = 0; i < offset; i++) grid.appendChild(document.createElement('span'));
+      for (let d = 1; d <= days; d++) {
+        const cell = document.createElement('button');
+        const date = new Date(view.getFullYear(), view.getMonth(), d);
+        cell.textContent = String(d);
+        cell.className = 'cal__day';
+        const past = date < today;
+        const dow = date.getDay();
+        const closed = dow === 1; // closed Mondays
+        if (past || closed) { cell.disabled = true; cell.classList.add('is-off'); }
+        else {
+          cell.addEventListener('click', () => {
+            $$('.cal__day').forEach((c) => c.classList.remove('is-sel'));
+            cell.classList.add('is-sel');
+            state.date = date.toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric' });
+            state.time = null;
+            showSlots(date);
+            validate(); render();
+          });
+        }
+        grid.appendChild(cell);
+      }
+    };
+    $('[data-cal-prev]')?.addEventListener('click', () => {
+      const m = new Date(view.getFullYear(), view.getMonth() - 1, 1);
+      if (m >= new Date(today.getFullYear(), today.getMonth(), 1)) { view = m; buildCal(); }
+    });
+    $('[data-cal-next]')?.addEventListener('click', () => {
+      view = new Date(view.getFullYear(), view.getMonth() + 1, 1); buildCal();
+    });
+
+    const FL_TIMES = ['10:00', '14:30', '18:00'];
+    const showSlots = (date: Date) => {
+      const wrap = $('[data-slots]')!; wrap.hidden = false;
+      $('[data-slot-date]')!.textContent = `· ${state.date}`;
+      const row = $('[data-slot-row]')!; row.innerHTML = '';
+      FL_TIMES.forEach((t) => {
+        const b = document.createElement('button');
+        b.className = 'slot'; b.textContent = t;
+        b.addEventListener('click', () => {
+          $$('.slot').forEach((s) => s.classList.remove('is-sel'));
+          b.classList.add('is-sel');
+          state.time = t;
+          if (state.experience === 'online') showTz(date, t);
+          validate(); render();
+        });
+        row.appendChild(b);
+      });
+      // reset tz block until a time is chosen
+      $('[data-tz]')!.hidden = true;
+    };
+
+    const showTz = (date: Date, time: string) => {
+      const tz = $('[data-tz]')!; tz.hidden = false;
+      const [h, m] = time.split(':').map(Number);
+      // Florence is Europe/Rome; build a Date in that wall-clock and convert.
+      const florence = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate(), h - 2, m)); // CEST ~ UTC+2
+      const localName = Intl.DateTimeFormat().resolvedOptions().timeZone || 'Your time';
+      const fmt: Intl.DateTimeFormatOptions = { hour: '2-digit', minute: '2-digit' };
+      $('[data-tz-florence]')!.textContent = time;
+      $('[data-tz-name]')!.textContent = localName.replace(/_/g, ' ');
+      $('[data-tz-local]')!.textContent = florence.toLocaleTimeString(undefined, fmt);
+    };
+
+    /* ---------- step 3: add-ons + qty ---------- */
+    $$('[data-addon]').forEach((label) => {
+      const input = label.querySelector<HTMLInputElement>('input')!;
+      input.addEventListener('change', () => {
+        const key = (label as HTMLElement).dataset.addon!;
+        const price = Number((label as HTMLElement).dataset.addPrice);
+        label.classList.toggle('is-on', input.checked);
+        if (input.checked) state.addons[key] = price; else delete state.addons[key];
+        render();
+      });
+    });
+    $$('[data-qty]').forEach((b) => {
+      b.addEventListener('click', () => {
+        state.guests = Math.min(14, Math.max(1, state.guests + Number((b as HTMLElement).dataset.qty)));
+        $('[data-qty-val]')!.textContent = String(state.guests);
+        render();
+      });
+    });
+
+    /* ---------- summary toggle (mobile) ---------- */
+    $('[data-summary-toggle]')?.addEventListener('click', () => {
+      const s = $('[data-summary]')!;
+      const open = s.classList.toggle('is-expanded');
+      $('[data-summary-toggle]')!.setAttribute('aria-expanded', String(open));
+    });
+
+    /* ---------- pricing render ---------- */
+    const euro = (n: number) => `€${n}`;
+    const render = () => {
+      const lines = $('[data-summary-lines]')!;
+      lines.innerHTML = '';
+      const add = (label: string, amount: number) => {
+        const li = document.createElement('li');
+        li.innerHTML = `<span>${label}</span><span>${euro(amount)}</span>`;
+        lines.appendChild(li);
+      };
+      let total = 0;
+      if (state.experience) {
+        const sub = state.basePrice * state.guests;
+        total += sub;
+        add(`${state.experience === 'florence' ? 'In Florence' : 'Live Online'} × ${state.guests}`, sub);
+      }
+      for (const [k, v] of Object.entries(state.addons)) {
+        const map: Record<string, string> = { kit: 'Ingredient kit', wine: 'Wine pairing', gf: 'Gluten-free' };
+        const amt = k === 'kit' ? v : v * (k === 'wine' ? state.guests : 1);
+        total += amt;
+        add(map[k], amt);
+      }
+      if (state.date) add(`📅 ${state.date}${state.time ? ' · ' + state.time : ''}`, 0);
+      $('[data-total]')!.textContent = euro(total);
+    };
+
+    buildCal();
+    goTo(1);
+    render();
+  };
+  setupBooking();
+  document.addEventListener('astro:after-swap', setupBooking);
+</script>
+
+<style>
+  .bk { position: fixed; inset: 0; z-index: 1000; }
+  .bk[hidden] { display: none; }
+  .bk__scrim {
+    position: absolute; inset: 0; background: rgba(33,44,31,0.55); backdrop-filter: blur(4px);
+    opacity: 0; transition: opacity 0.45s var(--ease);
+  }
+  .bk.is-open .bk__scrim { opacity: 1; }
+  .bk__panel {
+    position: absolute; inset: 0 0 0 auto; width: min(560px, 100%);
+    background: var(--flour); display: flex; flex-direction: column;
+    transform: translateX(100%); transition: transform 0.5s var(--ease);
+    box-shadow: var(--shadow-lg);
+  }
+  .bk.is-open .bk__panel { transform: none; }
+  @media (max-width: 560px) { .bk__panel { width: 100%; } }
+
+  .bk__top { display: flex; align-items: center; justify-content: space-between; padding: 1.2rem var(--gutter) 0.8rem; }
+  .bk__steps { display: flex; gap: 0.4rem; flex-wrap: wrap; font-size: 0.66rem; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; }
+  .bk__step { color: var(--charcoal-soft); opacity: 0.4; transition: opacity 0.3s, color 0.3s; }
+  .bk__step.is-active { opacity: 1; color: var(--terracotta); }
+  .bk__step.is-done { opacity: 0.8; color: var(--olive); }
+  .bk__step.is-done::after { content: ' ✓'; }
+  .bk__close {
+    width: 38px; height: 38px; border-radius: 50%; background: var(--flour-deep);
+    font-size: 0.9rem; color: var(--olive); transition: background 0.3s, transform 0.3s;
+  }
+  .bk__close:hover { background: var(--flour-shadow); transform: rotate(90deg); }
+  .bk__progress { height: 3px; background: var(--flour-shadow); }
+  .bk__progress span { display: block; height: 100%; background: var(--terracotta); transform-origin: left; transform: scaleX(0.25); transition: transform 0.5s var(--ease); }
+
+  .bk__scroll { flex: 1; overflow-y: auto; padding: 1.6rem var(--gutter) 1rem; }
+  .bk__view { display: none; animation: viewIn 0.5s var(--ease) both; }
+  .bk__view.is-active { display: block; }
+  @keyframes viewIn { from { opacity: 0; transform: translateX(18px); } to { opacity: 1; transform: none; } }
+  .bk__kicker { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: var(--terracotta); }
+  .bk__h { font-size: var(--step-2); color: var(--olive); margin: 0.3rem 0 1.4rem; }
+
+  /* choices */
+  .bk__choices { display: grid; gap: 1rem; }
+  .choice {
+    position: relative; text-align: left; display: grid; gap: 0.35rem;
+    padding: 1.4rem; border-radius: var(--radius); background: #fff;
+    border: 2px solid var(--paper-line); transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  }
+  .choice:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+  .choice.is-sel { border-color: var(--terracotta); box-shadow: var(--shadow-md); }
+  .choice__emoji { font-size: 1.8rem; }
+  .choice__t { font-family: var(--serif); font-weight: 700; font-size: var(--step-1); color: var(--olive); }
+  .choice__d { font-size: var(--step--1); color: var(--charcoal-soft); }
+  .choice__p { font-weight: 800; color: var(--terracotta); margin-top: 0.3rem; }
+  .choice__p small { font-weight: 600; color: var(--charcoal-soft); }
+  .choice__check {
+    position: absolute; top: 1.2rem; right: 1.2rem; width: 26px; height: 26px; border-radius: 50%;
+    background: var(--terracotta); color: #fff; display: grid; place-items: center; font-size: 0.8rem;
+    opacity: 0; transform: scale(0.5); transition: 0.3s var(--ease);
+  }
+  .choice.is-sel .choice__check { opacity: 1; transform: none; }
+
+  /* calendar */
+  .cal { background: #fff; border: 1px solid var(--paper-line); border-radius: var(--radius); padding: 1.1rem; }
+  .cal__bar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.8rem; }
+  .cal__bar strong { font-family: var(--serif); font-size: var(--step-1); color: var(--olive); }
+  .cal__nav { width: 34px; height: 34px; border-radius: 50%; background: var(--flour-deep); color: var(--olive); transition: background 0.3s; }
+  .cal__nav:hover { background: var(--flour-shadow); }
+  .cal__dow, .cal__grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+  .cal__dow { margin-bottom: 4px; }
+  .cal__dow span { text-align: center; font-size: 0.66rem; font-weight: 800; color: var(--charcoal-soft); }
+  .cal__day {
+    aspect-ratio: 1; border-radius: 10px; font-weight: 600; font-size: 0.85rem; color: var(--charcoal);
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+  }
+  .cal__day:not(.is-off):hover { background: var(--yolk); transform: scale(1.08); }
+  .cal__day.is-off { color: var(--flour-shadow); cursor: not-allowed; }
+  .cal__day.is-sel { background: var(--olive); color: var(--flour); }
+
+  .slots { margin-top: 1.4rem; }
+  .slots__label { font-weight: 700; color: var(--olive); margin-bottom: 0.7rem; }
+  .slots__row { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+  .slot { padding: 0.7rem 1.2rem; border-radius: 100px; background: #fff; border: 1.5px solid var(--paper-line); font-weight: 700; transition: 0.25s var(--ease); }
+  .slot:hover { border-color: var(--terracotta); }
+  .slot.is-sel { background: var(--terracotta); color: #fff; border-color: var(--terracotta); }
+  .tz {
+    margin-top: 1.2rem; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
+    background: rgba(255,199,44,0.14); border: 1px solid rgba(240,180,0,0.35);
+    border-radius: 14px; padding: 0.9rem 1.1rem;
+  }
+  .tz__row { display: flex; flex-direction: column; }
+  .tz__row i { font-style: normal; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.04em; color: var(--charcoal-soft); text-transform: uppercase; }
+  .tz__row b { font-family: var(--serif); font-size: var(--step-1); color: var(--olive); }
+  .tz__arrow { color: var(--terracotta); font-weight: 800; }
+
+  /* add-ons */
+  .adds { display: grid; gap: 0.8rem; }
+  .add {
+    display: grid; grid-template-columns: 1fr auto auto; align-items: center; gap: 0.8rem;
+    padding: 1.1rem 1.2rem; background: #fff; border-radius: var(--radius);
+    border: 1.5px solid var(--paper-line); cursor: pointer; transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  .add.is-on { border-color: var(--yolk); box-shadow: var(--shadow-sm); }
+  .add__t { font-weight: 700; color: var(--olive); display: block; }
+  .add__d { font-size: 0.8rem; color: var(--charcoal-soft); line-height: 1.45; }
+  .add__price { font-weight: 800; color: var(--terracotta); }
+  .switch input { position: absolute; opacity: 0; }
+  .switch__track {
+    display: block; width: 46px; height: 27px; border-radius: 100px; background: var(--flour-shadow);
+    position: relative; transition: background 0.3s var(--ease);
+  }
+  .switch__track::after {
+    content: ''; position: absolute; top: 3px; left: 3px; width: 21px; height: 21px; border-radius: 50%;
+    background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.2); transition: transform 0.3s var(--ease);
+  }
+  .switch input:checked + .switch__track { background: var(--terracotta); }
+  .switch input:checked + .switch__track::after { transform: translateX(19px); }
+
+  .qty { display: flex; align-items: center; justify-content: space-between; margin-top: 1.4rem; padding-top: 1.2rem; border-top: 1px solid var(--paper-line); }
+  .qty__label { font-weight: 700; color: var(--olive); }
+  .qty__ctrl { display: flex; align-items: center; gap: 1rem; }
+  .qty__ctrl button { width: 38px; height: 38px; border-radius: 50%; background: var(--flour-deep); font-size: 1.2rem; color: var(--olive); transition: background 0.3s; }
+  .qty__ctrl button:hover { background: var(--yolk); }
+  .qty__ctrl strong { font-family: var(--serif); font-size: var(--step-1); min-width: 1.4ch; text-align: center; }
+
+  /* checkout */
+  .pay { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+  .pay__wallet { padding: 1rem; border-radius: 14px; font-weight: 800; font-size: 1.05rem; transition: transform 0.3s; }
+  .pay__wallet:hover { transform: translateY(-2px); }
+  .pay__wallet--apple { background: #000; color: #fff; }
+  .pay__wallet--apple::before { content: ''; }
+  .pay__wallet--google { background: #fff; color: #3c4043; border: 1.5px solid var(--paper-line); }
+  .pay__or { text-align: center; margin: 1.3rem 0; position: relative; color: var(--charcoal-soft); font-size: var(--step--1); }
+  .pay__or::before { content: ''; position: absolute; top: 50%; left: 0; right: 0; height: 1px; background: var(--paper-line); }
+  .pay__or span { position: relative; background: var(--flour); padding: 0 1rem; }
+  .cardform { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+  .field { display: flex; flex-direction: column; gap: 0.35rem; }
+  .field--full { grid-column: 1 / -1; }
+  .field span { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--charcoal-soft); }
+  .field input { padding: 0.85rem 1rem; border-radius: 12px; border: 1.5px solid var(--paper-line); background: #fff; font: inherit; transition: border-color 0.3s; }
+  .field input:focus { outline: none; border-color: var(--terracotta); }
+  .pay__trust { margin-top: 1.2rem; text-align: center; font-size: var(--step--1); color: var(--charcoal-soft); }
+
+  /* sticky summary + actions */
+  .bk__bottom { border-top: 1px solid var(--paper-line); background: var(--flour-deep); padding: 1rem var(--gutter) 1.2rem; }
+  .summary__toggle { display: flex; align-items: center; gap: 0.5rem; font-weight: 700; color: var(--olive); width: 100%; }
+  .summary__chev { transition: transform 0.3s var(--ease); display: inline-block; }
+  .summary.is-expanded .summary__chev { transform: rotate(180deg); }
+  .summary__lines { display: grid; gap: 0.4rem; max-height: 0; overflow: hidden; transition: max-height 0.4s var(--ease), margin 0.4s; }
+  .summary.is-expanded .summary__lines { max-height: 320px; margin: 0.8rem 0; }
+  .summary__lines li { display: flex; justify-content: space-between; font-size: var(--step--1); color: var(--charcoal-soft); }
+  .summary__total { display: flex; justify-content: space-between; align-items: baseline; margin-top: 0.6rem; padding-top: 0.6rem; border-top: 1px dashed var(--paper-line); }
+  .summary__total strong { font-family: var(--serif); font-size: var(--step-2); color: var(--olive); }
+
+  .bk__actions { display: flex; gap: 0.8rem; margin-top: 0.9rem; }
+  .bk__back { padding: 1rem 1.4rem; border-radius: 100px; font-weight: 700; color: var(--olive); background: var(--flour-shadow); transition: background 0.3s; }
+  .bk__back:hover { background: #ddd3bd; }
+  .bk__next { flex: 1; padding: 1rem; border-radius: 100px; font-weight: 800; font-size: var(--step-0); background: var(--terracotta); color: #fff; transition: background 0.3s, transform 0.3s; }
+  .bk__next:hover:not(:disabled) { background: var(--terracotta-deep); transform: translateY(-2px); }
+  .bk__next:disabled { opacity: 0.4; cursor: not-allowed; }
+</style>

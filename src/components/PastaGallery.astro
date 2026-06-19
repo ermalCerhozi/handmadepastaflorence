@@ -1,0 +1,218 @@
+---
+const shapes = [
+  {
+    name: 'Pappardelle',
+    region: 'Florence · Tuscany',
+    img: '/images/shape-pappardelle.jpg',
+    blurb: 'Broad, velvety ribbons named from “pappare” — to gobble up.',
+    history: 'Born in the Tuscan countryside to cradle rich game ragùs of wild boar and hare. The width is the point: every strand carries a spoonful of sauce.',
+    teaches: 'The Nonna Table',
+  },
+  {
+    name: 'Ravioli',
+    region: 'All of Italy',
+    img: '/images/shape-ravioli.jpg',
+    blurb: 'Little parcels, pinched shut around ricotta, spinach or squash.',
+    history: 'Mentioned in a 14th-century merchant’s letters from Tuscany, ravioli were a way to stretch precious cheese. Sealing them well is a craft — air is the enemy.',
+    teaches: 'Mercato & Mani',
+  },
+  {
+    name: 'Pici',
+    region: 'Siena · Val d’Orcia',
+    img: '/images/shape-pici.jpg',
+    blurb: 'Fat, hand-rolled strands — like spaghetti’s rustic cousin.',
+    history: 'A poor man’s pasta of just flour and water, rolled by hand on wooden boards. No two are identical, and that irregularity is exactly why sauce clings to them.',
+    teaches: 'The Nonna Table',
+  },
+  {
+    name: 'Tortelli',
+    region: 'Mugello',
+    img: '/images/shape-tortelli.jpg',
+    blurb: 'Plump potato-filled pillows from the hills north of Florence.',
+    history: 'The Mugello’s answer to a cold evening: potato, parmigiano and nutmeg sealed in pasta, dressed simply in butter and sage or a meat ragù.',
+    teaches: 'The Family Long-Table',
+  },
+  {
+    name: 'Tagliatelle',
+    region: 'Emilia & Tuscany',
+    img: '/images/shape-tagliatelle.jpg',
+    blurb: 'The classic egg ribbon, cut to a precise finger’s width.',
+    history: 'Legend ties its golden ribbons to Renaissance hair; the truth is humbler. Rolled thin, folded, and cut by hand — the first shape every nonna teaches.',
+    teaches: 'Live Online · Fresh Egg Pasta',
+  },
+];
+---
+
+<section class="gal" id="gallery">
+  <div class="shell gal__head">
+    <div data-reveal>
+      <p class="eyebrow gal__eyebrow">A shape for every story</p>
+      <h2 class="gal__title">Meet the <span class="ital">pasta.</span></h2>
+    </div>
+    <p class="gal__hint" data-reveal>Drag, swipe, or use the arrows — tap any shape to hear where it comes from.</p>
+  </div>
+
+  <div class="gal__track" data-gal-track>
+    {shapes.map((s, i) => (
+      <article class="pasta" data-pasta style={`--c:${i}`}>
+        <button class="pasta__face" data-pasta-toggle aria-expanded="false">
+          <span class="pasta__disc">
+            <img class="pasta__img" src={s.img} alt={`Fresh ${s.name}`} loading="lazy" decoding="async" />
+          </span>
+          <span class="pasta__no">{String(i + 1).padStart(2, '0')}</span>
+          <h3 class="pasta__name">{s.name}</h3>
+          <p class="pasta__region">{s.region}</p>
+          <p class="pasta__blurb">{s.blurb}</p>
+          <span class="pasta__more">Tap for its story <span aria-hidden="true">↘</span></span>
+        </button>
+        <div class="pasta__back">
+          <h4>{s.name}</h4>
+          <p class="pasta__hist">{s.history}</p>
+          <div class="pasta__class">
+            <span>Taught in</span>
+            <strong>{s.teaches}</strong>
+          </div>
+          <button class="pasta__book" data-open-booking>Book this class →</button>
+          <button class="pasta__close" data-pasta-toggle aria-label="Back">← back to shape</button>
+        </div>
+      </article>
+    ))}
+  </div>
+
+  <div class="shell gal__controls">
+    <div class="gal__progress"><span data-gal-bar></span></div>
+    <div class="gal__arrows">
+      <button data-gal-prev aria-label="Previous shape">←</button>
+      <button data-gal-next aria-label="Next shape">→</button>
+    </div>
+  </div>
+</section>
+
+<script>
+  const setupGallery = () => {
+    const track = document.querySelector<HTMLElement>('[data-gal-track]');
+    if (!track) return;
+
+    // flip cards
+    document.querySelectorAll<HTMLElement>('[data-pasta]').forEach((card) => {
+      card.querySelectorAll<HTMLButtonElement>('[data-pasta-toggle]').forEach((btn) => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const open = card.classList.toggle('is-flipped');
+          const face = card.querySelector('[data-pasta-toggle]');
+          face?.setAttribute('aria-expanded', String(open));
+        });
+      });
+    });
+
+    const step = () => {
+      const first = track.querySelector<HTMLElement>('[data-pasta]');
+      return first ? first.offsetWidth + 24 : 320;
+    };
+    document.querySelector('[data-gal-prev]')?.addEventListener('click', () => track.scrollBy({ left: -step(), behavior: 'smooth' }));
+    document.querySelector('[data-gal-next]')?.addEventListener('click', () => track.scrollBy({ left: step(), behavior: 'smooth' }));
+
+    // progress bar
+    const bar = document.querySelector<HTMLElement>('[data-gal-bar]');
+    const onScroll = () => {
+      if (!bar) return;
+      const max = track.scrollWidth - track.clientWidth;
+      const p = max > 0 ? track.scrollLeft / max : 0;
+      bar.style.transform = `scaleX(${0.12 + p * 0.88})`;
+    };
+    track.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    // drag to scroll
+    let down = false, startX = 0, startL = 0;
+    track.addEventListener('pointerdown', (e) => {
+      down = true; startX = e.clientX; startL = track.scrollLeft; track.classList.add('is-drag');
+    });
+    window.addEventListener('pointerup', () => { down = false; track.classList.remove('is-drag'); });
+    window.addEventListener('pointermove', (e) => {
+      if (!down) return;
+      track.scrollLeft = startL - (e.clientX - startX);
+    });
+  };
+  setupGallery();
+  document.addEventListener('astro:after-swap', setupGallery);
+</script>
+
+<style>
+  .gal { padding-block: clamp(4.5rem, 12vh, 9rem); background: var(--flour-deep); overflow: hidden; }
+  .gal__head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 1.5rem; margin-bottom: 2.6rem; }
+  .gal__eyebrow { color: var(--terracotta); margin-bottom: 0.8rem; }
+  .gal__title { font-size: var(--step-3); color: var(--olive); }
+  .gal__title .ital { color: var(--terracotta); }
+  .gal__hint { max-width: 30ch; color: var(--charcoal-soft); font-size: var(--step--1); }
+
+  .gal__track {
+    display: flex; gap: 24px; overflow-x: auto; scroll-snap-type: x mandatory;
+    padding: 0.5rem var(--gutter) 1.5rem; scrollbar-width: none; cursor: grab;
+  }
+  .gal__track.is-drag { cursor: grabbing; scroll-snap-type: none; }
+  .gal__track::-webkit-scrollbar { display: none; }
+
+  .pasta {
+    flex: 0 0 clamp(260px, 78vw, 340px); scroll-snap-align: center;
+    aspect-ratio: 3 / 4; position: relative; perspective: 1400px;
+  }
+  .pasta__face, .pasta__back {
+    position: absolute; inset: 0; border-radius: var(--radius-lg); overflow: hidden;
+    backface-visibility: hidden; transition: transform 0.7s var(--ease), box-shadow 0.5s var(--ease);
+    box-shadow: var(--shadow-sm);
+  }
+  .pasta__face {
+    background: #fff; border: 1px solid var(--paper-line);
+    display: flex; flex-direction: column; align-items: flex-start; text-align: left;
+    padding: 1.6rem; gap: 0.4rem;
+  }
+  .pasta:hover .pasta__face { box-shadow: var(--shadow-lg); transform: translateY(-6px); }
+  .pasta.is-flipped .pasta__face { transform: rotateY(180deg); }
+  .pasta.is-flipped .pasta__back { transform: rotateY(0); }
+  .pasta__back {
+    transform: rotateY(-180deg); background: var(--olive); color: var(--flour);
+    display: flex; flex-direction: column; padding: 1.7rem; gap: 0.7rem;
+  }
+
+  .pasta__disc {
+    width: 100%; aspect-ratio: 16/10; border-radius: 14px; position: relative; overflow: hidden;
+    background: var(--flour-shadow);
+  }
+  .pasta__img {
+    position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+    transition: transform 0.7s var(--ease);
+  }
+  .pasta:hover .pasta__img { transform: scale(1.07); }
+  .pasta__no { font-family: var(--serif); font-weight: 800; font-size: 0.9rem; color: var(--terracotta); margin-top: 0.4rem; }
+  .pasta__name { font-size: var(--step-2); color: var(--olive); line-height: 1; }
+  .pasta__region { font-size: 0.74rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--charcoal-soft); }
+  .pasta__blurb { font-size: var(--step--1); color: var(--charcoal-soft); line-height: 1.5; margin-top: 0.3rem; }
+  .pasta__more { margin-top: auto; font-weight: 700; color: var(--terracotta); font-size: var(--step--1); }
+
+  .pasta__back h4 { font-size: var(--step-2); color: var(--yolk); }
+  .pasta__hist { font-size: var(--step--1); line-height: 1.6; color: rgba(249,246,240,0.85); flex: 1; }
+  .pasta__class {
+    display: flex; flex-direction: column; padding: 0.8rem 1rem; border-radius: 12px;
+    background: rgba(255,199,44,0.12); border: 1px solid rgba(255,199,44,0.25);
+  }
+  .pasta__class span { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(249,246,240,0.6); }
+  .pasta__class strong { font-family: var(--serif); font-size: var(--step-0); color: var(--flour); }
+  .pasta__book {
+    background: var(--yolk); color: var(--olive-deep); font-weight: 800; padding: 0.8rem; border-radius: 100px;
+    transition: transform 0.3s var(--ease);
+  }
+  .pasta__book:hover { transform: translateY(-2px); }
+  .pasta__close { font-size: var(--step--1); color: rgba(249,246,240,0.6); text-align: center; }
+  .pasta__close:hover { color: var(--yolk); }
+
+  .gal__controls { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; margin-top: 1rem; }
+  .gal__progress { flex: 1; height: 4px; border-radius: 100px; background: var(--flour-shadow); overflow: hidden; }
+  .gal__progress span { display: block; height: 100%; width: 100%; background: var(--terracotta); border-radius: 100px; transform-origin: left; transform: scaleX(0.12); transition: transform 0.15s linear; }
+  .gal__arrows { display: flex; gap: 0.6rem; }
+  .gal__arrows button {
+    width: 46px; height: 46px; border-radius: 50%; border: 1.5px solid var(--paper-line);
+    color: var(--olive); font-size: 1.1rem; transition: background 0.3s, color 0.3s, transform 0.3s;
+  }
+  .gal__arrows button:hover { background: var(--olive); color: var(--flour); transform: scale(1.06); }
+</style>

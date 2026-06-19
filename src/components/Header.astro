@@ -1,0 +1,97 @@
+---
+// Slim, transparent-over-hero header that gains a flour-paper background on scroll.
+---
+
+<header class="hdr" data-header>
+  <div class="shell hdr__inner">
+    <a href="#top" class="hdr__brand" aria-label="Handmade Pasta Florence — home">
+      <span class="hdr__mark" aria-hidden="true">
+        <svg viewBox="0 0 44 44" width="40" height="40">
+          <circle cx="22" cy="22" r="21" fill="none" stroke="currentColor" stroke-width="1.4" />
+          <path d="M13 27c3-6 6-9 9-9s6 3 9 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+          <path d="M13 22c3-6 6-9 9-9s6 3 9 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" opacity="0.55" />
+        </svg>
+      </span>
+      <span class="hdr__name">
+        <strong>Pasta</strong><em>Firenze</em>
+      </span>
+    </a>
+
+    <nav class="hdr__nav" aria-label="Primary">
+      <a href="#experiences">Classes</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#gallery">Pasta Shapes</a>
+      <a href="#story">Our Story</a>
+    </nav>
+
+    <button class="hdr__cta" data-open-booking>
+      Book a class
+      <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<script>
+  const setupHeader = () => {
+    const h = document.querySelector('[data-header]');
+    if (!h) return;
+    const onScroll = () => h.classList.toggle('is-stuck', window.scrollY > 40);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  };
+  setupHeader();
+  document.addEventListener('astro:after-swap', setupHeader);
+</script>
+
+<style>
+  .hdr {
+    position: fixed;
+    inset: 0 0 auto 0;
+    z-index: 200;
+    transition: background 0.5s var(--ease), box-shadow 0.5s var(--ease), backdrop-filter 0.5s;
+    color: var(--flour);
+  }
+  .hdr.is-stuck {
+    background: rgba(249, 246, 240, 0.86);
+    backdrop-filter: blur(14px) saturate(1.2);
+    box-shadow: 0 1px 0 var(--paper-line), var(--shadow-sm);
+    color: var(--olive);
+  }
+  .hdr__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding-block: clamp(0.9rem, 2vw, 1.4rem);
+  }
+  .hdr__brand { display: flex; align-items: center; gap: 0.7rem; }
+  .hdr__mark { display: grid; place-items: center; transition: transform 0.6s var(--ease); }
+  .hdr__brand:hover .hdr__mark { transform: rotate(-12deg); }
+  .hdr__name { font-family: var(--serif); font-size: 1.35rem; line-height: 1; letter-spacing: -0.01em; }
+  .hdr__name strong { font-weight: 800; }
+  .hdr__name em { font-style: italic; font-weight: 500; opacity: 0.85; }
+
+  .hdr__nav { display: none; gap: clamp(1.2rem, 2.5vw, 2.4rem); font-size: var(--step--1); font-weight: 600; }
+  .hdr__nav a { position: relative; padding-block: 0.3rem; letter-spacing: 0.02em; }
+  .hdr__nav a::after {
+    content: ''; position: absolute; left: 0; right: 100%; bottom: 0; height: 2px;
+    background: var(--terracotta); transition: right 0.4s var(--ease);
+  }
+  .hdr__nav a:hover::after { right: 0; }
+
+  .hdr__cta {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: var(--yolk); color: var(--olive-deep);
+    font-weight: 700; font-size: var(--step--1);
+    padding: 0.7rem 1.2rem; border-radius: 100px;
+    box-shadow: 0 8px 22px -8px rgba(240, 180, 0, 0.8);
+    transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease);
+  }
+  .hdr__cta svg { transition: transform 0.35s var(--ease); }
+  .hdr__cta:hover { transform: translateY(-2px); box-shadow: 0 14px 30px -10px rgba(240, 180, 0, 0.9); }
+  .hdr__cta:hover svg { transform: translateX(4px); }
+
+  @media (min-width: 900px) {
+    .hdr__nav { display: flex; }
+  }
+</style>

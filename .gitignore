@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Astro build output
+dist/
+
+# Astro cache
+.astro/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Audit / docs (generated, not part of the site)
+FULL-AUDIT-REPORT.md
+ACTION-PLAN.md

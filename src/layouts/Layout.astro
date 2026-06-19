@@ -1,0 +1,213 @@
+---
+import { ClientRouter } from 'astro:transitions';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Handmade Pasta Florence — Learn pasta in a real Tuscan kitchen',
+  description = 'Hand-roll fresh pasta with a Florentine nonna. Join us in person in the heart of Florence, or live online with an ingredient kit shipped to your door.',
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#2c3a29" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E%F0%9F%8D%9D%3C/text%3E%3C/svg%3E" />
+    <ClientRouter />
+  </head>
+  <body>
+    <!-- ===== Kneading-dough loader ===== -->
+    <div id="loader" class="loader" aria-hidden="true">
+      <div class="loader__scene">
+        <div class="loader__board">
+          <div class="loader__dough"></div>
+          <div class="loader__hand loader__hand--l"></div>
+          <div class="loader__hand loader__hand--r"></div>
+          <div class="loader__flour"></div>
+        </div>
+        <p class="loader__word">Kneading the dough<span>.</span><span>.</span><span>.</span></p>
+      </div>
+    </div>
+
+    <slot />
+
+    <script>
+      // Dismiss loader once the page is ready (and after a min beat for delight).
+      const dismiss = () => {
+        const l = document.getElementById('loader');
+        if (!l) return;
+        l.classList.add('loader--done');
+        window.setTimeout(() => l.remove(), 900);
+      };
+      if (document.readyState === 'complete') {
+        window.setTimeout(dismiss, 650);
+      } else {
+        window.addEventListener('load', () => window.setTimeout(dismiss, 650));
+      }
+
+      // ---- Scroll reveal ----
+      const setupReveal = () => {
+        const els = document.querySelectorAll('[data-reveal]');
+        if (!('IntersectionObserver' in window)) {
+          els.forEach((e) => e.classList.add('is-in'));
+          return;
+        }
+        const io = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((en) => {
+              if (en.isIntersecting) {
+                en.target.classList.add('is-in');
+                io.unobserve(en.target);
+              }
+            });
+          },
+          { rootMargin: '0px 0px -10% 0px', threshold: 0.12 }
+        );
+        els.forEach((e) => io.observe(e));
+      };
+      setupReveal();
+      document.addEventListener('astro:after-swap', setupReveal);
+
+      // ---- Hero parallax (flour-dusted table) ----
+      const setupParallax = () => {
+        const layers = document.querySelectorAll<HTMLElement>('[data-parallax]');
+        if (!layers.length) return;
+        let ticking = false;
+        const onScroll = () => {
+          if (ticking) return;
+          ticking = true;
+          requestAnimationFrame(() => {
+            const y = window.scrollY;
+            layers.forEach((el) => {
+              const speed = parseFloat(el.dataset.parallax || '0.2');
+              el.style.transform = `translate3d(0, ${y * speed}px, 0)`;
+            });
+            ticking = false;
+          });
+        };
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+      };
+      setupParallax();
+    </script>
+
+    <style is:global>
+      /* ============ Kneading-dough loader ============ */
+      .loader {
+        position: fixed;
+        inset: 0;
+        z-index: 10000;
+        display: grid;
+        place-items: center;
+        background:
+          radial-gradient(120% 90% at 50% 30%, #fffdf8 0%, var(--flour) 45%, var(--flour-shadow) 100%);
+        transition: opacity 0.7s var(--ease), clip-path 0.85s var(--ease);
+      }
+      .loader--done {
+        opacity: 0;
+        clip-path: inset(0 0 100% 0);
+        pointer-events: none;
+      }
+      .loader__scene { text-align: center; transform: translateY(-2vh); }
+      .loader__board {
+        position: relative;
+        width: 220px;
+        height: 120px;
+        margin: 0 auto 1.6rem;
+      }
+      /* the dough: squished and rebounded in a loop */
+      .loader__dough {
+        position: absolute;
+        left: 50%;
+        bottom: 8px;
+        width: 96px;
+        height: 60px;
+        translate: -50% 0;
+        border-radius: 50% 50% 46% 46% / 60% 60% 40% 40%;
+        background: radial-gradient(60% 60% at 40% 30%, #fff6df, var(--yolk) 120%);
+        box-shadow: inset -8px -10px 16px rgba(204, 85, 0, 0.22),
+          inset 6px 6px 12px #fffdf3;
+        transform-origin: 50% 100%;
+        animation: knead 1.5s var(--ease-soft) infinite;
+      }
+      @keyframes knead {
+        0%, 100% { transform: scaleX(1) scaleY(1); }
+        45% { transform: scaleX(1.28) scaleY(0.62); }
+        70% { transform: scaleX(0.92) scaleY(1.1); }
+      }
+      /* two hands pressing down in alternation */
+      .loader__hand {
+        position: absolute;
+        bottom: 50px;
+        width: 52px;
+        height: 40px;
+        border-radius: 40% 40% 50% 50% / 70% 70% 30% 30%;
+        background: linear-gradient(180deg, #f2cfa6, #e0a878);
+        box-shadow: inset 0 -6px 8px rgba(168, 66, 10, 0.25);
+      }
+      .loader__hand--l { left: 36px; transform-origin: bottom center; animation: pressL 1.5s var(--ease-soft) infinite; }
+      .loader__hand--r { right: 36px; transform-origin: bottom center; animation: pressR 1.5s var(--ease-soft) infinite; }
+      @keyframes pressL {
+        0%, 100% { transform: translateY(-26px) rotate(-12deg); }
+        45% { transform: translateY(0) rotate(-4deg); }
+      }
+      @keyframes pressR {
+        0%, 100% { transform: translateY(0) rotate(12deg); }
+        45% { transform: translateY(-26px) rotate(4deg); }
+      }
+      /* little flour puff */
+      .loader__flour {
+        position: absolute;
+        left: 50%;
+        bottom: 54px;
+        width: 8px;
+        height: 8px;
+        translate: -50% 0;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow:
+          -18px 4px 0 -2px rgba(255,255,255,0.9),
+          16px 2px 0 -1px rgba(255,255,255,0.85),
+          -8px -8px 0 -3px rgba(255,255,255,0.8),
+          10px -10px 0 -3px rgba(255,255,255,0.75);
+        animation: puff 1.5s ease-out infinite;
+        opacity: 0;
+      }
+      @keyframes puff {
+        0%, 40% { opacity: 0; transform: translate(-50%, 0) scale(0.4); }
+        55% { opacity: 0.9; }
+        100% { opacity: 0; transform: translate(-50%, -34px) scale(1.5); }
+      }
+      .loader__word {
+        font-family: var(--serif);
+        font-style: italic;
+        font-size: var(--step-1);
+        color: var(--olive);
+        letter-spacing: 0.01em;
+      }
+      .loader__word span { animation: blink 1.4s infinite; opacity: 0; }
+      .loader__word span:nth-child(2) { animation-delay: 0.2s; }
+      .loader__word span:nth-child(3) { animation-delay: 0.4s; }
+      @keyframes blink { 0%, 100% { opacity: 0; } 50% { opacity: 1; } }
+
+      /* ============ Astro View Transitions ============ */
+      @keyframes pageInUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+      ::view-transition-old(root) { animation: 0.3s var(--ease) both fadeOutPage; }
+      ::view-transition-new(root) { animation: 0.45s var(--ease) both pageInUp; }
+      @keyframes fadeOutPage { to { opacity: 0; } }
+    </style>
+  </body>
+</html>

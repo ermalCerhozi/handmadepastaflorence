@@ -1,0 +1,76 @@
+---
+// Pill button on mobile; morphs into a mini booking bar on desktop.
+// Hidden while the hero is on screen, slides up once you scroll past it.
+---
+
+<div class="fab" data-fab aria-hidden="false">
+  <div class="fab__bar">
+    <div class="fab__info">
+      <span class="fab__eyebrow">Next Florence class</span>
+      <span class="fab__when">Sat · 10:00 · 3 spots left</span>
+    </div>
+    <button class="fab__btn" data-open-booking>
+      <span class="fab__pulse" aria-hidden="true"></span>
+      Book now
+      <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+</div>
+
+<script>
+  const setupFab = () => {
+    const fab = document.querySelector('[data-fab]');
+    const hero = document.getElementById('top');
+    if (!fab || !hero) return;
+    const io = new IntersectionObserver(
+      ([e]) => fab.classList.toggle('is-show', !e.isIntersecting),
+      { threshold: 0.15 }
+    );
+    io.observe(hero);
+  };
+  setupFab();
+  document.addEventListener('astro:after-swap', setupFab);
+</script>
+
+<style>
+  .fab {
+    position: fixed; z-index: 300; left: 0; right: 0; bottom: 0;
+    display: flex; justify-content: center; padding: 1rem var(--gutter) calc(1rem + env(safe-area-inset-bottom));
+    pointer-events: none;
+    transform: translateY(140%); opacity: 0;
+    transition: transform 0.55s var(--ease), opacity 0.4s var(--ease);
+  }
+  .fab.is-show { transform: none; opacity: 1; }
+  .fab__bar {
+    pointer-events: auto; display: flex; align-items: center; gap: 1rem;
+    background: var(--olive); color: var(--flour);
+    border-radius: 100px; padding: 0.5rem 0.5rem 0.5rem 1.4rem;
+    box-shadow: var(--shadow-lg); border: 1px solid rgba(255,255,255,0.08);
+  }
+  .fab__info { display: none; flex-direction: column; line-height: 1.15; }
+  .fab__eyebrow { font-size: 0.62rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--yolk); }
+  .fab__when { font-size: var(--step--1); font-weight: 600; }
+  .fab__btn {
+    position: relative; display: inline-flex; align-items: center; gap: 0.5rem;
+    background: var(--yolk); color: var(--olive-deep); font-weight: 800; font-size: var(--step-0);
+    padding: 0.85rem 1.5rem; border-radius: 100px; transition: transform 0.3s var(--ease), background 0.3s;
+  }
+  .fab__btn:hover { transform: scale(1.04); background: var(--yolk-deep); }
+  .fab__btn svg { transition: transform 0.3s var(--ease); }
+  .fab__btn:hover svg { transform: translateX(3px); }
+  .fab__pulse {
+    position: absolute; inset: 0; border-radius: 100px; border: 2px solid var(--yolk);
+    animation: fabpulse 2.4s var(--ease) infinite;
+  }
+  @keyframes fabpulse { 0% { opacity: 0.7; transform: scale(1); } 100% { opacity: 0; transform: scale(1.25); } }
+
+  /* mobile: just the pill */
+  .fab__btn { width: 100%; justify-content: center; }
+  @media (max-width: 559px) { .fab__bar { width: 100%; justify-content: center; padding: 0.4rem; } }
+
+  @media (min-width: 560px) {
+    .fab { justify-content: center; }
+    .fab__info { display: flex; }
+    .fab__btn { width: auto; }
+  }
+</style>

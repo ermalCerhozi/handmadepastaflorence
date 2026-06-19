@@ -1,0 +1,73 @@
+---
+const stats = [
+  { n: '47', l: 'years of family recipes' },
+  { n: '12k', l: 'guests floured & fed' },
+  { n: '4.97', l: 'average review, 2,300+' },
+];
+---
+
+<section class="story" id="story">
+  <div class="shell story__grid">
+    <div class="story__media" data-reveal>
+      <div class="story__photo story__photo--a"></div>
+      <div class="story__photo story__photo--b"></div>
+      <span class="story__stamp">est.<br /><strong>1978</strong></span>
+    </div>
+    <div class="story__text" data-reveal style="--reveal-delay:120ms">
+      <p class="eyebrow story__eyebrow">Our story</p>
+      <h2 class="story__title">Three generations,<br />one wooden board.</h2>
+      <p class="story__body">
+        It started with Nonna Lucia and a chipped <em class="ital">matterello</em> her mother
+        rolled wartime tagliatelle on. Today her grandchildren still teach in the same
+        Oltrarno kitchen — flour on the floor, basil on the sill, and a pot always coming
+        to the boil.
+      </p>
+      <p class="story__body">
+        We never wanted a cooking <em class="ital">school</em>. We wanted a table big enough
+        for strangers to leave as friends — whether they’re sitting in Florence or joining
+        us from a kitchen on the other side of the world.
+      </p>
+      <ul class="story__stats">
+        {stats.map((s) => (
+          <li><strong>{s.n}</strong><span>{s.l}</span></li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<style>
+  .story { padding-block: clamp(4.5rem, 12vh, 9rem); }
+  .story__grid { display: grid; gap: clamp(2rem, 5vw, 4rem); align-items: center; grid-template-columns: 1fr; }
+  @media (min-width: 880px) { .story__grid { grid-template-columns: 0.9fr 1.1fr; } }
+
+  .story__media { position: relative; aspect-ratio: 4 / 4.4; }
+  .story__photo { position: absolute; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); }
+  .story__photo--a {
+    inset: 0 18% 22% 0;
+    background: var(--flour-shadow) url('/images/cutting-pizza.webp') center / cover;
+  }
+  .story__photo--b {
+    inset: 30% 0 0 26%;
+    background: var(--olive) url('/images/plates.webp') center / cover;
+    border: 6px solid var(--flour);
+  }
+  .story__photo::after {
+    content: ''; position: absolute; inset: 0; border-radius: inherit; opacity: 0.35; mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  .story__stamp {
+    position: absolute; right: -4%; top: 6%; z-index: 2; width: 92px; height: 92px; border-radius: 50%;
+    background: var(--yolk); color: var(--olive-deep); display: grid; place-content: center; text-align: center;
+    font-size: 0.72rem; font-weight: 700; line-height: 1.2; box-shadow: var(--shadow-md);
+    transform: rotate(-8deg);
+  }
+  .story__stamp strong { font-family: var(--serif); font-size: 1.3rem; }
+
+  .story__eyebrow { color: var(--terracotta); margin-bottom: 0.9rem; }
+  .story__title { font-size: var(--step-3); color: var(--olive); margin-bottom: 1.4rem; }
+  .story__body { color: var(--charcoal-soft); margin-bottom: 1rem; max-width: 50ch; }
+  .story__stats { display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 1.8rem; padding-top: 1.6rem; border-top: 1px solid var(--paper-line); }
+  .story__stats strong { display: block; font-family: var(--serif); font-size: var(--step-3); color: var(--terracotta); line-height: 1; }
+  .story__stats span { font-size: var(--step--1); color: var(--charcoal-soft); }
+</style>

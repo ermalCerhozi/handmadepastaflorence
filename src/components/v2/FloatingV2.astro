@@ -1,0 +1,35 @@
+---
+---
+<div class="efab" data-fab>
+  <div class="efab__bar">
+    <div class="efab__info">
+      <span class="efab__e mono">Prossimo a Firenze</span>
+      <span class="efab__w">Sab · 10:00 · 3 posti</span>
+    </div>
+    <button class="efab__btn" data-open-booking data-hot>Prenota ↗</button>
+  </div>
+</div>
+
+<script>
+  const setFab = () => {
+    const fab = document.querySelector('[data-fab]'); const hero = document.getElementById('top');
+    if (!fab || !hero) return;
+    const io = new IntersectionObserver(([e]) => fab.classList.toggle('show', !e.isIntersecting), { threshold: 0.12 });
+    io.observe(hero);
+  };
+  setFab();
+  document.addEventListener('astro:after-swap', setFab);
+</script>
+
+<style>
+  .efab { position: fixed; left: 0; right: 0; bottom: 0; z-index: 300; display: flex; justify-content: center; padding: 1rem var(--gutter) calc(1rem + env(safe-area-inset-bottom)); pointer-events: none; transform: translateY(150%); opacity: 0; transition: transform 0.5s var(--ease), opacity 0.4s; }
+  .efab.show { transform: none; opacity: 1; }
+  .efab__bar { pointer-events: auto; display: flex; align-items: center; gap: 1rem; background: var(--paper-2); border: var(--rule); box-shadow: 5px 5px 0 var(--pomodoro); padding: 0.5rem 0.5rem 0.5rem 1.3rem; }
+  .efab__info { display: none; flex-direction: column; line-height: 1.15; }
+  .efab__e { color: var(--pomodoro); }
+  .efab__w { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: var(--t--1); }
+  .efab__btn { background: var(--ink); color: var(--cream); font-family: var(--display); font-weight: 800; text-transform: uppercase; padding: 0.8rem 1.4rem; border: 2px solid var(--ink); transition: background 0.25s, transform 0.2s; width: 100%; }
+  .efab__btn:hover { background: var(--pomodoro); border-color: var(--pomodoro); }
+  @media (max-width: 559px) { .efab__bar { width: 100%; justify-content: center; padding: 0.4rem; } }
+  @media (min-width: 560px) { .efab__info { display: flex; } .efab__btn { width: auto; } }
+</style>

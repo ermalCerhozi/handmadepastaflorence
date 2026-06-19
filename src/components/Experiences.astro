@@ -1,0 +1,127 @@
+---
+// In-person Florence classes are the heart of the business. Online is a small
+// secondary offering handled lower on the page (see OnlineBand.astro).
+const classes = [
+  {
+    tag: 'Most loved',
+    name: 'The Nonna Table',
+    desc: 'Three hours, four shapes, one long lunch. Roll pici, fold tortelli, then sit down to eat everything you made with a glass of Chianti.',
+    price: '€95',
+    meta: '3 hrs · max 8 guests · Oltrarno',
+    img: '/images/cooking_class_with_guests_in_picture.webp',
+  },
+  {
+    tag: 'Market + cook',
+    name: 'Mercato & Mani',
+    desc: 'Shop Sant’Ambrogio market at dawn with the chef, then turn the basket into ravioli, a ragù, and a seasonal dolce back in the kitchen.',
+    price: '€145',
+    meta: '5 hrs · max 6 guests · market walk',
+    img: '/images/aperitivo.webp',
+  },
+  {
+    tag: 'Private',
+    name: 'The Family Long-Table',
+    desc: 'Book the whole kitchen. Birthdays, proposals, reunions — we cook, you celebrate, the wine keeps coming.',
+    price: 'from €680',
+    meta: 'flexible · 6–14 guests · evenings',
+    img: '/images/wedding-cake-2.webp',
+  },
+];
+---
+
+<section class="exp" id="experiences">
+  <div class="shell">
+    <header class="exp__head">
+      <div data-reveal>
+        <p class="eyebrow exp__eyebrow">In-person classes · Florence</p>
+        <h2 class="exp__title">Pull up a chair<br />at our <span class="ital">kitchen table.</span></h2>
+      </div>
+      <p class="exp__intro" data-reveal style="--reveal-delay:120ms">
+        Every class is hands-in-the-flour from the first minute — small groups,
+        no demos to watch, and you eat the lunch you just rolled.
+      </p>
+    </header>
+
+    <div class="exp__grid">
+      {classes.map((c, i) => (
+        <article class="card" data-reveal style={`--reveal-delay:${i * 90}ms`}>
+          <div class="card__media">
+            <img class="card__img" src={c.img} alt={c.name} loading="lazy" decoding="async" />
+            <span class="card__tag">{c.tag}</span>
+            <span class="card__price">{c.price}</span>
+          </div>
+          <div class="card__body">
+            <h3 class="card__name">{c.name}</h3>
+            <p class="card__desc">{c.desc}</p>
+            <p class="card__meta">{c.meta}</p>
+            <button class="card__cta" data-open-booking data-prefill="florence">
+              Book this <span aria-hidden="true">→</span>
+            </button>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .exp { padding-block: clamp(4.5rem, 12vh, 9rem); position: relative; }
+  .exp__head {
+    display: grid; gap: 1.4rem 3rem; align-items: end;
+    grid-template-columns: 1fr; margin-bottom: clamp(2.5rem, 5vw, 4rem);
+  }
+  @media (min-width: 820px) { .exp__head { grid-template-columns: 1.4fr 1fr; } }
+  .exp__eyebrow { color: var(--terracotta); margin-bottom: 0.9rem; }
+  .exp__title { font-size: var(--step-3); color: var(--olive); }
+  .exp__title .ital { color: var(--terracotta); }
+  .exp__intro { color: var(--charcoal-soft); font-size: var(--step-0); line-height: 1.6; max-width: 42ch; }
+
+  .exp__grid {
+    display: grid; gap: clamp(1.2rem, 2.5vw, 2rem);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr));
+  }
+
+  .card {
+    background: #fff; border-radius: var(--radius-lg); overflow: hidden;
+    border: 1px solid var(--paper-line); box-shadow: var(--shadow-sm);
+    display: flex; flex-direction: column;
+    transition: transform 0.5s var(--ease), box-shadow 0.5s var(--ease);
+  }
+  .card:hover { transform: translateY(-10px); box-shadow: var(--shadow-lg); }
+  .card__media { position: relative; aspect-ratio: 4 / 3; overflow: hidden; background: var(--flour-shadow); }
+  .card__img {
+    position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+    transition: transform 0.7s var(--ease);
+  }
+  .card:hover .card__img { transform: scale(1.07); }
+  /* bottom scrim so the white price stays readable over any photo */
+  .card__media::after {
+    content: ''; position: absolute; inset: 0; pointer-events: none;
+    background: linear-gradient(to top, rgba(33,44,31,0.55), transparent 42%);
+  }
+  .card__tag {
+    position: absolute; top: 1rem; left: 1rem; z-index: 1;
+    background: rgba(249,246,240,0.92); color: var(--olive);
+    font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase;
+    padding: 0.35rem 0.7rem; border-radius: 100px;
+  }
+  .card__price {
+    position: absolute; bottom: 1rem; right: 1rem; z-index: 1;
+    font-family: var(--serif); font-weight: 800; font-size: 1.5rem; color: #fff;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.4);
+  }
+  .card__body { padding: 1.5rem 1.5rem 1.7rem; display: flex; flex-direction: column; flex: 1; }
+  .card__name { font-size: var(--step-1); color: var(--olive); margin-bottom: 0.6rem; }
+  .card__desc { color: var(--charcoal-soft); font-size: var(--step--1); line-height: 1.6; flex: 1; }
+  .card__meta {
+    margin-top: 1rem; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.02em;
+    color: var(--terracotta); text-transform: uppercase;
+  }
+  .card__cta {
+    align-self: flex-start; margin-top: 1.2rem; display: inline-flex; align-items: center; gap: 0.5rem;
+    font-weight: 700; color: var(--olive);
+    border-bottom: 2px solid var(--yolk); padding-bottom: 3px;
+    transition: gap 0.35s var(--ease), color 0.3s;
+  }
+  .card__cta:hover { gap: 0.9rem; color: var(--terracotta); }
+</style>
