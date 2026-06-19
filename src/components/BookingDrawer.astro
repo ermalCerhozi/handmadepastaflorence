@@ -1,7 +1,8 @@
 ---
-// Frictionless 4-step booking drawer (off-canvas, right side on desktop / full-screen on mobile).
-// State + pricing handled client-side; all UI is mock-functional.
-//   1. Experience + guests   2. Date & time   3. Add-ons   4. Checkout
+// Frictionless 3-step booking request drawer (off-canvas, right side on desktop / full-screen on mobile).
+// State + pricing handled client-side.
+//   1. Experience + guests   2. Date & time   3. Customize (add-ons)
+// The final step sends the request by opening a prefilled Gmail compose window.
 // Pricing is always tied to a visible guest count, so the total can never appear
 // "out of nowhere" — it updates the moment an experience and guest count are chosen.
 ---
@@ -24,10 +25,6 @@
         <li class="bk__step" data-step-dot="3">
           <span class="bk__dot"><i class="bk__num">3</i></span>
           <span class="bk__label">Customize</span>
-        </li>
-        <li class="bk__step" data-step-dot="4">
-          <span class="bk__dot"><i class="bk__num">4</i></span>
-          <span class="bk__label">Checkout</span>
         </li>
       </ol>
       <button class="bk__close" data-close-booking aria-label="Close booking">✕</button>
@@ -127,33 +124,12 @@
           </label>
         </div>
       </section>
-
-      <!-- ===== Step 4: checkout ===== -->
-      <section class="bk__view" data-view="4">
-        <p class="bk__kicker">Step 4</p>
-        <h2 class="bk__h">One last step</h2>
-        <div class="pay">
-          <button type="button" class="pay__wallet pay__wallet--apple"> Pay</button>
-          <button type="button" class="pay__wallet pay__wallet--google">G&nbsp;Pay</button>
-        </div>
-        <div class="pay__or"><span>or pay by card</span></div>
-        <div class="cardform">
-          <label class="field field--full"><span>Email for your confirmation</span><input type="email" placeholder="you@example.com" /></label>
-          <label class="field field--full"><span>Card number</span><input inputmode="numeric" placeholder="1234  5678  9012  3456" /></label>
-          <label class="field"><span>Expiry</span><input placeholder="MM / YY" /></label>
-          <label class="field"><span>CVC</span><input inputmode="numeric" placeholder="123" /></label>
-        </div>
-        <p class="pay__trust">🔒 Secured by Stripe · free cancellation up to 72h before</p>
-      </section>
     </div>
 
     <!-- ===== Sticky order summary + nav ===== -->
     <footer class="bk__bottom">
-      <div class="summary" data-summary>
-        <button class="summary__toggle" data-summary-toggle aria-expanded="false">
-          <span class="summary__chev" aria-hidden="true">⌃</span>
-          <span>Order summary</span>
-        </button>
+      <div class="summary">
+        <p class="summary__title">Order summary</p>
         <ul class="summary__lines" data-summary-lines></ul>
         <div class="summary__total">
           <span>Total</span>
@@ -215,7 +191,7 @@
 
     /* ---------- step navigation ---------- */
     const goTo = (n: number) => {
-      state.step = Math.min(4, Math.max(1, n));
+      state.step = Math.min(3, Math.max(1, n));
       $$('[data-view]').forEach((v) => v.classList.toggle('is-active', v.dataset.view === String(state.step)));
       $$('[data-step-dot]').forEach((d) => {
         const dn = Number(d.dataset.stepDot);
@@ -225,7 +201,7 @@
       const back = $('[data-prev]');
       if (back) back.hidden = state.step === 1;
       const next = $<HTMLButtonElement>('[data-next]');
-      if (next) next.textContent = state.step === 4 ? 'Confirm & pay' : 'Continue';
+      if (next) next.textContent = state.step === 3 ? 'Send request' : 'Continue';
       const scroll = $('.bk__scroll');
       if (scroll) scroll.scrollTop = 0;
       validate();
@@ -242,12 +218,7 @@
     };
 
     $('[data-next]')?.addEventListener('click', () => {
-      if (state.step === 4) {
-        const next = $<HTMLButtonElement>('[data-next]')!;
-        next.textContent = 'Booked! 🎉  Check your inbox';
-        next.disabled = true;
-        return;
-      }
+      if (state.step === 3) { sendRequest(); return; }
       goTo(state.step + 1);
     });
     $('[data-prev]')?.addEventListener('click', () => goTo(state.step - 1));
@@ -303,6 +274,29 @@
     let view = new Date(today.getFullYear(), today.getMonth(), 1);
     const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 
+    // Class times are Florence (Europe/Rome) wall-clock times.
+    const FL_TIMES = ['10:00', '14:30', '18:00'];
+    // Offset in minutes (east of UTC) of an instant in a named time zone — lets us
+    // handle CET/CEST automatically instead of hard-coding a fixed offset.
+    const zoneOffset = (instant: Date, tz: string) => {
+      const dtf = new Intl.DateTimeFormat('en-US', {
+        timeZone: tz, hour12: false,
+        year: 'numeric', month: '2-digit', day: '2-digit',
+        hour: '2-digit', minute: '2-digit', second: '2-digit',
+      });
+      const p: Record<string, string> = {};
+      for (const part of dtf.formatToParts(instant)) p[part.type] = part.value;
+      const asUTC = Date.UTC(+p.year, +p.month - 1, +p.day, +p.hour, +p.minute, +p.second);
+      return Math.round((asUTC - instant.getTime()) / 60000);
+    };
+    // Absolute instant (ms since epoch) of a Florence wall-clock slot on a given day.
+    const slotMs = (date: Date, time: string) => {
+      const [h, m] = time.split(':').map(Number);
+      const guess = Date.UTC(date.getFullYear(), date.getMonth(), date.getDate(), h, m);
+      return guess - zoneOffset(new Date(guess), 'Europe/Rome') * 60000;
+    };
+    const hasFutureSlot = (date: Date) => FL_TIMES.some((t) => slotMs(date, t) > Date.now());
+
     const buildCal = () => {
       const grid = $('[data-cal-grid]'); const label = $('[data-cal-label]');
       if (!grid || !label) return;
@@ -319,7 +313,8 @@
         cell.className = 'cal__day';
         const past = date < today;
         const closed = date.getDay() === 1; // closed Mondays
-        if (past || closed) { cell.disabled = true; cell.classList.add('is-off'); }
+        const elapsed = date.getTime() === today.getTime() && !hasFutureSlot(date); // today, all slots gone
+        if (past || closed || elapsed) { cell.disabled = true; cell.classList.add('is-off'); }
         else {
           cell.addEventListener('click', () => {
             $$('.cal__day').forEach((c) => c.classList.remove('is-sel'));
@@ -341,7 +336,6 @@
       view = new Date(view.getFullYear(), view.getMonth() + 1, 1); buildCal();
     });
 
-    const FL_TIMES = ['10:00', '14:30', '18:00'];
     const showSlots = (date: Date) => {
       const wrap = $('[data-slots]'); if (!wrap) return;
       wrap.hidden = false;
@@ -351,13 +345,17 @@
       FL_TIMES.forEach((t) => {
         const b = document.createElement('button');
         b.className = 'slot'; b.textContent = t;
-        b.addEventListener('click', () => {
-          $$('.slot').forEach((s) => s.classList.remove('is-sel'));
-          b.classList.add('is-sel');
-          state.time = t;
-          if (state.experience === 'online') showTz(date, t);
-          validate(); render();
-        });
+        if (slotMs(date, t) <= Date.now()) {
+          b.disabled = true; b.classList.add('is-off'); // a time that has already passed today
+        } else {
+          b.addEventListener('click', () => {
+            $$('.slot').forEach((s) => s.classList.remove('is-sel'));
+            b.classList.add('is-sel');
+            state.time = t;
+            showTz(date, t);
+            validate(); render();
+          });
+        }
         row.appendChild(b);
       });
       const tz = $('[data-tz]'); if (tz) tz.hidden = true; // reset until a time is chosen
@@ -366,14 +364,13 @@
     const showTz = (date: Date, time: string) => {
       const tz = $('[data-tz]'); if (!tz) return;
       tz.hidden = false;
-      const [h, m] = time.split(':').map(Number);
-      // Florence is Europe/Rome; build the wall-clock there (CEST ~ UTC+2) and convert.
-      const florence = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate(), h - 2, m));
+      // Convert the Florence slot to the visitor's local time, correct year-round (CET/CEST).
+      const instant = new Date(slotMs(date, time));
       const localName = Intl.DateTimeFormat().resolvedOptions().timeZone || 'Your time';
       const fmt: Intl.DateTimeFormatOptions = { hour: '2-digit', minute: '2-digit' };
       const fl = $('[data-tz-florence]'); if (fl) fl.textContent = time;
       const nm = $('[data-tz-name]'); if (nm) nm.textContent = localName.replace(/_/g, ' ');
-      const lo = $('[data-tz-local]'); if (lo) lo.textContent = florence.toLocaleTimeString(undefined, fmt);
+      const lo = $('[data-tz-local]'); if (lo) lo.textContent = instant.toLocaleTimeString(undefined, fmt);
     };
 
     /* ---------- step 3: add-ons ---------- */
@@ -389,16 +386,61 @@
       });
     });
 
-    /* ---------- summary toggle ---------- */
-    $('[data-summary-toggle]')?.addEventListener('click', () => {
-      const s = $('[data-summary]'); if (!s) return;
-      const expanded = s.classList.toggle('is-expanded');
-      $('[data-summary-toggle]')?.setAttribute('aria-expanded', String(expanded));
-    });
-
     /* ---------- pricing render (single source of truth) ---------- */
     const euro = (n: number) => `€${n.toLocaleString('en-IE')}`;
     const ADDON_LABELS: Record<string, string> = { kit: 'Ingredient kit', wine: 'Wine pairing', gf: 'Gluten-free' };
+
+    /* ---------- send request → open a prefilled Gmail compose ---------- */
+    const BUSINESS_EMAIL = 'ciao@handmadepastaflorence.com';
+    const sendRequest = () => {
+      const details: string[] = [];
+      let total = 0;
+      if (state.experience) {
+        const sub = state.basePrice * state.guests;
+        total += sub;
+        const name = state.experience === 'florence' ? 'In-Person · Florence' : 'Live Online';
+        details.push(`Experience: ${name} (€${state.basePrice}/person)`);
+        details.push(`Guests: ${state.guests}`);
+      }
+      if (state.date) details.push(`Date & time: ${state.date}${state.time ? ' · ' + state.time : ''}`);
+
+      const addonText: string[] = [];
+      $$('[data-addon]').forEach((label) => {
+        const el = label as HTMLElement;
+        const key = el.dataset.addon!;
+        if (!(key in state.addons)) return;
+        const unit = state.addons[key];
+        const amt = el.dataset.per === 'guest' ? unit * state.guests : unit;
+        total += amt;
+        addonText.push(`${ADDON_LABELS[key] ?? key}${amt === 0 ? ' (free)' : ' (+' + euro(amt) + ')'}`);
+      });
+      if (addonText.length) details.push(`Add-ons: ${addonText.join(', ')}`);
+      details.push(`Estimated total: ${euro(total)}`);
+
+      const subjectExp = state.experience === 'florence' ? 'In-Person · Florence'
+        : state.experience === 'online' ? 'Live Online' : '';
+      const subject = `Class booking request${subjectExp ? ' — ' + subjectExp : ''}`;
+      const body = [
+        'Hello Handmade Pasta Florence,',
+        '',
+        "I'd like to request a booking with the details below.",
+        '',
+        ...details,
+        '',
+        '— Please confirm availability —',
+        'Name:',
+        'Phone / WhatsApp:',
+        'Notes (allergies, occasion, etc.):',
+        '',
+        'Grazie!',
+      ].join('\n');
+
+      const url = 'https://mail.google.com/mail/?view=cm&fs=1'
+        + '&to=' + encodeURIComponent(BUSINESS_EMAIL)
+        + '&su=' + encodeURIComponent(subject)
+        + '&body=' + encodeURIComponent(body);
+      window.open(url, '_blank', 'noopener');
+    };
 
     const render = () => {
       const lines = $('[data-summary-lines]'); if (!lines) return;
@@ -464,7 +506,7 @@
     border-bottom: 1px solid var(--paper-line); background: var(--flour-deep);
   }
   .bk__steps {
-    display: grid; grid-template-columns: repeat(4, 1fr);
+    display: grid; grid-template-columns: repeat(3, 1fr);
     list-style: none; margin: 0; padding: 0 1.6rem 0 0; /* room for the close button */
   }
   .bk__step {
@@ -569,7 +611,7 @@
     transition: background 0.2s, color 0.2s, transform 0.2s;
   }
   .cal__day:not(.is-off):hover { background: var(--yolk); transform: scale(1.08); }
-  .cal__day.is-off { color: var(--flour-shadow); cursor: not-allowed; }
+  .cal__day.is-off { color: var(--charcoal-soft); opacity: 0.32; cursor: not-allowed; text-decoration: line-through; }
   .cal__day.is-sel { background: var(--olive); color: var(--flour); }
 
   .slots { margin-top: 1.4rem; }
@@ -578,6 +620,8 @@
   .slot { padding: 0.7rem 1.2rem; border-radius: 100px; background: #fff; border: 1.5px solid var(--paper-line); font-weight: 700; transition: 0.25s var(--ease); }
   .slot:hover { border-color: var(--terracotta); }
   .slot.is-sel { background: var(--terracotta); color: #fff; border-color: var(--terracotta); }
+  .slot.is-off { opacity: 0.35; text-decoration: line-through; cursor: not-allowed; }
+  .slot.is-off:hover { border-color: var(--paper-line); }
   .tz {
     margin-top: 1.2rem; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
     background: rgba(255,199,44,0.14); border: 1px solid rgba(240,180,0,0.35);
@@ -612,30 +656,10 @@
   .switch input:checked + .switch__track { background: var(--terracotta); }
   .switch input:checked + .switch__track::after { transform: translateX(19px); }
 
-  /* checkout */
-  .pay { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
-  .pay__wallet { padding: 1rem; border-radius: 14px; font-weight: 800; font-size: 1.05rem; transition: transform 0.3s; }
-  .pay__wallet:hover { transform: translateY(-2px); }
-  .pay__wallet--apple { background: #000; color: #fff; }
-  .pay__wallet--google { background: #fff; color: #3c4043; border: 1.5px solid var(--paper-line); }
-  .pay__or { text-align: center; margin: 1.3rem 0; position: relative; color: var(--charcoal-soft); font-size: var(--step--1); }
-  .pay__or::before { content: ''; position: absolute; top: 50%; left: 0; right: 0; height: 1px; background: var(--paper-line); }
-  .pay__or span { position: relative; background: var(--flour); padding: 0 1rem; }
-  .cardform { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
-  .field { display: flex; flex-direction: column; gap: 0.35rem; }
-  .field--full { grid-column: 1 / -1; }
-  .field span { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--charcoal-soft); }
-  .field input { padding: 0.85rem 1rem; border-radius: 12px; border: 1.5px solid var(--paper-line); background: #fff; font: inherit; transition: border-color 0.3s; }
-  .field input:focus { outline: none; border-color: var(--terracotta); }
-  .pay__trust { margin-top: 1.2rem; text-align: center; font-size: var(--step--1); color: var(--charcoal-soft); }
-
   /* sticky summary + actions */
   .bk__bottom { border-top: 1px solid var(--paper-line); background: var(--flour-deep); padding: 1rem var(--gutter) 1.2rem; }
-  .summary__toggle { display: flex; align-items: center; gap: 0.5rem; font-weight: 700; color: var(--olive); width: 100%; }
-  .summary__chev { transition: transform 0.3s var(--ease); display: inline-block; }
-  .summary.is-expanded .summary__chev { transform: rotate(180deg); }
-  .summary__lines { display: grid; gap: 0.4rem; max-height: 0; overflow: hidden; transition: max-height 0.4s var(--ease), margin 0.4s; }
-  .summary.is-expanded .summary__lines { max-height: 320px; margin: 0.8rem 0; }
+  .summary__title { font-weight: 700; color: var(--olive); }
+  .summary__lines { display: grid; gap: 0.4rem; margin: 0.8rem 0; }
   .summary__lines li { display: flex; justify-content: space-between; gap: 0.8rem; font-size: var(--step--1); color: var(--charcoal-soft); }
   .summary__lines li span:first-child { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .summary__total { display: flex; justify-content: space-between; align-items: baseline; margin-top: 0.6rem; padding-top: 0.6rem; border-top: 1px dashed var(--paper-line); }

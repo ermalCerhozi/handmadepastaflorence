@@ -6,8 +6,8 @@
 <div class="fab" data-fab aria-hidden="false">
   <div class="fab__bar">
     <div class="fab__info">
-      <span class="fab__eyebrow">Next Florence class</span>
-      <span class="fab__when">Sat · 10:00 · 3 spots left</span>
+      <span class="fab__eyebrow">In Florence &amp; online</span>
+      <span class="fab__when">Small-group pasta classes</span>
     </div>
     <button class="fab__btn" data-open-booking>
       <span class="fab__pulse" aria-hidden="true"></span>
@@ -22,11 +22,21 @@
     const fab = document.querySelector('[data-fab]');
     const hero = document.getElementById('top');
     if (!fab || !hero) return;
-    const io = new IntersectionObserver(
-      ([e]) => fab.classList.toggle('is-show', !e.isIntersecting),
+    const footer = document.querySelector('.ft');
+    // Show the pill once the hero scrolls away, but hide it again at the footer
+    // (which has its own booking CTA) so it never covers the footer content.
+    let pastHero = false, atFooter = false;
+    const update = () => fab.classList.toggle('is-show', pastHero && !atFooter);
+    new IntersectionObserver(
+      ([e]) => { pastHero = !e.isIntersecting; update(); },
       { threshold: 0.15 }
-    );
-    io.observe(hero);
+    ).observe(hero);
+    if (footer) {
+      new IntersectionObserver(
+        ([e]) => { atFooter = e.isIntersecting; update(); },
+        { threshold: 0 }
+      ).observe(footer);
+    }
   };
   setupFab();
   document.addEventListener('astro:after-swap', setupFab);

@@ -24,3 +24,4 @@ Thumbs.db
 # Audit / docs (generated, not part of the site)
 FULL-AUDIT-REPORT.md
 ACTION-PLAN.md
+.gstack/

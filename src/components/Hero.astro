@@ -125,9 +125,15 @@
     min-height: 100svh;
     display: flex;
     align-items: flex-end;
+    /* Top padding reserves room for the fixed header so the eyebrow never tucks
+       under it when the headline wraps tall on small screens. Invisible on desktop,
+       where the bottom-pinned content already leaves this space empty. */
+    padding-top: clamp(5.5rem, 12vh, 8rem);
     padding-bottom: clamp(3rem, 8vh, 7rem);
     overflow: hidden;
     color: var(--flour);
+    /* Dark fallback so the light headline stays readable if the photo is slow or fails to load */
+    background-color: var(--olive-deep);
     isolation: isolate;
   }
   .hero__bg { position: absolute; inset: -8% 0 0 0; z-index: -2; will-change: transform; }

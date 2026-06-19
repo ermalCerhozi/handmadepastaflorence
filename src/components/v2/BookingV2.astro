@@ -199,6 +199,24 @@
     const today = new Date(); today.setHours(0,0,0,0);
     let view = new Date(today.getFullYear(), today.getMonth(), 1);
     const M = ['Gennaio','Febbraio','Marzo','Aprile','Maggio','Giugno','Luglio','Agosto','Settembre','Ottobre','Novembre','Dicembre'];
+
+    // Orari in ora di Firenze (Europe/Rome).
+    const TIMES = ['10:00','14:30','18:00'];
+    // Offset in minuti (a est di UTC) di un istante in un fuso — gestisce CET/CEST.
+    const zoneOffset = (instant: Date, tz: string) => {
+      const dtf = new Intl.DateTimeFormat('en-US', { timeZone: tz, hour12: false, year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit' });
+      const p: Record<string, string> = {};
+      for (const part of dtf.formatToParts(instant)) p[part.type] = part.value;
+      const asUTC = Date.UTC(+p.year, +p.month - 1, +p.day, +p.hour, +p.minute, +p.second);
+      return Math.round((asUTC - instant.getTime()) / 60000);
+    };
+    // Istante assoluto (ms) di uno slot in ora di Firenze in un dato giorno.
+    const slotMs = (date: Date, time: string) => {
+      const [h, m] = time.split(':').map(Number);
+      const guess = Date.UTC(date.getFullYear(), date.getMonth(), date.getDate(), h, m);
+      return guess - zoneOffset(new Date(guess), 'Europe/Rome') * 60000;
+    };
+    const hasFutureSlot = (date: Date) => TIMES.some((t) => slotMs(date, t) > Date.now());
     const buildCal = () => {
       const grid = $('[data-cal-grid]')!; const label = $('[data-cal-label]')!;
       label.textContent = `${M[view.getMonth()]} ${view.getFullYear()}`; grid.innerHTML = '';
@@ -210,7 +228,8 @@
         const cell = document.createElement('button'); const date = new Date(view.getFullYear(), view.getMonth(), d);
         cell.textContent = String(d); cell.className = 'cal2__day';
         const past = date < today; const closed = date.getDay() === 1;
-        if (past || closed) { cell.disabled = true; cell.classList.add('off'); }
+        const elapsed = date.getTime() === today.getTime() && !hasFutureSlot(date); // oggi, slot finiti
+        if (past || closed || elapsed) { cell.disabled = true; cell.classList.add('off'); }
         else cell.addEventListener('click', () => {
           $$('.cal2__day').forEach((c) => c.classList.remove('sel')); cell.classList.add('sel');
           state.date = date.toLocaleDateString('it-IT', { weekday: 'short', month: 'short', day: 'numeric' });
@@ -222,22 +241,23 @@
     $('[data-cal-prev]')?.addEventListener('click', () => { const m = new Date(view.getFullYear(), view.getMonth()-1, 1); if (m >= new Date(today.getFullYear(), today.getMonth(), 1)) { view = m; buildCal(); } });
     $('[data-cal-next]')?.addEventListener('click', () => { view = new Date(view.getFullYear(), view.getMonth()+1, 1); buildCal(); });
 
-    const TIMES = ['10:00','14:30','18:00'];
     const showSlots = (date: Date) => {
       const w = $('[data-slots]')!; w.hidden = false; $('[data-slot-date]')!.textContent = `· ${state.date}`;
       const row = $('[data-slot-row]')!; row.innerHTML = '';
       TIMES.forEach((t) => { const b = document.createElement('button'); b.className = 'slot2'; b.textContent = t;
-        b.addEventListener('click', () => { $$('.slot2').forEach((s) => s.classList.remove('sel')); b.classList.add('sel'); state.time = t; if (state.experience === 'online') showTz(date, t); validate(); render(); });
+        if (slotMs(date, t) <= Date.now()) { b.disabled = true; b.classList.add('off'); } // orario già passato oggi
+        else b.addEventListener('click', () => { $$('.slot2').forEach((s) => s.classList.remove('sel')); b.classList.add('sel'); state.time = t; showTz(date, t); validate(); render(); });
         row.appendChild(b); });
       $('[data-tz]')!.hidden = true;
     };
     const showTz = (date: Date, time: string) => {
-      const tz = $('[data-tz]')!; tz.hidden = false; const [h, m] = time.split(':').map(Number);
-      const fl = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate(), h-2, m));
+      const tz = $('[data-tz]')!; tz.hidden = false;
+      // Converte lo slot di Firenze nell'ora locale del visitatore, corretto tutto l'anno (CET/CEST).
+      const instant = new Date(slotMs(date, time));
       const name = Intl.DateTimeFormat().resolvedOptions().timeZone || 'La tua ora';
       $('[data-tz-florence]')!.textContent = time;
       $('[data-tz-name]')!.textContent = name.replace(/_/g, ' ');
-      $('[data-tz-local]')!.textContent = fl.toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' });
+      $('[data-tz-local]')!.textContent = instant.toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' });
     };
 
     $$('[data-addon]').forEach((label) => {
@@ -335,7 +355,7 @@
   .cal2__dow { margin-bottom: 4px; } .cal2__dow span { text-align: center; color: var(--ink-soft); }
   .cal2__day { aspect-ratio: 1; border: 1.5px solid transparent; font-weight: 700; font-size: 0.85rem; transition: background 0.18s, color 0.18s, border-color 0.18s, transform 0.18s; }
   .cal2__day:not(.off):hover { background: var(--saffron); border-color: var(--ink); transform: scale(1.06); }
-  .cal2__day.off { color: var(--paper-3); }
+  .cal2__day.off { color: var(--paper-3); opacity: 0.6; text-decoration: line-through; cursor: not-allowed; }
   .cal2__day.sel { background: var(--ink); color: var(--cream); }
 
   .slots2 { margin-top: 1.4rem; }
@@ -343,6 +363,8 @@
   .slots2__row { display: flex; gap: 0.6rem; flex-wrap: wrap; }
   .slot2 { padding: 0.7rem 1.2rem; background: var(--cream); border: var(--rule); font-weight: 800; transition: 0.2s var(--ease); }
   .slot2:hover { background: var(--saffron); } .slot2.sel { background: var(--pomodoro); color: var(--cream); }
+  .slot2.off { opacity: 0.4; text-decoration: line-through; cursor: not-allowed; }
+  .slot2.off:hover { background: var(--cream); }
   .tz2 { margin-top: 1.2rem; display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; background: var(--saffron); border: var(--rule); padding: 0.9rem 1.1rem; }
   .tz2__c { display: flex; flex-direction: column; } .tz2__c i { font-style: normal; color: var(--ink-soft); }
   .tz2__c b { font-family: var(--serif); font-style: italic; font-weight: 500; font-size: var(--t-1); text-transform: none; }
