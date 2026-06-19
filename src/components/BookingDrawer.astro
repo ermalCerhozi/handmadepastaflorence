@@ -1,26 +1,40 @@
 ---
 // Frictionless 4-step booking drawer (off-canvas, right side on desktop / full-screen on mobile).
 // State + pricing handled client-side; all UI is mock-functional.
+//   1. Experience + guests   2. Date & time   3. Add-ons   4. Checkout
+// Pricing is always tied to a visible guest count, so the total can never appear
+// "out of nowhere" — it updates the moment an experience and guest count are chosen.
 ---
 
 <div class="bk" data-booking hidden>
   <div class="bk__scrim" data-close-booking></div>
 
   <aside class="bk__panel" role="dialog" aria-modal="true" aria-label="Book a pasta class">
-    <!-- Header: progress + close -->
+    <!-- Header: numbered stepper + close -->
     <header class="bk__top">
-      <div class="bk__steps" data-steps>
-        <span class="bk__step is-active" data-step-dot="1">Experience</span>
-        <span class="bk__step" data-step-dot="2">Date &amp; time</span>
-        <span class="bk__step" data-step-dot="3">Customize</span>
-        <span class="bk__step" data-step-dot="4">Checkout</span>
-      </div>
+      <ol class="bk__steps" data-steps>
+        <li class="bk__step is-active" data-step-dot="1">
+          <span class="bk__dot"><i class="bk__num">1</i></span>
+          <span class="bk__label">Experience</span>
+        </li>
+        <li class="bk__step" data-step-dot="2">
+          <span class="bk__dot"><i class="bk__num">2</i></span>
+          <span class="bk__label">Date &amp; time</span>
+        </li>
+        <li class="bk__step" data-step-dot="3">
+          <span class="bk__dot"><i class="bk__num">3</i></span>
+          <span class="bk__label">Customize</span>
+        </li>
+        <li class="bk__step" data-step-dot="4">
+          <span class="bk__dot"><i class="bk__num">4</i></span>
+          <span class="bk__label">Checkout</span>
+        </li>
+      </ol>
       <button class="bk__close" data-close-booking aria-label="Close booking">✕</button>
     </header>
-    <div class="bk__progress"><span data-progress></span></div>
 
     <div class="bk__scroll">
-      <!-- ===== Step 1 ===== -->
+      <!-- ===== Step 1: experience + guests ===== -->
       <section class="bk__view is-active" data-view="1">
         <p class="bk__kicker">Step 1</p>
         <h2 class="bk__h">Choose your experience</h2>
@@ -29,20 +43,33 @@
             <span class="choice__emoji">🍝</span>
             <span class="choice__t">In-Person · Florence</span>
             <span class="choice__d">Three hands-on hours in our Oltrarno kitchen, ending in a long lunch.</span>
-            <span class="choice__p">from €95<small>/person</small></span>
+            <span class="choice__p">€95<small>/person</small></span>
             <span class="choice__check" aria-hidden="true">✓</span>
           </button>
           <button class="choice" data-choice="online" data-price="68">
             <span class="choice__emoji">💻</span>
             <span class="choice__t">Live Online</span>
             <span class="choice__d">Cook live from anywhere with a kit shipped to your door.</span>
-            <span class="choice__p">from €68<small>/person</small></span>
+            <span class="choice__p">€68<small>/person</small></span>
             <span class="choice__check" aria-hidden="true">✓</span>
           </button>
         </div>
+
+        <!-- Guests live here so the price is never a surprise -->
+        <div class="qty" data-qty-block hidden>
+          <div class="qty__info">
+            <span class="qty__label">How many guests?</span>
+            <span class="qty__hint" data-qty-hint>—</span>
+          </div>
+          <div class="qty__ctrl">
+            <button data-qty="-1" aria-label="Fewer guests">−</button>
+            <strong data-qty-val>1</strong>
+            <button data-qty="1" aria-label="More guests">+</button>
+          </div>
+        </div>
       </section>
 
-      <!-- ===== Step 2 ===== -->
+      <!-- ===== Step 2: date & time ===== -->
       <section class="bk__view" data-view="2">
         <p class="bk__kicker">Step 2</p>
         <h2 class="bk__h">Pick a date &amp; time</h2>
@@ -68,28 +95,29 @@
         </div>
       </section>
 
-      <!-- ===== Step 3 ===== -->
+      <!-- ===== Step 3: add-ons ===== -->
       <section class="bk__view" data-view="3">
         <p class="bk__kicker">Step 3</p>
         <h2 class="bk__h">Make it yours</h2>
+        <p class="bk__sub">Optional — everything here is add-on only.</p>
         <div class="adds">
-          <label class="add" data-addon="kit" data-add-price="34" data-online-only>
+          <label class="add" data-addon="kit" data-add-price="34" data-per="order" data-online-only>
             <span class="add__main">
               <span class="add__t">Ship me the ingredient kit</span>
-              <span class="add__d">00 flour, semola, rolling pin & recipe cards, chilled to your door.</span>
+              <span class="add__d">00 flour, semola, rolling pin &amp; recipe cards, chilled to your door.</span>
             </span>
             <span class="add__price">+€34</span>
             <span class="switch"><input type="checkbox" /><span class="switch__track"></span></span>
           </label>
-          <label class="add" data-addon="wine" data-add-price="18">
+          <label class="add" data-addon="wine" data-add-price="18" data-per="guest">
             <span class="add__main">
               <span class="add__t">Add a wine pairing</span>
               <span class="add__d">Two Tuscan pours chosen to match your menu (in-person) or a bottle shipped (online).</span>
             </span>
-            <span class="add__price">+€18</span>
+            <span class="add__price">+€18<small>/person</small></span>
             <span class="switch"><input type="checkbox" /><span class="switch__track"></span></span>
           </label>
-          <label class="add" data-addon="gf" data-add-price="0">
+          <label class="add" data-addon="gf" data-add-price="0" data-per="order">
             <span class="add__main">
               <span class="add__t">Gluten-free preference</span>
               <span class="add__d">We’ll prep a dedicated GF flour blend and a clean station. No charge.</span>
@@ -98,23 +126,15 @@
             <span class="switch"><input type="checkbox" /><span class="switch__track"></span></span>
           </label>
         </div>
-        <div class="qty">
-          <span class="qty__label">Guests</span>
-          <div class="qty__ctrl">
-            <button data-qty="-1" aria-label="Fewer guests">−</button>
-            <strong data-qty-val>2</strong>
-            <button data-qty="1" aria-label="More guests">+</button>
-          </div>
-        </div>
       </section>
 
-      <!-- ===== Step 4 ===== -->
+      <!-- ===== Step 4: checkout ===== -->
       <section class="bk__view" data-view="4">
         <p class="bk__kicker">Step 4</p>
         <h2 class="bk__h">One last step</h2>
         <div class="pay">
-          <button class="pay__wallet pay__wallet--apple"> Pay</button>
-          <button class="pay__wallet pay__wallet--google">G&nbsp;Pay</button>
+          <button type="button" class="pay__wallet pay__wallet--apple"> Pay</button>
+          <button type="button" class="pay__wallet pay__wallet--google">G&nbsp;Pay</button>
         </div>
         <div class="pay__or"><span>or pay by card</span></div>
         <div class="cardform">
@@ -131,7 +151,8 @@
     <footer class="bk__bottom">
       <div class="summary" data-summary>
         <button class="summary__toggle" data-summary-toggle aria-expanded="false">
-          <span class="summary__chev" aria-hidden="true">⌃</span> Order summary
+          <span class="summary__chev" aria-hidden="true">⌃</span>
+          <span>Order summary</span>
         </button>
         <ul class="summary__lines" data-summary-lines></ul>
         <div class="summary__total">
@@ -148,9 +169,10 @@
 </div>
 
 <script>
+  type Experience = 'florence' | 'online';
   type State = {
     step: number;
-    experience: 'florence' | 'online' | null;
+    experience: Experience | null;
     basePrice: number;
     date: string | null;
     time: string | null;
@@ -158,13 +180,17 @@
     addons: Record<string, number>;
   };
 
+  const PRICES: Record<Experience, number> = { florence: 95, online: 68 };
+  const MIN_GUESTS = 1;
+  const MAX_GUESTS = 14;
+
   const setupBooking = () => {
     const root = document.querySelector<HTMLElement>('[data-booking]');
     if (!root) return;
 
     const state: State = {
       step: 1, experience: null, basePrice: 0,
-      date: null, time: null, guests: 2, addons: {},
+      date: null, time: null, guests: MIN_GUESTS, addons: {},
     };
 
     const $ = <T extends Element = HTMLElement>(s: string, r: ParentNode = root) => r.querySelector<T>(s);
@@ -175,10 +201,7 @@
       root.hidden = false;
       document.body.style.overflow = 'hidden';
       requestAnimationFrame(() => root.classList.add('is-open'));
-      if (prefill === 'florence' || prefill === 'online') {
-        const btn = $(`[data-choice="${prefill}"]`);
-        btn?.click();
-      }
+      if (prefill === 'florence' || prefill === 'online') $(`[data-choice="${prefill}"]`)?.click();
     };
     const close = () => {
       root.classList.remove('is-open');
@@ -199,13 +222,12 @@
         d.classList.toggle('is-active', dn === state.step);
         d.classList.toggle('is-done', dn < state.step);
       });
-      const prog = $('[data-progress]');
-      if (prog) prog.style.transform = `scaleX(${state.step / 4})`;
       const back = $('[data-prev]');
       if (back) back.hidden = state.step === 1;
       const next = $<HTMLButtonElement>('[data-next]');
       if (next) next.textContent = state.step === 4 ? 'Confirm & pay' : 'Continue';
-      $('.bk__scroll')!.scrollTop = 0;
+      const scroll = $('.bk__scroll');
+      if (scroll) scroll.scrollTop = 0;
       validate();
     };
 
@@ -214,7 +236,7 @@
       const next = $<HTMLButtonElement>('[data-next]');
       if (!next) return;
       let ok = true;
-      if (state.step === 1) ok = !!state.experience;
+      if (state.step === 1) ok = !!state.experience;          // guests always >= 1
       if (state.step === 2) ok = !!state.date && !!state.time;
       next.disabled = !ok;
     };
@@ -230,21 +252,51 @@
     });
     $('[data-prev]')?.addEventListener('click', () => goTo(state.step - 1));
 
-    /* ---------- step 1: experience ---------- */
+    /* ---------- step 1: experience + guests ---------- */
+    const qtyBlock = $('[data-qty-block]');
+    const qtyHint = $('[data-qty-hint]');
+
     $$('[data-choice]').forEach((btn) => {
       btn.addEventListener('click', () => {
         $$('[data-choice]').forEach((b) => b.classList.remove('is-sel'));
         btn.classList.add('is-sel');
-        state.experience = btn.dataset.choice as 'florence' | 'online';
+        state.experience = btn.dataset.choice as Experience;
         state.basePrice = Number(btn.dataset.price);
-        // online-only add-ons
+
+        // reveal the guest control + show per-person price
+        if (qtyBlock) qtyBlock.hidden = false;
+        if (qtyHint) qtyHint.textContent = `€${state.basePrice} per person`;
+
+        // online-only add-ons: hide for in-person AND drop them from state if active
         $$('[data-online-only]').forEach((a) => {
-          (a as HTMLElement).style.display = state.experience === 'online' ? '' : 'none';
+          const el = a as HTMLElement;
+          const show = state.experience === 'online';
+          el.style.display = show ? '' : 'none';
+          if (!show) {
+            const key = el.dataset.addon!;
+            const input = el.querySelector<HTMLInputElement>('input');
+            if (input?.checked) { input.checked = false; el.classList.remove('is-on'); }
+            delete state.addons[key];
+          }
         });
         validate();
         render();
       });
     });
+
+    const setGuests = (n: number) => {
+      state.guests = Math.min(MAX_GUESTS, Math.max(MIN_GUESTS, n));
+      const val = $('[data-qty-val]');
+      if (val) val.textContent = String(state.guests);
+      // disable −/+ at the bounds
+      $$<HTMLButtonElement>('[data-qty]').forEach((b) => {
+        const dir = Number(b.dataset.qty);
+        b.disabled = (dir < 0 && state.guests === MIN_GUESTS) || (dir > 0 && state.guests === MAX_GUESTS);
+      });
+      render();
+    };
+    $$('[data-qty]').forEach((b) =>
+      b.addEventListener('click', () => setGuests(state.guests + Number((b as HTMLElement).dataset.qty))));
 
     /* ---------- step 2: calendar ---------- */
     const today = new Date(); today.setHours(0, 0, 0, 0);
@@ -252,8 +304,8 @@
     const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 
     const buildCal = () => {
-      const grid = $('[data-cal-grid]')!;
-      const label = $('[data-cal-label]')!;
+      const grid = $('[data-cal-grid]'); const label = $('[data-cal-label]');
+      if (!grid || !label) return;
       label.textContent = `${MONTHS[view.getMonth()]} ${view.getFullYear()}`;
       grid.innerHTML = '';
       const first = new Date(view.getFullYear(), view.getMonth(), 1);
@@ -266,8 +318,7 @@
         cell.textContent = String(d);
         cell.className = 'cal__day';
         const past = date < today;
-        const dow = date.getDay();
-        const closed = dow === 1; // closed Mondays
+        const closed = date.getDay() === 1; // closed Mondays
         if (past || closed) { cell.disabled = true; cell.classList.add('is-off'); }
         else {
           cell.addEventListener('click', () => {
@@ -292,9 +343,11 @@
 
     const FL_TIMES = ['10:00', '14:30', '18:00'];
     const showSlots = (date: Date) => {
-      const wrap = $('[data-slots]')!; wrap.hidden = false;
-      $('[data-slot-date]')!.textContent = `· ${state.date}`;
-      const row = $('[data-slot-row]')!; row.innerHTML = '';
+      const wrap = $('[data-slots]'); if (!wrap) return;
+      wrap.hidden = false;
+      const dateLabel = $('[data-slot-date]'); if (dateLabel) dateLabel.textContent = `· ${state.date}`;
+      const row = $('[data-slot-row]'); if (!row) return;
+      row.innerHTML = '';
       FL_TIMES.forEach((t) => {
         const b = document.createElement('button');
         b.className = 'slot'; b.textContent = t;
@@ -307,78 +360,83 @@
         });
         row.appendChild(b);
       });
-      // reset tz block until a time is chosen
-      $('[data-tz]')!.hidden = true;
+      const tz = $('[data-tz]'); if (tz) tz.hidden = true; // reset until a time is chosen
     };
 
     const showTz = (date: Date, time: string) => {
-      const tz = $('[data-tz]')!; tz.hidden = false;
+      const tz = $('[data-tz]'); if (!tz) return;
+      tz.hidden = false;
       const [h, m] = time.split(':').map(Number);
-      // Florence is Europe/Rome; build a Date in that wall-clock and convert.
-      const florence = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate(), h - 2, m)); // CEST ~ UTC+2
+      // Florence is Europe/Rome; build the wall-clock there (CEST ~ UTC+2) and convert.
+      const florence = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate(), h - 2, m));
       const localName = Intl.DateTimeFormat().resolvedOptions().timeZone || 'Your time';
       const fmt: Intl.DateTimeFormatOptions = { hour: '2-digit', minute: '2-digit' };
-      $('[data-tz-florence]')!.textContent = time;
-      $('[data-tz-name]')!.textContent = localName.replace(/_/g, ' ');
-      $('[data-tz-local]')!.textContent = florence.toLocaleTimeString(undefined, fmt);
+      const fl = $('[data-tz-florence]'); if (fl) fl.textContent = time;
+      const nm = $('[data-tz-name]'); if (nm) nm.textContent = localName.replace(/_/g, ' ');
+      const lo = $('[data-tz-local]'); if (lo) lo.textContent = florence.toLocaleTimeString(undefined, fmt);
     };
 
-    /* ---------- step 3: add-ons + qty ---------- */
+    /* ---------- step 3: add-ons ---------- */
     $$('[data-addon]').forEach((label) => {
-      const input = label.querySelector<HTMLInputElement>('input')!;
+      const el = label as HTMLElement;
+      const input = el.querySelector<HTMLInputElement>('input')!;
       input.addEventListener('change', () => {
-        const key = (label as HTMLElement).dataset.addon!;
-        const price = Number((label as HTMLElement).dataset.addPrice);
-        label.classList.toggle('is-on', input.checked);
+        const key = el.dataset.addon!;
+        const price = Number(el.dataset.addPrice);
+        el.classList.toggle('is-on', input.checked);
         if (input.checked) state.addons[key] = price; else delete state.addons[key];
         render();
       });
     });
-    $$('[data-qty]').forEach((b) => {
-      b.addEventListener('click', () => {
-        state.guests = Math.min(14, Math.max(1, state.guests + Number((b as HTMLElement).dataset.qty)));
-        $('[data-qty-val]')!.textContent = String(state.guests);
-        render();
-      });
-    });
 
-    /* ---------- summary toggle (mobile) ---------- */
+    /* ---------- summary toggle ---------- */
     $('[data-summary-toggle]')?.addEventListener('click', () => {
-      const s = $('[data-summary]')!;
-      const open = s.classList.toggle('is-expanded');
-      $('[data-summary-toggle]')!.setAttribute('aria-expanded', String(open));
+      const s = $('[data-summary]'); if (!s) return;
+      const expanded = s.classList.toggle('is-expanded');
+      $('[data-summary-toggle]')?.setAttribute('aria-expanded', String(expanded));
     });
 
-    /* ---------- pricing render ---------- */
-    const euro = (n: number) => `€${n}`;
+    /* ---------- pricing render (single source of truth) ---------- */
+    const euro = (n: number) => `€${n.toLocaleString('en-IE')}`;
+    const ADDON_LABELS: Record<string, string> = { kit: 'Ingredient kit', wine: 'Wine pairing', gf: 'Gluten-free' };
+
     const render = () => {
-      const lines = $('[data-summary-lines]')!;
+      const lines = $('[data-summary-lines]'); if (!lines) return;
       lines.innerHTML = '';
       const add = (label: string, amount: number) => {
         const li = document.createElement('li');
-        li.innerHTML = `<span>${label}</span><span>${euro(amount)}</span>`;
+        li.innerHTML = `<span>${label}</span><span>${amount === 0 ? 'Free' : euro(amount)}</span>`;
         lines.appendChild(li);
       };
+
       let total = 0;
       if (state.experience) {
         const sub = state.basePrice * state.guests;
         total += sub;
-        add(`${state.experience === 'florence' ? 'In Florence' : 'Live Online'} × ${state.guests}`, sub);
+        const name = state.experience === 'florence' ? 'In Florence' : 'Live Online';
+        add(`${name} · €${state.basePrice} × ${state.guests} ${state.guests === 1 ? 'guest' : 'guests'}`, sub);
       }
-      for (const [k, v] of Object.entries(state.addons)) {
-        const map: Record<string, string> = { kit: 'Ingredient kit', wine: 'Wine pairing', gf: 'Gluten-free' };
-        const amt = k === 'kit' ? v : v * (k === 'wine' ? state.guests : 1);
+      // add-ons: per-guest items multiply by guests, per-order items are flat
+      $$('[data-addon]').forEach((label) => {
+        const el = label as HTMLElement;
+        const key = el.dataset.addon!;
+        if (!(key in state.addons)) return;
+        const unit = state.addons[key];
+        const amt = el.dataset.per === 'guest' ? unit * state.guests : unit;
         total += amt;
-        add(map[k], amt);
-      }
+        add(ADDON_LABELS[key] ?? key, amt);
+      });
       if (state.date) add(`📅 ${state.date}${state.time ? ' · ' + state.time : ''}`, 0);
-      $('[data-total]')!.textContent = euro(total);
+
+      const totalEl = $('[data-total]'); if (totalEl) totalEl.textContent = euro(total);
     };
 
     buildCal();
+    setGuests(MIN_GUESTS);
     goTo(1);
     render();
   };
+
   setupBooking();
   document.addEventListener('astro:after-swap', setupBooking);
 </script>
@@ -400,26 +458,61 @@
   .bk.is-open .bk__panel { transform: none; }
   @media (max-width: 560px) { .bk__panel { width: 100%; } }
 
-  .bk__top { display: flex; align-items: center; justify-content: space-between; padding: 1.2rem var(--gutter) 0.8rem; }
-  .bk__steps { display: flex; gap: 0.4rem; flex-wrap: wrap; font-size: 0.66rem; font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; }
-  .bk__step { color: var(--charcoal-soft); opacity: 0.4; transition: opacity 0.3s, color 0.3s; }
-  .bk__step.is-active { opacity: 1; color: var(--terracotta); }
-  .bk__step.is-done { opacity: 0.8; color: var(--olive); }
-  .bk__step.is-done::after { content: ' ✓'; }
+  /* ---------- header: numbered stepper ---------- */
+  .bk__top {
+    position: relative; padding: 1.3rem var(--gutter) 1.1rem;
+    border-bottom: 1px solid var(--paper-line); background: var(--flour-deep);
+  }
+  .bk__steps {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    list-style: none; margin: 0; padding: 0 1.6rem 0 0; /* room for the close button */
+  }
+  .bk__step {
+    position: relative; display: flex; flex-direction: column; align-items: center; gap: 0.45rem;
+    min-width: 0; text-align: center;
+  }
+  /* connector line running into each step from the previous one */
+  .bk__step:not(:first-child)::before {
+    content: ''; position: absolute; top: 13px; right: 50%; width: 100%; height: 2px;
+    background: var(--flour-shadow); z-index: 0; transition: background 0.35s var(--ease);
+  }
+  .bk__step.is-active::before, .bk__step.is-done::before { background: var(--olive); }
+  .bk__dot {
+    position: relative; z-index: 1; width: 28px; height: 28px; border-radius: 50%;
+    display: grid; place-items: center; background: var(--flour); color: var(--charcoal-soft);
+    border: 2px solid var(--flour-shadow); font-size: 0.78rem; font-weight: 800;
+    transition: background 0.35s var(--ease), border-color 0.35s var(--ease), color 0.35s var(--ease);
+  }
+  .bk__step.is-active .bk__dot { background: var(--terracotta); border-color: var(--terracotta); color: #fff; }
+  .bk__step.is-done .bk__dot { background: var(--olive); border-color: var(--olive); color: #fff; }
+  .bk__step.is-done .bk__num { display: none; }
+  .bk__step.is-done .bk__dot::after { content: '✓'; font-size: 0.82rem; }
+  .bk__label {
+    font-size: 0.66rem; font-weight: 800; letter-spacing: 0.03em; text-transform: uppercase;
+    color: var(--charcoal-soft); opacity: 0.6; line-height: 1.2;
+    max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    transition: opacity 0.3s, color 0.3s;
+  }
+  .bk__step.is-active .bk__label { opacity: 1; color: var(--terracotta); }
+  .bk__step.is-done .bk__label { opacity: 0.9; color: var(--olive); }
+  @media (max-width: 380px) { .bk__label { font-size: 0.58rem; } }
+
   .bk__close {
-    width: 38px; height: 38px; border-radius: 50%; background: var(--flour-deep);
-    font-size: 0.9rem; color: var(--olive); transition: background 0.3s, transform 0.3s;
+    position: absolute; top: 0.9rem; right: calc(var(--gutter) - 0.3rem);
+    width: 34px; height: 34px; border-radius: 50%; background: var(--flour);
+    font-size: 0.85rem; color: var(--olive); border: 1px solid var(--paper-line);
+    transition: background 0.3s, transform 0.3s;
   }
   .bk__close:hover { background: var(--flour-shadow); transform: rotate(90deg); }
-  .bk__progress { height: 3px; background: var(--flour-shadow); }
-  .bk__progress span { display: block; height: 100%; background: var(--terracotta); transform-origin: left; transform: scaleX(0.25); transition: transform 0.5s var(--ease); }
 
+  /* ---------- views ---------- */
   .bk__scroll { flex: 1; overflow-y: auto; padding: 1.6rem var(--gutter) 1rem; }
   .bk__view { display: none; animation: viewIn 0.5s var(--ease) both; }
   .bk__view.is-active { display: block; }
   @keyframes viewIn { from { opacity: 0; transform: translateX(18px); } to { opacity: 1; transform: none; } }
   .bk__kicker { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: var(--terracotta); }
   .bk__h { font-size: var(--step-2); color: var(--olive); margin: 0.3rem 0 1.4rem; }
+  .bk__sub { font-size: var(--step--1); color: var(--charcoal-soft); margin: -1rem 0 1.3rem; }
 
   /* choices */
   .bk__choices { display: grid; gap: 1rem; }
@@ -441,6 +534,26 @@
     opacity: 0; transform: scale(0.5); transition: 0.3s var(--ease);
   }
   .choice.is-sel .choice__check { opacity: 1; transform: none; }
+
+  /* guests (step 1) */
+  .qty {
+    display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+    margin-top: 1.3rem; padding: 1.1rem 1.2rem; background: #fff;
+    border: 1.5px solid var(--paper-line); border-radius: var(--radius);
+    animation: viewIn 0.4s var(--ease) both;
+  }
+  .qty[hidden] { display: none; }
+  .qty__info { display: flex; flex-direction: column; gap: 0.15rem; }
+  .qty__label { font-weight: 700; color: var(--olive); }
+  .qty__hint { font-size: var(--step--1); color: var(--terracotta); font-weight: 700; }
+  .qty__ctrl { display: flex; align-items: center; gap: 0.9rem; }
+  .qty__ctrl button {
+    width: 40px; height: 40px; border-radius: 50%; background: var(--flour-deep); font-size: 1.25rem;
+    color: var(--olive); transition: background 0.3s, opacity 0.3s;
+  }
+  .qty__ctrl button:hover:not(:disabled) { background: var(--yolk); }
+  .qty__ctrl button:disabled { opacity: 0.35; cursor: not-allowed; }
+  .qty__ctrl strong { font-family: var(--serif); font-size: var(--step-1); min-width: 1.6ch; text-align: center; color: var(--olive); }
 
   /* calendar */
   .cal { background: #fff; border: 1px solid var(--paper-line); border-radius: var(--radius); padding: 1.1rem; }
@@ -485,7 +598,8 @@
   .add.is-on { border-color: var(--yolk); box-shadow: var(--shadow-sm); }
   .add__t { font-weight: 700; color: var(--olive); display: block; }
   .add__d { font-size: 0.8rem; color: var(--charcoal-soft); line-height: 1.45; }
-  .add__price { font-weight: 800; color: var(--terracotta); }
+  .add__price { font-weight: 800; color: var(--terracotta); white-space: nowrap; }
+  .add__price small { font-weight: 600; color: var(--charcoal-soft); }
   .switch input { position: absolute; opacity: 0; }
   .switch__track {
     display: block; width: 46px; height: 27px; border-radius: 100px; background: var(--flour-shadow);
@@ -498,19 +612,11 @@
   .switch input:checked + .switch__track { background: var(--terracotta); }
   .switch input:checked + .switch__track::after { transform: translateX(19px); }
 
-  .qty { display: flex; align-items: center; justify-content: space-between; margin-top: 1.4rem; padding-top: 1.2rem; border-top: 1px solid var(--paper-line); }
-  .qty__label { font-weight: 700; color: var(--olive); }
-  .qty__ctrl { display: flex; align-items: center; gap: 1rem; }
-  .qty__ctrl button { width: 38px; height: 38px; border-radius: 50%; background: var(--flour-deep); font-size: 1.2rem; color: var(--olive); transition: background 0.3s; }
-  .qty__ctrl button:hover { background: var(--yolk); }
-  .qty__ctrl strong { font-family: var(--serif); font-size: var(--step-1); min-width: 1.4ch; text-align: center; }
-
   /* checkout */
   .pay { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
   .pay__wallet { padding: 1rem; border-radius: 14px; font-weight: 800; font-size: 1.05rem; transition: transform 0.3s; }
   .pay__wallet:hover { transform: translateY(-2px); }
   .pay__wallet--apple { background: #000; color: #fff; }
-  .pay__wallet--apple::before { content: ''; }
   .pay__wallet--google { background: #fff; color: #3c4043; border: 1.5px solid var(--paper-line); }
   .pay__or { text-align: center; margin: 1.3rem 0; position: relative; color: var(--charcoal-soft); font-size: var(--step--1); }
   .pay__or::before { content: ''; position: absolute; top: 50%; left: 0; right: 0; height: 1px; background: var(--paper-line); }
@@ -530,7 +636,8 @@
   .summary.is-expanded .summary__chev { transform: rotate(180deg); }
   .summary__lines { display: grid; gap: 0.4rem; max-height: 0; overflow: hidden; transition: max-height 0.4s var(--ease), margin 0.4s; }
   .summary.is-expanded .summary__lines { max-height: 320px; margin: 0.8rem 0; }
-  .summary__lines li { display: flex; justify-content: space-between; font-size: var(--step--1); color: var(--charcoal-soft); }
+  .summary__lines li { display: flex; justify-content: space-between; gap: 0.8rem; font-size: var(--step--1); color: var(--charcoal-soft); }
+  .summary__lines li span:first-child { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .summary__total { display: flex; justify-content: space-between; align-items: baseline; margin-top: 0.6rem; padding-top: 0.6rem; border-top: 1px dashed var(--paper-line); }
   .summary__total strong { font-family: var(--serif); font-size: var(--step-2); color: var(--olive); }
 

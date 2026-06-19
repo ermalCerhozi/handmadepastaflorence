@@ -41,6 +41,12 @@
               <span class="ch__tick">✓</span>
             </button>
           </div>
+
+          <!-- Ospiti qui: il prezzo non è mai una sorpresa -->
+          <div class="qty2" data-qty-block hidden>
+            <span class="qty2__info"><span class="qty2__l">Quanti ospiti?</span><span class="qty2__hint mono" data-qty-hint>—</span></span>
+            <div class="qty2__c"><button data-qty="-1" aria-label="Meno">−</button><strong data-qty-val>1</strong><button data-qty="1" aria-label="Più">+</button></div>
+          </div>
         </section>
 
         <section class="ek__view" data-view="2">
@@ -65,23 +71,20 @@
         <section class="ek__view" data-view="3">
           <p class="ek__kick mono">03 — Su misura</p>
           <h2 class="ek__h">Aggiungi un <em class="ser">tocco.</em></h2>
+          <p class="ek__optnote mono">Facoltativo — solo extra.</p>
           <div class="adds2">
-            <label class="ad" data-addon="kit" data-add-price="34" data-online-only>
+            <label class="ad" data-addon="kit" data-add-price="34" data-per="order" data-online-only>
               <span><span class="ad__t">Spedisci il kit ingredienti</span><span class="ad__d">Farina 00, semola, matterello e schede ricetta, refrigerati a casa tua.</span></span>
               <span class="ad__p">+€34</span><span class="sw"><input type="checkbox" /><span class="sw__tr"></span></span>
             </label>
-            <label class="ad" data-addon="wine" data-add-price="18">
+            <label class="ad" data-addon="wine" data-add-price="18" data-per="guest">
               <span><span class="ad__t">Abbinamento vino</span><span class="ad__d">Due calici toscani scelti per il tuo menù (in persona) o una bottiglia spedita (online).</span></span>
-              <span class="ad__p">+€18</span><span class="sw"><input type="checkbox" /><span class="sw__tr"></span></span>
+              <span class="ad__p">+€18<small>/persona</small></span><span class="sw"><input type="checkbox" /><span class="sw__tr"></span></span>
             </label>
-            <label class="ad" data-addon="gf" data-add-price="0">
+            <label class="ad" data-addon="gf" data-add-price="0" data-per="order">
               <span><span class="ad__t">Preferenza senza glutine</span><span class="ad__d">Prepariamo una miscela GF dedicata e una postazione pulita. Gratis.</span></span>
               <span class="ad__p">Gratis</span><span class="sw"><input type="checkbox" /><span class="sw__tr"></span></span>
             </label>
-          </div>
-          <div class="qty2">
-            <span class="qty2__l">Ospiti</span>
-            <div class="qty2__c"><button data-qty="-1" aria-label="Meno">−</button><strong data-qty-val>2</strong><button data-qty="1" aria-label="Più">+</button></div>
           </div>
         </section>
 
@@ -123,7 +126,8 @@
   const setupBooking = () => {
     const root = document.querySelector<HTMLElement>('[data-booking]');
     if (!root) return;
-    const state: State = { step: 1, experience: null, basePrice: 0, date: null, time: null, guests: 2, addons: {} };
+    const MIN_GUESTS = 1, MAX_GUESTS = 14;
+    const state: State = { step: 1, experience: null, basePrice: 0, date: null, time: null, guests: MIN_GUESTS, addons: {} };
     const $ = <T extends Element = HTMLElement>(s: string, r: ParentNode = root) => r.querySelector<T>(s);
     const $$ = <T extends Element = HTMLElement>(s: string, r: ParentNode = root) => Array.from(r.querySelectorAll<T>(s));
 
@@ -160,14 +164,37 @@
     });
     $('[data-prev]')?.addEventListener('click', () => goTo(state.step - 1));
 
+    const qtyBlock = $('[data-qty-block]');
+    const qtyHint = $('[data-qty-hint]');
     $$('[data-choice]').forEach((btn) => btn.addEventListener('click', () => {
       $$('[data-choice]').forEach((b) => b.classList.remove('sel'));
       btn.classList.add('sel');
       state.experience = btn.dataset.choice as 'florence'|'online';
       state.basePrice = Number(btn.dataset.price);
-      $$('[data-online-only]').forEach((a) => { (a as HTMLElement).style.display = state.experience === 'online' ? '' : 'none'; });
+      if (qtyBlock) qtyBlock.hidden = false;
+      if (qtyHint) qtyHint.textContent = `€${state.basePrice} a persona`;
+      // extra solo-online: nascondi per "in persona" e rimuovi dallo stato
+      $$('[data-online-only]').forEach((a) => {
+        const el = a as HTMLElement; const show = state.experience === 'online';
+        el.style.display = show ? '' : 'none';
+        if (!show) {
+          const key = el.dataset.addon!; const input = el.querySelector<HTMLInputElement>('input');
+          if (input?.checked) { input.checked = false; el.classList.remove('on'); }
+          delete state.addons[key];
+        }
+      });
       validate(); render();
     }));
+
+    const setGuests = (n: number) => {
+      state.guests = Math.min(MAX_GUESTS, Math.max(MIN_GUESTS, n));
+      const val = $('[data-qty-val]'); if (val) val.textContent = String(state.guests);
+      $$<HTMLButtonElement>('[data-qty]').forEach((b) => {
+        const dir = Number(b.dataset.qty);
+        b.disabled = (dir < 0 && state.guests === MIN_GUESTS) || (dir > 0 && state.guests === MAX_GUESTS);
+      });
+      render();
+    };
 
     const today = new Date(); today.setHours(0,0,0,0);
     let view = new Date(today.getFullYear(), today.getMonth(), 1);
@@ -222,24 +249,32 @@
         render();
       });
     });
-    $$('[data-qty]').forEach((b) => b.addEventListener('click', () => {
-      state.guests = Math.min(14, Math.max(1, state.guests + Number((b as HTMLElement).dataset.qty)));
-      $('[data-qty-val]')!.textContent = String(state.guests); render();
-    }));
+    $$('[data-qty]').forEach((b) => b.addEventListener('click', () => setGuests(state.guests + Number((b as HTMLElement).dataset.qty))));
 
-    const euro = (n: number) => `€${n}`;
+    const euro = (n: number) => `€${n.toLocaleString('it-IT')}`;
+    const ADDON_LABELS: Record<string,string> = { kit: 'Kit ingredienti', wine: 'Vino', gf: 'Senza glutine' };
     const render = () => {
-      const lines = $('[data-summary-lines]')!; lines.innerHTML = '';
-      const add = (l: string, a: number) => { const li = document.createElement('li'); li.innerHTML = `<span>${l}</span><span>${euro(a)}</span>`; lines.appendChild(li); };
+      const lines = $('[data-summary-lines]'); if (!lines) return;
+      lines.innerHTML = '';
+      const add = (l: string, a: number) => { const li = document.createElement('li'); li.innerHTML = `<span>${l}</span><span>${a === 0 ? 'Gratis' : euro(a)}</span>`; lines.appendChild(li); };
       let total = 0;
-      if (state.experience) { const sub = state.basePrice * state.guests; total += sub; add(`${state.experience === 'florence' ? 'In persona' : 'In diretta'} × ${state.guests}`, sub); }
-      for (const [k, v] of Object.entries(state.addons)) { const map: Record<string,string> = { kit: 'Kit ingredienti', wine: 'Vino', gf: 'Senza glutine' }; const amt = k === 'kit' ? v : v * (k === 'wine' ? state.guests : 1); total += amt; add(map[k], amt); }
+      if (state.experience) {
+        const sub = state.basePrice * state.guests; total += sub;
+        const name = state.experience === 'florence' ? 'In persona' : 'In diretta';
+        add(`${name} · €${state.basePrice} × ${state.guests} ${state.guests === 1 ? 'ospite' : 'ospiti'}`, sub);
+      }
+      $$('[data-addon]').forEach((label) => {
+        const el = label as HTMLElement; const key = el.dataset.addon!;
+        if (!(key in state.addons)) return;
+        const amt = el.dataset.per === 'guest' ? state.addons[key] * state.guests : state.addons[key];
+        total += amt; add(ADDON_LABELS[key] ?? key, amt);
+      });
       if (state.date) add(`${state.date}${state.time ? ' · ' + state.time : ''}`, 0);
       if (!lines.children.length) add('Niente ancora…', 0);
-      $('[data-total]')!.textContent = euro(total);
+      const totalEl = $('[data-total]'); if (totalEl) totalEl.textContent = euro(total);
     };
 
-    buildCal(); goTo(1); render();
+    buildCal(); setGuests(MIN_GUESTS); goTo(1); render();
   };
   setupBooking();
   document.addEventListener('astro:after-swap', setupBooking);
@@ -324,12 +359,17 @@
   .sw__tr::after { content: ''; position: absolute; top: 2px; left: 2px; width: 19px; height: 19px; background: var(--ink); transition: transform 0.25s var(--ease); }
   .sw input:checked + .sw__tr { background: var(--pomodoro); }
   .sw input:checked + .sw__tr::after { transform: translateX(21px); background: var(--cream); }
-  .qty2 { display: flex; align-items: center; justify-content: space-between; margin-top: 1.4rem; padding-top: 1.2rem; border-top: var(--rule); }
+  .qty2 { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: 1.3rem; padding: 1rem 1.2rem; background: var(--cream); border: var(--rule); box-shadow: 4px 4px 0 var(--ink); animation: vin 0.4s var(--ease) both; }
+  .qty2[hidden] { display: none; }
+  .qty2__info { display: flex; flex-direction: column; gap: 0.2rem; }
   .qty2__l { font-weight: 800; text-transform: uppercase; }
+  .qty2__hint { color: var(--pomodoro); }
   .qty2__c { display: flex; align-items: center; gap: 1rem; }
-  .qty2__c button { width: 40px; height: 40px; border: var(--rule); font-size: 1.2rem; transition: background 0.2s, color 0.2s; }
-  .qty2__c button:hover { background: var(--ink); color: var(--cream); }
+  .qty2__c button { width: 40px; height: 40px; border: var(--rule); font-size: 1.2rem; transition: background 0.2s, color 0.2s, opacity 0.2s; }
+  .qty2__c button:hover:not(:disabled) { background: var(--ink); color: var(--cream); }
+  .qty2__c button:disabled { opacity: 0.35; cursor: not-allowed; }
   .qty2__c strong { font-family: var(--serif); font-style: italic; font-size: 1.5rem; min-width: 1.4ch; text-align: center; }
+  .ek__optnote { color: var(--ink-soft); margin: -1rem 0 1.2rem; }
 
   .pay2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
   .pay2__w { padding: 1rem; border: var(--rule); font-weight: 800; font-size: 1.05rem; transition: transform 0.2s; }
