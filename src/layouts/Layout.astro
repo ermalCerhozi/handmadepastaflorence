@@ -29,35 +29,9 @@ const {
     <ClientRouter />
   </head>
   <body>
-    <!-- ===== Kneading-dough loader ===== -->
-    <div id="loader" class="loader" aria-hidden="true">
-      <div class="loader__scene">
-        <div class="loader__board">
-          <div class="loader__dough"></div>
-          <div class="loader__hand loader__hand--l"></div>
-          <div class="loader__hand loader__hand--r"></div>
-          <div class="loader__flour"></div>
-        </div>
-        <p class="loader__word">Kneading the dough<span>.</span><span>.</span><span>.</span></p>
-      </div>
-    </div>
-
     <slot />
 
     <script>
-      // Dismiss loader once the page is ready (and after a min beat for delight).
-      const dismiss = () => {
-        const l = document.getElementById('loader');
-        if (!l) return;
-        l.classList.add('loader--done');
-        window.setTimeout(() => l.remove(), 900);
-      };
-      if (document.readyState === 'complete') {
-        window.setTimeout(dismiss, 650);
-      } else {
-        window.addEventListener('load', () => window.setTimeout(dismiss, 650));
-      }
-
       // ---- Scroll reveal ----
       const setupReveal = () => {
         const els = document.querySelectorAll('[data-reveal]');
@@ -105,104 +79,6 @@ const {
     </script>
 
     <style is:global>
-      /* ============ Kneading-dough loader ============ */
-      .loader {
-        position: fixed;
-        inset: 0;
-        z-index: 10000;
-        display: grid;
-        place-items: center;
-        background:
-          radial-gradient(120% 90% at 50% 30%, #fffdf8 0%, var(--flour) 45%, var(--flour-shadow) 100%);
-        transition: opacity 0.7s var(--ease), clip-path 0.85s var(--ease);
-      }
-      .loader--done {
-        opacity: 0;
-        clip-path: inset(0 0 100% 0);
-        pointer-events: none;
-      }
-      .loader__scene { text-align: center; transform: translateY(-2vh); }
-      .loader__board {
-        position: relative;
-        width: 220px;
-        height: 120px;
-        margin: 0 auto 1.6rem;
-      }
-      /* the dough: squished and rebounded in a loop */
-      .loader__dough {
-        position: absolute;
-        left: 50%;
-        bottom: 8px;
-        width: 96px;
-        height: 60px;
-        translate: -50% 0;
-        border-radius: 50% 50% 46% 46% / 60% 60% 40% 40%;
-        background: radial-gradient(60% 60% at 40% 30%, #fff6df, var(--yolk) 120%);
-        box-shadow: inset -8px -10px 16px rgba(204, 85, 0, 0.22),
-          inset 6px 6px 12px #fffdf3;
-        transform-origin: 50% 100%;
-        animation: knead 1.5s var(--ease-soft) infinite;
-      }
-      @keyframes knead {
-        0%, 100% { transform: scaleX(1) scaleY(1); }
-        45% { transform: scaleX(1.28) scaleY(0.62); }
-        70% { transform: scaleX(0.92) scaleY(1.1); }
-      }
-      /* two hands pressing down in alternation */
-      .loader__hand {
-        position: absolute;
-        bottom: 50px;
-        width: 52px;
-        height: 40px;
-        border-radius: 40% 40% 50% 50% / 70% 70% 30% 30%;
-        background: linear-gradient(180deg, #f2cfa6, #e0a878);
-        box-shadow: inset 0 -6px 8px rgba(168, 66, 10, 0.25);
-      }
-      .loader__hand--l { left: 36px; transform-origin: bottom center; animation: pressL 1.5s var(--ease-soft) infinite; }
-      .loader__hand--r { right: 36px; transform-origin: bottom center; animation: pressR 1.5s var(--ease-soft) infinite; }
-      @keyframes pressL {
-        0%, 100% { transform: translateY(-26px) rotate(-12deg); }
-        45% { transform: translateY(0) rotate(-4deg); }
-      }
-      @keyframes pressR {
-        0%, 100% { transform: translateY(0) rotate(12deg); }
-        45% { transform: translateY(-26px) rotate(4deg); }
-      }
-      /* little flour puff */
-      .loader__flour {
-        position: absolute;
-        left: 50%;
-        bottom: 54px;
-        width: 8px;
-        height: 8px;
-        translate: -50% 0;
-        border-radius: 50%;
-        background: #fff;
-        box-shadow:
-          -18px 4px 0 -2px rgba(255,255,255,0.9),
-          16px 2px 0 -1px rgba(255,255,255,0.85),
-          -8px -8px 0 -3px rgba(255,255,255,0.8),
-          10px -10px 0 -3px rgba(255,255,255,0.75);
-        animation: puff 1.5s ease-out infinite;
-        opacity: 0;
-      }
-      @keyframes puff {
-        0%, 40% { opacity: 0; transform: translate(-50%, 0) scale(0.4); }
-        55% { opacity: 0.9; }
-        100% { opacity: 0; transform: translate(-50%, -34px) scale(1.5); }
-      }
-      .loader__word {
-        font-family: var(--serif);
-        font-style: italic;
-        font-size: var(--step-1);
-        color: var(--olive);
-        letter-spacing: 0.01em;
-      }
-      .loader__word span { animation: blink 1.4s infinite; opacity: 0; }
-      .loader__word span:nth-child(2) { animation-delay: 0.2s; }
-      .loader__word span:nth-child(3) { animation-delay: 0.4s; }
-      @keyframes blink { 0%, 100% { opacity: 0; } 50% { opacity: 1; } }
-
       /* ============ Astro View Transitions ============ */
       @keyframes pageInUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
       ::view-transition-old(root) { animation: 0.3s var(--ease) both fadeOutPage; }

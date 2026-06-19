@@ -1,23 +1,19 @@
 ---
-const reviews = [
-  { quote: 'The best three hours of our whole Italy trip. We came as four strangers on a tour and left having made tortelli we still cook at home.', name: 'Hannah & James', from: 'London, UK', src: 'Tripadvisor' },
-  { quote: 'Nonna Lucia’s grandson taught us pici by hand and roared with laughter at my first attempt. So warm, so real — not a tourist trap.', name: 'Mateo R.', from: 'Buenos Aires', src: 'Google' },
-  { quote: 'Tiny group, gorgeous kitchen, and the lunch at the end with the Chianti was unforgettable. Booked it twice in one week.', name: 'Priya K.', from: 'Toronto', src: 'Tripadvisor' },
-  { quote: 'I’m gluten-free and was nervous — they had a dedicated station ready. I made and ate fresh pasta for the first time in years.', name: 'Sofie M.', from: 'Copenhagen', src: 'Google' },
-];
-const badges = [
-  { src: 'Tripadvisor', score: '5.0', count: '1,480 reviews', mark: '◉' },
-  { src: 'Google', score: '4.9', count: '820 reviews', mark: 'G' },
-  { src: 'Overall', score: '4.97', count: '2,300+ guests', mark: '★' },
-];
+// Customer reviews — intentionally EMPTY until we start receiving real ones.
+// To populate later: add objects to `reviews` (and optionally `badges`) below.
+// The whole section reveals automatically once `reviews` has at least one entry.
+const reviews: { quote: string; name: string; from: string; src: string }[] = [];
+const badges: { src: string; score: string; count: string; mark: string }[] = [];
+const hasReviews = reviews.length > 0;
 ---
 
+{hasReviews && (
 <section class="rev" id="reviews">
   <div class="shell">
     <header class="rev__head" data-reveal>
       <div>
-        <p class="eyebrow rev__eyebrow">Loved by guests</p>
-        <h2 class="rev__title">2,300 floured hands<br />can’t be <span class="ital">wrong.</span></h2>
+        <p class="eyebrow rev__eyebrow">Kind words</p>
+        <h2 class="rev__title">Straight from<br />our <span class="ital">guests.</span></h2>
       </div>
       <div class="rev__badges">
         {badges.map((b) => (
@@ -45,6 +41,7 @@ const badges = [
     </div>
   </div>
 </section>
+)}
 
 <style>
   .rev { padding-block: clamp(4rem, 10vh, 7rem); background: var(--flour); }

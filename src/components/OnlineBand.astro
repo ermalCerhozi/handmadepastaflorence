@@ -4,9 +4,9 @@
 
 <section class="ob" id="online">
   <div class="shell ob__inner" data-reveal>
-    <div class="ob__visual" aria-hidden="true">
+    <div class="ob__visual">
       <span class="ob__live"><i></i> Live</span>
-      <span class="ob__dough"></span>
+      <img class="ob__img" src="/images/cooking-class.jpg" alt="Our Florentine kitchen, where we stream live online classes" loading="lazy" decoding="async" />
     </div>
     <div class="ob__text">
       <p class="eyebrow ob__eyebrow">Can’t make it to Florence?</p>
@@ -42,15 +42,10 @@
 
   .ob__visual {
     position: relative; aspect-ratio: 4/3; border-radius: var(--radius); overflow: hidden;
-    background: linear-gradient(135deg, #cc5500, #7a3300); display: grid; place-items: center;
+    background: linear-gradient(135deg, #cc5500, #7a3300);
   }
   @media (min-width: 720px) { .ob__visual { aspect-ratio: 1; } }
-  .ob__dough {
-    width: 56%; height: 56%; border-radius: 50%;
-    background: radial-gradient(circle at 40% 35%, #ffe9b8, #f0b400 70%, #cc5500);
-    box-shadow: inset -6px -8px 16px rgba(122,51,0,0.4); animation: obspin 14s linear infinite;
-  }
-  @keyframes obspin { to { transform: rotate(360deg); } }
+  .ob__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
   .ob__live {
     position: absolute; top: 0.7rem; left: 0.7rem; display: inline-flex; align-items: center; gap: 5px;
     background: rgba(0,0,0,0.4); color: #fff; font-size: 0.66rem; font-weight: 800; letter-spacing: 0.08em;
