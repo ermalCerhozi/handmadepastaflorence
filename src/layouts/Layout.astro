@@ -1,16 +1,22 @@
 ---
 import { ClientRouter } from 'astro:transitions';
+import Schema from '../components/Schema.astro';
 import '../styles/global.css';
 
 interface Props {
   title?: string;
   description?: string;
+  image?: string;
 }
 
 const {
   title = 'Handmade Pasta Florence — Learn pasta in a real Tuscan kitchen',
   description = 'Hand-roll fresh pasta with a Florentine nonna. Join us in person in the heart of Florence, or live online with an ingredient kit shipped to your door.',
+  image = '/images/cooking-class.jpg',
 } = Astro.props;
+
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const ogImage = new URL(image, Astro.site);
 ---
 
 <!doctype html>
@@ -21,11 +27,27 @@ const {
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+
+    <!-- Open Graph -->
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:site_name" content="Handmade Pasta Florence" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
     <meta name="theme-color" content="#2c3a29" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E%F0%9F%8D%9D%3C/text%3E%3C/svg%3E" />
+    <Schema />
     <ClientRouter />
   </head>
   <body>

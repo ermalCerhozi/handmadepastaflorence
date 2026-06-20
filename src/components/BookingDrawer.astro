@@ -193,7 +193,10 @@
       window.setTimeout(() => { root.hidden = true; }, 480);
     };
     document.querySelectorAll('[data-open-booking]').forEach((b) =>
-      b.addEventListener('click', () => open((b as HTMLElement).dataset.prefill)));
+      b.addEventListener('click', (e) => {
+        e.preventDefault(); // some triggers are <a href="#"> — don't jump to the top
+        open((b as HTMLElement).dataset.prefill);
+      }));
     $$('[data-close-booking]').forEach((b) => b.addEventListener('click', close));
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !root.hidden) close(); });
 

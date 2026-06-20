@@ -1,0 +1,26 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Page not found — Handmade Pasta Florence"
+  description="That page has wandered off the table. Head back to the kitchen."
+>
+  <main class="nf">
+    <p class="nf__emoji" aria-hidden="true">🍝</p>
+    <h1 class="nf__title">Lost in the flour</h1>
+    <p class="nf__text">That page has wandered off the table. Let’s get you back to the kitchen.</p>
+    <a href="/" class="btn btn--solid nf__btn">Back to home</a>
+  </main>
+</Layout>
+
+<style>
+  .nf {
+    min-height: 72vh; display: grid; place-content: center; justify-items: center;
+    gap: 1.1rem; text-align: center; padding: 4rem 1.5rem;
+  }
+  .nf__emoji { font-size: 3.5rem; margin: 0; }
+  .nf__title { font-family: var(--serif); font-size: var(--step-3); color: var(--olive); margin: 0; }
+  .nf__text { color: var(--charcoal-soft); max-width: 42ch; margin: 0; }
+  .nf__btn { margin-top: 0.6rem; }
+</style>

@@ -57,7 +57,7 @@ const shapes = [
       <article class="pasta" data-pasta style={`--c:${i}`}>
         <button class="pasta__face" data-pasta-toggle aria-expanded="false">
           <span class="pasta__disc">
-            <img class="pasta__img" src={s.img} alt={`Fresh ${s.name}`} loading="lazy" decoding="async" />
+            <img class="pasta__img" src={s.img} alt={`Fresh ${s.name} pasta`} width="1000" height="625" loading="lazy" decoding="async" />
           </span>
           <span class="pasta__no">{String(i + 1).padStart(2, '0')}</span>
           <h3 class="pasta__name">{s.name}</h3>

@@ -9,6 +9,9 @@ const classes = [
     price: '€95',
     meta: '3 hrs · max 8 guests · Oltrarno',
     img: '/images/cooking_class_with_guests_in_picture.webp',
+    alt: 'The Nonna Table — hands-on pasta-making class in our Florence kitchen',
+    w: 1050,
+    h: 1400,
   },
   {
     tag: 'Market + cook',
@@ -17,6 +20,9 @@ const classes = [
     price: '€145',
     meta: '5 hrs · max 6 guests · market walk',
     img: '/images/aperitivo.webp',
+    alt: 'Mercato & Mani — market tour and pasta class in Florence',
+    w: 1080,
+    h: 1440,
   },
   {
     tag: 'Private',
@@ -25,6 +31,9 @@ const classes = [
     price: 'from €680',
     meta: 'flexible · 6–14 guests · evenings',
     img: '/images/wedding-cake-2.webp',
+    alt: 'The Family Long-Table — private group pasta experience in Florence',
+    w: 1080,
+    h: 1433,
   },
 ];
 ---
@@ -46,7 +55,7 @@ const classes = [
       {classes.map((c, i) => (
         <article class="card" data-reveal style={`--reveal-delay:${i * 90}ms`}>
           <div class="card__media">
-            <img class="card__img" src={c.img} alt={c.name} loading="lazy" decoding="async" />
+            <img class="card__img" src={c.img} alt={c.alt} width={c.w} height={c.h} loading="lazy" decoding="async" />
             <span class="card__tag">{c.tag}</span>
             <span class="card__price">{c.price}</span>
           </div>
