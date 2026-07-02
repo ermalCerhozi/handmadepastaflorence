@@ -6,7 +6,7 @@ const shapes = [
     img: '/images/shape-pappardelle.jpg',
     blurb: 'Broad, velvety ribbons named from “pappare” — to gobble up.',
     history: 'Born in the Tuscan countryside to cradle rich game ragùs of wild boar and hare. The width is the point: every strand carries a spoonful of sauce.',
-    teaches: 'The Nonna Table',
+    teaches: 'The Chef’s Table',
   },
   {
     name: 'Ravioli',
@@ -22,7 +22,7 @@ const shapes = [
     img: '/images/shape-pici.jpg',
     blurb: 'Fat, hand-rolled strands — like spaghetti’s rustic cousin.',
     history: 'A poor man’s pasta of just flour and water, rolled by hand on wooden boards. No two are identical, and that irregularity is exactly why sauce clings to them.',
-    teaches: 'The Nonna Table',
+    teaches: 'The Chef’s Table',
   },
   {
     name: 'Tortelli',
@@ -167,7 +167,7 @@ const shapes = [
     display: flex; flex-direction: column; align-items: flex-start; text-align: left;
     padding: 1.6rem; gap: 0.4rem;
   }
-  .pasta:hover .pasta__face { box-shadow: var(--shadow-lg); transform: translateY(-6px); }
+  .pasta:hover .pasta__face { box-shadow: var(--shadow-lg); }
   .pasta.is-flipped .pasta__face { transform: rotateY(180deg); }
   .pasta.is-flipped .pasta__back { transform: rotateY(0); }
   .pasta__back {
@@ -200,9 +200,9 @@ const shapes = [
   .pasta__class strong { font-family: var(--serif); font-size: var(--step-0); color: var(--flour); }
   .pasta__book {
     background: var(--yolk); color: var(--olive-deep); font-weight: 800; padding: 0.8rem; border-radius: 100px;
-    transition: transform 0.3s var(--ease);
+    transition: background 0.3s var(--ease);
   }
-  .pasta__book:hover { transform: translateY(-2px); }
+  .pasta__book:hover { background: var(--yolk-deep); }
   .pasta__close { font-size: var(--step--1); color: rgba(249,246,240,0.6); text-align: center; }
   .pasta__close:hover { color: var(--yolk); }
 

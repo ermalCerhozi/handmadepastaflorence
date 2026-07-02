@@ -13,7 +13,11 @@ const localBusiness = {
   '@id': `${SITE}/#business`,
   name: 'Handmade Pasta Florence',
   description:
-    'Hands-on fresh-pasta cooking classes in Florence — in person in the Oltrarno and live online with a shipped ingredient kit.',
+    'Hands-on fresh-pasta cooking classes in Florence taught by two agriturismo head chefs — in person in the Oltrarno and live online with a shipped ingredient kit.',
+  founder: [
+    { '@type': 'Person', name: 'Endri Cerhozi', jobTitle: 'Head Chef', sameAs: 'https://endricerhozi.com' },
+    { '@type': 'Person', name: 'Marsel', jobTitle: 'Head Chef' },
+  ],
   url: SITE,
   image: `${SITE}/images/cooking-class.jpg`,
   email: 'ciao@handmadepastaflorence.com',
@@ -26,6 +30,14 @@ const localBusiness = {
     addressRegion: 'FI',
     addressCountry: 'IT',
   },
+  areaServed: [
+    { '@type': 'City', name: 'Florence' },
+    { '@type': 'Place', name: 'Tuscany, Italy' },
+  ],
+  availableLanguage: [
+    { '@type': 'Language', name: 'English' },
+    { '@type': 'Language', name: 'Italian' },
+  ],
   openingHoursSpecification: [
     {
       '@type': 'OpeningHoursSpecification',
@@ -40,14 +52,14 @@ const localBusiness = {
 // price showing in search results. Prices mirror the on-page cards.
 const classes = [
   {
-    name: 'The Nonna Table',
+    name: 'The Chef’s Table',
     desc: 'Three hands-on hours in our Oltrarno kitchen — four pasta shapes, ending in a long Tuscan lunch.',
     price: '95',
     img: '/images/cooking_class_with_guests_in_picture.webp',
   },
   {
     name: 'Mercato & Mani',
-    desc: 'Shop Sant’Ambrogio market at dawn with the chef, then cook ravioli, a ragù and a seasonal dolce.',
+    desc: 'Shop Sant’Ambrogio market at dawn with Endri or Marsel, then cook ravioli, a ragù and a seasonal dolce.',
     price: '145',
     img: '/images/aperitivo.webp',
   },
