@@ -15,10 +15,9 @@ Built with [Astro](https://astro.build).
 ```
 src/
   components/    Page sections (Hero, Experiences, Reviews, Gallery, Booking, …)
-    v2/          Alternate "edizione" component set
-  layouts/       Layout.astro, Edizione.astro
-  pages/         index.astro (home), edition.astro
-  styles/        global.css, edizione.css
+  layouts/       Layout.astro
+  pages/         index.astro (home), 404.astro
+  styles/        global.css
 public/images/   Photos and pasta-shape assets
 ```
 

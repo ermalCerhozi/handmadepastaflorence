@@ -44,12 +44,10 @@ sameAs: [
 ],
 ```
 
-### R4. Decide what to do with `/edizione`
-Right now it's `noindex, follow` with a canonical to the home page (safe interim — it won't
-hurt SEO, but it's still built and reachable). Pick one:
-- **Delete it** — remove `src/pages/edizione.astro` (and the `src/components/v2/` set + `src/layouts/Edizione.astro` + `src/styles/edizione.css` if unused). Cleanest if it was a prototype.
-- **Keep it noindexed** — do nothing; it stays live but invisible to search.
-- **Make it a real page** — if it's meant to be an alternate edition, fix `lang="en"`→`it`, remove the false **"fatta a mano dal 1978"** (contradicts "est. 2026"), add OG tags, and remove the noindex.
+### R4. Decide what to do with `/edizione` — ✅ Resolved (July 2026): deleted
+The design variant was an orphaned prototype (no internal links, fake "dal 1978" heritage).
+Removed `src/pages/edition.astro`, `src/components/v2/`, `src/layouts/Edizione.astro`,
+`src/styles/edizione.css`, and the sitemap filter in `astro.config.mjs`.
 
 ---
 
