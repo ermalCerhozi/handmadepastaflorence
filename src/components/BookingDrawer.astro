@@ -623,22 +623,25 @@
   .cal__dow, .cal__grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 3px; }
   .cal__dow { margin-bottom: 3px; }
   .cal__dow span { text-align: center; font-size: 0.6rem; font-weight: 800; color: var(--charcoal-soft); }
-  .cal__day {
+  /* Day cells are created with document.createElement, so they never receive
+     Astro's scoped-style attribute — these rules must be :global to apply. */
+  .cal__grid :global(.cal__day) {
     aspect-ratio: 1; border-radius: 8px; font-weight: 600; font-size: 0.76rem; color: var(--charcoal);
     transition: background 0.2s, color 0.2s, transform 0.2s;
   }
-  .cal__day:not(.is-off):hover { background: var(--yolk); transform: scale(1.08); }
-  .cal__day.is-off { color: var(--charcoal-soft); opacity: 0.32; cursor: not-allowed; text-decoration: line-through; }
-  .cal__day.is-sel { background: var(--olive); color: var(--flour); }
+  .cal__grid :global(.cal__day:not(.is-off):hover) { background: var(--yolk); transform: scale(1.08); }
+  .cal__grid :global(.cal__day.is-off) { color: var(--charcoal-soft); opacity: 0.32; cursor: not-allowed; text-decoration: line-through; }
+  .cal__grid :global(.cal__day.is-sel) { background: var(--olive); color: var(--flour); }
 
   .slots { margin-top: 1rem; }
   .slots__label { font-weight: 700; font-size: 0.85rem; color: var(--olive); margin-bottom: 0.5rem; }
   .slots__row { display: flex; gap: 0.5rem; flex-wrap: wrap; }
-  .slot { padding: 0.5rem 1rem; border-radius: 100px; background: #fff; border: 1.5px solid var(--paper-line); font-weight: 700; font-size: 0.85rem; transition: 0.25s var(--ease); }
-  .slot:hover { border-color: var(--terracotta); }
-  .slot.is-sel { background: var(--terracotta); color: #fff; border-color: var(--terracotta); }
-  .slot.is-off { opacity: 0.35; text-decoration: line-through; cursor: not-allowed; }
-  .slot.is-off:hover { border-color: var(--paper-line); }
+  /* Slot buttons are also dynamically created — see note on .cal__day above. */
+  .slots__row :global(.slot) { padding: 0.5rem 1rem; border-radius: 100px; background: #fff; border: 1.5px solid var(--paper-line); font-weight: 700; font-size: 0.85rem; transition: 0.25s var(--ease); }
+  .slots__row :global(.slot:hover) { border-color: var(--terracotta); }
+  .slots__row :global(.slot.is-sel) { background: var(--terracotta); color: #fff; border-color: var(--terracotta); }
+  .slots__row :global(.slot.is-off) { opacity: 0.35; text-decoration: line-through; cursor: not-allowed; }
+  .slots__row :global(.slot.is-off:hover) { border-color: var(--paper-line); }
   .tz {
     margin-top: 0.9rem; display: flex; align-items: center; gap: 0.8rem; flex-wrap: wrap;
     background: rgba(255,199,44,0.14); border: 1px solid rgba(240,180,0,0.35);
@@ -680,8 +683,9 @@
     color: var(--charcoal-soft);
   }
   .summary__lines { display: grid; gap: 0.25rem; margin: 0.5rem 0; }
-  .summary__lines li { display: flex; justify-content: space-between; gap: 0.8rem; font-size: 0.78rem; color: var(--charcoal-soft); }
-  .summary__lines li span:first-child { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  /* Summary lines are rendered dynamically — :global needed, same as .cal__day. */
+  .summary__lines :global(li) { display: flex; justify-content: space-between; gap: 0.8rem; font-size: 0.78rem; color: var(--charcoal-soft); }
+  .summary__lines :global(li span:first-child) { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .summary__total { display: flex; justify-content: space-between; align-items: baseline; margin-top: 0.4rem; padding-top: 0.45rem; border-top: 1px dashed var(--paper-line); }
   .summary__total span { font-size: 0.85rem; }
   .summary__total strong { font-family: var(--serif); font-size: var(--step-1); color: var(--olive); }
