@@ -6,8 +6,8 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   site: 'https://handmadepastaflorence.com',
   integrations: [
-    // /edizione is an unindexed design variant — keep it out of the sitemap.
-    sitemap({ filter: (page) => !page.includes('/edizione') }),
+    // /edition is an unindexed design variant — keep it out of the sitemap.
+    sitemap({ filter: (page) => !page.includes('/edition') }),
   ],
   devToolbar: { enabled: false },
 });

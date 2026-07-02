@@ -17,7 +17,7 @@ src/
   components/    Page sections (Hero, Experiences, Reviews, Gallery, Booking, …)
     v2/          Alternate "edizione" component set
   layouts/       Layout.astro, Edizione.astro
-  pages/         index.astro (home), edizione.astro
+  pages/         index.astro (home), edition.astro
   styles/        global.css, edizione.css
 public/images/   Photos and pasta-shape assets
 ```
