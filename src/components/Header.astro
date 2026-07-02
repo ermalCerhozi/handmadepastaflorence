@@ -80,7 +80,7 @@
   .hdr__nav a:hover::after { right: 0; }
 
   .hdr__cta {
-    display: inline-flex; align-items: center; gap: 0.5rem;
+    display: none; align-items: center; gap: 0.5rem;
     background: var(--yolk); color: var(--olive-deep);
     font-weight: 700; font-size: var(--step--1);
     padding: 0.7rem 1.2rem; border-radius: 100px;
@@ -93,5 +93,6 @@
 
   @media (min-width: 900px) {
     .hdr__nav { display: flex; }
+    .hdr__cta { display: inline-flex; }
   }
 </style>

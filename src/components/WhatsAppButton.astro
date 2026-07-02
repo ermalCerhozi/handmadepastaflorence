@@ -26,10 +26,11 @@ const href =
 <style>
   .wa-group {
     position: fixed;
-    bottom: 1.5rem;
+    bottom: calc(1.5rem + var(--fab-clearance, 0px));
     right: 1.5rem;
     z-index: 50;
     display: inline-flex;
+    transition: bottom 0.45s ease;
   }
 
   .wa-button {

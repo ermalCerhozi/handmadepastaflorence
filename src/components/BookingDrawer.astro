@@ -416,8 +416,8 @@
       if (state.experience) {
         const sub = state.basePrice * state.guests;
         total += sub;
-        const name = state.experience === 'florence' ? 'In-Person · Florence' : 'Live Online';
-        details.push(`Experience: ${name} (€${state.basePrice}/person)`);
+        const name = state.experience === 'florence' ? 'In-Person, Florence' : 'Live Online';
+        details.push(`Class: ${name} (€${state.basePrice} per person)`);
         details.push(`Guests: ${state.guests}`);
       }
       if (state.date) details.push(`Date & time: ${state.date}${state.time ? ' · ' + state.time : ''}`);
@@ -435,20 +435,14 @@
       if (addonText.length) details.push(`Add-ons: ${addonText.join(', ')}`);
       details.push(`Estimated total: ${euro(total)}`);
 
-      const subjectExp = state.experience === 'florence' ? 'In-Person · Florence'
-        : state.experience === 'online' ? 'Live Online' : '';
       const message = [
-        'Hello Handmade Pasta Florence! 👋',
-        '',
-        `I'd like to request a booking${subjectExp ? ' — ' + subjectExp : ''}.`,
+        'Hi, I would like to book a pasta class.',
         '',
         ...details,
         '',
-        '— Please confirm availability —',
-        'Name:',
         'Notes (allergies, occasion, etc.):',
         '',
-        'Grazie!',
+        'Please confirm availability. Thank you!',
       ].join('\n');
 
       const url = 'https://wa.me/' + WHATSAPP_NUMBER

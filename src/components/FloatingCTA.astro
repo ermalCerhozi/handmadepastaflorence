@@ -26,7 +26,11 @@
     // Show the pill once the hero scrolls away, but hide it again at the footer
     // (which has its own booking CTA) so it never covers the footer content.
     let pastHero = false, atFooter = false;
-    const update = () => fab.classList.toggle('is-show', pastHero && !atFooter);
+    const update = () => {
+      const show = pastHero && !atFooter;
+      fab.classList.toggle('is-show', show);
+      document.documentElement.style.setProperty('--fab-clearance', show ? '4.5rem' : '0px');
+    };
     new IntersectionObserver(
       ([e]) => { pastHero = !e.isIntersecting; update(); },
       { threshold: 0.15 }
