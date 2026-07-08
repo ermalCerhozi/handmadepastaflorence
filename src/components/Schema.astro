@@ -99,7 +99,7 @@ const products = classes.map((c) => ({
   },
 }));
 
-const isHome = Astro.url.pathname === '/';
+const isHome = Astro.url.pathname === '/' || Astro.url.pathname === '/it/';
 ---
 
 <script type="application/ld+json" set:html={JSON.stringify(localBusiness)} />

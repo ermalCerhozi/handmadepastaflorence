@@ -1,0 +1,113 @@
+---
+// Landing page for "market tour and cooking class florence" (Mercato & Mani) - Italian.
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import ClassLanding from '../../components/ClassLanding.astro';
+import Footer from '../../components/Footer.astro';
+import FloatingCTA from '../../components/FloatingCTA.astro';
+import BookingDrawer from '../../components/BookingDrawer.astro';
+---
+
+<Layout
+  title="Tour del Mercato e Corso di Cucina a Firenze — Mercato & Mani (€145) | Handmade Pasta Florence"
+  description="Fai la spesa al mercato di Sant'Ambrogio con uno chef toscano, poi trasforma il cesto in ravioli, ragù e un dolce di stagione nella nostra cucina in Oltrarno. Circa 5 ore, max 6 ospiti, €145 a persona."
+  image="/images/aperitivo.webp"
+>
+  <Header solid />
+  <main>
+    <ClassLanding
+      eyebrow="Mercato & Mani · Sant’Ambrogio + Oltrarno"
+      heading="Tour del mercato & corso di cucina"
+      headingItal="a Firenze."
+      lede="Inizia la giornata come fanno i nostri chef: al mercato di Sant'Ambrogio, assaggiando e scegliendo ciò che sembra migliore. Poi porta il cesto nella nostra cucina in Oltrarno e trasformalo in ravioli, un ragù a lenta cottura e un dolce di stagione — e sediamoci a mangiare tutto insieme."
+      image={{
+        src: '/images/aperitivo.webp',
+        alt: 'Prodotti freschi del mercato e aperitivo prima del corso di cucina Mercato & Mani a Firenze',
+        w: 1080,
+        h: 1440,
+      }}
+      price="€145"
+      priceNote="a persona"
+      facts={[
+        { label: 'Durata', value: 'circa 5 ore' },
+        { label: 'Dimensione gruppo', value: 'max 6 ospiti' },
+        { label: 'Inizio', value: 'mattina, con il mercato' },
+        { label: 'Mercato', value: 'Sant’Ambrogio' },
+        { label: 'Cucina', value: 'Oltrarno, vicino a Santo Spirito' },
+        { label: 'Lingua', value: 'Inglese o Italiano' },
+      ]}
+      sections={[
+        {
+          title: 'Prima di tutto, il mercato',
+          paras: [
+            'Sant’Ambrogio è il mercato dove i fiorentini fanno davvero la spesa — più piccolo e tranquillo del Mercato Centrale, e pieno dei banchi da cui comprano i nostri chef. Ci camminerai con Endri o Marsel, imparerai cosa cercare nei prodotti di questa settimana e costruirai il menù in base a ciò che è buono oggi. Nessuna lista della spesa fissa: decide la stagione.',
+          ],
+        },
+        {
+          title: 'Poi, la cucina',
+          paras: [
+            'Tornati in Oltrarno, il cesto diventa pranzo. Preparerai l\'impasto fresco all\'uovo e lo piegherai nei ravioli, inizierai un ragù e lo lascerai cuocere mentre cucini, per finire con un dolce di stagione. Con mai più di sei ospiti, questa è la cosa più vicina che offriamo al cucinare fianco a fianco con uno chef a casa sua.',
+            'Come ogni corso che teniamo, finisce a tavola: la tua pasta, il tuo ragù, il tuo dolce e un bicchiere di vino locale.',
+          ],
+        },
+        {
+          title: 'Buono a sapersi',
+          paras: [],
+          list: [
+            'Questo è il nostro corso più lungo e con il gruppo più piccolo — si prenota per primo.',
+            'Opzioni senza glutine e per allergie senza costi aggiuntivi — comunicacelo quando prenoti.',
+            'Scarpe comode aiutano: la passeggiata al mercato è parte del divertimento.',
+            'Poco tempo a disposizione? Il corso di 3 ore <a href="/it/corso-pasta-fresca-firenze/">Il Tavolo dello Chef</a> salta il mercato e va dritto alla farina.',
+          ],
+        },
+      ]}
+      faqs={[
+        {
+          q: 'In cosa differisce dal corso Il Tavolo dello Chef?',
+          a: 'Mercato & Mani è più lungo (circa 5 ore contro 3), inizia con la passeggiata al mercato di Sant\'Ambrogio, e il menù è costruito su ciò che trovi — ravioli, un ragù e un dolce di stagione. È anche più intimo: max 6 ospiti invece di 8.',
+        },
+        {
+          q: 'Cosa cucineremo?',
+          a: 'Ravioli freschi, un ragù a lenta cottura e un dolce di stagione, costruiti attorno a ciò che sembra migliore al mercato di Sant\'Ambrogio quella mattina. Poi ci sediamo tutti insieme a mangiarlo, con un bicchiere di vino locale.',
+        },
+        {
+          q: 'Potete soddisfare diete senza glutine o allergie?',
+          a: 'Sì — possiamo preparare una miscela dedicata di farine senza glutine e una postazione pulita senza costi aggiuntivi. Devi solo segnalarci eventuali allergie al momento della prenotazione.',
+        },
+        {
+          q: 'Come posso prenotare e pagare?',
+          a: 'Usa il pulsante "Prenota questo corso" per creare la tua richiesta. Si apre una chat di WhatsApp con i dettagli precompilati, noi confermeremo la disponibilità e ti guideremo nel resto.',
+        },
+      ]}
+      related={[
+        {
+          title: 'Il Tavolo dello Chef',
+          href: '/it/corso-pasta-fresca-firenze/',
+          desc: 'Il nostro corso di pasta di 3 ore — quattro formati, un lungo pranzo. €95.',
+        },
+        {
+          title: 'Il Lungo Tavolo di Famiglia',
+          href: '/it/corso-cucina-privato-firenze/',
+          desc: 'L\'intera cucina, privata per voi. Compleanni, proposte, ritrovi — da €680.',
+        },
+        {
+          title: 'Corso in Diretta Online',
+          href: '/it/corso-pasta-online/',
+          desc: 'Cucina con noi da ovunque, in diretta da questa stessa cucina — da €68.',
+        },
+      ]}
+      ctaLabel="Prenota questo corso"
+      prefill="florence"
+      breadcrumbName="Tour del Mercato & Corso"
+      product={{
+        name: 'Mercato & Mani — Tour del Mercato & Corso di Cucina a Firenze',
+        description:
+          'Un\'esperienza enogastronomica a Firenze di 5 ore: fai la spesa al mercato di Sant\'Ambrogio con uno chef di un agriturismo toscano, poi cucina ravioli, un ragù e un dolce di stagione nella nostra cucina in Oltrarno. Max 6 ospiti.',
+        price: '145',
+      }}
+    />
+  </main>
+  <Footer />
+  <FloatingCTA />
+  <BookingDrawer />
+</Layout>

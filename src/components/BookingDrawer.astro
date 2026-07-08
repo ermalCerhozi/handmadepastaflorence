@@ -5,26 +5,27 @@
 // The final step sends the request by opening a prefilled WhatsApp chat.
 // Pricing is always tied to a visible guest count, so the total can never appear
 // "out of nowhere" — it updates the moment an experience and guest count are chosen.
+const lang = Astro.currentLocale || 'en';
 ---
 
 <div class="bk" data-booking hidden>
   <div class="bk__scrim" data-close-booking></div>
 
-  <aside class="bk__panel" role="dialog" aria-modal="true" aria-label="Book a pasta class">
+  <aside class="bk__panel" role="dialog" aria-modal="true" aria-label={lang === 'it' ? 'Prenota un corso di pasta' : 'Book a pasta class'}>
     <!-- Header: numbered stepper + close -->
     <header class="bk__top">
       <ol class="bk__steps" data-steps>
         <li class="bk__step is-active" data-step-dot="1">
           <span class="bk__dot"><i class="bk__num">1</i></span>
-          <span class="bk__label">Experience</span>
+          <span class="bk__label">{lang === 'it' ? 'Esperienza' : 'Experience'}</span>
         </li>
         <li class="bk__step" data-step-dot="2">
           <span class="bk__dot"><i class="bk__num">2</i></span>
-          <span class="bk__label">Date &amp; time</span>
+          <span class="bk__label">{lang === 'it' ? 'Data e ora' : 'Date & time'}</span>
         </li>
         <li class="bk__step" data-step-dot="3">
           <span class="bk__dot"><i class="bk__num">3</i></span>
-          <span class="bk__label">Customize</span>
+          <span class="bk__label">{lang === 'it' ? 'Personalizza' : 'Customize'}</span>
         </li>
       </ol>
       <button class="bk__close" data-close-booking aria-label="Close booking">✕</button>
@@ -33,21 +34,21 @@
     <div class="bk__scroll">
       <!-- ===== Step 1: experience + guests ===== -->
       <section class="bk__view is-active" data-view="1">
-        <p class="bk__kicker">Step 1</p>
-        <h2 class="bk__h">Choose your experience</h2>
+        <p class="bk__kicker">{lang === 'it' ? 'Passo 1' : 'Step 1'}</p>
+        <h2 class="bk__h">{lang === 'it' ? 'Scegli la tua esperienza' : 'Choose your experience'}</h2>
         <div class="bk__choices">
           <button class="choice" data-choice="florence" data-price="95">
             <span class="choice__emoji">🍝</span>
-            <span class="choice__t">In-Person · Florence</span>
-            <span class="choice__d">Three hands-on hours in our Oltrarno kitchen, ending in a long lunch.</span>
-            <span class="choice__p">€95<small>/person</small></span>
+            <span class="choice__t">{lang === 'it' ? 'In presenza · Firenze' : 'In-Person · Florence'}</span>
+            <span class="choice__d">{lang === 'it' ? 'Tre ore pratiche nella nostra cucina in Oltrarno, che terminano in un lungo pranzo.' : 'Three hands-on hours in our Oltrarno kitchen, ending in a long lunch.'}</span>
+            <span class="choice__p">€95<small>/{lang === 'it' ? 'persona' : 'person'}</small></span>
             <span class="choice__check" aria-hidden="true">✓</span>
           </button>
           <button class="choice" data-choice="online" data-price="68">
             <span class="choice__emoji">💻</span>
-            <span class="choice__t">Live Online</span>
-            <span class="choice__d">Cook live from anywhere with a kit shipped to your door.</span>
-            <span class="choice__p">€68<small>/person</small></span>
+            <span class="choice__t">{lang === 'it' ? 'In diretta online' : 'Live Online'}</span>
+            <span class="choice__d">{lang === 'it' ? 'Cucina in diretta da ovunque con un kit spedito a casa tua.' : 'Cook live from anywhere with a kit shipped to your door.'}</span>
+            <span class="choice__p">€68<small>/{lang === 'it' ? 'persona' : 'person'}</small></span>
             <span class="choice__check" aria-hidden="true">✓</span>
           </button>
         </div>
@@ -55,7 +56,7 @@
         <!-- Guests live here so the price is never a surprise -->
         <div class="qty" data-qty-block hidden>
           <div class="qty__info">
-            <span class="qty__label">How many guests?</span>
+            <span class="qty__label">{lang === 'it' ? 'Quanti ospiti?' : 'How many guests?'}</span>
             <span class="qty__hint" data-qty-hint>—</span>
           </div>
           <div class="qty__ctrl">
@@ -68,8 +69,8 @@
 
       <!-- ===== Step 2: date & time ===== -->
       <section class="bk__view" data-view="2">
-        <p class="bk__kicker">Step 2</p>
-        <h2 class="bk__h">Pick a date &amp; time</h2>
+        <p class="bk__kicker">{lang === 'it' ? 'Passo 2' : 'Step 2'}</p>
+        <h2 class="bk__h">{lang === 'it' ? 'Scegli data e ora' : 'Pick a date & time'}</h2>
 
         <div class="cal">
           <div class="cal__bar">
@@ -77,49 +78,49 @@
             <strong data-cal-label>—</strong>
             <button class="cal__nav" data-cal-next aria-label="Next month">→</button>
           </div>
-          <div class="cal__dow"><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span></div>
+          <div class="cal__dow"><span>L</span><span>M</span><span>M</span><span>G</span><span>V</span><span>S</span><span>D</span></div>
           <div class="cal__grid" data-cal-grid></div>
         </div>
 
         <div class="slots" data-slots hidden>
-          <p class="slots__label">Available times <span data-slot-date></span></p>
+          <p class="slots__label">{lang === 'it' ? 'Orari disponibili' : 'Available times'} <span data-slot-date></span></p>
           <div class="slots__row" data-slot-row></div>
           <div class="tz" data-tz hidden>
-            <span class="tz__row"><i>🇮🇹 Florence</i><b data-tz-florence>—</b></span>
+            <span class="tz__row"><i>🇮🇹 {lang === 'it' ? 'Firenze' : 'Florence'}</i><b data-tz-florence>—</b></span>
             <span class="tz__arrow">→</span>
-            <span class="tz__row"><i data-tz-name>Your time</i><b data-tz-local>—</b></span>
+            <span class="tz__row"><i data-tz-name>{lang === 'it' ? 'La tua ora' : 'Your time'}</i><b data-tz-local>—</b></span>
           </div>
         </div>
       </section>
 
       <!-- ===== Step 3: add-ons ===== -->
       <section class="bk__view" data-view="3">
-        <p class="bk__kicker">Step 3</p>
-        <h2 class="bk__h">Make it yours</h2>
-        <p class="bk__sub">Optional. Everything here is add-on only.</p>
+        <p class="bk__kicker">{lang === 'it' ? 'Passo 3' : 'Step 3'}</p>
+        <h2 class="bk__h">{lang === 'it' ? 'Fallo tuo' : 'Make it yours'}</h2>
+        <p class="bk__sub">{lang === 'it' ? 'Opzionale. Tutto qui è solo aggiuntivo.' : 'Optional. Everything here is add-on only.'}</p>
         <div class="adds">
           <label class="add" data-addon="kit" data-add-price="34" data-per="order" data-online-only>
             <span class="add__main">
-              <span class="add__t">Ship me the ingredient kit</span>
-              <span class="add__d">00 flour, semola, rolling pin &amp; recipe cards, chilled to your door.</span>
+              <span class="add__t">{lang === 'it' ? 'Spediscimi il kit ingredienti' : 'Ship me the ingredient kit'}</span>
+              <span class="add__d">{lang === 'it' ? 'Farina 00, semola, mattarello e schede ricette, refrigerati a casa tua.' : '00 flour, semola, rolling pin & recipe cards, chilled to your door.'}</span>
             </span>
             <span class="add__price">+€34</span>
             <span class="switch"><input type="checkbox" /><span class="switch__track"></span></span>
           </label>
           <label class="add" data-addon="wine" data-add-price="18" data-per="guest">
             <span class="add__main">
-              <span class="add__t">Add a wine pairing</span>
-              <span class="add__d">Two Tuscan pours chosen to match your menu (in-person) or a bottle shipped (online).</span>
+              <span class="add__t">{lang === 'it' ? 'Aggiungi abbinamento vini' : 'Add a wine pairing'}</span>
+              <span class="add__d">{lang === 'it' ? 'Due calici toscani scelti per il tuo menù (in presenza) o una bottiglia spedita (online).' : 'Two Tuscan pours chosen to match your menu (in-person) or a bottle shipped (online).'}</span>
             </span>
-            <span class="add__price">+€18<small>/person</small></span>
+            <span class="add__price">+€18<small>/{lang === 'it' ? 'persona' : 'person'}</small></span>
             <span class="switch"><input type="checkbox" /><span class="switch__track"></span></span>
           </label>
           <label class="add" data-addon="gf" data-add-price="0" data-per="order">
             <span class="add__main">
-              <span class="add__t">Gluten-free preference</span>
-              <span class="add__d">We’ll prep a dedicated GF flour blend and a clean station. No charge.</span>
+              <span class="add__t">{lang === 'it' ? 'Preferenza senza glutine' : 'Gluten-free preference'}</span>
+              <span class="add__d">{lang === 'it' ? 'Prepareremo una miscela GF dedicata e una postazione pulita. Gratuito.' : 'We’ll prep a dedicated GF flour blend and a clean station. No charge.'}</span>
             </span>
-            <span class="add__price">Free</span>
+            <span class="add__price">{lang === 'it' ? 'Gratis' : 'Free'}</span>
             <span class="switch"><input type="checkbox" /><span class="switch__track"></span></span>
           </label>
         </div>
@@ -129,16 +130,16 @@
     <!-- ===== Sticky order summary + nav ===== -->
     <footer class="bk__bottom">
       <div class="summary">
-        <p class="summary__title">Order summary</p>
+        <p class="summary__title">{lang === 'it' ? 'Riepilogo ordine' : 'Order summary'}</p>
         <ul class="summary__lines" data-summary-lines></ul>
         <div class="summary__total">
-          <span>Total</span>
+          <span>{lang === 'it' ? 'Totale' : 'Total'}</span>
           <strong data-total>€0</strong>
         </div>
       </div>
       <div class="bk__actions">
-        <button class="bk__back" data-prev hidden>Back</button>
-        <button class="bk__next" data-next disabled>Continue</button>
+        <button class="bk__back" data-prev hidden>{lang === 'it' ? 'Indietro' : 'Back'}</button>
+        <button class="bk__next" data-next disabled>{lang === 'it' ? 'Continua' : 'Continue'}</button>
       </div>
     </footer>
   </aside>
@@ -216,10 +217,11 @@
       if (back) back.hidden = state.step === 1;
       const next = $<HTMLButtonElement>('[data-next]');
       if (next) {
+        const lang = document.documentElement.lang || 'en';
         next.classList.toggle('bk__next--wa', state.step === 3);
         next.innerHTML = state.step === 3
-          ? `${WHATSAPP_ICON}<span>Send request</span>`
-          : 'Continue';
+          ? `${WHATSAPP_ICON}<span>${lang === 'it' ? 'Invia richiesta' : 'Send request'}</span>`
+          : lang === 'it' ? 'Continua' : 'Continue';
       }
       const scroll = $('.bk__scroll');
       if (scroll) scroll.scrollTop = 0;
@@ -254,8 +256,9 @@
         state.basePrice = Number(btn.dataset.price);
 
         // reveal the guest control + show per-person price
+        const lang = document.documentElement.lang || 'en';
         if (qtyBlock) qtyBlock.hidden = false;
-        if (qtyHint) qtyHint.textContent = `€${state.basePrice} per person`;
+        if (qtyHint) qtyHint.textContent = `€${state.basePrice} ${lang === 'it' ? 'a persona' : 'per person'}`;
 
         // online-only add-ons: hide for in-person AND drop them from state if active
         $$('[data-online-only]').forEach((a) => {
@@ -291,7 +294,11 @@
     /* ---------- step 2: calendar ---------- */
     const today = new Date(); today.setHours(0, 0, 0, 0);
     let view = new Date(today.getFullYear(), today.getMonth(), 1);
-    const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+    const getMonths = () => {
+      const lang = document.documentElement.lang || 'en';
+      if (lang === 'it') return ['Gennaio','Febbraio','Marzo','Aprile','Maggio','Giugno','Luglio','Agosto','Settembre','Ottobre','Novembre','Dicembre'];
+      return ['January','February','March','April','May','June','July','August','September','October','November','December'];
+    };
 
     // Class times are Florence (Europe/Rome) wall-clock times.
     const FL_TIMES = ['10:00', '14:30', '18:00'];
@@ -319,6 +326,7 @@
     const buildCal = () => {
       const grid = $('[data-cal-grid]'); const label = $('[data-cal-label]');
       if (!grid || !label) return;
+      const MONTHS = getMonths();
       label.textContent = `${MONTHS[view.getMonth()]} ${view.getFullYear()}`;
       grid.innerHTML = '';
       const first = new Date(view.getFullYear(), view.getMonth(), 1);
@@ -411,18 +419,20 @@
 
     /* ---------- send request → open a prefilled WhatsApp chat ---------- */
     const sendRequest = () => {
+      const lang = document.documentElement.lang || 'en';
       const details: string[] = [];
       let total = 0;
       if (state.experience) {
         const sub = state.basePrice * state.guests;
         total += sub;
-        const name = state.experience === 'florence' ? 'In-Person, Florence' : 'Live Online';
-        details.push(`Class: ${name} (€${state.basePrice} per person)`);
-        details.push(`Guests: ${state.guests}`);
+        const name = state.experience === 'florence' ? (lang === 'it' ? 'In presenza, Firenze' : 'In-Person, Florence') : (lang === 'it' ? 'In diretta online' : 'Live Online');
+        details.push(`${lang === 'it' ? 'Corso' : 'Class'}: ${name} (€${state.basePrice} ${lang === 'it' ? 'a persona' : 'per person'})`);
+        details.push(`${lang === 'it' ? 'Ospiti' : 'Guests'}: ${state.guests}`);
       }
-      if (state.date) details.push(`Date & time: ${state.date}${state.time ? ' · ' + state.time : ''}`);
+      if (state.date) details.push(`${lang === 'it' ? 'Data e ora' : 'Date & time'}: ${state.date}${state.time ? ' · ' + state.time : ''}`);
 
       const addonText: string[] = [];
+      const ADDON_LABELS_IT: Record<string, string> = { kit: 'Kit ingredienti', wine: 'Abbinamento vini', gf: 'Senza glutine' };
       $$('[data-addon]').forEach((label) => {
         const el = label as HTMLElement;
         const key = el.dataset.addon!;
@@ -430,12 +440,21 @@
         const unit = state.addons[key];
         const amt = el.dataset.per === 'guest' ? unit * state.guests : unit;
         total += amt;
-        addonText.push(`${ADDON_LABELS[key] ?? key}${amt === 0 ? ' (free)' : ' (+' + euro(amt) + ')'}`);
+        const lbl = lang === 'it' ? (ADDON_LABELS_IT[key] ?? key) : (ADDON_LABELS[key] ?? key);
+        addonText.push(`${lbl}${amt === 0 ? (lang === 'it' ? ' (gratis)' : ' (free)') : ' (+' + euro(amt) + ')'}`);
       });
-      if (addonText.length) details.push(`Add-ons: ${addonText.join(', ')}`);
-      details.push(`Estimated total: ${euro(total)}`);
+      if (addonText.length) details.push(`${lang === 'it' ? 'Aggiunte' : 'Add-ons'}: ${addonText.join(', ')}`);
+      details.push(`${lang === 'it' ? 'Totale stimato' : 'Estimated total'}: ${euro(total)}`);
 
-      const message = [
+      const messageIt = [
+        'Ciao, vorrei prenotare un corso di pasta.',
+        '',
+        ...details,
+        '',
+        'Per favore, confermate la disponibilità. Grazie!',
+      ].join('\n');
+
+      const messageEn = [
         'Hi, I would like to book a pasta class.',
         '',
         ...details,
@@ -443,17 +462,21 @@
         'Please confirm availability. Thank you!',
       ].join('\n');
 
+      const message = lang === 'it' ? messageIt : messageEn;
+
       const url = 'https://wa.me/' + WHATSAPP_NUMBER
         + '?text=' + encodeURIComponent(message);
       window.open(url, '_blank', 'noopener');
     };
 
     const render = () => {
+      const lang = document.documentElement.lang || 'en';
+      const ADDON_LABELS_IT: Record<string, string> = { kit: 'Kit ingredienti', wine: 'Abbinamento vini', gf: 'Senza glutine' };
       const lines = $('[data-summary-lines]'); if (!lines) return;
       lines.innerHTML = '';
       const add = (label: string, amount: number) => {
         const li = document.createElement('li');
-        li.innerHTML = `<span>${label}</span><span>${amount === 0 ? 'Free' : euro(amount)}</span>`;
+        li.innerHTML = `<span>${label}</span><span>${amount === 0 ? (lang === 'it' ? 'Gratis' : 'Free') : euro(amount)}</span>`;
         lines.appendChild(li);
       };
 
@@ -461,8 +484,9 @@
       if (state.experience) {
         const sub = state.basePrice * state.guests;
         total += sub;
-        const name = state.experience === 'florence' ? 'In Florence' : 'Live Online';
-        add(`${name} · €${state.basePrice} × ${state.guests} ${state.guests === 1 ? 'guest' : 'guests'}`, sub);
+        const name = state.experience === 'florence' ? (lang === 'it' ? 'A Firenze' : 'In Florence') : (lang === 'it' ? 'In diretta online' : 'Live Online');
+        const guestStr = state.guests === 1 ? (lang === 'it' ? 'ospite' : 'guest') : (lang === 'it' ? 'ospiti' : 'guests');
+        add(`${name} · €${state.basePrice} × ${state.guests} ${guestStr}`, sub);
       }
       // add-ons: per-guest items multiply by guests, per-order items are flat
       $$('[data-addon]').forEach((label) => {
@@ -472,7 +496,8 @@
         const unit = state.addons[key];
         const amt = el.dataset.per === 'guest' ? unit * state.guests : unit;
         total += amt;
-        add(ADDON_LABELS[key] ?? key, amt);
+        const lbl = lang === 'it' ? (ADDON_LABELS_IT[key] ?? key) : (ADDON_LABELS[key] ?? key);
+        add(lbl, amt);
       });
       if (state.date) add(`📅 ${state.date}${state.time ? ' · ' + state.time : ''}`, 0);
 

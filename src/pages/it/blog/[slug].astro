@@ -1,15 +1,15 @@
 ---
 // Individual guide page — Article schema, author byline, and a CTA back to
-// the classes (every guide exists to earn the click down to a booking page).
+// the classes (every guide exists to earn the click down to a booking page) - Italian.
 import { getCollection, render } from 'astro:content';
-import Layout from '../../layouts/Layout.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
-import BookingDrawer from '../../components/BookingDrawer.astro';
+import Layout from '../../../layouts/Layout.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import BookingDrawer from '../../../components/BookingDrawer.astro';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog', ({ id }) => !id.startsWith('it/'));
-  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+  const posts = await getCollection('blog', ({ id }) => id.startsWith('it/'));
+  return posts.map((post) => ({ params: { slug: post.id.replace('it/', '') }, props: { post } }));
 }
 
 const { post } = Astro.props;
@@ -18,7 +18,7 @@ const { Content } = await render(post);
 const SITE = 'https://handmadepastaflorence.com';
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const fmt = (d: Date) =>
-  d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+  d.toLocaleDateString('it-IT', { day: 'numeric', month: 'long', year: 'numeric' });
 
 const articleSchema = {
   '@context': 'https://schema.org',
@@ -27,14 +27,14 @@ const articleSchema = {
   description: post.data.description,
   image: `${SITE}${post.data.image}`,
   datePublished: post.data.pubDate.toISOString(),
-  inLanguage: 'en',
+  inLanguage: 'it',
   author: {
     '@type': 'Person',
     name: post.data.author,
     jobTitle: 'Head Chef',
     sameAs: 'https://endricerhozi.com',
   },
-  publisher: { '@id': `${SITE}/#business` },
+  publisher: { '@id': `${SITE}/it/#business` },
   mainEntityOfPage: canonical,
 };
 
@@ -42,8 +42,8 @@ const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/` },
-    { '@type': 'ListItem', position: 2, name: 'Guides', item: `${SITE}/blog/` },
+    { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/it/` },
+    { '@type': 'ListItem', position: 2, name: 'Guide', item: `${SITE}/it/blog/` },
     { '@type': 'ListItem', position: 3, name: post.data.title, item: canonical },
   ],
 };
@@ -56,12 +56,12 @@ const breadcrumbSchema = {
       <header class="po-hero" id="top">
         <div class="shell">
           <nav class="po-crumb" aria-label="Breadcrumb">
-            <a href="/">Home</a> <span aria-hidden="true">/</span>
-            <a href="/blog/">Guides</a>
+            <a href="/it/">Home</a> <span aria-hidden="true">/</span>
+            <a href="/it/blog/">Guide</a>
           </nav>
           <h1 class="po-hero__h">{post.data.title}</h1>
           <p class="po-hero__meta">
-            By <a href="https://endricerhozi.com" target="_blank" rel="noopener">{post.data.author}</a>
+            Di <a href="https://endricerhozi.com" target="_blank" rel="noopener">{post.data.author}</a>
             · <time datetime={post.data.pubDate.toISOString()}>{fmt(post.data.pubDate)}</time>
           </p>
         </div>
@@ -78,20 +78,20 @@ const breadcrumbSchema = {
 
         <aside class="po-bio" data-reveal>
           <p>
-            <strong>{post.data.author}</strong> is head chef at Agriturismo Borgo Divino
-            (Montespertoli) and co-founder of Handmade Pasta Florence, where he teaches
-            <a href="/pasta-making-class-florence/">small-group pasta making classes</a> in the Oltrarno.
+            <strong>{post.data.author}</strong> è capo chef all'Agriturismo Borgo Divino
+            (Montespertoli) e co-fondatore di Handmade Pasta Florence, dove insegna
+            <a href="/it/corso-pasta-fresca-firenze/">corsi di pasta fresca per piccoli gruppi</a> in Oltrarno.
           </p>
         </aside>
 
         <div class="po-cta" data-reveal>
           <div>
-            <h2>Rather learn it with your hands?</h2>
-            <p>Roll, fold and eat it yourself — in our Florence kitchen or live online.</p>
+            <h2>Preferisci impararlo con le tue mani?</h2>
+            <p>Stendi, piega e mangia tu stesso — nella nostra cucina a Firenze o in diretta online.</p>
           </div>
           <div class="po-cta__actions">
-            <button class="po-cta__btn" data-open-booking>Book a class</button>
-            <a class="po-cta__link" href="/pasta-making-class-florence/">See the classes</a>
+            <button class="po-cta__btn" data-open-booking>Prenota un corso</button>
+            <a class="po-cta__link" href="/it/corso-pasta-fresca-firenze/">Scopri i corsi</a>
           </div>
         </div>
       </div>

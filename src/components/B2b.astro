@@ -2,7 +2,9 @@
 // B2B band — partnerships with hotels, tour operators and companies.
 // Enquiries go to email (not the WhatsApp booking flow) since these are
 // bespoke, multi-party conversations rather than instant class bookings.
-const offers = [
+const lang = Astro.currentLocale || 'en';
+
+const offersEn = [
   {
     t: 'Hotels, B&Bs & agriturismi',
     d: 'Give your guests a pasta class to remember. Partner rates, easy referral booking, and classes in English or Italian. Five minutes from the Ponte Vecchio.',
@@ -21,18 +23,41 @@ const offers = [
     points: ['Fixed schedule, fast confirmation', 'Group & series pricing', 'Market-walk add-on available'],
   },
 ];
+
+const offersIt = [
+  {
+    t: 'Hotel, B&B e agriturismi',
+    d: 'Regala ai tuoi ospiti un corso di pasta da ricordare. Tariffe partner, facile prenotazione per segnalazione e lezioni in inglese o italiano. A cinque minuti dal Ponte Vecchio.',
+    points: ['Tariffe partner e commissioni', 'Prenotazione prioritaria per gli ospiti', 'Voucher regalo co-branded'],
+  },
+  {
+    t: 'Team building aziendale',
+    d: 'Grembiuli addosso, via i computer. Un corso pratico privato in cui il tuo team impasta, piega, ride e poi si siede per un lungo pranzo preparato con le proprie mani.',
+    points: ['Uso esclusivo della cucina, 6-14 persone', 'Chef che parlano inglese e italiano', 'Abbinamento vini e opzioni dietetiche'],
+    href: '/it/corso-cucina-team-building-firenze/',
+    hrefLabel: 'Dettagli team building',
+  },
+  {
+    t: 'Tour operator e travel planner',
+    d: 'Un\'esperienza gastronomica affidabile per piccoli gruppi nei tuoi itinerari fiorentini. Orari fissi, conferma rapida e due chef che conducono personalmente ogni corso.',
+    points: ['Orari fissi, conferma veloce', 'Tariffe per gruppi e serie', 'Aggiunta tour al mercato disponibile'],
+  },
+];
+
+const offers = lang === 'it' ? offersIt : offersEn;
 ---
 
 <section class="b2b" id="business">
   <div class="shell">
     <header class="b2b__head" data-reveal>
       <div>
-        <p class="eyebrow b2b__eyebrow">For businesses</p>
-        <h2 class="b2b__title">Work <span class="ital">with us.</span></h2>
+        <p class="eyebrow b2b__eyebrow">{lang === 'it' ? 'Per le aziende' : 'For businesses'}</p>
+        <h2 class="b2b__title">{lang === 'it' ? 'Lavora ' : 'Work '}<span class="ital">{lang === 'it' ? 'con noi.' : 'with us.'}</span></h2>
       </div>
       <p class="b2b__intro">
-        We partner with hotels, tour operators and companies to bring the
-        farmhouse table to their guests and teams, in our Oltrarno kitchen or live online.
+        {lang === 'it' 
+          ? 'Collaboriamo con hotel, tour operator e aziende per portare la tavola della fattoria ai loro ospiti e team, nella nostra cucina in Oltrarno o in diretta online.' 
+          : 'We partner with hotels, tour operators and companies to bring the farmhouse table to their guests and teams, in our Oltrarno kitchen or live online.'}
       </p>
     </header>
 
@@ -56,9 +81,9 @@ const offers = [
     </div>
 
     <div class="b2b__cta" data-reveal>
-      <p>Tell us about your guests, group or team. We reply within one working day.</p>
-      <a class="b2b__btn" href="mailto:ciao@handmadepastaflorence.com?subject=Business%20partnership%20enquiry">
-        Start a partnership <span aria-hidden="true">→</span>
+      <p>{lang === 'it' ? 'Parlaci dei tuoi ospiti, gruppo o team. Rispondiamo entro un giorno lavorativo.' : 'Tell us about your guests, group or team. We reply within one working day.'}</p>
+      <a class="b2b__btn" href={lang === 'it' ? 'mailto:ciao@handmadepastaflorence.com?subject=Richiesta%20partnership%20commerciale' : 'mailto:ciao@handmadepastaflorence.com?subject=Business%20partnership%20enquiry'}>
+        {lang === 'it' ? 'Inizia una collaborazione' : 'Start a partnership'} <span aria-hidden="true">→</span>
       </a>
     </div>
   </div>

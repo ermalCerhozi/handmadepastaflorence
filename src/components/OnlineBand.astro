@@ -1,27 +1,28 @@
 ---
 // Online is a small secondary offering — a single slim band, not a headline act.
+const lang = Astro.currentLocale || 'en';
 ---
 
 <section class="ob" id="online">
   <div class="shell ob__inner" data-reveal>
     <div class="ob__visual">
-      <span class="ob__live"><i></i> Live</span>
+      <span class="ob__live"><i></i> {lang === 'it' ? 'In diretta' : 'Live'}</span>
       <img class="ob__img" src="/images/cooking-class.jpg" alt="Our Florentine kitchen, where we stream live online classes" width="981" height="1603" loading="lazy" decoding="async" />
     </div>
     <div class="ob__text">
-      <p class="eyebrow ob__eyebrow">Can’t make it to Florence?</p>
-      <h2 class="ob__title">Cook with us <span class="ital">live online.</span></h2>
+      <p class="eyebrow ob__eyebrow">{lang === 'it' ? 'Non puoi venire a Firenze?' : 'Can’t make it to Florence?'}</p>
+      <h2 class="ob__title">{lang === 'it' ? 'Cucina con noi ' : 'Cook with us '}<span class="ital">{lang === 'it' ? 'in diretta online.' : 'live online.'}</span></h2>
       <p class="ob__desc">
-        Same chefs, same kitchen. A live online pasta making class with an
-        ingredient kit shipped to your door. A lovely option (or gift) if Italy
-        isn’t on the calendar yet.
+        {lang === 'it' 
+          ? 'Stessi chef, stessa cucina. Un corso di pasta fresca in diretta online con un kit di ingredienti spedito a casa tua. Una splendida opzione (o regalo) se l\'Italia non è ancora in programma.' 
+          : 'Same chefs, same kitchen. A live online pasta making class with an ingredient kit shipped to your door. A lovely option (or gift) if Italy isn’t on the calendar yet.'}
       </p>
       <div class="ob__row">
         <button class="ob__cta" data-open-booking data-prefill="online">
-          Join an online class <span aria-hidden="true">→</span>
+          {lang === 'it' ? 'Partecipa a un corso online' : 'Join an online class'} <span aria-hidden="true">→</span>
         </button>
-        <span class="ob__price">from <strong>€68</strong>/person</span>
-        <a class="ob__more" href="/online-pasta-making-class/">Full details</a>
+        <span class="ob__price">{lang === 'it' ? 'da' : 'from'} <strong>€68</strong>/{lang === 'it' ? 'persona' : 'person'}</span>
+        <a class="ob__more" href={lang === 'it' ? "/it/corso-pasta-online/" : "/online-pasta-making-class/"}>{lang === 'it' ? 'Dettagli completi' : 'Full details'}</a>
       </div>
     </div>
   </div>

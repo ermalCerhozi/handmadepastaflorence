@@ -1,32 +1,31 @@
 ---
-// Guides index — hub page for the informational content cluster.
+// Guides index — hub page for the informational content cluster - Italian.
 import { getCollection } from 'astro:content';
-import Layout from '../../layouts/Layout.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
-import BookingDrawer from '../../components/BookingDrawer.astro';
+import Layout from '../../../layouts/Layout.astro';
+import Header from '../../../components/Header.astro';
+import Footer from '../../../components/Footer.astro';
+import BookingDrawer from '../../../components/BookingDrawer.astro';
 
 const posts = (await getCollection('blog'))
-  .filter(p => !p.id.startsWith('it/'))
+  .filter(p => p.id.startsWith('it/'))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 const fmt = (d: Date) =>
-  d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+  d.toLocaleDateString('it-IT', { day: 'numeric', month: 'long', year: 'numeric' });
 ---
 
 <Layout
-  title="Florence Pasta & Food Guides | Handmade Pasta Florence"
-  description="Guides to fresh pasta and eating well in Florence, written by two Tuscan agriturismo head chefs — pasta shapes, where to eat, gluten-free tips and the Oltrarno neighbourhood."
+  title="Guide alla Pasta & al Cibo di Firenze | Handmade Pasta Florence"
+  description="Guide alla pasta fresca e a mangiare bene a Firenze, scritte da due chef toscani — formati di pasta, dove mangiare, consigli senza glutine e il quartiere dell'Oltrarno."
 >
   <Header solid />
   <main>
     <section class="bl-hero" id="top">
       <div class="shell">
-        <p class="eyebrow bl-hero__eyebrow">Guides &amp; stories</p>
-        <h1 class="bl-hero__h">From the flour-dusted <span class="ital">notebook.</span></h1>
+        <p class="eyebrow bl-hero__eyebrow">Guide &amp; storie</p>
+        <h1 class="bl-hero__h">Dal taccuino <span class="ital">infarinato.</span></h1>
         <p class="bl-hero__lede">
-          What we know about pasta, Florence and eating well here — written between classes by
-          the two chefs who teach them.
+          Quello che sappiamo sulla pasta, su Firenze e su come mangiare bene qui — scritto tra un corso e l'altro dai due chef che li tengono.
         </p>
       </div>
     </section>
@@ -36,7 +35,7 @@ const fmt = (d: Date) =>
         <div class="bl-grid">
           {
             posts.map((p, i) => (
-              <a class="bl-card" href={`/blog/${p.id}/`} data-reveal style={`--reveal-delay:${i * 60}ms`}>
+              <a class="bl-card" href={`/it/blog/${p.id.replace('it/', '')}/`} data-reveal style={`--reveal-delay:${i * 60}ms`}>
                 <div class="bl-card__media">
                   <img src={p.data.image} alt={p.data.imageAlt} loading="lazy" decoding="async" />
                 </div>
@@ -44,7 +43,7 @@ const fmt = (d: Date) =>
                   <time datetime={p.data.pubDate.toISOString()}>{fmt(p.data.pubDate)}</time>
                   <h2>{p.data.title}</h2>
                   <p>{p.data.description}</p>
-                  <span class="bl-card__go">Read the guide <span aria-hidden="true">→</span></span>
+                  <span class="bl-card__go">Leggi la guida <span aria-hidden="true">→</span></span>
                 </div>
               </a>
             ))

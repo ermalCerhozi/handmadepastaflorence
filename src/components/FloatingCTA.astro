@@ -1,17 +1,18 @@
 ---
 // Pill button on mobile; morphs into a mini booking bar on desktop.
 // Hidden while the hero is on screen, slides up once you scroll past it.
+const lang = Astro.currentLocale || 'en';
 ---
 
 <div class="fab" data-fab aria-hidden="false">
   <div class="fab__bar">
     <div class="fab__info">
-      <span class="fab__eyebrow">In Florence &amp; online</span>
-      <span class="fab__when">Small-group pasta classes</span>
+      <span class="fab__eyebrow">{lang === 'it' ? 'A Firenze & online' : 'In Florence & online'}</span>
+      <span class="fab__when">{lang === 'it' ? 'Corsi di pasta in piccoli gruppi' : 'Small-group pasta classes'}</span>
     </div>
     <button class="fab__btn" data-open-booking>
       <span class="fab__pulse" aria-hidden="true"></span>
-      Book now
+      {lang === 'it' ? 'Prenota ora' : 'Book now'}
       <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </button>
   </div>

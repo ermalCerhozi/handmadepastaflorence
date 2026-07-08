@@ -1,7 +1,8 @@
 ---
+const lang = Astro.currentLocale || 'en';
 ---
 
-<button id="scroll-top" class="stt-button" type="button" aria-label="Scroll to top">
+<button id="scroll-top" class="stt-button" type="button" aria-label={lang === 'it' ? 'Torna su' : 'Scroll to top'}>
   <svg
     class="stt-icon"
     viewBox="0 0 24 24"

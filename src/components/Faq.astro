@@ -3,7 +3,9 @@
 // Every answer is grounded in facts already published elsewhere on the site.
 // Add cancellation / payment / exact-address answers once confirmed by the owner
 // (see REMAINING-SEO-TASKS.md).
-const faqs = [
+const lang = Astro.currentLocale || 'en';
+
+const faqsEn = [
   {
     q: 'Who teaches the classes?',
     a: 'Endri and Marsel, two friends and the head chefs of two agriturismi in the hills outside Florence. Pasta for weddings, feasts and live shows is our day job; classes run in English or Italian.',
@@ -45,13 +47,58 @@ const faqs = [
     a: "Use the “Book a class” button to build your request. It opens a WhatsApp chat with the details filled in, and we’ll confirm availability and walk you through the rest.",
   },
 ];
+
+const faqsIt = [
+  {
+    q: 'Chi insegna nei corsi?',
+    a: 'Endri e Marsel, due amici e chef di due agriturismi sulle colline appena fuori Firenze. La pasta per matrimoni, feste ed eventi dal vivo è il nostro lavoro quotidiano; i corsi si tengono in inglese o in italiano.',
+  },
+  {
+    q: 'Dove si tengono i corsi?',
+    a: 'Nella nostra cucina in Oltrarno, vicino a Piazza Santo Spirito nel cuore di Firenze. Inviamo l\'indirizzo completo al momento della prenotazione.',
+  },
+  {
+    q: 'Quanto dura un corso?',
+    a: 'Il Tavolo dello Chef dura circa 3 ore; Mercato & Mani (con il giro al mercato all\'alba) dura circa 5 ore. Ogni corso si conclude con un pranzo al tavolo con ciò che hai preparato.',
+  },
+  {
+    q: 'Quante persone ci sono in ogni corso?',
+    a: 'Solo piccoli gruppi. Mai più di 8 a tavola (max 6 per il corso al mercato), quindi c\'è sempre uno chef al tuo fianco per correggere la tua piega.',
+  },
+  {
+    q: 'Mangiamo la pasta che prepariamo?',
+    a: 'Sì. Ogni lezione finisce a tavola con la tua pasta fresca, un sugo toscano e un bicchiere di vino locale.',
+  },
+  {
+    q: 'Potete soddisfare diete senza glutine o allergie?',
+    a: 'Sì, possiamo preparare una miscela di farine senza glutine dedicata e una postazione pulita senza costi aggiuntivi. Basta segnalarci eventuali allergie al momento della prenotazione.',
+  },
+  {
+    q: 'Non posso venire a Firenze. Posso comunque fare un corso?',
+    a: 'Assolutamente sì. I nostri corsi online in diretta vengono trasmessi dalla stessa cucina, con un kit di ingredienti per la pasta fresca spedito a casa tua, a partire da €68 a persona.',
+  },
+  {
+    q: 'Ospitate team building aziendali o lavorate con hotel e tour operator?',
+    a: 'Sì. Le aziende possono prenotare l\'intera cucina per un corso di team building privato (6-14 persone), e offriamo tariffe partner e prenotazioni su segnalazione per hotel, agriturismi e tour operator. Invia un\'email a ciao@handmadepastaflorence.com con oggetto "Partnership commerciale" e ti risponderemo entro un giorno lavorativo.',
+  },
+  {
+    q: 'Quando si svolgono i corsi?',
+    a: 'I corsi iniziano alle 10:00, 14:30 e 18:00 (ora di Firenze). Siamo chiusi il lunedì.',
+  },
+  {
+    q: 'Come faccio a prenotare e pagare?',
+    a: 'Usa il pulsante "Prenota un corso" per creare la tua richiesta. Si aprirà una chat di WhatsApp con i dettagli precompilati, ti confermeremo la disponibilità e ti guideremo per il resto.',
+  },
+];
+
+const faqs = lang === 'it' ? faqsIt : faqsEn;
 ---
 
 <section class="faq" id="faq">
   <div class="shell faq__inner">
     <header class="faq__head" data-reveal>
-      <p class="eyebrow faq__eyebrow">Good to know</p>
-      <h2 class="faq__title">Questions, <span class="ital">answered.</span></h2>
+      <p class="eyebrow faq__eyebrow">{lang === 'it' ? 'Buono a sapersi' : 'Good to know'}</p>
+      <h2 class="faq__title">{lang === 'it' ? 'Domande,' : 'Questions,'} <span class="ital">{lang === 'it' ? 'risposte.' : 'answered.'}</span></h2>
     </header>
 
     <div class="faq__list">

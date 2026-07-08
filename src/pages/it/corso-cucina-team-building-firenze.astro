@@ -1,0 +1,112 @@
+---
+// Landing page for "team building cooking class florence" (B2B, email CTA) - Italian.
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import ClassLanding from '../../components/ClassLanding.astro';
+import Footer from '../../components/Footer.astro';
+import BookingDrawer from '../../components/BookingDrawer.astro';
+---
+
+<Layout
+  title="Corso di Cucina Team Building a Firenze — Cucina Privata, 6–14 Persone | Handmade Pasta Florence"
+  description="Un corso di cucina per team building privato e pratico a Firenze. Il tuo team stende la pasta fresca con due chef toscani, per poi condividere il pranzo preparato. Cucina privata per 6–14 persone, abbinamento vini e opzioni dietetiche."
+  image="/images/cooking_class_with_guests_in_picture.webp"
+>
+  <Header solid />
+  <main>
+    <ClassLanding
+      eyebrow="Per le aziende · uso esclusivo della cucina"
+      heading="Team building, con"
+      headingItal="le mani in pasta."
+      lede="Grembiuli indossati, laptop riposti. Il tuo team prende possesso della nostra cucina in Oltrarno con due chef toscani, stende e piega la pasta fresca fianco a fianco, e poi si siede per un lungo pranzo preparato con le proprie mani. A cinque minuti da Ponte Vecchio."
+      image={{
+        src: '/images/cooking_class_with_guests_in_picture.webp',
+        alt: 'Un gruppo cucina insieme a un corso di pasta privato per team building a Firenze',
+        w: 1050,
+        h: 1400,
+      }}
+      price="Evento Privato"
+      priceNote="6–14 persone · preventivo per gruppo"
+      facts={[
+        { label: 'Dimensione gruppo', value: '6–14 persone' },
+        { label: 'Formato', value: 'uso esclusivo della cucina' },
+        { label: 'Host', value: 'chef professionisti' },
+        { label: 'Opzioni', value: 'abbinamento vini · dietetiche' },
+        { label: 'Dove', value: '5 min da Ponte Vecchio' },
+        { label: 'Tempo di risposta', value: 'entro 24 ore' },
+      ]}
+      sections={[
+        {
+          title: 'Perché la pasta funziona per i team',
+          paras: [
+            'La pasta fresca è la rara attività di squadra in cui nessuno può nascondersi dietro uno schermo e nessuno ha bisogno di abilità pregresse. Tutti iniziano con lo stesso mucchio di farina, i primi pici di tutti sono storti e un\'ora dopo il tavolo è coperto di qualcosa che il team ha effettivamente realizzato insieme. Poi lo si mangia — il che è meglio di un meeting riassuntivo.',
+            'La cucina è esclusivamente tua: niente estranei, il tuo ritmo, le tue esigenze alimentari gestite in anticipo.',
+          ],
+        },
+        {
+          title: 'Come si svolge la sessione',
+          paras: [
+            'Il formato segue il nostro corso classico — pratico dal primo minuto, due head chef che ospitano, e un pranzo seduti con ciò che il team ha preparato, con vino locale se lo desideri. Essendo una prenotazione privata, l\'orario è flessibile attorno alla tua agenda; la maggior parte dei team sceglie il corso al posto di un pranzo o come conclusione serale di un meeting aziendale.',
+          ],
+        },
+        {
+          title: 'Hotel, agenzie & tour operator',
+          paras: [
+            'Collaboriamo anche con hotel, B&amp;B, agriturismi, tour operator e organizzatori di viaggi — tariffe partner, prenotazione prioritaria, fasce orarie fisse e conferma rapida. Se stai creando itinerari a Firenze per ospiti o clienti, <a href="/it/#business">scopri come lavoriamo con le aziende</a> o inviaci un\'e-mail direttamente.',
+          ],
+        },
+        {
+          title: 'Come richiedere informazioni',
+          paras: [
+            'Invia un\'e-mail a <a href="mailto:ciao@handmadepastaflorence.com?subject=Richiesta%20team%20building">ciao@handmadepastaflorence.com</a> con le dimensioni del tuo team, le date preferite e tutto ciò che dovremmo sapere. Rispondiamo entro un giorno lavorativo con disponibilità e preventivo.',
+          ],
+        },
+      ]}
+      faqs={[
+        {
+          q: 'Quanto può essere grande il gruppo?',
+          a: 'La cucina privata ospita team da 6 a 14 persone. Per aziende più grandi possiamo discutere di sessioni consecutive — inviaci un\'e-mail con i vostri numeri.',
+        },
+        {
+          q: 'Il corso si tiene in Inglese o Italiano?',
+          a: 'Entrambi — gli chef possono tenere il corso in Inglese o Italiano, a seconda delle preferenze del vostro team. Le istruzioni sono pratiche e visive, quindi anche team misti o internazionali si trovano bene.',
+        },
+        {
+          q: 'Potete gestire le esigenze alimentari?',
+          a: 'Sì. Postazioni senza glutine senza costi aggiuntivi, e altre allergie e preferenze gestite in anticipo — inviaci l\'elenco quando prenoti e ogni membro del team cucinerà e mangerà.',
+        },
+        {
+          q: 'Come funzionano i prezzi?',
+          a: 'Le sessioni per i team sono quotate per gruppo, in base alle dimensioni, ai tempi e ad eventuali aggiunte come l\'abbinamento dei vini. Invia un\'e-mail a ciao@handmadepastaflorence.com e riceverai un preventivo entro un giorno lavorativo.',
+        },
+      ]}
+      related={[
+        {
+          title: 'Il Lungo Tavolo di Famiglia',
+          href: '/it/corso-cucina-privato-firenze/',
+          desc: 'La stessa cucina privata per celebrazioni personali — da €680.',
+        },
+        {
+          title: 'Il Tavolo dello Chef',
+          href: '/it/corso-pasta-fresca-firenze/',
+          desc: 'Il nostro classico corso per piccoli gruppi, se il team è di 8 o meno — €95 ciascuno.',
+        },
+        {
+          title: 'Corso in Diretta Online',
+          href: '/it/corso-pasta-online/',
+          desc: 'Team da remoto? Cucinate insieme da ovunque, in diretta — da €68.',
+        },
+      ]}
+      ctaLabel="Richiedi un preventivo"
+      emailSubject="Richiesta team building"
+      breadcrumbName="Corso per Team Building"
+      service={{
+        name: 'Corso di Cucina per Team Building a Firenze',
+        description:
+          'Corsi di cucina per team building privati a Firenze per le aziende: affitto dell\'intera cucina per 6–14 persone, tenuto in Italiano o Inglese da due chef toscani, con opzioni di abbinamento vini e dietetiche.',
+      }}
+    />
+  </main>
+  <Footer />
+  <BookingDrawer />
+</Layout>

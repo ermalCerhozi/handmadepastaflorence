@@ -1,5 +1,7 @@
 ---
-const shapes = [
+const lang = Astro.currentLocale || 'en';
+
+const shapesEn = [
   {
     name: 'Pappardelle',
     region: 'Florence · Tuscany',
@@ -41,15 +43,60 @@ const shapes = [
     teaches: 'Live Online · Fresh Egg Pasta',
   },
 ];
+
+const shapesIt = [
+  {
+    name: 'Pappardelle',
+    region: 'Firenze · Toscana',
+    img: '/images/shape-pappardelle.jpg',
+    blurb: 'Nastri larghi e vellutati che prendono il nome da "pappare".',
+    history: 'Nate nella campagna toscana per accogliere ricchi ragù di cinghiale e lepre. La larghezza è essenziale: ogni filo trasporta un cucchiaio di sugo.',
+    teaches: 'Il Tavolo dello Chef',
+  },
+  {
+    name: 'Ravioli',
+    region: 'Tutta Italia',
+    img: '/images/shape-ravioli.jpg',
+    blurb: 'Piccoli fagottini, chiusi pizzicando la pasta attorno a ricotta, spinaci o zucca.',
+    history: 'Menzionati nelle lettere di un mercante toscano del XIV secolo, i ravioli erano un modo per far durare il formaggio prezioso. Sigillarli bene è un\'arte: l\'aria è il nemico.',
+    teaches: 'Mercato & Mani',
+  },
+  {
+    name: 'Pici',
+    region: 'Siena · Val d’Orcia',
+    img: '/images/shape-pici.jpg',
+    blurb: "Fili grossi e stesi a mano, come i rustici cugini degli spaghetti.",
+    history: 'Una pasta povera di sola acqua e farina, stesa a mano su tavole di legno. Non ce ne sono due identici, e quell\'irregolarità è esattamente il motivo per cui il sugo vi si aggrappa.',
+    teaches: 'Il Tavolo dello Chef',
+  },
+  {
+    name: 'Tortelli',
+    region: 'Mugello',
+    img: '/images/shape-tortelli.jpg',
+    blurb: 'Paffuti cuscini ripieni di patate dalle colline a nord di Firenze.',
+    history: 'La risposta del Mugello a una serata fredda: patate, parmigiano e noce moscata sigillati nella pasta, conditi semplicemente con burro e salvia o un ragù di carne.',
+    teaches: 'Il Lungo Tavolo di Famiglia',
+  },
+  {
+    name: 'Tagliatelle',
+    region: 'Emilia & Toscana',
+    img: '/images/shape-tagliatelle.jpg',
+    blurb: 'Il classico nastro all\'uovo, tagliato alla larghezza precisa di un dito.',
+    history: 'La leggenda lega questi nastri dorati ai capelli del Rinascimento; la verità è più umile. Stese sottili, piegate e tagliate a mano. Il primo formato che ogni nonna insegna.',
+    teaches: 'In diretta online · Pasta Fresca all\'Uovo',
+  },
+];
+
+const shapes = lang === 'it' ? shapesIt : shapesEn;
 ---
 
 <section class="gal" id="gallery">
   <div class="shell gal__head">
     <div data-reveal>
-      <p class="eyebrow gal__eyebrow">A shape for every story</p>
-      <h2 class="gal__title">Meet the <span class="ital">pasta.</span></h2>
+      <p class="eyebrow gal__eyebrow">{lang === 'it' ? 'Un formato per ogni storia' : 'A shape for every story'}</p>
+      <h2 class="gal__title">{lang === 'it' ? 'Incontra la ' : 'Meet the '}<span class="ital">pasta.</span></h2>
     </div>
-    <p class="gal__hint" data-reveal>Drag, swipe, or use the arrows. Tap any shape to hear where it comes from.</p>
+    <p class="gal__hint" data-reveal>{lang === 'it' ? 'Trascina, scorri o usa le frecce. Tocca qualsiasi formato per scoprire da dove proviene.' : 'Drag, swipe, or use the arrows. Tap any shape to hear where it comes from.'}</p>
   </div>
 
   <div class="gal__track" data-gal-track>
@@ -63,17 +110,17 @@ const shapes = [
           <h3 class="pasta__name">{s.name}</h3>
           <p class="pasta__region">{s.region}</p>
           <p class="pasta__blurb">{s.blurb}</p>
-          <span class="pasta__more">Tap for its story <span aria-hidden="true">↘</span></span>
+          <span class="pasta__more">{lang === 'it' ? 'Tocca per la sua storia' : 'Tap for its story'} <span aria-hidden="true">↘</span></span>
         </button>
         <div class="pasta__back">
           <h4>{s.name}</h4>
           <p class="pasta__hist">{s.history}</p>
           <div class="pasta__class">
-            <span>Taught in</span>
+            <span>{lang === 'it' ? 'Insegnato in' : 'Taught in'}</span>
             <strong>{s.teaches}</strong>
           </div>
-          <button class="pasta__book" data-open-booking>Book this class →</button>
-          <button class="pasta__close" data-pasta-toggle aria-label="Back">← back to shape</button>
+          <button class="pasta__book" data-open-booking>{lang === 'it' ? 'Prenota questo corso →' : 'Book this class →'}</button>
+          <button class="pasta__close" data-pasta-toggle aria-label="Back">← {lang === 'it' ? 'torna al formato' : 'back to shape'}</button>
         </div>
       </article>
     ))}

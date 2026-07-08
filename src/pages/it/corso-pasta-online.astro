@@ -1,0 +1,113 @@
+---
+// Landing page for "online pasta making class (with kit)" - Italian.
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import ClassLanding from '../../components/ClassLanding.astro';
+import Footer from '../../components/Footer.astro';
+import FloatingCTA from '../../components/FloatingCTA.astro';
+import BookingDrawer from '../../components/BookingDrawer.astro';
+---
+
+<Layout
+  title="Corso di Pasta in Diretta Online con Kit Ingredienti | Handmade Pasta Florence"
+  description="Cucina pasta fresca in diretta con due chef toscani, trasmesso dalla nostra cucina di Firenze — da €68 a persona, con kit ingredienti per pasta fresca opzionale (farina 00, semola, mattarello, schede ricette) spedito refrigerato a casa tua."
+  image="/images/cooking-class.jpg"
+>
+  <Header solid />
+  <main>
+    <ClassLanding
+      eyebrow="In Diretta Online · trasmesso da Firenze"
+      heading="Un corso di pasta online,"
+      headingItal="dalla nostra cucina alla tua."
+      lede="Stessi chef, stessa cucina fiorentina — in diretta sul tuo schermo. Stendi e piega la pasta fresca insieme a Endri e Marsel in tempo reale, con un kit di ingredienti che può arrivare refrigerato alla tua porta prima del corso."
+      image={{
+        src: '/images/cooking-class.jpg',
+        alt: 'La nostra cucina fiorentina, da dove trasmettiamo i corsi di pasta fresca online in diretta',
+        w: 981,
+        h: 1603,
+      }}
+      price="da €68"
+      priceNote="a persona"
+      facts={[
+        { label: 'Formato', value: 'video in diretta, pratico' },
+        { label: 'Trasmesso da', value: 'la nostra cucina a Firenze' },
+        { label: 'Kit', value: 'opzionale, +€34 spedito' },
+        { label: 'Orari', value: 'mostrati nel tuo fuso orario' },
+        { label: 'Lingua', value: 'Inglese o Italiano' },
+        { label: 'Ottimo come', value: 'regalo' },
+      ]}
+      sections={[
+        {
+          title: 'Come funziona un corso in diretta',
+          paras: [
+            'Questo non è un video pre-registrato. Cucini dal vivo con gli stessi due chef che insegnano in presenza, trasmessi dalla stessa cucina. Vedi le loro mani, loro vedono il tuo impasto e ti guidano attraverso ogni fase — miscelare, impastare, stendere, dare forma — finché non avrai della pasta fresca sul tuo bancone.',
+            'Quando scegli una data, il calendario delle prenotazioni mostra gli orari del corso sia nel fuso orario di Firenze che nel tuo, così non ci sono calcoli matematici da fare a mezzanotte.',
+          ],
+        },
+        {
+          title: 'Il kit ingredienti',
+          paras: [
+            'Aggiungi il kit al momento della prenotazione (+€34 a ordine) e lo spediamo refrigerato a casa tua: farina 00, semola, un mattarello e le nostre schede con le ricette — tutte specialità, così la tua cucina ha bisogno solo delle basi. Preferisci fare la spesa tu? Prenota senza il kit e scrivici su WhatsApp; ti guideremo su cosa preparare.',
+          ],
+        },
+        {
+          title: 'Un regalo che non è un gadget',
+          paras: [
+            'Un corso in diretta (con il kit consegnato a casa) è diventato l\'ordine regalo più amato — per l\'amico che sogna l\'Italia, per il genitore che ti ha insegnato a cucinare o per la coppia a cui non puoi più comprare oggetti. Usa il link "Regala un corso" nel footer o semplicemente dicci che è un regalo quando prenoti.',
+          ],
+        },
+      ]}
+      faqs={[
+        {
+          q: 'Di cosa ho bisogno a casa per il corso?',
+          a: 'Un bancone o un tavolo su cui lavorare e i prodotti di base della cucina. Se aggiungi il kit ingredienti, le specialità — farina 00, semola, un mattarello e le schede ricette — arriveranno refrigerate a casa tua. Altrimenti, diccelo al momento della prenotazione e ti guideremo su cosa preparare.',
+        },
+        {
+          q: 'E per i fusi orari?',
+          a: 'Il calendario delle prenotazioni mostra ogni orario di corso sia nel fuso orario di Firenze che in quello locale, fianco a fianco, prima della conferma.',
+        },
+        {
+          q: 'È davvero in diretta? Posso fare domande?',
+          a: 'Sì — è una diretta streaming dalla nostra cucina di Firenze con gli stessi chef che insegnano in presenza. Chiedi qualsiasi cosa a metà impasto; è questo il bello.',
+        },
+        {
+          q: 'Posso regalare un corso online?',
+          a: 'Assolutamente — è uno dei nostri ordini preferiti da preparare. Prenota normalmente dicendoci che è un regalo, e ti aiuteremo a organizzare la consegna del kit e i tempi.',
+        },
+        {
+          q: 'Come posso prenotare e pagare?',
+          a: 'Usa il pulsante "Prenota il corso online" per scegliere data e ora. Si apre una chat di WhatsApp con i dettagli precompilati, noi confermeremo la disponibilità e ti guideremo nel resto.',
+        },
+      ]}
+      related={[
+        {
+          title: 'Il Tavolo dello Chef',
+          href: '/it/corso-pasta-fresca-firenze/',
+          desc: 'Verrai comunque a Firenze? L\'originale corso in presenza — €95.',
+        },
+        {
+          title: 'Mercato & Mani',
+          href: '/it/corso-cucina-tour-mercato-firenze/',
+          desc: 'Passeggiata al mercato all\'alba + corso di cucina a Firenze — €145.',
+        },
+        {
+          title: 'Il Lungo Tavolo di Famiglia',
+          href: '/it/corso-cucina-privato-firenze/',
+          desc: 'Un banchetto privato a Firenze per 6–14 persone — da €680.',
+        },
+      ]}
+      ctaLabel="Prenota il corso online"
+      prefill="online"
+      breadcrumbName="Corso di Pasta Online"
+      product={{
+        name: 'Corso di Pasta in Diretta Online — Handmade Pasta Florence',
+        description:
+          'Un corso di pasta online pratico e in diretta trasmesso da una cucina fiorentina da due chef toscani, con l\'opzione di un kit di ingredienti per pasta fresca spedito refrigerato alla tua porta.',
+        price: '68',
+      }}
+    />
+  </main>
+  <Footer />
+  <FloatingCTA />
+  <BookingDrawer />
+</Layout>

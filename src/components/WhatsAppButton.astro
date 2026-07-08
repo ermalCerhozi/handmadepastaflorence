@@ -2,9 +2,13 @@
 interface Props {
   label?: string;
 }
-const { label = 'Chat with us' } = Astro.props;
-const href =
-  'https://wa.me/393445204379?text=Hello%2C%20I%27d%20like%20to%20book%20a%20pasta%20class%20in%20Florence';
+const lang = Astro.currentLocale || 'en';
+const defaultLabel = lang === 'it' ? 'Chatta con noi' : 'Chat with us';
+const { label = defaultLabel } = Astro.props;
+const defaultText = lang === 'it' 
+  ? 'Ciao,%20vorrei%20prenotare%20un%20corso%20di%20pasta%20a%20Firenze' 
+  : 'Hello%2C%20I%27d%20like%20to%20book%20a%20pasta%20class%20in%20Florence';
+const href = `https://wa.me/393445204379?text=${defaultText}`;
 ---
 
 <div class="wa-group">

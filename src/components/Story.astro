@@ -1,9 +1,19 @@
 ---
-const stats = [
+const lang = Astro.currentLocale || 'en';
+
+const statsEn = [
   { n: '2026', l: 'newly opened in Florence' },
   { n: '2', l: 'agriturismo head chefs' },
   { n: '8', l: 'guests at the table, max' },
 ];
+
+const statsIt = [
+  { n: '2026', l: 'appena aperto a Firenze' },
+  { n: '2', l: 'chef di agriturismo' },
+  { n: '8', l: 'ospiti a tavola, max' },
+];
+
+const stats = lang === 'it' ? statsIt : statsEn;
 ---
 
 <section class="story" id="story">
@@ -14,20 +24,19 @@ const stats = [
       <span class="story__stamp">est.<br /><strong>2026</strong></span>
     </div>
     <div class="story__text" data-reveal style="--reveal-delay:120ms">
-      <p class="eyebrow story__eyebrow">Our story</p>
-      <h2 class="story__title">Two head chefs,<br />two <span class="ital">Tuscan agriturismi.</span></h2>
+      <p class="eyebrow story__eyebrow">{lang === 'it' ? 'La nostra storia' : 'Our story'}</p>
+      <h2 class="story__title">{lang === 'it' ? 'Due chef,' : 'Two head chefs,'}<br />{lang === 'it' ? 'due ' : 'two '}<span class="ital">{lang === 'it' ? 'agriturismi toscani.' : 'Tuscan agriturismi.'}</span></h2>
       <p class="story__body">
-        We’re Endri and Marsel, friends and longtime colleagues, and the head chefs of two
-        <em class="ital">agriturismi</em> in the hills just outside Florence. Between wedding
-        feasts for two hundred, live pasta shows, and long farmhouse lunches for our guests,
-        we’ve rolled more pasta by hand than we could ever count.
+        {lang === 'it' ? 
+          'Siamo Endri e Marsel, amici e colleghi da tempo, e chef di due agriturismi sulle colline appena fuori Firenze. Tra banchetti nuziali per duecento persone, spettacoli dal vivo sulla pasta e lunghi pranzi contadini per i nostri ospiti, abbiamo steso a mano più pasta di quanta potremmo mai contare.' : 
+          'We’re Endri and Marsel, friends and longtime colleagues, and the head chefs of two agriturismi in the hills just outside Florence. Between wedding feasts for two hundred, live pasta shows, and long farmhouse lunches for our guests, we’ve rolled more pasta by hand than we could ever count.'
+        }
       </p>
       <p class="story__body">
-        Endri spent six years as an artisan baker before taking over the kitchen at
-        Agriturismo Borgo Divino in 2021; Marsel runs the kitchen of a neighbouring estate.
-        In June 2026 we opened a little kitchen of our own in the Oltrarno and brought the
-        farmhouse table to Florence, for anyone who wants to get their hands floury with us,
-        in person or live online.
+        {lang === 'it' ? 
+          'Endri ha lavorato per sei anni come panettiere artigianale prima di prendere in gestione la cucina dell\'Agriturismo Borgo Divino nel 2021; Marsel gestisce la cucina di una tenuta vicina. A giugno 2026 abbiamo aperto una piccola cucina tutta nostra in Oltrarno e abbiamo portato il tavolo di fattoria a Firenze, per chiunque voglia sporcarsi le mani di farina con noi, di persona o in diretta online.' : 
+          'Endri spent six years as an artisan baker before taking over the kitchen at Agriturismo Borgo Divino in 2021; Marsel runs the kitchen of a neighbouring estate. In June 2026 we opened a little kitchen of our own in the Oltrarno and brought the farmhouse table to Florence, for anyone who wants to get their hands floury with us, in person or live online.'
+        }
       </p>
       <ul class="story__stats">
         {stats.map((s) => (

@@ -5,12 +5,15 @@
 interface Props {
   solid?: boolean;
 }
+import { useTranslations } from '../i18n/utils';
 const { solid = false } = Astro.props;
+const lang = Astro.currentLocale || 'en';
+const t = useTranslations(lang as any);
 ---
 
 <header class:list={['hdr', { 'is-solid': solid }]} data-header>
   <div class="shell hdr__inner">
-    <a href="/" class="hdr__brand" aria-label="Handmade Pasta Florence — home">
+    <a href={lang === 'it' ? "/it/" : "/"} class="hdr__brand" aria-label="Handmade Pasta Florence — home">
       <span class="hdr__mark" aria-hidden="true">
         <svg viewBox="0 0 44 44" width="40" height="40">
           <circle cx="22" cy="22" r="21" fill="none" stroke="currentColor" stroke-width="1.4" />
@@ -24,15 +27,15 @@ const { solid = false } = Astro.props;
     </a>
 
     <nav class="hdr__nav" aria-label="Primary">
-      <a href="/#experiences">Classes</a>
-      <a href="/#gallery">Pasta Shapes</a>
-      <a href="/#story">Our Story</a>
-      <a href="/#business">For Business</a>
-      <a href="/blog/">Guides</a>
+      <a href={lang === 'it' ? "/it/#experiences" : "/#experiences"}>{t('nav.classes')}</a>
+      <a href={lang === 'it' ? "/it/#gallery" : "/#gallery"}>{t('nav.pasta')}</a>
+      <a href={lang === 'it' ? "/it/#story" : "/#story"}>{t('nav.story')}</a>
+      <a href={lang === 'it' ? "/it/#business" : "/#business"}>{t('nav.business')}</a>
+      <a href={lang === 'it' ? "/it/blog/" : "/blog/"}>{t('nav.guides')}</a>
     </nav>
 
     <button class="hdr__cta" data-open-booking>
-      Book a class
+      {t('nav.book')}
       <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </button>
   </div>
