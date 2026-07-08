@@ -20,10 +20,36 @@ const lang = getLangFromUrl(Astro.url);
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const ogImage = new URL(image, Astro.site);
 
-// Hreflang logic
-const pathName = Astro.url.pathname.replace('/it/', '/');
-const enUrl = new URL(pathName, Astro.site).href;
-const itUrl = new URL(`/it${pathName === '/' ? '/' : pathName}`, Astro.site).href;
+// Hreflang logic with route mapping
+const routeMap: Record<string, string> = {
+  '/': '/it/',
+  '/market-tour-cooking-class-florence/': '/it/corso-cucina-tour-mercato-firenze/',
+  '/online-pasta-making-class/': '/it/corso-pasta-online/',
+  '/pasta-making-class-florence/': '/it/corso-pasta-fresca-firenze/',
+  '/private-cooking-class-florence/': '/it/corso-cucina-privato-firenze/',
+  '/team-building-cooking-class-florence/': '/it/corso-cucina-team-building-firenze/',
+  '/blog/': '/it/blog/',
+};
+
+const reverseRouteMap: Record<string, string> = {};
+for (const [en, it] of Object.entries(routeMap)) {
+  reverseRouteMap[it] = en;
+}
+
+let currentPath = Astro.url.pathname;
+if (!currentPath.endsWith('/')) currentPath += '/';
+
+let enPath = currentPath;
+let itPath = currentPath;
+
+if (lang === 'it') {
+  enPath = reverseRouteMap[currentPath] || currentPath.replace('/it/', '/');
+} else {
+  itPath = routeMap[currentPath] || `/it${currentPath === '/' ? '/' : currentPath}`;
+}
+
+const enUrl = new URL(enPath, Astro.site).href;
+const itUrl = new URL(itPath, Astro.site).href;
 ---
 
 <!doctype html>

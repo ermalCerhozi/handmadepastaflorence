@@ -4,7 +4,7 @@ description: 'Come trascorrere una giornata in Oltrarno — Santo Spirito, Palaz
 pubDate: 2026-07-08
 author: 'Endri Cerhozi'
 image: '/images/aperitivo.webp'
-imageAlt: 'Ora dell\'aperitivo in una piazza di Firenze sul lato Oltrarno del fiume'
+imageAlt: "Ora dell'aperitivo in una piazza di Firenze sul lato Oltrarno del fiume"
 ---
 
 L'Oltrarno — letteralmente "oltre l'Arno" — è la riva sinistra di Firenze, ed è dove si trova la nostra cucina. Attraversa Ponte Vecchio allontanandoti dal Duomo e in due minuti la folla si dirada, le strade si restringono e Firenze inizia a comportarsi come una città in cui la gente vive. Ecco come passeremmo una giornata dalla nostra parte del fiume.
