@@ -12,6 +12,7 @@ const classes = [
     alt: 'The Chef’s Table — hands-on pasta-making class in our Florence kitchen',
     w: 1050,
     h: 1400,
+    href: '/pasta-making-class-florence/',
   },
   {
     tag: 'Market + cook',
@@ -23,6 +24,7 @@ const classes = [
     alt: 'Mercato & Mani — market tour and pasta class in Florence',
     w: 1080,
     h: 1440,
+    href: '/market-tour-cooking-class-florence/',
   },
   {
     tag: 'Private',
@@ -34,6 +36,7 @@ const classes = [
     alt: 'The Family Long-Table — private group pasta experience in Florence',
     w: 1080,
     h: 1433,
+    href: '/private-cooking-class-florence/',
   },
 ];
 ---
@@ -60,12 +63,15 @@ const classes = [
             <span class="card__price">{c.price}</span>
           </div>
           <div class="card__body">
-            <h3 class="card__name">{c.name}</h3>
+            <h3 class="card__name"><a href={c.href}>{c.name}</a></h3>
             <p class="card__desc">{c.desc}</p>
             <p class="card__meta">{c.meta}</p>
-            <button class="card__cta" data-open-booking data-prefill="florence">
-              Book this <span aria-hidden="true">→</span>
-            </button>
+            <div class="card__actions">
+              <button class="card__cta" data-open-booking data-prefill="florence">
+                Book this <span aria-hidden="true">→</span>
+              </button>
+              <a class="card__more" href={c.href}>Full details</a>
+            </div>
           </div>
         </article>
       ))}
@@ -121,16 +127,24 @@ const classes = [
   }
   .card__body { padding: 1.5rem 1.5rem 1.7rem; display: flex; flex-direction: column; flex: 1; }
   .card__name { font-size: var(--step-1); color: var(--olive); margin-bottom: 0.6rem; }
+  .card__name a { color: inherit; transition: color 0.3s; }
+  .card__name a:hover { color: var(--terracotta); }
   .card__desc { color: var(--charcoal-soft); font-size: var(--step--1); line-height: 1.6; flex: 1; }
   .card__meta {
     margin-top: 1rem; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.02em;
     color: var(--terracotta); text-transform: uppercase;
   }
+  .card__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.8rem 1.5rem; margin-top: 1.2rem; }
   .card__cta {
-    align-self: flex-start; margin-top: 1.2rem; display: inline-flex; align-items: center; gap: 0.5rem;
+    display: inline-flex; align-items: center; gap: 0.5rem;
     font-weight: 700; color: var(--olive);
     border-bottom: 2px solid var(--yolk); padding-bottom: 3px;
     transition: gap 0.35s var(--ease), color 0.3s;
   }
   .card__cta:hover { gap: 0.9rem; color: var(--terracotta); }
+  .card__more {
+    font-weight: 600; font-size: var(--step--1); color: var(--charcoal-soft);
+    text-decoration: underline; text-underline-offset: 3px; transition: color 0.3s;
+  }
+  .card__more:hover { color: var(--terracotta); }
 </style>

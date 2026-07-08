@@ -1,10 +1,15 @@
 # Remaining SEO Tasks — needs your input
 
-Companion to `FULL-AUDIT-REPORT.md` and `ACTION-PLAN.md`. Everything below is what
-**couldn't be done autonomously** because it needs your data, accounts, content, or a
-decision. The items already shipped are listed at the bottom for context.
+Companion to `FULL-AUDIT-REPORT.md`, `ACTION-PLAN.md` and `SEO-STRATEGY.md`. Everything
+below is what **couldn't be done autonomously** because it needs your data, accounts,
+content, or a decision. The items already shipped are listed at the bottom for context.
 
-Last updated: 2026-06-20
+Last updated: 2026-07-08 — this pass shipped the structural fix for the position-50
+problem: 5 intent landing pages (`/pasta-making-class-florence/`, market tour, private,
+online, team building), a `/blog/` guides section with 5 pillar posts, internal links
+from every homepage section, and per-page Product/Service + Breadcrumb + FAQ schema.
+See `SEO-STRATEGY.md` §2 for the new architecture. **After deploying: resubmit the
+sitemap in GSC (see R6).**
 
 ---
 
@@ -116,15 +121,13 @@ You serve Florence; many local searchers use Italian. Consider an `/it/` version
 
 ## 🟢 Optional polish (I can do these on request — they just weren't clearly "no-input")
 
-### R13. Self-host the fonts (GDPR + speed)
-Fonts load from `fonts.gstatic.com` (sends EU visitors' IPs to Google). I added a `preconnect`
-as an interim speed fix. To fully self-host the clean Astro way:
-```bash
-npm i @fontsource-variable/playfair-display @fontsource-variable/hanken-grotesk
-```
-Then replace the three `@font-face` blocks at the top of `src/styles/global.css` with imports
-(`import '@fontsource-variable/playfair-display';` etc.) and drop the `preconnect`. I left this
-out because variable-font axis setup is worth a visual check after wiring.
+### R13. Self-host the fonts — ✅ Resolved (July 2026): done, and it was urgent
+The hardcoded `fonts.gstatic.com` URLs had gone **stale and were 404ing** — the brand fonts
+weren't loading at all (site rendered in Georgia fallback). Installed
+`@fontsource-variable/playfair-display` + `@fontsource-variable/hanken-grotesk`, replaced the
+`@font-face` blocks in `src/styles/global.css` with `@import`s, updated `--serif`/`--sans` to
+the `… Variable` family names, and removed the `preconnect` from `Layout.astro`. Verified in a
+headless browser: fonts load locally from `/_astro/*.woff2`, zero external font requests.
 
 ### R14. Real favicon set
 Currently an inline emoji SVG (🍝). Add `favicon.ico`, `apple-touch-icon.png` (180×180), and a

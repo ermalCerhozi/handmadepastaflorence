@@ -12,6 +12,8 @@ const offers = [
     t: 'Corporate team building',
     d: 'Aprons on, laptops away. A private hands-on class where your team rolls, folds, laughs and then sits down to a long lunch it made itself.',
     points: ['Private kitchen buyout, 6–14 people', 'English-speaking chefs', 'Wine pairing & dietary options'],
+    href: '/team-building-cooking-class-florence/',
+    hrefLabel: 'Team building details',
   },
   {
     t: 'Tour operators & travel planners',
@@ -44,6 +46,11 @@ const offers = [
               <li>{p}</li>
             ))}
           </ul>
+          {o.href && (
+            <a class="b2b__more" href={o.href}>
+              {o.hrefLabel} <span aria-hidden="true">→</span>
+            </a>
+          )}
         </article>
       ))}
     </div>
@@ -87,6 +94,12 @@ const offers = [
     font-size: var(--step--1); color: rgba(249,246,240,0.7); padding-left: 1.1rem; position: relative;
   }
   .b2b__points li::before { content: '·'; position: absolute; left: 0.2rem; color: var(--yolk); font-weight: 800; }
+  .b2b__more {
+    display: inline-flex; align-items: center; gap: 0.4rem; margin-top: 1.1rem;
+    font-size: var(--step--1); font-weight: 700; color: var(--yolk);
+    transition: gap 0.3s;
+  }
+  .b2b__more:hover { gap: 0.7rem; }
 
   .b2b__cta {
     margin-top: clamp(2rem, 4vw, 3rem); display: flex; flex-wrap: wrap; align-items: center;

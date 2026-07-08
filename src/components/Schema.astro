@@ -49,31 +49,37 @@ const localBusiness = {
 };
 
 // One Product + Offer per bookable experience — the simplest reliable path to
-// price showing in search results. Prices mirror the on-page cards.
+// price showing in search results. Prices mirror the on-page cards. Offer URLs
+// point at the dedicated landing pages, which carry their own richer Product
+// schema — so these summary products render on the homepage only.
 const classes = [
   {
     name: 'The Chef’s Table',
     desc: 'Three hands-on hours in our Oltrarno kitchen — four pasta shapes, ending in a long Tuscan lunch.',
     price: '95',
     img: '/images/cooking_class_with_guests_in_picture.webp',
+    url: '/pasta-making-class-florence/',
   },
   {
     name: 'Mercato & Mani',
     desc: 'Shop Sant’Ambrogio market at dawn with Endri or Marsel, then cook ravioli, a ragù and a seasonal dolce.',
     price: '145',
     img: '/images/aperitivo.webp',
+    url: '/market-tour-cooking-class-florence/',
   },
   {
     name: 'The Family Long-Table',
     desc: 'Book the whole kitchen for a private celebration — birthdays, proposals, reunions.',
     price: '680',
     img: '/images/wedding-cake-2.webp',
+    url: '/private-cooking-class-florence/',
   },
   {
     name: 'Live Online Pasta Class',
     desc: 'Cook live from anywhere with a fresh-pasta ingredient kit shipped to your door.',
     price: '68',
     img: '/images/cooking-class.jpg',
+    url: '/online-pasta-making-class/',
   },
 ];
 
@@ -89,10 +95,12 @@ const products = classes.map((c) => ({
     price: c.price,
     priceCurrency: 'EUR',
     availability: 'https://schema.org/InStock',
-    url: `${SITE}/#experiences`,
+    url: `${SITE}${c.url}`,
   },
 }));
+
+const isHome = Astro.url.pathname === '/';
 ---
 
 <script type="application/ld+json" set:html={JSON.stringify(localBusiness)} />
-{products.map((p) => <script type="application/ld+json" set:html={JSON.stringify(p)} />)}
+{isHome && products.map((p) => <script type="application/ld+json" set:html={JSON.stringify(p)} />)}

@@ -1,0 +1,121 @@
+---
+// Landing page for "private cooking class florence" (The Family Long-Table).
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import ClassLanding from '../components/ClassLanding.astro';
+import Footer from '../components/Footer.astro';
+import FloatingCTA from '../components/FloatingCTA.astro';
+import BookingDrawer from '../components/BookingDrawer.astro';
+---
+
+<Layout
+  title="Private Cooking Class in Florence — The Family Long-Table | Handmade Pasta Florence"
+  description="Book the whole kitchen for a private pasta-making feast in Florence — birthdays, proposals, reunions. 6–14 guests, evenings, two Tuscan chefs all to yourselves. From €680."
+  image="/images/wedding-cake-2.webp"
+>
+  <Header solid />
+  <main>
+    <ClassLanding
+      eyebrow="The Family Long-Table · private events"
+      heading="A private cooking class in Florence,"
+      headingItal="all to yourselves."
+      lede="The whole kitchen, one long table, and two chefs cooking with your people only. This is the farmhouse feast we’ve hosted at our agriturismi for years — birthdays, proposals, reunions — brought to the heart of Florence."
+      image={{
+        src: '/images/wedding-cake-2.webp',
+        alt: 'A celebration cake at a private Family Long-Table event in Florence',
+        w: 1080,
+        h: 1433,
+      }}
+      price="from €680"
+      priceNote="private kitchen buyout"
+      facts={[
+        { label: 'Group size', value: '6–14 guests' },
+        { label: 'When', value: 'evenings · flexible' },
+        { label: 'Format', value: 'whole-kitchen buyout' },
+        { label: 'Where', value: 'Oltrarno, near Santo Spirito' },
+        { label: 'Language', value: 'English or Italian' },
+        { label: 'Enquiries', value: 'answered within a day' },
+      ]}
+      sections={[
+        {
+          title: 'The long-table feast',
+          paras: [
+            'At our agriturismi, the long table is where every celebration ends up — everyone cooking, everyone eating, nobody checking the time. The Family Long-Table brings that evening to our Oltrarno kitchen: your group rolls and folds fresh pasta together with Endri and Marsel, then sits down to the feast it just made, with local wine on the table.',
+          ],
+        },
+        {
+          title: 'Made for occasions',
+          paras: [
+            'Birthdays, proposals, anniversaries, family reunions, friends who finally got the same week off — if it deserves a table, it fits here. Because the kitchen is exclusively yours, we can shape the evening around the occasion. Tell us what you’re celebrating when you book and we’ll plan it with you over WhatsApp.',
+          ],
+        },
+        {
+          title: 'Good to know',
+          paras: [],
+          list: [
+            'From €680 for the private kitchen, for groups of 6–14 — tell us your group size and we’ll confirm a quote.',
+            'Evenings work best, and timing is flexible for private bookings.',
+            'Gluten-free and allergy-friendly at no extra charge — tell us about your group when you book.',
+            'Company outing instead of a family one? See our <a href="/team-building-cooking-class-florence/">team building cooking class</a>.',
+          ],
+        },
+      ]}
+      faqs={[
+        {
+          q: 'How many people can the private class host?',
+          a: 'The Family Long-Table hosts groups of 6 to 14 around one long table, with the whole kitchen — and both chefs — exclusively yours.',
+        },
+        {
+          q: 'How does pricing work?',
+          a: 'The private buyout starts at €680 for the kitchen. Send us your group size and date on WhatsApp or email and we’ll confirm a quote for your evening.',
+        },
+        {
+          q: 'Can you help with a surprise — a proposal or a birthday?',
+          a: 'Yes — proposals, birthdays and reunions are exactly what this format is for. Tell us the plan when you book and we’ll shape the evening around it.',
+        },
+        {
+          q: 'Can you cater to gluten-free diets or allergies?',
+          a: 'Yes — we can prepare a dedicated gluten-free flour blend and a clean station at no extra charge. With a private group, just send us everyone’s needs when you book.',
+        },
+        {
+          q: 'How do I book?',
+          a: 'Use the “Plan your evening” button to start a WhatsApp chat, or email ciao@handmadepastaflorence.com. Private evenings are planned personally, so we’ll confirm details together.',
+        },
+      ]}
+      related={[
+        {
+          title: 'The Chef’s Table',
+          href: '/pasta-making-class-florence/',
+          desc: 'Our signature 3-hour small-group pasta class — €95 per person.',
+        },
+        {
+          title: 'Team Building Class',
+          href: '/team-building-cooking-class-florence/',
+          desc: 'The private kitchen for companies — aprons on, laptops away.',
+        },
+        {
+          title: 'Mercato & Mani',
+          href: '/market-tour-cooking-class-florence/',
+          desc: 'Dawn market walk + cooking class. 5 hours, max 6 guests — €145.',
+        },
+        {
+          title: 'Things to do in the Oltrarno',
+          href: '/blog/things-to-do-in-oltrarno-florence/',
+          desc: 'Make an evening of it — our neighbourhood, hour by hour.',
+        },
+      ]}
+      ctaLabel="Plan your evening"
+      prefill="florence"
+      breadcrumbName="Private Cooking Class"
+      product={{
+        name: 'The Family Long-Table — Private Cooking Class in Florence',
+        description:
+          'A private pasta-making feast in Florence for 6–14 guests: the whole Oltrarno kitchen, two agriturismo head chefs, one long table. Birthdays, proposals, reunions.',
+        price: '680',
+      }}
+    />
+  </main>
+  <Footer />
+  <FloatingCTA />
+  <BookingDrawer />
+</Layout>

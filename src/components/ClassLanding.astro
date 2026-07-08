@@ -1,0 +1,548 @@
+---
+// Shared template for the dedicated class landing pages (one page per bookable
+// experience / search intent). Each page under src/pages/ supplies the copy;
+// this component renders the sections and emits the page-level JSON-LD
+// (Product or Service, BreadcrumbList, FAQPage). Sitewide LocalBusiness
+// schema still comes from Schema.astro via the layout.
+interface Fact {
+  label: string;
+  value: string;
+}
+interface Section {
+  title: string;
+  paras: string[];
+  list?: string[];
+}
+interface Faq {
+  q: string;
+  a: string;
+}
+interface Related {
+  title: string;
+  href: string;
+  desc: string;
+}
+
+interface Props {
+  eyebrow: string;
+  heading: string;
+  headingItal: string;
+  lede: string;
+  image: { src: string; alt: string; w: number; h: number };
+  price: string;
+  priceNote?: string;
+  facts: Fact[];
+  sections: Section[];
+  faqs: Faq[];
+  related: Related[];
+  ctaLabel: string;
+  /** Booking-drawer prefill; ignored when emailSubject is set. */
+  prefill?: 'florence' | 'online';
+  /** When set, the CTA becomes a mailto (bespoke enquiries) instead of the drawer. */
+  emailSubject?: string;
+  breadcrumbName: string;
+  /** Product schema (classes with a fixed per-person/per-group price). */
+  product?: { name: string; description: string; price: string };
+  /** Service schema (bespoke offers without a public price). */
+  service?: { name: string; description: string };
+}
+
+const {
+  eyebrow,
+  heading,
+  headingItal,
+  lede,
+  image,
+  price,
+  priceNote,
+  facts,
+  sections,
+  faqs,
+  related,
+  ctaLabel,
+  prefill = 'florence',
+  emailSubject,
+  breadcrumbName,
+  product,
+  service,
+} = Astro.props;
+
+const SITE = 'https://handmadepastaflorence.com';
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+
+const productSchema = product && {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: product.name,
+  description: product.description,
+  image: `${SITE}${image.src}`,
+  brand: { '@type': 'Brand', name: 'Handmade Pasta Florence' },
+  offers: {
+    '@type': 'Offer',
+    price: product.price,
+    priceCurrency: 'EUR',
+    availability: 'https://schema.org/InStock',
+    url: canonical,
+  },
+};
+
+const serviceSchema = service && {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: service.name,
+  description: service.description,
+  provider: { '@id': `${SITE}/#business` },
+  areaServed: { '@type': 'City', name: 'Florence' },
+  url: canonical,
+};
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/` },
+    { '@type': 'ListItem', position: 2, name: breadcrumbName, item: canonical },
+  ],
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+---
+
+<!-- id="top" lets FloatingCTA treat this hero like the homepage one -->
+<section class="lp-hero" id="top">
+  <div class="shell lp-hero__inner">
+    <div class="lp-hero__text" data-reveal>
+      <nav class="lp-crumb" aria-label="Breadcrumb">
+        <a href="/">Home</a> <span aria-hidden="true">/</span> <span>{breadcrumbName}</span>
+      </nav>
+      <p class="eyebrow lp-hero__eyebrow">{eyebrow}</p>
+      <h1 class="lp-hero__h">
+        {heading} <span class="ital">{headingItal}</span>
+      </h1>
+      <p class="lp-hero__lede">{lede}</p>
+      <div class="lp-hero__row">
+        {
+          emailSubject ? (
+            <a
+              class="lp-hero__cta"
+              href={`mailto:ciao@handmadepastaflorence.com?subject=${encodeURIComponent(emailSubject)}`}
+            >
+              {ctaLabel} <span aria-hidden="true">→</span>
+            </a>
+          ) : (
+            <button class="lp-hero__cta" data-open-booking data-prefill={prefill}>
+              {ctaLabel} <span aria-hidden="true">→</span>
+            </button>
+          )
+        }
+        <span class="lp-hero__price">
+          <strong>{price}</strong>
+          {priceNote && <small>{priceNote}</small>}
+        </span>
+      </div>
+    </div>
+    <div class="lp-hero__media" data-reveal style="--reveal-delay:120ms">
+      <img src={image.src} alt={image.alt} width={image.w} height={image.h} decoding="async" />
+    </div>
+  </div>
+</section>
+
+<section class="lp-facts">
+  <div class="shell">
+    <dl class="lp-facts__grid" data-reveal>
+      {
+        facts.map((f) => (
+          <div class="lp-facts__item">
+            <dt>{f.label}</dt>
+            <dd>{f.value}</dd>
+          </div>
+        ))
+      }
+    </dl>
+  </div>
+</section>
+
+<section class="lp-body">
+  <div class="shell lp-body__inner">
+    {
+      sections.map((s, i) => (
+        <article class="lp-sec" data-reveal style={`--reveal-delay:${i * 60}ms`}>
+          <h2 class="lp-sec__h">{s.title}</h2>
+          {s.paras.map((p) => (
+            <p class="lp-sec__p" set:html={p} />
+          ))}
+          {s.list && (
+            <ul class="lp-sec__list">
+              {s.list.map((li) => (
+                <li set:html={li} />
+              ))}
+            </ul>
+          )}
+        </article>
+      ))
+    }
+  </div>
+</section>
+
+<section class="lp-faq">
+  <div class="shell lp-faq__inner">
+    <h2 class="lp-faq__h">Good to <span class="ital">know.</span></h2>
+    <div class="lp-faq__list">
+      {
+        faqs.map((f, i) => (
+          <details class="lp-faq__item" data-reveal style={`--reveal-delay:${i * 50}ms`}>
+            <summary class="lp-faq__q">
+              {f.q}
+              <span class="lp-faq__icon" aria-hidden="true">
+                +
+              </span>
+            </summary>
+            <p class="lp-faq__a">{f.a}</p>
+          </details>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<section class="lp-rel">
+  <div class="shell">
+    <h2 class="lp-rel__h">Looking for something <span class="ital">else?</span></h2>
+    <div class="lp-rel__grid">
+      {
+        related.map((r, i) => (
+          <a class="lp-rel__card" href={r.href} data-reveal style={`--reveal-delay:${i * 70}ms`}>
+            <h3>{r.title}</h3>
+            <p>{r.desc}</p>
+            <span class="lp-rel__go" aria-hidden="true">
+              →
+            </span>
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+{productSchema && <script type="application/ld+json" set:html={JSON.stringify(productSchema)} />}
+{serviceSchema && <script type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />}
+<script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+<script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+<style>
+  /* ===== Hero ===== */
+  .lp-hero {
+    background: var(--olive-deep);
+    color: var(--flour);
+    padding-block: clamp(7rem, 16vh, 10rem) clamp(3rem, 7vh, 5rem);
+    position: relative;
+    overflow: hidden;
+  }
+  .lp-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(55% 70% at 85% 15%, rgba(255, 199, 44, 0.12), transparent 70%);
+  }
+  .lp-hero__inner {
+    display: grid;
+    gap: clamp(2rem, 5vw, 4rem);
+    align-items: center;
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+  @media (min-width: 860px) {
+    .lp-hero__inner {
+      grid-template-columns: 1.25fr 1fr;
+    }
+  }
+  .lp-crumb {
+    font-size: var(--step--1);
+    color: rgba(249, 246, 240, 0.55);
+    margin-bottom: 1.4rem;
+  }
+  .lp-crumb a {
+    color: rgba(249, 246, 240, 0.75);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color 0.3s;
+  }
+  .lp-crumb a:hover {
+    color: var(--flour);
+  }
+  .lp-crumb span[aria-hidden] {
+    margin-inline: 0.4rem;
+  }
+  .lp-hero__eyebrow {
+    color: var(--yolk);
+    margin-bottom: 1rem;
+  }
+  .lp-hero__h {
+    font-size: var(--step-3);
+    line-height: 1.08;
+    max-width: 18ch;
+  }
+  .lp-hero__h .ital {
+    color: var(--yolk);
+  }
+  .lp-hero__lede {
+    margin-top: 1.2rem;
+    color: rgba(249, 246, 240, 0.82);
+    font-size: var(--step-0);
+    line-height: 1.65;
+    max-width: 54ch;
+  }
+  .lp-hero__row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem 1.6rem;
+    margin-top: 1.8rem;
+  }
+  .lp-hero__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: var(--yolk);
+    color: var(--olive-deep);
+    font-weight: 800;
+    font-size: var(--step-0);
+    padding: 0.95rem 1.6rem;
+    border-radius: 100px;
+    box-shadow: 0 10px 26px -10px rgba(240, 180, 0, 0.75);
+    transition: gap 0.3s;
+  }
+  .lp-hero__cta:hover {
+    gap: 1rem;
+  }
+  .lp-hero__price {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.25;
+  }
+  .lp-hero__price strong {
+    font-family: var(--serif);
+    font-size: var(--step-1);
+    color: var(--flour);
+  }
+  .lp-hero__price small {
+    font-size: var(--step--1);
+    color: rgba(249, 246, 240, 0.65);
+  }
+  .lp-hero__media {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    aspect-ratio: 4 / 3;
+    background: var(--olive);
+  }
+  @media (min-width: 860px) {
+    .lp-hero__media {
+      aspect-ratio: 5 / 4;
+    }
+  }
+  .lp-hero__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* ===== Facts strip ===== */
+  .lp-facts {
+    background: var(--flour);
+    border-bottom: 1px solid var(--paper-line);
+  }
+  .lp-facts__grid {
+    display: grid;
+    gap: 1.2rem 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr));
+    padding-block: clamp(1.6rem, 4vw, 2.4rem);
+  }
+  .lp-facts__item dt {
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--terracotta);
+  }
+  .lp-facts__item dd {
+    margin-top: 0.3rem;
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: var(--step-0);
+    color: var(--olive);
+  }
+
+  /* ===== Body prose ===== */
+  .lp-body {
+    padding-block: clamp(3.5rem, 9vh, 6rem);
+  }
+  .lp-body__inner {
+    display: grid;
+    gap: clamp(2.4rem, 5vw, 3.4rem);
+    max-width: 820px;
+  }
+  .lp-sec__h {
+    font-size: var(--step-2);
+    color: var(--olive);
+    margin-bottom: 0.9rem;
+  }
+  .lp-sec__p {
+    color: var(--charcoal);
+    line-height: 1.7;
+    font-size: var(--step-0);
+    max-width: 66ch;
+  }
+  .lp-sec__p + .lp-sec__p {
+    margin-top: 0.9rem;
+  }
+  .lp-sec__p :global(a),
+  .lp-sec__list :global(a) {
+    color: var(--terracotta);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .lp-sec__list {
+    margin-top: 1rem;
+    display: grid;
+    gap: 0.55rem;
+  }
+  .lp-sec__list li {
+    position: relative;
+    padding-left: 1.3rem;
+    color: var(--charcoal);
+    line-height: 1.6;
+    font-size: var(--step-0);
+    max-width: 64ch;
+  }
+  .lp-sec__list li::before {
+    content: '·';
+    position: absolute;
+    left: 0.25rem;
+    color: var(--terracotta);
+    font-weight: 800;
+  }
+
+  /* ===== FAQ ===== */
+  .lp-faq {
+    background: var(--flour);
+    padding-block: clamp(3rem, 8vh, 5rem);
+  }
+  .lp-faq__h {
+    font-size: var(--step-2);
+    color: var(--olive);
+    margin-bottom: clamp(1.6rem, 3vw, 2.4rem);
+  }
+  .lp-faq__h .ital {
+    color: var(--terracotta);
+  }
+  .lp-faq__list {
+    display: grid;
+    gap: 0.8rem;
+    max-width: 760px;
+  }
+  .lp-faq__item {
+    background: #fff;
+    border: 1px solid var(--paper-line);
+    border-radius: var(--radius);
+    padding: 0 1.3rem;
+    box-shadow: var(--shadow-sm);
+  }
+  .lp-faq__q {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    cursor: pointer;
+    list-style: none;
+    padding: 1.1rem 0;
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: var(--step-0);
+    color: var(--olive);
+  }
+  .lp-faq__q::-webkit-details-marker {
+    display: none;
+  }
+  .lp-faq__icon {
+    color: var(--terracotta);
+    font-size: 1.4rem;
+    line-height: 1;
+    flex-shrink: 0;
+    transition: transform 0.3s var(--ease);
+  }
+  .lp-faq__item[open] .lp-faq__icon {
+    transform: rotate(45deg);
+  }
+  .lp-faq__a {
+    margin: 0 0 1.2rem;
+    color: var(--charcoal);
+    line-height: 1.6;
+    font-size: var(--step--1);
+    max-width: 64ch;
+  }
+
+  /* ===== Related ===== */
+  .lp-rel {
+    padding-block: clamp(3rem, 8vh, 5rem);
+  }
+  .lp-rel__h {
+    font-size: var(--step-2);
+    color: var(--olive);
+    margin-bottom: clamp(1.6rem, 3vw, 2.4rem);
+  }
+  .lp-rel__h .ital {
+    color: var(--terracotta);
+  }
+  .lp-rel__grid {
+    display: grid;
+    gap: clamp(1rem, 2vw, 1.6rem);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+  }
+  .lp-rel__card {
+    position: relative;
+    display: block;
+    background: #fff;
+    border: 1px solid var(--paper-line);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem 1.5rem 1.6rem;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow 0.4s var(--ease), transform 0.4s var(--ease);
+  }
+  .lp-rel__card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-3px);
+  }
+  .lp-rel__card h3 {
+    font-size: var(--step-1);
+    color: var(--olive);
+    margin-bottom: 0.5rem;
+    padding-right: 1.6rem;
+  }
+  .lp-rel__card p {
+    color: var(--charcoal-soft);
+    font-size: var(--step--1);
+    line-height: 1.6;
+  }
+  .lp-rel__go {
+    position: absolute;
+    top: 1.3rem;
+    right: 1.4rem;
+    color: var(--terracotta);
+    font-weight: 800;
+    transition: transform 0.3s var(--ease);
+  }
+  .lp-rel__card:hover .lp-rel__go {
+    transform: translateX(4px);
+  }
+</style>

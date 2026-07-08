@@ -4,27 +4,12 @@
    terracotta. Editorial serif + crisp grotesque. Tactile & premium.
    ===================================================================== */
 
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 400 900;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/playfairdisplay/v37/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvXDXbtY.woff2) format('woff2');
-}
-@font-face {
-  font-family: 'Playfair Display';
-  font-style: italic;
-  font-weight: 400 900;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/playfairdisplay/v37/nuFRD-vYSZviVYUb_rj3ij__anPXDTzYgEM86xQ.woff2) format('woff2');
-}
-@font-face {
-  font-family: 'Hanken Grotesk';
-  font-style: normal;
-  font-weight: 300 800;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/hankengrotesk/v11/ieVq2YZDLWuGJpnzaiwFXS9tYvBR0-IGZS337lWg9og.woff2) format('woff2');
-}
+/* Self-hosted variable fonts (@fontsource) — the previous hardcoded
+   fonts.gstatic.com URLs went stale and 404'd, and self-hosting also keeps
+   EU visitors' IPs away from Google (GDPR). */
+@import '@fontsource-variable/playfair-display/wght.css';
+@import '@fontsource-variable/playfair-display/wght-italic.css';
+@import '@fontsource-variable/hanken-grotesk/wght.css';
 
 :root {
   /* ---- Color ---- */
@@ -47,8 +32,8 @@
   --paper-line: rgba(44, 58, 41, 0.12);
 
   /* ---- Type ---- */
-  --serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
-  --sans: 'Hanken Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  --serif: 'Playfair Display Variable', 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --sans: 'Hanken Grotesk Variable', 'Hanken Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
 
   /* fluid scale */
   --step--1: clamp(0.83rem, 0.78rem + 0.25vw, 0.95rem);

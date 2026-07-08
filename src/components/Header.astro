@@ -1,10 +1,16 @@
 ---
 // Slim, transparent-over-hero header that gains a flour-paper background on scroll.
+// `solid` renders that background from the start — for subpages whose hero
+// isn't a dark full-bleed photo.
+interface Props {
+  solid?: boolean;
+}
+const { solid = false } = Astro.props;
 ---
 
-<header class="hdr" data-header>
+<header class:list={['hdr', { 'is-solid': solid }]} data-header>
   <div class="shell hdr__inner">
-    <a href="#top" class="hdr__brand" aria-label="Handmade Pasta Florence — home">
+    <a href="/" class="hdr__brand" aria-label="Handmade Pasta Florence — home">
       <span class="hdr__mark" aria-hidden="true">
         <svg viewBox="0 0 44 44" width="40" height="40">
           <circle cx="22" cy="22" r="21" fill="none" stroke="currentColor" stroke-width="1.4" />
@@ -18,10 +24,11 @@
     </a>
 
     <nav class="hdr__nav" aria-label="Primary">
-      <a href="#experiences">Classes</a>
-      <a href="#gallery">Pasta Shapes</a>
-      <a href="#story">Our Story</a>
-      <a href="#business">For Business</a>
+      <a href="/#experiences">Classes</a>
+      <a href="/#gallery">Pasta Shapes</a>
+      <a href="/#story">Our Story</a>
+      <a href="/#business">For Business</a>
+      <a href="/blog/">Guides</a>
     </nav>
 
     <button class="hdr__cta" data-open-booking>
@@ -51,6 +58,7 @@
     transition: background 0.5s var(--ease), box-shadow 0.5s var(--ease), backdrop-filter 0.5s;
     color: var(--flour);
   }
+  .hdr.is-solid,
   .hdr.is-stuck {
     background: rgba(249, 246, 240, 0.86);
     backdrop-filter: blur(14px) saturate(1.2);
