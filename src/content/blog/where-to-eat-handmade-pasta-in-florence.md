@@ -1,6 +1,6 @@
 ---
-title: 'Where to eat handmade pasta in Florence — a pasta chef’s guide'
-description: 'How to spot real fresh pasta on a Florence menu, what to order (pici, pappardelle, tortelli), and the neighbourhoods and trattorias worth your one dinner.'
+title: 'The best handmade pasta in Florence: where to eat it — a pasta chef’s guide'
+description: 'A pasta chef’s honest take on the best pasta in Florence — how to spot the real thing on a menu, what to order (pici, pappardelle, tortelli), and the trattorias worth your one dinner.'
 pubDate: 2026-07-08
 author: 'Endri Cerhozi'
 image: '/images/plates.webp'
@@ -8,6 +8,10 @@ imageAlt: 'Plates of fresh handmade pasta served at a Tuscan table'
 ---
 
 I make pasta for a living, so when I eat out in Florence I'm the annoying one turning the pappardelle over with a fork to check the cut. Here's what I actually look for — and where I'd send a friend with one free dinner in the city.
+
+## So where is the best pasta in Florence?
+
+The short answer: not within sight of the Duomo. The best handmade pasta in Florence is in the trattorias around the Sant'Ambrogio market and in the Oltrarno around Santo Spirito — anywhere the menu is short, the pasta is named by its shape, and the room is full of Italians at 13:00. Order pici if you see them, pappardelle al cinghiale if it's autumn. The long answer is the rest of this guide.
 
 ## First: how to spot real handmade pasta on a menu
 

@@ -4,12 +4,28 @@ Companion to `FULL-AUDIT-REPORT.md`, `ACTION-PLAN.md` and `SEO-STRATEGY.md`. Eve
 below is what **couldn't be done autonomously** because it needs your data, accounts,
 content, or a decision. The items already shipped are listed at the bottom for context.
 
-Last updated: 2026-07-08 — this pass shipped the structural fix for the position-50
-problem: 5 intent landing pages (`/pasta-making-class-florence/`, market tour, private,
-online, team building), a `/blog/` guides section with 5 pillar posts, internal links
-from every homepage section, and per-page Product/Service + Breadcrumb + FAQ schema.
-See `SEO-STRATEGY.md` §2 for the new architecture. **After deploying: resubmit the
-sitemap in GSC (see R6).**
+Last updated: 2026-07-12 — this pass acted on the first real GSC data (23 days live:
+2 clicks / 65 impressions / avg position 49.4). Key signal: the **teambuilding cluster is
+36% of all listed impressions** ("teambuilding florence food" alone = 13, one-word spelling),
+and "private cooking class florence" (7) carries couple-intent the €680 buyout page didn't
+answer. Shipped in response:
+- Team building pages (EN+IT) retitled around "food teambuilding" / "teambuilding in cucina".
+- Where-to-eat post retitled to "The best handmade pasta in Florence" + direct-answer H2
+  (5 "best pasta florence" query variants had 0 clicks); mirrored in IT.
+- Pasta-shapes post: "types" added (EN), "pasta tipica toscana" (IT).
+- Homepage default title de-cannibalized from `/pasta-making-class-florence/`
+  (both targeted "pasta making class in florence").
+- IT homepage was inheriting the **English** default title — now has its own Italian title/meta.
+- Private-class pages (EN+IT): couples FAQ + Chef's Table routing for the
+  "private class for two" intent.
+
+**Next GSC checkpoint: ~2026-08-09.** Export with the position column and query+page
+dimensions (period-over-period) — that's when striking-distance analysis becomes possible.
+R1–R3 (NAP + Google Business Profile) remain the highest-ROI open items: the query mix
+(team building, private class, "best pasta") is local-intent, and at domain age ~1 month
+the map pack will convert long before page-1 organic does. Also list on
+TripAdvisor / GetYourGuide / Airbnb Experiences — both for direct bookings and as the
+first authority signals pointing at the domain.
 
 ---
 
@@ -113,9 +129,10 @@ The Story says "two young Italians and lifelong friends" but names no one. Add f
 real photo in `src/components/Story.astro`. For a personal experience brand, named, pictured
 hosts are a strong trust + ranking signal.
 
-### R12. Italian-language version + hreflang
-You serve Florence; many local searchers use Italian. Consider an `/it/` version and add
-`hreflang` tags. (This could also become the real purpose of `/edizione` — see R4.)
+### R12. Italian-language version + hreflang — ✅ Resolved (July 2026): shipped
+Full `/it/` mirror exists (homepage, all 5 landing pages, blog with 5 translated posts)
+with hreflang route mapping in `Layout.astro`. Italian queries are already appearing in
+GSC ("teambuilding cucina", "pasta toscana tipica", "piatti tipici firenze pasta").
 
 ---
 
