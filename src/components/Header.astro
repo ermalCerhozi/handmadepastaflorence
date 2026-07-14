@@ -15,11 +15,7 @@ const t = useTranslations(lang as any);
   <div class="shell hdr__inner">
     <a href={lang === 'it' ? "/it/" : "/"} class="hdr__brand" aria-label="Handmade Pasta Florence — home">
       <span class="hdr__mark" aria-hidden="true">
-        <svg viewBox="0 0 44 44" width="40" height="40">
-          <circle cx="22" cy="22" r="21" fill="none" stroke="currentColor" stroke-width="1.4" />
-          <path d="M13 27c3-6 6-9 9-9s6 3 9 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
-          <path d="M13 22c3-6 6-9 9-9s6 3 9 9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" opacity="0.55" />
-        </svg>
+        <img src="/images/logo.png" alt="" width="40" height="40" />
       </span>
       <span class="hdr__name">
         <strong>Handmade Pasta</strong> <em>Florence</em>
@@ -77,6 +73,7 @@ const t = useTranslations(lang as any);
   }
   .hdr__brand { display: flex; align-items: center; gap: 0.7rem; }
   .hdr__mark { display: grid; place-items: center; transition: transform 0.6s var(--ease); }
+  .hdr__mark img { display: block; width: 40px; height: 40px; }
   .hdr__brand:hover .hdr__mark { transform: rotate(-12deg); }
   .hdr__name { font-family: var(--serif); font-size: 1.35rem; line-height: 1; letter-spacing: -0.01em; }
   .hdr__name strong { font-weight: 800; }
