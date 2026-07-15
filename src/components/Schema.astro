@@ -9,7 +9,9 @@ const SITE = 'https://handmadepastaflorence.com';
 
 const localBusiness = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
+  // Dual-typed: a bookable cooking-class kitchen is both a local business and
+  // a tourist activity — Google's TouristAttraction docs endorse combining the two.
+  '@type': ['LocalBusiness', 'TouristAttraction'],
   '@id': `${SITE}/#business`,
   name: 'Handmade Pasta Florence',
   description:
