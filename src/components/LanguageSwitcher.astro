@@ -41,6 +41,14 @@ if (langLinks.length <= 1) return;
 </details>
 
 <script>
+  // Save preference on click
+  document.querySelectorAll('.lang__opt').forEach(link => {
+    link.addEventListener('click', (e) => {
+      const lang = e.currentTarget.getAttribute('lang');
+      if (lang) localStorage.setItem('preferredLang', lang);
+    });
+  });
+
   // Close details when clicking outside
   document.addEventListener("click", (e) => {
     const details = document.querySelector('[data-lang-switcher]') as HTMLDetailsElement;

@@ -71,6 +71,20 @@ const dir = languages[lang].dir;
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <Schema />
     <ClientRouter />
+    <script is:inline define:vars={{ isRoot: Astro.url.pathname === '/' }}>
+      if (isRoot) {
+        try {
+          var pref = localStorage.getItem('preferredLang');
+          if (!pref) {
+            var browserLang = navigator.language.split('-')[0].toLowerCase();
+            var supported = ['it', 'fr', 'de', 'zh'];
+            if (supported.indexOf(browserLang) !== -1) {
+              window.location.replace('/' + browserLang + '/');
+            }
+          }
+        } catch (e) {}
+      }
+    </script>
   </head>
   <body>
     <slot />
