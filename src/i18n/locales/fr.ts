@@ -1,0 +1,266 @@
+const fr = {
+  meta: {
+    homeTitle: 'Handmade Pasta Florence — Cours de Cuisine et Expériences Pâtes dans l\'Oltrarno',
+    homeDescription: 'Cours pratiques de fabrication de pâtes à Florence animés par deux chefs de cuisine d\'agritourismes toscans. Max 8 personnes dans notre cuisine de l\'Oltrarno à partir de 95 €, visite du marché et options privées, ou en direct en ligne avec un kit d\'ingrédients à partir de 68 €.',
+    blogTitle: 'Guides sur les pâtes et la gastronomie à Florence | Handmade Pasta Florence',
+    blogDescription: 'Guides sur les pâtes fraîches et comment bien manger à Florence, rédigés par deux chefs d\'agritourismes toscans — formes de pâtes, où manger, conseils sans gluten et le quartier de l\'Oltrarno.',
+  },
+
+  nav: {
+    classes: 'Cours',
+    pasta: 'Formes de Pâtes',
+    story: 'Notre Histoire',
+    business: 'Pour les Pros',
+    guides: 'Guides',
+    book: 'Réserver',
+  },
+
+  footer: {
+    headline: 'Venez vous mettre un<br /><span class="ital">peu de farine sur les mains.</span>',
+    book: 'Réserver votre cours',
+    hours: 'Mar–Dim · cours à 10:00, 14:30 & 18:00 · fermé le lundi',
+    desc: 'Deux chefs d\'agritourisme, cuisinant avec vous en personne et en ligne au cœur de Florence.',
+    by: 'Par',
+    classes: 'Cours',
+    visit: 'Visiter',
+    pastaClass: 'Cours de Pâtes à Florence',
+    marketTour: 'Visite du Marché et Cuisine',
+    private: 'Événements Privés',
+    online: 'En Ligne en Direct',
+    team: 'Team Building',
+    gift: 'Offrir un cours',
+    guides: 'Guides et Histoires',
+    faq: 'FAQ et Allergènes',
+    made: 'Roulé à la main 🤌 à Firenze',
+  },
+
+  // Class landing page (ClassLanding.astro) chrome labels.
+  lp: {
+    home: 'Accueil',
+    faqPre: 'Bon à ',
+    faqItal: 'savoir.',
+    relPre: 'Vous cherchez autre ',
+    relItal: 'chose ?',
+  },
+
+  lang: {
+    switch: 'Langue',
+  },
+
+  hero: {
+    eyebrow: 'Firenze · récemment ouvert · deux chefs, une grande table',
+    titleL1: 'De la farine, des œufs,',
+    titleL2: 'et vos deux',
+    titleItal: 'mains.',
+    lede: 'Préparez de véritables pâtes toscanes aux côtés de deux chefs d\'agritourisme, dans notre cuisine lumineuse près de la Piazza Santo Spirito, ou en ligne en direct avec un kit livré chez vous.',
+    ctaReserve: 'Réservez votre table',
+    ctaSee: 'Voir les cours',
+    proofOpened: 'notre cuisine vient d\'ouvrir',
+    proofHands: 'pratique, puis vous mangez tout',
+    proofTable: 'à table, jamais plus',
+  },
+
+  fab: {
+    eyebrow: 'À Florence et en ligne',
+    when: 'Cours de pâtes en petit groupe',
+    book: 'Réserver',
+  },
+
+  scrollTop: {
+    label: 'Retour en haut',
+  },
+
+  whatsapp: {
+    label: 'Discutez avec nous',
+    text: 'Bonjour%2C%20je%20voudrais%20r%C3%A9server%20un%20cours%20de%20p%C3%A2tes%20%C3%A0%20Florence',
+  },
+
+  online: {
+    live: 'En direct',
+    eyebrow: 'Vous ne pouvez pas venir à Florence ?',
+    titlePre: 'Cuisinez avec nous ',
+    titleItal: 'en ligne en direct.',
+    desc: 'Mêmes chefs, même cuisine. Un cours de fabrication de pâtes en direct en ligne avec un kit d\'ingrédients livré à votre porte. Une belle option (ou cadeau) si l\'Italie n\'est pas encore au programme.',
+    cta: 'Rejoindre un cours en ligne',
+    from: 'à partir de',
+    person: 'personne',
+    more: 'Détails complets',
+  },
+
+  why: {
+    srHeading: 'Pourquoi cuisiner avec nous',
+    points: [
+      { t: 'Apprendre par la pratique', d: 'Pas de démonstrations à distance. Dès la première minute, vos mains sont dans la farine, façonnant chaque morceau vous-même.' },
+      { t: 'Mangez ce que vous préparez', d: 'Chaque cours se termine à table avec vos pâtes fraîches, une sauce toscane et un verre de vin local.' },
+      { t: 'Petits groupes uniquement', d: 'Jamais plus de huit autour du plan de travail, il y a donc toujours un chef à vos côtés pour corriger votre geste.' },
+      { t: 'De la ferme à Florence', d: 'Nous dirigeons des cuisines d\'agritourisme dans les collines autour de la ville. Ce sont les pâtes que nous cuisinons pour nos hôtes chaque jour.' },
+    ],
+  },
+
+  story: {
+    eyebrow: 'Notre histoire',
+    titlePre: 'Deux chefs de cuisine,',
+    titleMid: 'deux ',
+    titleItal: 'agritourismes toscans.',
+    body1: 'Nous sommes Endri et Marsel, amis et collègues de longue date, et les chefs de cuisine de deux agritourismes dans les collines juste à l\'extérieur de Florence. Entre des banquets de mariage pour deux cents personnes, des spectacles de pâtes en direct et de longs déjeuners à la ferme pour nos invités, nous avons roulé plus de pâtes à la main que nous ne pourrions jamais en compter.',
+    body2: 'Endri a passé six ans en tant que boulanger artisan avant de reprendre la cuisine de l\'Agriturismo Borgo Divino en 2021 ; Marsel dirige la cuisine d\'un domaine voisin. En juin 2026, nous avons ouvert notre propre petite cuisine dans l\'Oltrarno et apporté la table de la ferme à Florence, pour tous ceux qui veulent se fariner les mains avec nous, en personne ou en direct en ligne.',
+    stats: [
+      { n: '2026', l: 'récemment ouvert à Florence' },
+      { n: '2', l: 'chefs d\'agritourisme' },
+      { n: '8', l: 'personnes à table, max' },
+    ],
+  },
+
+  faq: {
+    eyebrow: 'Bon à savoir',
+    titlePre: 'Vos questions,',
+    titleItal: 'nos réponses.',
+    items: [
+      { q: 'Qui donne les cours ?', a: 'Endri et Marsel, deux amis et chefs de cuisine de deux agritourismes dans les collines autour de Florence. Les pâtes pour les mariages, les banquets et les démonstrations en direct sont notre métier ; les cours se font en anglais ou en italien.' },
+      { q: 'Où se déroulent les cours ?', a: 'Dans notre cuisine de l\'Oltrarno, près de la Piazza Santo Spirito, en plein cœur de Florence. Nous envoyons l\'adresse complète lors de la réservation.' },
+      { q: 'Combien de temps dure un cours ?', a: 'La Table du Chef dure environ 3 heures ; Marché & Mains (avec la visite du marché à l\'aube) dure environ 5 heures. Chaque cours se termine par un déjeuner assis avec ce que vous avez préparé.' },
+      { q: 'Combien de personnes y a-t-il dans chaque cours ?', a: "Uniquement des petits groupes. Jamais plus de 8 à table (max 6 pour le cours du marché), il y a donc toujours un chef à vos côtés pour vous aider." },
+      { q: 'Est-ce qu\'on mange les pâtes qu\'on prépare ?', a: 'Oui. Chaque cours se termine à table avec vos pâtes fraîches, une sauce toscane et un verre de vin local.' },
+      { q: 'Pouvez-vous adapter le cours aux régimes sans gluten ou aux allergies ?', a: 'Oui, nous pouvons préparer un mélange de farines sans gluten dédié et un poste de travail propre sans frais supplémentaires. Indiquez-nous simplement toute allergie lors de la réservation.' },
+      { q: "Je ne peux pas venir à Florence. Puis-je quand même suivre un cours ?", a: 'Absolument. Nos cours en ligne en direct sont diffusés depuis la même cuisine, avec un kit d\'ingrédients pour pâtes fraîches livré chez vous, à partir de 68 € par personne.' },
+      { q: 'Organisez-vous des activités de team building d\'entreprise ou travaillez-vous avec des hôtels et des voyagistes ?', a: 'Oui. Les entreprises peuvent réserver toute la cuisine pour un cours privé de team building (6 à 14 personnes), et nous proposons des tarifs partenaires et des réservations de recommandation pour les hôtels, les agritourismes et les voyagistes. Envoyez un e-mail à ciao@handmadepastaflorence.com avec "Partenariat commercial" et nous vous répondrons dans un délai d\'un jour ouvrable.' },
+      { q: 'Quand les cours ont-ils lieu ?', a: 'Les cours commencent à 10:00, 14:30 et 18:00 (heure de Florence). Nous sommes fermés le lundi.' },
+      { q: 'Comment réserver et payer ?', a: "Utilisez le bouton “Réserver un cours” pour créer votre demande. Cela ouvre une discussion WhatsApp avec les détails pré-remplis, et nous confirmerons la disponibilité et vous guiderons pour le reste." },
+    ],
+  },
+
+  exp: {
+    eyebrow: 'Cours de fabrication de pâtes · Florence',
+    titlePre: 'Prenez place à la table de',
+    titleMid: 'notre ',
+    titleItal: 'cuisine.',
+    intro: 'Dans chaque cours, on met les mains dans la pâte dès la première minute. De petits groupes, aucune démonstration passive à regarder, et vous dégustez le déjeuner que vous venez de préparer.',
+    book: 'Réserver ceci',
+    more: 'Détails complets',
+    cards: [
+      { tag: 'Signature', name: 'La Table du Chef', desc: 'Trois heures, quatre formes, un long déjeuner. Roulez des pici, pliez des tortelli, puis asseyez-vous pour manger tout ce que vous avez préparé avec un verre de Chianti.', price: '95 €', meta: '3 h · max 8 convives · Oltrarno', alt: 'La Table du Chef — cours pratique de fabrication de pâtes dans notre cuisine à Florence' },
+      { tag: 'Marché + cuisine', name: 'Marché & Mains', desc: 'Faites vos courses au marché Sant’Ambrogio à l’aube avec Endri ou Marsel, puis transformez le panier en raviolis, ragoût et un dessert de saison de retour en cuisine.', price: '145 €', meta: '5 h · max 6 convives · visite du marché', alt: 'Marché & Mains — visite du marché et cours de pâtes à Florence' },
+      { tag: 'Privé', name: 'La Grande Table Familiale', desc: "Réservez toute la cuisine pour un anniversaire, une demande en mariage, des retrouvailles. Le festin sur une grande table que nous cuisinons dans nos agritourismes depuis des années, maintenant au cœur de Florence.", price: 'dès 680 €', meta: 'flexible · 6–14 convives · soirées', alt: 'La Grande Table Familiale — expérience de pâtes en groupe privé à Florence' },
+    ],
+  },
+
+  gallery: {
+    eyebrow: 'Une forme pour chaque histoire',
+    titlePre: 'Découvrez les ',
+    hint: 'Faites glisser, balayez ou utilisez les flèches. Appuyez sur n\'importe quelle forme pour entendre d\'où elle vient.',
+    more: 'Appuyez pour l\'histoire',
+    taughtIn: 'Enseigné dans',
+    book: 'Réserver ce cours →',
+    back: 'retour à la forme',
+    shapes: [
+      { name: 'Pappardelle', region: 'Florence · Toscane', alt: 'De larges rubans de pappardelle aux œufs frais, coupés à la main et saupoudrés de farine', blurb: 'De larges rubans veloutés dont le nom vient de “pappare”, qui signifie engloutir.', history: 'Nées dans la campagne toscane pour accompagner de riches ragoûts de gibier, de sanglier et de lièvre. La largeur est l\'essentiel : chaque brin transporte une cuillerée de sauce.', teaches: 'La Table du Chef' },
+      { name: 'Ravioli', region: 'Toute l\'Italie', alt: 'Des rangées de raviolis carrés fraîchement préparés avec des bords pincés à la main sur une planche farinée', blurb: 'De petits paquets, pincés et fermés autour de ricotta, d\'épinards ou de courge.', history: "Mentionnés dans les lettres d'un marchand du 14ème siècle en Toscane, les raviolis étaient un moyen d'étirer le précieux fromage. Les sceller correctement est un art : l'air est l'ennemi.", teaches: 'Marché & Mains' },
+      { name: 'Pici', region: 'Sienne · Val d’Orcia', alt: 'Des brins épais et irréguliers de pâtes pici roulées à la main sur une planche en bois', blurb: "Des brins épais roulés à la main, comme le cousin rustique des spaghettis.", history: 'Des pâtes de pauvres composées uniquement de farine et d\'eau, roulées à la main sur des planches en bois. Il n\'y en a pas deux identiques, et c\'est justement cette irrégularité qui permet à la sauce d\'y adhérer.', teaches: 'La Table du Chef' },
+      { name: 'Tortelli', region: 'Mugello', alt: 'Des raviolis dodus fourrés de pommes de terre, scellés à la main et disposés en rangées', blurb: 'De petits oreillers dodus remplis de pommes de terre, originaires des collines au nord de Florence.', history: 'La réponse du Mugello à une soirée froide : pomme de terre, parmesan et muscade scellés dans des pâtes, assaisonnés simplement de beurre et de sauge ou d\'un ragoût de viande.', teaches: 'La Grande Table Familiale' },
+      { name: 'Tagliatelle', region: 'Émilie & Toscane', alt: 'Nids lâches de tagliatelles aux œufs dorées, étalées finement et coupées à la main', blurb: 'Le ruban aux œufs classique, coupé à la largeur précise d\'un doigt.', history: 'La légende relie ses rubans dorés aux cheveux de la Renaissance ; la vérité est plus humble. Étirée finement, pliée et coupée à la main. La première forme que chaque nonna enseigne.', teaches: 'En Ligne en Direct · Pâtes Fraîches aux Œufs' },
+    ],
+  },
+
+  b2b: {
+    eyebrow: 'Pour les entreprises',
+    titlePre: 'Travaillez ',
+    titleItal: 'avec nous.',
+    intro: 'Nous collaborons avec des hôtels, des voyagistes et des entreprises pour offrir la table de la ferme à leurs invités et équipes, dans notre cuisine de l\'Oltrarno ou en ligne.',
+    ctaText: 'Parlez-nous de vos invités, de votre groupe ou de votre équipe. Nous vous répondrons sous un jour ouvrable.',
+    ctaLabel: 'Démarrer un partenariat',
+    ctaMailto: 'mailto:ciao@handmadepastaflorence.com?subject=Demande%20de%20partenariat%20commercial',
+    offers: [
+      { t: 'Hôtels, B&B et agritourismes', d: 'Offrez à vos clients un cours de pâtes inoubliable. Tarifs partenaires, réservation facile et cours en anglais ou en italien. À cinq minutes du Ponte Vecchio.', points: ['Tarifs partenaires et de parrainage', 'Réservation prioritaire pour vos clients', 'Chèques cadeaux co-marqués'], hrefLabel: '' },
+      { t: 'Team building d\'entreprise', d: 'Enfilez les tabliers, fermez les ordinateurs. Un cours pratique privé où votre équipe roule, plie, rit et s\'assoit ensuite pour un long déjeuner qu\'elle a elle-même préparé.', points: ['Privatisation de la cuisine, 6–14 personnes', 'Chefs anglophones', 'Accords mets-vins et options diététiques'], hrefLabel: 'Détails du team building' },
+      { t: 'Tour opérateurs et planificateurs de voyages', d: 'Une expérience culinaire fiable en petit groupe pour vos itinéraires à Florence. Horaires fixes, confirmation rapide et deux chefs de cuisine qui animent eux-mêmes chaque cours.', points: ['Horaires fixes, confirmation rapide', 'Tarifs de groupe et en série', 'Option visite du marché disponible'], hrefLabel: '' },
+    ],
+  },
+
+  reviews: {
+    eyebrow: 'Mots gentils',
+    titlePre: 'Directement de',
+    titleMid: 'nos ',
+    titleItal: 'invités.',
+  },
+
+  blogIndex: {
+    eyebrow: 'Guides et histoires',
+    h1: 'Issus du carnet ',
+    h1Ital: 'fariné.',
+    lede: 'Ce que nous savons sur les pâtes, Florence et comment y manger bien — écrit entre deux cours par les deux chefs qui les enseignent.',
+    readGuide: 'Lire le guide',
+  },
+
+  blogPost: {
+    homeCrumb: 'Accueil',
+    guidesCrumb: 'Guides',
+    by: 'Par',
+    faqTitle: 'Foire aux questions',
+    bioIs: 'est chef cuisinier à l\'Agriturismo Borgo Divino (Montespertoli) et cofondateur de Handmade Pasta Florence, où il donne',
+    bioLink: 'des cours de fabrication de pâtes en petit groupe',
+    bioEnd: 'dans l\'Oltrarno.',
+    ctaH2: 'Vous préférez l\'apprendre avec vos mains ?',
+    ctaP: 'Roulez, pliez et mangez-les vous-même — dans notre cuisine à Florence ou en direct en ligne.',
+    ctaBtn: 'Réserver un cours',
+    ctaLink: 'Voir les cours',
+  },
+
+  bk: {
+    ariaLabel: 'Réserver un cours de pâtes',
+    step1Label: 'Expérience',
+    step2Label: 'Date et heure',
+    step3Label: 'Personnaliser',
+    step1Kicker: 'Étape 1',
+    step1H: 'Choisissez votre expérience',
+    florenceT: 'En Personne · Florence',
+    florenceD: 'Trois heures pratiques dans notre cuisine de l\'Oltrarno, se terminant par un long déjeuner.',
+    onlineT: 'En Ligne en Direct',
+    onlineD: 'Cuisinez en direct de n\'importe où avec un kit livré à votre porte.',
+    person: 'personne',
+    guestsQ: 'Combien d\'invités ?',
+    step2Kicker: 'Étape 2',
+    step2H: 'Choisissez une date et une heure',
+    availableTimes: 'Heures disponibles',
+    florence: 'Florence',
+    yourTime: 'Votre heure',
+    step3Kicker: 'Étape 3',
+    step3H: 'Personnalisez-le',
+    step3Sub: 'Optionnel. Tout ici est en supplément.',
+    kitT: 'Envoyez-moi le kit d\'ingrédients',
+    kitD: 'Farine 00, semoule, rouleau à pâtisserie et fiches recettes, livrés au frais à votre porte.',
+    wineT: 'Ajouter un accord mets-vins',
+    wineD: 'Deux verres toscans choisis pour accompagner votre menu (en personne) ou une bouteille expédiée (en ligne).',
+    gfT: 'Préférence sans gluten',
+    gfD: 'Nous préparerons un mélange de farines sans gluten dédié et un poste propre. Sans frais.',
+    free: 'Gratuit',
+    orderSummary: 'Résumé de la commande',
+    total: 'Total',
+    back: 'Retour',
+    continue: 'Continuer',
+  },
+
+  bkJs: {
+    continue: 'Continuer',
+    send: 'Envoyer la demande',
+    perPerson: 'par personne',
+    months: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
+    sendClassFlorence: 'En Personne, Florence',
+    sendClassOnline: 'En Ligne en Direct',
+    classLabel: 'Cours',
+    guestsLabel: 'Invités',
+    dateTime: 'Date et heure',
+    addonLabels: { kit: 'Kit d\'ingrédients', wine: 'Accord mets-vins', gf: 'Sans gluten' },
+    freeLower: 'gratuit',
+    addonsLabel: 'Suppléments',
+    estTotal: 'Total estimé',
+    msgIntro: 'Bonjour, je voudrais réserver un cours de pâtes.',
+    msgOutro: 'Merci de me confirmer la disponibilité !',
+    freeCap: 'Gratuit',
+    sumClassFlorence: 'À Florence',
+    sumClassOnline: 'En Ligne en Direct',
+    guest: 'invité',
+    guestsPlural: 'invités',
+  },
+};
+
+export default fr;

@@ -2,7 +2,9 @@
 // Customer reviews — intentionally EMPTY until we start receiving real ones.
 // To populate later: add objects to `reviews` (and optionally `badges`) below.
 // The whole section reveals automatically once `reviews` has at least one entry.
-const lang = Astro.currentLocale || 'en';
+import { getLocaleFromUrl } from '../i18n/utils';
+import { useTranslations } from '../i18n/ui';
+const t = useTranslations(getLocaleFromUrl(Astro.url));
 const reviews: { quote: string; name: string; from: string; src: string }[] = [];
 const badges: { src: string; score: string; count: string; mark: string }[] = [];
 const hasReviews = reviews.length > 0;
@@ -13,8 +15,8 @@ const hasReviews = reviews.length > 0;
   <div class="shell">
     <header class="rev__head" data-reveal>
       <div>
-        <p class="eyebrow rev__eyebrow">{lang === 'it' ? 'Parole gentili' : 'Kind words'}</p>
-        <h2 class="rev__title">{lang === 'it' ? 'Direttamente dai' : 'Straight from'}<br />{lang === 'it' ? 'nostri ' : 'our '}<span class="ital">{lang === 'it' ? 'ospiti.' : 'guests.'}</span></h2>
+        <p class="eyebrow rev__eyebrow">{t.reviews.eyebrow}</p>
+        <h2 class="rev__title">{t.reviews.titlePre}<br />{t.reviews.titleMid}<span class="ital">{t.reviews.titleItal}</span></h2>
       </div>
       <div class="rev__badges">
         {badges.map((b) => (

@@ -4,7 +4,51 @@ Companion to `FULL-AUDIT-REPORT.md`, `ACTION-PLAN.md` and `SEO-STRATEGY.md`. Eve
 below is what **couldn't be done autonomously** because it needs your data, accounts,
 content, or a decision. The items already shipped are listed at the bottom for context.
 
-Last updated: 2026-07-12 — this pass acted on the first real GSC data (23 days live:
+## 📈 2026-07-23 — striking-distance pass (position data arrived)
+
+The GSC export now carries the **position column** the 2026-07-12 note was waiting for
+(~2 weeks of real data; site gained visibility ~9–10 July). The decisive finding:
+
+> **Italian + informational content ranks (pos 5–16); English + commercial does not (pos 45–95).**
+> The brand term "handmade pasta florence" is the *only* page-1 commercial ranking (pos 5.9).
+> Everything else that ranks is a low-competition Italian query — pasta shapes/types, "cucina
+> privata", the Italian team-building phrasing. The US sends 244 impressions at avg **position
+> 66** (page 7): that's an authority gap, not a title gap. Retitling a page at pos 74 yields zero
+> clicks, so this pass did **not** re-touch the buried commercial pages — that ground is won with
+> GBP + marketplace listings + backlinks (R2, and the OTA note below), not on-page copy.
+
+**Shipped this pass — harvest the only winnable page-1 clicks (the pos 9–16 IT/informational cluster):**
+- Blog collection now supports an optional `faqs` frontmatter block (`src/content.config.ts`),
+  rendered as a visible accordion **and** `FAQPage` JSON-LD in both `src/pages/blog/[slug].astro`
+  and `src/pages/it/blog/[slug].astro`.
+- Pasta-shapes guide (IT + EN): added a **snippet "answer-box" list** right after the intro
+  (bait for "tipi di pasta toscana" / "tuscan pasta types" featured snippets) and **3 PAA FAQs**
+  each — targeting the exact queries already ranking pos 9–16 ("qual è la pasta tipica della
+  toscana", "pasta tipica di firenze", "what pasta is tuscany known for"). Verified in the build.
+- Where-to-eat guide (IT + EN): **3 PAA FAQs** each ("where is the best pasta in Florence", "what
+  to order", "is Florence known for pasta") — the intro H2 already serves the paragraph snippet, so
+  no duplicate answer-box was added on purpose. Targets the "best pasta florence" cluster (pos 38–58).
+- Oltrarno guide (IT + EN): **answer-box** ("The Oltrarno in short") + **3 FAQs** ("what is the
+  Oltrarno", "known for", "worth visiting") for the pos 77–89 "oltrarno" cluster. Low commercial
+  intent, but cheap topical-authority signal for the neighbourhood the kitchen sits in.
+- All four guides now emit `FAQPage` JSON-LD via the shared `faqs` frontmatter mechanism.
+
+**Reinforced owner-input priorities (unchanged but now evidence-backed):**
+- **R2 (Google Business Profile) is still #1.** At pos 66 for US commercial terms, the map pack is
+  the only realistic booking channel this quarter.
+- **List on GetYourGuide / Viator / Airbnb Experiences / TripAdvisor** — these are literally the
+  results ranking above you for "cooking class florence"; they drive bookings *and* the first
+  backlinks that let buried pages climb.
+- **R9 (reviews) blocks `AggregateRating`** — the biggest CTR lever on the page-1 brand SERP, but
+  it needs real reviews first. Do not fabricate. Collecting reviews unlocks it.
+
+**Next checkpoint:** re-export with **query + page** dimensions and the position column; watch
+whether the IT shapes guide captures the snippet (position → 1–3 with a step-change in CTR) and
+whether GBP/OTA work starts pulling the English commercial pages off page 5+.
+
+---
+
+Last updated: 2026-07-23 (striking-distance pass above). Prior: 2026-07-12 — that pass acted on the first real GSC data (23 days live:
 2 clicks / 65 impressions / avg position 49.4). Key signal: the **teambuilding cluster is
 36% of all listed impressions** ("teambuilding florence food" alone = 13, one-word spelling),
 and "private cooking class florence" (7) carries couple-intent the €680 buyout page didn't

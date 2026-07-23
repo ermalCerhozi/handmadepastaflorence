@@ -28,31 +28,19 @@ const icons: Record<string, string> = {
   </svg>`,
 };
 
-const lang = Astro.currentLocale || 'en';
-
-const pointsEn = [
-  { key: 'rollingPin', t: 'Learn by doing', d: 'No demos from a distance. From minute one your hands are in the flour, shaping every piece yourself.' },
-  { key: 'wineGlass', t: 'Eat what you make', d: 'Every class ends at the table with your fresh pasta, a Tuscan sauce, and a glass of local wine.' },
-  { key: 'group', t: 'Small groups only', d: 'Never more than eight at the board, so there’s always a chef at your elbow to fix your fold.' },
-  { key: 'duomo', t: 'From the farm to Florence', d: 'We run agriturismo kitchens in the hills outside town. This is the pasta we cook for our guests every single day.' },
-];
-
-const pointsIt = [
-  { key: 'rollingPin', t: 'Impara facendo', d: 'Nessuna dimostrazione a distanza. Fin dal primo minuto le tue mani sono nella farina, per modellare ogni pezzo da solo.' },
-  { key: 'wineGlass', t: 'Mangia ciò che prepari', d: 'Ogni lezione finisce a tavola con la tua pasta fresca, un sugo toscano e un bicchiere di vino locale.' },
-  { key: 'group', t: 'Solo piccoli gruppi', d: 'Mai più di otto al tavolo, quindi c\'è sempre uno chef al tuo fianco per sistemare la tua piega.' },
-  { key: 'duomo', t: 'Dalla fattoria a Firenze', d: 'Gestiamo cucine di agriturismo sulle colline fuori città. Questa è la pasta che cuciniamo per i nostri ospiti ogni singolo giorno.' },
-];
-
-const points = lang === 'it' ? pointsIt : pointsEn;
+import { getLocaleFromUrl } from '../i18n/utils';
+import { useTranslations } from '../i18n/ui';
+const t = useTranslations(getLocaleFromUrl(Astro.url));
+// Icon order matches t.why.points; icons stay here (non-translatable markup).
+const iconKeys = ['rollingPin', 'wineGlass', 'group', 'duomo'];
 ---
 
 <section class="why" aria-label="Why cook with us">
-  <h2 class="sr-only">{lang === 'it' ? 'Perché cucinare con noi' : 'Why cook with us'}</h2>
+  <h2 class="sr-only">{t.why.srHeading}</h2>
   <div class="shell why__grid">
-    {points.map((p, i) => (
+    {t.why.points.map((p, i) => (
       <article class="why__item" data-reveal style={`--reveal-delay:${i * 80}ms`}>
-        <span class="why__icon" set:html={icons[p.key]} />
+        <span class="why__icon" set:html={icons[iconKeys[i]]} />
         <h3 class="why__t">{p.t}</h3>
         <p class="why__d">{p.d}</p>
       </article>

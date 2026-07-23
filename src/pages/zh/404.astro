@@ -1,0 +1,26 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout
+  title="页面未找到 — Handmade Pasta Florence"
+  description="这个页面已经离开了餐桌。请回到厨房。"
+>
+  <main class="nf">
+    <p class="nf__emoji" aria-hidden="true">🍝</p>
+    <h1 class="nf__title">迷失在面粉中</h1>
+    <p class="nf__text">这个页面已经离开了餐桌。我们带你回到厨房。</p>
+    <a href="/zh/" class="btn btn--solid nf__btn">返回首页</a>
+  </main>
+</Layout>
+
+<style>
+  .nf {
+    min-height: 72vh; display: grid; place-content: center; justify-items: center;
+    gap: 1.1rem; text-align: center; padding: 4rem 1.5rem;
+  }
+  .nf__emoji { font-size: 3.5rem; margin: 0; }
+  .nf__title { font-family: var(--serif); font-size: var(--step-3); color: var(--olive); margin: 0; }
+  .nf__text { color: var(--charcoal-soft); max-width: 42ch; margin: 0; }
+  .nf__btn { margin-top: 0.6rem; }
+</style>

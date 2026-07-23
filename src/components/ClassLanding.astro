@@ -4,6 +4,10 @@
 // this component renders the sections and emits the page-level JSON-LD
 // (Product or Service, BreadcrumbList, FAQPage). Sitewide LocalBusiness
 // schema still comes from Schema.astro via the layout.
+import { localizePath } from '../i18n/utils';
+import { useTranslations } from '../i18n/ui';
+import type { Locale } from '../i18n/config';
+
 interface Fact {
   label: string;
   value: string;
@@ -45,6 +49,8 @@ interface Props {
   product?: { name: string; description: string; price: string };
   /** Service schema (bespoke offers without a public price). */
   service?: { name: string; description: string };
+  /** Rendering locale (passed by the landing route; falls back to the URL). */
+  locale?: Locale;
 }
 
 const {
@@ -65,9 +71,11 @@ const {
   breadcrumbName,
   product,
   service,
+  locale,
 } = Astro.props;
 
-const lang = Astro.currentLocale || 'en';
+const lang = (locale || (Astro.currentLocale as Locale) || 'en') as Locale;
+const t = useTranslations(lang);
 
 const SITE = 'https://handmadepastaflorence.com';
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
@@ -123,7 +131,7 @@ const faqSchema = {
   <div class="shell lp-hero__inner">
     <div class="lp-hero__text" data-reveal>
       <nav class="lp-crumb" aria-label="Breadcrumb">
-        <a href={lang === 'it' ? '/it/' : '/'}>{lang === 'it' ? 'Home' : 'Home'}</a> <span aria-hidden="true">/</span> <span>{breadcrumbName}</span>
+        <a href={localizePath('/', lang)}>{t.lp.home}</a> <span aria-hidden="true">/</span> <span>{breadcrumbName}</span>
       </nav>
       <p class="eyebrow lp-hero__eyebrow">{eyebrow}</p>
       <h1 class="lp-hero__h">
@@ -196,7 +204,7 @@ const faqSchema = {
 
 <section class="lp-faq">
   <div class="shell lp-faq__inner">
-    <h2 class="lp-faq__h">{lang === 'it' ? 'Buono a ' : 'Good to '}<span class="ital">{lang === 'it' ? 'sapersi.' : 'know.'}</span></h2>
+    <h2 class="lp-faq__h">{t.lp.faqPre}<span class="ital">{t.lp.faqItal}</span></h2>
     <div class="lp-faq__list">
       {
         faqs.map((f, i) => (
@@ -217,7 +225,7 @@ const faqSchema = {
 
 <section class="lp-rel">
   <div class="shell">
-    <h2 class="lp-rel__h">{lang === 'it' ? 'Cerchi qualcos\'' : 'Looking for something '}<span class="ital">{lang === 'it' ? 'altro?' : 'else?'}</span></h2>
+    <h2 class="lp-rel__h">{t.lp.relPre}<span class="ital">{t.lp.relItal}</span></h2>
     <div class="lp-rel__grid">
       {
         related.map((r, i) => (

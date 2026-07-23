@@ -1,8 +1,10 @@
 ---
-const lang = Astro.currentLocale || 'en';
+import { getLocaleFromUrl } from '../i18n/utils';
+import { useTranslations } from '../i18n/ui';
+const t = useTranslations(getLocaleFromUrl(Astro.url));
 ---
 
-<button id="scroll-top" class="stt-button" type="button" aria-label={lang === 'it' ? 'Torna su' : 'Scroll to top'}>
+<button id="scroll-top" class="stt-button" type="button" aria-label={t.scrollTop.label}>
   <svg
     class="stt-icon"
     viewBox="0 0 24 24"

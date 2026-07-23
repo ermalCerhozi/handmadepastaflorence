@@ -5,9 +5,26 @@ pubDate: 2026-07-08
 author: 'Endri Cerhozi'
 image: '/images/shape-pici.jpg'
 imageAlt: 'Hand-rolled pici, the thick Tuscan pasta ropes, dusted with flour'
+faqs:
+  - q: 'What pasta is Tuscany known for?'
+    a: 'Tuscany is best known for pici (thick, hand-rolled flour-and-water spaghetti from the Siena hills), pappardelle (wide egg ribbons served with wild boar or hare ragù), and tortelli di patate (potato-filled parcels from the Mugello). Everyday tables also lean on tagliatelle and ricotta-and-spinach ravioli.'
+  - q: 'What is the typical pasta of Florence?'
+    a: 'Florence itself is more famous for beef and tripe than for pasta, but the fresh-pasta traditions of the surrounding Tuscan hills define its tables. Pici, pappardelle al cinghiale (wild boar), and Mugello tortelli di patate are the shapes you will see most often on a Florentine trattoria menu.'
+  - q: 'What is the difference between pici and pappardelle?'
+    a: 'Pici are round, thick, hand-rolled ropes made from just flour and water, with no egg; pappardelle are flat, wide ribbons cut from a rich egg dough. Pici grip garlicky tomato or breadcrumb sauces, while pappardelle are built for slow-cooked game ragùs.'
 ---
 
 Ask what pasta Florence is famous for and you'll get a surprising answer: strictly speaking, the city itself is more famous for beef and tripe than for pasta. But step into the hills around it — where our two agriturismi are — and you're in one of Italy's great fresh-pasta landscapes. These are the shapes we teach, eat and argue about.
+
+**The classic Tuscan pasta shapes are:**
+
+- **Pici** — thick, hand-rolled flour-and-water ropes (Siena, Val d'Orcia)
+- **Pappardelle** — wide egg ribbons built for game ragùs
+- **Tagliatelle** — the everyday, narrower egg ribbon
+- **Tortelli di patate** — potato-filled parcels from the Mugello
+- **Ravioli & gnudi** — the gentle ricotta-and-spinach classics
+
+Below, a chef's guide to each — where it comes from, how it's made by hand, and the sauce it was born to carry.
 
 ## Pici — the hand-rolled rope
 

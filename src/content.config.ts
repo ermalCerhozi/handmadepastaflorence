@@ -12,6 +12,9 @@ const blog = defineCollection({
     author: z.string().default('Endri Cerhozi'),
     image: z.string(),
     imageAlt: z.string(),
+    // Optional FAQ block — rendered visibly and emitted as FAQPage JSON-LD to
+    // target People-Also-Ask / featured-snippet queries the guide already ranks for.
+    faqs: z.array(z.object({ q: z.string(), a: z.string() })).optional(),
   }),
 });
 

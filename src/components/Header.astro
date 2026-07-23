@@ -2,18 +2,27 @@
 // Slim, transparent-over-hero header that gains a flour-paper background on scroll.
 // `solid` renders that background from the start — for subpages whose hero
 // isn't a dark full-bleed photo.
+import { localizePath, getAlternates, getLocaleFromUrl, type Alternate } from '../i18n/utils';
+import { useTranslations } from '../i18n/ui';
+import { languages } from '../i18n/config';
+import LanguageSwitcher from './LanguageSwitcher.astro';
+
 interface Props {
   solid?: boolean;
+  /** Per-page language alternates (landing pages pass translated slugs). */
+  alternates?: Alternate[];
 }
-import { useTranslations } from '../i18n/utils';
-const { solid = false } = Astro.props;
-const lang = Astro.currentLocale || 'en';
-const t = useTranslations(lang as any);
+const { solid = false, alternates } = Astro.props;
+const lang = getLocaleFromUrl(Astro.url);
+const t = useTranslations(lang);
+const home = localizePath('/', lang);
+// Language switcher targets: explicit alternates on landing pages, else generic.
+const langLinks = alternates ?? getAlternates(Astro.url.pathname);
 ---
 
 <header class:list={['hdr', { 'is-solid': solid }]} data-header>
   <div class="shell hdr__inner">
-    <a href={lang === 'it' ? "/it/" : "/"} class="hdr__brand" aria-label="Handmade Pasta Florence — home">
+    <a href={home} class="hdr__brand" aria-label="Handmade Pasta Florence — home">
       <span class="hdr__mark" aria-hidden="true">
         <img src="/images/logo.png" alt="" width="40" height="40" />
       </span>
@@ -23,17 +32,21 @@ const t = useTranslations(lang as any);
     </a>
 
     <nav class="hdr__nav" aria-label="Primary">
-      <a href={lang === 'it' ? "/it/#experiences" : "/#experiences"}>{t('nav.classes')}</a>
-      <a href={lang === 'it' ? "/it/#gallery" : "/#gallery"}>{t('nav.pasta')}</a>
-      <a href={lang === 'it' ? "/it/#story" : "/#story"}>{t('nav.story')}</a>
-      <a href={lang === 'it' ? "/it/#business" : "/#business"}>{t('nav.business')}</a>
-      <a href={lang === 'it' ? "/it/blog/" : "/blog/"}>{t('nav.guides')}</a>
+      <a href={`${home}#experiences`}>{t.nav.classes}</a>
+      <a href={`${home}#gallery`}>{t.nav.pasta}</a>
+      <a href={`${home}#story`}>{t.nav.story}</a>
+      <a href={`${home}#business`}>{t.nav.business}</a>
+      <a href={localizePath('/blog/', lang)}>{t.nav.guides}</a>
     </nav>
 
-    <button class="hdr__cta" data-open-booking>
-      {t('nav.book')}
-      <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </button>
+    <div class="hdr__end">
+      <LanguageSwitcher langLinks={langLinks} />
+
+      <button class="hdr__cta" data-open-booking>
+        {t.nav.book}
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
   </div>
 </header>
 
@@ -86,6 +99,8 @@ const t = useTranslations(lang as any);
     background: var(--terracotta); transition: right 0.4s var(--ease);
   }
   .hdr__nav a:hover::after { right: 0; }
+
+  .hdr__end { display: flex; align-items: center; gap: 0.9rem; }
 
   .hdr__cta {
     display: none; align-items: center; gap: 0.5rem;

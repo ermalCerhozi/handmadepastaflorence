@@ -1,0 +1,46 @@
+---
+// One template for every class landing page, in every locale. Paths and content
+// come from src/data/landings.ts, so adding a language adds data, not page files.
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import ClassLanding from '../components/ClassLanding.astro';
+import Footer from '../components/Footer.astro';
+import FloatingCTA from '../components/FloatingCTA.astro';
+import BookingDrawer from '../components/BookingDrawer.astro';
+import { landings } from '../data/landings';
+import { defaultLocale, type Locale } from '../i18n/config';
+import type { Alternate } from '../i18n/utils';
+
+export function getStaticPaths() {
+  const paths = [];
+  for (const [pageKey, page] of Object.entries(landings)) {
+    // hreflang/switcher alternates for this page, from its translated slugs.
+    const alternates: Alternate[] = Object.entries(page.locales).map(([locale, data]) => ({
+      locale: locale as Locale,
+      path: `${locale === defaultLocale ? '' : '/' + locale}/${data!.slug}/`,
+    }));
+
+    for (const [locale, data] of Object.entries(page.locales)) {
+      const prefix = locale === defaultLocale ? '' : `${locale}/`;
+      paths.push({
+        params: { slug: `${prefix}${data!.slug}` },
+        props: { data: data!, locale: locale as Locale, floatingCta: page.floatingCta, alternates },
+      });
+    }
+  }
+  return paths;
+}
+
+const { data, locale, floatingCta, alternates } = Astro.props;
+const { title, description, cl } = data;
+---
+
+<Layout title={title} description={description} image={cl.image.src} alternates={alternates}>
+  <Header solid alternates={alternates} />
+  <main>
+    <ClassLanding {...cl} locale={locale} />
+  </main>
+  <Footer />
+  {floatingCta && <FloatingCTA />}
+  <BookingDrawer />
+</Layout>

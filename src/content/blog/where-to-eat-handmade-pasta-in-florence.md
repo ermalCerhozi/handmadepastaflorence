@@ -5,6 +5,13 @@ pubDate: 2026-07-08
 author: 'Endri Cerhozi'
 image: '/images/plates.webp'
 imageAlt: 'Plates of fresh handmade pasta served at a Tuscan table'
+faqs:
+  - q: "Where is the best pasta in Florence?"
+    a: "The best handmade pasta in Florence is not near the Duomo but in the trattorias around the Sant'Ambrogio market and in the Oltrarno around Santo Spirito — places with a short menu, pasta named by its shape, and a room full of Italians at 13:00. Order pici if you see them, or pappardelle al cinghiale in autumn."
+  - q: "What pasta should I order in Florence?"
+    a: "Order the Tuscan fresh-pasta classics: pici cacio e pepe or all'aglione, pappardelle al cinghiale (wild boar), tortelli di patate from the Mugello, tagliatelle ai funghi porcini in season, and ricotta-and-spinach ravioli with butter and sage."
+  - q: "Is Florence known for pasta?"
+    a: "Florence is best known for meat — the bistecca alla fiorentina above all — but the surrounding Tuscan hills have a deep fresh-pasta tradition, so the city's trattorias serve excellent pici, pappardelle and tortelli. For the real thing, look for short, seasonal menus away from the main tourist streets."
 ---
 
 I make pasta for a living, so when I eat out in Florence I'm the annoying one turning the pappardelle over with a fork to check the cut. Here's what I actually look for — and where I'd send a friend with one free dinner in the city.

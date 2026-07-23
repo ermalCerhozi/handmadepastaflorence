@@ -5,9 +5,26 @@ pubDate: 2026-07-08
 author: 'Endri Cerhozi'
 image: '/images/shape-pici.jpg'
 imageAlt: 'Pici fatti a mano, i grossi spaghettoni toscani, spolverati di farina'
+faqs:
+  - q: 'Qual è la pasta tipica della Toscana?'
+    a: 'La Toscana è famosa soprattutto per i pici (grossi spaghettoni di acqua e farina tirati a mano nelle colline senesi), le pappardelle (larghi nastri all''uovo serviti con ragù di cinghiale o lepre) e i tortelli di patate del Mugello. Sulle tavole di tutti i giorni ci sono anche le tagliatelle e i ravioli ricotta e spinaci.'
+  - q: 'Qual è la pasta tipica di Firenze?'
+    a: 'Firenze è più famosa per il manzo e la trippa che per la pasta, ma le tradizioni di pasta fresca delle colline circostanti definiscono le sue tavole: pici, pappardelle al cinghiale e tortelli di patate del Mugello sono i formati che si incontrano più spesso nei menù delle trattorie fiorentine.'
+  - q: 'Che differenza c''è tra pici e pappardelle?'
+    a: 'I pici sono spaghettoni tondi e spessi tirati a mano con sola acqua e farina, senza uovo; le pappardelle sono nastri piatti e larghi tagliati da una ricca sfoglia all''uovo. I pici trattengono i sughi all''aglione o con le briciole, mentre le pappardelle sono nate per i ragù di selvaggina a lenta cottura.'
 ---
 
 Chiedi per quale pasta Firenze è famosa e otterrai una risposta sorprendente: a rigor di logica, la città stessa è più famosa per il manzo e la trippa che per la pasta. Ma fai un passo nelle colline circostanti — dove si trovano i nostri due agriturismi — e ti ritroverai in uno dei grandi paesaggi italiani della pasta fresca. Questi sono i formati che insegniamo, mangiamo e su cui discutiamo.
+
+**I formati di pasta tipici della Toscana sono:**
+
+- **Pici** — grossi spaghettoni di acqua e farina tirati a mano (Siena, Val d'Orcia)
+- **Pappardelle** — larghi nastri all'uovo per i ragù di selvaggina
+- **Tagliatelle** — il nastro all'uovo di tutti i giorni, più stretto
+- **Tortelli di patate** — fagottini ripieni di patate dal Mugello
+- **Ravioli e gnudi** — i classici delicati a base di ricotta e spinaci
+
+Qui sotto, la guida di uno chef a ciascun formato — da dove viene, come si fa a mano e il sugo per cui è nato.
 
 ## Pici — lo spaghettone steso a mano
 

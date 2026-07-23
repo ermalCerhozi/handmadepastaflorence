@@ -1,0 +1,41 @@
+---
+// Homepage, shared by the English root (/) and every localized twin (/it/, …).
+// The route files under src/pages/ are thin shims (getStaticPaths only); this
+// template renders the sections, which each localize themselves from the URL.
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import WhyUs from '../components/WhyUs.astro';
+import Experiences from '../components/Experiences.astro';
+import Reviews from '../components/Reviews.astro';
+import PastaGallery from '../components/PastaGallery.astro';
+import Story from '../components/Story.astro';
+import OnlineBand from '../components/OnlineBand.astro';
+import B2b from '../components/B2b.astro';
+import Faq from '../components/Faq.astro';
+import Footer from '../components/Footer.astro';
+import FloatingCTA from '../components/FloatingCTA.astro';
+import BookingDrawer from '../components/BookingDrawer.astro';
+import { getLocaleFromUrl } from '../i18n/utils';
+import { useTranslations } from '../i18n/ui';
+
+const t = useTranslations(getLocaleFromUrl(Astro.url));
+---
+
+<Layout title={t.meta.homeTitle} description={t.meta.homeDescription}>
+  <Header />
+  <main>
+    <Hero />
+    <WhyUs />
+    <Experiences />
+    <Reviews />
+    <PastaGallery />
+    <Story />
+    <OnlineBand />
+    <B2b />
+    <Faq />
+  </main>
+  <Footer />
+  <FloatingCTA />
+  <BookingDrawer />
+</Layout>

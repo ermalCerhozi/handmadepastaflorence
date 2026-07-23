@@ -5,9 +5,22 @@ pubDate: 2026-07-08
 author: 'Endri Cerhozi'
 image: '/images/aperitivo.webp'
 imageAlt: 'Aperitivo hour in a Florence piazza on the Oltrarno side of the river'
+faqs:
+  - q: "What is the Oltrarno?"
+    a: "The Oltrarno — literally beyond the Arno — is the left bank of Florence, reached by crossing the Ponte Vecchio away from the Duomo. It's the city's quieter, more residential half, home to Piazza Santo Spirito, Palazzo Pitti and the Boboli Gardens."
+  - q: "What is the Oltrarno known for?"
+    a: "The Oltrarno is known for Piazza Santo Spirito and its evening aperitivo, Palazzo Pitti and the Boboli Gardens, five centuries of working artisan workshops in San Frediano and around Via Maggio, the Brancacci Chapel, and San Miniato al Monte above Piazzale Michelangelo."
+  - q: "Is the Oltrarno worth visiting?"
+    a: "Yes — the Oltrarno is where Florence feels lived-in rather than touristic. Within two minutes of the Ponte Vecchio the crowds thin, and you get the city's best artisan workshops, honest trattorias, aperitivo in Santo Spirito, and the sunset climb to San Miniato al Monte."
 ---
 
 The Oltrarno — literally "beyond the Arno" — is the left bank of Florence, and it's where our kitchen is. Cross the Ponte Vecchio away from the Duomo and within two minutes the crowds thin, the streets narrow, and Florence starts behaving like a city people live in. Here's how we'd spend a day on our side of the river.
+
+**The Oltrarno in short:**
+
+- **What it is** — Florence's left bank, "beyond the Arno," reached by crossing the Ponte Vecchio away from the Duomo.
+- **Known for** — Piazza Santo Spirito, Palazzo Pitti and the Boboli Gardens, five centuries of artisan workshops, and the city's best aperitivo.
+- **Best for** — an unhurried, lived-in Florence: trattorias, craft studios, and San Miniato al Monte at sunset.
 
 ## Morning: Santo Spirito
 

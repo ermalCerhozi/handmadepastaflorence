@@ -1,0 +1,87 @@
+---
+import { languages } from "../i18n/config";
+import { flags } from "../i18n/flags";
+import { getLocaleFromUrl, type Alternate } from "../i18n/utils";
+import { useTranslations } from "../i18n/ui";
+
+interface Props {
+  /** The language options to display (e.g. current page alternates) */
+  langLinks: Alternate[];
+}
+
+const { langLinks } = Astro.props;
+const current = getLocaleFromUrl(Astro.url);
+const t = useTranslations(current);
+
+if (langLinks.length <= 1) return;
+---
+<details class="lang" data-lang-switcher>
+  <summary class="lang__current" aria-label={t.lang.switch}>
+    <span class="lang__flag" set:html={flags[current]} />
+    <span class="lang__code">{current.toUpperCase()}</span>
+    <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lang__chevron"><polyline points="6 9 12 15 18 9"></polyline></svg>
+  </summary>
+  <ul class="lang__menu">
+    {langLinks.map((a) => (
+      <li>
+        <a 
+          href={a.path} 
+          hreflang={languages[a.locale].htmlLang}
+          lang={a.locale}
+          class="lang__opt"
+          aria-current={a.locale === current ? 'page' : undefined}
+        >
+          <span class="lang__flag" set:html={flags[a.locale as keyof typeof flags]} />
+          <span>{languages[a.locale].label}</span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</details>
+
+<script>
+  // Close details when clicking outside
+  document.addEventListener("click", (e) => {
+    const details = document.querySelector('[data-lang-switcher]') as HTMLDetailsElement;
+    if (details && details.open && !details.contains(e.target as Node)) {
+      details.open = false;
+    }
+  });
+  // Close on Astro after-swap
+  document.addEventListener("astro:after-swap", () => {
+    const details = document.querySelector('[data-lang-switcher]') as HTMLDetailsElement;
+    if (details) details.open = false;
+  });
+</script>
+
+<style>
+  .lang { position: relative; display: inline-block; cursor: pointer; }
+  .lang__current { 
+    list-style: none; display: flex; align-items: center; gap: 0.5rem; 
+    padding: 0.4rem 0.6rem; border: 1px solid var(--paper-line); 
+    font-size: var(--step--1); font-weight: 700; color: currentColor; 
+    background: transparent; border-radius: 7px;
+    transition: background 0.3s var(--ease);
+  }
+  .lang__current:hover { background: color-mix(in srgb, currentColor 6%, transparent); }
+  .lang__current::-webkit-details-marker { display: none; }
+  .lang__chevron { transition: transform 0.3s var(--ease); margin-left: -0.1rem; }
+  .lang[open] .lang__chevron { transform: rotate(180deg); }
+  .lang__flag { display: inline-flex; width: 18px; height: 12px; border: 1px solid rgba(0,0,0,0.1); border-radius: 2px; overflow: hidden; }
+  .lang__flag :global(svg) { width: 100%; height: 100%; display: block; }
+  .lang__menu { 
+    position: absolute; top: calc(100% + 0.5rem); right: 0; 
+    background: var(--flour); border: 1px solid var(--paper-line); 
+    padding: 0.35rem; list-style: none; z-index: 200; 
+    min-width: 140px; box-shadow: var(--shadow-md); 
+    border-radius: var(--radius); margin: 0;
+  }
+  .lang__opt { 
+    display: flex; align-items: center; gap: 0.6rem; 
+    padding: 0.5rem 0.6rem; font-size: 0.9rem; font-weight: 600; 
+    color: var(--olive); text-decoration: none; border-radius: 5px;
+    transition: background 0.2s var(--ease);
+  }
+  .lang__opt:hover { background: rgba(0,0,0,0.04); }
+  .lang__opt[aria-current="page"] { background: rgba(0,0,0,0.03); color: var(--terracotta); }
+</style>

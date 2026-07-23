@@ -1,7 +1,9 @@
 ---
 // Full-screen hero. A looping pasta-tossing video sits behind a warm scrim;
 // a custom canvas "flour dust" drifts in shafts of light across the top.
-const lang = Astro.currentLocale || 'en';
+import { getLocaleFromUrl } from '../i18n/utils';
+import { useTranslations } from '../i18n/ui';
+const t = useTranslations(getLocaleFromUrl(Astro.url));
 ---
 
 <section class="hero" id="top">
@@ -23,40 +25,30 @@ const lang = Astro.currentLocale || 'en';
   <canvas class="hero__flour" data-flour aria-hidden="true"></canvas>
 
   <div class="shell hero__content">
-    <p class="eyebrow hero__eyebrow" data-reveal>{lang === 'it' ? 'Firenze · appena aperto · due chef, un grande tavolo' : 'Firenze · newly opened · two chefs, one long table'}</p>
+    <p class="eyebrow hero__eyebrow" data-reveal>{t.hero.eyebrow}</p>
     <h1 class="hero__title">
-      {lang === 'it' ? (
-        <>
-          <span data-reveal style="--reveal-delay:80ms">Farina, uova,</span>
-          <span data-reveal style="--reveal-delay:220ms">e le tue</span>
-          <span class="hero__title-ital ital" data-reveal style="--reveal-delay:360ms">mani.</span>
-        </>
-      ) : (
-        <>
-          <span data-reveal style="--reveal-delay:80ms">Flour, eggs,</span>
-          <span data-reveal style="--reveal-delay:220ms">and your two</span>
-          <span class="hero__title-ital ital" data-reveal style="--reveal-delay:360ms">hands.</span>
-        </>
-      )}
+      <span data-reveal style="--reveal-delay:80ms">{t.hero.titleL1}</span>
+      <span data-reveal style="--reveal-delay:220ms">{t.hero.titleL2}</span>
+      <span class="hero__title-ital ital" data-reveal style="--reveal-delay:360ms">{t.hero.titleItal}</span>
     </h1>
     <p class="hero__lede" data-reveal style="--reveal-delay:520ms">
-      {lang === 'it' ? 'Prepara la vera pasta toscana insieme a due chef di agriturismo, nella nostra cucina soleggiata in Oltrarno o in diretta online con un kit spedito a casa tua.' : 'Roll real Tuscan pasta beside two agriturismo head chefs, in our sun-lit kitchen off Piazza Santo Spirito or live online with a kit shipped to your door.'}
+      {t.hero.lede}
     </p>
     <div class="hero__actions" data-reveal style="--reveal-delay:640ms">
       <button class="btn btn--solid" data-open-booking>
-        {lang === 'it' ? 'Prenota il tuo tavolo' : 'Reserve your table'}
+        {t.hero.ctaReserve}
         <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
       <a class="btn btn--ghost" href="#experiences">
         <span class="btn__play" aria-hidden="true">▶</span>
-        {lang === 'it' ? 'Vedi i corsi' : 'See the classes'}
+        {t.hero.ctaSee}
       </a>
     </div>
 
     <ul class="hero__proof" data-reveal style="--reveal-delay:760ms">
-      <li><strong>2026</strong> {lang === 'it' ? 'cucina appena aperta' : 'our kitchen just opened'}</li>
-      <li><strong>3 hrs</strong> {lang === 'it' ? 'pratica, poi mangi tutto' : 'hands-on, then you eat it all'}</li>
-      <li><strong>max 8</strong> {lang === 'it' ? 'a tavola, mai di più' : 'at the table, never more'}</li>
+      <li><strong>2026</strong> {t.hero.proofOpened}</li>
+      <li><strong>3 hrs</strong> {t.hero.proofHands}</li>
+      <li><strong>max 8</strong> {t.hero.proofTable}</li>
     </ul>
   </div>
 

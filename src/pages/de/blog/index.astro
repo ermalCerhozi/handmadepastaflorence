@@ -1,0 +1,9 @@
+---
+import { getCollection } from 'astro:content';
+import BlogIndexPage from '../../../page-templates/BlogIndexPage.astro';
+
+const posts = (await getCollection('blog'))
+  .filter(p => p.id.startsWith('de/'))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+<BlogIndexPage posts={posts} />

@@ -5,9 +5,22 @@ pubDate: 2026-07-08
 author: 'Endri Cerhozi'
 image: '/images/aperitivo.webp'
 imageAlt: "Ora dell'aperitivo in una piazza di Firenze sul lato Oltrarno del fiume"
+faqs:
+  - q: "Cos'è l'Oltrarno?"
+    a: "L'Oltrarno — letteralmente oltre l'Arno — è la riva sinistra di Firenze, che si raggiunge attraversando Ponte Vecchio allontanandosi dal Duomo. È la metà più tranquilla e residenziale della città, con Piazza Santo Spirito, Palazzo Pitti e i Giardini di Boboli."
+  - q: "Per cosa è famoso l'Oltrarno?"
+    a: "L'Oltrarno è famoso per Piazza Santo Spirito e il suo aperitivo serale, Palazzo Pitti e i Giardini di Boboli, cinque secoli di botteghe artigiane a San Frediano e intorno a Via Maggio, la Cappella Brancacci e San Miniato al Monte sopra Piazzale Michelangelo."
+  - q: "Vale la pena visitare l'Oltrarno?"
+    a: "Sì — l'Oltrarno è dove Firenze sembra vissuta e non turistica. A due minuti da Ponte Vecchio la folla si dirada, e trovi le migliori botteghe artigiane, trattorie autentiche, l'aperitivo in Santo Spirito e la salita al tramonto verso San Miniato al Monte."
 ---
 
 L'Oltrarno — letteralmente "oltre l'Arno" — è la riva sinistra di Firenze, ed è dove si trova la nostra cucina. Attraversa Ponte Vecchio allontanandoti dal Duomo e in due minuti la folla si dirada, le strade si restringono e Firenze inizia a comportarsi come una città in cui la gente vive. Ecco come passeremmo una giornata dalla nostra parte del fiume.
+
+**L'Oltrarno in breve:**
+
+- **Cos'è** — la riva sinistra di Firenze, "oltre l'Arno", che si raggiunge attraversando Ponte Vecchio allontanandosi dal Duomo.
+- **Famoso per** — Piazza Santo Spirito, Palazzo Pitti e i Giardini di Boboli, cinque secoli di botteghe artigiane e il miglior aperitivo della città.
+- **Ideale per** — una Firenze autentica e senza fretta: trattorie, laboratori artigiani e San Miniato al Monte al tramonto.
 
 ## Mattina: Santo Spirito
 

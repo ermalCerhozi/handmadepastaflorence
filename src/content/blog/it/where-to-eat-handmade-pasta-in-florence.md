@@ -5,6 +5,13 @@ pubDate: 2026-07-08
 author: 'Endri Cerhozi'
 image: '/images/plates.webp'
 imageAlt: 'Piatti di pasta fresca serviti su un tavolo toscano'
+faqs:
+  - q: "Dov'è la pasta migliore di Firenze?"
+    a: "La pasta fresca migliore di Firenze non è vicino al Duomo, ma nelle trattorie attorno al mercato di Sant'Ambrogio e in Oltrarno intorno a Santo Spirito — locali con un menu corto, la pasta indicata col nome del formato e la sala piena di italiani alle 13:00. Ordina i pici se li vedi, o le pappardelle al cinghiale in autunno."
+  - q: "Cosa ordinare a Firenze per mangiare pasta fresca?"
+    a: "Ordina i classici toscani di pasta fresca: pici cacio e pepe o all'aglione, pappardelle al cinghiale, tortelli di patate del Mugello, tagliatelle ai funghi porcini in stagione, e ravioli ricotta e spinaci con burro e salvia."
+  - q: "Firenze è famosa per la pasta?"
+    a: "Firenze è famosa soprattutto per la carne — la bistecca alla fiorentina su tutte — ma le colline toscane circostanti hanno una profonda tradizione di pasta fresca, quindi le trattorie della città servono ottimi pici, pappardelle e tortelli. Per la vera pasta fatta a mano, cerca menu corti e stagionali lontano dalle vie più turistiche."
 ---
 
 Faccio la pasta per vivere, quindi quando mangio fuori a Firenze sono quello fastidioso che gira le pappardelle con la forchetta per controllare il taglio. Ecco cosa cerco effettivamente — e dove manderei un amico che ha una sola cena libera in città.

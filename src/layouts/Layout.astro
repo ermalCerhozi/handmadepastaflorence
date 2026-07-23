@@ -2,58 +2,44 @@
 import { ClientRouter } from 'astro:transitions';
 import Schema from '../components/Schema.astro';
 import '../styles/global.css';
-import { getLangFromUrl } from '../i18n/utils';
+import { getLocaleFromUrl, getAlternates, type Alternate } from '../i18n/utils';
+import { defaultLocale, languages } from '../i18n/config';
 
 interface Props {
   title?: string;
   description?: string;
   image?: string;
+  /** Per-page hreflang alternates (landing pages pass translated slugs). */
+  alternates?: Alternate[];
 }
 
 const {
   title = 'Handmade Pasta Florence — Cooking Classes & Pasta Experiences in the Oltrarno',
   description = 'Hands-on pasta making classes in Florence taught by two Tuscan agriturismo head chefs. Max 8 guests in our Oltrarno kitchen from €95, market-tour and private options, or live online with an ingredient kit from €68.',
-  image = '/images/cooking-class.jpg',
+  image = '/images/og-share.jpg',
+  alternates,
 } = Astro.props;
 
-const lang = getLangFromUrl(Astro.url);
+const lang = getLocaleFromUrl(Astro.url);
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const ogImage = new URL(image, Astro.site);
 
-// Hreflang logic with route mapping
-const routeMap: Record<string, string> = {
-  '/': '/it/',
-  '/market-tour-cooking-class-florence/': '/it/corso-cucina-tour-mercato-firenze/',
-  '/online-pasta-making-class/': '/it/corso-pasta-online/',
-  '/pasta-making-class-florence/': '/it/corso-pasta-fresca-firenze/',
-  '/private-cooking-class-florence/': '/it/corso-cucina-privato-firenze/',
-  '/team-building-cooking-class-florence/': '/it/corso-cucina-team-building-firenze/',
-  '/blog/': '/it/blog/',
-};
+// Hreflang: use the page's explicit alternates (landing pages) or derive them
+// generically for same-slug pages (home, blog). x-default points at the default
+// locale. Adding a locale in config.ts extends this automatically.
+const alts = (alternates ?? getAlternates(Astro.url.pathname)).map((a) => ({
+  hreflang: languages[a.locale].htmlLang,
+  href: new URL(a.path, Astro.site).href,
+  isDefault: a.locale === defaultLocale,
+}));
+const xDefault = alts.find((a) => a.isDefault) ?? alts[0];
 
-const reverseRouteMap: Record<string, string> = {};
-for (const [en, it] of Object.entries(routeMap)) {
-  reverseRouteMap[it] = en;
-}
-
-let currentPath = Astro.url.pathname;
-if (!currentPath.endsWith('/')) currentPath += '/';
-
-let enPath = currentPath;
-let itPath = currentPath;
-
-if (lang === 'it') {
-  enPath = reverseRouteMap[currentPath] || currentPath.replace('/it/', '/');
-} else {
-  itPath = routeMap[currentPath] || `/it${currentPath === '/' ? '/' : currentPath}`;
-}
-
-const enUrl = new URL(enPath, Astro.site).href;
-const itUrl = new URL(itPath, Astro.site).href;
+const ogLocale = languages[lang].ogLocale;
+const dir = languages[lang].dir;
 ---
 
 <!doctype html>
-<html lang={lang}>
+<html lang={lang} dir={dir}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -61,9 +47,8 @@ const itUrl = new URL(itPath, Astro.site).href;
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
-    <link rel="alternate" hreflang="en" href={enUrl} />
-    <link rel="alternate" hreflang="it" href={itUrl} />
-    <link rel="alternate" hreflang="x-default" href={enUrl} />
+    {alts.map((a) => <link rel="alternate" hreflang={a.hreflang} href={a.href} />)}
+    <link rel="alternate" hreflang="x-default" href={xDefault.href} />
 
     <!-- Open Graph -->
     <meta property="og:title" content={title} />
@@ -72,7 +57,7 @@ const itUrl = new URL(itPath, Astro.site).href;
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={ogImage} />
     <meta property="og:site_name" content="Handmade Pasta Florence" />
-    <meta property="og:locale" content={lang === 'it' ? "it_IT" : "en_US"} />
+    <meta property="og:locale" content={ogLocale} />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />

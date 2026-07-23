@@ -1,120 +1,55 @@
 ---
-const lang = Astro.currentLocale || 'en';
-
-const classesEn = [
-  {
-    tag: 'Signature',
-    name: 'The Chef’s Table',
-    desc: 'Three hours, four shapes, one long lunch. Roll pici, fold tortelli, then sit down to eat everything you made with a glass of Chianti.',
-    price: '€95',
-    meta: '3 hrs · max 8 guests · Oltrarno',
-    img: '/images/cooking_class_with_guests_in_picture.webp',
-    alt: 'The Chef’s Table — hands-on pasta-making class in our Florence kitchen',
-    w: 1050,
-    h: 1400,
-    href: '/pasta-making-class-florence/',
-  },
-  {
-    tag: 'Market + cook',
-    name: 'Mercato & Mani',
-    desc: 'Shop Sant’Ambrogio market at dawn with Endri or Marsel, then turn the basket into ravioli, a ragù, and a seasonal dolce back in the kitchen.',
-    price: '€145',
-    meta: '5 hrs · max 6 guests · market walk',
-    img: '/images/aperitivo.webp',
-    alt: 'Mercato & Mani — market tour and pasta class in Florence',
-    w: 1080,
-    h: 1440,
-    href: '/market-tour-cooking-class-florence/',
-  },
-  {
-    tag: 'Private',
-    name: 'The Family Long-Table',
-    desc: "Book the whole kitchen for birthdays, proposals, reunions. The long-table feast we’ve cooked at our agriturismi for years, now in the heart of Florence.",
-    price: 'from €680',
-    meta: 'flexible · 6–14 guests · evenings',
-    img: '/images/wedding-cake-2.webp',
-    alt: 'The Family Long-Table — private group pasta experience in Florence',
-    w: 1080,
-    h: 1433,
-    href: '/private-cooking-class-florence/',
-  },
+import { getLocaleFromUrl } from '../i18n/utils';
+import { useTranslations } from '../i18n/ui';
+import { landingPath } from '../data/landings';
+const lang = getLocaleFromUrl(Astro.url);
+const t = useTranslations(lang);
+// Non-translatable per-card data (image + landing key), zipped with t.exp.cards.
+const cardMeta = [
+  { img: '/images/cooking_class_with_guests_in_picture.webp', w: 1050, h: 1400, key: 'pasta-making' },
+  { img: '/images/aperitivo.webp', w: 1080, h: 1440, key: 'market-tour' },
+  { img: '/images/wedding-cake-2.webp', w: 1080, h: 1433, key: 'private' },
 ];
 
-const classesIt = [
-  {
-    tag: 'Firma',
-    name: 'Il Tavolo dello Chef',
-    desc: 'Tre ore, quattro formati, un lungo pranzo. Tira i pici, chiudi i tortelli, poi siediti a mangiare tutto ciò che hai preparato con un bicchiere di Chianti.',
-    price: '€95',
-    meta: '3 ore · max 8 ospiti · Oltrarno',
-    img: '/images/cooking_class_with_guests_in_picture.webp',
-    alt: 'Il Tavolo dello Chef — corso pratico di pasta fresca nella nostra cucina a Firenze',
-    w: 1050,
-    h: 1400,
-    href: '/it/corso-pasta-fresca-firenze/',
-  },
-  {
-    tag: 'Mercato + cucina',
-    name: 'Mercato & Mani',
-    desc: 'Fai la spesa al mercato di Sant’Ambrogio all’alba con Endri o Marsel, poi trasforma il cesto in ravioli, ragù e un dolce di stagione tornando in cucina.',
-    price: '€145',
-    meta: '5 ore · max 6 ospiti · giro al mercato',
-    img: '/images/aperitivo.webp',
-    alt: 'Mercato & Mani — tour del mercato e corso di pasta a Firenze',
-    w: 1080,
-    h: 1440,
-    href: '/it/corso-cucina-tour-mercato-firenze/',
-  },
-  {
-    tag: 'Privato',
-    name: 'Il Lungo Tavolo di Famiglia',
-    desc: "Prenota l'intera cucina per compleanni, proposte, ritrovi. Il banchetto al lungo tavolo che abbiamo cucinato nei nostri agriturismi per anni, ora nel cuore di Firenze.",
-    price: 'da €680',
-    meta: 'flessibile · 6–14 ospiti · serate',
-    img: '/images/wedding-cake-2.webp',
-    alt: 'Il Lungo Tavolo di Famiglia — esperienza di pasta per gruppi privati a Firenze',
-    w: 1080,
-    h: 1433,
-    href: '/it/corso-cucina-privato-firenze/',
-  },
-];
-
-const classes = lang === 'it' ? classesIt : classesEn;
 ---
 
 <section class="exp" id="experiences">
   <div class="shell">
     <header class="exp__head">
       <div data-reveal>
-        <p class="eyebrow exp__eyebrow">{lang === 'it' ? 'Corsi di pasta fresca · Firenze' : 'Pasta making classes · Florence'}</p>
-        <h2 class="exp__title">{lang === 'it' ? 'Accomodati al nostro' : 'Pull up a chair'}<br />{lang === 'it' ? 'tavolo in ' : 'at our '}<span class="ital">{lang === 'it' ? 'cucina.' : 'kitchen table.'}</span></h2>
+        <p class="eyebrow exp__eyebrow">{t.exp.eyebrow}</p>
+        <h2 class="exp__title">{t.exp.titlePre}<br />{t.exp.titleMid}<span class="ital">{t.exp.titleItal}</span></h2>
       </div>
       <p class="exp__intro" data-reveal style="--reveal-delay:120ms">
-        {lang === 'it' ? 'Ogni classe è con le mani in pasta dal primo minuto. Piccoli gruppi, nessuna dimostrazione da guardare, e mangi il pranzo che hai appena preparato.' : 'Every class is hands-in-the-flour from the first minute. Small groups, no demos to watch, and you eat the lunch you just rolled.'}
+        {t.exp.intro}
       </p>
     </header>
 
     <div class="exp__grid">
-      {classes.map((c, i) => (
+      {t.exp.cards.map((c, i) => {
+        const m = cardMeta[i];
+        const href = landingPath(m.key, lang);
+        return (
         <article class="card" data-reveal style={`--reveal-delay:${i * 90}ms`}>
           <div class="card__media">
-            <img class="card__img" src={c.img} alt={c.alt} width={c.w} height={c.h} loading="lazy" decoding="async" />
+            <img class="card__img" src={m.img} alt={c.alt} width={m.w} height={m.h} loading="lazy" decoding="async" />
             <span class="card__tag">{c.tag}</span>
             <span class="card__price">{c.price}</span>
           </div>
           <div class="card__body">
-            <h3 class="card__name"><a href={c.href}>{c.name}</a></h3>
+            <h3 class="card__name"><a href={href}>{c.name}</a></h3>
             <p class="card__desc">{c.desc}</p>
             <p class="card__meta">{c.meta}</p>
             <div class="card__actions">
               <button class="card__cta" data-open-booking data-prefill="florence">
-                {lang === 'it' ? 'Prenota ora' : 'Book this'} <span aria-hidden="true">→</span>
+                {t.exp.book} <span aria-hidden="true">→</span>
               </button>
-              <a class="card__more" href={c.href}>{lang === 'it' ? 'Dettagli completi' : 'Full details'}</a>
+              <a class="card__more" href={href}>{t.exp.more}</a>
             </div>
           </div>
         </article>
-      ))}
+        );
+      })}
     </div>
   </div>
 </section>
