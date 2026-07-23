@@ -30,6 +30,7 @@ if (langLinks.length <= 1) return;
           lang={a.locale}
           class="lang__opt"
           aria-current={a.locale === current ? 'page' : undefined}
+          data-astro-reload
         >
           <span class="lang__flag" set:html={flags[a.locale as keyof typeof flags]} />
           <span>{languages[a.locale].label}</span>
