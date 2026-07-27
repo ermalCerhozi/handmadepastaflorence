@@ -1,0 +1,250 @@
+---
+// One shape (a spoke). Each targets its own long-tail question — "what is pici
+// pasta", "pappardelle vs tagliatelle" — and ends in the same €95 class CTA, so
+// authority earned on informational queries lands on a bookable page.
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import BookingDrawer from '../components/BookingDrawer.astro';
+import { shapes, shapePath, shapesHubPath, type ShapeSpoke } from '../data/shapes';
+import { localizePath, SITE, type Alternate } from '../i18n/utils';
+import type { Locale } from '../i18n/config';
+
+interface Props {
+  locale: Locale;
+  spoke: ShapeSpoke;
+}
+
+const { locale, spoke } = Astro.props;
+const s = shapes[locale]!;
+const L = s.labels;
+
+// Only offer an alternate where that locale actually ships this shape.
+const alternates: Alternate[] = (Object.keys(shapes) as Locale[])
+  .filter((l) => shapes[l]!.spokes.some((sp) => sp.slug === spoke.slug))
+  .map((l) => ({ locale: l, path: shapePath(l, spoke.slug) }));
+
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: L.home, item: `${SITE}/` },
+    { '@type': 'ListItem', position: 2, name: L.hubCrumb, item: `${SITE}${shapesHubPath(locale)}` },
+    { '@type': 'ListItem', position: 3, name: spoke.name, item: canonical },
+  ],
+};
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: spoke.title.split(' | ')[0],
+  description: spoke.description,
+  image: `${SITE}${spoke.image.src}`,
+  author: { '@id': `${SITE}/#business` },
+  publisher: { '@id': `${SITE}/#business` },
+  mainEntityOfPage: canonical,
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: spoke.faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+
+const siblings = s.spokes.filter((sp) => sp.slug !== spoke.slug);
+---
+
+<Layout title={spoke.title} description={spoke.description} image={spoke.image.src} alternates={alternates}>
+  <Header solid alternates={alternates} />
+  <main>
+    <section class="sp-hero" id="top">
+      <div class="shell sp-hero__inner">
+        <div class="sp-hero__text">
+          <nav class="sp-crumb" aria-label="Breadcrumb">
+            <a href={localizePath('/', locale)}>{L.home}</a>
+            <span aria-hidden="true">/</span>
+            <a href={shapesHubPath(locale)}>{L.hubCrumb}</a>
+            <span aria-hidden="true">/</span> <span>{spoke.name}</span>
+          </nav>
+          <h1 class="sp-hero__h">
+            {spoke.name}
+            <span class="sp-hero__sub">{spoke.h1Sub}</span>
+          </h1>
+          <!-- Direct answer in the first paragraph: the snippet target. -->
+          <p class="sp-answer" set:html={spoke.answer} />
+        </div>
+        <div class="sp-hero__media">
+          <img src={spoke.image.src} alt={spoke.image.alt} width={spoke.image.w} height={spoke.image.h} fetchpriority="high" decoding="async" />
+        </div>
+      </div>
+    </section>
+
+    <section class="sp-facts">
+      <div class="shell">
+        <dl class="sp-facts__grid">
+          {
+            spoke.facts.map((f) => (
+              <div class="sp-facts__item">
+                <dt>{f.label}</dt>
+                <dd>{f.value}</dd>
+              </div>
+            ))
+          }
+        </dl>
+      </div>
+    </section>
+
+    <section class="sp-body">
+      <div class="shell sp-body__inner">
+        {
+          spoke.sections.map((sec, i) => (
+            <article class="sp-sec" data-reveal style={`--reveal-delay:${i * 60}ms`}>
+              <h2>{sec.title}</h2>
+              {sec.paras.map((p) => <p set:html={p} />)}
+            </article>
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="sp-cta">
+      <div class="shell sp-cta__inner">
+        <div>
+          <h2 class="sp-cta__h">{L.ctaHeading}</h2>
+          <p class="sp-cta__p">{L.ctaBody}</p>
+        </div>
+        <div class="sp-cta__actions">
+          <button class="sp-cta__btn" data-open-booking data-cta={`shape-${spoke.slug}`} data-prefill="florence">{L.ctaButton}</button>
+          <a class="sp-cta__link" href={s.classHref}>{L.ctaLink}</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="sp-faq">
+      <div class="shell sp-faq__inner">
+        <h2 class="sp-faq__h">{L.faqHeading}</h2>
+        <div class="sp-faq__list">
+          {
+            spoke.faqs.map((f, i) => (
+              <details class="sp-faq__item" data-reveal style={`--reveal-delay:${i * 50}ms`}>
+                <summary class="sp-faq__q">
+                  {f.q}
+                  <span class="sp-faq__icon" aria-hidden="true">+</span>
+                </summary>
+                <p class="sp-faq__a">{f.a}</p>
+              </details>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <section class="sp-sib">
+      <div class="shell">
+        <h2 class="sp-sib__h">{L.backToHub}</h2>
+        <div class="sp-sib__grid">
+          {
+            siblings.map((sp) => (
+              <a class="sp-sib__card" href={shapePath(locale, sp.slug)}>
+                <img src={sp.image.src} alt={sp.image.alt} width={sp.image.w} height={sp.image.h} loading="lazy" decoding="async" />
+                <div>
+                  <h3>{sp.name}</h3>
+                  <p>{sp.tagline}</p>
+                </div>
+              </a>
+            ))
+          }
+        </div>
+        <a class="sp-sib__all" href={shapesHubPath(locale)}>{L.backToHub} <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+  <Footer />
+  <BookingDrawer />
+
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbSchema)} />
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(articleSchema)} />
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
+</Layout>
+
+<style>
+  .sp-hero { padding-block: clamp(7rem, 14vh, 10rem) clamp(2rem, 5vw, 3rem); background: var(--flour-deep); }
+  .sp-hero__inner { display: grid; gap: clamp(2rem, 5vw, 3.5rem); grid-template-columns: 1fr; align-items: center; }
+  @media (min-width: 900px) { .sp-hero__inner { grid-template-columns: 1.1fr 1fr; } }
+  .sp-crumb { font-size: var(--step--1); color: rgba(35,35,33,0.55); margin-bottom: 1.2rem; }
+  .sp-crumb a { text-decoration: underline; text-underline-offset: 2px; }
+  .sp-crumb span { margin-inline: 0.35rem; }
+  .sp-hero__h { font-family: var(--serif); font-size: var(--step-3); font-weight: 800; line-height: 1.02; }
+  /* Keyword line inside the h1, sized down so the shape name stays the headline. */
+  .sp-hero__sub {
+    display: block; margin-top: 0.7rem; font-family: var(--sans); font-size: var(--step-0);
+    font-weight: 600; line-height: 1.4; color: rgba(35,35,33,0.62); max-width: 30ch;
+  }
+  .sp-answer {
+    margin-top: 1.4rem; font-size: var(--step-1); line-height: 1.5; color: rgba(35,35,33,0.8);
+    padding-left: 1.1rem; border-left: 4px solid var(--yolk);
+  }
+  .sp-hero__media img { width: 100%; height: auto; border-radius: 16px; }
+
+  .sp-facts { padding-block: clamp(2rem, 4vw, 3rem); }
+  .sp-facts__grid { display: grid; gap: 1.2rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr)); }
+  .sp-facts__item { padding: 1rem 1.1rem; background: var(--flour-deep); border-radius: 12px; }
+  .sp-facts__item dt { font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.12em; color: var(--olive-soft); }
+  .sp-facts__item dd { margin-top: 0.35rem; font-size: var(--step--1); line-height: 1.4; }
+
+  .sp-body { padding-block: clamp(1rem, 3vw, 2rem) clamp(3rem, 6vw, 4rem); }
+  .sp-body__inner { max-width: 68ch; display: grid; gap: clamp(2rem, 4vw, 3rem); }
+  .sp-sec h2 { font-family: var(--serif); font-size: var(--step-2); font-weight: 800; margin-bottom: 0.9rem; }
+  .sp-sec p { line-height: 1.7; color: rgba(35,35,33,0.82); }
+  .sp-sec p + p { margin-top: 1rem; }
+  .sp-sec :global(em) { font-style: italic; }
+  .sp-sec :global(strong) { font-weight: 700; color: var(--ink); }
+
+  .sp-cta { padding-bottom: clamp(3rem, 6vw, 4rem); }
+  .sp-cta__inner {
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 2rem;
+    background: var(--olive); color: var(--flour); border-radius: 20px; padding: clamp(1.8rem, 4vw, 3rem);
+  }
+  .sp-cta__h { font-family: var(--serif); font-size: var(--step-2); font-weight: 800; }
+  .sp-cta__p { margin-top: 0.7rem; max-width: 52ch; color: rgba(249,246,240,0.82); line-height: 1.55; }
+  .sp-cta__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; }
+  .sp-cta__btn {
+    background: var(--yolk); color: var(--olive-deep); font-weight: 800; font-size: var(--step-0);
+    padding: 0.95rem 1.7rem; border-radius: 100px; transition: transform 0.3s;
+  }
+  .sp-cta__btn:hover { transform: translateY(-2px); }
+  .sp-cta__link { color: rgba(249,246,240,0.85); text-decoration: underline; text-underline-offset: 3px; font-size: var(--step--1); }
+
+  .sp-faq { padding-block: clamp(3rem, 6vw, 4rem); background: var(--flour-deep); }
+  .sp-faq__inner { max-width: 74ch; }
+  .sp-faq__h { font-family: var(--serif); font-size: var(--step-2); font-weight: 800; margin-bottom: 1.6rem; }
+  .sp-faq__list { display: grid; gap: 0.6rem; }
+  .sp-faq__item { background: var(--flour); border-radius: 12px; padding: 1rem 1.2rem; }
+  .sp-faq__q {
+    display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+    font-weight: 700; cursor: pointer; list-style: none;
+  }
+  .sp-faq__q::-webkit-details-marker { display: none; }
+  .sp-faq__icon { color: var(--olive-soft); font-size: 1.3rem; line-height: 1; transition: transform 0.3s; }
+  .sp-faq__item[open] .sp-faq__icon { transform: rotate(45deg); }
+  .sp-faq__a { margin-top: 0.8rem; line-height: 1.6; color: rgba(35,35,33,0.78); }
+
+  .sp-sib { padding-block: clamp(3rem, 6vw, 4rem); }
+  .sp-sib__h { font-family: var(--serif); font-size: var(--step-2); font-weight: 800; margin-bottom: 1.4rem; }
+  .sp-sib__grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); }
+  .sp-sib__card {
+    display: flex; gap: 1rem; align-items: center; background: var(--flour-deep);
+    border-radius: 14px; padding: 0.8rem; transition: transform 0.3s;
+  }
+  .sp-sib__card:hover { transform: translateY(-3px); }
+  .sp-sib__card img { width: 84px; height: 62px; object-fit: cover; border-radius: 10px; flex-shrink: 0; }
+  .sp-sib__card h3 { font-family: var(--serif); font-size: var(--step-0); font-weight: 800; }
+  .sp-sib__card p { font-size: 0.8rem; color: rgba(35,35,33,0.7); line-height: 1.4; margin-top: 0.2rem; }
+  .sp-sib__all { display: inline-block; margin-top: 1.4rem; font-weight: 700; color: var(--olive-soft); text-decoration: underline; text-underline-offset: 3px; }
+</style>

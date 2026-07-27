@@ -1,0 +1,16 @@
+---
+// Italian shape spokes: /it/formati-di-pasta-toscana/pici/ and friends.
+import ShapePage from '../../../page-templates/ShapePage.astro';
+import { shapes } from '../../../data/shapes';
+
+export function getStaticPaths() {
+  return shapes.it!.spokes.map((spoke) => ({
+    params: { slug: spoke.slug },
+    props: { spoke },
+  }));
+}
+
+const { spoke } = Astro.props;
+---
+
+<ShapePage locale="it" spoke={spoke} />

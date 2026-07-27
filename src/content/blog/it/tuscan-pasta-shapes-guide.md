@@ -60,4 +60,6 @@ I ravioli ricotta e spinaci con burro e salvia sono il formato che tutti conosco
 
 Se stai mangiando: pici se li vedi, pappardelle al cinghiale se è autunno. (Ecco [dove cercare a Firenze](/it/blog/where-to-eat-handmade-pasta-in-florence/).)
 
+Ognuno dei quattro formati che insegniamo ha una sua pagina nella [nostra libreria dei formati di pasta](/it/formati-di-pasta-toscana/) — l'impasto, il taglio e il sugo per cui è nato, un formato alla volta.
+
 Se stai impastando: inizia con le tagliatelle per la tecnica, i pici per il divertimento, i tortelli per potertene vantare. Li insegniamo tutti, quattro formati a corso, nella [nostra cucina in Oltrarno](/it/corso-pasta-fresca-firenze/) — o [in diretta online](/it/corso-pasta-online/) se la Toscana non è ancora in programma.

@@ -5,6 +5,7 @@
 import { localizePath, getAlternates, getLocaleFromUrl, type Alternate } from '../i18n/utils';
 import { useTranslations } from '../i18n/ui';
 import { languages } from '../i18n/config';
+import { shapesHubPath } from '../data/shapes';
 import LanguageSwitcher from './LanguageSwitcher.astro';
 
 interface Props {
@@ -33,7 +34,9 @@ const langLinks = alternates ?? getAlternates(Astro.url.pathname);
 
     <nav class="hdr__nav" aria-label="Primary">
       <a href={`${home}#experiences`}>{t.nav.classes}</a>
-      <a href={`${home}#gallery`}>{t.nav.pasta}</a>
+      {/* Points at the shapes hub, not the homepage #gallery anchor: a sitewide
+          link is the cheapest authority a hub can get. */}
+      <a href={shapesHubPath(lang)}>{t.nav.pasta}</a>
       <a href={`${home}#story`}>{t.nav.story}</a>
       <a href={`${home}#business`}>{t.nav.business}</a>
       <a href={localizePath('/blog/', lang)}>{t.nav.guides}</a>
@@ -42,7 +45,7 @@ const langLinks = alternates ?? getAlternates(Astro.url.pathname);
     <div class="hdr__end">
       <LanguageSwitcher langLinks={langLinks} />
 
-      <button class="hdr__cta" data-open-booking>
+      <button class="hdr__cta" data-open-booking data-cta="header">
         {t.nav.book}
         <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>

@@ -6,8 +6,13 @@
 
 const en = {
   meta: {
-    homeTitle: 'Handmade Pasta Florence — Cooking Classes & Pasta Experiences in the Oltrarno',
-    homeDescription: 'Hands-on pasta making classes in Florence taught by two Tuscan agriturismo head chefs. Max 8 guests in our Oltrarno kitchen from €95, market-tour and private options, or live online with an ingredient kit from €68.',
+    // The homepage carries exactly ONE keyword ("cooking class in Florence" — the
+    // category head term no other page targets) across four slots: title, the H1
+    // subline, this description's opener, and the hero image alt. Everything else
+    // here is conversion copy. Do not re-target "pasta making class in Florence":
+    // that belongs to /pasta-making-class-florence/ and was de-cannibalized on purpose.
+    homeTitle: 'Cooking Classes in Florence — Hands-On Pasta with Two Tuscan Chefs | Handmade Pasta Florence',
+    homeDescription: 'Small-group cooking classes in Florence, hands-in-the-flour from the first minute. Roll fresh pasta with two Tuscan agriturismo head chefs in our Oltrarno kitchen from €95 — market-tour, private and gluten-free options, or live online with an ingredient kit from €68.',
     blogTitle: 'Florence Pasta & Food Guides | Handmade Pasta Florence',
     blogDescription: 'Guides to fresh pasta and eating well in Florence, written by two Tuscan agriturismo head chefs — pasta shapes, where to eat, gluten-free tips and the Oltrarno neighbourhood.',
   },
@@ -34,6 +39,8 @@ const en = {
     private: 'Private Events',
     online: 'Live Online',
     team: 'Team Building',
+    glutenFree: 'Gluten-Free Class',
+    forTwo: 'Pasta Class for Two',
     gift: 'Gift a class',
     guides: 'Guides & Stories',
     faq: 'FAQ & Allergens',
@@ -58,8 +65,12 @@ const en = {
     titleL1: 'Flour, eggs,',
     titleL2: 'and your two',
     titleItal: 'hands.',
+    // Keyword slot 2 of 4. Sits inside the <h1> at a smaller size so the emotive
+    // line above it still does the conversion work.
+    titleKw: 'Hands-on cooking classes in Florence, from €95.',
+    imgAlt: 'Guests at a hands-on cooking class in Florence, rolling fresh pasta in our Oltrarno kitchen',
     lede: 'Roll real Tuscan pasta beside two agriturismo head chefs, in our sun-lit kitchen off Piazza Santo Spirito or live online with a kit shipped to your door.',
-    ctaReserve: 'Reserve your table',
+    ctaReserve: 'Book a pasta class',
     ctaSee: 'See the classes',
     proofOpened: 'our kitchen just opened',
     proofHands: 'hands-on, then you eat it all',
@@ -158,6 +169,7 @@ const en = {
     taughtIn: 'Taught in',
     book: 'Book this class →',
     back: 'back to shape',
+    allShapes: 'All pasta shapes, explained',
     shapes: [
       { name: 'Pappardelle', region: 'Florence · Tuscany', alt: 'Broad ribbons of fresh egg pappardelle, hand-cut and dusted with flour', blurb: 'Broad, velvety ribbons named from “pappare”, meaning to gobble up.', history: 'Born in the Tuscan countryside to cradle rich game ragùs of wild boar and hare. The width is the point: every strand carries a spoonful of sauce.', teaches: 'The Chef’s Table' },
       { name: 'Ravioli', region: 'All of Italy', alt: 'Rows of freshly made square ravioli with hand-pinched edges on a floured board', blurb: 'Little parcels, pinched shut around ricotta, spinach or squash.', history: "Mentioned in a 14th-century merchant’s letters from Tuscany, ravioli were a way to stretch precious cheese. Sealing them well is a craft: air is the enemy.", teaches: 'Mercato & Mani' },

@@ -12,7 +12,7 @@ const t = useTranslations(getLocaleFromUrl(Astro.url));
       <span class="fab__eyebrow">{t.fab.eyebrow}</span>
       <span class="fab__when">{t.fab.when}</span>
     </div>
-    <button class="fab__btn" data-open-booking>
+    <button class="fab__btn" data-open-booking data-cta="floating">
       <span class="fab__pulse" aria-hidden="true"></span>
       {t.fab.book}
       <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>

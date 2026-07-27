@@ -1,7 +1,7 @@
 const zh = {
   meta: {
-    homeTitle: 'Handmade Pasta Florence — 佛罗伦萨烹饪课程与意面体验',
-    homeDescription: '在佛罗伦萨体验手工意面制作课程，由两位托斯卡纳农庄主厨亲自指导。我们在奥尔特拉诺（Oltrarno）的厨房每班最多8位客人，95欧元起。另有市场探店和私人包场可选，或选择带食材包的在线直播课程，68欧元起。',
+    homeTitle: '佛罗伦萨烹饪课程 — 与两位托斯卡纳主厨制作手工意面 | Handmade Pasta Florence',
+    homeDescription: '佛罗伦萨小班制烹饪课程，从第一分钟起就亲手实践。在我们的奥尔特拉诺（Oltrarno）厨房与两位托斯卡纳农庄主厨一起制作新鲜意面，95欧元起——另有市场之旅、私人包场和无麸质选项，或选择带食材包的在线直播课程，68欧元起。',
     blogTitle: '佛罗伦萨意面与美食指南 | Handmade Pasta Florence',
     blogDescription: '关于在佛罗伦萨品尝新鲜意面和享用美食的指南，由两位托斯卡纳农庄主厨撰写——涵盖意面形状、就餐地点推荐、无麸质饮食贴士以及奥尔特拉诺街区的探索。',
   },
@@ -28,6 +28,8 @@ const zh = {
     private: '私人活动',
     online: '在线直播',
     team: '团队建设',
+    glutenFree: '无麸质课程',
+    forTwo: '双人课程',
     gift: '赠送课程',
     guides: '指南与故事',
     faq: '常见问题与过敏须知',
@@ -52,8 +54,10 @@ const zh = {
     titleL1: '面粉，鸡蛋，',
     titleL2: '还有你的',
     titleItal: '双手。',
+    titleKw: '佛罗伦萨亲手实践的烹饪课程，95欧元起。',
+    imgAlt: '客人在佛罗伦萨烹饪课程中于我们的奥尔特拉诺厨房擀制新鲜意面',
     lede: '在圣斯皮里托广场（Piazza Santo Spirito）旁阳光明媚的厨房里，与两位托斯卡纳农庄主厨一起亲手制作地道的意面；或者选择在线直播，我们会把食材包直接送到你家门口。',
-    ctaReserve: '预订座位',
+    ctaReserve: '预订烹饪课程',
     ctaSee: '查看课程',
     proofOpened: '我们的厨房刚刚开张',
     proofHands: '亲手制作，然后尽情享用',
@@ -152,6 +156,7 @@ const zh = {
     taughtIn: '课程内容包含于',
     book: '预订此课程 →',
     back: '返回形状',
+    allShapes: '全部意面形状详解',
     shapes: [
       { name: 'Pappardelle', region: '佛罗伦萨 · 托斯卡纳', alt: '宽宽的鸡蛋意面，手工切割并撒上面粉', blurb: '宽大、如天鹅绒般的缎带，得名于“pappare”，意为狼吞虎咽。', history: '诞生于托斯卡纳的乡村，用来搭配浓郁的野猪肉和野兔肉酱。它的宽度是关键：每一根面条都能裹满一勺浓郁的酱汁。', teaches: '主厨餐桌' },
       { name: 'Ravioli', region: '全意大利', alt: '一排排手工捏紧边缘的新鲜方形 ravioli 铺在撒满面粉的案板上', blurb: '小巧的包裹，里面塞满里科塔奶酪、菠菜或南瓜，捏紧封口。', history: "早在14世纪托斯卡纳商人的信件中就有提及，ravioli 是为了延伸珍贵奶酪的一种做法。把它们密封好是一门手艺：空气是最大的敌人。", teaches: '市场与手工' },

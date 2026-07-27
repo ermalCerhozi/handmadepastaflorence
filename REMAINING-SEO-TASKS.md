@@ -4,6 +4,64 @@ Companion to `FULL-AUDIT-REPORT.md`, `ACTION-PLAN.md` and `SEO-STRATEGY.md`. Eve
 below is what **couldn't be done autonomously** because it needs your data, accounts,
 content, or a decision. The items already shipped are listed at the bottom for context.
 
+## 🏗️ 2026-07-27 — architecture pass (keyword → page mapping)
+
+Rebuilt the site architecture around one rule: **one keyword, one page, one to two
+clicks from home** — and the homepage kept for conversion, carrying a single
+bottom-of-funnel term. Site went from 63 to 85 indexable URLs.
+
+**Homepage — conversion first, one keyword only.** The primary conversion goal is
+now stated explicitly: a completed WhatsApp booking request (drawer step 3). It
+takes the single head term "cooking class in Florence" (localized per locale) in
+exactly four slots — title, a keyword subline *inside* the H1, the meta opener,
+and the hero image alt. The emotive H1 ("Flour, eggs, and your two hands.") is
+untouched. `/pasta-making-class-florence/` keeps "pasta making class in Florence";
+do not let the homepage take it back.
+
+**Three new money pages**, each one keyword, all five locales (15 URLs), added as
+page keys in `src/data/landings.ts`:
+- `gluten-free` → gluten free cooking class Florence. Surfaces a capability that
+  was buried in a bullet (dedicated blend + clean station, no surcharge). Copy is
+  deliberately honest about the shared-room limit — see the owner check below.
+- `for-two` → cooking class for couples Florence. Answers the couple-intent the
+  2026-07-12 note found arriving on "private cooking class florence" and hitting
+  the €680 wall. Sells the two SKUs that already exist; no invented price point.
+- `gift` → cooking class gift voucher Florence. The footer's "Gift a class" link
+  used to be `href="#"`.
+
+**New hub: `/pasta-shapes/` + 4 spokes** (EN + IT, 10 URLs), from `src/data/shapes.ts`.
+Built here because shape queries are the *only* cluster ranking (pos 9–16) — this
+is earned relevance, so hub-and-spoke pays. Hub is linked sitewide from the header
+and footer (replacing the `#gallery` anchor), and every spoke CTAs into the €95
+class. `/blog/tuscan-pasta-shapes-guide/` was NOT retitled — it keeps the head
+term and now links up to the hub. Read the cannibalization note in `shapes.ts`
+before touching either.
+
+**Measurement (was zero).** `src/scripts/track.ts` is a provider-agnostic event
+layer: `booking_drawer_open` (with `data-cta` naming the trigger),
+`booking_drawer_step`, `booking_request_sent` (the conversion, with value),
+`whatsapp_click`, `email_enquiry`. **No provider is installed** — drop a GA4 /
+Plausible / Umami snippet into `src/layouts/Layout.astro` and the events start
+reporting with no code change. Until then none of the above is measurable.
+
+**Also fixed:** `astro.config.mjs` declared only `['en','it']` while five locales
+ship, so the sitemap annotated hreflang for en/it only. Now all five (35 each).
+Head-level hreflang was already correct on landing pages; this was the sitemap's
+redundant copy.
+
+**Open — needs an owner decision:**
+- **Gift voucher terms**: validity period, transferability, delivery format. The
+  copy promises none of these on purpose. Fill them into the `gift` entry in
+  `landings.ts` (there is a TODO comment) once decided.
+- **Gluten-free claim**: verify the copy matches what the kitchen actually does —
+  it states a dedicated blend, separate board/tools/pot, chef washes and changes
+  apron, and that this is *not* a certified gluten-free facility. Correct it if
+  any of that is wrong; it is a medical-safety claim.
+- **A couples price point** (e.g. a private table for two between €95pp and €680)
+  would convert the `for-two` page better. Business decision, not an SEO one.
+
+---
+
 ## 📈 2026-07-23 — striking-distance pass (position data arrived)
 
 The GSC export now carries the **position column** the 2026-07-12 note was waiting for

@@ -1,0 +1,268 @@
+---
+// The pasta-shapes hub: an index and comparison of the four shapes we teach.
+// Deliberately NOT a second article about "tuscan pasta types" — that keyword
+// belongs to /blog/tuscan-pasta-shapes-guide/, which already ranks. See the
+// cannibalization note at the top of src/data/shapes.ts before retitling.
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import BookingDrawer from '../components/BookingDrawer.astro';
+import { shapes, shapePath, shapesHubPath } from '../data/shapes';
+import { localizePath, SITE, type Alternate } from '../i18n/utils';
+import type { Locale } from '../i18n/config';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const s = shapes[locale]!;
+const L = s.labels;
+
+// Explicit alternates: the hub exists in en/it only, with translated slugs, so
+// the generic same-slug helper would emit hreflang for pages that don't exist.
+const alternates: Alternate[] = (Object.keys(shapes) as Locale[]).map((l) => ({
+  locale: l,
+  path: shapesHubPath(l),
+}));
+
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: L.home, item: `${SITE}/` },
+    { '@type': 'ListItem', position: 2, name: L.hubCrumb, item: canonical },
+  ],
+};
+
+// ItemList tells Google this page indexes the four spokes below it.
+const itemListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: L.hubCrumb,
+  itemListElement: s.spokes.map((sp, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: sp.name,
+    url: `${SITE}${shapePath(locale, sp.slug)}`,
+  })),
+};
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: s.hubFaqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+---
+
+<Layout
+  title={s.hubTitle}
+  description={s.hubDescription}
+  image={s.spokes[0].image.src}
+  alternates={alternates}
+>
+  <Header solid alternates={alternates} />
+  <main>
+    <section class="sh-hero" id="top">
+      <div class="shell">
+        <nav class="sh-crumb" aria-label="Breadcrumb">
+          <a href={localizePath('/', locale)}>{L.home}</a>
+          <span aria-hidden="true">/</span> <span>{L.hubCrumb}</span>
+        </nav>
+        <p class="eyebrow sh-hero__eyebrow">{s.hubEyebrow}</p>
+        <h1 class="sh-hero__h">{s.hubHeading} <span class="ital">{s.hubHeadingItal}</span></h1>
+        <p class="sh-hero__lede">{s.hubLede}</p>
+
+        <!-- Answer box: the direct-answer target for shape queries. -->
+        <div class="sh-answer" data-reveal>
+          <p>{s.hubAnswer}</p>
+          <ul>
+            {s.hubAnswerList.map((li) => <li set:html={li} />)}
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="sh-grid-wrap">
+      <div class="shell">
+        <div class="sh-grid">
+          {
+            s.spokes.map((sp, i) => (
+              <a class="sh-card" href={shapePath(locale, sp.slug)} data-reveal style={`--reveal-delay:${i * 60}ms`}>
+                <div class="sh-card__media">
+                  <img src={sp.image.src} alt={sp.image.alt} width={sp.image.w} height={sp.image.h} loading="lazy" decoding="async" />
+                </div>
+                <div class="sh-card__body">
+                  <h2>{sp.name}</h2>
+                  <p>{sp.tagline}</p>
+                  <span class="sh-card__go">{L.readMore} <span aria-hidden="true">→</span></span>
+                </div>
+              </a>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <section class="sh-table-wrap">
+      <div class="shell">
+        <h2 class="sh-table__h">{L.tableHeading}</h2>
+        <div class="sh-table__scroll">
+          <table class="sh-table">
+            <thead>
+              <tr>
+                <th scope="col">{L.colShape}</th>
+                <th scope="col">{L.colDough}</th>
+                <th scope="col">{L.colCut}</th>
+                <th scope="col">{L.colSauce}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {
+                s.spokes.map((sp) => (
+                  <tr>
+                    <th scope="row"><a href={shapePath(locale, sp.slug)}>{sp.name}</a></th>
+                    <td>{sp.compare.dough}</td>
+                    <td>{sp.compare.cut}</td>
+                    <td>{sp.compare.sauce}</td>
+                  </tr>
+                ))
+              }
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="sh-faq">
+      <div class="shell sh-faq__inner">
+        <h2 class="sh-faq__h">{L.faqHeading}</h2>
+        <div class="sh-faq__list">
+          {
+            s.hubFaqs.map((f, i) => (
+              <details class="sh-faq__item" data-reveal style={`--reveal-delay:${i * 50}ms`}>
+                <summary class="sh-faq__q">
+                  {f.q}
+                  <span class="sh-faq__icon" aria-hidden="true">+</span>
+                </summary>
+                <p class="sh-faq__a">{f.a}</p>
+              </details>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <!-- Every hub page funnels to the same place: the €95 class. -->
+    <section class="sh-cta">
+      <div class="shell sh-cta__inner">
+        <div>
+          <h2 class="sh-cta__h">{L.ctaHeading}</h2>
+          <p class="sh-cta__p">{L.ctaBody}</p>
+        </div>
+        <div class="sh-cta__actions">
+          <button class="sh-cta__btn" data-open-booking data-cta="shapes-hub" data-prefill="florence">{L.ctaButton}</button>
+          <a class="sh-cta__link" href={s.classHref}>{L.ctaLink}</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="sh-guide">
+      <div class="shell sh-guide__inner">
+        <h2>{L.guideHeading}</h2>
+        <p>{L.guideBody}</p>
+        <a href={s.guideHref}>{L.guideLink} <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+  <Footer />
+  <BookingDrawer />
+
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbSchema)} />
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(itemListSchema)} />
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
+</Layout>
+
+<style>
+  .sh-hero { padding-block: clamp(7rem, 14vh, 10rem) clamp(2rem, 5vw, 3rem); background: var(--flour-deep); }
+  .sh-crumb { font-size: var(--step--1); color: rgba(35,35,33,0.55); margin-bottom: 1.4rem; }
+  .sh-crumb a { text-decoration: underline; text-underline-offset: 2px; }
+  .sh-crumb span { margin-inline: 0.35rem; }
+  .sh-hero__eyebrow { color: var(--olive-soft); margin-bottom: 1rem; }
+  .sh-hero__h { font-size: var(--step-3); font-weight: 800; line-height: 1.02; max-width: 18ch; }
+  .sh-hero__h .ital { color: var(--olive-soft); }
+  .sh-hero__lede { margin-top: 1.4rem; max-width: 58ch; font-size: var(--step-1); line-height: 1.5; color: rgba(35,35,33,0.78); }
+
+  .sh-answer {
+    margin-top: 2.4rem; max-width: 74ch; padding: clamp(1.4rem, 3vw, 2rem);
+    background: var(--flour); border-left: 4px solid var(--yolk); border-radius: 0 12px 12px 0;
+  }
+  .sh-answer > p { font-weight: 600; }
+  .sh-answer ul { margin-top: 1rem; display: grid; gap: 0.7rem; padding-left: 1.1rem; }
+  .sh-answer li { line-height: 1.5; }
+
+  .sh-grid-wrap { padding-block: clamp(3rem, 7vw, 5rem); }
+  .sh-grid { display: grid; gap: 1.6rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); }
+  .sh-card {
+    display: flex; flex-direction: column; background: var(--flour-deep); border-radius: 16px;
+    overflow: hidden; transition: transform 0.35s, box-shadow 0.35s;
+  }
+  .sh-card:hover { transform: translateY(-4px); box-shadow: 0 18px 40px rgba(35,35,33,0.13); }
+  .sh-card__media { aspect-ratio: 16 / 10; overflow: hidden; }
+  .sh-card__media img { width: 100%; height: 100%; object-fit: cover; }
+  .sh-card__body { padding: 1.4rem; display: flex; flex-direction: column; gap: 0.6rem; flex: 1; }
+  .sh-card__body h2 { font-family: var(--serif); font-size: var(--step-2); font-weight: 800; }
+  .sh-card__body p { font-size: var(--step--1); color: rgba(35,35,33,0.72); line-height: 1.5; flex: 1; }
+  .sh-card__go { font-size: var(--step--1); font-weight: 700; color: var(--olive-soft); }
+
+  .sh-table-wrap { padding-block: clamp(2rem, 5vw, 3.5rem); }
+  .sh-table__h { font-family: var(--serif); font-size: var(--step-2); font-weight: 800; margin-bottom: 1.4rem; }
+  /* Wide table must scroll inside its own box, never the page body. */
+  .sh-table__scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .sh-table { width: 100%; min-width: 640px; border-collapse: collapse; font-size: var(--step--1); }
+  .sh-table th, .sh-table td { text-align: left; padding: 0.9rem 1rem; border-bottom: 1px solid var(--flour-shadow); }
+  .sh-table thead th { font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.72rem; color: var(--olive-soft); }
+  .sh-table tbody th { font-family: var(--serif); font-size: var(--step-0); font-weight: 800; }
+  .sh-table tbody th a { text-decoration: underline; text-underline-offset: 3px; }
+
+  .sh-faq { padding-block: clamp(3rem, 7vw, 5rem); background: var(--flour-deep); }
+  .sh-faq__inner { max-width: 74ch; }
+  .sh-faq__h { font-family: var(--serif); font-size: var(--step-2); font-weight: 800; margin-bottom: 1.6rem; }
+  .sh-faq__list { display: grid; gap: 0.6rem; }
+  .sh-faq__item { background: var(--flour); border-radius: 12px; padding: 1rem 1.2rem; }
+  .sh-faq__q {
+    display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+    font-weight: 700; cursor: pointer; list-style: none;
+  }
+  .sh-faq__q::-webkit-details-marker { display: none; }
+  .sh-faq__icon { color: var(--olive-soft); font-size: 1.3rem; line-height: 1; transition: transform 0.3s; }
+  .sh-faq__item[open] .sh-faq__icon { transform: rotate(45deg); }
+  .sh-faq__a { margin-top: 0.8rem; line-height: 1.6; color: rgba(35,35,33,0.78); }
+
+  .sh-cta { padding-block: clamp(3rem, 7vw, 5rem); }
+  .sh-cta__inner {
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 2rem;
+    background: var(--olive); color: var(--flour); border-radius: 20px; padding: clamp(1.8rem, 4vw, 3rem);
+  }
+  .sh-cta__h { font-family: var(--serif); font-size: var(--step-2); font-weight: 800; }
+  .sh-cta__p { margin-top: 0.7rem; max-width: 52ch; color: rgba(249,246,240,0.82); line-height: 1.55; }
+  .sh-cta__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; }
+  .sh-cta__btn {
+    background: var(--yolk); color: var(--olive-deep); font-weight: 800; font-size: var(--step-0);
+    padding: 0.95rem 1.7rem; border-radius: 100px; transition: transform 0.3s;
+  }
+  .sh-cta__btn:hover { transform: translateY(-2px); }
+  .sh-cta__link { color: rgba(249,246,240,0.85); text-decoration: underline; text-underline-offset: 3px; font-size: var(--step--1); }
+
+  .sh-guide { padding-bottom: clamp(3rem, 7vw, 5rem); }
+  .sh-guide__inner { max-width: 62ch; }
+  .sh-guide__inner h2 { font-family: var(--serif); font-size: var(--step-1); font-weight: 800; }
+  .sh-guide__inner p { margin-top: 0.6rem; color: rgba(35,35,33,0.75); line-height: 1.6; }
+  .sh-guide__inner a { display: inline-block; margin-top: 0.9rem; font-weight: 700; color: var(--olive-soft); text-decoration: underline; text-underline-offset: 3px; }
+</style>

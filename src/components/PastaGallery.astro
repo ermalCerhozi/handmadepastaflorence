@@ -1,7 +1,9 @@
 ---
 import { getLocaleFromUrl } from '../i18n/utils';
 import { useTranslations } from '../i18n/ui';
-const t = useTranslations(getLocaleFromUrl(Astro.url));
+import { shapesHubPath } from '../data/shapes';
+const lang = getLocaleFromUrl(Astro.url);
+const t = useTranslations(lang);
 // Image per shape (non-translatable), zipped with t.gallery.shapes by index.
 const shapeImgs = [
   '/images/shape-pappardelle.jpg',
@@ -42,7 +44,7 @@ const shapeImgs = [
             <span>{t.gallery.taughtIn}</span>
             <strong>{s.teaches}</strong>
           </div>
-          <button class="pasta__book" data-open-booking>{t.gallery.book}</button>
+          <button class="pasta__book" data-open-booking data-cta="pasta-gallery">{t.gallery.book}</button>
           <button class="pasta__close" data-pasta-toggle aria-label="Back">← {t.gallery.back}</button>
         </div>
       </article>
@@ -55,6 +57,11 @@ const shapeImgs = [
       <button data-gal-prev aria-label="Previous shape">←</button>
       <button data-gal-next aria-label="Next shape">→</button>
     </div>
+  </div>
+
+  {/* Homepage → hub. The gallery is a teaser; the hub is where the depth lives. */}
+  <div class="shell gal__more">
+    <a href={shapesHubPath(lang)}>{t.gallery.allShapes} <span aria-hidden="true">→</span></a>
   </div>
 </section>
 
@@ -177,6 +184,11 @@ const shapeImgs = [
   .pasta__close:hover { color: var(--yolk); }
 
   .gal__controls { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; margin-top: 1rem; }
+  .gal__more { margin-top: 1.6rem; }
+  .gal__more a {
+    font-weight: 700; font-size: var(--step--1); color: var(--olive-soft);
+    text-decoration: underline; text-underline-offset: 3px;
+  }
   .gal__progress { flex: 1; height: 4px; border-radius: 100px; background: var(--flour-shadow); overflow: hidden; }
   .gal__progress span { display: block; height: 100%; width: 100%; background: var(--terracotta); border-radius: 100px; transform-origin: left; transform: scaleX(0.12); transition: transform 0.15s linear; }
   .gal__arrows { display: flex; gap: 0.6rem; }

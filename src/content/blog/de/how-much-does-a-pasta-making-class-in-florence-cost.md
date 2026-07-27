@@ -26,12 +26,12 @@ Ab 80 € sollten Sie nicht extra für das Wesentliche zahlen müssen. Ein faire
 
 ## Unsere Preise, als konkretes Beispiel
 
-Damit Sie die oben genannten Spannen mit einem echten Angebot abgleichen können ([alle Details hier](/de/pasta-making-class-florence/)):
+Damit Sie die oben genannten Spannen mit einem echten Angebot abgleichen können ([alle Details hier](/de/pasta-kurs-florenz/)):
 
-- **[Der Chef's Table](/de/pasta-making-class-florence/)** — 3 Stunden, vier Pasta-Formen, max. 8 Gäste, endet in einem gemeinsamen Mittagessen mit Wein: **95 € pro Person**.
-- **[Mercato & Mani](/de/market-tour-cooking-class-florence/)** — Sant'Ambrogio-Marktspaziergang, dann Ravioli, Ragù und ein saisonales Dolce, max. 6 Gäste, etwa 5 Stunden: **145 € pro Person**.
-- **[The Family Long-Table](/de/private-cooking-class-florence/)** — die gesamte Küche privat, 6–14 Gäste: **ab 680 € pro Gruppe**.
-- **[Live-Online-Kurs](/de/online-pasta-making-class/)** — gestreamt aus unserer Küche in Florenz, optionales gekühltes Zutaten-Kit zu Ihnen nach Hause geliefert: **ab 68 € pro Person**.
+- **[Der Chef's Table](/de/pasta-kurs-florenz/)** — 3 Stunden, vier Pasta-Formen, max. 8 Gäste, endet in einem gemeinsamen Mittagessen mit Wein: **95 € pro Person**.
+- **[Mercato & Mani](/de/markt-tour-kochkurs-florenz/)** — Sant'Ambrogio-Marktspaziergang, dann Ravioli, Ragù und ein saisonales Dolce, max. 6 Gäste, etwa 5 Stunden: **145 € pro Person**.
+- **[The Family Long-Table](/de/privater-kochkurs-florenz/)** — die gesamte Küche privat, 6–14 Gäste: **ab 680 € pro Gruppe**.
+- **[Live-Online-Kurs](/de/online-pasta-kurs/)** — gestreamt aus unserer Küche in Florenz, optionales gekühltes Zutaten-Kit zu Ihnen nach Hause geliefert: **ab 68 € pro Person**.
 
 ## Fünf Fragen, die Sie vor der Buchung eines Kurses stellen sollten (auch bei unserem)
 
@@ -45,4 +45,4 @@ Damit Sie die oben genannten Spannen mit einem echten Angebot abgleichen können
 
 Florenz ist von April bis Oktober ausgebucht, und Kleingruppenkurse (sechs bis acht Plätze) sind genau deshalb zuerst ausverkauft, weil sie klein sind. Buchen Sie in der Hochsaison eine Woche oder mehr im Voraus; im Winter finden Sie oft noch in derselben Woche einen Platz. Vormittagskurse ersetzen das Mittagessen, Abendkurse das Abendessen — wählen Sie, welche Mahlzeit Sie lieber ersetzen möchten.
 
-Wenn Sie sehen möchten, wie unser Tisch funktioniert, bevor Sie sich entscheiden, beginnen Sie mit [Dem Chef's Table](/de/pasta-making-class-florence/) — das ist der Kurs, auf dem alles andere, was wir tun, aufbaut.
+Wenn Sie sehen möchten, wie unser Tisch funktioniert, bevor Sie sich entscheiden, beginnen Sie mit [Dem Chef's Table](/de/pasta-kurs-florenz/) — das ist der Kurs, auf dem alles andere, was wir tun, aufbaut.

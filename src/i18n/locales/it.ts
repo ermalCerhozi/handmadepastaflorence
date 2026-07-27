@@ -5,8 +5,8 @@ import type { Dict } from '../types';
 
 const it: Dict = {
   meta: {
-    homeTitle: `Handmade Pasta Florence — Corsi di Cucina e Pasta Fresca in Oltrarno`,
-    homeDescription: `Corsi pratici di pasta fresca a Firenze con due chef toscani di agriturismo. Max 8 ospiti nella nostra cucina in Oltrarno da €95, tour del mercato e opzioni private, o in diretta online con kit ingredienti da €68.`,
+    homeTitle: `Corsi di Cucina a Firenze — Pasta Fresca con Due Chef Toscani | Handmade Pasta Florence`,
+    homeDescription: `Corsi di cucina a Firenze in piccoli gruppi, con le mani in pasta dal primo minuto. Prepara pasta fresca con due chef toscani di agriturismo nella nostra cucina in Oltrarno da €95 — tour del mercato, privati e senza glutine, o in diretta online con kit ingredienti da €68.`,
     blogTitle: `Guide alla Pasta & al Cibo di Firenze | Handmade Pasta Florence`,
     blogDescription: `Guide alla pasta fresca e a mangiare bene a Firenze, scritte da due chef toscani — formati di pasta, dove mangiare, consigli senza glutine e il quartiere dell'Oltrarno.`,
   },
@@ -33,6 +33,8 @@ const it: Dict = {
     private: `Eventi Privati`,
     online: `In diretta Online`,
     team: `Team Building`,
+    glutenFree: `Corso Senza Glutine`,
+    forTwo: `Corso per Due`,
     gift: `Regala un corso`,
     guides: `Guide & Storie`,
     faq: `FAQ & Allergeni`,
@@ -56,8 +58,10 @@ const it: Dict = {
     titleL1: `Farina, uova,`,
     titleL2: `e le tue`,
     titleItal: `mani.`,
+    titleKw: `Corsi di cucina a Firenze, con le mani in pasta, da €95.`,
+    imgAlt: `Ospiti a un corso di cucina a Firenze mentre stendono la pasta fresca nella nostra cucina in Oltrarno`,
     lede: `Prepara la vera pasta toscana insieme a due chef di agriturismo, nella nostra cucina soleggiata in Oltrarno o in diretta online con un kit spedito a casa tua.`,
-    ctaReserve: `Prenota il tuo tavolo`,
+    ctaReserve: `Prenota un corso`,
     ctaSee: `Vedi i corsi`,
     proofOpened: `cucina appena aperta`,
     proofHands: `pratica, poi mangi tutto`,
@@ -156,6 +160,7 @@ const it: Dict = {
     taughtIn: `Insegnato in`,
     book: `Prenota questo corso →`,
     back: `torna al formato`,
+    allShapes: `Tutti i formati di pasta, spiegati`,
     shapes: [
       { name: `Pappardelle`, region: `Firenze · Toscana`, alt: `Larghi nastri di pappardelle fresche all'uovo, tagliate a mano e spolverate di farina`, blurb: `Nastri larghi e vellutati che prendono il nome da "pappare".`, history: `Nate nella campagna toscana per accogliere ricchi ragù di cinghiale e lepre. La larghezza è essenziale: ogni filo trasporta un cucchiaio di sugo.`, teaches: `Il Tavolo dello Chef` },
       { name: `Ravioli`, region: `Tutta Italia`, alt: `File di ravioli quadrati appena fatti, con i bordi pizzicati a mano, su una tavola infarinata`, blurb: `Piccoli fagottini, chiusi pizzicando la pasta attorno a ricotta, spinaci o zucca.`, history: `Menzionati nelle lettere di un mercante toscano del XIV secolo, i ravioli erano un modo per far durare il formaggio prezioso. Sigillarli bene è un'arte: l'aria è il nemico.`, teaches: `Mercato & Mani` },

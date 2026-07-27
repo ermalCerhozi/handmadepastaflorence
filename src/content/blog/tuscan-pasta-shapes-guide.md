@@ -60,4 +60,6 @@ Ricotta-and-spinach ravioli with butter and sage is the shape everyone knows, an
 
 If you're eating: pici if you see them, pappardelle al cinghiale if it's autumn. (Here's [where to look in Florence](/blog/where-to-eat-handmade-pasta-in-florence/).)
 
+Each of the four shapes we teach has its own page in [our pasta shape library](/pasta-shapes/) — the dough, the cut, and the sauce it was built for, one shape at a time.
+
 If you're making: start with tagliatelle for the skill, pici for the fun, tortelli for the bragging rights. We teach all of them, four shapes per class, at [our kitchen in the Oltrarno](/pasta-making-class-florence/) — or [live online](/online-pasta-making-class/) if Tuscany isn't on the calendar yet.

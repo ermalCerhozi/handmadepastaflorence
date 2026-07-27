@@ -1,7 +1,7 @@
 const fr = {
   meta: {
-    homeTitle: 'Handmade Pasta Florence — Cours de Cuisine et Expériences Pâtes dans l\'Oltrarno',
-    homeDescription: 'Cours pratiques de fabrication de pâtes à Florence animés par deux chefs de cuisine d\'agritourismes toscans. Max 8 personnes dans notre cuisine de l\'Oltrarno à partir de 95 €, visite du marché et options privées, ou en direct en ligne avec un kit d\'ingrédients à partir de 68 €.',
+    homeTitle: 'Cours de Cuisine à Florence — Pâtes Fraîches avec Deux Chefs Toscans | Handmade Pasta Florence',
+    homeDescription: 'Cours de cuisine à Florence en petit groupe, les mains dans la farine dès la première minute. Préparez des pâtes fraîches avec deux chefs d\'agritourismes toscans dans notre cuisine de l\'Oltrarno à partir de 95 € — visite du marché, cours privés et sans gluten, ou en direct en ligne avec un kit d\'ingrédients dès 68 €.',
     blogTitle: 'Guides sur les pâtes et la gastronomie à Florence | Handmade Pasta Florence',
     blogDescription: 'Guides sur les pâtes fraîches et comment bien manger à Florence, rédigés par deux chefs d\'agritourismes toscans — formes de pâtes, où manger, conseils sans gluten et le quartier de l\'Oltrarno.',
   },
@@ -28,6 +28,8 @@ const fr = {
     private: 'Événements Privés',
     online: 'En Ligne en Direct',
     team: 'Team Building',
+    glutenFree: 'Cours Sans Gluten',
+    forTwo: 'Cours pour Deux',
     gift: 'Offrir un cours',
     guides: 'Guides et Histoires',
     faq: 'FAQ et Allergènes',
@@ -52,8 +54,10 @@ const fr = {
     titleL1: 'De la farine, des œufs,',
     titleL2: 'et vos deux',
     titleItal: 'mains.',
+    titleKw: 'Cours de cuisine à Florence, les mains dans la farine, dès 95 €.',
+    imgAlt: 'Des invités à un cours de cuisine à Florence étalant des pâtes fraîches dans notre cuisine de l\'Oltrarno',
     lede: 'Préparez de véritables pâtes toscanes aux côtés de deux chefs d\'agritourisme, dans notre cuisine lumineuse près de la Piazza Santo Spirito, ou en ligne en direct avec un kit livré chez vous.',
-    ctaReserve: 'Réservez votre table',
+    ctaReserve: 'Réserver un cours',
     ctaSee: 'Voir les cours',
     proofOpened: 'notre cuisine vient d\'ouvrir',
     proofHands: 'pratique, puis vous mangez tout',
@@ -152,6 +156,7 @@ const fr = {
     taughtIn: 'Enseigné dans',
     book: 'Réserver ce cours →',
     back: 'retour à la forme',
+    allShapes: 'Toutes les formes de pâtes, expliquées',
     shapes: [
       { name: 'Pappardelle', region: 'Florence · Toscane', alt: 'De larges rubans de pappardelle aux œufs frais, coupés à la main et saupoudrés de farine', blurb: 'De larges rubans veloutés dont le nom vient de “pappare”, qui signifie engloutir.', history: 'Nées dans la campagne toscane pour accompagner de riches ragoûts de gibier, de sanglier et de lièvre. La largeur est l\'essentiel : chaque brin transporte une cuillerée de sauce.', teaches: 'La Table du Chef' },
       { name: 'Ravioli', region: 'Toute l\'Italie', alt: 'Des rangées de raviolis carrés fraîchement préparés avec des bords pincés à la main sur une planche farinée', blurb: 'De petits paquets, pincés et fermés autour de ricotta, d\'épinards ou de courge.', history: "Mentionnés dans les lettres d'un marchand du 14ème siècle en Toscane, les raviolis étaient un moyen d'étirer le précieux fromage. Les sceller correctement est un art : l'air est l'ennemi.", teaches: 'Marché & Mains' },

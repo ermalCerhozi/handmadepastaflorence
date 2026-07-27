@@ -7,6 +7,7 @@ import Footer from '../components/Footer.astro';
 import BookingDrawer from '../components/BookingDrawer.astro';
 import { getLocaleFromUrl } from '../i18n/utils';
 import { useTranslations } from '../i18n/ui';
+import { defaultLocale } from '../i18n/config';
 
 interface Props {
   posts: CollectionEntry<'blog'>[];
@@ -18,10 +19,14 @@ const t = useTranslations(lang);
 const isIt = lang === 'it';
 
 const fmt = (d: Date) =>
-  d.toLocaleDateString(isIt ? 'it-IT' : 'en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+  d.toLocaleDateString(`${lang}-${lang.toUpperCase()}`, { day: 'numeric', month: 'long', year: 'numeric' });
 
+// Post ids are prefixed with their locale folder ("de/foo"), but the route is
+// /de/blog/foo/ — not /blog/de/foo/. Handling only `it` here meant every
+// fr/de/zh card linked to a 404.
 const getLink = (id: string) => {
-  return isIt ? `/it/blog/${id.replace('it/', '')}/` : `/blog/${id}/`;
+  const slug = id.includes('/') ? id.slice(id.indexOf('/') + 1) : id;
+  return lang === defaultLocale ? `/blog/${slug}/` : `/${lang}/blog/${slug}/`;
 };
 ---
 

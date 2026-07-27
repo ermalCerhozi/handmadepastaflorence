@@ -12,7 +12,7 @@ const t = useTranslations(getLocaleFromUrl(Astro.url));
     <img
       class="hero__video"
       src="/images/cooking-class.jpg"
-      alt="A Florentine kitchen bench laid with wooden boards, rolling pins, fresh dough, eggs and flour"
+      alt={t.hero.imgAlt}
       width="981"
       height="1603"
       fetchpriority="high"
@@ -30,12 +30,13 @@ const t = useTranslations(getLocaleFromUrl(Astro.url));
       <span data-reveal style="--reveal-delay:80ms">{t.hero.titleL1}</span>
       <span data-reveal style="--reveal-delay:220ms">{t.hero.titleL2}</span>
       <span class="hero__title-ital ital" data-reveal style="--reveal-delay:360ms">{t.hero.titleItal}</span>
+      <span class="hero__title-kw" data-reveal style="--reveal-delay:440ms">{t.hero.titleKw}</span>
     </h1>
     <p class="hero__lede" data-reveal style="--reveal-delay:520ms">
       {t.hero.lede}
     </p>
     <div class="hero__actions" data-reveal style="--reveal-delay:640ms">
-      <button class="btn btn--solid" data-open-booking>
+      <button class="btn btn--solid" data-open-booking data-cta="hero" data-prefill="florence">
         {t.hero.ctaReserve}
         <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
@@ -160,6 +161,19 @@ const t = useTranslations(getLocaleFromUrl(Astro.url));
   }
   .hero__title span { display: block; }
   .hero__title-ital { color: var(--yolk); }
+  /* Keyword line — inside the <h1> so it counts, but sized and weighted to read
+     as a subtitle: the emotive line above it keeps doing the conversion work. */
+  .hero__title-kw {
+    font-family: var(--sans);
+    font-size: var(--step-0);
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    margin-top: 1.1rem;
+    max-width: 26ch;
+    color: rgba(249,246,240,0.82);
+    text-shadow: 0 2px 20px rgba(0,0,0,0.35);
+  }
   .hero__lede {
     max-width: 34ch;
     margin-top: 1.6rem;

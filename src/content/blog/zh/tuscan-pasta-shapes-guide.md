@@ -33,7 +33,7 @@ faqs:
 
 Pici 是在手掌之间一根一根揉出来的粗细不均的面条，而且永远没有两根是一模一样的。这种不规则正是它的精髓所在：粗壮、有嚼劲的面条能够紧紧抓住酱汁，这是意大利面（spaghetti）永远做不到的。经典的搭配有 **all'aglione**（一种大蒜味浓郁的番茄酱）、**cacio e pepe**（奶酪和黑胡椒），以及 **con le briciole**——搭配烤面包屑，这源于连奶酪都是奢侈品的年代。
 
-揉 pici 也是我们厨房里最需要冥想的工作，这就是为什么[主厨餐桌课程](/zh/pasta-making-class-florence/)以它开场——五分钟后，所有人都会安静下来。
+揉 pici 也是我们厨房里最需要冥想的工作，这就是为什么[主厨餐桌课程](/zh/foluolunsa-yidali-mian-kecheng/)以它开场——五分钟后，所有人都会安静下来。
 
 ## Pappardelle —— 搭配野味的宽面条
 
@@ -60,4 +60,4 @@ Tagliatelle 与 pappardelle 使用相同的鸡蛋面团，但切得更窄，它�
 
 如果你去吃：看到了就点 pici，如果在秋天就点 pappardelle al cinghiale。（这是关于[在佛罗伦萨去哪里寻找的手册](/zh/blog/where-to-eat-handmade-pasta-in-florence/)。）
 
-如果你想做：从 tagliatelle 开始学习技巧，用 pici 寻找乐趣，做 tortelli 来获得成就感。我们在[奥尔特拉诺的厨房](/zh/pasta-making-class-florence/)都会教——每节课教四种形状——或者如果托斯卡纳之旅还没提上日程，也可以选择[在线直播课程](/zh/online-pasta-making-class/)。
+如果你想做：从 tagliatelle 开始学习技巧，用 pici 寻找乐趣，做 tortelli 来获得成就感。我们在[奥尔特拉诺的厨房](/zh/foluolunsa-yidali-mian-kecheng/)都会教——每节课教四种形状——或者如果托斯卡纳之旅还没提上日程，也可以选择[在线直播课程](/zh/zaixian-yidali-mian-kecheng/)。

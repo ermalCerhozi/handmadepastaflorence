@@ -155,6 +155,8 @@ const bkJsPayload = { en: en.bkJs, it: it.bkJs };
 <script type="application/json" data-bk-i18n is:inline set:html={JSON.stringify(bkJsPayload)}></script>
 
 <script>
+  import { track, EV } from '../scripts/track';
+
   type Experience = 'florence' | 'online';
   type State = {
     step: number;
@@ -215,9 +217,37 @@ const bkJsPayload = { en: en.bkJs, it: it.bkJs };
     document.querySelectorAll('[data-open-booking]').forEach((b) =>
       b.addEventListener('click', (e) => {
         e.preventDefault(); // some triggers are <a href="#"> — don't jump to the top
-        open((b as HTMLElement).dataset.prefill);
+        const el = b as HTMLElement;
+        track(EV.drawerOpen, {
+          // data-cta names the trigger (hero, footer, floating…), so the report
+          // shows which CTA actually starts bookings.
+          source: el.dataset.cta || 'unlabelled',
+          prefill: el.dataset.prefill || 'none',
+          page: location.pathname,
+        });
+        open(el.dataset.prefill);
       }));
     $$('[data-close-booking]').forEach((b) => b.addEventListener('click', close));
+
+    // Guests who skip the drawer and message us directly (footer link, chat
+    // bubble) are still conversions — delegated so it covers every wa.me link
+    // on the page without each component wiring its own handler.
+    document.addEventListener('click', (e) => {
+      const el = e.target as HTMLElement;
+      if (el?.closest?.('a[href*="wa.me"]')) {
+        track(EV.whatsappClick, { page: location.pathname, locale: document.documentElement.lang });
+        return;
+      }
+      const mail = el?.closest?.('a[href^="mailto:"]') as HTMLAnchorElement | null;
+      if (!mail) return;
+      // The subject line identifies the enquiry type (gift voucher, team building…).
+      const subject = decodeURIComponent((mail.href.split('subject=')[1] || '').split('&')[0]);
+      track(EV.emailEnquiry, {
+        subject: subject || 'none',
+        page: location.pathname,
+        locale: document.documentElement.lang,
+      });
+    });
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !root.hidden) close(); });
 
     /* ---------- step navigation ---------- */
@@ -256,7 +286,15 @@ const bkJsPayload = { en: en.bkJs, it: it.bkJs };
 
     $('[data-next]')?.addEventListener('click', () => {
       if (state.step === 3) { sendRequest(); return; }
-      goTo(state.step + 1);
+      const to = state.step + 1;
+      // Step events make the drop-off visible: how many pick a class but never
+      // pick a date, how many pick a date but never send.
+      track(EV.drawerStep, {
+        step: to,
+        experience: state.experience || 'none',
+        guests: state.guests,
+      });
+      goTo(to);
     });
     $('[data-prev]')?.addEventListener('click', () => goTo(state.step - 1));
 
@@ -462,6 +500,20 @@ const bkJsPayload = { en: en.bkJs, it: it.bkJs };
         '',
         T.msgOutro,
       ].join('\n');
+
+      // THE conversion. The funnel leaves for WhatsApp on the next line, so this
+      // is the last moment anything is measurable — record it before the hand-off.
+      track(EV.requestSent, {
+        experience: state.experience || 'none',
+        guests: state.guests,
+        date: state.date || 'none',
+        time: state.time || 'none',
+        addons: addonText.length,
+        value: total,
+        currency: 'EUR',
+        locale: document.documentElement.lang,
+        page: location.pathname,
+      });
 
       const url = 'https://wa.me/' + WHATSAPP_NUMBER
         + '?text=' + encodeURIComponent(message);

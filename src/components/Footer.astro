@@ -2,6 +2,7 @@
 import { getLocaleFromUrl, localizePath } from '../i18n/utils';
 import { useTranslations } from '../i18n/ui';
 import { landingPath } from '../data/landings';
+import { shapesHubPath } from '../data/shapes';
 const lang = getLocaleFromUrl(Astro.url);
 const t = useTranslations(lang);
 const home = localizePath('/', lang);
@@ -12,7 +13,7 @@ const year = new Date().getFullYear();
   <div class="shell">
     <div class="ft__cta" data-reveal>
       <h2 class="ft__h" set:html={t.footer.headline} />
-      <button class="ft__btn" data-open-booking>
+      <button class="ft__btn" data-open-booking data-cta="footer">
         {t.footer.book}
         <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
@@ -33,13 +34,15 @@ const year = new Date().getFullYear();
         <a href={landingPath('market-tour', lang)}>{t.footer.marketTour}</a>
         <a href={landingPath('private', lang)}>{t.footer.private}</a>
         <a href={landingPath('online', lang)}>{t.footer.online}</a>
+        <a href={landingPath('gluten-free', lang)}>{t.footer.glutenFree}</a>
+        <a href={landingPath('for-two', lang)}>{t.footer.forTwo}</a>
         <a href={landingPath('team-building', lang)}>{t.footer.team}</a>
-        <a href="#" data-open-booking>{t.footer.gift}</a>
+        <a href={landingPath('gift', lang)}>{t.footer.gift}</a>
       </nav>
       <nav class="ft__col">
         <h3>{t.footer.visit}</h3>
         <a href={`${home}#story`}>{t.nav.story}</a>
-        <a href={`${home}#gallery`}>{t.nav.pasta}</a>
+        <a href={shapesHubPath(lang)}>{t.nav.pasta}</a>
         <a href={localizePath('/blog/', lang)}>{t.footer.guides}</a>
         <a href={`${home}#business`}>{t.nav.business}</a>
         <a href={`${home}#faq`}>{t.footer.faq}</a>

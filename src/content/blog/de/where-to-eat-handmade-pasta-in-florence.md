@@ -39,7 +39,7 @@ Florenz ist bekanntermaßen eine Fleischstadt — das Bistecca bekommt die Postk
 
 ## Wo man suchen sollte, Viertel für Viertel
 
-**Sant'Ambrogio.** Der Markt, auf dem die Florentiner einkaufen (wir nehmen unseren eigenen [Marktkurs](/de/market-tour-cooking-class-florence/) dorthin mit), versorgt die Trattorien drumherum. Überall im Umkreis von zwei Straßen um den Markt, wo es um 13:00 Uhr voller Italiener ist, sind Sie auf der sicheren Seite.
+**Sant'Ambrogio.** Der Markt, auf dem die Florentiner einkaufen (wir nehmen unseren eigenen [Marktkurs](/de/markt-tour-kochkurs-florenz/) dorthin mit), versorgt die Trattorien drumherum. Überall im Umkreis von zwei Straßen um den Markt, wo es um 13:00 Uhr voller Italiener ist, sind Sie auf der sicheren Seite.
 
 **Das Oltrarno.** Unsere Seite des Flusses — Santo Spirito und San Frediano — hat immer noch die höchste Dichte an echten Küchen im Zentrum. Die Osterien auf der Piazza rund um Santo Spirito sind zuverlässig für frische Pasta und lokalen Wein; wir haben einen ganzen Guide darüber geschrieben, wie man [einen Tag im Oltrarno verbringt](/de/blog/things-to-do-in-oltrarno-florence/).
 
@@ -53,4 +53,4 @@ Florenz ist bekanntermaßen eine Fleischstadt — das Bistecca bekommt die Postk
 
 ## Die andere Option: Essen Sie die Pasta, die Sie gemacht haben
 
-Der beste Teller handgemachte Pasta in Florenz ist ehrlich gesagt der, den Sie zwanzig Minuten zuvor selbst gerollt haben — ich bin voreingenommen, aber das sagen unsere Gäste, nicht wir. Jeder [unserer Kurse](/de/pasta-making-class-florence/) endet genau wie ein gutes Trattoria-Mittagessen: Ihre Pasta, eine toskanische Soße, ein Glas lokaler Wein und für eine Weile kein Ort, an dem Sie sein müssten.
+Der beste Teller handgemachte Pasta in Florenz ist ehrlich gesagt der, den Sie zwanzig Minuten zuvor selbst gerollt haben — ich bin voreingenommen, aber das sagen unsere Gäste, nicht wir. Jeder [unserer Kurse](/de/pasta-kurs-florenz/) endet genau wie ein gutes Trattoria-Mittagessen: Ihre Pasta, eine toskanische Soße, ein Glas lokaler Wein und für eine Weile kein Ort, an dem Sie sein müssten.

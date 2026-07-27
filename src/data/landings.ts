@@ -113,7 +113,7 @@ export const landings: Record<string, LandingPage> = {
             { title: `Mercato & Mani`, href: `/market-tour-cooking-class-florence/`, desc: `Shop Sant’Ambrogio market at dawn, then cook the basket. 5 hours, max 6 guests — €145.` },
             { title: `The Family Long-Table`, href: `/private-cooking-class-florence/`, desc: `The whole kitchen, privately yours. Birthdays, proposals, reunions — from €680.` },
             { title: `Live Online Class`, href: `/online-pasta-making-class/`, desc: `Cook with us from anywhere, live from this same kitchen — from €68.` },
-            { title: `Tuscan pasta shapes, explained`, href: `/blog/tuscan-pasta-shapes-guide/`, desc: `Pici, pappardelle, tortelli — what they are and why they matter.` },
+            { title: `The four shapes, explained`, href: `/pasta-shapes/`, desc: `Pici, pappardelle, tagliatelle, tortelli — what each one is and the sauce it was built for.` },
           ],
           ctaLabel: `Book this class`,
           prefill: 'florence',
@@ -1158,7 +1158,7 @@ export const landings: Record<string, LandingPage> = {
           related: [
             { title: `The Chef’s Table`, href: `/pasta-making-class-florence/`, desc: `Coming to Florence after all? The in-person original — €95.` },
             { title: `Mercato & Mani`, href: `/market-tour-cooking-class-florence/`, desc: `Dawn market walk + cooking class in Florence — €145.` },
-            { title: `Tuscan pasta shapes, explained`, href: `/blog/tuscan-pasta-shapes-guide/`, desc: `Meet pici, pappardelle and tortelli before class.` },
+            { title: `The four shapes, explained`, href: `/pasta-shapes/`, desc: `Meet pici, pappardelle, tagliatelle and tortelli before class.` },
             { title: `The Family Long-Table`, href: `/private-cooking-class-florence/`, desc: `A private feast in Florence for 6–14 — from €680.` },
           ],
           ctaLabel: `Book the online class`,
@@ -1762,6 +1762,1067 @@ export const landings: Record<string, LandingPage> = {
           service: {
             name: `佛罗伦萨团队建设烹饪课程`,
             description: `佛罗伦萨的企业美食团建：6-14人的私人厨房包场烹饪课程，由两位托斯卡纳厨师主持，并提供葡萄酒搭配和特殊饮食选项。`,
+          },
+        },
+      },
+    },
+  },
+
+  // Targets "gluten free cooking class Florence". Sells the same €95 Chef's Table
+  // — the gluten-free blend and clean station are already included at no charge,
+  // so this page surfaces an existing capability that was buried in a bullet.
+  'gluten-free': {
+    floatingCta: true,
+    locales: {
+      en: {
+        slug: 'gluten-free-cooking-class-florence',
+        title: `Gluten-Free Cooking Class in Florence — Fresh Pasta, No Surcharge (€95) | Handmade Pasta Florence`,
+        description: `A hands-on gluten-free cooking class in Florence: your own flour blend, your own clean station, and the same four pasta shapes as everyone else at the table. Max 8 guests in our Oltrarno kitchen, €95 per person, no gluten-free surcharge.`,
+        cl: {
+          eyebrow: `Gluten-free · Oltrarno, Florence`,
+          heading: `A gluten-free cooking class in Florence,`,
+          headingItal: `at the same table.`,
+          lede: `Most kitchens treat gluten-free as a substitution made in the back. We treat it as a place setting: your own blend, your own board, your own pot — set up before you arrive, at no extra charge, so you make and eat the same four shapes as everyone else.`,
+          image: { src: `/images/plates.webp`, alt: `Plates of fresh handmade pasta served at a gluten-free cooking class in Florence`, w: 1080, h: 1327 },
+          price: `€95`,
+          priceNote: `per person · no gluten-free surcharge`,
+          facts: [
+            { label: `Length`, value: `about 3 hours` },
+            { label: `Group size`, value: `max 8 guests` },
+            { label: `Surcharge`, value: `none` },
+            { label: `Station`, value: `separate board, pot & tools` },
+            { label: `Where`, value: `Oltrarno, near Santo Spirito` },
+            { label: `Days`, value: `Tue–Sun (closed Mon)` },
+          ],
+          sections: [
+            {
+              title: `How we actually keep it gluten-free`,
+              paras: [
+                `We set your station up before the class starts, while the room is still clean and no one has opened a bag of wheat flour. You get a dedicated gluten-free blend, your own board, rolling pin, cutter and bowls, and your pasta is boiled in its own pot of water — never the shared one. Your chef washes and changes apron before working with you.`,
+                `We want to be straight with you about one thing: this is a working pasta kitchen and wheat flour is used in the same room. Our setup is built for coeliac guests and we take it seriously, but we are not a certified gluten-free facility, and airborne flour is a fact of any pasta class. If your sensitivity is severe, tell us when you book — we will talk it through honestly rather than sell you a seat.`,
+              ],
+            },
+            {
+              title: `What you will make`,
+              paras: [
+                `The same class as everyone else, which is rather the point. You will mix and knead your own dough, learn to read it by feel — a gluten-free dough behaves differently, and we teach you what "ready" looks like without gluten to help you — and shape it into the classics: hand-rolled pici, ribbon-cut tagliatelle and pappardelle, and filled tortelli, following the season.`,
+                `Then we cook it all together and sit down. Your pasta, a Tuscan sauce checked for gluten, and a glass of local wine. No separate table, no eating an hour after everyone else.`,
+              ],
+            },
+            {
+              title: `Good to know`,
+              paras: [],
+              list: [
+                `Mixed groups are welcome and normal — one coeliac guest and three friends who are not is the most common booking we take.`,
+                `Other allergies (egg, dairy, nuts) can usually be worked around too. Send the whole list when you book, not on the day.`,
+                `Travelling coeliac in Italy? Our guide to <a href="/blog/gluten-free-pasta-florence/">eating gluten-free in Florence</a> covers the phrases, habits and places that make it easy.`,
+                `Want it entirely private, with the kitchen to yourselves? That is <a href="/private-cooking-class-florence/">The Family Long-Table</a>.`,
+              ],
+            },
+          ],
+          faqs: [
+            { q: `Is this class safe for coeliacs?`, a: `We prepare a dedicated gluten-free flour blend, a separate station with its own board and tools, and a separate pot of cooking water, all set up before the class begins. We are honest about the limit: wheat flour is used elsewhere in the same room, so we are not a certified gluten-free kitchen. Tell us how sensitive you are when you book and we will give you a straight answer.` },
+            { q: `Is there an extra charge for the gluten-free option?`, a: `No. It is €95 per person, the same as every other guest at the table. We have never charged for it and do not intend to start.` },
+            { q: `Can I book if my partner or friends are not gluten-free?`, a: `Yes, and most of our gluten-free bookings are exactly that. You cook side by side at the same table with your own station, and everyone sits down to eat together at the end.` },
+            { q: `Which shapes can be made gluten-free?`, a: `All four we teach — pici, tagliatelle, pappardelle and tortelli. The dough handles differently and needs a slightly different touch, which is part of what you will learn.` },
+            { q: `How do I book and tell you about my diet?`, a: `Use the "Book this class" button to build your request. It opens a WhatsApp chat with the details filled in — add your dietary needs there, or email ciao@handmadepastaflorence.com, and we will confirm exactly how we will set you up.` },
+          ],
+          related: [
+            { title: `The Chef's Table`, href: `/pasta-making-class-florence/`, desc: `The same class, in full — four shapes, one long lunch. €95.` },
+            { title: `Gluten-free in Florence`, href: `/blog/gluten-free-pasta-florence/`, desc: `How to eat safely as a coeliac traveller in Italy.` },
+            { title: `The Family Long-Table`, href: `/private-cooking-class-florence/`, desc: `The whole kitchen privately yours — from €680.` },
+            { title: `Live Online Class`, href: `/online-pasta-making-class/`, desc: `Cook with us from your own gluten-free kitchen — from €68.` },
+          ],
+          ctaLabel: `Book this class`,
+          prefill: 'florence',
+          breadcrumbName: `Gluten-Free Cooking Class in Florence`,
+          product: {
+            name: `Gluten-Free Cooking Class in Florence`,
+            description: `A 3-hour hands-on gluten-free pasta class in Florence's Oltrarno: dedicated gluten-free flour blend, separate station and cooking water, four classic shapes, max 8 guests, ending in a sit-down Tuscan lunch. No gluten-free surcharge.`,
+            price: '95',
+          },
+        },
+      },
+      it: {
+        slug: 'corso-cucina-senza-glutine-firenze',
+        title: `Corso di Cucina Senza Glutine a Firenze — Pasta Fresca, Nessun Supplemento (€95) | Handmade Pasta Florence`,
+        description: `Un corso pratico di cucina senza glutine a Firenze: la tua miscela di farine, la tua postazione pulita e gli stessi quattro formati di pasta degli altri ospiti. Max 8 ospiti in Oltrarno, €95 a persona, senza supplemento.`,
+        cl: {
+          eyebrow: `Senza glutine · Oltrarno, Firenze`,
+          heading: `Un corso di cucina senza glutine a Firenze,`,
+          headingItal: `allo stesso tavolo.`,
+          lede: `Quasi ovunque il senza glutine è una sostituzione fatta in cucina, lontano dagli occhi. Per noi è un coperto: la tua miscela, il tuo tagliere, la tua pentola — preparati prima che tu arrivi, senza costi aggiuntivi, così prepari e mangi gli stessi quattro formati di tutti gli altri.`,
+          image: { src: `/images/plates.webp`, alt: `Piatti di pasta fresca fatta a mano serviti a un corso di cucina senza glutine a Firenze`, w: 1080, h: 1327 },
+          price: `€95`,
+          priceNote: `a persona · nessun supplemento senza glutine`,
+          facts: [
+            { label: `Durata`, value: `circa 3 ore` },
+            { label: `Dimensione gruppo`, value: `max 8 ospiti` },
+            { label: `Supplemento`, value: `nessuno` },
+            { label: `Postazione`, value: `tagliere, pentola e attrezzi dedicati` },
+            { label: `Dove`, value: `Oltrarno, vicino a Santo Spirito` },
+            { label: `Giorni`, value: `Mar–Dom (chiuso Lun)` },
+          ],
+          sections: [
+            {
+              title: `Come lo rendiamo davvero senza glutine`,
+              paras: [
+                `Prepariamo la tua postazione prima che il corso inizi, quando la stanza è ancora pulita e nessuno ha aperto un sacco di farina di grano. Avrai una miscela senza glutine dedicata, il tuo tagliere, mattarello, rotella e ciotole, e la tua pasta bollirà nella sua pentola d'acqua — mai in quella condivisa. Il tuo chef si lava le mani e cambia grembiule prima di lavorare con te.`,
+                `Vogliamo essere sinceri su una cosa: questa è una cucina di pasta fresca e la farina di grano viene usata nella stessa stanza. La nostra procedura è pensata per gli ospiti celiaci e la prendiamo sul serio, ma non siamo una struttura certificata senza glutine, e la farina nell'aria è una realtà di qualsiasi corso di pasta. Se la tua sensibilità è alta, diccelo quando prenoti — ne parliamo con onestà invece di venderti un posto.`,
+              ],
+            },
+            {
+              title: `Cosa preparerai`,
+              paras: [
+                `Lo stesso corso di tutti gli altri, che è poi il punto. Impasterai il tuo impasto, imparerai a leggerlo al tatto — un impasto senza glutine si comporta diversamente e ti insegniamo a capire quando è pronto senza il glutine ad aiutarti — e lo lavorerai nei classici: pici fatti a mano, tagliatelle e pappardelle, e tortelli ripieni, seguendo la stagione.`,
+                `Poi cuciniamo tutto insieme e ci sediamo. La tua pasta, un sugo toscano verificato, e un bicchiere di vino locale. Nessun tavolo separato, nessun mangiare un'ora dopo gli altri.`,
+              ],
+            },
+            {
+              title: `Buono a sapersi`,
+              paras: [],
+              list: [
+                `I gruppi misti sono benvenuti e normali — un ospite celiaco e tre amici che non lo sono è la prenotazione più frequente che riceviamo.`,
+                `Anche altre allergie (uova, latticini, frutta secca) si possono quasi sempre gestire. Mandaci l'elenco completo quando prenoti, non il giorno stesso.`,
+                `Sei celiaco e in viaggio in Italia? La nostra guida per <a href="/it/blog/gluten-free-pasta-florence/">mangiare senza glutine a Firenze</a> raccoglie frasi, abitudini e posti che rendono tutto più semplice.`,
+                `Lo vuoi completamente privato, con la cucina tutta per voi? È <a href="/it/corso-cucina-privato-firenze/">Il Lungo Tavolo di Famiglia</a>.`,
+              ],
+            },
+          ],
+          faqs: [
+            { q: `Questo corso è sicuro per i celiaci?`, a: `Prepariamo una miscela di farine senza glutine dedicata, una postazione separata con tagliere e attrezzi propri e una pentola d'acqua separata, tutto allestito prima dell'inizio del corso. Siamo onesti sul limite: la farina di grano viene usata altrove nella stessa stanza, quindi non siamo una cucina certificata senza glutine. Dicci quanto sei sensibile quando prenoti e ti daremo una risposta sincera.` },
+            { q: `C'è un supplemento per l'opzione senza glutine?`, a: `No. Sono €95 a persona, come per ogni altro ospite al tavolo. Non l'abbiamo mai fatto pagare e non intendiamo iniziare.` },
+            { q: `Posso prenotare se il mio partner o i miei amici non sono celiaci?`, a: `Sì, e la maggior parte delle nostre prenotazioni senza glutine è esattamente così. Cucinate fianco a fianco allo stesso tavolo con la tua postazione dedicata, e alla fine ci si siede a mangiare tutti insieme.` },
+            { q: `Quali formati si possono fare senza glutine?`, a: `Tutti e quattro quelli che insegniamo — pici, tagliatelle, pappardelle e tortelli. L'impasto si comporta diversamente e richiede un tocco un po' diverso, e imparare questo fa parte del corso.` },
+            { q: `Come prenoto e vi segnalo la mia dieta?`, a: `Usa il pulsante "Prenota questo corso" per creare la tua richiesta. Si apre una chat WhatsApp con i dettagli precompilati — aggiungi lì le tue esigenze alimentari, oppure scrivi a ciao@handmadepastaflorence.com, e ti confermeremo esattamente come ti prepareremo la postazione.` },
+          ],
+          related: [
+            { title: `Il Tavolo dello Chef`, href: `/it/corso-pasta-fresca-firenze/`, desc: `Lo stesso corso, per intero — quattro formati, un lungo pranzo. €95.` },
+            { title: `Senza glutine a Firenze`, href: `/it/blog/gluten-free-pasta-florence/`, desc: `Come mangiare in sicurezza da celiaci in Italia.` },
+            { title: `Il Lungo Tavolo di Famiglia`, href: `/it/corso-cucina-privato-firenze/`, desc: `L'intera cucina privata per voi — da €680.` },
+            { title: `Corso in Diretta Online`, href: `/it/corso-pasta-online/`, desc: `Cucina con noi dalla tua cucina senza glutine — da €68.` },
+          ],
+          ctaLabel: `Prenota questo corso`,
+          prefill: 'florence',
+          breadcrumbName: `Corso di Cucina Senza Glutine a Firenze`,
+          product: {
+            name: `Corso di Cucina Senza Glutine a Firenze`,
+            description: `Un corso pratico di pasta senza glutine di 3 ore in Oltrarno a Firenze: miscela di farine dedicata, postazione e acqua di cottura separate, quattro formati classici, max 8 ospiti, con pranzo toscano finale. Nessun supplemento.`,
+            price: '95',
+          },
+        },
+      },
+      fr: {
+        slug: 'cours-cuisine-sans-gluten-florence',
+        title: `Cours de Cuisine Sans Gluten à Florence — Pâtes Fraîches, Sans Supplément (95 €) | Handmade Pasta Florence`,
+        description: `Un cours de cuisine sans gluten à Florence : votre mélange de farines, votre poste de travail propre et les mêmes quatre formes de pâtes que les autres. Max 8 personnes dans l'Oltrarno, 95 € par personne, sans supplément.`,
+        cl: {
+          eyebrow: `Sans gluten · Oltrarno, Florence`,
+          heading: `Un cours de cuisine sans gluten à Florence,`,
+          headingItal: `à la même table.`,
+          lede: `Presque partout, le sans gluten est une substitution faite en cuisine, hors de votre vue. Pour nous, c'est un couvert : votre mélange, votre planche, votre casserole — préparés avant votre arrivée, sans frais supplémentaires, pour que vous prépariez et mangiez les mêmes quatre formes que tout le monde.`,
+          image: { src: `/images/plates.webp`, alt: `Assiettes de pâtes fraîches faites main servies lors d'un cours de cuisine sans gluten à Florence`, w: 1080, h: 1327 },
+          price: `95 €`,
+          priceNote: `par personne · sans supplément`,
+          facts: [
+            { label: `Durée`, value: `environ 3 heures` },
+            { label: `Taille du groupe`, value: `max 8 personnes` },
+            { label: `Supplément`, value: `aucun` },
+            { label: `Poste`, value: `planche, casserole et outils dédiés` },
+            { label: `Lieu`, value: `Oltrarno, près de Santo Spirito` },
+            { label: `Jours`, value: `Mar–Dim (fermé Lun)` },
+          ],
+          sections: [
+            {
+              title: `Comment nous le rendons réellement sans gluten`,
+              paras: [
+                `Nous installons votre poste avant le début du cours, quand la pièce est encore propre et que personne n'a ouvert un sac de farine de blé. Vous avez un mélange sans gluten dédié, votre planche, votre rouleau, votre roulette et vos bols, et vos pâtes cuisent dans leur propre casserole d'eau — jamais celle partagée. Votre chef se lave les mains et change de tablier avant de travailler avec vous.`,
+                `Nous voulons être francs sur un point : c'est une cuisine de pâtes en activité et la farine de blé est utilisée dans la même pièce. Notre protocole est conçu pour les personnes coeliaques et nous le prenons au sérieux, mais nous ne sommes pas un établissement certifié sans gluten, et la farine en suspension est une réalité de tout cours de pâtes. Si votre sensibilité est forte, dites-le-nous à la réservation — nous en parlerons honnêtement plutôt que de vous vendre une place.`,
+              ],
+            },
+            {
+              title: `Ce que vous préparerez`,
+              paras: [
+                `Le même cours que tout le monde, ce qui est précisément l'idée. Vous préparerez votre pâte, apprendrez à la lire au toucher — une pâte sans gluten se comporte autrement, et nous vous apprenons à reconnaître le bon moment sans l'aide du gluten — et la travaillerez en classiques : pici roulés à la main, tagliatelles et pappardelles, et tortelli farcis, selon la saison.`,
+                `Ensuite nous cuisinons tout ensemble et nous nous asseyons. Vos pâtes, une sauce toscane vérifiée, et un verre de vin local. Pas de table à part, pas de repas une heure après les autres.`,
+              ],
+            },
+            {
+              title: `Bon à savoir`,
+              paras: [],
+              list: [
+                `Les groupes mixtes sont bienvenus et fréquents — une personne coeliaque et trois amis qui ne le sont pas, c'est la réservation la plus courante.`,
+                `D'autres allergies (oeuf, produits laitiers, fruits à coque) peuvent presque toujours être gérées. Envoyez-nous la liste complète à la réservation, pas le jour même.`,
+                `Voyageur coeliaque en Italie ? Notre guide pour <a href="/fr/blog/gluten-free-pasta-florence/">manger sans gluten à Florence</a> rassemble les phrases, les habitudes et les adresses qui simplifient tout.`,
+                `Vous le voulez entièrement privé, la cuisine rien que pour vous ? C'est <a href="/fr/cours-cuisine-prive-florence/">La Longue Table Familiale</a>.`,
+              ],
+            },
+          ],
+          faqs: [
+            { q: `Ce cours est-il sûr pour les personnes coeliaques ?`, a: `Nous préparons un mélange de farines sans gluten dédié, un poste séparé avec sa propre planche et ses propres outils, et une casserole d'eau séparée, le tout installé avant le début du cours. Soyons clairs sur la limite : la farine de blé est utilisée ailleurs dans la même pièce, nous ne sommes donc pas une cuisine certifiée sans gluten. Dites-nous votre degré de sensibilité à la réservation et nous vous répondrons franchement.` },
+            { q: `Y a-t-il un supplément pour l'option sans gluten ?`, a: `Non. C'est 95 € par personne, comme pour tous les autres à la table. Nous ne l'avons jamais facturé et n'avons pas l'intention de commencer.` },
+            { q: `Puis-je réserver si mon partenaire ou mes amis ne sont pas coeliaques ?`, a: `Oui, et la plupart de nos réservations sans gluten sont exactement cela. Vous cuisinez côte à côte à la même table avec votre poste dédié, et tout le monde se met à table ensemble à la fin.` },
+            { q: `Quelles formes peut-on faire sans gluten ?`, a: `Les quatre que nous enseignons — pici, tagliatelles, pappardelles et tortelli. La pâte se comporte différemment et demande un toucher un peu différent, ce qui fait partie de l'apprentissage.` },
+            { q: `Comment réserver et vous signaler mon régime ?`, a: `Utilisez le bouton "Réserver ce cours" pour formuler votre demande. Cela ouvre une discussion WhatsApp pré-remplie — ajoutez-y vos besoins alimentaires, ou écrivez à ciao@handmadepastaflorence.com, et nous confirmerons exactement comment nous installerons votre poste.` },
+          ],
+          related: [
+            { title: `La Table du Chef`, href: `/fr/cours-de-pates-fraiches-florence/`, desc: `Le même cours, en entier — quatre formes, un long déjeuner. 95 €.` },
+            { title: `Sans gluten à Florence`, href: `/fr/blog/gluten-free-pasta-florence/`, desc: `Comment manger en sécurité quand on est coeliaque en Italie.` },
+            { title: `La Longue Table Familiale`, href: `/fr/cours-cuisine-prive-florence/`, desc: `Toute la cuisine pour vous — à partir de 680 €.` },
+            { title: `Cours en Direct en Ligne`, href: `/fr/cours-pates-en-ligne/`, desc: `Cuisinez avec nous depuis votre propre cuisine sans gluten — dès 68 €.` },
+          ],
+          ctaLabel: `Réserver ce cours`,
+          prefill: 'florence',
+          breadcrumbName: `Cours de Cuisine Sans Gluten à Florence`,
+          product: {
+            name: `Cours de Cuisine Sans Gluten à Florence`,
+            description: `Un cours pratique de pâtes sans gluten de 3 heures dans l'Oltrarno à Florence : mélange de farines dédié, poste et eau de cuisson séparés, quatre formes classiques, max 8 personnes, suivi d'un déjeuner toscan. Sans supplément.`,
+            price: '95',
+          },
+        },
+      },
+      de: {
+        slug: 'glutenfreier-kochkurs-florenz',
+        title: `Glutenfreier Kochkurs in Florenz — Frische Pasta, ohne Aufpreis (95 €) | Handmade Pasta Florence`,
+        description: `Ein praktischer glutenfreier Kochkurs in Florenz: eigene Mehlmischung, eigene saubere Station und dieselben vier Pastaformen wie alle anderen am Tisch. Max. 8 Gäste im Oltrarno, 95 € pro Person, ohne Aufpreis.`,
+        cl: {
+          eyebrow: `Glutenfrei · Oltrarno, Florenz`,
+          heading: `Ein glutenfreier Kochkurs in Florenz,`,
+          headingItal: `am selben Tisch.`,
+          lede: `Fast überall ist glutenfrei ein Austausch, der hinten in der Küche passiert. Für uns ist es ein Gedeck: Ihre Mischung, Ihr Brett, Ihr Topf — vorbereitet, bevor Sie ankommen, ohne Aufpreis, damit Sie dieselben vier Formen machen und essen wie alle anderen.`,
+          image: { src: `/images/plates.webp`, alt: `Teller mit frischer handgemachter Pasta bei einem glutenfreien Kochkurs in Florenz`, w: 1080, h: 1327 },
+          price: `95 €`,
+          priceNote: `pro Person · kein glutenfrei-Aufpreis`,
+          facts: [
+            { label: `Dauer`, value: `etwa 3 Stunden` },
+            { label: `Gruppengröße`, value: `max. 8 Gäste` },
+            { label: `Aufpreis`, value: `keiner` },
+            { label: `Station`, value: `eigenes Brett, eigener Topf` },
+            { label: `Ort`, value: `Oltrarno, nahe Santo Spirito` },
+            { label: `Tage`, value: `Di–So (Mo geschlossen)` },
+          ],
+          sections: [
+            {
+              title: `Wie wir es tatsächlich glutenfrei halten`,
+              paras: [
+                `Wir richten Ihre Station ein, bevor der Kurs beginnt — solange der Raum noch sauber ist und niemand einen Sack Weizenmehl geöffnet hat. Sie bekommen eine eigene glutenfreie Mehlmischung, Ihr eigenes Brett, Nudelholz, Rädchen und Schüsseln, und Ihre Pasta kocht in ihrem eigenen Topf Wasser — nie im gemeinsamen. Ihr Koch wäscht sich die Hände und wechselt die Schürze, bevor er mit Ihnen arbeitet.`,
+                `Eines wollen wir offen sagen: Dies ist eine arbeitende Pastaküche, und Weizenmehl wird im selben Raum verwendet. Unser Ablauf ist für Zöliakie-Gäste gemacht und wir nehmen ihn ernst, aber wir sind kein zertifizierter glutenfreier Betrieb, und Mehlstaub in der Luft gehört zu jedem Pastakurs. Wenn Sie stark empfindlich sind, sagen Sie es bei der Buchung — wir sprechen ehrlich darüber, statt Ihnen einen Platz zu verkaufen.`,
+              ],
+            },
+            {
+              title: `Was Sie machen werden`,
+              paras: [
+                `Derselbe Kurs wie für alle anderen, und genau darum geht es. Sie kneten Ihren eigenen Teig, lernen ihn mit den Händen zu lesen — ein glutenfreier Teig verhält sich anders, und wir zeigen Ihnen, woran man ihn erkennt, wenn kein Gluten hilft — und formen ihn zu den Klassikern: handgerollte Pici, Tagliatelle und Pappardelle, gefüllte Tortelli, je nach Saison.`,
+                `Dann kochen wir alles gemeinsam und setzen uns. Ihre Pasta, eine geprüfte toskanische Sauce, ein Glas Wein aus der Region. Kein separater Tisch, kein Essen eine Stunde nach den anderen.`,
+              ],
+            },
+            {
+              title: `Gut zu wissen`,
+              paras: [],
+              list: [
+                `Gemischte Gruppen sind willkommen und normal — ein Zöliakie-Gast und drei Freunde ohne ist die häufigste Buchung, die wir bekommen.`,
+                `Andere Allergien (Ei, Milch, Nüsse) lassen sich meist ebenfalls lösen. Schicken Sie uns die ganze Liste bei der Buchung, nicht am Tag selbst.`,
+                `Als Zöliakie-Betroffene auf Reisen in Italien? Unser Guide zum <a href="/de/blog/gluten-free-pasta-florence/">glutenfreien Essen in Florenz</a> sammelt die Sätze, Gewohnheiten und Adressen, die es einfach machen.`,
+                `Lieber ganz privat, mit der Küche für sich allein? Das ist <a href="/de/privater-kochkurs-florenz/">Die lange Familientafel</a>.`,
+              ],
+            },
+          ],
+          faqs: [
+            { q: `Ist dieser Kurs für Zöliakie-Betroffene sicher?`, a: `Wir bereiten eine eigene glutenfreie Mehlmischung, eine getrennte Station mit eigenem Brett und Werkzeug und einen separaten Kochtopf vor, alles aufgebaut vor Kursbeginn. Zur Grenze sind wir ehrlich: Weizenmehl wird anderswo im selben Raum verwendet, wir sind also keine zertifizierte glutenfreie Küche. Sagen Sie uns bei der Buchung, wie empfindlich Sie sind, und Sie bekommen eine gerade Antwort.` },
+            { q: `Kostet die glutenfreie Option extra?`, a: `Nein. Es sind 95 € pro Person, wie für jeden anderen Gast am Tisch. Wir haben das nie berechnet und haben es auch nicht vor.` },
+            { q: `Kann ich buchen, wenn mein Partner oder meine Freunde nicht glutenfrei essen?`, a: `Ja, und die meisten unserer glutenfreien Buchungen sind genau das. Sie kochen Seite an Seite am selben Tisch mit Ihrer eigenen Station, und am Ende setzen sich alle gemeinsam zum Essen.` },
+            { q: `Welche Formen lassen sich glutenfrei machen?`, a: `Alle vier, die wir unterrichten — Pici, Tagliatelle, Pappardelle und Tortelli. Der Teig verhält sich anders und braucht ein etwas anderes Gefühl, und genau das lernen Sie mit.` },
+            { q: `Wie buche ich und teile meine Ernährung mit?`, a: `Nutzen Sie "Diesen Kurs buchen", um Ihre Anfrage zu erstellen. Es öffnet sich ein WhatsApp-Chat mit ausgefüllten Details — ergänzen Sie dort Ihre Bedürfnisse, oder schreiben Sie an ciao@handmadepastaflorence.com. Wir bestätigen Ihnen genau, wie wir Ihre Station aufbauen.` },
+          ],
+          related: [
+            { title: `Der Tisch des Küchenchefs`, href: `/de/pasta-kurs-florenz/`, desc: `Derselbe Kurs, vollständig — vier Formen, ein langes Mittagessen. 95 €.` },
+            { title: `Glutenfrei in Florenz`, href: `/de/blog/gluten-free-pasta-florence/`, desc: `Wie man als Zöliakie-Reisende in Italien sicher isst.` },
+            { title: `Die lange Familientafel`, href: `/de/privater-kochkurs-florenz/`, desc: `Die ganze Küche ganz privat — ab 680 €.` },
+            { title: `Live-Online-Kurs`, href: `/de/online-pasta-kurs/`, desc: `Kochen Sie mit uns aus Ihrer eigenen glutenfreien Küche — ab 68 €.` },
+          ],
+          ctaLabel: `Diesen Kurs buchen`,
+          prefill: 'florence',
+          breadcrumbName: `Glutenfreier Kochkurs in Florenz`,
+          product: {
+            name: `Glutenfreier Kochkurs in Florenz`,
+            description: `Ein 3-stündiger praktischer glutenfreier Pastakurs in Florenz' Oltrarno: eigene glutenfreie Mehlmischung, getrennte Station und getrenntes Kochwasser, vier klassische Formen, max. 8 Gäste, mit anschließendem toskanischem Mittagessen. Ohne Aufpreis.`,
+            price: '95',
+          },
+        },
+      },
+      zh: {
+        slug: 'wu-fuzhi-pengren-kecheng-foluolunsa',
+        title: `佛罗伦萨无麸质烹饪课程 — 手工意面，不加收费用 (€95) | Handmade Pasta Florence`,
+        description: `佛罗伦萨的无麸质实践烹饪课程：专属面粉配方、专属清洁操作台，以及与其他客人相同的四种意面形状。奥特拉诺厨房最多8位客人，每人95欧元，无额外费用。`,
+        cl: {
+          eyebrow: `无麸质 · 佛罗伦萨奥特拉诺`,
+          heading: `佛罗伦萨的无麸质烹饪课程，`,
+          headingItal: `同一张餐桌。`,
+          lede: `在大多数厨房里，无麸质只是后厨里悄悄做的一次替换。而在我们这里，它是一副餐具：您专属的面粉配方、专属的案板、专属的锅——在您到达之前就已备好，不收取任何额外费用，让您和其他人制作并享用同样的四种形状。`,
+          image: { src: `/images/plates.webp`, alt: `佛罗伦萨无麸质烹饪课程上供应的手工新鲜意面`, w: 1080, h: 1327 },
+          price: `€95`,
+          priceNote: `每人 · 无麸质不加价`,
+          facts: [
+            { label: `时长`, value: `约3小时` },
+            { label: `团队规模`, value: `最多8位客人` },
+            { label: `附加费`, value: `无` },
+            { label: `操作台`, value: `专属案板、锅具与工具` },
+            { label: `地点`, value: `奥特拉诺，靠近圣斯皮里托` },
+            { label: `开放时间`, value: `周二至周日（周一休息）` },
+          ],
+          sections: [
+            {
+              title: `我们如何真正做到无麸质`,
+              paras: [
+                `我们会在课程开始前为您布置好操作台——那时房间还很干净，还没有人打开过小麦面粉袋。您将获得专属的无麸质面粉配方、您自己的案板、擀面杖、切轮和碗具，您的意面会在专属的一锅水中煮熟，绝不使用公用锅。主厨在与您一起操作前会洗手并更换围裙。`,
+                `有一件事我们想坦诚相告：这是一间正在运作的意面厨房，同一空间内会使用小麦面粉。我们的流程是为乳糜泻客人设计的，我们也认真对待，但我们并非经过认证的无麸质场所，而空气中的面粉是任何意面课程都存在的现实。如果您的敏感程度较高，请在预订时告诉我们——我们会坦诚地与您沟通，而不是先把座位卖给您。`,
+              ],
+            },
+            {
+              title: `您将制作什么`,
+              paras: [
+                `与其他人完全相同的课程，而这正是关键所在。您将亲手和面，学会用手感判断面团——无麸质面团的表现不同，我们会教您在没有麸质帮助的情况下如何判断"到位了"——然后把它做成经典形状：手工揉制的pici、tagliatelle和pappardelle，以及填馅的tortelli，具体取决于季节。`,
+                `之后我们一起烹饪，然后坐下来享用。您的意面、经过确认的托斯卡纳酱汁，以及一杯当地葡萄酒。没有单独的餐桌，也不必比别人晚一个小时才吃上饭。`,
+              ],
+            },
+            {
+              title: `须知信息`,
+              paras: [],
+              list: [
+                `我们欢迎混合团体，这也很常见——一位乳糜泻客人和三位无需忌口的朋友，是我们最常接到的预订。`,
+                `其他过敏（鸡蛋、乳制品、坚果）通常也可以处理。请在预订时发送完整清单，而不是当天才告知。`,
+                `在意大利旅行的乳糜泻人士？我们的<a href="/zh/blog/gluten-free-pasta-florence/">佛罗伦萨无麸质饮食指南</a>整理了实用短语、习惯与去处。`,
+                `想要完全私密、整个厨房归你们所有？那就是<a href="/zh/siren-pengren-kecheng-foluolunsa/">家庭长桌体验</a>。`,
+              ],
+            },
+          ],
+          faqs: [
+            { q: `这门课程对乳糜泻患者安全吗？`, a: `我们会准备专属的无麸质面粉配方、配有独立案板和工具的独立操作台，以及单独的一锅煮面水，全部在课程开始前布置完毕。关于局限我们也如实相告：同一空间的其他区域会使用小麦面粉，因此我们不是经过认证的无麸质厨房。请在预订时告诉我们您的敏感程度，我们会给您一个坦率的答复。` },
+            { q: `无麸质选项需要额外收费吗？`, a: `不需要。每人95欧元，与餐桌上的其他客人完全相同。我们从未为此收费，今后也不打算这样做。` },
+            { q: `如果我的伴侣或朋友不需要无麸质，我还能预订吗？`, a: `可以，而且我们大多数无麸质预订正是这种情况。你们在同一张桌旁并肩制作，您使用自己的专属操作台，最后大家一起坐下来共进午餐。` },
+            { q: `哪些形状可以做成无麸质的？`, a: `我们教授的全部四种——pici、tagliatelle、pappardelle和tortelli。面团的表现不同，需要略有差异的手法，而这也正是您要学习的一部分。` },
+            { q: `我该如何预订并告知饮食需求？`, a: `使用"预订此课程"按钮创建您的请求。它会打开一个预填详情的WhatsApp聊天——请在其中补充您的饮食需求，或发送邮件至 ciao@handmadepastaflorence.com，我们会确认具体如何为您布置操作台。` },
+          ],
+          related: [
+            { title: `主厨餐桌`, href: `/zh/foluolunsa-yidali-mian-kecheng/`, desc: `完整的同一门课程——四种形状，一顿悠长的午餐。€95。` },
+            { title: `佛罗伦萨无麸质饮食`, href: `/zh/blog/gluten-free-pasta-florence/`, desc: `乳糜泻旅行者如何在意大利安全用餐。` },
+            { title: `家庭长桌体验`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `整个厨房私人包场 — 680欧元起。` },
+            { title: `在线直播课程`, href: `/zh/zaixian-yidali-mian-kecheng/`, desc: `在您自己的无麸质厨房与我们一起烹饪 — 68欧元起。` },
+          ],
+          ctaLabel: `预订此课程`,
+          prefill: 'florence',
+          breadcrumbName: `佛罗伦萨无麸质烹饪课程`,
+          product: {
+            name: `佛罗伦萨无麸质烹饪课程`,
+            description: `佛罗伦萨奥特拉诺区3小时无麸质实践意面课程：专属无麸质面粉配方、独立操作台与煮面水、四种经典形状、最多8位客人，以托斯卡纳午餐收尾。不加收费用。`,
+            price: '95',
+          },
+        },
+      },
+    },
+  },
+
+  // Targets the couple intent that arrives on "private cooking class florence"
+  // and hits a €680 wall. Sells the two SKUs that already exist — €95pp at the
+  // shared table, or the private buyout — rather than inventing a price point.
+  'for-two': {
+    floatingCta: true,
+    locales: {
+      en: {
+        slug: 'pasta-class-for-two-florence',
+        title: `Pasta Class for Two in Florence — A Cooking Class for Couples (€95 each) | Handmade Pasta Florence`,
+        description: `A pasta making class for two in Florence: an evening at a table of never more than eight, rolling fresh pasta side by side and eating it with a glass of Chianti. €95 each, or take the whole Oltrarno kitchen privately.`,
+        cl: {
+          eyebrow: `For two · Oltrarno, Florence`,
+          heading: `A pasta class for two`,
+          headingItal: `in Florence.`,
+          lede: `Not a coach, not a tour group, not a demonstration you watch from a stool. Two aprons, one board between you, and three hours of making something with your hands that you then sit down and eat together — with a glass of Chianti and no rush to leave.`,
+          image: { src: `/images/aperitivo.webp`, alt: `A table laid for two with wine before a pasta class for couples in Florence`, w: 800, h: 1067 },
+          price: `€95`,
+          priceNote: `per person · private from €680`,
+          facts: [
+            { label: `Length`, value: `about 3 hours` },
+            { label: `Table`, value: `max 8 guests` },
+            { label: `Best slot for two`, value: `18:00, the evening class` },
+            { label: `Where`, value: `Oltrarno, near Santo Spirito` },
+            { label: `Language`, value: `English or Italian` },
+            { label: `Days`, value: `Tue–Sun (closed Mon)` },
+          ],
+          sections: [
+            {
+              title: `Two ways to do it`,
+              paras: [
+                `<strong>Join the table — €95 each.</strong> You book two places at our signature class. The table never has more than eight people, so it stays a small, chatty kitchen rather than a crowd, and you two work your own station side by side. This is what most couples book, and the 18:00 evening slot is the one to ask for: it runs into dinner and nobody is watching the clock.`,
+                `<strong>Take the kitchen — from €680.</strong> If you want it entirely to yourselves, our <a href="/private-cooking-class-florence/">Family Long-Table</a> is a full private buyout: your own chef, your own menu, your own hours. Couples book this for proposals, anniversaries and honeymoons, where being observed by strangers rather defeats the point.`,
+              ],
+            },
+            {
+              title: `Why pasta is a better date than dinner`,
+              paras: [
+                `A restaurant sits you across a table for ninety minutes. A pasta class puts you shoulder to shoulder for three hours doing something neither of you is good at yet, which is a great deal more interesting. You will be bad at tortelli together, you will fix each other's folds, and you will end up eating a lunch that has your fingerprints in it.`,
+                `You are also cooking with two head chefs who do this for a living — pasta for wedding feasts and farmhouse tables is the day job — so you leave able to actually make it again at home. That tends to outlast a dinner reservation.`,
+              ],
+            },
+            {
+              title: `Celebrating something?`,
+              paras: [],
+              list: [
+                `Tell us if it is a birthday, anniversary, engagement or honeymoon and we will quietly make a fuss of it — that is free, and it is the part we enjoy.`,
+                `Planning a proposal? Book the <a href="/private-cooking-class-florence/">private kitchen</a> and message us first. We have done it before and we can help with the timing.`,
+                `Add a wine pairing (+€18 per person): two Tuscan pours chosen to match what you made.`,
+                `Gluten-free or other allergies? A dedicated station at no extra charge — see the <a href="/gluten-free-cooking-class-florence/">gluten-free class</a>.`,
+              ],
+            },
+          ],
+          faqs: [
+            { q: `Can we book a pasta class for just the two of us?`, a: `Yes. Book two places at the €95-per-person class and you join a table of never more than eight, working your own station side by side. If you want nobody else in the room at all, the private kitchen buyout starts at €680.` },
+            { q: `Is the €95 class private?`, a: `No — it is a small shared table, max 8 guests, which most couples prefer for the atmosphere. For a genuinely private class for two, book The Family Long-Table from €680.` },
+            { q: `Which time is best for a date?`, a: `The 18:00 evening class. It runs into dinner, the kitchen is at its warmest, and there is no next group waiting, so nobody hurries you away from the table.` },
+            { q: `We are celebrating an anniversary — can you do something?`, a: `Tell us when you book. We will make a quiet fuss of it at the table at no extra cost, and if you are planning something bigger like a proposal, message us and we will help you set it up in the private kitchen.` },
+            { q: `How do we book?`, a: `Use the "Book this class" button, pick your date, time and two guests. It opens a WhatsApp chat with everything filled in and we confirm personally — or write to ciao@handmadepastaflorence.com.` },
+          ],
+          related: [
+            { title: `The Chef's Table`, href: `/pasta-making-class-florence/`, desc: `The full detail of the class you would be joining — €95.` },
+            { title: `The Family Long-Table`, href: `/private-cooking-class-florence/`, desc: `The whole kitchen to yourselves, for proposals and anniversaries — from €680.` },
+            { title: `Mercato & Mani`, href: `/market-tour-cooking-class-florence/`, desc: `Make a morning of it: the market at dawn, then cook the basket — €145.` },
+            { title: `Things to do in the Oltrarno`, href: `/blog/things-to-do-in-oltrarno-florence/`, desc: `Build the rest of the evening around the neighbourhood.` },
+          ],
+          ctaLabel: `Book for two`,
+          prefill: 'florence',
+          breadcrumbName: `Pasta Class for Two in Florence`,
+          product: {
+            name: `Pasta Class for Two in Florence`,
+            description: `A 3-hour hands-on pasta making class for couples in Florence's Oltrarno: two places at a table of never more than eight, four classic shapes, ending in a sit-down Tuscan meal with wine. €95 per person, private buyout from €680.`,
+            price: '95',
+          },
+        },
+      },
+      it: {
+        slug: 'corso-pasta-per-due-firenze',
+        title: `Corso di Pasta per Due a Firenze — Un Corso di Cucina per Coppie (€95 a testa) | Handmade Pasta Florence`,
+        description: `Un corso di pasta fresca per due a Firenze: una sera a un tavolo di massimo otto persone, a stendere la pasta fianco a fianco e a mangiarla con un bicchiere di Chianti. €95 a testa, oppure tutta la cucina in Oltrarno solo per voi.`,
+        cl: {
+          eyebrow: `Per due · Oltrarno, Firenze`,
+          heading: `Un corso di pasta per due`,
+          headingItal: `a Firenze.`,
+          lede: `Niente pullman, niente comitiva, niente dimostrazione da guardare seduti su uno sgabello. Due grembiuli, un tagliere in mezzo e tre ore a fare con le mani qualcosa che poi vi sedete a mangiare insieme — con un bicchiere di Chianti e nessuna fretta di andare via.`,
+          image: { src: `/images/aperitivo.webp`, alt: `Un tavolo apparecchiato per due con del vino prima di un corso di pasta per coppie a Firenze`, w: 800, h: 1067 },
+          price: `€95`,
+          priceNote: `a persona · privato da €680`,
+          facts: [
+            { label: `Durata`, value: `circa 3 ore` },
+            { label: `Tavolo`, value: `max 8 ospiti` },
+            { label: `Orario ideale per due`, value: `18:00, il corso serale` },
+            { label: `Dove`, value: `Oltrarno, vicino a Santo Spirito` },
+            { label: `Lingua`, value: `Inglese o Italiano` },
+            { label: `Giorni`, value: `Mar–Dom (chiuso Lun)` },
+          ],
+          sections: [
+            {
+              title: `Due modi per farlo`,
+              paras: [
+                `<strong>Al tavolo con gli altri — €95 a testa.</strong> Prenotate due posti al nostro corso principale. Il tavolo non supera mai le otto persone, quindi resta una cucina piccola e chiacchierona invece di una folla, e voi due lavorate alla vostra postazione fianco a fianco. È quello che prenotano quasi tutte le coppie, e l'orario da chiedere è quello delle 18:00: sfuma nella cena e nessuno guarda l'orologio.`,
+                `<strong>Tutta la cucina — da €680.</strong> Se la volete davvero solo per voi, <a href="/it/corso-cucina-privato-firenze/">Il Lungo Tavolo di Famiglia</a> è la privatizzazione completa: il vostro chef, il vostro menù, i vostri orari. Le coppie lo prenotano per proposte di matrimonio, anniversari e viaggi di nozze, quando avere degli sconosciuti intorno toglie un po' il senso alla cosa.`,
+              ],
+            },
+            {
+              title: `Perché la pasta è meglio di una cena`,
+              paras: [
+                `Un ristorante vi mette uno di fronte all'altra per novanta minuti. Un corso di pasta vi mette spalla a spalla per tre ore a fare qualcosa in cui nessuno dei due è ancora bravo, il che è molto più interessante. Sarete pessimi con i tortelli insieme, vi correggerete le pieghe a vicenda, e finirete per mangiare un pranzo con dentro le vostre impronte.`,
+                `E cucinate con due capi chef che lo fanno di mestiere — la pasta per banchetti di nozze e tavolate di agriturismo è il lavoro di tutti i giorni — quindi ve ne andate sapendola rifare davvero a casa. Di solito dura più a lungo di una prenotazione al ristorante.`,
+              ],
+            },
+            {
+              title: `Festeggiate qualcosa?`,
+              paras: [],
+              list: [
+                `Diteci se è un compleanno, un anniversario, un fidanzamento o un viaggio di nozze e ci faremo festa in silenzio — è gratis, ed è la parte che ci piace di più.`,
+                `State organizzando una proposta di matrimonio? Prenotate la <a href="/it/corso-cucina-privato-firenze/">cucina privata</a> e scriveteci prima. L'abbiamo già fatto e possiamo aiutarvi con i tempi.`,
+                `Aggiungete un abbinamento vini (+€18 a persona): due calici toscani scelti per ciò che avete preparato.`,
+                `Senza glutine o altre allergie? Postazione dedicata senza costi aggiuntivi — vedi il <a href="/it/corso-cucina-senza-glutine-firenze/">corso senza glutine</a>.`,
+              ],
+            },
+          ],
+          faqs: [
+            { q: `Possiamo prenotare un corso di pasta solo per noi due?`, a: `Sì. Prenotate due posti al corso da €95 a persona e vi unite a un tavolo di massimo otto, lavorando alla vostra postazione fianco a fianco. Se non volete proprio nessun altro nella stanza, la privatizzazione della cucina parte da €680.` },
+            { q: `Il corso da €95 è privato?`, a: `No — è un piccolo tavolo condiviso, max 8 ospiti, che la maggior parte delle coppie preferisce per l'atmosfera. Per un corso davvero privato per due, prenotate Il Lungo Tavolo di Famiglia da €680.` },
+            { q: `Qual è l'orario migliore per una serata romantica?`, a: `Il corso delle 18:00. Sfuma nella cena, la cucina è al suo momento più caldo e non c'è un gruppo successivo in attesa, quindi nessuno vi manda via dal tavolo.` },
+            { q: `Festeggiamo un anniversario — potete fare qualcosa?`, a: `Ditecelo quando prenotate. Faremo una piccola festa al tavolo senza costi aggiuntivi, e se state pensando a qualcosa di più grande, come una proposta, scriveteci e vi aiutiamo a organizzarla nella cucina privata.` },
+            { q: `Come prenotiamo?`, a: `Usate il pulsante "Prenota questo corso", scegliete data, ora e due ospiti. Si apre una chat WhatsApp con tutto compilato e confermiamo personalmente — oppure scrivete a ciao@handmadepastaflorence.com.` },
+          ],
+          related: [
+            { title: `Il Tavolo dello Chef`, href: `/it/corso-pasta-fresca-firenze/`, desc: `Tutti i dettagli del corso a cui vi unireste — €95.` },
+            { title: `Il Lungo Tavolo di Famiglia`, href: `/it/corso-cucina-privato-firenze/`, desc: `L'intera cucina per voi, per proposte e anniversari — da €680.` },
+            { title: `Mercato & Mani`, href: `/it/corso-cucina-tour-mercato-firenze/`, desc: `Fatene una mattinata: il mercato all'alba, poi si cucina il cesto — €145.` },
+            { title: `Cosa fare in Oltrarno`, href: `/it/blog/things-to-do-in-oltrarno-florence/`, desc: `Costruite il resto della serata attorno al quartiere.` },
+          ],
+          ctaLabel: `Prenota per due`,
+          prefill: 'florence',
+          breadcrumbName: `Corso di Pasta per Due a Firenze`,
+          product: {
+            name: `Corso di Pasta per Due a Firenze`,
+            description: `Un corso pratico di pasta fresca per coppie di 3 ore in Oltrarno a Firenze: due posti a un tavolo di massimo otto, quattro formati classici, con pranzo o cena toscana finale e vino. €95 a persona, privatizzazione da €680.`,
+            price: '95',
+          },
+        },
+      },
+      fr: {
+        slug: 'cours-de-pates-pour-deux-florence',
+        title: `Cours de Pâtes pour Deux à Florence — Un Cours de Cuisine en Couple (95 € par personne) | Handmade Pasta Florence`,
+        description: `Un cours de pâtes fraîches pour deux à Florence : une soirée à une table de huit personnes maximum, à étaler les pâtes côte à côte et à les déguster avec un verre de Chianti. 95 € par personne, ou toute la cuisine de l'Oltrarno rien que pour vous.`,
+        cl: {
+          eyebrow: `Pour deux · Oltrarno, Florence`,
+          heading: `Un cours de pâtes pour deux`,
+          headingItal: `à Florence.`,
+          lede: `Pas de car, pas de groupe, pas de démonstration que l'on regarde depuis un tabouret. Deux tabliers, une planche entre vous et trois heures à fabriquer de vos mains quelque chose que vous vous asseyez ensuite pour manger ensemble — avec un verre de Chianti et sans aucune hâte de partir.`,
+          image: { src: `/images/aperitivo.webp`, alt: `Une table dressée pour deux avec du vin avant un cours de pâtes en couple à Florence`, w: 800, h: 1067 },
+          price: `95 €`,
+          priceNote: `par personne · privé dès 680 €`,
+          facts: [
+            { label: `Durée`, value: `environ 3 heures` },
+            { label: `Table`, value: `max 8 personnes` },
+            { label: `Créneau idéal à deux`, value: `18h00, le cours du soir` },
+            { label: `Lieu`, value: `Oltrarno, près de Santo Spirito` },
+            { label: `Langue`, value: `Anglais ou Italien` },
+            { label: `Jours`, value: `Mar–Dim (fermé Lun)` },
+          ],
+          sections: [
+            {
+              title: `Deux façons de le faire`,
+              paras: [
+                `<strong>Rejoindre la table — 95 € chacun.</strong> Vous réservez deux places à notre cours phare. La table ne dépasse jamais huit personnes : cela reste une petite cuisine bavarde plutôt qu'une foule, et vous travaillez tous les deux à votre propre poste, côte à côte. C'est ce que réservent la plupart des couples, et le créneau à demander est celui de 18h00 : il se prolonge en dîner et personne ne regarde l'heure.`,
+                `<strong>Privatiser la cuisine — dès 680 €.</strong> Si vous la voulez entièrement pour vous, <a href="/fr/cours-cuisine-prive-florence/">La Longue Table Familiale</a> est une privatisation complète : votre chef, votre menu, vos horaires. Les couples la réservent pour les demandes en mariage, les anniversaires et les voyages de noces, quand être observé par des inconnus enlève tout l'intérêt.`,
+              ],
+            },
+            {
+              title: `Pourquoi les pâtes valent mieux qu'un dîner`,
+              paras: [
+                `Un restaurant vous assoit face à face pendant quatre-vingt-dix minutes. Un cours de pâtes vous met épaule contre épaule pendant trois heures à faire quelque chose qu'aucun de vous ne maîtrise encore, ce qui est nettement plus intéressant. Vous serez mauvais en tortelli ensemble, vous corrigerez les pliages de l'autre, et vous finirez par manger un repas qui porte vos empreintes.`,
+                `Vous cuisinez aussi avec deux chefs de cuisine dont c'est le métier — les pâtes pour les banquets de mariage et les grandes tablées, c'est leur quotidien — et vous repartez donc capables de refaire cela chez vous. Cela dure généralement plus longtemps qu'une réservation au restaurant.`,
+              ],
+            },
+            {
+              title: `Vous fêtez quelque chose ?`,
+              paras: [],
+              list: [
+                `Dites-nous si c'est un anniversaire, des fiançailles ou un voyage de noces et nous en ferons discrètement tout un plat — c'est gratuit, et c'est la partie que nous préférons.`,
+                `Vous préparez une demande en mariage ? Réservez la <a href="/fr/cours-cuisine-prive-florence/">cuisine privée</a> et écrivez-nous d'abord. Nous l'avons déjà fait et nous pouvons vous aider pour le timing.`,
+                `Ajoutez un accord mets-vins (+18 € par personne) : deux vins toscans choisis pour ce que vous avez préparé.`,
+                `Sans gluten ou autres allergies ? Un poste dédié sans frais supplémentaires — voir le <a href="/fr/cours-cuisine-sans-gluten-florence/">cours sans gluten</a>.`,
+              ],
+            },
+          ],
+          faqs: [
+            { q: `Pouvons-nous réserver un cours de pâtes rien que pour nous deux ?`, a: `Oui. Réservez deux places au cours à 95 € par personne et vous rejoignez une table de huit maximum, en travaillant à votre propre poste côte à côte. Si vous ne voulez personne d'autre dans la pièce, la privatisation de la cuisine démarre à 680 €.` },
+            { q: `Le cours à 95 € est-il privé ?`, a: `Non — c'est une petite table partagée, 8 personnes maximum, ce que la plupart des couples préfèrent pour l'ambiance. Pour un cours réellement privé à deux, réservez La Longue Table Familiale à partir de 680 €.` },
+            { q: `Quel créneau choisir pour une soirée en amoureux ?`, a: `Le cours de 18h00. Il se prolonge en dîner, la cuisine est à son moment le plus chaleureux et aucun groupe suivant n'attend, donc personne ne vous presse de quitter la table.` },
+            { q: `Nous fêtons un anniversaire de couple — pouvez-vous faire quelque chose ?`, a: `Dites-le-nous à la réservation. Nous en ferons discrètement tout un plat à table, sans frais, et si vous préparez quelque chose de plus grand, comme une demande en mariage, écrivez-nous et nous vous aiderons à l'organiser dans la cuisine privée.` },
+            { q: `Comment réserver ?`, a: `Utilisez le bouton "Réserver ce cours", choisissez votre date, l'heure et deux personnes. Cela ouvre une discussion WhatsApp pré-remplie et nous confirmons personnellement — ou écrivez à ciao@handmadepastaflorence.com.` },
+          ],
+          related: [
+            { title: `La Table du Chef`, href: `/fr/cours-de-pates-fraiches-florence/`, desc: `Tout le détail du cours que vous rejoindriez — 95 €.` },
+            { title: `La Longue Table Familiale`, href: `/fr/cours-cuisine-prive-florence/`, desc: `Toute la cuisine pour vous, pour les demandes et anniversaires — dès 680 €.` },
+            { title: `Mercato & Mani`, href: `/fr/cours-cuisine-visite-marche-florence/`, desc: `Faites-en une matinée : le marché à l'aube, puis on cuisine le panier — 145 €.` },
+            { title: `Que faire dans l'Oltrarno`, href: `/fr/blog/things-to-do-in-oltrarno-florence/`, desc: `Construisez le reste de la soirée autour du quartier.` },
+          ],
+          ctaLabel: `Réserver pour deux`,
+          prefill: 'florence',
+          breadcrumbName: `Cours de Pâtes pour Deux à Florence`,
+          product: {
+            name: `Cours de Pâtes pour Deux à Florence`,
+            description: `Un cours pratique de pâtes fraîches en couple de 3 heures dans l'Oltrarno à Florence : deux places à une table de huit maximum, quatre formes classiques, suivi d'un repas toscan avec du vin. 95 € par personne, privatisation dès 680 €.`,
+            price: '95',
+          },
+        },
+      },
+      de: {
+        slug: 'pasta-kurs-fuer-zwei-florenz',
+        title: `Pasta-Kurs für Zwei in Florenz — Ein Kochkurs für Paare (95 € pro Person) | Handmade Pasta Florence`,
+        description: `Ein Pasta-Kurs für zwei in Florenz: ein Abend an einem Tisch mit höchstens acht Gästen, Seite an Seite frische Pasta rollen und sie mit einem Glas Chianti essen. 95 € pro Person, oder die ganze Küche im Oltrarno für Sie allein.`,
+        cl: {
+          eyebrow: `Für zwei · Oltrarno, Florenz`,
+          heading: `Ein Pasta-Kurs für zwei`,
+          headingItal: `in Florenz.`,
+          lede: `Kein Bus, keine Reisegruppe, keine Vorführung, die man vom Hocker aus ansieht. Zwei Schürzen, ein Brett zwischen Ihnen und drei Stunden, in denen Sie mit den Händen etwas machen, das Sie danach gemeinsam essen — mit einem Glas Chianti und ohne jede Eile.`,
+          image: { src: `/images/aperitivo.webp`, alt: `Ein für zwei gedeckter Tisch mit Wein vor einem Pasta-Kurs für Paare in Florenz`, w: 800, h: 1067 },
+          price: `95 €`,
+          priceNote: `pro Person · privat ab 680 €`,
+          facts: [
+            { label: `Dauer`, value: `etwa 3 Stunden` },
+            { label: `Tisch`, value: `max. 8 Gäste` },
+            { label: `Beste Zeit zu zweit`, value: `18:00, der Abendkurs` },
+            { label: `Ort`, value: `Oltrarno, nahe Santo Spirito` },
+            { label: `Sprache`, value: `Englisch oder Italienisch` },
+            { label: `Tage`, value: `Di–So (Mo geschlossen)` },
+          ],
+          sections: [
+            {
+              title: `Zwei Wege, es zu tun`,
+              paras: [
+                `<strong>An den Tisch dazu — 95 € pro Person.</strong> Sie buchen zwei Plätze in unserem Signature-Kurs. Am Tisch sitzen nie mehr als acht Menschen, es bleibt also eine kleine, gesprächige Küche statt einer Menge, und Sie beide arbeiten Seite an Seite an Ihrer eigenen Station. Das buchen die meisten Paare, und der Termin, nach dem man fragen sollte, ist 18:00 Uhr: Er geht ins Abendessen über, und niemand schaut auf die Uhr.`,
+                `<strong>Die ganze Küche — ab 680 €.</strong> Wenn Sie sie ganz für sich wollen, ist <a href="/de/privater-kochkurs-florenz/">Die lange Familientafel</a> die vollständige Privatbuchung: Ihr Koch, Ihr Menü, Ihre Zeiten. Paare buchen das für Heiratsanträge, Jahrestage und Hochzeitsreisen — Momente, bei denen fremde Zuschauer den Sinn verfehlen.`,
+              ],
+            },
+            {
+              title: `Warum Pasta besser ist als ein Abendessen`,
+              paras: [
+                `Ein Restaurant setzt Sie neunzig Minuten lang gegenüber. Ein Pastakurs stellt Sie drei Stunden lang Schulter an Schulter und lässt Sie etwas tun, das noch keiner von Ihnen kann — was erheblich interessanter ist. Sie werden gemeinsam schlecht in Tortelli sein, Sie werden einander die Faltungen richten, und am Ende essen Sie ein Essen, in dem Ihre Fingerabdrücke stecken.`,
+                `Außerdem kochen Sie mit zwei Küchenchefs, die davon leben — Pasta für Hochzeitsfeste und lange Tafeln ist ihr Alltag — und gehen daher so, dass Sie es zu Hause wirklich nachmachen können. Das hält meist länger als eine Tischreservierung.`,
+              ],
+            },
+            {
+              title: `Feiern Sie etwas?`,
+              paras: [],
+              list: [
+                `Sagen Sie uns, ob es ein Geburtstag, Jahrestag, eine Verlobung oder Hochzeitsreise ist, und wir machen still ein kleines Fest daraus — kostenlos, und es ist der Teil, den wir am liebsten mögen.`,
+                `Planen Sie einen Heiratsantrag? Buchen Sie die <a href="/de/privater-kochkurs-florenz/">private Küche</a> und schreiben Sie uns vorher. Wir haben das schon gemacht und helfen beim Timing.`,
+                `Fügen Sie eine Weinbegleitung hinzu (+18 € pro Person): zwei toskanische Weine, passend zu dem, was Sie gemacht haben.`,
+                `Glutenfrei oder andere Allergien? Eine eigene Station ohne Aufpreis — siehe den <a href="/de/glutenfreier-kochkurs-florenz/">glutenfreien Kurs</a>.`,
+              ],
+            },
+          ],
+          faqs: [
+            { q: `Können wir einen Pasta-Kurs nur für uns zwei buchen?`, a: `Ja. Buchen Sie zwei Plätze im Kurs für 95 € pro Person, und Sie kommen an einen Tisch mit höchstens acht Gästen und arbeiten Seite an Seite an Ihrer eigenen Station. Wenn Sie überhaupt niemanden sonst im Raum wollen, beginnt die private Küchenbuchung bei 680 €.` },
+            { q: `Ist der Kurs für 95 € privat?`, a: `Nein — es ist ein kleiner gemeinsamer Tisch mit maximal 8 Gästen, was die meisten Paare der Stimmung wegen bevorzugen. Für einen wirklich privaten Kurs zu zweit buchen Sie Die lange Familientafel ab 680 €.` },
+            { q: `Welche Uhrzeit eignet sich für einen Abend zu zweit?`, a: `Der Kurs um 18:00 Uhr. Er geht ins Abendessen über, die Küche ist dann am wärmsten, und es wartet keine nächste Gruppe — niemand drängt Sie vom Tisch.` },
+            { q: `Wir feiern einen Jahrestag — können Sie etwas machen?`, a: `Sagen Sie es uns bei der Buchung. Wir machen ohne Aufpreis ein kleines Fest daraus, und wenn Sie etwas Größeres planen, etwa einen Heiratsantrag, schreiben Sie uns — wir helfen Ihnen, es in der privaten Küche vorzubereiten.` },
+            { q: `Wie buchen wir?`, a: `Nutzen Sie "Diesen Kurs buchen" und wählen Sie Datum, Uhrzeit und zwei Gäste. Es öffnet sich ein WhatsApp-Chat mit allem Ausgefüllten und wir bestätigen persönlich — oder schreiben Sie an ciao@handmadepastaflorence.com.` },
+          ],
+          related: [
+            { title: `Der Tisch des Küchenchefs`, href: `/de/pasta-kurs-florenz/`, desc: `Alle Details des Kurses, zu dem Sie dazukommen — 95 €.` },
+            { title: `Die lange Familientafel`, href: `/de/privater-kochkurs-florenz/`, desc: `Die ganze Küche für Sie, für Anträge und Jahrestage — ab 680 €.` },
+            { title: `Mercato & Mani`, href: `/de/markt-tour-kochkurs-florenz/`, desc: `Machen Sie einen Vormittag daraus: erst der Markt, dann der Korb — 145 €.` },
+            { title: `Was man im Oltrarno tun kann`, href: `/de/blog/things-to-do-in-oltrarno-florence/`, desc: `Bauen Sie den Rest des Abends um das Viertel herum.` },
+          ],
+          ctaLabel: `Für zwei buchen`,
+          prefill: 'florence',
+          breadcrumbName: `Pasta-Kurs für Zwei in Florenz`,
+          product: {
+            name: `Pasta-Kurs für Zwei in Florenz`,
+            description: `Ein 3-stündiger praktischer Pasta-Kurs für Paare in Florenz' Oltrarno: zwei Plätze an einem Tisch mit höchstens acht Gästen, vier klassische Formen, mit anschließendem toskanischem Essen und Wein. 95 € pro Person, Privatbuchung ab 680 €.`,
+            price: '95',
+          },
+        },
+      },
+      zh: {
+        slug: 'shuangren-yidali-mian-kecheng-foluolunsa',
+        title: `佛罗伦萨双人意面课程 — 情侣烹饪课程 (每人€95) | Handmade Pasta Florence`,
+        description: `佛罗伦萨的双人手工意面课程：在最多八人的餐桌旁度过一个傍晚，并肩擀制新鲜意面，再配上一杯基安蒂葡萄酒享用。每人95欧元，也可将整个奥特拉诺厨房私人包场。`,
+        cl: {
+          eyebrow: `双人 · 佛罗伦萨奥特拉诺`,
+          heading: `佛罗伦萨的`,
+          headingItal: `双人意面课程。`,
+          lede: `没有大巴，没有旅行团，也没有需要坐在凳子上观看的示范。两条围裙、一张共用的案板，以及三个小时——用双手做出一样东西，然后坐下来一起把它吃掉，配一杯基安蒂，不必急着离开。`,
+          image: { src: `/images/aperitivo.webp`, alt: `佛罗伦萨情侣意面课程前为两人摆好的餐桌与葡萄酒`, w: 800, h: 1067 },
+          price: `€95`,
+          priceNote: `每人 · 私人包场680欧元起`,
+          facts: [
+            { label: `时长`, value: `约3小时` },
+            { label: `餐桌`, value: `最多8位客人` },
+            { label: `双人最佳时段`, value: `18:00 傍晚班` },
+            { label: `地点`, value: `奥特拉诺，靠近圣斯皮里托` },
+            { label: `语言`, value: `英语或意大利语` },
+            { label: `开放时间`, value: `周二至周日（周一休息）` },
+          ],
+          sections: [
+            {
+              title: `两种方式`,
+              paras: [
+                `<strong>加入公共餐桌 — 每人95欧元。</strong> 您预订我们招牌课程的两个名额。餐桌人数从不超过八位，因此这里始终是一间热闹的小厨房而非人群，你们俩在自己的操作台上并肩制作。这是大多数情侣的选择，而值得特意询问的时段是18:00：课程会自然延续到晚餐，没有人会看时间。`,
+                `<strong>包下整个厨房 — 680欧元起。</strong> 如果你们想完全独处，<a href="/zh/siren-pengren-kecheng-foluolunsa/">家庭长桌体验</a>是完整的私人包场：专属主厨、专属菜单、专属时间。情侣通常为求婚、纪念日和蜜月预订它——在这些时刻，被陌生人围观确实有点扫兴。`,
+              ],
+            },
+            {
+              title: `为什么做意面比吃一顿晚餐更好`,
+              paras: [
+                `餐厅让你们面对面坐九十分钟。意面课程则让你们肩并肩三个小时，一起做一件两人都还不擅长的事，这要有趣得多。你们会一起把tortelli捏得歪歪扭扭，会互相纠正对方的折法，最后吃到一顿带着你们指纹的饭菜。`,
+                `而且你们是在和两位以此为生的主厨一起下厨——为婚宴和农庄长桌做意面是他们的日常工作——所以离开时你们是真的学会了回家再做一次。这通常比一次餐厅订位留存得更久。`,
+              ],
+            },
+            {
+              title: `在庆祝什么吗？`,
+              paras: [],
+              list: [
+                `如果是生日、纪念日、订婚或蜜月，请告诉我们，我们会安静地为你们庆祝一下——这是免费的，也是我们最喜欢的环节。`,
+                `在筹划求婚？请预订<a href="/zh/siren-pengren-kecheng-foluolunsa/">私人厨房</a>并先与我们联系。我们做过，可以帮您把时间安排好。`,
+                `添加葡萄酒搭配（每人+18欧元）：两款托斯卡纳葡萄酒，为你们所做的菜而选。`,
+                `无麸质或其他过敏？专属操作台不加收费用——请看<a href="/zh/wu-fuzhi-pengren-kecheng-foluolunsa/">无麸质课程</a>。`,
+              ],
+            },
+          ],
+          faqs: [
+            { q: `我们可以只为两个人预订意面课程吗？`, a: `可以。预订每人95欧元课程的两个名额，你们会加入一张最多八人的餐桌，在自己的操作台上并肩制作。如果你们希望房间里没有其他人，私人包场从680欧元起。` },
+            { q: `95欧元的课程是私人的吗？`, a: `不是——那是一张最多8位客人的小型共用餐桌，大多数情侣正是喜欢这样的氛围。若想要真正私密的双人课程，请预订家庭长桌体验，680欧元起。` },
+            { q: `约会最适合哪个时段？`, a: `18:00的傍晚班。它会自然延续到晚餐，厨房此时最温暖，而且后面没有下一组客人在等，不会有人催你们离席。` },
+            { q: `我们在庆祝纪念日——你们能做点什么吗？`, a: `预订时告诉我们。我们会在餐桌上安静地为你们庆祝，不收取额外费用；如果你们在筹划更大的惊喜，比如求婚，请与我们联系，我们会帮你们在私人厨房里安排好。` },
+            { q: `我们该如何预订？`, a: `使用"预订此课程"按钮，选择日期、时间和两位客人。它会打开一个信息已填好的WhatsApp聊天，我们会亲自确认——也可以发送邮件至 ciao@handmadepastaflorence.com。` },
+          ],
+          related: [
+            { title: `主厨餐桌`, href: `/zh/foluolunsa-yidali-mian-kecheng/`, desc: `你们将加入的这门课程的完整介绍 — €95。` },
+            { title: `家庭长桌体验`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `整个厨房归你们所有，适合求婚与纪念日 — 680欧元起。` },
+            { title: `Mercato & Mani`, href: `/zh/shichang-daolan-pengren-kecheng-foluolunsa/`, desc: `把它变成一个上午：清晨逛市场，然后烹饪食材 — €145。` },
+            { title: `奥特拉诺有什么可玩`, href: `/zh/blog/things-to-do-in-oltrarno-florence/`, desc: `围绕这个街区安排你们剩下的夜晚。` },
+          ],
+          ctaLabel: `双人预订`,
+          prefill: 'florence',
+          breadcrumbName: `佛罗伦萨双人意面课程`,
+          product: {
+            name: `佛罗伦萨双人意面课程`,
+            description: `佛罗伦萨奥特拉诺区3小时情侣手工意面课程：在最多八人的餐桌旁预订两个名额，四种经典形状，以配有葡萄酒的托斯卡纳餐食收尾。每人95欧元，私人包场680欧元起。`,
+            price: '95',
+          },
+        },
+      },
+    },
+  },
+
+  // Gives the footer's "Gift a class" link a real destination. Enquiry-driven
+  // (emailSubject, like team-building) because a gift has no date to pick, and
+  // the booking drawer forces one. Service schema, not Product: no fixed price.
+  //
+  // TODO (owner decision): voucher validity period, whether it is transferable,
+  // and the delivery format. The copy deliberately promises none of these — fill
+  // them in here once decided, then this page can carry them as a selling point.
+  gift: {
+    floatingCta: false,
+    locales: {
+      en: {
+        slug: 'gift-a-cooking-class-florence',
+        title: `Gift a Cooking Class in Florence — Pasta Class Vouchers (from €68) | Handmade Pasta Florence`,
+        description: `Give a hands-on cooking class in Florence instead of another object. A pasta class gift voucher for our Oltrarno kitchen from €95, or a live online class with an ingredient kit from €68. No date locked in — they choose when.`,
+        cl: {
+          eyebrow: `Gift vouchers · Florence & online`,
+          heading: `Gift a cooking class`,
+          headingItal: `in Florence.`,
+          lede: `A morning with their hands in the flour, a table they sat down at, a dish they can now make. It takes up no cupboard space and they will still be talking about it next year — which is more than most presents manage.`,
+          image: { src: `/images/cooking_class_with_guests_in_picture.webp`, alt: `Guests around the table at a Florence cooking class bought as a gift voucher`, w: 1050, h: 1400 },
+          price: `Any class`,
+          priceNote: `from €68 · voucher sent by email`,
+          facts: [
+            { label: `In Florence`, value: `from €95 per person` },
+            { label: `Live online`, value: `from €68 per person` },
+            { label: `Private kitchen`, value: `from €680` },
+            { label: `Date`, value: `not fixed — they choose` },
+            { label: `Delivery`, value: `by email, same day` },
+            { label: `Reply time`, value: `within one working day` },
+          ],
+          sections: [
+            {
+              title: `What you are actually giving`,
+              paras: [
+                `Three hours in a small Oltrarno kitchen with two Tuscan agriturismo head chefs, hands in the flour from the first minute, four classic pasta shapes, and a sit-down lunch of everything they made with a glass of Chianti. Never more than eight people at the table.`,
+                `If they are not coming to Florence any time soon, the <a href="/online-pasta-making-class/">live online class</a> works just as well as a gift — same chefs, same kitchen, with an ingredient kit shipped to their door. It is the one we send most often to people abroad.`,
+              ],
+            },
+            {
+              title: `How it works`,
+              paras: [
+                `Email us with who it is for, which class you have in mind and any message you would like on it. We will confirm the amount, take payment, and send you a voucher you can print or forward, usually the same day. No date is locked in when you buy — your recipient contacts us and picks a slot that suits them.`,
+                `Not sure which class? Say roughly what they are like and what you want to spend, and we will suggest one. We would rather they got the right class than the expensive one.`,
+              ],
+            },
+            {
+              title: `Good to know`,
+              paras: [],
+              list: [
+                `Any class can be gifted: the <a href="/pasta-making-class-florence/">Chef's Table</a> (€95), <a href="/market-tour-cooking-class-florence/">Mercato &amp; Mani</a> (€145), the <a href="/private-cooking-class-florence/">private kitchen</a> (from €680) or the <a href="/online-pasta-making-class/">online class</a> (from €68).`,
+                `Gifting to a couple? The <a href="/pasta-class-for-two-florence/">class for two</a> is the one people buy for anniversaries and weddings.`,
+                `Gluten-free or other allergies are handled at no extra charge, so you do not need to know their diet when you buy.`,
+                `Leaving it late? Email us and say so — a voucher can be with you within the hour during working hours.`,
+              ],
+            },
+          ],
+          faqs: [
+            { q: `How do I buy a gift voucher?`, a: `Email ciao@handmadepastaflorence.com with who it is for, the class you have in mind and any message. We confirm the amount, arrange payment and send the voucher by email, usually the same day and within one working day at the latest.` },
+            { q: `Does the recipient have to pick a date now?`, a: `No. Nothing is booked when you buy. They get in touch when they know their plans and choose a slot that works for them.` },
+            { q: `How long is the voucher valid?`, a: `We agree that with you when you buy rather than imposing a fixed window — tell us the situation. We would much rather they came at the right time than lost it to a deadline.` },
+            { q: `Can I gift the online class to someone abroad?`, a: `Yes, and it is one of our most-gifted options. The class is live from our Florence kitchen and we ship a fresh-pasta ingredient kit to their door, from €68 per person.` },
+            { q: `Can I put a message on it?`, a: `Yes — send us the wording and we will put it on the voucher. If you want it to look like it came from you rather than from us, say so and we will keep our branding light.` },
+          ],
+          related: [
+            { title: `The Chef's Table`, href: `/pasta-making-class-florence/`, desc: `The class most people gift — three hours, four shapes, one long lunch. €95.` },
+            { title: `Pasta Class for Two`, href: `/pasta-class-for-two-florence/`, desc: `The anniversary and wedding present — €95 each.` },
+            { title: `Live Online Class`, href: `/online-pasta-making-class/`, desc: `For someone who is not in Italy — kit shipped to the door, from €68.` },
+            { title: `The Family Long-Table`, href: `/private-cooking-class-florence/`, desc: `A big gift for a big occasion — the whole kitchen, from €680.` },
+          ],
+          ctaLabel: `Request a gift voucher`,
+          emailSubject: `Gift voucher request`,
+          breadcrumbName: `Gift a Cooking Class`,
+          service: {
+            name: `Cooking Class Gift Voucher — Florence`,
+            description: `Gift vouchers for hands-on pasta making classes in Florence's Oltrarno from €95, private kitchen buyouts from €680, and live online classes with a shipped ingredient kit from €68. Sent by email with no date fixed.`,
+          },
+        },
+      },
+      it: {
+        slug: 'regala-corso-di-cucina-firenze',
+        title: `Regala un Corso di Cucina a Firenze — Buoni Regalo Corso di Pasta (da €68) | Handmade Pasta Florence`,
+        description: `Regala un corso di cucina pratico a Firenze invece dell'ennesimo oggetto. Buono regalo per la nostra cucina in Oltrarno da €95, o un corso in diretta online con kit ingredienti da €68. Nessuna data fissata — sceglie chi lo riceve.`,
+        cl: {
+          eyebrow: `Buoni regalo · Firenze e online`,
+          heading: `Regala un corso di cucina`,
+          headingItal: `a Firenze.`,
+          lede: `Una mattina con le mani in farina, un tavolo a cui si sono seduti, un piatto che ora sanno rifare. Non occupa spazio in nessun armadio e l'anno prossimo ne parleranno ancora — cosa che alla maggior parte dei regali non riesce.`,
+          image: { src: `/images/cooking_class_with_guests_in_picture.webp`, alt: `Ospiti attorno al tavolo di un corso di cucina a Firenze acquistato come buono regalo`, w: 1050, h: 1400 },
+          price: `Qualsiasi corso`,
+          priceNote: `da €68 · buono inviato via email`,
+          facts: [
+            { label: `A Firenze`, value: `da €95 a persona` },
+            { label: `In diretta online`, value: `da €68 a persona` },
+            { label: `Cucina privata`, value: `da €680` },
+            { label: `Data`, value: `non fissata — sceglie lui` },
+            { label: `Consegna`, value: `via email, in giornata` },
+            { label: `Risposta`, value: `entro un giorno lavorativo` },
+          ],
+          sections: [
+            {
+              title: `Cosa stai regalando davvero`,
+              paras: [
+                `Tre ore in una piccola cucina in Oltrarno con due capi chef toscani di agriturismo, le mani in farina dal primo minuto, quattro formati classici di pasta e un pranzo seduti a mangiare tutto quello che hanno preparato, con un bicchiere di Chianti. Mai più di otto persone al tavolo.`,
+                `Se non verranno a Firenze a breve, anche il <a href="/it/corso-pasta-online/">corso in diretta online</a> funziona benissimo come regalo — stessi chef, stessa cucina, con un kit di ingredienti spedito a casa loro. È quello che mandiamo più spesso a chi vive all'estero.`,
+              ],
+            },
+            {
+              title: `Come funziona`,
+              paras: [
+                `Scrivici dicendo per chi è, quale corso hai in mente e l'eventuale dedica. Ti confermiamo l'importo, gestiamo il pagamento e ti inviamo un buono che puoi stampare o inoltrare, di solito in giornata. Al momento dell'acquisto non si fissa nessuna data: chi lo riceve ci contatta e sceglie l'orario che preferisce.`,
+                `Non sai quale corso scegliere? Raccontaci più o meno come sono e quanto vuoi spendere, e te ne suggeriamo uno. Preferiamo che ricevano il corso giusto piuttosto che quello più caro.`,
+              ],
+            },
+            {
+              title: `Buono a sapersi`,
+              paras: [],
+              list: [
+                `Si può regalare qualsiasi corso: <a href="/it/corso-pasta-fresca-firenze/">Il Tavolo dello Chef</a> (€95), <a href="/it/corso-cucina-tour-mercato-firenze/">Mercato &amp; Mani</a> (€145), la <a href="/it/corso-cucina-privato-firenze/">cucina privata</a> (da €680) o il <a href="/it/corso-pasta-online/">corso online</a> (da €68).`,
+                `Regalo per una coppia? Il <a href="/it/corso-pasta-per-due-firenze/">corso per due</a> è quello che si compra per anniversari e matrimoni.`,
+                `Senza glutine e altre allergie sono gestite senza costi aggiuntivi, quindi non devi conoscere la loro dieta al momento dell'acquisto.`,
+                `Sei in ritardo? Scrivicelo — negli orari di lavoro il buono può arrivarti entro un'ora.`,
+              ],
+            },
+          ],
+          faqs: [
+            { q: `Come acquisto un buono regalo?`, a: `Scrivi a ciao@handmadepastaflorence.com indicando per chi è, il corso che hai in mente e l'eventuale dedica. Confermiamo l'importo, organizziamo il pagamento e inviamo il buono via email, di solito in giornata e al massimo entro un giorno lavorativo.` },
+            { q: `Chi lo riceve deve scegliere subito una data?`, a: `No. Al momento dell'acquisto non si prenota nulla. Ci contatteranno quando avranno chiari i loro programmi e sceglieranno l'orario che preferiscono.` },
+            { q: `Quanto vale nel tempo il buono?`, a: `Lo concordiamo con te al momento dell'acquisto invece di imporre una scadenza fissa — raccontaci la situazione. Preferiamo di gran lunga che vengano nel momento giusto piuttosto che perdere il buono per una data.` },
+            { q: `Posso regalare il corso online a qualcuno all'estero?`, a: `Sì, ed è una delle opzioni più regalate. Il corso è in diretta dalla nostra cucina a Firenze e spediamo a casa loro un kit di ingredienti per la pasta fresca, da €68 a persona.` },
+            { q: `Posso aggiungere una dedica?`, a: `Sì — mandaci il testo e lo mettiamo sul buono. Se vuoi che sembri arrivato da te e non da noi, dillo e terremo il nostro marchio molto discreto.` },
+          ],
+          related: [
+            { title: `Il Tavolo dello Chef`, href: `/it/corso-pasta-fresca-firenze/`, desc: `Il corso più regalato — tre ore, quattro formati, un lungo pranzo. €95.` },
+            { title: `Corso di Pasta per Due`, href: `/it/corso-pasta-per-due-firenze/`, desc: `Il regalo da anniversario e da matrimonio — €95 a testa.` },
+            { title: `Corso in Diretta Online`, href: `/it/corso-pasta-online/`, desc: `Per chi non è in Italia — kit spedito a casa, da €68.` },
+            { title: `Il Lungo Tavolo di Famiglia`, href: `/it/corso-cucina-privato-firenze/`, desc: `Un regalo grande per un'occasione grande — tutta la cucina, da €680.` },
+          ],
+          ctaLabel: `Richiedi un buono regalo`,
+          emailSubject: `Richiesta buono regalo`,
+          breadcrumbName: `Regala un Corso di Cucina`,
+          service: {
+            name: `Buono Regalo Corso di Cucina — Firenze`,
+            description: `Buoni regalo per corsi pratici di pasta fresca in Oltrarno a Firenze da €95, privatizzazioni della cucina da €680 e corsi in diretta online con kit ingredienti spedito da €68. Inviati via email senza data fissata.`,
+          },
+        },
+      },
+      fr: {
+        slug: 'offrir-cours-de-cuisine-florence',
+        title: `Offrir un Cours de Cuisine à Florence — Bons Cadeaux Cours de Pâtes (dès 68 €) | Handmade Pasta Florence`,
+        description: `Offrez un cours de cuisine à Florence plutôt qu'un objet de plus. Un bon cadeau pour notre cuisine de l'Oltrarno dès 95 €, ou un cours en direct en ligne avec kit d'ingrédients dès 68 €. Aucune date fixée — c'est le destinataire qui choisit.`,
+        cl: {
+          eyebrow: `Bons cadeaux · Florence et en ligne`,
+          heading: `Offrir un cours de cuisine`,
+          headingItal: `à Florence.`,
+          lede: `Une matinée les mains dans la farine, une table où ils se sont assis, un plat qu'ils savent désormais refaire. Cela ne prend aucune place dans un placard et ils en parleront encore l'année prochaine — ce que peu de cadeaux réussissent.`,
+          image: { src: `/images/cooking_class_with_guests_in_picture.webp`, alt: `Des invités autour de la table d'un cours de cuisine à Florence offert en bon cadeau`, w: 1050, h: 1400 },
+          price: `Tous les cours`,
+          priceNote: `dès 68 € · bon envoyé par email`,
+          facts: [
+            { label: `À Florence`, value: `dès 95 € par personne` },
+            { label: `En direct en ligne`, value: `dès 68 € par personne` },
+            { label: `Cuisine privée`, value: `dès 680 €` },
+            { label: `Date`, value: `non fixée — ils choisissent` },
+            { label: `Livraison`, value: `par email, le jour même` },
+            { label: `Réponse`, value: `sous un jour ouvré` },
+          ],
+          sections: [
+            {
+              title: `Ce que vous offrez vraiment`,
+              paras: [
+                `Trois heures dans une petite cuisine de l'Oltrarno avec deux chefs d'agritourismes toscans, les mains dans la farine dès la première minute, quatre formes de pâtes classiques et un déjeuner assis où l'on mange tout ce qu'ils ont préparé, avec un verre de Chianti. Jamais plus de huit personnes à table.`,
+                `S'ils ne viennent pas à Florence de sitôt, le <a href="/fr/cours-pates-en-ligne/">cours en direct en ligne</a> fonctionne tout aussi bien en cadeau — mêmes chefs, même cuisine, avec un kit d'ingrédients livré chez eux. C'est celui que nous envoyons le plus souvent à l'étranger.`,
+              ],
+            },
+            {
+              title: `Comment ça marche`,
+              paras: [
+                `Écrivez-nous en précisant pour qui c'est, le cours que vous avez en tête et le message éventuel. Nous confirmons le montant, organisons le paiement et vous envoyons un bon à imprimer ou à transférer, généralement le jour même. Aucune date n'est bloquée à l'achat : le destinataire nous contacte et choisit le créneau qui lui convient.`,
+                `Vous hésitez sur le cours ? Dites-nous à peu près comment ils sont et le budget que vous avez en tête, et nous vous en proposerons un. Nous préférons qu'ils reçoivent le bon cours plutôt que le plus cher.`,
+              ],
+            },
+            {
+              title: `Bon à savoir`,
+              paras: [],
+              list: [
+                `Tous les cours peuvent être offerts : <a href="/fr/cours-de-pates-fraiches-florence/">La Table du Chef</a> (95 €), <a href="/fr/cours-cuisine-visite-marche-florence/">Mercato &amp; Mani</a> (145 €), la <a href="/fr/cours-cuisine-prive-florence/">cuisine privée</a> (dès 680 €) ou le <a href="/fr/cours-pates-en-ligne/">cours en ligne</a> (dès 68 €).`,
+                `Un cadeau pour un couple ? Le <a href="/fr/cours-de-pates-pour-deux-florence/">cours pour deux</a> est celui que l'on achète pour les anniversaires de mariage et les mariages.`,
+                `Le sans gluten et les autres allergies sont pris en charge sans frais, vous n'avez donc pas besoin de connaître leur régime à l'achat.`,
+                `Vous vous y prenez tard ? Dites-le-nous — pendant les heures ouvrées, un bon peut vous parvenir en moins d'une heure.`,
+              ],
+            },
+          ],
+          faqs: [
+            { q: `Comment acheter un bon cadeau ?`, a: `Écrivez à ciao@handmadepastaflorence.com en précisant pour qui c'est, le cours envisagé et votre message. Nous confirmons le montant, organisons le paiement et envoyons le bon par email, généralement le jour même et au plus tard sous un jour ouvré.` },
+            { q: `Le destinataire doit-il choisir une date tout de suite ?`, a: `Non. Rien n'est réservé à l'achat. Ils nous contactent quand leurs plans sont clairs et choisissent le créneau qui leur convient.` },
+            { q: `Combien de temps le bon reste-t-il valable ?`, a: `Nous en convenons avec vous à l'achat plutôt que d'imposer une échéance fixe — expliquez-nous la situation. Nous préférons de loin qu'ils viennent au bon moment plutôt que de perdre le bon à cause d'une date.` },
+            { q: `Puis-je offrir le cours en ligne à quelqu'un à l'étranger ?`, a: `Oui, et c'est l'une de nos options les plus offertes. Le cours est diffusé en direct depuis notre cuisine de Florence et nous expédions un kit d'ingrédients chez eux, dès 68 € par personne.` },
+            { q: `Puis-je y ajouter un message ?`, a: `Oui — envoyez-nous le texte et nous le mettrons sur le bon. Si vous souhaitez qu'il ait l'air de venir de vous plutôt que de nous, dites-le et nous garderons notre marque très discrète.` },
+          ],
+          related: [
+            { title: `La Table du Chef`, href: `/fr/cours-de-pates-fraiches-florence/`, desc: `Le cours le plus offert — trois heures, quatre formes, un long déjeuner. 95 €.` },
+            { title: `Cours de Pâtes pour Deux`, href: `/fr/cours-de-pates-pour-deux-florence/`, desc: `Le cadeau d'anniversaire de mariage — 95 € par personne.` },
+            { title: `Cours en Direct en Ligne`, href: `/fr/cours-pates-en-ligne/`, desc: `Pour quelqu'un qui n'est pas en Italie — kit livré, dès 68 €.` },
+            { title: `La Longue Table Familiale`, href: `/fr/cours-cuisine-prive-florence/`, desc: `Un grand cadeau pour une grande occasion — toute la cuisine, dès 680 €.` },
+          ],
+          ctaLabel: `Demander un bon cadeau`,
+          emailSubject: `Demande de bon cadeau`,
+          breadcrumbName: `Offrir un Cours de Cuisine`,
+          service: {
+            name: `Bon Cadeau Cours de Cuisine — Florence`,
+            description: `Bons cadeaux pour des cours pratiques de pâtes fraîches dans l'Oltrarno à Florence dès 95 €, privatisations de la cuisine dès 680 € et cours en direct en ligne avec kit d'ingrédients expédié dès 68 €. Envoyés par email, sans date fixée.`,
+          },
+        },
+      },
+      de: {
+        slug: 'kochkurs-verschenken-florenz',
+        title: `Kochkurs in Florenz verschenken — Gutscheine für Pasta-Kurse (ab 68 €) | Handmade Pasta Florence`,
+        description: `Verschenken Sie einen Kochkurs in Florenz statt noch eines Gegenstands. Ein Gutschein für unsere Küche im Oltrarno ab 95 €, oder ein Live-Online-Kurs mit Zutaten-Kit ab 68 €. Kein festes Datum — die Beschenkten wählen selbst.`,
+        cl: {
+          eyebrow: `Gutscheine · Florenz und online`,
+          heading: `Einen Kochkurs verschenken`,
+          headingItal: `in Florenz.`,
+          lede: `Ein Vormittag mit den Händen im Mehl, ein Tisch, an dem sie gesessen haben, ein Gericht, das sie jetzt können. Es nimmt keinen Schrankplatz weg, und im nächsten Jahr reden sie noch davon — was den meisten Geschenken nicht gelingt.`,
+          image: { src: `/images/cooking_class_with_guests_in_picture.webp`, alt: `Gäste am Tisch eines als Gutschein verschenkten Kochkurses in Florenz`, w: 1050, h: 1400 },
+          price: `Jeder Kurs`,
+          priceNote: `ab 68 € · Gutschein per E-Mail`,
+          facts: [
+            { label: `In Florenz`, value: `ab 95 € pro Person` },
+            { label: `Live online`, value: `ab 68 € pro Person` },
+            { label: `Private Küche`, value: `ab 680 €` },
+            { label: `Datum`, value: `offen — sie wählen` },
+            { label: `Zustellung`, value: `per E-Mail, am selben Tag` },
+            { label: `Antwortzeit`, value: `binnen eines Werktags` },
+          ],
+          sections: [
+            {
+              title: `Was Sie tatsächlich verschenken`,
+              paras: [
+                `Drei Stunden in einer kleinen Küche im Oltrarno mit zwei toskanischen Agriturismo-Küchenchefs, ab der ersten Minute die Hände im Mehl, vier klassische Pastaformen und ein gemeinsames Mittagessen aus allem, was sie gemacht haben, mit einem Glas Chianti. Nie mehr als acht Menschen am Tisch.`,
+                `Wenn sie so bald nicht nach Florenz kommen, funktioniert der <a href="/de/online-pasta-kurs/">Live-Online-Kurs</a> als Geschenk genauso gut — dieselben Köche, dieselbe Küche, mit einem Zutaten-Kit an ihre Tür. Den verschicken wir am häufigsten ins Ausland.`,
+              ],
+            },
+            {
+              title: `So funktioniert es`,
+              paras: [
+                `Schreiben Sie uns, für wen es ist, welchen Kurs Sie im Sinn haben und welchen Text Sie darauf möchten. Wir bestätigen den Betrag, regeln die Zahlung und senden Ihnen einen Gutschein zum Ausdrucken oder Weiterleiten, meist am selben Tag. Beim Kauf wird kein Datum festgelegt: Die Beschenkten melden sich und wählen einen Termin, der ihnen passt.`,
+                `Unsicher, welcher Kurs? Erzählen Sie uns grob, wie sie sind und was Sie ausgeben möchten, und wir schlagen einen vor. Uns ist der passende Kurs lieber als der teure.`,
+              ],
+            },
+            {
+              title: `Gut zu wissen`,
+              paras: [],
+              list: [
+                `Jeder Kurs lässt sich verschenken: <a href="/de/pasta-kurs-florenz/">Der Tisch des Küchenchefs</a> (95 €), <a href="/de/markt-tour-kochkurs-florenz/">Mercato &amp; Mani</a> (145 €), die <a href="/de/privater-kochkurs-florenz/">private Küche</a> (ab 680 €) oder der <a href="/de/online-pasta-kurs/">Online-Kurs</a> (ab 68 €).`,
+                `Ein Geschenk für ein Paar? Der <a href="/de/pasta-kurs-fuer-zwei-florenz/">Kurs für zwei</a> ist der, den man zu Jahrestagen und Hochzeiten kauft.`,
+                `Glutenfrei und andere Allergien werden ohne Aufpreis berücksichtigt, Sie müssen die Ernährung beim Kauf also nicht kennen.`,
+                `Spät dran? Sagen Sie es uns — während der Arbeitszeiten kann ein Gutschein innerhalb einer Stunde bei Ihnen sein.`,
+              ],
+            },
+          ],
+          faqs: [
+            { q: `Wie kaufe ich einen Gutschein?`, a: `Schreiben Sie an ciao@handmadepastaflorence.com, für wen er ist, welchen Kurs Sie im Sinn haben und welchen Text Sie möchten. Wir bestätigen den Betrag, regeln die Zahlung und senden den Gutschein per E-Mail, meist am selben Tag und spätestens binnen eines Werktags.` },
+            { q: `Müssen die Beschenkten jetzt schon ein Datum wählen?`, a: `Nein. Beim Kauf wird nichts gebucht. Sie melden sich, wenn ihre Pläne feststehen, und wählen einen Termin, der für sie passt.` },
+            { q: `Wie lange ist der Gutschein gültig?`, a: `Das vereinbaren wir beim Kauf mit Ihnen, statt eine feste Frist zu setzen — schildern Sie uns die Situation. Uns ist weit lieber, dass sie zum richtigen Zeitpunkt kommen, als dass ein Datum den Gutschein verfallen lässt.` },
+            { q: `Kann ich den Online-Kurs jemandem im Ausland schenken?`, a: `Ja, und das ist eine unserer meistverschenkten Optionen. Der Kurs läuft live aus unserer Küche in Florenz, und wir schicken ein Frischpasta-Zutaten-Kit an die Tür, ab 68 € pro Person.` },
+            { q: `Kann ich eine persönliche Widmung daraufsetzen?`, a: `Ja — schicken Sie uns den Text und wir setzen ihn auf den Gutschein. Wenn er eher von Ihnen als von uns kommen soll, sagen Sie Bescheid, dann halten wir unser Branding sehr zurück.` },
+          ],
+          related: [
+            { title: `Der Tisch des Küchenchefs`, href: `/de/pasta-kurs-florenz/`, desc: `Der meistverschenkte Kurs — drei Stunden, vier Formen, ein langes Essen. 95 €.` },
+            { title: `Pasta-Kurs für Zwei`, href: `/de/pasta-kurs-fuer-zwei-florenz/`, desc: `Das Geschenk zum Jahrestag und zur Hochzeit — 95 € pro Person.` },
+            { title: `Live-Online-Kurs`, href: `/de/online-pasta-kurs/`, desc: `Für jemanden außerhalb Italiens — Kit an die Tür, ab 68 €.` },
+            { title: `Die lange Familientafel`, href: `/de/privater-kochkurs-florenz/`, desc: `Ein großes Geschenk für einen großen Anlass — die ganze Küche, ab 680 €.` },
+          ],
+          ctaLabel: `Gutschein anfragen`,
+          emailSubject: `Gutschein-Anfrage`,
+          breadcrumbName: `Kochkurs verschenken`,
+          service: {
+            name: `Kochkurs-Gutschein — Florenz`,
+            description: `Gutscheine für praktische Pasta-Kochkurse in Florenz' Oltrarno ab 95 €, private Küchenbuchungen ab 680 € und Live-Online-Kurse mit versandtem Zutaten-Kit ab 68 €. Per E-Mail zugestellt, ohne festes Datum.`,
+          },
+        },
+      },
+      zh: {
+        slug: 'pengren-kecheng-liquan-foluolunsa',
+        title: `赠送佛罗伦萨烹饪课程 — 意面课程礼券 (68欧元起) | Handmade Pasta Florence`,
+        description: `与其再送一件物品，不如赠送一堂佛罗伦萨的亲手实践烹饪课程。我们奥特拉诺厨房的礼券95欧元起，或含食材包的在线直播课程68欧元起。不锁定日期——由收礼人自己选择。`,
+        cl: {
+          eyebrow: `礼券 · 佛罗伦萨与线上`,
+          heading: `赠送一堂`,
+          headingItal: `佛罗伦萨烹饪课程。`,
+          lede: `一个双手沾满面粉的上午，一张他们真正坐下来的餐桌，一道他们从此会做的菜。它不占用任何柜子空间，而明年他们还会提起它——这是大多数礼物做不到的。`,
+          image: { src: `/images/cooking_class_with_guests_in_picture.webp`, alt: `作为礼券赠送的佛罗伦萨烹饪课程上围坐餐桌的客人`, w: 1050, h: 1400 },
+          price: `任意课程`,
+          priceNote: `68欧元起 · 礼券通过邮件发送`,
+          facts: [
+            { label: `在佛罗伦萨`, value: `每人95欧元起` },
+            { label: `在线直播`, value: `每人68欧元起` },
+            { label: `私人厨房`, value: `680欧元起` },
+            { label: `日期`, value: `不固定 — 由他们选择` },
+            { label: `送达方式`, value: `邮件，当天送达` },
+            { label: `回复时间`, value: `一个工作日内` },
+          ],
+          sections: [
+            {
+              title: `您真正赠送的是什么`,
+              paras: [
+                `在奥特拉诺的一间小厨房里与两位托斯卡纳农庄主厨共度三小时，从第一分钟起双手就在面粉里，四种经典意面形状，以及一顿坐下来享用自己成果的午餐，配一杯基安蒂。餐桌人数从不超过八位。`,
+                `如果他们近期不会来佛罗伦萨，<a href="/zh/zaixian-yidali-mian-kecheng/">在线直播课程</a>作为礼物同样出色——同样的主厨、同样的厨房，并将食材包寄送到他们家门口。这是我们寄往海外最多的一份礼物。`,
+              ],
+            },
+            {
+              title: `如何操作`,
+              paras: [
+                `发邮件告诉我们受赠人是谁、您考虑哪门课程，以及您希望写上的留言。我们会确认金额、安排付款，并给您一份可以打印或转发的礼券，通常当天就能发出。购买时不锁定任何日期：收礼人会与我们联系，挑选适合他们的时段。`,
+                `不确定选哪门课？大致说说他们是什么样的人以及您的预算，我们会给出建议。比起最贵的那门，我们更希望他们收到最合适的那门。`,
+              ],
+            },
+            {
+              title: `须知信息`,
+              paras: [],
+              list: [
+                `任何课程都可以作为礼物：<a href="/zh/foluolunsa-yidali-mian-kecheng/">主厨餐桌</a>（€95）、<a href="/zh/shichang-daolan-pengren-kecheng-foluolunsa/">Mercato &amp; Mani</a>（€145）、<a href="/zh/siren-pengren-kecheng-foluolunsa/">私人厨房</a>（680欧元起）或<a href="/zh/zaixian-yidali-mian-kecheng/">在线课程</a>（68欧元起）。`,
+                `送给一对情侣？<a href="/zh/shuangren-yidali-mian-kecheng-foluolunsa/">双人课程</a>是人们为纪念日和婚礼购买的那一款。`,
+                `无麸质及其他过敏需求均免费处理，因此购买时您不需要了解他们的饮食情况。`,
+                `时间紧迫？告诉我们——在工作时间内，礼券可以在一小时内送到您手中。`,
+              ],
+            },
+          ],
+          faqs: [
+            { q: `我该如何购买礼券？`, a: `发送邮件至 ciao@handmadepastaflorence.com，说明受赠人是谁、您考虑的课程以及留言内容。我们会确认金额、安排付款，并通过邮件发送礼券，通常当天送达，最迟不超过一个工作日。` },
+            { q: `收礼人现在就必须选好日期吗？`, a: `不必。购买时不会预订任何内容。他们会在行程确定后与我们联系，挑选适合自己的时段。` },
+            { q: `礼券的有效期是多久？`, a: `我们会在您购买时与您约定，而不是设定一个固定期限——请告诉我们具体情况。比起因为一个截止日期而作废，我们更希望他们在合适的时机前来。` },
+            { q: `我可以把在线课程送给身在海外的人吗？`, a: `可以，这也是我们最常被选作礼物的选项之一。课程从我们佛罗伦萨的厨房直播，我们会把新鲜意面食材包寄到他们家门口，每人68欧元起。` },
+            { q: `可以加上一段留言吗？`, a: `可以——把文字发给我们，我们会印在礼券上。如果您希望它看起来像来自您而不是来自我们，请告诉我们，我们会把品牌标识处理得很低调。` },
+          ],
+          related: [
+            { title: `主厨餐桌`, href: `/zh/foluolunsa-yidali-mian-kecheng/`, desc: `最常被赠送的课程——三小时，四种形状，一顿悠长的午餐。€95。` },
+            { title: `双人意面课程`, href: `/zh/shuangren-yidali-mian-kecheng-foluolunsa/`, desc: `纪念日与婚礼礼物 — 每人€95。` },
+            { title: `在线直播课程`, href: `/zh/zaixian-yidali-mian-kecheng/`, desc: `送给不在意大利的人 — 食材包送到家，68欧元起。` },
+            { title: `家庭长桌体验`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `大场合的大礼物 — 整个厨房，680欧元起。` },
+          ],
+          ctaLabel: `申请礼券`,
+          emailSubject: `礼券申请`,
+          breadcrumbName: `赠送烹饪课程`,
+          service: {
+            name: `佛罗伦萨烹饪课程礼券`,
+            description: `佛罗伦萨奥特拉诺区手工意面课程礼券95欧元起、私人厨房包场680欧元起，以及含食材包寄送的在线直播课程68欧元起。通过邮件发送，不固定日期。`,
           },
         },
       },

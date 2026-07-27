@@ -2,8 +2,8 @@
 
 const de = {
   meta: {
-    homeTitle: 'Handmade Pasta Florence — Kochkurse & Pasta-Erlebnisse im Oltrarno',
-    homeDescription: 'Praktische Pasta-Kochkurse in Florenz, unterrichtet von zwei Chefköchen aus toskanischen Agriturismi. Max. 8 Gäste in unserer Küche im Oltrarno ab 95 €, Marktführungen und private Optionen, oder live online mit einem Zutaten-Kit ab 68 €.',
+    homeTitle: 'Kochkurs in Florenz — Frische Pasta mit zwei toskanischen Chefköchen | Handmade Pasta Florence',
+    homeDescription: 'Kochkurse in Florenz in kleinen Gruppen, ab der ersten Minute mit den Händen im Mehl. Rollen Sie frische Pasta mit zwei toskanischen Agriturismo-Küchenchefs in unserer Küche im Oltrarno ab 95 € — Markttour, privat und glutenfrei, oder live online mit Zutaten-Kit ab 68 €.',
     blogTitle: 'Florenz Pasta- & Food-Guides | Handmade Pasta Florence',
     blogDescription: 'Guides für frische Pasta und gutes Essen in Florenz, geschrieben von zwei toskanischen Agriturismo-Chefköchen — Nudelformen, wo man essen kann, glutenfreie Tipps und das Oltrarno-Viertel.',
   },
@@ -30,6 +30,8 @@ const de = {
     private: 'Private Events',
     online: 'Live Online',
     team: 'Teambuilding',
+    glutenFree: 'Glutenfreier Kurs',
+    forTwo: 'Kurs für Zwei',
     gift: 'Kurs verschenken',
     guides: 'Guides & Geschichten',
     faq: 'FAQ & Allergene',
@@ -54,8 +56,10 @@ const de = {
     titleL1: 'Mehl, Eier,',
     titleL2: 'und Ihre zwei',
     titleItal: 'Hände.',
+    titleKw: 'Kochkurse in Florenz, mit den Händen im Mehl, ab 95 €.',
+    imgAlt: 'Gäste bei einem Kochkurs in Florenz rollen frische Pasta in unserer Küche im Oltrarno',
     lede: 'Rollen Sie echte toskanische Pasta an der Seite zweier Agriturismo-Chefköche, in unserer sonnendurchfluteten Küche nahe der Piazza Santo Spirito oder live online mit einem Kit, das an Ihre Tür geliefert wird.',
-    ctaReserve: 'Tisch reservieren',
+    ctaReserve: 'Kochkurs buchen',
     ctaSee: 'Kurse ansehen',
     proofOpened: 'unsere Küche hat gerade eröffnet',
     proofHands: 'praktisch, dann essen Sie alles auf',
@@ -154,6 +158,7 @@ const de = {
     taughtIn: 'Gelehrt in',
     book: 'Diesen Kurs buchen →',
     back: 'zurück zur Form',
+    allShapes: 'Alle Pastaformen, erklärt',
     shapes: [
       { name: 'Pappardelle', region: 'Florenz · Toskana', alt: 'Breite Bänder frischer Eier-Pappardelle, handgeschnitten und mit Mehl bestäubt', blurb: 'Breite, samtige Bänder, benannt nach „pappare“, was so viel wie „verschlingen“ bedeutet.', history: 'Geboren in der toskanischen Landschaft, um reichhaltige Wildragùs von Wildschwein und Hase aufzunehmen. Die Breite ist der Punkt: Jeder Strang trägt einen Löffel Sauce.', teaches: 'Der Chef’s Table' },
       { name: 'Ravioli', region: 'Ganz Italien', alt: 'Reihen frisch gemachter quadratischer Ravioli mit handgekniffenen Rändern auf einem bemehlten Brett', blurb: 'Kleine Päckchen, zugekniffen um Ricotta, Spinat oder Kürbis.', history: "Erwähnt in den Briefen eines toskanischen Kaufmanns aus dem 14. Jahrhundert, waren Ravioli eine Möglichkeit, wertvollen Käse zu strecken. Sie gut zu versiegeln ist ein Handwerk: Luft ist der Feind.", teaches: 'Mercato & Mani' },
