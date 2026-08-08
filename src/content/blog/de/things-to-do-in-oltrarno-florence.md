@@ -3,7 +3,7 @@ title: 'Aktivitäten im Oltrarno: ein lokaler Guide für das linke Ufer von Flor
 description: 'Wie man einen Tag im Oltrarno verbringt — Santo Spirito, Palazzo Pitti und Boboli, Kunsthandwerker-Werkstätten, die Brancacci-Kapelle und wo der Abend wirklich stattfindet.'
 pubDate: 2026-07-08
 author: 'Endri Cerhozi'
-image: '/images/aperitivo.webp'
+image: '../../../assets/images/aperitivo.webp'
 imageAlt: 'Aperitivo-Stunde auf einer Piazza in Florenz auf der Oltrarno-Seite des Flusses'
 faqs:
   - q: "Was ist das Oltrarno?"

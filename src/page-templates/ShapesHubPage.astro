@@ -3,6 +3,7 @@
 // Deliberately NOT a second article about "tuscan pasta types" — that keyword
 // belongs to /blog/tuscan-pasta-shapes-guide/, which already ranks. See the
 // cannibalization note at the top of src/data/shapes.ts before retitling.
+import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
@@ -64,7 +65,7 @@ const faqSchema = {
 <Layout
   title={s.hubTitle}
   description={s.hubDescription}
-  image={s.spokes[0].image.src}
+  image={s.spokes[0].image.src.src}
   alternates={alternates}
 >
   <Header solid alternates={alternates} />
@@ -96,7 +97,7 @@ const faqSchema = {
             s.spokes.map((sp, i) => (
               <a class="sh-card" href={shapePath(locale, sp.slug)} data-reveal style={`--reveal-delay:${i * 60}ms`}>
                 <div class="sh-card__media">
-                  <img src={sp.image.src} alt={sp.image.alt} width={sp.image.w} height={sp.image.h} loading="lazy" decoding="async" />
+                  <Image src={sp.image.src} alt={sp.image.alt} width={sp.image.w} height={sp.image.h} loading="lazy" decoding="async" />
                 </div>
                 <div class="sh-card__body">
                   <h2>{sp.name}</h2>

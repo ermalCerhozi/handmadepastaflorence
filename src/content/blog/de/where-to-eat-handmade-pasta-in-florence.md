@@ -3,7 +3,7 @@ title: 'Die beste handgemachte Pasta in Florenz: Wo man sie isst — der Guide e
 description: 'Die ehrliche Meinung eines Pasta-Kochs zur besten Pasta in Florenz — wie man das Original auf einer Speisekarte erkennt, was man bestellen sollte (Pici, Pappardelle, Tortelli) und die Trattorien, die Ihr eines Abendessen wert sind.'
 pubDate: 2026-07-08
 author: 'Endri Cerhozi'
-image: '/images/plates.webp'
+image: '../../../assets/images/plates.webp'
 imageAlt: 'Teller mit frischer, handgemachter Pasta an einem toskanischen Tisch'
 faqs:
   - q: "Wo gibt es die beste Pasta in Florenz?"

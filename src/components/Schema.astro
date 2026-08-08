@@ -5,6 +5,8 @@
 // these for local SEO, confirm they are the real, registered business details
 // and add `geo` coordinates + `sameAs` social/GBP links — see
 // REMAINING-SEO-TASKS.md (items needing owner input).
+import { cookingClass, cookingClassGuests, aperitivo, weddingCake } from '../assets/images';
+
 const SITE = 'https://handmadepastaflorence.com';
 
 const localBusiness = {
@@ -21,7 +23,7 @@ const localBusiness = {
     { '@type': 'Person', name: 'Marsel', jobTitle: 'Head Chef' },
   ],
   url: SITE,
-  image: `${SITE}/images/cooking-class.jpg`,
+  image: `${SITE}${cookingClass.src}`,
   email: 'ciao@handmadepastaflorence.com',
   telephone: '+393445204379',
   priceRange: '€€',
@@ -59,28 +61,28 @@ const classes = [
     name: 'The Chef’s Table',
     desc: 'Three hands-on hours in our Oltrarno kitchen — four pasta shapes, ending in a long Tuscan lunch.',
     price: '95',
-    img: '/images/cooking_class_with_guests_in_picture.webp',
+    img: cookingClassGuests.src,
     url: '/pasta-making-class-florence/',
   },
   {
     name: 'Mercato & Mani',
     desc: 'Shop Sant’Ambrogio market at dawn with Endri or Marsel, then cook ravioli, a ragù and a seasonal dolce.',
     price: '145',
-    img: '/images/aperitivo.webp',
+    img: aperitivo.src,
     url: '/market-tour-cooking-class-florence/',
   },
   {
     name: 'The Family Long-Table',
     desc: 'Book the whole kitchen for a private celebration — birthdays, proposals, reunions.',
     price: '680',
-    img: '/images/wedding-cake-2.webp',
+    img: weddingCake.src,
     url: '/private-cooking-class-florence/',
   },
   {
     name: 'Live Online Pasta Class',
     desc: 'Cook live from anywhere with a fresh-pasta ingredient kit shipped to your door.',
     price: '68',
-    img: '/images/cooking-class.jpg',
+    img: cookingClass.src,
     url: '/online-pasta-making-class/',
   },
 ];
@@ -101,7 +103,10 @@ const products = classes.map((c) => ({
   },
 }));
 
-const isHome = Astro.url.pathname === '/' || Astro.url.pathname === '/it/';
+// All five locale homepages get the price-in-search Product schema — not just
+// en/it. Missed until 2026-08-08: fr/de/zh homepages were shipping zero
+// Product/Offer schema, so those locales had no rich-result price eligibility.
+const isHome = ['/', '/it/', '/fr/', '/de/', '/zh/'].includes(Astro.url.pathname);
 ---
 
 <script type="application/ld+json" set:html={JSON.stringify(localBusiness)} />

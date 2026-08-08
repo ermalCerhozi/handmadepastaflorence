@@ -3,7 +3,7 @@ title: 'Quanto costa un corso di pasta fresca a Firenze? (Guida 2026)'
 description: 'Intervalli di prezzo reali nel 2026 per i corsi di cucina a Firenze, cosa determina effettivamente il prezzo, cosa dovrebbe essere incluso, e le domande da fare prima di prenotare.'
 pubDate: 2026-07-08
 author: 'Endri Cerhozi'
-image: '/images/cooking_class_with_guests_in_picture.webp'
+image: '../../../assets/images/cooking_class_with_guests_in_picture.webp'
 imageAlt: 'Ospiti che preparano insieme la pasta fresca a un corso per piccoli gruppi a Firenze'
 ---
 

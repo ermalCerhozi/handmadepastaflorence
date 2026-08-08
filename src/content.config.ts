@@ -5,12 +5,12 @@ import { glob } from 'astro/loaders';
 // authority and links down to the class landing pages.
 const blog = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/blog' }),
-  schema: z.object({
+  schema: ({ image }) => z.object({
     title: z.string(),
     description: z.string(),
     pubDate: z.coerce.date(),
     author: z.string().default('Endri Cerhozi'),
-    image: z.string(),
+    image: image(),
     imageAlt: z.string(),
     // Optional FAQ block — rendered visibly and emitted as FAQPage JSON-LD to
     // target People-Also-Ask / featured-snippet queries the guide already ranks for.

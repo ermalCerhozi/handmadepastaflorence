@@ -3,7 +3,7 @@ title: 'Things to do in the Oltrarno: a local guide to Florence’s left bank'
 description: 'How to spend a day in the Oltrarno — Santo Spirito, Palazzo Pitti and Boboli, artisan workshops, the Brancacci Chapel, and where the evening actually happens.'
 pubDate: 2026-07-08
 author: 'Endri Cerhozi'
-image: '/images/aperitivo.webp'
+image: '../../assets/images/aperitivo.webp'
 imageAlt: 'Aperitivo hour in a Florence piazza on the Oltrarno side of the river'
 faqs:
   - q: "What is the Oltrarno?"

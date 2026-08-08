@@ -1,21 +1,24 @@
 ---
 // Full-screen hero. A looping pasta-tossing video sits behind a warm scrim;
 // a custom canvas "flour dust" drifts in shafts of light across the top.
+import { Image } from 'astro:assets';
 import { getLocaleFromUrl } from '../i18n/utils';
 import { useTranslations } from '../i18n/ui';
+import { cookingClass } from '../assets/images';
 const t = useTranslations(getLocaleFromUrl(Astro.url));
 ---
 
 <section class="hero" id="top">
   <!-- Background video (graceful fallback to gradient if it can't load) -->
   <div class="hero__bg" data-parallax="0.18">
-    <img
+    <Image
       class="hero__video"
-      src="/images/cooking-class.jpg"
+      src={cookingClass}
       alt={t.hero.imgAlt}
-      width="981"
-      height="1603"
+      width={981}
+      height={1603}
       fetchpriority="high"
+      loading="eager"
       decoding="async"
     />
     <div class="hero__scrim"></div>

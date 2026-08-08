@@ -4,6 +4,7 @@
 // this component renders the sections and emits the page-level JSON-LD
 // (Product or Service, BreadcrumbList, FAQPage). Sitewide LocalBusiness
 // schema still comes from Schema.astro via the layout.
+import { Image } from 'astro:assets';
 import { localizePath } from '../i18n/utils';
 import { useTranslations } from '../i18n/ui';
 import type { Locale } from '../i18n/config';
@@ -32,7 +33,7 @@ interface Props {
   heading: string;
   headingItal: string;
   lede: string;
-  image: { src: string; alt: string; w: number; h: number };
+  image: { src: ImageMetadata; alt: string; w: number; h: number };
   price: string;
   priceNote?: string;
   facts: Fact[];
@@ -51,6 +52,8 @@ interface Props {
   service?: { name: string; description: string };
   /** Rendering locale (passed by the landing route; falls back to the URL). */
   locale?: Locale;
+  /** Set by the route from the pageKey's landings.ts entry — see LandingPage.courseMode. */
+  courseMode?: 'Onsite' | 'Online';
 }
 
 const {
@@ -72,6 +75,7 @@ const {
   product,
   service,
   locale,
+  courseMode,
 } = Astro.props;
 
 const lang = (locale || (Astro.currentLocale as Locale) || 'en') as Locale;
@@ -85,7 +89,7 @@ const productSchema = product && {
   '@type': 'Product',
   name: product.name,
   description: product.description,
-  image: `${SITE}${image.src}`,
+  image: `${SITE}${image.src.src}`,
   brand: { '@type': 'Brand', name: 'Handmade Pasta Florence' },
   offers: {
     '@type': 'Offer',
@@ -93,6 +97,38 @@ const productSchema = product && {
     priceCurrency: 'EUR',
     availability: 'https://schema.org/InStock',
     url: canonical,
+  },
+};
+
+// Course schema, additive to Product — separate rich-result surface for the
+// same offering. Derived from `product` (no separate content to maintain);
+// only emitted where courseMode is set (see LandingPage.courseMode).
+const courseSchema = product && courseMode && {
+  '@context': 'https://schema.org',
+  '@type': 'Course',
+  name: product.name,
+  description: product.description,
+  image: `${SITE}${image.src.src}`,
+  provider: { '@type': 'Organization', name: 'Handmade Pasta Florence', sameAs: SITE },
+  hasCourseInstance: {
+    '@type': 'CourseInstance',
+    courseMode,
+    ...(courseMode === 'Onsite'
+      ? {
+          location: {
+            '@type': 'Place',
+            name: 'Handmade Pasta Florence',
+            address: { '@type': 'PostalAddress', addressLocality: 'Firenze', addressCountry: 'IT' },
+          },
+        }
+      : {}),
+    offers: {
+      '@type': 'Offer',
+      price: product.price,
+      priceCurrency: 'EUR',
+      availability: 'https://schema.org/InStock',
+      url: canonical,
+    },
   },
 };
 
@@ -160,7 +196,7 @@ const faqSchema = {
       </div>
     </div>
     <div class="lp-hero__media" data-reveal style="--reveal-delay:120ms">
-      <img src={image.src} alt={image.alt} width={image.w} height={image.h} decoding="async" />
+      <Image src={image.src} alt={image.alt} width={image.w} height={image.h} loading="eager" decoding="async" />
     </div>
   </div>
 </section>
@@ -243,6 +279,7 @@ const faqSchema = {
 </section>
 
 {productSchema && <script is:inline type="application/ld+json" set:html={JSON.stringify(productSchema)} />}
+{courseSchema && <script is:inline type="application/ld+json" set:html={JSON.stringify(courseSchema)} />}
 {serviceSchema && <script is:inline type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />}
 <script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 <script is:inline type="application/ld+json" set:html={JSON.stringify(faqSchema)} />

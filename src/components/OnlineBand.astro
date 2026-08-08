@@ -1,8 +1,10 @@
 ---
 // Online is a small secondary offering — a single slim band, not a headline act.
+import { Image } from 'astro:assets';
 import { getLocaleFromUrl } from '../i18n/utils';
 import { useTranslations } from '../i18n/ui';
 import { landingPath } from '../data/landings';
+import { cookingClass } from '../assets/images';
 const lang = getLocaleFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
@@ -11,7 +13,7 @@ const t = useTranslations(lang);
   <div class="shell ob__inner" data-reveal>
     <div class="ob__visual">
       <span class="ob__live"><i></i> {t.online.live}</span>
-      <img class="ob__img" src="/images/cooking-class.jpg" alt="Our Florentine kitchen, where we stream live online classes" width="981" height="1603" loading="lazy" decoding="async" />
+      <Image class="ob__img" src={cookingClass} alt="Our Florentine kitchen, where we stream live online classes" width={981} height={1603} loading="lazy" decoding="async" />
     </div>
     <div class="ob__text">
       <p class="eyebrow ob__eyebrow">{t.online.eyebrow}</p>

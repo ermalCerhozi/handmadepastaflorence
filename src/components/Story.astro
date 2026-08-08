@@ -1,14 +1,21 @@
 ---
+import { getImage } from 'astro:assets';
 import { getLocaleFromUrl } from '../i18n/utils';
 import { useTranslations } from '../i18n/ui';
+import { cuttingPizza, plates } from '../assets/images';
 const t = useTranslations(getLocaleFromUrl(Astro.url));
+
+// CSS background-image (not <img>), so <Image> doesn't apply — resolve the
+// optimized URL via getImage() and feed it in through a CSS custom property.
+const photoA = await getImage({ src: cuttingPizza, width: 800 });
+const photoB = await getImage({ src: plates, width: 800 });
 ---
 
 <section class="story" id="story">
   <div class="shell story__grid">
     <div class="story__media" data-reveal>
-      <div class="story__photo story__photo--a"></div>
-      <div class="story__photo story__photo--b"></div>
+      <div class="story__photo story__photo--a" style={`--photo-a:url(${photoA.src})`}></div>
+      <div class="story__photo story__photo--b" style={`--photo-b:url(${photoB.src})`}></div>
       <span class="story__stamp">est.<br /><strong>2026</strong></span>
     </div>
     <div class="story__text" data-reveal style="--reveal-delay:120ms">
@@ -38,11 +45,11 @@ const t = useTranslations(getLocaleFromUrl(Astro.url));
   .story__photo { position: absolute; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); }
   .story__photo--a {
     inset: 0 18% 22% 0;
-    background: var(--flour-shadow) url('/images/cutting-pizza.webp') center / cover;
+    background: var(--flour-shadow) var(--photo-a) center / cover;
   }
   .story__photo--b {
     inset: 30% 0 0 26%;
-    background: var(--olive) url('/images/plates.webp') center / cover;
+    background: var(--olive) var(--photo-b) center / cover;
     border: 6px solid var(--flour);
   }
   .story__photo::after {

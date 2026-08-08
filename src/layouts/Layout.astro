@@ -1,5 +1,4 @@
 ---
-import { ClientRouter } from 'astro:transitions';
 import Schema from '../components/Schema.astro';
 import '../styles/global.css';
 import { getLocaleFromUrl, getAlternates, type Alternate } from '../i18n/utils';
@@ -16,7 +15,7 @@ interface Props {
 const {
   title = 'Handmade Pasta Florence — Cooking Classes & Pasta Experiences in the Oltrarno',
   description = 'Hands-on pasta making classes in Florence taught by two Tuscan agriturismo head chefs. Max 8 guests in our Oltrarno kitchen from €95, market-tour and private options, or live online with an ingredient kit from €68.',
-  image = '/images/og-share.jpg',
+  image = '/images/og-share.webp',
   alternates,
 } = Astro.props;
 
@@ -70,7 +69,6 @@ const dir = languages[lang].dir;
     <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <Schema />
-    <ClientRouter />
     <script is:inline define:vars={{ isRoot: Astro.url.pathname === '/' }}>
       if (isRoot) {
         try {

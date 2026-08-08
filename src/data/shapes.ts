@@ -16,6 +16,7 @@
 // files; until then internal links fall back to the English hub, which is the
 // same rollout behaviour as localizedHref() in src/i18n/utils.ts.
 import type { Locale } from '../i18n/config';
+import * as img from '../assets/images';
 
 export interface ShapeFact {
   label: string;
@@ -41,7 +42,7 @@ export interface ShapeSpoke {
   tagline: string;
   title: string;
   description: string;
-  image: { src: string; alt: string; w: number; h: number };
+  image: { src: ImageMetadata; alt: string; w: number; h: number };
   /** Direct answer, first paragraph — the featured-snippet target. */
   answer: string;
   facts: ShapeFact[];
@@ -157,7 +158,7 @@ const en: ShapesLocale = {
       description:
         'Pici is a thick, hand-rolled Tuscan pasta made from flour and water with no egg. A Florence pasta chef on where it comes from, how to roll it, and the four sauces it belongs with.',
       image: {
-        src: '/images/shape-pici.jpg',
+        src: img.shapePici,
         alt: 'Thick hand-rolled pici pasta strands dusted with flour on a wooden board',
         w: 1000,
         h: 625,
@@ -224,7 +225,7 @@ const en: ShapesLocale = {
       description:
         'Pappardelle are wide egg-dough ribbons, 2–3 cm across, made for heavy game sauces like wild boar and hare. A Florence pasta chef on the cut, the dough and the classic pairings.',
       image: {
-        src: '/images/shape-pappardelle.jpg',
+        src: img.shapePappardelle,
         alt: 'Wide pappardelle ribbons of fresh egg pasta on a floured wooden board',
         w: 1000,
         h: 625,
@@ -291,7 +292,7 @@ const en: ShapesLocale = {
       description:
         'Tagliatelle are fresh egg-dough ribbons cut 6–8 mm wide, the natural partner for a meat ragù. A Florence pasta chef on the cut, how it differs from fettuccine and pappardelle, and how to serve it.',
       image: {
-        src: '/images/shape-tagliatelle.jpg',
+        src: img.shapeTagliatelle,
         alt: 'Nests of fresh tagliatelle ribbons resting on a floured board',
         w: 1000,
         h: 625,
@@ -358,7 +359,7 @@ const en: ShapesLocale = {
       description:
         'Tortelli are filled fresh pasta parcels. In Tuscany the classic filling is potato, from the Mugello — a Florence pasta chef on the fillings, the folding, and why the sauce should stay simple.',
       image: {
-        src: '/images/shape-tortelli.jpg',
+        src: img.shapeTortelli,
         alt: 'Hand-folded tortelli filled parcels arranged on a floured surface',
         w: 1000,
         h: 625,
@@ -487,7 +488,7 @@ const it: ShapesLocale = {
       description:
         'I pici sono una pasta toscana spessa e tirata a mano, fatta di acqua e farina senza uovo. Uno chef di Firenze racconta da dove vengono, come si appiciano e i quattro sughi a cui appartengono.',
       image: {
-        src: '/images/shape-pici.jpg',
+        src: img.shapePici,
         alt: 'Pici spessi tirati a mano e infarinati su un tagliere di legno',
         w: 1000,
         h: 625,
@@ -554,7 +555,7 @@ const it: ShapesLocale = {
       description:
         'Le pappardelle sono larghi nastri di sfoglia all\'uovo, 2–3 cm, fatti per i sughi di selvaggina come cinghiale e lepre. Uno chef di Firenze racconta il taglio, l\'impasto e gli abbinamenti classici.',
       image: {
-        src: '/images/shape-pappardelle.jpg',
+        src: img.shapePappardelle,
         alt: 'Larghe pappardelle di pasta fresca all\'uovo su un tagliere infarinato',
         w: 1000,
         h: 625,
@@ -621,7 +622,7 @@ const it: ShapesLocale = {
       description:
         'Le tagliatelle sono nastri di sfoglia fresca all\'uovo tagliati a 6–8 mm, il compagno naturale di un ragù di carne. Uno chef di Firenze racconta il taglio, la differenza con fettuccine e pappardelle e come servirle.',
       image: {
-        src: '/images/shape-tagliatelle.jpg',
+        src: img.shapeTagliatelle,
         alt: 'Nidi di tagliatelle fresche appoggiati su un tagliere infarinato',
         w: 1000,
         h: 625,
@@ -688,7 +689,7 @@ const it: ShapesLocale = {
       description:
         'I tortelli sono pasta fresca ripiena. In Toscana il ripieno classico è di patate, dal Mugello — uno chef di Firenze racconta i ripieni, la chiusura e perché il condimento deve restare semplice.',
       image: {
-        src: '/images/shape-tortelli.jpg',
+        src: img.shapeTortelli,
         alt: 'Tortelli ripieni chiusi a mano disposti su un piano infarinato',
         w: 1000,
         h: 625,

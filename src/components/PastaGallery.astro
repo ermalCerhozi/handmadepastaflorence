@@ -1,18 +1,13 @@
 ---
+import { Image } from 'astro:assets';
 import { getLocaleFromUrl } from '../i18n/utils';
 import { useTranslations } from '../i18n/ui';
 import { shapesHubPath } from '../data/shapes';
+import { shapePappardelle, shapeRavioli, shapePici, shapeTortelli, shapeTagliatelle } from '../assets/images';
 const lang = getLocaleFromUrl(Astro.url);
 const t = useTranslations(lang);
 // Image per shape (non-translatable), zipped with t.gallery.shapes by index.
-const shapeImgs = [
-  '/images/shape-pappardelle.jpg',
-  '/images/shape-ravioli.jpg',
-  '/images/shape-pici.jpg',
-  '/images/shape-tortelli.jpg',
-  '/images/shape-tagliatelle.jpg',
-];
-
+const shapeImgs = [shapePappardelle, shapeRavioli, shapePici, shapeTortelli, shapeTagliatelle];
 ---
 
 <section class="gal" id="gallery">
@@ -29,7 +24,7 @@ const shapeImgs = [
       <article class="pasta" data-pasta style={`--c:${i}`}>
         <button class="pasta__face" data-pasta-toggle aria-expanded="false">
           <span class="pasta__disc">
-            <img class="pasta__img" src={shapeImgs[i]} alt={s.alt} width="1000" height="625" loading="lazy" decoding="async" />
+            <Image class="pasta__img" src={shapeImgs[i]} alt={s.alt} width={1000} height={625} loading="lazy" decoding="async" />
           </span>
           <span class="pasta__no">{String(i + 1).padStart(2, '0')}</span>
           <h3 class="pasta__name">{s.name}</h3>

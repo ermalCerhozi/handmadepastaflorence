@@ -3,7 +3,7 @@ title: 'Combien coûte un cours de fabrication de pâtes à Florence ? (Guide 20
 description: 'Les vraies fourchettes de prix de 2026 pour les cours de cuisine à Florence, ce qui fait vraiment varier le prix, ce qui devrait être inclus, et les questions à poser avant de réserver.'
 pubDate: 2026-07-08
 author: 'Endri Cerhozi'
-image: '/images/cooking_class_with_guests_in_picture.webp'
+image: '../../../assets/images/cooking_class_with_guests_in_picture.webp'
 imageAlt: 'Des invités préparent ensemble des pâtes fraîches lors d’un cours en petit groupe à Florence'
 ---
 

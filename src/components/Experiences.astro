@@ -1,16 +1,17 @@
 ---
+import { Image } from 'astro:assets';
 import { getLocaleFromUrl } from '../i18n/utils';
 import { useTranslations } from '../i18n/ui';
 import { landingPath } from '../data/landings';
+import { cookingClassGuests, aperitivo, weddingCake } from '../assets/images';
 const lang = getLocaleFromUrl(Astro.url);
 const t = useTranslations(lang);
 // Non-translatable per-card data (image + landing key), zipped with t.exp.cards.
 const cardMeta = [
-  { img: '/images/cooking_class_with_guests_in_picture.webp', w: 1050, h: 1400, key: 'pasta-making' },
-  { img: '/images/aperitivo.webp', w: 1080, h: 1440, key: 'market-tour' },
-  { img: '/images/wedding-cake-2.webp', w: 1080, h: 1433, key: 'private' },
+  { img: cookingClassGuests, w: 1050, h: 1400, key: 'pasta-making' },
+  { img: aperitivo, w: 1080, h: 1440, key: 'market-tour' },
+  { img: weddingCake, w: 1080, h: 1433, key: 'private' },
 ];
-
 ---
 
 <section class="exp" id="experiences">
@@ -32,7 +33,7 @@ const cardMeta = [
         return (
         <article class="card" data-reveal style={`--reveal-delay:${i * 90}ms`}>
           <div class="card__media">
-            <img class="card__img" src={m.img} alt={c.alt} width={m.w} height={m.h} loading="lazy" decoding="async" />
+            <Image class="card__img" src={m.img} alt={c.alt} width={m.w} height={m.h} loading="lazy" decoding="async" />
             <span class="card__tag">{c.tag}</span>
             <span class="card__price">{c.price}</span>
           </div>

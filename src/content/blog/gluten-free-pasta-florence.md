@@ -3,7 +3,7 @@ title: 'Gluten-free in Florence: how to eat (and make) fresh pasta safely'
 description: 'Why Italy is one of the easiest countries for celiac travellers, the phrases and habits that keep you safe in Florence, and where gluten-free fresh pasta fits in.'
 pubDate: 2026-07-08
 author: 'Endri Cerhozi'
-image: '/images/shape-tagliatelle.jpg'
+image: '../../assets/images/shape-tagliatelle.webp'
 imageAlt: 'Fresh tagliatelle ribbons dusted with flour on a wooden board'
 ---
 
