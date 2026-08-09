@@ -15,6 +15,7 @@ const de = {
     business: 'Für Unternehmen',
     guides: 'Guides',
     book: 'Kurs buchen',
+    menu: 'Menü',
   },
 
   footer: {

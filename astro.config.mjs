@@ -1,13 +1,10 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
-import sitemap from '@astrojs/sitemap';
 
 // https://astro.build
 export default defineConfig({
   site: 'https://handmadepastaflorence.com',
-  // Keep this list in sync with `languages` in src/i18n/config.ts — the sitemap
-  // integration only emits hreflang alternates for locales declared here, so a
-  // short list silently drops fr/de/zh from the sitemap's alternate annotations.
+  // Keep this list in sync with `languages` in src/i18n/config.ts.
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'it', 'fr', 'de', 'zh'],
@@ -15,20 +12,13 @@ export default defineConfig({
       prefixDefaultLocale: false
     }
   },
-  integrations: [
-    sitemap({
-      i18n: {
-        defaultLocale: 'en',
-        locales: {
-          en: 'en',
-          it: 'it',
-          fr: 'fr',
-          de: 'de',
-          zh: 'zh-CN',
-        },
-      },
-    }),
-  ],
+  // Sitemap is hand-built at src/pages/sitemap-index.xml.ts + sitemap-0.xml.ts,
+  // not @astrojs/sitemap: that integration's `i18n` option can only pair pages
+  // whose URL pathname is identical across locales, so it silently emitted zero
+  // hreflang alternates for every page with a per-locale translated slug (the
+  // money pages + pasta-shapes hub/spokes — 50 of 85 URLs). The hand-built
+  // version reuses the same data sources as each page's own <head> hreflang
+  // tags, so the two can't drift apart. See src/utils/sitemap-entries.ts.
   build: {
     inlineStylesheets: 'always',
   },

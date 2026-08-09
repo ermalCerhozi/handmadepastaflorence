@@ -87,6 +87,12 @@ const classes = [
   },
 ];
 
+// Rolling year-end validity so Offer prices don't read as stale to Google's
+// price-freshness checks. Bump this to the next year-end whenever prices are
+// revisited (there's no cheaper way to keep it accurate than a manual bump —
+// it only needs to happen roughly once a year).
+const PRICE_VALID_UNTIL = '2026-12-31';
+
 const products = classes.map((c) => ({
   '@context': 'https://schema.org',
   '@type': 'Product',
@@ -99,6 +105,7 @@ const products = classes.map((c) => ({
     price: c.price,
     priceCurrency: 'EUR',
     availability: 'https://schema.org/InStock',
+    priceValidUntil: PRICE_VALID_UNTIL,
     url: `${SITE}${c.url}`,
   },
 }));

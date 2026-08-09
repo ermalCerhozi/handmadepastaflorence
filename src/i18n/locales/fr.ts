@@ -13,6 +13,7 @@ const fr = {
     business: 'Pour les Pros',
     guides: 'Guides',
     book: 'Réserver',
+    menu: 'Menu',
   },
 
   footer: {

@@ -18,6 +18,7 @@ const it: Dict = {
     business: `Per le Aziende`,
     guides: `Guide`,
     book: `Prenota un corso`,
+    menu: `Menu`,
   },
 
   footer: {

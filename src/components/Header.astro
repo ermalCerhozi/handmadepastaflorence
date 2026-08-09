@@ -32,7 +32,7 @@ const langLinks = alternates ?? getAlternates(Astro.url.pathname);
       </span>
     </a>
 
-    <nav class="hdr__nav" aria-label="Primary">
+    <nav class="hdr__nav" aria-label="Primary" id="primary-nav">
       <a href={`${home}#experiences`}>{t.nav.classes}</a>
       {/* Points at the shapes hub, not the homepage #gallery anchor: a sitewide
           link is the cheapest authority a hub can get. */}
@@ -40,14 +40,31 @@ const langLinks = alternates ?? getAlternates(Astro.url.pathname);
       <a href={`${home}#story`}>{t.nav.story}</a>
       <a href={`${home}#business`}>{t.nav.business}</a>
       <a href={localizePath('/blog/', lang)}>{t.nav.guides}</a>
+      <button class="hdr__cta hdr__cta--nav" data-open-booking data-cta="header-mobile">
+        {t.nav.book}
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
     </nav>
 
     <div class="hdr__end">
       <LanguageSwitcher langLinks={langLinks} />
 
-      <button class="hdr__cta" data-open-booking data-cta="header">
+      <button class="hdr__cta hdr__cta--desktop" data-open-booking data-cta="header">
         {t.nav.book}
         <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+
+      <button
+        class="hdr__burger"
+        type="button"
+        data-nav-toggle
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        aria-label={t.nav.menu}
+      >
+        <span class="hdr__burger-bar" aria-hidden="true"></span>
+        <span class="hdr__burger-bar" aria-hidden="true"></span>
+        <span class="hdr__burger-bar" aria-hidden="true"></span>
       </button>
     </div>
   </div>
@@ -55,11 +72,43 @@ const langLinks = alternates ?? getAlternates(Astro.url.pathname);
 
 <script>
   const setupHeader = () => {
-    const h = document.querySelector('[data-header]');
+    const h = document.querySelector<HTMLElement>('[data-header]');
     if (!h) return;
+
+    // Always start closed on a fresh render / view-transition swap.
+    h.classList.remove('is-nav-open');
+
     const onScroll = () => h.classList.toggle('is-stuck', window.scrollY > 40);
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
+
+    const toggle = h.querySelector<HTMLButtonElement>('[data-nav-toggle]');
+    const nav = h.querySelector<HTMLElement>('#primary-nav');
+    if (!toggle || !nav) return;
+
+    const setOpen = (open: boolean) => {
+      h.classList.toggle('is-nav-open', open);
+      toggle.setAttribute('aria-expanded', String(open));
+      document.body.style.overflow = open ? 'hidden' : '';
+    };
+
+    toggle.addEventListener('click', () => setOpen(!h.classList.contains('is-nav-open')));
+
+    // Tapping a link/CTA inside the panel should close it (the CTA also opens
+    // the booking drawer, which manages its own body-scroll-lock separately).
+    nav.querySelectorAll('a, button').forEach((el) =>
+      el.addEventListener('click', () => setOpen(false)));
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && h.classList.contains('is-nav-open')) setOpen(false);
+    });
+
+    // Desktop breakpoint: make sure resizing past 900px never leaves the
+    // mobile panel state (and its scroll-lock) stuck open.
+    const mq = window.matchMedia('(min-width: 900px)');
+    const onBreakpoint = (e: MediaQueryList | MediaQueryListEvent) => { if (e.matches) setOpen(false); };
+    mq.addEventListener('change', onBreakpoint);
+    onBreakpoint(mq);
   };
   setupHeader();
   document.addEventListener('astro:after-swap', setupHeader);
@@ -74,7 +123,8 @@ const langLinks = alternates ?? getAlternates(Astro.url.pathname);
     color: var(--flour);
   }
   .hdr.is-solid,
-  .hdr.is-stuck {
+  .hdr.is-stuck,
+  .hdr.is-nav-open {
     background: rgba(249, 246, 240, 0.86);
     backdrop-filter: blur(14px) saturate(1.2);
     box-shadow: 0 1px 0 var(--paper-line), var(--shadow-sm);
@@ -95,15 +145,31 @@ const langLinks = alternates ?? getAlternates(Astro.url.pathname);
   .hdr__name strong { font-weight: 800; }
   .hdr__name em { font-style: italic; font-weight: 500; opacity: 0.85; }
 
-  .hdr__nav { display: none; gap: clamp(1.2rem, 2.5vw, 2.4rem); font-size: var(--step--1); font-weight: 600; }
-  .hdr__nav a { position: relative; padding-block: 0.3rem; letter-spacing: 0.02em; }
+  .hdr__nav {
+    /* Mobile: a full-width dropdown panel, closed by default (collapsed to
+       nothing rather than `display:none` so `astro:after-swap` re-renders
+       don't need JS to run before the panel is even inspectable). */
+    display: none;
+    position: absolute; top: 100%; left: 0; right: 0;
+    flex-direction: column; gap: 0;
+    padding: 0.4rem var(--gutter) 1.4rem;
+    background: var(--flour);
+    border-top: 1px solid var(--paper-line);
+    box-shadow: var(--shadow-md);
+    font-size: var(--step-0); font-weight: 600;
+  }
+  .hdr.is-nav-open .hdr__nav { display: flex; }
+  .hdr__nav a {
+    position: relative; padding-block: 0.85rem; letter-spacing: 0.02em;
+    color: var(--olive); border-bottom: 1px solid var(--paper-line);
+  }
   .hdr__nav a::after {
-    content: ''; position: absolute; left: 0; right: 100%; bottom: 0; height: 2px;
+    content: ''; position: absolute; left: 0; right: 100%; bottom: -1px; height: 2px;
     background: var(--terracotta); transition: right 0.4s var(--ease);
   }
   .hdr__nav a:hover::after { right: 0; }
 
-  .hdr__end { display: flex; align-items: center; gap: 0.9rem; }
+  .hdr__end { display: flex; align-items: center; gap: 0.6rem; }
 
   .hdr__cta {
     display: none; align-items: center; gap: 0.5rem;
@@ -117,8 +183,35 @@ const langLinks = alternates ?? getAlternates(Astro.url.pathname);
   .hdr__cta:hover { box-shadow: 0 14px 30px -10px rgba(240, 180, 0, 0.9); }
   .hdr__cta:hover svg { transform: translateX(4px); }
 
+  /* The nav panel carries its own copy of the CTA on mobile (both share
+     `data-open-booking`, so the booking-drawer script wires up either one
+     automatically); the header-bar CTA only appears at the desktop breakpoint. */
+  .hdr__cta--nav { width: 100%; justify-content: center; margin-top: 0.9rem; }
+  .hdr__cta--desktop { display: none; }
+
+  .hdr__burger {
+    display: inline-flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 5px; width: 40px; height: 40px; padding: 0; border-radius: 8px; flex-shrink: 0;
+    transition: background 0.3s var(--ease);
+  }
+  .hdr__burger:hover { background: rgba(0, 0, 0, 0.06); }
+  .hdr__burger-bar {
+    display: block; width: 20px; height: 2px; background: currentColor; border-radius: 2px;
+    transition: transform 0.3s var(--ease), opacity 0.3s var(--ease);
+  }
+  .hdr.is-nav-open .hdr__burger-bar:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .hdr.is-nav-open .hdr__burger-bar:nth-child(2) { opacity: 0; }
+  .hdr.is-nav-open .hdr__burger-bar:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
   @media (min-width: 900px) {
-    .hdr__nav { display: flex; }
-    .hdr__cta { display: inline-flex; }
+    .hdr__nav {
+      display: flex; position: static; flex-direction: row; align-items: center;
+      gap: clamp(1.2rem, 2.5vw, 2.4rem); padding: 0; background: none; border: none; box-shadow: none;
+      font-size: var(--step--1);
+    }
+    .hdr__nav a { padding-block: 0.3rem; border-bottom: none; color: inherit; }
+    .hdr__cta--nav { display: none; }
+    .hdr__cta--desktop { display: inline-flex; }
+    .hdr__burger { display: none; }
   }
 </style>

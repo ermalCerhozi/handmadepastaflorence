@@ -42,6 +42,19 @@ const dir = languages[lang].dir;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--
+      Preload the two latin-subset variable-font files virtually every visitor
+      needs (Playfair Display for headings, Hanken Grotesk for body/UI text).
+      CSS is fully inlined (astro.config.mjs build.inlineStylesheets), so the
+      browser can't discover these @font-face URLs until it's parsed the
+      inlined <style> block — preloading lets the font fetch start immediately
+      instead, shrinking the font-display:swap fallback window that's the
+      most plausible CLS source on the large serif H1.
+      Filenames are content-hashed by the build; if a font/version bump ever
+      changes them, `ls dist/_astro | grep latin-wght-normal` gives the new names.
+    -->
+    <link rel="preload" as="font" type="font/woff2" href="/_astro/playfair-display-latin-wght-normal.BOwq7MWX.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/_astro/hanken-grotesk-latin-wght-normal.CaVRRdDk.woff2" crossorigin />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <meta name="description" content={description} />
@@ -69,6 +82,23 @@ const dir = languages[lang].dir;
     <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <Schema />
+    {/*
+      Locale redirect: unavoidably client-side on this host. The site is a
+      fully static build (`output: 'static'`, no SSR adapter) served from a
+      plain nginx VPS with no edge-middleware layer, so there is no
+      server-side hook available to redirect before the homepage's HTML is
+      sent — that would require either an Astro SSR adapter (a real
+      architecture change) or nginx-level logic in config that lives outside
+      this repo. Given that constraint, this is already placed as early as
+      possible: it's the first `<script>` in `<head>`, after only
+      non-blocking `<meta>`/`<link>` tags (no earlier tag triggers a
+      render-blocking or bandwidth-heavy fetch), so it fires before the page
+      has committed to painting anything. The unavoidable cost is a second
+      full HTML fetch for it/fr/de/zh browser-language visitors on `/`
+      specifically — see the performance audit (2026-08-08/09) for the
+      measured impact. Revisit if the site ever moves to a host with edge
+      middleware (Cloudflare Workers, Vercel Edge Functions, etc.).
+    */}
     <script is:inline define:vars={{ isRoot: Astro.url.pathname === '/' }}>
       if (isRoot) {
         try {

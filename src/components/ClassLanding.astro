@@ -54,6 +54,8 @@ interface Props {
   locale?: Locale;
   /** Set by the route from the pageKey's landings.ts entry — see LandingPage.courseMode. */
   courseMode?: 'Onsite' | 'Online';
+  /** ISO 8601 duration, from LandingPage.courseDuration — omitted where the copy doesn't state a fixed length. */
+  courseDuration?: string;
 }
 
 const {
@@ -76,6 +78,7 @@ const {
   service,
   locale,
   courseMode,
+  courseDuration,
 } = Astro.props;
 
 const lang = (locale || (Astro.currentLocale as Locale) || 'en') as Locale;
@@ -83,6 +86,9 @@ const t = useTranslations(lang);
 
 const SITE = 'https://handmadepastaflorence.com';
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
+
+// Rolling year-end validity, same policy as the homepage Offers in Schema.astro.
+const PRICE_VALID_UNTIL = '2026-12-31';
 
 const productSchema = product && {
   '@context': 'https://schema.org',
@@ -96,6 +102,7 @@ const productSchema = product && {
     price: product.price,
     priceCurrency: 'EUR',
     availability: 'https://schema.org/InStock',
+    priceValidUntil: PRICE_VALID_UNTIL,
     url: canonical,
   },
 };
@@ -113,6 +120,7 @@ const courseSchema = product && courseMode && {
   hasCourseInstance: {
     '@type': 'CourseInstance',
     courseMode,
+    ...(courseDuration ? { duration: courseDuration } : {}),
     ...(courseMode === 'Onsite'
       ? {
           location: {
@@ -127,6 +135,7 @@ const courseSchema = product && courseMode && {
       price: product.price,
       priceCurrency: 'EUR',
       availability: 'https://schema.org/InStock',
+      priceValidUntil: PRICE_VALID_UNTIL,
       url: canonical,
     },
   },

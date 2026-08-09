@@ -195,17 +195,14 @@ generated). Watch indexation + queries. This is how you'll measure everything el
 There is **none** today. Add Plausible, Fathom, or Umami (GDPR-friendly, no cookie banner
 needed). Drop the snippet into `src/layouts/Layout.astro` `<head>`.
 
-### R8. Confirm host + security headers
-I added `public/_headers` (Netlify / Cloudflare Pages format) with safe security headers and
-asset caching. **If you deploy on Vercel**, that file is ignored — replicate it in `vercel.json`:
-```json
-{ "headers": [{ "source": "/(.*)", "headers": [
-  { "key": "X-Content-Type-Options", "value": "nosniff" },
-  { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-  { "key": "Strict-Transport-Security", "value": "max-age=31536000" }
-]}]}
-```
-Also confirm on the live host: HTTP→HTTPS redirect and a single www / non-www canonical host.
+### R8. Confirm host + security headers — ✅ resolved 2026-08-09
+The live host turned out to be neither Vercel nor Netlify/Cloudflare Pages — it's a custom
+nginx VPS, and the real response headers already exceed what `public/_headers`/`vercel.json`
+described (full CSP, `X-Frame-Options`, `Permissions-Policy`, and a 2-year preloaded HSTS vs.
+the 1-year non-preloaded value those files had). Since neither file was wired into the actual
+deployment and both were actively misleading about what's live, they've been deleted rather
+than reconciled — the real header config lives in nginx config outside this repo. HTTP→HTTPS
+and host canonicalization were also confirmed already correct (single 301 hop, apex canonical).
 
 ---
 

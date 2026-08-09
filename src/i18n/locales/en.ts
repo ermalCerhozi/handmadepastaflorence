@@ -24,6 +24,7 @@ const en = {
     business: 'For Business',
     guides: 'Guides',
     book: 'Book a class',
+    menu: 'Menu',
   },
 
   footer: {

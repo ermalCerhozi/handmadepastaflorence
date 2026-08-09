@@ -13,6 +13,7 @@ const zh = {
     business: '企业合作',
     guides: '美食指南',
     book: '预订课程',
+    menu: '菜单',
   },
 
   footer: {

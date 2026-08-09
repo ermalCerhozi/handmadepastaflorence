@@ -37,13 +37,24 @@ const breadcrumbSchema = {
   ],
 };
 
+// The pasta-shapes hub + all four spokes shipped together in the 2026-07-27
+// architecture pass (see REMAINING-SEO-TASKS.md) — there's no per-spoke date
+// tracked in the data, so this is the real, documented ship date rather than
+// a fabricated "today" timestamp.
+const SHAPES_SHIP_DATE = '2026-07-27T00:00:00.000Z';
+
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: spoke.title.split(' | ')[0],
   description: spoke.description,
   image: `${SITE}${spoke.image.src.src}`,
-  author: { '@id': `${SITE}/#business` },
+  datePublished: SHAPES_SHIP_DATE,
+  dateModified: SHAPES_SHIP_DATE,
+  // Named Person, matching the pattern BlogPostPage.astro already uses
+  // correctly — this content is editorial (chef-voice "what is X pasta")
+  // just like the blog, not a business-authored notice.
+  author: { '@type': 'Person', name: 'Endri Cerhozi', jobTitle: 'Head Chef', sameAs: 'https://endricerhozi.com' },
   publisher: { '@id': `${SITE}/#business` },
   mainEntityOfPage: canonical,
 };

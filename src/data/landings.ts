@@ -46,6 +46,13 @@ export interface LandingPage {
    * ClassLanding.astro, derived from each locale's existing `product` field.
    */
   courseMode?: 'Onsite' | 'Online';
+  /**
+   * ISO 8601 duration for the Course JSON-LD's CourseInstance, only set where
+   * the copy states a fixed length (the "Length" fact below) — left
+   * undefined for pages like `private`/`online` that are explicitly flexible
+   * rather than inventing a number that isn't in the copy.
+   */
+  courseDuration?: string;
   locales: Partial<Record<Locale, LandingLocale>>;
 }
 
@@ -61,6 +68,7 @@ export const landings: Record<string, LandingPage> = {
   'pasta-making': {
     floatingCta: true,
     courseMode: 'Onsite',
+    courseDuration: 'PT3H',
     locales: {
       en: {
         slug: 'pasta-making-class-florence',
@@ -71,7 +79,7 @@ export const landings: Record<string, LandingPage> = {
           heading: `A pasta making class in Florence,`,
           headingItal: `around one table.`,
           lede: `Three hands-on hours in our Oltrarno kitchen. You’ll mix, knead, roll and fold four classic pasta shapes with a chef at your elbow, then sit down together to eat everything you made — with a Tuscan sauce and a glass of Chianti.`,
-          image: { src: img.cookingClassGuests, alt: `Guests rolling fresh pasta at The Chef’s Table class in our Florence kitchen`, w: 1050, h: 1400 },
+          image: { src: img.cookingClassGuests, alt: `Guests rolling fresh pasta at The Chef’s Table class in our Florence kitchen`, w: 800, h: 1067 },
           price: `€95`,
           priceNote: `per person`,
           facts: [
@@ -119,6 +127,7 @@ export const landings: Record<string, LandingPage> = {
             { q: `Which pasta shapes will we make?`, a: `Four classic shapes per class — typically hand-rolled pici, tagliatelle, pappardelle and filled tortelli, following the season.` },
             { q: `Can you cater to gluten-free diets or allergies?`, a: `Yes — we can prepare a dedicated gluten-free flour blend and a clean station at no extra charge. Just tell us about any allergies when you book.` },
             { q: `How do I book and pay?`, a: `Use the “Book this class” button to build your request. It opens a WhatsApp chat with the details filled in, and we’ll confirm availability and walk you through the rest.` },
+            { q: `How much does a pasta making class in Florence cost overall?`, a: `The Chef’s Table is €95 per person. If you’re weighing it against the market tour, private buyout or online option, see our <a href="/blog/how-much-does-a-pasta-making-class-in-florence-cost/">full price breakdown</a> for all four.` },
           ],
           related: [
             { title: `Mercato & Mani`, href: `/market-tour-cooking-class-florence/`, desc: `Shop Sant’Ambrogio market at dawn, then cook the basket. 5 hours, max 6 guests — €145.` },
@@ -145,7 +154,7 @@ export const landings: Record<string, LandingPage> = {
           heading: `Un corso di pasta a Firenze,`,
           headingItal: `attorno a un tavolo.`,
           lede: `Tre ore pratiche nella nostra cucina in Oltrarno. Mescolerai, impasterai, stenderai e piegherai quattro formati classici di pasta con uno chef al tuo fianco, per poi sederti insieme agli altri a mangiare tutto ciò che hai preparato — con un sugo toscano e un bicchiere di Chianti.`,
-          image: { src: img.cookingClassGuests, alt: `Ospiti che stendono la pasta fresca al corso Il Tavolo dello Chef nella nostra cucina fiorentina`, w: 1050, h: 1400 },
+          image: { src: img.cookingClassGuests, alt: `Ospiti che stendono la pasta fresca al corso Il Tavolo dello Chef nella nostra cucina fiorentina`, w: 800, h: 1067 },
           price: `€95`,
           priceNote: `a persona`,
           facts: [
@@ -218,7 +227,7 @@ export const landings: Record<string, LandingPage> = {
           heading: `Un cours de pâtes à Florence,`,
           headingItal: `autour d'une table.`,
           lede: `Trois heures de pratique dans notre cuisine de l'Oltrarno. Vous mélangerez, pétrirez, étalerez et plierez quatre formes classiques de pâtes avec un chef à vos côtés, puis vous vous assiérez ensemble pour manger tout ce que vous avez préparé — avec une sauce toscane et un verre de Chianti.`,
-          image: { src: img.cookingClassGuests, alt: `Des invités étalant des pâtes fraîches lors du cours La Table du Chef dans notre cuisine de Florence`, w: 1050, h: 1400 },
+          image: { src: img.cookingClassGuests, alt: `Des invités étalant des pâtes fraîches lors du cours La Table du Chef dans notre cuisine de Florence`, w: 800, h: 1067 },
           price: `95 €`,
           priceNote: `par personne`,
           facts: [
@@ -291,7 +300,7 @@ export const landings: Record<string, LandingPage> = {
           heading: `Ein Pasta-Kurs in Florenz,`,
           headingItal: `rund um einen Tisch.`,
           lede: `Drei praktische Stunden in unserer Küche im Oltrarno. Sie werden vier klassische Pasta-Formen mit einem Koch an Ihrer Seite mischen, kneten, ausrollen und falten und sich dann zusammensetzen, um alles zu essen, was Sie gemacht haben — mit einer toskanischen Sauce und einem Glas Chianti.`,
-          image: { src: img.cookingClassGuests, alt: `Gäste rollen frische Pasta beim Kurs „Der Tisch des Küchenchefs“ in unserer Küche in Florenz aus`, w: 1050, h: 1400 },
+          image: { src: img.cookingClassGuests, alt: `Gäste rollen frische Pasta beim Kurs „Der Tisch des Küchenchefs“ in unserer Küche in Florenz aus`, w: 800, h: 1067 },
           price: `95 €`,
           priceNote: `pro Person`,
           facts: [
@@ -364,7 +373,7 @@ export const landings: Record<string, LandingPage> = {
           heading: `佛罗伦萨的意面课程，`,
           headingItal: `围坐在一桌。`,
           lede: `在我们的奥特拉诺厨房进行三小时的动手实践。您将与身旁的主厨一起混合、揉捏、擀平并折叠四种经典的意面形状，然后大家坐在一起，配以托斯卡纳酱汁和一杯基安蒂葡萄酒，享用您制作的所有美食。`,
-          image: { src: img.cookingClassGuests, alt: `客人们在佛罗伦萨厨房的“主厨餐桌”课程中擀制新鲜意面`, w: 1050, h: 1400 },
+          image: { src: img.cookingClassGuests, alt: `客人们在佛罗伦萨厨房的“主厨餐桌”课程中擀制新鲜意面`, w: 800, h: 1067 },
           price: `€95`,
           priceNote: `每人`,
           facts: [
@@ -434,6 +443,7 @@ export const landings: Record<string, LandingPage> = {
   'market-tour': {
     floatingCta: true,
     courseMode: 'Onsite',
+    courseDuration: 'PT5H',
     locales: {
       en: {
         slug: 'market-tour-cooking-class-florence',
@@ -444,7 +454,7 @@ export const landings: Record<string, LandingPage> = {
           heading: `A market tour & cooking class`,
           headingItal: `in Florence.`,
           lede: `Start the day the way our chefs do: at Sant’Ambrogio market, tasting and choosing what looks best. Then carry the basket back to our Oltrarno kitchen and turn it into ravioli, a slow ragù and a seasonal dolce — and sit down to eat it all together.`,
-          image: { src: img.aperitivo, alt: `Fresh market produce and aperitivo before the Mercato & Mani cooking class in Florence`, w: 1080, h: 1440 },
+          image: { src: img.aperitivo, alt: `Fresh market produce and aperitivo before the Mercato & Mani cooking class in Florence`, w: 800, h: 1067 },
           price: `€145`,
           priceNote: `per person`,
           facts: [
@@ -511,7 +521,7 @@ export const landings: Record<string, LandingPage> = {
           heading: `Tour del mercato & corso di cucina`,
           headingItal: `a Firenze.`,
           lede: `Inizia la giornata come fanno i nostri chef: al mercato di Sant'Ambrogio, assaggiando e scegliendo ciò che sembra migliore. Poi porta il cesto nella nostra cucina in Oltrarno e trasformalo in ravioli, un ragù a lenta cottura e un dolce di stagione — e sediamoci a mangiare tutto insieme.`,
-          image: { src: img.aperitivo, alt: `Prodotti freschi del mercato e aperitivo prima del corso di cucina Mercato & Mani a Firenze`, w: 1080, h: 1440 },
+          image: { src: img.aperitivo, alt: `Prodotti freschi del mercato e aperitivo prima del corso di cucina Mercato & Mani a Firenze`, w: 800, h: 1067 },
           price: `€145`,
           priceNote: `a persona`,
           facts: [
@@ -577,7 +587,7 @@ export const landings: Record<string, LandingPage> = {
           heading: `Visite du marché & cours de cuisine`,
           headingItal: `à Florence.`,
           lede: `Commencez la journée comme nos chefs : au marché de Sant'Ambrogio, en goûtant et en choisissant ce qui semble le meilleur. Ensuite, rapportez le panier à notre cuisine de l'Oltrarno et transformez-le en raviolis, un ragoût mijoté et un dessert de saison — et asseyez-vous pour manger tout cela ensemble.`,
-          image: { src: img.aperitivo, alt: `Produits frais du marché et apéritif avant le cours de cuisine Mercato & Mani à Florence`, w: 1080, h: 1440 },
+          image: { src: img.aperitivo, alt: `Produits frais du marché et apéritif avant le cours de cuisine Mercato & Mani à Florence`, w: 800, h: 1067 },
           price: `145 €`,
           priceNote: `par personne`,
           facts: [
@@ -643,7 +653,7 @@ export const landings: Record<string, LandingPage> = {
           heading: `Eine Markttour & Kochkurs`,
           headingItal: `in Florenz.`,
           lede: `Beginnen Sie den Tag so, wie es unsere Köche tun: auf dem Markt von Sant'Ambrogio, indem Sie probieren und auswählen, was am besten aussieht. Tragen Sie dann den Korb zurück in unsere Küche im Oltrarno und verwandeln Sie ihn in Ravioli, ein langsames Ragù und ein saisonales Dessert — und setzen Sie sich, um alles gemeinsam zu essen.`,
-          image: { src: img.aperitivo, alt: `Frische Marktprodukte und Aperitivo vor dem Kochkurs Mercato & Mani in Florenz`, w: 1080, h: 1440 },
+          image: { src: img.aperitivo, alt: `Frische Marktprodukte und Aperitivo vor dem Kochkurs Mercato & Mani in Florenz`, w: 800, h: 1067 },
           price: `145 €`,
           priceNote: `pro Person`,
           facts: [
@@ -709,7 +719,7 @@ export const landings: Record<string, LandingPage> = {
           heading: `市场导览与烹饪课程`,
           headingItal: `在佛罗伦萨。`,
           lede: `像我们的厨师一样开始新的一天：在圣安布罗焦市场品尝并挑选最美味的食材。然后带着购物篮回到我们奥特拉诺的厨房，将其变成意式饺子、慢炖肉酱和时令甜点——并坐下来一起享用。`,
-          image: { src: img.aperitivo, alt: `在佛罗伦萨的Mercato & Mani烹饪课程之前的新鲜市场农产品和开胃酒`, w: 1080, h: 1440 },
+          image: { src: img.aperitivo, alt: `在佛罗伦萨的Mercato & Mani烹饪课程之前的新鲜市场农产品和开胃酒`, w: 800, h: 1067 },
           price: `€145`,
           priceNote: `每人`,
           facts: [
@@ -1452,7 +1462,7 @@ export const landings: Record<string, LandingPage> = {
           heading: `Team building, with`,
           headingItal: `flour on your hands.`,
           lede: `Aprons on, laptops away. Your team takes over our Oltrarno kitchen with two English-speaking chefs, rolls and folds fresh pasta side by side, and then sits down to a long lunch it made itself. Five minutes from the Ponte Vecchio.`,
-          image: { src: img.cookingClassGuests, alt: `A group cooking together at a private team building pasta class in Florence`, w: 1050, h: 1400 },
+          image: { src: img.cookingClassGuests, alt: `A group cooking together at a private team building pasta class in Florence`, w: 800, h: 1067 },
           price: `Private buyout`,
           priceNote: `6–14 people · quoted per group`,
           facts: [
@@ -1520,7 +1530,7 @@ export const landings: Record<string, LandingPage> = {
           heading: `Team building, con`,
           headingItal: `le mani in pasta.`,
           lede: `Grembiuli indossati, laptop riposti. Il tuo team prende possesso della nostra cucina in Oltrarno con due chef toscani, stende e piega la pasta fresca fianco a fianco, e poi si siede per un lungo pranzo preparato con le proprie mani. A cinque minuti da Ponte Vecchio.`,
-          image: { src: img.cookingClassGuests, alt: `Un gruppo cucina insieme a un corso di pasta privato per team building a Firenze`, w: 1050, h: 1400 },
+          image: { src: img.cookingClassGuests, alt: `Un gruppo cucina insieme a un corso di pasta privato per team building a Firenze`, w: 800, h: 1067 },
           price: `Evento Privato`,
           priceNote: `6–14 persone · preventivo per gruppo`,
           facts: [
@@ -1587,7 +1597,7 @@ export const landings: Record<string, LandingPage> = {
           heading: `Team building, avec`,
           headingItal: `les mains dans la farine.`,
           lede: `Tabliers enfilés, ordinateurs rangés. Votre équipe prend le contrôle de notre cuisine de l'Oltrarno avec deux chefs toscans, étale et plie des pâtes fraîches côte à côte, puis s'assoit pour un long déjeuner qu'elle a elle-même préparé. À cinq minutes du Ponte Vecchio.`,
-          image: { src: img.cookingClassGuests, alt: `Un groupe cuisinant ensemble lors d'un cours privé de pâtes pour team building à Florence`, w: 1050, h: 1400 },
+          image: { src: img.cookingClassGuests, alt: `Un groupe cuisinant ensemble lors d'un cours privé de pâtes pour team building à Florence`, w: 800, h: 1067 },
           price: `Événement Privé`,
           priceNote: `6–14 personnes · sur devis`,
           facts: [
@@ -1654,7 +1664,7 @@ export const landings: Record<string, LandingPage> = {
           heading: `Teambuilding, mit`,
           headingItal: `Mehl an den Händen.`,
           lede: `Schürzen an, Laptops weg. Ihr Team übernimmt unsere Küche im Oltrarno mit zwei toskanischen Köchen, rollt und faltet Seite an Seite frische Pasta und setzt sich dann zu einem langen, selbst zubereiteten Mittagessen. Fünf Minuten vom Ponte Vecchio entfernt.`,
-          image: { src: img.cookingClassGuests, alt: `Eine Gruppe kocht zusammen bei einem privaten Teambuilding-Pasta-Kurs in Florenz`, w: 1050, h: 1400 },
+          image: { src: img.cookingClassGuests, alt: `Eine Gruppe kocht zusammen bei einem privaten Teambuilding-Pasta-Kurs in Florenz`, w: 800, h: 1067 },
           price: `Privates Event`,
           priceNote: `6–14 Personen · Angebot pro Gruppe`,
           facts: [
@@ -1721,7 +1731,7 @@ export const landings: Record<string, LandingPage> = {
           heading: `团队建设，让`,
           headingItal: `双手沾满面粉。`,
           lede: `穿上围裙，收起电脑。您的团队将与两位托斯卡纳厨师一起接管我们奥特拉诺的厨房，并肩擀面和折叠新鲜意面，然后坐下来享用团队亲手制作的丰盛午餐。距离老桥仅五分钟路程。`,
-          image: { src: img.cookingClassGuests, alt: `一个团队在佛罗伦萨的私人团建意面课程中一起烹饪`, w: 1050, h: 1400 },
+          image: { src: img.cookingClassGuests, alt: `一个团队在佛罗伦萨的私人团建意面课程中一起烹饪`, w: 800, h: 1067 },
           price: `私人包场`,
           priceNote: `6–14人 · 按团体报价`,
           facts: [
@@ -2509,7 +2519,7 @@ export const landings: Record<string, LandingPage> = {
           heading: `Gift a cooking class`,
           headingItal: `in Florence.`,
           lede: `A morning with their hands in the flour, a table they sat down at, a dish they can now make. It takes up no cupboard space and they will still be talking about it next year — which is more than most presents manage.`,
-          image: { src: img.cookingClassGuests, alt: `Guests around the table at a Florence cooking class bought as a gift voucher`, w: 1050, h: 1400 },
+          image: { src: img.cookingClassGuests, alt: `Guests around the table at a Florence cooking class bought as a gift voucher`, w: 800, h: 1067 },
           price: `Any class`,
           priceNote: `from €68 · voucher sent by email`,
           facts: [
@@ -2577,7 +2587,7 @@ export const landings: Record<string, LandingPage> = {
           heading: `Regala un corso di cucina`,
           headingItal: `a Firenze.`,
           lede: `Una mattina con le mani in farina, un tavolo a cui si sono seduti, un piatto che ora sanno rifare. Non occupa spazio in nessun armadio e l'anno prossimo ne parleranno ancora — cosa che alla maggior parte dei regali non riesce.`,
-          image: { src: img.cookingClassGuests, alt: `Ospiti attorno al tavolo di un corso di cucina a Firenze acquistato come buono regalo`, w: 1050, h: 1400 },
+          image: { src: img.cookingClassGuests, alt: `Ospiti attorno al tavolo di un corso di cucina a Firenze acquistato come buono regalo`, w: 800, h: 1067 },
           price: `Qualsiasi corso`,
           priceNote: `da €68 · buono inviato via email`,
           facts: [
@@ -2645,7 +2655,7 @@ export const landings: Record<string, LandingPage> = {
           heading: `Offrir un cours de cuisine`,
           headingItal: `à Florence.`,
           lede: `Une matinée les mains dans la farine, une table où ils se sont assis, un plat qu'ils savent désormais refaire. Cela ne prend aucune place dans un placard et ils en parleront encore l'année prochaine — ce que peu de cadeaux réussissent.`,
-          image: { src: img.cookingClassGuests, alt: `Des invités autour de la table d'un cours de cuisine à Florence offert en bon cadeau`, w: 1050, h: 1400 },
+          image: { src: img.cookingClassGuests, alt: `Des invités autour de la table d'un cours de cuisine à Florence offert en bon cadeau`, w: 800, h: 1067 },
           price: `Tous les cours`,
           priceNote: `dès 68 € · bon envoyé par email`,
           facts: [
@@ -2713,7 +2723,7 @@ export const landings: Record<string, LandingPage> = {
           heading: `Einen Kochkurs verschenken`,
           headingItal: `in Florenz.`,
           lede: `Ein Vormittag mit den Händen im Mehl, ein Tisch, an dem sie gesessen haben, ein Gericht, das sie jetzt können. Es nimmt keinen Schrankplatz weg, und im nächsten Jahr reden sie noch davon — was den meisten Geschenken nicht gelingt.`,
-          image: { src: img.cookingClassGuests, alt: `Gäste am Tisch eines als Gutschein verschenkten Kochkurses in Florenz`, w: 1050, h: 1400 },
+          image: { src: img.cookingClassGuests, alt: `Gäste am Tisch eines als Gutschein verschenkten Kochkurses in Florenz`, w: 800, h: 1067 },
           price: `Jeder Kurs`,
           priceNote: `ab 68 € · Gutschein per E-Mail`,
           facts: [
@@ -2781,7 +2791,7 @@ export const landings: Record<string, LandingPage> = {
           heading: `赠送一堂`,
           headingItal: `佛罗伦萨烹饪课程。`,
           lede: `一个双手沾满面粉的上午，一张他们真正坐下来的餐桌，一道他们从此会做的菜。它不占用任何柜子空间，而明年他们还会提起它——这是大多数礼物做不到的。`,
-          image: { src: img.cookingClassGuests, alt: `作为礼券赠送的佛罗伦萨烹饪课程上围坐餐桌的客人`, w: 1050, h: 1400 },
+          image: { src: img.cookingClassGuests, alt: `作为礼券赠送的佛罗伦萨烹饪课程上围坐餐桌的客人`, w: 800, h: 1067 },
           price: `任意课程`,
           priceNote: `68欧元起 · 礼券通过邮件发送`,
           facts: [
