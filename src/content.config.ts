@@ -9,6 +9,10 @@ const blog = defineCollection({
     title: z.string(),
     description: z.string(),
     pubDate: z.coerce.date(),
+    // Set only when a post's facts (prices, hours, recommendations) are
+    // actually revised — falls back to pubDate in Article schema otherwise.
+    // Never bump this just to look fresh.
+    updatedDate: z.coerce.date().optional(),
     author: z.string().default('Endri Cerhozi'),
     image: image(),
     imageAlt: z.string(),

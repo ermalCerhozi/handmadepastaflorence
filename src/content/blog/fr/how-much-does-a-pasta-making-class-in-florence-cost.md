@@ -11,7 +11,7 @@ Réponse courte : à l'été 2026, la plupart des **cours de fabrication de pât
 
 Nous animons nous-mêmes des cours, alors considérez ceci comme la vue depuis l'intérieur de la cuisine — y compris ce que ces prix devraient réellement vous offrir.
 
-## Ce qui fait varier le prix
+## Qu'est-ce qui fait varier le prix d'un cours de pâtes à Florence ?
 
 Quatre éléments expliquent presque chaque différence de prix que vous verrez :
 
@@ -20,7 +20,7 @@ Quatre éléments expliquent presque chaque différence de prix que vous verrez 
 3. **Une visite du marché.** Les cours qui commencent à Sant'Ambrogio ou au Mercato Centrale ajoutent une à deux heures et un guide, alors attendez-vous à la tranche supérieure.
 4. **L'intimité.** Une cuisine privée uniquement pour votre groupe est facturée par groupe, et non par personne — raisonnable pour 8 personnes et plus, cher pour 2.
 
-## Ce qui devrait être inclus à ces prix
+## Qu'est-ce qui devrait être inclus à ces prix ?
 
 À 80 € et plus, vous ne devriez pas payer de supplément pour l'essentiel. Un cours équitable inclut **tous les ingrédients, les tabliers, le repas complet que vous préparez, et le vin avec le repas**. Les adaptations alimentaires — sans gluten en particulier — doivent être organisées à l'avance et ne devraient pas coûter plus cher ; c'est de la farine, pas de la truffe.
 
@@ -41,7 +41,7 @@ Afin que vous puissiez calibrer les fourchettes ci-dessus par rapport à un vrai
 4. **Comment les allergies et le sans gluten sont-ils gérés ?** La bonne réponse mentionne une station séparée ou une farine dédiée — pas juste "on verra".
 5. **Que se passe-t-il si mes plans changent ?** Obtenez les conditions d'annulation par écrit avant de payer, quel que soit l'endroit où vous réservez.
 
-## Quand réserver
+## Quand réserver un cours de pâtes à Florence ?
 
 Florence se remplit d'avril à octobre, et les cours en petit groupe (six à huit places) se vendent en premier précisément parce qu'ils sont petits. Réservez une semaine ou plus à l'avance en haute saison ; en hiver, vous pouvez souvent trouver une place la même semaine. Les cours du matin servent de déjeuner, les cours du soir de dîner — choisissez le repas que vous préférez remplacer.
 

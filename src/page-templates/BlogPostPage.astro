@@ -37,6 +37,7 @@ const articleSchema = {
   description: post.data.description,
   image: `${SITE}${post.data.image.src}`,
   datePublished: post.data.pubDate.toISOString(),
+  dateModified: (post.data.updatedDate ?? post.data.pubDate).toISOString(),
   inLanguage: isIt ? 'it' : 'en',
   author: {
     '@type': 'Person',

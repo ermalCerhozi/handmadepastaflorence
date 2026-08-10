@@ -11,7 +11,7 @@ Kurze Antwort: Ab Sommer 2026 kosten die meisten **Pasta-Kochkurse in Gruppen in
 
 Wir veranstalten selbst Kurse, betrachten Sie dies also als die Sichtweise aus der Küche — einschließlich dessen, was Sie für diese Preise tatsächlich bekommen sollten.
 
-## Was den Preis bestimmt
+## Was bestimmt den Preis eines Pasta-Kurses in Florenz?
 
 Vier Dinge erklären fast jeden Preisunterschied, den Sie sehen werden:
 
@@ -20,7 +20,7 @@ Vier Dinge erklären fast jeden Preisunterschied, den Sie sehen werden:
 3. **Ein Marktbesuch.** Kurse, die auf dem Sant'Ambrogio oder dem Mercato Centrale beginnen, fügen ein bis zwei Stunden und einen Guide hinzu, also erwarten Sie das höhere Preissegment.
 4. **Privatsphäre.** Eine private Küche nur für Ihre Gruppe wird pro Gruppe berechnet, nicht pro Person — das ist angemessen für 8+ Personen, aber teuer für 2.
 
-## Was bei diesen Preisen inklusive sein sollte
+## Was sollte bei diesen Preisen inklusive sein?
 
 Ab 80 € sollten Sie nicht extra für das Wesentliche zahlen müssen. Ein fairer Kurs umfasst **alle Zutaten, Schürzen, die gesamte von Ihnen zubereitete Mahlzeit und Wein zum Essen**. Besondere Ernährungsbedürfnisse — insbesondere glutenfrei — sollten im Voraus arrangiert werden und nicht mehr kosten; das ist Mehl, kein Trüffel.
 
@@ -41,7 +41,7 @@ Damit Sie die oben genannten Spannen mit einem echten Angebot abgleichen können
 4. **Wie wird mit Allergien und glutenfrei umgegangen?** Die richtige Antwort erwähnt eine separate Station oder spezielles Mehl — nicht nur "wir werden sehen".
 5. **Was passiert, wenn sich meine Pläne ändern?** Lassen Sie sich die Stornierungsbedingungen schriftlich geben, bevor Sie bezahlen, egal bei wem Sie buchen.
 
-## Wann man buchen sollte
+## Wann sollte man einen Pasta-Kurs in Florenz buchen?
 
 Florenz ist von April bis Oktober ausgebucht, und Kleingruppenkurse (sechs bis acht Plätze) sind genau deshalb zuerst ausverkauft, weil sie klein sind. Buchen Sie in der Hochsaison eine Woche oder mehr im Voraus; im Winter finden Sie oft noch in derselben Woche einen Platz. Vormittagskurse ersetzen das Mittagessen, Abendkurse das Abendessen — wählen Sie, welche Mahlzeit Sie lieber ersetzen möchten.
 

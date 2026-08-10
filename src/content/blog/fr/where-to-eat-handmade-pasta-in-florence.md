@@ -20,14 +20,14 @@ Je gagne ma vie en préparant des pâtes, alors quand je mange au restaurant à 
 
 La réponse courte : pas en vue du Duomo. Les meilleures pâtes faites à la main à Florence se trouvent dans les trattorias autour du marché de Sant'Ambrogio et dans l'Oltrarno autour de Santo Spirito — partout où le menu est court, les pâtes sont nommées par leur forme, et la salle est remplie d'Italiens à 13h00. Commandez des pici si vous en voyez, des pappardelle al cinghiale si c'est l'automne. La réponse longue est le reste de ce guide.
 
-## D'abord : comment repérer de vraies pâtes faites à la main sur un menu
+## Comment repérer de vraies pâtes faites à la main sur un menu ?
 
 - **Les mots ont de l'importance.** *Pasta fresca* signifie pâtes fraîches ; *fatta a mano* ou *fatta in casa* signifie fait à la main, sur place. Un menu qui nomme la forme et la farine ("pici di grano duro") est généralement un menu écrit par quelqu'un qui les a préparées.
 - **Les menus courts valent mieux que les longs.** Une cuisine qui roule ses pâtes à la main chaque matin ne peut pas offrir trente formes différentes. Quatre ou cinq plats de pâtes fraîches qui changent avec la saison est le meilleur signe qui soit.
 - **Regardez la surface.** Les vraies pâtes roulées à la main sont légèrement rugueuses et irrégulières — c'est cette texture qui retient la sauce. Des brins parfaitement uniformes ont été faits par une machine, quelque part loin de la cuisine.
 - **Les suggestions du jour sur une ardoise** signifient généralement que la cuisine a préparé ce qu'il y avait au marché. C'est ainsi que les trattorias sont censées fonctionner.
 
-## Que commander à Florence
+## Que commander à Florence ?
 
 Florence est célèbre pour être une ville de viande — la bistecca est sur toutes les cartes postales — mais la tradition des pâtes fraîches de la Toscane est profonde, et voici ses plus grands succès :
 

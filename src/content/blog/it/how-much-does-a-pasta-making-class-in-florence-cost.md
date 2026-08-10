@@ -11,7 +11,7 @@ Risposta breve: a partire dall'estate 2026, la maggior parte dei **corsi di past
 
 Noi stessi teniamo dei corsi, quindi considera questa la prospettiva dall'interno della cucina — incluso cosa dovrebbero effettivamente offrirti quei prezzi.
 
-## Cosa determina il prezzo
+## Cosa determina il prezzo di un corso di pasta a Firenze?
 
 Quattro cose spiegano quasi ogni differenza di prezzo che vedrai:
 
@@ -20,7 +20,7 @@ Quattro cose spiegano quasi ogni differenza di prezzo che vedrai:
 3. **Una visita al mercato.** I corsi che iniziano a Sant'Ambrogio o al Mercato Centrale aggiungono una o due ore e una guida, quindi aspettati la fascia più alta.
 4. **Privacy.** Una cucina privata solo per il tuo gruppo ha un prezzo per gruppo, non per persona — ragionevole per 8+ persone, costoso per 2.
 
-## Cosa dovrebbe essere incluso a questi prezzi
+## Cosa dovrebbe essere incluso a questi prezzi?
 
 Da €80 in su, non dovresti pagare extra per l'essenziale. Un corso equo include **tutti gli ingredienti, i grembiuli, il pasto completo che cucini e il vino con il pasto**. Gli adattamenti dietetici — in particolare il senza glutine — dovrebbero essere concordati in anticipo e non dovrebbero costare di più; è farina, non tartufo.
 
@@ -41,7 +41,7 @@ Così puoi calibrare gli intervalli sopra indicati su un vero menu ([dettagli co
 4. **Come vengono gestite le allergie e il senza glutine?** La risposta giusta menziona una postazione separata o una farina dedicata — non solo un "vedremo".
 5. **Cosa succede se i miei piani cambiano?** Fatti dare i termini di cancellazione per iscritto prima di pagare, con chiunque tu prenoti.
 
-## Quando prenotare
+## Quando conviene prenotare un corso di pasta a Firenze?
 
 Firenze si riempie da aprile a ottobre, e i corsi per piccoli gruppi (sei-otto posti) si esauriscono prima proprio perché sono piccoli. Prenota con una settimana o più di anticipo in alta stagione; in inverno puoi spesso trovare un posto nella stessa settimana. I corsi mattutini fungono da pranzo, quelli serali da cena — scegli quale pasto preferisci sostituire.
 

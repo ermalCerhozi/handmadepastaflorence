@@ -20,14 +20,14 @@ Ich verdiene meinen Lebensunterhalt mit dem Machen von Pasta, wenn ich also in F
 
 Die kurze Antwort: nicht in Sichtweite des Duomo. Die beste handgemachte Pasta in Florenz gibt es in den Trattorien rund um den Markt Sant'Ambrogio und im Oltrarno rund um Santo Spirito — überall dort, wo die Speisekarte kurz ist, die Pasta nach ihrer Form benannt ist und der Raum um 13:00 Uhr voller Italiener ist. Bestellen Sie Pici, wenn Sie sie sehen, Pappardelle al cinghiale, wenn es Herbst ist. Die lange Antwort ist der Rest dieses Guides.
 
-## Erstens: Wie man echte handgemachte Pasta auf einer Speisekarte erkennt
+## Wie erkennt man echte handgemachte Pasta auf einer Speisekarte?
 
 - **Die Worte zählen.** *Pasta fresca* bedeutet frische Pasta; *fatta a mano* oder *fatta in casa* bedeutet handgemacht, hausgemacht. Eine Speisekarte, die die Form und das Mehl ("pici di grano duro") nennt, wurde normalerweise von jemandem geschrieben, der sie gemacht hat.
 - **Kurze Menüs schlagen lange.** Eine Küche, die jeden Morgen Pasta von Hand rollt, kann keine dreißig Formen anbieten. Vier oder fünf frische Pasta-Gerichte, die sich mit der Jahreszeit ändern, sind das beste Zeichen, das es gibt.
 - **Schauen Sie sich die Oberfläche an.** Echte, handgerollte Pasta ist leicht rau und unregelmäßig — diese Textur sorgt dafür, dass die Soße haftet. Perfekt gleichmäßige Stränge wurden von einer Maschine weit weg von der Küche gemacht.
 - **Tagesangebote auf einer Tafel** bedeuten normalerweise, dass die Küche gekocht hat, was der Markt bot. Genau so sollten Trattorien funktionieren.
 
-## Was man in Florenz bestellen sollte
+## Was sollte man in Florenz bestellen?
 
 Florenz ist bekanntermaßen eine Fleischstadt — das Bistecca bekommt die Postkarten —, aber die toskanische Tradition der frischen Pasta sitzt tief, und dies sind ihre größten Hits:
 

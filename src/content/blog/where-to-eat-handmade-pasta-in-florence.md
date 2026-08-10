@@ -20,14 +20,14 @@ I make pasta for a living, so when I eat out in Florence I'm the annoying one tu
 
 The short answer: not within sight of the Duomo. The best handmade pasta in Florence is in the trattorias around the Sant'Ambrogio market and in the Oltrarno around Santo Spirito — anywhere the menu is short, the pasta is named by its shape, and the room is full of Italians at 13:00. Order pici if you see them, pappardelle al cinghiale if it's autumn. The long answer is the rest of this guide.
 
-## First: how to spot real handmade pasta on a menu
+## How do you spot real handmade pasta on a menu?
 
 - **The words matter.** *Pasta fresca* means fresh pasta; *fatta a mano* or *fatta in casa* means made by hand, in house. A menu that names the shape and the flour ("pici di grano duro") is usually a menu written by someone who made it.
 - **Short menus beat long ones.** A kitchen hand-rolling pasta every morning can't offer thirty shapes. Four or five fresh-pasta dishes that change with the season is the best sign there is.
 - **Look at the surface.** Real hand-rolled pasta is slightly rough and irregular — that texture is what grips the sauce. Perfectly uniform strands were made by a machine somewhere far from the kitchen.
 - **Daily specials on a chalkboard** usually mean the kitchen cooked what the market had. That's how trattorias are supposed to work.
 
-## What to order in Florence
+## What should you order in Florence?
 
 Florence is famously a meat city — the bistecca gets the postcards — but Tuscany's fresh pasta tradition runs deep, and these are its greatest hits:
 

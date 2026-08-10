@@ -20,14 +20,14 @@ Faccio la pasta per vivere, quindi quando mangio fuori a Firenze sono quello fas
 
 La risposta breve: non in vista del Duomo. La pasta fresca migliore di Firenze si trova nelle trattorie attorno al mercato di Sant'Ambrogio e in Oltrarno intorno a Santo Spirito — ovunque il menu sia corto, la pasta sia indicata col nome del formato, e la sala sia piena di italiani alle 13:00. Ordina i pici se li vedi, le pappardelle al cinghiale se è autunno. La risposta lunga è il resto di questa guida.
 
-## Primo: come riconoscere la vera pasta fresca su un menu
+## Come si riconosce la vera pasta fresca su un menu?
 
 - **Le parole contano.** *Pasta fresca* significa esattamente questo; *fatta a mano* o *fatta in casa* significa fatta in loco. Un menu che nomina il formato e la farina ("pici di grano duro") di solito è scritto da chi lo ha preparato.
 - **I menu corti battono quelli lunghi.** Una cucina che stende la pasta a mano ogni mattina non può offrire trenta formati. Quattro o cinque piatti di pasta fresca che cambiano con le stagioni sono il segno migliore che ci sia.
 - **Guarda la superficie.** La vera pasta stesa a mano è leggermente ruvida e irregolare — quella consistenza è ciò che cattura il sugo. Fili perfettamente uniformi sono stati fatti da una macchina da qualche parte lontano dalla cucina.
 - **I piatti del giorno su una lavagna** di solito significano che la cucina ha preparato ciò che il mercato offriva. È così che dovrebbero funzionare le trattorie.
 
-## Cosa ordinare a Firenze
+## Cosa ordinare a Firenze?
 
 Firenze è notoriamente una città di carne — la bistecca prende le cartoline — ma la tradizione toscana della pasta fresca è profonda, e questi sono i suoi più grandi successi:
 

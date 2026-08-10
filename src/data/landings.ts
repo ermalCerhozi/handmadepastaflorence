@@ -92,7 +92,7 @@ export const landings: Record<string, LandingPage> = {
           ],
           sections: [
             {
-              title: `What you’ll actually do`,
+              title: `What will you actually do in the class?`,
               paras: [
                 `This is a hands-in-the-flour class from the first minute — no demos to watch from a stool. You’ll make your own dough, learn to feel when it’s ready, and work it into four classic shapes: hand-rolled pici, ribbon-cut tagliatelle and pappardelle, and filled tortelli, following the season.`,
                 `Because the table never has more than eight guests, there’s always a chef beside you to fix your fold or rescue a sticky dough. When the pasta is done, we cook it together and sit down to a proper Tuscan lunch — the food you just made, a sauce from our kitchens, and a glass of local wine.`,
@@ -167,7 +167,7 @@ export const landings: Record<string, LandingPage> = {
           ],
           sections: [
             {
-              title: `Cosa farai effettivamente`,
+              title: `Cosa farai effettivamente durante il corso?`,
               paras: [
                 `Questo è un corso con "le mani in pasta" dal primo minuto — nessuna dimostrazione da guardare su uno sgabello. Preparerai il tuo impasto, imparerai a sentire quando è pronto e lo lavorerai in quattro formati classici: pici fatti a mano, tagliatelle e pappardelle tagliate a nastro, e tortelli ripieni, seguendo la stagione.`,
                 `Poiché il tavolo non ha mai più di otto ospiti, c'è sempre uno chef accanto a te per correggere la tua piega o salvare un impasto appiccicoso. Quando la pasta è finita, la cuciniamo insieme e ci sediamo per un vero pranzo toscano — il cibo che hai appena preparato, un sugo dalle nostre cucine e un bicchiere di vino locale.`,
@@ -240,7 +240,7 @@ export const landings: Record<string, LandingPage> = {
           ],
           sections: [
             {
-              title: `Ce que vous ferez concrètement`,
+              title: `Que ferez-vous concrètement pendant le cours ?`,
               paras: [
                 `C'est un cours où vous mettez la main à la pâte dès la première minute — pas de démonstrations à regarder sur un tabouret. Vous préparerez votre propre pâte, apprendrez à sentir quand elle est prête, et la travaillerez en quatre formes classiques : pici roulés à la main, tagliatelles et pappardelles coupées en ruban, et tortelli farcis, selon la saison.`,
                 `Parce que la table ne compte jamais plus de huit personnes, il y a toujours un chef à côté de vous pour corriger votre pliage ou sauver une pâte collante. Quand les pâtes sont terminées, nous les cuisinons ensemble et nous nous asseyons pour un vrai déjeuner toscan — la nourriture que vous venez de préparer, une sauce de nos cuisines et un verre de vin local.`,
@@ -313,7 +313,7 @@ export const landings: Record<string, LandingPage> = {
           ],
           sections: [
             {
-              title: `Was Sie tatsächlich tun werden`,
+              title: `Was werden Sie im Kurs tatsächlich tun?`,
               paras: [
                 `Dies ist ein Kurs mit den Händen im Mehl von der ersten Minute an — keine Vorführungen, die man von einem Hocker aus beobachtet. Sie machen Ihren eigenen Teig, lernen zu fühlen, wann er fertig ist, und verarbeiten ihn zu vier klassischen Formen: handgerollte Pici, bandgeschnittene Tagliatelle und Pappardelle sowie gefüllte Tortelli, je nach Saison.`,
                 `Da der Tisch nie mehr als acht Gäste hat, ist immer ein Koch neben Ihnen, um Ihre Faltung zu korrigieren oder einen klebrigen Teig zu retten. Wenn die Nudeln fertig sind, kochen wir sie zusammen und setzen uns zu einem echten toskanischen Mittagessen — das Essen, das Sie gerade zubereitet haben, eine Sauce aus unseren Küchen und ein Glas Wein aus der Region.`,
@@ -386,7 +386,7 @@ export const landings: Record<string, LandingPage> = {
           ],
           sections: [
             {
-              title: `您将真正学到什么`,
+              title: `您在课程中将真正学到什么？`,
               paras: [
                 `这是一门从第一分钟起就“双手沾满面粉”的实践课程——不需要坐在凳子上看演示。您将制作自己的面团，学会感受它何时准备好，并将其制作成四种经典形状：手工揉制的pici，切成条状的tagliatelle和pappardelle，以及填馅的tortelli，具体取决于季节。`,
                 `因为每桌客人从不超过八人，所以总有一位厨师在您身旁指导您折叠或挽救粘稠的面团。当意面做好后，我们一起烹饪，然后坐下来享用一顿正宗的托斯卡纳午餐——您刚刚制作的食物，我们厨房秘制的酱汁，以及一杯当地葡萄酒。`,
@@ -1153,7 +1153,7 @@ export const landings: Record<string, LandingPage> = {
           ],
           sections: [
             {
-              title: `How a live class works`,
+              title: `How does a live online pasta class work?`,
               paras: [
                 `This is not a pre-recorded video. You cook live with the same two chefs who teach in Florence, streamed from the same kitchen. You see their hands, they see your dough, and they talk you through every stage — mixing, kneading, rolling, shaping — until there’s fresh pasta on your counter.`,
                 `When you pick a date, the booking calendar shows class times in both Florence time and your own time zone, so there’s no arithmetic at midnight.`,
@@ -1217,7 +1217,7 @@ export const landings: Record<string, LandingPage> = {
           ],
           sections: [
             {
-              title: `Come funziona un corso in diretta`,
+              title: `Come funziona un corso di pasta online in diretta?`,
               paras: [
                 `Questo non è un video pre-registrato. Cucini dal vivo con gli stessi due chef che insegnano in presenza, trasmessi dalla stessa cucina. Vedi le loro mani, loro vedono il tuo impasto e ti guidano attraverso ogni fase — miscelare, impastare, stendere, dare forma — finché non avrai della pasta fresca sul tuo bancone.`,
                 `Quando scegli una data, il calendario delle prenotazioni mostra gli orari del corso sia nel fuso orario di Firenze che nel tuo, così non ci sono calcoli matematici da fare a mezzanotte.`,
@@ -1280,7 +1280,7 @@ export const landings: Record<string, LandingPage> = {
           ],
           sections: [
             {
-              title: `Comment fonctionne un cours en direct`,
+              title: `Comment fonctionne un cours de pâtes en ligne en direct ?`,
               paras: [
                 `Ce n'est pas une vidéo préenregistrée. Vous cuisinez en direct avec les deux mêmes chefs qui enseignent à Florence, diffusé depuis la même cuisine. Vous voyez leurs mains, ils voient votre pâte, et ils vous guident à chaque étape — mélange, pétrissage, étalage, façonnage — jusqu'à ce qu'il y ait des pâtes fraîches sur votre plan de travail.`,
                 `Lorsque vous choisissez une date, le calendrier de réservation affiche les horaires des cours à la fois à l'heure de Florence et dans votre propre fuseau horaire, il n'y a donc pas de calcul mental à faire à minuit.`,
@@ -1343,7 +1343,7 @@ export const landings: Record<string, LandingPage> = {
           ],
           sections: [
             {
-              title: `Wie ein Live-Kurs funktioniert`,
+              title: `Wie funktioniert ein Live-Online-Pasta-Kurs?`,
               paras: [
                 `Dies ist kein aufgezeichnetes Video. Sie kochen live mit denselben zwei Köchen, die in Florenz unterrichten, gestreamt aus derselben Küche. Sie sehen ihre Hände, sie sehen Ihren Teig, und sie führen Sie durch jede Phase — Mischen, Kneten, Rollen, Formen —, bis frische Pasta auf Ihrer Arbeitsfläche liegt.`,
                 `Wenn Sie ein Datum auswählen, zeigt der Buchungskalender die Kurszeiten sowohl in der Florentiner Zeit als auch in Ihrer eigenen Zeitzone an, sodass es um Mitternacht keine Rechenaufgaben gibt.`,
@@ -1406,7 +1406,7 @@ export const landings: Record<string, LandingPage> = {
           ],
           sections: [
             {
-              title: `直播课程是如何进行的`,
+              title: `在线直播意面课程是如何进行的？`,
               paras: [
                 `这不是预先录制的视频。您将与在佛罗伦萨亲自授课的两位主厨一起进行实时烹饪，并从同一个厨房进行转播。您能看到他们的手，他们也能看到您的面团，并会在每个阶段（混合、揉面、擀面、塑形）与您交流，直到您的操作台上出现新鲜的意面。`,
                 `当您选择日期时，预订日历会同时显示佛罗伦萨时间和您自己时区的课程时间，所以您不需要在午夜进行时差计算。`,
@@ -1475,7 +1475,7 @@ export const landings: Record<string, LandingPage> = {
           ],
           sections: [
             {
-              title: `Why pasta is the food teambuilding activity that works`,
+              title: `Why does pasta making work as a team building activity?`,
               paras: [
                 `Fresh pasta is the rare team activity where nobody can hide behind a screen and nobody needs prior skill. Everyone starts with the same pile of flour, everyone’s first pici is crooked, and an hour later the table is covered in something the team actually made together. Then you eat it — which beats a debrief.`,
                 `Of all the food teambuilding ideas in Florence — wine tastings, tasting walks, another aperitivo — this is the one where nobody stands at the back watching. And the kitchen is exclusively yours: no strangers, your pace, your dietary needs handled in advance.`,
@@ -1543,7 +1543,7 @@ export const landings: Record<string, LandingPage> = {
           ],
           sections: [
             {
-              title: `Perché il teambuilding in cucina funziona`,
+              title: `Perché il teambuilding in cucina funziona così bene?`,
               paras: [
                 `La pasta fresca è la rara attività di squadra in cui nessuno può nascondersi dietro uno schermo e nessuno ha bisogno di abilità pregresse. Tutti iniziano con lo stesso mucchio di farina, i primi pici di tutti sono storti e un'ora dopo il tavolo è coperto di qualcosa che il team ha effettivamente realizzato insieme. Poi lo si mangia — il che è meglio di un meeting riassuntivo.`,
                 `La cucina è esclusivamente tua: niente estranei, il tuo ritmo, le tue esigenze alimentari gestite in anticipo.`,
@@ -1610,7 +1610,7 @@ export const landings: Record<string, LandingPage> = {
           ],
           sections: [
             {
-              title: `Pourquoi les pâtes sont l'activité de teambuilding qui fonctionne`,
+              title: `Pourquoi les pâtes sont-elles l'activité de teambuilding qui fonctionne ?`,
               paras: [
                 `Les pâtes fraîches sont la rare activité d'équipe où personne ne peut se cacher derrière un écran et où personne n'a besoin de compétences préalables. Tout le monde commence avec le même tas de farine, les premiers pici de tout le monde sont de travers, et une heure plus tard, la table est recouverte de quelque chose que l'équipe a réellement fabriqué ensemble. Ensuite, vous le mangez — ce qui vaut mieux qu'un débriefing.`,
                 `La cuisine est exclusivement à vous : pas d'étrangers, votre propre rythme, vos besoins alimentaires gérés à l'avance.`,
@@ -1677,7 +1677,7 @@ export const landings: Record<string, LandingPage> = {
           ],
           sections: [
             {
-              title: `Warum Pasta die Teambuilding-Aktivität ist, die funktioniert`,
+              title: `Warum funktioniert Pasta-Kochen als Teambuilding-Aktivität?`,
               paras: [
                 `Frische Pasta ist die seltene Teamaktivität, bei der sich niemand hinter einem Bildschirm verstecken kann und niemand Vorkenntnisse benötigt. Jeder beginnt mit dem gleichen Haufen Mehl, die ersten Pici von jedem sind krumm, und eine Stunde später ist der Tisch bedeckt mit etwas, das das Team tatsächlich zusammen hergestellt hat. Dann essen Sie es — das ist besser als ein Debriefing.`,
                 `Die Küche gehört exklusiv Ihnen: keine Fremden, Ihr eigenes Tempo, Ihre Ernährungsbedürfnisse im Voraus geklärt.`,
@@ -1744,7 +1744,7 @@ export const landings: Record<string, LandingPage> = {
           ],
           sections: [
             {
-              title: `为什么意面制作是行之有效的团建活动`,
+              title: `为什么意面制作是行之有效的团建活动？`,
               paras: [
                 `新鲜意面是一项罕见的团队活动，在活动中没有人可以躲在屏幕后面，也没有人需要预先具备任何技能。每个人都从同一堆面粉开始，每个人最初做的意面都是歪歪扭扭的，而一小时后，桌面上就摆满了团队真正共同创造的成果。然后大家一起享用它——这比开总结会要好得多。`,
                 `厨房完全属于您的团队：没有陌生人打扰，按照您自己的节奏进行，且您的饮食需求会提前安排妥当。`,
@@ -1820,7 +1820,7 @@ export const landings: Record<string, LandingPage> = {
           ],
           sections: [
             {
-              title: `How we actually keep it gluten-free`,
+              title: `How do you actually keep the class gluten-free?`,
               paras: [
                 `We set your station up before the class starts, while the room is still clean and no one has opened a bag of wheat flour. You get a dedicated gluten-free blend, your own board, rolling pin, cutter and bowls, and your pasta is boiled in its own pot of water — never the shared one. Your chef washes and changes apron before working with you.`,
                 `We want to be straight with you about one thing: this is a working pasta kitchen and wheat flour is used in the same room. Our setup is built for coeliac guests and we take it seriously, but we are not a certified gluten-free facility, and airborne flour is a fact of any pasta class. If your sensitivity is severe, tell us when you book — we will talk it through honestly rather than sell you a seat.`,
@@ -1889,7 +1889,7 @@ export const landings: Record<string, LandingPage> = {
           ],
           sections: [
             {
-              title: `Come lo rendiamo davvero senza glutine`,
+              title: `Come rendiamo davvero il corso senza glutine?`,
               paras: [
                 `Prepariamo la tua postazione prima che il corso inizi, quando la stanza è ancora pulita e nessuno ha aperto un sacco di farina di grano. Avrai una miscela senza glutine dedicata, il tuo tagliere, mattarello, rotella e ciotole, e la tua pasta bollirà nella sua pentola d'acqua — mai in quella condivisa. Il tuo chef si lava le mani e cambia grembiule prima di lavorare con te.`,
                 `Vogliamo essere sinceri su una cosa: questa è una cucina di pasta fresca e la farina di grano viene usata nella stessa stanza. La nostra procedura è pensata per gli ospiti celiaci e la prendiamo sul serio, ma non siamo una struttura certificata senza glutine, e la farina nell'aria è una realtà di qualsiasi corso di pasta. Se la tua sensibilità è alta, diccelo quando prenoti — ne parliamo con onestà invece di venderti un posto.`,
@@ -1958,7 +1958,7 @@ export const landings: Record<string, LandingPage> = {
           ],
           sections: [
             {
-              title: `Comment nous le rendons réellement sans gluten`,
+              title: `Comment rendons-nous vraiment le cours sans gluten ?`,
               paras: [
                 `Nous installons votre poste avant le début du cours, quand la pièce est encore propre et que personne n'a ouvert un sac de farine de blé. Vous avez un mélange sans gluten dédié, votre planche, votre rouleau, votre roulette et vos bols, et vos pâtes cuisent dans leur propre casserole d'eau — jamais celle partagée. Votre chef se lave les mains et change de tablier avant de travailler avec vous.`,
                 `Nous voulons être francs sur un point : c'est une cuisine de pâtes en activité et la farine de blé est utilisée dans la même pièce. Notre protocole est conçu pour les personnes coeliaques et nous le prenons au sérieux, mais nous ne sommes pas un établissement certifié sans gluten, et la farine en suspension est une réalité de tout cours de pâtes. Si votre sensibilité est forte, dites-le-nous à la réservation — nous en parlerons honnêtement plutôt que de vous vendre une place.`,
@@ -2027,7 +2027,7 @@ export const landings: Record<string, LandingPage> = {
           ],
           sections: [
             {
-              title: `Wie wir es tatsächlich glutenfrei halten`,
+              title: `Wie halten wir den Kurs tatsächlich glutenfrei?`,
               paras: [
                 `Wir richten Ihre Station ein, bevor der Kurs beginnt — solange der Raum noch sauber ist und niemand einen Sack Weizenmehl geöffnet hat. Sie bekommen eine eigene glutenfreie Mehlmischung, Ihr eigenes Brett, Nudelholz, Rädchen und Schüsseln, und Ihre Pasta kocht in ihrem eigenen Topf Wasser — nie im gemeinsamen. Ihr Koch wäscht sich die Hände und wechselt die Schürze, bevor er mit Ihnen arbeitet.`,
                 `Eines wollen wir offen sagen: Dies ist eine arbeitende Pastaküche, und Weizenmehl wird im selben Raum verwendet. Unser Ablauf ist für Zöliakie-Gäste gemacht und wir nehmen ihn ernst, aber wir sind kein zertifizierter glutenfreier Betrieb, und Mehlstaub in der Luft gehört zu jedem Pastakurs. Wenn Sie stark empfindlich sind, sagen Sie es bei der Buchung — wir sprechen ehrlich darüber, statt Ihnen einen Platz zu verkaufen.`,
@@ -2096,7 +2096,7 @@ export const landings: Record<string, LandingPage> = {
           ],
           sections: [
             {
-              title: `我们如何真正做到无麸质`,
+              title: `我们如何真正做到课程无麸质？`,
               paras: [
                 `我们会在课程开始前为您布置好操作台——那时房间还很干净，还没有人打开过小麦面粉袋。您将获得专属的无麸质面粉配方、您自己的案板、擀面杖、切轮和碗具，您的意面会在专属的一锅水中煮熟，绝不使用公用锅。主厨在与您一起操作前会洗手并更换围裙。`,
                 `有一件事我们想坦诚相告：这是一间正在运作的意面厨房，同一空间内会使用小麦面粉。我们的流程是为乳糜泻客人设计的，我们也认真对待，但我们并非经过认证的无麸质场所，而空气中的面粉是任何意面课程都存在的现实。如果您的敏感程度较高，请在预订时告诉我们——我们会坦诚地与您沟通，而不是先把座位卖给您。`,
@@ -2181,7 +2181,7 @@ export const landings: Record<string, LandingPage> = {
               ],
             },
             {
-              title: `Why pasta is a better date than dinner`,
+              title: `Why is a pasta class a better date than dinner?`,
               paras: [
                 `A restaurant sits you across a table for ninety minutes. A pasta class puts you shoulder to shoulder for three hours doing something neither of you is good at yet, which is a great deal more interesting. You will be bad at tortelli together, you will fix each other's folds, and you will end up eating a lunch that has your fingerprints in it.`,
                 `You are also cooking with two head chefs who do this for a living — pasta for wedding feasts and farmhouse tables is the day job — so you leave able to actually make it again at home. That tends to outlast a dinner reservation.`,
@@ -2250,7 +2250,7 @@ export const landings: Record<string, LandingPage> = {
               ],
             },
             {
-              title: `Perché la pasta è meglio di una cena`,
+              title: `Perché un corso di pasta è un appuntamento migliore di una cena?`,
               paras: [
                 `Un ristorante vi mette uno di fronte all'altra per novanta minuti. Un corso di pasta vi mette spalla a spalla per tre ore a fare qualcosa in cui nessuno dei due è ancora bravo, il che è molto più interessante. Sarete pessimi con i tortelli insieme, vi correggerete le pieghe a vicenda, e finirete per mangiare un pranzo con dentro le vostre impronte.`,
                 `E cucinate con due capi chef che lo fanno di mestiere — la pasta per banchetti di nozze e tavolate di agriturismo è il lavoro di tutti i giorni — quindi ve ne andate sapendola rifare davvero a casa. Di solito dura più a lungo di una prenotazione al ristorante.`,
@@ -2319,7 +2319,7 @@ export const landings: Record<string, LandingPage> = {
               ],
             },
             {
-              title: `Pourquoi les pâtes valent mieux qu'un dîner`,
+              title: `Pourquoi un cours de pâtes est-il un meilleur rendez-vous qu'un dîner ?`,
               paras: [
                 `Un restaurant vous assoit face à face pendant quatre-vingt-dix minutes. Un cours de pâtes vous met épaule contre épaule pendant trois heures à faire quelque chose qu'aucun de vous ne maîtrise encore, ce qui est nettement plus intéressant. Vous serez mauvais en tortelli ensemble, vous corrigerez les pliages de l'autre, et vous finirez par manger un repas qui porte vos empreintes.`,
                 `Vous cuisinez aussi avec deux chefs de cuisine dont c'est le métier — les pâtes pour les banquets de mariage et les grandes tablées, c'est leur quotidien — et vous repartez donc capables de refaire cela chez vous. Cela dure généralement plus longtemps qu'une réservation au restaurant.`,
@@ -2388,7 +2388,7 @@ export const landings: Record<string, LandingPage> = {
               ],
             },
             {
-              title: `Warum Pasta besser ist als ein Abendessen`,
+              title: `Warum ist ein Pasta-Kurs ein besseres Date als ein Abendessen?`,
               paras: [
                 `Ein Restaurant setzt Sie neunzig Minuten lang gegenüber. Ein Pastakurs stellt Sie drei Stunden lang Schulter an Schulter und lässt Sie etwas tun, das noch keiner von Ihnen kann — was erheblich interessanter ist. Sie werden gemeinsam schlecht in Tortelli sein, Sie werden einander die Faltungen richten, und am Ende essen Sie ein Essen, in dem Ihre Fingerabdrücke stecken.`,
                 `Außerdem kochen Sie mit zwei Küchenchefs, die davon leben — Pasta für Hochzeitsfeste und lange Tafeln ist ihr Alltag — und gehen daher so, dass Sie es zu Hause wirklich nachmachen können. Das hält meist länger als eine Tischreservierung.`,
@@ -2457,7 +2457,7 @@ export const landings: Record<string, LandingPage> = {
               ],
             },
             {
-              title: `为什么做意面比吃一顿晚餐更好`,
+              title: `为什么意面课程比晚餐更适合作为约会？`,
               paras: [
                 `餐厅让你们面对面坐九十分钟。意面课程则让你们肩并肩三个小时，一起做一件两人都还不擅长的事，这要有趣得多。你们会一起把tortelli捏得歪歪扭扭，会互相纠正对方的折法，最后吃到一顿带着你们指纹的饭菜。`,
                 `而且你们是在和两位以此为生的主厨一起下厨——为婚宴和农庄长桌做意面是他们的日常工作——所以离开时你们是真的学会了回家再做一次。这通常比一次餐厅订位留存得更久。`,
@@ -2532,7 +2532,7 @@ export const landings: Record<string, LandingPage> = {
           ],
           sections: [
             {
-              title: `What you are actually giving`,
+              title: `What are you actually giving?`,
               paras: [
                 `Three hours in a small Oltrarno kitchen with two Tuscan agriturismo head chefs, hands in the flour from the first minute, four classic pasta shapes, and a sit-down lunch of everything they made with a glass of Chianti. Never more than eight people at the table.`,
                 `If they are not coming to Florence any time soon, the <a href="/online-pasta-making-class/">live online class</a> works just as well as a gift — same chefs, same kitchen, with an ingredient kit shipped to their door. It is the one we send most often to people abroad.`,
@@ -2600,7 +2600,7 @@ export const landings: Record<string, LandingPage> = {
           ],
           sections: [
             {
-              title: `Cosa stai regalando davvero`,
+              title: `Cosa stai regalando davvero?`,
               paras: [
                 `Tre ore in una piccola cucina in Oltrarno con due capi chef toscani di agriturismo, le mani in farina dal primo minuto, quattro formati classici di pasta e un pranzo seduti a mangiare tutto quello che hanno preparato, con un bicchiere di Chianti. Mai più di otto persone al tavolo.`,
                 `Se non verranno a Firenze a breve, anche il <a href="/it/corso-pasta-online/">corso in diretta online</a> funziona benissimo come regalo — stessi chef, stessa cucina, con un kit di ingredienti spedito a casa loro. È quello che mandiamo più spesso a chi vive all'estero.`,
@@ -2668,7 +2668,7 @@ export const landings: Record<string, LandingPage> = {
           ],
           sections: [
             {
-              title: `Ce que vous offrez vraiment`,
+              title: `Qu'offrez-vous vraiment ?`,
               paras: [
                 `Trois heures dans une petite cuisine de l'Oltrarno avec deux chefs d'agritourismes toscans, les mains dans la farine dès la première minute, quatre formes de pâtes classiques et un déjeuner assis où l'on mange tout ce qu'ils ont préparé, avec un verre de Chianti. Jamais plus de huit personnes à table.`,
                 `S'ils ne viennent pas à Florence de sitôt, le <a href="/fr/cours-pates-en-ligne/">cours en direct en ligne</a> fonctionne tout aussi bien en cadeau — mêmes chefs, même cuisine, avec un kit d'ingrédients livré chez eux. C'est celui que nous envoyons le plus souvent à l'étranger.`,
@@ -2736,7 +2736,7 @@ export const landings: Record<string, LandingPage> = {
           ],
           sections: [
             {
-              title: `Was Sie tatsächlich verschenken`,
+              title: `Was verschenken Sie eigentlich?`,
               paras: [
                 `Drei Stunden in einer kleinen Küche im Oltrarno mit zwei toskanischen Agriturismo-Küchenchefs, ab der ersten Minute die Hände im Mehl, vier klassische Pastaformen und ein gemeinsames Mittagessen aus allem, was sie gemacht haben, mit einem Glas Chianti. Nie mehr als acht Menschen am Tisch.`,
                 `Wenn sie so bald nicht nach Florenz kommen, funktioniert der <a href="/de/online-pasta-kurs/">Live-Online-Kurs</a> als Geschenk genauso gut — dieselben Köche, dieselbe Küche, mit einem Zutaten-Kit an ihre Tür. Den verschicken wir am häufigsten ins Ausland.`,
@@ -2804,7 +2804,7 @@ export const landings: Record<string, LandingPage> = {
           ],
           sections: [
             {
-              title: `您真正赠送的是什么`,
+              title: `您真正赠送的是什么？`,
               paras: [
                 `在奥特拉诺的一间小厨房里与两位托斯卡纳农庄主厨共度三小时，从第一分钟起双手就在面粉里，四种经典意面形状，以及一顿坐下来享用自己成果的午餐，配一杯基安蒂。餐桌人数从不超过八位。`,
                 `如果他们近期不会来佛罗伦萨，<a href="/zh/zaixian-yidali-mian-kecheng/">在线直播课程</a>作为礼物同样出色——同样的主厨、同样的厨房，并将食材包寄送到他们家门口。这是我们寄往海外最多的一份礼物。`,

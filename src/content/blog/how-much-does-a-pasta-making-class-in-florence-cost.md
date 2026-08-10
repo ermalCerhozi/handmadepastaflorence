@@ -11,7 +11,7 @@ Short answer: as of summer 2026, most **group pasta making classes in Florence c
 
 We run classes ourselves, so consider this the view from inside the kitchen — including what those prices should actually buy you.
 
-## What drives the price
+## What drives the price of a pasta class in Florence?
 
 Four things explain almost every price difference you'll see:
 
@@ -20,7 +20,7 @@ Four things explain almost every price difference you'll see:
 3. **A market visit.** Classes that start at Sant'Ambrogio or the Mercato Centrale add one to two hours and a guide, so expect the higher band.
 4. **Privacy.** A private kitchen for your group only is priced per group, not per person — reasonable for 8+ people, expensive for 2.
 
-## What should be included at these prices
+## What should be included at these prices?
 
 At €80 and up, you should not be paying extra for the essentials. A fair class includes **all ingredients, aprons, the full meal you cook, and wine with the meal**. Dietary accommodations — gluten-free especially — should be arranged in advance and shouldn't cost more; that's flour, not truffle.
 
@@ -41,7 +41,7 @@ So you can calibrate the ranges above against a real menu ([full details here](/
 4. **How are allergies and gluten-free handled?** The right answer mentions a separate station or dedicated flour — not just "we'll see."
 5. **What happens if my plans change?** Get the cancellation terms in writing before you pay, whoever you book with.
 
-## When to book
+## When should you book a pasta class in Florence?
 
 Florence fills up from April to October, and small-group classes (six to eight seats) sell out first precisely because they're small. Book a week or more ahead in high season; in winter you can often find a same-week seat. Morning classes double as lunch, evening classes as dinner — pick whichever meal you'd rather replace.
 
