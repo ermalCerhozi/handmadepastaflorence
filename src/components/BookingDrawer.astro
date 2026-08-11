@@ -114,12 +114,14 @@ const bkJsPayload = { en: en.bkJs, it: it.bkJs };
             <span class="add__price">+€34</span>
             <span class="switch"><input type="checkbox" /><span class="switch__track"></span></span>
           </label>
-          <label class="add" data-addon="wine" data-add-price="18" data-per="guest">
+          <!-- Online only: in-person classes now include two pours in the €95.
+               Priced per order, not per guest — it is one shipped bottle. -->
+          <label class="add" data-addon="wine" data-add-price="18" data-per="order" data-online-only>
             <span class="add__main">
               <span class="add__t">{t.bk.wineT}</span>
               <span class="add__d">{t.bk.wineD}</span>
             </span>
-            <span class="add__price">+€18<small>/{t.bk.person}</small></span>
+            <span class="add__price">+€18</span>
             <span class="switch"><input type="checkbox" /><span class="switch__track"></span></span>
           </label>
           <label class="add" data-addon="gf" data-add-price="0" data-per="order">
@@ -388,9 +390,8 @@ const bkJsPayload = { en: en.bkJs, it: it.bkJs };
         cell.textContent = String(d);
         cell.className = 'cal__day';
         const past = date < today;
-        const closed = date.getDay() === 1; // closed Mondays
         const elapsed = date.getTime() === today.getTime() && !hasFutureSlot(date); // today, all slots gone
-        if (past || closed || elapsed) { cell.disabled = true; cell.classList.add('is-off'); }
+        if (past || elapsed) { cell.disabled = true; cell.classList.add('is-off'); }
         else {
           cell.addEventListener('click', () => {
             $$('.cal__day').forEach((c) => c.classList.remove('is-sel'));

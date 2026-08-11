@@ -28,7 +28,7 @@ Quatre éléments expliquent presque chaque différence de prix que vous verrez 
 
 Afin que vous puissiez calibrer les fourchettes ci-dessus par rapport à un vrai menu ([détails complets ici](/pasta-making-class-florence/)) :
 
-- **[La Table du Chef](/pasta-making-class-florence/)** — 3 heures, quatre formes de pâtes, max 8 convives, se termine par un déjeuner assis avec du vin : **95 € par personne**.
+- **[La Table du Chef](/fr/cours-de-pates-fraiches-florence/)** — 3 heures, quatre formes de pâtes, max 8 convives, se termine par un déjeuner assis avec deux vins toscans compris : **95 € par personne**.
 - **[Marché & Mains](/market-tour-cooking-class-florence/)** — promenade au marché de Sant'Ambrogio, puis raviolis, ragoût et un dolce de saison, max 6 convives, environ 5 heures : **145 € par personne**.
 - **[La Grande Table Familiale](/private-cooking-class-florence/)** — toute la cuisine en privé, 6 à 14 convives : **à partir de 680 € par groupe**.
 - **[Cours en Ligne en Direct](/online-pasta-making-class/)** — diffusé depuis notre cuisine à Florence, kit d'ingrédients frais optionnel expédié chez vous : **à partir de 68 € par personne**.

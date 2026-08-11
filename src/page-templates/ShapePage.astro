@@ -80,9 +80,9 @@ const siblings = s.spokes.filter((sp) => sp.slug !== spoke.slug);
         <div class="sp-hero__text">
           <nav class="sp-crumb" aria-label="Breadcrumb">
             <a href={localizePath('/', locale)}>{L.home}</a>
-            <span aria-hidden="true">/</span>
+            <span aria-hidden="true">&gt;</span>
             <a href={shapesHubPath(locale)}>{L.hubCrumb}</a>
-            <span aria-hidden="true">/</span> <span>{spoke.name}</span>
+            <span aria-hidden="true">&gt;</span> <span>{spoke.name}</span>
           </nav>
           <h1 class="sp-hero__h">
             {spoke.name}

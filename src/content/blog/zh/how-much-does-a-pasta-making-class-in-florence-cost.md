@@ -28,7 +28,7 @@ imageAlt: '客人们在佛罗伦萨的小班课程中一起制作新鲜意面'
 
 为了让你能把上述价格区间与真实的菜单进行对比（[详情请点击这里](/zh/foluolunsa-yidali-mian-kecheng/)）：
 
-- **[主厨餐桌](/zh/foluolunsa-yidali-mian-kecheng/)** —— 3个小时，四种意面形状，最多8位客人，以一顿搭配葡萄酒的丰盛午餐结束：**每人 95 欧元**。
+- **[主厨餐桌](/zh/foluolunsa-yidali-mian-kecheng/)** —— 3个小时，四种意面形状，最多8位客人，以一顿丰盛午餐结束，并已包含两杯托斯卡纳葡萄酒：**每人 95 欧元**。
 - **[市场与手工](/zh/shichang-daolan-pengren-kecheng-foluolunsa/)** —— 漫步圣安布罗焦市场，然后制作 ravioli 意饺、肉酱和时令甜点，最多6位客人，约5个小时：**每人 145 欧元**。
 - **[家庭长桌](/zh/siren-pengren-kecheng-foluolunsa/)** —— 专属私人厨房，6-14 位客人：**每团 680 欧元起**。
 - **[在线直播课程](/zh/zaixian-yidali-mian-kecheng/)** —— 在我们佛罗伦萨的厨房直播，可选配冷链邮寄到你家的食材包：**每人 68 欧元起**。

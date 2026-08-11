@@ -24,7 +24,7 @@ const it: Dict = {
   footer: {
     headline: `Vieni a sporcarti le mani<br /><span class="ital">di farina.</span>`,
     book: `Prenota il tuo corso`,
-    hours: `Mar–Dom · corsi 10:00, 14:30 & 18:00 · lunedì chiusi`,
+    hours: `Aperti tutti i giorni · corsi 10:00, 14:30 & 18:00`,
     desc: `Due chef di agriturismo, cucinano con te di persona e online nel cuore di Firenze.`,
     by: `Di`,
     classes: `Corsi`,
@@ -44,6 +44,7 @@ const it: Dict = {
 
   lp: {
     home: `Home`,
+    pastaCrumb: `Pasta`,
     faqPre: `Buono a `,
     faqItal: `sapersi.`,
     relPre: `Cerchi qualcos'`,
@@ -133,7 +134,7 @@ const it: Dict = {
       { q: `Potete soddisfare diete senza glutine o allergie?`, a: `Sì, possiamo preparare una miscela di farine senza glutine dedicata e una postazione pulita senza costi aggiuntivi. Basta segnalarci eventuali allergie al momento della prenotazione.` },
       { q: `Non posso venire a Firenze. Posso comunque fare un corso?`, a: `Assolutamente sì. I nostri corsi online in diretta vengono trasmessi dalla stessa cucina, con un kit di ingredienti per la pasta fresca spedito a casa tua, a partire da €68 a persona.` },
       { q: `Ospitate team building aziendali o lavorate con hotel e tour operator?`, a: `Sì. Le aziende possono prenotare l'intera cucina per un corso di team building privato (6-14 persone), e offriamo tariffe partner e prenotazioni su segnalazione per hotel, agriturismi e tour operator. Invia un'email a ciao@handmadepastaflorence.com con oggetto "Partnership commerciale" e ti risponderemo entro un giorno lavorativo.` },
-      { q: `Quando si svolgono i corsi?`, a: `I corsi iniziano alle 10:00, 14:30 e 18:00 (ora di Firenze). Siamo chiusi il lunedì.` },
+      { q: `Quando si svolgono i corsi?`, a: `I corsi iniziano alle 10:00, 14:30 e 18:00 (ora di Firenze), tutti i giorni della settimana.` },
       { q: `Come faccio a prenotare e pagare?`, a: `Usa il pulsante "Prenota un corso" per creare la tua richiesta. Si aprirà una chat di WhatsApp con i dettagli precompilati, ti confermeremo la disponibilità e ti guideremo per il resto.` },
     ],
   },
@@ -238,8 +239,8 @@ const it: Dict = {
     step3Sub: `Opzionale. Tutto qui è solo aggiuntivo.`,
     kitT: `Spediscimi il kit ingredienti`,
     kitD: `Farina 00, semola, mattarello e schede ricette, refrigerati a casa tua.`,
-    wineT: `Aggiungi abbinamento vini`,
-    wineD: `Due calici toscani scelti per il tuo menù (in presenza) o una bottiglia spedita (online).`,
+    wineT: `Spedisci anche il vino`,
+    wineD: `Una bottiglia di vino toscano insieme al kit, scelta per ciò che cucinerai. (A Firenze, due calici sono già inclusi.)`,
     gfT: `Preferenza senza glutine`,
     gfD: `Prepareremo una miscela GF dedicata e una postazione pulita. Gratuito.`,
     free: `Gratis`,

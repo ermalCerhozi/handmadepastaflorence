@@ -8,11 +8,47 @@ import { Image } from 'astro:assets';
 import { localizePath } from '../i18n/utils';
 import { useTranslations } from '../i18n/ui';
 import type { Locale } from '../i18n/config';
+import { shapesHubPath } from '../data/shapes';
+import type { FactIcon } from '../data/landings';
 
 interface Fact {
   label: string;
   value: string;
+  icon?: FactIcon;
 }
+
+// Original line-icon set (24x24, stroke-based, warm single-color) — hand-drawn
+// for this site, not sourced or traced from any third party.
+const FACT_ICONS: Record<FactIcon, string> = {
+  clock:
+    '<circle cx="12" cy="12" r="8.5"/><path d="M12 3.3v1.4M20.7 12h-1.4M12 20.7v-1.4M3.3 12h1.4"/><path d="M12 7.5V12l3 2"/>',
+  people:
+    '<circle cx="8.5" cy="8" r="3"/><path d="M2.8 19.5c0-3.4 2.6-6 5.7-6s5.7 2.6 5.7 6"/><circle cx="16.7" cy="9" r="2.3"/><path d="M15.2 13.3c2.6.4 4.5 2.5 4.7 5.5"/>',
+  calendar:
+    '<rect x="3.2" y="5" width="17.6" height="15.5" rx="2.2"/><path d="M3.2 9.8h17.6M8 3v4M16 3v4"/><circle cx="12" cy="14.7" r="1.2" fill="currentColor" stroke="none"/>',
+  'map-pin':
+    '<path d="M12 21.3S5 14.4 5 9.6a7 7 0 1 1 14 0c0 4.8-7 11.7-7 11.7z"/><circle cx="12" cy="9.6" r="2.6"/>',
+  globe:
+    '<circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.3 2.5 2.3 14.5 0 17M12 3.5c-2.3 2.5-2.3 14.5 0 17"/>',
+  leaf:
+    '<path d="M4.7 20.4c8 .8 13.1-3.8 13.6-12.2l.2-2.9-3 .1C7.2 5.7 3.9 11 4.7 20.4z"/><path d="M4.9 20.2c2-4.6 5.6-8.2 11.4-10.5"/>',
+  'chef-hat':
+    '<path d="M8.6 20.5h6.8M9.3 20.5v-5.6M14.7 20.5v-5.6M6.3 9.7a4.2 4.2 0 0 1 4.1-4.3c.3-1 1.1-1.6 2.1-1.6.9 0 1.7.6 2.1 1.5a4.2 4.2 0 0 1 4.4 4.2c0 2-1.6 3.8-3.3 4.5v1.5H9.6v-1.5c-1.7-.7-3.3-2.4-3.3-4.3z"/>',
+  home:
+    '<path d="M3.5 11.2L12 4l8.5 7.2"/><path d="M5.5 10v10.5h13V10"/><path d="M9.7 20.5v-5.3h4.6v5.3"/>',
+  laptop:
+    '<rect x="4" y="5" width="16" height="10" rx="1.6"/><path d="M7 8.5h10M7 11.3h6"/><path d="M2 19.3h20l-2 1.2H4z"/>',
+  package:
+    '<path d="M3 8l9-5 9 5-9 5-9-5z"/><path d="M3 8v9l9 5 9-5V8"/><path d="M12 13v9M3 8l9 5 9-5"/>',
+  table:
+    '<path d="M3.2 6.2h17.6v3.2H3.2z"/><path d="M5.4 9.4v10.6M18.6 9.4v10.6"/>',
+  gift:
+    '<rect x="4" y="9.5" width="16" height="10.7" rx="1.2"/><path d="M4 9.5h16M12 9.5v10.7"/><path d="M12 9.5c-3.2.3-5-1.8-4.6-3.6.3-1.5 2-2.1 3.2-1.2 1 .8 1.4 2.6 1.4 4.8zM12 9.5c3.2.3 5-1.8 4.6-3.6-.3-1.5-2-2.1-3.2-1.2-1 .8-1.4 2.6-1.4 4.8z"/>',
+  tag:
+    '<path d="M3 12.3L12.3 3h6.7v6.7L9.7 19z"/><circle cx="15.7" cy="7.3" r="1.5" fill="currentColor" stroke="none"/>',
+  mail:
+    '<rect x="3" y="5.5" width="18" height="13" rx="1.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/>',
+};
 interface Section {
   title: string;
   paras: string[];
@@ -46,6 +82,8 @@ interface Props {
   /** When set, the CTA becomes a mailto (bespoke enquiries) instead of the drawer. */
   emailSubject?: string;
   breadcrumbName: string;
+  /** When true, inserts a "Pasta" crumb (linking to the pasta-shapes hub) between Home and breadcrumbName. */
+  showPastaCrumb?: boolean;
   /** Product schema (classes with a fixed per-person/per-group price). */
   product?: { name: string; description: string; price: string };
   /** Service schema (bespoke offers without a public price). */
@@ -74,6 +112,7 @@ const {
   prefill = 'florence',
   emailSubject,
   breadcrumbName,
+  showPastaCrumb = false,
   product,
   service,
   locale,
@@ -154,10 +193,16 @@ const serviceSchema = service && {
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/` },
-    { '@type': 'ListItem', position: 2, name: breadcrumbName, item: canonical },
-  ],
+  itemListElement: showPastaCrumb
+    ? [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/` },
+        { '@type': 'ListItem', position: 2, name: t.lp.pastaCrumb, item: `${SITE}${shapesHubPath(lang)}` },
+        { '@type': 'ListItem', position: 3, name: breadcrumbName, item: canonical },
+      ]
+    : [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/` },
+        { '@type': 'ListItem', position: 2, name: breadcrumbName, item: canonical },
+      ],
 };
 
 const faqSchema = {
@@ -176,7 +221,13 @@ const faqSchema = {
   <div class="shell lp-hero__inner">
     <div class="lp-hero__text" data-reveal>
       <nav class="lp-crumb" aria-label="Breadcrumb">
-        <a href={localizePath('/', lang)}>{t.lp.home}</a> <span aria-hidden="true">/</span> <span>{breadcrumbName}</span>
+        <a href={localizePath('/', lang)}>{t.lp.home}</a> <span aria-hidden="true">&gt;</span>
+        {showPastaCrumb && (
+          <>
+            <a href={shapesHubPath(lang)}>{t.lp.pastaCrumb}</a> <span aria-hidden="true">&gt;</span>
+          </>
+        )}
+        <span>{breadcrumbName}</span>
       </nav>
       <p class="eyebrow lp-hero__eyebrow">{eyebrow}</p>
       <h1 class="lp-hero__h">
@@ -216,8 +267,13 @@ const faqSchema = {
       {
         facts.map((f) => (
           <div class="lp-facts__item">
-            <dt>{f.label}</dt>
-            <dd>{f.value}</dd>
+            {f.icon && (
+              <svg class="lp-facts__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" set:html={FACT_ICONS[f.icon]} />
+            )}
+            <div class="lp-facts__text">
+              <dt>{f.label}</dt>
+              <dd>{f.value}</dd>
+            </div>
           </div>
         ))
       }
@@ -420,9 +476,29 @@ const faqSchema = {
   }
   .lp-facts__grid {
     display: grid;
-    gap: 1.2rem 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr));
+    gap: 1.4rem 1.2rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr));
     padding-block: clamp(1.6rem, 4vw, 2.4rem);
+  }
+  /* From here up, force every fact onto a single row instead of letting a
+     narrow container wrap the last item — the item count varies per page
+     (6-7), so this uses equal flexible columns rather than a fixed count. */
+  @media (min-width: 1024px) {
+    .lp-facts__grid {
+      grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    }
+  }
+  .lp-facts__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+  .lp-facts__icon {
+    flex-shrink: 0;
+    width: 2.1rem;
+    height: 2.1rem;
+    margin-top: 0.05rem;
+    color: var(--terracotta);
   }
   .lp-facts__item dt {
     font-size: 0.72rem;

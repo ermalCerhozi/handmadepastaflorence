@@ -21,7 +21,7 @@ const de = {
   footer: {
     headline: 'Machen Sie sich die Hände<br /><span class="ital">ein wenig mehlig.</span>',
     book: 'Buchen Sie Ihren Kurs',
-    hours: 'Di–So · Kurse 10:00, 14:30 & 18:00 · montags geschlossen',
+    hours: 'Täglich geöffnet · Kurse 10:00, 14:30 & 18:00',
     desc: 'Zwei Agriturismo-Köche kochen mit Ihnen persönlich & online im Herzen von Florenz.',
     by: 'Von',
     classes: 'Kurse',
@@ -42,6 +42,7 @@ const de = {
   // Class landing page (ClassLanding.astro) chrome labels.
   lp: {
     home: 'Startseite',
+    pastaCrumb: 'Pasta',
     faqPre: 'Gut zu ',
     faqItal: 'wissen.',
     relPre: 'Suchen Sie nach etwas ',
@@ -131,7 +132,7 @@ const de = {
       { q: 'Können Sie auf glutenfreie Diäten oder Allergien eingehen?', a: 'Ja, wir können ohne Aufpreis eine spezielle glutenfreie Mehlmischung und eine saubere Arbeitsstation vorbereiten. Teilen Sie uns einfach bei der Buchung etwaige Allergien mit.' },
       { q: "Ich schaffe es nicht nach Florenz. Kann ich trotzdem an einem Kurs teilnehmen?", a: 'Absolut. Unsere Live-Online-Kurse werden aus derselben Küche gestreamt, mit einem Frischpasta-Zutaten-Kit, das an Ihre Tür geliefert wird, ab 68 € pro Person.' },
       { q: 'Veranstalten Sie Firmen-Teambuilding oder arbeiten Sie mit Hotels und Reiseveranstaltern zusammen?', a: 'Ja. Unternehmen können die gesamte Küche für einen privaten Teambuilding-Kurs (6–14 Personen) buchen, und wir bieten Partnertarife und Empfehlungsbuchungen für Hotels, Agriturismi und Reiseveranstalter an. Senden Sie eine E-Mail mit dem Betreff "Business partnership" an ciao@handmadepastaflorence.com und wir antworten innerhalb eines Werktages.' },
-      { q: 'Wann finden die Kurse statt?', a: 'Die Kurse beginnen um 10:00, 14:30 und 18:00 Uhr (Ortszeit Florenz). Montags haben wir geschlossen.' },
+      { q: 'Wann finden die Kurse statt?', a: 'Die Kurse beginnen um 10:00, 14:30 und 18:00 Uhr (Ortszeit Florenz), an jedem Wochentag.' },
       { q: 'Wie buche und bezahle ich?', a: "Nutzen Sie die Schaltfläche „Kurs buchen“, um Ihre Anfrage zu erstellen. Es öffnet sich ein WhatsApp-Chat mit den ausgefüllten Details, und wir werden die Verfügbarkeit bestätigen und Sie durch den Rest führen." },
     ],
   },
@@ -237,8 +238,8 @@ const de = {
     step3Sub: 'Optional. Alles hier ist nur ein Add-on.',
     kitT: 'Schicken Sie mir das Zutaten-Kit',
     kitD: '00-Mehl, Semola, Nudelholz & Rezeptkarten, gekühlt an Ihre Tür geliefert.',
-    wineT: 'Weinbegleitung hinzufügen',
-    wineD: 'Zwei toskanische Weine, ausgewählt passend zu Ihrem Menü (persönlich) oder eine Flasche verschickt (online).',
+    wineT: 'Wein mitschicken',
+    wineD: 'Eine Flasche toskanischer Wein zu Ihrem Kit, passend zu dem, was Sie kochen werden. (In Florenz sind zwei Gläser bereits inklusive.)',
     gfT: 'Glutenfreie Vorliebe',
     gfD: 'Wir bereiten eine spezielle GF-Mehlmischung und eine saubere Station vor. Ohne Aufpreis.',
     free: 'Kostenlos',

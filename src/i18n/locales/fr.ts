@@ -19,7 +19,7 @@ const fr = {
   footer: {
     headline: 'Venez vous mettre un<br /><span class="ital">peu de farine sur les mains.</span>',
     book: 'Réserver votre cours',
-    hours: 'Mar–Dim · cours à 10:00, 14:30 & 18:00 · fermé le lundi',
+    hours: 'Ouvert tous les jours · cours à 10:00, 14:30 & 18:00',
     desc: 'Deux chefs d\'agritourisme, cuisinant avec vous en personne et en ligne au cœur de Florence.',
     by: 'Par',
     classes: 'Cours',
@@ -40,6 +40,7 @@ const fr = {
   // Class landing page (ClassLanding.astro) chrome labels.
   lp: {
     home: 'Accueil',
+    pastaCrumb: 'Pâtes',
     faqPre: 'Bon à ',
     faqItal: 'savoir.',
     relPre: 'Vous cherchez autre ',
@@ -129,7 +130,7 @@ const fr = {
       { q: 'Pouvez-vous adapter le cours aux régimes sans gluten ou aux allergies ?', a: 'Oui, nous pouvons préparer un mélange de farines sans gluten dédié et un poste de travail propre sans frais supplémentaires. Indiquez-nous simplement toute allergie lors de la réservation.' },
       { q: "Je ne peux pas venir à Florence. Puis-je quand même suivre un cours ?", a: 'Absolument. Nos cours en ligne en direct sont diffusés depuis la même cuisine, avec un kit d\'ingrédients pour pâtes fraîches livré chez vous, à partir de 68 € par personne.' },
       { q: 'Organisez-vous des activités de team building d\'entreprise ou travaillez-vous avec des hôtels et des voyagistes ?', a: 'Oui. Les entreprises peuvent réserver toute la cuisine pour un cours privé de team building (6 à 14 personnes), et nous proposons des tarifs partenaires et des réservations de recommandation pour les hôtels, les agritourismes et les voyagistes. Envoyez un e-mail à ciao@handmadepastaflorence.com avec "Partenariat commercial" et nous vous répondrons dans un délai d\'un jour ouvrable.' },
-      { q: 'Quand les cours ont-ils lieu ?', a: 'Les cours commencent à 10:00, 14:30 et 18:00 (heure de Florence). Nous sommes fermés le lundi.' },
+      { q: 'Quand les cours ont-ils lieu ?', a: 'Les cours commencent à 10:00, 14:30 et 18:00 (heure de Florence), tous les jours de la semaine.' },
       { q: 'Comment réserver et payer ?', a: "Utilisez le bouton “Réserver un cours” pour créer votre demande. Cela ouvre une discussion WhatsApp avec les détails pré-remplis, et nous confirmerons la disponibilité et vous guiderons pour le reste." },
     ],
   },
@@ -234,8 +235,8 @@ const fr = {
     step3Sub: 'Optionnel. Tout ici est en supplément.',
     kitT: 'Envoyez-moi le kit d\'ingrédients',
     kitD: 'Farine 00, semoule, rouleau à pâtisserie et fiches recettes, livrés au frais à votre porte.',
-    wineT: 'Ajouter un accord mets-vins',
-    wineD: 'Deux verres toscans choisis pour accompagner votre menu (en personne) ou une bouteille expédiée (en ligne).',
+    wineT: 'Expédiez-moi le vin aussi',
+    wineD: 'Une bouteille de vin toscan avec votre kit, choisie pour ce que vous allez cuisiner. (À Florence, deux verres sont déjà inclus.)',
     gfT: 'Préférence sans gluten',
     gfD: 'Nous préparerons un mélange de farines sans gluten dédié et un poste propre. Sans frais.',
     free: 'Gratuit',

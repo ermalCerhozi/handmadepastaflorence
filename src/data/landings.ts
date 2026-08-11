@@ -7,6 +7,23 @@
 import { defaultLocale, type Locale } from '../i18n/config';
 import * as img from '../assets/images';
 
+/** Keys into ClassLanding.astro's FACT_ICONS line-icon set. */
+export type FactIcon =
+  | 'clock'
+  | 'people'
+  | 'calendar'
+  | 'map-pin'
+  | 'globe'
+  | 'leaf'
+  | 'chef-hat'
+  | 'home'
+  | 'laptop'
+  | 'package'
+  | 'table'
+  | 'gift'
+  | 'tag'
+  | 'mail';
+
 export interface LandingContent {
   eyebrow: string;
   heading: string;
@@ -16,7 +33,7 @@ export interface LandingContent {
   image: { src: ImageMetadata; alt: string; w: number; h: number };
   price: string;
   priceNote?: string;
-  facts: { label: string; value: string }[];
+  facts: { label: string; value: string; icon?: FactIcon }[];
   sections: { title: string; paras: string[]; list?: string[] }[];
   faqs: { q: string; a: string }[];
   related: { title: string; href: string; desc: string }[];
@@ -24,6 +41,8 @@ export interface LandingContent {
   prefill?: 'florence' | 'online';
   emailSubject?: string;
   breadcrumbName: string;
+  /** When set, inserts a "Pasta" crumb (linking to the pasta-shapes hub) between Home and breadcrumbName. */
+  showPastaCrumb?: boolean;
   product?: { name: string; description: string; price: string };
   service?: { name: string; description: string };
 }
@@ -72,30 +91,31 @@ export const landings: Record<string, LandingPage> = {
     locales: {
       en: {
         slug: 'pasta-making-class-florence',
-        title: `Pasta Making Class in Florence — The Chef’s Table (€95) | Handmade Pasta Florence`,
-        description: `A 3-hour hands-on pasta making class in Florence’s Oltrarno. Roll four classic shapes with two Tuscan agriturismo head chefs, then sit down to eat what you made with a glass of Chianti. Max 8 guests, €95 per person.`,
+        title: `Pasta Making Class in Florence — 4 Shapes + Wine Included (€95) | Handmade Pasta Florence`,
+        description: `A 3-hour hands-on pasta making class in Florence’s Oltrarno. Roll four classic shapes with two Tuscan agriturismo head chefs, then sit down to eat what you made with two Tuscan wines included. Max 8 guests, €95 per person.`,
         cl: {
           eyebrow: `The Chef’s Table · Oltrarno, Florence`,
           heading: `A pasta making class in Florence,`,
           headingItal: `around one table.`,
-          lede: `Three hands-on hours in our Oltrarno kitchen. You’ll mix, knead, roll and fold four classic pasta shapes with a chef at your elbow, then sit down together to eat everything you made — with a Tuscan sauce and a glass of Chianti.`,
+          lede: `Three hands-on hours in our Oltrarno kitchen. You’ll mix, knead, roll and fold four classic pasta shapes with a chef at your elbow, then sit down together to eat everything you made — with a Tuscan sauce and two Tuscan wines, included in the price.`,
           image: { src: img.cookingClassGuests, alt: `Guests rolling fresh pasta at The Chef’s Table class in our Florence kitchen`, w: 800, h: 1067 },
           price: `€95`,
-          priceNote: `per person`,
+          priceNote: `per person · two wines included`,
           facts: [
-            { label: `Length`, value: `about 3 hours` },
-            { label: `Group size`, value: `max 8 guests` },
-            { label: `Starts`, value: `10:00 · 14:30 · 18:00` },
-            { label: `Where`, value: `Oltrarno, near Santo Spirito` },
-            { label: `Language`, value: `English or Italian` },
-            { label: `Days`, value: `Tue–Sun (closed Mon)` },
+            { label: `Local Products`, value: `Seasonal Tuscan produce`, icon: 'leaf' },
+            { label: `Length`, value: `about 3 hours`, icon: 'clock' },
+            { label: `Group size`, value: `max 8 guests`, icon: 'people' },
+            { label: `Starts`, value: `10:00 · 14:30 · 18:00`, icon: 'calendar' },
+            { label: `Where`, value: `Oltrarno, near Santo Spirito`, icon: 'map-pin' },
+            { label: `Language`, value: `English or Italian`, icon: 'globe' },
           ],
           sections: [
             {
               title: `What will you actually do in the class?`,
               paras: [
                 `This is a hands-in-the-flour class from the first minute — no demos to watch from a stool. You’ll make your own dough, learn to feel when it’s ready, and work it into four classic shapes: hand-rolled pici, ribbon-cut tagliatelle and pappardelle, and filled tortelli, following the season.`,
-                `Because the table never has more than eight guests, there’s always a chef beside you to fix your fold or rescue a sticky dough. When the pasta is done, we cook it together and sit down to a proper Tuscan lunch — the food you just made, a sauce from our kitchens, and a glass of local wine.`,
+                `You’ll also make the sauces that belong with them — a slow <strong>ragù</strong>, <strong>burro e salvia</strong> foamed with sage, fresh <strong>pomodorini</strong>, or <strong>pesto</strong> pounded by hand, depending on the day and the season.`,
+                `Most Florence classes call twelve people a small group. Ours never seats more than eight, which is the whole reason a chef is at your elbow when a fold goes wrong instead of demonstrating at the front of the room. When the pasta is done we cook it together and sit down to a proper Tuscan lunch — what you just made, your sauce, and two Tuscan wines included in the price.`,
               ],
             },
             {
@@ -109,7 +129,9 @@ export const landings: Record<string, LandingPage> = {
               paras: [],
               list: [
                 `Gluten-free? We prepare a dedicated flour blend and a clean station at no extra charge — just tell us when you book.`,
-                `Add a wine pairing (+€18 per person): two Tuscan pours chosen to match your menu.`,
+                `Two Tuscan pours are included in the €95 — a white with the table, a red with the ragù. No upsell at the end.`,
+                `We email you the recipes for everything you made, so the dough you learned by feel is still there next month.`,
+                `Whatever you don’t eat, you take with you — we dry it, bag it, and it goes back to the hotel with you.`,
                 `The kitchen is in the Oltrarno, near Piazza Santo Spirito — we send the exact address when you book.`,
                 `Want the same class with a dawn market walk first? That’s <a href="/market-tour-cooking-class-florence/">Mercato &amp; Mani</a>.`,
               ],
@@ -138,39 +160,41 @@ export const landings: Record<string, LandingPage> = {
           ctaLabel: `Book this class`,
           prefill: 'florence',
           breadcrumbName: `Pasta Making Class in Florence`,
+          showPastaCrumb: true,
           product: {
             name: `The Chef’s Table — Pasta Making Class in Florence`,
-            description: `A 3-hour hands-on pasta making class in Florence’s Oltrarno: four classic shapes, max 8 guests, ending in a sit-down Tuscan lunch with wine. Taught by two agriturismo head chefs.`,
+            description: `A 3-hour hands-on pasta making class in Florence’s Oltrarno: four classic shapes, max 8 guests, ending in a sit-down Tuscan lunch with two wines included. Taught by two agriturismo head chefs.`,
             price: '95',
           },
         },
       },
       it: {
         slug: 'corso-pasta-fresca-firenze',
-        title: `Corso di Pasta Fresca a Firenze — Il Tavolo dello Chef (€95) | Handmade Pasta Florence`,
-        description: `Un corso pratico di pasta fresca di 3 ore in Oltrarno a Firenze. Prepara quattro formati classici con due chef toscani, poi siediti a mangiare ciò che hai fatto con un bicchiere di Chianti. Max 8 ospiti, €95 a persona.`,
+        title: `Corso di Pasta Fresca a Firenze — 4 Formati + Vino Incluso (€95) | Handmade Pasta Florence`,
+        description: `Un corso pratico di pasta fresca di 3 ore in Oltrarno a Firenze. Prepara quattro formati classici con due chef toscani, poi siediti a mangiare ciò che hai fatto con due calici toscani inclusi. Max 8 ospiti, €95 a persona.`,
         cl: {
           eyebrow: `Il Tavolo dello Chef · Oltrarno, Firenze`,
           heading: `Un corso di pasta a Firenze,`,
           headingItal: `attorno a un tavolo.`,
-          lede: `Tre ore pratiche nella nostra cucina in Oltrarno. Mescolerai, impasterai, stenderai e piegherai quattro formati classici di pasta con uno chef al tuo fianco, per poi sederti insieme agli altri a mangiare tutto ciò che hai preparato — con un sugo toscano e un bicchiere di Chianti.`,
+          lede: `Tre ore pratiche nella nostra cucina in Oltrarno. Mescolerai, impasterai, stenderai e piegherai quattro formati classici di pasta con uno chef al tuo fianco, per poi sederti insieme agli altri a mangiare tutto ciò che hai preparato — con un sugo toscano e due calici toscani, inclusi nel prezzo.`,
           image: { src: img.cookingClassGuests, alt: `Ospiti che stendono la pasta fresca al corso Il Tavolo dello Chef nella nostra cucina fiorentina`, w: 800, h: 1067 },
           price: `€95`,
-          priceNote: `a persona`,
+          priceNote: `a persona · due calici inclusi`,
           facts: [
-            { label: `Durata`, value: `circa 3 ore` },
-            { label: `Dimensione gruppo`, value: `max 8 ospiti` },
-            { label: `Inizio`, value: `10:00 · 14:30 · 18:00` },
-            { label: `Dove`, value: `Oltrarno, vicino a Santo Spirito` },
-            { label: `Lingua`, value: `Inglese o Italiano` },
-            { label: `Giorni`, value: `Mar–Dom (chiuso Lun)` },
+            { label: `Prodotti Locali`, value: `Prodotti toscani di stagione`, icon: 'leaf' },
+            { label: `Durata`, value: `circa 3 ore`, icon: 'clock' },
+            { label: `Dimensione gruppo`, value: `max 8 ospiti`, icon: 'people' },
+            { label: `Inizio`, value: `10:00 · 14:30 · 18:00`, icon: 'calendar' },
+            { label: `Dove`, value: `Oltrarno, vicino a Santo Spirito`, icon: 'map-pin' },
+            { label: `Lingua`, value: `Inglese o Italiano`, icon: 'globe' },
           ],
           sections: [
             {
               title: `Cosa farai effettivamente durante il corso?`,
               paras: [
                 `Questo è un corso con "le mani in pasta" dal primo minuto — nessuna dimostrazione da guardare su uno sgabello. Preparerai il tuo impasto, imparerai a sentire quando è pronto e lo lavorerai in quattro formati classici: pici fatti a mano, tagliatelle e pappardelle tagliate a nastro, e tortelli ripieni, seguendo la stagione.`,
-                `Poiché il tavolo non ha mai più di otto ospiti, c'è sempre uno chef accanto a te per correggere la tua piega o salvare un impasto appiccicoso. Quando la pasta è finita, la cuciniamo insieme e ci sediamo per un vero pranzo toscano — il cibo che hai appena preparato, un sugo dalle nostre cucine e un bicchiere di vino locale.`,
+                `Preparerai anche i sughi che gli appartengono — un <strong>ragù</strong> lento, <strong>burro e salvia</strong> schiumato con le foglie, <strong>pomodorini</strong> freschi o <strong>pesto</strong> pestato a mano, secondo il giorno e la stagione.`,
+                `A Firenze quasi tutti i corsi chiamano «piccolo gruppo» dodici persone. Il nostro non supera mai gli otto, ed è esattamente per questo che quando una piega non viene hai uno chef al fianco e non una dimostrazione in fondo alla stanza. Quando la pasta è finita la cuciniamo insieme e ci sediamo per un vero pranzo toscano — ciò che hai appena preparato, il tuo sugo e due calici toscani inclusi nel prezzo.`,
               ],
             },
             {
@@ -184,7 +208,9 @@ export const landings: Record<string, LandingPage> = {
               paras: [],
               list: [
                 `Senza glutine? Prepariamo una miscela dedicata e una postazione pulita senza costi aggiuntivi — diccelo quando prenoti.`,
-                `Aggiungi un abbinamento vini (+€18 a persona): due calici toscani scelti per abbinarsi al tuo menù.`,
+                `Due calici toscani sono inclusi nei €95 — un bianco a tavola, un rosso con il ragù. Nessun supplemento a fine corso.`,
+                `Ti mandiamo per email le ricette di tutto quello che hai preparato, così l'impasto che hai imparato a sentire c'è ancora il mese prossimo.`,
+                `Quello che non mangi te lo porti via — lo facciamo asciugare, lo insacchettiamo e torna in albergo con te.`,
                 `La cucina è in Oltrarno, vicino a Piazza Santo Spirito — ti invieremo l'indirizzo esatto al momento della prenotazione.`,
                 `Vuoi lo stesso corso ma con una passeggiata al mercato all'alba? Dai un'occhiata a <a href="/it/corso-cucina-tour-mercato-firenze/">Mercato &amp; Mani</a>.`,
               ],
@@ -211,6 +237,7 @@ export const landings: Record<string, LandingPage> = {
           ctaLabel: `Prenota questo corso`,
           prefill: 'florence',
           breadcrumbName: `Corso di Pasta Fresca a Firenze`,
+          showPastaCrumb: true,
           product: {
             name: `Il Tavolo dello Chef — Corso di Pasta Fresca a Firenze`,
             description: `Un corso pratico di pasta fresca di 3 ore in Oltrarno a Firenze: quattro formati classici, max 8 ospiti, si conclude con un pranzo toscano seduti con vino. Tenuto da due chef di agriturismo.`,
@@ -220,30 +247,31 @@ export const landings: Record<string, LandingPage> = {
       },
       fr: {
         slug: 'cours-de-pates-fraiches-florence',
-        title: `Cours de Pâtes Fraîches à Florence — La Table du Chef (€95) | Handmade Pasta Florence`,
-        description: `Un cours pratique de pâtes fraîches de 3 heures dans l'Oltrarno à Florence. Préparez quatre formes classiques avec deux chefs toscans, puis asseyez-vous pour déguster ce que vous avez préparé avec un verre de Chianti. Max 8 personnes, 95 € par personne.`,
+        title: `Cours de Pâtes Fraîches à Florence — 4 Formes + Vin Inclus (€95) | Handmade Pasta Florence`,
+        description: `Un cours pratique de pâtes fraîches de 3 heures dans l'Oltrarno à Florence. Préparez quatre formes classiques avec deux chefs toscans, puis asseyez-vous pour déguster ce que vous avez préparé avec deux vins toscans inclus. Max 8 personnes, 95 € par personne.`,
         cl: {
           eyebrow: `La Table du Chef · Oltrarno, Florence`,
           heading: `Un cours de pâtes à Florence,`,
           headingItal: `autour d'une table.`,
-          lede: `Trois heures de pratique dans notre cuisine de l'Oltrarno. Vous mélangerez, pétrirez, étalerez et plierez quatre formes classiques de pâtes avec un chef à vos côtés, puis vous vous assiérez ensemble pour manger tout ce que vous avez préparé — avec une sauce toscane et un verre de Chianti.`,
+          lede: `Trois heures de pratique dans notre cuisine de l'Oltrarno. Vous mélangerez, pétrirez, étalerez et plierez quatre formes classiques de pâtes avec un chef à vos côtés, puis vous vous assiérez ensemble pour manger tout ce que vous avez préparé — avec une sauce toscane et deux verres toscans, compris dans le prix.`,
           image: { src: img.cookingClassGuests, alt: `Des invités étalant des pâtes fraîches lors du cours La Table du Chef dans notre cuisine de Florence`, w: 800, h: 1067 },
           price: `95 €`,
-          priceNote: `par personne`,
+          priceNote: `par personne · deux verres inclus`,
           facts: [
-            { label: `Durée`, value: `environ 3 heures` },
-            { label: `Taille du groupe`, value: `max 8 personnes` },
-            { label: `Départ`, value: `10:00 · 14:30 · 18:00` },
-            { label: `Lieu`, value: `Oltrarno, près de Santo Spirito` },
-            { label: `Langue`, value: `Anglais ou Italien` },
-            { label: `Jours`, value: `Mar–Dim (fermé Lun)` },
+            { label: `Produits Locaux`, value: `Produits toscans de saison`, icon: 'leaf' },
+            { label: `Durée`, value: `environ 3 heures`, icon: 'clock' },
+            { label: `Taille du groupe`, value: `max 8 personnes`, icon: 'people' },
+            { label: `Départ`, value: `10:00 · 14:30 · 18:00`, icon: 'calendar' },
+            { label: `Lieu`, value: `Oltrarno, près de Santo Spirito`, icon: 'map-pin' },
+            { label: `Langue`, value: `Anglais ou Italien`, icon: 'globe' },
           ],
           sections: [
             {
               title: `Que ferez-vous concrètement pendant le cours ?`,
               paras: [
                 `C'est un cours où vous mettez la main à la pâte dès la première minute — pas de démonstrations à regarder sur un tabouret. Vous préparerez votre propre pâte, apprendrez à sentir quand elle est prête, et la travaillerez en quatre formes classiques : pici roulés à la main, tagliatelles et pappardelles coupées en ruban, et tortelli farcis, selon la saison.`,
-                `Parce que la table ne compte jamais plus de huit personnes, il y a toujours un chef à côté de vous pour corriger votre pliage ou sauver une pâte collante. Quand les pâtes sont terminées, nous les cuisinons ensemble et nous nous asseyons pour un vrai déjeuner toscan — la nourriture que vous venez de préparer, une sauce de nos cuisines et un verre de vin local.`,
+                `Vous préparerez aussi les sauces qui leur reviennent — un <strong>ragù</strong> mijoté, un <strong>burro e salvia</strong> mousseux à la sauge, des <strong>pomodorini</strong> frais ou un <strong>pesto</strong> pilé à la main, selon le jour et la saison.`,
+                `À Florence, la plupart des cours appellent « petit groupe » douze personnes. Le nôtre ne dépasse jamais huit, et c'est précisément pour cela qu'un chef est à votre coude quand un pliage rate, au lieu de faire une démonstration au fond de la salle. Quand les pâtes sont prêtes, nous les cuisinons ensemble et nous asseyons pour un vrai déjeuner toscan — ce que vous venez de faire, votre sauce, et deux vins toscans compris dans le prix.`,
               ],
             },
             {
@@ -257,7 +285,9 @@ export const landings: Record<string, LandingPage> = {
               paras: [],
               list: [
                 `Sans gluten ? Nous préparons un mélange de farine dédié et un poste de travail propre sans frais supplémentaires — dites-le-nous simplement lors de votre réservation.`,
-                `Ajoutez un accord mets-vins (+18 € par personne) : deux vins toscans choisis pour s'accorder avec votre menu.`,
+                `Deux verres toscans sont compris dans les 95 € — un blanc à table, un rouge avec le ragù. Aucun supplément à la fin.`,
+                `Nous vous envoyons par email les recettes de tout ce que vous avez préparé, pour que la pâte apprise au toucher soit encore là le mois prochain.`,
+                `Ce que vous ne mangez pas, vous l'emportez — nous le faisons sécher, le mettons en sachet, et il rentre à l'hôtel avec vous.`,
                 `La cuisine est dans l'Oltrarno, près de la Piazza Santo Spirito — nous vous envoyons l'adresse exacte lors de votre réservation.`,
                 `Vous voulez le même cours avec une promenade au marché à l'aube d'abord ? C'est <a href="/fr/cours-cuisine-visite-marche-florence/">Mercato &amp; Mani</a>.`,
               ],
@@ -284,6 +314,7 @@ export const landings: Record<string, LandingPage> = {
           ctaLabel: `Réserver ce cours`,
           prefill: 'florence',
           breadcrumbName: `Cours de Pâtes Fraîches à Florence`,
+          showPastaCrumb: true,
           product: {
             name: `La Table du Chef — Cours de Pâtes Fraîches à Florence`,
             description: `Un cours pratique de pâtes fraîches de 3 heures dans l'Oltrarno à Florence : quatre formes classiques, max 8 personnes, se terminant par un déjeuner toscan assis avec du vin. Enseigné par deux chefs d'agritourisme.`,
@@ -293,30 +324,31 @@ export const landings: Record<string, LandingPage> = {
       },
       de: {
         slug: 'pasta-kurs-florenz',
-        title: `Pasta-Kurs in Florenz — Der Tisch des Küchenchefs (€95) | Handmade Pasta Florence`,
-        description: `Ein 3-stündiger praktischer Pasta-Kurs in Florenz' Oltrarno. Rollen Sie vier klassische Formen mit zwei toskanischen Agriturismo-Küchenchefs und setzen Sie sich dann, um das Gekochte mit einem Glas Chianti zu essen. Max. 8 Gäste, 95 € pro Person.`,
+        title: `Pasta-Kurs in Florenz — 4 Formen + Wein inklusive (€95) | Handmade Pasta Florence`,
+        description: `Ein 3-stündiger praktischer Pasta-Kurs in Florenz' Oltrarno. Rollen Sie vier klassische Formen mit zwei toskanischen Agriturismo-Küchenchefs und setzen Sie sich dann, um das Gekochte mit zwei inbegriffenen toskanischen Weinen zu essen. Max. 8 Gäste, 95 € pro Person.`,
         cl: {
           eyebrow: `Der Tisch des Küchenchefs · Oltrarno, Florenz`,
           heading: `Ein Pasta-Kurs in Florenz,`,
           headingItal: `rund um einen Tisch.`,
-          lede: `Drei praktische Stunden in unserer Küche im Oltrarno. Sie werden vier klassische Pasta-Formen mit einem Koch an Ihrer Seite mischen, kneten, ausrollen und falten und sich dann zusammensetzen, um alles zu essen, was Sie gemacht haben — mit einer toskanischen Sauce und einem Glas Chianti.`,
+          lede: `Drei praktische Stunden in unserer Küche im Oltrarno. Sie werden vier klassische Pasta-Formen mit einem Koch an Ihrer Seite mischen, kneten, ausrollen und falten und sich dann zusammensetzen, um alles zu essen, was Sie gemacht haben — mit einer toskanischen Sauce und zwei toskanischen Weinen, im Preis enthalten.`,
           image: { src: img.cookingClassGuests, alt: `Gäste rollen frische Pasta beim Kurs „Der Tisch des Küchenchefs“ in unserer Küche in Florenz aus`, w: 800, h: 1067 },
           price: `95 €`,
-          priceNote: `pro Person`,
+          priceNote: `pro Person · zwei Gläser inklusive`,
           facts: [
-            { label: `Dauer`, value: `etwa 3 Stunden` },
-            { label: `Gruppengröße`, value: `max. 8 Gäste` },
-            { label: `Beginn`, value: `10:00 · 14:30 · 18:00` },
-            { label: `Ort`, value: `Oltrarno, nahe Santo Spirito` },
-            { label: `Sprache`, value: `Englisch oder Italienisch` },
-            { label: `Tage`, value: `Di–So (Mo geschlossen)` },
+            { label: `Lokale Produkte`, value: `Saisonale toskanische Produkte`, icon: 'leaf' },
+            { label: `Dauer`, value: `etwa 3 Stunden`, icon: 'clock' },
+            { label: `Gruppengröße`, value: `max. 8 Gäste`, icon: 'people' },
+            { label: `Beginn`, value: `10:00 · 14:30 · 18:00`, icon: 'calendar' },
+            { label: `Ort`, value: `Oltrarno, nahe Santo Spirito`, icon: 'map-pin' },
+            { label: `Sprache`, value: `Englisch oder Italienisch`, icon: 'globe' },
           ],
           sections: [
             {
               title: `Was werden Sie im Kurs tatsächlich tun?`,
               paras: [
                 `Dies ist ein Kurs mit den Händen im Mehl von der ersten Minute an — keine Vorführungen, die man von einem Hocker aus beobachtet. Sie machen Ihren eigenen Teig, lernen zu fühlen, wann er fertig ist, und verarbeiten ihn zu vier klassischen Formen: handgerollte Pici, bandgeschnittene Tagliatelle und Pappardelle sowie gefüllte Tortelli, je nach Saison.`,
-                `Da der Tisch nie mehr als acht Gäste hat, ist immer ein Koch neben Ihnen, um Ihre Faltung zu korrigieren oder einen klebrigen Teig zu retten. Wenn die Nudeln fertig sind, kochen wir sie zusammen und setzen uns zu einem echten toskanischen Mittagessen — das Essen, das Sie gerade zubereitet haben, eine Sauce aus unseren Küchen und ein Glas Wein aus der Region.`,
+                `Sie machen auch die Saucen, die dazugehören — ein langsames <strong>Ragù</strong>, mit Salbei aufgeschäumte <strong>burro e salvia</strong>, frische <strong>Pomodorini</strong> oder von Hand gestoßenes <strong>Pesto</strong>, je nach Tag und Saison.`,
+                `In Florenz nennen die meisten Kurse zwölf Personen eine kleine Gruppe. Bei uns sitzen nie mehr als acht am Tisch, und genau deshalb steht ein Koch neben Ihnen, wenn eine Faltung misslingt, statt vorne etwas vorzuführen. Wenn die Nudeln fertig sind, kochen wir sie gemeinsam und setzen uns zu einem echten toskanischen Mittagessen — was Sie gerade gemacht haben, Ihre Sauce und zwei toskanische Weine, im Preis enthalten.`,
               ],
             },
             {
@@ -330,7 +362,9 @@ export const landings: Record<string, LandingPage> = {
               paras: [],
               list: [
                 `Glutenfrei? Wir bereiten ohne Aufpreis eine spezielle Mehlmischung und eine saubere Station vor — sagen Sie es uns einfach bei der Buchung.`,
-                `Fügen Sie eine Weinbegleitung hinzu (+18 € pro Person): zwei toskanische Weine, passend zu Ihrem Menü.`,
+                `Zwei toskanische Gläser sind in den 95 € enthalten — ein Weißer zu Tisch, ein Roter zum Ragù. Kein Aufpreis am Ende.`,
+                `Wir schicken Ihnen die Rezepte für alles, was Sie gemacht haben, per E-Mail — damit der Teig, den Sie im Gefühl haben, nächsten Monat noch da ist.`,
+                `Was Sie nicht essen, nehmen Sie mit — wir trocknen es, füllen es ab, und es fährt mit Ihnen ins Hotel zurück.`,
                 `Die Küche befindet sich im Oltrarno, in der Nähe der Piazza Santo Spirito — wir senden Ihnen bei der Buchung die genaue Adresse.`,
                 `Möchten Sie denselben Kurs mit einem morgendlichen Marktspaziergang davor? Das ist <a href="/de/markt-tour-kochkurs-florenz/">Mercato &amp; Mani</a>.`,
               ],
@@ -357,6 +391,7 @@ export const landings: Record<string, LandingPage> = {
           ctaLabel: `Diesen Kurs buchen`,
           prefill: 'florence',
           breadcrumbName: `Pasta-Kurs in Florenz`,
+          showPastaCrumb: true,
           product: {
             name: `Der Tisch des Küchenchefs — Pasta-Kurs in Florenz`,
             description: `Ein 3-stündiger praktischer Pasta-Kurs in Florenz' Oltrarno: vier klassische Formen, max. 8 Gäste, endend mit einem gemeinsamen toskanischen Mittagessen mit Wein. Geleitet von zwei Agriturismo-Küchenchefs.`,
@@ -375,21 +410,22 @@ export const landings: Record<string, LandingPage> = {
           lede: `在我们的奥特拉诺厨房进行三小时的动手实践。您将与身旁的主厨一起混合、揉捏、擀平并折叠四种经典的意面形状，然后大家坐在一起，配以托斯卡纳酱汁和一杯基安蒂葡萄酒，享用您制作的所有美食。`,
           image: { src: img.cookingClassGuests, alt: `客人们在佛罗伦萨厨房的“主厨餐桌”课程中擀制新鲜意面`, w: 800, h: 1067 },
           price: `€95`,
-          priceNote: `每人`,
+          priceNote: `每人 · 含两杯葡萄酒`,
           facts: [
-            { label: `时长`, value: `约3小时` },
-            { label: `团队规模`, value: `最多8位客人` },
-            { label: `开始时间`, value: `10:00 · 14:30 · 18:00` },
-            { label: `地点`, value: `奥特拉诺，靠近圣斯皮里托` },
-            { label: `语言`, value: `英语或意大利语` },
-            { label: `开放时间`, value: `周二至周日（周一休息）` },
+            { label: `本地食材`, value: `托斯卡纳时令食材`, icon: 'leaf' },
+            { label: `时长`, value: `约3小时`, icon: 'clock' },
+            { label: `团队规模`, value: `最多8位客人`, icon: 'people' },
+            { label: `开始时间`, value: `10:00 · 14:30 · 18:00`, icon: 'calendar' },
+            { label: `地点`, value: `奥特拉诺，靠近圣斯皮里托`, icon: 'map-pin' },
+            { label: `语言`, value: `英语或意大利语`, icon: 'globe' },
           ],
           sections: [
             {
               title: `您在课程中将真正学到什么？`,
               paras: [
                 `这是一门从第一分钟起就“双手沾满面粉”的实践课程——不需要坐在凳子上看演示。您将制作自己的面团，学会感受它何时准备好，并将其制作成四种经典形状：手工揉制的pici，切成条状的tagliatelle和pappardelle，以及填馅的tortelli，具体取决于季节。`,
-                `因为每桌客人从不超过八人，所以总有一位厨师在您身旁指导您折叠或挽救粘稠的面团。当意面做好后，我们一起烹饪，然后坐下来享用一顿正宗的托斯卡纳午餐——您刚刚制作的食物，我们厨房秘制的酱汁，以及一杯当地葡萄酒。`,
+                `您还会亲手制作与之相配的酱汁——慢炖的<strong>肉酱 (ragù)</strong>、用鼠尾草打发的<strong>黄油鼠尾草酱 (burro e salvia)</strong>、新鲜的<strong>小番茄酱 (pomodorini)</strong>，或手工捣制的<strong>青酱 (pesto)</strong>，视当天与时令而定。`,
+                `在佛罗伦萨，多数课程把十二人称作“小班”。我们每桌从不超过八人——正因如此，当您的折叠出了问题时，身边站着的是一位厨师，而不是教室前方的一场演示。意面做好后我们一起烹饪，然后坐下来享用一顿正宗的托斯卡纳午餐——您刚刚做的意面、您的酱汁，以及价格中已包含的两杯托斯卡纳葡萄酒。`,
               ],
             },
             {
@@ -403,7 +439,9 @@ export const landings: Record<string, LandingPage> = {
               paras: [],
               list: [
                 `无麸质？我们免费准备专门的面粉混合物和干净的操作台——只需在预订时告知我们。`,
-                `添加葡萄酒搭配（每人+18欧元）：精选两款托斯卡纳葡萄酒搭配您的菜单。`,
+                `95欧元已包含两杯托斯卡纳葡萄酒 — 佐餐白葡萄酒一杯，配肉酱红葡萄酒一杯。课程结束后不再加收任何费用。`,
+                `我们会把您做过的所有菜谱发到您的邮箱，让您凭手感学会的那团面，下个月依然还在。`,
+                `没吃完的，您带走——我们帮您晾干、装袋，让它跟您一起回酒店。`,
                 `厨房位于奥特拉诺，靠近圣斯皮里托广场——我们会在您预订时发送确切地址。`,
                 `想在课程前先逛一逛清晨的菜市场吗？请查看 <a href="/zh/shichang-daolan-pengren-kecheng-foluolunsa/">Mercato &amp; Mani</a>。`,
               ],
@@ -430,6 +468,7 @@ export const landings: Record<string, LandingPage> = {
           ctaLabel: `预订此课程`,
           prefill: 'florence',
           breadcrumbName: `佛罗伦萨手工意面课程`,
+          showPastaCrumb: true,
           product: {
             name: `主厨餐桌 — 佛罗伦萨手工意面课程`,
             description: `佛罗伦萨奥特拉诺区3小时实践手工意面课程：四种经典形状，最多8位客人，以包含葡萄酒的托斯卡纳午餐结束。由两位农庄主厨授课。`,
@@ -458,12 +497,13 @@ export const landings: Record<string, LandingPage> = {
           price: `€145`,
           priceNote: `per person`,
           facts: [
-            { label: `Length`, value: `about 5 hours` },
-            { label: `Group size`, value: `max 6 guests` },
-            { label: `Starts`, value: `morning, with the market` },
-            { label: `Market`, value: `Sant’Ambrogio` },
-            { label: `Kitchen`, value: `Oltrarno, near Santo Spirito` },
-            { label: `Language`, value: `English or Italian` },
+            { label: `Local Products`, value: `Picked that morning at Sant’Ambrogio`, icon: 'leaf' },
+            { label: `Length`, value: `about 5 hours`, icon: 'clock' },
+            { label: `Group size`, value: `max 6 guests`, icon: 'people' },
+            { label: `Starts`, value: `morning, with the market`, icon: 'calendar' },
+            { label: `Market`, value: `Sant’Ambrogio`, icon: 'map-pin' },
+            { label: `Kitchen`, value: `Oltrarno, near Santo Spirito`, icon: 'home' },
+            { label: `Language`, value: `English or Italian`, icon: 'globe' },
           ],
           sections: [
             {
@@ -525,12 +565,13 @@ export const landings: Record<string, LandingPage> = {
           price: `€145`,
           priceNote: `a persona`,
           facts: [
-            { label: `Durata`, value: `circa 5 ore` },
-            { label: `Dimensione gruppo`, value: `max 6 ospiti` },
-            { label: `Inizio`, value: `mattina, con il mercato` },
-            { label: `Mercato`, value: `Sant’Ambrogio` },
-            { label: `Cucina`, value: `Oltrarno, vicino a Santo Spirito` },
-            { label: `Lingua`, value: `Inglese o Italiano` },
+            { label: `Prodotti Locali`, value: `Scelti quella mattina al mercato di Sant’Ambrogio`, icon: 'leaf' },
+            { label: `Durata`, value: `circa 5 ore`, icon: 'clock' },
+            { label: `Dimensione gruppo`, value: `max 6 ospiti`, icon: 'people' },
+            { label: `Inizio`, value: `mattina, con il mercato`, icon: 'calendar' },
+            { label: `Mercato`, value: `Sant’Ambrogio`, icon: 'map-pin' },
+            { label: `Cucina`, value: `Oltrarno, vicino a Santo Spirito`, icon: 'home' },
+            { label: `Lingua`, value: `Inglese o Italiano`, icon: 'globe' },
           ],
           sections: [
             {
@@ -591,12 +632,13 @@ export const landings: Record<string, LandingPage> = {
           price: `145 €`,
           priceNote: `par personne`,
           facts: [
-            { label: `Durée`, value: `environ 5 heures` },
-            { label: `Taille du groupe`, value: `max 6 personnes` },
-            { label: `Départ`, value: `matin, avec le marché` },
-            { label: `Marché`, value: `Sant'Ambrogio` },
-            { label: `Cuisine`, value: `Oltrarno, près de Santo Spirito` },
-            { label: `Langue`, value: `Anglais ou Italien` },
+            { label: `Produits Locaux`, value: `Choisis le matin même au marché de Sant'Ambrogio`, icon: 'leaf' },
+            { label: `Durée`, value: `environ 5 heures`, icon: 'clock' },
+            { label: `Taille du groupe`, value: `max 6 personnes`, icon: 'people' },
+            { label: `Départ`, value: `matin, avec le marché`, icon: 'calendar' },
+            { label: `Marché`, value: `Sant'Ambrogio`, icon: 'map-pin' },
+            { label: `Cuisine`, value: `Oltrarno, près de Santo Spirito`, icon: 'home' },
+            { label: `Langue`, value: `Anglais ou Italien`, icon: 'globe' },
           ],
           sections: [
             {
@@ -657,12 +699,13 @@ export const landings: Record<string, LandingPage> = {
           price: `145 €`,
           priceNote: `pro Person`,
           facts: [
-            { label: `Dauer`, value: `etwa 5 Stunden` },
-            { label: `Gruppengröße`, value: `max. 6 Gäste` },
-            { label: `Beginn`, value: `Morgens, mit dem Markt` },
-            { label: `Markt`, value: `Sant'Ambrogio` },
-            { label: `Küche`, value: `Oltrarno, nahe Santo Spirito` },
-            { label: `Sprache`, value: `Englisch oder Italienisch` },
+            { label: `Lokale Produkte`, value: `Am selben Morgen auf dem Sant'Ambrogio-Markt ausgesucht`, icon: 'leaf' },
+            { label: `Dauer`, value: `etwa 5 Stunden`, icon: 'clock' },
+            { label: `Gruppengröße`, value: `max. 6 Gäste`, icon: 'people' },
+            { label: `Beginn`, value: `Morgens, mit dem Markt`, icon: 'calendar' },
+            { label: `Markt`, value: `Sant'Ambrogio`, icon: 'map-pin' },
+            { label: `Küche`, value: `Oltrarno, nahe Santo Spirito`, icon: 'home' },
+            { label: `Sprache`, value: `Englisch oder Italienisch`, icon: 'globe' },
           ],
           sections: [
             {
@@ -723,12 +766,13 @@ export const landings: Record<string, LandingPage> = {
           price: `€145`,
           priceNote: `每人`,
           facts: [
-            { label: `时长`, value: `约5小时` },
-            { label: `团队规模`, value: `最多6位客人` },
-            { label: `开始时间`, value: `早晨，与市场同步` },
-            { label: `市场`, value: `圣安布罗焦 (Sant'Ambrogio)` },
-            { label: `厨房`, value: `奥特拉诺，靠近圣斯皮里托` },
-            { label: `语言`, value: `英语或意大利语` },
+            { label: `本地食材`, value: `当天清晨精选自圣安布罗焦市场`, icon: 'leaf' },
+            { label: `时长`, value: `约5小时`, icon: 'clock' },
+            { label: `团队规模`, value: `最多6位客人`, icon: 'people' },
+            { label: `开始时间`, value: `早晨，与市场同步`, icon: 'calendar' },
+            { label: `市场`, value: `圣安布罗焦 (Sant'Ambrogio)`, icon: 'map-pin' },
+            { label: `厨房`, value: `奥特拉诺，靠近圣斯皮里托`, icon: 'home' },
+            { label: `语言`, value: `英语或意大利语`, icon: 'globe' },
           ],
           sections: [
             {
@@ -796,12 +840,13 @@ export const landings: Record<string, LandingPage> = {
           price: `from €680`,
           priceNote: `private kitchen buyout`,
           facts: [
-            { label: `Group size`, value: `6–14 guests` },
-            { label: `When`, value: `evenings · flexible` },
-            { label: `Format`, value: `whole-kitchen buyout` },
-            { label: `Where`, value: `Oltrarno, near Santo Spirito` },
-            { label: `Language`, value: `English or Italian` },
-            { label: `Enquiries`, value: `answered within a day` },
+            { label: `Local Products`, value: `Seasonal, tailored to your menu`, icon: 'leaf' },
+            { label: `Group size`, value: `6–14 guests`, icon: 'people' },
+            { label: `When`, value: `evenings · flexible`, icon: 'calendar' },
+            { label: `Format`, value: `whole-kitchen buyout`, icon: 'home' },
+            { label: `Where`, value: `Oltrarno, near Santo Spirito`, icon: 'map-pin' },
+            { label: `Language`, value: `English or Italian`, icon: 'globe' },
+            { label: `Enquiries`, value: `answered within a day`, icon: 'mail' },
           ],
           sections: [
             {
@@ -865,12 +910,13 @@ export const landings: Record<string, LandingPage> = {
           price: `da €680`,
           priceNote: `uso esclusivo cucina`,
           facts: [
-            { label: `Dimensione gruppo`, value: `6–14 ospiti` },
-            { label: `Quando`, value: `serate · flessibile` },
-            { label: `Formato`, value: `uso esclusivo della cucina` },
-            { label: `Dove`, value: `Oltrarno, vicino a Santo Spirito` },
-            { label: `Lingua`, value: `Inglese o Italiano` },
-            { label: `Risposte`, value: `entro un giorno lavorativo` },
+            { label: `Prodotti Locali`, value: `Di stagione, su misura per il tuo menu`, icon: 'leaf' },
+            { label: `Dimensione gruppo`, value: `6–14 ospiti`, icon: 'people' },
+            { label: `Quando`, value: `serate · flessibile`, icon: 'calendar' },
+            { label: `Formato`, value: `uso esclusivo della cucina`, icon: 'home' },
+            { label: `Dove`, value: `Oltrarno, vicino a Santo Spirito`, icon: 'map-pin' },
+            { label: `Lingua`, value: `Inglese o Italiano`, icon: 'globe' },
+            { label: `Risposte`, value: `entro un giorno lavorativo`, icon: 'mail' },
           ],
           sections: [
             {
@@ -933,12 +979,13 @@ export const landings: Record<string, LandingPage> = {
           price: `à partir de 680 €`,
           priceNote: `privatisation de la cuisine`,
           facts: [
-            { label: `Taille du groupe`, value: `6–14 personnes` },
-            { label: `Quand`, value: `soirées · flexible` },
-            { label: `Format`, value: `privatisation complète de la cuisine` },
-            { label: `Lieu`, value: `Oltrarno, près de Santo Spirito` },
-            { label: `Langue`, value: `Anglais ou Italien` },
-            { label: `Demandes`, value: `réponse sous un jour ouvré` },
+            { label: `Produits Locaux`, value: `De saison, adaptés à votre menu`, icon: 'leaf' },
+            { label: `Taille du groupe`, value: `6–14 personnes`, icon: 'people' },
+            { label: `Quand`, value: `soirées · flexible`, icon: 'calendar' },
+            { label: `Format`, value: `privatisation complète de la cuisine`, icon: 'home' },
+            { label: `Lieu`, value: `Oltrarno, près de Santo Spirito`, icon: 'map-pin' },
+            { label: `Langue`, value: `Anglais ou Italien`, icon: 'globe' },
+            { label: `Demandes`, value: `réponse sous un jour ouvré`, icon: 'mail' },
           ],
           sections: [
             {
@@ -1001,12 +1048,13 @@ export const landings: Record<string, LandingPage> = {
           price: `ab 680 €`,
           priceNote: `private Küchenmiete`,
           facts: [
-            { label: `Gruppengröße`, value: `6–14 Gäste` },
-            { label: `Wann`, value: `abends · flexibel` },
-            { label: `Format`, value: `gesamte Küchenmiete` },
-            { label: `Ort`, value: `Oltrarno, nahe Santo Spirito` },
-            { label: `Sprache`, value: `Englisch oder Italienisch` },
-            { label: `Anfragen`, value: `innerhalb eines Tages beantwortet` },
+            { label: `Lokale Produkte`, value: `Saisonal, abgestimmt auf Ihr Menü`, icon: 'leaf' },
+            { label: `Gruppengröße`, value: `6–14 Gäste`, icon: 'people' },
+            { label: `Wann`, value: `abends · flexibel`, icon: 'calendar' },
+            { label: `Format`, value: `gesamte Küchenmiete`, icon: 'home' },
+            { label: `Ort`, value: `Oltrarno, nahe Santo Spirito`, icon: 'map-pin' },
+            { label: `Sprache`, value: `Englisch oder Italienisch`, icon: 'globe' },
+            { label: `Anfragen`, value: `innerhalb eines Tages beantwortet`, icon: 'mail' },
           ],
           sections: [
             {
@@ -1069,12 +1117,13 @@ export const landings: Record<string, LandingPage> = {
           price: `从 €680 起`,
           priceNote: `私人厨房包场`,
           facts: [
-            { label: `团队规模`, value: `6–14位客人` },
-            { label: `时间`, value: `晚上 · 灵活` },
-            { label: `形式`, value: `整个厨房包场` },
-            { label: `地点`, value: `奥特拉诺，靠近圣斯皮里托` },
-            { label: `语言`, value: `英语或意大利语` },
-            { label: `咨询回复`, value: `一个工作日内` },
+            { label: `本地食材`, value: `时令食材，根据您的菜单定制`, icon: 'leaf' },
+            { label: `团队规模`, value: `6–14位客人`, icon: 'people' },
+            { label: `时间`, value: `晚上 · 灵活`, icon: 'calendar' },
+            { label: `形式`, value: `整个厨房包场`, icon: 'home' },
+            { label: `地点`, value: `奥特拉诺，靠近圣斯皮里托`, icon: 'map-pin' },
+            { label: `语言`, value: `英语或意大利语`, icon: 'globe' },
+            { label: `咨询回复`, value: `一个工作日内`, icon: 'mail' },
           ],
           sections: [
             {
@@ -1144,12 +1193,13 @@ export const landings: Record<string, LandingPage> = {
           price: `from €68`,
           priceNote: `per person`,
           facts: [
-            { label: `Format`, value: `live video, hands-on` },
-            { label: `Streamed from`, value: `our Florence kitchen` },
-            { label: `Kit`, value: `optional, +€34 shipped` },
-            { label: `Times`, value: `shown in your time zone` },
-            { label: `Language`, value: `English or Italian` },
-            { label: `Great as`, value: `a gift` },
+            { label: `Local Products`, value: `Tuscan ingredients, list sent ahead`, icon: 'leaf' },
+            { label: `Format`, value: `live video, hands-on`, icon: 'laptop' },
+            { label: `Streamed from`, value: `our Florence kitchen`, icon: 'home' },
+            { label: `Kit`, value: `optional, +€34 shipped`, icon: 'package' },
+            { label: `Times`, value: `shown in your time zone`, icon: 'clock' },
+            { label: `Language`, value: `English or Italian`, icon: 'globe' },
+            { label: `Great as`, value: `a gift`, icon: 'gift' },
           ],
           sections: [
             {
@@ -1208,12 +1258,13 @@ export const landings: Record<string, LandingPage> = {
           price: `da €68`,
           priceNote: `a persona`,
           facts: [
-            { label: `Formato`, value: `video in diretta, pratico` },
-            { label: `Trasmesso da`, value: `la nostra cucina a Firenze` },
-            { label: `Kit`, value: `opzionale, +€34 spedito` },
-            { label: `Orari`, value: `mostrati nel tuo fuso orario` },
-            { label: `Lingua`, value: `Inglese o Italiano` },
-            { label: `Ottimo come`, value: `regalo` },
+            { label: `Prodotti Locali`, value: `Ingredienti toscani, lista inviata in anticipo`, icon: 'leaf' },
+            { label: `Formato`, value: `video in diretta, pratico`, icon: 'laptop' },
+            { label: `Trasmesso da`, value: `la nostra cucina a Firenze`, icon: 'home' },
+            { label: `Kit`, value: `opzionale, +€34 spedito`, icon: 'package' },
+            { label: `Orari`, value: `mostrati nel tuo fuso orario`, icon: 'clock' },
+            { label: `Lingua`, value: `Inglese o Italiano`, icon: 'globe' },
+            { label: `Ottimo come`, value: `regalo`, icon: 'gift' },
           ],
           sections: [
             {
@@ -1271,12 +1322,13 @@ export const landings: Record<string, LandingPage> = {
           price: `à partir de 68 €`,
           priceNote: `par personne`,
           facts: [
-            { label: `Format`, value: `vidéo en direct, pratique` },
-            { label: `Diffusé de`, value: `notre cuisine à Florence` },
-            { label: `Kit`, value: `optionnel, +34 € livré` },
-            { label: `Horaires`, value: `affichés dans votre fuseau horaire` },
-            { label: `Langue`, value: `Anglais ou Italien` },
-            { label: `Génial comme`, value: `cadeau` },
+            { label: `Produits Locaux`, value: `Ingrédients toscans, liste envoyée à l'avance`, icon: 'leaf' },
+            { label: `Format`, value: `vidéo en direct, pratique`, icon: 'laptop' },
+            { label: `Diffusé de`, value: `notre cuisine à Florence`, icon: 'home' },
+            { label: `Kit`, value: `optionnel, +34 € livré`, icon: 'package' },
+            { label: `Horaires`, value: `affichés dans votre fuseau horaire`, icon: 'clock' },
+            { label: `Langue`, value: `Anglais ou Italien`, icon: 'globe' },
+            { label: `Génial comme`, value: `cadeau`, icon: 'gift' },
           ],
           sections: [
             {
@@ -1334,12 +1386,13 @@ export const landings: Record<string, LandingPage> = {
           price: `ab 68 €`,
           priceNote: `pro Person`,
           facts: [
-            { label: `Format`, value: `Live-Video, praktisch` },
-            { label: `Gestreamt aus`, value: `unserer Küche in Florenz` },
-            { label: `Kit`, value: `optional, +34 € geliefert` },
-            { label: `Zeiten`, value: `in Ihrer Zeitzone angezeigt` },
-            { label: `Sprache`, value: `Englisch oder Italienisch` },
-            { label: `Ideal als`, value: `Geschenk` },
+            { label: `Lokale Produkte`, value: `Toskanische Zutaten, Liste vorab zugesandt`, icon: 'leaf' },
+            { label: `Format`, value: `Live-Video, praktisch`, icon: 'laptop' },
+            { label: `Gestreamt aus`, value: `unserer Küche in Florenz`, icon: 'home' },
+            { label: `Kit`, value: `optional, +34 € geliefert`, icon: 'package' },
+            { label: `Zeiten`, value: `in Ihrer Zeitzone angezeigt`, icon: 'clock' },
+            { label: `Sprache`, value: `Englisch oder Italienisch`, icon: 'globe' },
+            { label: `Ideal als`, value: `Geschenk`, icon: 'gift' },
           ],
           sections: [
             {
@@ -1397,12 +1450,13 @@ export const landings: Record<string, LandingPage> = {
           price: `从 €68 起`,
           priceNote: `每人`,
           facts: [
-            { label: `形式`, value: `直播视频，动手实践` },
-            { label: `转播自`, value: `我们的佛罗伦萨厨房` },
-            { label: `食材包`, value: `可选，+€34 配送费` },
-            { label: `时间`, value: `以您的时区显示` },
-            { label: `语言`, value: `英语或意大利语` },
-            { label: `非常适合`, value: `作为礼物` },
+            { label: `本地食材`, value: `托斯卡纳食材，清单提前发送`, icon: 'leaf' },
+            { label: `形式`, value: `直播视频，动手实践`, icon: 'laptop' },
+            { label: `转播自`, value: `我们的佛罗伦萨厨房`, icon: 'home' },
+            { label: `食材包`, value: `可选，+€34 配送费`, icon: 'package' },
+            { label: `时间`, value: `以您的时区显示`, icon: 'clock' },
+            { label: `语言`, value: `英语或意大利语`, icon: 'globe' },
+            { label: `非常适合`, value: `作为礼物`, icon: 'gift' },
           ],
           sections: [
             {
@@ -1466,12 +1520,13 @@ export const landings: Record<string, LandingPage> = {
           price: `Private buyout`,
           priceNote: `6–14 people · quoted per group`,
           facts: [
-            { label: `Group size`, value: `6–14 people` },
-            { label: `Format`, value: `private kitchen buyout` },
-            { label: `Hosts`, value: `English-speaking chefs` },
-            { label: `Options`, value: `wine pairing · dietary` },
-            { label: `Where`, value: `5 min from Ponte Vecchio` },
-            { label: `Reply time`, value: `within one working day` },
+            { label: `Local Products`, value: `Seasonal Tuscan produce, sourced fresh`, icon: 'leaf' },
+            { label: `Group size`, value: `6–14 people`, icon: 'people' },
+            { label: `Format`, value: `private kitchen buyout`, icon: 'home' },
+            { label: `Hosts`, value: `English-speaking chefs`, icon: 'chef-hat' },
+            { label: `Options`, value: `wine pairing · dietary`, icon: 'tag' },
+            { label: `Where`, value: `5 min from Ponte Vecchio`, icon: 'map-pin' },
+            { label: `Reply time`, value: `within one working day`, icon: 'mail' },
           ],
           sections: [
             {
@@ -1534,12 +1589,13 @@ export const landings: Record<string, LandingPage> = {
           price: `Evento Privato`,
           priceNote: `6–14 persone · preventivo per gruppo`,
           facts: [
-            { label: `Dimensione gruppo`, value: `6–14 persone` },
-            { label: `Formato`, value: `uso esclusivo della cucina` },
-            { label: `Host`, value: `chef professionisti` },
-            { label: `Opzioni`, value: `abbinamento vini · dietetiche` },
-            { label: `Dove`, value: `5 min da Ponte Vecchio` },
-            { label: `Tempo di risposta`, value: `entro 24 ore` },
+            { label: `Prodotti Locali`, value: `Prodotti toscani di stagione, freschi`, icon: 'leaf' },
+            { label: `Dimensione gruppo`, value: `6–14 persone`, icon: 'people' },
+            { label: `Formato`, value: `uso esclusivo della cucina`, icon: 'home' },
+            { label: `Host`, value: `chef professionisti`, icon: 'chef-hat' },
+            { label: `Opzioni`, value: `abbinamento vini · dietetiche`, icon: 'tag' },
+            { label: `Dove`, value: `5 min da Ponte Vecchio`, icon: 'map-pin' },
+            { label: `Tempo di risposta`, value: `entro 24 ore`, icon: 'mail' },
           ],
           sections: [
             {
@@ -1601,12 +1657,13 @@ export const landings: Record<string, LandingPage> = {
           price: `Événement Privé`,
           priceNote: `6–14 personnes · sur devis`,
           facts: [
-            { label: `Taille du groupe`, value: `6–14 personnes` },
-            { label: `Format`, value: `privatisation de la cuisine` },
-            { label: `Hôtes`, value: `chefs professionnels` },
-            { label: `Options`, value: `accords mets-vins · régimes` },
-            { label: `Lieu`, value: `à 5 min du Ponte Vecchio` },
-            { label: `Réponse`, value: `sous un jour ouvré` },
+            { label: `Produits Locaux`, value: `Produits toscans de saison, frais`, icon: 'leaf' },
+            { label: `Taille du groupe`, value: `6–14 personnes`, icon: 'people' },
+            { label: `Format`, value: `privatisation de la cuisine`, icon: 'home' },
+            { label: `Hôtes`, value: `chefs professionnels`, icon: 'chef-hat' },
+            { label: `Options`, value: `accords mets-vins · régimes`, icon: 'tag' },
+            { label: `Lieu`, value: `à 5 min du Ponte Vecchio`, icon: 'map-pin' },
+            { label: `Réponse`, value: `sous un jour ouvré`, icon: 'mail' },
           ],
           sections: [
             {
@@ -1668,12 +1725,13 @@ export const landings: Record<string, LandingPage> = {
           price: `Privates Event`,
           priceNote: `6–14 Personen · Angebot pro Gruppe`,
           facts: [
-            { label: `Gruppengröße`, value: `6–14 Personen` },
-            { label: `Format`, value: `private Küchenmiete` },
-            { label: `Gastgeber`, value: `professionelle Köche` },
-            { label: `Optionen`, value: `Weinbegleitung · Ernährung` },
-            { label: `Ort`, value: `5 Min. vom Ponte Vecchio` },
-            { label: `Antwortzeit`, value: `innerhalb von 24 Stunden` },
+            { label: `Lokale Produkte`, value: `Frische, saisonale toskanische Produkte`, icon: 'leaf' },
+            { label: `Gruppengröße`, value: `6–14 Personen`, icon: 'people' },
+            { label: `Format`, value: `private Küchenmiete`, icon: 'home' },
+            { label: `Gastgeber`, value: `professionelle Köche`, icon: 'chef-hat' },
+            { label: `Optionen`, value: `Weinbegleitung · Ernährung`, icon: 'tag' },
+            { label: `Ort`, value: `5 Min. vom Ponte Vecchio`, icon: 'map-pin' },
+            { label: `Antwortzeit`, value: `innerhalb von 24 Stunden`, icon: 'mail' },
           ],
           sections: [
             {
@@ -1735,12 +1793,13 @@ export const landings: Record<string, LandingPage> = {
           price: `私人包场`,
           priceNote: `6–14人 · 按团体报价`,
           facts: [
-            { label: `团队规模`, value: `6–14人` },
-            { label: `形式`, value: `私人厨房包场` },
-            { label: `主持人`, value: `专业厨师` },
-            { label: `选项`, value: `葡萄酒搭配 · 特殊饮食` },
-            { label: `地点`, value: `距老桥5分钟` },
-            { label: `回复时间`, value: `一个工作日内` },
+            { label: `本地食材`, value: `新鲜的托斯卡纳时令食材`, icon: 'leaf' },
+            { label: `团队规模`, value: `6–14人`, icon: 'people' },
+            { label: `形式`, value: `私人厨房包场`, icon: 'home' },
+            { label: `主持人`, value: `专业厨师`, icon: 'chef-hat' },
+            { label: `选项`, value: `葡萄酒搭配 · 特殊饮食`, icon: 'tag' },
+            { label: `地点`, value: `距老桥5分钟`, icon: 'map-pin' },
+            { label: `回复时间`, value: `一个工作日内`, icon: 'mail' },
           ],
           sections: [
             {
@@ -1811,12 +1870,12 @@ export const landings: Record<string, LandingPage> = {
           price: `€95`,
           priceNote: `per person · no gluten-free surcharge`,
           facts: [
-            { label: `Length`, value: `about 3 hours` },
-            { label: `Group size`, value: `max 8 guests` },
-            { label: `Surcharge`, value: `none` },
-            { label: `Station`, value: `separate board, pot & tools` },
-            { label: `Where`, value: `Oltrarno, near Santo Spirito` },
-            { label: `Days`, value: `Tue–Sun (closed Mon)` },
+            { label: `Local Products`, value: `Naturally gluten-free Tuscan produce`, icon: 'leaf' },
+            { label: `Length`, value: `about 3 hours`, icon: 'clock' },
+            { label: `Group size`, value: `max 8 guests`, icon: 'people' },
+            { label: `Surcharge`, value: `none`, icon: 'tag' },
+            { label: `Station`, value: `separate board, pot & tools`, icon: 'table' },
+            { label: `Where`, value: `Oltrarno, near Santo Spirito`, icon: 'map-pin' },
           ],
           sections: [
             {
@@ -1880,12 +1939,12 @@ export const landings: Record<string, LandingPage> = {
           price: `€95`,
           priceNote: `a persona · nessun supplemento senza glutine`,
           facts: [
-            { label: `Durata`, value: `circa 3 ore` },
-            { label: `Dimensione gruppo`, value: `max 8 ospiti` },
-            { label: `Supplemento`, value: `nessuno` },
-            { label: `Postazione`, value: `tagliere, pentola e attrezzi dedicati` },
-            { label: `Dove`, value: `Oltrarno, vicino a Santo Spirito` },
-            { label: `Giorni`, value: `Mar–Dom (chiuso Lun)` },
+            { label: `Prodotti Locali`, value: `Prodotti toscani naturalmente senza glutine`, icon: 'leaf' },
+            { label: `Durata`, value: `circa 3 ore`, icon: 'clock' },
+            { label: `Dimensione gruppo`, value: `max 8 ospiti`, icon: 'people' },
+            { label: `Supplemento`, value: `nessuno`, icon: 'tag' },
+            { label: `Postazione`, value: `tagliere, pentola e attrezzi dedicati`, icon: 'table' },
+            { label: `Dove`, value: `Oltrarno, vicino a Santo Spirito`, icon: 'map-pin' },
           ],
           sections: [
             {
@@ -1949,12 +2008,12 @@ export const landings: Record<string, LandingPage> = {
           price: `95 €`,
           priceNote: `par personne · sans supplément`,
           facts: [
-            { label: `Durée`, value: `environ 3 heures` },
-            { label: `Taille du groupe`, value: `max 8 personnes` },
-            { label: `Supplément`, value: `aucun` },
-            { label: `Poste`, value: `planche, casserole et outils dédiés` },
-            { label: `Lieu`, value: `Oltrarno, près de Santo Spirito` },
-            { label: `Jours`, value: `Mar–Dim (fermé Lun)` },
+            { label: `Produits Locaux`, value: `Produits toscans naturellement sans gluten`, icon: 'leaf' },
+            { label: `Durée`, value: `environ 3 heures`, icon: 'clock' },
+            { label: `Taille du groupe`, value: `max 8 personnes`, icon: 'people' },
+            { label: `Supplément`, value: `aucun`, icon: 'tag' },
+            { label: `Poste`, value: `planche, casserole et outils dédiés`, icon: 'table' },
+            { label: `Lieu`, value: `Oltrarno, près de Santo Spirito`, icon: 'map-pin' },
           ],
           sections: [
             {
@@ -2018,12 +2077,12 @@ export const landings: Record<string, LandingPage> = {
           price: `95 €`,
           priceNote: `pro Person · kein glutenfrei-Aufpreis`,
           facts: [
-            { label: `Dauer`, value: `etwa 3 Stunden` },
-            { label: `Gruppengröße`, value: `max. 8 Gäste` },
-            { label: `Aufpreis`, value: `keiner` },
-            { label: `Station`, value: `eigenes Brett, eigener Topf` },
-            { label: `Ort`, value: `Oltrarno, nahe Santo Spirito` },
-            { label: `Tage`, value: `Di–So (Mo geschlossen)` },
+            { label: `Lokale Produkte`, value: `Von Natur aus glutenfreie toskanische Produkte`, icon: 'leaf' },
+            { label: `Dauer`, value: `etwa 3 Stunden`, icon: 'clock' },
+            { label: `Gruppengröße`, value: `max. 8 Gäste`, icon: 'people' },
+            { label: `Aufpreis`, value: `keiner`, icon: 'tag' },
+            { label: `Station`, value: `eigenes Brett, eigener Topf`, icon: 'table' },
+            { label: `Ort`, value: `Oltrarno, nahe Santo Spirito`, icon: 'map-pin' },
           ],
           sections: [
             {
@@ -2087,12 +2146,12 @@ export const landings: Record<string, LandingPage> = {
           price: `€95`,
           priceNote: `每人 · 无麸质不加价`,
           facts: [
-            { label: `时长`, value: `约3小时` },
-            { label: `团队规模`, value: `最多8位客人` },
-            { label: `附加费`, value: `无` },
-            { label: `操作台`, value: `专属案板、锅具与工具` },
-            { label: `地点`, value: `奥特拉诺，靠近圣斯皮里托` },
-            { label: `开放时间`, value: `周二至周日（周一休息）` },
+            { label: `本地食材`, value: `天然无麸质的托斯卡纳食材`, icon: 'leaf' },
+            { label: `时长`, value: `约3小时`, icon: 'clock' },
+            { label: `团队规模`, value: `最多8位客人`, icon: 'people' },
+            { label: `附加费`, value: `无`, icon: 'tag' },
+            { label: `操作台`, value: `专属案板、锅具与工具`, icon: 'table' },
+            { label: `地点`, value: `奥特拉诺，靠近圣斯皮里托`, icon: 'map-pin' },
           ],
           sections: [
             {
@@ -2165,12 +2224,12 @@ export const landings: Record<string, LandingPage> = {
           price: `€95`,
           priceNote: `per person · private from €680`,
           facts: [
-            { label: `Length`, value: `about 3 hours` },
-            { label: `Table`, value: `max 8 guests` },
-            { label: `Best slot for two`, value: `18:00, the evening class` },
-            { label: `Where`, value: `Oltrarno, near Santo Spirito` },
-            { label: `Language`, value: `English or Italian` },
-            { label: `Days`, value: `Tue–Sun (closed Mon)` },
+            { label: `Local Products`, value: `Seasonal Tuscan produce`, icon: 'leaf' },
+            { label: `Length`, value: `about 3 hours`, icon: 'clock' },
+            { label: `Table`, value: `max 8 guests`, icon: 'table' },
+            { label: `Best slot for two`, value: `18:00, the evening class`, icon: 'calendar' },
+            { label: `Where`, value: `Oltrarno, near Santo Spirito`, icon: 'map-pin' },
+            { label: `Language`, value: `English or Italian`, icon: 'globe' },
           ],
           sections: [
             {
@@ -2193,7 +2252,7 @@ export const landings: Record<string, LandingPage> = {
               list: [
                 `Tell us if it is a birthday, anniversary, engagement or honeymoon and we will quietly make a fuss of it — that is free, and it is the part we enjoy.`,
                 `Planning a proposal? Book the <a href="/private-cooking-class-florence/">private kitchen</a> and message us first. We have done it before and we can help with the timing.`,
-                `Add a wine pairing (+€18 per person): two Tuscan pours chosen to match what you made.`,
+                `Two Tuscan pours each are included in the €95 — poured when you sit down, not billed at the end.`,
                 `Gluten-free or other allergies? A dedicated station at no extra charge — see the <a href="/gluten-free-cooking-class-florence/">gluten-free class</a>.`,
               ],
             },
@@ -2234,12 +2293,12 @@ export const landings: Record<string, LandingPage> = {
           price: `€95`,
           priceNote: `a persona · privato da €680`,
           facts: [
-            { label: `Durata`, value: `circa 3 ore` },
-            { label: `Tavolo`, value: `max 8 ospiti` },
-            { label: `Orario ideale per due`, value: `18:00, il corso serale` },
-            { label: `Dove`, value: `Oltrarno, vicino a Santo Spirito` },
-            { label: `Lingua`, value: `Inglese o Italiano` },
-            { label: `Giorni`, value: `Mar–Dom (chiuso Lun)` },
+            { label: `Prodotti Locali`, value: `Prodotti toscani di stagione`, icon: 'leaf' },
+            { label: `Durata`, value: `circa 3 ore`, icon: 'clock' },
+            { label: `Tavolo`, value: `max 8 ospiti`, icon: 'table' },
+            { label: `Orario ideale per due`, value: `18:00, il corso serale`, icon: 'calendar' },
+            { label: `Dove`, value: `Oltrarno, vicino a Santo Spirito`, icon: 'map-pin' },
+            { label: `Lingua`, value: `Inglese o Italiano`, icon: 'globe' },
           ],
           sections: [
             {
@@ -2262,7 +2321,7 @@ export const landings: Record<string, LandingPage> = {
               list: [
                 `Diteci se è un compleanno, un anniversario, un fidanzamento o un viaggio di nozze e ci faremo festa in silenzio — è gratis, ed è la parte che ci piace di più.`,
                 `State organizzando una proposta di matrimonio? Prenotate la <a href="/it/corso-cucina-privato-firenze/">cucina privata</a> e scriveteci prima. L'abbiamo già fatto e possiamo aiutarvi con i tempi.`,
-                `Aggiungete un abbinamento vini (+€18 a persona): due calici toscani scelti per ciò che avete preparato.`,
+                `Due calici toscani a testa sono inclusi nei €95 — versati quando vi sedete, non conteggiati alla fine.`,
                 `Senza glutine o altre allergie? Postazione dedicata senza costi aggiuntivi — vedi il <a href="/it/corso-cucina-senza-glutine-firenze/">corso senza glutine</a>.`,
               ],
             },
@@ -2303,12 +2362,12 @@ export const landings: Record<string, LandingPage> = {
           price: `95 €`,
           priceNote: `par personne · privé dès 680 €`,
           facts: [
-            { label: `Durée`, value: `environ 3 heures` },
-            { label: `Table`, value: `max 8 personnes` },
-            { label: `Créneau idéal à deux`, value: `18h00, le cours du soir` },
-            { label: `Lieu`, value: `Oltrarno, près de Santo Spirito` },
-            { label: `Langue`, value: `Anglais ou Italien` },
-            { label: `Jours`, value: `Mar–Dim (fermé Lun)` },
+            { label: `Produits Locaux`, value: `Produits toscans de saison`, icon: 'leaf' },
+            { label: `Durée`, value: `environ 3 heures`, icon: 'clock' },
+            { label: `Table`, value: `max 8 personnes`, icon: 'table' },
+            { label: `Créneau idéal à deux`, value: `18h00, le cours du soir`, icon: 'calendar' },
+            { label: `Lieu`, value: `Oltrarno, près de Santo Spirito`, icon: 'map-pin' },
+            { label: `Langue`, value: `Anglais ou Italien`, icon: 'globe' },
           ],
           sections: [
             {
@@ -2331,7 +2390,7 @@ export const landings: Record<string, LandingPage> = {
               list: [
                 `Dites-nous si c'est un anniversaire, des fiançailles ou un voyage de noces et nous en ferons discrètement tout un plat — c'est gratuit, et c'est la partie que nous préférons.`,
                 `Vous préparez une demande en mariage ? Réservez la <a href="/fr/cours-cuisine-prive-florence/">cuisine privée</a> et écrivez-nous d'abord. Nous l'avons déjà fait et nous pouvons vous aider pour le timing.`,
-                `Ajoutez un accord mets-vins (+18 € par personne) : deux vins toscans choisis pour ce que vous avez préparé.`,
+                `Deux verres toscans chacun sont compris dans les 95 € — servis quand vous vous asseyez, pas facturés à la fin.`,
                 `Sans gluten ou autres allergies ? Un poste dédié sans frais supplémentaires — voir le <a href="/fr/cours-cuisine-sans-gluten-florence/">cours sans gluten</a>.`,
               ],
             },
@@ -2372,12 +2431,12 @@ export const landings: Record<string, LandingPage> = {
           price: `95 €`,
           priceNote: `pro Person · privat ab 680 €`,
           facts: [
-            { label: `Dauer`, value: `etwa 3 Stunden` },
-            { label: `Tisch`, value: `max. 8 Gäste` },
-            { label: `Beste Zeit zu zweit`, value: `18:00, der Abendkurs` },
-            { label: `Ort`, value: `Oltrarno, nahe Santo Spirito` },
-            { label: `Sprache`, value: `Englisch oder Italienisch` },
-            { label: `Tage`, value: `Di–So (Mo geschlossen)` },
+            { label: `Lokale Produkte`, value: `Saisonale toskanische Produkte`, icon: 'leaf' },
+            { label: `Dauer`, value: `etwa 3 Stunden`, icon: 'clock' },
+            { label: `Tisch`, value: `max. 8 Gäste`, icon: 'table' },
+            { label: `Beste Zeit zu zweit`, value: `18:00, der Abendkurs`, icon: 'calendar' },
+            { label: `Ort`, value: `Oltrarno, nahe Santo Spirito`, icon: 'map-pin' },
+            { label: `Sprache`, value: `Englisch oder Italienisch`, icon: 'globe' },
           ],
           sections: [
             {
@@ -2400,7 +2459,7 @@ export const landings: Record<string, LandingPage> = {
               list: [
                 `Sagen Sie uns, ob es ein Geburtstag, Jahrestag, eine Verlobung oder Hochzeitsreise ist, und wir machen still ein kleines Fest daraus — kostenlos, und es ist der Teil, den wir am liebsten mögen.`,
                 `Planen Sie einen Heiratsantrag? Buchen Sie die <a href="/de/privater-kochkurs-florenz/">private Küche</a> und schreiben Sie uns vorher. Wir haben das schon gemacht und helfen beim Timing.`,
-                `Fügen Sie eine Weinbegleitung hinzu (+18 € pro Person): zwei toskanische Weine, passend zu dem, was Sie gemacht haben.`,
+                `Zwei toskanische Gläser pro Person sind in den 95 € enthalten — eingeschenkt, wenn Sie sich setzen, nicht am Ende berechnet.`,
                 `Glutenfrei oder andere Allergien? Eine eigene Station ohne Aufpreis — siehe den <a href="/de/glutenfreier-kochkurs-florenz/">glutenfreien Kurs</a>.`,
               ],
             },
@@ -2441,12 +2500,12 @@ export const landings: Record<string, LandingPage> = {
           price: `€95`,
           priceNote: `每人 · 私人包场680欧元起`,
           facts: [
-            { label: `时长`, value: `约3小时` },
-            { label: `餐桌`, value: `最多8位客人` },
-            { label: `双人最佳时段`, value: `18:00 傍晚班` },
-            { label: `地点`, value: `奥特拉诺，靠近圣斯皮里托` },
-            { label: `语言`, value: `英语或意大利语` },
-            { label: `开放时间`, value: `周二至周日（周一休息）` },
+            { label: `本地食材`, value: `托斯卡纳时令食材`, icon: 'leaf' },
+            { label: `时长`, value: `约3小时`, icon: 'clock' },
+            { label: `餐桌`, value: `最多8位客人`, icon: 'table' },
+            { label: `双人最佳时段`, value: `18:00 傍晚班`, icon: 'calendar' },
+            { label: `地点`, value: `奥特拉诺，靠近圣斯皮里托`, icon: 'map-pin' },
+            { label: `语言`, value: `英语或意大利语`, icon: 'globe' },
           ],
           sections: [
             {
@@ -2469,7 +2528,7 @@ export const landings: Record<string, LandingPage> = {
               list: [
                 `如果是生日、纪念日、订婚或蜜月，请告诉我们，我们会安静地为你们庆祝一下——这是免费的，也是我们最喜欢的环节。`,
                 `在筹划求婚？请预订<a href="/zh/siren-pengren-kecheng-foluolunsa/">私人厨房</a>并先与我们联系。我们做过，可以帮您把时间安排好。`,
-                `添加葡萄酒搭配（每人+18欧元）：两款托斯卡纳葡萄酒，为你们所做的菜而选。`,
+                `95欧元已包含每人两杯托斯卡纳葡萄酒 — 入座即斟，结束时不再另行收费。`,
                 `无麸质或其他过敏？专属操作台不加收费用——请看<a href="/zh/wu-fuzhi-pengren-kecheng-foluolunsa/">无麸质课程</a>。`,
               ],
             },
@@ -2523,12 +2582,13 @@ export const landings: Record<string, LandingPage> = {
           price: `Any class`,
           priceNote: `from €68 · voucher sent by email`,
           facts: [
-            { label: `In Florence`, value: `from €95 per person` },
-            { label: `Live online`, value: `from €68 per person` },
-            { label: `Private kitchen`, value: `from €680` },
-            { label: `Date`, value: `not fixed — they choose` },
-            { label: `Delivery`, value: `by email, same day` },
-            { label: `Reply time`, value: `within one working day` },
+            { label: `Local Products`, value: `Fresh Tuscan produce, every time`, icon: 'leaf' },
+            { label: `In Florence`, value: `from €95 per person`, icon: 'tag' },
+            { label: `Live online`, value: `from €68 per person`, icon: 'laptop' },
+            { label: `Private kitchen`, value: `from €680`, icon: 'home' },
+            { label: `Date`, value: `not fixed — they choose`, icon: 'calendar' },
+            { label: `Delivery`, value: `by email, same day`, icon: 'mail' },
+            { label: `Reply time`, value: `within one working day`, icon: 'mail' },
           ],
           sections: [
             {
@@ -2591,12 +2651,13 @@ export const landings: Record<string, LandingPage> = {
           price: `Qualsiasi corso`,
           priceNote: `da €68 · buono inviato via email`,
           facts: [
-            { label: `A Firenze`, value: `da €95 a persona` },
-            { label: `In diretta online`, value: `da €68 a persona` },
-            { label: `Cucina privata`, value: `da €680` },
-            { label: `Data`, value: `non fissata — sceglie lui` },
-            { label: `Consegna`, value: `via email, in giornata` },
-            { label: `Risposta`, value: `entro un giorno lavorativo` },
+            { label: `Prodotti Locali`, value: `Prodotti toscani freschi, sempre`, icon: 'leaf' },
+            { label: `A Firenze`, value: `da €95 a persona`, icon: 'tag' },
+            { label: `In diretta online`, value: `da €68 a persona`, icon: 'laptop' },
+            { label: `Cucina privata`, value: `da €680`, icon: 'home' },
+            { label: `Data`, value: `non fissata — sceglie lui`, icon: 'calendar' },
+            { label: `Consegna`, value: `via email, in giornata`, icon: 'mail' },
+            { label: `Risposta`, value: `entro un giorno lavorativo`, icon: 'mail' },
           ],
           sections: [
             {
@@ -2659,12 +2720,13 @@ export const landings: Record<string, LandingPage> = {
           price: `Tous les cours`,
           priceNote: `dès 68 € · bon envoyé par email`,
           facts: [
-            { label: `À Florence`, value: `dès 95 € par personne` },
-            { label: `En direct en ligne`, value: `dès 68 € par personne` },
-            { label: `Cuisine privée`, value: `dès 680 €` },
-            { label: `Date`, value: `non fixée — ils choisissent` },
-            { label: `Livraison`, value: `par email, le jour même` },
-            { label: `Réponse`, value: `sous un jour ouvré` },
+            { label: `Produits Locaux`, value: `Produits toscans frais, à chaque fois`, icon: 'leaf' },
+            { label: `À Florence`, value: `dès 95 € par personne`, icon: 'tag' },
+            { label: `En direct en ligne`, value: `dès 68 € par personne`, icon: 'laptop' },
+            { label: `Cuisine privée`, value: `dès 680 €`, icon: 'home' },
+            { label: `Date`, value: `non fixée — ils choisissent`, icon: 'calendar' },
+            { label: `Livraison`, value: `par email, le jour même`, icon: 'mail' },
+            { label: `Réponse`, value: `sous un jour ouvré`, icon: 'mail' },
           ],
           sections: [
             {
@@ -2727,12 +2789,13 @@ export const landings: Record<string, LandingPage> = {
           price: `Jeder Kurs`,
           priceNote: `ab 68 € · Gutschein per E-Mail`,
           facts: [
-            { label: `In Florenz`, value: `ab 95 € pro Person` },
-            { label: `Live online`, value: `ab 68 € pro Person` },
-            { label: `Private Küche`, value: `ab 680 €` },
-            { label: `Datum`, value: `offen — sie wählen` },
-            { label: `Zustellung`, value: `per E-Mail, am selben Tag` },
-            { label: `Antwortzeit`, value: `binnen eines Werktags` },
+            { label: `Lokale Produkte`, value: `Frische toskanische Produkte, jedes Mal`, icon: 'leaf' },
+            { label: `In Florenz`, value: `ab 95 € pro Person`, icon: 'tag' },
+            { label: `Live online`, value: `ab 68 € pro Person`, icon: 'laptop' },
+            { label: `Private Küche`, value: `ab 680 €`, icon: 'home' },
+            { label: `Datum`, value: `offen — sie wählen`, icon: 'calendar' },
+            { label: `Zustellung`, value: `per E-Mail, am selben Tag`, icon: 'mail' },
+            { label: `Antwortzeit`, value: `binnen eines Werktags`, icon: 'mail' },
           ],
           sections: [
             {
@@ -2795,12 +2858,13 @@ export const landings: Record<string, LandingPage> = {
           price: `任意课程`,
           priceNote: `68欧元起 · 礼券通过邮件发送`,
           facts: [
-            { label: `在佛罗伦萨`, value: `每人95欧元起` },
-            { label: `在线直播`, value: `每人68欧元起` },
-            { label: `私人厨房`, value: `680欧元起` },
-            { label: `日期`, value: `不固定 — 由他们选择` },
-            { label: `送达方式`, value: `邮件，当天送达` },
-            { label: `回复时间`, value: `一个工作日内` },
+            { label: `本地食材`, value: `每一次都新鲜的托斯卡纳食材`, icon: 'leaf' },
+            { label: `在佛罗伦萨`, value: `每人95欧元起`, icon: 'tag' },
+            { label: `在线直播`, value: `每人68欧元起`, icon: 'laptop' },
+            { label: `私人厨房`, value: `680欧元起`, icon: 'home' },
+            { label: `日期`, value: `不固定 — 由他们选择`, icon: 'calendar' },
+            { label: `送达方式`, value: `邮件，当天送达`, icon: 'mail' },
+            { label: `回复时间`, value: `一个工作日内`, icon: 'mail' },
           ],
           sections: [
             {
@@ -2847,6 +2911,405 @@ export const landings: Record<string, LandingPage> = {
           service: {
             name: `佛罗伦萨烹饪课程礼券`,
             description: `佛罗伦萨奥特拉诺区手工意面课程礼券95欧元起、私人厨房包场680欧元起，以及含食材包寄送的在线直播课程68欧元起。通过邮件发送，不固定日期。`,
+          },
+        },
+      },
+    },
+  },
+
+  'family': {
+    floatingCta: true,
+    courseMode: 'Onsite',
+    courseDuration: 'PT3H',
+    locales: {
+      en: {
+        slug: 'family-cooking-class-florence',
+        title: `Family Cooking Class in Florence — Kids 6+ from €50 | Handmade Pasta Florence`,
+        description: `A hands-on family pasta class in Florence's Oltrarno. Children 6 and up roll their own pasta beside you at a table of never more than eight, then everyone eats what they made. €95 per adult, €50 for ages 6–12, under 6 free.`,
+        cl: {
+          eyebrow: `For families · Oltrarno, Florence`,
+          heading: `A family cooking class in Florence,`,
+          headingItal: `with the children actually cooking.`,
+          lede: `Not a class where the adults cook and the children wait. Every child gets their own board, their own piece of dough and a chef who checks on them — and at a table of eight, we can actually do that. Three hours, then everyone sits down to eat what they made.`,
+          image: { src: img.cuttingPizza, alt: `A family cooking together at a hands-on pasta class in Florence`, w: 1000, h: 667 },
+          price: `€95`,
+          priceNote: `per adult · €50 ages 6–12 · under 6 free`,
+          facts: [
+            { label: `Local Products`, value: `Seasonal Tuscan produce`, icon: 'leaf' },
+            { label: `Ages`, value: `6 and up, with a parent`, icon: 'people' },
+            { label: `Children`, value: `€50 (6–12) · under 6 free`, icon: 'tag' },
+            { label: `Length`, value: `about 3 hours`, icon: 'clock' },
+            { label: `Group size`, value: `max 8 including children`, icon: 'table' },
+            { label: `Where`, value: `Oltrarno, near Santo Spirito`, icon: 'map-pin' },
+          ],
+          sections: [
+            {
+              title: `What do the children actually do?`,
+              paras: [
+                `They make pasta. Properly — not a token ball of dough at the end of the table. Each child gets their own floured board, their own dough to knead, and their own shapes to roll: pici first, because rolling a strand between your palms is the most satisfying thing a six-year-old can do with flour, then a filled shape if they are patient enough.`,
+                `Because there are never more than eight people at the table in total, a chef can stand with a child through a fold that keeps failing. That is the whole reason this works at our table and does not at a class of twelve.`,
+              ],
+            },
+            {
+              title: `Is it going to hold their attention for three hours?`,
+              paras: [
+                `Mostly yes, and we build the class around the honest answer. The hands-on stretches are broken up — knead, rest the dough, eat something, come back to it — because a rested dough and a rested child are both easier to work with. The last stretch is cooking and eating, which no one has ever had trouble sitting through.`,
+                `If a younger child runs out of patience, that is fine and expected. There is space to sit, the kitchen is not precious, and no one will mind. We would rather you finish the class than leave feeling apologetic.`,
+              ],
+            },
+            {
+              title: `Good to know`,
+              paras: [],
+              list: [
+                `Ages 6 and up cook with us. Under 6 are welcome to come and eat at no charge, but the boards and knives are not built for them.`,
+                `Every child needs an adult at the table with them — this is a class you do together, not a drop-off.`,
+                `Children get the same meal, minus the wine: pasta they made, a sauce, and something to drink that isn't Chianti. Two Tuscan pours are included for the adults.`,
+                `Knife work is limited and supervised. Boiling water stays with the chefs.`,
+                `Gluten-free or an allergy in the family? Say so when you book — dedicated station, no surcharge, same table as everyone else. See the <a href="/gluten-free-cooking-class-florence/">gluten-free class</a>.`,
+                `We email the recipes afterwards, and whatever you don't finish gets dried and bagged to take back with you — which tends to be the part children talk about.`,
+              ],
+            },
+            {
+              title: `How booking works`,
+              paras: [
+                `Hit "Book this class" and tell us how many adults and how many children, with their ages. It opens a WhatsApp chat with the details filled in and we confirm personally — including whether the timing you want suits the ages you're bringing. You can also email ciao@handmadepastaflorence.com.`,
+              ],
+            },
+          ],
+          faqs: [
+            { q: `What age do children need to be for the cooking class?`, a: `Six and up to cook with us, always with an adult at the table. Under 6 are welcome to sit and eat free of charge, but the boards, rolling pins and knives aren't built for smaller hands and we'd rather say so than take your money.` },
+            { q: `How much does the family class cost for children?`, a: `€50 for ages 6–12, free for under 6, and €95 per adult — the same price as any other guest at the table. There's no separate family surcharge.` },
+            { q: `Do the children make their own pasta or just watch?`, a: `Their own. Each child gets a board, their own dough and their own shapes. Because the table never seats more than eight in total, a chef has time to work with a child individually — which is the practical reason this class exists at our size and not at a class of twelve.` },
+            { q: `Is knife work safe for kids in the class?`, a: `Knife work is limited, supervised and done with the chefs alongside. Boiling water and the pot stay with us. Everything else — flour, dough, rolling, shaping, filling — is theirs to do.` },
+            { q: `What if my child gets bored halfway through?`, a: `It happens and we plan for it. The hands-on stretches are deliberately broken up by resting the dough and eating something, and there's space to sit out a stretch. Nobody minds, and it won't spoil the class for the rest of the table.` },
+            { q: `Can you cater for a child with an allergy?`, a: `Usually yes, including coeliac — a dedicated station, its own flour blend and its own pot of water, at no extra charge and at the same table as everyone else. Send us the full list when you book rather than on the day.` },
+          ],
+          related: [
+            { title: `The Chef's Table`, href: `/pasta-making-class-florence/`, desc: `The same class for adults only — four shapes, one long lunch. €95.` },
+            { title: `The Family Long-Table`, href: `/private-cooking-class-florence/`, desc: `The whole kitchen privately yours, for bigger family groups — from €680.` },
+            { title: `Mercato & Mani`, href: `/market-tour-cooking-class-florence/`, desc: `Market walk at dawn, then cook the basket. Better for teenagers than toddlers — €145.` },
+            { title: `The four shapes, explained`, href: `/pasta-shapes/`, desc: `Show them what pici and tortelli are before you come.` },
+          ],
+          ctaLabel: `Book for the family`,
+          prefill: 'florence',
+          breadcrumbName: `Family Cooking Class in Florence`,
+          showPastaCrumb: true,
+          product: {
+            name: `Family Cooking Class in Florence`,
+            description: `A 3-hour hands-on family pasta class in Florence's Oltrarno. Children aged 6+ roll their own pasta at a table of never more than eight, then everyone eats what they made. €95 per adult, €50 for ages 6–12, under 6 free.`,
+            price: '95',
+          },
+        },
+      },
+      it: {
+        slug: 'corso-cucina-famiglia-firenze',
+        title: `Corso di Cucina per Famiglie a Firenze — Bambini da €50 | Handmade Pasta Florence`,
+        description: `Un corso di pasta fresca per famiglie in Oltrarno a Firenze. I bambini dai 6 anni stendono la loro pasta accanto a voi a un tavolo di massimo otto persone, poi si mangia tutti insieme. €95 ad adulto, €50 per 6–12 anni, sotto i 6 gratis.`,
+        cl: {
+          eyebrow: `Per famiglie · Oltrarno, Firenze`,
+          heading: `Un corso di cucina per famiglie a Firenze,`,
+          headingItal: `dove i bambini cucinano davvero.`,
+          lede: `Non un corso dove cucinano i grandi e i bambini aspettano. Ogni bambino ha il suo tagliere, il suo pezzo di impasto e uno chef che passa a controllare — e a un tavolo da otto possiamo davvero farlo. Tre ore, poi ci si siede tutti a mangiare quello che si è fatto.`,
+          image: { src: img.cuttingPizza, alt: `Una famiglia che cucina insieme a un corso di pasta fresca a Firenze`, w: 1000, h: 667 },
+          price: `€95`,
+          priceNote: `ad adulto · €50 dai 6 ai 12 · sotto i 6 gratis`,
+          facts: [
+            { label: `Prodotti Locali`, value: `Prodotti toscani di stagione`, icon: 'leaf' },
+            { label: `Età`, value: `dai 6 anni, con un adulto`, icon: 'people' },
+            { label: `Bambini`, value: `€50 (6–12) · sotto i 6 gratis`, icon: 'tag' },
+            { label: `Durata`, value: `circa 3 ore`, icon: 'clock' },
+            { label: `Dimensione gruppo`, value: `max 8 bambini inclusi`, icon: 'table' },
+            { label: `Dove`, value: `Oltrarno, vicino a Santo Spirito`, icon: 'map-pin' },
+          ],
+          sections: [
+            {
+              title: `Cosa fanno davvero i bambini?`,
+              paras: [
+                `Fanno la pasta. Sul serio — non una pallina di impasto simbolica in fondo al tavolo. Ogni bambino ha il suo tagliere infarinato, il suo impasto da lavorare e i suoi formati da tirare: prima i pici, perché rotolare un filo di pasta tra le mani è la cosa più soddisfacente che un bambino di sei anni possa fare con la farina, poi un formato ripieno se ha la pazienza.`,
+                `Siccome al tavolo non ci sono mai più di otto persone in tutto, uno chef può restare accanto a un bambino finché quella piega che non viene, viene. È esattamente il motivo per cui questo funziona al nostro tavolo e non in un corso da dodici.`,
+              ],
+            },
+            {
+              title: `Reggeranno tre ore?`,
+              paras: [
+                `In gran parte sì, e il corso è costruito attorno alla risposta onesta. Le fasi pratiche sono spezzate — impastare, far riposare la pasta, mangiare qualcosa, tornarci — perché un impasto riposato e un bambino riposato si lavorano entrambi meglio. L'ultima parte è cuocere e mangiare, e quella non è mai stata un problema per nessuno.`,
+                `Se un bambino piccolo esaurisce la pazienza va benissimo, ed è previsto. C'è dove sedersi, la cucina non è un salotto buono e non darà fastidio a nessuno. Preferiamo che finiate il corso piuttosto che andarvene sentendovi in colpa.`,
+              ],
+            },
+            {
+              title: `Buono a sapersi`,
+              paras: [],
+              list: [
+                `Si cucina dai 6 anni in su. Sotto i 6 sono i benvenuti a venire e mangiare gratis, ma taglieri e coltelli non sono fatti per loro.`,
+                `Ogni bambino ha bisogno di un adulto al tavolo con sé: è un corso che si fa insieme, non un servizio di custodia.`,
+                `I bambini mangiano lo stesso pasto, senza vino: la pasta che hanno fatto, un sugo e qualcosa da bere che non sia Chianti. Per gli adulti due calici toscani sono inclusi.`,
+                `L'uso dei coltelli è limitato e sorvegliato. L'acqua bollente resta agli chef.`,
+                `Senza glutine o un'allergia in famiglia? Ditecelo alla prenotazione — postazione dedicata, nessun supplemento, stesso tavolo di tutti. Vedi il <a href="/it/corso-cucina-senza-glutine-firenze/">corso senza glutine</a>.`,
+                `Mandiamo le ricette per email, e quello che non finite lo facciamo asciugare e insacchettare da portare via — di solito è la parte di cui i bambini parlano di più.`,
+              ],
+            },
+            {
+              title: `Come funziona la prenotazione`,
+              paras: [
+                `Premi "Prenota per la famiglia" e dicci quanti adulti e quanti bambini, con le età. Si apre una chat WhatsApp con i dettagli già compilati e confermiamo di persona — compreso se l'orario che volete è adatto alle età che portate. Puoi anche scrivere a ciao@handmadepastaflorence.com.`,
+              ],
+            },
+          ],
+          faqs: [
+            { q: `Da che età i bambini possono fare il corso di cucina?`, a: `Dai 6 anni in su per cucinare, sempre con un adulto al tavolo. Sotto i 6 sono i benvenuti a sedersi e mangiare gratis, ma taglieri, matterelli e coltelli non sono pensati per mani più piccole e preferiamo dirlo piuttosto che prendervi i soldi.` },
+            { q: `Quanto costa il corso per i bambini?`, a: `€50 dai 6 ai 12 anni, gratis sotto i 6, e €95 per adulto — lo stesso prezzo di qualsiasi altro ospite al tavolo. Non c'è nessun sovrapprezzo "famiglia".` },
+            { q: `I bambini fanno davvero la pasta o guardano soltanto?`, a: `La fanno. Ogni bambino ha un tagliere, il suo impasto e i suoi formati. Siccome al tavolo non ci sono mai più di otto persone in tutto, uno chef ha il tempo di seguire un bambino singolarmente — che è il motivo pratico per cui questo corso esiste alla nostra dimensione e non in un corso da dodici.` },
+            { q: `È sicuro l'uso dei coltelli per i bambini?`, a: `L'uso dei coltelli è limitato, sorvegliato e fatto con gli chef accanto. L'acqua bollente e la pentola restano a noi. Tutto il resto — farina, impasto, stesura, formatura, ripieno — è roba loro.` },
+            { q: `E se mio figlio si annoia a metà?`, a: `Succede e lo mettiamo in conto. Le fasi pratiche sono spezzate apposta dai riposi dell'impasto e da qualcosa da mangiare, e c'è spazio per saltare un pezzo. Non dà fastidio a nessuno e non rovina il corso agli altri.` },
+            { q: `Potete gestire un bambino con un'allergia?`, a: `Di solito sì, celiachia compresa — postazione dedicata, farina dedicata e pentola dedicata, senza supplemento e allo stesso tavolo di tutti gli altri. Mandateci l'elenco completo alla prenotazione, non il giorno stesso.` },
+          ],
+          related: [
+            { title: `Il Tavolo dello Chef`, href: `/it/corso-pasta-fresca-firenze/`, desc: `Lo stesso corso per soli adulti — quattro formati, un lungo pranzo. €95.` },
+            { title: `Il Lungo Tavolo di Famiglia`, href: `/it/corso-cucina-privato-firenze/`, desc: `Tutta la cucina solo per voi, per gruppi familiari più grandi — da €680.` },
+            { title: `Mercato & Mani`, href: `/it/corso-cucina-tour-mercato-firenze/`, desc: `Mercato all'alba, poi si cucina il cesto. Meglio per adolescenti che per bambini piccoli — €145.` },
+          ],
+          ctaLabel: `Prenota per la famiglia`,
+          prefill: 'florence',
+          breadcrumbName: `Corso di Cucina per Famiglie`,
+          showPastaCrumb: true,
+          product: {
+            name: `Corso di Cucina per Famiglie a Firenze`,
+            description: `Un corso pratico di pasta fresca per famiglie di 3 ore in Oltrarno a Firenze. I bambini dai 6 anni stendono la loro pasta a un tavolo di massimo otto persone, poi si mangia tutti insieme. €95 ad adulto, €50 per 6–12 anni, sotto i 6 gratis.`,
+            price: '95',
+          },
+        },
+      },
+      fr: {
+        slug: 'cours-cuisine-famille-florence',
+        title: `Cours de Cuisine en Famille à Florence — Enfants dès 50 € | Handmade Pasta Florence`,
+        description: `Un cours de pâtes fraîches en famille dans l'Oltrarno à Florence. Les enfants dès 6 ans façonnent leurs propres pâtes à côté de vous, à une table de huit maximum, puis tout le monde mange. 95 € par adulte, 50 € de 6 à 12 ans, gratuit avant 6 ans.`,
+        cl: {
+          eyebrow: `Pour les familles · Oltrarno, Florence`,
+          heading: `Un cours de cuisine en famille à Florence,`,
+          headingItal: `où les enfants cuisinent vraiment.`,
+          lede: `Pas un cours où les adultes cuisinent pendant que les enfants attendent. Chaque enfant a sa planche, son morceau de pâte et un chef qui passe le voir — et à une table de huit, nous pouvons réellement le faire. Trois heures, puis tout le monde s'assoit pour manger ce qu'il a préparé.`,
+          image: { src: img.cuttingPizza, alt: `Une famille cuisinant ensemble lors d'un cours de pâtes à Florence`, w: 1000, h: 667 },
+          price: `€95`,
+          priceNote: `par adulte · 50 € de 6 à 12 ans · gratuit avant 6 ans`,
+          facts: [
+            { label: `Produits Locaux`, value: `Produits toscans de saison`, icon: 'leaf' },
+            { label: `Âge`, value: `dès 6 ans, avec un adulte`, icon: 'people' },
+            { label: `Enfants`, value: `50 € (6–12) · gratuit avant 6 ans`, icon: 'tag' },
+            { label: `Durée`, value: `environ 3 heures`, icon: 'clock' },
+            { label: `Taille du groupe`, value: `max 8, enfants compris`, icon: 'table' },
+            { label: `Lieu`, value: `Oltrarno, près de Santo Spirito`, icon: 'map-pin' },
+          ],
+          sections: [
+            {
+              title: `Que font réellement les enfants ?`,
+              paras: [
+                `Ils font des pâtes. Vraiment — pas une boulette symbolique au bout de la table. Chaque enfant a sa planche farinée, sa pâte à pétrir et ses formes à rouler : les pici d'abord, parce que rouler un brin entre ses paumes est la chose la plus satisfaisante qu'un enfant de six ans puisse faire avec de la farine, puis une forme farcie s'il en a la patience.`,
+                `Comme il n'y a jamais plus de huit personnes à table au total, un chef peut rester auprès d'un enfant jusqu'à ce que le pliage qui rate finisse par réussir. C'est exactement pour cela que cela fonctionne à notre table et pas dans un cours de douze.`,
+              ],
+            },
+            {
+              title: `Vont-ils tenir trois heures ?`,
+              paras: [
+                `En grande partie oui, et le cours est construit autour de la réponse honnête. Les phases pratiques sont entrecoupées — pétrir, laisser reposer la pâte, manger un morceau, y revenir — parce qu'une pâte reposée et un enfant reposé se travaillent mieux tous les deux. La dernière partie, c'est cuisiner et manger, et personne n'a jamais eu de mal à tenir jusque-là.`,
+                `Si un plus jeune est à court de patience, c'est très bien et c'est prévu. Il y a de quoi s'asseoir, la cuisine n'est pas un salon, et cela ne gênera personne. Nous préférons que vous finissiez le cours plutôt que de partir en vous excusant.`,
+              ],
+            },
+            {
+              title: `Bon à savoir`,
+              paras: [],
+              list: [
+                `On cuisine à partir de 6 ans. Les moins de 6 ans sont les bienvenus pour venir et manger gratuitement, mais les planches et les couteaux ne sont pas faits pour eux.`,
+                `Chaque enfant doit avoir un adulte à table avec lui : c'est un cours qu'on fait ensemble, pas une garderie.`,
+                `Les enfants ont le même repas, sans le vin : les pâtes qu'ils ont faites, une sauce, et autre chose que du Chianti à boire. Pour les adultes, deux verres toscans sont compris.`,
+                `Le maniement du couteau est limité et surveillé. L'eau bouillante reste aux chefs.`,
+                `Sans gluten ou une allergie dans la famille ? Dites-le à la réservation — poste dédié, sans supplément, à la même table que tout le monde. Voir le <a href="/fr/cours-cuisine-sans-gluten-florence/">cours sans gluten</a>.`,
+                `Nous envoyons les recettes par email, et ce que vous ne finissez pas est séché et mis en sachet pour l'emporter — c'est en général la partie dont les enfants parlent.`,
+              ],
+            },
+            {
+              title: `Comment réserver`,
+              paras: [
+                `Cliquez sur « Réserver pour la famille » et dites-nous combien d'adultes et combien d'enfants, avec leurs âges. Cela ouvre une conversation WhatsApp pré-remplie et nous confirmons personnellement — y compris si l'horaire souhaité convient aux âges que vous amenez. Vous pouvez aussi écrire à ciao@handmadepastaflorence.com.`,
+              ],
+            },
+          ],
+          faqs: [
+            { q: `À partir de quel âge les enfants peuvent-ils suivre le cours ?`, a: `Dès 6 ans pour cuisiner, toujours avec un adulte à table. Les moins de 6 ans sont les bienvenus pour s'asseoir et manger gratuitement, mais les planches, rouleaux et couteaux ne sont pas pensés pour des mains plus petites et nous préférons le dire plutôt que de prendre votre argent.` },
+            { q: `Combien coûte le cours pour les enfants ?`, a: `50 € de 6 à 12 ans, gratuit avant 6 ans, et 95 € par adulte — le même prix que n'importe quel autre convive. Il n'y a aucun supplément « famille ».` },
+            { q: `Les enfants font-ils vraiment les pâtes ou regardent-ils ?`, a: `Ils les font. Chaque enfant a une planche, sa pâte et ses formes. Comme la table ne compte jamais plus de huit personnes au total, un chef a le temps de suivre un enfant individuellement — c'est la raison pratique pour laquelle ce cours existe à notre taille et pas dans un cours de douze.` },
+            { q: `L'usage du couteau est-il sans danger pour les enfants ?`, a: `Il est limité, surveillé et fait avec les chefs à côté. L'eau bouillante et la casserole restent avec nous. Tout le reste — farine, pâte, étalage, façonnage, garniture — est à eux.` },
+            { q: `Et si mon enfant s'ennuie à mi-parcours ?`, a: `Cela arrive et c'est prévu. Les phases pratiques sont volontairement entrecoupées par les temps de repos de la pâte et par une collation, et il y a de la place pour sauter un passage. Cela ne gêne personne et ne gâche pas le cours pour le reste de la table.` },
+            { q: `Pouvez-vous gérer un enfant allergique ?`, a: `En général oui, cœliaque compris — un poste dédié, sa propre farine et sa propre casserole, sans supplément et à la même table que tout le monde. Envoyez-nous la liste complète à la réservation, pas le jour même.` },
+          ],
+          related: [
+            { title: `La Table du Chef`, href: `/fr/cours-de-pates-fraiches-florence/`, desc: `Le même cours entre adultes — quatre formes, un long déjeuner. 95 €.` },
+            { title: `La Longue Table Familiale`, href: `/fr/cours-cuisine-prive-florence/`, desc: `Toute la cuisine rien que pour vous, pour les grandes familles — dès 680 €.` },
+            { title: `Mercato & Mani`, href: `/fr/cours-cuisine-visite-marche-florence/`, desc: `Le marché à l'aube, puis on cuisine le panier. Mieux pour les ados que pour les tout-petits — 145 €.` },
+          ],
+          ctaLabel: `Réserver pour la famille`,
+          prefill: 'florence',
+          breadcrumbName: `Cours de Cuisine en Famille`,
+          showPastaCrumb: true,
+          product: {
+            name: `Cours de Cuisine en Famille à Florence`,
+            description: `Un cours pratique de pâtes fraîches en famille de 3 heures dans l'Oltrarno à Florence. Les enfants dès 6 ans façonnent leurs pâtes à une table de huit maximum, puis tout le monde mange. 95 € par adulte, 50 € de 6 à 12 ans, gratuit avant 6 ans.`,
+            price: '95',
+          },
+        },
+      },
+      de: {
+        slug: 'familien-kochkurs-florenz',
+        title: `Familien-Kochkurs in Florenz — Kinder ab 50 € | Handmade Pasta Florence`,
+        description: `Ein Pasta-Kurs für Familien im Oltrarno in Florenz. Kinder ab 6 Jahren rollen ihre eigene Pasta neben Ihnen, an einem Tisch mit höchstens acht Plätzen, danach essen alle gemeinsam. 95 € pro Erwachsenem, 50 € für 6–12 Jahre, unter 6 kostenlos.`,
+        cl: {
+          eyebrow: `Für Familien · Oltrarno, Florenz`,
+          heading: `Ein Familien-Kochkurs in Florenz,`,
+          headingItal: `bei dem die Kinder wirklich kochen.`,
+          lede: `Kein Kurs, bei dem die Erwachsenen kochen und die Kinder warten. Jedes Kind bekommt sein eigenes Brett, sein eigenes Stück Teig und einen Koch, der nach ihm sieht — und an einem Tisch für acht können wir das auch wirklich tun. Drei Stunden, dann setzen sich alle hin und essen, was sie gemacht haben.`,
+          image: { src: img.cuttingPizza, alt: `Eine Familie kocht gemeinsam bei einem Pasta-Kurs in Florenz`, w: 1000, h: 667 },
+          price: `€95`,
+          priceNote: `pro Erwachsenem · 50 € für 6–12 · unter 6 kostenlos`,
+          facts: [
+            { label: `Lokale Produkte`, value: `Saisonale toskanische Produkte`, icon: 'leaf' },
+            { label: `Alter`, value: `ab 6 Jahren, mit einem Erwachsenen`, icon: 'people' },
+            { label: `Kinder`, value: `50 € (6–12) · unter 6 kostenlos`, icon: 'tag' },
+            { label: `Dauer`, value: `etwa 3 Stunden`, icon: 'clock' },
+            { label: `Gruppengröße`, value: `max. 8 inkl. Kinder`, icon: 'table' },
+            { label: `Ort`, value: `Oltrarno, nahe Santo Spirito`, icon: 'map-pin' },
+          ],
+          sections: [
+            {
+              title: `Was machen die Kinder wirklich?`,
+              paras: [
+                `Sie machen Pasta. Richtig — kein symbolisches Kügelchen Teig am Tischende. Jedes Kind bekommt sein eigenes bemehltes Brett, seinen eigenen Teig zum Kneten und seine eigenen Formen: zuerst Pici, weil einen Strang zwischen den Handflächen zu rollen das Befriedigendste ist, was ein Sechsjähriger mit Mehl anstellen kann, danach eine gefüllte Form, wenn die Geduld reicht.`,
+                `Weil insgesamt nie mehr als acht Personen am Tisch sitzen, kann ein Koch so lange bei einem Kind bleiben, bis die Faltung sitzt. Genau deshalb funktioniert das an unserem Tisch und nicht in einem Kurs mit zwölf Leuten.`,
+              ],
+            },
+            {
+              title: `Halten sie drei Stunden durch?`,
+              paras: [
+                `Größtenteils ja, und der Kurs ist um die ehrliche Antwort herum gebaut. Die praktischen Abschnitte sind unterbrochen — kneten, den Teig ruhen lassen, etwas essen, zurückkommen — weil sich ein geruhter Teig und ein geruhtes Kind beide besser bearbeiten lassen. Der letzte Abschnitt ist Kochen und Essen, und damit hatte noch nie jemand Mühe.`,
+                `Wenn einem jüngeren Kind die Geduld ausgeht, ist das völlig in Ordnung und eingeplant. Es gibt Platz zum Sitzen, die Küche ist keine gute Stube, und es wird niemanden stören. Uns ist lieber, Sie beenden den Kurs, als dass Sie mit schlechtem Gewissen gehen.`,
+              ],
+            },
+            {
+              title: `Gut zu wissen`,
+              paras: [],
+              list: [
+                `Gekocht wird ab 6 Jahren. Unter 6 sind herzlich willkommen mitzukommen und kostenlos mitzuessen, aber Bretter und Messer sind nicht für sie gemacht.`,
+                `Jedes Kind braucht einen Erwachsenen mit am Tisch — das ist ein Kurs, den man zusammen macht, keine Betreuung.`,
+                `Kinder bekommen dasselbe Essen, nur ohne Wein: die Pasta, die sie gemacht haben, eine Sauce und etwas zu trinken, das kein Chianti ist. Für Erwachsene sind zwei toskanische Gläser inklusive.`,
+                `Die Messerarbeit ist begrenzt und beaufsichtigt. Kochendes Wasser bleibt bei den Köchen.`,
+                `Glutenfrei oder eine Allergie in der Familie? Sagen Sie es bei der Buchung — eigene Station, kein Aufpreis, derselbe Tisch wie alle anderen. Siehe den <a href="/de/glutenfreier-kochkurs-florenz/">glutenfreien Kurs</a>.`,
+                `Die Rezepte schicken wir hinterher per E-Mail, und was Sie nicht aufessen, wird getrocknet und abgefüllt zum Mitnehmen — das ist meistens der Teil, von dem die Kinder erzählen.`,
+              ],
+            },
+            {
+              title: `So funktioniert die Buchung`,
+              paras: [
+                `Klicken Sie auf „Für die Familie buchen" und sagen Sie uns, wie viele Erwachsene und wie viele Kinder, mit Alter. Es öffnet sich ein WhatsApp-Chat mit den ausgefüllten Angaben, und wir bestätigen persönlich — auch, ob die gewünschte Uhrzeit zu den Altersstufen passt, die Sie mitbringen. Sie können auch an ciao@handmadepastaflorence.com schreiben.`,
+              ],
+            },
+          ],
+          faqs: [
+            { q: `Ab welchem Alter können Kinder am Kochkurs teilnehmen?`, a: `Ab 6 Jahren zum Mitkochen, immer mit einem Erwachsenen am Tisch. Unter 6 sind willkommen, dabeizusitzen und kostenlos mitzuessen, aber Bretter, Nudelhölzer und Messer sind nicht für kleinere Hände gedacht, und das sagen wir lieber, als Ihnen das Geld abzunehmen.` },
+            { q: `Was kostet der Kurs für Kinder?`, a: `50 € für 6–12 Jahre, kostenlos unter 6, und 95 € pro Erwachsenem — derselbe Preis wie für jeden anderen Gast am Tisch. Es gibt keinen Familienaufschlag.` },
+            { q: `Machen die Kinder ihre Pasta selbst oder schauen sie nur zu?`, a: `Sie machen sie selbst. Jedes Kind bekommt ein Brett, seinen eigenen Teig und seine eigenen Formen. Weil am Tisch insgesamt nie mehr als acht Personen sitzen, hat ein Koch Zeit, ein Kind einzeln zu begleiten — das ist der praktische Grund, warum es diesen Kurs in unserer Größe gibt und nicht in einem Kurs mit zwölf.` },
+            { q: `Ist die Messerarbeit für Kinder sicher?`, a: `Sie ist begrenzt, beaufsichtigt und findet mit den Köchen daneben statt. Kochendes Wasser und der Topf bleiben bei uns. Alles andere — Mehl, Teig, Ausrollen, Formen, Füllen — gehört ihnen.` },
+            { q: `Was, wenn mein Kind auf halber Strecke die Lust verliert?`, a: `Kommt vor und ist eingeplant. Die praktischen Abschnitte sind bewusst durch Teigruhe und eine Kleinigkeit zu essen unterbrochen, und es ist Platz da, einen Abschnitt auszusetzen. Es stört niemanden und verdirbt dem Rest des Tisches den Kurs nicht.` },
+            { q: `Können Sie ein Kind mit einer Allergie versorgen?`, a: `In der Regel ja, Zöliakie eingeschlossen — eine eigene Station, eine eigene Mehlmischung und ein eigener Topf, ohne Aufpreis und am selben Tisch wie alle anderen. Schicken Sie uns die vollständige Liste bei der Buchung, nicht am Tag selbst.` },
+          ],
+          related: [
+            { title: `Der Tisch des Küchenchefs`, href: `/de/pasta-kurs-florenz/`, desc: `Derselbe Kurs nur für Erwachsene — vier Formen, ein langes Mittagessen. 95 €.` },
+            { title: `Die lange Familientafel`, href: `/de/privater-kochkurs-florenz/`, desc: `Die ganze Küche für Sie allein, für größere Familiengruppen — ab 680 €.` },
+            { title: `Mercato & Mani`, href: `/de/markt-tour-kochkurs-florenz/`, desc: `Markt im Morgengrauen, dann den Korb kochen. Eher für Teenager als für Kleinkinder — 145 €.` },
+          ],
+          ctaLabel: `Für die Familie buchen`,
+          prefill: 'florence',
+          breadcrumbName: `Familien-Kochkurs`,
+          showPastaCrumb: true,
+          product: {
+            name: `Familien-Kochkurs in Florenz`,
+            description: `Ein 3-stündiger praktischer Pasta-Kurs für Familien im Oltrarno in Florenz. Kinder ab 6 Jahren rollen ihre eigene Pasta an einem Tisch mit höchstens acht Plätzen, danach essen alle gemeinsam. 95 € pro Erwachsenem, 50 € für 6–12 Jahre, unter 6 kostenlos.`,
+            price: '95',
+          },
+        },
+      },
+      zh: {
+        slug: 'jiating-pengren-kecheng-foluolunsa',
+        title: `佛罗伦萨家庭烹饪课程 — 儿童50欧元起 | Handmade Pasta Florence`,
+        description: `佛罗伦萨奥特拉诺区的家庭手工意面课程。6岁以上的孩子在您身边亲手擀制意面，每桌不超过八人，然后全家一起享用自己的作品。成人每人95欧元，6–12岁50欧元，6岁以下免费。`,
+        cl: {
+          eyebrow: `适合家庭 · 佛罗伦萨奥特拉诺`,
+          heading: `佛罗伦萨的家庭烹饪课程，`,
+          headingItal: `孩子真正动手做饭。`,
+          lede: `这不是大人下厨、孩子干等的课程。每个孩子都有自己的案板、自己的那块面团，还有一位会过来照看他的厨师——在一张八人桌旁，我们真的做得到。三个小时，然后全家坐下来吃自己做的东西。`,
+          image: { src: img.cuttingPizza, alt: `一家人在佛罗伦萨的意面课程上一起下厨`, w: 1000, h: 667 },
+          price: `€95`,
+          priceNote: `每位成人 · 6–12岁50欧元 · 6岁以下免费`,
+          facts: [
+            { label: `本地食材`, value: `托斯卡纳时令食材`, icon: 'leaf' },
+            { label: `年龄`, value: `6岁以上，需成人陪同`, icon: 'people' },
+            { label: `儿童`, value: `50欧元（6–12岁） · 6岁以下免费`, icon: 'tag' },
+            { label: `时长`, value: `约3小时`, icon: 'clock' },
+            { label: `团队规模`, value: `含儿童最多8人`, icon: 'table' },
+            { label: `地点`, value: `奥特拉诺，靠近圣斯皮里托`, icon: 'map-pin' },
+          ],
+          sections: [
+            {
+              title: `孩子究竟会做些什么？`,
+              paras: [
+                `他们真的在做意面——不是在桌角捏一小团面意思一下。每个孩子都有自己撒好面粉的案板、自己要揉的面团、自己要搓的形状：先做pici，因为把一根面条在掌心搓出来，是一个六岁孩子用面粉能做的最有成就感的事；如果还有耐心，再做一种带馅的。`,
+                `因为整桌从不超过八个人，厨师可以一直陪着一个孩子，直到那个总也捏不好的褶子终于成型。这正是它在我们这张桌子上行得通、而在十二人的课堂上行不通的原因。`,
+              ],
+            },
+            {
+              title: `他们能坚持三个小时吗？`,
+              paras: [
+                `大部分时候可以，而这门课就是围绕这个诚实的答案设计的。动手的环节是被拆开的——揉面、醒面、吃点东西、再回来——因为醒过的面团和歇过的孩子都更好对付。最后一段是烹饪和吃饭，这一段从来没有人坐不住。`,
+                `如果年纪小一点的孩子耗尽了耐心，完全没问题，我们也早有准备。有地方坐，厨房不是什么讲究的客厅，也不会打扰到任何人。比起让你们带着歉意离开，我们更希望你们把课上完。`,
+              ],
+            },
+            {
+              title: `温馨提示`,
+              paras: [],
+              list: [
+                `6岁以上可以动手做。6岁以下欢迎同行并免费用餐，但案板和刀具并不是为他们准备的。`,
+                `每个孩子都需要一位成人同桌陪同——这是一门全家一起上的课，不是托管。`,
+                `孩子享用同样的餐食，只是不含葡萄酒：他们亲手做的意面、一份酱汁，以及不是基安蒂的饮品。成人则已包含两杯托斯卡纳葡萄酒。`,
+                `用刀环节有限且全程有人看顾。沸水始终由厨师掌管。`,
+                `家里有人无麸质或有过敏？请在预订时告诉我们——专属操作台、不加价、和大家同坐一桌。请见<a href="/zh/wu-fuzhi-pengren-kecheng-foluolunsa/">无麸质课程</a>。`,
+                `课后我们会把菜谱发到您邮箱；没吃完的会为您晾干装袋带走——这通常是孩子们最爱聊起的部分。`,
+              ],
+            },
+            {
+              title: `如何预订`,
+              paras: [
+                `点击“为全家预订”，告诉我们几位成人、几位儿童以及孩子的年龄。系统会打开一个已填好详情的 WhatsApp 聊天窗口，我们会亲自确认——包括您想要的时段是否适合同行孩子的年龄。您也可以发送邮件至 ciao@handmadepastaflorence.com。`,
+              ],
+            },
+          ],
+          faqs: [
+            { q: `孩子多大可以参加烹饪课程？`, a: `6岁以上可以动手做，且必须有一位成人同桌。6岁以下欢迎同行、免费用餐，但案板、擀面杖和刀具并不适合更小的手——我们宁愿直说，也不愿收这笔钱。` },
+            { q: `儿童参加课程的费用是多少？`, a: `6–12岁50欧元，6岁以下免费，成人每位95欧元——与桌上任何其他客人同价。没有任何“家庭附加费”。` },
+            { q: `孩子是真的动手做意面，还是只在旁边看？`, a: `是真的动手。每个孩子都有案板、自己的面团和自己的形状。因为整桌从不超过八人，厨师有时间单独指导一个孩子——这就是这门课在我们这个规模才成立、在十二人课堂上不成立的现实原因。` },
+            { q: `孩子用刀安全吗？`, a: `用刀环节有限、全程看顾，且由厨师在旁陪同。沸水和锅具始终由我们掌管。其余的一切——面粉、面团、擀制、成形、包馅——都交给他们。` },
+            { q: `如果孩子中途觉得无聊怎么办？`, a: `会发生，我们也考虑到了。动手环节被醒面和小食刻意拆开，也有地方可以歇过一轮。这不会打扰任何人，也不会影响同桌其他人的体验。` },
+            { q: `孩子有过敏，你们能安排吗？`, a: `通常可以，包括乳糜泻——专属操作台、专属面粉配方、专属煮锅，不加价，并且与大家同坐一桌。请在预订时把完整清单发给我们，而不是当天再说。` },
+          ],
+          related: [
+            { title: `主厨餐桌`, href: `/zh/foluolunsa-yidali-mian-kecheng/`, desc: `同样的课程，仅限成人——四种形状，一顿悠长的午餐。95欧元。` },
+            { title: `家庭长桌体验`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `整个厨房专属于你们，适合更大的家庭团体——680欧元起。` },
+            { title: `市场与手工`, href: `/zh/shichang-daolan-pengren-kecheng-foluolunsa/`, desc: `清晨逛市场，然后烹饪当天的食材。更适合青少年而非幼童——145欧元。` },
+          ],
+          ctaLabel: `为全家预订`,
+          prefill: 'florence',
+          breadcrumbName: `家庭烹饪课程`,
+          showPastaCrumb: true,
+          product: {
+            name: `佛罗伦萨家庭烹饪课程`,
+            description: `佛罗伦萨奥特拉诺区3小时家庭手工意面实践课程。6岁以上的孩子在不超过八人的餐桌旁亲手擀制意面，之后全家一起享用。成人每位95欧元，6–12岁50欧元，6岁以下免费。`,
+            price: '95',
           },
         },
       },

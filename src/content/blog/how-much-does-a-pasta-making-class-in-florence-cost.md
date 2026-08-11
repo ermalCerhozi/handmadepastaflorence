@@ -28,10 +28,12 @@ At €80 and up, you should not be paying extra for the essentials. A fair class
 
 So you can calibrate the ranges above against a real menu ([full details here](/pasta-making-class-florence/)):
 
-- **[The Chef's Table](/pasta-making-class-florence/)** — 3 hours, four pasta shapes, max 8 guests, ends in a sit-down lunch with wine: **€95 per person**.
+- **[The Chef's Table](/pasta-making-class-florence/)** — 3 hours, four pasta shapes, max 8 guests, ends in a sit-down lunch with two Tuscan wines included: **€95 per person**.
 - **[Mercato & Mani](/market-tour-cooking-class-florence/)** — Sant'Ambrogio market walk, then ravioli, ragù and a seasonal dolce, max 6 guests, about 5 hours: **€145 per person**.
 - **[The Family Long-Table](/private-cooking-class-florence/)** — the whole kitchen privately, 6–14 guests: **from €680 per group**.
 - **[Live Online Class](/online-pasta-making-class/)** — streamed from our Florence kitchen, optional chilled ingredient kit shipped to you: **from €68 per person**.
+
+At €95, The Chef's Table sits at the middle of the group-class band rather than the top of it — and the top of that band in Florence now runs to about €150 per person for a comparable three-and-a-half-hour group class. What you are not paying for at our price is a designer kitchen or a large room. What you are getting is a table of eight instead of twelve, two chefs who cook for a living, the wine in the price rather than added at the end, and the recipes and your leftover pasta to take home.
 
 ## Five questions to ask before booking any class (including ours)
 

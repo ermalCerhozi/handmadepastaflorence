@@ -28,10 +28,12 @@ Da €80 in su, non dovresti pagare extra per l'essenziale. Un corso equo includ
 
 Così puoi calibrare gli intervalli sopra indicati su un vero menu ([dettagli completi qui](/it/corso-pasta-fresca-firenze/)):
 
-- **[Il Tavolo dello Chef](/it/corso-pasta-fresca-firenze/)** — 3 ore, quattro formati di pasta, max 8 ospiti, si conclude con un pranzo seduti con vino: **€95 a persona**.
+- **[Il Tavolo dello Chef](/it/corso-pasta-fresca-firenze/)** — 3 ore, quattro formati di pasta, max 8 ospiti, si conclude con un pranzo seduti con due calici toscani inclusi: **€95 a persona**.
 - **[Mercato & Mani](/it/corso-cucina-tour-mercato-firenze/)** — passeggiata al mercato di Sant'Ambrogio, poi ravioli, ragù e un dolce di stagione, max 6 ospiti, circa 5 ore: **€145 a persona**.
 - **[Il Lungo Tavolo di Famiglia](/it/corso-cucina-privato-firenze/)** — l'intera cucina in uso esclusivo, 6–14 ospiti: **da €680 per gruppo**.
 - **[Corso in Diretta Online](/it/corso-pasta-online/)** — trasmesso dalla nostra cucina di Firenze, kit ingredienti refrigerato opzionale spedito da te: **da €68 a persona**.
+
+A €95, Il Tavolo dello Chef sta nella fascia media dei corsi di gruppo, non in cima: a Firenze la parte alta di quella fascia arriva oggi intorno ai €150 a persona per un corso di gruppo di tre ore e mezza. Quello che non paghi, al nostro prezzo, è una cucina di design o una sala grande. Quello che ottieni è un tavolo da otto invece che da dodici, due chef che cucinano per mestiere, il vino nel prezzo e non aggiunto alla fine, e le ricette e la pasta avanzata da portare a casa.
 
 ## Cinque domande da fare prima di prenotare qualsiasi corso (inclusi i nostri)
 

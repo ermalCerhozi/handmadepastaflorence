@@ -28,7 +28,7 @@ Ab 80 € sollten Sie nicht extra für das Wesentliche zahlen müssen. Ein faire
 
 Damit Sie die oben genannten Spannen mit einem echten Angebot abgleichen können ([alle Details hier](/de/pasta-kurs-florenz/)):
 
-- **[Der Chef's Table](/de/pasta-kurs-florenz/)** — 3 Stunden, vier Pasta-Formen, max. 8 Gäste, endet in einem gemeinsamen Mittagessen mit Wein: **95 € pro Person**.
+- **[Der Chef's Table](/de/pasta-kurs-florenz/)** — 3 Stunden, vier Pasta-Formen, max. 8 Gäste, endet in einem gemeinsamen Mittagessen mit zwei inbegriffenen toskanischen Weinen: **95 € pro Person**.
 - **[Mercato & Mani](/de/markt-tour-kochkurs-florenz/)** — Sant'Ambrogio-Marktspaziergang, dann Ravioli, Ragù und ein saisonales Dolce, max. 6 Gäste, etwa 5 Stunden: **145 € pro Person**.
 - **[The Family Long-Table](/de/privater-kochkurs-florenz/)** — die gesamte Küche privat, 6–14 Gäste: **ab 680 € pro Gruppe**.
 - **[Live-Online-Kurs](/de/online-pasta-kurs/)** — gestreamt aus unserer Küche in Florenz, optionales gekühltes Zutaten-Kit zu Ihnen nach Hause geliefert: **ab 68 € pro Person**.

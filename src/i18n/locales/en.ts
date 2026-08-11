@@ -30,7 +30,7 @@ const en = {
   footer: {
     headline: 'Come get your hands<br /><span class="ital">a little floury.</span>',
     book: 'Book your class',
-    hours: 'Tue–Sun · classes 10:00, 14:30 & 18:00 · closed Mondays',
+    hours: 'Open every day · classes 10:00, 14:30 & 18:00',
     desc: 'Two agriturismo chefs, cooking with you in person & online in the heart of Florence.',
     by: 'By',
     classes: 'Classes',
@@ -51,6 +51,7 @@ const en = {
   // Class landing page (ClassLanding.astro) chrome labels.
   lp: {
     home: 'Home',
+    pastaCrumb: 'Pasta',
     faqPre: 'Good to ',
     faqItal: 'know.',
     relPre: 'Looking for something ',
@@ -142,7 +143,7 @@ const en = {
       { q: 'Can you cater to gluten-free diets or allergies?', a: 'Yes, we can prepare a dedicated gluten-free flour blend and a clean station at no extra charge. Just tell us about any allergies when you book.' },
       { q: "I can’t make it to Florence. Can I still take a class?", a: 'Absolutely. Our live online classes are streamed from the same kitchen, with a fresh-pasta ingredient kit shipped to your door, from €68 per person.' },
       { q: 'Do you host corporate team building or work with hotels and tour operators?', a: 'Yes. Companies can book the whole kitchen for a private team-building class (6–14 people), and we offer partner rates and referral booking for hotels, agriturismi and tour operators. Email ciao@handmadepastaflorence.com with "Business partnership" and we reply within one working day.' },
-      { q: 'When do classes run?', a: 'Classes start at 10:00, 14:30 and 18:00 (Florence time). We’re closed on Mondays.' },
+      { q: 'When do classes run?', a: 'Classes start at 10:00, 14:30 and 18:00 (Florence time), every day of the week.' },
       { q: 'How do I book and pay?', a: "Use the “Book a class” button to build your request. It opens a WhatsApp chat with the details filled in, and we’ll confirm availability and walk you through the rest." },
     ],
   },
@@ -248,8 +249,8 @@ const en = {
     step3Sub: 'Optional. Everything here is add-on only.',
     kitT: 'Ship me the ingredient kit',
     kitD: '00 flour, semola, rolling pin & recipe cards, chilled to your door.',
-    wineT: 'Add a wine pairing',
-    wineD: 'Two Tuscan pours chosen to match your menu (in-person) or a bottle shipped (online).',
+    wineT: 'Ship me the wine too',
+    wineD: 'A bottle of Tuscan wine with your kit, chosen to match what you’ll cook. (In Florence, two pours are already included.)',
     gfT: 'Gluten-free preference',
     gfD: 'We’ll prep a dedicated GF flour blend and a clean station. No charge.',
     free: 'Free',
