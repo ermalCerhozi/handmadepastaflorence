@@ -49,6 +49,12 @@ const localBusiness = {
     streetAddress: 'Via dei Pastai 12',
     addressLocality: 'Firenze',
     addressRegion: 'FI',
+    // 50125 is the CAP for the Oltrarno / Piazza Santo Spirito zone. INFERRED
+    // from the neighbourhood, not read off a document — 50124 covers part of
+    // the same area. Confirm against the actual address before building any
+    // citations (Yelp, Apple, Bing Places), because every one of them has to
+    // match this exactly or the NAP signal splits.
+    postalCode: '50125',
     addressCountry: 'IT',
   },
   areaServed: [
