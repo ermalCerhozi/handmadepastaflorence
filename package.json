@@ -8,7 +8,10 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "postbuild": "node src/scripts/indexnow-submit.mjs",
+    "indexnow": "node src/scripts/indexnow-submit.mjs --submit",
+    "indexnow:seed": "node src/scripts/indexnow-submit.mjs --seed"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",
