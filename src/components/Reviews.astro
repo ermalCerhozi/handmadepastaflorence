@@ -1,13 +1,13 @@
 ---
 // Customer reviews — intentionally EMPTY until we start receiving real ones.
-// To populate later: add objects to `reviews` (and optionally `badges`) below.
+// The data now lives in src/data/reviews.ts so this section and the
+// `aggregateRating` in our JSON-LD stay in sync: add a real review there and
+// both the stars on the page and the rating in structured data appear at once.
 // The whole section reveals automatically once `reviews` has at least one entry.
 import { getLocaleFromUrl } from '../i18n/utils';
 import { useTranslations } from '../i18n/ui';
+import { reviews, badges, hasReviews } from '../data/reviews';
 const t = useTranslations(getLocaleFromUrl(Astro.url));
-const reviews: { quote: string; name: string; from: string; src: string }[] = [];
-const badges: { src: string; score: string; count: string; mark: string }[] = [];
-const hasReviews = reviews.length > 0;
 ---
 
 {hasReviews && (

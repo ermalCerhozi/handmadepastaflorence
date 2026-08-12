@@ -52,6 +52,9 @@ const en = {
   lp: {
     home: 'Home',
     pastaCrumb: 'Pasta',
+    updated: 'Prices and times checked in',
+    galleryStation: 'Your station, set out before you arrive — your own board, rolling pin and flour. Nobody shares a bowl.',
+    galleryTable: 'Where it ends: what you made, a Tuscan board alongside it, and the two glasses that are already in the price.',
     faqPre: 'Good to ',
     faqItal: 'know.',
     relPre: 'Looking for something ',

@@ -7,9 +7,11 @@
 import { Image } from 'astro:assets';
 import { localizePath } from '../i18n/utils';
 import { useTranslations } from '../i18n/ui';
-import type { Locale } from '../i18n/config';
+import { languages, type Locale } from '../i18n/config';
 import { shapesHubPath } from '../data/shapes';
 import type { FactIcon } from '../data/landings';
+import { getAggregateRating, getReviewSchema } from '../data/reviews';
+import * as img from '../assets/images';
 
 interface Fact {
   label: string;
@@ -129,6 +131,29 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
 // Rolling year-end validity, same policy as the homepage Offers in Schema.astro.
 const PRICE_VALID_UNTIL = '2026-12-31';
 
+// Freshness signal. Competing listings for these keywords carry "2026" in the
+// title; our class pages showed no date at all. Bump this by hand when the
+// facts on a class page actually change (price, times, what's included) — it
+// feeds both the visible line and `dateModified` in the Course schema, so
+// bumping it without a real change is the same lie in two places.
+const PAGE_UPDATED = '2026-08-11';
+const updatedLabel = new Intl.DateTimeFormat(languages[lang].htmlLang, {
+  month: 'long',
+  year: 'numeric',
+}).format(new Date(PAGE_UPDATED));
+
+// Star ratings are the one SERP feature every competitor for "pasta making
+// class florence" displays and we do not. These spread to nothing while
+// src/data/reviews.ts is empty, and start emitting the moment a real review is
+// added there — never fabricate entries to switch this on.
+const aggregateRating = getAggregateRating();
+const reviewSchema = getReviewSchema();
+
+// The two kitchen photos show the Florence room, so they belong only on the
+// in-person Florence classes — not the online class, the team-building enquiry
+// page or the gift voucher. `prefill: 'florence'` is exactly that set.
+const showKitchenPhotos = prefill === 'florence' && !emailSubject;
+
 const productSchema = product && {
   '@context': 'https://schema.org',
   '@type': 'Product',
@@ -136,6 +161,8 @@ const productSchema = product && {
   description: product.description,
   image: `${SITE}${image.src.src}`,
   brand: { '@type': 'Brand', name: 'Handmade Pasta Florence' },
+  ...(aggregateRating ? { aggregateRating } : {}),
+  ...(reviewSchema ? { review: reviewSchema } : {}),
   offers: {
     '@type': 'Offer',
     price: product.price,
@@ -155,6 +182,7 @@ const courseSchema = product && courseMode && {
   name: product.name,
   description: product.description,
   image: `${SITE}${image.src.src}`,
+  dateModified: PAGE_UPDATED,
   provider: { '@type': 'Organization', name: 'Handmade Pasta Florence', sameAs: SITE },
   hasCourseInstance: {
     '@type': 'CourseInstance',
@@ -254,6 +282,9 @@ const faqSchema = {
           {priceNote && <small>{priceNote}</small>}
         </span>
       </div>
+      <p class="lp-hero__updated">
+        <time datetime={PAGE_UPDATED}>{t.lp.updated} {updatedLabel}</time>
+      </p>
     </div>
     <div class="lp-hero__media" data-reveal style="--reveal-delay:120ms">
       <Image src={image.src} alt={image.alt} width={image.w} height={image.h} loading="eager" decoding="async" />
@@ -280,6 +311,27 @@ const faqSchema = {
     </dl>
   </div>
 </section>
+
+{
+  /* Two real photos from our own kitchen, shown on the in-person Florence
+     classes. They are here to substantiate two claims the copy makes rather
+     than to decorate: the prepped station (your own board, tools and flour,
+     set out before you arrive) and the table the class ends at, wine included. */
+  showKitchenPhotos && (
+    <section class="lp-gallery">
+      <div class="shell lp-gallery__grid">
+        <figure class="lp-gallery__item" data-reveal>
+          <Image src={img.cookingClass} alt="A prepared station in our Florence kitchen: bamboo board, rolling pin and bowls of flour and eggs on the steel counter" width={800} height={1200} loading="lazy" decoding="async" />
+          <figcaption>{t.lp.galleryStation}</figcaption>
+        </figure>
+        <figure class="lp-gallery__item" data-reveal style="--reveal-delay:90ms">
+          <Image src={img.plates} alt="The table at the end of class: a board of Tuscan salumi and cheese, burrata with cherry tomatoes, and two glasses of red wine" width={800} height={1000} loading="lazy" decoding="async" />
+          <figcaption>{t.lp.galleryTable}</figcaption>
+        </figure>
+      </div>
+    </section>
+  )
+}
 
 <section class="lp-body">
   <div class="shell lp-body__inner">
@@ -513,6 +565,44 @@ const faqSchema = {
     font-weight: 700;
     font-size: var(--step-0);
     color: var(--olive);
+  }
+
+  .lp-hero__updated {
+    margin-top: 1.1rem;
+    font-size: 0.78rem;
+    letter-spacing: 0.02em;
+    color: rgba(249, 246, 240, 0.55);
+  }
+
+  /* ===== Kitchen photos ===== */
+  .lp-gallery { padding-block: clamp(2.5rem, 6vw, 4rem); }
+  .lp-gallery__grid {
+    display: grid;
+    gap: clamp(1rem, 3vw, 2rem);
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 720px) {
+    .lp-gallery__grid { grid-template-columns: 1fr 1fr; }
+  }
+  .lp-gallery__item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .lp-gallery__item img {
+    width: 100%;
+    height: 100%;
+    max-height: 26rem;
+    object-fit: cover;
+    display: block;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+  }
+  .lp-gallery__item figcaption {
+    font-size: var(--step--1);
+    color: var(--charcoal-soft);
+    line-height: 1.55;
+    max-width: 46ch;
   }
 
   /* ===== Body prose ===== */

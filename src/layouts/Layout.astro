@@ -10,6 +10,14 @@ interface Props {
   image?: string;
   /** Per-page hreflang alternates (landing pages pass translated slugs). */
   alternates?: Alternate[];
+  /**
+   * Keep this page out of the index. Set on the 404 pages: the localized ones
+   * (/it/404/ etc.) are real prerendered routes that answer HTTP 200, so
+   * without this Google indexes them and reports Soft 404s. Also suppresses
+   * hreflang + canonical, which are meaningless on an error page and, in the
+   * 404s' case, pointed at /404/ — a URL that correctly returns 404.
+   */
+  noindex?: boolean;
 }
 
 const {
@@ -17,6 +25,7 @@ const {
   description = 'Hands-on pasta making classes in Florence taught by two Tuscan agriturismo head chefs. Max 8 guests in our Oltrarno kitchen from €95, market-tour and private options, or live online with an ingredient kit from €68.',
   image = '/images/og-share.webp',
   alternates,
+  noindex = false,
 } = Astro.props;
 
 const lang = getLocaleFromUrl(Astro.url);
@@ -58,9 +67,10 @@ const dir = languages[lang].dir;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <link rel="canonical" href={canonical} />
-    {alts.map((a) => <link rel="alternate" hreflang={a.hreflang} href={a.href} />)}
-    <link rel="alternate" hreflang="x-default" href={xDefault.href} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
+    {!noindex && <link rel="canonical" href={canonical} />}
+    {!noindex && alts.map((a) => <link rel="alternate" hreflang={a.hreflang} href={a.href} />)}
+    {!noindex && <link rel="alternate" hreflang="x-default" href={xDefault.href} />}
 
     <!-- Open Graph -->
     <meta property="og:title" content={title} />

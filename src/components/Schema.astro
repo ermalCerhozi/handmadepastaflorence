@@ -6,8 +6,11 @@
 // and add `geo` coordinates + `sameAs` social/GBP links — see
 // REMAINING-SEO-TASKS.md (items needing owner input).
 import { cookingClass, cookingClassGuests, aperitivo, weddingCake } from '../assets/images';
+import { getAggregateRating } from '../data/reviews';
 
 const SITE = 'https://handmadepastaflorence.com';
+
+const aggregateRating = getAggregateRating();
 
 const localBusiness = {
   '@context': 'https://schema.org',
@@ -19,7 +22,21 @@ const localBusiness = {
   description:
     'Hands-on fresh-pasta cooking classes in Florence taught by two agriturismo head chefs — in person in the Oltrarno and live online with a shipped ingredient kit.',
   founder: [
-    { '@type': 'Person', name: 'Endri Cerhozi', jobTitle: 'Head Chef', sameAs: 'https://endricerhozi.com' },
+    {
+      '@type': 'Person',
+      name: 'Endri Cerhozi',
+      jobTitle: 'Head Chef',
+      // Full entity graph, not just the domain. Three of the top five AI-visibility
+      // factors are citation/entity signals, and these are the only externally
+      // verifiable profiles this business can point at until it has its own.
+      // Mirrors the sameAs already published on endricerhozi.com — keep in sync.
+      sameAs: [
+        'https://endricerhozi.com',
+        'https://www.instagram.com/endricerhozi/',
+        'https://www.facebook.com/endricerhozi/',
+        'https://www.linkedin.com/in/endri-cerhozi/',
+      ],
+    },
     { '@type': 'Person', name: 'Marsel', jobTitle: 'Head Chef' },
   ],
   url: SITE,
@@ -50,6 +67,9 @@ const localBusiness = {
       closes: '21:00',
     },
   ],
+  // Empty while src/data/reviews.ts has no entries; emits automatically once
+  // real guest reviews are added there. Never populate by hand.
+  ...(aggregateRating ? { aggregateRating } : {}),
 };
 
 // One Product + Offer per bookable experience — the simplest reliable path to

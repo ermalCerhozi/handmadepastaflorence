@@ -41,6 +41,9 @@ const fr = {
   lp: {
     home: 'Accueil',
     pastaCrumb: 'Pâtes',
+    updated: 'Tarifs et horaires vérifiés en',
+    galleryStation: 'Votre poste, prêt avant votre arrivée — planche, rouleau et farine à vous. Personne ne partage un saladier.',
+    galleryTable: 'La fin : ce que vous avez préparé, une planche toscane à côté, et les deux verres déjà compris dans le prix.',
     faqPre: 'Bon à ',
     faqItal: 'savoir.',
     relPre: 'Vous cherchez autre ',

@@ -41,6 +41,9 @@ const zh = {
   lp: {
     home: '首页',
     pastaCrumb: '意面',
+    updated: '价格与时间核对于',
+    galleryStation: '您的操作台，在您到达前就已备好——案板、擀面杖和面粉都是您专属的。没有人需要共用一只盆。',
+    galleryTable: '课程的收尾：您亲手做的意面，旁边一块托斯卡纳拼盘，以及价格中早已包含的那两杯酒。',
     faqPre: '有备',
     faqItal: '无患。',
     relPre: '在找其他',

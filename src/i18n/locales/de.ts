@@ -43,6 +43,9 @@ const de = {
   lp: {
     home: 'Startseite',
     pastaCrumb: 'Pasta',
+    updated: 'Preise und Zeiten geprüft im',
+    galleryStation: 'Ihre Station, fertig bevor Sie kommen — eigenes Brett, eigenes Nudelholz, eigenes Mehl. Niemand teilt sich eine Schüssel.',
+    galleryTable: 'So endet es: was Sie gemacht haben, ein toskanisches Brett daneben und die zwei Gläser, die schon im Preis sind.',
     faqPre: 'Gut zu ',
     faqItal: 'wissen.',
     relPre: 'Suchen Sie nach etwas ',

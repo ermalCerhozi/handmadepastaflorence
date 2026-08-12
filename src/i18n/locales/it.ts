@@ -45,6 +45,9 @@ const it: Dict = {
   lp: {
     home: `Home`,
     pastaCrumb: `Pasta`,
+    updated: `Prezzi e orari verificati:`,
+    galleryStation: `La tua postazione, pronta prima che arrivi — tagliere, matterello e farina tuoi. Nessuno divide una ciotola.`,
+    galleryTable: `Come finisce: quello che hai preparato, un tagliere toscano accanto e i due calici già compresi nel prezzo.`,
     faqPre: `Buono a `,
     faqItal: `sapersi.`,
     relPre: `Cerchi qualcos'`,
