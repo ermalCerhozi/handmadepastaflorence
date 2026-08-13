@@ -94,7 +94,7 @@ const en: ShapesLocale = {
   hubSlug: 'pasta-shapes',
   hubTitle: 'Pasta Shapes: Pici, Pappardelle, Tagliatelle & Tortelli Explained | Handmade Pasta Florence',
   hubDescription:
-    'A working chef\'s library of the four fresh pasta shapes we teach in Florence — what each one is, how it is rolled by hand, and the sauce it was built to carry. With a side-by-side comparison.',
+    'A working chef\'s library of the four fresh pasta shapes we teach in Florence: what each one is, how it is rolled by hand, and the sauce it was built to carry. With a side-by-side comparison.',
   hubEyebrow: 'The shape library',
   hubHeading: 'Four shapes,',
   hubHeadingItal: 'four different sauces.',
@@ -103,10 +103,10 @@ const en: ShapesLocale = {
   hubAnswer:
     'The four fresh pasta shapes we roll by hand in our Florence kitchen are pici, pappardelle, tagliatelle and tortelli. In short:',
   hubAnswerList: [
-    '<strong>Pici</strong> — thick hand-rolled strands of flour and water, no egg. Siena\'s pasta, built for garlicky aglione and wild boar ragù.',
-    '<strong>Pappardelle</strong> — the widest ribbon, 2–3 cm of egg dough. Made to carry heavy game sauces: boar, hare, duck.',
-    '<strong>Tagliatelle</strong> — a narrow egg ribbon, 6–8 mm. The everyday ribbon for meat ragù and mushrooms.',
-    '<strong>Tortelli</strong> — filled parcels, in Tuscany most often with potato or ricotta and spinach. Dressed simply, with butter and sage or a little ragù.',
+    '<strong>Pici</strong>: thick hand-rolled strands of flour and water, no egg. Siena\'s pasta, built for garlicky aglione and wild boar ragù.',
+    '<strong>Pappardelle</strong>: the widest ribbon, 2–3 cm of egg dough. Made to carry heavy game sauces: boar, hare, duck.',
+    '<strong>Tagliatelle</strong>: a narrow egg ribbon, 6–8 mm. The everyday ribbon for meat ragù and mushrooms.',
+    '<strong>Tortelli</strong>: filled parcels, in Tuscany most often with potato or ricotta and spinach. Dressed simply, with butter and sage or a little ragù.',
   ],
   hubFaqs: [
     {
@@ -119,11 +119,11 @@ const en: ShapesLocale = {
     },
     {
       q: 'Which Tuscan pasta shape is easiest to make by hand?',
-      a: 'Pici, because there is no rolling pin and no machine involved — you cut a strip of dough and roll it under your palms. It is also the most forgiving: pici are meant to be uneven, and the wonky ones hold sauce better.',
+      a: 'Pici, because there is no rolling pin and no machine involved: you cut a strip of dough and roll it under your palms. It is also the most forgiving: pici are meant to be uneven, and the wonky ones hold sauce better.',
     },
     {
       q: 'Do you need eggs to make fresh pasta?',
-      a: 'No. Pici are made with just flour, water and a little olive oil — a poor kitchen\'s pasta from central Tuscany. Ribbons like tagliatelle and pappardelle, and filled shapes like tortelli, use an egg dough for the elasticity and richness they need.',
+      a: 'No. Pici are made with just flour, water and a little olive oil, a poor kitchen\'s pasta from central Tuscany. Ribbons like tagliatelle and pappardelle, and filled shapes like tortelli, use an egg dough for the elasticity and richness they need.',
     },
   ],
   labels: {
@@ -139,11 +139,11 @@ const en: ShapesLocale = {
     faqHeading: 'Questions, answered.',
     ctaHeading: 'Roll it yourself.',
     ctaBody:
-      'We teach all four of these shapes in a three-hour class in our Oltrarno kitchen — hands in the flour from the first minute, then everyone sits down to eat what they made. Max 8 guests, €95.',
+      'We teach all four of these shapes in a three-hour class in our Oltrarno kitchen: hands in the flour from the first minute, then everyone sits down to eat what they made. Max 8 guests, €95.',
     ctaButton: 'Book a pasta class',
     ctaLink: 'See the class',
     guideHeading: 'Going deeper',
-    guideBody: 'Our full guide to Tuscany\'s fresh pasta traditions — where each shape comes from and why the region cooks the way it does.',
+    guideBody: 'Our full guide to Tuscany\'s fresh pasta traditions: where each shape comes from and why the region cooks the way it does.',
     guideLink: 'Read the Tuscan pasta guide',
   },
   classHref: '/pasta-making-class-florence/',
@@ -153,7 +153,7 @@ const en: ShapesLocale = {
       slug: 'pici',
       name: 'Pici',
       h1Sub: 'Tuscany\'s hand-rolled pasta, explained.',
-      tagline: 'Siena\'s thick hand-rolled strand — flour, water, no egg.',
+      tagline: 'Siena\'s thick hand-rolled strand: flour, water, no egg.',
       title: 'What Is Pici Pasta? Siena\'s Hand-Rolled Strand, Explained by a Chef | Handmade Pasta Florence',
       description:
         'Pici is a thick, hand-rolled Tuscan pasta made from flour and water with no egg. A Florence pasta chef on where it comes from, how to roll it, and the four sauces it belongs with.',
@@ -164,10 +164,10 @@ const en: ShapesLocale = {
         h: 625,
       },
       answer:
-        'Pici is a thick, hand-rolled pasta from southern Tuscany, made from nothing but flour, water and a little olive oil — no egg. Each strand is rolled out under the palms rather than cut with a knife or machine, which is why no two are the same thickness and why the surface stays rough enough to grip a heavy sauce.',
+        'Pici is a thick, hand-rolled pasta from southern Tuscany, made from nothing but flour, water and a little olive oil, no egg. Each strand is rolled out under the palms rather than cut with a knife or machine, which is why no two are the same thickness and why the surface stays rough enough to grip a heavy sauce.',
       facts: [
         { label: 'From', value: 'Siena & the Val d\'Orcia' },
-        { label: 'Dough', value: 'flour, water, olive oil — no egg' },
+        { label: 'Dough', value: 'flour, water, olive oil; no egg' },
         { label: 'Made by', value: 'rolling under the palms' },
         { label: 'Thickness', value: 'about 3 mm, deliberately uneven' },
         { label: 'Classic sauces', value: 'aglione, cinghiale, cacio e pepe, briciole' },
@@ -177,29 +177,29 @@ const en: ShapesLocale = {
         {
           title: 'Where pici come from',
           paras: [
-            'Pici belong to the hills south of Siena — the Val d\'Orcia, Montalcino, Montepulciano — and they are old. There is a fresco in an Etruscan tomb at Tarquinia that appears to show something very like them, which locals will tell you about at length and with confidence.',
-            'What is certain is that pici are poor food. No egg, because eggs were worth money and went to market. Just the cheapest flour, water from the tap, and the one thing every farmhouse had: time, and a pair of hands. That is the whole recipe, and it is why the shape survived — you can make it with nothing.',
+            'Pici belong to the hills south of Siena (the Val d\'Orcia, Montalcino, Montepulciano), and they are old. There is a fresco in an Etruscan tomb at Tarquinia that appears to show something very like them, which locals will tell you about at length and with confidence.',
+            'What is certain is that pici are poor food. No egg, because eggs were worth money and went to market. Just the cheapest flour, water from the tap, and the one thing every farmhouse had: time, and a pair of hands. That is the whole recipe, and it is why the shape survived: you can make it with nothing.',
           ],
         },
         {
           title: 'How they are rolled',
           paras: [
             'You roll out a slab of dough about a centimetre thick, cut it into strips, and then work each strip under your flat palms from the middle outwards until it stretches into a long, thick strand. The verb is <em>appiciare</em>, and it is where the name comes from.',
-            'The mistake everyone makes at first is pressing too hard, which flattens the strand into a ribbon instead of rounding it. The second mistake is chasing perfection. Pici are supposed to be uneven — the fat bits and thin bits are the character of the dish, and a rough, slightly irregular surface holds sauce far better than a smooth extruded one ever will.',
+            'The mistake everyone makes at first is pressing too hard, which flattens the strand into a ribbon instead of rounding it. The second mistake is chasing perfection. Pici are supposed to be uneven: the fat bits and thin bits are the character of the dish, and a rough, slightly irregular surface holds sauce far better than a smooth extruded one ever will.',
           ],
         },
         {
           title: 'What to put on them',
           paras: [
-            'Four sauces earn the name. <strong>Aglione</strong> — a slow tomato and garlic sauce built on the enormous, mild Tuscan aglione garlic — is the definitive one; ask for <em>pici all\'aglione</em> anywhere south of Siena. <strong>Ragù di cinghiale</strong>, wild boar, is the autumn version and the reason pici are thick enough to stand up to it.',
-            '<strong>Cacio e pepe</strong> works beautifully because the rough surface grabs the cheese, and <strong>pici alle briciole</strong> — toasted breadcrumbs, garlic, oil — is the oldest and poorest of them, and quietly one of the best things in Tuscan cooking. What you will not find on real pici is cream.',
+            'Four sauces earn the name. <strong>Aglione</strong> (a slow tomato and garlic sauce built on the enormous, mild Tuscan aglione garlic) is the definitive one; ask for <em>pici all\'aglione</em> anywhere south of Siena. <strong>Ragù di cinghiale</strong>, wild boar, is the autumn version and the reason pici are thick enough to stand up to it.',
+            '<strong>Cacio e pepe</strong> works beautifully because the rough surface grabs the cheese, and <strong>pici alle briciole</strong> (toasted breadcrumbs, garlic, oil) is the oldest and poorest of them, and quietly one of the best things in Tuscan cooking. What you will not find on real pici is cream.',
           ],
         },
       ],
       faqs: [
         {
           q: 'What is pici pasta made of?',
-          a: 'Flour, water and usually a little olive oil. No egg — that is the defining feature and the reason it was affordable for farming families in southern Tuscany.',
+          a: 'Flour, water and usually a little olive oil. No egg: that is the defining feature and the reason it was affordable for farming families in southern Tuscany.',
         },
         {
           q: 'Is pici the same as thick spaghetti?',
@@ -207,11 +207,11 @@ const en: ShapesLocale = {
         },
         {
           q: 'What sauce goes with pici?',
-          a: 'Traditionally four: aglione (tomato and sweet Tuscan garlic), wild boar ragù, cacio e pepe, and briciole — toasted breadcrumbs with garlic and oil. All four are chosen because they cling to a thick, rough strand.',
+          a: 'Traditionally four: aglione (tomato and sweet Tuscan garlic), wild boar ragù, cacio e pepe, and briciole, toasted breadcrumbs with garlic and oil. All four are chosen because they cling to a thick, rough strand.',
         },
         {
           q: 'Are pici hard to make at home?',
-          a: 'They are the easiest fresh pasta to start with, because you need no machine and no rolling pin — just your hands and a board. They are slow rather than difficult: rolling enough pici for four people takes a while, which is exactly why it was a job for the whole family.',
+          a: 'They are the easiest fresh pasta to start with, because you need no machine and no rolling pin, just your hands and a board. They are slow rather than difficult: rolling enough pici for four people takes a while, which is exactly why it was a job for the whole family.',
         },
       ],
       compare: { dough: 'Flour & water, no egg', cut: 'Rolled by hand, ~3 mm', sauce: 'Aglione, wild boar, cacio e pepe' },
@@ -220,7 +220,7 @@ const en: ShapesLocale = {
       slug: 'pappardelle',
       name: 'Pappardelle',
       h1Sub: 'Tuscany\'s widest pasta ribbon, explained.',
-      tagline: 'The widest ribbon — built to carry wild boar and hare.',
+      tagline: 'The widest ribbon, built to carry wild boar and hare.',
       title: 'What Are Pappardelle? Tuscany\'s Widest Ribbon, Explained by a Chef | Handmade Pasta Florence',
       description:
         'Pappardelle are wide egg-dough ribbons, 2–3 cm across, made for heavy game sauces like wild boar and hare. A Florence pasta chef on the cut, the dough and the classic pairings.',
@@ -231,34 +231,34 @@ const en: ShapesLocale = {
         h: 625,
       },
       answer:
-        'Pappardelle are the widest fresh pasta ribbon in the Tuscan repertoire — flat strips of egg dough cut 2 to 3 centimetres across. The width is not showing off: it exists so that a heavy, chunky game sauce has something broad enough to sit on instead of sliding off.',
+        'Pappardelle are the widest fresh pasta ribbon in the Tuscan repertoire: flat strips of egg dough cut 2 to 3 centimetres across. The width is not showing off: it exists so that a heavy, chunky game sauce has something broad enough to sit on instead of sliding off.',
       facts: [
         { label: 'From', value: 'Tuscany' },
-        { label: 'Dough', value: 'egg dough — flour and egg' },
+        { label: 'Dough', value: 'egg dough: flour and egg' },
         { label: 'Width', value: '2–3 cm' },
         { label: 'Name from', value: 'pappare, to gobble' },
         { label: 'Classic sauces', value: 'cinghiale, lepre, anatra, porcini' },
-        { label: 'Difficulty', value: 'easiest ribbon — the widest cut is the most forgiving' },
+        { label: 'Difficulty', value: 'easiest ribbon: the widest cut is the most forgiving' },
       ],
       sections: [
         {
           title: 'A name that tells you how to eat it',
           paras: [
             'The word comes from <em>pappare</em>, a blunt Tuscan verb meaning to gobble or to scoff. It is not a delicate name and it is not a delicate pasta. Pappardelle are what you serve when the sauce has been on the stove since morning and everybody is hungry.',
-            'They are the ribbon of the Tuscan hills specifically — where tagliatelle belongs to Emilia and Bologna, pappardelle is what comes out of a Tuscan kitchen in autumn, when the hunting season starts and there is game to be dealt with.',
+            'They are the ribbon of the Tuscan hills specifically: where tagliatelle belongs to Emilia and Bologna, pappardelle is what comes out of a Tuscan kitchen in autumn, when the hunting season starts and there is game to be dealt with.',
           ],
         },
         {
           title: 'How they are cut',
           paras: [
-            'The dough is a standard fresh egg dough, rolled out thin — thin enough to see the shadow of your hand through it, but no thinner, because a wide ribbon has to hold weight. Then you flour the sheet, roll it loosely, and cut across the roll with a knife at two to three centimetres.',
-            'Because the cut is so wide, pappardelle are the most forgiving ribbon to learn: a wobbly line matters far less at 3 cm than it does at 6 mm. They also cook fast — two or three minutes in well-salted water — and they must go straight into the pan with the sauce, never into a bowl to wait.',
+            'The dough is a standard fresh egg dough, rolled out thin: thin enough to see the shadow of your hand through it, but no thinner, because a wide ribbon has to hold weight. Then you flour the sheet, roll it loosely, and cut across the roll with a knife at two to three centimetres.',
+            'Because the cut is so wide, pappardelle are the most forgiving ribbon to learn: a wobbly line matters far less at 3 cm than it does at 6 mm. They also cook fast (two or three minutes in well-salted water), and they must go straight into the pan with the sauce, never into a bowl to wait.',
           ],
         },
         {
           title: 'What to put on them',
           paras: [
-            '<strong>Ragù di cinghiale</strong> — wild boar, slow-cooked with red wine, juniper and tomato — is the pairing that made this shape famous, and it remains the correct answer. <strong>Lepre</strong>, hare, is the older and richer version, and the one an old Tuscan cook would choose if they could get it.',
+            '<strong>Ragù di cinghiale</strong> (wild boar, slow-cooked with red wine, juniper and tomato) is the pairing that made this shape famous, and it remains the correct answer. <strong>Lepre</strong>, hare, is the older and richer version, and the one an old Tuscan cook would choose if they could get it.',
             'Beyond game, pappardelle take beautifully to <strong>duck ragù</strong> and to <strong>porcini</strong> in the few weeks of the year the mushrooms are worth having. The rule is simple: if the sauce is heavy, chunky and has been cooking for hours, this is the shape it wants.',
           ],
         },
@@ -274,7 +274,7 @@ const en: ShapesLocale = {
         },
         {
           q: 'Are pappardelle made with egg?',
-          a: 'Yes. Pappardelle are an egg-dough pasta — flour and whole eggs — which gives the wide ribbon the elasticity and strength it needs to carry a heavy sauce without tearing.',
+          a: 'Yes. Pappardelle are an egg-dough pasta (flour and whole eggs) which gives the wide ribbon the elasticity and strength it needs to carry a heavy sauce without tearing.',
         },
         {
           q: 'How long do fresh pappardelle take to cook?',
@@ -287,7 +287,7 @@ const en: ShapesLocale = {
       slug: 'tagliatelle',
       name: 'Tagliatelle',
       h1Sub: 'The everyday egg pasta ribbon, explained.',
-      tagline: 'The everyday egg ribbon, 6–8 mm — ragù\'s natural partner.',
+      tagline: 'The everyday egg ribbon, 6–8 mm, ragù\'s natural partner.',
       title: 'What Are Tagliatelle? The Egg Ribbon, Explained by a Chef | Handmade Pasta Florence',
       description:
         'Tagliatelle are fresh egg-dough ribbons cut 6–8 mm wide, the natural partner for a meat ragù. A Florence pasta chef on the cut, how it differs from fettuccine and pappardelle, and how to serve it.',
@@ -298,10 +298,10 @@ const en: ShapesLocale = {
         h: 625,
       },
       answer:
-        'Tagliatelle are flat ribbons of fresh egg pasta, cut roughly 6 to 8 millimetres wide. They are the everyday ribbon of northern and central Italy — narrow enough to twist onto a fork, broad enough to carry a proper meat ragù, which is why they are the shape most people picture when they think of fresh pasta.',
+        'Tagliatelle are flat ribbons of fresh egg pasta, cut roughly 6 to 8 millimetres wide. They are the everyday ribbon of northern and central Italy: narrow enough to twist onto a fork, broad enough to carry a proper meat ragù, which is why they are the shape most people picture when they think of fresh pasta.',
       facts: [
         { label: 'From', value: 'Emilia-Romagna, made across Tuscany' },
-        { label: 'Dough', value: 'egg dough — flour and egg' },
+        { label: 'Dough', value: 'egg dough: flour and egg' },
         { label: 'Width', value: '6–8 mm' },
         { label: 'Name from', value: 'tagliare, to cut' },
         { label: 'Classic sauces', value: 'ragù, funghi, butter and herbs' },
@@ -318,14 +318,14 @@ const en: ShapesLocale = {
         {
           title: 'How they are cut',
           paras: [
-            'Roll the egg dough into a thin sheet, let it dry for a few minutes until it is leathery rather than tacky — this is the step people skip, and it is why their ribbons stick together — then flour it generously, roll it into a loose flat log and cut across with a sharp knife.',
+            'Roll the egg dough into a thin sheet, let it dry for a few minutes until it is leathery rather than tacky (this is the step people skip, and it is why their ribbons stick together), then flour it generously, roll it into a loose flat log and cut across with a sharp knife.',
             'Then lift each cut immediately and shake it loose. Left in the roll, ribbons weld into a brick within minutes. Toss them in a little semolina and coil them into loose nests until the water boils. Tagliatelle are the shape that teaches you knife control, because at 6 mm a wandering cut is obvious in a way it never is on pappardelle.',
           ],
         },
         {
           title: 'What to put on them',
           paras: [
-            'A proper <strong>ragù</strong> — slow-cooked minced beef and pork with soffritto, wine and a very little tomato — is the pairing, and in Bologna it is the only one anybody will admit to. Note what it is not served with: spaghetti. That is a foreign invention and it will be pointed out to you.',
+            'A proper <strong>ragù</strong> (slow-cooked minced beef and pork with soffritto, wine and a very little tomato) is the pairing, and in Bologna it is the only one anybody will admit to. Note what it is not served with: spaghetti. That is a foreign invention and it will be pointed out to you.',
             'Beyond ragù, tagliatelle are superb with <strong>mushrooms</strong>, with butter and sage when you want something quiet, and with a simple <strong>tomato and basil</strong> when the tomatoes are actually good. The ribbon is narrow enough that a light sauce still coats it properly.',
           ],
         },
@@ -337,7 +337,7 @@ const en: ShapesLocale = {
         },
         {
           q: 'What sauce goes with tagliatelle?',
-          a: 'A slow-cooked meat ragù is the classic and, in Bologna, effectively the only accepted answer. Mushrooms, butter and sage, or a good tomato and basil all work well too — the ribbon is narrow enough that lighter sauces still coat it.',
+          a: 'A slow-cooked meat ragù is the classic and, in Bologna, effectively the only accepted answer. Mushrooms, butter and sage, or a good tomato and basil all work well too: the ribbon is narrow enough that lighter sauces still coat it.',
         },
         {
           q: 'Why do my tagliatelle stick together?',
@@ -354,10 +354,10 @@ const en: ShapesLocale = {
       slug: 'tortelli',
       name: 'Tortelli',
       h1Sub: 'Tuscany\'s filled pasta, explained.',
-      tagline: 'The filled parcel — in Tuscany, most often potato.',
+      tagline: 'The filled parcel, in Tuscany, most often potato.',
       title: 'What Are Tortelli? Tuscany\'s Filled Pasta, Explained by a Chef | Handmade Pasta Florence',
       description:
-        'Tortelli are filled fresh pasta parcels. In Tuscany the classic filling is potato, from the Mugello — a Florence pasta chef on the fillings, the folding, and why the sauce should stay simple.',
+        'Tortelli are filled fresh pasta parcels. In Tuscany the classic filling is potato, from the Mugello. A Florence pasta chef on the fillings, the folding, and why the sauce should stay simple.',
       image: {
         src: img.shapeTortelli,
         alt: 'Hand-folded tortelli filled parcels arranged on a floured surface',
@@ -365,7 +365,7 @@ const en: ShapesLocale = {
         h: 625,
       },
       answer:
-        'Tortelli are filled parcels of fresh egg pasta — a sheet of dough, a spoonful of filling, a second sheet pressed down and sealed around it. Tuscany\'s signature version is <em>tortelli di patate</em>, filled with seasoned potato rather than the ricotta and spinach most visitors expect, and it comes from the Mugello valley north of Florence.',
+        'Tortelli are filled parcels of fresh egg pasta: a sheet of dough, a spoonful of filling, a second sheet pressed down and sealed around it. Tuscany\'s signature version is <em>tortelli di patate</em>, filled with seasoned potato rather than the ricotta and spinach most visitors expect, and it comes from the Mugello valley north of Florence.',
       facts: [
         { label: 'From', value: 'the Mugello, north of Florence' },
         { label: 'Dough', value: 'egg dough, rolled slightly thicker' },
@@ -378,21 +378,21 @@ const en: ShapesLocale = {
         {
           title: 'Tuscany\'s filling is potato',
           paras: [
-            'Ask for tortelli in the Mugello, the hilly country north of Florence, and what arrives is filled with potato — mashed with garlic, parsley, a little tomato and parmesan, seasoned properly and sometimes lifted with nutmeg. It surprises people who expect ricotta, and it is one of the genuinely great regional dishes of Tuscany.',
+            'Ask for tortelli in the Mugello, the hilly country north of Florence, and what arrives is filled with potato, mashed with garlic, parsley, a little tomato and parmesan, seasoned properly and sometimes lifted with nutmeg. It surprises people who expect ricotta, and it is one of the genuinely great regional dishes of Tuscany.',
             'The reason is the same reason as always: potatoes grew well up there and meat did not go far. The other Tuscan version, <em>tortelli maremmani</em>, uses ricotta and spinach and comes from the coastal Maremma. Both are correct; they are simply from different valleys.',
           ],
         },
         {
           title: 'How they are folded',
           paras: [
-            'Roll the sheet slightly thicker than you would for ribbons — the dough has to survive being filled, sealed and boiled without splitting. Lay out spoonfuls of filling in a line, leaving proper gaps, then lay the second sheet over and press down <em>around each mound with your fingers</em>, pushing the air out towards the edge before you seal.',
+            'Roll the sheet slightly thicker than you would for ribbons: the dough has to survive being filled, sealed and boiled without splitting. Lay out spoonfuls of filling in a line, leaving proper gaps, then lay the second sheet over and press down <em>around each mound with your fingers</em>, pushing the air out towards the edge before you seal.',
             'Trapped air is what bursts a tortello in the water, and it is the single most common failure. Seal firmly, cut with a wheel, and check every edge. This is the shape that separates people who are enjoying themselves from people who are in a hurry, and it is the one our guests are proudest of at the end of a class.',
           ],
         },
         {
           title: 'What to put on them',
           paras: [
-            'Very little, and that is the point. <strong>Butter and sage</strong> — foamed until it just starts to smell nutty, with a few crisped sage leaves — is the classic, and it is hard to improve on. A restrained <strong>meat ragù</strong> is the Mugello Sunday version.',
+            'Very little, and that is the point. <strong>Butter and sage</strong> (foamed until it just starts to smell nutty, with a few crisped sage leaves) is the classic, and it is hard to improve on. A restrained <strong>meat ragù</strong> is the Mugello Sunday version.',
             'What ruins tortelli is a sauce that competes with the filling. You have spent an hour making something with a flavour on the inside; do not bury it. If in doubt, butter, sage and a grating of parmesan.',
           ],
         },
@@ -400,7 +400,7 @@ const en: ShapesLocale = {
       faqs: [
         {
           q: 'What is the difference between tortelli, tortellini and ravioli?',
-          a: 'Size and shape rather than concept — all three are filled pasta. Tortelli are the larger square or half-moon parcels common in Tuscany and Emilia; tortellini are small ring-shaped ones from Bologna; ravioli is the broad general term, usually a smaller square. Regional naming overlaps and locals will disagree with each other happily.',
+          a: 'Size and shape rather than concept: all three are filled pasta. Tortelli are the larger square or half-moon parcels common in Tuscany and Emilia; tortellini are small ring-shaped ones from Bologna; ravioli is the broad general term, usually a smaller square. Regional naming overlaps and locals will disagree with each other happily.',
         },
         {
           q: 'What are Tuscan tortelli filled with?',
@@ -424,7 +424,7 @@ const it: ShapesLocale = {
   hubSlug: 'formati-di-pasta-toscana',
   hubTitle: 'Formati di Pasta: Pici, Pappardelle, Tagliatelle e Tortelli Spiegati | Handmade Pasta Florence',
   hubDescription:
-    'La libreria dei formati di uno chef: i quattro tipi di pasta fresca che insegniamo a Firenze — cos\'è ciascuno, come si tira a mano e il sugo per cui è nato. Con un confronto diretto.',
+    'La libreria dei formati di uno chef: i quattro tipi di pasta fresca che insegniamo a Firenze: cos\'è ciascuno, come si tira a mano e il sugo per cui è nato. Con un confronto diretto.',
   hubEyebrow: 'La libreria dei formati',
   hubHeading: 'Quattro formati,',
   hubHeadingItal: 'quattro sughi diversi.',
@@ -433,10 +433,10 @@ const it: ShapesLocale = {
   hubAnswer:
     'I quattro formati di pasta fresca che tiriamo a mano nella nostra cucina di Firenze sono pici, pappardelle, tagliatelle e tortelli. In breve:',
   hubAnswerList: [
-    '<strong>Pici</strong> — grossi spaghettoni tirati a mano di acqua e farina, senza uovo. La pasta di Siena, nata per l\'aglione e il ragù di cinghiale.',
-    '<strong>Pappardelle</strong> — il nastro più largo, 2–3 cm di sfoglia all\'uovo. Fatte per reggere i sughi di selvaggina: cinghiale, lepre, anatra.',
-    '<strong>Tagliatelle</strong> — nastro stretto all\'uovo, 6–8 mm. Il nastro di tutti i giorni per il ragù di carne e i funghi.',
-    '<strong>Tortelli</strong> — pasta ripiena, in Toscana più spesso di patate o di ricotta e spinaci. Si condiscono con poco: burro e salvia o un ragù leggero.',
+    '<strong>Pici</strong>: grossi spaghettoni tirati a mano di acqua e farina, senza uovo. La pasta di Siena, nata per l\'aglione e il ragù di cinghiale.',
+    '<strong>Pappardelle</strong>: il nastro più largo, 2–3 cm di sfoglia all\'uovo. Fatte per reggere i sughi di selvaggina: cinghiale, lepre, anatra.',
+    '<strong>Tagliatelle</strong>: nastro stretto all\'uovo, 6–8 mm. Il nastro di tutti i giorni per il ragù di carne e i funghi.',
+    '<strong>Tortelli</strong>: pasta ripiena, in Toscana più spesso di patate o di ricotta e spinaci. Si condiscono con poco: burro e salvia o un ragù leggero.',
   ],
   hubFaqs: [
     {
@@ -453,7 +453,7 @@ const it: ShapesLocale = {
     },
     {
       q: 'Serve l\'uovo per fare la pasta fresca?',
-      a: 'No. I pici si fanno solo con farina, acqua e un filo d\'olio — la pasta delle cucine povere della Toscana centrale. I nastri come tagliatelle e pappardelle e le paste ripiene come i tortelli usano invece una sfoglia all\'uovo, per l\'elasticità e la ricchezza che richiedono.',
+      a: 'No. I pici si fanno solo con farina, acqua e un filo d\'olio, la pasta delle cucine povere della Toscana centrale. I nastri come tagliatelle e pappardelle e le paste ripiene come i tortelli usano invece una sfoglia all\'uovo, per l\'elasticità e la ricchezza che richiedono.',
     },
   ],
   labels: {
@@ -469,11 +469,11 @@ const it: ShapesLocale = {
     faqHeading: 'Domande, con risposta.',
     ctaHeading: 'Tiralo con le tue mani.',
     ctaBody:
-      'Insegniamo tutti e quattro questi formati in un corso di tre ore nella nostra cucina in Oltrarno — le mani in farina dal primo minuto, poi ci si siede tutti a mangiare quello che si è fatto. Max 8 ospiti, €95.',
+      'Insegniamo tutti e quattro questi formati in un corso di tre ore nella nostra cucina in Oltrarno: le mani in farina dal primo minuto, poi ci si siede tutti a mangiare quello che si è fatto. Max 8 ospiti, €95.',
     ctaButton: 'Prenota un corso',
     ctaLink: 'Vedi il corso',
     guideHeading: 'Per approfondire',
-    guideBody: 'La nostra guida completa alle tradizioni della pasta fresca in Toscana — da dove viene ogni formato e perché la regione cucina così.',
+    guideBody: 'La nostra guida completa alle tradizioni della pasta fresca in Toscana: da dove viene ogni formato e perché la regione cucina così.',
     guideLink: 'Leggi la guida alla pasta toscana',
   },
   classHref: '/it/corso-pasta-fresca-firenze/',
@@ -483,7 +483,7 @@ const it: ShapesLocale = {
       slug: 'pici',
       name: 'Pici',
       h1Sub: 'La pasta senese tirata a mano, spiegata.',
-      tagline: 'Lo spaghettone senese tirato a mano — acqua, farina, niente uovo.',
+      tagline: 'Lo spaghettone senese tirato a mano: acqua, farina, niente uovo.',
       title: 'Cosa Sono i Pici? Lo Spaghettone Senese Spiegato da uno Chef | Handmade Pasta Florence',
       description:
         'I pici sono una pasta toscana spessa e tirata a mano, fatta di acqua e farina senza uovo. Uno chef di Firenze racconta da dove vengono, come si appiciano e i quattro sughi a cui appartengono.',
@@ -494,10 +494,10 @@ const it: ShapesLocale = {
         h: 625,
       },
       answer:
-        'I pici sono una pasta spessa e tirata a mano della Toscana meridionale, fatta solo con farina, acqua e un filo d\'olio d\'oliva — senza uovo. Ogni pico si rotola sotto i palmi invece di essere tagliato con un coltello o una macchina, ed è per questo che non ce ne sono due dello stesso spessore e che la superficie resta abbastanza ruvida da aggrapparsi a un sugo corposo.',
+        'I pici sono una pasta spessa e tirata a mano della Toscana meridionale, fatta solo con farina, acqua e un filo d\'olio d\'oliva, senza uovo. Ogni pico si rotola sotto i palmi invece di essere tagliato con un coltello o una macchina, ed è per questo che non ce ne sono due dello stesso spessore e che la superficie resta abbastanza ruvida da aggrapparsi a un sugo corposo.',
       facts: [
         { label: 'Da', value: 'Siena e la Val d\'Orcia' },
-        { label: 'Impasto', value: 'farina, acqua, olio — niente uovo' },
+        { label: 'Impasto', value: 'farina, acqua, olio; niente uovo' },
         { label: 'Si fanno', value: 'rotolando sotto i palmi' },
         { label: 'Spessore', value: 'circa 3 mm, volutamente irregolare' },
         { label: 'Sughi classici', value: 'aglione, cinghiale, cacio e pepe, briciole' },
@@ -507,29 +507,29 @@ const it: ShapesLocale = {
         {
           title: 'Da dove vengono i pici',
           paras: [
-            'I pici appartengono alle colline a sud di Siena — la Val d\'Orcia, Montalcino, Montepulciano — e sono antichi. In una tomba etrusca a Tarquinia c\'è un affresco che sembra mostrare qualcosa di molto simile, e i locali ve lo racconteranno a lungo e con grande sicurezza.',
-            'Quel che è certo è che i pici sono cibo povero. Niente uovo, perché le uova valevano soldi e andavano al mercato. Solo la farina più economica, l\'acqua del rubinetto e l\'unica cosa che ogni casa colonica aveva: il tempo, e un paio di mani. È tutta qui la ricetta, ed è per questo che il formato è sopravvissuto — si può fare con niente.',
+            'I pici appartengono alle colline a sud di Siena (la Val d\'Orcia, Montalcino, Montepulciano), e sono antichi. In una tomba etrusca a Tarquinia c\'è un affresco che sembra mostrare qualcosa di molto simile, e i locali ve lo racconteranno a lungo e con grande sicurezza.',
+            'Quel che è certo è che i pici sono cibo povero. Niente uovo, perché le uova valevano soldi e andavano al mercato. Solo la farina più economica, l\'acqua del rubinetto e l\'unica cosa che ogni casa colonica aveva: il tempo, e un paio di mani. È tutta qui la ricetta, ed è per questo che il formato è sopravvissuto: si può fare con niente.',
           ],
         },
         {
           title: 'Come si appiciano',
           paras: [
             'Si stende una lastra di impasto spessa circa un centimetro, si taglia a strisce e poi si lavora ogni striscia sotto i palmi aperti, dal centro verso l\'esterno, finché non si allunga in un filo lungo e spesso. Il verbo è <em>appiciare</em>, ed è da lì che viene il nome.',
-            'L\'errore che fanno tutti all\'inizio è premere troppo, il che schiaccia il filo in un nastro invece di arrotondarlo. Il secondo errore è rincorrere la perfezione. I pici devono essere irregolari — i punti più grossi e più sottili sono il carattere del piatto, e una superficie ruvida trattiene il sugo molto meglio di una trafilata liscia.',
+            'L\'errore che fanno tutti all\'inizio è premere troppo, il che schiaccia il filo in un nastro invece di arrotondarlo. Il secondo errore è rincorrere la perfezione. I pici devono essere irregolari: i punti più grossi e più sottili sono il carattere del piatto, e una superficie ruvida trattiene il sugo molto meglio di una trafilata liscia.',
           ],
         },
         {
           title: 'Come si condiscono',
           paras: [
-            'Quattro sughi si meritano il nome. L\'<strong>aglione</strong> — pomodoro e aglione toscano, quell\'aglio enorme e dolce, cotti piano — è il definitivo: da Siena in giù si chiedono i <em>pici all\'aglione</em>. Il <strong>ragù di cinghiale</strong> è la versione d\'autunno, ed è il motivo per cui i pici sono abbastanza spessi da reggerlo.',
-            'Il <strong>cacio e pepe</strong> funziona benissimo perché la superficie ruvida afferra il formaggio, e i <strong>pici alle briciole</strong> — pangrattato tostato, aglio, olio — sono i più antichi e i più poveri, e in silenzio una delle cose migliori della cucina toscana. Quello che sui pici veri non troverete è la panna.',
+            'Quattro sughi si meritano il nome. L\'<strong>aglione</strong> (pomodoro e aglione toscano, quell\'aglio enorme e dolce, cotti piano) è il definitivo: da Siena in giù si chiedono i <em>pici all\'aglione</em>. Il <strong>ragù di cinghiale</strong> è la versione d\'autunno, ed è il motivo per cui i pici sono abbastanza spessi da reggerlo.',
+            'Il <strong>cacio e pepe</strong> funziona benissimo perché la superficie ruvida afferra il formaggio, e i <strong>pici alle briciole</strong> (pangrattato tostato, aglio, olio) sono i più antichi e i più poveri, e in silenzio una delle cose migliori della cucina toscana. Quello che sui pici veri non troverete è la panna.',
           ],
         },
       ],
       faqs: [
         {
           q: 'Di cosa sono fatti i pici?',
-          a: 'Farina, acqua e di solito un filo d\'olio d\'oliva. Niente uovo — è la caratteristica che li definisce, e il motivo per cui erano alla portata delle famiglie contadine della Toscana meridionale.',
+          a: 'Farina, acqua e di solito un filo d\'olio d\'oliva. Niente uovo: è la caratteristica che li definisce, e il motivo per cui erano alla portata delle famiglie contadine della Toscana meridionale.',
         },
         {
           q: 'I pici sono uguali agli spaghetti grossi?',
@@ -537,7 +537,7 @@ const it: ShapesLocale = {
         },
         {
           q: 'Che sugo va con i pici?',
-          a: 'Tradizionalmente quattro: aglione (pomodoro e aglione toscano), ragù di cinghiale, cacio e pepe e briciole — pangrattato tostato con aglio e olio. Tutti e quattro scelti perché si aggrappano a un filo spesso e ruvido.',
+          a: 'Tradizionalmente quattro: aglione (pomodoro e aglione toscano), ragù di cinghiale, cacio e pepe e briciole, pangrattato tostato con aglio e olio. Tutti e quattro scelti perché si aggrappano a un filo spesso e ruvido.',
         },
         {
           q: 'I pici sono difficili da fare in casa?',
@@ -550,7 +550,7 @@ const it: ShapesLocale = {
       slug: 'pappardelle',
       name: 'Pappardelle',
       h1Sub: 'Il nastro di pasta più largo della Toscana, spiegato.',
-      tagline: 'Il nastro più largo — nato per cinghiale e lepre.',
+      tagline: 'Il nastro più largo, nato per cinghiale e lepre.',
       title: 'Cosa Sono le Pappardelle? Il Nastro Toscano Spiegato da uno Chef | Handmade Pasta Florence',
       description:
         'Le pappardelle sono larghi nastri di sfoglia all\'uovo, 2–3 cm, fatti per i sughi di selvaggina come cinghiale e lepre. Uno chef di Firenze racconta il taglio, l\'impasto e gli abbinamenti classici.',
@@ -561,14 +561,14 @@ const it: ShapesLocale = {
         h: 625,
       },
       answer:
-        'Le pappardelle sono il nastro di pasta fresca più largo del repertorio toscano — strisce piatte di sfoglia all\'uovo tagliate da 2 a 3 centimetri. La larghezza non è ostentazione: esiste perché un sugo di selvaggina pesante e corposo abbia una superficie abbastanza ampia su cui posarsi invece di scivolare via.',
+        'Le pappardelle sono il nastro di pasta fresca più largo del repertorio toscano: strisce piatte di sfoglia all\'uovo tagliate da 2 a 3 centimetri. La larghezza non è ostentazione: esiste perché un sugo di selvaggina pesante e corposo abbia una superficie abbastanza ampia su cui posarsi invece di scivolare via.',
       facts: [
         { label: 'Da', value: 'Toscana' },
-        { label: 'Impasto', value: 'sfoglia all\'uovo — farina e uova' },
+        { label: 'Impasto', value: 'sfoglia all\'uovo: farina e uova' },
         { label: 'Larghezza', value: '2–3 cm' },
         { label: 'Nome da', value: 'pappare, mangiare avidamente' },
         { label: 'Sughi classici', value: 'cinghiale, lepre, anatra, porcini' },
-        { label: 'Difficoltà', value: 'il nastro più facile — il taglio largo perdona' },
+        { label: 'Difficoltà', value: 'il nastro più facile: il taglio largo perdona' },
       ],
       sections: [
         {
@@ -581,14 +581,14 @@ const it: ShapesLocale = {
         {
           title: 'Come si tagliano',
           paras: [
-            'L\'impasto è una normale sfoglia fresca all\'uovo, tirata sottile — abbastanza da vedere l\'ombra della mano attraverso, ma non di più, perché un nastro largo deve reggere il peso. Poi si infarina la sfoglia, si arrotola morbida e si taglia di traverso con un coltello a due o tre centimetri.',
-            'Proprio perché il taglio è così largo, le pappardelle sono il nastro più indulgente da imparare: una linea storta si nota molto meno a 3 cm che a 6 mm. Cuociono anche in fretta — due o tre minuti in acqua ben salata — e devono andare dritte in padella con il sugo, mai in una ciotola ad aspettare.',
+            'L\'impasto è una normale sfoglia fresca all\'uovo, tirata sottile: abbastanza da vedere l\'ombra della mano attraverso, ma non di più, perché un nastro largo deve reggere il peso. Poi si infarina la sfoglia, si arrotola morbida e si taglia di traverso con un coltello a due o tre centimetri.',
+            'Proprio perché il taglio è così largo, le pappardelle sono il nastro più indulgente da imparare: una linea storta si nota molto meno a 3 cm che a 6 mm. Cuociono anche in fretta (due o tre minuti in acqua ben salata), e devono andare dritte in padella con il sugo, mai in una ciotola ad aspettare.',
           ],
         },
         {
           title: 'Come si condiscono',
           paras: [
-            'Il <strong>ragù di cinghiale</strong> — cotto piano con vino rosso, ginepro e pomodoro — è l\'abbinamento che ha reso famoso questo formato, e resta la risposta giusta. La <strong>lepre</strong> è la versione più antica e più ricca, quella che sceglierebbe un vecchio cuoco toscano se riuscisse a trovarla.',
+            'Il <strong>ragù di cinghiale</strong> (cotto piano con vino rosso, ginepro e pomodoro) è l\'abbinamento che ha reso famoso questo formato, e resta la risposta giusta. La <strong>lepre</strong> è la versione più antica e più ricca, quella che sceglierebbe un vecchio cuoco toscano se riuscisse a trovarla.',
             'Oltre alla selvaggina, le pappardelle stanno benissimo con il <strong>ragù d\'anatra</strong> e con i <strong>porcini</strong> nelle poche settimane all\'anno in cui vale la pena averli. La regola è semplice: se il sugo è pesante, corposo e cuoce da ore, questo è il formato che vuole.',
           ],
         },
@@ -604,7 +604,7 @@ const it: ShapesLocale = {
         },
         {
           q: 'Le pappardelle si fanno con l\'uovo?',
-          a: 'Sì. Le pappardelle sono una pasta all\'uovo — farina e uova intere — che dà al nastro largo l\'elasticità e la forza necessarie per reggere un sugo pesante senza rompersi.',
+          a: 'Sì. Le pappardelle sono una pasta all\'uovo (farina e uova intere) che dà al nastro largo l\'elasticità e la forza necessarie per reggere un sugo pesante senza rompersi.',
         },
         {
           q: 'Quanto cuociono le pappardelle fresche?',
@@ -617,7 +617,7 @@ const it: ShapesLocale = {
       slug: 'tagliatelle',
       name: 'Tagliatelle',
       h1Sub: 'Il nastro di pasta all\'uovo di tutti i giorni, spiegato.',
-      tagline: 'Il nastro all\'uovo di tutti i giorni, 6–8 mm — il compagno del ragù.',
+      tagline: 'Il nastro all\'uovo di tutti i giorni, 6–8 mm, il compagno del ragù.',
       title: 'Cosa Sono le Tagliatelle? Il Nastro all\'Uovo Spiegato da uno Chef | Handmade Pasta Florence',
       description:
         'Le tagliatelle sono nastri di sfoglia fresca all\'uovo tagliati a 6–8 mm, il compagno naturale di un ragù di carne. Uno chef di Firenze racconta il taglio, la differenza con fettuccine e pappardelle e come servirle.',
@@ -628,10 +628,10 @@ const it: ShapesLocale = {
         h: 625,
       },
       answer:
-        'Le tagliatelle sono nastri piatti di pasta fresca all\'uovo, tagliati a circa 6–8 millimetri. Sono il nastro di tutti i giorni dell\'Italia settentrionale e centrale — abbastanza stretti da avvolgersi sulla forchetta, abbastanza larghi da reggere un vero ragù di carne, ed è per questo che sono il formato che quasi tutti immaginano quando pensano alla pasta fresca.',
+        'Le tagliatelle sono nastri piatti di pasta fresca all\'uovo, tagliati a circa 6–8 millimetri. Sono il nastro di tutti i giorni dell\'Italia settentrionale e centrale: abbastanza stretti da avvolgersi sulla forchetta, abbastanza larghi da reggere un vero ragù di carne, ed è per questo che sono il formato che quasi tutti immaginano quando pensano alla pasta fresca.',
       facts: [
         { label: 'Da', value: 'Emilia-Romagna, si fanno in tutta la Toscana' },
-        { label: 'Impasto', value: 'sfoglia all\'uovo — farina e uova' },
+        { label: 'Impasto', value: 'sfoglia all\'uovo: farina e uova' },
         { label: 'Larghezza', value: '6–8 mm' },
         { label: 'Nome da', value: 'tagliare' },
         { label: 'Sughi classici', value: 'ragù, funghi, burro ed erbe' },
@@ -648,14 +648,14 @@ const it: ShapesLocale = {
         {
           title: 'Come si tagliano',
           paras: [
-            'Si tira la sfoglia all\'uovo sottile, la si lascia asciugare qualche minuto finché non diventa coriacea invece che appiccicosa — è il passaggio che tutti saltano, ed è il motivo per cui poi i nastri si attaccano — poi la si infarina bene, si arrotola in un rotolo morbido e si taglia di traverso con un coltello affilato.',
+            'Si tira la sfoglia all\'uovo sottile, la si lascia asciugare qualche minuto finché non diventa coriacea invece che appiccicosa (è il passaggio che tutti saltano, ed è il motivo per cui poi i nastri si attaccano), poi la si infarina bene, si arrotola in un rotolo morbido e si taglia di traverso con un coltello affilato.',
             'Subito dopo si solleva ogni taglio e lo si scuote per aprirlo. Lasciati nel rotolo, i nastri si saldano in un mattone nel giro di pochi minuti. Si infarinano con un po\' di semola e si raccolgono in nidi morbidi finché l\'acqua non bolle. Le tagliatelle sono il formato che insegna a controllare il coltello, perché a 6 mm un taglio che scappa si vede, cosa che sulle pappardelle non succede mai.',
           ],
         },
         {
           title: 'Come si condiscono',
           paras: [
-            'Un vero <strong>ragù</strong> — carne di manzo e maiale macinata, cotta piano con il soffritto, il vino e pochissimo pomodoro — è l\'abbinamento, e a Bologna è l\'unico che qualcuno ammetterà. Notate con cosa non si serve: gli spaghetti. Quella è un\'invenzione straniera e ve lo faranno notare.',
+            'Un vero <strong>ragù</strong> (carne di manzo e maiale macinata, cotta piano con il soffritto, il vino e pochissimo pomodoro) è l\'abbinamento, e a Bologna è l\'unico che qualcuno ammetterà. Notate con cosa non si serve: gli spaghetti. Quella è un\'invenzione straniera e ve lo faranno notare.',
             'Oltre al ragù, le tagliatelle sono ottime con i <strong>funghi</strong>, con burro e salvia quando si vuole qualcosa di quieto, e con un semplice <strong>pomodoro e basilico</strong> quando i pomodori sono davvero buoni. Il nastro è abbastanza stretto che anche un sugo leggero le veste bene.',
           ],
         },
@@ -667,7 +667,7 @@ const it: ShapesLocale = {
         },
         {
           q: 'Che sugo va con le tagliatelle?',
-          a: 'Un ragù di carne a lunga cottura è il classico e, a Bologna, di fatto l\'unica risposta accettata. Anche funghi, burro e salvia o un buon pomodoro e basilico funzionano bene — il nastro è abbastanza stretto che anche i sughi più leggeri lo vestono.',
+          a: 'Un ragù di carne a lunga cottura è il classico e, a Bologna, di fatto l\'unica risposta accettata. Anche funghi, burro e salvia o un buon pomodoro e basilico funzionano bene: il nastro è abbastanza stretto che anche i sughi più leggeri lo vestono.',
         },
         {
           q: 'Perché le mie tagliatelle si attaccano?',
@@ -684,10 +684,10 @@ const it: ShapesLocale = {
       slug: 'tortelli',
       name: 'Tortelli',
       h1Sub: 'La pasta ripiena della Toscana, spiegata.',
-      tagline: 'La pasta ripiena — in Toscana, più spesso di patate.',
+      tagline: 'La pasta ripiena, in Toscana, più spesso di patate.',
       title: 'Cosa Sono i Tortelli? La Pasta Ripiena Toscana Spiegata da uno Chef | Handmade Pasta Florence',
       description:
-        'I tortelli sono pasta fresca ripiena. In Toscana il ripieno classico è di patate, dal Mugello — uno chef di Firenze racconta i ripieni, la chiusura e perché il condimento deve restare semplice.',
+        'I tortelli sono pasta fresca ripiena. In Toscana il ripieno classico è di patate, dal Mugello. Uno chef di Firenze racconta i ripieni, la chiusura e perché il condimento deve restare semplice.',
       image: {
         src: img.shapeTortelli,
         alt: 'Tortelli ripieni chiusi a mano disposti su un piano infarinato',
@@ -695,7 +695,7 @@ const it: ShapesLocale = {
         h: 625,
       },
       answer:
-        'I tortelli sono fagottini di pasta fresca all\'uovo ripieni — una sfoglia, un cucchiaio di ripieno, una seconda sfoglia premuta e sigillata attorno. La versione simbolo della Toscana è il <em>tortello di patate</em>, ripieno di patate condite invece della ricotta e spinaci che quasi tutti si aspettano, e viene dal Mugello, la valle a nord di Firenze.',
+        'I tortelli sono fagottini di pasta fresca all\'uovo ripieni: una sfoglia, un cucchiaio di ripieno, una seconda sfoglia premuta e sigillata attorno. La versione simbolo della Toscana è il <em>tortello di patate</em>, ripieno di patate condite invece della ricotta e spinaci che quasi tutti si aspettano, e viene dal Mugello, la valle a nord di Firenze.',
       facts: [
         { label: 'Da', value: 'il Mugello, a nord di Firenze' },
         { label: 'Impasto', value: 'sfoglia all\'uovo, tirata un po\' più spessa' },
@@ -708,7 +708,7 @@ const it: ShapesLocale = {
         {
           title: 'In Toscana il ripieno è di patate',
           paras: [
-            'Chiedete i tortelli nel Mugello, la campagna collinare a nord di Firenze, e quello che arriva è ripieno di patate — schiacciate con aglio, prezzemolo, un po\' di pomodoro e parmigiano, condite come si deve e a volte alzate con la noce moscata. Sorprende chi si aspetta la ricotta, ed è uno dei grandi piatti regionali della Toscana.',
+            'Chiedete i tortelli nel Mugello, la campagna collinare a nord di Firenze, e quello che arriva è ripieno di patate, schiacciate con aglio, prezzemolo, un po\' di pomodoro e parmigiano, condite come si deve e a volte alzate con la noce moscata. Sorprende chi si aspetta la ricotta, ed è uno dei grandi piatti regionali della Toscana.',
             'Il motivo è sempre lo stesso: lassù le patate crescevano bene e la carne non bastava. L\'altra versione toscana, i <em>tortelli maremmani</em>, usa ricotta e spinaci e viene dalla Maremma sulla costa. Sono corrette entrambe: vengono semplicemente da valli diverse.',
           ],
         },
@@ -722,7 +722,7 @@ const it: ShapesLocale = {
         {
           title: 'Come si condiscono',
           paras: [
-            'Con pochissimo, ed è proprio il punto. <strong>Burro e salvia</strong> — schiumato finché non comincia a profumare di nocciola, con qualche foglia croccante — è il classico, ed è difficile fare di meglio. Un <strong>ragù di carne</strong> misurato è la versione della domenica in Mugello.',
+            'Con pochissimo, ed è proprio il punto. <strong>Burro e salvia</strong> (schiumato finché non comincia a profumare di nocciola, con qualche foglia croccante) è il classico, ed è difficile fare di meglio. Un <strong>ragù di carne</strong> misurato è la versione della domenica in Mugello.',
             'Quello che rovina i tortelli è un condimento che compete con il ripieno. Avete passato un\'ora a fare qualcosa che ha il sapore dentro: non seppellitelo. Nel dubbio, burro, salvia e una grattata di parmigiano.',
           ],
         },
@@ -730,7 +730,7 @@ const it: ShapesLocale = {
       faqs: [
         {
           q: 'Qual è la differenza tra tortelli, tortellini e ravioli?',
-          a: 'La misura e la forma più che il concetto — tutti e tre sono paste ripiene. I tortelli sono i fagottini più grandi, quadrati o a mezzaluna, comuni in Toscana e in Emilia; i tortellini sono quelli piccoli ad anello di Bologna; ravioli è il termine generale, di solito un quadrato più piccolo. I nomi regionali si sovrappongono e i locali litigano volentieri tra loro.',
+          a: 'La misura e la forma più che il concetto: tutti e tre sono paste ripiene. I tortelli sono i fagottini più grandi, quadrati o a mezzaluna, comuni in Toscana e in Emilia; i tortellini sono quelli piccoli ad anello di Bologna; ravioli è il termine generale, di solito un quadrato più piccolo. I nomi regionali si sovrappongono e i locali litigano volentieri tra loro.',
         },
         {
           q: 'Con cosa sono ripieni i tortelli toscani?',

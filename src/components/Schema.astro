@@ -20,7 +20,7 @@ const localBusiness = {
   '@id': `${SITE}/#business`,
   name: 'Handmade Pasta Florence',
   description:
-    'Hands-on fresh-pasta cooking classes in Florence taught by two agriturismo head chefs — in person in the Oltrarno and live online with a shipped ingredient kit.',
+    'Hands-on fresh-pasta cooking classes in Florence taught by two agriturismo head chefs: in person in the Oltrarno and live online with a shipped ingredient kit.',
   founder: [
     {
       '@type': 'Person',
@@ -85,7 +85,7 @@ const localBusiness = {
 const classes = [
   {
     name: 'The Chef’s Table',
-    desc: 'Three hands-on hours in our Oltrarno kitchen — four pasta shapes, ending in a long Tuscan lunch.',
+    desc: 'Three hands-on hours in our Oltrarno kitchen: four pasta shapes, ending in a long Tuscan lunch.',
     price: '95',
     img: cookingClassGuests.src,
     url: '/pasta-making-class-florence/',
@@ -99,7 +99,7 @@ const classes = [
   },
   {
     name: 'The Family Long-Table',
-    desc: 'Book the whole kitchen for a private celebration — birthdays, proposals, reunions.',
+    desc: 'Book the whole kitchen for a private celebration: birthdays, proposals, reunions.',
     price: '680',
     img: weddingCake.src,
     url: '/private-cooking-class-florence/',
@@ -122,7 +122,7 @@ const PRICE_VALID_UNTIL = '2026-12-31';
 const products = classes.map((c) => ({
   '@context': 'https://schema.org',
   '@type': 'Product',
-  name: `${c.name} — Pasta Class in Florence`,
+  name: `${c.name}: Pasta Class in Florence`,
   description: c.desc,
   image: `${SITE}${c.img}`,
   brand: { '@type': 'Brand', name: 'Handmade Pasta Florence' },

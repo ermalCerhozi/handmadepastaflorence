@@ -1,6 +1,6 @@
 ---
 title: 'Comment choisir un cours de pâtes à Florence : 7 questions qui comptent vraiment'
-description: 'Florence compte des centaines de cours de pâtes et les annonces se ressemblent toutes. Les sept questions qui prédisent réellement si vous allez aimer — taille du groupe, ce qui est inclus, qui enseigne, et comment les allergies sont vraiment gérées.'
+description: 'Florence compte des centaines de cours de pâtes et les annonces se ressemblent toutes. Les sept questions qui prédisent réellement si vous allez aimer: taille du groupe, ce qui est inclus, qui enseigne, et comment les allergies sont vraiment gérées.'
 pubDate: 2026-08-11
 author: 'Endri Cerhozi'
 image: '../../../assets/images/cooking-class.webp'
@@ -20,7 +20,7 @@ faqs:
 
 Cherchez un cours de pâtes à Florence et vous obtiendrez plusieurs centaines d’annonces presque identiques : pratique, petit groupe, chef local, on mange ce qu’on prépare, vin compris. Les photos sont interchangeables. Les prix vont d’environ 50 € à environ 150 € pour ce qui est décrit avec les mêmes mots.
 
-Nous donnons ces cours, nous avons donc un intérêt évident — autant le dire d’emblée. Mais nous passons aussi beaucoup de temps avec des hôtes qui avaient d’abord réservé ailleurs et en sont ressortis déçus, et les déceptions se ressemblent remarquablement. Voici ce qui distingue réellement les cours, dans l’ordre qui compte.
+Nous donnons ces cours, nous avons donc un intérêt évident; autant le dire d’emblée. Mais nous passons aussi beaucoup de temps avec des hôtes qui avaient d’abord réservé ailleurs et en sont ressortis déçus, et les déceptions se ressemblent remarquablement. Voici ce qui distingue réellement les cours, dans l’ordre qui compte.
 
 ## 1. Quel est le nombre maximum réel de participants ?
 
@@ -70,7 +70,7 @@ Trois choses à savoir avant de réserver, où que ce soit :
 
 *Chez nous : mélange dédié, planche, outils et eau propres, poste préparé avant le cours, sans supplément, et vous êtes à la même table que tout le monde. Nous sommes aussi clairs sur la limite : c’est une cuisine à pâtes en activité et nous ne sommes pas un établissement certifié. [L’explication complète est ici](/fr/cours-cuisine-sans-gluten-florence/).*
 
-## 5. Mange-t-on ce que l’on prépare — et repart-on avec quelque chose ?
+## 5. Mange-t-on ce que l’on prépare, et repart-on avec quelque chose ?
 
 La plupart des cours à Florence se terminent par un repas, mais vérifiez s’il s’agit de *vos* pâtes ou d’un plat dressé arrivé de l’arrière-cuisine. La différence compte plus qu’il n’y paraît : manger ce qu’on a mal réussi, c’est justement l’intérêt de l’exercice.
 
@@ -97,7 +97,7 @@ Calculez le total réel avant de comparer, car le chiffre affiché est rarement 
 - Des frais de tablier ou d’équipement
 - Si le repas est un vrai déjeuner assis ou une dégustation
 - Si les recettes et un éventuel emporté sont compris
-- La TVA — normalement incluse en Italie, mais confirmez-le
+- La TVA: normalement incluse en Italie, mais confirmez-le
 
 Comparez ensuite ce qui est comparable. Un cours à 95 € comprenant le vin, un repas complet et aucun supplément revient en pratique moins cher qu’un cours à 110 € qui ajoute 18 € de vin et facture l’option sans gluten.
 
@@ -107,4 +107,4 @@ Si vous ne posez que deux questions, demandez **quel est le nombre maximum de pa
 
 Et quoi que vous réserviez, obtenez les conditions d’annulation par écrit avant de payer.
 
-Si vous voulez voir nos réponses en entier, [La Table du Chef](/fr/cours-de-pates-fraiches-florence/) est le cours sur lequel tout le reste est bâti — trois heures dans l’Oltrarno, quatre formes, huit personnes maximum, 95 € avec le vin dans le prix. Nous avons aussi écrit un [décryptage de ce que coûtent réellement les cours de pâtes à Florence](/fr/blog/how-much-does-a-pasta-making-class-in-florence-cost/) si vous voulez les chiffres seuls.
+Si vous voulez voir nos réponses en entier, [La Table du Chef](/fr/cours-de-pates-fraiches-florence/) est le cours sur lequel tout le reste est bâti: trois heures dans l’Oltrarno, quatre formes, huit personnes maximum, 95 € avec le vin dans le prix. Nous avons aussi écrit un [décryptage de ce que coûtent réellement les cours de pâtes à Florence](/fr/blog/how-much-does-a-pasta-making-class-in-florence-cost/) si vous voulez les chiffres seuls.

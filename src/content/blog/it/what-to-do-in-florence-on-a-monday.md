@@ -1,6 +1,6 @@
 ---
 title: 'Cosa fare a Firenze di lunedì (quando gli Uffizi sono chiusi)'
-description: 'Gli Uffizi e l’Accademia sono chiusi il lunedì. Ecco cosa è davvero aperto — il complesso del Duomo, Palazzo Vecchio, Santa Croce, i mercati e l’Oltrarno — e come organizzare la giornata.'
+description: 'Gli Uffizi e l’Accademia sono chiusi il lunedì. Ecco cosa è davvero aperto (il complesso del Duomo, Palazzo Vecchio, Santa Croce, i mercati e l’Oltrarno), e come organizzare la giornata.'
 pubDate: 2026-08-11
 author: 'Endri Cerhozi'
 image: '../../../assets/images/aperitivo.webp'
@@ -9,9 +9,9 @@ faqs:
   - q: "Gli Uffizi sono aperti il lunedì?"
     a: "No. La Galleria degli Uffizi è chiusa tutti i lunedì, oltre che il 1° gennaio e il 25 dicembre. È aperta da martedì a domenica, dalle 8:15 alle 18:30, con ultimo ingresso alle 17:30."
   - q: "L’Accademia è aperta il lunedì?"
-    a: "No. La Galleria dell’Accademia — dove si trova il David di Michelangelo — è chiusa il lunedì. È aperta da martedì a domenica, dalle 8:15 alle 18:50."
+    a: "No. La Galleria dell’Accademia (dove si trova il David di Michelangelo) è chiusa il lunedì. È aperta da martedì a domenica, dalle 8:15 alle 18:50."
   - q: "Cosa è aperto a Firenze di lunedì?"
-    a: "Il complesso del Duomo (cattedrale, cupola, battistero, campanile e museo), Palazzo Vecchio, Santa Croce, la Cappella Brancacci, San Miniato al Monte, Piazzale Michelangelo, il Mercato Centrale e i negozi, le botteghe e i ristoranti della città sono normalmente aperti il lunedì. Sono i musei statali — Uffizi, Accademia e Palazzo Pitti — a chiudere."
+    a: "Il complesso del Duomo (cattedrale, cupola, battistero, campanile e museo), Palazzo Vecchio, Santa Croce, la Cappella Brancacci, San Miniato al Monte, Piazzale Michelangelo, il Mercato Centrale e i negozi, le botteghe e i ristoranti della città sono normalmente aperti il lunedì. Sono i musei statali (Uffizi, Accademia e Palazzo Pitti) a chiudere."
   - q: "Il Giardino di Boboli è aperto il lunedì?"
     a: "Di solito sì, ma non sempre: il Giardino di Boboli chiude il primo e l’ultimo lunedì di ogni mese. Palazzo Pitti è invece chiuso tutti i lunedì. Controlla la data prima di costruirci sopra una giornata."
   - q: "Si può fare un corso di cucina a Firenze di lunedì?"
@@ -30,11 +30,11 @@ Coglie impreparati moltissimi visitatori, e vale la pena sapere che non è una s
 
 **Santa Croce.** Qui sono sepolti Michelangelo, Galileo e Machiavelli, insieme a un ciclo di affreschi di Giotto e a uno dei chiostri più tranquilli del centro.
 
-**La Cappella Brancacci**, in Oltrarno. Gli affreschi di Masaccio sono una delle vere svolte della pittura occidentale, e la cappella chiude il *martedì* anziché il lunedì — quindi è esattamente la cosa da fare nel giorno in cui le grandi gallerie sono chiuse. Prenotate: entrano poche persone alla volta.
+**La Cappella Brancacci**, in Oltrarno. Gli affreschi di Masaccio sono una delle vere svolte della pittura occidentale, e la cappella chiude il *martedì* anziché il lunedì, quindi è esattamente la cosa da fare nel giorno in cui le grandi gallerie sono chiuse. Prenotate: entrano poche persone alla volta.
 
 **San Miniato al Monte e Piazzale Michelangelo.** La salita è gratuita, aperta tutti i giorni, e l’ora più bella di Firenze resta quella prima del tramonto vista da lassù.
 
-**I mercati, le botteghe e il cibo.** Il Mercato Centrale è aperto il lunedì. Il mercato di Sant’Ambrogio è aperto dal lunedì al sabato. Le botteghe artigiane dell’Oltrarno — pelle, doratura, legatoria, carta marmorizzata — di lunedì lavorano, proprio perché è un giorno lavorativo.
+**I mercati, le botteghe e il cibo.** Il Mercato Centrale è aperto il lunedì. Il mercato di Sant’Ambrogio è aperto dal lunedì al sabato. Le botteghe artigiane dell’Oltrarno (pelle, doratura, legatoria, carta marmorizzata) di lunedì lavorano, proprio perché è un giorno lavorativo.
 
 > Una cosa da verificare: il **Giardino di Boboli** chiude il primo e l’ultimo lunedì del mese, e Palazzo Pitti è chiuso tutti i lunedì. Gli orari dei musei a Firenze cambiano più spesso di quanto dovrebbero: confermate il giorno prima di costruire un pomeriggio attorno a un solo luogo.
 

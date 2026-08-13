@@ -5,10 +5,10 @@ import type { Dict } from '../types';
 
 const it: Dict = {
   meta: {
-    homeTitle: `Corsi di Cucina a Firenze — Pasta Fresca con Due Chef Toscani | Handmade Pasta Florence`,
-    homeDescription: `Corsi di cucina a Firenze in piccoli gruppi, con le mani in pasta dal primo minuto. Prepara pasta fresca con due chef toscani di agriturismo nella nostra cucina in Oltrarno da €95 — tour del mercato, privati e senza glutine, o in diretta online con kit ingredienti da €68.`,
+    homeTitle: `Corsi di Cucina a Firenze: Pasta Fresca con Due Chef Toscani | Handmade Pasta Florence`,
+    homeDescription: `Corsi di cucina a Firenze in piccoli gruppi, con le mani in pasta dal primo minuto. Prepara pasta fresca con due chef toscani di agriturismo nella nostra cucina in Oltrarno da €95: tour del mercato, privati e senza glutine, o in diretta online con kit ingredienti da €68.`,
     blogTitle: `Guide alla Pasta & al Cibo di Firenze | Handmade Pasta Florence`,
-    blogDescription: `Guide alla pasta fresca e a mangiare bene a Firenze, scritte da due chef toscani — formati di pasta, dove mangiare, consigli senza glutine e il quartiere dell'Oltrarno.`,
+    blogDescription: `Guide alla pasta fresca e a mangiare bene a Firenze, scritte da due chef toscani: formati di pasta, dove mangiare, consigli senza glutine e il quartiere dell'Oltrarno.`,
   },
 
   nav: {
@@ -46,7 +46,7 @@ const it: Dict = {
     home: `Home`,
     pastaCrumb: `Pasta`,
     updated: `Prezzi e orari verificati:`,
-    galleryStation: `La tua postazione, pronta prima che arrivi — tagliere, matterello e farina tuoi. Nessuno divide una ciotola.`,
+    galleryStation: `La tua postazione, pronta prima che arrivi: tagliere, matterello e farina tuoi. Nessuno divide una ciotola.`,
     galleryTable: `Come finisce: quello che hai preparato, un tagliere toscano accanto e i due calici già compresi nel prezzo.`,
     faqPre: `Buono a `,
     faqItal: `sapersi.`,
@@ -151,9 +151,9 @@ const it: Dict = {
     book: `Prenota ora`,
     more: `Dettagli completi`,
     cards: [
-      { tag: `Firma`, name: `Il Tavolo dello Chef`, desc: `Tre ore, quattro formati, un lungo pranzo. Tira i pici, chiudi i tortelli, poi siediti a mangiare tutto ciò che hai preparato con un bicchiere di Chianti.`, price: `€95`, meta: `3 ore · max 8 ospiti · Oltrarno`, alt: `Il Tavolo dello Chef — corso pratico di pasta fresca nella nostra cucina a Firenze` },
-      { tag: `Mercato + cucina`, name: `Mercato & Mani`, desc: `Fai la spesa al mercato di Sant’Ambrogio all’alba con Endri o Marsel, poi trasforma il cesto in ravioli, ragù e un dolce di stagione tornando in cucina.`, price: `€145`, meta: `5 ore · max 6 ospiti · giro al mercato`, alt: `Mercato & Mani — tour del mercato e corso di pasta a Firenze` },
-      { tag: `Privato`, name: `Il Lungo Tavolo di Famiglia`, desc: `Prenota l'intera cucina per compleanni, proposte, ritrovi. Il banchetto al lungo tavolo che abbiamo cucinato nei nostri agriturismi per anni, ora nel cuore di Firenze.`, price: `da €680`, meta: `flessibile · 6–14 ospiti · serate`, alt: `Il Lungo Tavolo di Famiglia — esperienza di pasta per gruppi privati a Firenze` },
+      { tag: `Firma`, name: `Il Tavolo dello Chef`, desc: `Tre ore, quattro formati, un lungo pranzo. Tira i pici, chiudi i tortelli, poi siediti a mangiare tutto ciò che hai preparato con un bicchiere di Chianti.`, price: `€95`, meta: `3 ore · max 8 ospiti · Oltrarno`, alt: `Il Tavolo dello Chef, corso pratico di pasta fresca nella nostra cucina a Firenze` },
+      { tag: `Mercato + cucina`, name: `Mercato & Mani`, desc: `Fai la spesa al mercato di Sant’Ambrogio all’alba con Endri o Marsel, poi trasforma il cesto in ravioli, ragù e un dolce di stagione tornando in cucina.`, price: `€145`, meta: `5 ore · max 6 ospiti · giro al mercato`, alt: `Mercato & Mani, tour del mercato e corso di pasta a Firenze` },
+      { tag: `Privato`, name: `Il Lungo Tavolo di Famiglia`, desc: `Prenota l'intera cucina per compleanni, proposte, ritrovi. Il banchetto al lungo tavolo che abbiamo cucinato nei nostri agriturismi per anni, ora nel cuore di Firenze.`, price: `da €680`, meta: `flessibile · 6–14 ospiti · serate`, alt: `Il Lungo Tavolo di Famiglia, esperienza di pasta per gruppi privati a Firenze` },
     ],
   },
 
@@ -201,7 +201,7 @@ const it: Dict = {
     eyebrow: `Guide & storie`,
     h1: `Dal taccuino `,
     h1Ital: `infarinato.`,
-    lede: `Quello che sappiamo sulla pasta, su Firenze e su come mangiare bene qui — scritto tra un corso e l'altro dai due chef che li tengono.`,
+    lede: `Quello che sappiamo sulla pasta, su Firenze e su come mangiare bene qui, scritto tra un corso e l'altro dai due chef che li tengono.`,
     readGuide: `Leggi la guida`,
   },
 
@@ -214,7 +214,7 @@ const it: Dict = {
     bioLink: `corsi di pasta fresca per piccoli gruppi`,
     bioEnd: `in Oltrarno.`,
     ctaH2: `Preferisci impararlo con le tue mani?`,
-    ctaP: `Stendi, piega e mangia tu stesso — nella nostra cucina a Firenze o in diretta online.`,
+    ctaP: `Stendi, piega e mangia tu stesso: nella nostra cucina a Firenze o in diretta online.`,
     ctaBtn: `Prenota un corso`,
     ctaLink: `Scopri i corsi`,
   },

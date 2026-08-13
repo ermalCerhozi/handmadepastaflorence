@@ -2,10 +2,10 @@
 
 const de = {
   meta: {
-    homeTitle: 'Kochkurs in Florenz — Frische Pasta mit zwei toskanischen Chefköchen | Handmade Pasta Florence',
-    homeDescription: 'Kochkurse in Florenz in kleinen Gruppen, ab der ersten Minute mit den Händen im Mehl. Rollen Sie frische Pasta mit zwei toskanischen Agriturismo-Küchenchefs in unserer Küche im Oltrarno ab 95 € — Markttour, privat und glutenfrei, oder live online mit Zutaten-Kit ab 68 €.',
+    homeTitle: 'Kochkurs in Florenz: Frische Pasta mit zwei toskanischen Chefköchen | Handmade Pasta Florence',
+    homeDescription: 'Kochkurse in Florenz in kleinen Gruppen, ab der ersten Minute mit den Händen im Mehl. Rollen Sie frische Pasta mit zwei toskanischen Agriturismo-Küchenchefs in unserer Küche im Oltrarno ab 95 €: Markttour, privat und glutenfrei, oder live online mit Zutaten-Kit ab 68 €.',
     blogTitle: 'Florenz Pasta- & Food-Guides | Handmade Pasta Florence',
-    blogDescription: 'Guides für frische Pasta und gutes Essen in Florenz, geschrieben von zwei toskanischen Agriturismo-Chefköchen — Nudelformen, wo man essen kann, glutenfreie Tipps und das Oltrarno-Viertel.',
+    blogDescription: 'Guides für frische Pasta und gutes Essen in Florenz, geschrieben von zwei toskanischen Agriturismo-Chefköchen: Nudelformen, wo man essen kann, glutenfreie Tipps und das Oltrarno-Viertel.',
   },
 
   nav: {
@@ -44,7 +44,7 @@ const de = {
     home: 'Startseite',
     pastaCrumb: 'Pasta',
     updated: 'Preise und Zeiten geprüft im',
-    galleryStation: 'Ihre Station, fertig bevor Sie kommen — eigenes Brett, eigenes Nudelholz, eigenes Mehl. Niemand teilt sich eine Schüssel.',
+    galleryStation: 'Ihre Station, fertig bevor Sie kommen: eigenes Brett, eigenes Nudelholz, eigenes Mehl. Niemand teilt sich eine Schüssel.',
     galleryTable: 'So endet es: was Sie gemacht haben, ein toskanisches Brett daneben und die zwei Gläser, die schon im Preis sind.',
     faqPre: 'Gut zu ',
     faqItal: 'wissen.',
@@ -149,9 +149,9 @@ const de = {
     book: 'Dies buchen',
     more: 'Alle Details',
     cards: [
-      { tag: 'Signature', name: 'Der Chef’s Table', desc: 'Drei Stunden, vier Formen, ein langes Mittagessen. Pici rollen, Tortelli falten, und sich dann setzen, um alles, was Sie gemacht haben, mit einem Glas Chianti zu essen.', price: '95 €', meta: '3 Std. · max. 8 Gäste · Oltrarno', alt: 'Der Chef’s Table — praktischer Pasta-Kurs in unserer Küche in Florenz' },
-      { tag: 'Markt + Kochen', name: 'Mercato & Mani', desc: 'Kaufen Sie im Morgengrauen mit Endri oder Marsel auf dem Sant’Ambrogio-Markt ein und verwandeln Sie den Korb dann zurück in der Küche in Ravioli, ein Ragù und ein saisonales Dolce.', price: '145 €', meta: '5 Std. · max. 6 Gäste · Marktspaziergang', alt: 'Mercato & Mani — Markttour und Pasta-Kurs in Florenz' },
-      { tag: 'Privat', name: 'The Family Long-Table', desc: "Buchen Sie die ganze Küche für Geburtstage, Heiratsanträge, Treffen. Das Fest am langen Tisch, das wir jahrelang in unseren Agriturismi gekocht haben, jetzt im Herzen von Florenz.", price: 'ab 680 €', meta: 'flexibel · 6–14 Gäste · abends', alt: 'The Family Long-Table — privates Gruppen-Pasta-Erlebnis in Florenz' },
+      { tag: 'Signature', name: 'Der Chef’s Table', desc: 'Drei Stunden, vier Formen, ein langes Mittagessen. Pici rollen, Tortelli falten, und sich dann setzen, um alles, was Sie gemacht haben, mit einem Glas Chianti zu essen.', price: '95 €', meta: '3 Std. · max. 8 Gäste · Oltrarno', alt: 'Der Chef’s Table, praktischer Pasta-Kurs in unserer Küche in Florenz' },
+      { tag: 'Markt + Kochen', name: 'Mercato & Mani', desc: 'Kaufen Sie im Morgengrauen mit Endri oder Marsel auf dem Sant’Ambrogio-Markt ein und verwandeln Sie den Korb dann zurück in der Küche in Ravioli, ein Ragù und ein saisonales Dolce.', price: '145 €', meta: '5 Std. · max. 6 Gäste · Marktspaziergang', alt: 'Mercato & Mani, Markttour und Pasta-Kurs in Florenz' },
+      { tag: 'Privat', name: 'The Family Long-Table', desc: "Buchen Sie die ganze Küche für Geburtstage, Heiratsanträge, Treffen. Das Fest am langen Tisch, das wir jahrelang in unseren Agriturismi gekocht haben, jetzt im Herzen von Florenz.", price: 'ab 680 €', meta: 'flexibel · 6–14 Gäste · abends', alt: 'The Family Long-Table, privates Gruppen-Pasta-Erlebnis in Florenz' },
     ],
   },
 
@@ -199,7 +199,7 @@ const de = {
     eyebrow: 'Guides & Geschichten',
     h1: 'Aus dem mehlbestäubten ',
     h1Ital: 'Notizbuch.',
-    lede: 'Was wir über Pasta, Florenz und gutes Essen hier wissen — geschrieben zwischen den Kursen von den beiden Köchen, die sie unterrichten.',
+    lede: 'Was wir über Pasta, Florenz und gutes Essen hier wissen, geschrieben zwischen den Kursen von den beiden Köchen, die sie unterrichten.',
     readGuide: 'Guide lesen',
   },
 
@@ -212,7 +212,7 @@ const de = {
     bioLink: 'Pasta-Kochkurse in kleinen Gruppen',
     bioEnd: 'im Oltrarno unterrichtet.',
     ctaH2: 'Möchten Sie es lieber mit den Händen lernen?',
-    ctaP: 'Selbst rollen, falten und essen — in unserer Küche in Florenz oder live online.',
+    ctaP: 'Selbst rollen, falten und essen: in unserer Küche in Florenz oder live online.',
     ctaBtn: 'Kurs buchen',
     ctaLink: 'Kurse ansehen',
   },

@@ -1,6 +1,6 @@
 ---
 title: 'How to choose a pasta class in Florence: 7 questions that actually matter'
-description: 'Florence has hundreds of pasta classes and the listings all look identical. The seven questions that actually predict whether you will enjoy it — group size, what is included, who teaches, and how allergies are really handled.'
+description: 'Florence has hundreds of pasta classes and the listings all look identical. The seven questions that actually predict whether you will enjoy it: group size, what is included, who teaches, and how allergies are really handled.'
 pubDate: 2026-08-11
 author: 'Endri Cerhozi'
 image: '../../assets/images/cooking-class.webp'
@@ -9,7 +9,7 @@ faqs:
   - q: "What is the most important thing to check when booking a cooking class in Florence?"
     a: "The maximum group size. It predicts your experience better than price, location or menu. In Florence, listings routinely describe a class of twelve as a 'small group'. Under eight means a chef can reach you when something goes wrong; over twelve and you are mostly watching."
   - q: "How much should a pasta making class in Florence cost?"
-    a: "As of summer 2026, group classes run roughly €60–€120 per person, market-tour combinations €120–€180, and private classes from a few hundred euros for the group. The top of the group band reaches about €150 per person. Price alone tells you very little — what matters is what the price includes."
+    a: "As of summer 2026, group classes run roughly €60–€120 per person, market-tour combinations €120–€180, and private classes from a few hundred euros for the group. The top of the group band reaches about €150 per person. Price alone tells you very little; what matters is what the price includes."
   - q: "Is wine usually included in a Florence cooking class?"
     a: "Not always, and this is one of the most common hidden costs. Some classes include it, some add a wine pairing at €15–€20 per person at the end. Check whether the price you are comparing is the price you will pay."
   - q: "Are cooking classes in Florence safe for coeliacs?"
@@ -20,7 +20,7 @@ faqs:
 
 Search for a pasta class in Florence and you will get several hundred listings that read almost identically: hands-on, small group, local chef, eat what you make, wine included. The photographs are interchangeable. The prices range from about €50 to about €150 for what is described in the same words.
 
-We teach these classes, so we have an obvious interest here — say so up front. But we also spend a lot of time with guests who booked something else first and were disappointed, and the disappointments are remarkably consistent. Here is what actually separates the classes, in the order that matters.
+We teach these classes, so we have an obvious interest here; say so up front. But we also spend a lot of time with guests who booked something else first and were disappointed, and the disappointments are remarkably consistent. Here is what actually separates the classes, in the order that matters.
 
 ## 1. What is the real maximum group size?
 
@@ -40,7 +40,7 @@ Under eight is a different thing entirely. It is the point at which a chef can p
 
 One of the most common gaps between the price you compare and the price you pay. Plenty of classes quote a headline figure and then offer a wine pairing at €15–€20 per person when you sit down. Two of you, and that is €40 you did not budget.
 
-It is not dishonest — it is just easy to miss when you are comparing two listings side by side at midnight.
+It is not dishonest; it is just easy to miss when you are comparing two listings side by side at midnight.
 
 **Ask: is wine included, how much, and is there anything else added on the day?**
 
@@ -65,12 +65,12 @@ A real answer sounds like: a dedicated gluten-free flour blend, a separate board
 Three things worth knowing before you book anywhere:
 
 - **Some classes charge extra for it.** Ask. It is flour, not truffle.
-- **Some decline severe allergies outright**, because the kitchen and the tools are shared and cross-contamination is genuinely possible. That refusal is responsible, not unhelpful — take it seriously rather than shopping until someone says yes.
+- **Some decline severe allergies outright**, because the kitchen and the tools are shared and cross-contamination is genuinely possible. That refusal is responsible, not unhelpful; take it seriously rather than shopping until someone says yes.
 - **Almost no cooking school is a certified gluten-free facility.** A pasta kitchen has wheat flour in the air. Anyone promising you a zero-risk environment in a room where other people are rolling semolina is overselling.
 
-*Ours: dedicated blend, own board, own tools, own water, set up before class, no surcharge, and you sit at the same table as everyone else. We are also straight about the limit — it is a working pasta kitchen and we are not a certified facility. [The full explanation is here](/gluten-free-cooking-class-florence/).*
+*Ours: dedicated blend, own board, own tools, own water, set up before class, no surcharge, and you sit at the same table as everyone else. We are also straight about the limit: it is a working pasta kitchen and we are not a certified facility. [The full explanation is here](/gluten-free-cooking-class-florence/).*
 
-## 5. Do you eat what you make — and do you take anything home?
+## 5. Do you eat what you make, and do you take anything home?
 
 Most Florence classes end with a meal, but check whether it is *your* pasta or a plated dish that appeared from the back. The difference matters more than it sounds: eating the thing you made badly is the point of the exercise.
 
@@ -97,7 +97,7 @@ Work out the real total before comparing, because the headline number is rarely 
 - An apron or equipment fee
 - Whether the meal is a full sit-down or a tasting
 - Whether recipes and any take-home are included
-- VAT — normally included in Italy, but confirm it
+- VAT: normally included in Italy, but confirm it
 
 Then compare like with like. A €95 class including wine, a full meal and no surcharges is cheaper in practice than a €110 class that adds €18 for wine and charges for the gluten-free option.
 
@@ -107,4 +107,4 @@ If you only ask two questions, ask **what is the maximum group size** and **what
 
 And whichever you book, get the cancellation terms in writing before you pay.
 
-If you want to see how our answers look in full, [The Chef's Table](/pasta-making-class-florence/) is the class everything else we do is built on — three hours in the Oltrarno, four shapes, max eight people, €95 with the wine in the price. We also wrote a [breakdown of what pasta classes in Florence actually cost](/blog/how-much-does-a-pasta-making-class-in-florence-cost/) if you want the numbers on their own.
+If you want to see how our answers look in full, [The Chef's Table](/pasta-making-class-florence/) is the class everything else we do is built on: three hours in the Oltrarno, four shapes, max eight people, €95 with the wine in the price. We also wrote a [breakdown of what pasta classes in Florence actually cost](/blog/how-much-does-a-pasta-making-class-in-florence-cost/) if you want the numbers on their own.

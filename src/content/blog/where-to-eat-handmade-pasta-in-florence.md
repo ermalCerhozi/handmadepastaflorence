@@ -1,56 +1,56 @@
 ---
-title: 'The best handmade pasta in Florence: where to eat it — a pasta chef’s guide'
-description: 'A pasta chef’s honest take on the best pasta in Florence — how to spot the real thing on a menu, what to order (pici, pappardelle, tortelli), and the trattorias worth your one dinner.'
+title: 'The best handmade pasta in Florence: where to eat it, a pasta chef’s guide'
+description: 'A pasta chef’s honest take on the best pasta in Florence: how to spot the real thing on a menu, what to order (pici, pappardelle, tortelli), and the trattorias worth your one dinner.'
 pubDate: 2026-07-08
 author: 'Endri Cerhozi'
 image: '../../assets/images/plates.webp'
 imageAlt: 'Plates of fresh handmade pasta served at a Tuscan table'
 faqs:
   - q: "Where is the best pasta in Florence?"
-    a: "The best handmade pasta in Florence is not near the Duomo but in the trattorias around the Sant'Ambrogio market and in the Oltrarno around Santo Spirito — places with a short menu, pasta named by its shape, and a room full of Italians at 13:00. Order pici if you see them, or pappardelle al cinghiale in autumn."
+    a: "The best handmade pasta in Florence is not near the Duomo but in the trattorias around the Sant'Ambrogio market and in the Oltrarno around Santo Spirito: places with a short menu, pasta named by its shape, and a room full of Italians at 13:00. Order pici if you see them, or pappardelle al cinghiale in autumn."
   - q: "What pasta should I order in Florence?"
     a: "Order the Tuscan fresh-pasta classics: pici cacio e pepe or all'aglione, pappardelle al cinghiale (wild boar), tortelli di patate from the Mugello, tagliatelle ai funghi porcini in season, and ricotta-and-spinach ravioli with butter and sage."
   - q: "Is Florence known for pasta?"
-    a: "Florence is best known for meat — the bistecca alla fiorentina above all — but the surrounding Tuscan hills have a deep fresh-pasta tradition, so the city's trattorias serve excellent pici, pappardelle and tortelli. For the real thing, look for short, seasonal menus away from the main tourist streets."
+    a: "Florence is best known for meat (the bistecca alla fiorentina above all), but the surrounding Tuscan hills have a deep fresh-pasta tradition, so the city's trattorias serve excellent pici, pappardelle and tortelli. For the real thing, look for short, seasonal menus away from the main tourist streets."
 ---
 
-I make pasta for a living, so when I eat out in Florence I'm the annoying one turning the pappardelle over with a fork to check the cut. Here's what I actually look for — and where I'd send a friend with one free dinner in the city.
+I make pasta for a living, so when I eat out in Florence I'm the annoying one turning the pappardelle over with a fork to check the cut. Here's what I actually look for, and where I'd send a friend with one free dinner in the city.
 
 ## So where is the best pasta in Florence?
 
-The short answer: not within sight of the Duomo. The best handmade pasta in Florence is in the trattorias around the Sant'Ambrogio market and in the Oltrarno around Santo Spirito — anywhere the menu is short, the pasta is named by its shape, and the room is full of Italians at 13:00. Order pici if you see them, pappardelle al cinghiale if it's autumn. The long answer is the rest of this guide.
+The short answer: not within sight of the Duomo. The best handmade pasta in Florence is in the trattorias around the Sant'Ambrogio market and in the Oltrarno around Santo Spirito: anywhere the menu is short, the pasta is named by its shape, and the room is full of Italians at 13:00. Order pici if you see them, pappardelle al cinghiale if it's autumn. The long answer is the rest of this guide.
 
 ## How do you spot real handmade pasta on a menu?
 
 - **The words matter.** *Pasta fresca* means fresh pasta; *fatta a mano* or *fatta in casa* means made by hand, in house. A menu that names the shape and the flour ("pici di grano duro") is usually a menu written by someone who made it.
 - **Short menus beat long ones.** A kitchen hand-rolling pasta every morning can't offer thirty shapes. Four or five fresh-pasta dishes that change with the season is the best sign there is.
-- **Look at the surface.** Real hand-rolled pasta is slightly rough and irregular — that texture is what grips the sauce. Perfectly uniform strands were made by a machine somewhere far from the kitchen.
+- **Look at the surface.** Real hand-rolled pasta is slightly rough and irregular; that texture is what grips the sauce. Perfectly uniform strands were made by a machine somewhere far from the kitchen.
 - **Daily specials on a chalkboard** usually mean the kitchen cooked what the market had. That's how trattorias are supposed to work.
 
 ## What should you order in Florence?
 
-Florence is famously a meat city — the bistecca gets the postcards — but Tuscany's fresh pasta tradition runs deep, and these are its greatest hits:
+Florence is famously a meat city (the bistecca gets the postcards), but Tuscany's fresh pasta tradition runs deep, and these are its greatest hits:
 
-- **Pici cacio e pepe or all'aglione** — fat, hand-rolled ropes from the Sienese hills; the chew is the point. If pici are on the menu, order them.
-- **Pappardelle al cinghiale** — wide egg ribbons with wild boar ragù. The classic Tuscan autumn plate, and the dish I'd use to judge any kitchen.
-- **Tortelli di patate** — potato-filled parcels from the Mugello, north of the city, usually served with ragù or butter and sage. Humble and perfect.
-- **Tagliatelle ai funghi porcini** — in late summer and autumn, when porcini are real, this is unbeatable.
-- **Ravioli ricotta e spinaci, burro e salvia** — the gentle classic. Also look for *gnudi* — "naked" ravioli filling without the pasta, served the same way.
+- **Pici cacio e pepe or all'aglione**: fat, hand-rolled ropes from the Sienese hills; the chew is the point. If pici are on the menu, order them.
+- **Pappardelle al cinghiale**: wide egg ribbons with wild boar ragù. The classic Tuscan autumn plate, and the dish I'd use to judge any kitchen.
+- **Tortelli di patate**: potato-filled parcels from the Mugello, north of the city, usually served with ragù or butter and sage. Humble and perfect.
+- **Tagliatelle ai funghi porcini**: in late summer and autumn, when porcini are real, this is unbeatable.
+- **Ravioli ricotta e spinaci, burro e salvia**: the gentle classic. Also look for *gnudi*, "naked" ravioli filling without the pasta, served the same way.
 
 ## Where to look, neighbourhood by neighbourhood
 
 **Sant'Ambrogio.** The market where Florentines shop (we take our own [market class](/market-tour-cooking-class-florence/) there) feeds the trattorias around it. Anywhere within two streets of the market that's full of Italians at 13:00 is a safe bet.
 
-**The Oltrarno.** Our side of the river — Santo Spirito and San Frediano — still has the highest density of honest kitchens in the centre. The piazza-side osterie around Santo Spirito are reliable for fresh pasta and local wine; we've written a full guide to [spending a day in the Oltrarno](/blog/things-to-do-in-oltrarno-florence/).
+**The Oltrarno.** Our side of the river (Santo Spirito and San Frediano) still has the highest density of honest kitchens in the centre. The piazza-side osterie around Santo Spirito are reliable for fresh pasta and local wine; we've written a full guide to [spending a day in the Oltrarno](/blog/things-to-do-in-oltrarno-florence/).
 
-**The institutions.** A few names every Florentine will argue about but everyone ends up at: **Trattoria Mario** by the Mercato Centrale (lunch only, shared tables, cash — go early), **Trattoria Sostanza** (tiny, historic, book ahead), and around Santo Spirito, **Osteria Santo Spirito** and the kitchens of Borgo San Jacopo. Hours and booking policies change — check before you cross town.
+**The institutions.** A few names every Florentine will argue about but everyone ends up at: **Trattoria Mario** by the Mercato Centrale (lunch only, shared tables, cash; go early), **Trattoria Sostanza** (tiny, historic, book ahead), and around Santo Spirito, **Osteria Santo Spirito** and the kitchens of Borgo San Jacopo. Hours and booking policies change; check before you cross town.
 
 ## Three tourist-trap tells
 
 1. Photos of the food laminated in the window.
-2. A host outside inviting you in — full trattorias don't need one.
+2. A host outside inviting you in; full trattorias don't need one.
 3. "Fresh pasta" available in thirty shapes with any of twenty sauces, all day long. Fresh pasta kitchens run out; that's how you know it was fresh.
 
 ## The other option: eat the pasta you made
 
-The best plate of handmade pasta in Florence is honestly the one you rolled yourself twenty minutes earlier — I'm biased, but our guests say it, not us. Every one of [our classes](/pasta-making-class-florence/) ends exactly like a good trattoria lunch: your pasta, a Tuscan sauce, a glass of local wine, and nowhere to be for a while.
+The best plate of handmade pasta in Florence is honestly the one you rolled yourself twenty minutes earlier; I'm biased, but our guests say it, not us. Every one of [our classes](/pasta-making-class-florence/) ends exactly like a good trattoria lunch: your pasta, a Tuscan sauce, a glass of local wine, and nowhere to be for a while.

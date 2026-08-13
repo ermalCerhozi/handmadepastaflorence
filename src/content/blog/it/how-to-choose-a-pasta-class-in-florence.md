@@ -1,6 +1,6 @@
 ---
 title: 'Come scegliere un corso di pasta a Firenze: 7 domande che contano davvero'
-description: 'Firenze ha centinaia di corsi di pasta e gli annunci sembrano tutti identici. Le sette domande che predicono davvero se ti piacerà — dimensione del gruppo, cosa è incluso, chi insegna e come vengono gestite le intolleranze.'
+description: 'Firenze ha centinaia di corsi di pasta e gli annunci sembrano tutti identici. Le sette domande che predicono davvero se ti piacerà: dimensione del gruppo, cosa è incluso, chi insegna e come vengono gestite le intolleranze.'
 pubDate: 2026-08-11
 author: 'Endri Cerhozi'
 image: '../../../assets/images/cooking-class.webp'
@@ -20,7 +20,7 @@ faqs:
 
 Cerca un corso di pasta a Firenze e otterrai diverse centinaia di annunci che si leggono quasi identici: pratico, piccolo gruppo, chef locale, si mangia quello che si prepara, vino incluso. Le fotografie sono intercambiabili. I prezzi vanno da circa €50 a circa €150 per quella che viene descritta con le stesse parole.
 
-Noi questi corsi li teniamo, quindi abbiamo un interesse evidente — è giusto dirlo subito. Ma passiamo anche molto tempo con ospiti che prima avevano prenotato altrove ed erano rimasti delusi, e le delusioni sono notevolmente ricorrenti. Ecco cosa distingue davvero i corsi, nell'ordine che conta.
+Noi questi corsi li teniamo, quindi abbiamo un interesse evidente; è giusto dirlo subito. Ma passiamo anche molto tempo con ospiti che prima avevano prenotato altrove ed erano rimasti delusi, e le delusioni sono notevolmente ricorrenti. Ecco cosa distingue davvero i corsi, nell'ordine che conta.
 
 ## 1. Qual è il numero massimo reale di partecipanti?
 
@@ -70,7 +70,7 @@ Tre cose da sapere prima di prenotare, ovunque:
 
 *Noi: miscela dedicata, tagliere, attrezzi e acqua propri, postazione allestita prima del corso, nessun supplemento, e ti siedi allo stesso tavolo di tutti gli altri. Siamo anche chiari sul limite: è una cucina di pasta che lavora e non siamo una struttura certificata. [La spiegazione completa è qui](/it/corso-cucina-senza-glutine-firenze/).*
 
-## 5. Si mangia quello che si prepara — e ci si porta via qualcosa?
+## 5. Si mangia quello che si prepara, e ci si porta via qualcosa?
 
 Quasi tutti i corsi a Firenze finiscono con un pasto, ma verifica se è la *tua* pasta o un piatto impiattato arrivato dal retro. La differenza conta più di quanto sembri: mangiare la cosa che hai fatto male è esattamente il punto dell'esercizio.
 
@@ -97,7 +97,7 @@ Calcola il totale reale prima di confrontare, perché la cifra di richiamo raram
 - Un costo per grembiule o attrezzatura
 - Se il pasto è un vero pranzo seduti o una degustazione
 - Se ricette ed eventuale asporto sono inclusi
-- L'IVA — normalmente inclusa in Italia, ma conferma
+- L'IVA: normalmente inclusa in Italia, ma conferma
 
 Poi confronta cose confrontabili. Un corso da €95 con vino, pasto completo e nessun supplemento costa meno, in pratica, di un corso da €110 che aggiunge €18 di vino e fa pagare l'opzione senza glutine.
 
@@ -107,4 +107,4 @@ Se fai solo due domande, chiedi **qual è il numero massimo di partecipanti** e 
 
 E qualunque cosa prenoti, fatti dare per iscritto le condizioni di cancellazione prima di pagare.
 
-Se vuoi vedere le nostre risposte per intero, [Il Tavolo dello Chef](/it/corso-pasta-fresca-firenze/) è il corso su cui è costruito tutto il resto — tre ore in Oltrarno, quattro formati, massimo otto persone, €95 con il vino nel prezzo. Abbiamo scritto anche un'[analisi di quanto costano davvero i corsi di pasta a Firenze](/it/blog/how-much-does-a-pasta-making-class-in-florence-cost/) se vuoi i numeri da soli.
+Se vuoi vedere le nostre risposte per intero, [Il Tavolo dello Chef](/it/corso-pasta-fresca-firenze/) è il corso su cui è costruito tutto il resto: tre ore in Oltrarno, quattro formati, massimo otto persone, €95 con il vino nel prezzo. Abbiamo scritto anche un'[analisi di quanto costano davvero i corsi di pasta a Firenze](/it/blog/how-much-does-a-pasta-making-class-in-florence-cost/) se vuoi i numeri da soli.

@@ -1,6 +1,6 @@
 ---
 title: 'Que faire à Florence un lundi (quand les Offices sont fermés)'
-description: 'Les Offices et l’Accademia ferment le lundi. Voici ce qui est réellement ouvert — le complexe du Duomo, le Palazzo Vecchio, Santa Croce, les marchés et l’Oltrarno — et comment organiser la journée.'
+description: 'Les Offices et l’Accademia ferment le lundi. Voici ce qui est réellement ouvert (le complexe du Duomo, le Palazzo Vecchio, Santa Croce, les marchés et l’Oltrarno), et comment organiser la journée.'
 pubDate: 2026-08-11
 author: 'Endri Cerhozi'
 image: '../../../assets/images/aperitivo.webp'
@@ -9,9 +9,9 @@ faqs:
   - q: "La galerie des Offices est-elle ouverte le lundi ?"
     a: "Non. La galerie des Offices est fermée tous les lundis, ainsi que le 1er janvier et le 25 décembre. Elle est ouverte du mardi au dimanche, de 8h15 à 18h30, dernière entrée à 17h30."
   - q: "L’Accademia est-elle ouverte le lundi ?"
-    a: "Non. La galerie de l’Accademia — où se trouve le David de Michel-Ange — est fermée le lundi. Elle ouvre du mardi au dimanche, de 8h15 à 18h50."
+    a: "Non. La galerie de l’Accademia (où se trouve le David de Michel-Ange) est fermée le lundi. Elle ouvre du mardi au dimanche, de 8h15 à 18h50."
   - q: "Qu’est-ce qui est ouvert à Florence un lundi ?"
-    a: "Le complexe du Duomo (cathédrale, coupole, baptistère, campanile et musée), le Palazzo Vecchio, Santa Croce, la chapelle Brancacci, San Miniato al Monte, le Piazzale Michelangelo, le Mercato Centrale ainsi que les boutiques, ateliers et restaurants de la ville sont normalement ouverts le lundi. Ce sont les musées d’État — Offices, Accademia et Palazzo Pitti — qui ferment."
+    a: "Le complexe du Duomo (cathédrale, coupole, baptistère, campanile et musée), le Palazzo Vecchio, Santa Croce, la chapelle Brancacci, San Miniato al Monte, le Piazzale Michelangelo, le Mercato Centrale ainsi que les boutiques, ateliers et restaurants de la ville sont normalement ouverts le lundi. Ce sont les musées d’État (Offices, Accademia et Palazzo Pitti) qui ferment."
   - q: "Les jardins de Boboli sont-ils ouverts le lundi ?"
     a: "En général oui, mais pas toujours : les jardins de Boboli ferment le premier et le dernier lundi de chaque mois. Le Palazzo Pitti, lui, est fermé tous les lundis. Vérifiez la date avant de construire une journée autour."
   - q: "Peut-on faire un cours de cuisine à Florence un lundi ?"
@@ -30,11 +30,11 @@ Cela prend de court un nombre considérable de visiteurs, et il faut savoir que 
 
 **Santa Croce.** Michel-Ange, Galilée et Machiavel y sont enterrés, avec un cycle de fresques de Giotto et l’un des cloîtres les plus paisibles du centre.
 
-**La chapelle Brancacci**, dans l’Oltrarno. Les fresques de Masaccio constituent l’un des vrais tournants de la peinture occidentale, et la chapelle ferme le *mardi* plutôt que le lundi — c’est donc exactement ce qu’il faut faire le jour où les grandes galeries sont fermées. Réservez : on n’y entre qu’en petit nombre.
+**La chapelle Brancacci**, dans l’Oltrarno. Les fresques de Masaccio constituent l’un des vrais tournants de la peinture occidentale, et la chapelle ferme le *mardi* plutôt que le lundi, c’est donc exactement ce qu’il faut faire le jour où les grandes galeries sont fermées. Réservez : on n’y entre qu’en petit nombre.
 
 **San Miniato al Monte et le Piazzale Michelangelo.** La montée est gratuite, ouverte tous les jours, et la plus belle heure de Florence reste celle qui précède le coucher du soleil vue de là-haut.
 
-**Les marchés, les ateliers et la table.** Le Mercato Centrale ouvre le lundi. Le marché de Sant’Ambrogio ouvre du lundi au samedi. Les ateliers artisanaux de l’Oltrarno — cuir, dorure, reliure, papier marbré — travaillent le lundi, justement parce que c’est un jour ouvré.
+**Les marchés, les ateliers et la table.** Le Mercato Centrale ouvre le lundi. Le marché de Sant’Ambrogio ouvre du lundi au samedi. Les ateliers artisanaux de l’Oltrarno (cuir, dorure, reliure, papier marbré) travaillent le lundi, justement parce que c’est un jour ouvré.
 
 > Une chose à vérifier : les **jardins de Boboli** ferment le premier et le dernier lundi du mois, et le Palazzo Pitti est fermé tous les lundis. Les horaires des musées à Florence changent plus souvent qu’ils ne le devraient : confirmez la veille avant de bâtir un après-midi autour d’un seul site.
 

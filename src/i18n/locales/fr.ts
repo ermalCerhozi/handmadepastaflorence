@@ -1,9 +1,9 @@
 const fr = {
   meta: {
-    homeTitle: 'Cours de Cuisine à Florence — Pâtes Fraîches avec Deux Chefs Toscans | Handmade Pasta Florence',
-    homeDescription: 'Cours de cuisine à Florence en petit groupe, les mains dans la farine dès la première minute. Préparez des pâtes fraîches avec deux chefs d\'agritourismes toscans dans notre cuisine de l\'Oltrarno à partir de 95 € — visite du marché, cours privés et sans gluten, ou en direct en ligne avec un kit d\'ingrédients dès 68 €.',
+    homeTitle: 'Cours de Cuisine à Florence: Pâtes Fraîches avec Deux Chefs Toscans | Handmade Pasta Florence',
+    homeDescription: 'Cours de cuisine à Florence en petit groupe, les mains dans la farine dès la première minute. Préparez des pâtes fraîches avec deux chefs d\'agritourismes toscans dans notre cuisine de l\'Oltrarno à partir de 95 €: visite du marché, cours privés et sans gluten, ou en direct en ligne avec un kit d\'ingrédients dès 68 €.',
     blogTitle: 'Guides sur les pâtes et la gastronomie à Florence | Handmade Pasta Florence',
-    blogDescription: 'Guides sur les pâtes fraîches et comment bien manger à Florence, rédigés par deux chefs d\'agritourismes toscans — formes de pâtes, où manger, conseils sans gluten et le quartier de l\'Oltrarno.',
+    blogDescription: 'Guides sur les pâtes fraîches et comment bien manger à Florence, rédigés par deux chefs d\'agritourismes toscans: formes de pâtes, où manger, conseils sans gluten et le quartier de l\'Oltrarno.',
   },
 
   nav: {
@@ -42,7 +42,7 @@ const fr = {
     home: 'Accueil',
     pastaCrumb: 'Pâtes',
     updated: 'Tarifs et horaires vérifiés en',
-    galleryStation: 'Votre poste, prêt avant votre arrivée — planche, rouleau et farine à vous. Personne ne partage un saladier.',
+    galleryStation: 'Votre poste, prêt avant votre arrivée: planche, rouleau et farine à vous. Personne ne partage un saladier.',
     galleryTable: 'La fin : ce que vous avez préparé, une planche toscane à côté, et les deux verres déjà compris dans le prix.',
     faqPre: 'Bon à ',
     faqItal: 'savoir.',
@@ -147,9 +147,9 @@ const fr = {
     book: 'Réserver ceci',
     more: 'Détails complets',
     cards: [
-      { tag: 'Signature', name: 'La Table du Chef', desc: 'Trois heures, quatre formes, un long déjeuner. Roulez des pici, pliez des tortelli, puis asseyez-vous pour manger tout ce que vous avez préparé avec un verre de Chianti.', price: '95 €', meta: '3 h · max 8 convives · Oltrarno', alt: 'La Table du Chef — cours pratique de fabrication de pâtes dans notre cuisine à Florence' },
-      { tag: 'Marché + cuisine', name: 'Marché & Mains', desc: 'Faites vos courses au marché Sant’Ambrogio à l’aube avec Endri ou Marsel, puis transformez le panier en raviolis, ragoût et un dessert de saison de retour en cuisine.', price: '145 €', meta: '5 h · max 6 convives · visite du marché', alt: 'Marché & Mains — visite du marché et cours de pâtes à Florence' },
-      { tag: 'Privé', name: 'La Grande Table Familiale', desc: "Réservez toute la cuisine pour un anniversaire, une demande en mariage, des retrouvailles. Le festin sur une grande table que nous cuisinons dans nos agritourismes depuis des années, maintenant au cœur de Florence.", price: 'dès 680 €', meta: 'flexible · 6–14 convives · soirées', alt: 'La Grande Table Familiale — expérience de pâtes en groupe privé à Florence' },
+      { tag: 'Signature', name: 'La Table du Chef', desc: 'Trois heures, quatre formes, un long déjeuner. Roulez des pici, pliez des tortelli, puis asseyez-vous pour manger tout ce que vous avez préparé avec un verre de Chianti.', price: '95 €', meta: '3 h · max 8 convives · Oltrarno', alt: 'La Table du Chef, cours pratique de fabrication de pâtes dans notre cuisine à Florence' },
+      { tag: 'Marché + cuisine', name: 'Marché & Mains', desc: 'Faites vos courses au marché Sant’Ambrogio à l’aube avec Endri ou Marsel, puis transformez le panier en raviolis, ragoût et un dessert de saison de retour en cuisine.', price: '145 €', meta: '5 h · max 6 convives · visite du marché', alt: 'Marché & Mains, visite du marché et cours de pâtes à Florence' },
+      { tag: 'Privé', name: 'La Grande Table Familiale', desc: "Réservez toute la cuisine pour un anniversaire, une demande en mariage, des retrouvailles. Le festin sur une grande table que nous cuisinons dans nos agritourismes depuis des années, maintenant au cœur de Florence.", price: 'dès 680 €', meta: 'flexible · 6–14 convives · soirées', alt: 'La Grande Table Familiale, expérience de pâtes en groupe privé à Florence' },
     ],
   },
 
@@ -197,7 +197,7 @@ const fr = {
     eyebrow: 'Guides et histoires',
     h1: 'Issus du carnet ',
     h1Ital: 'fariné.',
-    lede: 'Ce que nous savons sur les pâtes, Florence et comment y manger bien — écrit entre deux cours par les deux chefs qui les enseignent.',
+    lede: 'Ce que nous savons sur les pâtes, Florence et comment y manger bien, écrit entre deux cours par les deux chefs qui les enseignent.',
     readGuide: 'Lire le guide',
   },
 
@@ -210,7 +210,7 @@ const fr = {
     bioLink: 'des cours de fabrication de pâtes en petit groupe',
     bioEnd: 'dans l\'Oltrarno.',
     ctaH2: 'Vous préférez l\'apprendre avec vos mains ?',
-    ctaP: 'Roulez, pliez et mangez-les vous-même — dans notre cuisine à Florence ou en direct en ligne.',
+    ctaP: 'Roulez, pliez et mangez-les vous-même: dans notre cuisine à Florence ou en direct en ligne.',
     ctaBtn: 'Réserver un cours',
     ctaLink: 'Voir les cours',
   },

@@ -11,10 +11,10 @@ const en = {
     // subline, this description's opener, and the hero image alt. Everything else
     // here is conversion copy. Do not re-target "pasta making class in Florence":
     // that belongs to /pasta-making-class-florence/ and was de-cannibalized on purpose.
-    homeTitle: 'Cooking Classes in Florence — Hands-On Pasta with Two Tuscan Chefs | Handmade Pasta Florence',
-    homeDescription: 'Small-group cooking classes in Florence, hands-in-the-flour from the first minute. Roll fresh pasta with two Tuscan agriturismo head chefs in our Oltrarno kitchen from €95 — market-tour, private and gluten-free options, or live online with an ingredient kit from €68.',
+    homeTitle: 'Cooking Classes in Florence: Hands-On Pasta with Two Tuscan Chefs | Handmade Pasta Florence',
+    homeDescription: 'Small-group cooking classes in Florence, hands-in-the-flour from the first minute. Roll fresh pasta with two Tuscan agriturismo head chefs in our Oltrarno kitchen from €95: market-tour, private and gluten-free options, or live online with an ingredient kit from €68.',
     blogTitle: 'Florence Pasta & Food Guides | Handmade Pasta Florence',
-    blogDescription: 'Guides to fresh pasta and eating well in Florence, written by two Tuscan agriturismo head chefs — pasta shapes, where to eat, gluten-free tips and the Oltrarno neighbourhood.',
+    blogDescription: 'Guides to fresh pasta and eating well in Florence, written by two Tuscan agriturismo head chefs: pasta shapes, where to eat, gluten-free tips and the Oltrarno neighbourhood.',
   },
 
   nav: {
@@ -53,7 +53,7 @@ const en = {
     home: 'Home',
     pastaCrumb: 'Pasta',
     updated: 'Prices and times checked in',
-    galleryStation: 'Your station, set out before you arrive — your own board, rolling pin and flour. Nobody shares a bowl.',
+    galleryStation: 'Your station, set out before you arrive: your own board, rolling pin and flour. Nobody shares a bowl.',
     galleryTable: 'Where it ends: what you made, a Tuscan board alongside it, and the two glasses that are already in the price.',
     faqPre: 'Good to ',
     faqItal: 'know.',
@@ -160,9 +160,9 @@ const en = {
     book: 'Book this',
     more: 'Full details',
     cards: [
-      { tag: 'Signature', name: 'The Chef’s Table', desc: 'Three hours, four shapes, one long lunch. Roll pici, fold tortelli, then sit down to eat everything you made with a glass of Chianti.', price: '€95', meta: '3 hrs · max 8 guests · Oltrarno', alt: 'The Chef’s Table — hands-on pasta-making class in our Florence kitchen' },
-      { tag: 'Market + cook', name: 'Mercato & Mani', desc: 'Shop Sant’Ambrogio market at dawn with Endri or Marsel, then turn the basket into ravioli, a ragù, and a seasonal dolce back in the kitchen.', price: '€145', meta: '5 hrs · max 6 guests · market walk', alt: 'Mercato & Mani — market tour and pasta class in Florence' },
-      { tag: 'Private', name: 'The Family Long-Table', desc: "Book the whole kitchen for birthdays, proposals, reunions. The long-table feast we’ve cooked at our agriturismi for years, now in the heart of Florence.", price: 'from €680', meta: 'flexible · 6–14 guests · evenings', alt: 'The Family Long-Table — private group pasta experience in Florence' },
+      { tag: 'Signature', name: 'The Chef’s Table', desc: 'Three hours, four shapes, one long lunch. Roll pici, fold tortelli, then sit down to eat everything you made with a glass of Chianti.', price: '€95', meta: '3 hrs · max 8 guests · Oltrarno', alt: 'The Chef’s Table, hands-on pasta-making class in our Florence kitchen' },
+      { tag: 'Market + cook', name: 'Mercato & Mani', desc: 'Shop Sant’Ambrogio market at dawn with Endri or Marsel, then turn the basket into ravioli, a ragù, and a seasonal dolce back in the kitchen.', price: '€145', meta: '5 hrs · max 6 guests · market walk', alt: 'Mercato & Mani, market tour and pasta class in Florence' },
+      { tag: 'Private', name: 'The Family Long-Table', desc: "Book the whole kitchen for birthdays, proposals, reunions. The long-table feast we’ve cooked at our agriturismi for years, now in the heart of Florence.", price: 'from €680', meta: 'flexible · 6–14 guests · evenings', alt: 'The Family Long-Table, private group pasta experience in Florence' },
     ],
   },
 
@@ -210,7 +210,7 @@ const en = {
     eyebrow: 'Guides & stories',
     h1: 'From the flour-dusted ',
     h1Ital: 'notebook.',
-    lede: 'What we know about pasta, Florence and eating well here — written between classes by the two chefs who teach them.',
+    lede: 'What we know about pasta, Florence and eating well here, written between classes by the two chefs who teach them.',
     readGuide: 'Read the guide',
   },
 
@@ -223,7 +223,7 @@ const en = {
     bioLink: 'small-group pasta making classes',
     bioEnd: 'in the Oltrarno.',
     ctaH2: 'Rather learn it with your hands?',
-    ctaP: 'Roll, fold and eat it yourself — in our Florence kitchen or live online.',
+    ctaP: 'Roll, fold and eat it yourself: in our Florence kitchen or live online.',
     ctaBtn: 'Book a class',
     ctaLink: 'See the classes',
   },
