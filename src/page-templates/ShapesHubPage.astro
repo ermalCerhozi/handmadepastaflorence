@@ -11,6 +11,7 @@ import BookingDrawer from '../components/BookingDrawer.astro';
 import { shapes, shapePath, shapesHubPath } from '../data/shapes';
 import { localizePath, SITE, type Alternate } from '../i18n/utils';
 import type { Locale } from '../i18n/config';
+import { breadcrumbSchema, faqSchema } from '../utils/schema';
 
 interface Props {
   locale: Locale;
@@ -29,14 +30,10 @@ const alternates: Alternate[] = (Object.keys(shapes) as Locale[]).map((l) => ({
 
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 
-const breadcrumbSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: L.home, item: `${SITE}/` },
-    { '@type': 'ListItem', position: 2, name: L.hubCrumb, item: canonical },
-  ],
-};
+const breadcrumbLd = breadcrumbSchema([
+  { name: L.home, item: `${SITE}/` },
+  { name: L.hubCrumb, item: canonical },
+]);
 
 // ItemList tells Google this page indexes the four spokes below it.
 const itemListSchema = {
@@ -51,15 +48,7 @@ const itemListSchema = {
   })),
 };
 
-const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: s.hubFaqs.map((f) => ({
-    '@type': 'Question',
-    name: f.q,
-    acceptedAnswer: { '@type': 'Answer', text: f.a },
-  })),
-};
+const faqLd = faqSchema(s.hubFaqs);
 ---
 
 <Layout
@@ -185,9 +174,9 @@ const faqSchema = {
   <Footer />
   <BookingDrawer />
 
-  <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbSchema)} />
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbLd)} />
   <script type="application/ld+json" is:inline set:html={JSON.stringify(itemListSchema)} />
-  <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(faqLd)} />
 </Layout>
 
 <style>

@@ -16,7 +16,7 @@
 // one object literal. Install a snippet in src/layouts/Layout.astro and the
 // events below start reporting with no edits here.
 
-export type TrackProps = Record<string, string | number | boolean | undefined>;
+type TrackProps = Record<string, string | number | boolean | undefined>;
 
 declare global {
   interface Window {

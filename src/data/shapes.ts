@@ -18,12 +18,12 @@
 import type { Locale } from '../i18n/config';
 import * as img from '../assets/images';
 
-export interface ShapeFact {
+interface ShapeFact {
   label: string;
   value: string;
 }
 
-export interface ShapeSection {
+interface ShapeSection {
   title: string;
   paras: string[];
 }
@@ -52,7 +52,7 @@ export interface ShapeSpoke {
   compare: { dough: string; cut: string; sauce: string };
 }
 
-export interface ShapesLocale {
+interface ShapesLocale {
   hubSlug: string;
   hubTitle: string;
   hubDescription: string;

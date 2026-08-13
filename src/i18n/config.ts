@@ -24,9 +24,6 @@ export type Locale = keyof typeof languages;
 
 export const locales = Object.keys(languages) as Locale[];
 
-// Non-default locales — used by getStaticPaths to generate prefixed routes.
-export const secondaryLocales = locales.filter((l) => l !== defaultLocale) as Exclude<Locale, 'en'>[];
-
 export function isLocale(value: string): value is Locale {
   return value in languages;
 }

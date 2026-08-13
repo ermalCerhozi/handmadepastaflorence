@@ -8,11 +8,8 @@ export function getLocaleFromUrl(url: URL): Locale {
   return isLocale(seg) ? seg : defaultLocale;
 }
 
-/** Back-compat alias for the previous name. */
-export const getLangFromUrl = getLocaleFromUrl;
-
 /** Strip a leading `/it`, `/de`, … prefix so a path is locale-neutral. */
-export function stripLocalePrefix(pathname: string): string {
+function stripLocalePrefix(pathname: string): string {
   const [, seg, ...rest] = pathname.split('/');
   if (isLocale(seg) && seg !== defaultLocale) {
     return '/' + rest.join('/');
@@ -29,11 +26,6 @@ export function localizePath(path: string, locale: Locale): string {
   const base = stripLocalePrefix(path);
   if (locale === defaultLocale) return base;
   return `/${locale}${base === '/' ? '/' : base}`;
-}
-
-/** Absolute canonical URL for a same-slug localized page. */
-export function canonicalFor(path: string, locale: Locale): string {
-  return SITE + localizePath(path, locale);
 }
 
 /**

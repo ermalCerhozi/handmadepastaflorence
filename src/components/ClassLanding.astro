@@ -10,6 +10,7 @@ import { useTranslations } from '../i18n/ui';
 import { languages, type Locale } from '../i18n/config';
 import { shapesHubPath } from '../data/shapes';
 import type { FactIcon } from '../data/landings';
+import { breadcrumbSchema, faqSchema } from '../utils/schema';
 import { getAggregateRating, getReviewSchema } from '../data/reviews';
 import * as img from '../assets/images';
 
@@ -218,30 +219,13 @@ const serviceSchema = service && {
   url: canonical,
 };
 
-const breadcrumbSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: showPastaCrumb
-    ? [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/` },
-        { '@type': 'ListItem', position: 2, name: t.lp.pastaCrumb, item: `${SITE}${shapesHubPath(lang)}` },
-        { '@type': 'ListItem', position: 3, name: breadcrumbName, item: canonical },
-      ]
-    : [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE}/` },
-        { '@type': 'ListItem', position: 2, name: breadcrumbName, item: canonical },
-      ],
-};
+const breadcrumbLd = breadcrumbSchema([
+  { name: 'Home', item: `${SITE}/` },
+  ...(showPastaCrumb ? [{ name: t.lp.pastaCrumb, item: `${SITE}${shapesHubPath(lang)}` }] : []),
+  { name: breadcrumbName, item: canonical },
+]);
 
-const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: faqs.map((f) => ({
-    '@type': 'Question',
-    name: f.q,
-    acceptedAnswer: { '@type': 'Answer', text: f.a },
-  })),
-};
+const faqLd = faqSchema(faqs);
 ---
 
 <!-- id="top" lets FloatingCTA treat this hero like the homepage one -->
@@ -398,8 +382,8 @@ const faqSchema = {
 {productSchema && <script is:inline type="application/ld+json" set:html={JSON.stringify(productSchema)} />}
 {courseSchema && <script is:inline type="application/ld+json" set:html={JSON.stringify(courseSchema)} />}
 {serviceSchema && <script is:inline type="application/ld+json" set:html={JSON.stringify(serviceSchema)} />}
-<script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
-<script is:inline type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+<script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+<script is:inline type="application/ld+json" set:html={JSON.stringify(faqLd)} />
 
 <style>
   /* ===== Hero ===== */

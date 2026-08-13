@@ -11,7 +11,7 @@
 // review markup as spam, and a rating you cannot substantiate is worse than no
 // rating at all. Add a review only when a real, identifiable guest left it.
 
-export interface Review {
+interface Review {
   /** The guest's own words, verbatim. Do not paraphrase or tidy. */
   quote: string;
   /** Name as the guest gave it (e.g. "Sarah C."). */
@@ -27,7 +27,7 @@ export interface Review {
 }
 
 /** Optional platform badges ("4.9 on Google, 120 reviews"). */
-export interface ReviewBadge {
+interface ReviewBadge {
   src: string;
   score: string;
   count: string;
@@ -40,7 +40,7 @@ export const badges: ReviewBadge[] = [];
 
 export const hasReviews = reviews.length > 0;
 
-export interface AggregateRating {
+interface AggregateRating {
   '@type': 'AggregateRating';
   ratingValue: string;
   reviewCount: number;

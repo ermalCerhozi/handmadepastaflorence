@@ -24,7 +24,7 @@ export type FactIcon =
   | 'tag'
   | 'mail';
 
-export interface LandingContent {
+interface LandingContent {
   eyebrow: string;
   heading: string;
   headingItal: string;
@@ -47,7 +47,7 @@ export interface LandingContent {
   service?: { name: string; description: string };
 }
 
-export interface LandingLocale {
+interface LandingLocale {
   slug: string;
   title: string;
   description: string;

@@ -5,6 +5,7 @@
 // (see REMAINING-SEO-TASKS.md).
 import { getLocaleFromUrl } from '../i18n/utils';
 import { useTranslations } from '../i18n/ui';
+import { faqSchema } from '../utils/schema';
 const t = useTranslations(getLocaleFromUrl(Astro.url));
 const faqs = t.faq.items;
 
@@ -31,15 +32,7 @@ const faqs = t.faq.items;
   </div>
 </section>
 
-<script type="application/ld+json" set:html={JSON.stringify({
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: faqs.map((f) => ({
-    '@type': 'Question',
-    name: f.q,
-    acceptedAnswer: { '@type': 'Answer', text: f.a },
-  })),
-})} />
+<script type="application/ld+json" set:html={JSON.stringify(faqSchema(faqs))} />
 
 <style>
   .faq { padding-block: clamp(3.5rem, 9vh, 6rem); background: var(--flour); }

@@ -13,7 +13,7 @@ import { SITE, localizePath } from './../i18n/utils';
 import { landings } from '../data/landings';
 import { shapes, shapePath, shapesHubPath } from '../data/shapes';
 
-export interface SitemapEntry {
+interface SitemapEntry {
   loc: string;
   alternates: { hreflang: string; href: string }[];
 }
