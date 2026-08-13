@@ -75,15 +75,6 @@ const zh = {
     book: '立即预订',
   },
 
-  scrollTop: {
-    label: '回到顶部',
-  },
-
-  whatsapp: {
-    label: '与我们聊天',
-    text: '你好，我想预订在佛罗伦萨的意面课程',
-  },
-
   online: {
     live: '直播',
     eyebrow: '无法来到佛罗伦萨？',

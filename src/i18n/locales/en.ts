@@ -88,15 +88,6 @@ const en = {
     book: 'Book now',
   },
 
-  scrollTop: {
-    label: 'Scroll to top',
-  },
-
-  whatsapp: {
-    label: 'Chat with us',
-    text: 'Hello%2C%20I%27d%20like%20to%20book%20a%20pasta%20class%20in%20Florence',
-  },
-
   online: {
     live: 'Live',
     eyebrow: 'Can’t make it to Florence?',

@@ -77,15 +77,6 @@ const de = {
     book: 'Jetzt buchen',
   },
 
-  scrollTop: {
-    label: 'Nach oben scrollen',
-  },
-
-  whatsapp: {
-    label: 'Chatten Sie mit uns',
-    text: 'Hallo%2C%20ich%20m%C3%B6chte%20gerne%20einen%20Pasta-Kurs%20in%20Florenz%20buchen',
-  },
-
   online: {
     live: 'Live',
     eyebrow: 'Schaffen Sie es nicht nach Florenz?',

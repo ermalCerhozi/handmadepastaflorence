@@ -75,15 +75,6 @@ const fr = {
     book: 'Réserver',
   },
 
-  scrollTop: {
-    label: 'Retour en haut',
-  },
-
-  whatsapp: {
-    label: 'Discutez avec nous',
-    text: 'Bonjour%2C%20je%20voudrais%20r%C3%A9server%20un%20cours%20de%20p%C3%A2tes%20%C3%A0%20Florence',
-  },
-
   online: {
     live: 'En direct',
     eyebrow: 'Vous ne pouvez pas venir à Florence ?',

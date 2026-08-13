@@ -79,15 +79,6 @@ const it: Dict = {
     book: `Prenota ora`,
   },
 
-  scrollTop: {
-    label: `Torna su`,
-  },
-
-  whatsapp: {
-    label: `Chatta con noi`,
-    text: `Ciao,%20vorrei%20prenotare%20un%20corso%20di%20pasta%20a%20Firenze`,
-  },
-
   online: {
     live: `In diretta`,
     eyebrow: `Non puoi venire a Firenze?`,

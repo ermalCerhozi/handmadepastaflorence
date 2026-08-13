@@ -6,13 +6,16 @@
 // Pricing is always tied to a visible guest count, so the total can never appear
 // "out of nowhere" — it updates the moment an experience and guest count are chosen.
 import { getLocaleFromUrl } from '../i18n/utils';
-import { useTranslations } from '../i18n/ui';
-import en from '../i18n/locales/en';
-import it from '../i18n/locales/it';
+import { dictionaries, useTranslations } from '../i18n/ui';
 const t = useTranslations(getLocaleFromUrl(Astro.url));
-// Both locales' client-side strings, emitted as JSON and indexed at runtime by the
+// Every locale's client-side strings, emitted as JSON and indexed at runtime by the
 // live document lang (so it stays correct across view-transition navigation).
-const bkJsPayload = { en: en.bkJs, it: it.bkJs };
+// Derived from `dictionaries` rather than listed by hand: this used to name en+it
+// explicitly, so fr/de/zh silently fell back to English in the drawer that takes
+// the booking, even though all five locales had a fully translated bkJs block.
+const bkJsPayload = Object.fromEntries(
+  Object.entries(dictionaries).map(([locale, dict]) => [locale, dict.bkJs]),
+);
 ---
 
 <div class="bk" data-booking hidden>
