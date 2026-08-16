@@ -31,11 +31,13 @@ Die kurze Antwort: nicht in Sichtweite des Duomo. Die beste handgemachte Pasta i
 
 Florenz ist bekanntermaßen eine Fleischstadt (das Bistecca bekommt die Postkarten), aber die toskanische Tradition der frischen Pasta sitzt tief, und dies sind ihre größten Hits:
 
-- **Pici cacio e pepe oder all'aglione**: dicke, handgerollte Stränge aus den Hügeln Sienas; der Biss ist der Sinn der Sache. Wenn Pici auf der Speisekarte stehen, bestellen Sie sie.
-- **Pappardelle al cinghiale**: breite Eierbänder mit Wildschweinragù. Der klassische toskanische Herbstteller und das Gericht, nach dem ich jede Küche beurteilen würde.
-- **Tortelli di patate**: kartoffelgefüllte Taschen aus dem Mugello nördlich der Stadt, meist serviert mit Ragù oder Butter und Salbei. Bescheiden und perfekt.
-- **Tagliatelle ai funghi porcini**: im Spätsommer und Herbst, wenn die Porcini echt sind, ist das unschlagbar.
-- **Ravioli ricotta e spinaci, burro e salvia**: der sanfte Klassiker. Achten Sie auch auf *Gnudi*, "nackte" Raviolifüllung ohne die Pasta, genauso serviert.
+- **[Pici](/de/pasta-formen/pici/) cacio e pepe oder all'aglione**: dicke, handgerollte Stränge aus den Hügeln Sienas; der Biss ist der Sinn der Sache. Wenn Pici auf der Speisekarte stehen, bestellen Sie sie.
+- **[Pappardelle](/de/pasta-formen/pappardelle/) al cinghiale**: breite Eierbänder mit Wildschweinragù. Der klassische toskanische Herbstteller und das Gericht, nach dem ich jede Küche beurteilen würde.
+- **[Tortelli](/de/pasta-formen/tortelli/) di patate**: kartoffelgefüllte Taschen aus dem Mugello nördlich der Stadt, meist serviert mit Ragù oder Butter und Salbei. Bescheiden und perfekt.
+- **[Tagliatelle](/de/pasta-formen/tagliatelle/) ai funghi porcini**: im Spätsommer und Herbst, wenn die Porcini echt sind, ist das unschlagbar.
+- **[Ravioli](/de/pasta-formen/ravioli/) ricotta e spinaci, burro e salvia**: der sanfte Klassiker. Achten Sie auch auf *Gnudi*, "nackte" Raviolifüllung ohne die Pasta, genauso serviert.
+
+Wenn Sie vor dem Bestellen wissen wollen, was vor Ihnen liegt: Jeder dieser Links öffnet die Form in unserer [Formen-Bibliothek](/de/pasta-formen/), mit Herkunft, Schnittbreite in Millimetern und der Soße, für die sie gemacht wurde.
 
 ## Wo man suchen sollte, Viertel für Viertel
 

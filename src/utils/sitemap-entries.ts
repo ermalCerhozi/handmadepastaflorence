@@ -12,6 +12,7 @@ import { locales, defaultLocale, languages, type Locale } from '../i18n/config';
 import { SITE, localizePath } from './../i18n/utils';
 import { landings } from '../data/landings';
 import { shapes, shapePath, shapesHubPath } from '../data/shapes';
+import { blogLocale, blogSlug } from './blog-locales';
 
 interface SitemapEntry {
   loc: string;
@@ -42,11 +43,19 @@ function sameSlugEntries(pathname: string, availableLocales: readonly Locale[] =
   return toEntry(paths);
 }
 
+// Enumerates every slug in the collection, not just the English ones, and emits
+// only the locales that actually have a file. Previously this listed English
+// posts and claimed all five locales for each, which is fine while every post is
+// translated five ways and wrong the moment one isn't.
 async function blogEntries(): Promise<SitemapEntry[]> {
-  const posts = await getCollection('blog', ({ id }) => !id.includes('/'));
+  const posts = await getCollection('blog');
+  const slugs = [...new Set(posts.map((p) => blogSlug(p.id)))];
   const entries: SitemapEntry[] = [];
-  for (const post of posts) {
-    entries.push(...sameSlugEntries(`/blog/${post.id}/`));
+  for (const slug of slugs) {
+    const present = locales.filter((l) =>
+      posts.some((p) => blogSlug(p.id) === slug && blogLocale(p.id) === l),
+    );
+    entries.push(...sameSlugEntries(`/blog/${slug}/`, present));
   }
   return entries;
 }

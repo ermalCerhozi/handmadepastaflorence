@@ -31,11 +31,13 @@ La risposta breve: non in vista del Duomo. La pasta fresca migliore di Firenze s
 
 Firenze è notoriamente una città di carne (la bistecca prende le cartoline), ma la tradizione toscana della pasta fresca è profonda, e questi sono i suoi più grandi successi:
 
-- **Pici cacio e pepe o all'aglione**: spaghettoni spessi, stesi a mano dalle colline senesi; la consistenza gommosa è il loro bello. Se i pici sono nel menu, ordinali.
-- **Pappardelle al cinghiale**: larghi nastri all'uovo con ragù di cinghiale. Il classico piatto autunnale toscano, e il piatto che userei per giudicare qualsiasi cucina.
-- **Tortelli di patate**: fagottini ripieni di patate dal Mugello, a nord della città, di solito serviti con ragù o burro e salvia. Umili e perfetti.
-- **Tagliatelle ai funghi porcini**: in tarda estate e autunno, quando i porcini sono veri, è insuperabile.
-- **Ravioli ricotta e spinaci, burro e salvia**: il classico delicato. Cerca anche gli *gnudi*, il ripieno dei ravioli "nudo" senza la pasta, servito allo stesso modo.
+- **[Pici](/it/formati-di-pasta-toscana/pici/) cacio e pepe o all'aglione**: spaghettoni spessi, stesi a mano dalle colline senesi; la consistenza gommosa è il loro bello. Se i pici sono nel menu, ordinali.
+- **[Pappardelle](/it/formati-di-pasta-toscana/pappardelle/) al cinghiale**: larghi nastri all'uovo con ragù di cinghiale. Il classico piatto autunnale toscano, e il piatto che userei per giudicare qualsiasi cucina.
+- **[Tortelli](/it/formati-di-pasta-toscana/tortelli/) di patate**: fagottini ripieni di patate dal Mugello, a nord della città, di solito serviti con ragù o burro e salvia. Umili e perfetti.
+- **[Tagliatelle](/it/formati-di-pasta-toscana/tagliatelle/) ai funghi porcini**: in tarda estate e autunno, quando i porcini sono veri, è insuperabile.
+- **[Ravioli](/it/formati-di-pasta-toscana/ravioli/) ricotta e spinaci, burro e salvia**: il classico delicato. Cerca anche gli *gnudi*, il ripieno dei ravioli "nudo" senza la pasta, servito allo stesso modo.
+
+Se vuoi sapere cosa stai guardando prima di ordinare, ognuno di quei link apre il formato nella nostra [libreria dei formati](/it/formati-di-pasta-toscana/): cos'è, quanto è largo il taglio e per quale sugo è nato.
 
 ## Dove cercare, quartiere per quartiere
 

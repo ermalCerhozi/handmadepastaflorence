@@ -5,8 +5,11 @@
 // these for local SEO, confirm they are the real, registered business details
 // and add `geo` coordinates + `sameAs` social/GBP links — see
 // REMAINING-SEO-TASKS.md (items needing owner input).
-import { cookingClass, cookingClassGuests, aperitivo, weddingCake } from '../assets/images';
+import { cookingClass } from '../assets/images';
 import { getAggregateRating } from '../data/reviews';
+import { landings, landingPath } from '../data/landings';
+import { getLocaleFromUrl } from '../i18n/utils';
+import { defaultLocale, locales } from '../i18n/config';
 
 const SITE = 'https://handmadepastaflorence.com';
 
@@ -79,39 +82,16 @@ const localBusiness = {
 };
 
 // One Product + Offer per bookable experience — the simplest reliable path to
-// price showing in search results. Prices mirror the on-page cards. Offer URLs
-// point at the dedicated landing pages, which carry their own richer Product
-// schema — so these summary products render on the homepage only.
-const classes = [
-  {
-    name: 'The Chef’s Table',
-    desc: 'Three hands-on hours in our Oltrarno kitchen: four pasta shapes, ending in a long Tuscan lunch.',
-    price: '95',
-    img: cookingClassGuests.src,
-    url: '/pasta-making-class-florence/',
-  },
-  {
-    name: 'Mercato & Mani',
-    desc: 'Shop Sant’Ambrogio market at dawn with Endri or Marsel, then cook ravioli, a ragù and a seasonal dolce.',
-    price: '145',
-    img: aperitivo.src,
-    url: '/market-tour-cooking-class-florence/',
-  },
-  {
-    name: 'The Family Long-Table',
-    desc: 'Book the whole kitchen for a private celebration: birthdays, proposals, reunions.',
-    price: '680',
-    img: weddingCake.src,
-    url: '/private-cooking-class-florence/',
-  },
-  {
-    name: 'Live Online Pasta Class',
-    desc: 'Cook live from anywhere with a fresh-pasta ingredient kit shipped to your door.',
-    price: '68',
-    img: cookingClass.src,
-    url: '/online-pasta-making-class/',
-  },
-];
+// price showing in search results. Offer URLs point at the dedicated landing
+// pages, which carry their own richer Product schema (see ClassLanding.astro),
+// so these summary products render on the homepage only.
+//
+// Derived from landings.ts rather than a local copy of the class data. Until
+// Aug 2026 this was a hardcoded English array emitted on all five homepages,
+// so /de/ and /fr/ shipped Product blocks named "The Chef's Table" whose Offer
+// URLs pointed at the English landing pages. GSC showed 285 product-snippet
+// impressions converting at 0.35%, worse than the site's plain results.
+const HOMEPAGE_CLASS_KEYS = ['pasta-making', 'market-tour', 'private', 'online'];
 
 // Rolling year-end validity so Offer prices don't read as stale to Google's
 // price-freshness checks. Bump this to the next year-end whenever prices are
@@ -119,27 +99,37 @@ const classes = [
 // it only needs to happen roughly once a year).
 const PRICE_VALID_UNTIL = '2026-12-31';
 
-const products = classes.map((c) => ({
-  '@context': 'https://schema.org',
-  '@type': 'Product',
-  name: `${c.name}: Pasta Class in Florence`,
-  description: c.desc,
-  image: `${SITE}${c.img}`,
-  brand: { '@type': 'Brand', name: 'Handmade Pasta Florence' },
-  offers: {
-    '@type': 'Offer',
-    price: c.price,
-    priceCurrency: 'EUR',
-    availability: 'https://schema.org/InStock',
-    priceValidUntil: PRICE_VALID_UNTIL,
-    url: `${SITE}${c.url}`,
-  },
-}));
+const lang = getLocaleFromUrl(Astro.url);
 
-// All five locale homepages get the price-in-search Product schema — not just
-// en/it. Missed until 2026-08-08: fr/de/zh homepages were shipping zero
-// Product/Offer schema, so those locales had no rich-result price eligibility.
-const isHome = ['/', '/it/', '/fr/', '/de/', '/zh/'].includes(Astro.url.pathname);
+const products = HOMEPAGE_CLASS_KEYS.flatMap((key) => {
+  const entry = landings[key]?.locales[lang];
+  const product = entry?.cl.product;
+  if (!entry || !product) return [];
+  return [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Product',
+      name: product.name,
+      description: product.description,
+      image: `${SITE}${entry.cl.image.src.src}`,
+      brand: { '@type': 'Brand', name: 'Handmade Pasta Florence' },
+      offers: {
+        '@type': 'Offer',
+        price: product.price,
+        priceCurrency: 'EUR',
+        availability: 'https://schema.org/InStock',
+        priceValidUntil: PRICE_VALID_UNTIL,
+        url: `${SITE}${landingPath(key, lang)}`,
+      },
+    },
+  ];
+});
+
+// Derived from `locales` rather than a hardcoded path list, so adding a
+// language to config.ts can't silently drop its homepage schema.
+const isHome = locales.some(
+  (l) => Astro.url.pathname === (l === defaultLocale ? '/' : `/${l}/`),
+);
 ---
 
 <script type="application/ld+json" set:html={JSON.stringify(localBusiness)} />

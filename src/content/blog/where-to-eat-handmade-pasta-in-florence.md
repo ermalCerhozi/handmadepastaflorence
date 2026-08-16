@@ -31,11 +31,13 @@ The short answer: not within sight of the Duomo. The best handmade pasta in Flor
 
 Florence is famously a meat city (the bistecca gets the postcards), but Tuscany's fresh pasta tradition runs deep, and these are its greatest hits:
 
-- **Pici cacio e pepe or all'aglione**: fat, hand-rolled ropes from the Sienese hills; the chew is the point. If pici are on the menu, order them.
-- **Pappardelle al cinghiale**: wide egg ribbons with wild boar ragù. The classic Tuscan autumn plate, and the dish I'd use to judge any kitchen.
-- **Tortelli di patate**: potato-filled parcels from the Mugello, north of the city, usually served with ragù or butter and sage. Humble and perfect.
-- **Tagliatelle ai funghi porcini**: in late summer and autumn, when porcini are real, this is unbeatable.
-- **Ravioli ricotta e spinaci, burro e salvia**: the gentle classic. Also look for *gnudi*, "naked" ravioli filling without the pasta, served the same way.
+- **[Pici](/pasta-shapes/pici/) cacio e pepe or all'aglione**: fat, hand-rolled ropes from the Sienese hills; the chew is the point. If pici are on the menu, order them.
+- **[Pappardelle](/pasta-shapes/pappardelle/) al cinghiale**: wide egg ribbons with wild boar ragù. The classic Tuscan autumn plate, and the dish I'd use to judge any kitchen.
+- **[Tortelli](/pasta-shapes/tortelli/) di patate**: potato-filled parcels from the Mugello, north of the city, usually served with ragù or butter and sage. Humble and perfect.
+- **[Tagliatelle](/pasta-shapes/tagliatelle/) ai funghi porcini**: in late summer and autumn, when porcini are real, this is unbeatable.
+- **[Ravioli](/pasta-shapes/ravioli/) ricotta e spinaci, burro e salvia**: the gentle classic. Also look for *gnudi*, "naked" ravioli filling without the pasta, served the same way.
+
+If you want to know what you are looking at before you order, each of those links opens the shape in our [pasta shapes library](/pasta-shapes/): what it is, how wide it is cut, and the sauce it was built for.
 
 ## Where to look, neighbourhood by neighbourhood
 

@@ -12,12 +12,15 @@
 
 export const defaultLocale = 'en';
 
+// `dateLocale` is the BCP-47 tag passed to toLocaleDateString — deliberately
+// not derived from `htmlLang`, because English dates are formatted en-GB
+// ("8 July 2026") rather than en-US, and zh-CN is not `${code}-${CODE}`.
 export const languages = {
-  en: { label: 'English', dir: 'ltr', htmlLang: 'en', ogLocale: 'en_US' },
-  it: { label: 'Italiano', dir: 'ltr', htmlLang: 'it', ogLocale: 'it_IT' },
-  fr: { label: 'Français', dir: 'ltr', htmlLang: 'fr', ogLocale: 'fr_FR' },
-  de: { label: 'Deutsch', dir: 'ltr', htmlLang: 'de', ogLocale: 'de_DE' },
-  zh: { label: '中文', dir: 'ltr', htmlLang: 'zh-CN', ogLocale: 'zh_CN' },
+  en: { label: 'English', dir: 'ltr', htmlLang: 'en', ogLocale: 'en_US', dateLocale: 'en-GB' },
+  it: { label: 'Italiano', dir: 'ltr', htmlLang: 'it', ogLocale: 'it_IT', dateLocale: 'it-IT' },
+  fr: { label: 'Français', dir: 'ltr', htmlLang: 'fr', ogLocale: 'fr_FR', dateLocale: 'fr-FR' },
+  de: { label: 'Deutsch', dir: 'ltr', htmlLang: 'de', ogLocale: 'de_DE', dateLocale: 'de-DE' },
+  zh: { label: '中文', dir: 'ltr', htmlLang: 'zh-CN', ogLocale: 'zh_CN', dateLocale: 'zh-CN' },
 } as const;
 
 export type Locale = keyof typeof languages;

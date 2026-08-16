@@ -38,6 +38,19 @@ function englishPostSlugs(): string[] {
     .map((e) => e.name.replace(/\.md$/, ''));
 }
 
+/** Post slugs that exist for a locale, from its subdirectory. Empty if unshipped. */
+function localePostSlugs(locale: Locale): Set<string> {
+  try {
+    return new Set(
+      readdirSync(new URL(`${locale}/`, BLOG_DIR), { withFileTypes: true })
+        .filter((e) => e.isFile() && e.name.endsWith('.md'))
+        .map((e) => e.name.replace(/\.md$/, '')),
+    );
+  } catch {
+    return new Set();
+  }
+}
+
 /** Shape 1: /<locale>/<english-slug>/ → /<locale>/<translated-slug>/ */
 function landingRedirects(): Record<string, string> {
   const map: Record<string, string> = {};
@@ -65,7 +78,13 @@ function blogRedirects(): Record<string, string> {
 
   for (const locale of prefixedLocales) {
     map[`/blog/${locale}/`] = `/${locale}/blog/`;
+    // Only for posts that locale actually has. Posts no longer ship in all five
+    // languages, and the legacy URL only ever existed for translations that
+    // existed then — redirecting to an untranslated slug would 404, which is
+    // the exact failure this module was written to fix.
+    const translated = localePostSlugs(locale);
     for (const slug of slugs) {
+      if (!translated.has(slug)) continue;
       map[`/blog/${locale}/${slug}/`] = `/${locale}/blog/${slug}/`;
     }
   }

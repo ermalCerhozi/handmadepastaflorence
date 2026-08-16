@@ -417,6 +417,78 @@ const en: ShapesLocale = {
       ],
       compare: { dough: 'Egg dough, slightly thicker', cut: 'Filled square or half-moon', sauce: 'Butter & sage, light ragù' },
     },
+    // Fifth spoke, added Aug 2026. The comparison demand is real and already
+    // ranking: "differenza tra ravioli e tortelli" and ~15 variants sit at
+    // positions 5–12 in it/de/en with zero clicks, served only by the blog post.
+    // This is the library entry those queries deserve; the deep comparison
+    // stays in /blog/ravioli-vs-tortelli/ rather than being duplicated here.
+    {
+      slug: 'ravioli',
+      name: 'Ravioli',
+      h1Sub: 'Italy\'s filled parcel, and how Tuscany differs.',
+      tagline: 'The filled square everyone knows, sealed between two sheets.',
+      title: 'What Are Ravioli? Filling, Shape and How They Differ',
+      description:
+        'Ravioli are flat parcels of filled fresh pasta sealed between two sheets. What goes inside, how big they should be, and how they differ from tortelli, tortellini and agnolotti.',
+      image: {
+        src: img.shapeRavioli,
+        alt: 'Freshly made ravioli parcels cut with a wheel on a floured board',
+        w: 1000,
+        h: 625,
+      },
+      answer:
+        'Ravioli are flat parcels of fresh pasta: a mound of filling laid on one sheet of egg dough, a second sheet pressed over the top, the air worked out, and the whole thing sealed and cut into squares or rounds. Ravioli is the broad Italian term used everywhere; in Tuscany and Emilia the same idea, made larger, is called <em>tortelli</em>.',
+      facts: [
+        { label: 'From', value: 'all of Italy; the general term' },
+        { label: 'Dough', value: 'egg dough, rolled slightly thicker' },
+        { label: 'Classic filling', value: 'ricotta & spinach, nutmeg, parmesan' },
+        { label: 'Shape', value: 'square or round, two sheets sealed' },
+        { label: 'Size', value: 'about 4–5 cm; tortelli are larger' },
+        { label: 'Classic sauces', value: 'butter & sage, tomato, light ragù' },
+      ],
+      sections: [
+        {
+          title: 'Ravioli, tortelli, tortellini: which is which',
+          paras: [
+            'These three get confused constantly, and the confusion is understandable because two of them are nearly the same word. <strong>Ravioli</strong> is the general Italian term for a flat filled parcel sealed between two sheets, usually a square of about 4 to 5 cm. <strong>Tortelli</strong> is what the same idea is called in Tuscany and Emilia, and ours are typically larger, square or half-moon.',
+            '<strong>Tortellini</strong> are something else entirely: tiny rings, made by folding a small filled square around a fingertip and joining the ends, from Bologna, and served in broth rather than with sauce. Despite the ending, they are not small tortelli. The full family map is in our <a href="/blog/ravioli-vs-tortelli/">ravioli versus tortelli guide</a>.',
+          ],
+        },
+        {
+          title: 'What goes inside',
+          paras: [
+            'The filling most people picture is <strong>ricotta and spinach</strong>, seasoned with nutmeg and parmesan, and it is genuinely the most widespread. Meat, pumpkin (the Mantua version, with amaretti and mostarda, which divides opinion), mushroom and fish all have their regions and their seasons.',
+            'In Tuscany the answer is often potato, because that is what the Mugello fills its <a href="/pasta-shapes/tortelli/">tortelli</a> with. Whatever goes in, it has to be dry enough to hold together. A wet filling weeps into the dough and takes the seal with it, which is why ricotta should be drained and cooked spinach squeezed properly.',
+          ],
+        },
+        {
+          title: 'Sealing them so they survive the pot',
+          paras: [
+            'Roll the sheet a touch thicker than you would for ribbons: a filled shape has to survive being stuffed, sealed and boiled. Lay the filling in a line with real gaps between the mounds, because crowding them is what makes sealing impossible later. A teaspoon each is plenty.',
+            'Then the part that matters: lay the second sheet over and press down <em>around each mound with your fingertips</em>, working outwards so the air escapes rather than getting trapped. Trapped air expands in boiling water and that is what bursts a raviolo. Seal firmly, cut with a wheel, and run a finger round every edge before they go anywhere near the pan.',
+          ],
+        },
+      ],
+      faqs: [
+        {
+          q: 'What is the difference between ravioli and tortelli?',
+          a: 'Mostly size and region rather than technique. Ravioli is the broad national term for a flat filled parcel, usually a smaller square sealed between two sheets. Tortelli is what the same idea is called in Tuscany and Emilia, and they are typically larger. In Tuscany the classic filling is potato rather than ricotta.',
+        },
+        {
+          q: 'Are ravioli and tortellini the same?',
+          a: 'No. Tortellini are tiny rings folded around a fingertip and joined at the ends, from Bologna, traditionally served in broth. Ravioli are flat parcels sealed between two sheets and served with sauce. The similar name is a coincidence of Italian diminutives, not a family resemblance.',
+        },
+        {
+          q: 'What is one ravioli called?',
+          a: 'A raviolo. Ravioli is the plural, the same way panini is the plural of panino. The same applies to tortello and tortelli, and tortellino and tortellini.',
+        },
+        {
+          q: 'Why do my ravioli burst when I boil them?',
+          a: 'Almost always trapped air. Press the top sheet down around each mound of filling with your fingers and work the air outwards before sealing the edge. Under-sealed edges, overfilling and dough rolled too thin are the other three causes.',
+        },
+      ],
+      compare: { dough: 'Egg dough, slightly thicker', cut: 'Sealed square or round, 4–5 cm', sauce: 'Butter & sage, tomato, light ragù' },
+    },
   ],
 };
 
@@ -551,9 +623,12 @@ const it: ShapesLocale = {
       name: 'Pappardelle',
       h1Sub: 'Il nastro di pasta più largo della Toscana, spiegato.',
       tagline: 'Il nastro più largo, nato per cinghiale e lepre.',
-      title: 'Cosa Sono le Pappardelle? Il Nastro Toscano Spiegato da uno Chef | Handmade Pasta Florence',
+      // 132 impressions at position 8.24 and zero clicks (GSC, Aug 2026) — the
+      // old 90-char title truncated before anything useful. Leads with the
+      // query, then the two things people are actually asking: width and sauce.
+      title: 'Cosa Sono le Pappardelle? Larghezza, Origine e Sughi',
       description:
-        'Le pappardelle sono larghi nastri di sfoglia all\'uovo, 2–3 cm, fatti per i sughi di selvaggina come cinghiale e lepre. Uno chef di Firenze racconta il taglio, l\'impasto e gli abbinamenti classici.',
+        'Le pappardelle sono i nastri di sfoglia all\'uovo più larghi della Toscana: 2–3 cm, nati per i sughi di selvaggina. Quanto sono larghe davvero, da dove vengono e con cosa si condiscono.',
       image: {
         src: img.shapePappardelle,
         alt: 'Larghe pappardelle di pasta fresca all\'uovo su un tagliere infarinato',
@@ -685,9 +760,12 @@ const it: ShapesLocale = {
       name: 'Tortelli',
       h1Sub: 'La pasta ripiena della Toscana, spiegata.',
       tagline: 'La pasta ripiena, in Toscana, più spesso di patate.',
-      title: 'Cosa Sono i Tortelli? La Pasta Ripiena Toscana Spiegata da uno Chef | Handmade Pasta Florence',
+      // 51 impressions at position 12.73, zero clicks. The comparison intent is
+      // the volume here: "differenza tra ravioli e tortelli" and ten variants
+      // all rank top 12, so the title carries it rather than burying it.
+      title: 'Cosa Sono i Tortelli? Differenze con i Ravioli',
       description:
-        'I tortelli sono pasta fresca ripiena. In Toscana il ripieno classico è di patate, dal Mugello. Uno chef di Firenze racconta i ripieni, la chiusura e perché il condimento deve restare semplice.',
+        'I tortelli sono pasta ripiena: in Toscana quasi sempre di patate, dal Mugello. Che cosa li distingue dai ravioli, come si chiudono a mano e perché il condimento resta semplice.',
       image: {
         src: img.shapeTortelli,
         alt: 'Tortelli ripieni chiusi a mano disposti su un piano infarinato',
@@ -747,10 +825,484 @@ const it: ShapesLocale = {
       ],
       compare: { dough: 'Sfoglia all\'uovo, più spessa', cut: 'Ripieno quadrato o a mezzaluna', sauce: 'Burro e salvia, ragù leggero' },
     },
+    {
+      slug: 'ravioli',
+      name: 'Ravioli',
+      h1Sub: 'Il fagottino ripieno d\'Italia, e come cambia in Toscana.',
+      tagline: 'Il quadrato ripieno che conoscono tutti, sigillato tra due sfoglie.',
+      title: 'Cosa Sono i Ravioli? Ripieno, Forma e Differenze',
+      description:
+        'I ravioli sono fagottini piatti di pasta ripiena sigillati tra due sfoglie. Cosa ci va dentro, quanto devono essere grandi, e in cosa differiscono da tortelli, tortellini e agnolotti.',
+      image: {
+        src: img.shapeRavioli,
+        alt: 'Ravioli appena fatti tagliati con la rotella su un tagliere infarinato',
+        w: 1000,
+        h: 625,
+      },
+      answer:
+        'I ravioli sono fagottini piatti di pasta fresca: una nocciola di ripieno su una sfoglia all\'uovo, una seconda sfoglia sopra, l\'aria spinta fuori, il tutto sigillato e tagliato a quadrati o a tondi. Ravioli è il termine generale usato in tutta Italia; in Toscana e in Emilia la stessa idea, fatta più grande, si chiama <em>tortelli</em>.',
+      facts: [
+        { label: 'Da', value: 'tutta Italia; è il termine generale' },
+        { label: 'Impasto', value: 'sfoglia all\'uovo, un po\' più spessa' },
+        { label: 'Ripieno classico', value: 'ricotta e spinaci, noce moscata, parmigiano' },
+        { label: 'Forma', value: 'quadrata o tonda, due sfoglie sigillate' },
+        { label: 'Dimensione', value: 'circa 4–5 cm; i tortelli sono più grandi' },
+        { label: 'Condimenti classici', value: 'burro e salvia, pomodoro, ragù leggero' },
+      ],
+      sections: [
+        {
+          title: 'Ravioli, tortelli, tortellini: chi è chi',
+          paras: [
+            'Si confondono in continuazione, ed è comprensibile visto che due di questi nomi sono quasi la stessa parola. <strong>Ravioli</strong> è il termine generale italiano per un fagottino piatto sigillato tra due sfoglie, di solito un quadrato di 4–5 cm. <strong>Tortelli</strong> è come si chiama la stessa idea in Toscana e in Emilia, e i nostri sono in genere più grandi, quadrati o a mezzaluna.',
+            'I <strong>tortellini</strong> sono un\'altra cosa: anelli minuscoli, fatti piegando un quadratino ripieno attorno al polpastrello e unendo le punte, di Bologna, e vanno in brodo e non col sugo. Nonostante il suffisso, non sono tortelli piccoli. La mappa completa è nella nostra <a href="/it/blog/ravioli-vs-tortelli/">guida su ravioli e tortelli</a>.',
+          ],
+        },
+        {
+          title: 'Cosa ci va dentro',
+          paras: [
+            'Il ripieno che viene in mente a tutti è <strong>ricotta e spinaci</strong>, con noce moscata e parmigiano, ed è davvero il più diffuso. Carne, zucca (la versione mantovana, con amaretti e mostarda, che divide), funghi e pesce hanno tutti la loro regione e la loro stagione.',
+            'In Toscana la risposta è spesso la patata, perché è di quello che il Mugello riempie i suoi <a href="/it/formati-di-pasta-toscana/tortelli/">tortelli</a>. Qualunque cosa ci vada, deve essere abbastanza asciutta da stare insieme. Un ripieno bagnato bagna la sfoglia e si porta via la sigillatura: per questo la ricotta va scolata e gli spinaci cotti vanno strizzati bene.',
+          ],
+        },
+        {
+          title: 'Sigillarli perché reggano la cottura',
+          paras: [
+            'Tira la sfoglia un filo più spessa di quella per i nastri: una forma ripiena deve sopravvivere al ripieno, alla sigillatura e all\'acqua bollente. Disponi il ripieno in fila lasciando spazi veri tra una nocciola e l\'altra: ammassarle è ciò che rende impossibile sigillare dopo. Un cucchiaino ciascuna basta.',
+            'Poi la parte che conta: appoggia la seconda sfoglia e premi <em>attorno a ogni nocciola con i polpastrelli</em>, lavorando verso l\'esterno perché l\'aria esca invece di restare intrappolata. L\'aria intrappolata si espande nell\'acqua bollente ed è quella che apre un raviolo. Sigilla bene, taglia con la rotella e passa un dito su ogni bordo prima che si avvicinino alla pentola.',
+          ],
+        },
+      ],
+      faqs: [
+        {
+          q: 'Qual è la differenza tra ravioli e tortelli?',
+          a: 'Soprattutto dimensione e regione, più che tecnica. Ravioli è il termine generale per un fagottino piatto ripieno, di solito un quadrato più piccolo sigillato tra due sfoglie. Tortelli è come si chiama la stessa cosa in Toscana e in Emilia, e sono in genere più grandi. In Toscana il ripieno classico è di patate, non di ricotta.',
+        },
+        {
+          q: 'Ravioli e tortellini sono la stessa cosa?',
+          a: 'No. I tortellini sono anelli minuscoli piegati attorno al polpastrello e uniti alle estremità, di Bologna, tradizionalmente serviti in brodo. I ravioli sono fagottini piatti sigillati tra due sfoglie e serviti col sugo. La somiglianza dei nomi è una coincidenza di diminutivi, non una parentela.',
+        },
+        {
+          q: 'Come si chiama un raviolo solo?',
+          a: 'Raviolo. Ravioli è il plurale, come panino e panini. Lo stesso vale per tortello e tortelli, e per tortellino e tortellini.',
+        },
+        {
+          q: 'Perché i ravioli si aprono in cottura?',
+          a: 'Quasi sempre per l\'aria intrappolata. Premi la sfoglia superiore attorno a ogni nocciola di ripieno con le dita e spingi l\'aria verso l\'esterno prima di sigillare il bordo. Bordi sigillati male, troppo ripieno e sfoglia tirata troppo sottile sono le altre tre cause.',
+        },
+      ],
+      compare: { dough: 'Sfoglia all\'uovo, più spessa', cut: 'Quadrato o tondo sigillato, 4–5 cm', sauce: 'Burro e salvia, pomodoro, ragù leggero' },
+    },
   ],
 };
 
-export const shapes: Partial<Record<Locale, ShapesLocale>> = { en, it };
+// German, added Aug 2026. Germany is the best-converting large market (2.10%
+// CTR) and the shape queries are already ranking without a German page:
+// "was sind tortelli" at position 3.9 (and it converted), "was sind
+// pappardelle" 11.0, "was ist pappardelle" 12.0, "tortelli maremmani deutsch"
+// 9.5, plus twelve phrasings of "unterschied ravioli tortellini" at 4–12.
+const de: ShapesLocale = {
+  hubSlug: 'pasta-formen',
+  hubTitle: 'Pasta-Formen: Pici, Pappardelle, Tortelli & Ravioli',
+  hubDescription:
+    'Die Formen frischer Pasta, die wir in Florenz von Hand rollen: was jede ist, wie sie geformt wird und für welche Soße sie gemacht wurde. Mit Vergleichstabelle und Maßen in Millimetern.',
+  hubEyebrow: 'Die Formen-Bibliothek',
+  hubHeading: 'Fünf Formen,',
+  hubHeadingItal: 'fünf verschiedene Soßen.',
+  hubLede:
+    'Eine Form ist keine Dekoration. Jede einzelne wurde erfunden, um eine bestimmte Art von Soße zu halten, und sie zu vertauschen ist der Grund, warum ein Gericht manchmal ohne ersichtlichen Grund dünn schmeckt. Hier ist, was jede Form ist und wofür sie da ist.',
+  hubAnswer:
+    'Die fünf Formen frischer Pasta, die wir in unserer Küche in Florenz von Hand rollen, sind Pici, Pappardelle, Tagliatelle, Tortelli und Ravioli. Kurz gesagt:',
+  hubAnswerList: [
+    '<strong>Pici</strong>: dicke, von Hand gerollte Stränge aus Mehl und Wasser, ohne Ei. Sienas Pasta, gemacht für Knoblauchsoße und Wildschweinragù.',
+    '<strong>Pappardelle</strong>: das breiteste Band, 20–30 mm Eierteig. Gebaut für schwere Wildsoßen: Wildschwein, Hase, Ente.',
+    '<strong>Tagliatelle</strong>: das schmale Eierband, 6–8 mm. Das Alltagsband für Fleischragù und Pilze.',
+    '<strong>Tortelli</strong>: gefüllte Päckchen, in der Toskana meist mit Kartoffel oder Ricotta und Spinat. Schlicht angemacht, mit Butter und Salbei.',
+    '<strong>Ravioli</strong>: dieselbe Idee wie Tortelli, nur kleiner und mit dem landesweit gebräuchlichen Namen. Flach, zwischen zwei Teigbahnen versiegelt.',
+  ],
+  hubFaqs: [
+    {
+      q: 'Warum ist die Pastaform wichtig?',
+      a: 'Die Form entscheidet, wie viel Soße haften bleibt und wie sich die Pasta im Mund anfühlt. Ein dicker, rauer Strang wie Pici hält eine grobe Soße fest, die von einem glatten Band abrutschen würde; eine breite Pappardella gibt einem schweren Wildragù etwas zum Daraufsitzen. Die richtige Kombination ist der größte Teil des Unterschieds zwischen einem guten und einem faden Teller.',
+    },
+    {
+      q: 'Was ist der Unterschied zwischen Pappardelle und Tagliatelle?',
+      a: 'Die Breite, und damit der Zweck. Pappardelle werden 20–30 mm breit geschnitten und sind für schwere, grobe Wildsoßen wie Wildschwein oder Hase gemacht. Tagliatelle werden 6–8 mm geschnitten und passen zu feinerem Fleischragù und Pilzen. Gleicher Eierteig, andere Aufgabe.',
+    },
+    {
+      q: 'Was ist der Unterschied zwischen Ravioli und Tortelli?',
+      a: 'Vor allem Größe und Region. Ravioli ist der allgemeine italienische Begriff für ein flaches gefülltes Päckchen, meist ein kleineres Quadrat. Tortelli heißt dieselbe Sache in der Toskana und der Emilia, und sie sind in der Regel größer. Tortellini dagegen sind etwas anderes: winzige Ringe aus Bologna, die in die Brühe kommen.',
+    },
+    {
+      q: 'Welche toskanische Pastaform lässt sich am leichtesten von Hand machen?',
+      a: 'Pici, weil weder Nudelholz noch Maschine nötig sind: Sie schneiden einen Teigstreifen ab und rollen ihn unter den Handflächen. Sie ist auch die nachsichtigste Form, denn Pici sollen ungleichmäßig sein, und die krummen halten die Soße besser.',
+    },
+    {
+      q: 'Braucht man Eier für frische Pasta?',
+      a: 'Nein. Pici werden nur aus Mehl, Wasser und etwas Olivenöl gemacht, die Pasta der armen Küche Mittelitaliens. Bänder wie Tagliatelle und Pappardelle sowie gefüllte Formen wie Tortelli brauchen dagegen einen Eierteig für Elastizität und Geschmack.',
+    },
+  ],
+  labels: {
+    home: 'Startseite',
+    hubCrumb: 'Pasta-Formen',
+    tableHeading: 'Im Vergleich',
+    colShape: 'Form',
+    colDough: 'Teig',
+    colCut: 'Schnitt',
+    colSauce: 'Gemacht für',
+    readMore: 'Zur Form',
+    backToHub: 'Alle Pasta-Formen',
+    faqHeading: 'Fragen, beantwortet.',
+    ctaHeading: 'Rollen Sie sie selbst.',
+    ctaBody:
+      'Wir unterrichten diese Formen in einem dreistündigen Kurs in unserer Küche im Oltrarno: ab der ersten Minute die Hände im Mehl, danach setzen sich alle hin und essen, was sie gemacht haben. Max. 8 Gäste, 95 €.',
+    ctaButton: 'Pasta-Kurs buchen',
+    ctaLink: 'Zum Kurs',
+    guideHeading: 'Tiefer einsteigen',
+    guideBody: 'Unser ausführlicher Guide zu den frischen Pastatraditionen der Toskana: woher jede Form kommt und warum die Region so kocht, wie sie kocht.',
+    guideLink: 'Zum Guide der toskanischen Pasta',
+  },
+  classHref: '/de/pasta-kurs-florenz/',
+  guideHref: '/de/blog/tuscan-pasta-shapes-guide/',
+  spokes: [
+    {
+      slug: 'pici',
+      name: 'Pici',
+      h1Sub: 'Die von Hand gerollte Pasta der Toskana, erklärt.',
+      tagline: 'Sienas dicker handgerollter Strang: Mehl, Wasser, kein Ei.',
+      title: 'Was sind Pici? Sienas handgerollte Pasta, erklärt',
+      description:
+        'Pici sind eine dicke, von Hand gerollte toskanische Pasta aus Mehl und Wasser, ohne Ei. Ein Pasta-Koch aus Florenz über Herkunft, Rolltechnik und die vier Soßen, die dazugehören.',
+      image: {
+        src: img.shapePici,
+        alt: 'Dicke handgerollte Pici-Stränge mit Mehl bestäubt auf einem Holzbrett',
+        w: 1000,
+        h: 625,
+      },
+      answer:
+        'Pici sind eine dicke, von Hand gerollte Pasta aus der südlichen Toskana, gemacht aus nichts als Mehl, Wasser und etwas Olivenöl, ohne Ei. Jeder Strang wird unter den Handflächen ausgerollt statt mit Messer oder Maschine geschnitten, weshalb keine zwei gleich dick sind und die Oberfläche rau genug bleibt, um eine schwere Soße zu greifen.',
+      facts: [
+        { label: 'Herkunft', value: 'Siena und das Val d\'Orcia' },
+        { label: 'Teig', value: 'Mehl, Wasser, Olivenöl; kein Ei' },
+        { label: 'Gemacht durch', value: 'Rollen unter den Handflächen' },
+        { label: 'Dicke', value: 'etwa 3 mm, bewusst ungleichmäßig' },
+        { label: 'Klassische Soßen', value: 'Aglione, Wildschwein, Cacio e pepe, Briciole' },
+        { label: 'Schwierigkeit', value: 'die nachsichtigste Form zum Lernen' },
+      ],
+      sections: [
+        {
+          title: 'Woher Pici kommen',
+          paras: [
+            'Pici gehören in die Hügel südlich von Siena, ins Val d\'Orcia, nach Montalcino und Montepulciano, und sie sind alt. In einem etruskischen Grab in Tarquinia gibt es ein Fresko, das etwas sehr Ähnliches zu zeigen scheint, wovon Einheimische ausführlich und mit großer Überzeugung berichten.',
+            'Sicher ist: Pici sind Arme-Leute-Essen. Kein Ei, weil Eier Geld wert waren und auf den Markt gingen. Nur das billigste Mehl, Wasser aus dem Hahn und das eine, was jeder Bauernhof hatte: Zeit und ein Paar Hände. Das ist das ganze Rezept, und deshalb hat die Form überlebt: Man kann sie aus nichts machen.',
+          ],
+        },
+        {
+          title: 'Wie sie gerollt werden',
+          paras: [
+            'Sie rollen eine etwa zentimeterdicke Teigplatte aus, schneiden sie in Streifen und arbeiten dann jeden Streifen unter den flachen Handflächen von der Mitte nach außen, bis er sich zu einem langen, dicken Strang dehnt. Das Verb heißt <em>appiciare</em>, und daher kommt der Name.',
+            'Der Fehler, den am Anfang alle machen, ist zu fest zu drücken, wodurch der Strang zu einem Band plattgedrückt wird statt rund zu werden. Der zweite Fehler ist das Streben nach Perfektion. Pici sollen ungleichmäßig sein: die dicken und dünnen Stellen sind der Charakter des Gerichts, und eine raue, leicht unregelmäßige Oberfläche hält Soße weit besser als jede glatt extrudierte.',
+          ],
+        },
+        {
+          title: 'Was darauf gehört',
+          paras: [
+            'Vier Soßen verdienen den Namen. <strong>Aglione</strong>, eine langsam gekochte Tomaten-Knoblauch-Soße auf Basis des riesigen, milden toskanischen Aglione-Knoblauchs, ist die definitive; bestellen Sie südlich von Siena überall <em>pici all\'aglione</em>. <strong>Ragù di cinghiale</strong>, Wildschwein, ist die Herbstversion und der Grund, warum Pici dick genug sind, um standzuhalten.',
+            '<strong>Cacio e pepe</strong> funktioniert wunderbar, weil die raue Oberfläche den Käse greift, und <strong>pici alle briciole</strong> (geröstete Semmelbrösel, Knoblauch, Öl) ist die älteste und ärmste davon und ganz nebenbei eines der besten Dinge der toskanischen Küche. Was Sie auf echten Pici nicht finden werden, ist Sahne.',
+          ],
+        },
+      ],
+      faqs: [
+        {
+          q: 'Woraus bestehen Pici?',
+          a: 'Aus Mehl, Wasser und meist etwas Olivenöl. Kein Ei: das ist das entscheidende Merkmal und der Grund, warum sie für Bauernfamilien in der südlichen Toskana bezahlbar waren.',
+        },
+        {
+          q: 'Sind Pici dasselbe wie dicke Spaghetti?',
+          a: 'Nein. Spaghetti werden durch eine Form extrudiert und kommen perfekt rund, gleichmäßig und glatt heraus. Pici werden von Hand gerollt, sind also über ihre Länge ungleichmäßig und leicht rau an der Oberfläche, was verändert, wie viel Soße daran haften bleibt.',
+        },
+        {
+          q: 'Welche Soße passt zu Pici?',
+          a: 'Traditionell vier: Aglione (Tomate und süßer toskanischer Knoblauch), Wildschweinragù, Cacio e pepe und Briciole, geröstete Semmelbrösel mit Knoblauch und Öl. Alle vier sind gewählt, weil sie an einem dicken, rauen Strang haften.',
+        },
+        {
+          q: 'Sind Pici schwer selbst zu machen?',
+          a: 'Sie sind die einfachste frische Pasta für den Anfang, weil weder Maschine noch Nudelholz nötig sind, nur Hände und ein Brett. Sie sind eher langsam als schwierig: genug Pici für vier Personen zu rollen dauert eine Weile, und genau deshalb war es Arbeit für die ganze Familie.',
+        },
+      ],
+      compare: { dough: 'Mehl und Wasser, kein Ei', cut: 'Von Hand gerollt, ~3 mm', sauce: 'Aglione, Wildschwein, Cacio e pepe' },
+    },
+    {
+      slug: 'pappardelle',
+      name: 'Pappardelle',
+      h1Sub: 'Das breiteste Pastaband der Toskana, erklärt.',
+      tagline: 'Das breiteste Band, gebaut für Wildschwein und Hase.',
+      title: 'Was sind Pappardelle? Breite, Herkunft und Soßen',
+      description:
+        'Pappardelle sind breite Bandnudeln aus Eierteig, 20–30 mm breit, gemacht für schwere Wildsoßen wie Wildschwein und Hase. Ein Pasta-Koch aus Florenz über Schnitt, Teig und die klassischen Kombinationen.',
+      image: {
+        src: img.shapePappardelle,
+        alt: 'Breite Pappardelle aus frischem Eierteig auf einem bemehlten Holzbrett',
+        w: 1000,
+        h: 625,
+      },
+      answer:
+        'Pappardelle sind das breiteste frische Pastaband des toskanischen Repertoires: flache Streifen Eierteig, 20 bis 30 Millimeter breit geschnitten. Die Breite ist keine Angeberei, sondern Zweck: Eine schwere, grobe Wildsoße braucht etwas, das breit genug ist, um darauf sitzen zu bleiben statt abzurutschen.',
+      facts: [
+        { label: 'Herkunft', value: 'Toskana' },
+        { label: 'Teig', value: 'Eierteig: Mehl und Ei' },
+        { label: 'Breite', value: '20–30 mm' },
+        { label: 'Name von', value: 'pappare, kräftig zulangen' },
+        { label: 'Klassische Soßen', value: 'Wildschwein, Hase, Ente, Steinpilze' },
+        { label: 'Schwierigkeit', value: 'einfachstes Band: der breite Schnitt verzeiht am meisten' },
+      ],
+      sections: [
+        {
+          title: 'Ein Name, der sagt, wie man sie isst',
+          paras: [
+            'Das Wort kommt von <em>pappare</em>, einem unverblümten toskanischen Verb für kräftig zulangen oder verschlingen. Es ist kein feiner Name und es ist keine feine Pasta. Pappardelle serviert man, wenn die Soße seit dem Morgen auf dem Herd steht und alle hungrig sind.',
+            'Sie sind speziell das Band der toskanischen Hügel: Während Tagliatelle zur Emilia und nach Bologna gehören, ist Pappardelle das, was im Herbst aus einer toskanischen Küche kommt, wenn die Jagdsaison beginnt und Wild zu verarbeiten ist.',
+          ],
+        },
+        {
+          title: 'Wie sie geschnitten werden',
+          paras: [
+            'Der Teig ist ein normaler frischer Eierteig, dünn ausgerollt: dünn genug, um den Schatten der eigenen Hand hindurch zu sehen, aber nicht dünner, denn ein breites Band muss Gewicht tragen. Dann bemehlen Sie die Bahn, rollen sie locker auf und schneiden quer durch die Rolle, 20 bis 30 Millimeter breit.',
+            'Weil der Schnitt so breit ist, sind Pappardelle das nachsichtigste Band zum Lernen: eine wacklige Linie fällt bei 3 cm weit weniger auf als bei 6 mm. Sie garen außerdem schnell, zwei bis drei Minuten in gut gesalzenem Wasser, und müssen direkt in die Pfanne zur Soße, niemals in eine Schüssel zum Warten.',
+          ],
+        },
+        {
+          title: 'Was darauf gehört',
+          paras: [
+            '<strong>Ragù di cinghiale</strong> (Wildschwein, langsam geschmort mit Rotwein, Wacholder und Tomate) ist die Kombination, die diese Form berühmt gemacht hat, und sie bleibt die richtige Antwort. <strong>Lepre</strong>, Hase, ist die ältere und reichere Version und die, für die sich ein alter toskanischer Koch entscheiden würde, wenn er ihn bekommt.',
+            'Über Wild hinaus vertragen Pappardelle wunderbar <strong>Entenragù</strong> und <strong>Steinpilze</strong> in den wenigen Wochen im Jahr, in denen die Pilze etwas taugen. Die Regel ist einfach: Wenn die Soße schwer und grob ist und stundenlang gekocht hat, will sie diese Form.',
+          ],
+        },
+      ],
+      faqs: [
+        {
+          q: 'Wie breit sind Pappardelle?',
+          a: 'Pappardelle werden 20 bis 30 mm breit geschnitten, also zwei bis drei Zentimeter, etwa zwei Fingerbreit. Unterhalb von rund 15 mm sind es keine Pappardelle mehr, sondern breite Tagliatelle.',
+        },
+        {
+          q: 'Was ist der Unterschied zwischen Pappardelle und Tagliatelle?',
+          a: 'Breite und Herkunft. Pappardelle werden 20–30 mm breit geschnitten und sind toskanisch, gemacht für schwere Wildsoßen wie Wildschwein und Hase. Tagliatelle werden 6–8 mm geschnitten, gehören zur Emilia-Romagna und passen zu feinerem Fleischragù und Pilzen. Der Teig ist in beiden Fällen derselbe.',
+        },
+        {
+          q: 'Welche Soße ist zu Pappardelle traditionell?',
+          a: 'Wildschweinragù (ragù di cinghiale) ist die klassische toskanische Kombination, mit Hase (lepre) als älterer und reicherer Alternative. Entenragù und frische Steinpilze sind die beiden anderen, die auf einer guten Karte in Florenz stehen.',
+        },
+        {
+          q: 'Wie lange brauchen frische Pappardelle?',
+          a: 'Zwei bis drei Minuten in reichlich gut gesalzenem kochendem Wasser, dann direkt in die Pfanne zur Soße. Frische Pasta gart weit schneller als getrocknete.',
+        },
+      ],
+      compare: { dough: 'Eierteig', cut: 'Flaches Band, 20–30 mm', sauce: 'Wildschwein, Hase, Ente, Steinpilze' },
+    },
+    {
+      slug: 'tagliatelle',
+      name: 'Tagliatelle',
+      h1Sub: 'Das Alltagsband aus Eierteig, erklärt.',
+      tagline: 'Das Alltagsband, 6–8 mm, der natürliche Partner des Ragù.',
+      title: 'Was sind Tagliatelle? Breite, Schnitt und Soßen',
+      description:
+        'Tagliatelle sind frische Bandnudeln aus Eierteig, 6–8 mm breit geschnitten, der natürliche Partner eines Fleischragù. Ein Pasta-Koch aus Florenz über den Schnitt und den Unterschied zu Fettuccine und Pappardelle.',
+      image: {
+        src: img.shapeTagliatelle,
+        alt: 'Nester frischer Tagliatelle auf einem bemehlten Brett',
+        w: 1000,
+        h: 625,
+      },
+      answer:
+        'Tagliatelle sind flache Bänder frischer Eierpasta, etwa 6 bis 8 Millimeter breit geschnitten. Sie sind das Alltagsband Nord- und Mittelitaliens: schmal genug, um sie auf die Gabel zu drehen, breit genug, um ein richtiges Fleischragù zu tragen, weshalb sie die Form sind, die den meisten Menschen bei frischer Pasta zuerst einfällt.',
+      facts: [
+        { label: 'Herkunft', value: 'Emilia-Romagna, überall in der Toskana gemacht' },
+        { label: 'Teig', value: 'Eierteig: Mehl und Ei' },
+        { label: 'Breite', value: '6–8 mm' },
+        { label: 'Name von', value: 'tagliare, schneiden' },
+        { label: 'Klassische Soßen', value: 'Ragù, Pilze, Butter und Kräuter' },
+        { label: 'Schwierigkeit', value: 'der Schnitt, der Messerführung lehrt' },
+      ],
+      sections: [
+        {
+          title: 'Das Band, an dem alles andere gemessen wird',
+          paras: [
+            'Tagliatelle kommen aus Bologna, wo die Breite ernst genug genommen wird, dass die örtliche Handelskammer einmal ein Referenzmaß hinterlegt hat, um Streitigkeiten zu beenden. Acht Millimeter gekocht ist der bolognesische Standard. In einer toskanischen Küche misst niemand nach, aber das Ziel ist dasselbe.',
+            'Die Toskana kocht sie ständig, ungeachtet ihrer Herkunft, weil sie das nützliche Band sind: breit genug für eine substanzielle Soße, schmal genug, um sie ohne Kampf zu essen, und schnell genug für einen Dienstagabend statt für einen Anlass.',
+          ],
+        },
+        {
+          title: 'Wie sie geschnitten werden',
+          paras: [
+            'Rollen Sie den Eierteig zu einer dünnen Bahn, lassen Sie sie ein paar Minuten trocknen, bis sie ledrig statt klebrig ist (das ist der Schritt, den alle überspringen, und der Grund, warum ihre Bänder zusammenkleben), bemehlen Sie sie großzügig, rollen Sie sie locker flach auf und schneiden Sie quer mit einem scharfen Messer.',
+            'Dann heben Sie jeden Schnitt sofort an und schütteln ihn locker. In der Rolle liegen gelassen verschweißen Bänder innerhalb von Minuten zu einem Ziegel. Wenden Sie sie in etwas Hartweizengrieß und legen Sie sie in lockeren Nestern ab, bis das Wasser kocht. Tagliatelle sind die Form, die Messerführung lehrt, denn bei 6 mm fällt ein wandernder Schnitt auf, wie er es bei Pappardelle nie tut.',
+          ],
+        },
+        {
+          title: 'Was darauf gehört',
+          paras: [
+            'Ein richtiges <strong>Ragù</strong> (langsam geschmortes Rinder- und Schweinehack mit Soffritto, Wein und sehr wenig Tomate) ist die Kombination, und in Bologna die einzige, zu der sich jemand bekennen wird. Beachten Sie, womit es nicht serviert wird: Spaghetti. Das ist eine ausländische Erfindung, und man wird Sie darauf hinweisen.',
+            'Über das Ragù hinaus sind Tagliatelle hervorragend mit <strong>Pilzen</strong>, mit Butter und Salbei, wenn es leise sein soll, und mit einfacher <strong>Tomate und Basilikum</strong>, wenn die Tomaten wirklich gut sind. Das Band ist schmal genug, dass auch eine leichte Soße es noch richtig überzieht.',
+          ],
+        },
+      ],
+      faqs: [
+        {
+          q: 'Wie breit sind Tagliatelle?',
+          a: 'Tagliatelle werden 6 bis 8 mm breit geschnitten. Bei der Handelskammer in Bologna liegt ein Messingmaß, das die ideale gekochte Tagliatella auf 8 mm festlegt, was bedeutet, dass man roh bei etwa 6 bis 7 mm schneidet, weil Eierteig im Topf aufquillt.',
+        },
+        {
+          q: 'Was ist der Unterschied zwischen Tagliatelle und Fettuccine?',
+          a: 'Region und Maße. Tagliatelle kommen aus der Emilia-Romagna, sind rund 6–8 mm breit und sehr dünn. Fettuccine sind römisch, etwas schmaler geschnitten, aber deutlich dicker. In der Praxis sind sie nahe Verwandte und werden außerhalb Italiens oft austauschbar verwendet.',
+        },
+        {
+          q: 'Warum kleben meine Tagliatelle zusammen?',
+          a: 'Fast immer, weil die Teigbahn beim Schneiden noch klebrig war oder die Bänder nach dem Schneiden aufgerollt liegen blieben. Lassen Sie die Bahn zuerst ledrig antrocknen, bemehlen Sie gut und schütteln Sie jeden Schnitt locker, sobald er vom Messer kommt.',
+        },
+        {
+          q: 'Wie dünn sollte der Teig sein?',
+          a: 'Dünn genug, um die Form Ihrer Hand hindurch zu sehen, aber nicht so dünn, dass er beim Anheben reißt. Für Bänder ist das dünner, als Sie für gefüllte Formen ausrollen würden, weil keine Füllung schützt.',
+        },
+      ],
+      compare: { dough: 'Eierteig', cut: 'Flaches Band, 6–8 mm', sauce: 'Fleischragù, Pilze, Butter' },
+    },
+    {
+      slug: 'tortelli',
+      name: 'Tortelli',
+      h1Sub: 'Die gefüllte Pasta der Toskana, erklärt.',
+      tagline: 'Das gefüllte Päckchen, in der Toskana meist mit Kartoffel.',
+      title: 'Was sind Tortelli? Füllung, Form und Unterschiede',
+      description:
+        'Tortelli sind gefüllte Päckchen aus frischer Pasta. In der Toskana ist die klassische Füllung Kartoffel, aus dem Mugello. Ein Pasta-Koch aus Florenz über Füllungen, das Falten und den Unterschied zu Ravioli und Tortellini.',
+      image: {
+        src: img.shapeTortelli,
+        alt: 'Von Hand gefaltete gefüllte Tortelli auf einer bemehlten Fläche',
+        w: 1000,
+        h: 625,
+      },
+      answer:
+        'Tortelli sind gefüllte Päckchen aus frischer Eierpasta: eine Teigbahn, ein Löffel Füllung, eine zweite Bahn darübergelegt und ringsum versiegelt. Die toskanische Signaturvariante sind <em>tortelli di patate</em>, gefüllt mit gewürzter Kartoffel statt mit Ricotta und Spinat, und sie kommen aus dem Mugello nördlich von Florenz.',
+      facts: [
+        { label: 'Herkunft', value: 'Mugello, nördlich von Florenz' },
+        { label: 'Teig', value: 'Eierteig, etwas dicker ausgerollt' },
+        { label: 'Klassische Füllung', value: 'Kartoffel; auch Ricotta und Spinat' },
+        { label: 'Form', value: 'Quadrat oder Halbmond, von Hand versiegelt' },
+        { label: 'Klassische Soßen', value: 'Butter und Salbei, Fleischragù, Pilze' },
+        { label: 'Schwierigkeit', value: 'die Form, die die meiste Geduld verlangt' },
+      ],
+      sections: [
+        {
+          title: 'Die toskanische Füllung ist Kartoffel',
+          paras: [
+            'Bestellen Sie Tortelli im Mugello, dem hügeligen Land nördlich von Florenz, und was kommt, ist mit Kartoffel gefüllt, zerstampft mit Knoblauch, Petersilie, etwas Tomate und Parmesan, ordentlich gewürzt und manchmal mit Muskatnuss gehoben. Es überrascht alle, die Ricotta erwarten, und es ist eines der wirklich großen Regionalgerichte der Toskana.',
+            'Der Grund ist der übliche: Kartoffeln wuchsen dort oben gut und Fleisch reichte nicht weit. Die andere toskanische Version, <em>tortelli maremmani</em>, verwendet Ricotta und Spinat und kommt aus der Maremma an der Küste. Beide sind richtig; sie stammen schlicht aus verschiedenen Tälern.',
+          ],
+        },
+        {
+          title: 'Wie sie gefaltet werden',
+          paras: [
+            'Rollen Sie die Bahn etwas dicker aus als für Bänder: Der Teig muss das Füllen, Versiegeln und Kochen überstehen, ohne aufzureißen. Legen Sie löffelweise Füllung in einer Reihe aus, mit ordentlichen Abständen, dann die zweite Bahn darüber und <em>rund um jedes Häufchen mit den Fingern andrücken</em>, sodass die Luft zum Rand hin entweicht, bevor Sie versiegeln.',
+            'Eingeschlossene Luft ist es, die einen Tortello im Wasser platzen lässt, und sie ist der mit Abstand häufigste Fehler. Fest versiegeln, mit dem Rädchen schneiden und jeden Rand prüfen. Das ist die Form, die Menschen, die Freude daran haben, von Menschen in Eile trennt, und die, auf die unsere Gäste am Ende eines Kurses am stolzesten sind.',
+          ],
+        },
+        {
+          title: 'Was darauf gehört',
+          paras: [
+            'Sehr wenig, und das ist der Punkt. <strong>Butter und Salbei</strong> (aufgeschäumt, bis es nussig zu riechen beginnt, mit ein paar knusprigen Salbeiblättern) ist der Klassiker, und er ist schwer zu übertreffen. Ein zurückhaltendes <strong>Fleischragù</strong> ist die Sonntagsversion des Mugello.',
+            'Was Tortelli ruiniert, ist eine Soße, die mit der Füllung konkurriert. Sie haben gerade eine Stunde damit verbracht, den Geschmack nach innen zu legen; begraben Sie ihn nicht. Im Zweifel: Butter, Salbei und geriebener Parmesan.',
+          ],
+        },
+      ],
+      faqs: [
+        {
+          q: 'Was sind Tortelli?',
+          a: 'Tortelli sind gefüllte Päckchen aus frischer Eierpasta, zwischen zwei Teigbahnen versiegelt, quadratisch oder als Halbmond. Sie sind größer als Ravioli und in der Toskana und der Emilia zu Hause. Die toskanische Klassikerfüllung ist Kartoffel, nicht Ricotta.',
+        },
+        {
+          q: 'Was ist der Unterschied zwischen Tortelli, Tortellini und Ravioli?',
+          a: 'Größe und Form, nicht das Prinzip: alle drei sind gefüllte Pasta. Tortelli sind die größeren quadratischen oder halbmondförmigen Päckchen aus der Toskana und der Emilia; Tortellini sind kleine Ringe aus Bologna, die in die Brühe kommen; Ravioli ist der allgemeine Begriff, meist ein kleineres Quadrat.',
+        },
+        {
+          q: 'Womit werden toskanische Tortelli gefüllt?',
+          a: 'Im Mugello nördlich von Florenz mit gewürzter Kartoffel, Knoblauch, Petersilie und Parmesan. In der Maremma an der Küste mit Ricotta und Spinat. Beides sind traditionelle toskanische Füllungen aus verschiedenen Teilen der Region.',
+        },
+        {
+          q: 'Warum platzen meine Tortelli beim Kochen?',
+          a: 'Eingeschlossene Luft, fast immer. Drücken Sie die obere Bahn mit den Fingern rund um jedes Füllungshäufchen an und arbeiten Sie die Luft nach außen, bevor Sie den Rand versiegeln. Schlecht versiegelte Ränder und zu dünn ausgerollter Teig sind die beiden anderen Ursachen.',
+        },
+      ],
+      compare: { dough: 'Eierteig, etwas dicker', cut: 'Gefülltes Quadrat oder Halbmond', sauce: 'Butter und Salbei, leichtes Ragù' },
+    },
+    {
+      slug: 'ravioli',
+      name: 'Ravioli',
+      h1Sub: 'Italiens gefülltes Päckchen, und wie die Toskana abweicht.',
+      tagline: 'Das gefüllte Quadrat, das alle kennen, zwischen zwei Bahnen versiegelt.',
+      title: 'Was sind Ravioli? Unterschied zu Tortelli & Tortellini',
+      description:
+        'Ravioli sind flache gefüllte Pastapäckchen, zwischen zwei Teigbahnen versiegelt. Was hineinkommt, wie groß sie sein sollten und worin sie sich von Tortelli, Tortellini und Agnolotti unterscheiden.',
+      image: {
+        src: img.shapeRavioli,
+        alt: 'Frisch gemachte Ravioli, mit dem Rädchen geschnitten, auf einem bemehlten Brett',
+        w: 1000,
+        h: 625,
+      },
+      answer:
+        'Ravioli sind flache Päckchen aus frischer Pasta: ein Häufchen Füllung auf einer Bahn Eierteig, eine zweite Bahn darüber, die Luft herausgearbeitet, das Ganze versiegelt und in Quadrate oder Kreise geschnitten. Ravioli ist der allgemeine italienische Begriff; in der Toskana und der Emilia heißt dieselbe Idee, etwas größer gemacht, <em>Tortelli</em>.',
+      facts: [
+        { label: 'Herkunft', value: 'ganz Italien; der allgemeine Begriff' },
+        { label: 'Teig', value: 'Eierteig, etwas dicker ausgerollt' },
+        { label: 'Klassische Füllung', value: 'Ricotta und Spinat, Muskat, Parmesan' },
+        { label: 'Form', value: 'quadratisch oder rund, zwei Bahnen versiegelt' },
+        { label: 'Größe', value: 'etwa 4–5 cm; Tortelli sind größer' },
+        { label: 'Klassische Soßen', value: 'Butter und Salbei, Tomate, leichtes Ragù' },
+      ],
+      sections: [
+        {
+          title: 'Ravioli, Tortelli, Tortellini: wer ist wer',
+          paras: [
+            'Diese drei werden ständig verwechselt, und das ist verständlich, weil zwei davon fast dasselbe Wort sind. <strong>Ravioli</strong> ist der allgemeine italienische Begriff für ein flaches gefülltes Päckchen zwischen zwei Bahnen, meist ein Quadrat von etwa 4 bis 5 cm. <strong>Tortelli</strong> heißt dieselbe Idee in der Toskana und der Emilia, und unsere sind in der Regel größer, quadratisch oder als Halbmond.',
+            '<strong>Tortellini</strong> sind etwas ganz anderes: winzige Ringe, entstanden durch das Falten eines kleinen gefüllten Quadrats um eine Fingerkuppe und das Verbinden der Enden, aus Bologna, und sie kommen in die Brühe statt an die Soße. Trotz der Endung sind sie keine kleinen Tortelli. Die vollständige Karte steht in unserem <a href="/de/blog/ravioli-vs-tortelli/">Guide zu Ravioli und Tortelli</a>.',
+          ],
+        },
+        {
+          title: 'Was hineinkommt',
+          paras: [
+            'Die Füllung, die den meisten vor Augen steht, ist <strong>Ricotta und Spinat</strong>, gewürzt mit Muskatnuss und Parmesan, und sie ist tatsächlich die verbreitetste. Fleisch, Kürbis (die Mantuaner Version mit Amaretti und Mostarda, an der sich die Geister scheiden), Pilze und Fisch haben alle ihre Region und ihre Saison.',
+            'In der Toskana lautet die Antwort oft Kartoffel, weil das Mugello genau damit seine <a href="/de/pasta-formen/tortelli/">Tortelli</a> füllt. Was auch hineinkommt, es muss trocken genug sein, um zusammenzuhalten. Eine nasse Füllung weicht den Teig auf und nimmt die Versiegelung mit, weshalb Ricotta abtropfen und gekochter Spinat gut ausgedrückt werden sollte.',
+          ],
+        },
+        {
+          title: 'So versiegeln, dass sie den Topf überstehen',
+          paras: [
+            'Rollen Sie die Bahn eine Spur dicker aus als für Bänder: Eine gefüllte Form muss das Füllen, Versiegeln und Kochen überstehen. Legen Sie die Füllung in einer Reihe mit echten Abständen zwischen den Häufchen aus, denn sie zu dicht zu setzen macht das Versiegeln später unmöglich. Ein Teelöffel je Häufchen reicht.',
+            'Dann der Teil, auf den es ankommt: die zweite Bahn darüberlegen und <em>rund um jedes Häufchen mit den Fingerkuppen andrücken</em>, nach außen arbeitend, damit die Luft entweicht statt eingeschlossen zu werden. Eingeschlossene Luft dehnt sich im kochenden Wasser aus, und genau das lässt einen Raviolo platzen. Fest versiegeln, mit dem Rädchen schneiden und vor dem Kochen einen Finger über jeden Rand führen.',
+          ],
+        },
+      ],
+      faqs: [
+        {
+          q: 'Was ist der Unterschied zwischen Ravioli und Tortellini?',
+          a: 'Die Faltung und der Teller. Tortellini sind winzige Ringe: ein kleines gefülltes Quadrat wird um eine Fingerkuppe gefaltet und an den Enden verbunden. Sie kommen aus Bologna und gehören in Brühe. Ravioli sind flache Päckchen, zwischen zwei Teigbahnen versiegelt, deutlich größer und werden mit Sauce serviert.',
+        },
+        {
+          q: 'Was ist der Unterschied zwischen Ravioli und Tortelli?',
+          a: 'Vor allem Größe und Region, weniger die Technik. Ravioli ist der landesweite Begriff für ein flaches gefülltes Päckchen, meist ein kleineres Quadrat. Tortelli heißt dieselbe Idee in der Toskana und der Emilia, und sie sind in der Regel größer. In der Toskana ist die klassische Füllung Kartoffel statt Ricotta.',
+        },
+        {
+          q: 'Sind Tortellini kleine Tortelli?',
+          a: 'Nein, obwohl die Endung -ini im Italienischen genau das nahelegt. Tortelli sind flache gefüllte Päckchen aus der Toskana und der Emilia. Tortellini sind gefaltete Ringe aus Bologna. Ähnlicher Name, andere Form, andere Stadt.',
+        },
+        {
+          q: 'Warum platzen meine Ravioli beim Kochen?',
+          a: 'Fast immer wegen eingeschlossener Luft. Drücken Sie die obere Teigbahn mit den Fingern rund um jedes Füllungshäufchen an und arbeiten Sie die Luft nach außen, bevor Sie den Rand versiegeln. Schlecht versiegelte Ränder, zu viel Füllung und zu dünn ausgerollter Teig sind die drei anderen Ursachen.',
+        },
+      ],
+      compare: { dough: 'Eierteig, etwas dicker', cut: 'Versiegeltes Quadrat oder rund, 4–5 cm', sauce: 'Butter und Salbei, Tomate, leichtes Ragù' },
+    },
+  ],
+};
+
+export const shapes: Partial<Record<Locale, ShapesLocale>> = { en, it, de };
 
 /** URL of the hub for a locale — falls back to the English hub where unshipped. */
 export function shapesHubPath(locale: Locale): string {

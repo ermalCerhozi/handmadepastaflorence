@@ -10,6 +10,10 @@ faqs:
     a: "Soprattutto taglia e regione, più che tecnica. Ravioli è il termine generale, nazionale, per la pasta ripiena: di solito un quadrato più piccolo sigillato tra due sfoglie. Tortelli è come si chiama la stessa idea in Toscana e in Emilia, e in genere sono più grandi: un quadrato o una mezzaluna. In Toscana il ripieno classico è di patate, non di ricotta."
   - q: "Ravioli e tortellini sono la stessa cosa?"
     a: "No. I tortellini sono piccoli anelli (un quadrato ripieno piegato attorno alla punta di un dito e unito alle estremità), e vengono da Bologna, tradizionalmente serviti in brodo. I ravioli sono fagottini piatti sigillati tra due sfoglie e serviti con il sugo."
+  - q: "Qual è la differenza tra tortellini e ravioli?"
+    a: "La piega e il piatto. I tortellini sono anelli minuscoli: un quadratino ripieno piegato attorno al polpastrello e chiuso alle estremità, di Bologna, da servire in brodo. I ravioli sono fagottini piatti sigillati tra due sfoglie, molto più grandi, da servire con il sugo."
+  - q: "I tortellini sono tortelli piccoli?"
+    a: "No, anche se il suffisso -ini lo farebbe pensare. I tortelli sono fagottini piatti e ripieni di Toscana ed Emilia, più grandi dei ravioli. I tortellini sono anelli piegati di Bologna. Nome simile, forma diversa, città diversa."
   - q: "Con cosa si riempiono tradizionalmente i ravioli?"
     a: "Il ripieno più comune è ricotta e spinaci, condito con noce moscata e parmigiano. Carne, zucca, funghi e, in Toscana, patate sono tutti tradizionali a seconda della regione e della stagione."
   - q: "Perché i miei ravioli si aprono in cottura?"
@@ -38,6 +42,18 @@ Detto ciò, ecco la mappa operativa:
 
 Se ricordi una cosa sola: **i tortellini vanno in brodo e sono minuscoli; tutto il resto è più grande e vuole il sugo.**
 
+## Ravioli o tortellini: la differenza in una riga
+
+È la domanda che arriva più spesso, e quella a cui si risponde peggio, perché tortelli e tortellini si assomigliano nel nome e sono due cose diverse.
+
+**I tortellini sono anelli.** Un quadratino ripieno si piega attorno al polpastrello e si uniscono le due punte, così si chiude ad anello. Sono minuscoli, grandi come un'unghia, vengono da Bologna e vanno in brodo. Ripieno di carne: lombo di maiale, mortadella, prosciutto.
+
+**I ravioli sono piatti.** Una nocciola di ripieno tra due sfoglie, sigillata tutt'intorno, tagliata quadrata o tonda. Molto più grandi di un tortellino, si servono col sugo, e il ripieno cambia da regione a regione.
+
+La differenza quindi non è il ripieno e non è l'impasto, ma la piega e quello che succede dopo: **anello in brodo contro fagottino piatto col sugo.**
+
+E i tortelli, che sono poi il motivo di questo articolo, nonostante il nome non sono tortellini grandi. Sono fagottini piatti come i ravioli, solo più grandi e toscani. Il suffisso *-ini* in italiano è un diminutivo, e qui per una volta inganna: i tortellini non sono piccoli tortelli, sono una forma a sé, di un'altra città.
+
 ## Cosa rende diversi i tortelli toscani
 
 Ecco la parte che i visitatori non si aspettano. Chiedi i tortelli nel Mugello, la zona collinare a nord di Firenze, e quello che arriva è ripieno di **patate**, schiacciate con aglio, prezzemolo, un po' di pomodoro, parmigiano e a volte noce moscata. Non ricotta. Non spinaci.
@@ -46,7 +62,7 @@ Il motivo è lo stesso che sta dietro a quasi tutta la cucina regionale italiana
 
 L'altra versione toscana, i *tortelli maremmani*, usa invece ricotta e spinaci e viene dalla Maremma, sulla costa. Sono corrette entrambe. Vengono semplicemente da valli diverse, e quelli di ciascuna ti diranno che l'altra è un po' strana.
 
-Ne abbiamo scritto di più nella [pagina dei tortelli della nostra libreria dei formati](/it/formati-di-pasta-toscana/tortelli/), pieghe comprese.
+Ne abbiamo scritto di più nella [pagina dei tortelli della nostra libreria dei formati](/it/formati-di-pasta-toscana/tortelli/), pieghe comprese, e la versione più piatta e piccola ha la sua pagina sotto [ravioli](/it/formati-di-pasta-toscana/ravioli/).
 
 ## La tecnica è identica, comunque tu li chiami
 

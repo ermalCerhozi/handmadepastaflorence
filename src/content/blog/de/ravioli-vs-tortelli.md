@@ -8,8 +8,14 @@ imageAlt: 'Frisch gemachte gefüllte Pasta auf einem bemehlten Holzbrett'
 faqs:
   - q: "Was ist der Unterschied zwischen Ravioli und Tortelli?"
     a: "Vor allem Größe und Region, weniger die Technik. Ravioli ist der weite, landesweite Begriff für gefüllte Pasta: meist ein kleineres Quadrat, zwischen zwei Teigbahnen versiegelt. Tortelli heißt dieselbe Idee in der Toskana und in der Emilia, und sie sind in der Regel größer: ein größeres Quadrat oder ein Halbmond. In der Toskana ist die klassische Füllung Kartoffel, nicht Ricotta."
+  - q: "Was ist der Unterschied zwischen Ravioli und Tortellini?"
+    a: "Die Faltung und der Teller. Tortellini sind winzige Ringe: ein kleines gefülltes Quadrat wird um eine Fingerkuppe gefaltet und an den Enden verbunden. Sie stammen aus Bologna und gehören in Brühe. Ravioli sind flache Päckchen, zwischen zwei Teigbahnen versiegelt, deutlich größer und werden mit Sauce serviert."
   - q: "Sind Ravioli und Tortellini dasselbe?"
     a: "Nein. Tortellini sind kleine Ringe (ein gefülltes Quadrat um eine Fingerkuppe gefaltet und an den Enden verbunden), und stammen aus Bologna, traditionell in Brühe serviert. Ravioli sind flache Päckchen, zwischen zwei Teigbahnen versiegelt und mit Sauce serviert."
+  - q: "Ravioli oder Tortellini: was nimmt man wofür?"
+    a: "Tortellini nimmt man für Brühe, in Bologna praktisch ausschließlich. Ravioli nimmt man, wenn eine Sauce dazu soll, weil die flache Oberfläche etwas zum Anhaften bietet. Tortellini in Sahnesauce sind außerhalb Italiens verbreitet und in Bologna eine kleine Provokation."
+  - q: "Sind Tortellini kleine Tortelli?"
+    a: "Nein, obwohl die Endung -ini im Italienischen genau das nahelegt. Tortelli sind flache gefüllte Päckchen aus der Toskana und der Emilia, größer als Ravioli. Tortellini sind gefaltete Ringe aus Bologna. Ähnlicher Name, andere Form, andere Stadt."
   - q: "Womit werden Ravioli traditionell gefüllt?"
     a: "Die häufigste Füllung ist Ricotta mit Spinat, gewürzt mit Muskatnuss und Parmesan. Fleisch, Kürbis, Pilze und in der Toskana Kartoffel sind je nach Region und Saison ebenfalls traditionell."
   - q: "Warum platzen meine Ravioli beim Kochen?"
@@ -38,6 +44,18 @@ Trotzdem, hier die brauchbare Karte:
 
 Wenn Sie sich nur eines merken: **Tortellini kommen in die Brühe und sind winzig; alles andere ist größer und bekommt Sauce.**
 
+## Ravioli oder Tortellini: der Unterschied in einem Satz
+
+Das ist die Frage, die am häufigsten gestellt wird, und sie wird am häufigsten falsch beantwortet, weil Tortelli und Tortellini so ähnlich klingen. Sie sind zwei verschiedene Dinge.
+
+**Tortellini sind Ringe.** Ein kleines gefülltes Quadrat wird um eine Fingerkuppe gefaltet und an den beiden Enden zusammengedrückt, sodass ein Ring entsteht. Sie sind winzig, etwa fingernagelgroß, kommen aus Bologna und gehören in Brühe. Fleischfüllung, klassisch Schweinelende, Mortadella und Prosciutto.
+
+**Ravioli sind flach.** Ein Häufchen Füllung zwischen zwei Teigbahnen, ringsum versiegelt, quadratisch oder rund ausgeschnitten. Deutlich größer als ein Tortellino, mit Sauce serviert, Füllung je nach Region.
+
+Der Unterschied ist also nicht die Füllung und nicht der Teig, sondern die Faltung und was danach damit passiert: **Ring in Brühe gegen flaches Päckchen mit Sauce.**
+
+Und Tortelli, um die es in diesem Text eigentlich geht, sind trotz des ähnlichen Namens keine großen Tortellini. Sie sind flache Päckchen wie Ravioli, nur größer und toskanisch. Die Endung *-ini* ist im Italienischen eine Verkleinerung, was hier ausnahmsweise in die Irre führt: Tortellini sind nicht kleine Tortelli, sondern eine eigene Form aus einer anderen Stadt.
+
 ## Was toskanische Tortelli anders macht
 
 Hier kommt der Teil, mit dem Besucher nicht rechnen. Bestellen Sie Tortelli im Mugello, dem Hügelland nördlich von Florenz, und was kommt, ist mit **Kartoffel** gefüllt, zerdrückt mit Knoblauch, Petersilie, etwas Tomate, Parmesan und manchmal Muskatnuss. Kein Ricotta. Kein Spinat.
@@ -45,6 +63,8 @@ Hier kommt der Teil, mit dem Besucher nicht rechnen. Bestellen Sie Tortelli im M
 Der Grund ist derselbe wie hinter fast der gesamten italienischen Regionalküche: Kartoffeln wuchsen dort oben gut, und Fleisch reichte nicht weit. Es ist eines der wirklich großen Gerichte der Toskana und überrascht fast jeden, der es in Erwartung der heimischen Ricotta-Spinat-Variante bestellt.
 
 Die andere toskanische Variante, *tortelli maremmani*, verwendet tatsächlich Ricotta und Spinat und stammt aus der Maremma an der Küste. Beide sind richtig. Sie kommen schlicht aus verschiedenen Tälern, und die Leute aus jedem werden Ihnen sagen, das andere sei ein bisschen sonderbar.
+
+Mehr dazu, samt Faltung, steht auf der [Tortelli-Seite unserer Formen-Bibliothek](/de/pasta-formen/tortelli/), und die flache, kleinere Variante hat ihre eigene Seite unter [Ravioli](/de/pasta-formen/ravioli/).
 
 ## Die Technik ist identisch, wie immer Sie sie nennen
 

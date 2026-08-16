@@ -1,5 +1,5 @@
 ---
-title: 'Toskanische Pasta-Arten & Formen: Pici, Pappardelle, Tortelli & mehr'
+title: 'Toskanische Pasta: Pici, Pappardelle & Tortelli erklärt'
 description: 'Ein Kochguide zu den klassischen frischen Nudelsorten der Toskana: woher jede Form kommt, wie sie von Hand gemacht wird und für welche Soße sie geschaffen wurde.'
 pubDate: 2026-07-08
 author: 'Endri Cerhozi'

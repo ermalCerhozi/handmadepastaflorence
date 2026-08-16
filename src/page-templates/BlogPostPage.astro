@@ -5,9 +5,12 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import BookingDrawer from '../components/BookingDrawer.astro';
-import { getLocaleFromUrl } from '../i18n/utils';
+import { getLocaleFromUrl, type Alternate } from '../i18n/utils';
+import { defaultLocale, languages } from '../i18n/config';
 import { useTranslations } from '../i18n/ui';
+import { landingPath } from '../data/landings';
 import { breadcrumbSchema, faqSchema } from '../utils/schema';
+import { blogPostAlternates } from '../utils/blog-locales';
 
 interface Props {
   post: CollectionEntry<'blog'>;
@@ -17,19 +20,28 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 const lang = getLocaleFromUrl(Astro.url);
 const t = useTranslations(lang);
-const isIt = lang === 'it';
 
 const SITE = 'https://handmadepastaflorence.com';
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const fmt = (d: Date) =>
-  d.toLocaleDateString(isIt ? 'it-IT' : 'en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+  d.toLocaleDateString(languages[lang].dateLocale, { day: 'numeric', month: 'long', year: 'numeric' });
 
-const publisherId = isIt ? `${SITE}/it/#business` : `${SITE}/#business`;
-const homeUrl = isIt ? '/it/' : '/';
-const blogUrl = isIt ? '/it/blog/' : '/blog/';
-const homeItem = isIt ? `${SITE}/it/` : `${SITE}/`;
-const blogItem = isIt ? `${SITE}/it/blog/` : `${SITE}/blog/`;
-const classesUrl = isIt ? '/it/corso-pasta-fresca-firenze/' : '/pasta-making-class-florence/';
+// Every one of these used to branch off `isIt`, which sent /de/, /fr/ and /zh/
+// readers to the English home, blog and class pages and declared the article
+// as inLanguage 'en'. They are the two best-ranking pages on the site, so the
+// CTA leak was the expensive part.
+const prefix = lang === defaultLocale ? '' : `/${lang}`;
+const homeUrl = `${prefix}/`;
+const blogUrl = `${prefix}/blog/`;
+const homeItem = `${SITE}${homeUrl}`;
+const blogItem = `${SITE}${blogUrl}`;
+const publisherId = `${SITE}${homeUrl}#business`;
+const classesUrl = landingPath('pasta-making', lang);
+
+// Alternates come from the files that actually exist, not from prefix-swapping
+// the pathname: posts no longer ship in all five locales, and hreflang must not
+// point at a URL we never built.
+const alternates: Alternate[] = await blogPostAlternates(post.id);
 
 const articleSchema = {
   '@context': 'https://schema.org',
@@ -39,7 +51,7 @@ const articleSchema = {
   image: `${SITE}${post.data.image.src}`,
   datePublished: post.data.pubDate.toISOString(),
   dateModified: (post.data.updatedDate ?? post.data.pubDate).toISOString(),
-  inLanguage: isIt ? 'it' : 'en',
+  inLanguage: languages[lang].htmlLang,
   author: {
     '@type': 'Person',
     name: post.data.author,
@@ -60,8 +72,12 @@ const faqs = post.data.faqs ?? [];
 const faqLd = faqs.length ? faqSchema(faqs) : null;
 ---
 
-<Layout title={`${post.data.title} | Handmade Pasta Florence`} description={post.data.description} image={post.data.image.src}>
-  <Header solid />
+{/* No " | Handmade Pasta Florence" suffix: it is 26 characters that Google cut
+    off every single post (rendered titles measured 91–103 chars against a ~60
+    char limit), so it cost us the end of the real title and bought nothing.
+    Google renders the site name from the domain separately anyway. */}
+<Layout title={post.data.title} description={post.data.description} image={post.data.image.src} alternates={alternates}>
+  <Header solid alternates={alternates} />
   <main>
     <article>
       <header class="po-hero" id="top">

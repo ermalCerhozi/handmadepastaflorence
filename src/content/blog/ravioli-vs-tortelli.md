@@ -10,6 +10,10 @@ faqs:
     a: "Mostly size and region rather than technique. Ravioli is the broad, national term for filled pasta, usually a smaller square sealed between two sheets. Tortelli is what the same idea is called across Tuscany and Emilia, and they are typically larger: a bigger square or half-moon. In Tuscany the classic filling is potato, not ricotta."
   - q: "Are ravioli and tortellini the same thing?"
     a: "No. Tortellini are small rings (a filled square folded around a fingertip and joined at the ends), and they come from Bologna, traditionally served in broth. Ravioli are flat parcels sealed between two sheets of pasta and served with sauce."
+  - q: "Are tortellini just small tortelli?"
+    a: "No, even though the -ini ending is a diminutive in Italian and suggests exactly that. Tortelli are flat filled parcels from Tuscany and Emilia, larger than ravioli. Tortellini are folded rings from Bologna. Similar name, different shape, different city."
+  - q: "What is the difference between a raviolo and ravioli?"
+    a: "Only grammar. Raviolo is the singular and ravioli is the plural, the same way panino becomes panini. One raviolo, a plate of ravioli. The same applies to tortello and tortelli, and to tortellino and tortellini."
   - q: "What are ravioli traditionally filled with?"
     a: "The most common filling is ricotta with spinach, seasoned with nutmeg and parmesan. Meat, pumpkin, mushroom and, in Tuscany, potato are all traditional depending on the region and the season."
   - q: "Why do my ravioli burst when I boil them?"
@@ -38,6 +42,18 @@ That said, here is the working map:
 
 If you remember only one thing: **tortellini go in broth and are tiny; everything else is bigger and gets sauce.**
 
+## Ravioli or tortellini, in one line
+
+This is the question people actually ask, and the one that gets answered worst, because tortelli and tortellini sound almost identical and are two different things.
+
+**Tortellini are rings.** A small filled square is folded around a fingertip and the two ends are pressed together, closing it into a ring. They are tiny, about the size of a thumbnail, they come from Bologna, and they belong in broth. The filling is meat: pork loin, mortadella, prosciutto.
+
+**Ravioli are flat.** A mound of filling between two sheets, sealed all round, cut square or round. Much bigger than a tortellino, served with sauce, filling depending on the region.
+
+So the difference is not the filling and not the dough. It is the fold, and what happens next: **a ring in broth versus a flat parcel with sauce.**
+
+And tortelli, which is what this article is actually about, are not large tortellini despite the name. They are flat parcels like ravioli, only bigger and Tuscan. The *-ini* ending is a diminutive in Italian, which for once misleads: tortellini are not small tortelli, they are their own shape from a different city.
+
 ## What makes Tuscan tortelli different
 
 Here is the part visitors do not expect. Ask for tortelli in the Mugello, the hill country north of Florence, and what arrives is filled with **potato**, mashed with garlic, parsley, a little tomato, parmesan and sometimes nutmeg. Not ricotta. Not spinach.
@@ -46,7 +62,7 @@ The reason is the reason behind most regional Italian food: potatoes grew well u
 
 The other Tuscan version, *tortelli maremmani*, does use ricotta and spinach and comes from the Maremma on the coast. Both are correct. They are simply from different valleys, and people from each will tell you the other one is a bit odd.
 
-We wrote more about this in the [tortelli page of our shapes library](/pasta-shapes/tortelli/), including the folding.
+We wrote more about this in the [tortelli page of our shapes library](/pasta-shapes/tortelli/), including the folding, and the flatter, smaller version has its own page under [ravioli](/pasta-shapes/ravioli/).
 
 ## The technique is identical, whatever you call it
 

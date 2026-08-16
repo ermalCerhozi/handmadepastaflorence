@@ -327,8 +327,12 @@ export const landings: Record<string, LandingPage> = {
       },
       de: {
         slug: 'pasta-kurs-florenz',
-        title: `Pasta-Kurs in Florenz: 4 Formen + Wein inklusive (€95) | Handmade Pasta Florence`,
-        description: `Ein 3-stündiger praktischer Pasta-Kurs in Florenz' Oltrarno. Rollen Sie vier klassische Formen mit zwei toskanischen Agriturismo-Küchenchefs und setzen Sie sich dann, um das Gekochte mit zwei inbegriffenen toskanischen Weinen zu essen. Max. 8 Gäste, 95 € pro Person.`,
+        // Best commercial page on the site: position 9.29 on 127 impressions,
+        // one click (GSC, Aug 2026). "Kochkurs" is in here because `kochkurs
+        // florence` is 35 impressions at position 21.5 with no page owning the
+        // generic noun, and this is the natural home for it.
+        title: `Pasta-Kurs Florenz: Kochkurs mit 4 Formen & Wein, 95 €`,
+        description: `Dreistündiger Pasta-Kurs im Oltrarno: vier Formen von Hand rollen mit zwei toskanischen Küchenchefs, danach gemeinsam essen. Max. 8 Gäste, Wein inklusive, 95 €.`,
         cl: {
           eyebrow: `Der Tisch des Küchenchefs · Oltrarno, Florenz`,
           heading: `Ein Pasta-Kurs in Florenz,`,
@@ -1514,7 +1518,11 @@ export const landings: Record<string, LandingPage> = {
     locales: {
       en: {
         slug: 'team-building-cooking-class-florence',
-        title: `Food Teambuilding in Florence: Private Pasta-Making Class, 6–14 People | Handmade Pasta Florence`,
+        // 481 impressions across locales and zero clicks (GSC, Aug 2026). The
+        // old 95-char title was cut around "Private Pasta-Ma…", so the two
+        // things a corporate planner needs — private kitchen, group size —
+        // never rendered. Everything that matters now sits before char 60.
+        title: `Team Building Cooking Class Florence | Private Kitchen, 6–14`,
         description: `A hands-on food teambuilding activity in Florence: your team rolls fresh pasta with two English-speaking Tuscan chefs, then shares the lunch it made. Private kitchen buyout for 6–14 people, wine pairing and dietary options.`,
         cl: {
           eyebrow: `For companies · private kitchen buyout`,
@@ -1583,7 +1591,10 @@ export const landings: Record<string, LandingPage> = {
       },
       it: {
         slug: 'corso-cucina-team-building-firenze',
-        title: `Teambuilding in Cucina a Firenze: Corso di Pasta Privato per Team, 6–14 Persone | Handmade Pasta Florence`,
+        // Carries "corso di cucina team building" as an exact string: that
+        // phrasing plus its common misspelling ("corso di cuicna teambuilding")
+        // is 52 impressions between them.
+        title: `Corso di Cucina Team Building Firenze, 6–14 Persone`,
         description: `Un teambuilding in cucina privato e pratico a Firenze. Il tuo team stende la pasta fresca con due chef toscani, per poi condividere il pranzo preparato. Cucina privata per 6–14 persone, abbinamento vini e opzioni dietetiche.`,
         cl: {
           eyebrow: `Per le aziende · uso esclusivo della cucina`,
@@ -1651,7 +1662,7 @@ export const landings: Record<string, LandingPage> = {
       },
       fr: {
         slug: 'cours-cuisine-team-building-florence',
-        title: `Teambuilding Culinaire à Florence: Cours de Pâtes Privé, 6–14 Personnes | Handmade Pasta Florence`,
+        title: `Team Building Florence : Cours de Cuisine Privé, 6–14`,
         description: `Une activité de teambuilding culinaire pratique à Florence : votre équipe prépare des pâtes fraîches avec deux chefs toscans, puis partage le déjeuner qu'elle a préparé. Privatisation de la cuisine pour 6–14 personnes, accords mets-vins et options diététiques.`,
         cl: {
           eyebrow: `Pour les entreprises · privatisation de la cuisine`,
@@ -1719,8 +1730,8 @@ export const landings: Record<string, LandingPage> = {
       },
       de: {
         slug: 'teambuilding-kochkurs-florenz',
-        title: `Kulinarisches Teambuilding in Florenz: Privater Pasta-Kurs, 6–14 Personen | Handmade Pasta Florence`,
-        description: `Eine praktische Teambuilding-Aktivität in Florenz: Ihr Team rollt frische Pasta mit zwei toskanischen Köchen und teilt dann das zubereitete Mittagessen. Private Küchenmiete für 6–14 Personen, Weinbegleitung und Diätoptionen.`,
+        title: `Teambuilding Florenz: Privater Kochkurs für 6–14 Personen`,
+        description: `Teambuilding in Florenz, das funktioniert: Ihr Team rollt frische Pasta mit zwei toskanischen Köchen und isst danach gemeinsam. Private Küche für 6–14 Personen, Angebot in einem Werktag.`,
         cl: {
           eyebrow: `Für Unternehmen · private Küchenmiete`,
           heading: `Teambuilding, mit`,
@@ -1787,7 +1798,7 @@ export const landings: Record<string, LandingPage> = {
       },
       zh: {
         slug: 'tuandui-jianshe-pengren-kecheng-foluolunsa',
-        title: `佛罗伦萨美食团队建设：私人意面课程，6–14人 | Handmade Pasta Florence`,
+        title: `佛罗伦萨团队建设：私人意面烹饪课，6–14人`,
         description: `在佛罗伦萨进行的动手实践美食团建活动：您的团队与两位托斯卡纳厨师一起擀制新鲜意面，然后共享他们制作的午餐。6–14人的私人厨房包场，可选择葡萄酒搭配和特殊饮食选项。`,
         cl: {
           eyebrow: `企业专享 · 私人厨房包场`,
