@@ -230,11 +230,13 @@ export const landings: Record<string, LandingPage> = {
             { q: `Quali formati di pasta faremo?`, a: `Quattro formati classici per corso: in genere pici, tagliatelle, pappardelle e tortelli ripieni, seguendo la stagione.` },
             { q: `Potete soddisfare diete senza glutine o allergie?`, a: `Sì: possiamo preparare una miscela di farine senza glutine dedicata e una postazione pulita senza costi aggiuntivi. Devi solo segnalarci eventuali allergie al momento della prenotazione.` },
             { q: `Come posso prenotare e pagare?`, a: `Usa il pulsante "Prenota questo corso" per creare la tua richiesta. Si apre una chat di WhatsApp con i dettagli precompilati, noi confermeremo la disponibilità e ti guideremo nel resto.` },
+            { q: `Quanto costa in tutto un corso di pasta fresca a Firenze?`, a: `La Tavola dello Chef costa €95 a persona. Se lo state confrontando con il tour del mercato, il corso privato o quello online, guardate il nostro <a href="/it/blog/how-much-does-a-pasta-making-class-in-florence-cost/">confronto completo dei prezzi</a> per tutti e quattro.` },
           ],
           related: [
             { title: `Mercato & Mani`, href: `/it/corso-cucina-tour-mercato-firenze/`, desc: `Fai la spesa al mercato di Sant'Ambrogio all'alba, poi cucina il cesto. 5 ore, max 6 ospiti, €145.` },
             { title: `Il Lungo Tavolo di Famiglia`, href: `/it/corso-cucina-privato-firenze/`, desc: `L'intera cucina, privata per voi. Compleanni, proposte, ritrovi, da €680.` },
             { title: `Corso in Diretta Online`, href: `/it/corso-pasta-online/`, desc: `Cucina con noi da ovunque, in diretta da questa stessa cucina, da €68.` },
+            { title: `I quattro formati, spiegati`, href: `/it/formati-di-pasta-toscana/`, desc: `Pici, pappardelle, tagliatelle, tortelli: cosa sono e il sugo per cui sono nati.` },
           ],
           ctaLabel: `Prenota questo corso`,
           prefill: 'florence',
@@ -308,6 +310,7 @@ export const landings: Record<string, LandingPage> = {
             { q: `Quelles formes de pâtes allons-nous faire ?`, a: `Quatre formes classiques par cours: généralement des pici roulés à la main, des tagliatelles, des pappardelles et des tortelli farcis, selon la saison.` },
             { q: `Pouvez-vous répondre aux régimes sans gluten ou aux allergies ?`, a: `Oui: nous pouvons préparer un mélange de farine sans gluten dédié et un poste de travail propre sans frais supplémentaires. Parlez-nous simplement de vos allergies lors de la réservation.` },
             { q: `Comment puis-je réserver et payer ?`, a: `Utilisez le bouton "Réserver ce cours" pour formuler votre demande. Cela ouvre une discussion WhatsApp avec les détails remplis, et nous confirmerons la disponibilité et vous guiderons pour le reste.` },
+            { q: `Combien coûte au total un cours de pâtes fraîches à Florence ?`, a: `La Table du Chef est à 95 € par personne. Si vous la comparez à la visite du marché, à la privatisation ou à la formule en ligne, consultez notre <a href="/fr/blog/how-much-does-a-pasta-making-class-in-florence-cost/">comparatif complet des tarifs</a> pour les quatre.` },
           ],
           related: [
             { title: `Mercato & Mani`, href: `/fr/cours-cuisine-visite-marche-florence/`, desc: `Faites vos courses au marché de Sant'Ambrogio à l'aube, puis cuisinez votre panier. 5 heures, max 6 personnes, 145 €.` },
@@ -390,11 +393,13 @@ export const landings: Record<string, LandingPage> = {
             { q: `Welche Nudelformen werden wir machen?`, a: `Vier klassische Formen pro Kurs: typischerweise handgerollte Pici, Tagliatelle, Pappardelle und gefüllte Tortelli, je nach Saison.` },
             { q: `Können Sie auf glutenfreie Diäten oder Allergien eingehen?`, a: `Ja: wir können ohne Aufpreis eine spezielle glutenfreie Mehlmischung und eine saubere Station vorbereiten. Teilen Sie uns bei der Buchung einfach eventuelle Allergien mit.` },
             { q: `Wie buche und bezahle ich?`, a: `Nutzen Sie die Schaltfläche "Diesen Kurs buchen", um Ihre Anfrage zu erstellen. Es öffnet sich ein WhatsApp-Chat mit den ausgefüllten Details, und wir bestätigen die Verfügbarkeit und führen Sie durch den Rest.` },
+            { q: `Was kostet ein Pasta-Kurs in Florenz insgesamt?`, a: `Der Chef's Table kostet 95 € pro Person. Wenn Sie ihn mit der Markttour, der privaten Buchung oder dem Online-Kurs vergleichen, sehen Sie sich unseren <a href="/de/blog/how-much-does-a-pasta-making-class-in-florence-cost/">vollständigen Preisvergleich</a> für alle vier an.` },
           ],
           related: [
             { title: `Mercato & Mani`, href: `/de/markt-tour-kochkurs-florenz/`, desc: `Kaufen Sie im Morgengrauen auf dem Sant'Ambrogio-Markt ein und kochen Sie dann den Korb. 5 Stunden, max. 6 Gäste, 145 €.` },
             { title: `Die lange Familientafel`, href: `/de/privater-kochkurs-florenz/`, desc: `Die ganze Küche, ganz privat für Sie. Geburtstage, Heiratsanträge, Treffen, ab 680 €.` },
             { title: `Live-Online-Kurs`, href: `/de/online-pasta-kurs/`, desc: `Kochen Sie mit uns von überall aus, live aus derselben Küche, ab 68 €.` },
+            { title: `Die vier Formen, erklärt`, href: `/de/pasta-formen/`, desc: `Pici, Pappardelle, Tagliatelle, Tortelli: was jede Form ist und die Sauce, für die sie gemacht wurde.` },
           ],
           ctaLabel: `Diesen Kurs buchen`,
           prefill: 'florence',
@@ -468,6 +473,7 @@ export const landings: Record<string, LandingPage> = {
             { q: `我们将制作哪些意面形状？`, a: `每节课制作四种经典形状：通常是手工揉制的pici、tagliatelle、pappardelle和填馅的tortelli，具体取决于季节。` },
             { q: `你们能满足无麸质饮食或过敏需求吗？`, a: `是的，我们可以免费准备专门的无麸质面粉混合物和干净的操作台。预订时请告诉我们任何过敏情况。` },
             { q: `我该如何预订和付款？`, a: `使用“预订此课程”按钮创建您的请求。它会打开一个带有预填详情的WhatsApp聊天，我们将确认可用性并指导您完成剩余步骤。` },
+            { q: `在佛罗伦萨上一堂意面课总共要多少钱？`, a: `主厨餐桌为每位95欧元。如果你还在与市场导览、私人包场或线上课程做比较，可以看我们<a href="/zh/blog/how-much-does-a-pasta-making-class-in-florence-cost/">四种课程的完整价格对比</a>。` },
           ],
           related: [
             { title: `Mercato & Mani`, href: `/zh/shichang-daolan-pengren-kecheng-foluolunsa/`, desc: `清晨在圣安布罗焦市场购物，然后烹饪购买的食材。5小时，最多6位客人，145欧元。` },
