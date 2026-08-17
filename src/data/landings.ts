@@ -6,6 +6,7 @@
 // String values use backticks so Italian apostrophes/quotes need no escaping.
 import { defaultLocale, type Locale } from '../i18n/config';
 import * as img from '../assets/images';
+import longTablePrivateVideo from '../assets/video/private-cooking-class-florence-agriturismo.mp4?url';
 
 /** Keys into ClassLanding.astro's FACT_ICONS line-icon set. */
 export type FactIcon =
@@ -72,6 +73,13 @@ export interface LandingPage {
    * rather than inventing a number that isn't in the copy.
    */
   courseDuration?: string;
+  /**
+   * Optional silent loop for the hero, laid over each locale's `cl.image`.
+   * Page-level rather than per-locale because the clip carries no words — only
+   * the still's alt text is translated. Every locale's `cl.image` must be this
+   * clip's first frame, so swapping one means swapping both.
+   */
+  video?: string;
   locales: Partial<Record<Locale, LandingLocale>>;
 }
 
@@ -841,6 +849,7 @@ export const landings: Record<string, LandingPage> = {
   'private': {
     floatingCta: true,
     courseMode: 'Onsite',
+    video: longTablePrivateVideo,
     locales: {
       en: {
         slug: 'private-cooking-class-florence',
@@ -851,7 +860,7 @@ export const landings: Record<string, LandingPage> = {
           heading: `A private cooking class in Florence,`,
           headingItal: `all to yourselves.`,
           lede: `The whole kitchen, one long table, and two chefs cooking with your people only. This is the farmhouse feast we’ve hosted at our agriturismi for years (birthdays, proposals, reunions), brought to the heart of Florence.`,
-          image: { src: img.weddingCake, alt: `A celebration cake at a private Family Long-Table event in Florence`, w: 1080, h: 1433 },
+          image: { src: img.longTablePrivatePoster, alt: `Guests rolling fresh pasta down the long table at a private Family Long-Table event`, w: 720, h: 424 },
           price: `from €680`,
           priceNote: `private kitchen buyout`,
           facts: [
@@ -921,7 +930,7 @@ export const landings: Record<string, LandingPage> = {
           heading: `Un corso di cucina privato a Firenze,`,
           headingItal: `tutto per voi.`,
           lede: `L'intera cucina, un lungo tavolo e due chef che cucinano solo per le tue persone. Questa è la festa in fattoria che abbiamo ospitato nei nostri agriturismi per anni (compleanni, proposte, riunioni di famiglia), portata nel cuore di Firenze.`,
-          image: { src: img.weddingCake, alt: `Una torta celebrativa in un evento privato Il Lungo Tavolo di Famiglia a Firenze`, w: 1080, h: 1433 },
+          image: { src: img.longTablePrivatePoster, alt: `Ospiti che stendono la pasta fresca lungo il tavolo in un evento privato Il Lungo Tavolo di Famiglia`, w: 720, h: 424 },
           price: `da €680`,
           priceNote: `uso esclusivo cucina`,
           facts: [
@@ -990,7 +999,7 @@ export const landings: Record<string, LandingPage> = {
           heading: `Un cours de cuisine privé à Florence,`,
           headingItal: `rien que pour vous.`,
           lede: `Toute la cuisine, une longue table et deux chefs qui cuisinent uniquement avec vos proches. C'est le festin fermier que nous organisons dans nos agritourismes depuis des années (anniversaires, demandes en mariage, réunions), apporté au cœur de Florence.`,
-          image: { src: img.weddingCake, alt: `Un gâteau de célébration lors d'un événement privé La Longue Table Familiale à Florence`, w: 1080, h: 1433 },
+          image: { src: img.longTablePrivatePoster, alt: `Des invités étalant des pâtes fraîches le long de la table lors d'un événement privé La Longue Table Familiale`, w: 720, h: 424 },
           price: `à partir de 680 €`,
           priceNote: `privatisation de la cuisine`,
           facts: [
@@ -1059,7 +1068,7 @@ export const landings: Record<string, LandingPage> = {
           heading: `Ein privater Kochkurs in Florenz,`,
           headingItal: `ganz für Sie allein.`,
           lede: `Die ganze Küche, ein langer Tisch und zwei Köche, die nur mit Ihren Leuten kochen. Das ist das Bauernfest, das wir jahrelang auf unseren Agriturismi veranstaltet haben (Geburtstage, Heiratsanträge, Treffen), gebracht in das Herz von Florenz.`,
-          image: { src: img.weddingCake, alt: `Ein Festkuchen bei einer privaten Veranstaltung an der langen Familientafel in Florenz`, w: 1080, h: 1433 },
+          image: { src: img.longTablePrivatePoster, alt: `Gäste, die bei einer privaten Veranstaltung an der langen Familientafel frische Pasta ausrollen`, w: 720, h: 424 },
           price: `ab 680 €`,
           priceNote: `private Küchenmiete`,
           facts: [
@@ -1128,7 +1137,7 @@ export const landings: Record<string, LandingPage> = {
           heading: `佛罗伦萨私人烹饪课程，`,
           headingItal: `完全属于您的空间。`,
           lede: `整个厨房、一张长桌和两位厨师只为您和您的亲友烹饪。这是我们多年来在农庄里举办的农场盛宴：生日、求婚、聚会，现在带到了佛罗伦萨的中心。`,
-          image: { src: img.weddingCake, alt: `佛罗伦萨“家庭长桌体验”私人活动中的庆祝蛋糕`, w: 1080, h: 1433 },
+          image: { src: img.longTablePrivatePoster, alt: `宾客们在“家庭长桌体验”私人活动中沿着长桌擀制新鲜意面`, w: 720, h: 424 },
           price: `从 €680 起`,
           priceNote: `私人厨房包场`,
           facts: [

@@ -24,21 +24,21 @@ export function getStaticPaths() {
       const prefix = locale === defaultLocale ? '' : `${locale}/`;
       paths.push({
         params: { slug: `${prefix}${data!.slug}` },
-        props: { data: data!, locale: locale as Locale, floatingCta: page.floatingCta, courseMode: page.courseMode, courseDuration: page.courseDuration, alternates },
+        props: { data: data!, locale: locale as Locale, floatingCta: page.floatingCta, courseMode: page.courseMode, courseDuration: page.courseDuration, video: page.video, alternates },
       });
     }
   }
   return paths;
 }
 
-const { data, locale, floatingCta, courseMode, courseDuration, alternates } = Astro.props;
+const { data, locale, floatingCta, courseMode, courseDuration, video, alternates } = Astro.props;
 const { title, description, cl } = data;
 ---
 
 <Layout title={title} description={description} image={cl.image.src} alternates={alternates}>
   <Header solid alternates={alternates} />
   <main>
-    <ClassLanding {...cl} locale={locale} courseMode={courseMode} courseDuration={courseDuration} />
+    <ClassLanding {...cl} locale={locale} courseMode={courseMode} courseDuration={courseDuration} video={video} />
   </main>
   <Footer />
   {floatingCta && <FloatingCTA />}
