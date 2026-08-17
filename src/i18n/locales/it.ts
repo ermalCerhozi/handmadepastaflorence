@@ -108,7 +108,7 @@ const it: Dict = {
     titleMid: `due `,
     titleItal: `agriturismi toscani.`,
     body1: `Siamo Endri e Marsel, amici e colleghi da tempo, e chef di due agriturismi sulle colline appena fuori Firenze. Tra banchetti nuziali per duecento persone, spettacoli dal vivo sulla pasta e lunghi pranzi contadini per i nostri ospiti, abbiamo steso a mano più pasta di quanta potremmo mai contare.`,
-    body2: `Endri ha lavorato per sei anni come panettiere artigianale prima di prendere in gestione la cucina dell'Agriturismo Borgo Divino nel 2021; Marsel gestisce la cucina di una tenuta vicina. A giugno 2026 abbiamo aperto una piccola cucina tutta nostra in Oltrarno e abbiamo portato il tavolo di fattoria a Firenze, per chiunque voglia sporcarsi le mani di farina con noi, di persona o in diretta online.`,
+    body2: `Endri ha lavorato per sei anni come panettiere artigianale prima di entrare all'Agriturismo Borgo Divino, dove è head chef dal 2024; Marsel gestisce la cucina di una tenuta vicina. A giugno 2026 abbiamo aperto una piccola cucina tutta nostra in Oltrarno e abbiamo portato il tavolo di fattoria a Firenze, per chiunque voglia sporcarsi le mani di farina con noi, di persona o in diretta online.`,
     stats: [
       { n: `2026`, l: `appena aperto a Firenze` },
       { n: `2`, l: `chef di agriturismo` },

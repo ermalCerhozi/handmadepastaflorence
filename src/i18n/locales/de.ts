@@ -106,7 +106,7 @@ const de = {
     titleMid: 'zwei ',
     titleItal: 'toskanische Agriturismi.',
     body1: 'Wir sind Endri und Marsel, Freunde und langjährige Kollegen, und die Chefköche von zwei Agriturismi in den Hügeln direkt vor Florenz. Zwischen Hochzeitsfesten für zweihundert Gäste, Live-Pasta-Shows und langen Bauernhof-Mittagessen für unsere Gäste haben wir mehr Pasta von Hand gerollt, als wir je zählen könnten.',
-    body2: 'Endri war sechs Jahre lang handwerklicher Bäcker, bevor er 2021 die Küche des Agriturismo Borgo Divino übernahm; Marsel leitet die Küche eines benachbarten Guts. Im Juni 2026 haben wir eine eigene kleine Küche im Oltrarno eröffnet und den Bauerntisch nach Florenz gebracht, für jeden, der mit uns mehlige Hände bekommen möchte, persönlich oder live online.',
+    body2: 'Endri war sechs Jahre lang handwerklicher Bäcker, bevor er zum Agriturismo Borgo Divino kam, wo er seit 2024 Küchenchef ist; Marsel leitet die Küche eines benachbarten Guts. Im Juni 2026 haben wir eine eigene kleine Küche im Oltrarno eröffnet und den Bauerntisch nach Florenz gebracht, für jeden, der mit uns mehlige Hände bekommen möchte, persönlich oder live online.',
     stats: [
       { n: '2026', l: 'neu eröffnet in Florenz' },
       { n: '2', l: 'Agriturismo-Chefköche' },

@@ -117,7 +117,7 @@ const en = {
     titleMid: 'two ',
     titleItal: 'Tuscan agriturismi.',
     body1: 'We’re Endri and Marsel, friends and longtime colleagues, and the head chefs of two agriturismi in the hills just outside Florence. Between wedding feasts for two hundred, live pasta shows, and long farmhouse lunches for our guests, we’ve rolled more pasta by hand than we could ever count.',
-    body2: 'Endri spent six years as an artisan baker before taking over the kitchen at Agriturismo Borgo Divino in 2021; Marsel runs the kitchen of a neighbouring estate. In June 2026 we opened a little kitchen of our own in the Oltrarno and brought the farmhouse table to Florence, for anyone who wants to get their hands floury with us, in person or live online.',
+    body2: 'Endri spent six years as an artisan baker before joining Agriturismo Borgo Divino, where he has been head chef since 2024; Marsel runs the kitchen of a neighbouring estate. In June 2026 we opened a little kitchen of our own in the Oltrarno and brought the farmhouse table to Florence, for anyone who wants to get their hands floury with us, in person or live online.',
     stats: [
       { n: '2026', l: 'newly opened in Florence' },
       { n: '2', l: 'agriturismo head chefs' },

@@ -104,7 +104,7 @@ const fr = {
     titleMid: 'deux ',
     titleItal: 'agritourismes toscans.',
     body1: 'Nous sommes Endri et Marsel, amis et collègues de longue date, et les chefs de cuisine de deux agritourismes dans les collines juste à l\'extérieur de Florence. Entre des banquets de mariage pour deux cents personnes, des spectacles de pâtes en direct et de longs déjeuners à la ferme pour nos invités, nous avons roulé plus de pâtes à la main que nous ne pourrions jamais en compter.',
-    body2: 'Endri a passé six ans en tant que boulanger artisan avant de reprendre la cuisine de l\'Agriturismo Borgo Divino en 2021 ; Marsel dirige la cuisine d\'un domaine voisin. En juin 2026, nous avons ouvert notre propre petite cuisine dans l\'Oltrarno et apporté la table de la ferme à Florence, pour tous ceux qui veulent se fariner les mains avec nous, en personne ou en direct en ligne.',
+    body2: 'Endri a passé six ans en tant que boulanger artisan avant de rejoindre l\'Agriturismo Borgo Divino, dont il est chef depuis 2024 ; Marsel dirige la cuisine d\'un domaine voisin. En juin 2026, nous avons ouvert notre propre petite cuisine dans l\'Oltrarno et apporté la table de la ferme à Florence, pour tous ceux qui veulent se fariner les mains avec nous, en personne ou en direct en ligne.',
     stats: [
       { n: '2026', l: 'récemment ouvert à Florence' },
       { n: '2', l: 'chefs d\'agritourisme' },
