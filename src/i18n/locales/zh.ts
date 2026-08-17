@@ -26,6 +26,7 @@ const zh = {
     visit: '参观',
     pastaClass: '佛罗伦萨意面课程',
     marketTour: '市场探店与烹饪',
+    agriturismo: '农庄课程',
     private: '私人活动',
     online: '在线直播',
     team: '团队建设',

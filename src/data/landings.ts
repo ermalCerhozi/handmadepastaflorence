@@ -7,6 +7,13 @@
 import { defaultLocale, type Locale } from '../i18n/config';
 import * as img from '../assets/images';
 
+// The countryside venue for the `agriturismo` page below. Every locale
+// interpolates these two constants rather than hardcoding the name, so if the
+// partner estate ever changes this is a two-line edit, not a five-language
+// rewrite. Endri is head chef here, which is what makes the page truthful.
+const VENUE = `Agriturismo Borgo Divino`;
+const TOWN = `Montespertoli`;
+
 /** Keys into ClassLanding.astro's FACT_ICONS line-icon set. */
 export type FactIcon =
   | 'clock'
@@ -3326,6 +3333,415 @@ export const landings: Record<string, LandingPage> = {
             name: `佛罗伦萨家庭烹饪课程`,
             description: `佛罗伦萨奥特拉诺区3小时家庭手工意面实践课程。6岁以上的孩子在不超过八人的餐桌旁亲手擀制意面，之后全家一起享用。成人每位95欧元，6–12岁50欧元，6岁以下免费。`,
             price: '95',
+          },
+        },
+      },
+    },
+  },
+  // The agriturismo/countryside class. Moved here from endricerhozi.com on
+  // 2026-08-17: that domain held /agriturismo-cooking-class-tuscany/ at avg
+  // position 16.6 while this one did not rank for the cluster at all, and two
+  // owned domains bidding on the same query split the authority. The personal
+  // site is now a chef portfolio and links here instead.
+  //
+  // NOTE ON INTENT: "best agriturismo in tuscany with cooking classes" is partly
+  // a *lodging* query. We are not a farm stay and must not imply we are, so the
+  // "Is this somewhere to stay?" section answers that head-on. Do not soften it.
+  //
+  // Quoted per group like `team-building` (no published price), so this entry
+  // carries `service` rather than `product` and omits courseMode.
+  agriturismo: {
+    floatingCta: false,
+    locales: {
+      en: {
+        slug: 'agriturismo-cooking-class-tuscany',
+        title: `Agriturismo Cooking Class in Tuscany: A Working Farm Kitchen`,
+        description: `A hands-on cooking class in a working Tuscan agriturismo kitchen, 30 minutes from Florence. Pick from the estate garden, roll fresh pasta with the head chef, then sit down to a long lunch of it. Groups of 6 to 20.`,
+        cl: {
+          eyebrow: `The countryside class · ${TOWN}, Tuscany`,
+          heading: `A cooking class in a working`,
+          headingItal: `agriturismo kitchen.`,
+          lede: `Not a demonstration kitchen built for visitors. This is the working kitchen at ${VENUE}, with the estate garden outside the door and the same produce that feeds the farm's own table that evening. Your group is the only one in it, and the class runs at the hour that suits your day.`,
+          image: { src: img.cookingClassGuests, alt: `Guests cooking together in a working agriturismo kitchen in the Tuscan countryside`, w: 800, h: 1067 },
+          price: `Quoted per group`,
+          priceNote: `6 to 20 guests · half a day`,
+          facts: [
+            { label: `Local Products`, value: `Estate garden produce`, icon: 'leaf' },
+            { label: `Group size`, value: `6 to 20 guests`, icon: 'people' },
+            { label: `Length`, value: `about half a day`, icon: 'clock' },
+            { label: `Where`, value: `${VENUE}, ${TOWN}`, icon: 'home' },
+            { label: `From Florence`, value: `about 30 minutes by car`, icon: 'map-pin' },
+            { label: `Language`, value: `English or Italian`, icon: 'globe' },
+            { label: `Dates`, value: `built around yours`, icon: 'calendar' },
+          ],
+          sections: [
+            {
+              // Self-contained ~150-word answer: the featured-snippet and
+              // AI-Overview target for the "agriturismo cooking class" family.
+              title: `What is an agriturismo cooking class?`,
+              paras: [
+                `An agriturismo cooking class is a cooking lesson held in the working kitchen of a Tuscan farm estate rather than in a city cookery school. The difference is practical, not cosmetic. An agriturismo grows a meaningful part of what you cook, so the menu is set by what the garden has that week instead of by a fixed curriculum, and the kitchen you work in is the same one that feeds the estate's own guests that evening. A class of this kind usually runs half a day for six to twenty people, starts by picking produce rather than at the bench, covers hand-rolled pasta and one or two dishes built around the season, and ends with everyone sitting down to eat what they made. Most guests book it as part of a villa or farm stay, which is why it runs as a long afternoon rather than an evening out.`,
+              ],
+            },
+            {
+              title: `How the day runs`,
+              paras: [
+                `We start in the garden, not at the bench. What is ready that week decides half the menu, and walking out to pick it is the part a city class cannot offer. Then it is hands in the flour: fresh pasta rolled by hand, a sauce built properly, focaccia if the timing allows, and whatever the season has made obvious.`,
+                `Your group has the kitchen to itself, so the class bends around your day: a morning before the heat, a long afternoon, or an evening that turns into dinner. It ends the way every class of ours ends, with everyone at one table eating what they just made.`,
+              ],
+            },
+            {
+              title: `Is this somewhere to stay?`,
+              paras: [
+                `Worth saying plainly, because search results mix the two up: this is a cooking class, not accommodation. ${VENUE} is a working agriturismo and it does have guest rooms, but the rooms are booked with the estate and the class is booked with us. If what you want is a Tuscan farm stay that offers cooking classes, the usual way round is to book the stay there and the class here, and we will line the timing up for you.`,
+                `If you are staying in Florence instead, our city kitchen in the Oltrarno teaches the same craft in three hours with no car needed. That is <a href="/pasta-making-class-florence/">The Chef's Table</a>.`,
+              ],
+            },
+            {
+              title: `Who is teaching`,
+              paras: [
+                `<a href="https://endricerhozi.com" target="_blank" rel="noopener">Endri Cerhozi</a> is head chef at ${VENUE} and runs this kitchen every day; he teaches alongside Marsel, head chef of a neighbouring estate. Pasta for weddings, feasts and long farmhouse lunches is their ordinary work, not a show put on for visitors. You can read more <a href="/#story">in our story</a>.`,
+              ],
+            },
+            {
+              title: `How to enquire`,
+              paras: [
+                `Email <a href="mailto:ciao@handmadepastaflorence.com?subject=Agriturismo%20cooking%20class%20enquiry">ciao@handmadepastaflorence.com</a> with your dates, your group size and where you are staying. We reply within one working day with availability and a price.`,
+              ],
+            },
+          ],
+          faqs: [
+            { q: `Where exactly is the class held?`, a: `At ${VENUE} in ${TOWN}, about 30 minutes by car from Florence, in the kitchen Endri runs as head chef. It is a working farm kitchen with the estate garden outside the door, not a demonstration space built for visitors.` },
+            { q: `Is this the same as your Florence pasta class?`, a: `No, and they suit different trips. This is a countryside half-day in an agriturismo kitchen, best if you have a car or are already staying nearby. The Florence class is a small city kitchen in the Oltrarno, walkable from the centre and three hours long.` },
+            { q: `Do we need a car?`, a: `It helps a lot. ${TOWN} is about 30 minutes from Florence and public transport out here is slow. Most groups drive or share a taxi. Tell us where you are staying and we will tell you honestly whether the trip is worth it or whether the city class suits you better.` },
+            { q: `Can we stay at the agriturismo as well?`, a: `The estate has guest rooms, but they are booked with the estate rather than with us. Book your stay with them and the class with us, and we will make the timing work.` },
+            { q: `How many people can join?`, a: `Six to twenty. Under six guests the Florence class is usually the better answer, and over twenty we would split you across two sessions so everyone still gets a bench.` },
+            { q: `What does it cost?`, a: `It is quoted per group, because the menu, the length and the number of guests all move together. Email us your dates and numbers and you will have a price within one working day.` },
+          ],
+          related: [
+            { title: `The Chef's Table`, href: `/pasta-making-class-florence/`, desc: `The city version: three hours in our Oltrarno kitchen, four shapes, €95.` },
+            { title: `Mercato & Mani`, href: `/market-tour-cooking-class-florence/`, desc: `Shop Sant'Ambrogio market at dawn, then cook the basket. 5 hours, €145.` },
+            { title: `The Family Long-Table`, href: `/private-cooking-class-florence/`, desc: `The whole Florence kitchen, privately yours, from €680.` },
+            { title: `Team Building`, href: `/team-building-cooking-class-florence/`, desc: `The same idea for companies: private kitchen, 6 to 14 people.` },
+          ],
+          ctaLabel: `Enquire about a date`,
+          emailSubject: `Agriturismo cooking class enquiry`,
+          breadcrumbName: `Agriturismo Cooking Class`,
+          service: {
+            name: `Agriturismo Cooking Class in Tuscany`,
+            description: `A hands-on half-day cooking class for 6 to 20 guests in the working kitchen at ${VENUE}, ${TOWN}, about 30 minutes from Florence. Estate-garden produce, hand-rolled pasta and a shared lunch, taught in English or Italian by the head chef.`,
+          },
+        },
+      },
+      it: {
+        slug: 'corso-cucina-agriturismo-toscana',
+        title: `Corso di Cucina in Agriturismo in Toscana: In una Cucina Vera`,
+        description: `Corso di cucina pratico nella cucina di un agriturismo toscano in attività, a 30 minuti da Firenze. Si raccoglie nell'orto, si tira la pasta a mano con l'head chef e si finisce con un lungo pranzo. Gruppi da 6 a 20.`,
+        cl: {
+          eyebrow: `Il corso in campagna · ${TOWN}, Toscana`,
+          heading: `Un corso di cucina in una vera`,
+          headingItal: `cucina di agriturismo.`,
+          lede: `Non una cucina dimostrativa costruita per i visitatori. È la cucina in attività di ${VENUE}, con l'orto della tenuta fuori dalla porta e gli stessi prodotti che la sera finiscono sulla tavola della fattoria. Il vostro gruppo è l'unico in cucina, e il corso si tiene all'ora che vi comoda.`,
+          image: { src: img.cookingClassGuests, alt: `Ospiti che cucinano insieme in una cucina di agriturismo in attività nella campagna toscana`, w: 800, h: 1067 },
+          price: `Preventivo per gruppo`,
+          priceNote: `da 6 a 20 ospiti · mezza giornata`,
+          facts: [
+            { label: `Prodotti locali`, value: `Orto della tenuta`, icon: 'leaf' },
+            { label: `Dimensione gruppo`, value: `da 6 a 20 ospiti`, icon: 'people' },
+            { label: `Durata`, value: `circa mezza giornata`, icon: 'clock' },
+            { label: `Dove`, value: `${VENUE}, ${TOWN}`, icon: 'home' },
+            { label: `Da Firenze`, value: `circa 30 minuti in auto`, icon: 'map-pin' },
+            { label: `Lingua`, value: `inglese o italiano`, icon: 'globe' },
+            { label: `Date`, value: `costruite sulle vostre`, icon: 'calendar' },
+          ],
+          sections: [
+            {
+              title: `Che cos'è un corso di cucina in agriturismo?`,
+              paras: [
+                `Un corso di cucina in agriturismo è una lezione che si tiene nella cucina in attività di una tenuta agricola toscana invece che in una scuola di cucina di città. La differenza è pratica, non estetica. Un agriturismo coltiva una parte consistente di quello che si cucina, quindi il menù lo decide ciò che l'orto ha quella settimana e non un programma fisso, e la cucina in cui lavorate è la stessa che la sera serve gli ospiti della tenuta. Un corso di questo tipo dura di solito mezza giornata per sei-venti persone, comincia raccogliendo nell'orto e non al banco, prevede pasta tirata a mano e uno o due piatti costruiti sulla stagione, e finisce con tutti seduti a mangiare quello che hanno preparato. Quasi tutti lo prenotano come parte di un soggiorno in villa o in fattoria, ed è per questo che si svolge come un lungo pomeriggio e non come una serata fuori.`,
+              ],
+            },
+            {
+              title: `Come si svolge la giornata`,
+              paras: [
+                `Si comincia nell'orto, non al banco. Quello che è pronto quella settimana decide metà del menù, e uscire a raccoglierlo è la parte che un corso in città non può offrire. Poi sono mani in farina: pasta fresca tirata a mano, un sugo fatto come si deve, focaccia se i tempi lo permettono, e quello che la stagione rende ovvio.`,
+                `Il gruppo ha la cucina tutta per sé, quindi il corso si piega alla vostra giornata: una mattina prima del caldo, un lungo pomeriggio, o una sera che diventa cena. Finisce come finiscono tutti i nostri corsi, con tutti a un tavolo a mangiare quello che hanno appena fatto.`,
+              ],
+            },
+            {
+              title: `È un posto dove dormire?`,
+              paras: [
+                `Vale la pena dirlo chiaramente, perché nei risultati di ricerca le due cose si confondono: questo è un corso di cucina, non un alloggio. ${VENUE} è un agriturismo in attività e ha delle camere, ma le camere si prenotano con la tenuta e il corso si prenota con noi. Se cercate un soggiorno in fattoria in Toscana che offra corsi di cucina, il modo normale è prenotare il soggiorno lì e il corso qui, e ai tempi pensiamo noi.`,
+                `Se invece alloggiate a Firenze, la nostra cucina in Oltrarno insegna lo stesso mestiere in tre ore e senza bisogno dell'auto. È <a href="/it/corso-pasta-fresca-firenze/">La Tavola dello Chef</a>.`,
+              ],
+            },
+            {
+              title: `Chi insegna`,
+              paras: [
+                `<a href="https://endricerhozi.com" target="_blank" rel="noopener">Endri Cerhozi</a> è head chef di ${VENUE} e questa cucina la manda avanti tutti i giorni; insegna insieme a Marsel, head chef di una tenuta vicina. La pasta per matrimoni, banchetti e lunghe tavolate di agriturismo è il loro lavoro quotidiano, non uno spettacolo montato per i visitatori. Potete leggere di più <a href="/it/#story">nella nostra storia</a>.`,
+              ],
+            },
+            {
+              title: `Come richiedere una data`,
+              paras: [
+                `Scrivete a <a href="mailto:ciao@handmadepastaflorence.com?subject=Richiesta%20corso%20cucina%20agriturismo">ciao@handmadepastaflorence.com</a> con le vostre date, quante persone siete e dove alloggiate. Rispondiamo entro un giorno lavorativo con disponibilità e preventivo.`,
+              ],
+            },
+          ],
+          faqs: [
+            { q: `Dove si tiene esattamente il corso?`, a: `A ${VENUE} a ${TOWN}, a circa 30 minuti d'auto da Firenze, nella cucina che Endri dirige come head chef. È una cucina di fattoria in attività con l'orto della tenuta fuori dalla porta, non uno spazio dimostrativo costruito per i visitatori.` },
+            { q: `È lo stesso del vostro corso a Firenze?`, a: `No, e servono a viaggi diversi. Questo è mezza giornata in campagna in una cucina di agriturismo, ideale se avete l'auto o alloggiate già in zona. Il corso di Firenze è una piccola cucina di città in Oltrarno, raggiungibile a piedi dal centro e lungo tre ore.` },
+            { q: `Serve l'auto?`, a: `Aiuta molto. ${TOWN} è a circa 30 minuti da Firenze e i mezzi pubblici da queste parti sono lenti. Quasi tutti i gruppi vengono in auto o dividono un taxi. Diteci dove alloggiate e vi diremo onestamente se vale il viaggio o se vi conviene il corso in città.` },
+            { q: `Possiamo anche dormire in agriturismo?`, a: `La tenuta ha delle camere, ma si prenotano con la tenuta e non con noi. Prenotate il soggiorno con loro e il corso con noi, e ai tempi pensiamo noi.` },
+            { q: `Quante persone possono partecipare?`, a: `Da sei a venti. Sotto le sei persone di solito il corso di Firenze è la risposta migliore, sopra le venti vi dividiamo su due sessioni così tutti hanno un banco.` },
+            { q: `Quanto costa?`, a: `Si fa un preventivo per gruppo, perché menù, durata e numero di ospiti si muovono insieme. Scriveteci date e numeri e avrete un prezzo entro un giorno lavorativo.` },
+          ],
+          related: [
+            { title: `La Tavola dello Chef`, href: `/it/corso-pasta-fresca-firenze/`, desc: `La versione in città: tre ore in Oltrarno, quattro formati, €95.` },
+            { title: `Mercato & Mani`, href: `/it/corso-cucina-tour-mercato-firenze/`, desc: `Spesa al mercato di Sant'Ambrogio all'alba, poi si cucina. 5 ore, €145.` },
+            { title: `La Tavolata di Famiglia`, href: `/it/corso-cucina-privato-firenze/`, desc: `Tutta la cucina di Firenze solo per voi, da €680.` },
+            { title: `Team Building`, href: `/it/corso-cucina-team-building-firenze/`, desc: `La stessa idea per le aziende: cucina privata, da 6 a 14 persone.` },
+          ],
+          ctaLabel: `Richiedi una data`,
+          emailSubject: `Richiesta corso cucina agriturismo`,
+          breadcrumbName: `Corso di Cucina in Agriturismo`,
+          service: {
+            name: `Corso di Cucina in Agriturismo in Toscana`,
+            description: `Corso di cucina pratico di mezza giornata per 6-20 ospiti nella cucina in attività di ${VENUE}, ${TOWN}, a circa 30 minuti da Firenze. Prodotti dell'orto, pasta tirata a mano e un pranzo condiviso, in inglese o italiano con l'head chef.`,
+          },
+        },
+      },
+      fr: {
+        slug: 'cours-cuisine-agritourisme-toscane',
+        title: `Cours de Cuisine en Agritourisme en Toscane : Vraie Ferme`,
+        description: `Un cours de cuisine pratique dans la cuisine d'un agriturismo toscan en activité, à 30 minutes de Florence. On cueille au potager, on roule les pâtes à la main avec le chef, puis on partage un long déjeuner. Groupes de 6 à 20.`,
+        cl: {
+          eyebrow: `Le cours à la campagne · ${TOWN}, Toscane`,
+          heading: `Un cours de cuisine dans une vraie`,
+          headingItal: `cuisine d'agritourisme.`,
+          lede: `Pas une cuisine de démonstration construite pour les visiteurs. C'est la cuisine en activité de ${VENUE}, avec le potager du domaine derrière la porte et les mêmes produits qui nourriront la table de la ferme le soir même. Votre groupe y est seul, et le cours se tient à l'heure qui vous arrange.`,
+          image: { src: img.cookingClassGuests, alt: `Des invités cuisinant ensemble dans une cuisine d'agritourisme en activité dans la campagne toscane`, w: 800, h: 1067 },
+          price: `Devis par groupe`,
+          priceNote: `de 6 à 20 personnes · une demi-journée`,
+          facts: [
+            { label: `Produits locaux`, value: `Potager du domaine`, icon: 'leaf' },
+            { label: `Taille du groupe`, value: `de 6 à 20 personnes`, icon: 'people' },
+            { label: `Durée`, value: `environ une demi-journée`, icon: 'clock' },
+            { label: `Où`, value: `${VENUE}, ${TOWN}`, icon: 'home' },
+            { label: `De Florence`, value: `environ 30 minutes en voiture`, icon: 'map-pin' },
+            { label: `Langue`, value: `anglais ou italien`, icon: 'globe' },
+            { label: `Dates`, value: `construites autour des vôtres`, icon: 'calendar' },
+          ],
+          sections: [
+            {
+              title: `Qu'est-ce qu'un cours de cuisine en agritourisme ?`,
+              paras: [
+                `Un cours de cuisine en agritourisme est une leçon donnée dans la cuisine en activité d'un domaine agricole toscan plutôt que dans une école de cuisine urbaine. La différence est pratique, pas décorative. Un agriturismo cultive une part réelle de ce que vous cuisinez : le menu est donc décidé par ce que le potager donne cette semaine et non par un programme figé, et la cuisine où vous travaillez est celle qui servira les hôtes du domaine le soir. Un cours de ce type dure en général une demi-journée pour six à vingt personnes, commence au potager et non au plan de travail, comprend des pâtes roulées à la main et un ou deux plats de saison, et se termine avec tout le monde attablé devant ce qu'il a préparé. La plupart des invités le réservent dans le cadre d'un séjour en villa ou à la ferme, d'où le format long après-midi plutôt que sortie du soir.`,
+              ],
+            },
+            {
+              title: `Le déroulé de la journée`,
+              paras: [
+                `On commence au potager, pas au plan de travail. Ce qui est prêt cette semaine décide la moitié du menu, et sortir le cueillir est précisément ce qu'un cours en ville ne peut pas offrir. Ensuite, les mains dans la farine : pâtes fraîches roulées à la main, une sauce montée correctement, une focaccia si le temps le permet, et ce que la saison rend évident.`,
+                `Votre groupe a la cuisine pour lui seul, donc le cours s'adapte à votre journée : une matinée avant la chaleur, un long après-midi, ou une soirée qui devient un dîner. Il se termine comme tous nos cours, tout le monde à une même table devant ce qu'il vient de faire.`,
+              ],
+            },
+            {
+              title: `Est-ce un hébergement ?`,
+              paras: [
+                `Il vaut mieux le dire clairement, car les résultats de recherche mélangent les deux : ceci est un cours de cuisine, pas un hébergement. ${VENUE} est un agriturismo en activité et dispose de chambres, mais les chambres se réservent auprès du domaine et le cours auprès de nous. Si vous cherchez un séjour à la ferme en Toscane proposant des cours de cuisine, la façon habituelle est de réserver le séjour là-bas et le cours ici : nous calons les horaires ensemble.`,
+                `Si vous logez plutôt à Florence, notre cuisine de l'Oltrarno enseigne le même métier en trois heures, sans voiture. C'est <a href="/fr/cours-de-pates-fraiches-florence/">La Table du Chef</a>.`,
+              ],
+            },
+            {
+              title: `Qui enseigne`,
+              paras: [
+                `<a href="https://endricerhozi.com" target="_blank" rel="noopener">Endri Cerhozi</a> est chef de cuisine à ${VENUE} et fait tourner cette cuisine tous les jours ; il enseigne avec Marsel, chef d'un domaine voisin. Les pâtes pour les mariages, les banquets et les longues tablées de ferme sont leur travail quotidien, pas un spectacle monté pour les visiteurs. Vous pouvez en lire plus <a href="/fr/#story">dans notre histoire</a>.`,
+              ],
+            },
+            {
+              title: `Comment demander une date`,
+              paras: [
+                `Écrivez à <a href="mailto:ciao@handmadepastaflorence.com?subject=Demande%20cours%20cuisine%20agritourisme">ciao@handmadepastaflorence.com</a> avec vos dates, le nombre de personnes et le lieu de votre séjour. Nous répondons sous un jour ouvré avec les disponibilités et un tarif.`,
+              ],
+            },
+          ],
+          faqs: [
+            { q: `Où se tient exactement le cours ?`, a: `À ${VENUE}, à ${TOWN}, à environ 30 minutes en voiture de Florence, dans la cuisine qu'Endri dirige comme chef. C'est une cuisine de ferme en activité avec le potager du domaine derrière la porte, pas un espace de démonstration construit pour les visiteurs.` },
+            { q: `Est-ce le même que votre cours à Florence ?`, a: `Non, et ils conviennent à des voyages différents. Ici c'est une demi-journée à la campagne dans une cuisine d'agritourisme, idéale si vous avez une voiture ou logez déjà à proximité. Le cours de Florence est une petite cuisine urbaine de l'Oltrarno, accessible à pied depuis le centre et long de trois heures.` },
+            { q: `Faut-il une voiture ?`, a: `Cela aide beaucoup. ${TOWN} est à environ 30 minutes de Florence et les transports en commun sont lents par ici. La plupart des groupes viennent en voiture ou partagent un taxi. Dites-nous où vous logez et nous vous dirons honnêtement si le trajet en vaut la peine.` },
+            { q: `Peut-on aussi dormir à l'agriturismo ?`, a: `Le domaine a des chambres, mais elles se réservent auprès du domaine et non auprès de nous. Réservez le séjour chez eux et le cours chez nous, et nous ferons coïncider les horaires.` },
+            { q: `Combien de personnes peuvent participer ?`, a: `De six à vingt. En dessous de six, le cours de Florence est en général la meilleure réponse ; au-dessus de vingt, nous répartissons le groupe sur deux sessions pour que chacun ait un plan de travail.` },
+            { q: `Combien cela coûte-t-il ?`, a: `Le tarif est établi par groupe, car le menu, la durée et le nombre d'invités bougent ensemble. Envoyez-nous vos dates et vos effectifs et vous aurez un prix sous un jour ouvré.` },
+          ],
+          related: [
+            { title: `La Table du Chef`, href: `/fr/cours-de-pates-fraiches-florence/`, desc: `La version en ville : trois heures dans notre cuisine de l'Oltrarno, quatre formes, 95 €.` },
+            { title: `Mercato & Mani`, href: `/fr/cours-cuisine-visite-marche-florence/`, desc: `Le marché de Sant'Ambrogio à l'aube, puis on cuisine le panier. 5 heures, 145 €.` },
+            { title: `La Grande Tablée`, href: `/fr/cours-cuisine-prive-florence/`, desc: `Toute la cuisine de Florence rien que pour vous, à partir de 680 €.` },
+            { title: `Team Building`, href: `/fr/cours-cuisine-team-building-florence/`, desc: `La même idée pour les entreprises : cuisine privatisée, de 6 à 14 personnes.` },
+          ],
+          ctaLabel: `Demander une date`,
+          emailSubject: `Demande cours cuisine agritourisme`,
+          breadcrumbName: `Cours de Cuisine en Agritourisme`,
+          service: {
+            name: `Cours de Cuisine en Agritourisme en Toscane`,
+            description: `Un cours de cuisine pratique d'une demi-journée pour 6 à 20 personnes dans la cuisine en activité de ${VENUE}, ${TOWN}, à environ 30 minutes de Florence. Produits du potager, pâtes roulées à la main et un déjeuner partagé, en anglais ou en italien avec le chef.`,
+          },
+        },
+      },
+      de: {
+        slug: 'agriturismo-kochkurs-toskana',
+        title: `Agriturismo-Kochkurs in der Toskana: Echte Hofküche`,
+        description: `Ein praktischer Kochkurs in der arbeitenden Küche eines toskanischen Agriturismo, 30 Minuten von Florenz. Im Garten ernten, Pasta von Hand ausrollen, danach ein langes gemeinsames Mittagessen. Gruppen von 6 bis 20.`,
+        cl: {
+          eyebrow: `Der Kurs auf dem Land · ${TOWN}, Toskana`,
+          heading: `Ein Kochkurs in einer echten`,
+          headingItal: `Agriturismo-Küche.`,
+          lede: `Keine Schauküche für Besucher. Das ist die arbeitende Küche des ${VENUE}, mit dem Gutsgarten vor der Tür und denselben Produkten, die am Abend auf dem Tisch des Hofes landen. Ihre Gruppe ist allein darin, und der Kurs findet zu der Stunde statt, die zu Ihrem Tag passt.`,
+          image: { src: img.cookingClassGuests, alt: `Gäste kochen gemeinsam in einer arbeitenden Agriturismo-Küche in der toskanischen Landschaft`, w: 800, h: 1067 },
+          price: `Angebot pro Gruppe`,
+          priceNote: `6 bis 20 Gäste · ein halber Tag`,
+          facts: [
+            { label: `Regionale Produkte`, value: `Aus dem Gutsgarten`, icon: 'leaf' },
+            { label: `Gruppengröße`, value: `6 bis 20 Gäste`, icon: 'people' },
+            { label: `Dauer`, value: `etwa ein halber Tag`, icon: 'clock' },
+            { label: `Wo`, value: `${VENUE}, ${TOWN}`, icon: 'home' },
+            { label: `Von Florenz`, value: `etwa 30 Minuten mit dem Auto`, icon: 'map-pin' },
+            { label: `Sprache`, value: `Englisch oder Italienisch`, icon: 'globe' },
+            { label: `Termine`, value: `nach Ihren Daten`, icon: 'calendar' },
+          ],
+          sections: [
+            {
+              title: `Was ist ein Agriturismo-Kochkurs?`,
+              paras: [
+                `Ein Agriturismo-Kochkurs ist eine Kochstunde in der arbeitenden Küche eines toskanischen Landguts statt in einer städtischen Kochschule. Der Unterschied ist praktisch, nicht kosmetisch. Ein Agriturismo baut einen erheblichen Teil dessen an, was Sie kochen. Das Menü bestimmt also, was der Garten in dieser Woche hergibt, und nicht ein fester Lehrplan, und die Küche, in der Sie arbeiten, ist dieselbe, die am Abend die Gäste des Guts versorgt. Ein solcher Kurs dauert in der Regel einen halben Tag für sechs bis zwanzig Personen, beginnt im Garten statt am Arbeitstisch, umfasst von Hand ausgerollte Pasta und ein bis zwei Gerichte aus der Saison und endet damit, dass alle gemeinsam essen, was sie gemacht haben. Die meisten buchen ihn als Teil eines Villen- oder Hofaufenthalts, weshalb er als langer Nachmittag läuft und nicht als Abendprogramm.`,
+              ],
+            },
+            {
+              title: `Wie der Tag abläuft`,
+              paras: [
+                `Wir beginnen im Garten, nicht am Arbeitstisch. Was in dieser Woche reif ist, entscheidet das halbe Menü, und hinauszugehen und es zu ernten ist genau der Teil, den ein Kurs in der Stadt nicht bieten kann. Danach heißt es Hände in den Teig: frische Pasta von Hand ausgerollt, eine ordentlich aufgebaute Sauce, Focaccia, wenn es die Zeit erlaubt, und was die Saison ohnehin nahelegt.`,
+                `Ihre Gruppe hat die Küche für sich, der Kurs richtet sich also nach Ihrem Tag: ein Vormittag vor der Hitze, ein langer Nachmittag oder ein Abend, der zum Abendessen wird. Er endet wie jeder unserer Kurse, mit allen an einem Tisch und dem, was sie gerade gemacht haben.`,
+              ],
+            },
+            {
+              title: `Ist das eine Unterkunft?`,
+              paras: [
+                `Das sollte man deutlich sagen, weil die Suchergebnisse beides vermischen: Dies ist ein Kochkurs, keine Unterkunft. ${VENUE} ist ein arbeitender Agriturismo und hat Gästezimmer, aber die Zimmer bucht man beim Gut und den Kurs bei uns. Wenn Sie einen toskanischen Hofaufenthalt mit Kochkursen suchen, ist der übliche Weg, den Aufenthalt dort und den Kurs hier zu buchen. Um die Abstimmung kümmern wir uns.`,
+                `Wenn Sie stattdessen in Florenz wohnen, lehrt unsere Küche im Oltrarno dasselbe Handwerk in drei Stunden, ganz ohne Auto. Das ist <a href="/de/pasta-kurs-florenz/">Der Chef's Table</a>.`,
+              ],
+            },
+            {
+              title: `Wer unterrichtet`,
+              paras: [
+                `<a href="https://endricerhozi.com" target="_blank" rel="noopener">Endri Cerhozi</a> ist Küchenchef im ${VENUE} und führt diese Küche jeden Tag; er unterrichtet gemeinsam mit Marsel, Küchenchef eines benachbarten Guts. Pasta für Hochzeiten, Festessen und lange Hoftafeln ist ihre alltägliche Arbeit und keine Vorführung für Besucher. Mehr dazu <a href="/de/#story">in unserer Geschichte</a>.`,
+              ],
+            },
+            {
+              title: `Anfragen`,
+              paras: [
+                `Schreiben Sie an <a href="mailto:ciao@handmadepastaflorence.com?subject=Anfrage%20Agriturismo-Kochkurs">ciao@handmadepastaflorence.com</a> mit Ihren Daten, Ihrer Gruppengröße und Ihrem Aufenthaltsort. Wir antworten innerhalb eines Werktags mit Verfügbarkeit und Preis.`,
+              ],
+            },
+          ],
+          faqs: [
+            { q: `Wo genau findet der Kurs statt?`, a: `Im ${VENUE} in ${TOWN}, etwa 30 Autominuten von Florenz, in der Küche, die Endri als Küchenchef führt. Es ist eine arbeitende Hofküche mit dem Gutsgarten vor der Tür, kein für Besucher gebauter Vorführraum.` },
+            { q: `Ist das derselbe Kurs wie in Florenz?`, a: `Nein, und beide passen zu verschiedenen Reisen. Dies ist ein halber Tag auf dem Land in einer Agriturismo-Küche, ideal mit Auto oder wenn Sie ohnehin in der Nähe wohnen. Der Kurs in Florenz ist eine kleine Stadtküche im Oltrarno, vom Zentrum zu Fuß erreichbar und drei Stunden lang.` },
+            { q: `Brauchen wir ein Auto?`, a: `Es hilft sehr. ${TOWN} liegt etwa 30 Minuten von Florenz entfernt und der öffentliche Nahverkehr ist hier draußen langsam. Die meisten Gruppen fahren mit dem Auto oder teilen sich ein Taxi. Sagen Sie uns, wo Sie wohnen, und wir sagen Ihnen ehrlich, ob sich die Fahrt lohnt.` },
+            { q: `Können wir auch im Agriturismo übernachten?`, a: `Das Gut hat Gästezimmer, sie werden aber beim Gut gebucht und nicht bei uns. Buchen Sie den Aufenthalt dort und den Kurs bei uns, wir stimmen die Zeiten ab.` },
+            { q: `Wie viele Personen können teilnehmen?`, a: `Sechs bis zwanzig. Unter sechs Gästen ist der Kurs in Florenz meist die bessere Antwort, über zwanzig teilen wir Sie auf zwei Durchgänge auf, damit jeder einen Arbeitsplatz hat.` },
+            { q: `Was kostet es?`, a: `Der Preis wird pro Gruppe erstellt, weil Menü, Dauer und Gästezahl zusammenhängen. Schicken Sie uns Daten und Personenzahl, und Sie haben innerhalb eines Werktags einen Preis.` },
+          ],
+          related: [
+            { title: `Der Chef's Table`, href: `/de/pasta-kurs-florenz/`, desc: `Die Stadtversion: drei Stunden in unserer Oltrarno-Küche, vier Formen, 95 €.` },
+            { title: `Mercato & Mani`, href: `/de/markt-tour-kochkurs-florenz/`, desc: `Im Morgengrauen über den Sant'Ambrogio-Markt, dann kochen. 5 Stunden, 145 €.` },
+            { title: `Die Familientafel`, href: `/de/privater-kochkurs-florenz/`, desc: `Die ganze Küche in Florenz nur für Sie, ab 680 €.` },
+            { title: `Teambuilding`, href: `/de/teambuilding-kochkurs-florenz/`, desc: `Dieselbe Idee für Firmen: private Küche, 6 bis 14 Personen.` },
+          ],
+          ctaLabel: `Termin anfragen`,
+          emailSubject: `Anfrage Agriturismo-Kochkurs`,
+          breadcrumbName: `Agriturismo-Kochkurs`,
+          service: {
+            name: `Agriturismo-Kochkurs in der Toskana`,
+            description: `Ein praktischer halbtägiger Kochkurs für 6 bis 20 Gäste in der arbeitenden Küche des ${VENUE}, ${TOWN}, etwa 30 Minuten von Florenz. Produkte aus dem Gutsgarten, von Hand ausgerollte Pasta und ein gemeinsames Mittagessen, auf Englisch oder Italienisch mit dem Küchenchef.`,
+          },
+        },
+      },
+      zh: {
+        slug: 'tuosikana-nongzhuang-pengren-kecheng',
+        title: `托斯卡纳农庄烹饪课程：在真正的农场厨房里`,
+        description: `在托斯卡纳一家仍在运营的农庄厨房里上一堂动手烹饪课，距佛罗伦萨约30分钟车程。先去菜园采摘，再跟主厨手工擀制意面，最后大家围坐共享一顿长午餐。6至20人成团。`,
+        cl: {
+          eyebrow: `乡间课程 · 托斯卡纳${TOWN}`,
+          heading: `一堂在真正农庄厨房里的`,
+          headingItal: `烹饪课程。`,
+          lede: `这不是为游客搭建的示范厨房，而是${VENUE}每天都在运转的厨房：门外就是庄园菜园，你用的正是当晚要端上农庄餐桌的同一批食材。整间厨房只属于你们这一组，上课时间也按你们当天的安排来定。`,
+          image: { src: img.cookingClassGuests, alt: `客人们在托斯卡纳乡间一家仍在运营的农庄厨房里一起烹饪`, w: 800, h: 1067 },
+          price: `按团报价`,
+          priceNote: `6至20人 · 约半天`,
+          facts: [
+            { label: `本地食材`, value: `庄园菜园直采`, icon: 'leaf' },
+            { label: `团队人数`, value: `6至20人`, icon: 'people' },
+            { label: `时长`, value: `约半天`, icon: 'clock' },
+            { label: `地点`, value: `${TOWN}，${VENUE}`, icon: 'home' },
+            { label: `距佛罗伦萨`, value: `驾车约30分钟`, icon: 'map-pin' },
+            { label: `语言`, value: `英语或意大利语`, icon: 'globe' },
+            { label: `日期`, value: `按你们的行程安排`, icon: 'calendar' },
+          ],
+          sections: [
+            {
+              title: `什么是农庄烹饪课程？`,
+              paras: [
+                `农庄烹饪课程，是在托斯卡纳一处仍在运营的农庄厨房里上课，而不是在城市的烹饪学校里。这个区别是实质性的，不是装饰性的。农庄自己种植了你所要烹饪的相当一部分食材，因此菜单由菜园这一周的收成决定，而不是由固定教案决定；你动手的这间厨房，也正是当晚要招待庄园住客的那一间。这类课程通常为六到二十人开设，历时半天，从菜园采摘开始而不是从案板开始，内容包括手工擀制的意面和一两道当季菜式，最后所有人围坐一桌，吃掉自己亲手做的东西。大多数客人会把它安排在别墅或农庄住宿行程之中，所以它是一个悠长的下午，而不是一场晚间活动。`,
+              ],
+            },
+            {
+              title: `这一天怎么过`,
+              paras: [
+                `我们从菜园开始，而不是从案板开始。这一周什么熟了，就决定了半份菜单，而能亲自走出去采摘，正是城市课堂给不了的部分。之后就是把手埋进面粉里：手工擀制的新鲜意面、认真熬制的酱汁、时间允许的话再加一份佛卡夏，以及当季自然而然该做的东西。`,
+                `整间厨房只属于你们，所以课程会迁就你们的行程：可以是暑气未起的上午，可以是悠长的下午，也可以是一场直接变成晚餐的傍晚。它的结束方式和我们所有课程一样，所有人围在一张桌旁，吃刚刚亲手做出来的东西。`,
+              ],
+            },
+            {
+              title: `这里可以住宿吗？`,
+              paras: [
+                `这一点值得说清楚，因为搜索结果常把两件事混为一谈：这是一堂烹饪课，不是住宿。${VENUE}确实是一家仍在运营的农庄，也确实有客房，但客房要向庄园预订，课程要向我们预订。如果你想找的是"托斯卡纳农庄住宿＋烹饪课程"，通常的做法是住宿订他们的、课程订我们的，时间衔接交给我们来安排。`,
+                `如果你住在佛罗伦萨市区，我们在奥特拉诺区的厨房用三小时教授同样的手艺，而且完全不需要开车。那就是<a href="/zh/foluolunsa-yidali-mian-kecheng/">主厨餐桌</a>。`,
+              ],
+            },
+            {
+              title: `谁来授课`,
+              paras: [
+                `<a href="https://endricerhozi.com" target="_blank" rel="noopener">Endri Cerhozi</a>是${VENUE}的主厨，这间厨房由他每天打理；与他一同授课的是邻近庄园的主厨Marsel。为婚宴、宴席和农庄长桌午餐做意面，是他们的日常工作，而不是为游客准备的表演。你可以在<a href="/zh/#story">我们的故事</a>里读到更多。`,
+              ],
+            },
+            {
+              title: `如何咨询`,
+              paras: [
+                `发邮件到<a href="mailto:ciao@handmadepastaflorence.com?subject=Agriturismo%20cooking%20class%20enquiry">ciao@handmadepastaflorence.com</a>，告诉我们你的日期、人数以及住在哪里。我们会在一个工作日内回复可预订时间与报价。`,
+              ],
+            },
+          ],
+          faqs: [
+            { q: `课程具体在哪里上？`, a: `在${TOWN}的${VENUE}，距佛罗伦萨驾车约30分钟，就在Endri担任主厨的那间厨房里。那是一间仍在运营的农场厨房，门外就是庄园菜园，而不是为游客搭建的示范空间。` },
+            { q: `这和你们在佛罗伦萨的意面课是同一个吗？`, a: `不是，两者适合不同的行程。这一堂是乡间的半天课程，在农庄厨房里进行，适合有车或本来就住在附近的客人。佛罗伦萨那堂课在奥特拉诺区的小厨房，从市中心步行可达，时长三小时。` },
+            { q: `需要开车吗？`, a: `会方便很多。${TOWN}距佛罗伦萨约30分钟，这一带的公共交通很慢。大多数团队自驾或合乘出租车。告诉我们你住在哪里，我们会诚实地告诉你这趟是否值得，或者市区那堂课是否更适合你。` },
+            { q: `我们可以顺便住在农庄吗？`, a: `庄园有客房，但需要向庄园预订，而不是向我们预订。住宿订他们的、课程订我们的，时间衔接我们来安排。` },
+            { q: `可以有多少人参加？`, a: `六到二十人。少于六人时，通常佛罗伦萨那堂课是更好的选择；超过二十人，我们会分成两场，确保每个人都有自己的操作台。` },
+            { q: `费用是多少？`, a: `按团报价，因为菜单、时长和人数是联动的。把日期和人数发给我们，一个工作日内你就会收到价格。` },
+          ],
+          related: [
+            { title: `主厨餐桌`, href: `/zh/foluolunsa-yidali-mian-kecheng/`, desc: `市区版本：在奥特拉诺厨房三小时，四种形状，95欧元。` },
+            { title: `市场与手工`, href: `/zh/shichang-daolan-pengren-kecheng-foluolunsa/`, desc: `清晨逛圣安布罗焦市场，然后烹饪当天的食材。5小时，145欧元。` },
+            { title: `家庭长桌体验`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `整个佛罗伦萨厨房专属于你们，680欧元起。` },
+            { title: `团队建设`, href: `/zh/tuandui-jianshe-pengren-kecheng-foluolunsa/`, desc: `同样的形式，面向企业：私人包场，6至14人。` },
+          ],
+          ctaLabel: `咨询可预订日期`,
+          emailSubject: `Agriturismo cooking class enquiry`,
+          breadcrumbName: `农庄烹饪课程`,
+          service: {
+            name: `托斯卡纳农庄烹饪课程`,
+            description: `在${TOWN}的${VENUE}仍在运营的厨房里，为6至20位客人开设的半天动手烹饪课程，距佛罗伦萨约30分钟车程。庄园菜园的食材、手工擀制的意面和一顿共享午餐，由主厨以英语或意大利语授课。`,
           },
         },
       },

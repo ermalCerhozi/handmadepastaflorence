@@ -26,6 +26,7 @@ const fr = {
     visit: 'Visiter',
     pastaClass: 'Cours de Pâtes à Florence',
     marketTour: 'Visite du Marché et Cuisine',
+    agriturismo: 'Cours en Agritourisme',
     private: 'Événements Privés',
     online: 'En Ligne en Direct',
     team: 'Team Building',

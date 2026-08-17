@@ -31,6 +31,7 @@ const it: Dict = {
     visit: `Visita`,
     pastaClass: `Corso di Pasta a Firenze`,
     marketTour: `Tour del Mercato & Cucina`,
+    agriturismo: 'Corso in Agriturismo',
     private: `Eventi Privati`,
     online: `In diretta Online`,
     team: `Team Building`,

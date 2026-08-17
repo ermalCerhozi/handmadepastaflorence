@@ -28,6 +28,7 @@ const de = {
     visit: 'Besuchen',
     pastaClass: 'Pasta-Kurs in Florenz',
     marketTour: 'Markttour & Kochen',
+    agriturismo: 'Agriturismo-Kurs',
     private: 'Private Events',
     online: 'Live Online',
     team: 'Teambuilding',

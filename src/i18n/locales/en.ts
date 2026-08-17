@@ -37,6 +37,7 @@ const en = {
     visit: 'Visit',
     pastaClass: 'Pasta Class in Florence',
     marketTour: 'Market Tour & Cook',
+    agriturismo: 'Agriturismo Class',
     private: 'Private Events',
     online: 'Live Online',
     team: 'Team Building',
