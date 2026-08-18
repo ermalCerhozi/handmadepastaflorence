@@ -34,6 +34,8 @@ En dessous de huit, c’est tout autre chose. C’est le seuil à partir duquel 
 
 *Le nôtre est de huit, et de six pour la visite du marché.*
 
+Si vous réservez pour un groupe de travail et non pour vous-même, le nombre utile n'est plus le maximum mais le format : un cours partagé finit par être complet, alors qu'un [cours de cuisine team building privé](/fr/cours-cuisine-team-building-florence/) prend toute la cuisine pour 6 à 14 personnes et suit votre programme plutôt qu'un horaire fixe.
+
 **Nuance honnête :** si ce que vous voulez, c’est une grande soirée animée et conviviale où vous rencontrez une douzaine de voyageurs et où la cuisine est le prétexte, un cours plus nombreux est réellement plus amusant et généralement moins cher. Réservez celui-là. Les petits groupes sont pour ceux qui veulent repartir en sachant vraiment faire les pâtes.
 
 ## 2. Le vin est-il dans le prix, ou ajouté à la fin ?

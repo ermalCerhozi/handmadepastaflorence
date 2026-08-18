@@ -1,5 +1,5 @@
 ---
-title: 'Les meilleures pâtes faites à la main à Florence : où les manger, le guide d’un chef'
+title: 'Les meilleures pâtes à la main à Florence : le guide d’un chef'
 description: 'L’avis honnête d’un chef sur les meilleures pâtes de Florence: comment repérer les vraies sur un menu, quoi commander, et les trattorias qui valent le détour.'
 pubDate: 2026-07-08
 author: 'Endri Cerhozi'
@@ -39,9 +39,9 @@ Florence est célèbre pour être une ville de viande (la bistecca est sur toute
 
 ## Où chercher, quartier par quartier
 
-**Sant'Ambrogio.** Le marché où les Florentins font leurs courses (nous y emmenons notre propre [cours du marché](/market-tour-cooking-class-florence/)) nourrit les trattorias qui l'entourent. N'importe quel endroit situé à deux rues du marché et rempli d'Italiens à 13h00 est une valeur sûre.
+**Sant'Ambrogio.** Le marché où les Florentins font leurs courses (nous y emmenons notre propre [cours du marché](/fr/cours-cuisine-visite-marche-florence/)) nourrit les trattorias qui l'entourent. N'importe quel endroit situé à deux rues du marché et rempli d'Italiens à 13h00 est une valeur sûre.
 
-**L'Oltrarno.** Notre côté de la rivière (Santo Spirito et San Frediano) a toujours la plus forte densité de cuisines honnêtes du centre. Les osteries autour de Santo Spirito sont fiables pour les pâtes fraîches et le vin local ; nous avons écrit un guide complet pour [passer une journée dans l'Oltrarno](/blog/things-to-do-in-oltrarno-florence/).
+**L'Oltrarno.** Notre côté de la rivière (Santo Spirito et San Frediano) a toujours la plus forte densité de cuisines honnêtes du centre. Les osteries autour de Santo Spirito sont fiables pour les pâtes fraîches et le vin local ; nous avons écrit un guide complet pour [passer une journée dans l'Oltrarno](/fr/blog/things-to-do-in-oltrarno-florence/).
 
 **Les institutions.** Quelques noms sur lesquels chaque Florentin débattra mais où tout le monde finit par aller : **Trattoria Mario** près du Mercato Centrale (déjeuner seulement, tables partagées, espèces; allez-y tôt), **Trattoria Sostanza** (minuscule, historique, réservez à l'avance), et autour de Santo Spirito, **Osteria Santo Spirito** et les cuisines de Borgo San Jacopo. Les horaires et les politiques de réservation changent; vérifiez avant de traverser la ville.
 
@@ -53,4 +53,4 @@ Florence est célèbre pour être une ville de viande (la bistecca est sur toute
 
 ## L'autre option : mangez les pâtes que vous avez préparées
 
-La meilleure assiette de pâtes faites à la main à Florence est honnêtement celle que vous avez vous-même roulée vingt minutes plus tôt; je ne suis pas objectif, mais ce sont nos invités qui le disent, pas nous. Chacun de [nos cours](/pasta-making-class-florence/) se termine exactement comme un bon déjeuner de trattoria : vos pâtes, une sauce toscane, un verre de vin local, et nulle part où aller pendant un moment.
+La meilleure assiette de pâtes faites à la main à Florence est honnêtement celle que vous avez vous-même roulée vingt minutes plus tôt; je ne suis pas objectif, mais ce sont nos invités qui le disent, pas nous. Chacun de [nos cours](/fr/cours-de-pates-fraiches-florence/) se termine exactement comme un bon déjeuner de trattoria : vos pâtes, une sauce toscane, un verre de vin local, et nulle part où aller pendant un moment.

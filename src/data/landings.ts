@@ -50,6 +50,13 @@ interface LandingContent {
 
 interface LandingLocale {
   slug: string;
+  /**
+   * Keep under ~60 characters and do NOT append " | Handmade Pasta Florence".
+   * The suffix is 26 characters Google truncated off every one of these pages
+   * (titles measured 64-112 chars against a ~60 char render limit), so it cost
+   * the end of the real title and bought nothing: Google renders the site name
+   * from the domain separately. Same rule as BlogPostPage.astro and shapes.ts.
+   */
   title: string;
   description: string;
   cl: LandingContent;
@@ -99,7 +106,7 @@ export const landings: Record<string, LandingPage> = {
     locales: {
       en: {
         slug: 'pasta-making-class-florence',
-        title: `Pasta Making Class in Florence: 4 Shapes + Wine Included (€95) | Handmade Pasta Florence`,
+        title: `Pasta Making Class in Florence: 4 Shapes + Wine, €95`,
         description: `A 3-hour hands-on pasta making class in Florence’s Oltrarno. Roll four classic shapes with two Tuscan agriturismo head chefs, then sit down to eat what you made with two Tuscan wines included. Max 8 guests, €95 per person.`,
         cl: {
           eyebrow: `The Chef’s Table · Oltrarno, Florence`,
@@ -179,7 +186,7 @@ export const landings: Record<string, LandingPage> = {
       },
       it: {
         slug: 'corso-pasta-fresca-firenze',
-        title: `Corso di Pasta Fresca a Firenze: 4 Formati + Vino Incluso (€95) | Handmade Pasta Florence`,
+        title: `Corso di Pasta Fresca a Firenze: 4 Formati + Vino, €95`,
         description: `Un corso pratico di pasta fresca di 3 ore in Oltrarno a Firenze. Prepara quattro formati classici con due chef toscani, poi siediti a mangiare ciò che hai fatto con due calici toscani inclusi. Max 8 ospiti, €95 a persona.`,
         cl: {
           eyebrow: `Il Tavolo dello Chef · Oltrarno, Firenze`,
@@ -259,7 +266,7 @@ export const landings: Record<string, LandingPage> = {
       },
       fr: {
         slug: 'cours-de-pates-fraiches-florence',
-        title: `Cours de Pâtes Fraîches à Florence: 4 Formes + Vin Inclus (€95) | Handmade Pasta Florence`,
+        title: `Cours de Pâtes Fraîches à Florence : 4 Formes + Vin, 95 €`,
         description: `Un cours pratique de pâtes fraîches de 3 heures dans l'Oltrarno à Florence. Préparez quatre formes classiques avec deux chefs toscans, puis asseyez-vous pour déguster ce que vous avez préparé avec deux vins toscans inclus. Max 8 personnes, 95 € par personne.`,
         cl: {
           eyebrow: `La Table du Chef · Oltrarno, Florence`,
@@ -422,7 +429,7 @@ export const landings: Record<string, LandingPage> = {
       },
       zh: {
         slug: 'foluolunsa-yidali-mian-kecheng',
-        title: `佛罗伦萨手工意面课程：主厨餐桌 (€95) | Handmade Pasta Florence`,
+        title: `佛罗伦萨手工意面课程：主厨餐桌 (€95)`,
         description: `在佛罗伦萨奥特拉诺区进行的3小时手工意面制作课程。与两位托斯卡纳农庄主厨一起揉制四种经典形状，然后坐下来品尝您制作的美食和一杯基安蒂葡萄酒。最多8位客人，每人95欧元。`,
         cl: {
           eyebrow: `主厨餐桌 · 佛罗伦萨奥特拉诺`,
@@ -509,7 +516,7 @@ export const landings: Record<string, LandingPage> = {
     locales: {
       en: {
         slug: 'market-tour-cooking-class-florence',
-        title: `Market Tour & Cooking Class in Florence: Mercato & Mani (€145) | Handmade Pasta Florence`,
+        title: `Market Tour & Cooking Class Florence: Mercato & Mani, €145`,
         description: `Shop Sant’Ambrogio market with a Tuscan chef, then turn the basket into ravioli, a ragù and a seasonal dolce in our Oltrarno kitchen. About 5 hours, max 6 guests, €145 per person.`,
         cl: {
           eyebrow: `Mercato & Mani · Sant’Ambrogio + Oltrarno`,
@@ -577,7 +584,7 @@ export const landings: Record<string, LandingPage> = {
       },
       it: {
         slug: 'corso-cucina-tour-mercato-firenze',
-        title: `Tour del Mercato e Corso di Cucina a Firenze: Mercato & Mani (€145) | Handmade Pasta Florence`,
+        title: `Tour del Mercato e Corso di Cucina a Firenze, €145`,
         description: `Fai la spesa al mercato di Sant'Ambrogio con uno chef toscano, poi trasforma il cesto in ravioli, ragù e un dolce di stagione nella nostra cucina in Oltrarno. Circa 5 ore, max 6 ospiti, €145 a persona.`,
         cl: {
           eyebrow: `Mercato & Mani · Sant’Ambrogio + Oltrarno`,
@@ -644,7 +651,7 @@ export const landings: Record<string, LandingPage> = {
       },
       fr: {
         slug: 'cours-cuisine-visite-marche-florence',
-        title: `Visite du Marché et Cours de Cuisine à Florence: Mercato & Mani (€145) | Handmade Pasta Florence`,
+        title: `Visite du Marché et Cours de Cuisine à Florence, 145 €`,
         description: `Faites vos courses au marché de Sant'Ambrogio avec un chef toscan, puis transformez votre panier en raviolis, ragoût et un dessert de saison dans notre cuisine de l'Oltrarno. Environ 5 heures, max 6 personnes, 145 € par personne.`,
         cl: {
           eyebrow: `Mercato & Mani · Sant'Ambrogio + Oltrarno`,
@@ -711,7 +718,7 @@ export const landings: Record<string, LandingPage> = {
       },
       de: {
         slug: 'markt-tour-kochkurs-florenz',
-        title: `Markttour & Kochkurs in Florenz: Mercato & Mani (€145) | Handmade Pasta Florence`,
+        title: `Markttour & Kochkurs in Florenz: Mercato & Mani (€145)`,
         description: `Kaufen Sie mit einem toskanischen Koch auf dem Sant'Ambrogio-Markt ein und verwandeln Sie den Korb dann in unserer Küche im Oltrarno in Ravioli, ein Ragù und ein saisonales Dessert. Etwa 5 Stunden, max. 6 Gäste, 145 € pro Person.`,
         cl: {
           eyebrow: `Mercato & Mani · Sant'Ambrogio + Oltrarno`,
@@ -778,7 +785,7 @@ export const landings: Record<string, LandingPage> = {
       },
       zh: {
         slug: 'shichang-daolan-pengren-kecheng-foluolunsa',
-        title: `佛罗伦萨市场导览与烹饪课程：Mercato & Mani (€145) | Handmade Pasta Florence`,
+        title: `佛罗伦萨市场导览与烹饪课程：Mercato & Mani (€145)`,
         description: `与托斯卡纳厨师一起在圣安布罗焦市场购物，然后在我们奥特拉诺的厨房里将购物篮里的食材变成意式饺子、慢炖肉酱和时令甜点。约5小时，最多6位客人，每人145欧元。`,
         cl: {
           eyebrow: `Mercato & Mani · 圣安布罗焦 + 奥特拉诺`,
@@ -853,7 +860,7 @@ export const landings: Record<string, LandingPage> = {
     locales: {
       en: {
         slug: 'private-cooking-class-florence',
-        title: `Private Cooking Class in Florence: The Family Long-Table | Handmade Pasta Florence`,
+        title: `Private Cooking Class in Florence: The Family Long-Table`,
         description: `Book the whole kitchen for a private pasta-making feast in Florence: birthdays, proposals, reunions. 6–14 guests, evenings, two Tuscan chefs all to yourselves. From €680.`,
         cl: {
           eyebrow: `The Family Long-Table · private events`,
@@ -923,7 +930,7 @@ export const landings: Record<string, LandingPage> = {
       },
       it: {
         slug: 'corso-cucina-privato-firenze',
-        title: `Corso di Cucina Privato a Firenze: Il Lungo Tavolo di Famiglia | Handmade Pasta Florence`,
+        title: `Corso di Cucina Privato a Firenze: Tavolo di Famiglia`,
         description: `Prenota l'intera cucina per una festa privata a base di pasta fresca a Firenze: compleanni, proposte, ritrovi. 6–14 ospiti, serate, due chef toscani tutti per voi. Da €680.`,
         cl: {
           eyebrow: `Il Lungo Tavolo di Famiglia · eventi privati`,
@@ -992,7 +999,7 @@ export const landings: Record<string, LandingPage> = {
       },
       fr: {
         slug: 'cours-cuisine-prive-florence',
-        title: `Cours de Cuisine Privé à Florence: La Longue Table Familiale | Handmade Pasta Florence`,
+        title: `Cours de Cuisine Privé à Florence: La Longue Table Familiale`,
         description: `Réservez toute la cuisine pour un festin privé de préparation de pâtes à Florence: anniversaires, demandes en mariage, réunions. 6–14 personnes, soirées, deux chefs toscans rien que pour vous. À partir de 680 €.`,
         cl: {
           eyebrow: `La Longue Table Familiale · événements privés`,
@@ -1061,7 +1068,7 @@ export const landings: Record<string, LandingPage> = {
       },
       de: {
         slug: 'privater-kochkurs-florenz',
-        title: `Privater Kochkurs in Florenz: Die lange Familientafel | Handmade Pasta Florence`,
+        title: `Privater Kochkurs in Florenz: Die lange Familientafel`,
         description: `Buchen Sie die ganze Küche für ein privates Pasta-Fest in Florenz: Geburtstage, Heiratsanträge, Treffen. 6–14 Gäste, abends, zwei toskanische Köche ganz für Sie allein. Ab 680 €.`,
         cl: {
           eyebrow: `Die lange Familientafel · private Veranstaltungen`,
@@ -1130,7 +1137,7 @@ export const landings: Record<string, LandingPage> = {
       },
       zh: {
         slug: 'siren-pengren-kecheng-foluolunsa',
-        title: `佛罗伦萨私人烹饪课程：家庭长桌体验 | Handmade Pasta Florence`,
+        title: `佛罗伦萨私人烹饪课程：家庭长桌体验`,
         description: `预订整个厨房，在佛罗伦萨举办私人的意面制作盛宴：生日、求婚、聚会。6–14位客人，晚上，两位托斯卡纳厨师专为您服务。680欧元起。`,
         cl: {
           eyebrow: `家庭长桌体验 · 私人活动`,
@@ -1206,7 +1213,7 @@ export const landings: Record<string, LandingPage> = {
     locales: {
       en: {
         slug: 'online-pasta-making-class',
-        title: `Live Online Pasta Making Class with Ingredient Kit | Handmade Pasta Florence`,
+        title: `Live Online Pasta Making Class with Ingredient Kit`,
         description: `Cook fresh pasta live with two Tuscan chefs, streamed from our Florence kitchen, from €68 per person, with an optional fresh-pasta ingredient kit (00 flour, semola, rolling pin, recipe cards) shipped chilled to your door.`,
         cl: {
           eyebrow: `Live Online · streamed from Florence`,
@@ -1271,7 +1278,7 @@ export const landings: Record<string, LandingPage> = {
       },
       it: {
         slug: 'corso-pasta-online',
-        title: `Corso di Pasta in Diretta Online con Kit Ingredienti | Handmade Pasta Florence`,
+        title: `Corso di Pasta in Diretta Online con Kit Ingredienti`,
         description: `Cucina pasta fresca in diretta con due chef toscani, trasmesso dalla nostra cucina di Firenze, da €68 a persona, con kit ingredienti per pasta fresca opzionale (farina 00, semola, mattarello, schede ricette) spedito refrigerato a casa tua.`,
         cl: {
           eyebrow: `In Diretta Online · trasmesso da Firenze`,
@@ -1335,7 +1342,7 @@ export const landings: Record<string, LandingPage> = {
       },
       fr: {
         slug: 'cours-pates-en-ligne',
-        title: `Cours de Pâtes en Direct en Ligne avec Kit d'Ingrédients | Handmade Pasta Florence`,
+        title: `Cours de Pâtes en Direct en Ligne avec Kit d'Ingrédients`,
         description: `Cuisinez des pâtes fraîches en direct avec deux chefs toscans, diffusé depuis notre cuisine de Florence, à partir de 68 € par personne, avec un kit d'ingrédients opitonnel (farine 00, semoule, rouleau à pâtisserie, fiches recettes) livré frais à votre porte.`,
         cl: {
           eyebrow: `En Direct en Ligne · diffusé depuis Florence`,
@@ -1399,7 +1406,7 @@ export const landings: Record<string, LandingPage> = {
       },
       de: {
         slug: 'online-pasta-kurs',
-        title: `Live-Online-Pasta-Kurs mit Zutaten-Kit | Handmade Pasta Florence`,
+        title: `Live-Online-Pasta-Kurs mit Zutaten-Kit`,
         description: `Kochen Sie live frische Pasta mit zwei toskanischen Köchen, gestreamt aus unserer Küche in Florenz, ab 68 € pro Person, mit einem optionalen Zutaten-Kit für frische Pasta (00-Mehl, Semola, Nudelholz, Rezeptkarten), das gekühlt an Ihre Tür geliefert wird.`,
         cl: {
           eyebrow: `Live Online · gestreamt aus Florenz`,
@@ -1463,7 +1470,7 @@ export const landings: Record<string, LandingPage> = {
       },
       zh: {
         slug: 'zaixian-yidali-mian-kecheng',
-        title: `含食材包的在线直播意面课程 | Handmade Pasta Florence`,
+        title: `含食材包的在线直播意面课程`,
         description: `与两位托斯卡纳厨师一起进行在线直播烹饪，从我们的佛罗伦萨厨房为您实时转播，每人68欧元起，可选择将新鲜意面食材包（00号面粉、杜兰小麦粉、擀面杖、食谱卡）冷藏配送到您家。`,
         cl: {
           eyebrow: `在线直播 · 佛罗伦萨实时转播`,
@@ -1890,7 +1897,7 @@ export const landings: Record<string, LandingPage> = {
     locales: {
       en: {
         slug: 'gluten-free-cooking-class-florence',
-        title: `Gluten-Free Cooking Class in Florence: Fresh Pasta, No Surcharge (€95) | Handmade Pasta Florence`,
+        title: `Gluten-Free Cooking Class Florence: No Surcharge, €95`,
         description: `A hands-on gluten-free cooking class in Florence: your own flour blend, your own clean station, and the same four pasta shapes as everyone else at the table. Max 8 guests in our Oltrarno kitchen, €95 per person, no gluten-free surcharge.`,
         cl: {
           eyebrow: `Gluten-free · Oltrarno, Florence`,
@@ -1959,7 +1966,7 @@ export const landings: Record<string, LandingPage> = {
       },
       it: {
         slug: 'corso-cucina-senza-glutine-firenze',
-        title: `Corso di Cucina Senza Glutine a Firenze: Pasta Fresca, Nessun Supplemento (€95) | Handmade Pasta Florence`,
+        title: `Corso di Cucina Senza Glutine a Firenze: Nessun Supplemento`,
         description: `Un corso pratico di cucina senza glutine a Firenze: la tua miscela di farine, la tua postazione pulita e gli stessi quattro formati di pasta degli altri ospiti. Max 8 ospiti in Oltrarno, €95 a persona, senza supplemento.`,
         cl: {
           eyebrow: `Senza glutine · Oltrarno, Firenze`,
@@ -2028,7 +2035,7 @@ export const landings: Record<string, LandingPage> = {
       },
       fr: {
         slug: 'cours-cuisine-sans-gluten-florence',
-        title: `Cours de Cuisine Sans Gluten à Florence: Pâtes Fraîches, Sans Supplément (95 €) | Handmade Pasta Florence`,
+        title: `Cours de Cuisine Sans Gluten à Florence : Sans Supplément`,
         description: `Un cours de cuisine sans gluten à Florence : votre mélange de farines, votre poste de travail propre et les mêmes quatre formes de pâtes que les autres. Max 8 personnes dans l'Oltrarno, 95 € par personne, sans supplément.`,
         cl: {
           eyebrow: `Sans gluten · Oltrarno, Florence`,
@@ -2097,7 +2104,7 @@ export const landings: Record<string, LandingPage> = {
       },
       de: {
         slug: 'glutenfreier-kochkurs-florenz',
-        title: `Glutenfreier Kochkurs in Florenz: Frische Pasta, ohne Aufpreis (95 €) | Handmade Pasta Florence`,
+        title: `Glutenfreier Kochkurs in Florenz: ohne Aufpreis, 95 €`,
         description: `Ein praktischer glutenfreier Kochkurs in Florenz: eigene Mehlmischung, eigene saubere Station und dieselben vier Pastaformen wie alle anderen am Tisch. Max. 8 Gäste im Oltrarno, 95 € pro Person, ohne Aufpreis.`,
         cl: {
           eyebrow: `Glutenfrei · Oltrarno, Florenz`,
@@ -2166,7 +2173,7 @@ export const landings: Record<string, LandingPage> = {
       },
       zh: {
         slug: 'wu-fuzhi-pengren-kecheng-foluolunsa',
-        title: `佛罗伦萨无麸质烹饪课程：手工意面，不加收费用 (€95) | Handmade Pasta Florence`,
+        title: `佛罗伦萨无麸质烹饪课程：手工意面，不加收费用 (€95)`,
         description: `佛罗伦萨的无麸质实践烹饪课程：专属面粉配方、专属清洁操作台，以及与其他客人相同的四种意面形状。奥特拉诺厨房最多8位客人，每人95欧元，无额外费用。`,
         cl: {
           eyebrow: `无麸质 · 佛罗伦萨奥特拉诺`,
@@ -2244,7 +2251,7 @@ export const landings: Record<string, LandingPage> = {
     locales: {
       en: {
         slug: 'pasta-class-for-two-florence',
-        title: `Pasta Class for Two in Florence: A Cooking Class for Couples (€95 each) | Handmade Pasta Florence`,
+        title: `Pasta Class for Two in Florence: For Couples, €95 each`,
         description: `A pasta making class for two in Florence: an evening at a table of never more than eight, rolling fresh pasta side by side and eating it with a glass of Chianti. €95 each, or take the whole Oltrarno kitchen privately.`,
         cl: {
           eyebrow: `For two · Oltrarno, Florence`,
@@ -2313,7 +2320,7 @@ export const landings: Record<string, LandingPage> = {
       },
       it: {
         slug: 'corso-pasta-per-due-firenze',
-        title: `Corso di Pasta per Due a Firenze: Un Corso di Cucina per Coppie (€95 a testa) | Handmade Pasta Florence`,
+        title: `Corso di Pasta per Due a Firenze: per Coppie, €95 a testa`,
         description: `Un corso di pasta fresca per due a Firenze: una sera a un tavolo di massimo otto persone, a stendere la pasta fianco a fianco e a mangiarla con un bicchiere di Chianti. €95 a testa, oppure tutta la cucina in Oltrarno solo per voi.`,
         cl: {
           eyebrow: `Per due · Oltrarno, Firenze`,
@@ -2382,7 +2389,7 @@ export const landings: Record<string, LandingPage> = {
       },
       fr: {
         slug: 'cours-de-pates-pour-deux-florence',
-        title: `Cours de Pâtes pour Deux à Florence: Un Cours de Cuisine en Couple (95 € par personne) | Handmade Pasta Florence`,
+        title: `Cours de Pâtes pour Deux à Florence : en Couple, 95 €`,
         description: `Un cours de pâtes fraîches pour deux à Florence : une soirée à une table de huit personnes maximum, à étaler les pâtes côte à côte et à les déguster avec un verre de Chianti. 95 € par personne, ou toute la cuisine de l'Oltrarno rien que pour vous.`,
         cl: {
           eyebrow: `Pour deux · Oltrarno, Florence`,
@@ -2451,7 +2458,7 @@ export const landings: Record<string, LandingPage> = {
       },
       de: {
         slug: 'pasta-kurs-fuer-zwei-florenz',
-        title: `Pasta-Kurs für Zwei in Florenz: Ein Kochkurs für Paare (95 € pro Person) | Handmade Pasta Florence`,
+        title: `Pasta-Kurs für Zwei in Florenz: für Paare, 95 € pro Person`,
         description: `Ein Pasta-Kurs für zwei in Florenz: ein Abend an einem Tisch mit höchstens acht Gästen, Seite an Seite frische Pasta rollen und sie mit einem Glas Chianti essen. 95 € pro Person, oder die ganze Küche im Oltrarno für Sie allein.`,
         cl: {
           eyebrow: `Für zwei · Oltrarno, Florenz`,
@@ -2520,7 +2527,7 @@ export const landings: Record<string, LandingPage> = {
       },
       zh: {
         slug: 'shuangren-yidali-mian-kecheng-foluolunsa',
-        title: `佛罗伦萨双人意面课程：情侣烹饪课程 (每人€95) | Handmade Pasta Florence`,
+        title: `佛罗伦萨双人意面课程：情侣烹饪课程 (每人€95)`,
         description: `佛罗伦萨的双人手工意面课程：在最多八人的餐桌旁度过一个傍晚，并肩擀制新鲜意面，再配上一杯基安蒂葡萄酒享用。每人95欧元，也可将整个奥特拉诺厨房私人包场。`,
         cl: {
           eyebrow: `双人 · 佛罗伦萨奥特拉诺`,
@@ -2602,7 +2609,7 @@ export const landings: Record<string, LandingPage> = {
     locales: {
       en: {
         slug: 'gift-a-cooking-class-florence',
-        title: `Gift a Cooking Class in Florence: Pasta Class Vouchers (from €68) | Handmade Pasta Florence`,
+        title: `Gift a Cooking Class in Florence: Vouchers from €68`,
         description: `Give a hands-on cooking class in Florence instead of another object. A pasta class gift voucher for our Oltrarno kitchen from €95, or a live online class with an ingredient kit from €68. No date locked in; they choose when.`,
         cl: {
           eyebrow: `Gift vouchers · Florence & online`,
@@ -2671,7 +2678,7 @@ export const landings: Record<string, LandingPage> = {
       },
       it: {
         slug: 'regala-corso-di-cucina-firenze',
-        title: `Regala un Corso di Cucina a Firenze: Buoni Regalo Corso di Pasta (da €68) | Handmade Pasta Florence`,
+        title: `Regala un Corso di Cucina a Firenze: Buoni Regalo da €68`,
         description: `Regala un corso di cucina pratico a Firenze invece dell'ennesimo oggetto. Buono regalo per la nostra cucina in Oltrarno da €95, o un corso in diretta online con kit ingredienti da €68. Nessuna data fissata; sceglie chi lo riceve.`,
         cl: {
           eyebrow: `Buoni regalo · Firenze e online`,
@@ -2740,7 +2747,7 @@ export const landings: Record<string, LandingPage> = {
       },
       fr: {
         slug: 'offrir-cours-de-cuisine-florence',
-        title: `Offrir un Cours de Cuisine à Florence: Bons Cadeaux Cours de Pâtes (dès 68 €) | Handmade Pasta Florence`,
+        title: `Offrir un Cours de Cuisine à Florence : Bons Cadeaux dès 68 €`,
         description: `Offrez un cours de cuisine à Florence plutôt qu'un objet de plus. Un bon cadeau pour notre cuisine de l'Oltrarno dès 95 €, ou un cours en direct en ligne avec kit d'ingrédients dès 68 €. Aucune date fixée; c'est le destinataire qui choisit.`,
         cl: {
           eyebrow: `Bons cadeaux · Florence et en ligne`,
@@ -2809,7 +2816,7 @@ export const landings: Record<string, LandingPage> = {
       },
       de: {
         slug: 'kochkurs-verschenken-florenz',
-        title: `Kochkurs in Florenz verschenken: Gutscheine für Pasta-Kurse (ab 68 €) | Handmade Pasta Florence`,
+        title: `Kochkurs in Florenz verschenken: Gutscheine ab 68 €`,
         description: `Verschenken Sie einen Kochkurs in Florenz statt noch eines Gegenstands. Ein Gutschein für unsere Küche im Oltrarno ab 95 €, oder ein Live-Online-Kurs mit Zutaten-Kit ab 68 €. Kein festes Datum; die Beschenkten wählen selbst.`,
         cl: {
           eyebrow: `Gutscheine · Florenz und online`,
@@ -2878,7 +2885,7 @@ export const landings: Record<string, LandingPage> = {
       },
       zh: {
         slug: 'pengren-kecheng-liquan-foluolunsa',
-        title: `赠送佛罗伦萨烹饪课程：意面课程礼券 (68欧元起) | Handmade Pasta Florence`,
+        title: `赠送佛罗伦萨烹饪课程：意面课程礼券 (68欧元起)`,
         description: `与其再送一件物品，不如赠送一堂佛罗伦萨的亲手实践烹饪课程。我们奥特拉诺厨房的礼券95欧元起，或含食材包的在线直播课程68欧元起。不锁定日期，由收礼人自己选择。`,
         cl: {
           eyebrow: `礼券 · 佛罗伦萨与线上`,
@@ -2955,7 +2962,7 @@ export const landings: Record<string, LandingPage> = {
     locales: {
       en: {
         slug: 'family-cooking-class-florence',
-        title: `Family Cooking Class in Florence: Kids 6+ from €50 | Handmade Pasta Florence`,
+        title: `Family Cooking Class in Florence: Kids 6+ from €50`,
         description: `A hands-on family pasta class in Florence's Oltrarno. Children 6 and up roll their own pasta beside you at a table of never more than eight, then everyone eats what they made. €95 per adult, €50 for ages 6–12, under 6 free.`,
         cl: {
           eyebrow: `For families · Oltrarno, Florence`,
@@ -3034,7 +3041,7 @@ export const landings: Record<string, LandingPage> = {
       },
       it: {
         slug: 'corso-cucina-famiglia-firenze',
-        title: `Corso di Cucina per Famiglie a Firenze: Bambini da €50 | Handmade Pasta Florence`,
+        title: `Corso di Cucina per Famiglie a Firenze: Bambini da €50`,
         description: `Un corso di pasta fresca per famiglie in Oltrarno a Firenze. I bambini dai 6 anni stendono la loro pasta accanto a voi a un tavolo di massimo otto persone, poi si mangia tutti insieme. €95 ad adulto, €50 per 6–12 anni, sotto i 6 gratis.`,
         cl: {
           eyebrow: `Per famiglie · Oltrarno, Firenze`,
@@ -3112,7 +3119,7 @@ export const landings: Record<string, LandingPage> = {
       },
       fr: {
         slug: 'cours-cuisine-famille-florence',
-        title: `Cours de Cuisine en Famille à Florence: Enfants dès 50 € | Handmade Pasta Florence`,
+        title: `Cours de Cuisine en Famille à Florence: Enfants dès 50 €`,
         description: `Un cours de pâtes fraîches en famille dans l'Oltrarno à Florence. Les enfants dès 6 ans façonnent leurs propres pâtes à côté de vous, à une table de huit maximum, puis tout le monde mange. 95 € par adulte, 50 € de 6 à 12 ans, gratuit avant 6 ans.`,
         cl: {
           eyebrow: `Pour les familles · Oltrarno, Florence`,
@@ -3190,7 +3197,7 @@ export const landings: Record<string, LandingPage> = {
       },
       de: {
         slug: 'familien-kochkurs-florenz',
-        title: `Familien-Kochkurs in Florenz: Kinder ab 50 € | Handmade Pasta Florence`,
+        title: `Familien-Kochkurs in Florenz: Kinder ab 50 €`,
         description: `Ein Pasta-Kurs für Familien im Oltrarno in Florenz. Kinder ab 6 Jahren rollen ihre eigene Pasta neben Ihnen, an einem Tisch mit höchstens acht Plätzen, danach essen alle gemeinsam. 95 € pro Erwachsenem, 50 € für 6–12 Jahre, unter 6 kostenlos.`,
         cl: {
           eyebrow: `Für Familien · Oltrarno, Florenz`,
@@ -3268,7 +3275,7 @@ export const landings: Record<string, LandingPage> = {
       },
       zh: {
         slug: 'jiating-pengren-kecheng-foluolunsa',
-        title: `佛罗伦萨家庭烹饪课程：儿童50欧元起 | Handmade Pasta Florence`,
+        title: `佛罗伦萨家庭烹饪课程：儿童50欧元起`,
         description: `佛罗伦萨奥特拉诺区的家庭手工意面课程。6岁以上的孩子在您身边亲手擀制意面，每桌不超过八人，然后全家一起享用自己的作品。成人每人95欧元，6–12岁50欧元，6岁以下免费。`,
         cl: {
           eyebrow: `适合家庭 · 佛罗伦萨奥特拉诺`,

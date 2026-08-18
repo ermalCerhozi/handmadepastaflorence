@@ -16,6 +16,8 @@ faqs:
     a: "Meistens ja, aber nicht immer: Der Boboli-Garten schließt am ersten und letzten Montag jedes Monats. Der Palazzo Pitti selbst ist jeden Montag geschlossen. Prüfen Sie das Datum, bevor Sie einen Tag darum herum planen."
   - q: "Kann man montags in Florenz einen Kochkurs machen?"
     a: "Ja. Unsere Kurse finden an sieben Tagen die Woche statt, auch montags, um 10:00, 14:30 und 18:00 Uhr. Der Montag ist einer der einfachsten Tage, um einen Platz zu bekommen, weil die meisten Kochschulen der Stadt an diesem Tag geschlossen haben."
+  - q: "Was kann man montags in Florenz am besten unternehmen?"
+    a: "Steigen Sie morgens auf Brunelleschis Kuppel, solange die Schlangen kurz sind, gehen Sie ins Oltrarno zur Brancacci-Kapelle und zu den Handwerksstätten, nehmen Sie sich nachmittags Zeit für ein langes Mittagessen oder einen Kochkurs, und laufen Sie zum Sonnenuntergang hinauf nach San Miniato al Monte. All das hat montags geöffnet; die Uffizien, die Accademia und der Palazzo Pitti nicht."
 ---
 
 Wenn Sie an einem Montag in Florenz sind, haben Sie die schlechte Nachricht wahrscheinlich schon entdeckt: **Die Uffizien und die Accademia sind beide geschlossen.** Der Palazzo Pitti ebenfalls. Die zwei Dinge, für die die meisten Menschen eine Reise nach Florenz buchen, haben am selben Wochentag zu, jede Woche.
@@ -52,7 +54,7 @@ Praktisch macht das den Montag zu einem der einfachsten Tage der Woche, um einen
 
 Es löst auch das andere Montagsproblem, nämlich das Mittagessen: Sie haben nichts reserviert, die halbe Liste ist geschlossen, und um eins stehen Sie auf einem Platz und überlegen, wo Sie essen sollen. Diese Entscheidung ist bereits getroffen.
 
-## Ein Montag, der funktioniert
+## Was man montags in Florenz unternehmen kann: ein Tagesablauf
 
 - **Vormittag:** der Dom-Komplex, zuerst der Kuppelaufstieg, solange die Beine frisch sind.
 - **Mittag:** hinüber ins Oltrarno. Brancacci-Kapelle, dann durch San Frediano und die Via Maggio zu den Werkstätten.

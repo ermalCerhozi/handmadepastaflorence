@@ -11,9 +11,9 @@ const en = {
     // subline, this description's opener, and the hero image alt. Everything else
     // here is conversion copy. Do not re-target "pasta making class in Florence":
     // that belongs to /pasta-making-class-florence/ and was de-cannibalized on purpose.
-    homeTitle: 'Cooking Classes in Florence: Hands-On Pasta with Two Tuscan Chefs | Handmade Pasta Florence',
+    homeTitle: 'Cooking Classes in Florence: Hands-On Pasta, Two Chefs',
     homeDescription: 'Small-group cooking classes in Florence, hands-in-the-flour from the first minute. Roll fresh pasta with two Tuscan agriturismo head chefs in our Oltrarno kitchen from €95: market-tour, private and gluten-free options, or live online with an ingredient kit from €68.',
-    blogTitle: 'Florence Pasta & Food Guides | Handmade Pasta Florence',
+    blogTitle: 'Florence Pasta & Food Guides',
     blogDescription: 'Guides to fresh pasta and eating well in Florence, written by two Tuscan agriturismo head chefs: pasta shapes, where to eat, gluten-free tips and the Oltrarno neighbourhood.',
   },
 

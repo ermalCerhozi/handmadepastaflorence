@@ -34,6 +34,8 @@ Under eight is a different thing entirely. It is the point at which a chef can p
 
 *Ours is eight, and six on the market tour.*
 
+If you are booking for a work group rather than yourself, the maximum stops being the useful number and the format does: a shared class caps out, while a [private team building class](/team-building-cooking-class-florence/) takes the whole kitchen for 6 to 14 people and runs to your agenda instead of a fixed timetable.
+
 **Honest caveat:** if what you want is a big, loud, sociable evening where you meet a dozen travellers and the cooking is the excuse, a larger class is genuinely more fun and usually cheaper. Book one of those. Small groups are for people who want to come away actually able to make the pasta.
 
 ## 2. Is the wine in the price, or added at the end?

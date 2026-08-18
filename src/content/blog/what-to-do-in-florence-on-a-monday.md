@@ -1,5 +1,5 @@
 ---
-title: 'What to do in Florence on a Monday (when the Uffizi is closed)'
+title: 'What to do in Florence on a Monday (the Uffizi is closed)'
 description: 'The Uffizi and the Accademia both close on Mondays. Here is what is actually open (the Duomo complex, Palazzo Vecchio, Santa Croce, the markets and the Oltrarno), plus how to plan the day around it.'
 pubDate: 2026-08-11
 author: 'Endri Cerhozi'
@@ -16,6 +16,8 @@ faqs:
     a: "Usually, but not always: the Boboli Gardens close on the first and last Monday of each month. Palazzo Pitti itself is closed every Monday. Check the date before you build a day around it."
   - q: "Can you do a cooking class in Florence on a Monday?"
     a: "Yes. Our classes run seven days a week, including Mondays, at 10:00, 14:30 and 18:00. Monday is one of the easiest days to get a seat, because most of the city's cooking schools take it off."
+  - q: "What are the best things to do in Florence on a Monday?"
+    a: "Climb Brunelleschi's dome in the morning while the queues are short, cross to the Oltrarno for the Brancacci Chapel and the artisan workshops, take a long lunch or a cooking class in the afternoon, and walk up to San Miniato al Monte for sunset. All of those are open on Mondays; the Uffizi, the Accademia and Palazzo Pitti are not."
 ---
 
 If you are in Florence on a Monday, you have probably just discovered the bad news: **the Uffizi and the Accademia are both closed.** So is Palazzo Pitti. The two things most people book a trip to Florence for are shut on the same day of the week, every week.
@@ -52,7 +54,7 @@ Practically, that makes Monday one of the easiest days of the week to get a seat
 
 It also solves the other Monday problem, which is lunch: you have booked nothing, half your list is closed, and you are standing in a piazza at one o'clock deciding where to eat. That decision is already made.
 
-## A Monday itinerary that works
+## Things to do in Florence on a Monday: an itinerary that works
 
 - **Morning:** the Duomo complex, dome climb first while your legs are fresh.
 - **Midday:** cross to the Oltrarno. Brancacci Chapel, then wander San Frediano and Via Maggio for the workshops.

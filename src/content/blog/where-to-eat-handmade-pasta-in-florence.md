@@ -1,5 +1,5 @@
 ---
-title: 'The best handmade pasta in Florence: where to eat it, a pasta chef’s guide'
+title: 'The best handmade pasta in Florence: a pasta chef’s guide'
 description: 'A pasta chef’s honest take on the best pasta in Florence: how to spot the real thing on a menu, what to order (pici, pappardelle, tortelli), and the trattorias worth your one dinner.'
 pubDate: 2026-07-08
 author: 'Endri Cerhozi'

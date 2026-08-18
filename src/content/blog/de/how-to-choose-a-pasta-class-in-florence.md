@@ -34,6 +34,8 @@ Unter acht ist etwas völlig anderes. Das ist der Punkt, an dem ein Koch Sie in 
 
 *Unsere liegt bei acht, bei der Markttour bei sechs.*
 
+Wenn Sie für eine Arbeitsgruppe buchen und nicht für sich selbst, ist nicht mehr die Höchstzahl die nützliche Angabe, sondern das Format: ein offener Kurs ist irgendwann voll, während ein [privater Teambuilding-Kochkurs](/de/teambuilding-kochkurs-florenz/) die ganze Küche für 6 bis 14 Personen übernimmt und sich nach Ihrem Zeitplan richtet statt nach einem festen. Für ein Teamevent in Florenz ist das der Unterschied, der zählt.
+
 **Ehrliche Einschränkung:** Wenn Sie einen großen, lauten, geselligen Abend wollen, an dem Sie ein Dutzend Reisende kennenlernen und das Kochen der Vorwand ist, ist ein größerer Kurs wirklich lustiger und meist günstiger. Buchen Sie den. Kleine Gruppen sind für Leute, die hinterher tatsächlich Pasta machen können wollen.
 
 ## 2. Ist der Wein im Preis oder kommt er am Ende dazu?

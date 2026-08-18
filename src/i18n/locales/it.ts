@@ -5,9 +5,9 @@ import type { Dict } from '../types';
 
 const it: Dict = {
   meta: {
-    homeTitle: `Corsi di Cucina a Firenze: Pasta Fresca con Due Chef Toscani | Handmade Pasta Florence`,
+    homeTitle: `Corsi di Cucina a Firenze: Pasta Fresca con Due Chef`,
     homeDescription: `Corsi di cucina a Firenze in piccoli gruppi, con le mani in pasta dal primo minuto. Prepara pasta fresca con due chef toscani di agriturismo nella nostra cucina in Oltrarno da €95: tour del mercato, privati e senza glutine, o in diretta online con kit ingredienti da €68.`,
-    blogTitle: `Guide alla Pasta & al Cibo di Firenze | Handmade Pasta Florence`,
+    blogTitle: `Guide alla Pasta & al Cibo di Firenze`,
     blogDescription: `Guide alla pasta fresca e a mangiare bene a Firenze, scritte da due chef toscani: formati di pasta, dove mangiare, consigli senza glutine e il quartiere dell'Oltrarno.`,
   },
 

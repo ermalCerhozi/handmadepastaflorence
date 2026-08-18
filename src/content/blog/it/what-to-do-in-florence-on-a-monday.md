@@ -16,6 +16,8 @@ faqs:
     a: "Di solito sì, ma non sempre: il Giardino di Boboli chiude il primo e l’ultimo lunedì di ogni mese. Palazzo Pitti è invece chiuso tutti i lunedì. Controlla la data prima di costruirci sopra una giornata."
   - q: "Si può fare un corso di cucina a Firenze di lunedì?"
     a: "Sì. I nostri corsi si tengono sette giorni su sette, lunedì compreso, alle 10:00, 14:30 e 18:00. Il lunedì è uno dei giorni più facili per trovare posto, perché quasi tutte le scuole di cucina della città chiudono proprio quel giorno."
+  - q: "Quali sono le cose migliori da fare a Firenze di lunedì?"
+    a: "Salite sulla cupola del Brunelleschi la mattina, finché le file sono corte, attraversate in Oltrarno per la Cappella Brancacci e le botteghe artigiane, prendetevi un pranzo lungo o un corso di cucina nel pomeriggio, e salite a San Miniato al Monte per il tramonto. Tutto questo è aperto il lunedì; gli Uffizi, l'Accademia e Palazzo Pitti no."
 ---
 
 Se siete a Firenze di lunedì, probabilmente avete appena scoperto la brutta notizia: **gli Uffizi e l’Accademia sono chiusi tutti e due.** E anche Palazzo Pitti. Le due cose per cui la maggior parte delle persone prenota un viaggio a Firenze sono chiuse lo stesso giorno della settimana, ogni settimana.
@@ -52,7 +54,7 @@ In pratica, questo rende il lunedì uno dei giorni più facili della settimana p
 
 Risolve anche l’altro problema del lunedì, cioè il pranzo: non avete prenotato niente, metà della lista è chiusa e alle una siete in piazza a decidere dove mangiare. Quella decisione è già presa.
 
-## Un itinerario del lunedì che funziona
+## Cose da fare a Firenze di lunedì: un itinerario che funziona
 
 - **Mattina:** il complesso del Duomo, prima la salita alla cupola finché avete le gambe fresche.
 - **Mezzogiorno:** si attraversa in Oltrarno. Cappella Brancacci, poi due passi per San Frediano e Via Maggio tra le botteghe.

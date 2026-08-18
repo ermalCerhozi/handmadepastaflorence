@@ -16,6 +16,8 @@ faqs:
     a: "En général oui, mais pas toujours : les jardins de Boboli ferment le premier et le dernier lundi de chaque mois. Le Palazzo Pitti, lui, est fermé tous les lundis. Vérifiez la date avant de construire une journée autour."
   - q: "Peut-on faire un cours de cuisine à Florence un lundi ?"
     a: "Oui. Nos cours ont lieu sept jours sur sept, lundi compris, à 10h00, 14h30 et 18h00. Le lundi est l’un des jours où il est le plus facile d’avoir une place, car la plupart des écoles de cuisine de la ville sont fermées ce jour-là."
+  - q: "Quelles sont les meilleures choses à faire à Florence un lundi ?"
+    a: "Montez au dôme de Brunelleschi le matin, tant que les files sont courtes, traversez vers l'Oltrarno pour la chapelle Brancacci et les ateliers d'artisans, prenez un long déjeuner ou un cours de cuisine l'après-midi, et montez à San Miniato al Monte pour le coucher du soleil. Tout cela est ouvert le lundi ; les Offices, l'Accademia et le Palazzo Pitti ne le sont pas."
 ---
 
 Si vous êtes à Florence un lundi, vous venez sans doute de découvrir la mauvaise nouvelle : **les Offices et l’Accademia sont fermés tous les deux.** Le Palazzo Pitti aussi. Les deux choses pour lesquelles la plupart des gens réservent un voyage à Florence sont fermées le même jour de la semaine, chaque semaine.
@@ -52,7 +54,7 @@ Concrètement, cela fait du lundi l’un des jours les plus faciles de la semain
 
 Cela règle aussi l’autre problème du lundi, le déjeuner : vous n’avez rien réservé, la moitié de votre liste est fermée, et à treize heures vous êtes sur une place à décider où manger. Cette décision est déjà prise.
 
-## Un itinéraire du lundi qui fonctionne
+## Choses à faire à Florence un lundi : un itinéraire qui fonctionne
 
 - **Matin :** le complexe du Duomo, la montée à la coupole d’abord, tant que les jambes sont fraîches.
 - **Midi :** on traverse vers l’Oltrarno. Chapelle Brancacci, puis flânerie dans San Frediano et Via Maggio pour les ateliers.

@@ -1,5 +1,5 @@
 ---
-title: 'Ravioli und Tortelli: Was ist der Unterschied? (Ein toskanischer Koch erklärt)'
+title: 'Ravioli und Tortelli: Was ist der Unterschied?'
 description: 'Ravioli, Tortelli, Tortellini und Agnolotti sind alle gefüllte Pasta: die Unterschiede liegen in Größe, Form, Füllung und Region. Was jeder Name wirklich bedeutet und wie sie in der Toskana heißen.'
 pubDate: 2026-08-11
 author: 'Endri Cerhozi'

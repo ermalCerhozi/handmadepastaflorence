@@ -33,7 +33,7 @@ Ci-dessous, le guide d'un chef pour chacune d'elles: d'où elle vient, comment e
 
 Les pici sont des cordes épaisses et inégales roulées une à une entre vos paumes, et aucune n'est jamais identique. Cette irrégularité est tout l'intérêt : un brin gros et moelleux qui retient la sauce comme les spaghettis ne le pourraient jamais. Les accompagnements classiques sont **all'aglione** (une sauce tomate très aillée), **cacio e pepe**, et **con le briciole**, avec de la chapelure grillée, datant de l'époque où même le fromage était un luxe.
 
-Rouler des pici est aussi la tâche la plus méditative de notre cuisine, c'est pourquoi elle ouvre [le cours La Table du Chef](/pasta-making-class-florence/); cinq minutes après le début, tout le monde devient silencieux.
+Rouler des pici est aussi la tâche la plus méditative de notre cuisine, c'est pourquoi elle ouvre [le cours La Table du Chef](/fr/cours-de-pates-fraiches-florence/); cinq minutes après le début, tout le monde devient silencieux.
 
 ## Pappardelle: le large ruban pour le gibier
 
@@ -58,6 +58,6 @@ Les raviolis à la ricotta et aux épinards avec beurre et sauge sont la forme q
 
 ## Alors par quoi devriez-vous commencer ?
 
-Si vous mangez : des pici si vous en voyez, des pappardelle al cinghiale si c'est l'automne. (Voici [où chercher à Florence](/blog/where-to-eat-handmade-pasta-in-florence/).)
+Si vous mangez : des pici si vous en voyez, des pappardelle al cinghiale si c'est l'automne. (Voici [où chercher à Florence](/fr/blog/where-to-eat-handmade-pasta-in-florence/).)
 
-Si vous cuisinez : commencez par les tagliatelles pour la technique, les pici pour le plaisir, les tortelli pour vous vanter. Nous enseignons toutes ces formes, quatre formes par cours, dans [notre cuisine de l'Oltrarno](/pasta-making-class-florence/), ou [en ligne en direct](/online-pasta-making-class/) si la Toscane n'est pas encore au programme.
+Si vous cuisinez : commencez par les tagliatelles pour la technique, les pici pour le plaisir, les tortelli pour vous vanter. Nous enseignons toutes ces formes, quatre formes par cours, dans [notre cuisine de l'Oltrarno](/fr/cours-de-pates-fraiches-florence/), ou [en ligne en direct](/fr/cours-pates-en-ligne/) si la Toscane n'est pas encore au programme.

@@ -26,12 +26,12 @@ Quatre éléments expliquent presque chaque différence de prix que vous verrez 
 
 ## Nos prix, à titre d'exemple concret
 
-Afin que vous puissiez calibrer les fourchettes ci-dessus par rapport à un vrai menu ([détails complets ici](/pasta-making-class-florence/)) :
+Afin que vous puissiez calibrer les fourchettes ci-dessus par rapport à un vrai menu ([détails complets ici](/fr/cours-de-pates-fraiches-florence/)) :
 
 - **[La Table du Chef](/fr/cours-de-pates-fraiches-florence/)**: 3 heures, quatre formes de pâtes, max 8 convives, se termine par un déjeuner assis avec deux vins toscans compris : **95 € par personne**.
-- **[Marché & Mains](/market-tour-cooking-class-florence/)**: promenade au marché de Sant'Ambrogio, puis raviolis, ragoût et un dolce de saison, max 6 convives, environ 5 heures : **145 € par personne**.
-- **[La Grande Table Familiale](/private-cooking-class-florence/)**: toute la cuisine en privé, 6 à 14 convives : **à partir de 680 € par groupe**.
-- **[Cours en Ligne en Direct](/online-pasta-making-class/)**: diffusé depuis notre cuisine à Florence, kit d'ingrédients frais optionnel expédié chez vous : **à partir de 68 € par personne**.
+- **[Marché & Mains](/fr/cours-cuisine-visite-marche-florence/)**: promenade au marché de Sant'Ambrogio, puis raviolis, ragoût et un dolce de saison, max 6 convives, environ 5 heures : **145 € par personne**.
+- **[La Grande Table Familiale](/fr/cours-cuisine-prive-florence/)**: toute la cuisine en privé, 6 à 14 convives : **à partir de 680 € par groupe**.
+- **[Cours en Ligne en Direct](/fr/cours-pates-en-ligne/)**: diffusé depuis notre cuisine à Florence, kit d'ingrédients frais optionnel expédié chez vous : **à partir de 68 € par personne**.
 
 ## Cinq questions à poser avant de réserver un cours (y compris le nôtre)
 
@@ -45,4 +45,4 @@ Afin que vous puissiez calibrer les fourchettes ci-dessus par rapport à un vrai
 
 Florence se remplit d'avril à octobre, et les cours en petit groupe (six à huit places) se vendent en premier précisément parce qu'ils sont petits. Réservez une semaine ou plus à l'avance en haute saison ; en hiver, vous pouvez souvent trouver une place la même semaine. Les cours du matin servent de déjeuner, les cours du soir de dîner; choisissez le repas que vous préférez remplacer.
 
-Si vous voulez voir comment notre table fonctionne avant de vous décider, commencez par [La Table du Chef](/pasta-making-class-florence/); c'est le cours sur lequel tout le reste de ce que nous faisons est construit.
+Si vous voulez voir comment notre table fonctionne avant de vous décider, commencez par [La Table du Chef](/fr/cours-de-pates-fraiches-florence/); c'est le cours sur lequel tout le reste de ce que nous faisons est construit.

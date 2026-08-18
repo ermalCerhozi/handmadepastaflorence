@@ -34,6 +34,8 @@ Sotto gli otto è tutta un'altra cosa. È il punto in cui uno chef riesce fisica
 
 *Il nostro è otto, e sei per il tour del mercato.*
 
+Se state prenotando per un gruppo di lavoro e non per voi stessi, il numero utile non è più il massimo ma il formato: un corso condiviso a un certo punto si riempie, mentre un [corso di cucina team building privato](/it/corso-cucina-team-building-firenze/) prende tutta la cucina per 6-14 persone e segue i vostri orari invece di uno fisso.
+
 **Precisazione onesta:** se quello che cerchi è una serata grande, chiassosa e socievole in cui conosci una dozzina di viaggiatori e cucinare è la scusa, un corso più numeroso è davvero più divertente e di solito costa meno. Prenota quello. I gruppi piccoli sono per chi vuole andarsene sapendo davvero fare la pasta.
 
 ## 2. Il vino è nel prezzo o si aggiunge alla fine?

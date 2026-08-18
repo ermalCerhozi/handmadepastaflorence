@@ -1,0 +1,16 @@
+---
+// French shape spokes: /fr/formes-de-pates/pici/ and friends.
+import ShapePage from '../../../page-templates/ShapePage.astro';
+import { shapes } from '../../../data/shapes';
+
+export function getStaticPaths() {
+  return shapes.fr!.spokes.map((spoke) => ({
+    params: { slug: spoke.slug },
+    props: { spoke },
+  }));
+}
+
+const { spoke } = Astro.props;
+---
+
+<ShapePage locale="fr" spoke={spoke} />
