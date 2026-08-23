@@ -70,7 +70,8 @@ export interface LandingPage {
    * for-two/gift marketing variants, which sell the same underlying class —
    * giving those their own Course entry would be near-duplicate structured
    * data for the same offering). Drives a Course JSON-LD block in
-   * ClassLanding.astro, derived from each locale's existing `product` field.
+   * ClassLanding.astro, named from each locale's `product` field, or from
+   * `service` on the pages that are quoted per group rather than priced.
    */
   courseMode?: 'Onsite' | 'Online';
   /**
@@ -1537,6 +1538,11 @@ export const landings: Record<string, LandingPage> = {
 
   'team-building': {
     floatingCta: false,
+    // A distinct taught experience, not a marketing variant: private kitchen
+    // buyout, corporate audience, its own format. No courseDuration — the copy
+    // says timing flexes around the team's agenda rather than stating a length,
+    // and no `product`, so the CourseInstance carries no Offer (quoted per group).
+    courseMode: 'Onsite',
     locales: {
       en: {
         slug: 'team-building-cooking-class-florence',
@@ -1545,7 +1551,7 @@ export const landings: Record<string, LandingPage> = {
         // things a corporate planner needs — private kitchen, group size —
         // never rendered. Everything that matters now sits before char 60.
         title: `Team Building Cooking Class Florence | Private Kitchen, 6–14`,
-        description: `A hands-on food teambuilding activity in Florence: your team rolls fresh pasta with two English-speaking Tuscan chefs, then shares the lunch it made. Private kitchen buyout for 6–14 people, wine pairing and dietary options.`,
+        description: `Food team building in Florence: your team rolls fresh pasta with two English-speaking Tuscan chefs, then eats the lunch it made. Private kitchen, 6–14.`,
         cl: {
           eyebrow: `For companies · private kitchen buyout`,
           heading: `Team building, with`,
@@ -1617,7 +1623,7 @@ export const landings: Record<string, LandingPage> = {
         // phrasing plus its common misspelling ("corso di cuicna teambuilding")
         // is 52 impressions between them.
         title: `Corso di Cucina Team Building Firenze, 6–14 Persone`,
-        description: `Un teambuilding in cucina privato e pratico a Firenze. Il tuo team stende la pasta fresca con due chef toscani, per poi condividere il pranzo preparato. Cucina privata per 6–14 persone, abbinamento vini e opzioni dietetiche.`,
+        description: `Team building in cucina a Firenze: il team tira la pasta fresca con due chef toscani, poi pranza con quello che ha fatto. Cucina privata, 6–14.`,
         cl: {
           eyebrow: `Per le aziende · uso esclusivo della cucina`,
           heading: `Team building, con`,
@@ -1685,7 +1691,7 @@ export const landings: Record<string, LandingPage> = {
       fr: {
         slug: 'cours-cuisine-team-building-florence',
         title: `Team Building Florence : Cours de Cuisine Privé, 6–14`,
-        description: `Une activité de teambuilding culinaire pratique à Florence : votre équipe prépare des pâtes fraîches avec deux chefs toscans, puis partage le déjeuner qu'elle a préparé. Privatisation de la cuisine pour 6–14 personnes, accords mets-vins et options diététiques.`,
+        description: `Team building culinaire à Florence : votre équipe roule des pâtes fraîches avec deux chefs toscans, puis déjeune de son travail. Cuisine privée, 6–14.`,
         cl: {
           eyebrow: `Pour les entreprises · privatisation de la cuisine`,
           heading: `Team building, avec`,
@@ -1753,7 +1759,7 @@ export const landings: Record<string, LandingPage> = {
       de: {
         slug: 'teambuilding-kochkurs-florenz',
         title: `Teambuilding Florenz: Privater Kochkurs für 6–14 Personen`,
-        description: `Teambuilding in Florenz, das funktioniert: Ihr Team rollt frische Pasta mit zwei toskanischen Köchen und isst danach gemeinsam. Private Küche für 6–14 Personen, Angebot in einem Werktag.`,
+        description: `Kulinarisches Teambuilding in Florenz: Ihr Team macht frische Pasta mit zwei toskanischen Chefköchen und isst dann gemeinsam. Private Küche, 6–14.`,
         cl: {
           eyebrow: `Für Unternehmen · private Küchenmiete`,
           heading: `Teambuilding, mit`,

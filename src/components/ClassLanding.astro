@@ -181,14 +181,20 @@ const productSchema = product && {
   },
 };
 
-// Course schema, additive to Product — separate rich-result surface for the
-// same offering. Derived from `product` (no separate content to maintain);
-// only emitted where courseMode is set (see LandingPage.courseMode).
-const courseSchema = product && courseMode && {
+// Course schema — a separate rich-result surface from Product, and the only one
+// available to a class with no published price. Only emitted where courseMode is
+// set (see LandingPage.courseMode).
+//
+// Named from `product` where there is one, otherwise from `service`: team
+// building is a real taught class but is quoted per group, so it has a `service`
+// and no `product`. Google's Course requirements are name + description +
+// provider, all of which a service-only page has.
+const courseSubject = product ?? service;
+const courseSchema = courseSubject && courseMode && {
   '@context': 'https://schema.org',
   '@type': 'Course',
-  name: product.name,
-  description: product.description,
+  name: courseSubject.name,
+  description: courseSubject.description,
   image: `${SITE}${image.src.src}`,
   dateModified: PAGE_UPDATED,
   provider: { '@type': 'Organization', name: 'Handmade Pasta Florence', sameAs: SITE },
@@ -205,14 +211,21 @@ const courseSchema = product && courseMode && {
           },
         }
       : {}),
-    offers: {
-      '@type': 'Offer',
-      price: product.price,
-      priceCurrency: 'EUR',
-      availability: 'https://schema.org/InStock',
-      priceValidUntil: PRICE_VALID_UNTIL,
-      url: canonical,
-    },
+    // Offer only where a real price is published. Inventing one for a
+    // quoted-per-group class would be fabricated structured data, and an Offer
+    // is optional on CourseInstance anyway.
+    ...(product
+      ? {
+          offers: {
+            '@type': 'Offer',
+            price: product.price,
+            priceCurrency: 'EUR',
+            availability: 'https://schema.org/InStock',
+            priceValidUntil: PRICE_VALID_UNTIL,
+            url: canonical,
+          },
+        }
+      : {}),
   },
 };
 
