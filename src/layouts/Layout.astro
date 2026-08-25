@@ -51,19 +51,9 @@ const dir = languages[lang].dir;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--
-      Preload the two latin-subset variable-font files virtually every visitor
-      needs (Playfair Display for headings, Hanken Grotesk for body/UI text).
-      CSS is fully inlined (astro.config.mjs build.inlineStylesheets), so the
-      browser can't discover these @font-face URLs until it's parsed the
-      inlined <style> block — preloading lets the font fetch start immediately
-      instead, shrinking the font-display:swap fallback window that's the
-      most plausible CLS source on the large serif H1.
-      Filenames are content-hashed by the build; if a font/version bump ever
-      changes them, `ls dist/_astro | grep latin-wght-normal` gives the new names.
-    -->
-    <link rel="preload" as="font" type="font/woff2" href="/_astro/playfair-display-latin-wght-normal.BOwq7MWX.woff2" crossorigin />
-    <link rel="preload" as="font" type="font/woff2" href="/_astro/hanken-grotesk-latin-wght-normal.CaVRRdDk.woff2" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <meta name="description" content={description} />
