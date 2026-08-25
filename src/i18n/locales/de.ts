@@ -64,7 +64,7 @@ const de = {
     titleItal: 'Hände.',
     titleKw: 'Kochkurse in Florenz, mit den Händen im Mehl, ab 95 €.',
     imgAlt: 'Gäste bei einem Kochkurs in Florenz rollen frische Pasta in unserer Küche im Oltrarno',
-    lede: 'Rollen Sie echte toskanische Pasta an der Seite zweier Agriturismo-Chefköche, in unserer sonnendurchfluteten Küche nahe der Piazza Santo Spirito oder live online mit einem Kit, das an Ihre Tür geliefert wird.',
+    lede: 'Rollen Sie echte toskanische Pasta an der Seite zweier Agriturismo-Chefköche.',
     ctaReserve: 'Kochkurs buchen',
     ctaSee: 'Kurse ansehen',
     proofOpened: 'unsere Küche hat gerade eröffnet',

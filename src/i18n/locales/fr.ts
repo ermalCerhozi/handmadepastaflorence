@@ -62,7 +62,7 @@ const fr = {
     titleItal: 'mains.',
     titleKw: 'Cours de cuisine à Florence, les mains dans la farine, dès 95 €.',
     imgAlt: 'Des invités à un cours de cuisine à Florence étalant des pâtes fraîches dans notre cuisine de l\'Oltrarno',
-    lede: 'Préparez de véritables pâtes toscanes aux côtés de deux chefs d\'agritourisme, dans notre cuisine lumineuse près de la Piazza Santo Spirito, ou en ligne en direct avec un kit livré chez vous.',
+    lede: 'Préparez de véritables pâtes toscanes aux côtés de deux chefs d\'agritourisme.',
     ctaReserve: 'Réserver un cours',
     ctaSee: 'Voir les cours',
     proofOpened: 'notre cuisine vient d\'ouvrir',

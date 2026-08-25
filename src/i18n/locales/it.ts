@@ -66,7 +66,7 @@ const it: Dict = {
     titleItal: `mani.`,
     titleKw: `Corsi di cucina a Firenze, con le mani in pasta, da €95.`,
     imgAlt: `Ospiti a un corso di cucina a Firenze mentre stendono la pasta fresca nella nostra cucina in Oltrarno`,
-    lede: `Prepara la vera pasta toscana insieme a due chef di agriturismo, nella nostra cucina soleggiata in Oltrarno o in diretta online con un kit spedito a casa tua.`,
+    lede: `Prepara la vera pasta toscana insieme a due chef di agriturismo.`,
     ctaReserve: `Prenota un corso`,
     ctaSee: `Vedi i corsi`,
     proofOpened: `cucina appena aperta`,

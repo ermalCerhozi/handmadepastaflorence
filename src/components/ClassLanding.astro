@@ -73,6 +73,7 @@ interface Props {
   headingItal: string;
   lede: string;
   image: { src: ImageMetadata; alt: string; w: number; h: number };
+  images?: { src: ImageMetadata; alt: string; w: number; h: number }[];
   /**
    * Optional silent loop laid over `image` in the hero, from LandingPage.video.
    * `image` must be its first frame: it stays the eager LCP element, the OG
@@ -111,6 +112,7 @@ const {
   headingItal,
   lede,
   image,
+  images,
   video,
   price,
   priceNote,
@@ -291,7 +293,22 @@ const faqLd = faqSchema(faqs);
       </p>
     </div>
     <div class:list={['lp-hero__media', video && 'lp-hero__media--wide']} data-reveal style="--reveal-delay:120ms">
-      <Image src={image.src} alt={image.alt} width={image.w} height={image.h} loading="eager" decoding="async" />
+      {images && images.length > 0 ? (
+        images.map((img, i) => (
+          <Image 
+            src={img.src} 
+            alt={img.alt} 
+            width={img.w} 
+            height={img.h} 
+            loading={i === 0 ? "eager" : "lazy"} 
+            decoding="async" 
+            class={i === 0 ? "lp-hero__image-fade-1" : "lp-hero__image-fade"}
+            style={i > 0 ? `animation-delay: ${i * 4}s` : ""}
+          />
+        ))
+      ) : (
+        <Image src={image.src} alt={image.alt} width={image.w} height={image.h} loading="eager" decoding="async" />
+      )}
       {video && (
         <video
           class="lp-hero__video"
@@ -445,7 +462,7 @@ const faqLd = faqSchema(faqs);
   }
   @media (min-width: 860px) {
     .lp-hero__inner {
-      grid-template-columns: 1.25fr 1fr;
+      grid-template-columns: 1fr 1fr;
     }
   }
   .lp-crumb {
@@ -546,6 +563,38 @@ const faqLd = faqSchema(faqs);
     object-fit: cover;
     display: block;
   }
+  
+  @keyframes heroFade1 {
+    0%     { opacity: 1; transform: scale(1.005); }
+    38.33% { opacity: 1; transform: scale(1.049); }
+    43.33% { opacity: 0; transform: scale(1.055); }
+    95%    { opacity: 0; transform: scale(1); }
+    100%   { opacity: 1; transform: scale(1.005); }
+  }
+
+  @keyframes heroFade {
+    0%     { opacity: 0; transform: scale(1); }
+    5%     { opacity: 1; transform: scale(1.005); }
+    38.33% { opacity: 1; transform: scale(1.049); }
+    43.33% { opacity: 0; transform: scale(1.055); }
+    100%   { opacity: 0; transform: scale(1); }
+  }
+
+  .lp-hero__image-fade-1 {
+    position: absolute;
+    inset: 0;
+    animation: heroFade1 12s infinite linear;
+    will-change: transform, opacity;
+  }
+
+  .lp-hero__image-fade {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    animation: heroFade 12s infinite linear;
+    will-change: transform, opacity;
+  }
+
   /* Laid over the still, revealed only once it is actually playing. */
   .lp-hero__video {
     position: absolute;

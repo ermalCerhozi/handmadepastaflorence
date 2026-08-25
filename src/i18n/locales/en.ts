@@ -75,7 +75,7 @@ const en = {
     // line above it still does the conversion work.
     titleKw: 'Hands-on cooking classes in Florence, from €95.',
     imgAlt: 'Guests at a hands-on cooking class in Florence, rolling fresh pasta in our Oltrarno kitchen',
-    lede: 'Roll real Tuscan pasta beside two agriturismo head chefs, in our sun-lit kitchen off Piazza Santo Spirito or live online with a kit shipped to your door.',
+    lede: 'Roll real Tuscan pasta beside two agriturismo head chefs.',
     ctaReserve: 'Book a pasta class',
     ctaSee: 'See the classes',
     proofOpened: 'our kitchen just opened',

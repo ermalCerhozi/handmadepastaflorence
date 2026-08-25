@@ -3,7 +3,7 @@ import { Image } from 'astro:assets';
 import { getLocaleFromUrl } from '../i18n/utils';
 import { useTranslations } from '../i18n/ui';
 import { landingPath } from '../data/landings';
-import { cookingClassGuests, aperitivo, longTablePoster } from '../assets/images';
+import { handsOnGroup, aperitivo, longTablePoster } from '../assets/images';
 import longTableVideo from '../assets/video/private-pasta-class-long-table-florence-agriturismo.mp4?url';
 const lang = getLocaleFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -19,7 +19,7 @@ interface CardMeta {
   video?: string;
 }
 const cardMeta: CardMeta[] = [
-  { img: cookingClassGuests, w: 800, h: 1067, key: 'pasta-making' },
+  { img: handsOnGroup, w: 800, h: 1067, key: 'pasta-making' },
   { img: aperitivo, w: 800, h: 1067, key: 'market-tour' },
   { img: longTablePoster, w: 720, h: 432, key: 'private', video: longTableVideo },
 ];

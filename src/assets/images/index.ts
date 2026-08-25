@@ -25,3 +25,6 @@ export { default as shapeTagliatelle } from './shape-tagliatelle.webp';
 export { default as shapeTortelli } from './shape-tortelli.webp';
 export { default as shapeRavioli } from './shape-ravioli.webp';
 export { default as cuttingPizza } from './cutting-pizza.webp';
+export { default as handsOnGroup } from './hands-on-pasta-cooking-class-florence-group.webp';
+export { default as handsOnChef } from './hands-on-pasta-making-class-florence-chef.webp';
+export { default as privateTeamBuilding } from './private-pasta-cooking-class-florence-team-building.webp';
