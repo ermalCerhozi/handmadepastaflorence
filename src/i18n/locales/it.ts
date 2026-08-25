@@ -260,7 +260,7 @@ const it: Dict = {
     addonsLabel: `Aggiunte`,
     estTotal: `Totale stimato`,
     msgIntro: `Ciao, vorrei prenotare il corso di pasta "{class}" per {guests}.`,
-    msgOutro: `Per favore, confermate la disponibilità. Grazie!`,
+    msgOutro: `Grazie!`,
     freeCap: `Gratis`,
     sumClassFlorence: `A Firenze`,
     sumClassOnline: `In diretta online`,

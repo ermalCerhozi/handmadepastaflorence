@@ -261,7 +261,7 @@ const de = {
     addonsLabel: 'Add-ons',
     estTotal: 'Geschätzter Gesamtbetrag',
     msgIntro: 'Hallo, ich möchte den Pasta-Kurs "{class}" für {guests} buchen.',
-    msgOutro: 'Bitte bestätigen Sie die Verfügbarkeit. Vielen Dank!',
+    msgOutro: 'Vielen Dank!',
     freeCap: 'Kostenlos',
     sumClassFlorence: 'In Florenz',
     sumClassOnline: 'Live Online',

@@ -259,7 +259,7 @@ const zh = {
     addonsLabel: '附加项',
     estTotal: '预计总计',
     msgIntro: '你好，我想预订“{class}”意面课程，{guests}。',
-    msgOutro: '请确认是否有名额。谢谢！',
+    msgOutro: '谢谢！',
     freeCap: '免费',
     sumClassFlorence: '在佛罗伦萨',
     sumClassOnline: '在线直播',

@@ -272,7 +272,7 @@ const en = {
     addonsLabel: 'Add-ons',
     estTotal: 'Estimated total',
     msgIntro: 'Hi, I would like to book the "{class}" pasta class for {guests}.',
-    msgOutro: 'Please confirm availability. Thank you!',
+    msgOutro: 'Thank you!',
     freeCap: 'Free',
     sumClassFlorence: 'In Florence',
     sumClassOnline: 'Live Online',

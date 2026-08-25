@@ -256,7 +256,7 @@ const fr = {
     addonsLabel: 'Suppléments',
     estTotal: 'Total estimé',
     msgIntro: 'Bonjour, je voudrais réserver le cours de pâtes "{class}" pour {guests}.',
-    msgOutro: 'Merci de me confirmer la disponibilité !',
+    msgOutro: 'Merci !',
     freeCap: 'Gratuit',
     sumClassFlorence: 'À Florence',
     sumClassOnline: 'En Ligne en Direct',
