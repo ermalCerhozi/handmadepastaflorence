@@ -286,6 +286,13 @@ const bkJsPayload = Object.fromEntries(
       validate();
     };
 
+    $$('[data-step-dot]').forEach((d) => {
+      d.addEventListener('click', () => {
+        const target = Number(d.dataset.stepDot);
+        if (target < state.step) goTo(target);
+      });
+    });
+
     /* ---------- validation per step ---------- */
     const validate = () => {
       const next = $<HTMLButtonElement>('[data-next]');
@@ -646,7 +653,9 @@ const bkJsPayload = Object.fromEntries(
     border: 2px solid var(--flour-shadow); font-size: 0.66rem; font-weight: 800;
     transition: background 0.35s var(--ease), border-color 0.35s var(--ease), color 0.35s var(--ease);
   }
+  .bk__num { font-style: normal; line-height: 1; margin-top: 1px; }
   .bk__step.is-active .bk__dot { background: var(--terracotta); border-color: var(--terracotta); color: #fff; }
+  .bk__step.is-done { cursor: pointer; }
   .bk__step.is-done .bk__dot { background: var(--olive); border-color: var(--olive); color: #fff; }
   .bk__step.is-done .bk__num { display: none; }
   .bk__step.is-done .bk__dot::after { content: '✓'; font-size: 0.68rem; }
