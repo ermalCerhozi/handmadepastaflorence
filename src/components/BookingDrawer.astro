@@ -49,9 +49,23 @@ const bkJsPayload = Object.fromEntries(
         <div class="bk__choices">
           <button class="choice" data-choice="florence" data-price="95">
             <span class="choice__emoji">🍝</span>
-            <span class="choice__t">{t.bk.florenceT}</span>
-            <span class="choice__d">{t.bk.florenceD}</span>
+            <span class="choice__t">{t.exp.cards[0].name}</span>
+            <span class="choice__d">{t.exp.cards[0].desc}</span>
             <span class="choice__p">€95<small>/{t.bk.person}</small></span>
+            <span class="choice__check" aria-hidden="true">✓</span>
+          </button>
+          <button class="choice" data-choice="market" data-price="145">
+            <span class="choice__emoji">🧺</span>
+            <span class="choice__t">{t.exp.cards[1].name}</span>
+            <span class="choice__d">{t.exp.cards[1].desc}</span>
+            <span class="choice__p">€145<small>/{t.bk.person}</small></span>
+            <span class="choice__check" aria-hidden="true">✓</span>
+          </button>
+          <button class="choice" data-choice="private" data-price="680">
+            <span class="choice__emoji">🍷</span>
+            <span class="choice__t">{t.exp.cards[2].name}</span>
+            <span class="choice__d">{t.exp.cards[2].desc}</span>
+            <span class="choice__p">{t.exp.cards[2].price}</span>
             <span class="choice__check" aria-hidden="true">✓</span>
           </button>
           <button class="choice" data-choice="online" data-price="68">
@@ -62,9 +76,14 @@ const bkJsPayload = Object.fromEntries(
             <span class="choice__check" aria-hidden="true">✓</span>
           </button>
         </div>
+      </section>
 
-        <!-- Guests live here so the price is never a surprise -->
-        <div class="qty" data-qty-block hidden>
+      <!-- ===== Step 2: date & time ===== -->
+      <section class="bk__view" data-view="2">
+        <p class="bk__kicker">{t.bk.step2Kicker}</p>
+        <h2 class="bk__h">{t.bk.step2H}</h2>
+
+        <div class="qty" data-qty-block>
           <div class="qty__info">
             <span class="qty__label">{t.bk.guestsQ}</span>
             <span class="qty__hint" data-qty-hint>—</span>
@@ -75,12 +94,6 @@ const bkJsPayload = Object.fromEntries(
             <button data-qty="1" aria-label="More guests">+</button>
           </div>
         </div>
-      </section>
-
-      <!-- ===== Step 2: date & time ===== -->
-      <section class="bk__view" data-view="2">
-        <p class="bk__kicker">{t.bk.step2Kicker}</p>
-        <h2 class="bk__h">{t.bk.step2H}</h2>
 
         <div class="cal">
           <div class="cal__bar">
@@ -157,10 +170,10 @@ const bkJsPayload = Object.fromEntries(
 <script>
   import { track, EV } from '../scripts/track';
 
-  type Experience = 'florence' | 'online';
   type State = {
     step: number;
-    experience: Experience | null;
+    experience: string | null;
+    experienceName: string | null;
     basePrice: number;
     date: string | null;
     time: string | null;
@@ -168,7 +181,6 @@ const bkJsPayload = Object.fromEntries(
     addons: Record<string, number>;
   };
 
-  const PRICES: Record<Experience, number> = { florence: 95, online: 68 };
   const MIN_GUESTS = 1;
   const MAX_GUESTS = 14;
 
@@ -195,7 +207,7 @@ const bkJsPayload = Object.fromEntries(
     const tr = () => I18N[document.documentElement.lang] || I18N.en || {};
 
     const state: State = {
-      step: 1, experience: null, basePrice: 0,
+      step: 1, experience: null, experienceName: null, basePrice: 0,
       date: null, time: null, guests: MIN_GUESTS, addons: {},
     };
 
@@ -306,12 +318,15 @@ const bkJsPayload = Object.fromEntries(
       btn.addEventListener('click', () => {
         $$('[data-choice]').forEach((b) => b.classList.remove('is-sel'));
         btn.classList.add('is-sel');
-        state.experience = btn.dataset.choice as Experience;
+        state.experience = btn.dataset.choice as string;
+        state.experienceName = btn.querySelector('.choice__t')?.textContent || '';
         state.basePrice = Number(btn.dataset.price);
 
         // reveal the guest control + show per-person price
         if (qtyBlock) qtyBlock.hidden = false;
-        if (qtyHint) qtyHint.textContent = `€${state.basePrice} ${tr().perPerson}`;
+        if (qtyHint) {
+          qtyHint.textContent = state.experience === 'private' ? 'flat base rate' : `€${state.basePrice} ${tr().perPerson}`;
+        }
 
         // online-only add-ons: hide for in-person AND drop them from state if active
         $$('[data-online-only]').forEach((a) => {
@@ -327,6 +342,7 @@ const bkJsPayload = Object.fromEntries(
         });
         validate();
         render();
+        goTo(2);
       });
     });
 
@@ -450,18 +466,23 @@ const bkJsPayload = Object.fromEntries(
     /* ---------- pricing render (single source of truth) ---------- */
     const euro = (n: number) => `€${n.toLocaleString('en-IE')}`;
 
-    /* ---------- send request → open a prefilled WhatsApp chat ---------- */
     const sendRequest = () => {
       const T = tr();
       const details: string[] = [];
       let total = 0;
+      let intro = T.msgIntro;
+
       if (state.experience) {
-        const sub = state.basePrice * state.guests;
+        const isFlat = state.experience === 'private';
+        const sub = isFlat ? state.basePrice : state.basePrice * state.guests;
         total += sub;
-        const name = state.experience === 'florence' ? T.sendClassFlorence : T.sendClassOnline;
-        details.push(`${T.classLabel}: ${name} (€${state.basePrice} ${T.perPerson})`);
-        details.push(`${T.guestsLabel}: ${state.guests}`);
+        const name = state.experienceName || '';
+        const guestStr = state.guests === 1 ? T.guest : T.guestsPlural;
+        intro = intro.replace('{class}', name).replace('{guests}', `${state.guests} ${guestStr}`);
+      } else {
+        intro = intro.replace('"{class}" ', '').replace(' for {guests}', '').replace('，{guests}', '');
       }
+
       if (state.date) details.push(`${T.dateTime}: ${state.date}${state.time ? ' · ' + state.time : ''}`);
 
       const addonText: string[] = [];
@@ -476,10 +497,15 @@ const bkJsPayload = Object.fromEntries(
         addonText.push(`${lbl}${amt === 0 ? ` (${T.freeLower})` : ' (+' + euro(amt) + ')'}`);
       });
       if (addonText.length) details.push(`${T.addonsLabel}: ${addonText.join(', ')}`);
-      details.push(`${T.estTotal}: ${euro(total)}`);
+      
+      let totalStr = euro(total);
+      if (state.experience && state.experience !== 'private') {
+        totalStr += ` (€${state.basePrice} ${T.perPerson})`;
+      }
+      details.push(`${T.estTotal}: ${totalStr}`);
 
       const message = [
-        T.msgIntro,
+        intro,
         '',
         ...details,
         '',
@@ -516,12 +542,42 @@ const bkJsPayload = Object.fromEntries(
       };
 
       let total = 0;
+
+      // Helper for header lines (e.g. Experience, Date)
+      const addHeader = (label: string, value: string) => {
+        const li = document.createElement('li');
+        li.innerHTML = `<strong>${label}</strong><span>${value}</span>`;
+        lines.appendChild(li);
+      };
+
+      // Helper for a divider
+      const addDivider = () => {
+        const li = document.createElement('li');
+        li.style.borderTop = '1px dashed var(--paper-line)';
+        li.style.margin = '0.3rem 0';
+        li.style.width = '100%';
+        li.style.height = '0';
+        lines.appendChild(li);
+      };
+
       if (state.experience) {
-        const sub = state.basePrice * state.guests;
+        addHeader(`${T.classLabel}:`, state.experienceName || '');
+      }
+      if (state.date) {
+        addHeader(`${T.dateTime}:`, `${state.date}${state.time ? ' at ' + state.time : ''}`);
+      }
+      
+      if (state.experience || Object.keys(state.addons).length > 0) {
+        addDivider();
+      }
+
+      if (state.experience) {
+        const isFlat = state.experience === 'private';
+        const sub = isFlat ? state.basePrice : state.basePrice * state.guests;
         total += sub;
-        const name = state.experience === 'florence' ? T.sumClassFlorence : T.sumClassOnline;
         const guestStr = state.guests === 1 ? T.guest : T.guestsPlural;
-        add(`${name} · €${state.basePrice} × ${state.guests} ${guestStr}`, sub);
+        const detailStr = isFlat ? T.classLabel : `${T.classLabel} (€${state.basePrice} × ${state.guests} ${guestStr})`;
+        add(detailStr, sub);
       }
       // add-ons: per-guest items multiply by guests, per-order items are flat
       $$('[data-addon]').forEach((label) => {
@@ -534,9 +590,7 @@ const bkJsPayload = Object.fromEntries(
         const lbl = T.addonLabels[key] ?? key;
         add(lbl, amt);
       });
-      if (state.date) add(`📅 ${state.date}${state.time ? ' · ' + state.time : ''}`, 0);
-
-      const totalEl = $('[data-total]'); if (totalEl) totalEl.textContent = euro(total);
+        const totalEl = $('[data-total]'); if (totalEl) totalEl.textContent = euro(total);
     };
 
     buildCal();
@@ -649,7 +703,7 @@ const bkJsPayload = Object.fromEntries(
   /* guests (step 1) */
   .qty {
     display: flex; align-items: center; justify-content: space-between; gap: 1rem;
-    margin-top: 0.9rem; padding: 0.7rem 1rem; background: #fff;
+    margin-top: 0.9rem; margin-bottom: 0.9rem; padding: 0.7rem 1rem; background: #fff;
     border: 1.5px solid var(--paper-line); border-radius: 14px;
     animation: viewIn 0.4s var(--ease) both;
   }
@@ -728,7 +782,8 @@ const bkJsPayload = Object.fromEntries(
   .summary__lines { display: grid; gap: 0.25rem; margin: 0.5rem 0; }
   /* Summary lines are rendered dynamically — :global needed, same as .cal__day. */
   .summary__lines :global(li) { display: flex; justify-content: space-between; gap: 0.8rem; font-size: 0.78rem; color: var(--charcoal-soft); }
-  .summary__lines :global(li span:first-child) { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .summary__lines :global(li > :first-child) { flex: 1; }
+  .summary__lines :global(li > :last-child) { text-align: right; word-break: break-word; }
   .summary__total { display: flex; justify-content: space-between; align-items: baseline; margin-top: 0.4rem; padding-top: 0.45rem; border-top: 1px dashed var(--paper-line); }
   .summary__total span { font-size: 0.85rem; }
   .summary__total strong { font-family: var(--serif); font-size: var(--step-1); color: var(--olive); }

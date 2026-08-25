@@ -25,7 +25,7 @@ const iconKeys = ['rollingPin', 'wineGlass', 'group', 'duomo'];
     {t.why.points.map((p, i) => (
       <article class="why__item" data-reveal style={`--reveal-delay:${i * 80}ms`}>
         <div class="why__icon">
-          <Image src={icons[iconKeys[i]]} alt="" class="why__icon-img" height={120} />
+          <Image src={icons[iconKeys[i]]} alt="" class="why__icon-img" height={120} densities={[1, 1.5, 2]} />
         </div>
         <h3 class="why__t">{p.t}</h3>
         <p class="why__d">{p.d}</p>
