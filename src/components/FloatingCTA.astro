@@ -72,9 +72,11 @@ const t = useTranslations(getLocaleFromUrl(Astro.url));
     background: var(--yolk); color: var(--olive-deep); font-weight: 800; font-size: var(--step-0);
     padding: 0.85rem 1.5rem; border-radius: 100px; transition: transform 0.3s var(--ease), background 0.3s;
   }
-  .fab__btn:hover { transform: scale(1.04); background: var(--yolk-deep); }
   .fab__btn svg { transition: transform 0.3s var(--ease); }
-  .fab__btn:hover svg { transform: translateX(3px); }
+  @media (hover: hover) {
+    .fab__btn:hover { transform: scale(1.04); background: var(--yolk-deep); }
+    .fab__btn:hover svg { transform: translateX(3px); }
+  }
   .fab__pulse {
     position: absolute; inset: 0; border-radius: 100px; border: 2px solid var(--yolk);
     animation: fabpulse 2.4s var(--ease) infinite;

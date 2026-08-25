@@ -521,8 +521,8 @@ const faqLd = faqSchema(faqs);
     box-shadow: 0 10px 26px -10px rgba(240, 180, 0, 0.75);
     transition: gap 0.3s;
   }
-  .lp-hero__cta:hover {
-    gap: 1rem;
+  @media (hover: hover) {
+    .lp-hero__cta:hover { gap: 1rem; }
   }
   .lp-hero__price {
     display: flex;
@@ -830,9 +830,14 @@ const faqLd = faqSchema(faqs);
     box-shadow: var(--shadow-sm);
     transition: box-shadow 0.4s var(--ease), transform 0.4s var(--ease);
   }
-  .lp-rel__card:hover {
-    box-shadow: var(--shadow-lg);
-    transform: translateY(-3px);
+  @media (hover: hover) {
+    .lp-rel__card:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-3px);
+    }
+    .lp-rel__card:hover .lp-rel__go {
+      transform: translateX(4px);
+    }
   }
   .lp-rel__card h3 {
     font-size: var(--step-1);
@@ -852,9 +857,6 @@ const faqLd = faqSchema(faqs);
     color: var(--terracotta);
     font-weight: 800;
     transition: transform 0.3s var(--ease);
-  }
-  .lp-rel__card:hover .lp-rel__go {
-    transform: translateX(4px);
   }
 </style>
 

@@ -10,23 +10,25 @@ const t = useTranslations(lang);
 ---
 
 <section class="ob" id="online">
-  <div class="shell ob__inner" data-reveal>
-    <div class="ob__visual">
-      <span class="ob__live"><i></i> {t.online.live}</span>
-      <Image class="ob__img" src={cookingClass} alt="Our Florentine kitchen, where we stream live online classes" width={981} height={1603} loading="lazy" decoding="async" />
-    </div>
-    <div class="ob__text">
-      <p class="eyebrow ob__eyebrow">{t.online.eyebrow}</p>
-      <h2 class="ob__title">{t.online.titlePre}<span class="ital">{t.online.titleItal}</span></h2>
-      <p class="ob__desc">
-        {t.online.desc}
-      </p>
-      <div class="ob__row">
-        <button class="ob__cta" data-open-booking data-cta="online-band" data-prefill="online">
-          {t.online.cta} <span aria-hidden="true">→</span>
-        </button>
-        <span class="ob__price">{t.online.from} <strong>€68</strong>/{t.online.person}</span>
-        <a class="ob__more" href={landingPath('online', lang)}>{t.online.more}</a>
+  <div class="shell">
+    <div class="ob__inner" data-reveal>
+      <div class="ob__visual">
+        <span class="ob__live"><i></i> {t.online.live}</span>
+        <Image class="ob__img" src={cookingClass} alt="Our Florentine kitchen, where we stream live online classes" width={981} height={1603} loading="lazy" decoding="async" />
+      </div>
+      <div class="ob__text">
+        <p class="eyebrow ob__eyebrow">{t.online.eyebrow}</p>
+        <h2 class="ob__title">{t.online.titlePre}<span class="ital">{t.online.titleItal}</span></h2>
+        <p class="ob__desc">
+          {t.online.desc}
+        </p>
+        <div class="ob__row">
+          <button class="ob__cta" data-open-booking data-cta="online-band" data-prefill="online">
+            {t.online.cta} <span aria-hidden="true">→</span>
+          </button>
+          <span class="ob__price">{t.online.from} <strong>€68</strong>/{t.online.person}</span>
+          <a class="ob__more" href={landingPath('online', lang)}>{t.online.more}</a>
+        </div>
       </div>
     </div>
   </div>
@@ -70,12 +72,14 @@ const t = useTranslations(lang);
     display: inline-flex; align-items: center; gap: 0.5rem; background: var(--yolk); color: var(--olive-deep);
     font-weight: 800; padding: 0.8rem 1.4rem; border-radius: 100px; transition: gap 0.3s;
   }
-  .ob__cta:hover { gap: 0.9rem; }
+  @media (hover: hover) {
+    .ob__cta:hover { gap: 0.9rem; }
+    .ob__more:hover { color: var(--yolk); }
+  }
   .ob__price { font-size: var(--step--1); color: rgba(249,246,240,0.75); }
   .ob__price strong { font-family: var(--serif); font-size: var(--step-0); color: var(--flour); }
   .ob__more {
     font-size: var(--step--1); font-weight: 600; color: rgba(249,246,240,0.85);
     text-decoration: underline; text-underline-offset: 3px; transition: color 0.3s;
   }
-  .ob__more:hover { color: var(--yolk); }
 </style>

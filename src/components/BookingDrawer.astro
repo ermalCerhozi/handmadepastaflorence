@@ -95,11 +95,6 @@ const bkJsPayload = Object.fromEntries(
         <div class="slots" data-slots hidden>
           <p class="slots__label">{t.bk.availableTimes} <span data-slot-date></span></p>
           <div class="slots__row" data-slot-row></div>
-          <div class="tz" data-tz hidden>
-            <span class="tz__row"><i>🇮🇹 {t.bk.florence}</i><b data-tz-florence>—</b></span>
-            <span class="tz__arrow">→</span>
-            <span class="tz__row"><i data-tz-name>{t.bk.yourTime}</i><b data-tz-local>—</b></span>
-          </div>
         </div>
       </section>
 
@@ -432,25 +427,11 @@ const bkJsPayload = Object.fromEntries(
             $$('.slot').forEach((s) => s.classList.remove('is-sel'));
             b.classList.add('is-sel');
             state.time = t;
-            showTz(date, t);
             validate(); render();
           });
         }
         row.appendChild(b);
       });
-      const tz = $('[data-tz]'); if (tz) tz.hidden = true; // reset until a time is chosen
-    };
-
-    const showTz = (date: Date, time: string) => {
-      const tz = $('[data-tz]'); if (!tz) return;
-      tz.hidden = false;
-      // Convert the Florence slot to the visitor's local time, correct year-round (CET/CEST).
-      const instant = new Date(slotMs(date, time));
-      const localName = Intl.DateTimeFormat().resolvedOptions().timeZone || 'Your time';
-      const fmt: Intl.DateTimeFormatOptions = { hour: '2-digit', minute: '2-digit' };
-      const fl = $('[data-tz-florence]'); if (fl) fl.textContent = time;
-      const nm = $('[data-tz-name]'); if (nm) nm.textContent = localName.replace(/_/g, ' ');
-      const lo = $('[data-tz-local]'); if (lo) lo.textContent = instant.toLocaleTimeString(undefined, fmt);
     };
 
     /* ---------- step 3: add-ons ---------- */
@@ -713,15 +694,6 @@ const bkJsPayload = Object.fromEntries(
   .slots__row :global(.slot.is-sel) { background: var(--terracotta); color: #fff; border-color: var(--terracotta); }
   .slots__row :global(.slot.is-off) { opacity: 0.35; text-decoration: line-through; cursor: not-allowed; }
   .slots__row :global(.slot.is-off:hover) { border-color: var(--paper-line); }
-  .tz {
-    margin-top: 0.9rem; display: flex; align-items: center; gap: 0.8rem; flex-wrap: wrap;
-    background: rgba(255,199,44,0.14); border: 1px solid rgba(240,180,0,0.35);
-    border-radius: 12px; padding: 0.6rem 0.9rem;
-  }
-  .tz__row { display: flex; flex-direction: column; }
-  .tz__row i { font-style: normal; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.04em; color: var(--charcoal-soft); text-transform: uppercase; }
-  .tz__row b { font-family: var(--serif); font-size: var(--step-0); color: var(--olive); }
-  .tz__arrow { color: var(--terracotta); font-weight: 800; }
 
   /* add-ons */
   .adds { display: grid; gap: 0.6rem; }

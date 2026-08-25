@@ -194,10 +194,13 @@ const t = useTranslations(getLocaleFromUrl(Astro.url));
   }
   .btn--solid { background: var(--terracotta); color: #fff; box-shadow: var(--shadow-md); }
   .btn--solid svg { transition: transform 0.4s var(--ease); }
-  .btn--solid:hover { background: var(--terracotta-deep); }
-  .btn--solid:hover svg { transform: translateX(5px); }
   .btn--ghost { border: 1.5px solid rgba(249,246,240,0.5); color: var(--flour); backdrop-filter: blur(4px); }
-  .btn--ghost:hover { border-color: var(--yolk); color: var(--yolk); }
+  
+  @media (hover: hover) {
+    .btn--solid:hover { background: var(--terracotta-deep); }
+    .btn--solid:hover svg { transform: translateX(5px); }
+    .btn--ghost:hover { border-color: var(--yolk); color: var(--yolk); }
+  }
   .btn__play { font-size: 0.7em; }
 
   .hero__proof {

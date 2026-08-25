@@ -90,8 +90,8 @@ body::before {
 }
 
 img { display: block; max-width: 100%; height: auto; }
-button { font: inherit; color: inherit; cursor: pointer; border: none; background: none; }
-a { color: inherit; text-decoration: none; }
+button { font: inherit; color: inherit; cursor: pointer; border: none; background: none; -webkit-tap-highlight-color: transparent; }
+a { color: inherit; text-decoration: none; -webkit-tap-highlight-color: transparent; }
 ul { list-style: none; padding: 0; }
 
 h1, h2, h3, h4 {
