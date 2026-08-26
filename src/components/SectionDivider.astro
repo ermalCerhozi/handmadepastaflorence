@@ -1,0 +1,39 @@
+---
+import dividerImage from '../assets/images/icons/italy-separator-1.webp';
+---
+
+<div class="section-divider" aria-hidden="true">
+  <img 
+    src={dividerImage.src} 
+    alt="" 
+    width={dividerImage.width}
+    height={dividerImage.height}
+    class="divider-img" 
+    loading="lazy" 
+  />
+</div>
+
+<style>
+  .section-divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 72px var(--gutter, 1rem) 0;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .divider-img {
+    max-width: 90%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    opacity: 0.9;
+  }
+
+  @media (min-width: 768px) {
+    .divider-img {
+      max-width: 100%;
+    }
+  }
+</style>

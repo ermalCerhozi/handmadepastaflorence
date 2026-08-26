@@ -83,6 +83,7 @@ interface Props {
   price: string;
   priceNote?: string;
   facts: Fact[];
+  infoBanner?: import('../data/landings').InfoBanner;
   sections: Section[];
   faqs: Faq[];
   related: Related[];
@@ -117,6 +118,7 @@ const {
   price,
   priceNote,
   facts,
+  infoBanner,
   sections,
   faqs,
   related,
@@ -370,6 +372,41 @@ const faqLd = faqSchema(faqs);
 }
 
 <section class="lp-body">
+  {
+    infoBanner && (
+      <div class="shell">
+        <div class="lp-info-banner" id="info-banner" data-reveal>
+          <div class="lp-info-banner__col">
+            <div class="lp-info-banner__row" id="cooking-class-menu">
+              <h3 class="lp-info-banner__h">{infoBanner.menu.title}</h3>
+              <ul class="lp-info-banner__list">
+                {infoBanner.menu.items.map((item) => (
+                  <li set:html={item} />
+                ))}
+              </ul>
+            </div>
+            <div class="lp-info-banner__row" id="include">
+              <h3 class="lp-info-banner__h">{infoBanner.included.title}</h3>
+              <ul class="lp-info-banner__list">
+                {infoBanner.included.items.map((item) => (
+                  <li set:html={item} />
+                ))}
+              </ul>
+              {infoBanner.included.text && <p class="lp-info-banner__p" set:html={infoBanner.included.text} />}
+            </div>
+            <div class="lp-info-banner__row" id="not-include">
+              <h3 class="lp-info-banner__h">{infoBanner.notIncluded.title}</h3>
+              <ul class="lp-info-banner__list">
+                {infoBanner.notIncluded.items.map((item) => (
+                  <li set:html={item} />
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  }
   <div class="shell lp-body__inner">
     {
       sections.map((s, i) => (
@@ -857,6 +894,56 @@ const faqLd = faqSchema(faqs);
     color: var(--terracotta);
     font-weight: 800;
     transition: transform 0.3s var(--ease);
+  }
+
+  /* ===== Info Banner ===== */
+  .lp-info-banner {
+    display: flex;
+    gap: 3rem;
+    padding: clamp(2.5rem, 5vw, 4rem);
+    border: 2px dashed var(--olive-soft, var(--paper-line));
+    border-radius: 0;
+    background-size: cover;
+    margin-bottom: clamp(2.4rem, 5vw, 3.4rem);
+    box-shadow: var(--shadow-sm);
+    background-color: var(--flour);
+  }
+  .lp-info-banner__col {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    flex: 1;
+  }
+  .lp-info-banner__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .lp-info-banner__h {
+    font-family: var(--serif);
+    font-size: var(--step-2);
+    color: var(--olive);
+    margin-bottom: 1rem;
+    line-height: 1.1;
+  }
+  .lp-info-banner__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+  }
+  .lp-info-banner__list li {
+    font-size: var(--step-0);
+    color: var(--charcoal);
+  }
+  .lp-info-banner__p {
+    margin-top: 1.2rem;
+    font-size: var(--step-0);
+    color: var(--charcoal);
+    line-height: 1.6;
+    max-width: 60ch;
   }
 </style>
 

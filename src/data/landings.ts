@@ -36,6 +36,11 @@ interface LandingContent {
   price: string;
   priceNote?: string;
   facts: { label: string; value: string; icon?: FactIcon }[];
+  infoBanner?: {
+    menu: { title: string; items: string[] };
+    included: { title: string; items: string[]; text?: string };
+    notIncluded: { title: string; items: string[] };
+  };
   sections: { title: string; paras: string[]; list?: string[] }[];
   faqs: { q: string; a: string }[];
   related: { title: string; href: string; desc: string }[];
@@ -131,6 +136,36 @@ export const landings: Record<string, LandingPage> = {
             { label: `Where`, value: `Oltrarno, near Santo Spirito`, icon: 'map-pin' },
             { label: `Language`, value: `English or Italian`, icon: 'globe' },
           ],
+          infoBanner: {
+            menu: {
+              title: 'Cooking class menu',
+              items: [
+                '<strong>Fettuccine</strong> with the sauce of your choice (<strong>Tomato</strong> and <strong>Basil</strong>, <b>Cacio e Pepe </b>or <strong>Amatriciana</strong>)',
+                '<strong>Ravioli</strong> with <strong>Butter</strong> and <strong>Sage</strong>',
+                'Your own <strong>Tiramisù</strong>',
+                'Glass of <strong>Wine</strong> or non-alcoholic beverage',
+                'Glass of <strong>Limoncello</strong> or <strong>coffee</strong>',
+                'Water'
+              ]
+            },
+            included: {
+              title: 'What’s included',
+              items: [
+                'Theoretical and hands-on cooking instructions',
+                '<strong>English speaking</strong> chef',
+                '<strong>Fresh ingredients</strong>',
+                '<strong>Equipment provided</strong> (workspace, apron, knife, and rolling pin).'
+              ],
+              text: 'When the preparation is done, you sit down at the table. The restaurant\'s kitchen cooks everything you made. You eat your Fettuccine with the sauce you chose, your Ravioli with butter and sage, your own Tiramisù to finish, with a glass of wine, in the center of Rome, with the people who made it with you.'
+            },
+            notIncluded: {
+              title: 'What’s not included',
+              items: [
+                'Making the sauce',
+                'Extra food and drinks'
+              ]
+            }
+          },
           sections: [
             {
               title: `What will you actually do in the class?`,
