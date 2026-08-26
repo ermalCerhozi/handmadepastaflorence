@@ -28,7 +28,7 @@ const en = {
   },
 
   footer: {
-    headline: 'Come get your hands<br /><span class="ital">a little floury.</span>',
+    headline: 'Come get your hands<br /><span class="font-golden" style="font-size: 1.3em; display: inline-block; margin-left: 0.1em; color: var(--yolk);">a little floury.</span>',
     book: 'Book your class',
     hours: 'Open every day · classes 10:00, 14:30 & 18:00',
     desc: 'Two agriturismo chefs, cooking with you in person & online in the heart of Florence.',

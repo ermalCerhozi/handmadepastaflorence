@@ -22,7 +22,7 @@ const it: Dict = {
   },
 
   footer: {
-    headline: `Vieni a sporcarti le mani<br /><span class="ital">di farina.</span>`,
+    headline: `Vieni a sporcarti le mani<br /><span class="font-golden" style="font-size: 1.3em; display: inline-block; margin-left: 0.1em; color: var(--yolk);">di farina.</span>`,
     book: `Prenota il tuo corso`,
     hours: `Aperti tutti i giorni · corsi 10:00, 14:30 & 18:00`,
     desc: `Due chef di agriturismo, cucinano con te di persona e online nel cuore di Firenze.`,

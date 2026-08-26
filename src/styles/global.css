@@ -11,6 +11,14 @@
 @import '@fontsource-variable/playfair-display/wght-italic.css';
 @import '@fontsource-variable/hanken-grotesk/wght.css';
 
+@font-face {
+  font-family: 'Golden Hills';
+  src: url('/fonts/GoldenHills.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   /* ---- Color ---- */
   --flour: #f9f6f0;
@@ -34,6 +42,7 @@
   /* ---- Type ---- */
   --serif: 'Playfair Display Variable', 'Playfair Display', Georgia, 'Times New Roman', serif;
   --sans: 'Hanken Grotesk Variable', 'Hanken Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  --golden: 'Golden Hills', cursive;
 
   /* fluid scale */
   --step--1: clamp(0.83rem, 0.78rem + 0.25vw, 0.95rem);
@@ -121,6 +130,14 @@ h1, h2, h3, h4 {
 
 /* fancy serif italic accent */
 .ital { font-style: italic; font-weight: 500; }
+
+/* handmade golden hills accent */
+.font-golden {
+  font-family: var(--golden);
+  font-weight: normal;
+  letter-spacing: normal;
+  text-transform: none;
+}
 
 /* ---- Reveal on scroll (set via IntersectionObserver) ---- */
 [data-reveal] {

@@ -17,7 +17,7 @@ const zh = {
   },
 
   footer: {
-    headline: '来吧，让你的双手<br /><span class="ital">沾满面粉。</span>',
+    headline: '来吧，让你的双手<br /><span class="font-golden" style="font-size: 1.3em; display: inline-block; margin-left: 0.1em; color: var(--yolk);">沾满面粉。</span>',
     book: '预订课程',
     hours: '每天开放 · 课程时间 10:00, 14:30 & 18:00',
     desc: '两位农庄主厨，在佛罗伦萨市中心与你进行面对面或线上的烹饪互动。',

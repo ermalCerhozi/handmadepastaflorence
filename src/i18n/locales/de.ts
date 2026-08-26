@@ -19,7 +19,7 @@ const de = {
   },
 
   footer: {
-    headline: 'Machen Sie sich die Hände<br /><span class="ital">ein wenig mehlig.</span>',
+    headline: 'Machen Sie sich die Hände<br /><span class="font-golden" style="font-size: 1.3em; display: inline-block; margin-left: 0.1em; color: var(--yolk);">ein wenig mehlig.</span>',
     book: 'Buchen Sie Ihren Kurs',
     hours: 'Täglich geöffnet · Kurse 10:00, 14:30 & 18:00',
     desc: 'Zwei Agriturismo-Köche kochen mit Ihnen persönlich & online im Herzen von Florenz.',

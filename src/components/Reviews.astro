@@ -16,7 +16,7 @@ const t = useTranslations(getLocaleFromUrl(Astro.url));
     <header class="rev__head" data-reveal>
       <div>
         <p class="eyebrow rev__eyebrow">{t.reviews.eyebrow}</p>
-        <h2 class="rev__title">{t.reviews.titlePre}<br />{t.reviews.titleMid}<span class="ital">{t.reviews.titleItal}</span></h2>
+        <h2 class="rev__title">{t.reviews.titlePre}<br />{t.reviews.titleMid}<span class="font-golden" style="font-size: 1.3em; display: inline-block; margin-left: 0.2em; color: var(--terracotta);">{t.reviews.titleItal}</span></h2>
       </div>
       <div class="rev__badges">
         {badges.map((b) => (

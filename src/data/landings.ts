@@ -156,7 +156,7 @@ export const landings: Record<string, LandingPage> = {
                 '<strong>Fresh ingredients</strong>',
                 '<strong>Equipment provided</strong> (workspace, apron, knife, and rolling pin).'
               ],
-              text: 'When the preparation is done, you sit down at the table. The restaurant\'s kitchen cooks everything you made. You eat your Fettuccine with the sauce you chose, your Ravioli with butter and sage, your own Tiramisù to finish, with a glass of wine, in the center of Rome, with the people who made it with you.'
+              text: 'When the preparation is done, you sit down at the table. The restaurant\'s kitchen cooks everything you made. You eat your Fettuccine with the sauce you chose, your Ravioli with butter and sage, your own Tiramisù to finish, with a glass of wine, in the center of Florence, with the people who made it with you.'
             },
             notIncluded: {
               title: 'What’s not included',
@@ -250,7 +250,37 @@ export const landings: Record<string, LandingPage> = {
             { label: `Dove`, value: `Oltrarno, vicino a Santo Spirito`, icon: 'map-pin' },
             { label: `Lingua`, value: `Inglese o Italiano`, icon: 'globe' },
           ],
-          sections: [
+          infoBanner: {
+              menu: {
+                title: 'Menu del corso di cucina',
+                items: [
+                  '<strong>Fettuccine</strong> con sugo a scelta (<strong>Pomodoro</strong> e <strong>Basilico</strong>, <b>Cacio e Pepe </b>o <strong>Amatriciana</strong>)',
+                  '<strong>Ravioli</strong> con <strong>Burro</strong> e <strong>Salvia</strong>',
+                  'Il tuo <strong>Tiramisù</strong>',
+                  'Bicchiere di <strong>Vino</strong> o bevanda analcolica',
+                  'Bicchiere di <strong>Limoncello</strong> o <strong>caffè</strong>',
+                  'Acqua'
+                ]
+              },
+              included: {
+                title: 'Cosa è incluso',
+                items: [
+                  'Istruzioni teoriche e pratiche di cucina',
+                  'Chef che <strong>parla inglese</strong>',
+                  '<strong>Ingredienti freschi</strong>',
+                  '<strong>Attrezzatura fornita</strong> (postazione di lavoro, grembiule, coltello e mattarello).'
+                ],
+                text: 'Terminata la preparazione, ci si siede a tavola. La cucina del ristorante cuoce tutto ciò che hai preparato. Mangi le tue Fettuccine con il sugo che hai scelto, i tuoi Ravioli burro e salvia, il tuo Tiramisù per finire, con un bicchiere di vino, nel centro di Firenze, con le persone che hanno cucinato con te.'
+              },
+              notIncluded: {
+                title: 'Cosa non è incluso',
+                items: [
+                  'Preparazione del sugo',
+                  'Cibo e bevande extra'
+                ]
+              }
+            },
+            sections: [
             {
               title: `Cosa farai effettivamente durante il corso?`,
               paras: [
@@ -334,7 +364,37 @@ export const landings: Record<string, LandingPage> = {
             { label: `Lieu`, value: `Oltrarno, près de Santo Spirito`, icon: 'map-pin' },
             { label: `Langue`, value: `Anglais ou Italien`, icon: 'globe' },
           ],
-          sections: [
+          infoBanner: {
+              menu: {
+                title: 'Menu du cours de cuisine',
+                items: [
+                  '<strong>Fettuccine</strong> avec la sauce de votre choix (<strong>Tomate</strong> et <strong>Basilic</strong>, <b>Cacio e Pepe </b>ou <strong>Amatriciana</strong>)',
+                  '<strong>Ravioli</strong> au <strong>Beurre</strong> et à la <strong>Sauge</strong>',
+                  'Votre propre <strong>Tiramisù</strong>',
+                  'Verre de <strong>Vin</strong> ou boisson non alcoolisée',
+                  'Verre de <strong>Limoncello</strong> ou <strong>café</strong>',
+                  'Eau'
+                ]
+              },
+              included: {
+                title: 'Ce qui est inclus',
+                items: [
+                  'Instructions culinaires théoriques et pratiques',
+                  'Chef <strong>anglophone</strong>',
+                  '<strong>Ingrédients frais</strong>',
+                  '<strong>Matériel fourni</strong> (plan de travail, tablier, couteau et rouleau à pâtisserie).'
+                ],
+                text: 'Une fois la préparation terminée, vous passez à table. La cuisine du restaurant cuit tout ce que vous avez préparé. Vous dégustez vos Fettuccine avec la sauce choisie, vos Ravioli beurre et sauge, votre propre Tiramisù pour finir, avec un verre de vin, au centre de Florence, avec les personnes qui ont cuisiné avec vous.'
+              },
+              notIncluded: {
+                title: 'Ce qui n\'est pas inclus',
+                items: [
+                  'La préparation de la sauce',
+                  'Nourriture et boissons supplémentaires'
+                ]
+              }
+            },
+            sections: [
             {
               title: `Que ferez-vous concrètement pendant le cours ?`,
               paras: [
@@ -421,7 +481,37 @@ export const landings: Record<string, LandingPage> = {
             { label: `Ort`, value: `Oltrarno, nahe Santo Spirito`, icon: 'map-pin' },
             { label: `Sprache`, value: `Englisch oder Italienisch`, icon: 'globe' },
           ],
-          sections: [
+          infoBanner: {
+              menu: {
+                title: 'Kochkurs-Menü',
+                items: [
+                  '<strong>Fettuccine</strong> mit Sauce nach Wahl (<strong>Tomate</strong> und <strong>Basilikum</strong>, <b>Cacio e Pepe </b>oder <strong>Amatriciana</strong>)',
+                  '<strong>Ravioli</strong> mit <strong>Butter</strong> und <strong>Salbei</strong>',
+                  'Dein eigenes <strong>Tiramisù</strong>',
+                  'Glas <strong>Wein</strong> oder alkoholfreies Getränk',
+                  'Glas <strong>Limoncello</strong> oder <strong>Kaffee</strong>',
+                  'Wasser'
+                ]
+              },
+              included: {
+                title: 'Was inklusive ist',
+                items: [
+                  'Theoretische und praktische Kochanweisungen',
+                  '<strong>Englischsprachiger</strong> Koch',
+                  '<strong>Frische Zutaten</strong>',
+                  '<strong>Gestellte Ausrüstung</strong> (Arbeitsplatz, Schürze, Messer und Nudelholz).'
+                ],
+                text: 'Wenn die Zubereitung fertig ist, setzen Sie sich an den Tisch. Die Restaurantküche kocht alles, was Sie gemacht haben. Sie essen Ihre Fettuccine mit der gewählten Sauce, Ihre Ravioli mit Butter und Salbei, Ihr eigenes Tiramisù zum Abschluss, mit einem Glas Wein, im Zentrum von Florenz, mit den Leuten, die mit Ihnen gekocht haben.'
+              },
+              notIncluded: {
+                title: 'Was nicht inklusive ist',
+                items: [
+                  'Zubereitung der Sauce',
+                  'Zusätzliche Speisen und Getränke'
+                ]
+              }
+            },
+            sections: [
             {
               title: `Was werden Sie im Kurs tatsächlich tun?`,
               paras: [
@@ -505,7 +595,37 @@ export const landings: Record<string, LandingPage> = {
             { label: `地点`, value: `奥特拉诺，靠近圣斯皮里托`, icon: 'map-pin' },
             { label: `语言`, value: `英语或意大利语`, icon: 'globe' },
           ],
-          sections: [
+          infoBanner: {
+            menu: {
+              title: 'Cooking class menu',
+              items: [
+                '<strong>Fettuccine</strong> with the sauce of your choice (<strong>Tomato</strong> and <strong>Basil</strong>, <b>Cacio e Pepe </b>or <strong>Amatriciana</strong>)',
+                '<strong>Ravioli</strong> with <strong>Butter</strong> and <strong>Sage</strong>',
+                'Your own <strong>Tiramisù</strong>',
+                'Glass of <strong>Wine</strong> or non-alcoholic beverage',
+                'Glass of <strong>Limoncello</strong> or <strong>coffee</strong>',
+                'Water'
+              ]
+            },
+            included: {
+              title: 'What’s included',
+              items: [
+                'Theoretical and hands-on cooking instructions',
+                '<strong>English speaking</strong> chef',
+                '<strong>Fresh ingredients</strong>',
+                '<strong>Equipment provided</strong> (workspace, apron, knife, and rolling pin).'
+              ],
+              text: 'When the preparation is done, you sit down at the table. The restaurant\'s kitchen cooks everything you made. You eat your Fettuccine with the sauce you chose, your Ravioli with butter and sage, your own Tiramisù to finish, with a glass of wine, in the center of Florence, with the people who made it with you.'
+            },
+            notIncluded: {
+              title: 'What’s not included',
+              items: [
+                'Making the sauce',
+                'Extra food and drinks'
+              ]
+            }
+          },
+            sections: [
             {
               title: `您在课程中将真正学到什么？`,
               paras: [

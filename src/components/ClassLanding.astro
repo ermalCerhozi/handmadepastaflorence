@@ -267,7 +267,7 @@ const faqLd = faqSchema(faqs);
       </nav>
       <p class="eyebrow lp-hero__eyebrow">{eyebrow}</p>
       <h1 class="lp-hero__h">
-        {heading} <span class="ital">{headingItal}</span>
+        {heading} <span class="font-golden" style="font-size: 1.3em; display: inline-block; margin-left: 0.1em; color: var(--yolk);">{headingItal}</span>
       </h1>
       <p class="lp-hero__lede">{lede}</p>
       <div class="lp-hero__row">
@@ -430,7 +430,7 @@ const faqLd = faqSchema(faqs);
 
 <section class="lp-faq">
   <div class="shell lp-faq__inner">
-    <h2 class="lp-faq__h">{t.lp.faqPre}<span class="ital">{t.lp.faqItal}</span></h2>
+    <h2 class="lp-faq__h">{t.lp.faqPre}<span class="font-golden" style="font-size: 1.3em; display: inline-block; margin-left: 0.2em; color: var(--terracotta);">{t.lp.faqItal}</span></h2>
     <div class="lp-faq__list">
       {
         faqs.map((f, i) => (
@@ -451,7 +451,7 @@ const faqLd = faqSchema(faqs);
 
 <section class="lp-rel">
   <div class="shell">
-    <h2 class="lp-rel__h">{t.lp.relPre}<span class="ital">{t.lp.relItal}</span></h2>
+    <h2 class="lp-rel__h">{t.lp.relPre}<span class="font-golden" style="font-size: 1.3em; display: inline-block; margin-left: 0.2em; color: var(--terracotta);">{t.lp.relItal}</span></h2>
     <div class="lp-rel__grid">
       {
         related.map((r, i) => (
@@ -921,9 +921,10 @@ const faqLd = faqSchema(faqs);
     text-align: center;
   }
   .lp-info-banner__h {
-    font-family: var(--serif);
-    font-size: var(--step-2);
-    color: var(--olive);
+    font-family: var(--golden);
+    font-weight: normal;
+    font-size: calc(var(--step-2) * 1.3);
+    color: var(--terracotta);
     margin-bottom: 1rem;
     line-height: 1.1;
   }

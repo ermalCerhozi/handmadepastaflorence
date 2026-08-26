@@ -17,7 +17,7 @@ const fr = {
   },
 
   footer: {
-    headline: 'Venez vous mettre un<br /><span class="ital">peu de farine sur les mains.</span>',
+    headline: 'Venez vous mettre un<br /><span class="font-golden" style="font-size: 1.3em; display: inline-block; margin-left: 0.1em; color: var(--yolk);">peu de farine sur les mains.</span>',
     book: 'Réserver votre cours',
     hours: 'Ouvert tous les jours · cours à 10:00, 14:30 & 18:00',
     desc: 'Deux chefs d\'agritourisme, cuisinant avec vous en personne et en ligne au cœur de Florence.',
