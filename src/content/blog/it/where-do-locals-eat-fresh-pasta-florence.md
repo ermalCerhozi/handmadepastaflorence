@@ -3,7 +3,7 @@ title: 'Dov''è la migliore pasta fatta a mano a Firenze? La sincera verità di 
 description: 'Cerchi i migliori ristoranti che fanno la pasta fresca ogni giorno a Firenze? La realtà della domanda dei ristoranti potrebbe sorprenderti. Ecco dove trovare veramente la migliore pasta fatta a mano.'
 pubDate: 2026-08-27
 author: 'Endri Cerhozi'
-image: '../../assets/images/hands-on-pasta-making-class-florence-chef.webp'
+image: '../../../assets/images/hands-on-pasta-making-class-florence-chef.webp'
 imageAlt: 'Chef che salta la pasta fresca in padella'
 badge: 'Nuovo'
 faqs:

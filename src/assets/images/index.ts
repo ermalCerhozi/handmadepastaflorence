@@ -28,3 +28,4 @@ export { default as cuttingPizza } from './cutting-pizza.webp';
 export { default as handsOnGroup } from './hands-on-pasta-cooking-class-florence-group.webp';
 export { default as handsOnChef } from './hands-on-pasta-making-class-florence-chef.webp';
 export { default as privateTeamBuilding } from './private-pasta-cooking-class-florence-team-building.webp';
+export { default as privateTeamBuildingJpg } from './private-pasta-cooking-class-florence-team-building-2.webp';

@@ -3,7 +3,7 @@ title: 'Wo gibt es die beste handgemachte Pasta in Florenz? Die ehrliche Wahrhei
 description: 'Suchen Sie nach den besten Restaurants, die in Florenz täglich frische Pasta machen? Die Realität der Restaurantnachfrage könnte Sie überraschen. Hier erfahren Sie, wo Sie tatsächlich die beste handgemachte Pasta bekommen.'
 pubDate: 2026-08-27
 author: 'Endri Cerhozi'
-image: '../../assets/images/hands-on-pasta-making-class-florence-chef.webp'
+image: '../../../assets/images/hands-on-pasta-making-class-florence-chef.webp'
 imageAlt: 'Koch schwenkt frische Pasta in einer Pfanne'
 badge: 'Neu'
 faqs:

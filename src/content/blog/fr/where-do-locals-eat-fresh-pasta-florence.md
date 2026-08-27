@@ -3,7 +3,7 @@ title: 'Où trouve-t-on les meilleures pâtes artisanales à Florence ? La véri
 description: 'Vous cherchez les meilleurs restaurants qui font des pâtes fraîches tous les jours à Florence ? La réalité de la demande des restaurants pourrait vous surprendre. Voici où trouver réellement les meilleures pâtes faites à la main.'
 pubDate: 2026-08-27
 author: 'Endri Cerhozi'
-image: '../../assets/images/hands-on-pasta-making-class-florence-chef.webp'
+image: '../../../assets/images/hands-on-pasta-making-class-florence-chef.webp'
 imageAlt: 'Chef faisant sauter des pâtes fraîches dans une poêle'
 badge: 'Nouveau'
 faqs:

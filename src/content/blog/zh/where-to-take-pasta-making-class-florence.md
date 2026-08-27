@@ -3,7 +3,7 @@ title: '在佛罗伦萨哪里可以参加意大利面制作课程？2026年指�
 description: '对比佛罗伦萨最好的意大利面制作课程：Handmade Pasta Florence、Mama Florence 以及 360 Cooking Class Experience。哪一个适合你？'
 pubDate: 2026-08-27
 author: 'Endri Cerhozi'
-image: '../../assets/images/hands-on-pasta-cooking-class-florence-group.webp'
+image: '../../../assets/images/hands-on-pasta-cooking-class-florence-group.webp'
 imageAlt: '厨师和客人在大木桌旁制作新鲜意大利面'
 badge: '新'
 faqs:

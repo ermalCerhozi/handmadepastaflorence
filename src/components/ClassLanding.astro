@@ -603,24 +603,24 @@ const faqLd = faqSchema(faqs);
   
   @keyframes heroFade1 {
     0%     { opacity: 1; transform: scale(1.005); }
-    38.33% { opacity: 1; transform: scale(1.049); }
-    43.33% { opacity: 0; transform: scale(1.055); }
-    95%    { opacity: 0; transform: scale(1); }
+    28.75% { opacity: 1; transform: scale(1.033); }
+    32.5%  { opacity: 0; transform: scale(1.037); }
+    96.25% { opacity: 0; transform: scale(1); }
     100%   { opacity: 1; transform: scale(1.005); }
   }
 
   @keyframes heroFade {
     0%     { opacity: 0; transform: scale(1); }
-    5%     { opacity: 1; transform: scale(1.005); }
-    38.33% { opacity: 1; transform: scale(1.049); }
-    43.33% { opacity: 0; transform: scale(1.055); }
+    3.75%  { opacity: 1; transform: scale(1.005); }
+    28.75% { opacity: 1; transform: scale(1.033); }
+    32.5%  { opacity: 0; transform: scale(1.037); }
     100%   { opacity: 0; transform: scale(1); }
   }
 
   .lp-hero__image-fade-1 {
     position: absolute;
     inset: 0;
-    animation: heroFade1 12s infinite linear;
+    animation: heroFade1 16s infinite linear;
     will-change: transform, opacity;
   }
 
@@ -628,7 +628,7 @@ const faqLd = faqSchema(faqs);
     position: absolute;
     inset: 0;
     opacity: 0;
-    animation: heroFade 12s infinite linear;
+    animation: heroFade 16s infinite linear;
     will-change: transform, opacity;
   }
 

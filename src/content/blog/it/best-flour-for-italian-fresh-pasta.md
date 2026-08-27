@@ -3,7 +3,7 @@ title: 'Che farina si usa per l''autentica pasta fresca italiana?'
 description: 'Se vuoi fare l''autentica pasta fresca italiana, hai bisogno della farina giusta. Scopri la differenza tra farina 00 e semola, e quando usarle.'
 pubDate: 2026-08-27
 author: 'Endri Cerhozi'
-image: '../../assets/images/shape-pappardelle.webp'
+image: '../../../assets/images/shape-pappardelle.webp'
 imageAlt: 'Montagnetta di farina 00 con un tuorlo d''uovo al centro'
 badge: 'Nuovo'
 faqs:

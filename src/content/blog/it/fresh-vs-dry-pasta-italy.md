@@ -3,7 +3,7 @@ title: 'Qual è la differenza tra pasta fresca e pasta secca in Italia?'
 description: 'Scopri la vera differenza tra pasta fresca e pasta secca in Italia. Non è una questione di qualità, ma della forma giusta per il sugo giusto.'
 pubDate: 2026-08-27
 author: 'Endri Cerhozi'
-image: '../../assets/images/plates.webp'
+image: '../../../assets/images/plates.webp'
 imageAlt: 'Pasta appena fatta su un tavolo'
 badge: 'Nuovo'
 faqs:

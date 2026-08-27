@@ -3,7 +3,7 @@ title: 'Quelle farine utilise-t-on pour d’authentiques pâtes fraîches italie
 description: 'Si vous voulez faire d’authentiques pâtes fraîches italiennes, vous avez besoin de la bonne farine. Apprenez la différence entre la farine 00 et la semoule, et quand les utiliser.'
 pubDate: 2026-08-27
 author: 'Endri Cerhozi'
-image: '../../assets/images/shape-pappardelle.webp'
+image: '../../../assets/images/shape-pappardelle.webp'
 imageAlt: 'Monticule de farine 00 avec un jaune d’œuf au centre'
 badge: 'Nouveau'
 faqs:

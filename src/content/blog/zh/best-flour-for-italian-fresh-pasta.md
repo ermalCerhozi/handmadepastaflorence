@@ -3,7 +3,7 @@ title: '正宗的意大利新鲜意大利面使用什么面粉？'
 description: '如果你想在家里制作正宗的意大利新鲜意大利面，你需要使用合适的面粉。了解00号面粉和粗面粉（semolina）之间的区别，以及何时使用它们。'
 pubDate: 2026-08-27
 author: 'Endri Cerhozi'
-image: '../../assets/images/shape-pappardelle.webp'
+image: '../../../assets/images/shape-pappardelle.webp'
 imageAlt: '中间有蛋黄的00号面粉堆'
 badge: '新'
 faqs:
