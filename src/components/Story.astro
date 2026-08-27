@@ -2,13 +2,13 @@
 import { getImage } from 'astro:assets';
 import { getLocaleFromUrl } from '../i18n/utils';
 import { useTranslations } from '../i18n/ui';
-import { cuttingPizza, plates } from '../assets/images';
+import { cuttingPizza, cookingClassGuests } from '../assets/images';
 const t = useTranslations(getLocaleFromUrl(Astro.url));
 
 // CSS background-image (not <img>), so <Image> doesn't apply — resolve the
 // optimized URL via getImage() and feed it in through a CSS custom property.
 const photoA = await getImage({ src: cuttingPizza, width: 800 });
-const photoB = await getImage({ src: plates, width: 800 });
+const photoB = await getImage({ src: cookingClassGuests, width: 800 });
 ---
 
 <section class="story" id="story">
