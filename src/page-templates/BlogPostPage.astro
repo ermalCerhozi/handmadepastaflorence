@@ -187,6 +187,10 @@ const faqLd = faqs.length ? faqSchema(faqs) : null;
     border-left: 3px solid var(--yolk); padding-left: 1.1rem; margin: 1.4rem 0;
     font-style: italic; color: var(--charcoal-soft);
   }
+  .po-body :global(table) { width: 100%; border-collapse: collapse; margin: 1.8rem 0; display: block; overflow-x: auto; white-space: nowrap; }
+  .po-body :global(table th) { background: var(--flour); color: var(--olive); text-align: left; padding: 1rem 1.2rem; border-bottom: 2px solid var(--paper-line); font-weight: 700; }
+  .po-body :global(table td) { padding: 1rem 1.2rem; border-bottom: 1px solid var(--paper-line); color: var(--charcoal); font-size: var(--step--1); vertical-align: top; white-space: normal; min-width: 200px; }
+  .po-body :global(table tr:nth-child(even)) { background: rgba(249, 246, 240, 0.4); }
 
   .po-faq { max-width: 720px; margin-top: 2.5rem; }
   .po-faq__h { font-size: var(--step-2); color: var(--olive); margin-bottom: 1.2rem; }

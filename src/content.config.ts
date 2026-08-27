@@ -19,6 +19,7 @@ const blog = defineCollection({
     // Optional FAQ block — rendered visibly and emitted as FAQPage JSON-LD to
     // target People-Also-Ask / featured-snippet queries the guide already ranks for.
     faqs: z.array(z.object({ q: z.string(), a: z.string() })).optional(),
+    badge: z.string().optional(),
   }),
 });
 
