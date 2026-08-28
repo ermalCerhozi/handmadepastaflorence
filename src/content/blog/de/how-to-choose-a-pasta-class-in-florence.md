@@ -3,7 +3,7 @@ title: 'Wie man einen Pasta-Kurs in Florenz auswählt: 7 Fragen, die wirklich z�
 description: 'Florenz hat Hunderte von Pasta-Kursen, und die Anzeigen lesen sich alle gleich. Die sieben Fragen, die wirklich vorhersagen, ob er Ihnen gefallen wird: Gruppengröße, was enthalten ist, wer unterrichtet und wie Allergien tatsächlich gehandhabt werden.'
 pubDate: 2026-08-11
 author: 'Endri Cerhozi'
-image: '../../../assets/images/cooking-class.webp'
+image: '../../../../assets/images/cooking-class.webp'
 imageAlt: 'Eine kleine Gruppe macht an einem Tisch in Florenz frische Pasta von Hand'
 faqs:
   - q: "Was ist das Wichtigste, das man bei der Buchung eines Kochkurses in Florenz prüfen sollte?"

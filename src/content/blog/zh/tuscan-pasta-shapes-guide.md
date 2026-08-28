@@ -3,7 +3,7 @@ title: '托斯卡纳意面类型与形状：pici、pappardelle、tortelli 及更
 description: '主厨带你了解托斯卡纳经典的新鲜意面类型：每种形状的起源、手工制作方法，以及它天生适合搭配的酱汁。'
 pubDate: 2026-07-08
 author: 'Endri Cerhozi'
-image: '../../../assets/images/shape-pici.webp'
+image: '../../../../assets/images/shape-pici.webp'
 imageAlt: '手工揉制的 pici，粗粗的托斯卡纳意面条，撒满面粉'
 faqs:
   - q: '托斯卡纳以什么意面闻名？'
