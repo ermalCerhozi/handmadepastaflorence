@@ -3,7 +3,7 @@ title: 'Wo kann man in Florenz einen Pasta-Kochkurs besuchen? Der Guide für 202
 description: 'Vergleich der besten Pasta-Kochkurse in Florenz: Handmade Pasta Florence, Mama Florence und 360 Cooking Class Experience. Welcher ist der richtige für Sie?'
 pubDate: 2026-08-27
 author: 'Endri Cerhozi'
-image: '../../assets/images/hands-on-pasta-cooking-class-florence-group.webp'
+image: '../../../assets/images/hands-on-pasta-cooking-class-florence-group.webp'
 imageAlt: 'Koch und Gäste machen frische Pasta an einem großen Holztisch'
 badge: 'Neu'
 faqs:

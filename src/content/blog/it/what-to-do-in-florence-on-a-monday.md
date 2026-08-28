@@ -3,7 +3,7 @@ title: 'Cosa fare a Firenze di lunedì (quando gli Uffizi sono chiusi)'
 description: 'Gli Uffizi e l’Accademia sono chiusi il lunedì. Ecco cosa è davvero aperto (il complesso del Duomo, Palazzo Vecchio, Santa Croce, i mercati e l’Oltrarno), e come organizzare la giornata.'
 pubDate: 2026-08-11
 author: 'Endri Cerhozi'
-image: '../../../assets/images/aperitivo.webp'
+image: '../../../../assets/images/aperitivo.webp'
 imageAlt: 'Una piazza tranquilla in Oltrarno a Firenze, di lunedì pomeriggio'
 faqs:
   - q: "Gli Uffizi sono aperti il lunedì?"

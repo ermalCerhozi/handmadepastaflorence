@@ -3,7 +3,7 @@ title: 'Dove fare un corso di pasta a Firenze? La Guida 2026'
 description: 'Confronto tra i migliori corsi di pasta a Firenze: Handmade Pasta Florence, Mama Florence e 360 Cooking Class Experience. Quale fa per te?'
 pubDate: 2026-08-27
 author: 'Endri Cerhozi'
-image: '../../assets/images/hands-on-pasta-cooking-class-florence-group.webp'
+image: '../../../assets/images/hands-on-pasta-cooking-class-florence-group.webp'
 imageAlt: 'Chef e ospiti che preparano pasta fresca a un grande tavolo di legno'
 badge: 'Nuovo'
 faqs:

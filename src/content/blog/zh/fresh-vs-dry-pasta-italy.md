@@ -3,7 +3,7 @@ title: '在意大利，新鲜意大利面和干意大利面有什么区别？'
 description: '了解在意大利，新鲜意大利面（pasta fresca）和干意大利面（pasta secca）的真正区别。这与品质无关，而是为了搭配不同酱汁选择合适的面条形状。'
 pubDate: 2026-08-27
 author: 'Endri Cerhozi'
-image: '../../assets/images/plates.webp'
+image: '../../../assets/images/plates.webp'
 imageAlt: '桌子上刚做好的新鲜意大利面'
 badge: '新'
 faqs:

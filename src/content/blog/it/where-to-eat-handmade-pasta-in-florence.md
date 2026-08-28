@@ -3,7 +3,7 @@ title: 'Dove mangiare la pasta fresca a Firenze, la guida di uno chef'
 description: 'Come riconoscere la vera pasta fresca nel menu di un ristorante a Firenze, cosa ordinare (pici, pappardelle, tortelli), e i quartieri e le trattorie che valgono la tua serata.'
 pubDate: 2026-07-08
 author: 'Endri Cerhozi'
-image: '../../../assets/images/plates.webp'
+image: '../../../../assets/images/plates.webp'
 imageAlt: 'Piatti di pasta fresca serviti su un tavolo toscano'
 faqs:
   - q: "Dov'è la pasta migliore di Firenze?"

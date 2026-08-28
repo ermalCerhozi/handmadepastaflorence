@@ -3,7 +3,7 @@ title: 'Was ist der Unterschied zwischen frischer und getrockneter Pasta in Ital
 description: 'Entdecken Sie den wahren Unterschied zwischen frischer Pasta (pasta fresca) und getrockneter Pasta (pasta secca) in Italien. Es geht nicht um Qualität, sondern um die richtige Form für die richtige Sauce.'
 pubDate: 2026-08-27
 author: 'Endri Cerhozi'
-image: '../../assets/images/plates.webp'
+image: '../../../assets/images/plates.webp'
 imageAlt: 'Frisch zubereitete Pasta auf einem Tisch'
 badge: 'Neu'
 faqs:

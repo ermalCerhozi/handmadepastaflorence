@@ -3,7 +3,7 @@ title: 'Welches Mehl wird für authentische italienische frische Pasta verwendet
 description: 'Wenn Sie authentische italienische frische Pasta machen möchten, brauchen Sie das richtige Mehl. Lernen Sie den Unterschied zwischen 00-Mehl und Grieß kennen und erfahren Sie, wann Sie welches verwenden.'
 pubDate: 2026-08-27
 author: 'Endri Cerhozi'
-image: '../../assets/images/shape-pappardelle.webp'
+image: '../../../assets/images/shape-pappardelle.webp'
 imageAlt: 'Ein Hügel aus 00-Mehl mit einem Eigelb in der Mitte'
 badge: 'Neu'
 faqs:

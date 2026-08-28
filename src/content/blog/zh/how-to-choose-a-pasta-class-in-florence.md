@@ -3,7 +3,7 @@ title: '如何挑选佛罗伦萨的意面课程：真正重要的7个问题'
 description: '佛罗伦萨有数百个意面课程，而所有的介绍看起来几乎一模一样。真正能预测你是否会喜欢的七个问题：班级人数、包含什么、由谁授课，以及过敏与无麸质究竟如何处理。'
 pubDate: 2026-08-11
 author: 'Endri Cerhozi'
-image: '../../../assets/images/cooking-class.webp'
+image: '../../../../assets/images/cooking-class.webp'
 imageAlt: '一小群人在佛罗伦萨的餐桌旁手工制作新鲜意面'
 faqs:
   - q: "在佛罗伦萨预订烹饪课程时，最该确认的是什么？"

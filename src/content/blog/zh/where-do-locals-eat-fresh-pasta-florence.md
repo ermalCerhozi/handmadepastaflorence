@@ -3,7 +3,7 @@ title: '佛罗伦萨最好的手工意大利面在哪里？一位当地人的诚
 description: '寻找佛罗伦萨每天制作新鲜意大利面最好的餐厅吗？餐厅需求的现实可能会让你感到惊讶。这里告诉你到底去哪里才能吃到最好的手工意大利面。'
 pubDate: 2026-08-27
 author: 'Endri Cerhozi'
-image: '../../assets/images/hands-on-pasta-making-class-florence-chef.webp'
+image: '../../../assets/images/hands-on-pasta-making-class-florence-chef.webp'
 imageAlt: '厨师在锅里翻炒新鲜的意大利面'
 badge: '新'
 faqs:

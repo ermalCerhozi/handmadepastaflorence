@@ -3,7 +3,7 @@ title: 'Tagliatelle o pappardelle: quanto sono larghe davvero?'
 description: 'Le tagliatelle si tagliano a 6–8 mm, le pappardelle a 20–30 mm. Stessa sfoglia all’uovo, coltello diverso, sugo diverso. Un cuoco di Firenze sulle misure e su quale condimento va con quale nastro.'
 pubDate: 2026-08-16
 author: 'Endri Cerhozi'
-image: '../../../assets/images/shape-pappardelle.webp'
+image: '../../../../assets/images/shape-pappardelle.webp'
 imageAlt: 'Pappardelle larghe e tagliatelle più strette affiancate su un tagliere infarinato'
 faqs:
   - q: "Quanto sono larghe le pappardelle?"
