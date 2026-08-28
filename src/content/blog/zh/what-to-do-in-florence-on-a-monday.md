@@ -3,7 +3,7 @@ title: '周一在佛罗伦萨做什么（乌菲齐闭馆的日子）'
 description: '乌菲齐美术馆与学院美术馆周一均闭馆。这里是真正开放的地方（主教座堂建筑群、旧宫、圣十字圣殿、各大市场与奥特拉诺区），以及如何据此安排一整天。'
 pubDate: 2026-08-11
 author: 'Endri Cerhozi'
-image: '../../../../assets/images/aperitivo.webp'
+image: '../../../assets/images/aperitivo.webp'
 imageAlt: '周一下午，佛罗伦萨奥特拉诺区一处安静的广场'
 faqs:
   - q: "乌菲齐美术馆周一开放吗？"

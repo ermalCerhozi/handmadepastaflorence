@@ -3,7 +3,7 @@ title: '在奥尔特拉诺可以做的事情：佛罗伦萨左岸的本地指南
 description: '如何在奥尔特拉诺度过一天：圣斯皮里托广场、皮蒂宫和波波里花园、工匠作坊、布兰卡契小堂，以及夜生活真正发生的地方。'
 pubDate: 2026-07-08
 author: 'Endri Cerhozi'
-image: '../../../../assets/images/aperitivo.webp'
+image: '../../../assets/images/aperitivo.webp'
 imageAlt: '在河对岸奥尔特拉诺一侧的佛罗伦萨广场上的开胃酒时间'
 faqs:
   - q: "什么是奥尔特拉诺（Oltrarno）？"

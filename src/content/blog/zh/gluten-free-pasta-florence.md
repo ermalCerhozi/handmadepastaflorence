@@ -3,7 +3,7 @@ title: '佛罗伦萨无麸质指南：如何安全地享用（和制作）新鲜
 description: '为什么意大利是对乳糜泻游客最友好的国家之一，在佛罗伦萨保证您安全的短语和习惯，以及无麸质新鲜意面如何融入其中。'
 pubDate: 2026-07-08
 author: 'Endri Cerhozi'
-image: '../../../../assets/images/shape-tagliatelle.webp'
+image: '../../../assets/images/shape-tagliatelle.webp'
 imageAlt: '在木板上撒上面粉的新鲜 tagliatelle 缎带意面'
 ---
 

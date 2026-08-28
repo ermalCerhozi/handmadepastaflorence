@@ -3,7 +3,7 @@ title: 'Glutenfrei in Florenz: Wie man frische Pasta sicher isst (und macht)'
 description: 'Warum Italien eines der einfachsten Länder für Reisende mit Zöliakie ist, die Sätze und Gewohnheiten, die Sie in Florenz sicher halten, und wo glutenfreie frische Pasta ins Spiel kommt.'
 pubDate: 2026-07-08
 author: 'Endri Cerhozi'
-image: '../../../../assets/images/shape-tagliatelle.webp'
+image: '../../../assets/images/shape-tagliatelle.webp'
 imageAlt: 'Frische Tagliatelle-Bänder, mit Mehl bestäubt, auf einem Holzbrett'
 ---
 

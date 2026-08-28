@@ -3,7 +3,7 @@ title: 'Cose da fare in Oltrarno: una guida locale alla rive gauche di Firenze'
 description: 'Come trascorrere una giornata in Oltrarno: Santo Spirito, Palazzo Pitti e Boboli, botteghe artigiane, la Cappella Brancacci, e dove si svolge davvero la serata.'
 pubDate: 2026-07-08
 author: 'Endri Cerhozi'
-image: '../../../../assets/images/aperitivo.webp'
+image: '../../../assets/images/aperitivo.webp'
 imageAlt: "Ora dell'aperitivo in una piazza di Firenze sul lato Oltrarno del fiume"
 faqs:
   - q: "Cos'è l'Oltrarno?"

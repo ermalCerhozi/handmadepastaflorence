@@ -3,7 +3,7 @@ title: 'Was man montags in Florenz machen kann (wenn die Uffizien geschlossen si
 description: 'Die Uffizien und die Accademia sind montags geschlossen. Hier steht, was wirklich geöffnet hat (der Dom-Komplex, Palazzo Vecchio, Santa Croce, die Märkte und das Oltrarno), und wie man den Tag darum herum plant.'
 pubDate: 2026-08-11
 author: 'Endri Cerhozi'
-image: '../../../../assets/images/aperitivo.webp'
+image: '../../../assets/images/aperitivo.webp'
 imageAlt: 'Ein ruhiger Platz im Oltrarno in Florenz an einem Montagnachmittag'
 faqs:
   - q: "Sind die Uffizien montags geöffnet?"

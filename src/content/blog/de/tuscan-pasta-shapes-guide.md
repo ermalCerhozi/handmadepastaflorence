@@ -3,7 +3,7 @@ title: 'Toskanische Pasta: Pici, Pappardelle & Tortelli erklärt'
 description: 'Ein Kochguide zu den klassischen frischen Nudelsorten der Toskana: woher jede Form kommt, wie sie von Hand gemacht wird und für welche Soße sie geschaffen wurde.'
 pubDate: 2026-07-08
 author: 'Endri Cerhozi'
-image: '../../../../assets/images/shape-pici.webp'
+image: '../../../assets/images/shape-pici.webp'
 imageAlt: 'Handgerollte Pici, die dicken toskanischen Pastastränge, mit Mehl bestäubt'
 faqs:
   - q: 'Für welche Pasta ist die Toskana bekannt?'

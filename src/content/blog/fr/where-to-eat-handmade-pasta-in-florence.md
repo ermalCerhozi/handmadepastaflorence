@@ -3,7 +3,7 @@ title: 'Les meilleures pâtes à la main à Florence : le guide d’un chef'
 description: 'L’avis honnête d’un chef sur les meilleures pâtes de Florence: comment repérer les vraies sur un menu, quoi commander, et les trattorias qui valent le détour.'
 pubDate: 2026-07-08
 author: 'Endri Cerhozi'
-image: '../../../../assets/images/plates.webp'
+image: '../../../assets/images/plates.webp'
 imageAlt: 'Assiettes de pâtes fraîches faites à la main servies sur une table toscane'
 faqs:
   - q: "Où sont les meilleures pâtes de Florence ?"

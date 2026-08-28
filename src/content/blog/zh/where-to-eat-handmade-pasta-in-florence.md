@@ -3,7 +3,7 @@ title: '佛罗伦萨最好的手工意面：去哪里吃，来自意面主厨的
 description: '意面主厨对佛罗伦萨最佳意面的诚实看法：如何在菜单上发现正宗的意面，该点什么（pici, pappardelle, tortelli），以及值得你专门去吃一顿晚餐的小餐馆。'
 pubDate: 2026-07-08
 author: 'Endri Cerhozi'
-image: '../../../../assets/images/plates.webp'
+image: '../../../assets/images/plates.webp'
 imageAlt: '在托斯卡纳餐桌上端上的新鲜手工意面'
 faqs:
   - q: "佛罗伦萨最好的意面在哪里？"

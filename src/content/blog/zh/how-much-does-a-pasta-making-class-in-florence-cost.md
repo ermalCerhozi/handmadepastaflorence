@@ -3,7 +3,7 @@ title: '在佛罗伦萨上意面制作课程需要多少钱？（2026年指南�
 description: '真实的2026年佛罗伦萨烹饪课程价格区间，真正决定价格的因素是什么，应该包含哪些内容，以及预订前要问的问题。'
 pubDate: 2026-07-08
 author: 'Endri Cerhozi'
-image: '../../../../assets/images/cooking_class_with_guests_in_picture.webp'
+image: '../../../assets/images/cooking_class_with_guests_in_picture.webp'
 imageAlt: '客人们在佛罗伦萨的小班课程中一起制作新鲜意面'
 ---
 

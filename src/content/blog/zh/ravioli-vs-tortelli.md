@@ -3,7 +3,7 @@ title: 'Ravioli 与 Tortelli 有什么区别？（一位托斯卡纳厨师的解
 description: 'Ravioli、tortelli、tortellini 和 agnolotti 都属于带馅意面：区别在于大小、形状、馅料和产地。每个名字究竟指什么，以及在托斯卡纳它们叫什么。'
 pubDate: 2026-08-11
 author: 'Endri Cerhozi'
-image: '../../../../assets/images/shape-ravioli.webp'
+image: '../../../assets/images/shape-ravioli.webp'
 imageAlt: '刚做好的带馅意面，摆在撒了面粉的木案板上'
 faqs:
   - q: "Ravioli 和 tortelli 有什么区别？"

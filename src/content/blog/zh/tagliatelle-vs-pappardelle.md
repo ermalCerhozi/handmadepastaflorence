@@ -3,7 +3,7 @@ title: 'Tagliatelle 与 pappardelle：两种面带各有多宽？'
 description: 'Tagliatelle 切成 6–8 毫米，pappardelle 切成 20–30 毫米。同样的蛋面团，不同的下刀，在盘子里完全是两回事。一位佛罗伦萨意面主厨讲尺寸，以及哪种酱汁配哪一种。'
 pubDate: 2026-08-16
 author: 'Endri Cerhozi'
-image: '../../../../assets/images/shape-pappardelle.webp'
+image: '../../../assets/images/shape-pappardelle.webp'
 imageAlt: '撒了面粉的板子上，宽阔的 pappardelle 与较窄的 tagliatelle 并排放着'
 faqs:
   - q: "Pappardelle 有多宽？"
