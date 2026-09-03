@@ -5,7 +5,6 @@ pubDate: 2026-08-27
 author: 'Endri Cerhozi'
 image: '../../assets/images/hands-on-pasta-making-class-florence-chef.webp'
 imageAlt: 'Chef tossing fresh pasta in a pan'
-badge: 'New'
 faqs:
   - q: "Which restaurants make pasta fresh daily in Florence?"
     a: "Many traditional trattorias in Florence make fresh pasta daily, but due to massive demand, many are forced to supplement their handmade pasta with high-quality frozen pasta fresca."

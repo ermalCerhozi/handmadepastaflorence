@@ -60,6 +60,7 @@ const en = {
     faqItal: 'know.',
     relPre: 'Looking for something ',
     relItal: 'else?',
+    cancellation: 'Free cancellation up to 48h before.',
   },
 
   lang: {
@@ -140,6 +141,7 @@ const en = {
       { q: 'Where can I find gluten-free handmade pasta in Florence?', a: 'Right here in our kitchen! We can prepare a dedicated gluten-free flour blend and a clean station at no extra charge. Just tell us about any allergies when you book.' },
       { q: 'When do classes run?', a: 'Classes start at 10:00, 14:30 and 18:00 (Florence time), every day of the week.' },
       { q: 'How do I book and pay?', a: "Use the “Book a class” button to build your request. It opens a WhatsApp chat with the details filled in, and we’ll confirm availability and walk you through the rest." },
+      { q: "What's your cancellation policy?", a: "Free cancellation up to 48 hours before your class, no charge. Need a new date instead? We're happy to reschedule at no cost up to 24 hours before your class. Cancellations inside 48 hours, or no-shows, may be charged the full class price. Full details on our cancellation policy page." },
     ],
   },
 

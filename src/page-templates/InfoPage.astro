@@ -1,0 +1,128 @@
+---
+// Shared chrome for the footer "Information" pages (Booking Policy,
+// Cancellation & Refund, Terms & Conditions, Privacy, Safety & Insurance).
+// Deliberately English-only — see infoPages in i18n/config.ts — so every
+// route file just passes a single-locale `alternates` entry, which also
+// makes LanguageSwitcher hide itself (it already no-ops below 2 options),
+// leaving the header's padding/styling otherwise untouched.
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import BookingDrawer from '../components/BookingDrawer.astro';
+import { breadcrumbSchema } from '../utils/schema';
+import { SITE } from '../i18n/utils';
+
+interface Props {
+  title: string;
+  description: string;
+  crumbName: string;
+  lastUpdated: string; // 'YYYY-MM-DD'
+}
+
+const { title, description, crumbName, lastUpdated } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const selfAlternate = [{ locale: 'en' as const, path: Astro.url.pathname }];
+
+const breadcrumbLd = breadcrumbSchema([
+  { name: 'Home', item: `${SITE}/` },
+  { name: crumbName, item: canonical },
+]);
+
+const updatedLabel = new Date(lastUpdated + 'T00:00:00Z').toLocaleDateString('en-GB', {
+  day: 'numeric', month: 'long', year: 'numeric',
+});
+---
+
+<Layout title={`${title} | Handmade Pasta Florence`} description={description} alternates={selfAlternate}>
+  <Header solid alternates={selfAlternate} />
+  <main>
+    <header class="ip-hero" id="top">
+      <div class="shell">
+        <nav class="ip-crumb" aria-label="Breadcrumb">
+          <a href="/">Home</a> <span aria-hidden="true">&gt;</span>
+          <span>Information</span> <span aria-hidden="true">&gt;</span>
+          <span>{crumbName}</span>
+        </nav>
+        <h1 class="ip-hero__h">{title}</h1>
+        <p class="ip-hero__updated">Last updated · {updatedLabel}</p>
+      </div>
+    </header>
+
+    <section class="ip-body">
+      <div class="shell ip-body__inner">
+        <slot />
+        <a class="ip-back" href="/">&larr; Back to Handmade Pasta Florence</a>
+      </div>
+    </section>
+  </main>
+  <Footer />
+  <BookingDrawer />
+
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbLd)} />
+</Layout>
+
+<script>
+  // These pages have no locale prefix (English-only), so a visitor who was
+  // browsing e.g. /it/ would otherwise see nav/footer links reset to English
+  // the moment they land here. Rewrite the small set of same-slug links
+  // (home, blog, home-page anchors) back to their remembered locale so
+  // navigating away returns them to the language they were reading in.
+  // Deliberately scoped to exact prefix-safe patterns — footer links to
+  // translated-slug landing pages are left alone rather than guessed at.
+  const restoreLocaleLinks = () => {
+    let preferred: string | null = null;
+    try {
+      preferred = localStorage.getItem('preferredLang');
+    } catch {
+      return;
+    }
+    if (!preferred || preferred === 'en') return;
+
+    document.querySelectorAll<HTMLAnchorElement>('a[href]').forEach((a) => {
+      const href = a.getAttribute('href');
+      if (href === '/' || href.startsWith('/#') || href === '/blog/') {
+        a.setAttribute('href', `/${preferred}${href}`);
+      }
+    });
+  };
+  restoreLocaleLinks();
+  document.addEventListener('astro:after-swap', restoreLocaleLinks);
+</script>
+
+<style>
+  .ip-hero {
+    background: var(--olive-deep); color: var(--flour);
+    padding-block: clamp(7rem, 16vh, 10rem) clamp(2.5rem, 6vh, 4rem);
+  }
+  .ip-crumb { font-size: var(--step--1); color: rgba(249, 246, 240, 0.55); margin-bottom: 1.3rem; }
+  .ip-crumb a { color: rgba(249, 246, 240, 0.75); text-decoration: underline; text-underline-offset: 3px; transition: color 0.3s; }
+  .ip-crumb a:hover { color: var(--flour); }
+  .ip-crumb span[aria-hidden] { margin-inline: 0.4rem; }
+  .ip-hero__h { font-size: var(--step-3); line-height: 1.1; max-width: 30ch; }
+  .ip-hero__updated { margin-top: 0.9rem; font-size: var(--step--1); color: rgba(249, 246, 240, 0.6); }
+
+  .ip-body { padding-block: clamp(3rem, 7vh, 5rem) clamp(4rem, 8vh, 6rem); }
+  .ip-body__inner { max-width: 900px; margin-inline: auto; }
+  .ip-body__inner :global(h2) {
+    font-size: var(--step-2); color: var(--olive); margin: 2.4rem 0 0.9rem;
+  }
+  .ip-body__inner :global(h2:first-child) { margin-top: 0; }
+  .ip-body__inner :global(h3) { font-size: var(--step-0); color: var(--olive); margin: 1.6rem 0 0.6rem; }
+  .ip-body__inner :global(p) { color: var(--charcoal); line-height: 1.75; font-size: var(--step-0); margin-bottom: 1rem; }
+  .ip-body__inner :global(ul) { list-style: disc; margin: 0 0 1.2rem; padding-left: 1.3rem; display: grid; gap: 0.5rem; }
+  .ip-body__inner :global(ol) { list-style: decimal; margin: 0 0 1.2rem; padding-left: 1.3rem; display: grid; gap: 0.5rem; }
+  .ip-body__inner :global(li) { color: var(--charcoal); line-height: 1.65; font-size: var(--step-0); }
+  .ip-body__inner :global(li::marker) { color: var(--terracotta); font-weight: 800; }
+  .ip-body__inner :global(a) { color: var(--terracotta); text-decoration: underline; text-underline-offset: 3px; }
+  .ip-body__inner :global(strong) { color: var(--olive); }
+  .ip-body__inner :global(.ip-note) {
+    margin-top: 2.4rem; padding: 1.1rem 1.3rem; background: var(--flour-deep);
+    border: 1px solid var(--paper-line); border-radius: var(--radius);
+    font-size: var(--step--1); color: var(--charcoal-soft); line-height: 1.6;
+  }
+
+  .ip-back {
+    display: inline-block; margin-top: 2.4rem; font-weight: 700;
+    color: var(--olive); border-bottom: 2px solid var(--yolk); padding-bottom: 2px;
+  }
+</style>

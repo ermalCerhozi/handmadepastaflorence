@@ -53,6 +53,17 @@ const year = new Date().getFullYear();
           +39 344 5204379
         </a>
       </nav>
+      {/* English-only on purpose, regardless of site locale — these pages
+          themselves are never translated (see infoPages in i18n/config.ts),
+          so a translated label promising translated content would mislead. */}
+      <nav class="ft__col">
+        <h3>Information</h3>
+        <a href="/booking-policy/">Booking Policy</a>
+        <a href="/cancellation-policy/">Cancellation & Refund</a>
+        <a href="/terms-and-conditions/">Terms & Conditions</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/safety-insurance/">Safety & Insurance</a>
+      </nav>
     </div>
 
     <div class="ft__base">
@@ -99,5 +110,7 @@ const year = new Date().getFullYear();
     padding-top: 2rem; border-top: 1px solid rgba(249,246,240,0.14);
     font-size: 0.78rem; color: rgba(249,246,240,0.5);
   }
+  .ft__base a { color: rgba(249,246,240,0.7); text-decoration: underline; text-underline-offset: 2px; transition: color 0.3s; }
+  .ft__base a:hover { color: var(--flour); }
   .ft__made { color: var(--yolk); }
 </style>

@@ -5,7 +5,6 @@ pubDate: 2026-08-27
 author: 'Endri Cerhozi'
 image: '../../../assets/images/hands-on-pasta-making-class-florence-chef.webp'
 imageAlt: 'Chef che salta la pasta fresca in padella'
-badge: 'Nuovo'
 faqs:
   - q: "Quali ristoranti fanno la pasta fresca ogni giorno a Firenze?"
     a: "Molte trattorie tradizionali a Firenze fanno la pasta fresca ogni giorno, ma a causa dell'enorme domanda, molte sono costrette a integrare la loro pasta fatta a mano con pasta fresca surgelata di alta qualità."

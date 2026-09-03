@@ -5,7 +5,6 @@ pubDate: 2026-08-27
 author: 'Endri Cerhozi'
 image: '../../../assets/images/plates.webp'
 imageAlt: 'Pasta appena fatta su un tavolo'
-badge: 'Nuovo'
 faqs:
   - q: "La pasta fresca è migliore della pasta secca in Italia?"
     a: "No, sono solo diverse. La pasta fresca è morbida, assorbe sughi ricchi e spesso è fatta con le uova. La pasta secca è soda, mantiene una perfetta consistenza 'al dente' ed è ideale per sughi a base di olio d'oliva o pomodoro."

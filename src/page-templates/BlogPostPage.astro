@@ -35,7 +35,10 @@ const homeUrl = `${prefix}/`;
 const blogUrl = `${prefix}/blog/`;
 const homeItem = `${SITE}${homeUrl}`;
 const blogItem = `${SITE}${blogUrl}`;
-const publisherId = `${SITE}${homeUrl}#business`;
+// Locale-invariant on purpose: must match Schema.astro's sitewide
+// LocalBusiness @id, which is never locale-prefixed (see ShapePage.astro,
+// which already does this correctly).
+const publisherId = `${SITE}/#business`;
 const classesUrl = landingPath('pasta-making', lang);
 
 // Alternates come from the files that actually exist, not from prefix-swapping

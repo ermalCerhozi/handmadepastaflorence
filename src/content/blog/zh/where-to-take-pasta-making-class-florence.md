@@ -5,7 +5,6 @@ pubDate: 2026-08-27
 author: 'Endri Cerhozi'
 image: '../../../assets/images/hands-on-pasta-cooking-class-florence-group.webp'
 imageAlt: '厨师和客人在大木桌旁制作新鲜意大利面'
-badge: '新'
 faqs:
   - q: "佛罗伦萨最好的意大利面制作课程是哪一个？"
     a: "最好的课程取决于你的需求。如果想要一种非常亲密、100%亲自动手、专注于意大利面的体验，Handmade Pasta Florence 是理想之选。如果想要大型团体体验或更广泛的意大利烹饪，可以考虑 360 Cooking Class Experience 或 Mama Florence。"

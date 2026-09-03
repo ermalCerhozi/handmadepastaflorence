@@ -5,7 +5,6 @@ pubDate: 2026-08-27
 author: 'Endri Cerhozi'
 image: '../../../assets/images/hands-on-pasta-making-class-florence-chef.webp'
 imageAlt: '厨师在锅里翻炒新鲜的意大利面'
-badge: '新'
 faqs:
   - q: "佛罗伦萨哪些餐厅每天新鲜制作意大利面？"
     a: "佛罗伦萨的许多传统小餐馆每天都会制作新鲜意大利面，但由于需求量巨大，许多餐厅不得不使用高品质的冷冻新鲜意大利面来补充他们的手工意大利面。"

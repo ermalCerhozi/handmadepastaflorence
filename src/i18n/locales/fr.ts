@@ -49,6 +49,7 @@ const fr = {
     faqItal: 'savoir.',
     relPre: 'Vous cherchez autre ',
     relItal: 'chose ?',
+    cancellation: "Annulation gratuite jusqu'à 48h avant.",
   },
 
   lang: {
@@ -127,6 +128,7 @@ const fr = {
       { q: 'Où puis-je trouver des pâtes fraîches sans gluten à Florence ?', a: 'Ici même dans notre cuisine ! Nous pouvons préparer un mélange de farines sans gluten dédié et un poste de travail propre sans frais supplémentaires. Indiquez-nous simplement toute allergie lors de la réservation.' },
       { q: 'Quand les cours ont-ils lieu ?', a: 'Les cours commencent à 10:00, 14:30 et 18:00 (heure de Florence), tous les jours de la semaine.' },
       { q: 'Comment réserver et payer ?', a: "Utilisez le bouton “Réserver un cours” pour créer votre demande. Cela ouvre une discussion WhatsApp avec les détails pré-remplis, et nous confirmerons la disponibilité et vous guiderons pour le reste." },
+      { q: "Quelle est votre politique d'annulation ?", a: "Annulation gratuite jusqu'à 48 heures avant votre cours, sans frais. Besoin de changer de date plutôt ? Nous reprogrammons volontiers votre cours gratuitement jusqu'à 24 heures avant. Les annulations dans les 48 heures, ou les absences, peuvent entraîner la facturation du prix total du cours. Tous les détails sur notre page de politique d'annulation." },
     ],
   },
 

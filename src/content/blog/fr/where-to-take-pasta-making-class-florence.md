@@ -5,7 +5,6 @@ pubDate: 2026-08-27
 author: 'Endri Cerhozi'
 image: '../../../assets/images/hands-on-pasta-cooking-class-florence-group.webp'
 imageAlt: 'Le chef et les invités préparant des pâtes fraîches sur une grande table en bois'
-badge: 'Nouveau'
 faqs:
   - q: "Quel est le meilleur cours de fabrication de pâtes à Florence ?"
     a: "Le meilleur cours dépend de ce que vous recherchez. Pour une expérience très intime, 100 % pratique et centrée uniquement sur les pâtes, Handmade Pasta Florence est idéal. Pour une expérience en groupe plus large ou une cuisine italienne plus générale, jetez un œil à 360 Cooking Class Experience ou Mama Florence."

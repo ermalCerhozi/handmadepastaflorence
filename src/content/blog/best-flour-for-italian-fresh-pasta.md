@@ -5,7 +5,6 @@ pubDate: 2026-08-27
 author: 'Endri Cerhozi'
 image: '../../assets/images/shape-pappardelle.webp'
 imageAlt: 'Mound of 00 flour with an egg yolk in the center'
-badge: 'New'
 faqs:
   - q: "What is the best flour for fresh pasta?"
     a: "The best flour for fresh egg pasta (like tagliatelle and ravioli) is '00' (doppio zero) soft wheat flour. For eggless pasta (like pici or orecchiette), semolina flour (semola di grano duro) is used."

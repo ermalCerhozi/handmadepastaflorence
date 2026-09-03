@@ -5,7 +5,6 @@ pubDate: 2026-08-27
 author: 'Endri Cerhozi'
 image: '../../../assets/images/hands-on-pasta-making-class-florence-chef.webp'
 imageAlt: 'Chef faisant sauter des pâtes fraîches dans une poêle'
-badge: 'Nouveau'
 faqs:
   - q: "Quels restaurants préparent des pâtes fraîches quotidiennement à Florence ?"
     a: "De nombreuses trattorias traditionnelles de Florence préparent des pâtes fraîches tous les jours, mais en raison d'une demande massive, beaucoup sont obligées de compléter leurs pâtes faites à la main par des pâtes fraîches congelées (pasta fresca) de haute qualité."

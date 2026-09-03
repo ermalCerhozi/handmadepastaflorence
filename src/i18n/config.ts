@@ -44,3 +44,15 @@ export const localizedPaths = new Set<string>([
   '/blog/gluten-free-pasta-florence/',
   '/blog/how-much-does-a-pasta-making-class-in-florence-cost/',
 ]);
+
+// English-only informational/legal pages (footer "Information" column):
+// booking terms, cancellation & refund, T&Cs, privacy, safety & insurance.
+// Deliberately NOT translated — low search value per locale, and legal/policy
+// wording is safer maintained in one language than kept in sync across five.
+export const infoPages = new Set<string>([
+  '/booking-policy/',
+  '/cancellation-policy/',
+  '/terms-and-conditions/',
+  '/privacy/',
+  '/safety-insurance/',
+]);

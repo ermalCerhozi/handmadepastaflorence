@@ -154,6 +154,17 @@ const updatedLabel = new Intl.DateTimeFormat(languages[lang].htmlLang, {
   year: 'numeric',
 }).format(new Date(PAGE_UPDATED));
 
+// GEO fix: the price/duration badge below is a compact widget (strong+small
+// next to the CTA button) that boilerplate-stripping extractors (e.g.
+// trafilatura) tend to drop from the main text stream, so AI answer engines
+// citing "how much" / "how long" queries never see it. This sentence repeats
+// the same already-localized price/priceNote/duration data as plain prose
+// right under the lede, where it survives extraction. No new copy to
+// translate — built entirely from props each landing page already supplies.
+const durationFact = facts.find((f) => f.icon === 'clock')?.value;
+const priceSentenceParts = [price, priceNote, durationFact].filter(Boolean);
+const priceSentence = priceSentenceParts.length ? `${priceSentenceParts.join(' · ')}.` : '';
+
 // Star ratings are the one SERP feature every competitor for "pasta making
 // class florence" displays and we do not. These spread to nothing while
 // src/data/reviews.ts is empty, and start emitting the moment a real review is
@@ -270,6 +281,7 @@ const faqLd = faqSchema(faqs);
         {heading} <span class="font-golden" style="font-size: 1.3em; display: inline-block; margin-left: 0.1em; color: var(--yolk);">{headingItal}</span>
       </h1>
       <p class="lp-hero__lede">{lede}</p>
+      {priceSentence && <p class="lp-hero__pricenote">{priceSentence}</p>}
       <div class="lp-hero__row">
         {
           emailSubject ? (
@@ -290,6 +302,11 @@ const faqLd = faqSchema(faqs);
           {priceNote && <small>{priceNote}</small>}
         </span>
       </div>
+      {!emailSubject && (
+        <p class="lp-hero__cancellation">
+          <a href={localizePath('/cancellation-policy/', lang)}>{t.lp.cancellation}</a>
+        </p>
+      )}
       <p class="lp-hero__updated">
         <time datetime={PAGE_UPDATED}>{t.lp.updated} {updatedLabel}</time>
       </p>
@@ -538,6 +555,12 @@ const faqLd = faqSchema(faqs);
     line-height: 1.65;
     max-width: 54ch;
   }
+  .lp-hero__pricenote {
+    margin-top: 0.6rem;
+    color: rgba(249, 246, 240, 0.6);
+    font-size: var(--step--1);
+    max-width: 54ch;
+  }
   .lp-hero__row {
     display: flex;
     flex-wrap: wrap;
@@ -693,6 +716,20 @@ const faqLd = faqSchema(faqs);
     color: var(--olive);
   }
 
+  .lp-hero__cancellation {
+    margin-top: 0.9rem;
+    font-size: var(--step--1);
+  }
+  .lp-hero__cancellation a {
+    font-weight: 600;
+    color: var(--yolk);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color 0.3s;
+  }
+  .lp-hero__cancellation a:hover {
+    color: var(--flour);
+  }
   .lp-hero__updated {
     margin-top: 1.1rem;
     font-size: 0.78rem;

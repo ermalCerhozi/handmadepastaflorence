@@ -5,7 +5,6 @@ pubDate: 2026-08-27
 author: 'Endri Cerhozi'
 image: '../../../assets/images/plates.webp'
 imageAlt: 'Pâtes fraîchement préparées sur une table'
-badge: 'Nouveau'
 faqs:
   - q: "Les pâtes fraîches sont-elles meilleures que les pâtes sèches en Italie ?"
     a: "Non, elles sont simplement différentes. Les pâtes fraîches sont tendres, absorbent les sauces riches et sont souvent faites avec des œufs. Les pâtes sèches sont fermes, gardent un côté 'al dente' parfait et sont idéales pour l'huile d'olive ou les sauces à base de tomates."

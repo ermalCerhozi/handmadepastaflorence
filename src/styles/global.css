@@ -13,7 +13,9 @@
 
 @font-face {
   font-family: 'Golden Hills';
-  src: url('/fonts/GoldenHills.ttf') format('truetype');
+  src:
+    url('/fonts/GoldenHills.woff2') format('woff2'),
+    url('/fonts/GoldenHills.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;

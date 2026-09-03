@@ -5,7 +5,6 @@ pubDate: 2026-08-27
 author: 'Endri Cerhozi'
 image: '../../../assets/images/shape-pappardelle.webp'
 imageAlt: 'Monticule de farine 00 avec un jaune d’œuf au centre'
-badge: 'Nouveau'
 faqs:
   - q: "Quelle est la meilleure farine pour les pâtes fraîches ?"
     a: "La meilleure farine pour les pâtes fraîches aux œufs (comme les tagliatelles et les raviolis) est la farine de blé tendre '00' (doppio zero). Pour les pâtes sans œufs (comme les pici ou les orecchiette), on utilise de la semoule (semola di grano duro)."

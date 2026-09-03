@@ -1,0 +1,347 @@
+{
+  "summary": {
+    "health_score": 79,
+    "business_type": "Local Service (hybrid — fixed kitchen + partner agriturismo venues, brick-and-mortar-adjacent)",
+    "top_findings": [
+      "No claimed Google Business Profile and zero reviews anywhere — Local SEO scores 26/100 for this reason alone",
+      "Published NAP address (\"Via dei Pastai 12\") contradicts landing-page copy that says the real meeting point is sent only after booking, and the agriturismo page reveals the meeting point actually varies by partner estate — this may require a Service-Area Business GBP listing, not a storefront pin",
+      "Google Search Console API access is now fully broken (invalid_grant — service account itself appears revoked/deleted), not just misconfigured — no live GSC data could be pulled this pass",
+      "LCP (2.52s mobile, borderline) is caused by the hero H1 being hidden by a scroll-reveal fade animation even though it's above the fold — a cheap, high-impact fix",
+      "Article schema has a real code bug: non-English blog posts' Article.publisher @id points to a locale-prefixed node that doesn't exist on the page (dangling reference)",
+      "\"Team building\" content is served by exactly one page despite being a major demand cluster; the top local competitor runs 7+ spoke pages for the same intent"
+    ],
+    "quick_wins": [
+      "SHIPPED 2026-09-03: Fix Article.publisher @id locale-prefix bug in BlogPostPage.astro",
+      "SHIPPED 2026-09-03: Add lastmod to all 155 sitemap URLs",
+      "SHIPPED 2026-09-03: Adjust the hero scroll-reveal animation so the LCP element (H1) doesn't sit behind a fade delay",
+      "SHIPPED 2026-09-03: Add a price/duration sentence to each landing page's extractable prose (was only in the price widget)",
+      "Add a visible cancellation policy line — every ranking OTA competitor advertises \"Free cancellation\" and HPF currently shows none (needs the real policy from the owner)"
+    ]
+  },
+  "categories": [
+    {
+      "name": "Technical SEO",
+      "score": 90,
+      "what_works": [
+        "Mobile hamburger nav confirmed fixed and functional (was Critical/broken in the 2026-08-08 audit)",
+        "Sitemap hreflang gap fully resolved — all 155 URLs carry correct en/it/fr/de/zh + x-default alternates",
+        "robots.txt well-scoped with explicit AI-crawler allowlist",
+        "Strong security headers (HSTS preload, tight CSP, X-Frame-Options, Permissions-Policy)",
+        "Single-hop 301s for http→https and www→apex; canonicals self-reference correctly"
+      ],
+      "findings": [
+        {
+          "title": "Published NAP address contradicts booking-flow copy",
+          "severity": "Critical",
+          "description": "Footer.astro and Schema.astro's LocalBusiness JSON-LD publish \"Via dei Pastai 12\" as a fixed street address sitewide, while src/data/landings.ts (line ~193) and the FAQ tell visitors the exact address is sent only after booking. The agriturismo landing page further reveals the meeting point varies by which partner estate is used for a given class — meaning the business may not have one fixed storefront address at all.",
+          "recommendation": "Resolve before any GBP/citation submission: confirm whether this is a fixed kitchen (use the real address consistently) or a variable meeting point across partner venues (switch the GBP category to Service-Area Business and remove the fixed streetAddress from schema/footer)."
+        },
+        {
+          "title": "Google Search Console API access broken (invalid_grant)",
+          "severity": "High",
+          "description": "Every live GSC call (sites, search analytics, sitemaps, URL inspection) failed with invalid_grant: Invalid grant: account not found for the service account gsc-mcp-server@project-6317742d-5528-4d87-b86.iam.gserviceaccount.com. This is a hard OAuth failure, not a permissions issue. Separately, ~/.config/claude-seo/google-api.json has default_property pointed at an unrelated site (lakebovilla.com).",
+          "recommendation": "Regenerate/re-verify the service account key (or confirm the GCP project still exists), re-grant Search Console access to handmadepastaflorence.com, and fix default_property. Until this is fixed, all SEO measurement is manual export only."
+        }
+      ]
+    },
+    {
+      "name": "Content Quality",
+      "score": 61,
+      "what_works": [
+        "Story section now names both chefs with specific, credible bios (was anonymous in the prior audit)",
+        "AI-citation readiness is strong on facts: llms.txt, FAQPage/Article/Product JSON-LD, direct-answer blog ledes",
+        "Locale translations spot-checked (DE) are genuine, not machine-duplicated"
+      ],
+      "findings": [
+        {
+          "title": "FAQ still lacks policy answers",
+          "severity": "High",
+          "description": "All 10 FAQ entries remain purely factual (location, duration, group size). The component's own code comment confirms cancellation/deposit/meeting-point/kids-age answers are still pending owner sign-off.",
+          "recommendation": "Get the missing policy answers from the business owner and add them — this also unblocks the SXO-flagged \"no visible cancellation policy\" competitive gap."
+        },
+        {
+          "title": "Story section still uses generic stock photos, not real photos of the named chefs",
+          "severity": "Medium",
+          "description": "Endri and Marsel are now named with real bios, but the section still uses stock images (cutting-pizza.webp, a reused hero photo) rather than real photos. Marsel also has no surname or schema sameAs, asymmetric with Endri's fuller profile.",
+          "recommendation": "Add real photos of both chefs; give Marsel the same schema/bio depth as Endri."
+        },
+        {
+          "title": "Reviews remain empty",
+          "severity": "High",
+          "description": "src/data/reviews.ts is still an empty array. The Reviews component and AggregateRating schema are correctly wired to activate automatically once real reviews are added, and the code correctly refuses to fabricate them.",
+          "recommendation": "Start the post-class review-request habit (WhatsApp/email link) — this is the single highest-leverage content/trust fix and also unblocks Local SEO and Schema improvements."
+        },
+        {
+          "title": "12 of 13 blog posts fall below the 1,500-word content-depth guideline",
+          "severity": "Low",
+          "description": "The one sampled post that does meet depth is well-structured; the shortfall isn't uniformly a thin-content risk but is worth tracking as the blog scales.",
+          "recommendation": "No urgent action; keep in mind for future posts, especially ones competing on informational queries."
+        }
+      ]
+    },
+    {
+      "name": "On-Page SEO",
+      "score": 85,
+      "what_works": [
+        "Title tags and meta descriptions are strong on the pages checked (home, pasta-making-class-florence): descriptive, keyword-forward, and state price/duration",
+        "Single H1 per page, healthy H2 count (11 on homepage)",
+        "Dedicated one-keyword-one-page landing architecture (from the 2026-07-27 pass) gives deep, non-cannibalized internal linking — independently praised by the SXO agent as a genuine local-organic strength"
+      ],
+      "findings": [
+        {
+          "title": "No freshness signal (lastmod / updatedDate) surfaced on content pages",
+          "severity": "Low",
+          "description": "Neither the sitemap nor blog post pages currently expose a maintained last-modified date.",
+          "recommendation": "Source lastmod from blog frontmatter dates and a maintained field for landing/shape pages (see Sitemap category)."
+        }
+      ]
+    },
+    {
+      "name": "Schema / Structured Data",
+      "score": 80,
+      "what_works": [
+        "Shared JSON-LD builders (faqSchema, breadcrumbSchema) are clean and reused correctly",
+        "No fabricated reviews, no deprecated schema types",
+        "Product/Offer schema correctly localized on the homepage (a prior bug there was already fixed)",
+        "AggregateRating/Review correctly withheld until real reviews exist, with plumbing already wired to auto-populate the moment they are"
+      ],
+      "findings": [
+        {
+          "title": "Article.publisher @id is a dangling reference on every non-English blog post",
+          "severity": "High",
+          "description": "BlogPostPage.astro builds Article.publisher's @id using the page's own locale prefix (e.g. .../de/#business), but Schema.astro's sitewide LocalBusiness node always uses the locale-invariant .../#business. Confirmed live on the German \"best flour\" post. ShapePage.astro already does this correctly (hardcoded, no prefix).",
+          "recommendation": "In BlogPostPage.astro, hardcode the publisher @id the same way ShapePage.astro does (no locale prefix) — one-line fix."
+        },
+        {
+          "title": "LocalBusiness still lacks geo coordinates and business-level sameAs",
+          "severity": "Medium",
+          "description": "Unchanged since the 2026-08-08 audit; legitimately blocked on owner-provided data (Google Maps coordinates, real social/GBP URLs), not a code defect.",
+          "recommendation": "Add once GBP is claimed and coordinates are known."
+        },
+        {
+          "title": "LocalBusiness node missing logo; no VideoObject markup",
+          "severity": "Low",
+          "description": "Minor structured-data completeness gaps.",
+          "recommendation": "Add logo when a real logo asset exists (see R14 in REMAINING-SEO-TASKS.md); consider VideoObject if/when video content is produced."
+        }
+      ]
+    },
+    {
+      "name": "Performance (CWV)",
+      "score": 80,
+      "what_works": [
+        "TTFB is excellent (38-40ms) — does NOT share the sister site's CDN/TTFB problem",
+        "CLS is effectively zero (0.000-0.004), confirming the prior width/height fix holds",
+        "No third-party scripts at all"
+      ],
+      "findings": [
+        {
+          "title": "LCP element is hidden behind a scroll-reveal animation applied even above the fold",
+          "severity": "High",
+          "description": "Mobile LCP is 2.52s (borderline \"Needs Improvement\"). The LCP element is the hero H1 text, which is opacity:0 and revealed via IntersectionObserver + a 0.9s transition with per-element delays up to 440ms (src/components/Hero.astro, src/layouts/Layout.astro, src/styles/global.css). This render delay accounts for 72-95% of LCP.",
+          "recommendation": "Exempt above-the-fold hero text from the [data-reveal] pattern, or make its reveal delay ~0 so it doesn't gate LCP."
+        },
+        {
+          "title": "248KB of oversized/uncompressed non-hero gallery images",
+          "severity": "Medium",
+          "description": "Story/Experiences section images were not covered by the prior hero-image optimization pass.",
+          "recommendation": "Compress and convert remaining gallery images the same way the hero-card image was handled."
+        },
+        {
+          "title": "Custom font served as raw TTF instead of WOFF2",
+          "severity": "Medium",
+          "description": "GoldenHills.ttf is served uncompressed.",
+          "recommendation": "Convert to WOFF2 for smaller transfer size."
+        },
+        {
+          "title": "Elevated mobile TBT proxy (320ms) from forced synchronous reflow",
+          "severity": "Medium",
+          "description": "Header.astro's script causes a 177ms forced reflow; likely compounded by the hero parallax scroll handler.",
+          "recommendation": "Profile and defer/batch the layout-triggering script work in Header.astro."
+        }
+      ]
+    },
+    {
+      "name": "AI Search Readiness (GEO)",
+      "score": 80,
+      "what_works": [
+        "Pricing (€95/3hrs/max-8) is genuinely citable in raw HTML — title, meta, visible prose, JSON-LD, and llms.txt all agree (verified live, unlike the sister site's pricing gap)",
+        "AI crawler access is fully healthy: GPTBot, ChatGPT-User, OAI-SearchBot, ClaudeBot, PerplexityBot, Google-Extended, Applebot-Extended all allowed",
+        "llms.txt is live, byte-matches source, and includes the pasta-shapes hub"
+      ],
+      "findings": [
+        {
+          "title": "Hero price badge sits outside the boilerplate-stripped main text stream",
+          "severity": "Medium",
+          "description": "A content extractor (trafilatura) drops the widget block containing the price badge, so price doesn't surface until ~200 words into extracted content on landing pages.",
+          "recommendation": "Add one price/duration sentence to the opening prose paragraph of each landing page, not just the widget."
+        },
+        {
+          "title": "Zero external brand signals",
+          "severity": "Low",
+          "description": "No YouTube, Reddit, Wikipedia, TripAdvisor, or GBP links found anywhere. No VideoObject content. Expected for a ~1-month-old business but is the single highest-leverage unshipped GEO item given YouTube's correlation with AI citation.",
+          "recommendation": "Longer-term: video content + external profile presence once GBP/marketplace listings exist."
+        }
+      ]
+    },
+    {
+      "name": "Images",
+      "score": 78,
+      "what_works": [
+        "All homepage images use modern formats (webp/png), no legacy jpg",
+        "width/height set on all images (CLS confirmed at ~0)",
+        "4 homepage icon images have empty alt — likely correct practice for decorative icons paired with adjacent text labels, not a defect"
+      ],
+      "findings": [
+        {
+          "title": "248KB of oversized non-hero gallery images",
+          "severity": "Medium",
+          "description": "Same finding as under Performance — Story/Experiences section images weren't covered by the prior optimization pass.",
+          "recommendation": "Compress/convert remaining gallery images."
+        },
+        {
+          "title": "Verify decorative-icon empty alt is intentional",
+          "severity": "Low",
+          "description": "4 \"why choose us\" icon images (rolling pin, wine, group, Duomo) have alt present but empty. This is correct practice only if adjacent text already conveys the same meaning.",
+          "recommendation": "Spot-check that each icon has a text label right next to it; if any icon stands alone, give it descriptive alt text instead."
+        }
+      ]
+    }
+  ],
+  "supplementary_categories": [
+    {
+      "name": "Local SEO",
+      "score": 26,
+      "note": "Not part of the core weighted Health Score (which covers only the 7 categories above) but critical for this business type.",
+      "findings": [
+        {
+          "title": "No Google Business Profile, zero reviews, zero Tier-1 citations",
+          "severity": "Critical",
+          "description": "No Maps embed, no place link, no review widget anywhere on the live site. reviews.ts is empty. No TripAdvisor/GetYourGuide/Airbnb/Yelp presence found (search-engine verification was unreliable this session due to consent walls, so absence is inferred, not fully proven).",
+          "recommendation": "Resolve the NAP/address contradiction first (gates GBP category choice), then claim GBP, start review collection, and list on TripAdvisor/GetYourGuide/Airbnb Experiences."
+        },
+        {
+          "title": "Phone number shared with sister site endricerhozi.com",
+          "severity": "Medium",
+          "description": "Unchanged since the prior audit — a citation-conflation risk once either site claims a GBP.",
+          "recommendation": "Get a dedicated business line before claiming GBP for either site, or explicitly decide to share it and document that decision."
+        }
+      ]
+    },
+    {
+      "name": "Backlinks",
+      "score": 15,
+      "note": "Floor estimate — Common Crawl has no record of the domain at all (site launched after CC's latest web-graph release). Not a fault, expected for a 2.5-month-old domain. Not part of the core weighted Health Score.",
+      "findings": [
+        {
+          "title": "No cheap backlink move available this pass (correction)",
+          "severity": "Info",
+          "description": "An earlier draft of this report recommended hyperlinking \"Agriturismo Borgo Divino\" (named in the Story copy) as a partner backlink opportunity with a reciprocal-link ask. Per the site owner, that's incorrect — it's Endri's own workplace (he's their Head Chef), not a separate business relationship, so there's no partner to ask a favor of. Withdrawn.",
+          "recommendation": "Realistic near-term backlink sources remain marketplace listings (GetYourGuide/Viator/Airbnb/TripAdvisor) and local press/blogger outreach — see the action plan."
+        }
+      ]
+    },
+    {
+      "name": "Content Cluster (Team Building)",
+      "score": null,
+      "note": "Qualitative gap analysis, not part of the weighted Health Score.",
+      "findings": [
+        {
+          "title": "Team-building intent served by exactly one page vs. competitor's 7+ spoke pages",
+          "severity": "High",
+          "description": "Verified: src/data/landings.ts has exactly one team-building page per locale, zero supporting blog posts. Top Florence competitor (mamaflorence.com) ranks 7+ distinct spoke URLs around its own team-building hub. Ownership check against the two-sites-keyword-split rule confirms this content correctly belongs on handmadepastaflorence.com, not endricerhozi.com.",
+          "recommendation": "Build 8 new EN+IT blog spokes across 4 sub-clusters (Activity Format, Group Size/Logistics, Corporate Packages, Seasonal/Occasion), each linking bidirectionally to the existing team-building pillar and relevant money pages. Full spoke list and link matrix are in findings/cluster.md."
+        }
+      ]
+    },
+    {
+      "name": "Search Experience (SXO)",
+      "score": 62,
+      "note": "SXO Gap Score, not part of the weighted Health Score.",
+      "findings": [
+        {
+          "title": "No page-type mismatch — the authority gap is real, and sharper than generic",
+          "severity": "Info",
+          "description": "SERP-backwards check on 6 English commercial queries found HPF absent from all results, which are dominated by OTA listings and mamaflorence.com using the same Product-page format HPF already builds. The gap: mamaflorence.com embeds AggregateRating (4.88★/600 reviews) directly in Product schema and runs ~3x the word count (3,072 vs 1,143) on a comparable page.",
+          "recommendation": "Confirms reviews + schema AggregateRating as the top lever (already the #1 finding from Local SEO), plus consider expanding thin commercial-page copy once reviews land."
+        },
+        {
+          "title": "No visible cancellation policy, unlike every ranking OTA competitor",
+          "severity": "High",
+          "description": "Every competing SERP result advertises \"Free cancellation\" in its title. HPF's booking flow is WhatsApp-chat-only with no visible cancellation policy anywhere.",
+          "recommendation": "Add a clear, visible cancellation/rescheduling policy — this also closes the FAQ policy-answer gap flagged under Content Quality."
+        }
+      ]
+    },
+    {
+      "name": "Sitemap",
+      "score": 90,
+      "note": "Structural quality gate, folded into Technical SEO's weight rather than scored separately in the core envelope.",
+      "findings": [
+        {
+          "title": "lastmod entirely absent from all 155 sitemap URLs",
+          "severity": "Medium",
+          "description": "0 of 155 URLs carry a lastmod date — worse than all-identical, since it gives zero freshness signal at all.",
+          "recommendation": "Source lastmod from blog frontmatter dates and a maintained field for landing/shape pages, not build time."
+        }
+      ]
+    },
+    {
+      "name": "Google Search Console Data",
+      "score": null,
+      "note": "Could not be measured this pass — see Technical SEO's invalid_grant finding. All GSC figures cited elsewhere in this report are unverified historical figures from prior manual exports (memory), not refreshed live data.",
+      "findings": []
+    }
+  ],
+  "action_plan": {
+    "phases": [
+      {
+        "name": "Phase 1: Critical Fixes",
+        "timeframe": "Week 1",
+        "items": [
+          "Resolve the NAP/address contradiction — decide fixed kitchen vs. Service-Area Business, then make Footer.astro, Schema.astro, BookingDrawer.astro, and llms.txt consistent",
+          "SHIPPED 2026-09-03: Fix the Article.publisher @id locale-prefix bug in BlogPostPage.astro",
+          "Regenerate/re-verify the GSC service account credential (invalid_grant) and fix the default_property misconfiguration so measurement is possible again"
+        ]
+      },
+      {
+        "name": "Phase 2: High-Impact Improvements",
+        "timeframe": "Weeks 2-3",
+        "items": [
+          "IN PROGRESS (owner): Claim Google Business Profile (once the address decision above is made) and add the GBP URL to schema sameAs",
+          "IN PROGRESS (owner): Start the post-class review-request habit (WhatsApp/email) and add real reviews to reviews.ts as they arrive",
+          "SHIPPED 2026-09-03: Fix the hero scroll-reveal animation so the LCP element isn't delayed",
+          "Add a visible cancellation/rescheduling policy + fill in the remaining FAQ policy answers (deposit, meeting point, kids/dietary) — needs real policy answers from the owner",
+          "Spot-check the .cal__nav prev/next calendar buttons (flagged 0x0 by the visual audit)",
+          "List on TripAdvisor / GetYourGuide / Airbnb Experiences (booking channel + first backlinks + review source)"
+        ]
+      },
+      {
+        "name": "Phase 3: Content & Authority",
+        "timeframe": "Month 2",
+        "items": [
+          "Build the 8-spoke team-building content cluster (see findings/cluster.md for the full plan and link matrix)",
+          "Add real photos of both named chefs to the Story section; give Marsel schema parity with Endri",
+          "Compress the remaining 248KB of gallery images and convert GoldenHills.ttf to WOFF2",
+          "SHIPPED 2026-09-03: Add lastmod to all 155 sitemap URLs",
+          "SHIPPED 2026-09-03: Add a price/duration sentence to the extractable prose of each landing page",
+          "Add LocalBusiness geo coordinates and sameAs once GBP is claimed"
+        ]
+      },
+      {
+        "name": "Phase 4: Monitoring & Iteration",
+        "timeframe": "Ongoing",
+        "items": [
+          "Once GSC access is restored, re-run the striking-distance analysis (query+page dimensions, position column) that's been blocked since the credential broke",
+          "Add a CI smoke test for the mobile hamburger nav, since it broke silently once before",
+          "Track review count and AggregateRating once live, and re-run the SXO comparison against mamaflorence.com to confirm the gap is closing",
+          "Re-check absence from TripAdvisor/GetYourGuide/Airbnb with a cleaner search method (this pass's absence finding was inferred, not fully proven)"
+        ]
+      }
+    ]
+  },
+  "artifacts": {
+    "findings_dir": "findings/",
+    "screenshots_dir": "screenshots/"
+  }
+}

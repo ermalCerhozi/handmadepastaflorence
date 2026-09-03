@@ -51,6 +51,7 @@ const de = {
     faqItal: 'wissen.',
     relPre: 'Suchen Sie nach etwas ',
     relItal: 'anderem?',
+    cancellation: 'Kostenlose Stornierung bis 48h vorher.',
   },
 
   lang: {
@@ -129,6 +130,7 @@ const de = {
       { q: 'Wo finde ich handgemachte glutenfreie Pasta in Florenz?', a: 'Direkt hier in unserer Küche! Wir können ohne Aufpreis eine spezielle glutenfreie Mehlmischung und eine saubere Arbeitsstation vorbereiten. Teilen Sie uns einfach bei der Buchung etwaige Allergien mit.' },
       { q: 'Wann finden die Kurse statt?', a: 'Die Kurse beginnen um 10:00, 14:30 und 18:00 Uhr (Ortszeit Florenz), an jedem Wochentag.' },
       { q: 'Wie kann ich buchen und bezahlen?', a: "Verwenden Sie die Schaltfläche „Kurs buchen“, um Ihre Anfrage zu erstellen. Es öffnet sich ein WhatsApp-Chat mit den vorausgefüllten Details, und wir bestätigen die Verfügbarkeit und führen Sie durch den Rest." },
+      { q: 'Wie ist Ihre Stornierungsrichtlinie?', a: "Kostenlose Stornierung bis 48 Stunden vor Ihrem Kurs. Möchten Sie lieber den Termin ändern? Wir verschieben Ihren Kurs gerne kostenlos bis 24 Stunden vorher. Bei Stornierungen innerhalb von 48 Stunden oder bei Nichterscheinen kann der volle Kurspreis berechnet werden. Alle Details auf unserer Seite zur Stornierungsrichtlinie." },
     ],
   },
 

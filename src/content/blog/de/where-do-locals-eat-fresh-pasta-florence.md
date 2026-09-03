@@ -5,7 +5,6 @@ pubDate: 2026-08-27
 author: 'Endri Cerhozi'
 image: '../../../assets/images/hands-on-pasta-making-class-florence-chef.webp'
 imageAlt: 'Koch schwenkt frische Pasta in einer Pfanne'
-badge: 'Neu'
 faqs:
   - q: "Welche Restaurants machen in Florenz täglich frische Pasta?"
     a: "Viele traditionelle Trattorien in Florenz machen täglich frische Pasta, aber aufgrund der massiven Nachfrage sind viele gezwungen, ihre handgemachte Pasta mit hochwertiger gefrorener Pasta fresca zu ergänzen."

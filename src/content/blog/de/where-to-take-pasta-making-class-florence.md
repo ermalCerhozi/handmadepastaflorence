@@ -5,7 +5,6 @@ pubDate: 2026-08-27
 author: 'Endri Cerhozi'
 image: '../../../assets/images/hands-on-pasta-cooking-class-florence-group.webp'
 imageAlt: 'Koch und Gäste machen frische Pasta an einem großen Holztisch'
-badge: 'Neu'
 faqs:
   - q: "Was ist der beste Pasta-Kochkurs in Florenz?"
     a: "Der beste Kurs hängt davon ab, was Sie wollen. Für ein sehr intimes, 100% praxisorientiertes Erlebnis, das sich nur auf Pasta konzentriert, ist Handmade Pasta Florence ideal. Für ein Erlebnis in einer größeren Gruppe oder umfassenderes italienisches Kochen, sehen Sie sich 360 Cooking Class Experience oder Mama Florence an."

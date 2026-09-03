@@ -8,7 +8,7 @@
 // site's own same-slug locale list) that already drive each page's in-head
 // hreflang tags, so the sitemap and the page-level tags can't drift apart.
 import { getCollection } from 'astro:content';
-import { locales, defaultLocale, languages, type Locale } from '../i18n/config';
+import { locales, defaultLocale, languages, infoPages, type Locale } from '../i18n/config';
 import { SITE, localizePath } from './../i18n/utils';
 import { landings } from '../data/landings';
 import { shapes, shapePath, shapesHubPath } from '../data/shapes';
@@ -16,10 +16,24 @@ import { blogLocale, blogSlug } from './blog-locales';
 
 interface SitemapEntry {
   loc: string;
+  lastmod?: string;
   alternates: { hreflang: string; href: string }[];
 }
 
-function toEntry(paths: Partial<Record<Locale, string>>): SitemapEntry[] {
+// The pasta-shapes hub/spokes and the money-page landing architecture (10
+// landing pages) both shipped together in the 2026-07-27 pass (see
+// REMAINING-SEO-TASKS.md), and the homepage's single-keyword rewrite landed
+// in that same pass — this is the real, documented ship date, matching the
+// constant ShapePage.astro already uses for its own Article schema, rather
+// than a fabricated "today" build-time stamp.
+const ARCHITECTURE_SHIP_DATE = '2026-07-27T00:00:00.000Z';
+
+// The footer "Information" pages (English-only, see infoPages in
+// i18n/config.ts) shipped in this pass — real date, not a fabricated
+// build-time stamp.
+const INFO_PAGES_SHIP_DATE = '2026-09-03T00:00:00.000Z';
+
+function toEntry(paths: Partial<Record<Locale, string>>, lastmod?: string): SitemapEntry[] {
   const localesPresent = Object.keys(paths) as Locale[];
   const alternates = localesPresent.map((l) => ({
     hreflang: languages[l].htmlLang,
@@ -32,30 +46,39 @@ function toEntry(paths: Partial<Record<Locale, string>>): SitemapEntry[] {
 
   return localesPresent.map((l) => ({
     loc: SITE + paths[l]!,
+    lastmod,
     alternates: withDefault,
   }));
 }
 
 /** Same-slug pages (home, blog index, blog posts) — identical path per locale, just prefixed. */
-function sameSlugEntries(pathname: string, availableLocales: readonly Locale[] = locales): SitemapEntry[] {
+function sameSlugEntries(
+  pathname: string,
+  availableLocales: readonly Locale[] = locales,
+  lastmod?: string,
+): SitemapEntry[] {
   const paths: Partial<Record<Locale, string>> = {};
   for (const l of availableLocales) paths[l] = localizePath(pathname, l);
-  return toEntry(paths);
+  return toEntry(paths, lastmod);
 }
 
 // Enumerates every slug in the collection, not just the English ones, and emits
 // only the locales that actually have a file. Previously this listed English
 // posts and claimed all five locales for each, which is fine while every post is
 // translated five ways and wrong the moment one isn't.
-async function blogEntries(): Promise<SitemapEntry[]> {
-  const posts = await getCollection('blog');
+async function blogEntries(posts: Awaited<ReturnType<typeof getCollection<'blog'>>>): Promise<SitemapEntry[]> {
   const slugs = [...new Set(posts.map((p) => blogSlug(p.id)))];
   const entries: SitemapEntry[] = [];
   for (const slug of slugs) {
-    const present = locales.filter((l) =>
-      posts.some((p) => blogSlug(p.id) === slug && blogLocale(p.id) === l),
-    );
-    entries.push(...sameSlugEntries(`/blog/${slug}/`, present));
+    const matches = posts.filter((p) => blogSlug(p.id) === slug);
+    const present = locales.filter((l) => matches.some((p) => blogLocale(p.id) === l));
+    // Same source BlogPostPage.astro uses for Article.dateModified — keeps
+    // the sitemap and the page's own schema from disagreeing about freshness.
+    const newest = matches.reduce((max, p) => {
+      const d = p.data.updatedDate ?? p.data.pubDate;
+      return d > max ? d : max;
+    }, matches[0]!.data.pubDate);
+    entries.push(...sameSlugEntries(`/blog/${slug}/`, present, newest.toISOString()));
   }
   return entries;
 }
@@ -68,7 +91,7 @@ function landingEntries(): SitemapEntry[] {
       const l = locale as Locale;
       paths[l] = `${l === defaultLocale ? '' : '/' + l}/${data!.slug}/`;
     }
-    entries.push(...toEntry(paths));
+    entries.push(...toEntry(paths, ARCHITECTURE_SHIP_DATE));
   }
   return entries;
 }
@@ -80,7 +103,7 @@ function shapeEntries(): SitemapEntry[] {
   // Hub — exists in every locale that has a shapes entry (en/it today).
   const hubPaths: Partial<Record<Locale, string>> = {};
   for (const l of shapeLocales) hubPaths[l] = shapesHubPath(l);
-  entries.push(...toEntry(hubPaths));
+  entries.push(...toEntry(hubPaths, ARCHITECTURE_SHIP_DATE));
 
   // Spokes — only offer an alternate where that locale actually ships the shape,
   // mirroring the per-spoke filter already used in ShapePage.astro.
@@ -90,16 +113,26 @@ function shapeEntries(): SitemapEntry[] {
     for (const l of shapeLocales) {
       if (shapes[l]!.spokes.some((sp) => sp.slug === slug)) paths[l] = shapePath(l, slug);
     }
-    entries.push(...toEntry(paths));
+    entries.push(...toEntry(paths, ARCHITECTURE_SHIP_DATE));
   }
   return entries;
 }
 
 export async function getSitemapEntries(): Promise<SitemapEntry[]> {
+  const posts = await getCollection('blog');
+  // Blog index lists every post, so its own freshness tracks the newest one.
+  const blogIndexLastmod = posts
+    .reduce((max, p) => {
+      const d = p.data.updatedDate ?? p.data.pubDate;
+      return d > max ? d : max;
+    }, posts[0]!.data.pubDate)
+    .toISOString();
+
   return [
-    ...sameSlugEntries('/'),
-    ...sameSlugEntries('/blog/'),
-    ...(await blogEntries()),
+    ...sameSlugEntries('/', locales, ARCHITECTURE_SHIP_DATE),
+    ...sameSlugEntries('/blog/', locales, blogIndexLastmod),
+    ...[...infoPages].flatMap((p) => sameSlugEntries(p, ['en'], INFO_PAGES_SHIP_DATE)),
+    ...(await blogEntries(posts)),
     ...landingEntries(),
     ...shapeEntries(),
   ];

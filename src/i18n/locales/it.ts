@@ -53,6 +53,7 @@ const it: Dict = {
     faqItal: `sapersi.`,
     relPre: `Cerchi qualcos'`,
     relItal: `altro?`,
+    cancellation: `Cancellazione gratuita fino a 48h prima.`,
   },
 
   lang: {
@@ -131,6 +132,7 @@ const it: Dict = {
       { q: `Dove posso trovare pasta fresca senza glutine a Firenze?`, a: `Proprio qui nella nostra cucina! Possiamo preparare una miscela di farine senza glutine dedicata e una postazione pulita senza costi aggiuntivi. Basta segnalarci eventuali allergie al momento della prenotazione.` },
       { q: `Quando si svolgono i corsi?`, a: `I corsi iniziano alle 10:00, 14:30 e 18:00 (ora di Firenze), tutti i giorni della settimana.` },
       { q: `Come faccio a prenotare e pagare?`, a: `Usa il pulsante "Prenota un corso" per creare la tua richiesta. Si aprirà una chat di WhatsApp con i dettagli precompilati, ti confermeremo la disponibilità e ti guideremo per il resto.` },
+      { q: `Qual è la vostra politica di cancellazione?`, a: `Cancellazione gratuita fino a 48 ore prima del corso, nessun costo. Preferisci cambiare data? Siamo felici di riprogrammare senza costi fino a 24 ore prima del corso. Le cancellazioni entro le 48 ore, o la mancata presentazione, potrebbero comportare l'addebito dell'intero prezzo del corso. Tutti i dettagli nella nostra pagina sulla politica di cancellazione.` },
     ],
   },
 

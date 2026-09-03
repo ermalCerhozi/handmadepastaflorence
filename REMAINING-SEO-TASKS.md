@@ -216,9 +216,10 @@ and host canonicalization were also confirmed already correct (single 301 hop, a
 
 ### R10. Expand the FAQ with policy answers
 `src/components/Faq.astro` currently answers only facts already on the site (location, length,
-group size, gluten-free, hours, online option, how booking works). Add the answers only you
-know, then they'll flow into the FAQPage schema automatically:
-- Cancellation / rescheduling policy
+group size, gluten-free, hours, online option, how booking works, cancellation). Add the answers
+only you know, then they'll flow into the FAQPage schema automatically:
+- ✅ Resolved (2026-09-03): Cancellation / rescheduling policy — 48h free cancellation/reschedule
+  window, added to the sitewide FAQ (all 5 locales) and as a short line on every landing page.
 - Deposit / payment method
 - Exact meeting point + parking / transit
 - Kids / minimum age, vegetarian & vegan options, dietary specifics

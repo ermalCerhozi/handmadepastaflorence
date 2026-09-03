@@ -5,7 +5,6 @@ pubDate: 2026-08-27
 author: 'Endri Cerhozi'
 image: '../../../assets/images/shape-pappardelle.webp'
 imageAlt: 'Ein Hügel aus 00-Mehl mit einem Eigelb in der Mitte'
-badge: 'Neu'
 faqs:
   - q: "Was ist das beste Mehl für frische Pasta?"
     a: "Das beste Mehl für frische Eierpasta (wie Tagliatelle und Ravioli) ist Weichweizenmehl vom Typ '00' (doppio zero). Für eifreie Pasta (wie Pici oder Orecchiette) wird Hartweizengrieß (semola di grano duro) verwendet."
