@@ -5,7 +5,7 @@
 // (Product or Service, BreadcrumbList, FAQPage). Sitewide LocalBusiness
 // schema still comes from Schema.astro via the layout.
 import { Image } from 'astro:assets';
-import { localizePath } from '../i18n/utils';
+import { localizePath, localizedHref } from '../i18n/utils';
 import { useTranslations } from '../i18n/ui';
 import { languages, type Locale } from '../i18n/config';
 import { shapesHubPath } from '../data/shapes';
@@ -304,7 +304,7 @@ const faqLd = faqSchema(faqs);
       </div>
       {!emailSubject && (
         <p class="lp-hero__cancellation">
-          <a href={localizePath('/cancellation-policy/', lang)}>{t.lp.cancellation}</a>
+          <a href={localizedHref('/cancellation-policy/', lang)}>{t.lp.cancellation}</a>
         </p>
       )}
       <p class="lp-hero__updated">

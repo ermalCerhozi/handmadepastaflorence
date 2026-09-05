@@ -20,15 +20,15 @@ Ecco la vera differenza tra pasta fresca e pasta secca, e come sapere quale dovr
 
 ## Pasta Fresca
 
-Quando partecipi a un [corso di pasta a Firenze](/pasta-making-class-florence/), stai facendo la pasta fresca. 
+Quando partecipi a un [corso di pasta a Firenze](/it/corso-pasta-fresca-firenze/), stai facendo la pasta fresca. 
 
 In Toscana e nel resto del Nord e Centro Italia, la pasta fresca è solitamente fatta con soli due ingredienti: **farina di grano tenero "00" e uova fresche**. 
-L'impasto viene lavorato fino a renderlo liscio, fatto riposare e poi steso a mano con un mattarello di legno. Viene tagliato in forme come [pappardelle](/pasta-shapes/pappardelle/), [tagliatelle](/pasta-shapes/tagliatelle/), o piegato in forme ripiene come [ravioli](/pasta-shapes/ravioli/) e [tortelli](/pasta-shapes/tortelli/).
+L'impasto viene lavorato fino a renderlo liscio, fatto riposare e poi steso a mano con un mattarello di legno. Viene tagliato in forme come [pappardelle](/it/formati-di-pasta-toscana/pappardelle/), [tagliatelle](/it/formati-di-pasta-toscana/tagliatelle/), o piegato in forme ripiene come [ravioli](/it/formati-di-pasta-toscana/ravioli/) e [tortelli](/it/formati-di-pasta-toscana/tortelli/).
 
 ### Perché usare la pasta fresca?
 Poiché contiene uova e farina di grano tenero, la pasta fresca è tenera, porosa e vellutata. Cuoce in soli due o tre minuti. La sua consistenza morbida e assorbente la rende il veicolo perfetto per sughi ricchi e pesanti. Se hai un ragù di cinghiale cotto a fuoco lento, un ricco condimento burro e salvia, o un sugo denso alla panna, vuoi che la pasta fresca all'uovo assorba tutto.
 
-*Nota: Nel Sud Italia (e in alcune parti della Toscana, come per i nostri famosi [pici](/pasta-shapes/pici/)), la pasta fresca è spesso fatta senza uova, usando solo farina di semola e acqua, ma viene comunque cotta subito dopo essere stata modellata.*
+*Nota: Nel Sud Italia (e in alcune parti della Toscana, come per i nostri famosi [pici](/it/formati-di-pasta-toscana/pici/)), la pasta fresca è spesso fatta senza uova, usando solo farina di semola e acqua, ma viene comunque cotta subito dopo essere stata modellata.*
 
 ## Pasta Secca
 
@@ -50,4 +50,4 @@ Se stai mangiando spaghetti alle vongole, carbonara, un semplice aglio e olio, o
 
 Capire la differenza è bello, ma sentire l'impasto tra le mani è meglio. Se stai visitando Firenze, vieni a trovarci in Oltrarno. Saltiamo la parte secca e ci tuffiamo direttamente tra uova e farina. 
 
-Nei nostri piccoli [corsi di cucina](/), pratici e interattivi, imparerai a mescolare, impastare, stendere e tagliare l'autentica pasta fresca toscana esattamente come è stato fatto per secoli. E la parte migliore? Ci sediamo e mangiamo tutto insieme dopo.
+Nei nostri piccoli [corsi di cucina](/it/), pratici e interattivi, imparerai a mescolare, impastare, stendere e tagliare l'autentica pasta fresca toscana esattamente come è stato fatto per secoli. E la parte migliore? Ci sediamo e mangiamo tutto insieme dopo.

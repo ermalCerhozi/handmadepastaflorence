@@ -44,4 +44,4 @@ Prima ancora di accettare la tua prenotazione, parliamo direttamente con te per 
 *   Scegli **Mama Florence** se preferisci un ambiente più formale e di osservazione incentrato sulla cucina raffinata moderna.
 *   Scegli **Handmade Pasta Florence** se vuoi mettere le mani in pasta per un'esperienza profondamente autentica e flessibile, dove impari facendo davvero il lavoro, per poi sederti a goderti esattamente ciò che hai preparato in totale pace.
 
-Pronto a rimboccarti le maniche? [Prenota un corso con noi oggi.](/booking/)
+Pronto a rimboccarti le maniche? [Prenota un corso con noi oggi.](/it/corso-pasta-fresca-firenze/)

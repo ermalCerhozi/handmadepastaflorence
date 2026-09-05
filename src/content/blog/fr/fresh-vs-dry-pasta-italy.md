@@ -20,15 +20,15 @@ Voici la véritable différence entre les pâtes fraîches (*pasta fresca*) et l
 
 ## Pâtes fraîches (Pasta Fresca)
 
-Lorsque vous suivez un [cours de fabrication de pâtes à Florence](/pasta-making-class-florence/), vous faites des pâtes fraîches. 
+Lorsque vous suivez un [cours de fabrication de pâtes à Florence](/fr/cours-de-pates-fraiches-florence/), vous faites des pâtes fraîches. 
 
 En Toscane et dans le reste du nord et du centre de l'Italie, les pâtes fraîches sont généralement faites avec seulement deux ingrédients : **de la farine de blé tendre "00" et des œufs frais**. 
-La pâte est pétrie jusqu'à ce qu'elle soit lisse, reposée, puis étalée à la main avec un rouleau en bois. Elle est découpée en formes comme les [pappardelle](/pasta-shapes/pappardelle/), les [tagliatelle](/pasta-shapes/tagliatelle/), ou pliée en formes farcies comme les [ravioli](/pasta-shapes/ravioli/) et les [tortelli](/pasta-shapes/tortelli/).
+La pâte est pétrie jusqu'à ce qu'elle soit lisse, reposée, puis étalée à la main avec un rouleau en bois. Elle est découpée en formes comme les [pappardelle](/fr/formes-de-pates/pappardelle/), les [tagliatelle](/fr/formes-de-pates/tagliatelle/), ou pliée en formes farcies comme les [ravioli](/fr/formes-de-pates/ravioli/) et les [tortelli](/fr/formes-de-pates/tortelli/).
 
 ### Pourquoi utiliser des pâtes fraîches ?
 Parce qu'elles contiennent des œufs et de la farine tendre, les pâtes fraîches sont moelleuses, poreuses et veloutées. Elles cuisent en seulement deux ou trois minutes. Leur texture tendre et absorbante en fait le véhicule parfait pour les sauces riches et lourdes. Si vous avez un ragoût de sanglier mijoté, une sauce riche au beurre et à la sauge ou une sauce à la crème épaisse, vous voulez des pâtes fraîches aux œufs pour tout absorber.
 
-*Note : Dans le sud de l'Italie (et dans certaines parties de la Toscane, comme avec nos fameux [pici](/pasta-shapes/pici/)), les pâtes fraîches sont souvent faites sans œufs, en utilisant seulement de la semoule et de l'eau, mais elles sont quand même cuites juste après avoir été façonnées.*
+*Note : Dans le sud de l'Italie (et dans certaines parties de la Toscane, comme avec nos fameux [pici](/fr/formes-de-pates/pici/)), les pâtes fraîches sont souvent faites sans œufs, en utilisant seulement de la semoule et de l'eau, mais elles sont quand même cuites juste après avoir été façonnées.*
 
 ## Pâtes sèches (Pasta Secca)
 
@@ -50,4 +50,4 @@ Si vous mangez des spaghettis aux palourdes (alle vongole), une carbonara, un si
 
 Comprendre la différence est une bonne chose, mais sentir la pâte entre ses mains est encore mieux. Si vous visitez Florence, venez nous rejoindre dans l'Oltrarno. Nous laissons de côté les produits secs et plongeons directement dans les œufs et la farine. 
 
-Dans nos [cours de cuisine](/), en petits groupes et pratiques, vous apprendrez à mélanger, pétrir, rouler et couper de véritables pâtes fraîches toscanes exactement comme cela a été fait depuis des siècles. Et la meilleure partie ? Nous nous asseyons et mangeons tous ensemble par la suite.
+Dans nos [cours de cuisine](/fr/), en petits groupes et pratiques, vous apprendrez à mélanger, pétrir, rouler et couper de véritables pâtes fraîches toscanes exactement comme cela a été fait depuis des siècles. Et la meilleure partie ? Nous nous asseyons et mangeons tous ensemble par la suite.

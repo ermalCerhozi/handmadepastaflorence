@@ -22,7 +22,7 @@ In Italien gibt es zwei Hauptarten von Mehl für Pasta, und jede erfüllt einen 
 
 ## 1. Typ "00" Mehl (Farina 00) - Für frische Eierpasta
 
-Wenn Sie frische Eierpasta-Formen wie [Pappardelle](/pasta-shapes/pappardelle/), [Tagliatelle](/pasta-shapes/tagliatelle/), [Ravioli](/pasta-shapes/ravioli/) oder [Tortelli](/pasta-shapes/tortelli/) machen, benötigen Sie **Mehl vom Typ 00**.
+Wenn Sie frische Eierpasta-Formen wie [Pappardelle](/de/pasta-formen/pappardelle/), [Tagliatelle](/de/pasta-formen/tagliatelle/), [Ravioli](/de/pasta-formen/ravioli/) oder [Tortelli](/de/pasta-formen/tortelli/) machen, benötigen Sie **Mehl vom Typ 00**.
 
 "00" (ausgesprochen *doppio zero*) bezieht sich nicht auf den Proteingehalt des Mehls, sondern darauf, wie fein es gemahlen ist. Das italienische Einstufungssystem reicht von 2 (grob und Vollkorn) bis 00 (das feinste, weißeste Mehl). 
 
@@ -33,7 +33,7 @@ Ja, aber Ihre Pasta wird nicht so zart sein. Allzweckmehl hat einen etwas gröbe
 
 ## 2. Hartweizengrieß (Semola di Grano Duro) - Für Wasserpasta
 
-Wenn Sie eine süditalienische Form wie *Orecchiette* oder eine rustikale toskanische Form wie [Pici](/pasta-shapes/pici/) machen, lassen Sie die Eier im Kühlschrank. Dafür benötigen Sie **Hartweizengrieß (Semola)** und warmes Wasser.
+Wenn Sie eine süditalienische Form wie *Orecchiette* oder eine rustikale toskanische Form wie [Pici](/de/pasta-formen/pici/) machen, lassen Sie die Eier im Kühlschrank. Dafür benötigen Sie **Hartweizengrieß (Semola)** und warmes Wasser.
 
 Grieß wird aus hartem Hartweizen (*grano duro*) gemahlen. Er hat eine blassgelbe Farbe und fühlt sich viel gröber an, fast wie feiner Sand. Da Hartweizen sehr hart ist und reich an glutenbildenden Proteinen ist, erzeugt er auch ohne die Bindekraft von Eiern einen sehr starken, strukturierten Teig. 
 
@@ -49,4 +49,4 @@ In einigen Regionen (und sogar in unserer eigenen Küche, je nach Luftfeuchtigke
 
 Über Mehl zu lesen ist eine Sache; zu spüren, wie sich der Teig unter Ihren Händen verwandelt, ist etwas ganz anderes. 
 
-Wenn Sie genau spüren möchten, wie sich der perfekte 00-Eierteig anfühlt, wenn er perfekt geknetet ist, besuchen Sie einen unserer [Pasta-Kochkurse in Florenz](/pasta-making-class-florence/). Wir wiegen das Mehl auf einem Holzbrett ab, schlagen die Eier auf und bringen Ihnen bei, wie man alles von Hand zusammenfügt.
+Wenn Sie genau spüren möchten, wie sich der perfekte 00-Eierteig anfühlt, wenn er perfekt geknetet ist, besuchen Sie einen unserer [Pasta-Kochkurse in Florenz](/de/pasta-kurs-florenz/). Wir wiegen das Mehl auf einem Holzbrett ab, schlagen die Eier auf und bringen Ihnen bei, wie man alles von Hand zusammenfügt.

@@ -16,6 +16,30 @@ import { defineConfig } from 'astro/config';
 // https://astro.build
 export default defineConfig({
   site: 'https://handmadepastaflorence.com',
+
+  // ONE redirect, added 2026-09-05, deliberately not covered by the blanket
+  // "no legacy redirects" rule above. That rule was correct for URL *shapes*
+  // this site stopped serving: none of them had ever registered a single GSC
+  // impression. This is the opposite case. /blog/where-do-locals-eat-fresh-
+  // pasta-florence/ was a live, indexed post that pulled 357 impressions and
+  // 13 clicks in the 18 days to 2026-09-05 — the highest CTR of any English
+  // page on the site (10.53%) — and it was merged into where-to-eat-handmade-
+  // pasta-in-florence/ because the two competed for "best handmade pasta in
+  // Florence" and both stalled on page 2-3 in English. Dropping that URL cold
+  // would throw away real accumulated signal.
+  //
+  // CAVEAT: on a static build Astro emits these as meta-refresh stub pages,
+  // NOT true 301s. Google treats meta-refresh as a soft redirect and usually
+  // honours it, but a server-side 301 is strictly better. The nginx rule that
+  // would do it properly lives outside this repo:
+  //   location = /blog/where-do-locals-eat-fresh-pasta-florence/ { return 301 /blog/where-to-eat-handmade-pasta-in-florence/; }
+  // (and the same for the /it/, /fr/, /de/, /zh/ prefixes).
+  redirects: Object.fromEntries(
+    ['', '/it', '/fr', '/de', '/zh'].map((prefix) => [
+      `${prefix}/blog/where-do-locals-eat-fresh-pasta-florence/`,
+      `${prefix}/blog/where-to-eat-handmade-pasta-in-florence/`,
+    ])
+  ),
   // Keep this list in sync with `languages` in src/i18n/config.ts.
   i18n: {
     defaultLocale: 'en',

@@ -22,7 +22,7 @@ In Italia, ci sono due farine principali utilizzate per la pasta, e ognuna serve
 
 ## 1. Farina Tipo "00" (Farina 00) - Per Pasta Fresca all'Uovo
 
-Se stai preparando formati di pasta fresca all'uovo come [pappardelle](/pasta-shapes/pappardelle/), [tagliatelle](/pasta-shapes/tagliatelle/), [ravioli](/pasta-shapes/ravioli/) o [tortelli](/pasta-shapes/tortelli/) hai bisogno della **Farina Tipo 00**.
+Se stai preparando formati di pasta fresca all'uovo come [pappardelle](/it/formati-di-pasta-toscana/pappardelle/), [tagliatelle](/it/formati-di-pasta-toscana/tagliatelle/), [ravioli](/it/formati-di-pasta-toscana/ravioli/) o [tortelli](/it/formati-di-pasta-toscana/tortelli/) hai bisogno della **Farina Tipo 00**.
 
 "00" (*doppio zero*) non si riferisce al contenuto proteico della farina, ma piuttosto a quanto finemente è macinata. Il sistema di classificazione italiano va dal tipo 2 (grossolano e integrale) fino allo 00 (la farina più fine e bianca). 
 
@@ -33,7 +33,7 @@ Sì, ma la tua pasta non sarà altrettanto delicata. La farina per tutti gli usi
 
 ## 2. Farina di Semola (Semola di Grano Duro) - Per Pasta all'Acqua
 
-Se stai preparando un formato del sud Italia come le *orecchiette* o un formato rustico toscano come i [pici](/pasta-shapes/pici/), lascia le uova in frigo. Per questi, ti servono **farina di Semola** e acqua calda.
+Se stai preparando un formato del sud Italia come le *orecchiette* o un formato rustico toscano come i [pici](/it/formati-di-pasta-toscana/pici/), lascia le uova in frigo. Per questi, ti servono **farina di Semola** e acqua calda.
 
 La semola è macinata dal grano duro. Ha un colore giallo paglierino e sembra molto più grossolana, quasi come sabbia fine. Poiché il grano duro è molto duro e ricco di proteine che formano il glutine, crea un impasto molto forte e strutturato anche senza il potere legante delle uova. 
 
@@ -49,4 +49,4 @@ In alcune regioni (e anche nella nostra cucina, a seconda dell'umidità e del fo
 
 Leggere della farina è una cosa; sentire l'impasto trasformarsi sotto le tue mani è completamente diverso. 
 
-Se vuoi sentire esattamente com'è l'impasto perfetto con uova e farina 00 quando è impastato a regola d'arte, vieni a partecipare a uno dei nostri [corsi di pasta a Firenze](/pasta-making-class-florence/). Misureremo la farina su una spianatoia di legno, romperemo le uova e ti insegneremo come amalgamare il tutto a mano.
+Se vuoi sentire esattamente com'è l'impasto perfetto con uova e farina 00 quando è impastato a regola d'arte, vieni a partecipare a uno dei nostri [corsi di pasta a Firenze](/it/corso-pasta-fresca-firenze/). Misureremo la farina su una spianatoia di legno, romperemo le uova e ti insegneremo come amalgamare il tutto a mano.

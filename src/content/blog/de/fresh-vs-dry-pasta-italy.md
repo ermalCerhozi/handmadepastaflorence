@@ -20,15 +20,15 @@ Hier ist der wahre Unterschied zwischen frischer Pasta (*pasta fresca*) und getr
 
 ## Frische Pasta (Pasta Fresca)
 
-Wenn Sie einen [Pasta-Kochkurs in Florenz](/pasta-making-class-florence/) besuchen, machen Sie frische Pasta. 
+Wenn Sie einen [Pasta-Kochkurs in Florenz](/de/pasta-kurs-florenz/) besuchen, machen Sie frische Pasta. 
 
 In der Toskana und im restlichen Nord- und Mittelitalien wird frische Pasta normalerweise aus nur zwei Zutaten hergestellt: **weiches Mehl vom Typ "00" und frische Eier**. 
-Der Teig wird geknetet, bis er glatt ist, geruht und dann von Hand mit einem Nudelholz ausgerollt. Er wird in Formen wie [Pappardelle](/pasta-shapes/pappardelle/), [Tagliatelle](/pasta-shapes/tagliatelle/) geschnitten oder zu gefüllten Formen wie [Ravioli](/pasta-shapes/ravioli/) und [Tortelli](/pasta-shapes/tortelli/) gefaltet.
+Der Teig wird geknetet, bis er glatt ist, geruht und dann von Hand mit einem Nudelholz ausgerollt. Er wird in Formen wie [Pappardelle](/de/pasta-formen/pappardelle/), [Tagliatelle](/de/pasta-formen/tagliatelle/) geschnitten oder zu gefüllten Formen wie [Ravioli](/de/pasta-formen/ravioli/) und [Tortelli](/de/pasta-formen/tortelli/) gefaltet.
 
 ### Warum frische Pasta verwenden?
 Da sie Eier und weiches Mehl enthält, ist frische Pasta zart, porös und samtig. Sie kocht in nur zwei oder drei Minuten. Ihre weiche, saugfähige Textur macht sie zum perfekten Träger für reichhaltige, schwere Saucen. Wenn Sie ein langsam gekochtes Wildschwein-Ragù, eine reichhaltige Butter-Salbei-Sauce oder eine schwere Sahnesauce haben, möchten Sie frische Eierpasta, um alles aufzusaugen.
 
-*Hinweis: In Süditalien (und Teilen der Toskana, wie bei unseren berühmten [Pici](/pasta-shapes/pici/)) wird frische Pasta oft ohne Eier, nur mit Hartweizengrieß und Wasser, hergestellt, aber sie wird dennoch direkt nach dem Formen gekocht.*
+*Hinweis: In Süditalien (und Teilen der Toskana, wie bei unseren berühmten [Pici](/de/pasta-formen/pici/)) wird frische Pasta oft ohne Eier, nur mit Hartweizengrieß und Wasser, hergestellt, aber sie wird dennoch direkt nach dem Formen gekocht.*
 
 ## Getrocknete Pasta (Pasta Secca)
 
@@ -50,4 +50,4 @@ Wenn Sie Spaghetti mit Venusmuscheln (alle vongole), Carbonara, einfach Knoblauc
 
 Den Unterschied zu verstehen, ist gut, aber den Teig in den Händen zu spüren, ist besser. Wenn Sie Florenz besuchen, besuchen Sie uns im Oltrarno. Wir überspringen das getrocknete Zeug und tauchen direkt in die Eier und das Mehl ein. 
 
-In unseren kleinen, praxisorientierten [Kochkursen](/) lernen Sie, wie man authentische toskanische frische Pasta mischt, knetet, ausrollt und schneidet – genau so, wie es seit Jahrhunderten gemacht wird. Und das Beste daran? Wir setzen uns danach zusammen und essen alles gemeinsam.
+In unseren kleinen, praxisorientierten [Kochkursen](/de/) lernen Sie, wie man authentische toskanische frische Pasta mischt, knetet, ausrollt und schneidet – genau so, wie es seit Jahrhunderten gemacht wird. Und das Beste daran? Wir setzen uns danach zusammen und essen alles gemeinsam.

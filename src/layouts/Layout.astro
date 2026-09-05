@@ -3,6 +3,7 @@ import Schema from '../components/Schema.astro';
 import '../styles/global.css';
 import { getLocaleFromUrl, getAlternates, type Alternate } from '../i18n/utils';
 import { defaultLocale, languages } from '../i18n/config';
+import { checkMetaLength } from '../utils/meta-length';
 
 interface Props {
   title?: string;
@@ -30,6 +31,9 @@ const {
 
 const lang = getLocaleFromUrl(Astro.url);
 const canonical = new URL(Astro.url.pathname, Astro.site);
+
+// Build-time length guard — see src/utils/meta-length.ts.
+checkMetaLength(Astro.url.pathname, title, description);
 const ogImage = new URL(image, Astro.site);
 
 // Hreflang: use the page's explicit alternates (landing pages) or derive them

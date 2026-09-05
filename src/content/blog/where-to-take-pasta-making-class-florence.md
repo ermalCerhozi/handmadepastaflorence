@@ -44,4 +44,4 @@ Before we even take your reservation, we speak with you directly to understand e
 *   Choose **Mama Florence** if you prefer a more formal, observational environment focused on modern fine dining.
 *   Choose **Handmade Pasta Florence** if you want to get your hands in the flour for a deeply authentic and flexible experience, where you learn by actually doing the work, and then sit down to enjoy exactly what you made in total peace.
 
-Ready to roll up your sleeves? [Book a class with us today.](/booking/)
+Ready to roll up your sleeves? [Book a class with us today.](/pasta-making-class-florence/)

@@ -22,7 +22,7 @@ En Italie, il y a deux farines principales utilisées pour les pâtes, et chacun
 
 ## 1. Farine de type "00" (Farina 00) - Pour les pâtes fraîches aux œufs
 
-Si vous faites des formes de pâtes fraîches aux œufs comme les [pappardelle](/pasta-shapes/pappardelle/), les [tagliatelle](/pasta-shapes/tagliatelle/), les [ravioli](/pasta-shapes/ravioli/) ou les [tortelli](/pasta-shapes/tortelli/), vous avez besoin de **farine de Type 00**.
+Si vous faites des formes de pâtes fraîches aux œufs comme les [pappardelle](/fr/formes-de-pates/pappardelle/), les [tagliatelle](/fr/formes-de-pates/tagliatelle/), les [ravioli](/fr/formes-de-pates/ravioli/) ou les [tortelli](/fr/formes-de-pates/tortelli/), vous avez besoin de **farine de Type 00**.
 
 "00" (prononcé *doppio zero*) ne fait pas référence à la teneur en protéines de la farine, mais plutôt à la finesse de sa mouture. Le système de classification italien va de 2 (grossière et blé entier) à 00 (la farine la plus fine et la plus blanche). 
 
@@ -33,7 +33,7 @@ Oui, mais vos pâtes ne seront pas aussi délicates. La farine tout usage a une 
 
 ## 2. Semoule (Semola di Grano Duro) - Pour les pâtes à l'eau
 
-Si vous faites une forme d'Italie du Sud comme les *orecchiette* ou une forme rustique toscane comme les [pici](/pasta-shapes/pici/), vous laissez les œufs au réfrigérateur. Pour celles-ci, vous avez besoin de **semoule** et d'eau tiède.
+Si vous faites une forme d'Italie du Sud comme les *orecchiette* ou une forme rustique toscane comme les [pici](/fr/formes-de-pates/pici/), vous laissez les œufs au réfrigérateur. Pour celles-ci, vous avez besoin de **semoule** et d'eau tiède.
 
 La semoule est moulue à partir de blé dur (*grano duro*). Elle a une couleur jaune pâle et est beaucoup plus granuleuse, presque comme du sable fin. Parce que le blé dur est très dur et riche en protéines formant du gluten, il crée une pâte très forte et structurée même sans le pouvoir liant des œufs. 
 
@@ -49,4 +49,4 @@ Dans certaines régions (et même dans notre propre cuisine selon l'humidité et
 
 Lire sur la farine est une chose ; sentir la pâte se transformer sous ses mains est tout autre chose. 
 
-Si vous voulez ressentir exactement ce que fait une pâte aux œufs 00 parfaite lorsqu'elle est parfaitement pétrie, venez rejoindre l'un de nos [cours de fabrication de pâtes à Florence](/pasta-making-class-florence/). Nous mesurerons la farine sur une planche en bois, casserons les œufs et vous apprendrons à tout rassembler à la main.
+Si vous voulez ressentir exactement ce que fait une pâte aux œufs 00 parfaite lorsqu'elle est parfaitement pétrie, venez rejoindre l'un de nos [cours de fabrication de pâtes à Florence](/fr/cours-de-pates-fraiches-florence/). Nous mesurerons la farine sur une planche en bois, casserons les œufs et vous apprendrons à tout rassembler à la main.

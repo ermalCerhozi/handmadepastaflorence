@@ -44,4 +44,4 @@ Bevor wir Ihre Reservierung überhaupt annehmen, sprechen wir direkt mit Ihnen, 
 *   Wählen Sie **Mama Florence**, wenn Sie eine formellere, beobachtende Umgebung bevorzugen, die sich auf modernes Fine Dining konzentriert.
 *   Wählen Sie **Handmade Pasta Florence**, wenn Sie Ihre Hände für ein tief authentisches und flexibles Erlebnis ins Mehl stecken möchten, bei dem Sie durch tatsächliches Tun lernen, und sich dann hinsetzen möchten, um genau das, was Sie gemacht haben, in völliger Ruhe zu genießen.
 
-Bereit, die Ärmel hochzukrempeln? [Buchen Sie noch heute einen Kurs bei uns.](/booking/)
+Bereit, die Ärmel hochzukrempeln? [Buchen Sie noch heute einen Kurs bei uns.](/de/pasta-kurs-florenz/)

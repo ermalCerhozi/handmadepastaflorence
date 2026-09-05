@@ -22,7 +22,7 @@ faqs:
 
 ## 1. “00”号面粉 (Farina 00) - 用于新鲜鸡蛋意大利面
 
-如果你正在制作像[宽面（pappardelle）](/pasta-shapes/pappardelle/)、[细面（tagliatelle）](/pasta-shapes/tagliatelle/)、[意大利方饺（ravioli）](/pasta-shapes/ravioli/)或[意大利饺子（tortelli）](/pasta-shapes/tortelli/)这样的新鲜鸡蛋意大利面，你需要**00号面粉**。
+如果你正在制作像[宽面（pappardelle）](/zh/yidali-mian-xingzhuang/pappardelle/)、[细面（tagliatelle）](/zh/yidali-mian-xingzhuang/tagliatelle/)、[意大利方饺（ravioli）](/zh/yidali-mian-xingzhuang/ravioli/)或[意大利饺子（tortelli）](/zh/yidali-mian-xingzhuang/tortelli/)这样的新鲜鸡蛋意大利面，你需要**00号面粉**。
 
 “00”（发音为 *doppio zero*）指的不是面粉的蛋白质含量，而是它被研磨得有多细。意大利的等级系统从2（粗糙的全麦面粉）一直到00（最细、最白的面粉）。
 
@@ -33,7 +33,7 @@ faqs:
 
 ## 2. 粗面粉 (Semola di Grano Duro) - 用于水面团
 
-如果你在制作意大利南部的形状，如*猫耳朵面（orecchiette）*，或者托斯卡纳乡村风味的形状，如[手工粗面（pici）](/pasta-shapes/pici/)，你不需要用鸡蛋。对于这些意大利面，你需要**粗面粉（Semolina）**和温水。
+如果你在制作意大利南部的形状，如*猫耳朵面（orecchiette）*，或者托斯卡纳乡村风味的形状，如[手工粗面（pici）](/zh/yidali-mian-xingzhuang/pici/)，你不需要用鸡蛋。对于这些意大利面，你需要**粗面粉（Semolina）**和温水。
 
 粗面粉是由硬粒小麦（*grano duro*）研磨而成的。它呈淡黄色，摸起来粗糙得多，几乎像细沙。因为硬粒小麦非常坚硬，并且含有形成面筋的高蛋白成分，即使没有鸡蛋的结合力，它也能创造出非常坚固、结构良好的面团。
 
@@ -49,4 +49,4 @@ faqs:
 
 阅读关于面粉的知识是一回事；亲手感受面团在你的手中发生变化则完全是另一回事。
 
-如果你想体验完美的00号鸡蛋面团在被完美揉捏时的触感，来加入我们在佛罗伦萨的[意大利面制作课程](/pasta-making-class-florence/)吧。我们将在木板上称量面粉，打入鸡蛋，并教你如何亲手将所有材料融合在一起。
+如果你想体验完美的00号鸡蛋面团在被完美揉捏时的触感，来加入我们在佛罗伦萨的[意大利面制作课程](/zh/foluolunsa-yidali-mian-kecheng/)吧。我们将在木板上称量面粉，打入鸡蛋，并教你如何亲手将所有材料融合在一起。
