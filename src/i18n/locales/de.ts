@@ -5,7 +5,7 @@ const de = {
     homeTitle: 'Kochkurs in Florenz: Frische Pasta mit zwei Chefköchen',
     homeDescription: 'Kochkurse in Florenz im Oltrarno, ab 95 €. Frische Pasta von Hand mit zwei toskanischen Küchenchefs. Markttour, privat und glutenfrei.',
     blogTitle: 'Florenz Pasta- & Food-Guides',
-    blogDescription: 'Guides für frische Pasta und gutes Essen in Florenz, geschrieben von zwei toskanischen Agriturismo-Chefköchen: Nudelformen, wo man essen kann, glutenfreie Tipps und das Oltrarno-Viertel.',
+    blogDescription: 'Guides für frische Pasta und gutes Essen in Florenz, von zwei toskanischen Agriturismo-Chefköchen: Nudelformen, wo man isst, das Oltrarno.',
   },
 
   nav: {

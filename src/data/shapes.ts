@@ -101,7 +101,7 @@ const en: ShapesLocale = {
   // against roughly 9 for every pappardelle phrasing combined).
   hubTitle: 'Pasta Shapes: Tortelli, Ravioli, Pappardelle & Pici',
   hubDescription:
-    'A working chef\'s library of the five fresh pasta shapes we teach in Florence: what each one is, how it is rolled by hand, and the sauce it was built to carry. With a side-by-side comparison.',
+    'A working chef\'s library of the five fresh pasta shapes we teach in Florence: what each one is, how it\'s rolled by hand, and the sauce it carries.',
   hubEyebrow: 'The shape library',
   hubHeading: 'Five shapes,',
   hubHeadingItal: 'five different sauces.',
@@ -170,7 +170,7 @@ const en: ShapesLocale = {
       // same fix already applied across the German spokes.
       title: 'What Is Pici Pasta? Siena\'s Hand-Rolled Strand, Explained',
       description:
-        'Pici is a thick, hand-rolled Tuscan pasta made from flour and water with no egg. A Florence pasta chef on where it comes from, how to roll it, and the four sauces it belongs with.',
+        'Pici is a thick, hand-rolled Tuscan pasta of flour and water, no egg. Where it comes from, how to roll it, and the four sauces it belongs with.',
       image: {
         src: img.shapePici,
         alt: 'Thick hand-rolled pici pasta strands dusted with flour on a wooden board',
@@ -239,7 +239,7 @@ const en: ShapesLocale = {
       // same fix already applied across the German spokes.
       title: 'What Are Pappardelle? Width, Origin and Classic Sauces',
       description:
-        'Pappardelle are wide egg-dough ribbons, 2–3 cm across, made for heavy game sauces like wild boar and hare. A Florence pasta chef on the cut, the dough and the classic pairings.',
+        'Pappardelle are wide egg-dough ribbons, 2–3 cm across, made for heavy game sauces like wild boar and hare. The cut, the dough, the classic pairings.',
       image: {
         src: img.shapePappardelle,
         alt: 'Wide pappardelle ribbons of fresh egg pasta on a floured wooden board',
@@ -308,7 +308,7 @@ const en: ShapesLocale = {
       // same fix already applied across the German spokes.
       title: 'What Are Tagliatelle? Width, Cut and Classic Sauces',
       description:
-        'Tagliatelle are fresh egg-dough ribbons cut 6–8 mm wide, the natural partner for a meat ragù. A Florence pasta chef on the cut, how it differs from fettuccine and pappardelle, and how to serve it.',
+        'Tagliatelle are fresh egg-dough ribbons cut 6–8 mm wide, the natural partner for a meat ragù. How they differ from fettuccine and pappardelle.',
       image: {
         src: img.shapeTagliatelle,
         alt: 'Nests of fresh tagliatelle ribbons resting on a floured board',
@@ -377,7 +377,7 @@ const en: ShapesLocale = {
       // same fix already applied across the German spokes.
       title: 'What Are Tortelli? Tortelli vs Ravioli vs Tortellini',
       description:
-        'Tortelli are filled fresh pasta parcels. In Tuscany the classic filling is potato, from the Mugello. A Florence pasta chef on the fillings, the folding, and why the sauce should stay simple.',
+        'Tortelli are filled fresh pasta parcels; in Tuscany the classic filling is potato, from the Mugello. The fillings, the folding, and the right sauce.',
       image: {
         src: img.shapeTortelli,
         alt: 'Hand-folded tortelli filled parcels arranged on a floured surface',
@@ -449,7 +449,7 @@ const en: ShapesLocale = {
       tagline: 'The filled square everyone knows, sealed between two sheets.',
       title: 'What Are Ravioli? Filling, Shape and How They Differ',
       description:
-        'Ravioli are flat parcels of filled fresh pasta sealed between two sheets. What goes inside, how big they should be, and how they differ from tortelli, tortellini and agnolotti.',
+        'Ravioli are flat parcels of filled pasta sealed between two sheets. What goes inside, how big they should be, and how they differ from tortelli.',
       image: {
         src: img.shapeRavioli,
         alt: 'Freshly made ravioli parcels cut with a wheel on a floured board',
@@ -518,7 +518,7 @@ const it: ShapesLocale = {
   // because that is where the Italian demand sits.
   hubTitle: 'Formati di Pasta: Tortelli, Ravioli, Pappardelle e Pici',
   hubDescription:
-    'La libreria dei formati di uno chef: i cinque tipi di pasta fresca che insegniamo a Firenze: cos\'è ciascuno, come si tira a mano e il sugo per cui è nato. Con un confronto diretto.',
+    'La libreria di uno chef: i cinque formati di pasta fresca che insegniamo a Firenze. Cos\'è ciascuno, come si tira a mano e il sugo per cui è nato.',
   hubEyebrow: 'La libreria dei formati',
   hubHeading: 'Cinque formati,',
   hubHeadingItal: 'cinque sughi diversi.',
@@ -587,7 +587,7 @@ const it: ShapesLocale = {
       // same fix already applied across the German spokes.
       title: 'Cosa Sono i Pici? Impasto, Come si Tirano e Sughi',
       description:
-        'I pici sono una pasta toscana spessa e tirata a mano, fatta di acqua e farina senza uovo. Uno chef di Firenze racconta da dove vengono, come si appiciano e i quattro sughi a cui appartengono.',
+        'I pici sono una pasta toscana spessa, tirata a mano, di acqua e farina senza uovo. Da dove vengono, come si appiciano e i quattro sughi giusti.',
       image: {
         src: img.shapePici,
         alt: 'Pici spessi tirati a mano e infarinati su un tagliere di legno',
@@ -657,7 +657,7 @@ const it: ShapesLocale = {
       // query, then the two things people are actually asking: width and sauce.
       title: 'Cosa Sono le Pappardelle? Larghezza, Origine e Sughi',
       description:
-        'Le pappardelle sono i nastri di sfoglia all\'uovo più larghi della Toscana: 2–3 cm, nati per i sughi di selvaggina. Quanto sono larghe davvero, da dove vengono e con cosa si condiscono.',
+        'Le pappardelle sono i nastri di sfoglia all\'uovo più larghi della Toscana: 2–3 cm, nati per la selvaggina. Quanto misurano e come si condiscono.',
       image: {
         src: img.shapePappardelle,
         alt: 'Larghe pappardelle di pasta fresca all\'uovo su un tagliere infarinato',
@@ -726,7 +726,7 @@ const it: ShapesLocale = {
       // same fix already applied across the German spokes.
       title: 'Cosa Sono le Tagliatelle? Larghezza, Taglio e Sughi',
       description:
-        'Le tagliatelle sono nastri di sfoglia fresca all\'uovo tagliati a 6–8 mm, il compagno naturale di un ragù di carne. Uno chef di Firenze racconta il taglio, la differenza con fettuccine e pappardelle e come servirle.',
+        'Le tagliatelle sono nastri di sfoglia all\'uovo tagliati a 6–8 mm, il compagno naturale del ragù di carne. La differenza con fettuccine e pappardelle.',
       image: {
         src: img.shapeTagliatelle,
         alt: 'Nidi di tagliatelle fresche appoggiati su un tagliere infarinato',
@@ -796,7 +796,7 @@ const it: ShapesLocale = {
       // all rank top 12, so the title carries it rather than burying it.
       title: 'Cosa Sono i Tortelli? Differenze con i Ravioli',
       description:
-        'I tortelli sono pasta ripiena: in Toscana quasi sempre di patate, dal Mugello. Che cosa li distingue dai ravioli, come si chiudono a mano e perché il condimento resta semplice.',
+        'I tortelli sono pasta ripiena: in Toscana quasi sempre di patate, dal Mugello. Cosa li distingue dai ravioli e perché il condimento resta semplice.',
       image: {
         src: img.shapeTortelli,
         alt: 'Tortelli ripieni chiusi a mano disposti su un piano infarinato',
@@ -863,7 +863,7 @@ const it: ShapesLocale = {
       tagline: 'Il quadrato ripieno che conoscono tutti, sigillato tra due sfoglie.',
       title: 'Cosa Sono i Ravioli? Ripieno, Forma e Differenze',
       description:
-        'I ravioli sono fagottini piatti di pasta ripiena sigillati tra due sfoglie. Cosa ci va dentro, quanto devono essere grandi, e in cosa differiscono da tortelli, tortellini e agnolotti.',
+        'I ravioli sono fagottini piatti di pasta ripiena sigillati tra due sfoglie. Cosa ci va dentro, quanto devono essere grandi e come cambiano in Toscana.',
       image: {
         src: img.shapeRavioli,
         alt: 'Ravioli appena fatti tagliati con la rotella su un tagliere infarinato',
@@ -935,7 +935,7 @@ const de: ShapesLocale = {
   hubSlug: 'pasta-formen',
   hubTitle: 'Pasta-Formen: Pici, Pappardelle, Tortelli & Ravioli',
   hubDescription:
-    'Die Formen frischer Pasta, die wir in Florenz von Hand rollen: was jede ist, wie sie geformt wird und für welche Soße sie gemacht wurde. Mit Vergleichstabelle und Maßen in Millimetern.',
+    'Die frischen Pastaformen, die wir in Florenz von Hand rollen: was jede ist, wie sie geformt wird und für welche Soße sie gemacht wurde. Mit Maßtabelle.',
   hubEyebrow: 'Die Formen-Bibliothek',
   hubHeading: 'Fünf Formen,',
   hubHeadingItal: 'fünf verschiedene Soßen.',
@@ -1002,7 +1002,7 @@ const de: ShapesLocale = {
       tagline: 'Sienas dicker handgerollter Strang: Mehl, Wasser, kein Ei.',
       title: 'Was sind Pici? Sienas handgerollte Pasta, erklärt',
       description:
-        'Pici sind eine dicke, von Hand gerollte toskanische Pasta aus Mehl und Wasser, ohne Ei. Ein Pasta-Koch aus Florenz über Herkunft, Rolltechnik und die vier Soßen, die dazugehören.',
+        'Pici sind eine dicke, von Hand gerollte toskanische Pasta aus Mehl und Wasser, ohne Ei. Herkunft, Rolltechnik und die vier Soßen, die dazugehören.',
       image: {
         src: img.shapePici,
         alt: 'Dicke handgerollte Pici-Stränge mit Mehl bestäubt auf einem Holzbrett',
@@ -1069,7 +1069,7 @@ const de: ShapesLocale = {
       tagline: 'Das breiteste Band, gebaut für Wildschwein und Hase.',
       title: 'Was sind Pappardelle? Breite, Herkunft und Soßen',
       description:
-        'Pappardelle sind breite Bandnudeln aus Eierteig, 20–30 mm breit, gemacht für schwere Wildsoßen wie Wildschwein und Hase. Ein Pasta-Koch aus Florenz über Schnitt, Teig und die klassischen Kombinationen.',
+        'Pappardelle sind breite Bandnudeln aus Eierteig, 20–30 mm breit, gemacht für schwere Wildsoßen wie Wildschwein und Hase. Schnitt, Teig, Kombinationen.',
       image: {
         src: img.shapePappardelle,
         alt: 'Breite Pappardelle aus frischem Eierteig auf einem bemehlten Holzbrett',
@@ -1136,7 +1136,7 @@ const de: ShapesLocale = {
       tagline: 'Das Alltagsband, 6–8 mm, der natürliche Partner des Ragù.',
       title: 'Was sind Tagliatelle? Breite, Schnitt und Soßen',
       description:
-        'Tagliatelle sind frische Bandnudeln aus Eierteig, 6–8 mm breit geschnitten, der natürliche Partner eines Fleischragù. Ein Pasta-Koch aus Florenz über den Schnitt und den Unterschied zu Fettuccine und Pappardelle.',
+        'Tagliatelle sind frische Bandnudeln aus Eierteig, 6–8 mm breit geschnitten, der Partner eines Fleischragù. Der Unterschied zu Fettuccine und Pappardelle.',
       image: {
         src: img.shapeTagliatelle,
         alt: 'Nester frischer Tagliatelle auf einem bemehlten Brett',
@@ -1203,7 +1203,7 @@ const de: ShapesLocale = {
       tagline: 'Das gefüllte Päckchen, in der Toskana meist mit Kartoffel.',
       title: 'Was sind Tortelli? Füllung, Form und Unterschiede',
       description:
-        'Tortelli sind gefüllte Päckchen aus frischer Pasta. In der Toskana ist die klassische Füllung Kartoffel, aus dem Mugello. Ein Pasta-Koch aus Florenz über Füllungen, das Falten und den Unterschied zu Ravioli und Tortellini.',
+        'Tortelli sind gefüllte Päckchen aus frischer Pasta; in der Toskana klassisch mit Kartoffel aus dem Mugello. Füllungen, Falten, Unterschied zu Ravioli.',
       image: {
         src: img.shapeTortelli,
         alt: 'Von Hand gefaltete gefüllte Tortelli auf einer bemehlten Fläche',
@@ -1270,7 +1270,7 @@ const de: ShapesLocale = {
       tagline: 'Das gefüllte Quadrat, das alle kennen, zwischen zwei Bahnen versiegelt.',
       title: 'Was sind Ravioli? Unterschied zu Tortelli & Tortellini',
       description:
-        'Ravioli sind flache gefüllte Pastapäckchen, zwischen zwei Teigbahnen versiegelt. Was hineinkommt, wie groß sie sein sollten und worin sie sich von Tortelli, Tortellini und Agnolotti unterscheiden.',
+        'Ravioli sind flache gefüllte Pastapäckchen zwischen zwei Teigbahnen. Was hineinkommt, wie groß sie sein sollten und wie sie sich von Tortelli abheben.',
       image: {
         src: img.shapeRavioli,
         alt: 'Frisch gemachte Ravioli, mit dem Rädchen geschnitten, auf einem bemehlten Brett',
@@ -1343,7 +1343,7 @@ const fr: ShapesLocale = {
   hubSlug: 'formes-de-pates',
   hubTitle: 'Formes de Pâtes : Tortelli, Ravioli, Pappardelle et Pici',
   hubDescription:
-    'La bibliothèque des formes vue par un chef : les cinq pâtes fraîches que nous enseignons à Florence. Ce qu\'est chacune, comment on la façonne à la main, et la sauce pour laquelle elle est née. Avec un tableau comparatif.',
+    'La bibliothèque d\'un chef : les cinq pâtes fraîches que nous enseignons à Florence. Ce qu\'est chacune, comment on la façonne, et la sauce qui va avec.',
   hubEyebrow: 'La bibliothèque des formes',
   hubHeading: 'Cinq formes,',
   hubHeadingItal: 'cinq sauces différentes.',
@@ -1410,7 +1410,7 @@ const fr: ShapesLocale = {
       tagline: 'Le gros brin roulé à la main de Sienne : farine, eau, sans œuf.',
       title: 'Qu\'est-ce que les Pici ? Pâte, Roulage et Sauces',
       description:
-        'Les pici sont une pâte toscane épaisse, roulée à la main, faite de farine et d\'eau, sans œuf. Un chef de Florence explique d\'où ils viennent, comment les rouler et les quatre sauces qui leur reviennent.',
+        'Les pici sont une pâte toscane épaisse, roulée à la main, de farine et d\'eau, sans œuf. D\'où ils viennent, comment les rouler, et leurs quatre sauces.',
       image: {
         src: img.shapePici,
         alt: 'Gros brins de pici roulés à la main et farinés sur une planche en bois',
@@ -1477,7 +1477,7 @@ const fr: ShapesLocale = {
       tagline: 'Le ruban le plus large, fait pour le sanglier et le lièvre.',
       title: 'Qu\'est-ce que les Pappardelle ? Largeur, Origine et Sauces',
       description:
-        'Les pappardelle sont de larges rubans de pâte à l\'œuf, de 2 à 3 cm, faits pour les sauces de gibier lourdes comme le sanglier et le lièvre. Un chef de Florence explique la coupe, la pâte et les accords classiques.',
+        'Les pappardelle sont de larges rubans de pâte à l\'œuf, de 2 à 3 cm, faits pour les sauces de gibier. La coupe, la pâte et les accords classiques.',
       image: {
         src: img.shapePappardelle,
         alt: 'Larges rubans de pappardelle de pâte fraîche à l\'œuf sur une planche farinée',
@@ -1544,7 +1544,7 @@ const fr: ShapesLocale = {
       tagline: 'Le ruban de tous les jours, 6 à 8 mm, partenaire naturel du ragù.',
       title: 'Qu\'est-ce que les Tagliatelle ? Largeur, Coupe et Sauces',
       description:
-        'Les tagliatelle sont des rubans de pâte fraîche à l\'œuf coupés de 6 à 8 mm, le partenaire naturel d\'un ragù de viande. Un chef de Florence explique la coupe, la différence avec les fettuccine et les pappardelle, et comment les servir.',
+        'Les tagliatelle sont des rubans de pâte à l\'œuf coupés de 6 à 8 mm, le partenaire naturel d\'un ragù de viande. La différence avec les fettuccine.',
       image: {
         src: img.shapeTagliatelle,
         alt: 'Nids de tagliatelle fraîches posés sur une planche farinée',
@@ -1611,7 +1611,7 @@ const fr: ShapesLocale = {
       tagline: 'Le paquet farci, en Toscane le plus souvent à la pomme de terre.',
       title: 'Tortelli : Différences avec les Ravioli et Tortellini',
       description:
-        'Les tortelli sont des paquets de pâte fraîche farcie. En Toscane la farce classique est la pomme de terre, du Mugello. Un chef de Florence explique les farces, le pliage, et pourquoi la sauce doit rester simple.',
+        'Les tortelli sont des paquets de pâte fraîche farcie ; en Toscane, la farce classique est la pomme de terre du Mugello. Les farces et le pliage.',
       image: {
         src: img.shapeTortelli,
         alt: 'Tortelli farcis pliés à la main disposés sur une surface farinée',
@@ -1678,7 +1678,7 @@ const fr: ShapesLocale = {
       tagline: 'Le carré farci que tout le monde connaît, scellé entre deux abaisses.',
       title: 'Ravioli : Farce, Forme et Différence avec les Tortelli',
       description:
-        'Les ravioli sont des paquets plats de pâte fraîche farcie scellés entre deux abaisses. Ce qu\'on met dedans, quelle taille ils doivent faire, et en quoi ils diffèrent des tortelli, tortellini et agnolotti.',
+        'Les ravioli sont des paquets plats de pâte farcie scellés entre deux abaisses. Ce qu\'on met dedans, leur taille, et ce qui les distingue des tortelli.',
       image: {
         src: img.shapeRavioli,
         alt: 'Ravioli fraîchement faits, coupés à la roulette sur une planche farinée',

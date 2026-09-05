@@ -1,6 +1,6 @@
 ---
 title: 'Tagliatelle vs pappardelle: how wide is each ribbon?'
-description: 'Tagliatelle is cut 6–8 mm wide, pappardelle 20–30 mm. Same egg dough, different knife, and a completely different job on the plate. A Florence pasta chef on the measurements and which sauce belongs on which.'
+description: 'Tagliatelle is cut 6–8 mm wide, pappardelle 20–30 mm. Same egg dough, different knife, and a completely different job on the plate.'
 pubDate: 2026-08-16
 author: 'Endri Cerhozi'
 image: '../../assets/images/shape-pappardelle.webp'

@@ -1,6 +1,6 @@
 ---
-title: 'Où suivre un cours de fabrication de pâtes à Florence ? Le guide 2026'
-description: 'Comparaison des meilleurs cours de fabrication de pâtes à Florence : Handmade Pasta Florence, Mama Florence et 360 Cooking Class Experience. Lequel vous convient le mieux ?'
+title: 'Où suivre un cours de pâtes à Florence ? Guide 2026'
+description: 'Comparaison des meilleurs cours de pâtes à Florence : Handmade Pasta Florence, Mama Florence et 360 Cooking Class. Lequel vous convient ?'
 pubDate: 2026-08-27
 author: 'Endri Cerhozi'
 image: '../../../assets/images/hands-on-pasta-cooking-class-florence-group.webp'

@@ -3,7 +3,7 @@ const fr = {
     homeTitle: 'Cours de Cuisine à Florence : Pâtes Fraîches, Deux Chefs',
     homeDescription: 'Cours de cuisine à Florence dans l\'Oltrarno, dès 95 €. Pâtes fraîches à la main avec deux chefs toscans. Visite du marché, privé et sans gluten.',
     blogTitle: 'Guides pâtes et gastronomie à Florence',
-    blogDescription: 'Guides sur les pâtes fraîches et comment bien manger à Florence, rédigés par deux chefs d\'agritourismes toscans: formes de pâtes, où manger, conseils sans gluten et le quartier de l\'Oltrarno.',
+    blogDescription: 'Guides sur les pâtes fraîches et bien manger à Florence, par deux chefs d’agritourismes toscans : formes de pâtes, où manger, l’Oltrarno.',
   },
 
   nav: {

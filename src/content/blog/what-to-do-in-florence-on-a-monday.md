@@ -1,6 +1,6 @@
 ---
 title: 'What to do in Florence on a Monday (the Uffizi is closed)'
-description: 'The Uffizi and the Accademia both close on Mondays. Here is what is actually open (the Duomo complex, Palazzo Vecchio, Santa Croce, the markets and the Oltrarno), plus how to plan the day around it.'
+description: 'The Uffizi and the Accademia close on Mondays. What is actually open: the Duomo complex, Palazzo Vecchio, Santa Croce, the markets and the Oltrarno.'
 pubDate: 2026-08-11
 author: 'Endri Cerhozi'
 image: '../../assets/images/aperitivo.webp'

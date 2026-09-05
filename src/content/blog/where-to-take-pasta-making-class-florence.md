@@ -1,5 +1,5 @@
 ---
-title: 'Where to take a pasta making class in Florence? The 2026 Guide'
+title: 'Where to take a pasta making class in Florence (2026)'
 description: 'Comparing the best pasta making classes in Florence: Handmade Pasta Florence, Mama Florence, and 360 Cooking Class Experience. Which one is right for you?'
 pubDate: 2026-08-27
 author: 'Endri Cerhozi'

@@ -1,6 +1,6 @@
 ---
-title: 'Choses à faire dans l’Oltrarno : un guide local de la rive gauche de Florence'
-description: 'Comment passer une journée dans l’Oltrarno: Santo Spirito, le Palais Pitti et Boboli, les ateliers d’artisans, la chapelle Brancacci, et où se passe vraiment la soirée.'
+title: 'Que faire dans l’Oltrarno, Florence : guide local'
+description: 'Une journée dans l’Oltrarno : Santo Spirito, le Palais Pitti et Boboli, les ateliers d’artisans, et où se passe vraiment la soirée.'
 pubDate: 2026-07-08
 author: 'Endri Cerhozi'
 image: '../../../assets/images/aperitivo.webp'

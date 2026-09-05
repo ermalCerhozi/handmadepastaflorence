@@ -8,7 +8,7 @@ const it: Dict = {
     homeTitle: `Corsi di Cucina a Firenze: Pasta Fresca con Due Chef`,
     homeDescription: `Corsi di cucina a Firenze in Oltrarno, da 95 €. Pasta fresca a mano con due chef toscani. Tour del mercato, corsi privati e senza glutine.`,
     blogTitle: `Guide alla Pasta & al Cibo di Firenze`,
-    blogDescription: `Guide alla pasta fresca e a mangiare bene a Firenze, scritte da due chef toscani: formati di pasta, dove mangiare, consigli senza glutine e il quartiere dell'Oltrarno.`,
+    blogDescription: `Guide alla pasta fresca e a mangiare bene a Firenze, di due chef toscani: formati di pasta, dove mangiare e il quartiere dell’Oltrarno.`,
   },
 
   nav: {

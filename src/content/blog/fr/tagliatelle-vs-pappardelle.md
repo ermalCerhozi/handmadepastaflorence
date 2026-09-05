@@ -1,6 +1,6 @@
 ---
 title: 'Tagliatelle ou pappardelle : quelle largeur pour chacune ?'
-description: 'Les tagliatelle se coupent à 6–8 mm, les pappardelle à 20–30 mm. Même pâte à l’œuf, autre couteau, et un travail complètement différent dans l’assiette. Un chef de Florence donne les mesures et dit quelle sauce va sur laquelle.'
+description: 'Les tagliatelle se coupent à 6–8 mm, les pappardelle à 20–30 mm. Même pâte à l’œuf, autre couteau, et un tout autre rôle dans l’assiette.'
 pubDate: 2026-08-16
 author: 'Endri Cerhozi'
 image: '../../../assets/images/shape-pappardelle.webp'

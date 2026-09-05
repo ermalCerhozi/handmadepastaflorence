@@ -1,6 +1,6 @@
 ---
-title: 'Comment choisir un cours de pâtes à Florence : 7 questions qui comptent vraiment'
-description: 'Florence compte des centaines de cours de pâtes et les annonces se ressemblent toutes. Les sept questions qui prédisent réellement si vous allez aimer: taille du groupe, ce qui est inclus, qui enseigne, et comment les allergies sont vraiment gérées.'
+title: 'Choisir un cours de pâtes à Florence : 7 questions'
+description: 'Florence compte des centaines de cours de pâtes aux annonces identiques. Sept questions qui prédisent si vous aimerez, à commencer par la taille du groupe.'
 pubDate: 2026-08-11
 author: 'Endri Cerhozi'
 image: '../../../assets/images/cooking-class.webp'

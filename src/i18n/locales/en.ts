@@ -14,7 +14,7 @@ const en = {
     homeTitle: 'Cooking Classes in Florence: Hands-On Pasta, Two Chefs',
     homeDescription: 'Small-group pasta classes in Florence\'s Oltrarno, from €95. Roll fresh pasta by hand with two Tuscan head chefs. Market-tour and private options.',
     blogTitle: 'Florence Pasta & Food Guides',
-    blogDescription: 'Guides to fresh pasta and eating well in Florence, written by two Tuscan agriturismo head chefs: pasta shapes, where to eat, gluten-free tips and the Oltrarno neighbourhood.',
+    blogDescription: 'Guides to fresh pasta and eating well in Florence, by two Tuscan agriturismo head chefs: pasta shapes, where to eat, and the Oltrarno.',
   },
 
   nav: {

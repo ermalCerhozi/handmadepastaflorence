@@ -1,6 +1,6 @@
 ---
-title: 'Que faire à Florence un lundi (quand les Offices sont fermés)'
-description: 'Les Offices et l’Accademia ferment le lundi. Voici ce qui est réellement ouvert (le complexe du Duomo, le Palazzo Vecchio, Santa Croce, les marchés et l’Oltrarno), et comment organiser la journée.'
+title: 'Que faire à Florence un lundi'
+description: 'Les Offices et l’Accademia ferment le lundi. Ce qui est réellement ouvert : le Duomo, le Palazzo Vecchio, Santa Croce, les marchés et l’Oltrarno.'
 pubDate: 2026-08-11
 author: 'Endri Cerhozi'
 image: '../../../assets/images/aperitivo.webp'

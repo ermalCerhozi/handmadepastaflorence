@@ -1,6 +1,6 @@
 ---
-title: 'Sans gluten à Florence : comment manger (et faire) des pâtes fraîches en toute sécurité'
-description: 'Pourquoi l’Italie est l’un des pays les plus faciles pour les voyageurs cœliaques, les phrases et les habitudes qui vous protègent à Florence, et la place des pâtes fraîches sans gluten.'
+title: 'Sans gluten à Florence : manger des pâtes fraîches'
+description: 'Pourquoi l’Italie est si simple pour les voyageurs cœliaques, les phrases qui vous protègent à Florence, et la place des pâtes fraîches.'
 pubDate: 2026-07-08
 author: 'Endri Cerhozi'
 image: '../../../assets/images/shape-tagliatelle.webp'

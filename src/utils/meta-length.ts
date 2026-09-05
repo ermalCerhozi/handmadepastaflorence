@@ -7,21 +7,32 @@
 // pages that is where the price sits, and 80 of 112 clicks in that window were
 // mobile, where the cut is harsher still.
 //
-// This warns rather than throws: failing the build on copy length would block
-// deploys for a cosmetic issue, and several offenders are pre-existing. Flip
-// STRICT to true once the backlog is clear to keep it that way.
+// STRICT since 2026-09-05: the backlog is clear (103 offending pages at
+// introduction, now 0), so this throws rather than warns. A build that fails
+// here is telling you a new title or description will be truncated by Google —
+// shorten it rather than turning this off.
 //
-// KNOWN LIMITATION: this counts characters, not rendered width, so it
-// under-reports Chinese. A CJK glyph renders roughly twice as wide as a Latin
-// one, meaning a 40-character zh title is already at the Latin 80 mark. The zh
-// locale currently reports zero offenders for that reason, not because it is
-// clean. Halve the limits before trusting a zh pass.
+// Length is measured as RENDERED WIDTH, not character count: a CJK glyph is
+// about twice as wide as a Latin one, so counting characters silently
+// under-reported every Chinese page (the zh homepage was 104 characters but
+// 208 columns, well past the cut, while reporting as fine).
 
-const STRICT = false;
+const STRICT = true;
 
-/** Google renders roughly this much before truncating with an ellipsis. */
+/** Google renders roughly this many columns before truncating with an ellipsis. */
 export const TITLE_MAX = 60;
 export const DESCRIPTION_MAX = 155;
+
+/**
+ * Approximate rendered width in Latin-character columns. CJK, Hiragana,
+ * Katakana and Hangul are full-width; everything the site uses otherwise is
+ * effectively half-width.
+ */
+function renderedWidth(text: string): number {
+  let n = 0;
+  for (const ch of text) n += ch.codePointAt(0)! > 0x2e80 ? 2 : 1;
+  return n;
+}
 
 const seen = new Set<string>();
 
@@ -32,11 +43,14 @@ const seen = new Set<string>();
 export function checkMetaLength(pathname: string, title: string, description: string): void {
   const problems: string[] = [];
 
-  if (title.length > TITLE_MAX) {
-    problems.push(`title ${title.length}/${TITLE_MAX} — ${JSON.stringify(title)}`);
+  const titleWidth = renderedWidth(title);
+  const descriptionWidth = renderedWidth(description);
+
+  if (titleWidth > TITLE_MAX) {
+    problems.push(`title ${titleWidth}/${TITLE_MAX} — ${JSON.stringify(title)}`);
   }
-  if (description.length > DESCRIPTION_MAX) {
-    problems.push(`description ${description.length}/${DESCRIPTION_MAX} — ${JSON.stringify(description.slice(0, 80) + '…')}`);
+  if (descriptionWidth > DESCRIPTION_MAX) {
+    problems.push(`description ${descriptionWidth}/${DESCRIPTION_MAX} — ${JSON.stringify(description.slice(0, 80) + '…')}`);
   }
   if (problems.length === 0) return;
 

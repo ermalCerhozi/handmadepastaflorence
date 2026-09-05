@@ -214,6 +214,8 @@ export const landings: Record<string, LandingPage> = {
             { title: `The Family Long-Table`, href: `/private-cooking-class-florence/`, desc: `The whole kitchen, privately yours. Birthdays, proposals, reunions, from €680.` },
             { title: `Live Online Class`, href: `/online-pasta-making-class/`, desc: `Cook with us from anywhere, live from this same kitchen, from €68.` },
             { title: `The four shapes, explained`, href: `/pasta-shapes/`, desc: `Pici, pappardelle, tagliatelle, tortelli: what each one is and the sauce it was built for.` },
+          
+            { title: `Gift a Cooking Class`, href: `/gift-a-cooking-class-florence/`, desc: `A voucher instead of another object. Any class, from €68, and they pick the date.` },
           ],
           ctaLabel: `Book this class`,
           prefill: 'florence',
@@ -329,6 +331,8 @@ export const landings: Record<string, LandingPage> = {
             { title: `Il Lungo Tavolo di Famiglia`, href: `/it/corso-cucina-privato-firenze/`, desc: `L'intera cucina, privata per voi. Compleanni, proposte, ritrovi, da €680.` },
             { title: `Corso in Diretta Online`, href: `/it/corso-pasta-online/`, desc: `Cucina con noi da ovunque, in diretta da questa stessa cucina, da €68.` },
             { title: `I quattro formati, spiegati`, href: `/it/formati-di-pasta-toscana/`, desc: `Pici, pappardelle, tagliatelle, tortelli: cosa sono e il sugo per cui sono nati.` },
+          
+            { title: `Regala un Corso di Cucina`, href: `/it/regala-corso-di-cucina-firenze/`, desc: `Un buono invece dell'ennesimo oggetto. Qualsiasi corso, da €68, con la data a scelta.` },
           ],
           ctaLabel: `Prenota questo corso`,
           prefill: 'florence',
@@ -443,6 +447,8 @@ export const landings: Record<string, LandingPage> = {
             { title: `Mercato & Mani`, href: `/fr/cours-cuisine-visite-marche-florence/`, desc: `Faites vos courses au marché de Sant'Ambrogio à l'aube, puis cuisinez votre panier. 5 heures, max 6 personnes, 145 €.` },
             { title: `La Longue Table Familiale`, href: `/fr/cours-cuisine-prive-florence/`, desc: `Toute la cuisine, pour vous en privé. Anniversaires, demandes en mariage, réunions, à partir de 680 €.` },
             { title: `Cours en Direct en Ligne`, href: `/fr/cours-pates-en-ligne/`, desc: `Cuisinez avec nous d'où vous voulez, en direct de cette même cuisine, à partir de 68 €.` },
+          
+            { title: `Offrir un Cours de Cuisine`, href: `/fr/offrir-cours-de-cuisine-florence/`, desc: `Un bon plutôt qu'un objet de plus. Tous les cours, dès 68 €, la date au choix.` },
           ],
           ctaLabel: `Réserver ce cours`,
           prefill: 'florence',
@@ -562,6 +568,8 @@ export const landings: Record<string, LandingPage> = {
             { title: `Die lange Familientafel`, href: `/de/privater-kochkurs-florenz/`, desc: `Die ganze Küche, ganz privat für Sie. Geburtstage, Heiratsanträge, Treffen, ab 680 €.` },
             { title: `Live-Online-Kurs`, href: `/de/online-pasta-kurs/`, desc: `Kochen Sie mit uns von überall aus, live aus derselben Küche, ab 68 €.` },
             { title: `Die vier Formen, erklärt`, href: `/de/pasta-formen/`, desc: `Pici, Pappardelle, Tagliatelle, Tortelli: was jede Form ist und die Sauce, für die sie gemacht wurde.` },
+          
+            { title: `Kochkurs verschenken`, href: `/de/kochkurs-verschenken-florenz/`, desc: `Ein Gutschein statt noch eines Gegenstands. Jeder Kurs, ab 68 €, Datum frei wählbar.` },
           ],
           ctaLabel: `Diesen Kurs buchen`,
           prefill: 'florence',
@@ -602,31 +610,31 @@ export const landings: Record<string, LandingPage> = {
           ],
           infoBanner: {
             menu: {
-              title: 'Cooking class menu',
+              title: '烹饪课菜单',
               items: [
-                '<strong>Fettuccine</strong> with the sauce of your choice (<strong>Tomato</strong> and <strong>Basil</strong>, <b>Cacio e Pepe </b>or <strong>Amatriciana</strong>)',
-                '<strong>Ravioli</strong> with <strong>Butter</strong> and <strong>Sage</strong>',
-                'Your own <strong>Tiramisù</strong>',
-                'Glass of <strong>Wine</strong> or non-alcoholic beverage',
-                'Glass of <strong>Limoncello</strong> or <strong>coffee</strong>',
-                'Water'
+                '<strong>宽面 Fettuccine</strong>，酱汁任选（<strong>番茄</strong>与<strong>罗勒</strong>、<b>Cacio e Pepe </b>或 <strong>Amatriciana</strong>）',
+                '<strong>意式饺子 Ravioli</strong>，配<strong>黄油</strong>与<strong>鼠尾草</strong>',
+                '你亲手做的<strong>提拉米苏</strong>',
+                '一杯<strong>葡萄酒</strong>或无酒精饮品',
+                '一杯<strong>柠檬酒</strong>或<strong>咖啡</strong>',
+                '水'
               ]
             },
             included: {
-              title: 'What’s included',
+              title: '包含内容',
               items: [
-                'Theoretical and hands-on cooking instructions',
-                '<strong>English speaking</strong> chef',
-                '<strong>Fresh ingredients</strong>',
-                '<strong>Equipment provided</strong> (workspace, apron, knife, and rolling pin).'
+                '理论讲解与动手烹饪指导',
+                '<strong>讲英语</strong>的主厨',
+                '<strong>新鲜食材</strong>',
+                '<strong>提供全部器具</strong>（工作台、围裙、刀具和擀面杖）。'
               ],
-              text: 'When the preparation is done, you sit down at the table. The restaurant\'s kitchen cooks everything you made. You eat your Fettuccine with the sauce you chose, your Ravioli with butter and sage, your own Tiramisù to finish, with a glass of wine, in the center of Florence, with the people who made it with you.'
+              text: '准备工作完成后，大家一起入座。餐厅的厨房会把你做的一切烹熟。你会吃到自己选酱汁的宽面、黄油鼠尾草意式饺子，最后是你亲手做的提拉米苏，配一杯葡萄酒——在佛罗伦萨市中心，和一起动手做这一切的人一起享用。'
             },
             notIncluded: {
-              title: 'What’s not included',
+              title: '不包含内容',
               items: [
-                'Making the sauce',
-                'Extra food and drinks'
+                '制作酱汁',
+                '额外的食物和饮品'
               ]
             }
           },
@@ -676,6 +684,8 @@ export const landings: Record<string, LandingPage> = {
             { title: `Mercato & Mani`, href: `/zh/shichang-daolan-pengren-kecheng-foluolunsa/`, desc: `清晨在圣安布罗焦市场购物，然后烹饪购买的食材。5小时，最多6位客人，145欧元。` },
             { title: `家庭长桌体验`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `为您私人包场的整个厨房。生日、求婚、聚会，680欧元起。` },
             { title: `在线直播课程`, href: `/zh/zaixian-yidali-mian-kecheng/`, desc: `无论在哪里，都可以与我们一起在同一个厨房进行在线烹饪，68欧元起。` },
+          
+            { title: `赠送烹饪课程`, href: `/zh/pengren-kecheng-liquan-foluolunsa/`, desc: `与其再送一件物品，不如送一张礼券。任意课程，68 欧元起，日期自选。` },
           ],
           ctaLabel: `预订此课程`,
           prefill: 'florence',
@@ -783,6 +793,8 @@ export const landings: Record<string, LandingPage> = {
             { title: `Live Online Class`, href: `/online-pasta-making-class/`, desc: `Cook with us from anywhere, live from this same kitchen, from €68.` },
             { title: `Where to eat handmade pasta in Florence`, href: `/blog/where-to-eat-handmade-pasta-in-florence/`, desc: `A pasta chef’s guide to ordering well in the city.` },
             { title: `Team Building Class`, href: `/team-building-cooking-class-florence/`, desc: `The private kitchen for companies: aprons on, laptops away.` },
+          
+            { title: `Agriturismo Cooking Class`, href: `/agriturismo-cooking-class-tuscany/`, desc: `Groups of 6–20 in a working farm kitchen in the hills outside Florence.` },
           ],
           ctaLabel: `Book this class`,
           prefill: 'florence',
@@ -880,6 +892,8 @@ export const landings: Record<string, LandingPage> = {
             { title: `Il Lungo Tavolo di Famiglia`, href: `/it/corso-cucina-privato-firenze/`, desc: `L'intera cucina, privata per voi. Compleanni, proposte, ritrovi, da €680.` },
             { title: `Corso in Diretta Online`, href: `/it/corso-pasta-online/`, desc: `Cucina con noi da ovunque, in diretta da questa stessa cucina, da €68.` },
             { title: `Corso per Team Building`, href: `/it/corso-cucina-team-building-firenze/`, desc: `La cucina privata per le aziende: grembiuli indossati, laptop via.` },
+          
+            { title: `Corso di Cucina in Agriturismo`, href: `/it/corso-cucina-agriturismo-toscana/`, desc: `Gruppi da 6 a 20 nella cucina di un agriturismo in attività, sulle colline fuori Firenze.` },
           ],
           ctaLabel: `Prenota questo corso`,
           prefill: 'florence',
@@ -977,6 +991,8 @@ export const landings: Record<string, LandingPage> = {
             { title: `La Longue Table Familiale`, href: `/fr/cours-cuisine-prive-florence/`, desc: `Toute la cuisine, pour vous en privé. Anniversaires, demandes en mariage, réunions, à partir de 680 €.` },
             { title: `Cours en Direct en Ligne`, href: `/fr/cours-pates-en-ligne/`, desc: `Cuisinez avec nous d'où vous voulez, en direct de cette même cuisine, à partir de 68 €.` },
             { title: `Cours Team Building`, href: `/fr/cours-cuisine-team-building-florence/`, desc: `La cuisine privée pour les entreprises: on met les tabliers, on range les ordinateurs.` },
+          
+            { title: `Cours de Cuisine en Agritourisme`, href: `/fr/cours-cuisine-agritourisme-toscane/`, desc: `Groupes de 6 à 20 dans la cuisine d'une ferme en activité, dans les collines autour de Florence.` },
           ],
           ctaLabel: `Réserver ce cours`,
           prefill: 'florence',
@@ -1074,6 +1090,8 @@ export const landings: Record<string, LandingPage> = {
             { title: `Die lange Familientafel`, href: `/de/privater-kochkurs-florenz/`, desc: `Die ganze Küche, ganz privat für Sie. Geburtstage, Heiratsanträge, Treffen, ab 680 €.` },
             { title: `Live-Online-Kurs`, href: `/de/online-pasta-kurs/`, desc: `Kochen Sie mit uns von überall aus, live aus derselben Küche, ab 68 €.` },
             { title: `Teambuilding-Kurs`, href: `/de/teambuilding-kochkurs-florenz/`, desc: `Die private Küche für Unternehmen: Schürzen an, Laptops weg.` },
+          
+            { title: `Agriturismo-Kochkurs`, href: `/de/agriturismo-kochkurs-toskana/`, desc: `Gruppen von 6 bis 20 in der Küche eines aktiven Agriturismo in den Hügeln vor Florenz.` },
           ],
           ctaLabel: `Diesen Kurs buchen`,
           prefill: 'florence',
@@ -1107,31 +1125,31 @@ export const landings: Record<string, LandingPage> = {
           ],
           infoBanner: {
             menu: {
-              title: 'Cooking class menu',
+              title: '烹饪课菜单',
               items: [
-                '<strong>Fettuccine</strong> with the sauce of your choice (<strong>Tomato</strong> and <strong>Basil</strong>, <b>Cacio e Pepe </b>or <strong>Amatriciana</strong>)',
-                '<strong>Ravioli</strong> with <strong>Butter</strong> and <strong>Sage</strong>',
-                'Your own <strong>Tiramisù</strong>',
-                'Glass of <strong>Wine</strong> or non-alcoholic beverage',
-                'Glass of <strong>Limoncello</strong> or <strong>coffee</strong>',
-                'Water'
+                '<strong>宽面 Fettuccine</strong>，酱汁任选（<strong>番茄</strong>与<strong>罗勒</strong>、<b>Cacio e Pepe </b>或 <strong>Amatriciana</strong>）',
+                '<strong>意式饺子 Ravioli</strong>，配<strong>黄油</strong>与<strong>鼠尾草</strong>',
+                '你亲手做的<strong>提拉米苏</strong>',
+                '一杯<strong>葡萄酒</strong>或无酒精饮品',
+                '一杯<strong>柠檬酒</strong>或<strong>咖啡</strong>',
+                '水'
               ]
             },
             included: {
-              title: 'What’s included',
+              title: '包含内容',
               items: [
-                'Theoretical and hands-on cooking instructions',
-                '<strong>English speaking</strong> chef',
-                '<strong>Fresh ingredients</strong>',
-                '<strong>Equipment provided</strong> (workspace, apron, knife, and rolling pin).'
+                '理论讲解与动手烹饪指导',
+                '<strong>讲英语</strong>的主厨',
+                '<strong>新鲜食材</strong>',
+                '<strong>提供全部器具</strong>（工作台、围裙、刀具和擀面杖）。'
               ],
-              text: 'When the preparation is done, you sit down at the table. The restaurant\'s kitchen cooks everything you made. You eat your Fettuccine with the sauce you chose, your Ravioli with butter and sage, your own Tiramisù to finish, with a glass of wine, in the center of Florence, with the people who made it with you.'
+              text: '准备工作完成后，大家一起入座。餐厅的厨房会把你做的一切烹熟。你会吃到自己选酱汁的宽面、黄油鼠尾草意式饺子，最后是你亲手做的提拉米苏，配一杯葡萄酒——在佛罗伦萨市中心，和一起动手做这一切的人一起享用。'
             },
             notIncluded: {
-              title: 'What’s not included',
+              title: '不包含内容',
               items: [
-                'Making the sauce',
-                'Extra food and drinks'
+                '制作酱汁',
+                '额外的食物和饮品'
               ]
             }
           },
@@ -1171,6 +1189,8 @@ export const landings: Record<string, LandingPage> = {
             { title: `家庭长桌体验`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `为您私人包场的整个厨房。生日、求婚、聚会，680欧元起。` },
             { title: `在线直播课程`, href: `/zh/zaixian-yidali-mian-kecheng/`, desc: `无论在哪里，都可以与我们一起在同一个厨房进行在线烹饪，68欧元起。` },
             { title: `团队建设课程`, href: `/zh/tuandui-jianshe-pengren-kecheng-foluolunsa/`, desc: `为企业提供的私人厨房，穿上围裙，收起电脑。` },
+          
+            { title: `农庄烹饪课程`, href: `/zh/tuosikana-nongzhuang-pengren-kecheng/`, desc: `6 至 20 人，在佛罗伦萨郊外山间一座仍在运作的托斯卡纳农庄厨房里。` },
           ],
           ctaLabel: `预订此课程`,
           prefill: 'florence',
@@ -1279,6 +1299,8 @@ export const landings: Record<string, LandingPage> = {
             { title: `Mercato & Mani`, href: `/market-tour-cooking-class-florence/`, desc: `Dawn market walk + cooking class. 5 hours, max 6 guests, €145.` },
             { title: `Things to do in the Oltrarno`, href: `/blog/things-to-do-in-oltrarno-florence/`, desc: `Make an evening of it: our neighbourhood, hour by hour.` },
             { title: `Pasta Class for Two`, href: `/pasta-class-for-two-florence/`, desc: `The anniversary and wedding present, €95 each.` },
+          
+            { title: `Agriturismo Cooking Class`, href: `/agriturismo-cooking-class-tuscany/`, desc: `Groups of 6–20 in a working farm kitchen in the hills outside Florence.` },
           ],
           ctaLabel: `Plan your evening`,
           prefill: 'florence',
@@ -1378,6 +1400,8 @@ export const landings: Record<string, LandingPage> = {
             { title: `Corso per Team Building`, href: `/it/corso-cucina-team-building-firenze/`, desc: `La cucina privata per le aziende: grembiuli indossati, laptop via.` },
             { title: `Mercato & Mani`, href: `/it/corso-cucina-tour-mercato-firenze/`, desc: `Passeggiata al mercato all'alba + corso di cucina. 5 ore, max 6 ospiti, €145.` },
             { title: `Corso di Pasta per Due`, href: `/it/corso-pasta-per-due-firenze/`, desc: `Il regalo da anniversario e da matrimonio, €95 a testa.` },
+          
+            { title: `Corso di Cucina in Agriturismo`, href: `/it/corso-cucina-agriturismo-toscana/`, desc: `Gruppi da 6 a 20 nella cucina di un agriturismo in attività, sulle colline fuori Firenze.` },
           ],
           ctaLabel: `Pianifica la tua serata`,
           prefill: 'florence',
@@ -1477,6 +1501,8 @@ export const landings: Record<string, LandingPage> = {
             { title: `Cours Team Building`, href: `/fr/cours-cuisine-team-building-florence/`, desc: `La cuisine privée pour les entreprises: on met les tabliers, on range les ordinateurs.` },
             { title: `Mercato & Mani`, href: `/fr/cours-cuisine-visite-marche-florence/`, desc: `Promenade au marché à l'aube + cours de cuisine. 5 heures, max 6 personnes, 145 €.` },
             { title: `Cours de Pâtes pour Deux`, href: `/fr/cours-de-pates-pour-deux-florence/`, desc: `Le cadeau d'anniversaire de mariage, 95 € par personne.` },
+          
+            { title: `Cours de Cuisine en Agritourisme`, href: `/fr/cours-cuisine-agritourisme-toscane/`, desc: `Groupes de 6 à 20 dans la cuisine d'une ferme en activité, dans les collines autour de Florence.` },
           ],
           ctaLabel: `Planifier votre soirée`,
           prefill: 'florence',
@@ -1576,6 +1602,8 @@ export const landings: Record<string, LandingPage> = {
             { title: `Teambuilding-Kurs`, href: `/de/teambuilding-kochkurs-florenz/`, desc: `Die private Küche für Unternehmen: Schürzen an, Laptops weg.` },
             { title: `Mercato & Mani`, href: `/de/markt-tour-kochkurs-florenz/`, desc: `Morgendlicher Marktspaziergang + Kochkurs. 5 Stunden, max. 6 Gäste, 145 €.` },
             { title: `Pasta-Kurs für Zwei`, href: `/de/pasta-kurs-fuer-zwei-florenz/`, desc: `Das Geschenk zum Jahrestag und zur Hochzeit, 95 € pro Person.` },
+          
+            { title: `Agriturismo-Kochkurs`, href: `/de/agriturismo-kochkurs-toskana/`, desc: `Gruppen von 6 bis 20 in der Küche eines aktiven Agriturismo in den Hügeln vor Florenz.` },
           ],
           ctaLabel: `Planen Sie Ihren Abend`,
           prefill: 'florence',
@@ -1609,31 +1637,31 @@ export const landings: Record<string, LandingPage> = {
           ],
           infoBanner: {
             menu: {
-              title: 'Cooking class menu',
+              title: '烹饪课菜单',
               items: [
-                '<strong>Fettuccine</strong> with the sauce of your choice (<strong>Tomato</strong> and <strong>Basil</strong>, <b>Cacio e Pepe </b>or <strong>Amatriciana</strong>)',
-                '<strong>Ravioli</strong> with <strong>Butter</strong> and <strong>Sage</strong>',
-                'Your own <strong>Tiramisù</strong>',
-                'Glass of <strong>Wine</strong> or non-alcoholic beverage',
-                'Glass of <strong>Limoncello</strong> or <strong>coffee</strong>',
-                'Water'
+                '<strong>宽面 Fettuccine</strong>，酱汁任选（<strong>番茄</strong>与<strong>罗勒</strong>、<b>Cacio e Pepe </b>或 <strong>Amatriciana</strong>）',
+                '<strong>意式饺子 Ravioli</strong>，配<strong>黄油</strong>与<strong>鼠尾草</strong>',
+                '你亲手做的<strong>提拉米苏</strong>',
+                '一杯<strong>葡萄酒</strong>或无酒精饮品',
+                '一杯<strong>柠檬酒</strong>或<strong>咖啡</strong>',
+                '水'
               ]
             },
             included: {
-              title: 'What’s included',
+              title: '包含内容',
               items: [
-                'Theoretical and hands-on cooking instructions',
-                '<strong>English speaking</strong> chef',
-                '<strong>Fresh ingredients</strong>',
-                '<strong>Equipment provided</strong> (workspace, apron, knife, and rolling pin).'
+                '理论讲解与动手烹饪指导',
+                '<strong>讲英语</strong>的主厨',
+                '<strong>新鲜食材</strong>',
+                '<strong>提供全部器具</strong>（工作台、围裙、刀具和擀面杖）。'
               ],
-              text: 'When the preparation is done, you sit down at the table. The restaurant\'s kitchen cooks everything you made. You eat your Fettuccine with the sauce you chose, your Ravioli with butter and sage, your own Tiramisù to finish, with a glass of wine, in the center of Florence, with the people who made it with you.'
+              text: '准备工作完成后，大家一起入座。餐厅的厨房会把你做的一切烹熟。你会吃到自己选酱汁的宽面、黄油鼠尾草意式饺子，最后是你亲手做的提拉米苏，配一杯葡萄酒——在佛罗伦萨市中心，和一起动手做这一切的人一起享用。'
             },
             notIncluded: {
-              title: 'What’s not included',
+              title: '不包含内容',
               items: [
-                'Making the sauce',
-                'Extra food and drinks'
+                '制作酱汁',
+                '额外的食物和饮品'
               ]
             }
           },
@@ -1675,6 +1703,8 @@ export const landings: Record<string, LandingPage> = {
             { title: `团队建设课程`, href: `/zh/tuandui-jianshe-pengren-kecheng-foluolunsa/`, desc: `为企业提供的私人厨房，穿上围裙，收起电脑。` },
             { title: `Mercato & Mani`, href: `/zh/shichang-daolan-pengren-kecheng-foluolunsa/`, desc: `清晨市场漫步 + 烹饪课程。5小时，最多6位客人，145欧元。` },
             { title: `双人意面课程`, href: `/zh/shuangren-yidali-mian-kecheng-foluolunsa/`, desc: `纪念日与婚礼礼物，每人€95。` },
+          
+            { title: `农庄烹饪课程`, href: `/zh/tuosikana-nongzhuang-pengren-kecheng/`, desc: `6 至 20 人，在佛罗伦萨郊外山间一座仍在运作的托斯卡纳农庄厨房里。` },
           ],
           ctaLabel: `规划您的夜晚`,
           prefill: 'florence',
@@ -2097,31 +2127,31 @@ export const landings: Record<string, LandingPage> = {
           ],
           infoBanner: {
             menu: {
-              title: 'Cooking class menu',
+              title: '烹饪课菜单',
               items: [
-                '<strong>Fettuccine</strong> with the sauce of your choice (<strong>Tomato</strong> and <strong>Basil</strong>, <b>Cacio e Pepe </b>or <strong>Amatriciana</strong>)',
-                '<strong>Ravioli</strong> with <strong>Butter</strong> and <strong>Sage</strong>',
-                'Your own <strong>Tiramisù</strong>',
-                'Glass of <strong>Wine</strong> or non-alcoholic beverage',
-                'Glass of <strong>Limoncello</strong> or <strong>coffee</strong>',
-                'Water'
+                '<strong>宽面 Fettuccine</strong>，酱汁任选（<strong>番茄</strong>与<strong>罗勒</strong>、<b>Cacio e Pepe </b>或 <strong>Amatriciana</strong>）',
+                '<strong>意式饺子 Ravioli</strong>，配<strong>黄油</strong>与<strong>鼠尾草</strong>',
+                '你亲手做的<strong>提拉米苏</strong>',
+                '一杯<strong>葡萄酒</strong>或无酒精饮品',
+                '一杯<strong>柠檬酒</strong>或<strong>咖啡</strong>',
+                '水'
               ]
             },
             included: {
-              title: 'What’s included',
+              title: '包含内容',
               items: [
-                'Theoretical and hands-on cooking instructions',
-                '<strong>English speaking</strong> chef',
-                '<strong>Fresh ingredients</strong>',
-                '<strong>Equipment provided</strong> (workspace, apron, knife, and rolling pin).'
+                '理论讲解与动手烹饪指导',
+                '<strong>讲英语</strong>的主厨',
+                '<strong>新鲜食材</strong>',
+                '<strong>提供全部器具</strong>（工作台、围裙、刀具和擀面杖）。'
               ],
-              text: 'When the preparation is done, you sit down at the table. The restaurant\'s kitchen cooks everything you made. You eat your Fettuccine with the sauce you chose, your Ravioli with butter and sage, your own Tiramisù to finish, with a glass of wine, in the center of Florence, with the people who made it with you.'
+              text: '准备工作完成后，大家一起入座。餐厅的厨房会把你做的一切烹熟。你会吃到自己选酱汁的宽面、黄油鼠尾草意式饺子，最后是你亲手做的提拉米苏，配一杯葡萄酒——在佛罗伦萨市中心，和一起动手做这一切的人一起享用。'
             },
             notIncluded: {
-              title: 'What’s not included',
+              title: '不包含内容',
               items: [
-                'Making the sauce',
-                'Extra food and drinks'
+                '制作酱汁',
+                '额外的食物和饮品'
               ]
             }
           },
@@ -2284,6 +2314,8 @@ export const landings: Record<string, LandingPage> = {
             { title: `The Chef’s Table`, href: `/pasta-making-class-florence/`, desc: `Our signature small-group class, if your team is 8 or fewer, €95 each.` },
             { title: `Live Online Class`, href: `/online-pasta-making-class/`, desc: `Remote team? Cook together from anywhere, live, from €68.` },
             { title: `Things to do in the Oltrarno`, href: `/blog/things-to-do-in-oltrarno-florence/`, desc: `Build the rest of the offsite around the neighbourhood.` },
+          
+            { title: `Agriturismo Cooking Class`, href: `/agriturismo-cooking-class-tuscany/`, desc: `Groups of 6–20 in a working farm kitchen in the hills outside Florence.` },
           ],
           ctaLabel: `Get a quote by email`,
           emailSubject: `Team building enquiry`,
@@ -2396,6 +2428,8 @@ export const landings: Record<string, LandingPage> = {
             { title: `Il Lungo Tavolo di Famiglia`, href: `/it/corso-cucina-privato-firenze/`, desc: `La stessa cucina privata per celebrazioni personali, da €680.` },
             { title: `Il Tavolo dello Chef`, href: `/it/corso-pasta-fresca-firenze/`, desc: `Il nostro classico corso per piccoli gruppi, se il team è di 8 o meno, €95 ciascuno.` },
             { title: `Corso in Diretta Online`, href: `/it/corso-pasta-online/`, desc: `Team da remoto? Cucinate insieme da ovunque, in diretta, da €68.` },
+          
+            { title: `Corso di Cucina in Agriturismo`, href: `/it/corso-cucina-agriturismo-toscana/`, desc: `Gruppi da 6 a 20 nella cucina di un agriturismo in attività, sulle colline fuori Firenze.` },
           ],
           ctaLabel: `Richiedi un preventivo`,
           emailSubject: `Richiesta team building`,
@@ -2505,6 +2539,8 @@ export const landings: Record<string, LandingPage> = {
             { title: `La Longue Table Familiale`, href: `/fr/cours-cuisine-prive-florence/`, desc: `La même cuisine privée pour des célébrations personnelles, à partir de 680 €.` },
             { title: `La Table du Chef`, href: `/fr/cours-de-pates-fraiches-florence/`, desc: `Notre cours signature en petit groupe, si votre équipe compte 8 personnes ou moins, 95 € chacun.` },
             { title: `Cours en Direct en Ligne`, href: `/fr/cours-pates-en-ligne/`, desc: `Équipe à distance ? Cuisinez ensemble d'où vous voulez, en direct, à partir de 68 €.` },
+          
+            { title: `Cours de Cuisine en Agritourisme`, href: `/fr/cours-cuisine-agritourisme-toscane/`, desc: `Groupes de 6 à 20 dans la cuisine d'une ferme en activité, dans les collines autour de Florence.` },
           ],
           ctaLabel: `Obtenir un devis`,
           emailSubject: `Demande de team building`,
@@ -2614,6 +2650,8 @@ export const landings: Record<string, LandingPage> = {
             { title: `Die lange Familientafel`, href: `/de/privater-kochkurs-florenz/`, desc: `Die gleiche private Küche für persönliche Feiern, ab 680 €.` },
             { title: `Der Tisch des Küchenchefs`, href: `/de/pasta-kurs-florenz/`, desc: `Unser Signature-Kurs für kleine Gruppen, wenn Ihr Team aus 8 oder weniger besteht, 95 € pro Person.` },
             { title: `Live-Online-Kurs`, href: `/de/online-pasta-kurs/`, desc: `Remote-Team? Kochen Sie gemeinsam von überall aus, live, ab 68 €.` },
+          
+            { title: `Agriturismo-Kochkurs`, href: `/de/agriturismo-kochkurs-toskana/`, desc: `Gruppen von 6 bis 20 in der Küche eines aktiven Agriturismo in den Hügeln vor Florenz.` },
           ],
           ctaLabel: `Angebot anfordern`,
           emailSubject: `Teambuilding-Anfrage`,
@@ -2647,31 +2685,31 @@ export const landings: Record<string, LandingPage> = {
           ],
           infoBanner: {
             menu: {
-              title: 'Cooking class menu',
+              title: '烹饪课菜单',
               items: [
-                '<strong>Fettuccine</strong> with the sauce of your choice (<strong>Tomato</strong> and <strong>Basil</strong>, <b>Cacio e Pepe </b>or <strong>Amatriciana</strong>)',
-                '<strong>Ravioli</strong> with <strong>Butter</strong> and <strong>Sage</strong>',
-                'Your own <strong>Tiramisù</strong>',
-                'Glass of <strong>Wine</strong> or non-alcoholic beverage',
-                'Glass of <strong>Limoncello</strong> or <strong>coffee</strong>',
-                'Water'
+                '<strong>宽面 Fettuccine</strong>，酱汁任选（<strong>番茄</strong>与<strong>罗勒</strong>、<b>Cacio e Pepe </b>或 <strong>Amatriciana</strong>）',
+                '<strong>意式饺子 Ravioli</strong>，配<strong>黄油</strong>与<strong>鼠尾草</strong>',
+                '你亲手做的<strong>提拉米苏</strong>',
+                '一杯<strong>葡萄酒</strong>或无酒精饮品',
+                '一杯<strong>柠檬酒</strong>或<strong>咖啡</strong>',
+                '水'
               ]
             },
             included: {
-              title: 'What’s included',
+              title: '包含内容',
               items: [
-                'Theoretical and hands-on cooking instructions',
-                '<strong>English speaking</strong> chef',
-                '<strong>Fresh ingredients</strong>',
-                '<strong>Equipment provided</strong> (workspace, apron, knife, and rolling pin).'
+                '理论讲解与动手烹饪指导',
+                '<strong>讲英语</strong>的主厨',
+                '<strong>新鲜食材</strong>',
+                '<strong>提供全部器具</strong>（工作台、围裙、刀具和擀面杖）。'
               ],
-              text: 'When the preparation is done, you sit down at the table. The restaurant\'s kitchen cooks everything you made. You eat your Fettuccine with the sauce you chose, your Ravioli with butter and sage, your own Tiramisù to finish, with a glass of wine, in the center of Florence, with the people who made it with you.'
+              text: '准备工作完成后，大家一起入座。餐厅的厨房会把你做的一切烹熟。你会吃到自己选酱汁的宽面、黄油鼠尾草意式饺子，最后是你亲手做的提拉米苏，配一杯葡萄酒——在佛罗伦萨市中心，和一起动手做这一切的人一起享用。'
             },
             notIncluded: {
-              title: 'What’s not included',
+              title: '不包含内容',
               items: [
-                'Making the sauce',
-                'Extra food and drinks'
+                '制作酱汁',
+                '额外的食物和饮品'
               ]
             }
           },
@@ -2723,6 +2761,8 @@ export const landings: Record<string, LandingPage> = {
             { title: `家庭长桌体验`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `同一个私人厨房，适合个人庆祝活动，680欧元起。` },
             { title: `主厨餐桌`, href: `/zh/foluolunsa-yidali-mian-kecheng/`, desc: `我们的招牌小团课程，如果您的团队人数在8人或以下，每人95欧元。` },
             { title: `在线直播课程`, href: `/zh/zaixian-yidali-mian-kecheng/`, desc: `远程团队？无论在哪里，都可以一起进行在线直播烹饪，68欧元起。` },
+          
+            { title: `农庄烹饪课程`, href: `/zh/tuosikana-nongzhuang-pengren-kecheng/`, desc: `6 至 20 人，在佛罗伦萨郊外山间一座仍在运作的托斯卡纳农庄厨房里。` },
           ],
           ctaLabel: `获取报价`,
           emailSubject: `团建活动咨询`,
@@ -3160,31 +3200,31 @@ export const landings: Record<string, LandingPage> = {
           ],
           infoBanner: {
             menu: {
-              title: 'Cooking class menu',
+              title: '烹饪课菜单',
               items: [
-                '<strong>Fettuccine</strong> with the sauce of your choice (<strong>Tomato</strong> and <strong>Basil</strong>, <b>Cacio e Pepe </b>or <strong>Amatriciana</strong>)',
-                '<strong>Ravioli</strong> with <strong>Butter</strong> and <strong>Sage</strong>',
-                'Your own <strong>Tiramisù</strong>',
-                'Glass of <strong>Wine</strong> or non-alcoholic beverage',
-                'Glass of <strong>Limoncello</strong> or <strong>coffee</strong>',
-                'Water'
+                '<strong>宽面 Fettuccine</strong>，酱汁任选（<strong>番茄</strong>与<strong>罗勒</strong>、<b>Cacio e Pepe </b>或 <strong>Amatriciana</strong>）',
+                '<strong>意式饺子 Ravioli</strong>，配<strong>黄油</strong>与<strong>鼠尾草</strong>',
+                '你亲手做的<strong>提拉米苏</strong>',
+                '一杯<strong>葡萄酒</strong>或无酒精饮品',
+                '一杯<strong>柠檬酒</strong>或<strong>咖啡</strong>',
+                '水'
               ]
             },
             included: {
-              title: 'What’s included',
+              title: '包含内容',
               items: [
-                'Theoretical and hands-on cooking instructions',
-                '<strong>English speaking</strong> chef',
-                '<strong>Fresh ingredients</strong>',
-                '<strong>Equipment provided</strong> (workspace, apron, knife, and rolling pin).'
+                '理论讲解与动手烹饪指导',
+                '<strong>讲英语</strong>的主厨',
+                '<strong>新鲜食材</strong>',
+                '<strong>提供全部器具</strong>（工作台、围裙、刀具和擀面杖）。'
               ],
-              text: 'When the preparation is done, you sit down at the table. The restaurant\'s kitchen cooks everything you made. You eat your Fettuccine with the sauce you chose, your Ravioli with butter and sage, your own Tiramisù to finish, with a glass of wine, in the center of Florence, with the people who made it with you.'
+              text: '准备工作完成后，大家一起入座。餐厅的厨房会把你做的一切烹熟。你会吃到自己选酱汁的宽面、黄油鼠尾草意式饺子，最后是你亲手做的提拉米苏，配一杯葡萄酒——在佛罗伦萨市中心，和一起动手做这一切的人一起享用。'
             },
             notIncluded: {
-              title: 'What’s not included',
+              title: '不包含内容',
               items: [
-                'Making the sauce',
-                'Extra food and drinks'
+                '制作酱汁',
+                '额外的食物和饮品'
               ]
             }
           },
@@ -3333,6 +3373,8 @@ export const landings: Record<string, LandingPage> = {
             { title: `The Family Long-Table`, href: `/private-cooking-class-florence/`, desc: `The whole kitchen to yourselves, for proposals and anniversaries, from €680.` },
             { title: `Mercato & Mani`, href: `/market-tour-cooking-class-florence/`, desc: `Make a morning of it: the market at dawn, then cook the basket, €145.` },
             { title: `Things to do in the Oltrarno`, href: `/blog/things-to-do-in-oltrarno-florence/`, desc: `Build the rest of the evening around the neighbourhood.` },
+          
+            { title: `Gift a Cooking Class`, href: `/gift-a-cooking-class-florence/`, desc: `A voucher instead of another object. Any class, from €68, and they pick the date.` },
           ],
           ctaLabel: `Book for two`,
           prefill: 'florence',
@@ -3431,6 +3473,8 @@ export const landings: Record<string, LandingPage> = {
             { title: `Il Lungo Tavolo di Famiglia`, href: `/it/corso-cucina-privato-firenze/`, desc: `L'intera cucina per voi, per proposte e anniversari, da €680.` },
             { title: `Mercato & Mani`, href: `/it/corso-cucina-tour-mercato-firenze/`, desc: `Fatene una mattinata: il mercato all'alba, poi si cucina il cesto, €145.` },
             { title: `Cosa fare in Oltrarno`, href: `/it/blog/things-to-do-in-oltrarno-florence/`, desc: `Costruite il resto della serata attorno al quartiere.` },
+          
+            { title: `Regala un Corso di Cucina`, href: `/it/regala-corso-di-cucina-firenze/`, desc: `Un buono invece dell'ennesimo oggetto. Qualsiasi corso, da €68, con la data a scelta.` },
           ],
           ctaLabel: `Prenota per due`,
           prefill: 'florence',
@@ -3529,6 +3573,8 @@ export const landings: Record<string, LandingPage> = {
             { title: `La Longue Table Familiale`, href: `/fr/cours-cuisine-prive-florence/`, desc: `Toute la cuisine pour vous, pour les demandes et anniversaires, dès 680 €.` },
             { title: `Mercato & Mani`, href: `/fr/cours-cuisine-visite-marche-florence/`, desc: `Faites-en une matinée : le marché à l'aube, puis on cuisine le panier, 145 €.` },
             { title: `Que faire dans l'Oltrarno`, href: `/fr/blog/things-to-do-in-oltrarno-florence/`, desc: `Construisez le reste de la soirée autour du quartier.` },
+          
+            { title: `Offrir un Cours de Cuisine`, href: `/fr/offrir-cours-de-cuisine-florence/`, desc: `Un bon plutôt qu'un objet de plus. Tous les cours, dès 68 €, la date au choix.` },
           ],
           ctaLabel: `Réserver pour deux`,
           prefill: 'florence',
@@ -3627,6 +3673,8 @@ export const landings: Record<string, LandingPage> = {
             { title: `Die lange Familientafel`, href: `/de/privater-kochkurs-florenz/`, desc: `Die ganze Küche für Sie, für Anträge und Jahrestage, ab 680 €.` },
             { title: `Mercato & Mani`, href: `/de/markt-tour-kochkurs-florenz/`, desc: `Machen Sie einen Vormittag daraus: erst der Markt, dann der Korb, 145 €.` },
             { title: `Was man im Oltrarno tun kann`, href: `/de/blog/things-to-do-in-oltrarno-florence/`, desc: `Bauen Sie den Rest des Abends um das Viertel herum.` },
+          
+            { title: `Kochkurs verschenken`, href: `/de/kochkurs-verschenken-florenz/`, desc: `Ein Gutschein statt noch eines Gegenstands. Jeder Kurs, ab 68 €, Datum frei wählbar.` },
           ],
           ctaLabel: `Für zwei buchen`,
           prefill: 'florence',
@@ -3659,31 +3707,31 @@ export const landings: Record<string, LandingPage> = {
           ],
           infoBanner: {
             menu: {
-              title: 'Cooking class menu',
+              title: '烹饪课菜单',
               items: [
-                '<strong>Fettuccine</strong> with the sauce of your choice (<strong>Tomato</strong> and <strong>Basil</strong>, <b>Cacio e Pepe </b>or <strong>Amatriciana</strong>)',
-                '<strong>Ravioli</strong> with <strong>Butter</strong> and <strong>Sage</strong>',
-                'Your own <strong>Tiramisù</strong>',
-                'Glass of <strong>Wine</strong> or non-alcoholic beverage',
-                'Glass of <strong>Limoncello</strong> or <strong>coffee</strong>',
-                'Water'
+                '<strong>宽面 Fettuccine</strong>，酱汁任选（<strong>番茄</strong>与<strong>罗勒</strong>、<b>Cacio e Pepe </b>或 <strong>Amatriciana</strong>）',
+                '<strong>意式饺子 Ravioli</strong>，配<strong>黄油</strong>与<strong>鼠尾草</strong>',
+                '你亲手做的<strong>提拉米苏</strong>',
+                '一杯<strong>葡萄酒</strong>或无酒精饮品',
+                '一杯<strong>柠檬酒</strong>或<strong>咖啡</strong>',
+                '水'
               ]
             },
             included: {
-              title: 'What’s included',
+              title: '包含内容',
               items: [
-                'Theoretical and hands-on cooking instructions',
-                '<strong>English speaking</strong> chef',
-                '<strong>Fresh ingredients</strong>',
-                '<strong>Equipment provided</strong> (workspace, apron, knife, and rolling pin).'
+                '理论讲解与动手烹饪指导',
+                '<strong>讲英语</strong>的主厨',
+                '<strong>新鲜食材</strong>',
+                '<strong>提供全部器具</strong>（工作台、围裙、刀具和擀面杖）。'
               ],
-              text: 'When the preparation is done, you sit down at the table. The restaurant\'s kitchen cooks everything you made. You eat your Fettuccine with the sauce you chose, your Ravioli with butter and sage, your own Tiramisù to finish, with a glass of wine, in the center of Florence, with the people who made it with you.'
+              text: '准备工作完成后，大家一起入座。餐厅的厨房会把你做的一切烹熟。你会吃到自己选酱汁的宽面、黄油鼠尾草意式饺子，最后是你亲手做的提拉米苏，配一杯葡萄酒——在佛罗伦萨市中心，和一起动手做这一切的人一起享用。'
             },
             notIncluded: {
-              title: 'What’s not included',
+              title: '不包含内容',
               items: [
-                'Making the sauce',
-                'Extra food and drinks'
+                '制作酱汁',
+                '额外的食物和饮品'
               ]
             }
           },
@@ -3725,6 +3773,8 @@ export const landings: Record<string, LandingPage> = {
             { title: `家庭长桌体验`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `整个厨房归你们所有，适合求婚与纪念日，680欧元起。` },
             { title: `Mercato & Mani`, href: `/zh/shichang-daolan-pengren-kecheng-foluolunsa/`, desc: `把它变成一个上午：清晨逛市场，然后烹饪食材，€145。` },
             { title: `奥特拉诺有什么可玩`, href: `/zh/blog/things-to-do-in-oltrarno-florence/`, desc: `围绕这个街区安排你们剩下的夜晚。` },
+          
+            { title: `赠送烹饪课程`, href: `/zh/pengren-kecheng-liquan-foluolunsa/`, desc: `与其再送一件物品，不如送一张礼券。任意课程，68 欧元起，日期自选。` },
           ],
           ctaLabel: `双人预订`,
           prefill: 'florence',
@@ -3949,7 +3999,7 @@ export const landings: Record<string, LandingPage> = {
       },
       fr: {
         slug: 'offrir-cours-de-cuisine-florence',
-        title: `Offrir un Cours de Cuisine à Florence : Bons Cadeaux dès 68 €`,
+        title: `Offrir un Cours de Cuisine à Florence : Bons Cadeaux`,
         description: `Bons cadeaux dès 68 €. Un cours pratique dans notre cuisine de l'Oltrarno dès 95 €, ou un cours en ligne avec kit d'ingrédients. Aucune date fixée.`,
         cl: {
           eyebrow: `Bons cadeaux · Florence et en ligne`,
@@ -4168,31 +4218,31 @@ export const landings: Record<string, LandingPage> = {
           ],
           infoBanner: {
             menu: {
-              title: 'Cooking class menu',
+              title: '烹饪课菜单',
               items: [
-                '<strong>Fettuccine</strong> with the sauce of your choice (<strong>Tomato</strong> and <strong>Basil</strong>, <b>Cacio e Pepe </b>or <strong>Amatriciana</strong>)',
-                '<strong>Ravioli</strong> with <strong>Butter</strong> and <strong>Sage</strong>',
-                'Your own <strong>Tiramisù</strong>',
-                'Glass of <strong>Wine</strong> or non-alcoholic beverage',
-                'Glass of <strong>Limoncello</strong> or <strong>coffee</strong>',
-                'Water'
+                '<strong>宽面 Fettuccine</strong>，酱汁任选（<strong>番茄</strong>与<strong>罗勒</strong>、<b>Cacio e Pepe </b>或 <strong>Amatriciana</strong>）',
+                '<strong>意式饺子 Ravioli</strong>，配<strong>黄油</strong>与<strong>鼠尾草</strong>',
+                '你亲手做的<strong>提拉米苏</strong>',
+                '一杯<strong>葡萄酒</strong>或无酒精饮品',
+                '一杯<strong>柠檬酒</strong>或<strong>咖啡</strong>',
+                '水'
               ]
             },
             included: {
-              title: 'What’s included',
+              title: '包含内容',
               items: [
-                'Theoretical and hands-on cooking instructions',
-                '<strong>English speaking</strong> chef',
-                '<strong>Fresh ingredients</strong>',
-                '<strong>Equipment provided</strong> (workspace, apron, knife, and rolling pin).'
+                '理论讲解与动手烹饪指导',
+                '<strong>讲英语</strong>的主厨',
+                '<strong>新鲜食材</strong>',
+                '<strong>提供全部器具</strong>（工作台、围裙、刀具和擀面杖）。'
               ],
-              text: 'When the preparation is done, you sit down at the table. The restaurant\'s kitchen cooks everything you made. You eat your Fettuccine with the sauce you chose, your Ravioli with butter and sage, your own Tiramisù to finish, with a glass of wine, in the center of Florence, with the people who made it with you.'
+              text: '准备工作完成后，大家一起入座。餐厅的厨房会把你做的一切烹熟。你会吃到自己选酱汁的宽面、黄油鼠尾草意式饺子，最后是你亲手做的提拉米苏，配一杯葡萄酒——在佛罗伦萨市中心，和一起动手做这一切的人一起享用。'
             },
             notIncluded: {
-              title: 'What’s not included',
+              title: '不包含内容',
               items: [
-                'Making the sauce',
-                'Extra food and drinks'
+                '制作酱汁',
+                '额外的食物和饮品'
               ]
             }
           },
@@ -4350,6 +4400,8 @@ export const landings: Record<string, LandingPage> = {
             { title: `Mercato & Mani`, href: `/market-tour-cooking-class-florence/`, desc: `Market walk at dawn, then cook the basket. Better for teenagers than toddlers, €145.` },
             { title: `The four shapes, explained`, href: `/pasta-shapes/`, desc: `Show them what pici and tortelli are before you come.` },
             { title: `Pasta Class for Two`, href: `/pasta-class-for-two-florence/`, desc: `The anniversary and wedding present, €95 each.` },
+          
+            { title: `Gift a Cooking Class`, href: `/gift-a-cooking-class-florence/`, desc: `A voucher instead of another object. Any class, from €68, and they pick the date.` },
           ],
           ctaLabel: `Book for the family`,
           prefill: 'florence',
@@ -4459,6 +4511,8 @@ export const landings: Record<string, LandingPage> = {
             { title: `Il Lungo Tavolo di Famiglia`, href: `/it/corso-cucina-privato-firenze/`, desc: `Tutta la cucina solo per voi, per gruppi familiari più grandi, da €680.` },
             { title: `Mercato & Mani`, href: `/it/corso-cucina-tour-mercato-firenze/`, desc: `Mercato all'alba, poi si cucina il cesto. Meglio per adolescenti che per bambini piccoli, €145.` },
             { title: `Corso di Pasta per Due`, href: `/it/corso-pasta-per-due-firenze/`, desc: `Il regalo da anniversario e da matrimonio, €95 a testa.` },
+          
+            { title: `Regala un Corso di Cucina`, href: `/it/regala-corso-di-cucina-firenze/`, desc: `Un buono invece dell'ennesimo oggetto. Qualsiasi corso, da €68, con la data a scelta.` },
           ],
           ctaLabel: `Prenota per la famiglia`,
           prefill: 'florence',
@@ -4568,6 +4622,8 @@ export const landings: Record<string, LandingPage> = {
             { title: `La Longue Table Familiale`, href: `/fr/cours-cuisine-prive-florence/`, desc: `Toute la cuisine rien que pour vous, pour les grandes familles, dès 680 €.` },
             { title: `Mercato & Mani`, href: `/fr/cours-cuisine-visite-marche-florence/`, desc: `Le marché à l'aube, puis on cuisine le panier. Mieux pour les ados que pour les tout-petits, 145 €.` },
             { title: `Cours de Pâtes pour Deux`, href: `/fr/cours-de-pates-pour-deux-florence/`, desc: `Le cadeau d'anniversaire de mariage, 95 € par personne.` },
+          
+            { title: `Offrir un Cours de Cuisine`, href: `/fr/offrir-cours-de-cuisine-florence/`, desc: `Un bon plutôt qu'un objet de plus. Tous les cours, dès 68 €, la date au choix.` },
           ],
           ctaLabel: `Réserver pour la famille`,
           prefill: 'florence',
@@ -4677,6 +4733,8 @@ export const landings: Record<string, LandingPage> = {
             { title: `Die lange Familientafel`, href: `/de/privater-kochkurs-florenz/`, desc: `Die ganze Küche für Sie allein, für größere Familiengruppen, ab 680 €.` },
             { title: `Mercato & Mani`, href: `/de/markt-tour-kochkurs-florenz/`, desc: `Markt im Morgengrauen, dann den Korb kochen. Eher für Teenager als für Kleinkinder, 145 €.` },
             { title: `Pasta-Kurs für Zwei`, href: `/de/pasta-kurs-fuer-zwei-florenz/`, desc: `Das Geschenk zum Jahrestag und zur Hochzeit, 95 € pro Person.` },
+          
+            { title: `Kochkurs verschenken`, href: `/de/kochkurs-verschenken-florenz/`, desc: `Ein Gutschein statt noch eines Gegenstands. Jeder Kurs, ab 68 €, Datum frei wählbar.` },
           ],
           ctaLabel: `Für die Familie buchen`,
           prefill: 'florence',
@@ -4711,31 +4769,31 @@ export const landings: Record<string, LandingPage> = {
           ],
           infoBanner: {
             menu: {
-              title: 'Cooking class menu',
+              title: '烹饪课菜单',
               items: [
-                '<strong>Fettuccine</strong> with the sauce of your choice (<strong>Tomato</strong> and <strong>Basil</strong>, <b>Cacio e Pepe </b>or <strong>Amatriciana</strong>)',
-                '<strong>Ravioli</strong> with <strong>Butter</strong> and <strong>Sage</strong>',
-                'Your own <strong>Tiramisù</strong>',
-                'Glass of <strong>Wine</strong> or non-alcoholic beverage',
-                'Glass of <strong>Limoncello</strong> or <strong>coffee</strong>',
-                'Water'
+                '<strong>宽面 Fettuccine</strong>，酱汁任选（<strong>番茄</strong>与<strong>罗勒</strong>、<b>Cacio e Pepe </b>或 <strong>Amatriciana</strong>）',
+                '<strong>意式饺子 Ravioli</strong>，配<strong>黄油</strong>与<strong>鼠尾草</strong>',
+                '你亲手做的<strong>提拉米苏</strong>',
+                '一杯<strong>葡萄酒</strong>或无酒精饮品',
+                '一杯<strong>柠檬酒</strong>或<strong>咖啡</strong>',
+                '水'
               ]
             },
             included: {
-              title: 'What’s included',
+              title: '包含内容',
               items: [
-                'Theoretical and hands-on cooking instructions',
-                '<strong>English speaking</strong> chef',
-                '<strong>Fresh ingredients</strong>',
-                '<strong>Equipment provided</strong> (workspace, apron, knife, and rolling pin).'
+                '理论讲解与动手烹饪指导',
+                '<strong>讲英语</strong>的主厨',
+                '<strong>新鲜食材</strong>',
+                '<strong>提供全部器具</strong>（工作台、围裙、刀具和擀面杖）。'
               ],
-              text: 'When the preparation is done, you sit down at the table. The restaurant\'s kitchen cooks everything you made. You eat your Fettuccine with the sauce you chose, your Ravioli with butter and sage, your own Tiramisù to finish, with a glass of wine, in the center of Florence, with the people who made it with you.'
+              text: '准备工作完成后，大家一起入座。餐厅的厨房会把你做的一切烹熟。你会吃到自己选酱汁的宽面、黄油鼠尾草意式饺子，最后是你亲手做的提拉米苏，配一杯葡萄酒——在佛罗伦萨市中心，和一起动手做这一切的人一起享用。'
             },
             notIncluded: {
-              title: 'What’s not included',
+              title: '不包含内容',
               items: [
-                'Making the sauce',
-                'Extra food and drinks'
+                '制作酱汁',
+                '额外的食物和饮品'
               ]
             }
           },
@@ -4786,6 +4844,8 @@ export const landings: Record<string, LandingPage> = {
             { title: `家庭长桌体验`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `整个厨房专属于你们，适合更大的家庭团体，680欧元起。` },
             { title: `市场与手工`, href: `/zh/shichang-daolan-pengren-kecheng-foluolunsa/`, desc: `清晨逛市场，然后烹饪当天的食材。更适合青少年而非幼童，145欧元。` },
             { title: `双人意面课程`, href: `/zh/shuangren-yidali-mian-kecheng-foluolunsa/`, desc: `纪念日与婚礼礼物，每人€95。` },
+          
+            { title: `赠送烹饪课程`, href: `/zh/pengren-kecheng-liquan-foluolunsa/`, desc: `与其再送一件物品，不如送一张礼券。任意课程，68 欧元起，日期自选。` },
           ],
           ctaLabel: `为全家预订`,
           prefill: 'florence',
@@ -4942,7 +5002,7 @@ export const landings: Record<string, LandingPage> = {
       },
       it: {
         slug: 'corso-cucina-agriturismo-toscana',
-        title: `Corso di Cucina in Agriturismo in Toscana: In una Cucina Vera`,
+        title: `Corso di Cucina in Agriturismo in Toscana: Cucina Vera`,
         description: `Gruppi da 6 a 20 nella cucina di un agriturismo toscano in attività, fuori Firenze. Si raccoglie nell'orto, si tira la pasta a mano, poi un lungo pranzo.`,
         cl: {
           eyebrow: `Il corso in campagna · le colline fuori Firenze`,
@@ -5311,31 +5371,31 @@ export const landings: Record<string, LandingPage> = {
           ],
           infoBanner: {
             menu: {
-              title: 'Cooking class menu',
+              title: '烹饪课菜单',
               items: [
-                '<strong>Fettuccine</strong> with the sauce of your choice (<strong>Tomato</strong> and <strong>Basil</strong>, <b>Cacio e Pepe </b>or <strong>Amatriciana</strong>)',
-                '<strong>Ravioli</strong> with <strong>Butter</strong> and <strong>Sage</strong>',
-                'Your own <strong>Tiramisù</strong>',
-                'Glass of <strong>Wine</strong> or non-alcoholic beverage',
-                'Glass of <strong>Limoncello</strong> or <strong>coffee</strong>',
-                'Water'
+                '<strong>宽面 Fettuccine</strong>，酱汁任选（<strong>番茄</strong>与<strong>罗勒</strong>、<b>Cacio e Pepe </b>或 <strong>Amatriciana</strong>）',
+                '<strong>意式饺子 Ravioli</strong>，配<strong>黄油</strong>与<strong>鼠尾草</strong>',
+                '你亲手做的<strong>提拉米苏</strong>',
+                '一杯<strong>葡萄酒</strong>或无酒精饮品',
+                '一杯<strong>柠檬酒</strong>或<strong>咖啡</strong>',
+                '水'
               ]
             },
             included: {
-              title: 'What’s included',
+              title: '包含内容',
               items: [
-                'Theoretical and hands-on cooking instructions',
-                '<strong>English speaking</strong> chef',
-                '<strong>Fresh ingredients</strong>',
-                '<strong>Equipment provided</strong> (workspace, apron, knife, and rolling pin).'
+                '理论讲解与动手烹饪指导',
+                '<strong>讲英语</strong>的主厨',
+                '<strong>新鲜食材</strong>',
+                '<strong>提供全部器具</strong>（工作台、围裙、刀具和擀面杖）。'
               ],
-              text: 'When the preparation is done, you sit down at the table. The restaurant\'s kitchen cooks everything you made. You eat your Fettuccine with the sauce you chose, your Ravioli with butter and sage, your own Tiramisù to finish, with a glass of wine, in the center of Florence, with the people who made it with you.'
+              text: '准备工作完成后，大家一起入座。餐厅的厨房会把你做的一切烹熟。你会吃到自己选酱汁的宽面、黄油鼠尾草意式饺子，最后是你亲手做的提拉米苏，配一杯葡萄酒——在佛罗伦萨市中心，和一起动手做这一切的人一起享用。'
             },
             notIncluded: {
-              title: 'What’s not included',
+              title: '不包含内容',
               items: [
-                'Making the sauce',
-                'Extra food and drinks'
+                '制作酱汁',
+                '额外的食物和饮品'
               ]
             }
           },
