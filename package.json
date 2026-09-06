@@ -9,9 +9,10 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "postbuild": "node src/scripts/indexnow-submit.mjs",
+    "postbuild": "node src/scripts/generate-redirects.mjs && node src/scripts/indexnow-submit.mjs",
     "indexnow": "node src/scripts/indexnow-submit.mjs --submit",
-    "indexnow:seed": "node src/scripts/indexnow-submit.mjs --seed"
+    "indexnow:seed": "node src/scripts/indexnow-submit.mjs --seed",
+    "redirects": "node src/scripts/generate-redirects.mjs"
   },
   "dependencies": {
     "@fontsource-variable/hanken-grotesk": "^5.2.8",
