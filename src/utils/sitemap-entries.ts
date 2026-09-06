@@ -28,6 +28,18 @@ interface SitemapEntry {
 // than a fabricated "today" build-time stamp.
 const ARCHITECTURE_SHIP_DATE = '2026-07-27T00:00:00.000Z';
 
+// Landing pages and pasta-shape pages were all edited again in the 2026-09-05
+// content pass: every landing description rewritten to fit Google's render
+// limit, the team-building pillar expanded, the Chinese infoBanner translated
+// (it had been shipping untranslated English on all 10 landings), new related
+// cards, and all 24 over-length shape descriptions trimmed. Leaving these on
+// ARCHITECTURE_SHIP_DATE told Google "unchanged since July" for 80 URLs that
+// had in fact just changed, which suppresses exactly the recrawl we want.
+// Homepages deliberately stay on the July date: only the zh homepage's
+// description changed, and a fresh stamp on the other four would be a false
+// signal for the sake of one 6-impression page.
+const CONTENT_PASS_2026_09_05 = '2026-09-05T00:00:00.000Z';
+
 // The footer "Information" pages (English-only, see infoPages in
 // i18n/config.ts) shipped in this pass — real date, not a fabricated
 // build-time stamp.
@@ -91,7 +103,7 @@ function landingEntries(): SitemapEntry[] {
       const l = locale as Locale;
       paths[l] = `${l === defaultLocale ? '' : '/' + l}/${data!.slug}/`;
     }
-    entries.push(...toEntry(paths, ARCHITECTURE_SHIP_DATE));
+    entries.push(...toEntry(paths, CONTENT_PASS_2026_09_05));
   }
   return entries;
 }
@@ -103,7 +115,7 @@ function shapeEntries(): SitemapEntry[] {
   // Hub — exists in every locale that has a shapes entry (en/it today).
   const hubPaths: Partial<Record<Locale, string>> = {};
   for (const l of shapeLocales) hubPaths[l] = shapesHubPath(l);
-  entries.push(...toEntry(hubPaths, ARCHITECTURE_SHIP_DATE));
+  entries.push(...toEntry(hubPaths, CONTENT_PASS_2026_09_05));
 
   // Spokes — only offer an alternate where that locale actually ships the shape,
   // mirroring the per-spoke filter already used in ShapePage.astro.
@@ -113,7 +125,7 @@ function shapeEntries(): SitemapEntry[] {
     for (const l of shapeLocales) {
       if (shapes[l]!.spokes.some((sp) => sp.slug === slug)) paths[l] = shapePath(l, slug);
     }
-    entries.push(...toEntry(paths, ARCHITECTURE_SHIP_DATE));
+    entries.push(...toEntry(paths, CONTENT_PASS_2026_09_05));
   }
   return entries;
 }
