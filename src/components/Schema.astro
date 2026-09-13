@@ -7,15 +7,16 @@
 // REMAINING-SEO-TASKS.md (items needing owner input).
 import { cookingClass } from '../assets/images';
 import { getAggregateRating, getReviewSchema } from '../data/reviews';
-import { landings, landingPath } from '../data/landings';
+import { landings, landingPath, type LandingKey, type LandingPage } from '../data/landings';
 import { getLocaleFromUrl } from '../i18n/utils';
 import { defaultLocale, locales } from '../i18n/config';
 import { PRICE_VALID_UNTIL } from '../utils/offer-validity';
 
 const SITE = 'https://handmadepastaflorence.com';
 
+// Sitewide, unscoped: this rates the business as a whole, which is exactly
+// what LocalBusiness should carry. Per-class ratings are resolved per Product.
 const aggregateRating = getAggregateRating();
-const reviewSchema = getReviewSchema();
 
 const localBusiness = {
   '@context': 'https://schema.org',
@@ -49,6 +50,18 @@ const localBusiness = {
   email: 'ciao@handmadepastaflorence.com',
   telephone: '+393445204379',
   priceRange: '€€',
+  // Google requires an Organization/LocalBusiness logo to be at least
+  // 112x112. public/images/logo.png is 80x80 and is deliberately small - it is
+  // the 40x40 header mark in Header.astro - so this points at the 180x180
+  // apple-touch-icon, which is the same artwork and the only copy in the repo
+  // that clears the minimum. Both live in public/ at stable un-hashed URLs
+  // because crawlers need them not to change on every build.
+  logo: {
+    '@type': 'ImageObject',
+    url: `${SITE}/apple-touch-icon.png`,
+    width: 180,
+    height: 180,
+  },
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'Via dei Pastai 12',
@@ -93,12 +106,16 @@ const localBusiness = {
 // so /de/ and /fr/ shipped Product blocks named "The Chef's Table" whose Offer
 // URLs pointed at the English landing pages. GSC showed 285 product-snippet
 // impressions converting at 0.35%, worse than the site's plain results.
-const HOMEPAGE_CLASS_KEYS = ['pasta-making', 'market-tour', 'private', 'online'];
+const HOMEPAGE_CLASS_KEYS: LandingKey[] = ['pasta-making', 'market-tour', 'private', 'online'];
 
 const lang = getLocaleFromUrl(Astro.url);
 
 const products = HOMEPAGE_CLASS_KEYS.flatMap((key) => {
-  const entry = landings[key]?.locales[lang];
+  // Read through the declared type: `landings` uses `satisfies`, so indexing it
+  // infers the one literal shape for that key, on which optional fields like
+  // `product` may be absent rather than optional.
+  const page: LandingPage = landings[key];
+  const entry = page.locales[lang];
   const product = entry?.cl.product;
   if (!entry || !product) return [];
   return [
@@ -109,12 +126,13 @@ const products = HOMEPAGE_CLASS_KEYS.flatMap((key) => {
       description: product.description,
       image: `${SITE}${entry.cl.image.src.src}`,
       brand: { '@type': 'Brand', name: 'Handmade Pasta Florence' },
-      // Same conditional spread as the landing-page Products in
-      // ClassLanding.astro. Without these two lines the homepage Products
-      // would stay ratingless on the day real reviews light up every other
-      // Product on the site.
-      ...(aggregateRating ? { aggregateRating } : {}),
-      ...(reviewSchema ? { review: reviewSchema } : {}),
+      // Scoped to this class, matching the landing-page Products in
+      // ClassLanding.astro. Each of these four is a distinct Product, so a
+      // sitewide rating on all of them would claim every class had been
+      // reviewed by everyone. The sitewide figure belongs on LocalBusiness
+      // below, which is a rating of the business rather than of one class.
+      ...(getAggregateRating(key) ? { aggregateRating: getAggregateRating(key) } : {}),
+      ...(getReviewSchema(key) ? { review: getReviewSchema(key) } : {}),
       offers: {
         '@type': 'Offer',
         price: product.price,

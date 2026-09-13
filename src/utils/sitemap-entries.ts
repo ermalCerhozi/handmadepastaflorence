@@ -10,7 +10,7 @@
 import { getCollection } from 'astro:content';
 import { locales, defaultLocale, languages, infoPages, type Locale } from '../i18n/config';
 import { SITE, localizePath } from './../i18n/utils';
-import { landings } from '../data/landings';
+import { landings, type LandingPage } from '../data/landings';
 import { shapes, shapePath, shapesHubPath } from '../data/shapes';
 import { blogLocale, blogSlug } from './blog-locales';
 
@@ -97,7 +97,7 @@ async function blogEntries(posts: Awaited<ReturnType<typeof getCollection<'blog'
 
 function landingEntries(): SitemapEntry[] {
   const entries: SitemapEntry[] = [];
-  for (const page of Object.values(landings)) {
+  for (const page of Object.values(landings) as LandingPage[]) {
     const paths: Partial<Record<Locale, string>> = {};
     for (const [locale, data] of Object.entries(page.locales)) {
       const l = locale as Locale;

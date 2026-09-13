@@ -9,9 +9,10 @@ import { localizePath, localizedHref } from '../i18n/utils';
 import { useTranslations } from '../i18n/ui';
 import { languages, type Locale } from '../i18n/config';
 import { shapesHubPath } from '../data/shapes';
-import type { FactIcon } from '../data/landings';
+import type { FactIcon, LandingKey } from '../data/landings';
 import { breadcrumbSchema, faqSchema } from '../utils/schema';
-import { getAggregateRating, getReviewSchema } from '../data/reviews';
+import { getAggregateRating, getReviewSchema, reviewsFor } from '../data/reviews';
+import Reviews from './Reviews.astro';
 import { PRICE_VALID_UNTIL } from '../utils/offer-validity';
 import * as img from '../assets/images';
 
@@ -106,6 +107,8 @@ interface Props {
   courseMode?: 'Onsite' | 'Online';
   /** ISO 8601 duration, from LandingPage.courseDuration — omitted where the copy doesn't state a fixed length. */
   courseDuration?: string;
+  /** This page's key in landings.ts, set by the route. Scopes reviews to this class. */
+  pageKey?: LandingKey;
 }
 
 const {
@@ -133,6 +136,7 @@ const {
   locale,
   courseMode,
   courseDuration,
+  pageKey,
 } = Astro.props;
 
 const lang = (locale || (Astro.currentLocale as Locale) || 'en') as Locale;
@@ -167,8 +171,15 @@ const priceSentence = priceSentenceParts.length ? `${priceSentenceParts.join(' �
 // class florence" displays and we do not. These spread to nothing while
 // src/data/reviews.ts is empty, and start emitting the moment a real review is
 // added there — never fabricate entries to switch this on.
-const aggregateRating = getAggregateRating();
-const reviewSchema = getReviewSchema();
+//
+// Scoped to THIS class, not the whole site. Google's review snippet policy
+// requires a marked-up review to be about the item it is attached to and to be
+// visible on the page carrying the markup, so a review of the family class must
+// not end up in the gluten-free class's Product schema. `pageReviews` is what
+// the section below renders, which keeps markup and visible content identical.
+const pageReviews = pageKey ? reviewsFor(pageKey) : [];
+const aggregateRating = pageKey ? getAggregateRating(pageKey) : null;
+const reviewSchema = pageKey ? getReviewSchema(pageKey) : null;
 
 // The two kitchen photos show the Florence room, so they belong only on the
 // in-person Florence classes — not the online class, the team-building enquiry
@@ -464,6 +475,12 @@ const faqLd = faqSchema(faqs);
     </div>
   </div>
 </section>
+
+{/* This class's own reviews, rendered so the Product markup above is never
+    claiming a review the page does not show. Emits nothing until a review with
+    this pageKey exists in src/data/reviews.ts. Badges are suppressed: they are
+    sitewide platform totals and would overstate a single class's record. */}
+<Reviews items={pageReviews} showBadges={false} />
 
 <section class="lp-rel">
   <div class="shell">

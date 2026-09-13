@@ -6,11 +6,32 @@
 // The whole section reveals automatically once `reviews` has at least one entry.
 import { getLocaleFromUrl } from '../i18n/utils';
 import { useTranslations } from '../i18n/ui';
-import { reviews, badges, hasReviews } from '../data/reviews';
+import { reviews as allReviews, badges, type Review } from '../data/reviews';
+
+interface Props {
+  /**
+   * Which reviews to show. Defaults to all of them (the homepage section).
+   * Class landing pages pass only their own, because Google requires a
+   * marked-up review to be about the item on the page and visible on it.
+   */
+  items?: Review[];
+  /** Hide the platform badges where they'd be sitewide claims on a single class page. */
+  showBadges?: boolean;
+}
+
+const { items = allReviews, showBadges = true } = Astro.props;
 const t = useTranslations(getLocaleFromUrl(Astro.url));
+
+// Render the rating the guest actually gave, to the nearest half star. The
+// stars used to be a hardcoded five, which would have displayed a genuine
+// 4-star review as 5 while the JSON-LD said 4.
+function stars(rating: number): string {
+  const r = Math.max(0, Math.min(5, Math.round(rating * 2) / 2));
+  return '★'.repeat(Math.floor(r)) + (r % 1 ? '½' : '');
+}
 ---
 
-{hasReviews && (
+{items.length > 0 && (
 <section class="rev" id="reviews">
   <div class="shell">
     <header class="rev__head" data-reveal>
@@ -18,6 +39,7 @@ const t = useTranslations(getLocaleFromUrl(Astro.url));
         <p class="eyebrow rev__eyebrow">{t.reviews.eyebrow}</p>
         <h2 class="rev__title">{t.reviews.titlePre}<br />{t.reviews.titleMid}<span class="font-golden" style="font-size: 1.3em; display: inline-block; margin-left: 0.2em; color: var(--terracotta);">{t.reviews.titleItal}</span></h2>
       </div>
+      {showBadges && badges.length > 0 && (
       <div class="rev__badges">
         {badges.map((b) => (
           <div class="badge">
@@ -28,12 +50,13 @@ const t = useTranslations(getLocaleFromUrl(Astro.url));
           </div>
         ))}
       </div>
+      )}
     </header>
 
     <div class="rev__grid">
-      {reviews.map((r, i) => (
+      {items.map((r, i) => (
         <figure class="quote" data-reveal style={`--reveal-delay:${i * 80}ms`}>
-          <span class="quote__stars" aria-label="5 out of 5 stars">★★★★★</span>
+          <span class="quote__stars" aria-label={`${r.rating} out of 5 stars`}>{stars(r.rating)}</span>
           <blockquote class="quote__text">“{r.quote}”</blockquote>
           <figcaption class="quote__cap">
             <span class="quote__name">{r.name}</span>

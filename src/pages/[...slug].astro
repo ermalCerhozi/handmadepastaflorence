@@ -7,13 +7,18 @@ import ClassLanding from '../components/ClassLanding.astro';
 import Footer from '../components/Footer.astro';
 import FloatingCTA from '../components/FloatingCTA.astro';
 import BookingDrawer from '../components/BookingDrawer.astro';
-import { landings } from '../data/landings';
+import { landings, type LandingKey, type LandingPage } from '../data/landings';
 import { defaultLocale, type Locale } from '../i18n/config';
 import type { Alternate } from '../i18n/utils';
 
 export function getStaticPaths() {
   const paths = [];
-  for (const [pageKey, page] of Object.entries(landings)) {
+  // Iterate at the declared type. `landings` uses `satisfies` so its keys stay
+  // literal for LandingKey, which also makes Object.entries infer a union of
+  // the ten distinct page shapes - and the optional fields (video, courseMode,
+  // courseDuration) only exist on some members of that union.
+  const entries = Object.entries(landings) as [LandingKey, LandingPage][];
+  for (const [pageKey, page] of entries) {
     // hreflang/switcher alternates for this page, from its translated slugs.
     const alternates: Alternate[] = Object.entries(page.locales).map(([locale, data]) => ({
       locale: locale as Locale,
@@ -24,21 +29,21 @@ export function getStaticPaths() {
       const prefix = locale === defaultLocale ? '' : `${locale}/`;
       paths.push({
         params: { slug: `${prefix}${data!.slug}` },
-        props: { data: data!, locale: locale as Locale, floatingCta: page.floatingCta, courseMode: page.courseMode, courseDuration: page.courseDuration, video: page.video, alternates },
+        props: { data: data!, locale: locale as Locale, pageKey, floatingCta: page.floatingCta, courseMode: page.courseMode, courseDuration: page.courseDuration, video: page.video, alternates },
       });
     }
   }
   return paths;
 }
 
-const { data, locale, floatingCta, courseMode, courseDuration, video, alternates } = Astro.props;
+const { data, locale, pageKey, floatingCta, courseMode, courseDuration, video, alternates } = Astro.props;
 const { title, description, cl } = data;
 ---
 
 <Layout title={title} description={description} image={cl.image.src.src} alternates={alternates}>
   <Header solid alternates={alternates} />
   <main>
-    <ClassLanding {...cl} locale={locale} courseMode={courseMode} courseDuration={courseDuration} video={video} />
+    <ClassLanding {...cl} locale={locale} pageKey={pageKey} courseMode={courseMode} courseDuration={courseDuration} video={video} />
   </main>
   <Footer />
   {floatingCta && <FloatingCTA />}

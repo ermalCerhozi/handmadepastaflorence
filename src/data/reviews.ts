@@ -9,7 +9,9 @@
 //
 // DO NOT invent entries to make the stars appear. Google treats fabricated
 // review markup as spam, and a rating you cannot substantiate is worse than no
-// rating at all. Add a review only when a real, identifiable guest left it.
+// rating at all. Add a review only when a real, identifiable guest left one.
+
+import type { LandingKey } from './landings';
 
 interface Review {
   /** The guest's own words, verbatim. Do not paraphrase or tidy. */
@@ -24,6 +26,20 @@ interface Review {
   rating: number;
   /** ISO date the review was left. */
   date: string;
+  /**
+   * Which class this review is about, if it is about one in particular.
+   *
+   * REQUIRED for the review to appear on a class landing page. Google's review
+   * snippet policy is that marked-up reviews must be about the specific item
+   * they are attached to and must be visible on the page carrying the markup —
+   * so a review of the family class must not end up in the gluten-free class's
+   * Product schema.
+   *
+   * Omit it only for reviews about the business as a whole; those still count
+   * towards the sitewide LocalBusiness rating and the homepage section, but are
+   * deliberately kept off every individual Product.
+   */
+  pageKey?: LandingKey;
 }
 
 /** Optional platform badges ("4.9 on Google, 120 reviews"). */
@@ -40,6 +56,14 @@ export const badges: ReviewBadge[] = [];
 
 export const hasReviews = reviews.length > 0;
 
+/**
+ * Reviews about one specific class. Empty for every class until a review is
+ * added with that `pageKey`.
+ */
+export function reviewsFor(pageKey: LandingKey): Review[] {
+  return reviews.filter((r) => r.pageKey === pageKey);
+}
+
 interface AggregateRating {
   '@type': 'AggregateRating';
   ratingValue: string;
@@ -52,23 +76,31 @@ interface AggregateRating {
  * Schema.org aggregateRating built from the real reviews above — or `null`
  * when there are none, so callers can spread it conditionally and emit
  * nothing rather than a zero-rating (which Google flags as invalid).
+ *
+ * Pass a `pageKey` to rate one class from its own reviews only. Called with no
+ * argument it rates the business as a whole, which is what LocalBusiness wants.
  */
-export function getAggregateRating(): AggregateRating | null {
-  if (reviews.length === 0) return null;
-  const mean = reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length;
+export function getAggregateRating(pageKey?: LandingKey): AggregateRating | null {
+  const scoped = pageKey ? reviewsFor(pageKey) : reviews;
+  if (scoped.length === 0) return null;
+  const mean = scoped.reduce((sum, r) => sum + r.rating, 0) / scoped.length;
   return {
     '@type': 'AggregateRating',
     ratingValue: mean.toFixed(1),
-    reviewCount: reviews.length,
+    reviewCount: scoped.length,
     bestRating: '5',
     worstRating: '1',
   };
 }
 
-/** Schema.org Review[] for embedding in Product/LocalBusiness, or null when empty. */
-export function getReviewSchema() {
-  if (reviews.length === 0) return null;
-  return reviews.map((r) => ({
+/**
+ * Schema.org Review[] for embedding in Product/LocalBusiness, or null when
+ * empty. Scoped by `pageKey` for the same reason as `getAggregateRating`.
+ */
+export function getReviewSchema(pageKey?: LandingKey) {
+  const scoped = pageKey ? reviewsFor(pageKey) : reviews;
+  if (scoped.length === 0) return null;
+  return scoped.map((r) => ({
     '@type': 'Review',
     reviewRating: { '@type': 'Rating', ratingValue: String(r.rating), bestRating: '5', worstRating: '1' },
     author: { '@type': 'Person', name: r.name },
@@ -76,3 +108,5 @@ export function getReviewSchema() {
     reviewBody: r.quote,
   }));
 }
+
+export type { Review };

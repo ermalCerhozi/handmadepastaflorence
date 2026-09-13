@@ -111,14 +111,14 @@ export interface LandingPage {
 }
 
 /** URL for a landing page in a given locale (used by nav/footer links). */
-export function landingPath(pageKey: string, locale: Locale): string {
+export function landingPath(pageKey: LandingKey, locale: Locale): string {
   const entry = landings[pageKey]?.locales[locale] ?? landings[pageKey]?.locales[defaultLocale];
   if (!entry) return '/';
   const loc = landings[pageKey]?.locales[locale] ? locale : defaultLocale;
   return `${loc === defaultLocale ? '' : '/' + loc}/${entry.slug}/`;
 }
 
-export const landings: Record<string, LandingPage> = {
+export const landings = {
   'pasta-making': {
     floatingCta: true,
     courseMode: 'Onsite',
@@ -5194,4 +5194,15 @@ export const landings: Record<string, LandingPage> = {
       },
     },
   },
-};
+} satisfies Record<string, LandingPage>;
+
+/**
+ * Every landing page key, derived from `landings` itself rather than retyped.
+ *
+ * Using `satisfies` above keeps the values checked against `LandingPage` while
+ * letting the literal keys survive inference, so adding a page here extends
+ * this union automatically and a typo'd key is a compile error — which is what
+ * `reviews.ts` relies on to stop a review being attached to a class that does
+ * not exist.
+ */
+export type LandingKey = keyof typeof landings;
