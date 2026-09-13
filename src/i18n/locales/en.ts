@@ -43,6 +43,7 @@ const en = {
     team: 'Team Building',
     glutenFree: 'Gluten-Free Class',
     forTwo: 'Pasta Class for Two',
+    family: 'Family Cooking Class',
     gift: 'Gift a class',
     guides: 'Guides & Stories',
     faq: 'FAQ & Allergens',

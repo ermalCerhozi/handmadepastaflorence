@@ -5,6 +5,19 @@ pubDate: 2026-07-08
 author: 'Endri Cerhozi'
 image: '../../assets/images/cooking_class_with_guests_in_picture.webp'
 imageAlt: 'Guests making fresh pasta together at a small-group class in Florence'
+faqs:
+  - q: "How much does a pasta making class in Florence cost?"
+    a: "As of summer 2026, most group pasta classes in Florence cost €60–€120 per person. Market-tour-plus-cooking combinations run about €120–€180, private classes start at a few hundred euros for the group, and online classes with a shipped kit sit around €50–€100."
+  - q: "What should be included in the price of a Florence cooking class?"
+    a: "At €80 and up, the price should cover all ingredients, aprons, the full meal you cook, and wine with the meal. Gluten-free and other dietary accommodations should be arranged in advance and should not cost extra - that is flour, not truffle."
+  - q: "Why do pasta classes in Florence vary so much in price?"
+    a: "Four things explain almost every difference: the maximum group size, whether you cook a full meal and sit down to eat it, whether a market visit is included, and whether the kitchen is private to your group. Group size is the one that predicts your experience best."
+  - q: "Is €95 expensive for a pasta class in Florence?"
+    a: "No. €95 sits in the middle of the Florence group-class band, which now runs to about €150 per person for a comparable three-and-a-half-hour class. At that price you should expect a small table, chefs who cook for a living, and the wine in the price rather than added at the end."
+  - q: "How far in advance should I book a pasta class in Florence?"
+    a: "A week or more from April to October. Small-group classes of six to eight seats sell out first, precisely because they are small. In winter you can often find a same-week seat."
+  - q: "Do gluten-free pasta classes in Florence cost more?"
+    a: "They should not. A fair class arranges a dedicated gluten-free flour blend and a separate station in advance at no extra charge. If a class quotes a surcharge for it, ask what the money is actually paying for."
 ---
 
 Short answer: as of summer 2026, most **group pasta making classes in Florence cost roughly €60–€120 per person**, market-tour-plus-cooking combinations run about **€120–€180**, and private classes start at a few hundred euros for the group. Online classes with a shipped kit sit around **€50–€100**.

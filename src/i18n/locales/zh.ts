@@ -32,6 +32,7 @@ const zh = {
     team: '团队建设',
     glutenFree: '无麸质课程',
     forTwo: '双人课程',
+    family: '家庭烹饪课',
     gift: '赠送课程',
     guides: '指南与故事',
     faq: '常见问题与过敏须知',

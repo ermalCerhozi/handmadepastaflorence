@@ -35,7 +35,7 @@ const { data, locale, floatingCta, courseMode, courseDuration, video, alternates
 const { title, description, cl } = data;
 ---
 
-<Layout title={title} description={description} image={cl.image.src} alternates={alternates}>
+<Layout title={title} description={description} image={cl.image.src.src} alternates={alternates}>
   <Header solid alternates={alternates} />
   <main>
     <ClassLanding {...cl} locale={locale} courseMode={courseMode} courseDuration={courseDuration} video={video} />

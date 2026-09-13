@@ -37,6 +37,7 @@ const it: Dict = {
     team: `Team Building`,
     glutenFree: `Corso Senza Glutine`,
     forTwo: `Corso per Due`,
+    family: `Corso di Cucina in Famiglia`,
     gift: `Regala un corso`,
     guides: `Guide & Storie`,
     faq: `FAQ & Allergeni`,

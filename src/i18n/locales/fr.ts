@@ -32,6 +32,7 @@ const fr = {
     team: 'Team Building',
     glutenFree: 'Cours Sans Gluten',
     forTwo: 'Cours pour Deux',
+    family: 'Cours en Famille',
     gift: 'Offrir un cours',
     guides: 'Guides et Histoires',
     faq: 'FAQ et Allergènes',

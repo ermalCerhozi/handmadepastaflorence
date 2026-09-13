@@ -12,6 +12,7 @@ import { shapesHubPath } from '../data/shapes';
 import type { FactIcon } from '../data/landings';
 import { breadcrumbSchema, faqSchema } from '../utils/schema';
 import { getAggregateRating, getReviewSchema } from '../data/reviews';
+import { PRICE_VALID_UNTIL } from '../utils/offer-validity';
 import * as img from '../assets/images';
 
 interface Fact {
@@ -139,9 +140,6 @@ const t = useTranslations(lang);
 
 const SITE = 'https://handmadepastaflorence.com';
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
-
-// Rolling year-end validity, same policy as the homepage Offers in Schema.astro.
-const PRICE_VALID_UNTIL = '2026-12-31';
 
 // Freshness signal. Competing listings for these keywords carry "2026" in the
 // title; our class pages showed no date at all. Bump this by hand when the
@@ -401,6 +399,7 @@ const faqLd = faqSchema(faqs);
                   <li set:html={item} />
                 ))}
               </ul>
+              {infoBanner.menu.text && <p class="lp-info-banner__p" set:html={infoBanner.menu.text} />}
             </div>
             <div class="lp-info-banner__row" id="include">
               <h3 class="lp-info-banner__h">{infoBanner.included.title}</h3>

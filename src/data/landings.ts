@@ -25,6 +25,23 @@ export type FactIcon =
   | 'tag'
   | 'mail';
 
+/**
+ * The menu / what's-included / what's-not panel on a class landing page.
+ *
+ * Exported because ClassLanding.astro types its prop against it; it referred to
+ * `import('../data/landings').InfoBanner` for a type that was never declared,
+ * which silently left the prop as `any`.
+ *
+ * `menu.text` is the per-page caveat line under the menu list (rendered as raw
+ * HTML, like `included.text`). Use it where the standard menu needs qualifying
+ * for that page's audience rather than restating the whole list.
+ */
+export interface InfoBanner {
+  menu: { title: string; items: string[]; text?: string };
+  included: { title: string; items: string[]; text?: string };
+  notIncluded: { title: string; items: string[] };
+}
+
 interface LandingContent {
   eyebrow: string;
   heading: string;
@@ -36,11 +53,7 @@ interface LandingContent {
   price: string;
   priceNote?: string;
   facts: { label: string; value: string; icon?: FactIcon }[];
-  infoBanner?: {
-    menu: { title: string; items: string[] };
-    included: { title: string; items: string[]; text?: string };
-    notIncluded: { title: string; items: string[] };
-  };
+  infoBanner?: InfoBanner;
   sections: { title: string; paras: string[]; list?: string[] }[];
   faqs: { q: string; a: string }[];
   related: { title: string; href: string; desc: string }[];
@@ -1744,36 +1757,6 @@ export const landings: Record<string, LandingPage> = {
             { label: `Language`, value: `English or Italian`, icon: 'globe' },
             { label: `Great as`, value: `a gift`, icon: 'gift' },
           ],
-          infoBanner: {
-            menu: {
-              title: 'Cooking class menu',
-              items: [
-                '<strong>Fettuccine</strong> with the sauce of your choice (<strong>Tomato</strong> and <strong>Basil</strong>, <b>Cacio e Pepe </b>or <strong>Amatriciana</strong>)',
-                '<strong>Ravioli</strong> with <strong>Butter</strong> and <strong>Sage</strong>',
-                'Your own <strong>Tiramisù</strong>',
-                'Glass of <strong>Wine</strong> or non-alcoholic beverage',
-                'Glass of <strong>Limoncello</strong> or <strong>coffee</strong>',
-                'Water'
-              ]
-            },
-            included: {
-              title: 'What’s included',
-              items: [
-                'Theoretical and hands-on cooking instructions',
-                '<strong>English speaking</strong> chef',
-                '<strong>Fresh ingredients</strong>',
-                '<strong>Equipment provided</strong> (workspace, apron, knife, and rolling pin).'
-              ],
-              text: 'When the preparation is done, you sit down at the table. The restaurant\'s kitchen cooks everything you made. You eat your Fettuccine with the sauce you chose, your Ravioli with butter and sage, your own Tiramisù to finish, with a glass of wine, in the center of Florence, with the people who made it with you.'
-            },
-            notIncluded: {
-              title: 'What’s not included',
-              items: [
-                'Making the sauce',
-                'Extra food and drinks'
-              ]
-            }
-          },
           sections: [
             {
               title: `How does a live online pasta class work?`,
@@ -1840,36 +1823,6 @@ export const landings: Record<string, LandingPage> = {
             { label: `Lingua`, value: `Inglese o Italiano`, icon: 'globe' },
             { label: `Ottimo come`, value: `regalo`, icon: 'gift' },
           ],
-          infoBanner: {
-              menu: {
-                title: 'Menu del corso di cucina',
-                items: [
-                  '<strong>Fettuccine</strong> con sugo a scelta (<strong>Pomodoro</strong> e <strong>Basilico</strong>, <b>Cacio e Pepe </b>o <strong>Amatriciana</strong>)',
-                  '<strong>Ravioli</strong> con <strong>Burro</strong> e <strong>Salvia</strong>',
-                  'Il tuo <strong>Tiramisù</strong>',
-                  'Bicchiere di <strong>Vino</strong> o bevanda analcolica',
-                  'Bicchiere di <strong>Limoncello</strong> o <strong>caffè</strong>',
-                  'Acqua'
-                ]
-              },
-              included: {
-                title: 'Cosa è incluso',
-                items: [
-                  'Istruzioni teoriche e pratiche di cucina',
-                  'Chef che <strong>parla inglese</strong>',
-                  '<strong>Ingredienti freschi</strong>',
-                  '<strong>Attrezzatura fornita</strong> (postazione di lavoro, grembiule, coltello e mattarello).'
-                ],
-                text: 'Terminata la preparazione, ci si siede a tavola. La cucina del ristorante cuoce tutto ciò che hai preparato. Mangi le tue Fettuccine con il sugo che hai scelto, i tuoi Ravioli burro e salvia, il tuo Tiramisù per finire, con un bicchiere di vino, nel centro di Firenze, con le persone che hanno cucinato con te.'
-              },
-              notIncluded: {
-                title: 'Cosa non è incluso',
-                items: [
-                  'Preparazione del sugo',
-                  'Cibo e bevande extra'
-                ]
-              }
-            },
           sections: [
             {
               title: `Come funziona un corso di pasta online in diretta?`,
@@ -1935,36 +1888,6 @@ export const landings: Record<string, LandingPage> = {
             { label: `Langue`, value: `Anglais ou Italien`, icon: 'globe' },
             { label: `Génial comme`, value: `cadeau`, icon: 'gift' },
           ],
-          infoBanner: {
-              menu: {
-                title: 'Menu du cours de cuisine',
-                items: [
-                  '<strong>Fettuccine</strong> avec la sauce de votre choix (<strong>Tomate</strong> et <strong>Basilic</strong>, <b>Cacio e Pepe </b>ou <strong>Amatriciana</strong>)',
-                  '<strong>Ravioli</strong> au <strong>Beurre</strong> et à la <strong>Sauge</strong>',
-                  'Votre propre <strong>Tiramisù</strong>',
-                  'Verre de <strong>Vin</strong> ou boisson non alcoolisée',
-                  'Verre de <strong>Limoncello</strong> ou <strong>café</strong>',
-                  'Eau'
-                ]
-              },
-              included: {
-                title: 'Ce qui est inclus',
-                items: [
-                  'Instructions culinaires théoriques et pratiques',
-                  'Chef <strong>anglophone</strong>',
-                  '<strong>Ingrédients frais</strong>',
-                  '<strong>Matériel fourni</strong> (plan de travail, tablier, couteau et rouleau à pâtisserie).'
-                ],
-                text: 'Une fois la préparation terminée, vous passez à table. La cuisine du restaurant cuit tout ce que vous avez préparé. Vous dégustez vos Fettuccine avec la sauce choisie, vos Ravioli beurre et sauge, votre propre Tiramisù pour finir, avec un verre de vin, au centre de Florence, avec les personnes qui ont cuisiné avec vous.'
-              },
-              notIncluded: {
-                title: 'Ce qui n\'est pas inclus',
-                items: [
-                  'La préparation de la sauce',
-                  'Nourriture et boissons supplémentaires'
-                ]
-              }
-            },
           sections: [
             {
               title: `Comment fonctionne un cours de pâtes en ligne en direct ?`,
@@ -2030,36 +1953,6 @@ export const landings: Record<string, LandingPage> = {
             { label: `Sprache`, value: `Englisch oder Italienisch`, icon: 'globe' },
             { label: `Ideal als`, value: `Geschenk`, icon: 'gift' },
           ],
-          infoBanner: {
-              menu: {
-                title: 'Kochkurs-Menü',
-                items: [
-                  '<strong>Fettuccine</strong> mit Sauce nach Wahl (<strong>Tomate</strong> und <strong>Basilikum</strong>, <b>Cacio e Pepe </b>oder <strong>Amatriciana</strong>)',
-                  '<strong>Ravioli</strong> mit <strong>Butter</strong> und <strong>Salbei</strong>',
-                  'Dein eigenes <strong>Tiramisù</strong>',
-                  'Glas <strong>Wein</strong> oder alkoholfreies Getränk',
-                  'Glas <strong>Limoncello</strong> oder <strong>Kaffee</strong>',
-                  'Wasser'
-                ]
-              },
-              included: {
-                title: 'Was inklusive ist',
-                items: [
-                  'Theoretische und praktische Kochanweisungen',
-                  '<strong>Englischsprachiger</strong> Koch',
-                  '<strong>Frische Zutaten</strong>',
-                  '<strong>Gestellte Ausrüstung</strong> (Arbeitsplatz, Schürze, Messer und Nudelholz).'
-                ],
-                text: 'Wenn die Zubereitung fertig ist, setzen Sie sich an den Tisch. Die Restaurantküche kocht alles, was Sie gemacht haben. Sie essen Ihre Fettuccine mit der gewählten Sauce, Ihre Ravioli mit Butter und Salbei, Ihr eigenes Tiramisù zum Abschluss, mit einem Glas Wein, im Zentrum von Florenz, mit den Leuten, die mit Ihnen gekocht haben.'
-              },
-              notIncluded: {
-                title: 'Was nicht inklusive ist',
-                items: [
-                  'Zubereitung der Sauce',
-                  'Zusätzliche Speisen und Getränke'
-                ]
-              }
-            },
           sections: [
             {
               title: `Wie funktioniert ein Live-Online-Pasta-Kurs?`,
@@ -2125,36 +2018,6 @@ export const landings: Record<string, LandingPage> = {
             { label: `语言`, value: `英语或意大利语`, icon: 'globe' },
             { label: `非常适合`, value: `作为礼物`, icon: 'gift' },
           ],
-          infoBanner: {
-            menu: {
-              title: '烹饪课菜单',
-              items: [
-                '<strong>宽面 Fettuccine</strong>，酱汁任选（<strong>番茄</strong>与<strong>罗勒</strong>、<b>Cacio e Pepe </b>或 <strong>Amatriciana</strong>）',
-                '<strong>意式饺子 Ravioli</strong>，配<strong>黄油</strong>与<strong>鼠尾草</strong>',
-                '你亲手做的<strong>提拉米苏</strong>',
-                '一杯<strong>葡萄酒</strong>或无酒精饮品',
-                '一杯<strong>柠檬酒</strong>或<strong>咖啡</strong>',
-                '水'
-              ]
-            },
-            included: {
-              title: '包含内容',
-              items: [
-                '理论讲解与动手烹饪指导',
-                '<strong>讲英语</strong>的主厨',
-                '<strong>新鲜食材</strong>',
-                '<strong>提供全部器具</strong>（工作台、围裙、刀具和擀面杖）。'
-              ],
-              text: '准备工作完成后，大家一起入座。餐厅的厨房会把你做的一切烹熟。你会吃到自己选酱汁的宽面、黄油鼠尾草意式饺子，最后是你亲手做的提拉米苏，配一杯葡萄酒——在佛罗伦萨市中心，和一起动手做这一切的人一起享用。'
-            },
-            notIncluded: {
-              title: '不包含内容',
-              items: [
-                '制作酱汁',
-                '额外的食物和饮品'
-              ]
-            }
-          },
           sections: [
             {
               title: `在线直播意面课程是如何进行的？`,
@@ -2812,7 +2675,8 @@ export const landings: Record<string, LandingPage> = {
                 'Glass of <strong>Wine</strong> or non-alcoholic beverage',
                 'Glass of <strong>Limoncello</strong> or <strong>coffee</strong>',
                 'Water'
-              ]
+              ],
+              text: 'If you are coeliac, your pasta is made from a <strong>dedicated gluten-free blend</strong> at your own station, with its own pot of water, at <strong>no extra charge</strong>. Send your full allergy list when you book, not on the day: wheat flour is used in the same room, so we are not a certified gluten-free facility.'
             },
             included: {
               title: 'What’s included',
@@ -2911,7 +2775,8 @@ export const landings: Record<string, LandingPage> = {
                   'Bicchiere di <strong>Vino</strong> o bevanda analcolica',
                   'Bicchiere di <strong>Limoncello</strong> o <strong>caffè</strong>',
                   'Acqua'
-                ]
+              ],
+              text: 'Se sei celiaco, la tua pasta si fa con una <strong>miscela di farine senza glutine dedicata</strong>, alla tua postazione e con una pentola d’acqua tutta tua, <strong>senza supplemento</strong>. Mandaci l’elenco completo delle allergie quando prenoti, non il giorno stesso: nella stessa stanza si usa farina di grano, quindi non siamo una struttura certificata senza glutine.'
               },
               included: {
                 title: 'Cosa è incluso',
@@ -3010,7 +2875,8 @@ export const landings: Record<string, LandingPage> = {
                   'Verre de <strong>Vin</strong> ou boisson non alcoolisée',
                   'Verre de <strong>Limoncello</strong> ou <strong>café</strong>',
                   'Eau'
-                ]
+              ],
+              text: 'Si vous êtes cœliaque, vos pâtes sont faites à partir d’un <strong>mélange de farines sans gluten dédié</strong>, à votre propre poste et dans votre propre casserole, <strong>sans supplément</strong>. Envoyez-nous la liste complète de vos allergies à la réservation, pas le jour même : de la farine de blé est utilisée dans la même pièce, nous ne sommes donc pas un établissement certifié sans gluten.'
               },
               included: {
                 title: 'Ce qui est inclus',
@@ -3109,7 +2975,8 @@ export const landings: Record<string, LandingPage> = {
                   'Glas <strong>Wein</strong> oder alkoholfreies Getränk',
                   'Glas <strong>Limoncello</strong> oder <strong>Kaffee</strong>',
                   'Wasser'
-                ]
+              ],
+              text: 'Bei Zöliakie wird Ihre Pasta aus einer <strong>eigenen glutenfreien Mehlmischung</strong> an Ihrer eigenen Station und in einem eigenen Topf Wasser gemacht, <strong>ohne Aufpreis</strong>. Schicken Sie uns Ihre vollständige Allergieliste bei der Buchung, nicht erst am Tag selbst: Im selben Raum wird Weizenmehl verwendet, wir sind also kein zertifiziert glutenfreier Betrieb.'
               },
               included: {
                 title: 'Was inklusive ist',
@@ -3208,7 +3075,8 @@ export const landings: Record<string, LandingPage> = {
                 '一杯<strong>葡萄酒</strong>或无酒精饮品',
                 '一杯<strong>柠檬酒</strong>或<strong>咖啡</strong>',
                 '水'
-              ]
+              ],
+              text: '如果您有乳糜泻，您的意面会使用<strong>专用的无麸质面粉配方</strong>，在您专属的操作台上制作，并用单独的一锅水煮制，<strong>不收取额外费用</strong>。请在预订时就把完整的过敏清单发给我们，而不是当天才说：同一空间内会使用小麦面粉，因此我们并非获得认证的无麸质场所。'
             },
             included: {
               title: '包含内容',
@@ -4332,7 +4200,8 @@ export const landings: Record<string, LandingPage> = {
                 'Glass of <strong>Wine</strong> or non-alcoholic beverage',
                 'Glass of <strong>Limoncello</strong> or <strong>coffee</strong>',
                 'Water'
-              ]
+              ],
+              text: 'Children get the same meal minus the wine: something to drink that isn’t Chianti, and no limoncello. The two Tuscan pours are for the adults at the table.'
             },
             included: {
               title: 'What’s included',
@@ -4444,7 +4313,8 @@ export const landings: Record<string, LandingPage> = {
                   'Bicchiere di <strong>Vino</strong> o bevanda analcolica',
                   'Bicchiere di <strong>Limoncello</strong> o <strong>caffè</strong>',
                   'Acqua'
-                ]
+              ],
+              text: 'I bambini mangiano lo stesso menù, senza vino: qualcosa da bere che non sia Chianti e niente limoncello. I due calici toscani sono per gli adulti a tavola.'
               },
               included: {
                 title: 'Cosa è incluso',
@@ -4555,7 +4425,8 @@ export const landings: Record<string, LandingPage> = {
                   'Verre de <strong>Vin</strong> ou boisson non alcoolisée',
                   'Verre de <strong>Limoncello</strong> ou <strong>café</strong>',
                   'Eau'
-                ]
+              ],
+              text: 'Les enfants ont le même repas sans le vin : une boisson qui n’est pas du Chianti, et pas de limoncello. Les deux verres toscans sont pour les adultes à table.'
               },
               included: {
                 title: 'Ce qui est inclus',
@@ -4666,7 +4537,8 @@ export const landings: Record<string, LandingPage> = {
                   'Glas <strong>Wein</strong> oder alkoholfreies Getränk',
                   'Glas <strong>Limoncello</strong> oder <strong>Kaffee</strong>',
                   'Wasser'
-                ]
+              ],
+              text: 'Kinder bekommen dasselbe Essen ohne Wein: etwas zu trinken, das kein Chianti ist, und keinen Limoncello. Die zwei toskanischen Gläser sind für die Erwachsenen am Tisch.'
               },
               included: {
                 title: 'Was inklusive ist',
@@ -4777,7 +4649,8 @@ export const landings: Record<string, LandingPage> = {
                 '一杯<strong>葡萄酒</strong>或无酒精饮品',
                 '一杯<strong>柠檬酒</strong>或<strong>咖啡</strong>',
                 '水'
-              ]
+              ],
+              text: '孩子们享用同样的菜单，但不含葡萄酒：会提供非 Chianti 的饮品，也不供应柠檬酒。那两杯托斯卡纳葡萄酒是为同桌的成年人准备的。'
             },
             included: {
               title: '包含内容',
@@ -4903,36 +4776,6 @@ export const landings: Record<string, LandingPage> = {
             { label: `Which estate`, value: `confirmed with your date`, icon: 'tag' },
             { label: `Language`, value: `English or Italian`, icon: 'globe' },
           ],
-          infoBanner: {
-            menu: {
-              title: 'Cooking class menu',
-              items: [
-                '<strong>Fettuccine</strong> with the sauce of your choice (<strong>Tomato</strong> and <strong>Basil</strong>, <b>Cacio e Pepe </b>or <strong>Amatriciana</strong>)',
-                '<strong>Ravioli</strong> with <strong>Butter</strong> and <strong>Sage</strong>',
-                'Your own <strong>Tiramisù</strong>',
-                'Glass of <strong>Wine</strong> or non-alcoholic beverage',
-                'Glass of <strong>Limoncello</strong> or <strong>coffee</strong>',
-                'Water'
-              ]
-            },
-            included: {
-              title: 'What’s included',
-              items: [
-                'Theoretical and hands-on cooking instructions',
-                '<strong>English speaking</strong> chef',
-                '<strong>Fresh ingredients</strong>',
-                '<strong>Equipment provided</strong> (workspace, apron, knife, and rolling pin).'
-              ],
-              text: 'When the preparation is done, you sit down at the table. The restaurant\'s kitchen cooks everything you made. You eat your Fettuccine with the sauce you chose, your Ravioli with butter and sage, your own Tiramisù to finish, with a glass of wine, in the center of Florence, with the people who made it with you.'
-            },
-            notIncluded: {
-              title: 'What’s not included',
-              items: [
-                'Making the sauce',
-                'Extra food and drinks'
-              ]
-            }
-          },
           sections: [
             {
               // Self-contained ~150-word answer: the featured-snippet and
@@ -4984,6 +4827,7 @@ export const landings: Record<string, LandingPage> = {
             { q: `Can we stay at the agriturismo as well?`, a: `Some of the estates have guest rooms, but rooms are booked with the estate and not with us. Say so when you write and we will point you at the partners who can host you overnight.` },
             { q: `How many people can join?`, a: `Six to twenty. Under six guests the Florence class is usually the better answer, and over twenty we would split you across two sessions so everyone still gets a bench.` },
             { q: `What does it cost?`, a: `It is quoted per group, because the menu, the length and the number of guests all move together. Email us your dates and numbers and you will have a price within one working day.` },
+            { q: `Can you cater to gluten-free diets or allergies?`, a: `Yes. Send the whole list when you enquire rather than on the day: with a group of this size, gluten-free guests and allergies are routine. A dedicated gluten-free flour blend and a separate station come at no extra charge, exactly as in our Florence kitchen. Because the class runs in a partner estate kitchen, we confirm the setup with the estate when we confirm your date.` },
           ],
           related: [
             { title: `The Chef's Table`, href: `/pasta-making-class-florence/`, desc: `The city version: three hours in our Oltrarno kitchen, four shapes, €95.` },
@@ -5021,36 +4865,6 @@ export const landings: Record<string, LandingPage> = {
             { label: `Quale tenuta`, value: `confermata con la data`, icon: 'tag' },
             { label: `Lingua`, value: `inglese o italiano`, icon: 'globe' },
           ],
-          infoBanner: {
-              menu: {
-                title: 'Menu del corso di cucina',
-                items: [
-                  '<strong>Fettuccine</strong> con sugo a scelta (<strong>Pomodoro</strong> e <strong>Basilico</strong>, <b>Cacio e Pepe </b>o <strong>Amatriciana</strong>)',
-                  '<strong>Ravioli</strong> con <strong>Burro</strong> e <strong>Salvia</strong>',
-                  'Il tuo <strong>Tiramisù</strong>',
-                  'Bicchiere di <strong>Vino</strong> o bevanda analcolica',
-                  'Bicchiere di <strong>Limoncello</strong> o <strong>caffè</strong>',
-                  'Acqua'
-                ]
-              },
-              included: {
-                title: 'Cosa è incluso',
-                items: [
-                  'Istruzioni teoriche e pratiche di cucina',
-                  'Chef che <strong>parla inglese</strong>',
-                  '<strong>Ingredienti freschi</strong>',
-                  '<strong>Attrezzatura fornita</strong> (postazione di lavoro, grembiule, coltello e mattarello).'
-                ],
-                text: 'Terminata la preparazione, ci si siede a tavola. La cucina del ristorante cuoce tutto ciò che hai preparato. Mangi le tue Fettuccine con il sugo che hai scelto, i tuoi Ravioli burro e salvia, il tuo Tiramisù per finire, con un bicchiere di vino, nel centro di Firenze, con le persone che hanno cucinato con te.'
-              },
-              notIncluded: {
-                title: 'Cosa non è incluso',
-                items: [
-                  'Preparazione del sugo',
-                  'Cibo e bevande extra'
-                ]
-              }
-            },
           sections: [
             {
               title: `Che cos'è un corso di cucina in agriturismo?`,
@@ -5100,6 +4914,7 @@ export const landings: Record<string, LandingPage> = {
             { q: `Possiamo anche dormire in agriturismo?`, a: `Alcune tenute hanno camere, ma si prenotano con la tenuta e non con noi. Scrivetecelo e vi indirizziamo verso i partner che possono ospitarvi per la notte.` },
             { q: `Quante persone possono partecipare?`, a: `Da sei a venti. Sotto le sei persone di solito il corso di Firenze è la risposta migliore, sopra le venti vi dividiamo su due sessioni così tutti hanno un banco.` },
             { q: `Quanto costa?`, a: `Si fa un preventivo per gruppo, perché menù, durata e numero di ospiti si muovono insieme. Scriveteci date e numeri e avrete un prezzo entro un giorno lavorativo.` },
+            { q: `Potete gestire diete senza glutine o allergie?`, a: `Sì. Mandateci l’elenco completo quando scrivete, non il giorno stesso: con un gruppo di queste dimensioni, celiaci e allergie sono la normalità. Una miscela di farine senza glutine dedicata e una postazione separata non hanno alcun supplemento, esattamente come nella nostra cucina di Firenze. Poiché il corso si tiene nella cucina di un’azienda partner, confermiamo l’allestimento con l’azienda quando confermiamo la data.` },
           ],
           related: [
             { title: `La Tavola dello Chef`, href: `/it/corso-pasta-fresca-firenze/`, desc: `La versione in città: tre ore in Oltrarno, quattro formati, €95.` },
@@ -5137,36 +4952,6 @@ export const landings: Record<string, LandingPage> = {
             { label: `Quel domaine`, value: `confirmé avec votre date`, icon: 'tag' },
             { label: `Langue`, value: `anglais ou italien`, icon: 'globe' },
           ],
-          infoBanner: {
-              menu: {
-                title: 'Menu du cours de cuisine',
-                items: [
-                  '<strong>Fettuccine</strong> avec la sauce de votre choix (<strong>Tomate</strong> et <strong>Basilic</strong>, <b>Cacio e Pepe </b>ou <strong>Amatriciana</strong>)',
-                  '<strong>Ravioli</strong> au <strong>Beurre</strong> et à la <strong>Sauge</strong>',
-                  'Votre propre <strong>Tiramisù</strong>',
-                  'Verre de <strong>Vin</strong> ou boisson non alcoolisée',
-                  'Verre de <strong>Limoncello</strong> ou <strong>café</strong>',
-                  'Eau'
-                ]
-              },
-              included: {
-                title: 'Ce qui est inclus',
-                items: [
-                  'Instructions culinaires théoriques et pratiques',
-                  'Chef <strong>anglophone</strong>',
-                  '<strong>Ingrédients frais</strong>',
-                  '<strong>Matériel fourni</strong> (plan de travail, tablier, couteau et rouleau à pâtisserie).'
-                ],
-                text: 'Une fois la préparation terminée, vous passez à table. La cuisine du restaurant cuit tout ce que vous avez préparé. Vous dégustez vos Fettuccine avec la sauce choisie, vos Ravioli beurre et sauge, votre propre Tiramisù pour finir, avec un verre de vin, au centre de Florence, avec les personnes qui ont cuisiné avec vous.'
-              },
-              notIncluded: {
-                title: 'Ce qui n\'est pas inclus',
-                items: [
-                  'La préparation de la sauce',
-                  'Nourriture et boissons supplémentaires'
-                ]
-              }
-            },
           sections: [
             {
               title: `Qu'est-ce qu'un cours de cuisine en agritourisme ?`,
@@ -5216,6 +5001,7 @@ export const landings: Record<string, LandingPage> = {
             { q: `Peut-on aussi dormir sur place ?`, a: `Certains domaines ont des chambres, mais elles se réservent auprès du domaine et non auprès de nous. Signalez-le nous et nous vous orienterons vers les partenaires qui peuvent vous héberger.` },
             { q: `Combien de personnes peuvent participer ?`, a: `De six à vingt. En dessous de six, le cours de Florence est en général la meilleure réponse ; au-dessus de vingt, nous répartissons le groupe sur deux sessions pour que chacun ait un plan de travail.` },
             { q: `Combien cela coûte-t-il ?`, a: `Le tarif est établi par groupe, car le menu, la durée et le nombre d'invités bougent ensemble. Envoyez-nous vos dates et vos effectifs et vous aurez un prix sous un jour ouvré.` },
+            { q: `Pouvez-vous gérer les régimes sans gluten ou les allergies ?`, a: `Oui. Envoyez-nous la liste complète au moment de votre demande, pas le jour même : avec un groupe de cette taille, les convives cœliaques et les allergies sont courants. Un mélange de farines sans gluten dédié et un poste séparé sont sans supplément, exactement comme dans notre cuisine de Florence. Comme le cours se déroule dans la cuisine d’un domaine partenaire, nous confirmons l’installation avec le domaine en confirmant votre date.` },
           ],
           related: [
             { title: `La Table du Chef`, href: `/fr/cours-de-pates-fraiches-florence/`, desc: `La version en ville : trois heures dans notre cuisine de l'Oltrarno, quatre formes, 95 €.` },
@@ -5253,36 +5039,6 @@ export const landings: Record<string, LandingPage> = {
             { label: `Welches Gut`, value: `mit Ihrem Termin bestätigt`, icon: 'tag' },
             { label: `Sprache`, value: `Englisch oder Italienisch`, icon: 'globe' },
           ],
-          infoBanner: {
-              menu: {
-                title: 'Kochkurs-Menü',
-                items: [
-                  '<strong>Fettuccine</strong> mit Sauce nach Wahl (<strong>Tomate</strong> und <strong>Basilikum</strong>, <b>Cacio e Pepe </b>oder <strong>Amatriciana</strong>)',
-                  '<strong>Ravioli</strong> mit <strong>Butter</strong> und <strong>Salbei</strong>',
-                  'Dein eigenes <strong>Tiramisù</strong>',
-                  'Glas <strong>Wein</strong> oder alkoholfreies Getränk',
-                  'Glas <strong>Limoncello</strong> oder <strong>Kaffee</strong>',
-                  'Wasser'
-                ]
-              },
-              included: {
-                title: 'Was inklusive ist',
-                items: [
-                  'Theoretische und praktische Kochanweisungen',
-                  '<strong>Englischsprachiger</strong> Koch',
-                  '<strong>Frische Zutaten</strong>',
-                  '<strong>Gestellte Ausrüstung</strong> (Arbeitsplatz, Schürze, Messer und Nudelholz).'
-                ],
-                text: 'Wenn die Zubereitung fertig ist, setzen Sie sich an den Tisch. Die Restaurantküche kocht alles, was Sie gemacht haben. Sie essen Ihre Fettuccine mit der gewählten Sauce, Ihre Ravioli mit Butter und Salbei, Ihr eigenes Tiramisù zum Abschluss, mit einem Glas Wein, im Zentrum von Florenz, mit den Leuten, die mit Ihnen gekocht haben.'
-              },
-              notIncluded: {
-                title: 'Was nicht inklusive ist',
-                items: [
-                  'Zubereitung der Sauce',
-                  'Zusätzliche Speisen und Getränke'
-                ]
-              }
-            },
           sections: [
             {
               title: `Was ist ein Agriturismo-Kochkurs?`,
@@ -5332,6 +5088,7 @@ export const landings: Record<string, LandingPage> = {
             { q: `Können wir dort auch übernachten?`, a: `Einige Güter haben Gästezimmer, sie werden aber beim Gut gebucht und nicht bei uns. Sagen Sie uns Bescheid, und wir verweisen Sie an die Partner, die Sie aufnehmen können.` },
             { q: `Wie viele Personen können teilnehmen?`, a: `Sechs bis zwanzig. Unter sechs Gästen ist der Kurs in Florenz meist die bessere Antwort, über zwanzig teilen wir Sie auf zwei Durchgänge auf, damit jeder einen Arbeitsplatz hat.` },
             { q: `Was kostet es?`, a: `Der Preis wird pro Gruppe erstellt, weil Menü, Dauer und Gästezahl zusammenhängen. Schicken Sie uns Daten und Personenzahl, und Sie haben innerhalb eines Werktags einen Preis.` },
+            { q: `Können Sie glutenfreie Ernährung oder Allergien berücksichtigen?`, a: `Ja. Schicken Sie uns die vollständige Liste bei der Anfrage, nicht erst am Tag selbst: Bei einer Gruppe dieser Größe sind Zöliakie und Allergien Alltag. Eine eigene glutenfreie Mehlmischung und eine separate Station kosten nichts extra, genau wie in unserer Küche in Florenz. Da der Kurs in der Küche eines Partnerguts stattfindet, stimmen wir den Aufbau mit dem Gut ab, sobald wir Ihren Termin bestätigen.` },
           ],
           related: [
             { title: `Der Chef's Table`, href: `/de/pasta-kurs-florenz/`, desc: `Die Stadtversion: drei Stunden in unserer Oltrarno-Küche, vier Formen, 95 €.` },
@@ -5369,36 +5126,6 @@ export const landings: Record<string, LandingPage> = {
             { label: `具体哪一家`, value: `与日期一并确认`, icon: 'tag' },
             { label: `语言`, value: `英语或意大利语`, icon: 'globe' },
           ],
-          infoBanner: {
-            menu: {
-              title: '烹饪课菜单',
-              items: [
-                '<strong>宽面 Fettuccine</strong>，酱汁任选（<strong>番茄</strong>与<strong>罗勒</strong>、<b>Cacio e Pepe </b>或 <strong>Amatriciana</strong>）',
-                '<strong>意式饺子 Ravioli</strong>，配<strong>黄油</strong>与<strong>鼠尾草</strong>',
-                '你亲手做的<strong>提拉米苏</strong>',
-                '一杯<strong>葡萄酒</strong>或无酒精饮品',
-                '一杯<strong>柠檬酒</strong>或<strong>咖啡</strong>',
-                '水'
-              ]
-            },
-            included: {
-              title: '包含内容',
-              items: [
-                '理论讲解与动手烹饪指导',
-                '<strong>讲英语</strong>的主厨',
-                '<strong>新鲜食材</strong>',
-                '<strong>提供全部器具</strong>（工作台、围裙、刀具和擀面杖）。'
-              ],
-              text: '准备工作完成后，大家一起入座。餐厅的厨房会把你做的一切烹熟。你会吃到自己选酱汁的宽面、黄油鼠尾草意式饺子，最后是你亲手做的提拉米苏，配一杯葡萄酒——在佛罗伦萨市中心，和一起动手做这一切的人一起享用。'
-            },
-            notIncluded: {
-              title: '不包含内容',
-              items: [
-                '制作酱汁',
-                '额外的食物和饮品'
-              ]
-            }
-          },
           sections: [
             {
               title: `什么是农庄烹饪课程？`,
@@ -5448,6 +5175,7 @@ export const landings: Record<string, LandingPage> = {
             { q: `我们可以顺便住在农庄吗？`, a: `部分庄园设有客房，但需要向庄园预订，而不是向我们预订。写信时说一声，我们会为你指向可以提供过夜的合作庄园。` },
             { q: `可以有多少人参加？`, a: `六到二十人。少于六人时，通常佛罗伦萨那堂课是更好的选择；超过二十人，我们会分成两场，确保每个人都有自己的操作台。` },
             { q: `费用是多少？`, a: `按团报价，因为菜单、时长和人数是联动的。把日期和人数发给我们，一个工作日内你就会收到价格。` },
+            { q: `你们能否照顾无麸质饮食或过敏需求？`, a: `可以。请在咨询时就把完整清单发给我们，而不是当天才说：对于这种规模的团体，乳糜泻客人和过敏需求都很常见。专用的无麸质面粉配方和独立操作台不收取额外费用，与我们佛罗伦萨的厨房完全一致。由于课程在合作庄园的厨房举行，我们会在确认您的日期时与庄园确认具体安排。` },
           ],
           related: [
             { title: `主厨餐桌`, href: `/zh/foluolunsa-yidali-mian-kecheng/`, desc: `市区版本：在奥特拉诺厨房三小时，四种形状，95欧元。` },

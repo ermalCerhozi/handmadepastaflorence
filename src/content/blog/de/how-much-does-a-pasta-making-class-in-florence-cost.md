@@ -5,6 +5,19 @@ pubDate: 2026-07-08
 author: 'Endri Cerhozi'
 image: '../../../assets/images/cooking_class_with_guests_in_picture.webp'
 imageAlt: 'Gäste machen gemeinsam frische Pasta bei einem Kurs in einer kleinen Gruppe in Florenz'
+faqs:
+  - q: "Wie viel kostet ein Pasta-Kochkurs in Florenz?"
+    a: "Im Sommer 2026 kosten die meisten Gruppenkurse in Florenz 60 bis 120 Euro pro Person. Kombinationen aus Marktbesuch und Kochkurs liegen bei etwa 120 bis 180 Euro, private Kurse beginnen bei einigen hundert Euro für die Gruppe, und Online-Kurse mit zugeschicktem Zutatenpaket liegen bei rund 50 bis 100 Euro."
+  - q: "Was sollte im Preis eines Kochkurses in Florenz enthalten sein?"
+    a: "Ab 80 Euro sollten alle Zutaten, Schürzen, das komplette selbst gekochte Essen und der Wein dazu im Preis sein. Ernährungswünsche, glutenfrei eingeschlossen, werden vorab abgesprochen und sollten nichts extra kosten: Das ist Mehl, kein Trüffel."
+  - q: "Warum unterscheiden sich die Preise für Pasta-Kurse in Florenz so stark?"
+    a: "Vier Dinge erklären fast jeden Unterschied: die maximale Gruppengröße, ob Sie ein vollständiges Menü kochen und es auch gemeinsam essen, ob ein Marktbesuch dabei ist und ob die Küche Ihrer Gruppe allein gehört. Die Gruppengröße sagt am meisten über den Kurs aus."
+  - q: "Sind 95 Euro viel für einen Pasta-Kurs in Florenz?"
+    a: "Nein. 95 Euro liegen in der Mitte der Florentiner Gruppenkurs-Spanne, die inzwischen bis etwa 150 Euro pro Person für einen vergleichbaren dreieinhalbstündigen Kurs reicht. Zu diesem Preis sollten Sie einen kleinen Tisch erwarten, Köche, die davon leben, und den Wein inklusive statt am Ende aufgeschlagen."
+  - q: "Wie lange im Voraus sollte man einen Pasta-Kurs in Florenz buchen?"
+    a: "Von April bis Oktober eine Woche oder mehr. Kleine Kurse mit sechs bis acht Plätzen sind zuerst ausgebucht, gerade weil sie klein sind. Im Winter findet sich oft noch ein Platz in derselben Woche."
+  - q: "Kosten glutenfreie Pasta-Kurse in Florenz mehr?"
+    a: "Sollten sie nicht. Ein fairer Kurs bereitet vorab eine eigene glutenfreie Mehlmischung und eine separate Station vor, ohne Aufpreis. Wenn ein Kurs dafür einen Zuschlag verlangt, fragen Sie, wofür genau."
 ---
 
 Kurze Antwort: Ab Sommer 2026 kosten die meisten **Pasta-Kochkurse in Gruppen in Florenz etwa 60–120 € pro Person**, Kombinationen aus Marktführung und Kochen liegen bei etwa **120–180 €**, und private Kurse beginnen bei ein paar hundert Euro für die Gruppe. Online-Kurse mit zugeschicktem Zutaten-Kit liegen bei etwa **50–100 €**.

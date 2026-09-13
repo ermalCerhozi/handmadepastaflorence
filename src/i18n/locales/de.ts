@@ -34,6 +34,7 @@ const de = {
     team: 'Teambuilding',
     glutenFree: 'Glutenfreier Kurs',
     forTwo: 'Kurs für Zwei',
+    family: 'Familien-Kochkurs',
     gift: 'Kurs verschenken',
     guides: 'Guides & Geschichten',
     faq: 'FAQ & Allergene',

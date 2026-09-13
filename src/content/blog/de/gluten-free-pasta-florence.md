@@ -5,6 +5,17 @@ pubDate: 2026-07-08
 author: 'Endri Cerhozi'
 image: '../../../assets/images/shape-tagliatelle.webp'
 imageAlt: 'Frische Tagliatelle-Bänder, mit Mehl bestäubt, auf einem Holzbrett'
+faqs:
+  - q: "Ist es einfach, in Florenz glutenfrei zu essen?"
+    a: "Ja. Italien ist eines der einfachsten Länder Europas für Reisende mit Zöliakie: Diagnosen sind verbreitet, der nationale Zöliakie-Verband AIC zertifiziert Restaurants, und in einer Touristenstadt hat jeder Kellner senza glutine tausendmal gehört."
+  - q: "Wie sage ich auf Italienisch, dass ich Zöliakie habe?"
+    a: "Sono celiaco als Mann, sono celiaca als Frau. Das ist wichtiger als senza glutine, weil es der Küche sagt, dass es medizinisch ist und keine Diät. Damit wird aus wir haben eine glutenfreie Option ein lassen Sie mich prüfen, wie wir das kochen würden."
+  - q: "In welchen toskanischen Gerichten steckt verstecktes Gluten?"
+    a: "Ribollita und Pappa al Pomodoro sind die beiden Klassiker, auf die man achten muss, denn beide sind Brotsuppen. Jede mit Brot gebundene Bohnensuppe ist dieselbe Falle. Risotto, gegrilltes Fleisch und Fisch, Bohnen und Gemüsebeilagen sind von Natur aus glutenfrei."
+  - q: "Kann man einen Pasta-Kurs machen, wenn man Zöliakie hat?"
+    a: "Ja, mit der richtigen Vorbereitung: eine eigene glutenfreie Mehlmischung statt desselben Rezepts mit spontan anderem Mehl, eine saubere, separate Station statt einer abgewischten Ecke des gemeinsamen Tisches, und eine rechtzeitige Ansage, damit die Küche fertig ist, bevor das Mehl fliegt."
+  - q: "Kostet ein glutenfreier Pasta-Kurs bei Ihnen mehr?"
+    a: "Nein. Wir bereiten eine eigene glutenfreie Mischung und eine saubere Station ohne Aufpreis vor, und Sie rollen, formen und essen am selben Tisch wie alle anderen. Eine ehrliche Einschränkung: Im selben Raum wird Weizenmehl verwendet, wir sind also kein zertifiziert glutenfreier Betrieb. Wenn Ihre Empfindlichkeit stark ist, sagen Sie es bitte bei der Buchung."
 ---
 
 Hier ist die etwas unerwartete Wahrheit, die jeder Zöliakie-Reisende bei seiner Ankunft lernt: **Italien, das Land der Pasta, ist einer der einfachsten Orte in Europa, um sich glutenfrei zu ernähren.** Das Bewusstsein für Zöliakie ist hier vielen Ländern um Jahrzehnte voraus: Vorsorgeuntersuchungen sind üblich, die nationale Zöliakie-Vereinigung (AIC) zertifiziert Restaurants, und jeder Kellner in einer Touristenstadt hat *"senza glutine"* schon tausendmal gehört. Florenz bildet da keine Ausnahme.

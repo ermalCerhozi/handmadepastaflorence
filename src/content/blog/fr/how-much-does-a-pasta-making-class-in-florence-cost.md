@@ -5,6 +5,19 @@ pubDate: 2026-07-08
 author: 'Endri Cerhozi'
 image: '../../../assets/images/cooking_class_with_guests_in_picture.webp'
 imageAlt: 'Des invités préparent ensemble des pâtes fraîches lors d’un cours en petit groupe à Florence'
+faqs:
+  - q: "Combien coûte un cours de pâtes à Florence ?"
+    a: "À l’été 2026, la plupart des cours collectifs à Florence coûtent entre 60 et 120 euros par personne. Les formules visite du marché plus cuisine vont de 120 à 180 euros, les cours privés démarrent à quelques centaines d’euros pour le groupe, et les cours en ligne avec kit expédié tournent autour de 50 à 100 euros."
+  - q: "Que doit comprendre le prix d’un cours de cuisine à Florence ?"
+    a: "À partir de 80 euros, le prix doit couvrir tous les ingrédients, les tabliers, le repas complet que vous avez préparé et le vin à table. Les régimes particuliers, sans gluten compris, se règlent à l’avance et ne devraient rien coûter de plus : c’est de la farine, pas de la truffe."
+  - q: "Pourquoi les prix des cours de pâtes à Florence varient-ils autant ?"
+    a: "Quatre éléments expliquent presque tous les écarts : la taille maximale du groupe, le fait de cuisiner un repas complet et de s’asseoir pour le manger, la présence d’une visite de marché, et le caractère privatif de la cuisine. La taille du groupe est ce qui prédit le mieux votre expérience."
+  - q: "95 euros, est-ce cher pour un cours de pâtes à Florence ?"
+    a: "Non. 95 euros se situent au milieu de la fourchette des cours collectifs à Florence, qui monte aujourd’hui à environ 150 euros par personne pour un cours comparable de trois heures et demie. À ce prix, attendez-vous à une petite table, à des chefs dont c’est le métier, et au vin compris plutôt qu’ajouté à la fin."
+  - q: "Combien de temps à l’avance faut-il réserver un cours de pâtes à Florence ?"
+    a: "Une semaine ou plus d’avril à octobre. Les cours en petit groupe, de six à huit places, partent en premier précisément parce qu’ils sont petits. En hiver, on trouve souvent une place dans la semaine."
+  - q: "Les cours de pâtes sans gluten coûtent-ils plus cher à Florence ?"
+    a: "Ils ne devraient pas. Un cours sérieux prépare à l’avance un mélange de farines sans gluten dédié et un poste de travail séparé, sans supplément. Si un cours facture un supplément, demandez ce que vous payez exactement."
 ---
 
 Réponse courte : à l'été 2026, la plupart des **cours de fabrication de pâtes en groupe à Florence coûtent environ 60 € à 120 € par personne**, les combinaisons visite du marché plus cuisine tournent autour de **120 € à 180 €**, et les cours privés commencent à quelques centaines d'euros pour le groupe. Les cours en ligne avec un kit expédié se situent autour de **50 € à 100 €**.

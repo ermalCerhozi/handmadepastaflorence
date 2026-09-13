@@ -5,6 +5,17 @@ pubDate: 2026-07-08
 author: 'Endri Cerhozi'
 image: '../../../assets/images/shape-tagliatelle.webp'
 imageAlt: 'Nastri di tagliatelle fresche spolverate di farina su un tagliere di legno'
+faqs:
+  - q: "È facile mangiare senza glutine a Firenze?"
+    a: "Sì. L’Italia è uno dei paesi più semplici d’Europa per chi è celiaco: la diagnosi è diffusa, l’Associazione Italiana Celiachia certifica i ristoranti e in una città turistica ogni cameriere ha sentito dire senza glutine mille volte."
+  - q: "Come si dice che si è celiaci in italiano?"
+    a: "Sono celiaco al maschile, sono celiaca al femminile. Conta più di senza glutine perché dice alla cucina che si tratta di una condizione medica e non di una dieta, e questo cambia il discorso da abbiamo un’opzione senza glutine a vediamo come possiamo cucinarla."
+  - q: "Quali piatti toscani contengono glutine nascosto?"
+    a: "Ribollita e pappa al pomodoro sono i due classici a cui fare attenzione, perché sono entrambe zuppe di pane. Ogni zuppa di legumi addensata con il pane nasconde lo stesso tranello. Risotti, carni e pesce alla griglia, legumi e contorni di verdura sono naturalmente senza glutine."
+  - q: "Si può fare un corso di pasta fresca se si è celiaci?"
+    a: "Sì, con l’organizzazione giusta: una miscela di farine senza glutine dedicata e non la stessa ricetta improvvisata con un’altra farina, una postazione pulita e separata e non un angolo ripulito del tavolo comune, e un preavviso che permetta alla cucina di prepararsi prima che la farina cominci a volare."
+  - q: "Il corso di pasta senza glutine costa di più?"
+    a: "No. Prepariamo una miscela senza glutine dedicata e una postazione pulita senza alcun supplemento, e si tira, si forma e si mangia allo stesso tavolo di tutti gli altri. Un’avvertenza onesta: nella stessa stanza si usa farina di grano, quindi non siamo una struttura certificata senza glutine. Se la vostra sensibilità è grave, ditecelo quando prenotate."
 ---
 
 Ecco la verità controintuitiva che ogni viaggiatore celiaco impara all'arrivo: **l'Italia, il paese della pasta, è uno dei posti in Europa in cui è più facile mangiare senza glutine.** La consapevolezza della celiachia qui è decenni avanti rispetto alla maggior parte dei paesi: gli screening sono comuni, l'associazione nazionale celiachia (AIC) certifica i ristoranti, e ogni cameriere in una città turistica ha sentito *"senza glutine"* mille volte. Firenze non fa eccezione.

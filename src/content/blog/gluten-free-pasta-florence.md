@@ -5,6 +5,17 @@ pubDate: 2026-07-08
 author: 'Endri Cerhozi'
 image: '../../assets/images/shape-tagliatelle.webp'
 imageAlt: 'Fresh tagliatelle ribbons dusted with flour on a wooden board'
+faqs:
+  - q: "Is it easy to eat gluten-free in Florence?"
+    a: "Yes. Italy is one of the easiest countries in Europe for coeliac travellers: screening is common, the national coeliac association (AIC) certifies restaurants, and every waiter in a tourist city has heard senza glutine a thousand times."
+  - q: "How do I say I am coeliac in Italian?"
+    a: "Sono celiaco if you are male, sono celiaca if you are female. It matters more than senza glutine because it tells the kitchen you are medical, not dieting, which changes the conversation from we have a gluten-free option to let me check how we would cook it."
+  - q: "Which Tuscan dishes contain hidden gluten?"
+    a: "Ribollita and pappa al pomodoro are the two classics to watch, because both are bread soups. Any bean soup thickened with bread is the same trap. Risotto, grilled meat and fish, beans and vegetable sides are naturally gluten-free."
+  - q: "Can you take a pasta making class if you are coeliac?"
+    a: "Yes, with the right setup: a dedicated gluten-free flour blend rather than the same recipe improvised with different flour, a clean and separate station rather than a wiped-down corner of a shared table, and advance notice so the kitchen is ready before the flour starts flying."
+  - q: "Do you charge extra for a gluten-free pasta class?"
+    a: "No. We prepare a dedicated gluten-free blend and a clean station at no extra charge, and you roll, shape and eat alongside everyone else at the table. One honest caveat: wheat flour is used in the same room, so we are not a certified gluten-free facility. If your sensitivity is severe, tell us when you book."
 ---
 
 Here's the counterintuitive truth every celiac traveller learns on arrival: **Italy, the country of pasta, is one of the easiest places in Europe to eat gluten-free.** Celiac awareness here is decades ahead of most countries: screening is common, the national celiac association (AIC) certifies restaurants, and every waiter in a tourist city has heard *"senza glutine"* a thousand times. Florence is no exception.

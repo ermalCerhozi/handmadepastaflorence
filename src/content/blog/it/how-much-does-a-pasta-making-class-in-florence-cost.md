@@ -5,6 +5,19 @@ pubDate: 2026-07-08
 author: 'Endri Cerhozi'
 image: '../../../assets/images/cooking_class_with_guests_in_picture.webp'
 imageAlt: 'Ospiti che preparano insieme la pasta fresca a un corso per piccoli gruppi a Firenze'
+faqs:
+  - q: "Quanto costa un corso di pasta a Firenze?"
+    a: "Nell’estate 2026 la maggior parte dei corsi di gruppo a Firenze costa tra 60 e 120 euro a persona. I corsi che uniscono visita al mercato e cucina vanno dai 120 ai 180 euro, i corsi privati partono da qualche centinaio di euro per il gruppo e i corsi online con kit spedito si aggirano tra i 50 e i 100 euro."
+  - q: "Che cosa dovrebbe essere incluso nel prezzo di un corso di cucina a Firenze?"
+    a: "Dagli 80 euro in su il prezzo dovrebbe comprendere tutti gli ingredienti, i grembiuli, il pasto completo che avete preparato e il vino a tavola. Le esigenze alimentari, senza glutine comprese, vanno concordate in anticipo e non dovrebbero costare di più: è farina, non tartufo."
+  - q: "Perché i prezzi dei corsi di pasta a Firenze sono così diversi tra loro?"
+    a: "Quasi ogni differenza si spiega con quattro fattori: il numero massimo di partecipanti, se si cucina un pasto completo e ci si siede a tavola a mangiarlo, se è inclusa una visita al mercato e se la cucina è riservata al vostro gruppo. La dimensione del gruppo è il dato che predice meglio l’esperienza."
+  - q: "95 euro sono tanti per un corso di pasta a Firenze?"
+    a: "No. 95 euro si collocano a metà della fascia dei corsi di gruppo a Firenze, che oggi arriva a circa 150 euro a persona per un corso paragonabile di tre ore e mezza. A quel prezzo dovreste aspettarvi un tavolo piccolo, cuochi che cucinano per mestiere e il vino compreso, non aggiunto alla fine."
+  - q: "Con quanto anticipo conviene prenotare un corso di pasta a Firenze?"
+    a: "Da aprile a ottobre almeno una settimana. I corsi per piccoli gruppi, da sei a otto posti, si esauriscono per primi proprio perché sono piccoli. D’inverno si trova spesso posto nella stessa settimana."
+  - q: "I corsi di pasta senza glutine a Firenze costano di più?"
+    a: "Non dovrebbero. Un corso corretto prepara in anticipo una miscela di farine senza glutine dedicata e una postazione separata, senza supplemento. Se un corso chiede un sovrapprezzo, chiedete che cosa state pagando esattamente."
 ---
 
 Risposta breve: a partire dall'estate 2026, la maggior parte dei **corsi di pasta fresca di gruppo a Firenze costa all'incirca €60–€120 a persona**, le combinazioni tour del mercato più corso si aggirano sui **€120–€180**, e i corsi privati partono da qualche centinaio di euro per gruppo. I corsi online con kit spedito si aggirano sui **€50–€100**.
