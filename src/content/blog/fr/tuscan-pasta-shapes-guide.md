@@ -61,3 +61,5 @@ Les raviolis à la ricotta et aux épinards avec beurre et sauge sont la forme q
 Si vous mangez : des pici si vous en voyez, des pappardelle al cinghiale si c'est l'automne. (Voici [où chercher à Florence](/fr/blog/where-to-eat-handmade-pasta-in-florence/).)
 
 Si vous cuisinez : commencez par les tagliatelles pour la technique, les pici pour le plaisir, les tortelli pour vous vanter. Nous enseignons toutes ces formes, quatre formes par cours, dans [notre cuisine de l'Oltrarno](/fr/cours-de-pates-fraiches-florence/), ou [en ligne en direct](/fr/cours-pates-en-ligne/) si la Toscane n'est pas encore au programme.
+
+Et si vous voulez manger une forme là où elle est née, les pici sont de Sienne et les tordelli de Lucques : [excursions depuis Florence](/fr/blog/day-trips-from-florence/), choisies pour ce qu’il y a dans l’assiette.

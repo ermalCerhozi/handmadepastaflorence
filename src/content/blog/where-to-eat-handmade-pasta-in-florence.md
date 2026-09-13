@@ -85,3 +85,5 @@ If you want to know what you are looking at before you order, each of those link
 ## The other option: eat the pasta you made
 
 The best plate of handmade pasta in Florence is honestly the one you rolled yourself twenty minutes earlier; I'm biased, but our guests say it, not us. Every one of [our classes](/pasta-making-class-florence/) ends exactly like a good trattoria lunch: your pasta, a Tuscan sauce, a glass of local wine, and nowhere to be for a while.
+
+And if you want the wider list — the six plates that actually belong to this city, and the famous Italian dishes that come from somewhere else — that is [what to eat in Florence](/blog/what-to-eat-in-florence/). For the towns around it, each has a dish Florence does not make: [day trips from Florence](/blog/day-trips-from-florence/).

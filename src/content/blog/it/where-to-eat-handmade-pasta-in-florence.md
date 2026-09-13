@@ -85,3 +85,5 @@ Se vuoi sapere cosa stai guardando prima di ordinare, ognuno di quei link apre i
 ## L'altra opzione: mangia la pasta che hai preparato
 
 Il miglior piatto di pasta fresca a Firenze è onestamente quello che hai steso tu stesso venti minuti prima; sono di parte, ma i nostri ospiti lo dicono, non noi. Ognuno dei [nostri corsi](/it/corso-pasta-fresca-firenze/) finisce esattamente come un buon pranzo in trattoria: la tua pasta, un sugo toscano, un bicchiere di vino locale, e nessun posto dove dover correre.
+
+E se volete la lista più larga — i sei piatti che appartengono davvero a questa città e i grandi classici italiani che vengono da altrove — è [cosa mangiare a Firenze](/it/blog/what-to-eat-in-florence/). Per le città intorno, ognuna ha un piatto che Firenze non fa: [gite da Firenze](/it/blog/day-trips-from-florence/).

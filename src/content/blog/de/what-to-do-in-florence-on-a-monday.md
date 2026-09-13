@@ -62,3 +62,5 @@ Es löst auch das andere Montagsproblem, nämlich das Mittagessen: Sie haben nic
 - **Abend:** hinauf zum Piazzale Michelangelo und nach San Miniato zum Sonnenuntergang, dann Aperitivo auf der [Piazza Santo Spirito](/de/blog/things-to-do-in-oltrarno-florence/).
 
 Nichts auf dieser Liste ist montags geschlossen. Und Sie haben sich die Uffizien für einen Vormittag aufgehoben, an dem sie offen und ruhiger sind und Sie es nicht eilig haben.
+
+Sie reisen mit Kindern? Dieselbe Logik — Essen und freie Flächen statt Galerien — steht ausführlich in [Florenz mit Kindern](/de/blog/florence-with-kids/).

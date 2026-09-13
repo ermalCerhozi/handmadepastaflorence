@@ -83,3 +83,5 @@ Florence est célèbre pour être une ville de viande (la bistecca est sur toute
 ## L'autre option : mangez les pâtes que vous avez préparées
 
 La meilleure assiette de pâtes faites à la main à Florence est honnêtement celle que vous avez vous-même roulée vingt minutes plus tôt; je ne suis pas objectif, mais ce sont nos invités qui le disent, pas nous. Chacun de [nos cours](/fr/cours-de-pates-fraiches-florence/) se termine exactement comme un bon déjeuner de trattoria : vos pâtes, une sauce toscane, un verre de vin local, et nulle part où aller pendant un moment.
+
+Et si vous voulez la liste plus large — les six plats qui appartiennent vraiment à cette ville, et les grands classiques italiens qui viennent d’ailleurs — c’est [que manger à Florence](/fr/blog/what-to-eat-in-florence/). Pour les villes alentour, chacune a un plat que Florence ne fait pas : [excursions depuis Florence](/fr/blog/day-trips-from-florence/).

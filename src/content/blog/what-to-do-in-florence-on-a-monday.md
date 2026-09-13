@@ -62,3 +62,5 @@ It also solves the other Monday problem, which is lunch: you have booked nothing
 - **Evening:** walk up to Piazzale Michelangelo and San Miniato for sunset, then aperitivo in [Piazza Santo Spirito](/blog/things-to-do-in-oltrarno-florence/).
 
 Nothing on that list is closed on a Monday. And you have kept the Uffizi for a morning when it is open, quieter and you are not rushing it.
+
+Travelling with children? The same logic — food and open space instead of galleries — is worked out in full in [Florence with kids](/blog/florence-with-kids/).

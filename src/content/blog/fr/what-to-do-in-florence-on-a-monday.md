@@ -62,3 +62,5 @@ Cela règle aussi l’autre problème du lundi, le déjeuner : vous n’avez rie
 - **Soir :** montée au Piazzale Michelangelo et à San Miniato pour le coucher du soleil, puis apéritif [Piazza Santo Spirito](/fr/blog/things-to-do-in-oltrarno-florence/).
 
 Rien de cette liste n’est fermé un lundi. Et vous avez gardé les Offices pour une matinée où ils sont ouverts, plus calmes, et sans avoir à courir.
+
+Vous voyagez avec des enfants ? La même logique — la nourriture et les espaces ouverts plutôt que les galeries — est développée en entier dans [Florence avec des enfants](/fr/blog/florence-with-kids/).

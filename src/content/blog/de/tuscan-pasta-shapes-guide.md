@@ -61,3 +61,5 @@ Ricotta-Spinat-Ravioli mit Butter und Salbei ist die Form, die jeder kennt, und 
 Wenn Sie essen: Pici, wenn Sie sie sehen, Pappardelle al cinghiale, wenn Herbst ist. (Hier ist, [wo Sie in Florenz suchen sollten](/de/blog/where-to-eat-handmade-pasta-in-florence/).)
 
 Wenn Sie kochen: Beginnen Sie mit Tagliatelle für das Können, Pici für den Spaß, Tortelli, um damit angeben zu können. Wir unterrichten sie alle, vier Formen pro Kurs, in [unserer Küche im Oltrarno](/de/pasta-kurs-florenz/), oder [live online](/de/online-pasta-kurs/), falls die Toskana noch nicht im Kalender steht.
+
+Und wenn Sie eine Form dort essen wollen, wo sie herkommt: Pici gehören nach Siena, Tordelli nach Lucca. [Ausflüge ab Florenz](/de/blog/day-trips-from-florence/), ausgewählt nach dem, was auf dem Teller liegt.

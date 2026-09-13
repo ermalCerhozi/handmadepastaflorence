@@ -85,3 +85,5 @@ Wenn Sie vor dem Bestellen wissen wollen, was vor Ihnen liegt: Jeder dieser Link
 ## Die andere Option: Essen Sie die Pasta, die Sie gemacht haben
 
 Der beste Teller handgemachte Pasta in Florenz ist ehrlich gesagt der, den Sie zwanzig Minuten zuvor selbst gerollt haben; ich bin voreingenommen, aber das sagen unsere Gäste, nicht wir. Jeder [unserer Kurse](/de/pasta-kurs-florenz/) endet genau wie ein gutes Trattoria-Mittagessen: Ihre Pasta, eine toskanische Soße, ein Glas lokaler Wein und für eine Weile kein Ort, an dem Sie sein müssten.
+
+Und wenn Sie die größere Liste wollen — die sechs Teller, die wirklich zu dieser Stadt gehören, und die berühmten italienischen Gerichte, die von woanders kommen — dann ist das [Essen in Florenz](/de/blog/what-to-eat-in-florence/). Für die Städte ringsum hat jede ein Gericht, das Florenz nicht macht: [Ausflüge ab Florenz](/de/blog/day-trips-from-florence/).

@@ -63,3 +63,5 @@ Se stai mangiando: pici se li vedi, pappardelle al cinghiale se è autunno. (Ecc
 Ognuno dei quattro formati che insegniamo ha una sua pagina nella [nostra libreria dei formati di pasta](/it/formati-di-pasta-toscana/): l'impasto, il taglio e il sugo per cui è nato, un formato alla volta.
 
 Se stai impastando: inizia con le tagliatelle per la tecnica, i pici per il divertimento, i tortelli per potertene vantare. Li insegniamo tutti, quattro formati a corso, nella [nostra cucina in Oltrarno](/it/corso-pasta-fresca-firenze/), o [in diretta online](/it/corso-pasta-online/) se la Toscana non è ancora in programma.
+
+E se volete mangiare un formato dove è nato, i pici sono di Siena e i tordelli di Lucca: [gite da Firenze](/it/blog/day-trips-from-florence/), scelte per quello che c’è nel piatto.

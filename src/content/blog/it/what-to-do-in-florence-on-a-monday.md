@@ -62,3 +62,5 @@ Risolve anche l’altro problema del lunedì, cioè il pranzo: non avete prenota
 - **Sera:** salita a Piazzale Michelangelo e San Miniato per il tramonto, poi aperitivo in [Piazza Santo Spirito](/it/blog/things-to-do-in-oltrarno-florence/).
 
 Niente di questa lista è chiuso di lunedì. E vi siete tenuti gli Uffizi per una mattina in cui sono aperti, più tranquilli, e non dovete correre.
+
+Viaggiate con bambini? Lo stesso ragionamento — cibo e spazi aperti invece che gallerie — è sviluppato per intero in [Firenze con i bambini](/it/blog/florence-with-kids/).
