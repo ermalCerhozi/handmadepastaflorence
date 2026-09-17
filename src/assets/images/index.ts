@@ -7,7 +7,7 @@
 // worth the pipeline), og-share.webp, favicons, apple-touch-icon — those stay
 // in public/ because they must resolve at a stable, un-hashed URL (social
 // crawlers, schema.org JSON-LD, <link> tags).
-export { default as cookingClassGuests } from './cooking_class_with_guests_in_picture.webp';
+export { default as cookingClassGuests } from './cooking-class-with-guests-in-picture.webp';
 export { default as aperitivo } from './aperitivo.webp';
 export { default as weddingCake } from './wedding-cake-2.webp';
 // First frames of the two clips in src/assets/video/ — each is the poster and
