@@ -5,6 +5,10 @@ pubDate: 2026-08-11
 author: 'Endri Cerhozi'
 image: '../../../assets/images/cooking-class.webp'
 imageAlt: 'Un piccolo gruppo prepara pasta fresca a mano a un tavolo a Firenze'
+classKey: 'pasta-making'
+related:
+  - 'how-much-does-a-pasta-making-class-in-florence-cost'
+  - 'where-to-take-pasta-making-class-florence'
 faqs:
   - q: "Qual è la cosa più importante da controllare quando si prenota un corso di cucina a Firenze?"
     a: "Il numero massimo di partecipanti. Predice l'esperienza meglio del prezzo, della posizione o del menù. A Firenze gli annunci definiscono abitualmente «piccolo gruppo» un corso da dodici persone. Sotto gli otto uno chef riesce a raggiungerti quando qualcosa va storto; sopra i dodici, per lo più guardi."

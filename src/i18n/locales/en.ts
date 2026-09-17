@@ -57,6 +57,9 @@ const en = {
     updated: 'Prices and times checked in',
     galleryStation: 'Your station, set out before you arrive: your own board, rolling pin and flour. Nobody shares a bowl.',
     galleryTable: 'Where it ends: what you made, a Tuscan board alongside it, and the two glasses that are already in the price.',
+    galleryStationAlt: 'A prepared station in our Florence kitchen: bamboo board, rolling pin and bowls of flour and eggs on the steel counter',
+    galleryTableAlt: 'The table at the end of class: a board of Tuscan salumi and cheese, burrata with cherry tomatoes, and two glasses of red wine',
+    breadcrumbLabel: 'Breadcrumb',
     faqPre: 'Good to ',
     faqItal: 'know.',
     relPre: 'Looking for something ',
@@ -221,6 +224,8 @@ const en = {
     ctaP: 'Roll, fold and eat it yourself: in our Florence kitchen or live online.',
     ctaBtn: 'Book a class',
     ctaLink: 'See the classes',
+    relatedTitle: 'Keep reading',
+    relatedSub: 'More guides from our kitchen',
   },
 
   // BookingDrawer — server-rendered markup labels.

@@ -5,6 +5,10 @@ pubDate: 2026-08-27
 author: 'Endri Cerhozi'
 image: '../../../assets/images/plates.webp'
 imageAlt: 'Frisch zubereitete Pasta auf einem Tisch'
+classKey: 'pasta-making'
+related:
+  - 'best-flour-for-italian-fresh-pasta'
+  - 'tuscan-pasta-shapes-guide'
 faqs:
   - q: "Ist frische Pasta besser als getrocknete Pasta in Italien?"
     a: "Nein, sie sind einfach nur unterschiedlich. Frische Pasta ist weich, nimmt reichhaltige Saucen auf und wird oft mit Eiern hergestellt. Getrocknete Pasta ist fest, hat einen perfekten 'al dente' Biss und ist ideal für Olivenöl- oder Tomatensaucen."

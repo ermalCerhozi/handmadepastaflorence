@@ -20,6 +20,23 @@ const blog = defineCollection({
     // target People-Also-Ask / featured-snippet queries the guide already ranks for.
     faqs: z.array(z.object({ q: z.string(), a: z.string() })).optional(),
     badge: z.string().optional(),
+    /**
+     * Which class landing page this post's CTA and author bio should point at,
+     * as a key in src/data/landings.ts. Defaults to 'pasta-making'.
+     *
+     * WHY: every post used to hardcode 'pasta-making', which now receives 71
+     * in-body links while gift/gluten-free/family/for-two receive 3-4 each and
+     * rank 35-90 (GSC, 16 Jul-15 Sep 2026). The guides are ~50% of all site
+     * clicks, so where they point is the site's main internal-link budget.
+     */
+    classKey: z.string().optional(),
+    /**
+     * Slugs of other posts to surface at the foot of this one, in order.
+     * Hand-curated rather than computed: relatedness here is editorial, and a
+     * tag-similarity guess would link the gelato guide to the flour post.
+     * Slugs that do not exist in the reader's locale are dropped silently.
+     */
+    related: z.array(z.string()).optional(),
   }),
 });
 

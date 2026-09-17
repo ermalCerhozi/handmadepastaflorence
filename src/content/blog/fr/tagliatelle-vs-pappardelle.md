@@ -5,6 +5,10 @@ pubDate: 2026-08-16
 author: 'Endri Cerhozi'
 image: '../../../assets/images/shape-pappardelle.webp'
 imageAlt: 'Larges rubans de pappardelle et tagliatelle plus étroites côte à côte sur une planche farinée'
+classKey: 'pasta-making'
+related:
+  - 'ravioli-vs-tortelli'
+  - 'tuscan-pasta-shapes-guide'
 faqs:
   - q: "Quelle est la largeur des pappardelle ?"
     a: "Les pappardelle se coupent entre 20 et 30 mm de large, soit environ deux à trois centimètres, à peu près la largeur de deux doigts. C'est la plus large des pâtes en ruban italiennes, juste avant la feuille de lasagne. Tout ce qui est plus étroit qu'environ 15 mm se rapproche plus d'une tagliatella que d'une pappardella."

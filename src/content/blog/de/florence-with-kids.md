@@ -5,6 +5,10 @@ pubDate: 2026-09-13
 author: 'Endri Cerhozi'
 image: '../../../assets/images/cutting-pizza.webp'
 imageAlt: 'Ein Kind rollt neben einem Erwachsenen Pastateig an einem Küchentisch in Florenz'
+classKey: 'family'
+related:
+  - 'what-to-do-in-florence-on-a-monday'
+  - 'what-to-eat-in-florence'
 faqs:
   - q: "Ist Florenz gut für Kinder?"
     a: "Ja, wenn Sie den Tag um Essen und freie Flächen herum planen statt um Galerien. Das historische Zentrum lässt sich in zwanzig Minuten zu Fuß durchqueren, Gelato gibt es überall, und der Boboli-Garten bietet Platz zum Rennen. Es sind die berühmten Museen, die die Geduld eines Kindes auf die Probe stellen, nicht die Stadt."

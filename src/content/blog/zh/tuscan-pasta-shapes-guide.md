@@ -5,6 +5,10 @@ pubDate: 2026-07-08
 author: 'Endri Cerhozi'
 image: '../../../assets/images/shape-pici.webp'
 imageAlt: '手工揉制的 pici，粗粗的托斯卡纳意面条，撒满面粉'
+classKey: 'pasta-making'
+related:
+  - 'tagliatelle-vs-pappardelle'
+  - 'ravioli-vs-tortelli'
 faqs:
   - q: '托斯卡纳以什么意面闻名？'
     a: '托斯卡纳最著名的是 pici（来自锡耶纳山区，仅用水和面粉手工揉制的粗线条意面）、pappardelle（宽条鸡蛋意面，通常搭配野猪或野兔肉酱）以及 tortelli di patate（来自穆杰洛的土豆馅意面包裹）。日常餐桌上也经常能见到 tagliatelle（经典鸡蛋意面）和里科塔奶酪菠菜 ravioli（意饺）。'

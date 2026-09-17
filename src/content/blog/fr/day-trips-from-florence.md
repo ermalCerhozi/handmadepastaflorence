@@ -5,6 +5,10 @@ pubDate: 2026-09-13
 author: 'Endri Cerhozi'
 image: '../../../assets/images/shape-pici.webp'
 imageAlt: 'Pici roulés à la main, les pâtes épaisses sans œuf de Sienne et du sud de la Toscane'
+classKey: 'agriturismo'
+related:
+  - 'what-to-eat-in-florence'
+  - 'where-to-eat-handmade-pasta-in-florence'
 faqs:
   - q: "Quelle est la meilleure excursion depuis Florence ?"
     a: "Sienne si vous voulez une ville qui remplit toute une journée, Lucques si vous voulez marcher et manger sans la foule, San Gimignano pour le vin et les vues, Pise si vous y prenez l’avion de toute façon. Sienne et Lucques sont les deux qui récompensent le plus une journée organisée autour de la table."

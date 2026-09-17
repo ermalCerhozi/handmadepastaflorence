@@ -6,6 +6,10 @@ updatedDate: 2026-09-05
 author: 'Endri Cerhozi'
 image: '../../../assets/images/plates.webp'
 imageAlt: 'Assiettes de pâtes fraîches faites à la main servies sur une table toscane'
+classKey: 'pasta-making'
+related:
+  - 'what-to-eat-in-florence'
+  - 'tuscan-pasta-shapes-guide'
 faqs:
   - q: "Où sont les meilleures pâtes de Florence ?"
     a: "Les meilleures pâtes faites à la main de Florence ne se trouvent pas près du Duomo mais dans les trattorias autour du marché de Sant'Ambrogio et dans l'Oltrarno autour de Santo Spirito: des endroits avec un menu court, des pâtes nommées par leur forme, et une salle pleine d'Italiens à 13h00. Commandez des pici si vous en voyez, ou des pappardelle al cinghiale en automne."

@@ -6,6 +6,10 @@ updatedDate: 2026-09-05
 author: 'Endri Cerhozi'
 image: '../../../assets/images/plates.webp'
 imageAlt: '在托斯卡纳餐桌上端上的新鲜手工意面'
+classKey: 'pasta-making'
+related:
+  - 'what-to-eat-in-florence'
+  - 'tuscan-pasta-shapes-guide'
 faqs:
   - q: "佛罗伦萨最好的意面在哪里？"
     a: "佛罗伦萨最好的手工意面不在大教堂附近，而是在圣安布罗焦（Sant'Ambrogio）市场周围以及奥尔特拉诺（Oltrarno）圣斯皮里托（Santo Spirito）附近的小餐馆里：那些菜单很短、意面按形状命名，并且下午 1 点挤满意大利人的地方。如果你看到 pici，就点它；如果是秋天，就点野猪肉酱宽面（pappardelle al cinghiale）。"

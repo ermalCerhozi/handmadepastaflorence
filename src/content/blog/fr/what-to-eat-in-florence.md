@@ -5,6 +5,10 @@ pubDate: 2026-09-13
 author: 'Endri Cerhozi'
 image: '../../../assets/images/plates.webp'
 imageAlt: 'Assiettes de pâtes fraîches faites main et d’antipasti toscans sur une table en bois à Florence'
+classKey: 'market-tour'
+related:
+  - 'where-to-eat-handmade-pasta-in-florence'
+  - 'day-trips-from-florence'
 faqs:
   - q: "Pour quels plats Florence est-elle connue ?"
     a: "Pour la bistecca alla fiorentina, la côte de bœuf épaisse de trois doigts, grillée sur la braise et servie saignante. Au quotidien, d’autres classiques comptent davantage : le lampredotto au coin de la rue, la ribollita et la pappa al pomodoro en hiver, la panzanella en été, les crostini di fegatini en entrée et les pappardelle au ragù de sanglier."

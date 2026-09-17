@@ -50,6 +50,9 @@ const it: Dict = {
     updated: `Prezzi e orari verificati:`,
     galleryStation: `La tua postazione, pronta prima che arrivi: tagliere, matterello e farina tuoi. Nessuno divide una ciotola.`,
     galleryTable: `Come finisce: quello che hai preparato, un tagliere toscano accanto e i due calici già compresi nel prezzo.`,
+    galleryStationAlt: `Una postazione pronta nella nostra cucina a Firenze: tagliere di bambù, mattarello e ciotole di farina e uova sul piano d'acciaio`,
+    galleryTableAlt: `La tavola a fine corso: un tagliere di salumi e formaggi toscani, burrata con pomodorini e due calici di rosso`,
+    breadcrumbLabel: `Percorso di navigazione`,
     faqPre: `Buono a `,
     faqItal: `sapersi.`,
     relPre: `Cerchi qualcos'`,
@@ -212,6 +215,8 @@ const it: Dict = {
     ctaP: `Stendi, piega e mangia tu stesso: nella nostra cucina a Firenze o in diretta online.`,
     ctaBtn: `Prenota un corso`,
     ctaLink: `Scopri i corsi`,
+    relatedTitle: `Continua a leggere`,
+    relatedSub: `Altre guide dalla nostra cucina`,
   },
 
   bk: {

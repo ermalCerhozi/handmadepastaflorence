@@ -5,6 +5,10 @@ pubDate: 2026-08-11
 author: 'Endri Cerhozi'
 image: '../../../assets/images/shape-ravioli.webp'
 imageAlt: '刚做好的带馅意面，摆在撒了面粉的木案板上'
+classKey: 'pasta-making'
+related:
+  - 'tagliatelle-vs-pappardelle'
+  - 'tuscan-pasta-shapes-guide'
 faqs:
   - q: "Ravioli 和 tortelli 有什么区别？"
     a: "主要是大小和地域的差别，而非技法。Ravioli 是全意大利通用的带馅意面统称，通常是较小的方形，夹在两张面皮之间封口。Tortelli 是同一种东西在托斯卡纳和艾米利亚的叫法，通常更大：较大的方形或半月形。在托斯卡纳，经典馅料是土豆，而不是里科塔奶酪。"

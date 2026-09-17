@@ -5,6 +5,10 @@ pubDate: 2026-09-13
 author: 'Endri Cerhozi'
 image: '../../../assets/images/shape-pici.webp'
 imageAlt: 'Handgerollte Pici, die dicke eifreie Pasta aus Siena und der südlichen Toskana'
+classKey: 'agriturismo'
+related:
+  - 'what-to-eat-in-florence'
+  - 'where-to-eat-handmade-pasta-in-florence'
 faqs:
   - q: "Welcher Tagesausflug ab Florenz lohnt sich am meisten?"
     a: "Siena, wenn eine Stadt den ganzen Tag tragen soll. Lucca, wenn Sie ohne Gedränge laufen und essen wollen. San Gimignano für Wein und Aussicht. Pisa, wenn Sie ohnehin dort fliegen. Siena und Lucca belohnen einen Tag, der ums Essen herum geplant ist, am deutlichsten."

@@ -5,6 +5,10 @@ pubDate: 2026-08-27
 author: 'Endri Cerhozi'
 image: '../../../assets/images/shape-pappardelle.webp'
 imageAlt: '中间有蛋黄的00号面粉堆'
+classKey: 'online'
+related:
+  - 'fresh-vs-dry-pasta-italy'
+  - 'tuscan-pasta-shapes-guide'
 faqs:
   - q: "制作新鲜意大利面最好的面粉是什么？"
     a: "制作新鲜鸡蛋意大利面（如细面和意大利方饺）最好的面粉是“00”号（doppio zero）软质小麦粉。对于无蛋意大利面（如手工粗面或猫耳朵面），则使用粗面粉（semola di grano duro）。"

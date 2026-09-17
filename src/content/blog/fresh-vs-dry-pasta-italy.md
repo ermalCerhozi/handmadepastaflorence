@@ -5,6 +5,10 @@ pubDate: 2026-08-27
 author: 'Endri Cerhozi'
 image: '../../assets/images/plates.webp'
 imageAlt: 'Freshly made pasta on a table'
+classKey: 'pasta-making'
+related:
+  - 'best-flour-for-italian-fresh-pasta'
+  - 'tuscan-pasta-shapes-guide'
 faqs:
   - q: "Is fresh pasta better than dry pasta in Italy?"
     a: "No, they are just different. Fresh pasta is soft, absorbs rich sauces, and is often made with eggs. Dry pasta is firm, holds a perfect 'al dente' bite, and is ideal for olive oil or tomato-based sauces."

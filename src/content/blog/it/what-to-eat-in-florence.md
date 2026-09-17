@@ -5,6 +5,10 @@ pubDate: 2026-09-13
 author: 'Endri Cerhozi'
 image: '../../../assets/images/plates.webp'
 imageAlt: 'Piatti di pasta fresca fatta a mano e antipasti toscani su un tavolo di legno a Firenze'
+classKey: 'market-tour'
+related:
+  - 'where-to-eat-handmade-pasta-in-florence'
+  - 'day-trips-from-florence'
 faqs:
   - q: "Per che cosa è famosa Firenze a tavola?"
     a: "Per la bistecca alla fiorentina, la costata alta tre dita, cotta sulla brace e servita al sangue. Nel quotidiano contano di più altri classici: il lampredotto al trippaio, la ribollita e la pappa al pomodoro d’inverno, la panzanella d’estate, i crostini di fegatini per cominciare e le pappardelle al cinghiale."

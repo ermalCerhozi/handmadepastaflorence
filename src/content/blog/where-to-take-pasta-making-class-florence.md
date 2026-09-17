@@ -5,6 +5,10 @@ pubDate: 2026-08-27
 author: 'Endri Cerhozi'
 image: '../../assets/images/hands-on-pasta-cooking-class-florence-group.webp'
 imageAlt: 'Chef and guests making fresh pasta at a large wooden table'
+classKey: 'pasta-making'
+related:
+  - 'how-much-does-a-pasta-making-class-in-florence-cost'
+  - 'how-to-choose-a-pasta-class-in-florence'
 faqs:
   - q: "What is the best pasta making class in Florence?"
     a: "The best class depends on what you want. For a highly intimate, 100% hands-on experience focused solely on pasta, Handmade Pasta Florence is ideal. For a larger group experience or broader Italian cooking, check out 360 Cooking Class Experience or Mama Florence."

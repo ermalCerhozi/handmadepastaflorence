@@ -1,10 +1,14 @@
 ---
-title: 'Ravioli et tortelli : quelle différence ?'
+title: 'Ravioli, tortelli ou tortellini : la différence'
 description: 'Ravioli, tortelli, tortellini et agnolotti sont tous des pâtes farcies : taille, forme, farce et région les séparent. Ce que chaque nom signifie.'
 pubDate: 2026-08-11
 author: 'Endri Cerhozi'
 image: '../../../assets/images/shape-ravioli.webp'
 imageAlt: 'Pâtes farcies fraîchement préparées sur une planche farinée'
+classKey: 'pasta-making'
+related:
+  - 'tagliatelle-vs-pappardelle'
+  - 'tuscan-pasta-shapes-guide'
 faqs:
   - q: "Quelle est la différence entre les ravioli et les tortelli ?"
     a: "Surtout la taille et la région, plus que la technique. Ravioli est le terme large, national, pour les pâtes farcies : en général un carré plus petit scellé entre deux feuilles. Tortelli est le nom que porte la même idée en Toscane et en Émilie, et ils sont généralement plus grands: un carré ou un demi-cercle. En Toscane, la farce classique est à la pomme de terre, pas à la ricotta."

@@ -5,6 +5,10 @@ pubDate: 2026-07-08
 author: 'Endri Cerhozi'
 image: '../../../assets/images/cooking_class_with_guests_in_picture.webp'
 imageAlt: '客人们在佛罗伦萨的小班课程中一起制作新鲜意面'
+classKey: 'pasta-making'
+related:
+  - 'how-to-choose-a-pasta-class-in-florence'
+  - 'where-to-take-pasta-making-class-florence'
 faqs:
   - q: "在佛罗伦萨上一堂意面课程要多少钱？"
     a: "截至2026年夏季，佛罗伦萨大多数团体意面课程为每人60至120欧元。市场导览加烹饪的组合课程约为120至180欧元，私人课程按团体计价，从几百欧元起，而配送食材包的线上课程约为50至100欧元。"

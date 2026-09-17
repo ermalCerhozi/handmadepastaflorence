@@ -5,6 +5,10 @@ pubDate: 2026-08-16
 author: 'Endri Cerhozi'
 image: '../../../assets/images/shape-pappardelle.webp'
 imageAlt: 'Pappardelle larghe e tagliatelle più strette affiancate su un tagliere infarinato'
+classKey: 'pasta-making'
+related:
+  - 'ravioli-vs-tortelli'
+  - 'tuscan-pasta-shapes-guide'
 faqs:
   - q: "Quanto sono larghe le pappardelle?"
     a: "Le pappardelle si tagliano tra i 20 e i 30 mm, quindi due o tre centimetri, più o meno la larghezza di due dita. Sono il nastro più largo della tradizione italiana, escluse le sfoglie da lasagna. Sotto i 15 mm circa non sono più pappardelle ma tagliatelle larghe."

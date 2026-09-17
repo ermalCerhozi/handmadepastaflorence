@@ -107,6 +107,17 @@ export interface LandingPage {
    * clip's first frame, so swapping one means swapping both.
    */
   video?: string;
+  /**
+   * ISO date the FACTS on this page last changed — price, times, group size,
+   * what's included. Feeds the visible "checked in <month>" line and the
+   * Course schema's `dateModified`, so it must track a real change: bumping it
+   * for a copy-edit is the same lie in two places.
+   *
+   * Optional. Pages that have not changed since the August 2026 pass inherit
+   * PAGE_UPDATED_FALLBACK in ClassLanding.astro, which is what every page used
+   * to share as a single frozen constant.
+   */
+  updated?: string;
   locales: Partial<Record<Locale, LandingLocale>>;
 }
 

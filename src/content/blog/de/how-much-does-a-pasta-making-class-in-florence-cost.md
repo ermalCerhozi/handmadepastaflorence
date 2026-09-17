@@ -5,6 +5,10 @@ pubDate: 2026-07-08
 author: 'Endri Cerhozi'
 image: '../../../assets/images/cooking_class_with_guests_in_picture.webp'
 imageAlt: 'Gäste machen gemeinsam frische Pasta bei einem Kurs in einer kleinen Gruppe in Florenz'
+classKey: 'pasta-making'
+related:
+  - 'how-to-choose-a-pasta-class-in-florence'
+  - 'where-to-take-pasta-making-class-florence'
 faqs:
   - q: "Wie viel kostet ein Pasta-Kochkurs in Florenz?"
     a: "Im Sommer 2026 kosten die meisten Gruppenkurse in Florenz 60 bis 120 Euro pro Person. Kombinationen aus Marktbesuch und Kochkurs liegen bei etwa 120 bis 180 Euro, private Kurse beginnen bei einigen hundert Euro für die Gruppe, und Online-Kurse mit zugeschicktem Zutatenpaket liegen bei rund 50 bis 100 Euro."

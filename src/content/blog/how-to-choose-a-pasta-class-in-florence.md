@@ -5,6 +5,10 @@ pubDate: 2026-08-11
 author: 'Endri Cerhozi'
 image: '../../assets/images/cooking-class.webp'
 imageAlt: 'A small group making fresh pasta by hand at a table in Florence'
+classKey: 'pasta-making'
+related:
+  - 'how-much-does-a-pasta-making-class-in-florence-cost'
+  - 'where-to-take-pasta-making-class-florence'
 faqs:
   - q: "What is the most important thing to check when booking a cooking class in Florence?"
     a: "The maximum group size. It predicts your experience better than price, location or menu. In Florence, listings routinely describe a class of twelve as a 'small group'. Under eight means a chef can reach you when something goes wrong; over twelve and you are mostly watching."

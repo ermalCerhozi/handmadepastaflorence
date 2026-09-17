@@ -5,6 +5,10 @@ pubDate: 2026-07-08
 author: 'Endri Cerhozi'
 image: '../../../assets/images/shape-tagliatelle.webp'
 imageAlt: '在木板上撒上面粉的新鲜 tagliatelle 缎带意面'
+classKey: 'gluten-free'
+related:
+  - 'where-to-eat-handmade-pasta-in-florence'
+  - 'what-to-eat-in-florence'
 faqs:
   - q: "在佛罗伦萨吃无麸质餐容易吗？"
     a: "容易。对乳糜泻旅客而言，意大利是全欧洲最方便的国家之一：筛查普及，全国乳糜泻协会（AIC）为餐厅提供认证，而在旅游城市，每位服务员都听过无数次 senza glutine。"

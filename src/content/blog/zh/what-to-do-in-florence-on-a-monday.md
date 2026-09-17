@@ -5,6 +5,10 @@ pubDate: 2026-08-11
 author: 'Endri Cerhozi'
 image: '../../../assets/images/aperitivo.webp'
 imageAlt: '周一下午，佛罗伦萨奥特拉诺区一处安静的广场'
+classKey: 'market-tour'
+related:
+  - 'things-to-do-in-oltrarno-florence'
+  - 'what-to-eat-in-florence'
 faqs:
   - q: "乌菲齐美术馆周一开放吗？"
     a: "不开放。乌菲齐美术馆每周一闭馆，1月1日和12月25日也闭馆。开放时间为周二至周日 8:15–18:30，最晚入场时间为 17:30。"

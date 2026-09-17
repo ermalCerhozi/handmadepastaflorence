@@ -5,6 +5,10 @@ pubDate: 2026-07-08
 author: 'Endri Cerhozi'
 image: '../../../assets/images/shape-pici.webp'
 imageAlt: 'Pici roulés à la main, ces épaisses cordes de pâtes toscanes, saupoudrées de farine'
+classKey: 'pasta-making'
+related:
+  - 'tagliatelle-vs-pappardelle'
+  - 'ravioli-vs-tortelli'
 faqs:
   - q: 'Pour quelles pâtes la Toscane est-elle connue ?'
     a: 'La Toscane est surtout connue pour les pici (épais spaghettis roulés à la main à base de farine et d’eau provenant des collines de Sienne), les pappardelle (larges rubans aux œufs servis avec un ragoût de sanglier ou de lièvre), et les tortelli di patate (carrés farcis de pommes de terre du Mugello). Les tables de tous les jours s’appuient également sur les tagliatelles et les raviolis ricotta-épinards.'

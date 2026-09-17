@@ -5,6 +5,10 @@ pubDate: 2026-09-13
 author: 'Endri Cerhozi'
 image: '../../assets/images/shape-pici.webp'
 imageAlt: 'Hand-rolled pici, the thick eggless pasta of Siena and southern Tuscany'
+classKey: 'agriturismo'
+related:
+  - 'what-to-eat-in-florence'
+  - 'where-to-eat-handmade-pasta-in-florence'
 faqs:
   - q: "What is the best day trip from Florence?"
     a: "Siena if you want one town that carries a whole day, Lucca if you want to walk and eat without crowds, San Gimignano for wine and views, Pisa if you are catching a flight anyway. Siena and Lucca are the two that reward a food-led day the most."

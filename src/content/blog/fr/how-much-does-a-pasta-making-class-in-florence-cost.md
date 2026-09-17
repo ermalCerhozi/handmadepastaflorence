@@ -5,6 +5,10 @@ pubDate: 2026-07-08
 author: 'Endri Cerhozi'
 image: '../../../assets/images/cooking_class_with_guests_in_picture.webp'
 imageAlt: 'Des invités préparent ensemble des pâtes fraîches lors d’un cours en petit groupe à Florence'
+classKey: 'pasta-making'
+related:
+  - 'how-to-choose-a-pasta-class-in-florence'
+  - 'where-to-take-pasta-making-class-florence'
 faqs:
   - q: "Combien coûte un cours de pâtes à Florence ?"
     a: "À l’été 2026, la plupart des cours collectifs à Florence coûtent entre 60 et 120 euros par personne. Les formules visite du marché plus cuisine vont de 120 à 180 euros, les cours privés démarrent à quelques centaines d’euros pour le groupe, et les cours en ligne avec kit expédié tournent autour de 50 à 100 euros."

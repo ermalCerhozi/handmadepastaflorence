@@ -5,6 +5,10 @@ pubDate: 2026-08-16
 author: 'Endri Cerhozi'
 image: '../../assets/images/shape-pappardelle.webp'
 imageAlt: 'Wide pappardelle ribbons and narrower tagliatelle side by side on a floured board'
+classKey: 'pasta-making'
+related:
+  - 'ravioli-vs-tortelli'
+  - 'tuscan-pasta-shapes-guide'
 faqs:
   - q: "How wide is pappardelle?"
     a: "Pappardelle is cut between 20 and 30 mm wide, so roughly two to three centimetres, about the width of two fingers. It is the widest of the Italian ribbon pastas short of a lasagne sheet. Anything narrower than about 15 mm is closer to a tagliatella than a pappardella."

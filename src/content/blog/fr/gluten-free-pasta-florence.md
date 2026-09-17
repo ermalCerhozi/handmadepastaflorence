@@ -5,6 +5,10 @@ pubDate: 2026-07-08
 author: 'Endri Cerhozi'
 image: '../../../assets/images/shape-tagliatelle.webp'
 imageAlt: 'Rubans de tagliatelles fraîches saupoudrées de farine sur une planche en bois'
+classKey: 'gluten-free'
+related:
+  - 'where-to-eat-handmade-pasta-in-florence'
+  - 'what-to-eat-in-florence'
 faqs:
   - q: "Est-il facile de manger sans gluten à Florence ?"
     a: "Oui. L’Italie est l’un des pays les plus simples d’Europe pour les voyageurs cœliaques : le dépistage est courant, l’association nationale (AIC) certifie des restaurants, et dans une ville touristique tous les serveurs ont entendu senza glutine mille fois."

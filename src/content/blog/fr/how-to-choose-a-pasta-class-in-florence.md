@@ -5,6 +5,10 @@ pubDate: 2026-08-11
 author: 'Endri Cerhozi'
 image: '../../../assets/images/cooking-class.webp'
 imageAlt: 'Un petit groupe prépare des pâtes fraîches à la main autour d’une table à Florence'
+classKey: 'pasta-making'
+related:
+  - 'how-much-does-a-pasta-making-class-in-florence-cost'
+  - 'where-to-take-pasta-making-class-florence'
 faqs:
   - q: "Quelle est la chose la plus importante à vérifier avant de réserver un cours de cuisine à Florence ?"
     a: "Le nombre maximum de participants. Il prédit votre expérience mieux que le prix, l’emplacement ou le menu. À Florence, les annonces qualifient couramment de « petit groupe » un cours de douze personnes. En dessous de huit, un chef peut vous rejoindre quand quelque chose tourne mal ; au-delà de douze, vous regardez surtout."

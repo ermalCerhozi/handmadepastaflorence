@@ -5,6 +5,10 @@ pubDate: 2026-08-16
 author: 'Endri Cerhozi'
 image: '../../../assets/images/shape-pappardelle.webp'
 imageAlt: 'Breite Pappardelle und schmalere Tagliatelle nebeneinander auf einem bemehlten Brett'
+classKey: 'pasta-making'
+related:
+  - 'ravioli-vs-tortelli'
+  - 'tuscan-pasta-shapes-guide'
 faqs:
   - q: "Wie breit sind Pappardelle?"
     a: "Pappardelle werden zwischen 20 und 30 mm breit geschnitten, also zwei bis drei Zentimeter, ungefähr zwei Fingerbreit. Sie sind das breiteste italienische Bandnudel-Format unterhalb der Lasagneplatte. Unter etwa 15 mm sind es keine Pappardelle mehr, sondern breite Tagliatelle."

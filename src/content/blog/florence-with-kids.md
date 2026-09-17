@@ -5,6 +5,10 @@ pubDate: 2026-09-13
 author: 'Endri Cerhozi'
 image: '../../assets/images/cutting-pizza.webp'
 imageAlt: 'A child rolling pasta dough beside an adult at a kitchen table in Florence'
+classKey: 'family'
+related:
+  - 'what-to-do-in-florence-on-a-monday'
+  - 'what-to-eat-in-florence'
 faqs:
   - q: "Is Florence good for children?"
     a: "Yes, if you plan around food and open space rather than around galleries. The historic centre is small enough to cross on foot in twenty minutes, gelato is everywhere, and the Boboli Gardens give children room to run. The museums that make Florence famous are the part that tests a child's patience, not the city itself."

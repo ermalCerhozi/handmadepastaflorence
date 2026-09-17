@@ -5,6 +5,10 @@ pubDate: 2026-09-13
 author: 'Endri Cerhozi'
 image: '../../../assets/images/plates.webp'
 imageAlt: '佛罗伦萨木桌上的手工新鲜意面和托斯卡纳前菜'
+classKey: 'market-tour'
+related:
+  - 'where-to-eat-handmade-pasta-in-florence'
+  - 'day-trips-from-florence'
 faqs:
   - q: "佛罗伦萨以什么美食闻名？"
     a: "最出名的是 bistecca alla fiorentina，三指厚的丁骨牛排，在炭火上炙烤，三分熟上桌。但在日常生活里，另一些经典更重要：街边推车的 lampredotto、冬天的 ribollita 和 pappa al pomodoro、夏天的 panzanella、开胃的 crostini di fegatini，以及野猪肉酱宽面 pappardelle al cinghiale。"

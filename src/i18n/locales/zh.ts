@@ -46,6 +46,9 @@ const zh = {
     updated: '价格与时间核对于',
     galleryStation: '您的操作台，在您到达前就已备好：案板、擀面杖和面粉都是您专属的。没有人需要共用一只盆。',
     galleryTable: '课程的收尾：您亲手做的意面，旁边一块托斯卡纳拼盘，以及价格中早已包含的那两杯酒。',
+    galleryStationAlt: '佛罗伦萨厨房里备好的工作台：竹制案板、擀面杖，以及不锈钢台面上盛着面粉和鸡蛋的碗',
+    galleryTableAlt: '课程结束时的餐桌：一块托斯卡纳腌肉与奶酪拼盘、配小番茄的布拉塔，以及两杯红葡萄酒',
+    breadcrumbLabel: '导航路径',
     faqPre: '有备',
     faqItal: '无患。',
     relPre: '在找其他',
@@ -208,6 +211,8 @@ const zh = {
     ctaP: '亲手揉面、折叠并亲自品尝，来到我们佛罗伦萨的厨房，或者在线直播体验。',
     ctaBtn: '预订课程',
     ctaLink: '查看课程',
+    relatedTitle: '继续阅读',
+    relatedSub: '来自我们厨房的更多指南',
   },
 
   // BookingDrawer — server-rendered markup labels.

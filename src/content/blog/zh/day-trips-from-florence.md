@@ -5,6 +5,10 @@ pubDate: 2026-09-13
 author: 'Endri Cerhozi'
 image: '../../../assets/images/shape-pici.webp'
 imageAlt: '手工搓制的 pici，来自锡耶纳和托斯卡纳南部的粗身无蛋意面'
+classKey: 'agriturismo'
+related:
+  - 'what-to-eat-in-florence'
+  - 'where-to-eat-handmade-pasta-in-florence'
 faqs:
   - q: "从佛罗伦萨出发最值得去的一日游是哪里？"
     a: "想让一座城撑满一整天，选锡耶纳；想在没有人潮的地方边走边吃，选卢卡；为了葡萄酒和景色，选圣吉米尼亚诺；如果本来就要从那里坐飞机，就去比萨。以吃为主线的一天，锡耶纳和卢卡的回报最高。"

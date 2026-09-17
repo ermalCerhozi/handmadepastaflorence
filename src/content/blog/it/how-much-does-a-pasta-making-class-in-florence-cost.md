@@ -5,6 +5,10 @@ pubDate: 2026-07-08
 author: 'Endri Cerhozi'
 image: '../../../assets/images/cooking_class_with_guests_in_picture.webp'
 imageAlt: 'Ospiti che preparano insieme la pasta fresca a un corso per piccoli gruppi a Firenze'
+classKey: 'pasta-making'
+related:
+  - 'how-to-choose-a-pasta-class-in-florence'
+  - 'where-to-take-pasta-making-class-florence'
 faqs:
   - q: "Quanto costa un corso di pasta a Firenze?"
     a: "Nell’estate 2026 la maggior parte dei corsi di gruppo a Firenze costa tra 60 e 120 euro a persona. I corsi che uniscono visita al mercato e cucina vanno dai 120 ai 180 euro, i corsi privati partono da qualche centinaio di euro per il gruppo e i corsi online con kit spedito si aggirano tra i 50 e i 100 euro."

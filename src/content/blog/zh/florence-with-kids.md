@@ -5,6 +5,10 @@ pubDate: 2026-09-13
 author: 'Endri Cerhozi'
 image: '../../../assets/images/cutting-pizza.webp'
 imageAlt: '佛罗伦萨的厨房餐桌上，一个孩子和大人一起擀意面面团'
+classKey: 'family'
+related:
+  - 'what-to-do-in-florence-on-a-monday'
+  - 'what-to-eat-in-florence'
 faqs:
   - q: "佛罗伦萨适合带孩子去吗？"
     a: "适合，前提是把一天安排在食物和开阔空间周围，而不是围着画廊转。历史中心步行二十分钟就能穿过，冰淇淋到处都有，波波里花园则有让孩子奔跑的空间。真正考验孩子耐心的是那些让佛罗伦萨闻名的博物馆，而不是这座城市本身。"

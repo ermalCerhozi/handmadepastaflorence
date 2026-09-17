@@ -5,6 +5,10 @@ pubDate: 2026-07-08
 author: 'Endri Cerhozi'
 image: '../../assets/images/cooking_class_with_guests_in_picture.webp'
 imageAlt: 'Guests making fresh pasta together at a small-group class in Florence'
+classKey: 'pasta-making'
+related:
+  - 'how-to-choose-a-pasta-class-in-florence'
+  - 'where-to-take-pasta-making-class-florence'
 faqs:
   - q: "How much does a pasta making class in Florence cost?"
     a: "As of summer 2026, most group pasta classes in Florence cost €60–€120 per person. Market-tour-plus-cooking combinations run about €120–€180, private classes start at a few hundred euros for the group, and online classes with a shipped kit sit around €50–€100."

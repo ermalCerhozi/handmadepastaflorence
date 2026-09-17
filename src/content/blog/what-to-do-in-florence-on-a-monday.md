@@ -5,6 +5,10 @@ pubDate: 2026-08-11
 author: 'Endri Cerhozi'
 image: '../../assets/images/aperitivo.webp'
 imageAlt: 'A quiet Florence piazza in the Oltrarno on a Monday afternoon'
+classKey: 'market-tour'
+related:
+  - 'things-to-do-in-oltrarno-florence'
+  - 'what-to-eat-in-florence'
 faqs:
   - q: "Is the Uffizi open on Monday?"
     a: "No. The Uffizi Gallery is closed every Monday, as well as on 1 January and 25 December. It is open Tuesday to Sunday, 8:15 to 18:30, with last entry at 17:30."

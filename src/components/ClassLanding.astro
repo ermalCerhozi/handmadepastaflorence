@@ -109,6 +109,8 @@ interface Props {
   courseDuration?: string;
   /** This page's key in landings.ts, set by the route. Scopes reviews to this class. */
   pageKey?: LandingKey;
+  /** ISO date this page's facts last changed, from LandingPage.updated. */
+  updated?: string;
 }
 
 const {
@@ -137,6 +139,7 @@ const {
   courseMode,
   courseDuration,
   pageKey,
+  updated,
 } = Astro.props;
 
 const lang = (locale || (Astro.currentLocale as Locale) || 'en') as Locale;
@@ -146,11 +149,17 @@ const SITE = 'https://handmadepastaflorence.com';
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 
 // Freshness signal. Competing listings for these keywords carry "2026" in the
-// title; our class pages showed no date at all. Bump this by hand when the
-// facts on a class page actually change (price, times, what's included) — it
-// feeds both the visible line and `dateModified` in the Course schema, so
-// bumping it without a real change is the same lie in two places.
-const PAGE_UPDATED = '2026-08-11';
+// title; our class pages showed no date at all.
+//
+// This used to be one frozen constant shared by all 50 class URLs, so every
+// page claimed the same review date no matter what had actually changed on it.
+// Each page can now carry its own `updated` in landings.ts; the constant below
+// is only the inherited date for pages untouched since the August 2026 pass.
+// Set a page's own date when its FACTS change (price, times, group size, what
+// is included) — not for a copy-edit, because this feeds both the visible line
+// and `dateModified` in the Course schema.
+const PAGE_UPDATED_FALLBACK = '2026-08-11';
+const PAGE_UPDATED = updated ?? PAGE_UPDATED_FALLBACK;
 const updatedLabel = new Intl.DateTimeFormat(languages[lang].htmlLang, {
   month: 'long',
   year: 'numeric',
@@ -263,8 +272,12 @@ const serviceSchema = service && {
   url: canonical,
 };
 
+// Mirror the visible breadcrumb below exactly. This used to hardcode
+// `{ name: 'Home', item: `${SITE}/` }`, so every non-English page shipped an
+// English label pointing out of its own locale tree while the visible nav said
+// something else — two contradictory answers to the same question.
 const breadcrumbLd = breadcrumbSchema([
-  { name: 'Home', item: `${SITE}/` },
+  { name: t.lp.home, item: `${SITE}${localizePath('/', lang)}` },
   ...(showPastaCrumb ? [{ name: t.lp.pastaCrumb, item: `${SITE}${shapesHubPath(lang)}` }] : []),
   { name: breadcrumbName, item: canonical },
 ]);
@@ -276,7 +289,7 @@ const faqLd = faqSchema(faqs);
 <section class="lp-hero" id="top">
   <div class="shell lp-hero__inner">
     <div class="lp-hero__text" data-reveal>
-      <nav class="lp-crumb" aria-label="Breadcrumb">
+      <nav class="lp-crumb" aria-label={t.lp.breadcrumbLabel}>
         <a href={localizePath('/', lang)}>{t.lp.home}</a> <span aria-hidden="true">&gt;</span>
         {showPastaCrumb && (
           <>
@@ -385,11 +398,11 @@ const faqLd = faqSchema(faqs);
     <section class="lp-gallery">
       <div class="shell lp-gallery__grid">
         <figure class="lp-gallery__item" data-reveal>
-          <Image src={img.cookingClass} alt="A prepared station in our Florence kitchen: bamboo board, rolling pin and bowls of flour and eggs on the steel counter" width={800} height={1200} loading="lazy" decoding="async" />
+          <Image src={img.cookingClass} alt={t.lp.galleryStationAlt} width={800} height={1200} loading="lazy" decoding="async" />
           <figcaption>{t.lp.galleryStation}</figcaption>
         </figure>
         <figure class="lp-gallery__item" data-reveal style="--reveal-delay:90ms">
-          <Image src={img.plates} alt="The table at the end of class: a board of Tuscan salumi and cheese, burrata with cherry tomatoes, and two glasses of red wine" width={800} height={1000} loading="lazy" decoding="async" />
+          <Image src={img.plates} alt={t.lp.galleryTableAlt} width={800} height={1000} loading="lazy" decoding="async" />
           <figcaption>{t.lp.galleryTable}</figcaption>
         </figure>
       </div>
@@ -468,7 +481,14 @@ const faqLd = faqSchema(faqs);
                 +
               </span>
             </summary>
-            <p class="lp-faq__a">{f.a}</p>
+            {/* set:html, not {f.a}: answers may carry an inline <a> (the price
+                breakdown link on the pasta-making page, in all five locales).
+                Escaped, that printed the raw tag as visible text on the
+                flagship page. Google's FAQPage spec permits a limited HTML
+                subset in acceptedAnswer.text, so the JSON-LD copy is fine as
+                it stands. Answers are authored in landings.ts, never user
+                input. */}
+            <p class="lp-faq__a" set:html={f.a} />
           </details>
         ))
       }

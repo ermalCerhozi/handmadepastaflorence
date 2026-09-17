@@ -5,6 +5,10 @@ pubDate: 2026-07-08
 author: 'Endri Cerhozi'
 image: '../../assets/images/shape-pici.webp'
 imageAlt: 'Hand-rolled pici, the thick Tuscan pasta ropes, dusted with flour'
+classKey: 'pasta-making'
+related:
+  - 'tagliatelle-vs-pappardelle'
+  - 'ravioli-vs-tortelli'
 faqs:
   - q: 'What pasta is Tuscany known for?'
     a: 'Tuscany is best known for pici (thick, hand-rolled flour-and-water spaghetti from the Siena hills), pappardelle (wide egg ribbons served with wild boar or hare ragù), and tortelli di patate (potato-filled parcels from the Mugello). Everyday tables also lean on tagliatelle and ricotta-and-spinach ravioli.'

@@ -5,6 +5,10 @@ pubDate: 2026-07-08
 author: 'Endri Cerhozi'
 image: '../../../assets/images/shape-pici.webp'
 imageAlt: 'Handgerollte Pici, die dicken toskanischen Pastastränge, mit Mehl bestäubt'
+classKey: 'pasta-making'
+related:
+  - 'tagliatelle-vs-pappardelle'
+  - 'ravioli-vs-tortelli'
 faqs:
   - q: 'Für welche Pasta ist die Toskana bekannt?'
     a: 'Die Toskana ist am bekanntesten für Pici (dicke, handgerollte Spaghetti aus Mehl und Wasser aus den Hügeln Sienas), Pappardelle (breite Eierbandnudeln, serviert mit Wildschwein- oder Hasenragù) und Tortelli di patate (kartoffelgefüllte Taschen aus dem Mugello). An alltäglichen Tischen findet man auch oft Tagliatelle und Ricotta-Spinat-Ravioli.'

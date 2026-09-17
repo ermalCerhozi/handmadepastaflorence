@@ -29,21 +29,21 @@ export function getStaticPaths() {
       const prefix = locale === defaultLocale ? '' : `${locale}/`;
       paths.push({
         params: { slug: `${prefix}${data!.slug}` },
-        props: { data: data!, locale: locale as Locale, pageKey, floatingCta: page.floatingCta, courseMode: page.courseMode, courseDuration: page.courseDuration, video: page.video, alternates },
+        props: { data: data!, locale: locale as Locale, pageKey, floatingCta: page.floatingCta, courseMode: page.courseMode, courseDuration: page.courseDuration, video: page.video, updated: page.updated, alternates },
       });
     }
   }
   return paths;
 }
 
-const { data, locale, pageKey, floatingCta, courseMode, courseDuration, video, alternates } = Astro.props;
+const { data, locale, pageKey, floatingCta, courseMode, courseDuration, video, updated, alternates } = Astro.props;
 const { title, description, cl } = data;
 ---
 
 <Layout title={title} description={description} image={cl.image.src.src} alternates={alternates}>
   <Header solid alternates={alternates} />
   <main>
-    <ClassLanding {...cl} locale={locale} pageKey={pageKey} courseMode={courseMode} courseDuration={courseDuration} video={video} />
+    <ClassLanding {...cl} locale={locale} pageKey={pageKey} courseMode={courseMode} courseDuration={courseDuration} video={video} updated={updated} />
   </main>
   <Footer />
   {floatingCta && <FloatingCTA />}

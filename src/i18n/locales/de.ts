@@ -48,6 +48,9 @@ const de = {
     updated: 'Preise und Zeiten geprüft im',
     galleryStation: 'Ihre Station, fertig bevor Sie kommen: eigenes Brett, eigenes Nudelholz, eigenes Mehl. Niemand teilt sich eine Schüssel.',
     galleryTable: 'So endet es: was Sie gemacht haben, ein toskanisches Brett daneben und die zwei Gläser, die schon im Preis sind.',
+    galleryStationAlt: 'Ein vorbereiteter Arbeitsplatz in unserer Küche in Florenz: Bambusbrett, Nudelholz und Schüsseln mit Mehl und Eiern auf der Stahlplatte',
+    galleryTableAlt: 'Der Tisch am Ende des Kurses: ein Brett mit toskanischer Salami und Käse, Burrata mit Kirschtomaten und zwei Gläser Rotwein',
+    breadcrumbLabel: 'Navigationspfad',
     faqPre: 'Gut zu ',
     faqItal: 'wissen.',
     relPre: 'Suchen Sie nach etwas ',
@@ -210,6 +213,8 @@ const de = {
     ctaP: 'Selbst rollen, falten und essen: in unserer Küche in Florenz oder live online.',
     ctaBtn: 'Kurs buchen',
     ctaLink: 'Kurse ansehen',
+    relatedTitle: 'Weiterlesen',
+    relatedSub: 'Mehr Guides aus unserer Küche',
   },
 
   // BookingDrawer — server-rendered markup labels.

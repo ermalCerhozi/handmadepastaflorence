@@ -5,6 +5,10 @@ pubDate: 2026-08-11
 author: 'Endri Cerhozi'
 image: '../../../assets/images/shape-ravioli.webp'
 imageAlt: 'Pasta ripiena appena fatta su un tagliere infarinato'
+classKey: 'pasta-making'
+related:
+  - 'tagliatelle-vs-pappardelle'
+  - 'tuscan-pasta-shapes-guide'
 faqs:
   - q: "Qual è la differenza tra ravioli e tortelli?"
     a: "Soprattutto taglia e regione, più che tecnica. Ravioli è il termine generale, nazionale, per la pasta ripiena: di solito un quadrato più piccolo sigillato tra due sfoglie. Tortelli è come si chiama la stessa idea in Toscana e in Emilia, e in genere sono più grandi: un quadrato o una mezzaluna. In Toscana il ripieno classico è di patate, non di ricotta."

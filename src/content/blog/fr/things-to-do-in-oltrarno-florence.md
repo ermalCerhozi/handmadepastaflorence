@@ -5,6 +5,10 @@ pubDate: 2026-07-08
 author: 'Endri Cerhozi'
 image: '../../../assets/images/aperitivo.webp'
 imageAlt: 'Heure de l’apéritif sur une place de Florence du côté de l’Oltrarno'
+classKey: 'market-tour'
+related:
+  - 'where-to-eat-handmade-pasta-in-florence'
+  - 'what-to-do-in-florence-on-a-monday'
 faqs:
   - q: "Qu'est-ce que l'Oltrarno ?"
     a: "L'Oltrarno (littéralement au-delà de l'Arno) est la rive gauche de Florence, que l'on atteint en traversant le Ponte Vecchio en s'éloignant du Duomo. C'est la moitié la plus calme et la plus résidentielle de la ville, abritant la Piazza Santo Spirito, le Palais Pitti et les jardins de Boboli."

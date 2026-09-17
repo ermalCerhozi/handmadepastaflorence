@@ -5,6 +5,10 @@ pubDate: 2026-09-13
 author: 'Endri Cerhozi'
 image: '../../../assets/images/cutting-pizza.webp'
 imageAlt: 'Un enfant étale de la pâte à pâtes à côté d’un adulte sur une table de cuisine à Florence'
+classKey: 'family'
+related:
+  - 'what-to-do-in-florence-on-a-monday'
+  - 'what-to-eat-in-florence'
 faqs:
   - q: "Florence est-elle adaptée aux enfants ?"
     a: "Oui, si vous organisez la journée autour de la nourriture et des espaces ouverts plutôt qu’autour des galeries. Le centre historique se traverse à pied en vingt minutes, il y a des glaces partout, et le jardin de Boboli offre de la place pour courir. Ce sont les musées qui ont fait la renommée de Florence qui mettent la patience d’un enfant à l’épreuve, pas la ville."

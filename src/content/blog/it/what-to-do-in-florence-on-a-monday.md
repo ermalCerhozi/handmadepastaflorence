@@ -5,6 +5,10 @@ pubDate: 2026-08-11
 author: 'Endri Cerhozi'
 image: '../../../assets/images/aperitivo.webp'
 imageAlt: 'Una piazza tranquilla in Oltrarno a Firenze, di lunedì pomeriggio'
+classKey: 'market-tour'
+related:
+  - 'things-to-do-in-oltrarno-florence'
+  - 'what-to-eat-in-florence'
 faqs:
   - q: "Gli Uffizi sono aperti il lunedì?"
     a: "No. La Galleria degli Uffizi è chiusa tutti i lunedì, oltre che il 1° gennaio e il 25 dicembre. È aperta da martedì a domenica, dalle 8:15 alle 18:30, con ultimo ingresso alle 17:30."

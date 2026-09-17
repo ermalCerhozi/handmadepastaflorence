@@ -5,6 +5,10 @@ pubDate: 2026-09-13
 author: 'Endri Cerhozi'
 image: '../../../assets/images/shape-pici.webp'
 imageAlt: 'Pici tirati a mano, la pasta spessa senza uovo di Siena e della Toscana meridionale'
+classKey: 'agriturismo'
+related:
+  - 'what-to-eat-in-florence'
+  - 'where-to-eat-handmade-pasta-in-florence'
 faqs:
   - q: "Qual è la gita in giornata migliore da Firenze?"
     a: "Siena se volete una città che regga tutta la giornata, Lucca se volete camminare e mangiare senza folla, San Gimignano per il vino e la vista, Pisa se da lì partite comunque in aereo. Siena e Lucca sono le due che ripagano di più una giornata costruita intorno alla tavola."

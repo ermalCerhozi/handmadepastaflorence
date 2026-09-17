@@ -6,6 +6,10 @@ updatedDate: 2026-09-05
 author: 'Endri Cerhozi'
 image: '../../../assets/images/plates.webp'
 imageAlt: 'Teller mit frischer, handgemachter Pasta an einem toskanischen Tisch'
+classKey: 'pasta-making'
+related:
+  - 'what-to-eat-in-florence'
+  - 'tuscan-pasta-shapes-guide'
 faqs:
   - q: "Wo gibt es die beste Pasta in Florenz?"
     a: "Die beste handgemachte Pasta in Florenz gibt es nicht in der Nähe des Duomo, sondern in den Trattorien rund um den Sant'Ambrogio-Markt und im Oltrarno um Santo Spirito: Orte mit einer kurzen Speisekarte, Pasta, die nach ihrer Form benannt ist, und einem Raum voller Italiener um 13:00 Uhr. Bestellen Sie Pici, wenn Sie sie sehen, oder Pappardelle al cinghiale im Herbst."

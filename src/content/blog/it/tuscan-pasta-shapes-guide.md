@@ -5,6 +5,10 @@ pubDate: 2026-07-08
 author: 'Endri Cerhozi'
 image: '../../../assets/images/shape-pici.webp'
 imageAlt: 'Pici fatti a mano, i grossi spaghettoni toscani, spolverati di farina'
+classKey: 'pasta-making'
+related:
+  - 'tagliatelle-vs-pappardelle'
+  - 'ravioli-vs-tortelli'
 faqs:
   - q: 'Qual è la pasta tipica della Toscana?'
     a: 'La Toscana è famosa soprattutto per i pici (grossi spaghettoni di acqua e farina tirati a mano nelle colline senesi), le pappardelle (larghi nastri all''uovo serviti con ragù di cinghiale o lepre) e i tortelli di patate del Mugello. Sulle tavole di tutti i giorni ci sono anche le tagliatelle e i ravioli ricotta e spinaci.'

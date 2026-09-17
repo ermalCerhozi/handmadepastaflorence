@@ -5,6 +5,10 @@ pubDate: 2026-07-08
 author: 'Endri Cerhozi'
 image: '../../../assets/images/shape-tagliatelle.webp'
 imageAlt: 'Nastri di tagliatelle fresche spolverate di farina su un tagliere di legno'
+classKey: 'gluten-free'
+related:
+  - 'where-to-eat-handmade-pasta-in-florence'
+  - 'what-to-eat-in-florence'
 faqs:
   - q: "È facile mangiare senza glutine a Firenze?"
     a: "Sì. L’Italia è uno dei paesi più semplici d’Europa per chi è celiaco: la diagnosi è diffusa, l’Associazione Italiana Celiachia certifica i ristoranti e in una città turistica ogni cameriere ha sentito dire senza glutine mille volte."

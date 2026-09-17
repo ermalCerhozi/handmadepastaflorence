@@ -1,10 +1,14 @@
 ---
-title: 'Ravioli und Tortelli: Was ist der Unterschied?'
+title: 'Ravioli, Tortelli oder Tortellini: der Unterschied'
 description: 'Ravioli, Tortelli, Tortellini und Agnolotti sind alle gefüllte Pasta: Größe, Form, Füllung und Region trennen sie. Was jeder Name wirklich bedeutet.'
 pubDate: 2026-08-11
 author: 'Endri Cerhozi'
 image: '../../../assets/images/shape-ravioli.webp'
 imageAlt: 'Frisch gemachte gefüllte Pasta auf einem bemehlten Holzbrett'
+classKey: 'pasta-making'
+related:
+  - 'tagliatelle-vs-pappardelle'
+  - 'tuscan-pasta-shapes-guide'
 faqs:
   - q: "Was ist der Unterschied zwischen Ravioli und Tortelli?"
     a: "Vor allem Größe und Region, weniger die Technik. Ravioli ist der weite, landesweite Begriff für gefüllte Pasta: meist ein kleineres Quadrat, zwischen zwei Teigbahnen versiegelt. Tortelli heißt dieselbe Idee in der Toskana und in der Emilia, und sie sind in der Regel größer: ein größeres Quadrat oder ein Halbmond. In der Toskana ist die klassische Füllung Kartoffel, nicht Ricotta."

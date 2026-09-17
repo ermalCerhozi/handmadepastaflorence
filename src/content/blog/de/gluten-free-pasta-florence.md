@@ -5,6 +5,10 @@ pubDate: 2026-07-08
 author: 'Endri Cerhozi'
 image: '../../../assets/images/shape-tagliatelle.webp'
 imageAlt: 'Frische Tagliatelle-Bänder, mit Mehl bestäubt, auf einem Holzbrett'
+classKey: 'gluten-free'
+related:
+  - 'where-to-eat-handmade-pasta-in-florence'
+  - 'what-to-eat-in-florence'
 faqs:
   - q: "Ist es einfach, in Florenz glutenfrei zu essen?"
     a: "Ja. Italien ist eines der einfachsten Länder Europas für Reisende mit Zöliakie: Diagnosen sind verbreitet, der nationale Zöliakie-Verband AIC zertifiziert Restaurants, und in einer Touristenstadt hat jeder Kellner senza glutine tausendmal gehört."

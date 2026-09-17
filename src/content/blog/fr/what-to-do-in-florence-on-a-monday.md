@@ -5,6 +5,10 @@ pubDate: 2026-08-11
 author: 'Endri Cerhozi'
 image: '../../../assets/images/aperitivo.webp'
 imageAlt: 'Une place tranquille de l’Oltrarno à Florence, un lundi après-midi'
+classKey: 'market-tour'
+related:
+  - 'things-to-do-in-oltrarno-florence'
+  - 'what-to-eat-in-florence'
 faqs:
   - q: "La galerie des Offices est-elle ouverte le lundi ?"
     a: "Non. La galerie des Offices est fermée tous les lundis, ainsi que le 1er janvier et le 25 décembre. Elle est ouverte du mardi au dimanche, de 8h15 à 18h30, dernière entrée à 17h30."

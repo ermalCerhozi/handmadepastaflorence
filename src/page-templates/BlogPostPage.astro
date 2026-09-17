@@ -8,9 +8,10 @@ import BookingDrawer from '../components/BookingDrawer.astro';
 import { getLocaleFromUrl, type Alternate } from '../i18n/utils';
 import { defaultLocale, languages } from '../i18n/config';
 import { useTranslations } from '../i18n/ui';
-import { landingPath } from '../data/landings';
+import { getCollection } from 'astro:content';
+import { landings, landingPath, type LandingKey } from '../data/landings';
 import { breadcrumbSchema, faqSchema } from '../utils/schema';
-import { blogPostAlternates } from '../utils/blog-locales';
+import { blogPostAlternates, blogLocale, blogSlug, blogPostPath } from '../utils/blog-locales';
 
 interface Props {
   post: CollectionEntry<'blog'>;
@@ -39,7 +40,28 @@ const blogItem = `${SITE}${blogUrl}`;
 // LocalBusiness @id, which is never locale-prefixed (see ShapePage.astro,
 // which already does this correctly).
 const publisherId = `${SITE}/#business`;
-const classesUrl = landingPath('pasta-making', lang);
+// Each post names its own class page via `classKey` frontmatter; posts that
+// don't fall back to 'pasta-making', which is what every post used to hardcode.
+// An unknown key falls back too rather than breaking the build, since the
+// frontmatter is a plain string and cannot be narrowed by zod to LandingKey.
+const classKey = post.data.classKey as LandingKey | undefined;
+const ctaKey: LandingKey = classKey && classKey in landings ? classKey : 'pasta-making';
+const classesUrl = landingPath(ctaKey, lang);
+
+// Related guides, resolved IN THE READER'S LOCALE. A slug is dropped if it has
+// no translation for this locale, so a French reader never gets an English
+// stub. Self-references are dropped too.
+const allPosts = await getCollection('blog');
+const thisSlug = blogSlug(post.id);
+const relatedPosts = (post.data.related ?? [])
+  .filter((slug) => slug !== thisSlug)
+  .map((slug) => allPosts.find((p) => blogSlug(p.id) === slug && blogLocale(p.id) === lang))
+  .filter((p): p is NonNullable<typeof p> => Boolean(p))
+  .map((p) => ({
+    title: p.data.title,
+    description: p.data.description,
+    href: blogPostPath(blogSlug(p.id), lang),
+  }));
 
 // Alternates come from the files that actually exist, not from prefix-swapping
 // the pathname: posts no longer ship in all five locales, and hreflang must not
@@ -117,6 +139,25 @@ const faqLd = faqs.length ? faqSchema(faqs) : null;
                 </details>
               ))}
             </div>
+          </section>
+        )}
+
+        {relatedPosts.length > 0 && (
+          <section class="po-rel" data-reveal>
+            <h2 class="po-rel__h">
+              {t.blogPost.relatedTitle}
+              <span class="po-rel__sub">{t.blogPost.relatedSub}</span>
+            </h2>
+            <ul class="po-rel__list">
+              {relatedPosts.map((r) => (
+                <li class="po-rel__item">
+                  <a class="po-rel__link" href={r.href}>
+                    <span class="po-rel__title">{r.title}</span>
+                    <span class="po-rel__desc">{r.description}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
           </section>
         )}
 
@@ -211,6 +252,32 @@ const faqLd = faqs.length ? faqSchema(faqs) : null;
   .po-faq__icon { color: var(--terracotta); font-size: 1.4rem; line-height: 1; flex-shrink: 0; transition: transform 0.3s var(--ease); }
   .po-faq__item[open] .po-faq__icon { transform: rotate(45deg); }
   .po-faq__a { margin: 0 0 1.2rem; color: var(--charcoal); line-height: 1.65; font-size: var(--step--1); }
+
+  /* Related guides. Sits between the FAQ and the author bio so the reader
+     meets another guide before the booking CTA — the guides are ~50% of site
+     clicks and had no onward path except the single hardcoded class link. */
+  .po-rel { max-width: 720px; margin-top: clamp(2rem, 5vh, 3rem); }
+  .po-rel__h {
+    font-size: var(--step-2); color: var(--olive); margin-bottom: 1.2rem;
+    display: flex; flex-direction: column; gap: 0.25rem;
+  }
+  .po-rel__sub {
+    font-family: var(--sans); font-size: var(--step--1); font-weight: 400;
+    color: var(--charcoal-soft);
+  }
+  .po-rel__list { display: grid; gap: 0.9rem; }
+  .po-rel__item { list-style: none; }
+  .po-rel__link {
+    display: flex; flex-direction: column; gap: 0.3rem;
+    padding: 1.1rem 1.3rem; background: var(--flour);
+    border: 1px solid var(--paper-line); border-radius: var(--radius);
+    transition: transform 0.3s var(--ease), border-color 0.3s var(--ease);
+  }
+  .po-rel__title { font-family: var(--serif); font-size: var(--step-0); color: var(--olive); }
+  .po-rel__desc { font-size: var(--step--1); line-height: 1.55; color: var(--charcoal-soft); }
+  @media (hover: hover) {
+    .po-rel__link:hover { transform: translateY(-2px); border-color: var(--terracotta); }
+  }
 
   .po-bio {
     max-width: 720px; margin-top: 1.5rem; padding: 1.2rem 1.4rem;

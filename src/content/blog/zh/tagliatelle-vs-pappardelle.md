@@ -5,6 +5,10 @@ pubDate: 2026-08-16
 author: 'Endri Cerhozi'
 image: '../../../assets/images/shape-pappardelle.webp'
 imageAlt: '撒了面粉的板子上，宽阔的 pappardelle 与较窄的 tagliatelle 并排放着'
+classKey: 'pasta-making'
+related:
+  - 'ravioli-vs-tortelli'
+  - 'tuscan-pasta-shapes-guide'
 faqs:
   - q: "Pappardelle 有多宽？"
     a: "Pappardelle 切成 20 到 30 毫米宽，也就是大约两到三厘米，差不多两根手指的宽度。除了千层面皮之外，它是意大利面带里最宽的一种。任何窄于大约 15 毫米的，都更接近 tagliatella 而不是 pappardella。"

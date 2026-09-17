@@ -5,6 +5,10 @@ pubDate: 2026-09-13
 author: 'Endri Cerhozi'
 image: '../../../assets/images/cutting-pizza.webp'
 imageAlt: 'Un bambino tira la sfoglia accanto a un adulto su un tavolo di cucina a Firenze'
+classKey: 'family'
+related:
+  - 'what-to-do-in-florence-on-a-monday'
+  - 'what-to-eat-in-florence'
 faqs:
   - q: "Firenze è adatta ai bambini?"
     a: "Sì, se organizzate la giornata intorno al cibo e agli spazi aperti invece che intorno alle gallerie. Il centro storico si attraversa a piedi in venti minuti, il gelato è ovunque e il Giardino di Boboli dà spazio per correre. Sono i musei che hanno reso famosa Firenze a mettere alla prova la pazienza di un bambino, non la città."

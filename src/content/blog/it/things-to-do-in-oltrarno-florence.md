@@ -5,6 +5,10 @@ pubDate: 2026-07-08
 author: 'Endri Cerhozi'
 image: '../../../assets/images/aperitivo.webp'
 imageAlt: "Ora dell'aperitivo in una piazza di Firenze sul lato Oltrarno del fiume"
+classKey: 'market-tour'
+related:
+  - 'where-to-eat-handmade-pasta-in-florence'
+  - 'what-to-do-in-florence-on-a-monday'
 faqs:
   - q: "Cos'è l'Oltrarno?"
     a: "L'Oltrarno (letteralmente oltre l'Arno) è la riva sinistra di Firenze, che si raggiunge attraversando Ponte Vecchio allontanandosi dal Duomo. È la metà più tranquilla e residenziale della città, con Piazza Santo Spirito, Palazzo Pitti e i Giardini di Boboli."

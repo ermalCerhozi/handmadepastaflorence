@@ -5,6 +5,10 @@ pubDate: 2026-08-11
 author: 'Endri Cerhozi'
 image: '../../../assets/images/cooking-class.webp'
 imageAlt: '一小群人在佛罗伦萨的餐桌旁手工制作新鲜意面'
+classKey: 'pasta-making'
+related:
+  - 'how-much-does-a-pasta-making-class-in-florence-cost'
+  - 'where-to-take-pasta-making-class-florence'
 faqs:
   - q: "在佛罗伦萨预订烹饪课程时，最该确认的是什么？"
     a: "班级人数上限。它比价格、地点或菜单都更能预测你的体验。在佛罗伦萨，课程介绍常常把十二人的班称作“小班”。八人以下，厨师才来得及在出问题时走到你身边；超过十二人，你多半只是在看。"

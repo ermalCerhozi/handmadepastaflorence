@@ -5,6 +5,10 @@ pubDate: 2026-07-08
 author: 'Endri Cerhozi'
 image: '../../assets/images/aperitivo.webp'
 imageAlt: 'Aperitivo hour in a Florence piazza on the Oltrarno side of the river'
+classKey: 'market-tour'
+related:
+  - 'where-to-eat-handmade-pasta-in-florence'
+  - 'what-to-do-in-florence-on-a-monday'
 faqs:
   - q: "What is the Oltrarno?"
     a: "The Oltrarno (literally beyond the Arno) is the left bank of Florence, reached by crossing the Ponte Vecchio away from the Duomo. It's the city's quieter, more residential half, home to Piazza Santo Spirito, Palazzo Pitti and the Boboli Gardens."

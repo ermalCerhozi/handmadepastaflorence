@@ -5,6 +5,10 @@ pubDate: 2026-08-11
 author: 'Endri Cerhozi'
 image: '../../../assets/images/cooking-class.webp'
 imageAlt: 'Eine kleine Gruppe macht an einem Tisch in Florenz frische Pasta von Hand'
+classKey: 'pasta-making'
+related:
+  - 'how-much-does-a-pasta-making-class-in-florence-cost'
+  - 'where-to-take-pasta-making-class-florence'
 faqs:
   - q: "Was ist das Wichtigste, das man bei der Buchung eines Kochkurses in Florenz prüfen sollte?"
     a: "Die maximale Gruppengröße. Sie sagt Ihr Erlebnis besser voraus als Preis, Lage oder Menü. In Florenz bezeichnen Anzeigen routinemäßig einen Kurs mit zwölf Personen als „kleine Gruppe“. Unter acht kann ein Koch Sie erreichen, wenn etwas schiefgeht; über zwölf schauen Sie überwiegend zu."

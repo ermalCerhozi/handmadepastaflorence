@@ -5,6 +5,10 @@ pubDate: 2026-08-27
 author: 'Endri Cerhozi'
 image: '../../../assets/images/shape-pappardelle.webp'
 imageAlt: 'Montagnetta di farina 00 con un tuorlo d''uovo al centro'
+classKey: 'online'
+related:
+  - 'fresh-vs-dry-pasta-italy'
+  - 'tuscan-pasta-shapes-guide'
 faqs:
   - q: "Qual è la migliore farina per la pasta fresca?"
     a: "La migliore farina per la pasta fresca all'uovo (come tagliatelle e ravioli) è la farina di grano tenero '00' (doppio zero). Per la pasta senza uova (come pici o orecchiette), si usa la farina di semola (semola di grano duro)."
