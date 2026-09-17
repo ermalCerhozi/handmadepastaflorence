@@ -40,6 +40,17 @@ const ARCHITECTURE_SHIP_DATE = '2026-07-27T00:00:00.000Z';
 // signal for the sake of one 6-impression page.
 const CONTENT_PASS_2026_09_05 = '2026-09-05T00:00:00.000Z';
 
+// The landing pages changed again after that, and were still claiming
+// 2026-09-05. In the 2026-09-13 pass they got the og:image fix (all 50 were
+// emitting `[object Object]`), the Florence sit-down menu panel removed from
+// `online` and `agriturismo` where it was factually wrong, a gluten-free and a
+// children's-drinks caveat added to the panel where it stayed, and a reviews
+// section wired in; the 2026-09-17 pass added the classKey/related work. The
+// shape pages are deliberately NOT included: nothing about their content
+// changed in either pass, and a fresh stamp on 25 unchanged URLs is the same
+// false signal this block exists to avoid.
+const LANDING_PASS_2026_09_17 = '2026-09-17T00:00:00.000Z';
+
 // The footer "Information" pages (English-only, see infoPages in
 // i18n/config.ts) shipped in this pass — real date, not a fabricated
 // build-time stamp.
@@ -103,7 +114,7 @@ function landingEntries(): SitemapEntry[] {
       const l = locale as Locale;
       paths[l] = `${l === defaultLocale ? '' : '/' + l}/${data!.slug}/`;
     }
-    entries.push(...toEntry(paths, CONTENT_PASS_2026_09_05));
+    entries.push(...toEntry(paths, LANDING_PASS_2026_09_17));
   }
   return entries;
 }

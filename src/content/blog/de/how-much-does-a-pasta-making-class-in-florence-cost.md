@@ -2,6 +2,7 @@
 title: 'Wie viel kostet ein Pasta-Kochkurs in Florenz? (2026 Guide)'
 description: 'Echte 2026-Preisspannen für Kochkurse in Florenz, was den Preis bestimmt, was enthalten sein sollte und was Sie vor der Buchung fragen sollten.'
 pubDate: 2026-07-08
+updatedDate: 2026-09-13
 author: 'Endri Cerhozi'
 image: '../../../assets/images/cooking_class_with_guests_in_picture.webp'
 imageAlt: 'Gäste machen gemeinsam frische Pasta bei einem Kurs in einer kleinen Gruppe in Florenz'

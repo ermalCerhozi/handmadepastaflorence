@@ -2,6 +2,7 @@
 title: 'Senza glutine a Firenze: pasta fresca in sicurezza'
 description: 'Perché l’Italia è tra i paesi più facili per i celiaci, le frasi che ti tengono al sicuro a Firenze e dove entra la pasta fresca senza glutine.'
 pubDate: 2026-07-08
+updatedDate: 2026-09-13
 author: 'Endri Cerhozi'
 image: '../../../assets/images/shape-tagliatelle.webp'
 imageAlt: 'Nastri di tagliatelle fresche spolverate di farina su un tagliere di legno'

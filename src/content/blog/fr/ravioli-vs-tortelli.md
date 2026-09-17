@@ -2,6 +2,7 @@
 title: 'Ravioli, tortelli ou tortellini : la différence'
 description: 'Ravioli, tortelli, tortellini et agnolotti sont tous des pâtes farcies : taille, forme, farce et région les séparent. Ce que chaque nom signifie.'
 pubDate: 2026-08-11
+updatedDate: 2026-09-13
 author: 'Endri Cerhozi'
 image: '../../../assets/images/shape-ravioli.webp'
 imageAlt: 'Pâtes farcies fraîchement préparées sur une planche farinée'

@@ -2,6 +2,7 @@
 title: 'How Much Does a Pasta Class in Florence Cost? (2026)'
 description: 'Real 2026 price ranges for Florence cooking classes, what actually drives the price, what should be included, and the questions to ask before you book.'
 pubDate: 2026-07-08
+updatedDate: 2026-09-13
 author: 'Endri Cerhozi'
 image: '../../assets/images/cooking_class_with_guests_in_picture.webp'
 imageAlt: 'Guests making fresh pasta together at a small-group class in Florence'

@@ -2,6 +2,7 @@
 title: 'Sans gluten à Florence : manger des pâtes fraîches'
 description: 'Pourquoi l’Italie est si simple pour les voyageurs cœliaques, les phrases qui vous protègent à Florence, et la place des pâtes fraîches.'
 pubDate: 2026-07-08
+updatedDate: 2026-09-13
 author: 'Endri Cerhozi'
 image: '../../../assets/images/shape-tagliatelle.webp'
 imageAlt: 'Rubans de tagliatelles fraîches saupoudrées de farine sur une planche en bois'
