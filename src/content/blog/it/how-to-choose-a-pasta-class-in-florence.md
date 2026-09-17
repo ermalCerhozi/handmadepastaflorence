@@ -3,7 +3,7 @@ title: 'Come scegliere un corso di pasta a Firenze: 7 domande'
 description: 'Firenze ha centinaia di corsi di pasta e gli annunci sembrano identici. Sette domande che predicono se ti piacerà, a partire dalla dimensione del gruppo.'
 pubDate: 2026-08-11
 author: 'Endri Cerhozi'
-image: '../../../assets/images/cooking-class.webp'
+image: '../../../assets/images/fresh-pasta-station-rolling-pin-flour.webp'
 imageAlt: 'Un piccolo gruppo prepara pasta fresca a mano a un tavolo a Firenze'
 classKey: 'pasta-making'
 related:

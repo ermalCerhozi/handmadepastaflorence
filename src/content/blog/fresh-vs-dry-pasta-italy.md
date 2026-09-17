@@ -3,7 +3,7 @@ title: 'Fresh pasta vs dry pasta in Italy: what’s the difference?'
 description: 'The real difference between pasta fresca and pasta secca in Italy. Not a question of quality, but of the right shape for the right sauce.'
 pubDate: 2026-08-27
 author: 'Endri Cerhozi'
-image: '../../assets/images/plates.webp'
+image: '../../assets/images/tuscan-antipasto-board-burrata-red-wine.webp'
 imageAlt: 'Freshly made pasta on a table'
 classKey: 'pasta-making'
 related:

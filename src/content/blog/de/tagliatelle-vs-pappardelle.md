@@ -3,7 +3,7 @@ title: 'Tagliatelle oder Pappardelle: Wie breit ist was?'
 description: 'Tagliatelle werden 6–8 mm breit geschnitten, Pappardelle 20–30 mm. Gleicher Eierteig, anderes Messer, völlig andere Soße.'
 pubDate: 2026-08-16
 author: 'Endri Cerhozi'
-image: '../../../assets/images/shape-pappardelle.webp'
+image: '../../../assets/images/handmade-pappardelle-pasta.webp'
 imageAlt: 'Breite Pappardelle und schmalere Tagliatelle nebeneinander auf einem bemehlten Brett'
 classKey: 'pasta-making'
 related:

@@ -3,7 +3,7 @@ title: 'Pasta tipica toscana: pici, pappardelle, tortelli e altri'
 description: 'La guida di uno chef ai piatti di pasta tipici della Toscana: da dove proviene ogni formato, come è fatto a mano, e il sugo nato per accompagnarlo.'
 pubDate: 2026-07-08
 author: 'Endri Cerhozi'
-image: '../../../assets/images/shape-pici.webp'
+image: '../../../assets/images/handmade-pici-pasta.webp'
 imageAlt: 'Pici fatti a mano, i grossi spaghettoni toscani, spolverati di farina'
 classKey: 'pasta-making'
 related:

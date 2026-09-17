@@ -4,7 +4,7 @@ description: 'Pourquoi l’Italie est si simple pour les voyageurs cœliaques, l
 pubDate: 2026-07-08
 updatedDate: 2026-09-13
 author: 'Endri Cerhozi'
-image: '../../../assets/images/shape-tagliatelle.webp'
+image: '../../../assets/images/handmade-tagliatelle-pasta.webp'
 imageAlt: 'Rubans de tagliatelles fraîches saupoudrées de farine sur une planche en bois'
 classKey: 'gluten-free'
 related:

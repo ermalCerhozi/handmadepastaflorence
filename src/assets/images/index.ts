@@ -7,9 +7,9 @@
 // worth the pipeline), og-share.webp, favicons, apple-touch-icon — those stay
 // in public/ because they must resolve at a stable, un-hashed URL (social
 // crawlers, schema.org JSON-LD, <link> tags).
-export { default as cookingClassGuests } from './cooking-class-with-guests-in-picture.webp';
-export { default as aperitivo } from './aperitivo.webp';
-export { default as weddingCake } from './wedding-cake-2.webp';
+export { default as cookingClassGuests } from './pasta-cooking-class-florence-group-kitchen.webp';
+export { default as aperitivo } from './tuscan-aperitivo-buffet-table.webp';
+export { default as weddingCake } from './bride-serving-berry-wedding-cake-slice.webp';
 // First frames of the two clips in src/assets/video/ — each is the poster and
 // the reduced-motion fallback for its clip, so a re-encode means re-exporting
 // the matching still. Each still deliberately shares its clip's filename (only
@@ -17,15 +17,15 @@ export { default as weddingCake } from './wedding-cake-2.webp';
 // page's og:image. See src/scripts/loop-video.ts for how they pair up.
 export { default as longTablePoster } from './private-pasta-class-long-table-florence-agriturismo.webp';
 export { default as longTablePrivatePoster } from './private-cooking-class-florence-agriturismo.webp';
-export { default as cookingClass } from './cooking-class.webp';
-export { default as plates } from './plates.webp';
-export { default as shapePici } from './shape-pici.webp';
-export { default as shapePappardelle } from './shape-pappardelle.webp';
-export { default as shapeTagliatelle } from './shape-tagliatelle.webp';
-export { default as shapeTortelli } from './shape-tortelli.webp';
-export { default as shapeRavioli } from './shape-ravioli.webp';
-export { default as cuttingPizza } from './cutting-pizza.webp';
+export { default as cookingClass } from './fresh-pasta-station-rolling-pin-flour.webp';
+export { default as plates } from './tuscan-antipasto-board-burrata-red-wine.webp';
+export { default as shapePici } from './handmade-pici-pasta.webp';
+export { default as shapePappardelle } from './handmade-pappardelle-pasta.webp';
+export { default as shapeTagliatelle } from './handmade-tagliatelle-pasta.webp';
+export { default as shapeTortelli } from './handmade-tortelli-pasta.webp';
+export { default as shapeRavioli } from './handmade-ravioli-pasta.webp';
+export { default as cuttingPizza } from './chef-cutting-wood-fired-pizza.webp';
 export { default as handsOnGroup } from './hands-on-pasta-cooking-class-florence-group.webp';
 export { default as handsOnChef } from './hands-on-pasta-making-class-florence-chef.webp';
 export { default as privateTeamBuilding } from './private-pasta-cooking-class-florence-team-building.webp';
-export { default as privateTeamBuildingJpg } from './private-pasta-cooking-class-florence-team-building-2.webp';
+export { default as privateTeamBuildingJpg } from './private-pasta-cooking-class-florence-group-photo.webp';

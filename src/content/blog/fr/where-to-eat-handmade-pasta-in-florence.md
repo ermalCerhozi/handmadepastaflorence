@@ -4,7 +4,7 @@ description: 'Un chef de Florence : où manger de vraies pâtes à la main, la v
 pubDate: 2026-07-08
 updatedDate: 2026-09-05
 author: 'Endri Cerhozi'
-image: '../../../assets/images/plates.webp'
+image: '../../../assets/images/tuscan-antipasto-board-burrata-red-wine.webp'
 imageAlt: 'Assiettes de pâtes fraîches faites à la main servies sur une table toscane'
 classKey: 'pasta-making'
 related:

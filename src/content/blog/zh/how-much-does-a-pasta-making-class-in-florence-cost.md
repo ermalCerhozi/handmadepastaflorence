@@ -4,7 +4,7 @@ description: '真实的2026年佛罗伦萨烹饪课程价格区间，真正决�
 pubDate: 2026-07-08
 updatedDate: 2026-09-13
 author: 'Endri Cerhozi'
-image: '../../../assets/images/cooking-class-with-guests-in-picture.webp'
+image: '../../../assets/images/pasta-cooking-class-florence-group-kitchen.webp'
 imageAlt: '客人们在佛罗伦萨的小班课程中一起制作新鲜意面'
 classKey: 'pasta-making'
 related:

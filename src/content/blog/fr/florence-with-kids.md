@@ -3,7 +3,7 @@ title: 'Florence avec des enfants : que faire et où manger'
 description: 'Une journée à Florence qui fonctionne avec des enfants : ce qui vaut la queue, ce qu’il faut sauter, et comment commander en trattoria sans bras de fer.'
 pubDate: 2026-09-13
 author: 'Endri Cerhozi'
-image: '../../../assets/images/cutting-pizza.webp'
+image: '../../../assets/images/chef-cutting-wood-fired-pizza.webp'
 imageAlt: 'Un enfant étale de la pâte à pâtes à côté d’un adulte sur une table de cuisine à Florence'
 classKey: 'family'
 related:

@@ -3,7 +3,7 @@ title: 'Gite da Firenze: cosa si mangia in ogni città'
 description: 'Siena, Lucca, San Gimignano e Pisa scelte per quello che c’è nel piatto: la pasta, il vino e il piatto che ogni città fa meglio di Firenze.'
 pubDate: 2026-09-13
 author: 'Endri Cerhozi'
-image: '../../../assets/images/shape-pici.webp'
+image: '../../../assets/images/handmade-pici-pasta.webp'
 imageAlt: 'Pici tirati a mano, la pasta spessa senza uovo di Siena e della Toscana meridionale'
 classKey: 'agriturismo'
 related:

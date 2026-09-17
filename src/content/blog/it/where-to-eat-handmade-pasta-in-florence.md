@@ -4,7 +4,7 @@ description: 'Un cuoco di Firenze: dove mangiare vera pasta fatta a mano, la ver
 pubDate: 2026-07-08
 updatedDate: 2026-09-05
 author: 'Endri Cerhozi'
-image: '../../../assets/images/plates.webp'
+image: '../../../assets/images/tuscan-antipasto-board-burrata-red-wine.webp'
 imageAlt: 'Piatti di pasta fresca serviti su un tavolo toscano'
 classKey: 'pasta-making'
 related:

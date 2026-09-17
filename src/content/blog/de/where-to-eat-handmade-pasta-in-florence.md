@@ -4,7 +4,7 @@ description: 'Ein Pasta-Koch aus Florenz: wo es echte handgemachte Pasta gibt, d
 pubDate: 2026-07-08
 updatedDate: 2026-09-05
 author: 'Endri Cerhozi'
-image: '../../../assets/images/plates.webp'
+image: '../../../assets/images/tuscan-antipasto-board-burrata-red-wine.webp'
 imageAlt: 'Teller mit frischer, handgemachter Pasta an einem toskanischen Tisch'
 classKey: 'pasta-making'
 related:

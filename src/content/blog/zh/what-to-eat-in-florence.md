@@ -3,7 +3,7 @@ title: '在佛罗伦萨吃什么：托斯卡纳厨师指南'
 description: '真正属于佛罗伦萨的菜肴、真正属于托斯卡纳的意面形状，以及那些其实来自别处的著名意大利菜。'
 pubDate: 2026-09-13
 author: 'Endri Cerhozi'
-image: '../../../assets/images/plates.webp'
+image: '../../../assets/images/tuscan-antipasto-board-burrata-red-wine.webp'
 imageAlt: '佛罗伦萨木桌上的手工新鲜意面和托斯卡纳前菜'
 classKey: 'market-tour'
 related:

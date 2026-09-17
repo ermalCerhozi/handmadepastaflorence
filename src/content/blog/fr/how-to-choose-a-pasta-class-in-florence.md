@@ -3,7 +3,7 @@ title: 'Choisir un cours de pâtes à Florence : 7 questions'
 description: 'Florence compte des centaines de cours de pâtes aux annonces identiques. Sept questions qui prédisent si vous aimerez, à commencer par la taille du groupe.'
 pubDate: 2026-08-11
 author: 'Endri Cerhozi'
-image: '../../../assets/images/cooking-class.webp'
+image: '../../../assets/images/fresh-pasta-station-rolling-pin-flour.webp'
 imageAlt: 'Un petit groupe prépare des pâtes fraîches à la main autour d’une table à Florence'
 classKey: 'pasta-making'
 related:

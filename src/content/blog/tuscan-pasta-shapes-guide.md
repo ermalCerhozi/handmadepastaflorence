@@ -3,7 +3,7 @@ title: 'Tuscan pasta shapes: pici, pappardelle, tortelli & more'
 description: 'A chef’s guide to Tuscany’s classic fresh pasta types: where each shape comes from, how it’s made by hand, and the sauce it was born to carry.'
 pubDate: 2026-07-08
 author: 'Endri Cerhozi'
-image: '../../assets/images/shape-pici.webp'
+image: '../../assets/images/handmade-pici-pasta.webp'
 imageAlt: 'Hand-rolled pici, the thick Tuscan pasta ropes, dusted with flour'
 classKey: 'pasta-making'
 related:

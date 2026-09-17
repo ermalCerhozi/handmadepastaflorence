@@ -3,7 +3,7 @@ title: 'Pasta-Kurs in Florenz wählen: 7 Fragen, die zählen'
 description: 'Florenz hat Hunderte Pasta-Kurse, und alle Anzeigen lesen sich gleich. Sieben Fragen, die verraten, ob er Ihnen gefällt, beginnend mit der Gruppengröße.'
 pubDate: 2026-08-11
 author: 'Endri Cerhozi'
-image: '../../../assets/images/cooking-class.webp'
+image: '../../../assets/images/fresh-pasta-station-rolling-pin-flour.webp'
 imageAlt: 'Eine kleine Gruppe macht an einem Tisch in Florenz frische Pasta von Hand'
 classKey: 'pasta-making'
 related:

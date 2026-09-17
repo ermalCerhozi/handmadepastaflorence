@@ -4,7 +4,7 @@ description: '佛罗伦萨意面主厨：去哪里吃真正的手工意面，繁
 pubDate: 2026-07-08
 updatedDate: 2026-09-05
 author: 'Endri Cerhozi'
-image: '../../../assets/images/plates.webp'
+image: '../../../assets/images/tuscan-antipasto-board-burrata-red-wine.webp'
 imageAlt: '在托斯卡纳餐桌上端上的新鲜手工意面'
 classKey: 'pasta-making'
 related:

@@ -3,7 +3,7 @@ title: 'Florence with Kids: What to Do and Where to Eat'
 description: 'A food-first day in Florence that works with children: what is worth queueing for, what to skip, and how to order in a trattoria without a standoff.'
 pubDate: 2026-09-13
 author: 'Endri Cerhozi'
-image: '../../assets/images/cutting-pizza.webp'
+image: '../../assets/images/chef-cutting-wood-fired-pizza.webp'
 imageAlt: 'A child rolling pasta dough beside an adult at a kitchen table in Florence'
 classKey: 'family'
 related:

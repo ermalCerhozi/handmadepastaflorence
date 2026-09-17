@@ -3,7 +3,7 @@ title: '带孩子逛佛罗伦萨：玩什么、吃什么'
 description: '一份真正适合带孩子的佛罗伦萨一日安排：什么值得排队、什么可以跳过，以及在小餐馆点菜时如何不闹僵。'
 pubDate: 2026-09-13
 author: 'Endri Cerhozi'
-image: '../../../assets/images/cutting-pizza.webp'
+image: '../../../assets/images/chef-cutting-wood-fired-pizza.webp'
 imageAlt: '佛罗伦萨的厨房餐桌上，一个孩子和大人一起擀意面面团'
 classKey: 'family'
 related:

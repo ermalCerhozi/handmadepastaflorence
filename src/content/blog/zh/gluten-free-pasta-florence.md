@@ -4,7 +4,7 @@ description: '为什么意大利是对乳糜泻游客最友好的国家之一，
 pubDate: 2026-07-08
 updatedDate: 2026-09-13
 author: 'Endri Cerhozi'
-image: '../../../assets/images/shape-tagliatelle.webp'
+image: '../../../assets/images/handmade-tagliatelle-pasta.webp'
 imageAlt: '在木板上撒上面粉的新鲜 tagliatelle 缎带意面'
 classKey: 'gluten-free'
 related:

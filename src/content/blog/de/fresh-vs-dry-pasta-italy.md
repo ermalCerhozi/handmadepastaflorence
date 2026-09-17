@@ -3,7 +3,7 @@ title: 'Frische oder getrocknete Pasta: Was ist der Unterschied?'
 description: 'Der wahre Unterschied zwischen pasta fresca und pasta secca. Es geht nicht um Qualität, sondern um die richtige Form für die richtige Soße.'
 pubDate: 2026-08-27
 author: 'Endri Cerhozi'
-image: '../../../assets/images/plates.webp'
+image: '../../../assets/images/tuscan-antipasto-board-burrata-red-wine.webp'
 imageAlt: 'Frisch zubereitete Pasta auf einem Tisch'
 classKey: 'pasta-making'
 related:

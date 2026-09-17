@@ -3,7 +3,7 @@ title: 'Cosa mangiare a Firenze: la guida di un cuoco toscano'
 description: 'I piatti davvero fiorentini, i formati di pasta che sono toscani sul serio e i grandi classici italiani che arrivano da tutt’altra parte.'
 pubDate: 2026-09-13
 author: 'Endri Cerhozi'
-image: '../../../assets/images/plates.webp'
+image: '../../../assets/images/tuscan-antipasto-board-burrata-red-wine.webp'
 imageAlt: 'Piatti di pasta fresca fatta a mano e antipasti toscani su un tavolo di legno a Firenze'
 classKey: 'market-tour'
 related:

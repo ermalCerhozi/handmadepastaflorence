@@ -3,7 +3,7 @@ title: 'Aktivitäten im Oltrarno, Florenz: ein lokaler Guide'
 description: 'Ein Tag im Oltrarno: Santo Spirito, Palazzo Pitti und Boboli, Handwerkerwerkstätten und wo der Abend wirklich stattfindet.'
 pubDate: 2026-07-08
 author: 'Endri Cerhozi'
-image: '../../../assets/images/aperitivo.webp'
+image: '../../../assets/images/tuscan-aperitivo-buffet-table.webp'
 imageAlt: 'Aperitivo-Stunde auf einer Piazza in Florenz auf der Oltrarno-Seite des Flusses'
 classKey: 'market-tour'
 related:

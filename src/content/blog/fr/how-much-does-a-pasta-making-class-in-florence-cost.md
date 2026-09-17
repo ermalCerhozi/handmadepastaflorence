@@ -4,7 +4,7 @@ description: 'Les fourchettes de prix réelles en 2026 pour les cours de cuisine
 pubDate: 2026-07-08
 updatedDate: 2026-09-13
 author: 'Endri Cerhozi'
-image: '../../../assets/images/cooking-class-with-guests-in-picture.webp'
+image: '../../../assets/images/pasta-cooking-class-florence-group-kitchen.webp'
 imageAlt: 'Des invités préparent ensemble des pâtes fraîches lors d’un cours en petit groupe à Florence'
 classKey: 'pasta-making'
 related:

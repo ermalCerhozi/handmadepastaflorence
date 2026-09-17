@@ -3,7 +3,7 @@ title: 'What flour is used for authentic Italian fresh pasta?'
 description: 'If you want to make authentic Italian fresh pasta, you need the right flour. Learn the difference between 00 flour and semolina, and when to use each.'
 pubDate: 2026-08-27
 author: 'Endri Cerhozi'
-image: '../../assets/images/shape-pappardelle.webp'
+image: '../../assets/images/handmade-pappardelle-pasta.webp'
 imageAlt: 'Mound of 00 flour with an egg yolk in the center'
 classKey: 'online'
 related:

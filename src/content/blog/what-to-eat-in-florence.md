@@ -3,7 +3,7 @@ title: 'What to Eat in Florence: a Tuscan Cook''s Guide'
 description: 'The dishes that are genuinely Florentine, the pasta shapes that are Tuscan, and the famous Italian plates that come from somewhere else entirely.'
 pubDate: 2026-09-13
 author: 'Endri Cerhozi'
-image: '../../assets/images/plates.webp'
+image: '../../assets/images/tuscan-antipasto-board-burrata-red-wine.webp'
 imageAlt: 'Plates of fresh handmade pasta and Tuscan antipasti on a wooden table in Florence'
 classKey: 'market-tour'
 related:

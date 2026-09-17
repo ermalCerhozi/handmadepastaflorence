@@ -3,7 +3,7 @@ title: 'Ravioli e tortelli: qual è la differenza?'
 description: 'Ravioli, tortelli, tortellini e agnolotti sono tutti pasta ripiena: li separano taglia, forma, ripieno e regione. Cosa significa davvero ogni nome.'
 pubDate: 2026-08-11
 author: 'Endri Cerhozi'
-image: '../../../assets/images/shape-ravioli.webp'
+image: '../../../assets/images/handmade-ravioli-pasta.webp'
 imageAlt: 'Pasta ripiena appena fatta su un tagliere infarinato'
 classKey: 'pasta-making'
 related:

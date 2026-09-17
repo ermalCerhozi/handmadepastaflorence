@@ -3,7 +3,7 @@ title: 'Cosa fare a Firenze di lunedì'
 description: 'Gli Uffizi e l’Accademia sono chiusi il lunedì. Cosa è davvero aperto: il Duomo, Palazzo Vecchio, Santa Croce, i mercati e l’Oltrarno.'
 pubDate: 2026-08-11
 author: 'Endri Cerhozi'
-image: '../../../assets/images/aperitivo.webp'
+image: '../../../assets/images/tuscan-aperitivo-buffet-table.webp'
 imageAlt: 'Una piazza tranquilla in Oltrarno a Firenze, di lunedì pomeriggio'
 classKey: 'market-tour'
 related:

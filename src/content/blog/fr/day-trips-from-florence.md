@@ -3,7 +3,7 @@ title: 'Excursions depuis Florence : que manger dans chaque ville'
 description: 'Sienne, Lucques, San Gimignano et Pise, choisies pour ce qu’il y a dans l’assiette : les pâtes, le vin et le plat que chaque ville fait mieux.'
 pubDate: 2026-09-13
 author: 'Endri Cerhozi'
-image: '../../../assets/images/shape-pici.webp'
+image: '../../../assets/images/handmade-pici-pasta.webp'
 imageAlt: 'Pici roulés à la main, les pâtes épaisses sans œuf de Sienne et du sud de la Toscane'
 classKey: 'agriturismo'
 related:

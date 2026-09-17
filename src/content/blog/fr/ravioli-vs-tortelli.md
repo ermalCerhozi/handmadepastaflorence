@@ -4,7 +4,7 @@ description: 'Ravioli, tortelli, tortellini et agnolotti sont tous des pâtes fa
 pubDate: 2026-08-11
 updatedDate: 2026-09-13
 author: 'Endri Cerhozi'
-image: '../../../assets/images/shape-ravioli.webp'
+image: '../../../assets/images/handmade-ravioli-pasta.webp'
 imageAlt: 'Pâtes farcies fraîchement préparées sur une planche farinée'
 classKey: 'pasta-making'
 related:

@@ -3,7 +3,7 @@ title: 'Things to do in the Oltrarno, Florence: a local guide'
 description: 'How to spend a day in the Oltrarno: Santo Spirito, Palazzo Pitti and Boboli, artisan workshops, and where the evening actually happens.'
 pubDate: 2026-07-08
 author: 'Endri Cerhozi'
-image: '../../assets/images/aperitivo.webp'
+image: '../../assets/images/tuscan-aperitivo-buffet-table.webp'
 imageAlt: 'Aperitivo hour in a Florence piazza on the Oltrarno side of the river'
 classKey: 'market-tour'
 related:

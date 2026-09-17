@@ -3,7 +3,7 @@ title: 'Firenze con i bambini: cosa fare e dove mangiare'
 description: 'Una giornata a Firenze che funziona con i bambini: per cosa vale la pena fare la fila, cosa saltare e come ordinare in trattoria senza braccio di ferro.'
 pubDate: 2026-09-13
 author: 'Endri Cerhozi'
-image: '../../../assets/images/cutting-pizza.webp'
+image: '../../../assets/images/chef-cutting-wood-fired-pizza.webp'
 imageAlt: 'Un bambino tira la sfoglia accanto a un adulto su un tavolo di cucina a Firenze'
 classKey: 'family'
 related:

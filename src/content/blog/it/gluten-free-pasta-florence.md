@@ -4,7 +4,7 @@ description: 'Perché l’Italia è tra i paesi più facili per i celiaci, le fr
 pubDate: 2026-07-08
 updatedDate: 2026-09-13
 author: 'Endri Cerhozi'
-image: '../../../assets/images/shape-tagliatelle.webp'
+image: '../../../assets/images/handmade-tagliatelle-pasta.webp'
 imageAlt: 'Nastri di tagliatelle fresche spolverate di farina su un tagliere di legno'
 classKey: 'gluten-free'
 related:

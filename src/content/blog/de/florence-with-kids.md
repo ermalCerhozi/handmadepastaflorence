@@ -3,7 +3,7 @@ title: 'Florenz mit Kindern: was sich lohnt und wo man isst'
 description: 'Ein Tag in Florenz, der mit Kindern funktioniert: wofür sich das Anstehen lohnt, was man auslässt und wie man in der Trattoria ohne Machtkampf bestellt.'
 pubDate: 2026-09-13
 author: 'Endri Cerhozi'
-image: '../../../assets/images/cutting-pizza.webp'
+image: '../../../assets/images/chef-cutting-wood-fired-pizza.webp'
 imageAlt: 'Ein Kind rollt neben einem Erwachsenen Pastateig an einem Küchentisch in Florenz'
 classKey: 'family'
 related:

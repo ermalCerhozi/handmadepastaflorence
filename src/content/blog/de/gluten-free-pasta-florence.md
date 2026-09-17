@@ -4,7 +4,7 @@ description: 'Warum Italien für Zöliakie-Reisende so einfach ist, welche Sätz
 pubDate: 2026-07-08
 updatedDate: 2026-09-13
 author: 'Endri Cerhozi'
-image: '../../../assets/images/shape-tagliatelle.webp'
+image: '../../../assets/images/handmade-tagliatelle-pasta.webp'
 imageAlt: 'Frische Tagliatelle-Bänder, mit Mehl bestäubt, auf einem Holzbrett'
 classKey: 'gluten-free'
 related:

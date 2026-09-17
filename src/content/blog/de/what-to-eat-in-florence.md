@@ -3,7 +3,7 @@ title: 'Essen in Florenz: der Guide eines toskanischen Kochs'
 description: 'Welche Gerichte wirklich florentinisch sind, welche Pastaformen toskanisch sind und welche berühmten italienischen Klassiker von ganz woanders kommen.'
 pubDate: 2026-09-13
 author: 'Endri Cerhozi'
-image: '../../../assets/images/plates.webp'
+image: '../../../assets/images/tuscan-antipasto-board-burrata-red-wine.webp'
 imageAlt: 'Teller mit frischer handgemachter Pasta und toskanischen Antipasti auf einem Holztisch in Florenz'
 classKey: 'market-tour'
 related:

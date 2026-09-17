@@ -3,7 +3,7 @@ title: 'Pâtes fraîches ou pâtes sèches : quelle différence ?'
 description: 'La vraie différence entre pasta fresca et pasta secca en Italie. Pas une question de qualité, mais de la bonne forme pour la bonne sauce.'
 pubDate: 2026-08-27
 author: 'Endri Cerhozi'
-image: '../../../assets/images/plates.webp'
+image: '../../../assets/images/tuscan-antipasto-board-burrata-red-wine.webp'
 imageAlt: 'Pâtes fraîchement préparées sur une table'
 classKey: 'pasta-making'
 related:

@@ -3,7 +3,7 @@ title: 'Que manger à Florence : le guide d’un cuisinier toscan'
 description: 'Les plats vraiment florentins, les formes de pâtes réellement toscanes, et les grands classiques italiens qui viennent de tout autre part.'
 pubDate: 2026-09-13
 author: 'Endri Cerhozi'
-image: '../../../assets/images/plates.webp'
+image: '../../../assets/images/tuscan-antipasto-board-burrata-red-wine.webp'
 imageAlt: 'Assiettes de pâtes fraîches faites main et d’antipasti toscans sur une table en bois à Florence'
 classKey: 'market-tour'
 related:

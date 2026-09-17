@@ -3,7 +3,7 @@ title: 'Ausflüge ab Florenz: was man in welcher Stadt isst'
 description: 'Siena, Lucca, San Gimignano und Pisa, ausgewählt nach dem, was auf dem Teller liegt: die Pasta, der Wein und das eine Gericht je Stadt.'
 pubDate: 2026-09-13
 author: 'Endri Cerhozi'
-image: '../../../assets/images/shape-pici.webp'
+image: '../../../assets/images/handmade-pici-pasta.webp'
 imageAlt: 'Handgerollte Pici, die dicke eifreie Pasta aus Siena und der südlichen Toskana'
 classKey: 'agriturismo'
 related:

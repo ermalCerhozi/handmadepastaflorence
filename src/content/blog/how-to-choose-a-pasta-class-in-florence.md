@@ -3,7 +3,7 @@ title: 'How to choose a pasta class in Florence: 7 questions'
 description: 'Florence has hundreds of pasta classes and the listings look identical. Seven questions that predict whether you’ll enjoy it, starting with group size.'
 pubDate: 2026-08-11
 author: 'Endri Cerhozi'
-image: '../../assets/images/cooking-class.webp'
+image: '../../assets/images/fresh-pasta-station-rolling-pin-flour.webp'
 imageAlt: 'A small group making fresh pasta by hand at a table in Florence'
 classKey: 'pasta-making'
 related:

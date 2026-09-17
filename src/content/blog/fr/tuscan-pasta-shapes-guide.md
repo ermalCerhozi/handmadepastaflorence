@@ -3,7 +3,7 @@ title: 'Pâtes toscanes : pici, pappardelle et tortelli expliqués'
 description: 'Les pâtes fraîches classiques de Toscane : d’où vient chaque forme, comment elle est faite à la main, et la sauce qui l’accompagne.'
 pubDate: 2026-07-08
 author: 'Endri Cerhozi'
-image: '../../../assets/images/shape-pici.webp'
+image: '../../../assets/images/handmade-pici-pasta.webp'
 imageAlt: 'Pici roulés à la main, ces épaisses cordes de pâtes toscanes, saupoudrées de farine'
 classKey: 'pasta-making'
 related:

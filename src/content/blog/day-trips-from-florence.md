@@ -3,7 +3,7 @@ title: 'Day Trips from Florence: What to Eat in Each Town'
 description: 'Siena, Lucca, San Gimignano and Pisa, chosen by what is on the plate: the pasta, the wine and the one dish each town does better than Florence.'
 pubDate: 2026-09-13
 author: 'Endri Cerhozi'
-image: '../../assets/images/shape-pici.webp'
+image: '../../assets/images/handmade-pici-pasta.webp'
 imageAlt: 'Hand-rolled pici, the thick eggless pasta of Siena and southern Tuscany'
 classKey: 'agriturismo'
 related:

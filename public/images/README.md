@@ -1,36 +1,51 @@
 # Image assets
 
-Drop your photography here. Files in `public/` are served from the site root,
-so `public/images/hero-poster.jpg` is referenced in code as `/images/hero-poster.jpg`.
+> This file is inside `public/`, so it is copied to `dist/` and served at
+> https://handmadepastaflorence.com/images/README.md — it is crawlable. Keep it
+> factual and free of internal notes.
 
-## What goes where (main site — `/`)
+## Where images actually live
 
-| Filename (suggested)      | Used by                | Ideal size / ratio        | Notes |
-|---------------------------|------------------------|---------------------------|-------|
-| `hero.mp4`                | `Hero.astro`           | 1920×1080, <6 MB, looped  | Slow-mo pasta tossing. Also export `hero-poster.jpg` (first frame). |
-| `hero-poster.jpg`         | `Hero.astro`           | 1920×1080                 | Shown while the video loads / on mobile. |
-| `class-nonna.jpg`         | `Experiences.astro`    | 1200×900 (4:3)            | "The Nonna Table" card. |
-| `class-mercato.jpg`       | `Experiences.astro`    | 1200×900 (4:3)            | "Mercato & Mani" card. |
-| `class-private.jpg`       | `Experiences.astro`    | 1200×900 (4:3)            | "The Family Long-Table" card. |
-| `shape-pappardelle.jpg`   | `PastaGallery.astro`   | 800×500 (16:10)           | Gallery disc image. |
-| `shape-ravioli.jpg`       | `PastaGallery.astro`   | 800×500                   | |
-| `shape-pici.jpg`          | `PastaGallery.astro`   | 800×500                   | |
-| `shape-tortelli.jpg`      | `PastaGallery.astro`   | 800×500                   | |
-| `shape-tagliatelle.jpg`   | `PastaGallery.astro`   | 800×500                   | |
-| `story-kitchen.jpg`       | `Story.astro`          | 900×1100 (portrait)       | Front photo in the overlap pair. |
-| `story-nonna.jpg`         | `Story.astro`          | 900×900                   | Back photo in the overlap pair. |
-| `online-live.jpg`         | `OnlineBand.astro`     | 600×600                   | Small thumbnail for the online band. |
-| `og.jpg`                  | `Layout.astro` (meta)  | 1200×630                  | Social share / Open Graph image. |
+Almost every content image is in **`src/assets/images/`**, not here. Those go
+through Astro's image pipeline (`<Image>` / `getImage()`), which emits WebP/AVIF
+at several widths and a content hash in the filename. They are imported by key
+from `src/assets/images/index.ts` and referenced as `img.<key>` everywhere else,
+so no page holds its own import path.
 
-> Each of these currently renders as a CSS gradient placeholder. Once the files
-> are here, tell me and I'll swap the gradients for real `<img>` tags with
-> responsive `srcset`, lazy-loading and the correct aspect-ratios already wired.
+**`public/images/` holds only the files that need a stable, un-hashed URL:**
 
-## Formats & optimization
-- Prefer **`.webp`** (or `.avif`) for photos — 25–35% smaller than JPG at the same quality.
-- Keep each photo under ~300 KB; the hero video is the only large asset.
-- Filenames: lowercase, hyphenated, no spaces.
+| File            | Why it must stay un-hashed                                  |
+|-----------------|-------------------------------------------------------------|
+| `og-share.webp` | Social crawlers and schema.org JSON-LD point at a fixed URL. |
+| `logo.png`      | Tiny fixed-size icon; not worth the pipeline.                |
 
-## Quick temporary option
-If you don't have a shoot yet, say the word and I'll wire in curated Unsplash
-pasta photography as stand-ins so the site looks finished for a demo.
+Favicons and `apple-touch-icon.png` sit at the `public/` root for the same
+reason.
+
+## Naming convention
+
+Lowercase **kebab-case**, no spaces and no underscores — Google treats hyphens
+as word boundaries in an image URL and underscores as joiners, so
+`fresh-ravioli-pasta.webp` is read as three words and `fresh_ravioli_pasta.webp`
+as one.
+
+Name the file after **what is actually in the frame**, not after the page that
+happens to use it. Most of these photos are reused across many landing pages
+with different alt text (the antipasto board appears on the gluten-free page and
+the shape pages), so a filename tied to one page is wrong everywhere else. Two
+or four plain words beat a keyword list: `handmade-ravioli-pasta.webp`, not
+`best-handmade-fresh-ravioli-pasta-cooking-class-florence-italy.webp`.
+
+A rename here is a URL change. `src/assets/` files are hashed, so an old URL
+simply stops existing; `public/` files keep their path, so renaming one needs a
+301 (see `ops/nginx/`) or the old URL 404s and loses whatever image-search
+signal it held.
+
+## Format & size
+
+- **WebP** for photos (AVIF is fine too) — 25–35% smaller than JPEG at equal
+  quality. The pipeline handles conversion for `src/assets/` images.
+- Keep source photos under ~300 KB where you can; video clips in
+  `src/assets/video/` are the only large assets.
+- Every content image needs real alt text describing the photo. Decorative
+  images (the line-art icons, separators) take `alt=""` plus `aria-hidden`.

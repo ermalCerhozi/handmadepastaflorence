@@ -3,7 +3,7 @@ title: 'Ravioli, Tortelli oder Tortellini: der Unterschied'
 description: 'Ravioli, Tortelli, Tortellini und Agnolotti sind alle gefüllte Pasta: Größe, Form, Füllung und Region trennen sie. Was jeder Name wirklich bedeutet.'
 pubDate: 2026-08-11
 author: 'Endri Cerhozi'
-image: '../../../assets/images/shape-ravioli.webp'
+image: '../../../assets/images/handmade-ravioli-pasta.webp'
 imageAlt: 'Frisch gemachte gefüllte Pasta auf einem bemehlten Holzbrett'
 classKey: 'pasta-making'
 related:

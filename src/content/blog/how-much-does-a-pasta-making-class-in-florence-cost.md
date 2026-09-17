@@ -4,7 +4,7 @@ description: 'Real 2026 price ranges for Florence cooking classes, what actually
 pubDate: 2026-07-08
 updatedDate: 2026-09-13
 author: 'Endri Cerhozi'
-image: '../../assets/images/cooking-class-with-guests-in-picture.webp'
+image: '../../assets/images/pasta-cooking-class-florence-group-kitchen.webp'
 imageAlt: 'Guests making fresh pasta together at a small-group class in Florence'
 classKey: 'pasta-making'
 related:

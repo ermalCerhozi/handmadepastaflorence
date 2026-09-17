@@ -3,7 +3,7 @@ title: 'Cosa fare in Oltrarno, Firenze: una guida locale'
 description: 'Una giornata in Oltrarno: Santo Spirito, Palazzo Pitti e Boboli, botteghe artigiane, e dove si svolge davvero la serata.'
 pubDate: 2026-07-08
 author: 'Endri Cerhozi'
-image: '../../../assets/images/aperitivo.webp'
+image: '../../../assets/images/tuscan-aperitivo-buffet-table.webp'
 imageAlt: "Ora dell'aperitivo in una piazza di Firenze sul lato Oltrarno del fiume"
 classKey: 'market-tour'
 related:

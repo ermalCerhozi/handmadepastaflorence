@@ -4,7 +4,7 @@ description: 'A Florence pasta chef on where to eat real handmade pasta, the fro
 pubDate: 2026-07-08
 updatedDate: 2026-09-05
 author: 'Endri Cerhozi'
-image: '../../assets/images/plates.webp'
+image: '../../assets/images/tuscan-antipasto-board-burrata-red-wine.webp'
 imageAlt: 'Plates of fresh handmade pasta served at a Tuscan table'
 classKey: 'pasta-making'
 related:

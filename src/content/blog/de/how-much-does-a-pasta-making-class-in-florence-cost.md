@@ -4,7 +4,7 @@ description: 'Echte 2026-Preisspannen für Kochkurse in Florenz, was den Preis b
 pubDate: 2026-07-08
 updatedDate: 2026-09-13
 author: 'Endri Cerhozi'
-image: '../../../assets/images/cooking-class-with-guests-in-picture.webp'
+image: '../../../assets/images/pasta-cooking-class-florence-group-kitchen.webp'
 imageAlt: 'Gäste machen gemeinsam frische Pasta bei einem Kurs in einer kleinen Gruppe in Florenz'
 classKey: 'pasta-making'
 related:

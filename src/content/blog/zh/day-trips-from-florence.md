@@ -3,7 +3,7 @@ title: '从佛罗伦萨出发的一日游：每座城该吃什么'
 description: '锡耶纳、卢卡、圣吉米尼亚诺和比萨，按盘子里的东西来挑选：意面、葡萄酒，以及每座城比佛罗伦萨做得更好的那道菜。'
 pubDate: 2026-09-13
 author: 'Endri Cerhozi'
-image: '../../../assets/images/shape-pici.webp'
+image: '../../../assets/images/handmade-pici-pasta.webp'
 imageAlt: '手工搓制的 pici，来自锡耶纳和托斯卡纳南部的粗身无蛋意面'
 classKey: 'agriturismo'
 related:

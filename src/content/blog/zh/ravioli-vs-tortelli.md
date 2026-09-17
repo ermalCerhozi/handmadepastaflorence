@@ -4,7 +4,7 @@ description: 'Ravioli、tortelli、tortellini 和 agnolotti 都属于带馅意�
 pubDate: 2026-08-11
 updatedDate: 2026-09-13
 author: 'Endri Cerhozi'
-image: '../../../assets/images/shape-ravioli.webp'
+image: '../../../assets/images/handmade-ravioli-pasta.webp'
 imageAlt: '刚做好的带馅意面，摆在撒了面粉的木案板上'
 classKey: 'pasta-making'
 related:

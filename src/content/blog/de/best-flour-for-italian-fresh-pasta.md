@@ -3,7 +3,7 @@ title: 'Welches Mehl für authentische italienische Pasta?'
 description: 'Für authentische frische Pasta brauchen Sie das richtige Mehl. Der Unterschied zwischen 00-Mehl und Semola, und wann Sie welches verwenden.'
 pubDate: 2026-08-27
 author: 'Endri Cerhozi'
-image: '../../../assets/images/shape-pappardelle.webp'
+image: '../../../assets/images/handmade-pappardelle-pasta.webp'
 imageAlt: 'Ein Hügel aus 00-Mehl mit einem Eigelb in der Mitte'
 classKey: 'online'
 related:

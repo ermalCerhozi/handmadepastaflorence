@@ -4,7 +4,7 @@ description: 'Why Italy is one of the easiest countries for coeliac travellers, 
 pubDate: 2026-07-08
 updatedDate: 2026-09-13
 author: 'Endri Cerhozi'
-image: '../../assets/images/shape-tagliatelle.webp'
+image: '../../assets/images/handmade-tagliatelle-pasta.webp'
 imageAlt: 'Fresh tagliatelle ribbons dusted with flour on a wooden board'
 classKey: 'gluten-free'
 related:
