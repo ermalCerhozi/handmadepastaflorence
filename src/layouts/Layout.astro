@@ -153,7 +153,6 @@ const dir = languages[lang].dir;
         els.forEach((e) => io.observe(e));
       };
       setupReveal();
-      document.addEventListener('astro:after-swap', setupReveal);
 
       // ---- Hero parallax (flour-dusted table) ----
       const setupParallax = () => {
@@ -177,13 +176,5 @@ const dir = languages[lang].dir;
       };
       setupParallax();
     </script>
-
-    <style is:global>
-      /* ============ Astro View Transitions ============ */
-      @keyframes pageInUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
-      ::view-transition-old(root) { animation: 0.3s var(--ease) both fadeOutPage; }
-      ::view-transition-new(root) { animation: 0.45s var(--ease) both pageInUp; }
-      @keyframes fadeOutPage { to { opacity: 0; } }
-    </style>
   </body>
 </html>

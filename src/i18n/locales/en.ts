@@ -28,7 +28,7 @@ const en = {
   },
 
   footer: {
-    headline: 'Come get your hands<br /><span class="font-golden" style="font-size: 1.3em; display: inline-block; margin-left: 0.1em; color: var(--yolk);">a little floury.</span>',
+    headline: 'Come get your hands<br /><span class="font-golden font-golden--accent font-golden--yolk">a little floury.</span>',
     book: 'Book your class',
     hours: 'Open every day · classes 10:00, 14:30 & 18:00',
     desc: 'Two agriturismo chefs, cooking with you in person & online in the heart of Florence.',
@@ -229,6 +229,16 @@ const en = {
   },
 
   // BookingDrawer — server-rendered markup labels.
+  // 404 page (NotFoundPage.astro). Was hard-coded in five separate route
+  // files, each carrying its own copy of the markup and stylesheet.
+  notFound: {
+    title: 'Page not found',
+    description: 'That page has wandered off the table. Head back to the kitchen.',
+    h1: 'Lost in the flour',
+    text: 'That page has wandered off the table. Let’s get you back to the kitchen.',
+    cta: 'Back to home',
+  },
+
   bk: {
     ariaLabel: 'Book a pasta class',
     step1Label: 'Experience',
@@ -236,8 +246,6 @@ const en = {
     step3Label: 'Customize',
     step1Kicker: 'Step 1',
     step1H: 'Choose your experience',
-    florenceT: 'In-Person · Florence',
-    florenceD: 'Three hands-on hours in our Oltrarno kitchen, ending in a long lunch.',
     onlineT: 'Live Online',
     onlineD: 'Cook live from anywhere with a kit shipped to your door.',
     person: 'person',
@@ -245,8 +253,6 @@ const en = {
     step2Kicker: 'Step 2',
     step2H: 'Date, time & guests',
     availableTimes: 'Available times',
-    florence: 'Florence',
-    yourTime: 'Your time',
     step3Kicker: 'Step 3',
     step3H: 'Make it yours',
     step3Sub: 'Optional. Everything here is add-on only.',
@@ -270,10 +276,7 @@ const en = {
     send: 'Send request',
     perPerson: 'per person',
     months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-    sendClassFlorence: 'In-Person, Florence',
-    sendClassOnline: 'Live Online',
     classLabel: 'Class',
-    guestsLabel: 'Guests',
     dateTime: 'Date & time',
     addonLabels: { kit: 'Ingredient kit', wine: 'Wine pairing', gf: 'Gluten-free' },
     freeLower: 'free',
@@ -282,8 +285,6 @@ const en = {
     msgIntro: 'Hi, I would like to book the "{class}" pasta class for {guests}.',
     msgOutro: 'Thank you!',
     freeCap: 'Free',
-    sumClassFlorence: 'In Florence',
-    sumClassOnline: 'Live Online',
     guest: 'guest',
     guestsPlural: 'guests',
   },

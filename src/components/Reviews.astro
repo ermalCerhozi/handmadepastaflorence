@@ -37,7 +37,7 @@ function stars(rating: number): string {
     <header class="rev__head" data-reveal>
       <div>
         <p class="eyebrow rev__eyebrow">{t.reviews.eyebrow}</p>
-        <h2 class="rev__title">{t.reviews.titlePre}<br />{t.reviews.titleMid}<span class="font-golden" style="font-size: 1.3em; display: inline-block; margin-left: 0.2em; color: var(--terracotta);">{t.reviews.titleItal}</span></h2>
+        <h2 class="rev__title">{t.reviews.titlePre}<br />{t.reviews.titleMid}<span class="font-golden font-golden--accent font-golden--wide font-golden--terracotta">{t.reviews.titleItal}</span></h2>
       </div>
       {showBadges && badges.length > 0 && (
       <div class="rev__badges">
@@ -78,7 +78,6 @@ function stars(rating: number): string {
   @media (min-width: 880px) { .rev__head { grid-template-columns: 1fr auto; } }
   .rev__eyebrow { color: var(--terracotta); margin-bottom: 0.9rem; }
   .rev__title { font-size: var(--step-3); color: var(--olive); }
-  .rev__title .ital { color: var(--terracotta); }
 
   .rev__badges { display: flex; flex-wrap: wrap; gap: 0.8rem; }
   .badge {

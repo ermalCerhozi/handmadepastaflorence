@@ -17,8 +17,6 @@
 // under-reported every Chinese page (the zh homepage was 104 characters but
 // 208 columns, well past the cut, while reporting as fine).
 
-const STRICT = true;
-
 /** Google renders roughly this many columns before truncating with an ellipsis. */
 export const TITLE_MAX = 60;
 export const DESCRIPTION_MAX = 155;
@@ -34,10 +32,8 @@ function renderedWidth(text: string): number {
   return n;
 }
 
-const seen = new Set<string>();
-
 /**
- * Warn once per offending page. Called from Layout.astro, so it sees every
+ * Throw on the first offending page. Called from Layout.astro, so it sees every
  * route in every locale during `astro build`.
  */
 export function checkMetaLength(pathname: string, title: string, description: string): void {
@@ -54,11 +50,5 @@ export function checkMetaLength(pathname: string, title: string, description: st
   }
   if (problems.length === 0) return;
 
-  const key = pathname + problems.join('|');
-  if (seen.has(key)) return;
-  seen.add(key);
-
-  const message = `[meta-length] ${pathname}\n    ${problems.join('\n    ')}`;
-  if (STRICT) throw new Error(message);
-  console.warn(message);
+  throw new Error(`[meta-length] ${pathname}\n    ${problems.join('\n    ')}`);
 }

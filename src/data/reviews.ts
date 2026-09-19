@@ -54,8 +54,6 @@ export const reviews: Review[] = [];
 
 export const badges: ReviewBadge[] = [];
 
-export const hasReviews = reviews.length > 0;
-
 /**
  * Reviews about one specific class. Empty for every class until a review is
  * added with that `pageKey`.

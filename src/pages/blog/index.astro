@@ -1,9 +1,12 @@
 ---
+// English blog index. Thin route shim — see src/page-templates/BlogIndexPage.astro.
 import { getCollection } from 'astro:content';
 import BlogIndexPage from '../../page-templates/BlogIndexPage.astro';
+import { blogLocale } from '../../utils/blog-locales';
 
 const posts = (await getCollection('blog'))
-  .filter(p => !p.id.includes('/'))
+  .filter((p) => blogLocale(p.id) === 'en')
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
+
 <BlogIndexPage posts={posts} />

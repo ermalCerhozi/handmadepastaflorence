@@ -32,7 +32,7 @@ const t = useTranslations(getLocaleFromUrl(Astro.url));
     <h1 class="hero__title">
       <span>{t.hero.titleL1}</span>
       <span>{t.hero.titleL2}</span>
-      <span class="hero__title-ital font-golden" style="font-size: 1.25em; line-height: 0.9;">{t.hero.titleItal}</span>
+      <span class="hero__title-ital font-golden">{t.hero.titleItal}</span>
       <span class="hero__title-kw">{t.hero.titleKw}</span>
     </h1>
     <p class="hero__lede" data-reveal style="--reveal-delay:520ms">
@@ -163,7 +163,7 @@ const t = useTranslations(getLocaleFromUrl(Astro.url));
     text-shadow: 0 4px 40px rgba(0,0,0,0.3);
   }
   .hero__title span { display: block; }
-  .hero__title-ital { color: var(--yolk); }
+  .hero__title-ital { color: var(--yolk); font-size: 1.25em; line-height: 0.9; }
   /* Keyword line — inside the <h1> so it counts, but sized and weighted to read
      as a subtitle: the emotive line above it keeps doing the conversion work. */
   .hero__title-kw {

@@ -7,13 +7,14 @@
 import { Image } from 'astro:assets';
 import { localizePath, localizedHref } from '../i18n/utils';
 import { useTranslations } from '../i18n/ui';
-import { languages, type Locale } from '../i18n/config';
+import type { Locale } from '../i18n/config';
 import { shapesHubPath } from '../data/shapes';
 import type { FactIcon, LandingKey } from '../data/landings';
 import { breadcrumbSchema, faqSchema } from '../utils/schema';
 import { getAggregateRating, getReviewSchema, reviewsFor } from '../data/reviews';
 import Reviews from './Reviews.astro';
 import { PRICE_VALID_UNTIL } from '../utils/offer-validity';
+import { formatMonthYear } from '../utils/format-date';
 import * as img from '../assets/images';
 
 interface Fact {
@@ -160,10 +161,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
 // and `dateModified` in the Course schema.
 const PAGE_UPDATED_FALLBACK = '2026-08-11';
 const PAGE_UPDATED = updated ?? PAGE_UPDATED_FALLBACK;
-const updatedLabel = new Intl.DateTimeFormat(languages[lang].htmlLang, {
-  month: 'long',
-  year: 'numeric',
-}).format(new Date(PAGE_UPDATED));
+const updatedLabel = formatMonthYear(new Date(PAGE_UPDATED), lang);
 
 // GEO fix: the price/duration badge below is a compact widget (strong+small
 // next to the CTA button) that boilerplate-stripping extractors (e.g.
@@ -300,7 +298,7 @@ const faqLd = faqSchema(faqs);
       </nav>
       <p class="eyebrow lp-hero__eyebrow">{eyebrow}</p>
       <h1 class="lp-hero__h">
-        {heading} <span class="font-golden" style="font-size: 1.3em; display: inline-block; margin-left: 0.1em; color: var(--yolk);">{headingItal}</span>
+        {heading} <span class="font-golden font-golden--accent font-golden--yolk">{headingItal}</span>
       </h1>
       <p class="lp-hero__lede">{lede}</p>
       {priceSentence && <p class="lp-hero__pricenote">{priceSentence}</p>}
@@ -470,7 +468,7 @@ const faqLd = faqSchema(faqs);
 
 <section class="lp-faq">
   <div class="shell lp-faq__inner">
-    <h2 class="lp-faq__h">{t.lp.faqPre}<span class="font-golden" style="font-size: 1.3em; display: inline-block; margin-left: 0.2em; color: var(--terracotta);">{t.lp.faqItal}</span></h2>
+    <h2 class="lp-faq__h">{t.lp.faqPre}<span class="font-golden font-golden--accent font-golden--wide font-golden--terracotta">{t.lp.faqItal}</span></h2>
     <div class="lp-faq__list">
       {
         faqs.map((f, i) => (
@@ -504,7 +502,7 @@ const faqLd = faqSchema(faqs);
 
 <section class="lp-rel">
   <div class="shell">
-    <h2 class="lp-rel__h">{t.lp.relPre}<span class="font-golden" style="font-size: 1.3em; display: inline-block; margin-left: 0.2em; color: var(--terracotta);">{t.lp.relItal}</span></h2>
+    <h2 class="lp-rel__h">{t.lp.relPre}<span class="font-golden font-golden--accent font-golden--wide font-golden--terracotta">{t.lp.relItal}</span></h2>
     <div class="lp-rel__grid">
       {
         related.map((r, i) => (
@@ -580,9 +578,6 @@ const faqLd = faqSchema(faqs);
     font-size: var(--step-3);
     line-height: 1.08;
     max-width: 18ch;
-  }
-  .lp-hero__h .ital {
-    color: var(--yolk);
   }
   .lp-hero__lede {
     margin-top: 1.2rem;
@@ -864,9 +859,6 @@ const faqLd = faqSchema(faqs);
     color: var(--olive);
     margin-bottom: clamp(1.6rem, 3vw, 2.4rem);
   }
-  .lp-faq__h .ital {
-    color: var(--terracotta);
-  }
   .lp-faq__list {
     display: grid;
     gap: 0.8rem;
@@ -921,9 +913,6 @@ const faqLd = faqSchema(faqs);
     font-size: var(--step-2);
     color: var(--olive);
     margin-bottom: clamp(1.6rem, 3vw, 2.4rem);
-  }
-  .lp-rel__h .ital {
-    color: var(--terracotta);
   }
   .lp-rel__grid {
     display: grid;
@@ -1024,5 +1013,4 @@ const faqLd = faqSchema(faqs);
 <script>
   import { setupLoopVideos } from '../scripts/loop-video';
   setupLoopVideos();
-  document.addEventListener('astro:after-swap', setupLoopVideos);
 </script>

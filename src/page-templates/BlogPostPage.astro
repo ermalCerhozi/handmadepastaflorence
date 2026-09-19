@@ -12,6 +12,7 @@ import { getCollection } from 'astro:content';
 import { landings, landingPath, type LandingKey } from '../data/landings';
 import { breadcrumbSchema, faqSchema } from '../utils/schema';
 import { blogPostAlternates, blogLocale, blogSlug, blogPostPath } from '../utils/blog-locales';
+import { formatDate } from '../utils/format-date';
 
 interface Props {
   post: CollectionEntry<'blog'>;
@@ -24,8 +25,6 @@ const t = useTranslations(lang);
 
 const SITE = 'https://handmadepastaflorence.com';
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
-const fmt = (d: Date) =>
-  d.toLocaleDateString(languages[lang].dateLocale, { day: 'numeric', month: 'long', year: 'numeric' });
 
 // Every one of these used to branch off `isIt`, which sent /de/, /fr/ and /zh/
 // readers to the English home, blog and class pages and declared the article
@@ -114,7 +113,7 @@ const faqLd = faqs.length ? faqSchema(faqs) : null;
           <h1 class="po-hero__h">{post.data.title}</h1>
           <p class="po-hero__meta">
             {t.blogPost.by} <a href="https://endricerhozi.com" target="_blank" rel="noopener">{post.data.author}</a>
-            · <time datetime={post.data.pubDate.toISOString()}>{fmt(post.data.pubDate)}</time>
+            · <time datetime={post.data.pubDate.toISOString()}>{formatDate(post.data.pubDate, lang)}</time>
           </p>
         </div>
       </header>

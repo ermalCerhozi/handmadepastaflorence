@@ -30,7 +30,6 @@ if (langLinks.length <= 1) return;
           lang={a.locale}
           class="lang__opt"
           aria-current={a.locale === current ? 'page' : undefined}
-          data-astro-reload
         >
           <span class="lang__flag" set:html={flags[a.locale as keyof typeof flags]} />
           <span>{languages[a.locale].label}</span>
@@ -55,11 +54,6 @@ if (langLinks.length <= 1) return;
     if (details && details.open && !details.contains(e.target as Node)) {
       details.open = false;
     }
-  });
-  // Close on Astro after-swap
-  document.addEventListener("astro:after-swap", () => {
-    const details = document.querySelector('[data-lang-switcher]') as HTMLDetailsElement;
-    if (details) details.open = false;
   });
 </script>
 

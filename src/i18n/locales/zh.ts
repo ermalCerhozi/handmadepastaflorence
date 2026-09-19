@@ -17,7 +17,7 @@ const zh = {
   },
 
   footer: {
-    headline: '来吧，让你的双手<br /><span class="font-golden" style="font-size: 1.3em; display: inline-block; margin-left: 0.1em; color: var(--yolk);">沾满面粉。</span>',
+    headline: '来吧，让你的双手<br /><span class="font-golden font-golden--accent font-golden--yolk">沾满面粉。</span>',
     book: '预订课程',
     hours: '每天开放 · 课程时间 10:00, 14:30 & 18:00',
     desc: '两位农庄主厨，在佛罗伦萨市中心与你进行面对面或线上的烹饪互动。',
@@ -216,6 +216,16 @@ const zh = {
   },
 
   // BookingDrawer — server-rendered markup labels.
+  // 404 page (NotFoundPage.astro). Was hard-coded in five separate route
+  // files, each carrying its own copy of the markup and stylesheet.
+  notFound: {
+    title: '页面未找到',
+    description: '这个页面已经离开了餐桌。请回到厨房。',
+    h1: '迷失在面粉中',
+    text: '这个页面已经离开了餐桌。我们带你回到厨房。',
+    cta: '返回首页',
+  },
+
   bk: {
     ariaLabel: '预订意面课程',
     step1Label: '体验',
@@ -223,8 +233,6 @@ const zh = {
     step3Label: '定制',
     step1Kicker: '第 1 步',
     step1H: '选择您的体验',
-    florenceT: '面对面 · 佛罗伦萨',
-    florenceD: '在奥特拉诺（Oltrarno）的厨房里进行三个小时的实践，最后以一顿丰盛的午餐结束。',
     onlineT: '在线直播',
     onlineD: '无论身在何处，都可以使用送货上门的工具包进行现场烹饪。',
     person: '人',
@@ -232,8 +240,6 @@ const zh = {
     step2Kicker: '第 2 步',
     step2H: '日期、时间与人数',
     availableTimes: '可选时间',
-    florence: '佛罗伦萨',
-    yourTime: '您的时间',
     step3Kicker: '第 3 步',
     step3H: '打造专属体验',
     step3Sub: '可选。这里的所有项目都是附加项。',
@@ -257,10 +263,7 @@ const zh = {
     send: '发送请求',
     perPerson: '每人',
     months: ['一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月'],
-    sendClassFlorence: '面对面，佛罗伦萨',
-    sendClassOnline: '在线直播',
     classLabel: '课程',
-    guestsLabel: '客人',
     dateTime: '日期与时间',
     addonLabels: { kit: '食材包', wine: '葡萄酒搭配', gf: '无麸质' },
     freeLower: '免费',
@@ -269,8 +272,6 @@ const zh = {
     msgIntro: '你好，我想预订“{class}”意面课程，{guests}。',
     msgOutro: '谢谢！',
     freeCap: '免费',
-    sumClassFlorence: '在佛罗伦萨',
-    sumClassOnline: '在线直播',
     guest: '人',
     guestsPlural: '人',
   },

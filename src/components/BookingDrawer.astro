@@ -9,7 +9,7 @@ import { getLocaleFromUrl } from '../i18n/utils';
 import { dictionaries, useTranslations } from '../i18n/ui';
 const t = useTranslations(getLocaleFromUrl(Astro.url));
 // Every locale's client-side strings, emitted as JSON and indexed at runtime by the
-// live document lang (so it stays correct across view-transition navigation).
+// live document lang.
 // Derived from `dictionaries` rather than listed by hand: this used to name en+it
 // explicitly, so fr/de/zh silently fell back to English in the drawer that takes
 // the booking, even though all five locales had a fully translated bkJs block.
@@ -199,8 +199,8 @@ const bkJsPayload = Object.fromEntries(
     const root = document.querySelector<HTMLElement>('[data-booking]');
     if (!root) return;
 
-    // Both locales' strings are emitted as a JSON payload; pick the active one by
-    // the live <html lang> (so it stays correct across view-transition navigation).
+    // Every locale's strings are emitted as a JSON payload; pick the active one by
+    // the live <html lang>.
     const I18N: Record<string, any> = JSON.parse(
       document.querySelector('[data-bk-i18n]')?.textContent || '{}'
     );
@@ -470,19 +470,56 @@ const bkJsPayload = Object.fromEntries(
       });
     });
 
-    /* ---------- pricing render (single source of truth) ---------- */
+    /* ---------- pricing (single source of truth) ---------- */
     const euro = (n: number) => `€${n.toLocaleString('en-IE')}`;
 
-    const sendRequest = () => {
+    /**
+     * The one place the price is worked out. Both the on-screen summary and the
+     * WhatsApp message render from this, so what the guest sees and what we
+     * receive can never disagree. This was two separate walks of [data-addon],
+     * each with its own copy of the per-guest/per-order rule.
+     */
+    type Priced = { label: string; amount: number };
+    const priceBreakdown = (): { base: Priced[]; addons: Priced[]; total: number } => {
       const T = tr();
-      const details: string[] = [];
+      const base: Priced[] = [];
+      const addons: Priced[] = [];
       let total = 0;
-      let intro = T.msgIntro;
 
       if (state.experience) {
         const isFlat = state.experience === 'private';
         const sub = isFlat ? state.basePrice : state.basePrice * state.guests;
         total += sub;
+        const guestStr = state.guests === 1 ? T.guest : T.guestsPlural;
+        base.push({
+          label: isFlat
+            ? T.classLabel
+            : `${T.classLabel} (€${state.basePrice} × ${state.guests} ${guestStr})`,
+          amount: sub,
+        });
+      }
+
+      // per-guest add-ons multiply by guests, per-order ones are flat
+      $$('[data-addon]').forEach((label) => {
+        const el = label as HTMLElement;
+        const key = el.dataset.addon!;
+        if (!(key in state.addons)) return;
+        const unit = state.addons[key];
+        const amount = el.dataset.per === 'guest' ? unit * state.guests : unit;
+        total += amount;
+        addons.push({ label: T.addonLabels[key] ?? key, amount });
+      });
+
+      return { base, addons, total };
+    };
+
+    const sendRequest = () => {
+      const T = tr();
+      const { addons, total } = priceBreakdown();
+      const details: string[] = [];
+      let intro = T.msgIntro;
+
+      if (state.experience) {
         const name = state.experienceName || '';
         const guestStr = state.guests === 1 ? T.guest : T.guestsPlural;
         intro = intro.replace('{class}', name).replace('{guests}', `${state.guests} ${guestStr}`);
@@ -492,19 +529,11 @@ const bkJsPayload = Object.fromEntries(
 
       if (state.date) details.push(`${T.dateTime}: ${state.date}${state.time ? ' · ' + state.time : ''}`);
 
-      const addonText: string[] = [];
-      $$('[data-addon]').forEach((label) => {
-        const el = label as HTMLElement;
-        const key = el.dataset.addon!;
-        if (!(key in state.addons)) return;
-        const unit = state.addons[key];
-        const amt = el.dataset.per === 'guest' ? unit * state.guests : unit;
-        total += amt;
-        const lbl = T.addonLabels[key] ?? key;
-        addonText.push(`${lbl}${amt === 0 ? ` (${T.freeLower})` : ' (+' + euro(amt) + ')'}`);
-      });
+      const addonText = addons.map(
+        (a) => `${a.label}${a.amount === 0 ? ` (${T.freeLower})` : ' (+' + euro(a.amount) + ')'}`
+      );
       if (addonText.length) details.push(`${T.addonsLabel}: ${addonText.join(', ')}`);
-      
+
       let totalStr = euro(total);
       if (state.experience && state.experience !== 'private') {
         totalStr += ` (€${state.basePrice} ${T.perPerson})`;
@@ -542,62 +571,29 @@ const bkJsPayload = Object.fromEntries(
       const T = tr();
       const lines = $('[data-summary-lines]'); if (!lines) return;
       lines.innerHTML = '';
-      const add = (label: string, amount: number) => {
+
+      const append = (html: string, cls?: string) => {
         const li = document.createElement('li');
-        li.innerHTML = `<span>${label}</span><span>${amount === 0 ? T.freeCap : euro(amount)}</span>`;
+        if (cls) li.className = cls;
+        li.innerHTML = html;
         lines.appendChild(li);
       };
+      const addHeader = (label: string, value: string) =>
+        append(`<strong>${label}</strong><span>${value}</span>`);
+      const add = ({ label, amount }: Priced) =>
+        append(`<span>${label}</span><span>${amount === 0 ? T.freeCap : euro(amount)}</span>`);
 
-      let total = 0;
-
-      // Helper for header lines (e.g. Experience, Date)
-      const addHeader = (label: string, value: string) => {
-        const li = document.createElement('li');
-        li.innerHTML = `<strong>${label}</strong><span>${value}</span>`;
-        lines.appendChild(li);
-      };
-
-      // Helper for a divider
-      const addDivider = () => {
-        const li = document.createElement('li');
-        li.style.borderTop = '1px dashed var(--paper-line)';
-        li.style.margin = '0.3rem 0';
-        li.style.width = '100%';
-        li.style.height = '0';
-        lines.appendChild(li);
-      };
-
-      if (state.experience) {
-        addHeader(`${T.classLabel}:`, state.experienceName || '');
-      }
+      if (state.experience) addHeader(`${T.classLabel}:`, state.experienceName || '');
       if (state.date) {
         addHeader(`${T.dateTime}:`, `${state.date}${state.time ? ' at ' + state.time : ''}`);
       }
-      
-      if (state.experience || Object.keys(state.addons).length > 0) {
-        addDivider();
-      }
 
-      if (state.experience) {
-        const isFlat = state.experience === 'private';
-        const sub = isFlat ? state.basePrice : state.basePrice * state.guests;
-        total += sub;
-        const guestStr = state.guests === 1 ? T.guest : T.guestsPlural;
-        const detailStr = isFlat ? T.classLabel : `${T.classLabel} (€${state.basePrice} × ${state.guests} ${guestStr})`;
-        add(detailStr, sub);
-      }
-      // add-ons: per-guest items multiply by guests, per-order items are flat
-      $$('[data-addon]').forEach((label) => {
-        const el = label as HTMLElement;
-        const key = el.dataset.addon!;
-        if (!(key in state.addons)) return;
-        const unit = state.addons[key];
-        const amt = el.dataset.per === 'guest' ? unit * state.guests : unit;
-        total += amt;
-        const lbl = T.addonLabels[key] ?? key;
-        add(lbl, amt);
-      });
-        const totalEl = $('[data-total]'); if (totalEl) totalEl.textContent = euro(total);
+      const { base, addons, total } = priceBreakdown();
+      if (base.length || addons.length) append('', 'summary__rule');
+      base.forEach(add);
+      addons.forEach(add);
+
+      const totalEl = $('[data-total]'); if (totalEl) totalEl.textContent = euro(total);
     };
 
     buildCal();
@@ -607,7 +603,6 @@ const bkJsPayload = Object.fromEntries(
   };
 
   setupBooking();
-  document.addEventListener('astro:after-swap', setupBooking);
 </script>
 
 <style>
@@ -793,6 +788,9 @@ const bkJsPayload = Object.fromEntries(
   .summary__lines :global(li) { display: flex; justify-content: space-between; gap: 0.8rem; font-size: 0.78rem; color: var(--charcoal-soft); }
   .summary__lines :global(li > :first-child) { flex: 1; }
   .summary__lines :global(li > :last-child) { text-align: right; word-break: break-word; }
+  /* Rule between the booked lines and the priced lines. Was five inline
+     style writes in render(); it is presentation, so it lives here. */
+  .summary__lines :global(li.summary__rule) { display: block; width: 100%; height: 0; margin: 0.3rem 0; border-top: 1px dashed var(--paper-line); }
   .summary__total { display: flex; justify-content: space-between; align-items: baseline; margin-top: 0.4rem; padding-top: 0.45rem; border-top: 1px dashed var(--paper-line); }
   .summary__total span { font-size: 0.85rem; }
   .summary__total strong { font-family: var(--serif); font-size: var(--step-1); color: var(--olive); }

@@ -52,7 +52,6 @@
   --step-1: clamp(1.2rem, 1.05rem + 0.75vw, 1.6rem);
   --step-2: clamp(1.6rem, 1.3rem + 1.5vw, 2.6rem);
   --step-3: clamp(2.2rem, 1.6rem + 3vw, 4rem);
-  --step-4: clamp(3rem, 2rem + 5vw, 6.5rem);
   --step-5: clamp(4rem, 2.4rem + 8vw, 9.5rem);
 
   /* ---- Space & shape ---- */
@@ -60,7 +59,6 @@
   --radius: 18px;
   --radius-lg: 28px;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
-  --ease-soft: cubic-bezier(0.4, 0, 0.2, 1);
   --shadow-sm: 0 4px 14px rgba(44, 58, 41, 0.08);
   --shadow-md: 0 18px 40px -18px rgba(44, 58, 41, 0.28);
   --shadow-lg: 0 40px 90px -30px rgba(33, 44, 31, 0.45);
@@ -130,9 +128,6 @@ h1, h2, h3, h4 {
   text-transform: uppercase;
 }
 
-/* fancy serif italic accent */
-.ital { font-style: italic; font-weight: 500; }
-
 /* handmade golden hills accent */
 .font-golden {
   font-family: var(--golden);
@@ -140,6 +135,27 @@ h1, h2, h3, h4 {
   letter-spacing: normal;
   text-transform: none;
 }
+
+/* The oversized script word inside a heading. This declaration block used to be
+   repeated as an inline `style` attribute on all 18 of them; the colour, the gap
+   and (once) the size were the only things that ever differed, so those are the
+   modifiers below. Global rather than per-component because two of the callers
+   are heading fragments authored inside the dictionaries and injected with
+   `set:html`, which scoped styles cannot reach. */
+.font-golden--accent {
+  font-size: var(--accent-size, 1.3em);
+  display: inline-block;
+  margin-left: var(--accent-gap, 0.1em);
+}
+/* The brand mark: sized and spaced like an accent, but left inline so it keeps
+   wrapping with the words around it. */
+.font-golden--mark { font-size: 1.3em; margin-left: 0.1em; }
+.font-golden--wide { --accent-gap: 0.2em; }
+.font-golden--xl { --accent-size: 1.4em; }
+.font-golden--yolk { color: var(--yolk); }
+.font-golden--yolk-deep { color: var(--yolk-deep); }
+.font-golden--terracotta { color: var(--terracotta); }
+.font-golden--olive { color: var(--olive-soft); }
 
 /* ---- Reveal on scroll (set via IntersectionObserver) ---- */
 [data-reveal] {

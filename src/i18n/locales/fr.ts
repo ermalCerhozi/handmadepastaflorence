@@ -17,7 +17,7 @@ const fr = {
   },
 
   footer: {
-    headline: 'Venez vous mettre un<br /><span class="font-golden" style="font-size: 1.3em; display: inline-block; margin-left: 0.1em; color: var(--yolk);">peu de farine sur les mains.</span>',
+    headline: 'Venez vous mettre un<br /><span class="font-golden font-golden--accent font-golden--yolk">peu de farine sur les mains.</span>',
     book: 'Réserver votre cours',
     hours: 'Ouvert tous les jours · cours à 10:00, 14:30 & 18:00',
     desc: 'Deux chefs d\'agritourisme, cuisinant avec vous en personne et en ligne au cœur de Florence.',
@@ -215,6 +215,16 @@ const fr = {
     relatedSub: 'D’autres guides depuis notre cuisine',
   },
 
+  // 404 page (NotFoundPage.astro). Was hard-coded in five separate route
+  // files, each carrying its own copy of the markup and stylesheet.
+  notFound: {
+    title: 'Page introuvable',
+    description: 'Cette page a quitté la table. Retournez en cuisine.',
+    h1: 'Perdu dans la farine',
+    text: 'Cette page a quitté la table. Nous vous ramenons en cuisine.',
+    cta: 'Retour à l’accueil',
+  },
+
   bk: {
     ariaLabel: 'Réserver un cours de pâtes',
     step1Label: 'Expérience',
@@ -222,8 +232,6 @@ const fr = {
     step3Label: 'Personnaliser',
     step1Kicker: 'Étape 1',
     step1H: 'Choisissez votre expérience',
-    florenceT: 'En Personne · Florence',
-    florenceD: 'Trois heures pratiques dans notre cuisine de l\'Oltrarno, se terminant par un long déjeuner.',
     onlineT: 'En Ligne en Direct',
     onlineD: 'Cuisinez en direct de n\'importe où avec un kit livré à votre porte.',
     person: 'personne',
@@ -231,8 +239,6 @@ const fr = {
     step2Kicker: 'Étape 2',
     step2H: 'Date, heure et invités',
     availableTimes: 'Heures disponibles',
-    florence: 'Florence',
-    yourTime: 'Votre heure',
     step3Kicker: 'Étape 3',
     step3H: 'Personnalisez-le',
     step3Sub: 'Optionnel. Tout ici est en supplément.',
@@ -254,10 +260,7 @@ const fr = {
     send: 'Envoyer la demande',
     perPerson: 'par personne',
     months: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
-    sendClassFlorence: 'En Personne, Florence',
-    sendClassOnline: 'En Ligne en Direct',
     classLabel: 'Cours',
-    guestsLabel: 'Invités',
     dateTime: 'Date et heure',
     addonLabels: { kit: 'Kit d\'ingrédients', wine: 'Accord mets-vins', gf: 'Sans gluten' },
     freeLower: 'gratuit',
@@ -266,8 +269,6 @@ const fr = {
     msgIntro: 'Bonjour, je voudrais réserver le cours de pâtes "{class}" pour {guests}.',
     msgOutro: 'Merci !',
     freeCap: 'Gratuit',
-    sumClassFlorence: 'À Florence',
-    sumClassOnline: 'En Ligne en Direct',
     guest: 'invité',
     guestsPlural: 'invités',
   },

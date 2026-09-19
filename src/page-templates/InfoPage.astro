@@ -86,7 +86,6 @@ const updatedLabel = new Date(lastUpdated + 'T00:00:00Z').toLocaleDateString('en
     });
   };
   restoreLocaleLinks();
-  document.addEventListener('astro:after-swap', restoreLocaleLinks);
 </script>
 
 <style>

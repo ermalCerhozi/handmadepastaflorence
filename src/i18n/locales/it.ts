@@ -22,7 +22,7 @@ const it: Dict = {
   },
 
   footer: {
-    headline: `Vieni a sporcarti le mani<br /><span class="font-golden" style="font-size: 1.3em; display: inline-block; margin-left: 0.1em; color: var(--yolk);">di farina.</span>`,
+    headline: `Vieni a sporcarti le mani<br /><span class="font-golden font-golden--accent font-golden--yolk">di farina.</span>`,
     book: `Prenota il tuo corso`,
     hours: `Aperti tutti i giorni · corsi 10:00, 14:30 & 18:00`,
     desc: `Due chef di agriturismo, cucinano con te di persona e online nel cuore di Firenze.`,
@@ -219,6 +219,16 @@ const it: Dict = {
     relatedSub: `Altre guide dalla nostra cucina`,
   },
 
+  // 404 page (NotFoundPage.astro). Was hard-coded in five separate route
+  // files, each carrying its own copy of the markup and stylesheet.
+  notFound: {
+    title: `Pagina non trovata`,
+    description: `Questa pagina si è allontanata dal tavolo. Torna in cucina.`,
+    h1: `Perso nella farina`,
+    text: `Questa pagina si è allontanata dal tavolo. Ti riportiamo in cucina.`,
+    cta: `Torna alla home`,
+  },
+
   bk: {
     ariaLabel: `Prenota un corso di pasta`,
     step1Label: `Esperienza`,
@@ -226,8 +236,6 @@ const it: Dict = {
     step3Label: `Personalizza`,
     step1Kicker: `Passo 1`,
     step1H: `Scegli la tua esperienza`,
-    florenceT: `In presenza · Firenze`,
-    florenceD: `Tre ore pratiche nella nostra cucina in Oltrarno, che terminano in un lungo pranzo.`,
     onlineT: `In diretta online`,
     onlineD: `Cucina in diretta da ovunque con un kit spedito a casa tua.`,
     person: `persona`,
@@ -235,8 +243,6 @@ const it: Dict = {
     step2Kicker: `Passo 2`,
     step2H: `Data, ora e ospiti`,
     availableTimes: `Orari disponibili`,
-    florence: `Firenze`,
-    yourTime: `La tua ora`,
     step3Kicker: `Passo 3`,
     step3H: `Fallo tuo`,
     step3Sub: `Opzionale. Tutto qui è solo aggiuntivo.`,
@@ -258,10 +264,7 @@ const it: Dict = {
     send: `Invia richiesta`,
     perPerson: `a persona`,
     months: ['Gennaio', 'Febbraio', 'Marzo', 'Aprile', 'Maggio', 'Giugno', 'Luglio', 'Agosto', 'Settembre', 'Ottobre', 'Novembre', 'Dicembre'],
-    sendClassFlorence: `In presenza, Firenze`,
-    sendClassOnline: `In diretta online`,
     classLabel: `Corso`,
-    guestsLabel: `Ospiti`,
     dateTime: `Data e ora`,
     addonLabels: { kit: `Kit ingredienti`, wine: `Abbinamento vini`, gf: `Senza glutine` },
     freeLower: `gratis`,
@@ -270,8 +273,6 @@ const it: Dict = {
     msgIntro: `Ciao, vorrei prenotare il corso di pasta "{class}" per {guests}.`,
     msgOutro: `Grazie!`,
     freeCap: `Gratis`,
-    sumClassFlorence: `A Firenze`,
-    sumClassOnline: `In diretta online`,
     guest: `ospite`,
     guestsPlural: `ospiti`,
   },

@@ -1,12 +1,15 @@
 ---
+// French blog posts. Thin route shim — see src/page-templates/BlogPostPage.astro.
 import { getCollection } from 'astro:content';
 import BlogPostPage from '../../../page-templates/BlogPostPage.astro';
+import { blogLocale, blogSlug } from '../../../utils/blog-locales';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog', ({ id }) => id.startsWith('fr/'));
-  return posts.map((post) => ({ params: { slug: post.id.replace('fr/', '') }, props: { post } }));
+  const posts = await getCollection('blog', ({ id }) => blogLocale(id) === 'fr');
+  return posts.map((post) => ({ params: { slug: blogSlug(post.id) }, props: { post } }));
 }
 
 const { post } = Astro.props;
 ---
+
 <BlogPostPage post={post} />

@@ -4,7 +4,6 @@
 // isn't a dark full-bleed photo.
 import { localizePath, getAlternates, getLocaleFromUrl, type Alternate } from '../i18n/utils';
 import { useTranslations } from '../i18n/ui';
-import { languages } from '../i18n/config';
 import { shapesHubPath } from '../data/shapes';
 import LanguageSwitcher from './LanguageSwitcher.astro';
 
@@ -28,7 +27,7 @@ const langLinks = alternates ?? getAlternates(Astro.url.pathname);
         <img src="/images/logo.png" alt="" width="40" height="40" />
       </span>
       <span class="hdr__name">
-        <strong>Handmade Pasta</strong> <span class="font-golden" style="font-size: 1.3em; margin-left: 0.1em;">Florence</span>
+        <strong>Handmade Pasta</strong> <span class="font-golden font-golden--mark">Florence</span>
       </span>
     </a>
 
@@ -75,7 +74,7 @@ const langLinks = alternates ?? getAlternates(Astro.url.pathname);
     const h = document.querySelector<HTMLElement>('[data-header]');
     if (!h) return;
 
-    // Always start closed on a fresh render / view-transition swap.
+    // Always start closed on a fresh render.
     h.classList.remove('is-nav-open');
 
     const onScroll = () => h.classList.toggle('is-stuck', window.scrollY > 40);
@@ -111,7 +110,6 @@ const langLinks = alternates ?? getAlternates(Astro.url.pathname);
     onBreakpoint(mq);
   };
   setupHeader();
-  document.addEventListener('astro:after-swap', setupHeader);
 </script>
 
 <style>
@@ -146,9 +144,7 @@ const langLinks = alternates ?? getAlternates(Astro.url.pathname);
   .hdr__name em { font-style: italic; font-weight: 500; opacity: 0.85; }
 
   .hdr__nav {
-    /* Mobile: a full-width dropdown panel, closed by default (collapsed to
-       nothing rather than `display:none` so `astro:after-swap` re-renders
-       don't need JS to run before the panel is even inspectable). */
+    /* Mobile: a full-width dropdown panel, closed by default. */
     display: none;
     position: absolute; top: 100%; left: 0; right: 0;
     flex-direction: column; gap: 0;

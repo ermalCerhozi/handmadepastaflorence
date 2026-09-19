@@ -16,7 +16,7 @@ const faqs = t.faq.items;
   <div class="shell faq__inner">
     <header class="faq__head" data-reveal>
       <p class="eyebrow faq__eyebrow">{t.faq.eyebrow}</p>
-      <h2 class="faq__title">{t.faq.titlePre} <span class="font-golden" style="font-size: 1.3em; display: inline-block; margin-left: 0.2em; color: var(--terracotta);">{t.faq.titleItal}</span></h2>
+      <h2 class="faq__title">{t.faq.titlePre} <span class="font-golden font-golden--accent font-golden--wide font-golden--terracotta">{t.faq.titleItal}</span></h2>
     </header>
 
     <div class="faq__list">
@@ -40,7 +40,6 @@ const faqs = t.faq.items;
   .faq__head { margin-bottom: clamp(2rem, 4vw, 3rem); }
   .faq__eyebrow { color: var(--terracotta); margin-bottom: 0.7rem; }
   .faq__title { font-size: var(--step-3); color: var(--olive); }
-  .faq__title .ital { color: var(--terracotta); }
 
   .faq__list { display: grid; gap: 0.8rem; max-width: 760px; }
   .faq__item {

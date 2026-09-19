@@ -19,7 +19,7 @@ const de = {
   },
 
   footer: {
-    headline: 'Machen Sie sich die Hände<br /><span class="font-golden" style="font-size: 1.3em; display: inline-block; margin-left: 0.1em; color: var(--yolk);">ein wenig mehlig.</span>',
+    headline: 'Machen Sie sich die Hände<br /><span class="font-golden font-golden--accent font-golden--yolk">ein wenig mehlig.</span>',
     book: 'Buchen Sie Ihren Kurs',
     hours: 'Täglich geöffnet · Kurse 10:00, 14:30 & 18:00',
     desc: 'Zwei Agriturismo-Köche kochen mit Ihnen persönlich & online im Herzen von Florenz.',
@@ -218,6 +218,16 @@ const de = {
   },
 
   // BookingDrawer — server-rendered markup labels.
+  // 404 page (NotFoundPage.astro). Was hard-coded in five separate route
+  // files, each carrying its own copy of the markup and stylesheet.
+  notFound: {
+    title: 'Seite nicht gefunden',
+    description: 'Diese Seite hat den Tisch verlassen. Zurück in die Küche.',
+    h1: 'Im Mehl verloren',
+    text: 'Diese Seite hat den Tisch verlassen. Wir bringen Sie zurück in die Küche.',
+    cta: 'Zur Startseite',
+  },
+
   bk: {
     ariaLabel: 'Einen Pasta-Kurs buchen',
     step1Label: 'Erlebnis',
@@ -225,8 +235,6 @@ const de = {
     step3Label: 'Anpassen',
     step1Kicker: 'Schritt 1',
     step1H: 'Wählen Sie Ihr Erlebnis',
-    florenceT: 'Persönlich · Florenz',
-    florenceD: 'Drei praktische Stunden in unserer Küche im Oltrarno, die in ein langes Mittagessen münden.',
     onlineT: 'Live Online',
     onlineD: 'Kochen Sie live von überall aus mit einem Kit, das an Ihre Tür geliefert wird.',
     person: 'Person',
@@ -234,8 +242,6 @@ const de = {
     step2Kicker: 'Schritt 2',
     step2H: 'Datum, Zeit & Gäste',
     availableTimes: 'Verfügbare Zeiten',
-    florence: 'Florenz',
-    yourTime: 'Ihre Zeit',
     step3Kicker: 'Schritt 3',
     step3H: 'Machen Sie es zu Ihrem',
     step3Sub: 'Optional. Alles hier ist nur ein Add-on.',
@@ -259,10 +265,7 @@ const de = {
     send: 'Anfrage senden',
     perPerson: 'pro Person',
     months: ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'],
-    sendClassFlorence: 'Persönlich, Florenz',
-    sendClassOnline: 'Live Online',
     classLabel: 'Kurs',
-    guestsLabel: 'Gäste',
     dateTime: 'Datum & Uhrzeit',
     addonLabels: { kit: 'Zutaten-Kit', wine: 'Weinbegleitung', gf: 'Glutenfrei' },
     freeLower: 'kostenlos',
@@ -271,8 +274,6 @@ const de = {
     msgIntro: 'Hallo, ich möchte den Pasta-Kurs "{class}" für {guests} buchen.',
     msgOutro: 'Vielen Dank!',
     freeCap: 'Kostenlos',
-    sumClassFlorence: 'In Florenz',
-    sumClassOnline: 'Live Online',
     guest: 'Gast',
     guestsPlural: 'Gäste',
   },

@@ -1,27 +1,6 @@
 ---
-import Layout from '../../layouts/Layout.astro';
+// German 404. Thin route shim — see src/page-templates/NotFoundPage.astro.
+import NotFoundPage from '../../page-templates/NotFoundPage.astro';
 ---
 
-<Layout
-  noindex
-  title="Seite nicht gefunden | Handmade Pasta Florence"
-  description="Diese Seite hat den Tisch verlassen. Zurück in die Küche."
->
-  <main class="nf">
-    <p class="nf__emoji" aria-hidden="true">🍝</p>
-    <h1 class="nf__title">Im Mehl verloren</h1>
-    <p class="nf__text">Diese Seite hat den Tisch verlassen. Wir bringen Sie zurück in die Küche.</p>
-    <a href="/de/" class="btn btn--solid nf__btn">Zur Startseite</a>
-  </main>
-</Layout>
-
-<style>
-  .nf {
-    min-height: 72vh; display: grid; place-content: center; justify-items: center;
-    gap: 1.1rem; text-align: center; padding: 4rem 1.5rem;
-  }
-  .nf__emoji { font-size: 3.5rem; margin: 0; }
-  .nf__title { font-family: var(--serif); font-size: var(--step-3); color: var(--olive); margin: 0; }
-  .nf__text { color: var(--charcoal-soft); max-width: 42ch; margin: 0; }
-  .nf__btn { margin-top: 0.6rem; }
-</style>
+<NotFoundPage />

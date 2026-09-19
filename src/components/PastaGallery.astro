@@ -14,7 +14,7 @@ const shapeImgs = [shapePappardelle, shapeRavioli, shapePici, shapeTortelli, sha
   <div class="shell gal__head">
     <div data-reveal>
       <p class="eyebrow gal__eyebrow">{t.gallery.eyebrow}</p>
-      <h2 class="gal__title">{t.gallery.titlePre}<span class="font-golden" style="font-size: 1.4em; display: inline-block; margin-left: 0.1em; color: var(--terracotta);">pasta.</span></h2>
+      <h2 class="gal__title">{t.gallery.titlePre}<span class="font-golden font-golden--accent font-golden--xl font-golden--terracotta">pasta.</span></h2>
     </div>
     <p class="gal__hint" data-reveal>{t.gallery.hint}</p>
   </div>
@@ -107,7 +107,6 @@ const shapeImgs = [shapePappardelle, shapeRavioli, shapePici, shapeTortelli, sha
     });
   };
   setupGallery();
-  document.addEventListener('astro:after-swap', setupGallery);
 </script>
 
 <style>
@@ -115,7 +114,6 @@ const shapeImgs = [shapePappardelle, shapeRavioli, shapePici, shapeTortelli, sha
   .gal__head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 1.5rem; margin-bottom: 2.6rem; }
   .gal__eyebrow { color: var(--terracotta); margin-bottom: 0.8rem; }
   .gal__title { font-size: var(--step-3); color: var(--olive); }
-  .gal__title .ital { color: var(--terracotta); }
   .gal__hint { max-width: 30ch; color: var(--charcoal-soft); font-size: var(--step--1); }
 
   .gal__track {

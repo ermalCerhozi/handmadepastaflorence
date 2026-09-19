@@ -1,0 +1,34 @@
+---
+// The 404 page, shared by /404/ and its four locale twins.
+//
+// This lived as five separate route files, each with its own copy of the same
+// markup and the same 28-line stylesheet, and its copy hard-coded inline rather
+// than in the dictionaries like every other string on the site. The route files
+// are now shims; the copy is `t.notFound`.
+import Layout from '../layouts/Layout.astro';
+import { getLocaleFromUrl, localizePath } from '../i18n/utils';
+import { useTranslations } from '../i18n/ui';
+
+const lang = getLocaleFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<Layout noindex title={`${t.notFound.title} | Handmade Pasta Florence`} description={t.notFound.description}>
+  <main class="nf">
+    <p class="nf__emoji" aria-hidden="true">🍝</p>
+    <h1 class="nf__title">{t.notFound.h1}</h1>
+    <p class="nf__text">{t.notFound.text}</p>
+    <a href={localizePath('/', lang)} class="btn btn--solid nf__btn">{t.notFound.cta}</a>
+  </main>
+</Layout>
+
+<style>
+  .nf {
+    min-height: 72vh; display: grid; place-content: center; justify-items: center;
+    gap: 1.1rem; text-align: center; padding: 4rem 1.5rem;
+  }
+  .nf__emoji { font-size: 3.5rem; margin: 0; }
+  .nf__title { font-family: var(--serif); font-size: var(--step-3); color: var(--olive); margin: 0; }
+  .nf__text { color: var(--charcoal-soft); max-width: 42ch; margin: 0; }
+  .nf__btn { margin-top: 0.6rem; }
+</style>
