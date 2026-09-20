@@ -64,7 +64,7 @@ interface LandingContent {
   /** When set, inserts a "Pasta" crumb (linking to the pasta-shapes hub) between Home and breadcrumbName. */
   showPastaCrumb?: boolean;
   product?: { name: string; description: string; price: string };
-  service?: { name: string; description: string };
+  service?: { name: string; description: string; audience?: 'business' };
 }
 
 interface LandingLocale {
@@ -232,6 +232,9 @@ export const landings = {
             { q: `Can you cater to gluten-free diets or allergies?`, a: `Yes: we can prepare a dedicated gluten-free flour blend and a clean station at no extra charge. Just tell us about any allergies when you book.` },
             { q: `How do I book and pay?`, a: `Use the “Book this class” button to build your request. It opens a WhatsApp chat with the details filled in, and we’ll confirm availability and walk you through the rest.` },
             { q: `How much does a pasta making class in Florence cost overall?`, a: `The Chef’s Table is €95 per person. If you’re weighing it against the market tour, private buyout or online option, see our <a href="/blog/how-much-does-a-pasta-making-class-in-florence-cost/">full price breakdown</a> for all four.` },
+            { q: `Is the class suitable for vegetarians?`, a: `Yes, with no changes and no surcharge. Pick tomato and basil or cacio e pepe for your fettuccine and the whole menu is vegetarian: the ravioli are butter and sage, the tiramisù is the classic one. Only the amatriciana option contains meat, and it is a choice you make on the day, not a default. Tell us in advance if anyone is vegetarian and we will have the sauce ready.` },
+            { q: `Is there an evening pasta class?`, a: `Yes. The 18:00 slot runs the signature class in the evening: the same three hours and the same shapes, finishing into dinner instead of lunch. Nobody is booked in after you, so the table tends to sit longer. Ask for the evening slot when you book; it is subject to availability like any other time.` },
+            { q: `Can you do a vegan pasta class?`, a: `Yes, with advance notice. The dough goes eggless, which is how Tuscany has always made pici: flour, water and olive oil, nothing else. The sauce is tomato and basil or aglione, both naturally dairy-free, and we adapt the dessert rather than drop it. Tell us when you book so the ingredients are in the kitchen that morning.` },
           ],
           related: [
             { title: `Mercato & Mani`, href: `/market-tour-cooking-class-florence/`, desc: `Shop Sant’Ambrogio market at dawn, then cook the basket. 5 hours, max 6 guests, €145.` },
@@ -349,6 +352,9 @@ export const landings = {
             { q: `Potete soddisfare diete senza glutine o allergie?`, a: `Sì: possiamo preparare una miscela di farine senza glutine dedicata e una postazione pulita senza costi aggiuntivi. Devi solo segnalarci eventuali allergie al momento della prenotazione.` },
             { q: `Come posso prenotare e pagare?`, a: `Usa il pulsante "Prenota questo corso" per creare la tua richiesta. Si apre una chat di WhatsApp con i dettagli precompilati, noi confermeremo la disponibilità e ti guideremo nel resto.` },
             { q: `Quanto costa in tutto un corso di pasta fresca a Firenze?`, a: `La Tavola dello Chef costa €95 a persona. Se lo state confrontando con il tour del mercato, il corso privato o quello online, guardate il nostro <a href="/it/blog/how-much-does-a-pasta-making-class-in-florence-cost/">confronto completo dei prezzi</a> per tutti e quattro.` },
+            { q: `Il corso è adatto ai vegetariani?`, a: `Sì, senza modifiche e senza supplemento. Scegliete pomodoro e basilico o cacio e pepe per le vostre fettuccine e tutto il menù è vegetariano: i ravioli sono burro e salvia, il tiramisù è quello classico. Solo l’opzione amatriciana contiene carne, ed è una scelta che si fa il giorno stesso, non un’impostazione predefinita. Ditecelo in anticipo e troverete il sugo già pronto.` },
+            { q: `C’è un corso di pasta serale?`, a: `Sì. Il turno delle 18:00 è il corso principale di sera: le stesse tre ore e gli stessi formati, solo che sfuma nella cena invece che nel pranzo. Dopo di voi non c’è un altro gruppo, quindi al tavolo si resta più a lungo. Chiedete il turno serale quando prenotate, salvo disponibilità come per ogni altro orario.` },
+            { q: `Potete fare un corso di pasta vegano?`, a: `Sì, con un preavviso. L’impasto va senza uovo, che è poi il modo in cui la Toscana ha sempre fatto i pici: farina, acqua e olio d’oliva, nient’altro. Il sugo è pomodoro e basilico o aglione, entrambi senza latticini, e il dolce lo adattiamo invece di toglierlo. Ditecelo quando prenotate, così la mattina stessa gli ingredienti sono in cucina.` },
           ],
           related: [
             { title: `Mercato & Mani`, href: `/it/corso-cucina-tour-mercato-firenze/`, desc: `Fai la spesa al mercato di Sant'Ambrogio all'alba, poi cucina il cesto. 5 ore, max 6 ospiti, €145.` },
@@ -466,6 +472,9 @@ export const landings = {
             { q: `Pouvez-vous répondre aux régimes sans gluten ou aux allergies ?`, a: `Oui: nous pouvons préparer un mélange de farine sans gluten dédié et un poste de travail propre sans frais supplémentaires. Parlez-nous simplement de vos allergies lors de la réservation.` },
             { q: `Comment puis-je réserver et payer ?`, a: `Utilisez le bouton "Réserver ce cours" pour formuler votre demande. Cela ouvre une discussion WhatsApp avec les détails remplis, et nous confirmerons la disponibilité et vous guiderons pour le reste.` },
             { q: `Combien coûte au total un cours de pâtes fraîches à Florence ?`, a: `La Table du Chef est à 95 € par personne. Si vous la comparez à la visite du marché, à la privatisation ou à la formule en ligne, consultez notre <a href="/fr/blog/how-much-does-a-pasta-making-class-in-florence-cost/">comparatif complet des tarifs</a> pour les quatre.` },
+            { q: `Le cours convient-il aux végétariens ?`, a: `Oui, sans modification et sans supplément. Choisissez tomate-basilic ou cacio e pepe pour vos fettuccine et tout le menu est végétarien : les ravioli sont au beurre et à la sauge, le tiramisu est le classique. Seule l’option amatriciana contient de la viande, et c’est un choix que vous faites le jour même, pas un réglage par défaut. Dites-le nous à l’avance et la sauce sera prête.` },
+            { q: `Y a-t-il un cours de pâtes en soirée ?`, a: `Oui. Le créneau de 18 h, c’est le cours principal le soir : les mêmes trois heures et les mêmes formes, sauf qu’il se prolonge vers le dîner plutôt que le déjeuner. Aucun groupe n’est prévu après vous, alors on reste plus longtemps à table. Demandez le créneau du soir en réservant, sous réserve de disponibilité comme pour tout autre horaire.` },
+            { q: `Pouvez-vous faire un cours de pâtes végétalien ?`, a: `Oui, avec un préavis. La pâte se fait sans œuf, ce qui est exactement la façon dont la Toscane a toujours fait les pici : farine, eau et huile d’olive, rien d’autre. La sauce est tomate-basilic ou aglione, toutes deux sans produits laitiers, et le dessert, nous l’adaptons au lieu de le supprimer. Dites-le nous en réservant, pour que les ingrédients soient en cuisine le matin même.` },
           ],
           related: [
             { title: `Mercato & Mani`, href: `/fr/cours-cuisine-visite-marche-florence/`, desc: `Faites vos courses au marché de Sant'Ambrogio à l'aube, puis cuisinez votre panier. 5 heures, max 6 personnes, 145 €.` },
@@ -586,6 +595,9 @@ export const landings = {
             { q: `Können Sie auf glutenfreie Diäten oder Allergien eingehen?`, a: `Ja: wir können ohne Aufpreis eine spezielle glutenfreie Mehlmischung und eine saubere Station vorbereiten. Teilen Sie uns bei der Buchung einfach eventuelle Allergien mit.` },
             { q: `Wie buche und bezahle ich?`, a: `Nutzen Sie die Schaltfläche "Diesen Kurs buchen", um Ihre Anfrage zu erstellen. Es öffnet sich ein WhatsApp-Chat mit den ausgefüllten Details, und wir bestätigen die Verfügbarkeit und führen Sie durch den Rest.` },
             { q: `Was kostet ein Pasta-Kurs in Florenz insgesamt?`, a: `Der Chef's Table kostet 95 € pro Person. Wenn Sie ihn mit der Markttour, der privaten Buchung oder dem Online-Kurs vergleichen, sehen Sie sich unseren <a href="/de/blog/how-much-does-a-pasta-making-class-in-florence-cost/">vollständigen Preisvergleich</a> für alle vier an.` },
+            { q: `Ist der Kurs für Vegetarier geeignet?`, a: `Ja, ohne Änderungen und ohne Aufpreis. Nehmen Sie Tomate-Basilikum oder Cacio e Pepe zu Ihren Fettuccine, und das ganze Menü ist vegetarisch: die Ravioli sind mit Butter und Salbei, das Tiramisù ist das klassische. Nur die Amatriciana enthält Fleisch, und das ist eine Wahl, die Sie am Tag selbst treffen, keine Voreinstellung. Sagen Sie uns vorher Bescheid, dann steht die Soße bereit.` },
+            { q: `Gibt es einen Abend-Pastakurs?`, a: `Ja. Der Termin um 18:00 Uhr ist der Signature-Kurs am Abend: dieselben drei Stunden, dieselben Formen, nur geht er ins Abendessen über statt ins Mittagessen. Nach Ihnen ist keine weitere Gruppe eingeplant, deshalb bleibt man länger am Tisch. Fragen Sie beim Buchen nach dem Abendtermin, je nach Verfügbarkeit wie bei jeder anderen Uhrzeit.` },
+            { q: `Können Sie einen veganen Pastakurs machen?`, a: `Ja, mit Vorlauf. Der Teig kommt ohne Ei aus, genau so, wie die Toskana Pici immer gemacht hat: Mehl, Wasser und Olivenöl, sonst nichts. Die Soße ist Tomate-Basilikum oder Aglione, beide ohne Milchprodukte, und das Dessert passen wir an, statt es wegzulassen. Sagen Sie es uns bei der Buchung, dann sind die Zutaten am selben Morgen in der Küche.` },
           ],
           related: [
             { title: `Mercato & Mani`, href: `/de/markt-tour-kochkurs-florenz/`, desc: `Kaufen Sie im Morgengrauen auf dem Sant'Ambrogio-Markt ein und kochen Sie dann den Korb. 5 Stunden, max. 6 Gäste, 145 €.` },
@@ -703,6 +715,9 @@ export const landings = {
             { q: `你们能满足无麸质饮食或过敏需求吗？`, a: `是的，我们可以免费准备专门的无麸质面粉混合物和干净的操作台。预订时请告诉我们任何过敏情况。` },
             { q: `我该如何预订和付款？`, a: `使用“预订此课程”按钮创建您的请求。它会打开一个带有预填详情的WhatsApp聊天，我们将确认可用性并指导您完成剩余步骤。` },
             { q: `在佛罗伦萨上一堂意面课总共要多少钱？`, a: `主厨餐桌为每位95欧元。如果你还在与市场导览、私人包场或线上课程做比较，可以看我们<a href="/zh/blog/how-much-does-a-pasta-making-class-in-florence-cost/">四种课程的完整价格对比</a>。` },
+            { q: `这门课适合素食者吗？`, a: `适合，无需改动，也不加收费用。意大利宽面选番茄罗勒或奶酪黑胡椒，整份菜单就是素的：方饎是黄油鼠尾草口味，提拉米苏也是经典做法。只有 amatriciana 酱含肉，而那是当天由您选择的，并非默认。提前告知我们，酱料会备好。` },
+            { q: `有傍晚的意面课吗？`, a: `有。18:00 的时段就是傍晚版的招牌课程：同样三小时，同样的形状，只是最后延续到晚餐而不是午餐。您之后不会再安排下一组客人，所以大家往往会在餐桌旁多坐一会儿。预订时说明想要傍晚时段即可，与其他时段一样视档期而定。` },
+            { q: `可以做纯素的意面课吗？`, a: `可以，请提前告知。面团不加鸡蛋，这本来就是托斯卡纳做 pici 的方式：面粉、水和橄榄油，别无他物。酱汁用番茄罗勒或 aglione，两者都不含乳制品，甜点我们会调整，而不是直接取消。预订时说明即可，当天早上食材就会备在厨房里。` },
           ],
           related: [
             { title: `Mercato & Mani`, href: `/zh/shichang-daolan-pengren-kecheng-foluolunsa/`, desc: `清晨在圣安布罗焦市场购物，然后烹饪购买的食材。5小时，最多6位客人，145欧元。` },
@@ -2176,12 +2191,15 @@ export const landings = {
           faqs: [
             { q: `How big can the group be?`, a: `The private kitchen hosts teams of 6 to 14 people. For larger companies we can discuss running consecutive sessions; email us with your numbers.` },
             { q: `Is the class run in English?`, a: `Yes: both chefs host in English (or Italian, if your team prefers). Instructions are hands-on and visual, so mixed-language teams work fine too.` },
-            { q: `Can you handle dietary requirements?`, a: `Yes. Gluten-free stations at no extra charge, and other allergies and preferences handled in advance; send us the list when you book and every team member cooks and eats.` },
+            { q: `Can you handle dietary requirements?`, a: `Yes. Gluten-free stations at no extra charge, vegetarian by default if the team picks a meat-free sauce, and vegan arranged on advance notice with an eggless dough. Other allergies and preferences are handled the same way: send us the list when you book and every team member cooks and eats.` },
             { q: `How does pricing work?`, a: `Team sessions are quoted per group, based on size, timing and add-ons like wine pairing. Email ciao@handmadepastaflorence.com and you’ll have a quote within one working day.` },
             { q: `What does the team actually cook?`, a: `Fettuccine with a sauce the group chooses (tomato and basil, cacio e pepe or amatriciana), ravioli with butter and sage, and each person’s own tiramisù. Everything is eaten together afterwards, with wine or a non-alcoholic drink and limoncello or coffee.` },
             { q: `Does anyone need cooking experience?`, a: `No. Everyone starts from the same pile of flour and the instructions are hands-on and visual, so a mixed-ability team works fine. Every first attempt is crooked — that’s part of why it works as a team building activity.` },
             { q: `Where in Florence is the team building class held?`, a: `In our private Oltrarno kitchen, five minutes’ walk from the Ponte Vecchio. The kitchen is yours alone for the session: no other guests share it.` },
             { q: `Can we add a wine pairing?`, a: `Yes. Wine pairing is one of the add-ons quoted with the session, alongside dietary options. Mention it in your enquiry and it will be in the quote you get back within one working day.` },
+            { q: `Can you invoice our company?`, a: `Yes. Send your company name, billing address and VAT or tax number with the enquiry and you get a proper invoice for the session, matching the quote. If your finance team needs a purchase order number or particular wording on the invoice, tell us before the date and it goes on.` },
+            { q: `What happens if we have to move or cancel the date?`, a: `Company bookings are confirmed in writing before anything is paid, dates and terms together. Our published policy is the baseline: free cancellation up to 48 hours before, free date change up to 24 hours before, subject to availability. If your team needs a longer notice window than that, say so in the enquiry and we write it into the quote.` },
+            { q: `What makes this different from other food team building in Florence?`, a: `Most food teambuilding in Florence is a tasting: someone pours, your team listens. Here the team does the work. Everyone gets a workspace, an apron and a rolling pin, nobody watches from the back, and the lunch on the table at the end is the thing the team made an hour earlier. The kitchen is yours alone for the session.` },
           ],
           related: [
             { title: `The Family Long-Table`, href: `/private-cooking-class-florence/`, desc: `The same private kitchen for personal celebrations, from €680.` },
@@ -2197,6 +2215,10 @@ export const landings = {
           service: {
             name: `Team Building Cooking Class in Florence`,
             description: `Food teambuilding in Florence for companies: a private team building cooking class with a whole-kitchen buyout for 6–14 people, hosted in English by two Tuscan agriturismo head chefs, with wine pairing and dietary options.`,
+            // Corporate buyer, not a consumer booking: the only non-fabricated
+            // B2B signal available here, since the session is quoted per group
+            // and carries no Offer.
+            audience: 'business',
           },
         },
       },
@@ -2291,12 +2313,15 @@ export const landings = {
           faqs: [
             { q: `Quanto può essere grande il gruppo?`, a: `La cucina privata ospita team da 6 a 14 persone. Per aziende più grandi possiamo discutere di sessioni consecutive; inviaci un'e-mail con i vostri numeri.` },
             { q: `Il corso si tiene in Inglese o Italiano?`, a: `Entrambi: gli chef possono tenere il corso in Inglese o Italiano, a seconda delle preferenze del vostro team. Le istruzioni sono pratiche e visive, quindi anche team misti o internazionali si trovano bene.` },
-            { q: `Potete gestire le esigenze alimentari?`, a: `Sì. Postazioni senza glutine senza costi aggiuntivi, e altre allergie e preferenze gestite in anticipo; inviaci l'elenco quando prenoti e ogni membro del team cucinerà e mangerà.` },
+            { q: `Potete gestire le esigenze alimentari?`, a: `Sì. Postazioni senza glutine senza costi aggiuntivi, menù vegetariano di default se il team sceglie un sugo senza carne, e vegano su preavviso con un impasto senza uovo. Le altre allergie e preferenze si gestiscono allo stesso modo: inviateci l'elenco quando prenotate e ogni membro del team cucinerà e mangerà.` },
             { q: `Come funzionano i prezzi?`, a: `Le sessioni per i team sono quotate per gruppo, in base alle dimensioni, ai tempi e ad eventuali aggiunte come l'abbinamento dei vini. Invia un'e-mail a ciao@handmadepastaflorence.com e riceverai un preventivo entro un giorno lavorativo.` },
             { q: `Cosa cucina esattamente il team?`, a: `Fettuccine con il sugo scelto dal gruppo (pomodoro e basilico, cacio e pepe o amatriciana), ravioli con burro e salvia, e il tiramisù di ciascuno. Si mangia tutto insieme alla fine, con vino o bevanda analcolica e limoncello o caffè.` },
             { q: `Serve esperienza in cucina?`, a: `No. Si parte tutti dalla stessa farina e le istruzioni sono pratiche e visive, quindi un team con livelli diversi funziona benissimo. Il primo tentativo viene storto a tutti: è anche per questo che funziona come attività di team building.` },
             { q: `Dove si tiene il corso di team building a Firenze?`, a: `Nella nostra cucina privata in Oltrarno, a cinque minuti a piedi da Ponte Vecchio. Per tutta la sessione la cucina è solo vostra: nessun altro ospite.` },
             { q: `Possiamo aggiungere un abbinamento di vini?`, a: `Sì. L’abbinamento vini è uno degli extra inclusi nel preventivo, insieme alle opzioni alimentari. Indicatelo nella richiesta e lo troverete nel preventivo, che inviamo entro un giorno lavorativo.` },
+            { q: `Potete fatturare all’azienda?`, a: `Sì. Inviateci ragione sociale, indirizzo di fatturazione e partita IVA o codice fiscale insieme alla richiesta e riceverete una fattura regolare per la sessione, coerente con il preventivo. Se l’amministrazione ha bisogno di un numero d’ordine o di diciture specifiche, segnalatelo prima della data e le inseriamo.` },
+            { q: `Cosa succede se dobbiamo spostare o annullare la data?`, a: `Le prenotazioni aziendali vengono confermate per iscritto prima di qualsiasi pagamento, date e condizioni insieme. La nostra politica pubblicata è la base: cancellazione gratuita fino a 48 ore prima, cambio data gratuito fino a 24 ore prima, salvo disponibilità. Se al vostro team serve un preavviso più lungo, scrivetelo nella richiesta e lo mettiamo nel preventivo.` },
+            { q: `Cosa distingue questo dagli altri team building enogastronomici a Firenze?`, a: `Quasi tutto il team building food a Firenze è una degustazione: qualcuno versa, il team ascolta. Qui è il team a lavorare. Ognuno ha la sua postazione, il grembiule e il mattarello, nessuno guarda da dietro, e il pranzo in tavola alla fine è quello che il team ha fatto un’ora prima. La cucina è vostra in esclusiva per tutta la sessione.` },
           ],
           related: [
             { title: `Il Lungo Tavolo di Famiglia`, href: `/it/corso-cucina-privato-firenze/`, desc: `La stessa cucina privata per celebrazioni personali, da €680.` },
@@ -2311,6 +2336,10 @@ export const landings = {
           service: {
             name: `Corso di Cucina per Team Building a Firenze`,
             description: `Corsi di cucina per team building privati a Firenze per le aziende: affitto dell'intera cucina per 6–14 persone, tenuto in Italiano o Inglese da due chef toscani, con opzioni di abbinamento vini e dietetiche.`,
+            // Corporate buyer, not a consumer booking: the only non-fabricated
+            // B2B signal available here, since the session is quoted per group
+            // and carries no Offer.
+            audience: 'business',
           },
         },
       },
@@ -2402,12 +2431,15 @@ export const landings = {
           faqs: [
             { q: `Quelle taille peut avoir le groupe ?`, a: `La cuisine privée accueille des équipes de 6 à 14 personnes. Pour les entreprises plus grandes, nous pouvons discuter de sessions consécutives; envoyez-nous un e-mail avec vos effectifs.` },
             { q: `Le cours est-il animé en anglais ou en italien ?`, a: `Les deux: les chefs animent en anglais ou en italien, selon la préférence de votre équipe. Les instructions sont visuelles et pratiques, de sorte que les équipes multilingues s'en sortent très bien.` },
-            { q: `Pouvez-vous gérer les exigences alimentaires ?`, a: `Oui. Postes de travail sans gluten sans frais supplémentaires, et autres allergies gérées à l'avance; envoyez-nous la liste lors de la réservation et chaque membre de l'équipe cuisinera et mangera.` },
+            { q: `Pouvez-vous gérer les exigences alimentaires ?`, a: `Oui. Postes de travail sans gluten sans frais supplémentaires, végétarien d'office si l'équipe choisit une sauce sans viande, et végétalien sur préavis avec une pâte sans œuf. Les autres allergies et préférences se gèrent pareil : envoyez-nous la liste lors de la réservation et chaque membre de l'équipe cuisinera et mangera.` },
             { q: `Comment fonctionnent les tarifs ?`, a: `Les sessions d'équipe sont chiffrées par groupe, en fonction de la taille, de l'horaire et des options supplémentaires comme l'accord mets-vins. Envoyez un e-mail à ciao@handmadepastaflorence.com et vous aurez un devis sous un jour ouvré.` },
             { q: `Que cuisine exactement l’équipe ?`, a: `Des fettuccine avec la sauce choisie par le groupe (tomate et basilic, cacio e pepe ou amatriciana), des ravioli au beurre et à la sauge, et le tiramisù de chacun. Tout est mangé ensemble à la fin, avec du vin ou une boisson sans alcool, puis limoncello ou café.` },
             { q: `Faut-il avoir de l’expérience en cuisine ?`, a: `Non. Tout le monde part du même tas de farine et les instructions sont pratiques et visuelles, donc une équipe de niveaux mélangés fonctionne très bien. La première tentative est de travers pour tout le monde : c’est aussi pour ça que ça marche en team building.` },
             { q: `Où se déroule le cours de team building à Florence ?`, a: `Dans notre cuisine privée de l’Oltrarno, à cinq minutes à pied du Ponte Vecchio. La cuisine est à vous seuls pendant toute la session : aucun autre client.` },
             { q: `Pouvons-nous ajouter un accord mets et vins ?`, a: `Oui. L’accord vins fait partie des options chiffrées avec la session, au même titre que les options alimentaires. Mentionnez-le dans votre demande et il figurera dans le devis, envoyé sous un jour ouvré.` },
+            { q: `Pouvez-vous facturer notre entreprise ?`, a: `Oui. Envoyez-nous la raison sociale, l’adresse de facturation et le numéro de TVA ou d’identification fiscale avec votre demande et vous recevrez une facture en bonne et due forme pour la session, conforme au devis. Si votre service comptable a besoin d’un numéro de commande ou d’une mention particulière, dites-le avant la date et nous l’ajoutons.` },
+            { q: `Que se passe-t-il si nous devons déplacer ou annuler la date ?`, a: `Les réservations d’entreprise sont confirmées par écrit avant tout paiement, dates et conditions ensemble. Notre politique publiée sert de base : annulation gratuite jusqu’à 48 heures avant, changement de date gratuit jusqu’à 24 heures avant, sous réserve de disponibilité. Si votre équipe a besoin d’un préavis plus long, précisez-le dans la demande et nous l’inscrivons au devis.` },
+            { q: `Qu’est-ce qui change par rapport aux autres team building culinaires à Florence ?`, a: `La plupart des team building food à Florence sont des dégustations : quelqu’un sert, l’équipe écoute. Ici, c’est l’équipe qui travaille. Chacun a son poste, son tablier et son rouleau, personne ne regarde depuis le fond, et le déjeuner sur la table à la fin est celui que l’équipe a fait une heure plus tôt. La cuisine est à vous seuls pendant toute la session.` },
           ],
           related: [
             { title: `La Longue Table Familiale`, href: `/fr/cours-cuisine-prive-florence/`, desc: `La même cuisine privée pour des célébrations personnelles, à partir de 680 €.` },
@@ -2422,6 +2454,10 @@ export const landings = {
           service: {
             name: `Cours de Cuisine Team Building à Florence`,
             description: `Teambuilding culinaire à Florence pour les entreprises : un cours de cuisine privé pour votre équipe avec la privatisation de la cuisine pour 6–14 personnes, animé par deux chefs toscans, avec des options de vins et de régimes alimentaires.`,
+            // Corporate buyer, not a consumer booking: the only non-fabricated
+            // B2B signal available here, since the session is quoted per group
+            // and carries no Offer.
+            audience: 'business',
           },
         },
       },
@@ -2513,12 +2549,15 @@ export const landings = {
           faqs: [
             { q: `Wie groß kann die Gruppe sein?`, a: `Die private Küche bietet Platz für Teams von 6 bis 14 Personen. Für größere Unternehmen können wir aufeinanderfolgende Sitzungen besprechen; senden Sie uns eine E-Mail mit Ihren Zahlen.` },
             { q: `Wird der Kurs auf Englisch oder Italienisch durchgeführt?`, a: `Beides: die Köche unterrichten auf Englisch oder Italienisch, je nach Vorliebe Ihres Teams. Die Anweisungen sind praktisch und visuell, sodass auch gemischtsprachige Teams gut zurechtkommen.` },
-            { q: `Können Sie auf Ernährungsbedürfnisse eingehen?`, a: `Ja. Glutenfreie Stationen ohne Aufpreis und andere Allergien und Vorlieben werden im Voraus bearbeitet; senden Sie uns bei der Buchung die Liste, und jedes Teammitglied wird kochen und essen.` },
+            { q: `Können Sie auf Ernährungsbedürfnisse eingehen?`, a: `Ja. Glutenfreie Stationen ohne Aufpreis, vegetarisch ohne Weiteres, wenn das Team eine fleischlose Soße wählt, und vegan auf Vorankündigung mit einem Teig ohne Ei. Andere Allergien und Vorlieben laufen genauso: Schicken Sie uns bei der Buchung die Liste, dann kocht und isst jedes Teammitglied mit.` },
             { q: `Wie funktioniert die Preisgestaltung?`, a: `Team-Sitzungen werden pro Gruppe kalkuliert, basierend auf Größe, Timing und Extras wie Weinbegleitung. Senden Sie eine E-Mail an ciao@handmadepastaflorence.com und Sie erhalten innerhalb eines Arbeitstages ein Angebot.` },
             { q: `Was kocht das Team genau?`, a: `Fettuccine mit einer Sauce nach Wahl der Gruppe (Tomate und Basilikum, Cacio e Pepe oder Amatriciana), Ravioli mit Butter und Salbei, und für jede Person ein eigenes Tiramisù. Am Ende wird alles gemeinsam gegessen, mit Wein oder einem alkoholfreien Getränk und Limoncello oder Kaffee.` },
             { q: `Braucht jemand Kocherfahrung?`, a: `Nein. Alle starten mit demselben Haufen Mehl, und die Anleitung ist praktisch und visuell, sodass ein Team mit gemischten Kenntnissen gut funktioniert. Der erste Versuch wird bei allen schief — auch deshalb funktioniert es als Teambuilding.` },
             { q: `Wo in Florenz findet der Teambuilding-Kochkurs statt?`, a: `In unserer privaten Küche im Oltrarno, fünf Gehminuten vom Ponte Vecchio. Die Küche gehört während der Sitzung Ihnen allein: keine anderen Gäste.` },
             { q: `Können wir eine Weinbegleitung dazubuchen?`, a: `Ja. Die Weinbegleitung ist eine der Zusatzoptionen, die mit der Sitzung angeboten werden, ebenso wie Ernährungsoptionen. Erwähnen Sie es in Ihrer Anfrage, dann steht es im Angebot, das Sie innerhalb eines Werktags erhalten.` },
+            { q: `Können Sie an unser Unternehmen eine Rechnung stellen?`, a: `Ja. Schicken Sie uns Firmenname, Rechnungsadresse und Umsatzsteuer-Identifikationsnummer mit der Anfrage, und Sie bekommen eine ordentliche Rechnung für die Session, deckungsgleich mit dem Angebot. Wenn Ihre Buchhaltung eine Bestellnummer oder eine bestimmte Formulierung auf der Rechnung braucht, sagen Sie es vor dem Termin, dann steht sie drauf.` },
+            { q: `Was passiert, wenn wir den Termin verschieben oder absagen müssen?`, a: `Firmenbuchungen werden vor jeder Zahlung schriftlich bestätigt, Termin und Konditionen zusammen. Unsere veröffentlichte Regelung ist die Grundlage: kostenlose Stornierung bis 48 Stunden vorher, kostenlose Terminverlegung bis 24 Stunden vorher, je nach Verfügbarkeit. Braucht Ihr Team eine längere Frist, schreiben Sie es in die Anfrage, dann nehmen wir es ins Angebot auf.` },
+            { q: `Was unterscheidet das von anderem kulinarischen Teambuilding in Florenz?`, a: `Das meiste Food-Teambuilding in Florenz ist eine Verkostung: jemand schenkt ein, das Team hört zu. Hier arbeitet das Team. Jeder hat einen eigenen Platz, Schürze und Nudelholz, niemand schaut von hinten zu, und das Mittagessen auf dem Tisch ist am Ende genau das, was das Team eine Stunde vorher gemacht hat. Die Küche gehört für die Session Ihnen allein.` },
           ],
           related: [
             { title: `Die lange Familientafel`, href: `/de/privater-kochkurs-florenz/`, desc: `Die gleiche private Küche für persönliche Feiern, ab 680 €.` },
@@ -2533,6 +2572,10 @@ export const landings = {
           service: {
             name: `Teambuilding-Kochkurs in Florenz`,
             description: `Kulinarisches Teambuilding in Florenz für Unternehmen: ein privater Teambuilding-Kochkurs mit der gesamten Küche für 6–14 Personen, geleitet von zwei toskanischen Köchen, mit Weinbegleitung und Diätoptionen.`,
+            // Corporate buyer, not a consumer booking: the only non-fabricated
+            // B2B signal available here, since the session is quoted per group
+            // and carries no Offer.
+            audience: 'business',
           },
         },
       },
@@ -2624,12 +2667,15 @@ export const landings = {
           faqs: [
             { q: `团队规模可以有多大？`, a: `私人厨房可容纳6到14人的团队。对于更大的公司，我们可以讨论连续进行几场活动，请发送邮件告诉我们您的人数。` },
             { q: `课程是用英语还是意大利语进行？`, a: `两者皆可，厨师可根据您团队的偏好使用英语或意大利语。指导是动手实践且直观的，因此混合语言团队也完全没问题。` },
-            { q: `你们能处理特殊的饮食需求吗？`, a: `可以。免费提供无麸质操作台，其他过敏和偏好也会提前处理好，在预订时将名单发给我们，每个团队成员都能亲自参与烹饪和享用美食。` },
+            { q: `你们能处理特殊的饮食需求吗？`, a: `可以。免费提供无麸质操作台；只要团队选无肉酱汁，整份菜单就是素的；纯素则提前告知，用不加鸡蛋的面团。其他过敏和偏好同理：预订时把名单发给我们，每个团队成员都能亲手做、亲口吃。` },
             { q: `报价是如何计算的？`, a: `团队活动按团体报价，具体取决于人数、时间和附加项目（如葡萄酒搭配）。发送邮件至 ciao@handmadepastaflorence.com，您将在一个工作日内收到报价。` },
             { q: `团队具体会做哪些菜？`, a: `由全组选择酱汁的宽面（番茄罗勒、Cacio e Pepe 或 Amatriciana），黄油鼠尾草意式饺子，以及每人自己的提拉米苏。最后大家一起享用，配葡萄酒或无酒精饮品，以及柠檬酒或咖啡。` },
             { q: `需要有烹饪经验吗？`, a: `不需要。所有人都从同一堆面粉开始，教学是动手和视觉化的，所以水平参差的团队也完全没问题。每个人的第一次都会做歪——这也正是它作为团建活动有效的原因。` },
             { q: `团建课程在佛罗伦萨的什么位置？`, a: `在我们位于奥特拉诺区的私人厨房，距离老桥步行五分钟。整场活动厨房只属于你们，不会有其他客人。` },
             { q: `可以增加葡萄酒搭配吗？`, a: `可以。葡萄酒搭配是随活动一起报价的附加选项之一，特殊饮食安排也是。在询价时说明即可，我们会在一个工作日内把它写进报价。` },
+            { q: `可以开具公司发票吗？`, a: `可以。询价时请把公司名称、开票地址和增值税号或税号一并发给我们，您会收到与报价一致的正式发票。如果贵司财务需要采购订单号或发票上的特定表述，请在活动日期之前告知，我们会写上去。` },
+            { q: `如果我们需要改期或取消，会怎么样？`, a: `企业预订在任何付款之前都会以书面形式确认，日期与条款一并写清。我们公布的政策是基准：活动前 48 小时以上可免费取消，24 小时以上可免费改期，视档期而定。如果贵司团队需要更长的通知期，请在询价时说明，我们会写进报价里。` },
+            { q: `这和佛罗伦萨其他美食团建有什么不同？`, a: `佛罗伦萨大多数美食团建都是品鉴：有人倒酒，团队在听。这里是团队自己动手。每个人都有自己的操作台、围裙和擀面杖，没有人站在后排看，最后桌上的那顿午餐，就是团队一小时前亲手做的。整场活动厨房只属于你们。` },
           ],
           related: [
             { title: `家庭长桌体验`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `同一个私人厨房，适合个人庆祝活动，680欧元起。` },
@@ -2644,6 +2690,10 @@ export const landings = {
           service: {
             name: `佛罗伦萨团队建设烹饪课程`,
             description: `佛罗伦萨的企业美食团建：6-14人的私人厨房包场烹饪课程，由两位托斯卡纳厨师主持，并提供葡萄酒搭配和特殊饮食选项。`,
+            // Corporate buyer, not a consumer booking: the only non-fabricated
+            // B2B signal available here, since the session is quoted per group
+            // and carries no Offer.
+            audience: 'business',
           },
         },
       },

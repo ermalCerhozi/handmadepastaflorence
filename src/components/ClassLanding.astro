@@ -101,7 +101,7 @@ interface Props {
   /** Product schema (classes with a fixed per-person/per-group price). */
   product?: { name: string; description: string; price: string };
   /** Service schema (bespoke offers without a public price). */
-  service?: { name: string; description: string };
+  service?: { name: string; description: string; audience?: 'business' };
   /** Rendering locale (passed by the landing route; falls back to the URL). */
   locale?: Locale;
   /** Set by the route from the pageKey's landings.ts entry — see LandingPage.courseMode. */
@@ -267,6 +267,10 @@ const serviceSchema = service && {
   description: service.description,
   provider: { '@id': `${SITE}/#business` },
   areaServed: { '@type': 'City', name: 'Florence' },
+  // Team building sells to a company, not a walk-in guest. BusinessAudience is
+  // the one B2B signal we can state without inventing anything: the page is
+  // quoted per group, so there is still deliberately no Offer here (see above).
+  ...(service.audience === 'business' ? { audience: { '@type': 'BusinessAudience' } } : {}),
   url: canonical,
 };
 

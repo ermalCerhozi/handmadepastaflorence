@@ -151,7 +151,7 @@ const en: ShapesLocale = {
     faqHeading: 'Questions, answered.',
     ctaHeading: 'Roll it yourself.',
     ctaBody:
-      'We teach all four of these shapes in a three-hour class in our Oltrarno kitchen: hands in the flour from the first minute, then everyone sits down to eat what they made. Max 8 guests, €95.',
+      'We teach these shapes in a three-hour class in our Oltrarno kitchen: hands in the flour from the first minute, then everyone sits down to eat what they made. Max 8 guests, €95.',
     ctaButton: 'Book a pasta class',
     ctaLink: 'See the class',
     guideHeading: 'Going deeper',
@@ -178,7 +178,7 @@ const en: ShapesLocale = {
         h: 625,
       },
       answer:
-        'Pici is a thick, hand-rolled pasta from southern Tuscany, made from nothing but flour, water and a little olive oil, no egg. Each strand is rolled out under the palms rather than cut with a knife or machine, which is why no two are the same thickness and why the surface stays rough enough to grip a heavy sauce.',
+        'Pici is a thick, hand-rolled pasta from southern Tuscany, made from nothing but flour, water and a little olive oil, no egg. Each strand is rolled out under the palms rather than cut with a knife or machine, which is why no two are the same thickness and why the surface stays rough enough to grip a heavy sauce. That is also why it is the shape we start people off with in our three-hour pasta class in Florence: nothing to hide behind, just flour, water and your palms. €95, max 8 guests.',
       facts: [
         { label: 'From', value: 'Siena & the Val d\'Orcia' },
         { label: 'Dough', value: 'flour, water, olive oil; no egg' },
@@ -247,7 +247,7 @@ const en: ShapesLocale = {
         h: 625,
       },
       answer:
-        'Pappardelle are the widest fresh pasta ribbon in the Tuscan repertoire: flat strips of egg dough cut 2 to 3 centimetres across. The width is not showing off: it exists so that a heavy, chunky game sauce has something broad enough to sit on instead of sliding off.',
+        'Pappardelle are the widest fresh pasta ribbon in the Tuscan repertoire: flat strips of egg dough cut 2 to 3 centimetres across. The width is not showing off: it exists so that a heavy, chunky game sauce has something broad enough to sit on instead of sliding off. Rolling and cutting a ribbon that wide by hand is the part people find hardest to judge by eye, and it is one of the cuts we work through in our three-hour pasta class in Florence. €95, max 8 guests.',
       facts: [
         { label: 'From', value: 'Tuscany' },
         { label: 'Dough', value: 'egg dough: flour and egg' },
@@ -316,7 +316,7 @@ const en: ShapesLocale = {
         h: 625,
       },
       answer:
-        'Tagliatelle are flat ribbons of fresh egg pasta, cut roughly 6 to 8 millimetres wide. They are the everyday ribbon of northern and central Italy: narrow enough to twist onto a fork, broad enough to carry a proper meat ragù, which is why they are the shape most people picture when they think of fresh pasta.',
+        'Tagliatelle are flat ribbons of fresh egg pasta, cut roughly 6 to 8 millimetres wide. They are the everyday ribbon of northern and central Italy: narrow enough to twist onto a fork, broad enough to carry a proper meat ragù, which is why they are the shape most people picture when they think of fresh pasta. Cutting the ribbon to an even 6 to 8 millimetres by hand takes about ten minutes to learn, and it is one of the cuts we teach in our three-hour pasta class in Florence. €95, max 8 guests.',
       facts: [
         { label: 'From', value: 'Emilia-Romagna, made across Tuscany' },
         { label: 'Dough', value: 'egg dough: flour and egg' },
@@ -385,7 +385,7 @@ const en: ShapesLocale = {
         h: 625,
       },
       answer:
-        'Tortelli are filled parcels of fresh egg pasta: a sheet of dough, a spoonful of filling, a second sheet pressed down and sealed around it. Tuscany\'s signature version is <em>tortelli di patate</em>, filled with seasoned potato rather than the ricotta and spinach most visitors expect, and it comes from the Mugello valley north of Florence.',
+        'Tortelli are filled parcels of fresh egg pasta: a sheet of dough, a spoonful of filling, a second sheet pressed down and sealed around it. Tuscany\'s signature version is <em>tortelli di patate</em>, filled with seasoned potato rather than the ricotta and spinach most visitors expect, and it comes from the Mugello valley north of Florence. Sealing them without trapping air inside is the whole skill, and it is what most of the folding half of our three-hour pasta class in Florence is spent on. €95, max 8 guests.',
       facts: [
         { label: 'From', value: 'the Mugello, north of Florence' },
         { label: 'Dough', value: 'egg dough, rolled slightly thicker' },
@@ -457,7 +457,7 @@ const en: ShapesLocale = {
         h: 625,
       },
       answer:
-        'Ravioli are flat parcels of fresh pasta: a mound of filling laid on one sheet of egg dough, a second sheet pressed over the top, the air worked out, and the whole thing sealed and cut into squares or rounds. Ravioli is the broad Italian term used everywhere; in Tuscany and Emilia the same idea, made larger, is called <em>tortelli</em>.',
+        'Ravioli are flat parcels of fresh pasta: a mound of filling laid on one sheet of egg dough, a second sheet pressed over the top, the air worked out, and the whole thing sealed and cut into squares or rounds. Ravioli is the broad Italian term used everywhere; in Tuscany and Emilia the same idea, made larger, is called <em>tortelli</em>. Ravioli with butter and sage is one of the two shapes every guest makes by hand, and then eats, in our three-hour pasta class in Florence. €95, max 8 guests.',
       facts: [
         { label: 'From', value: 'all of Italy; the general term' },
         { label: 'Dough', value: 'egg dough, rolled slightly thicker' },
@@ -568,7 +568,7 @@ const it: ShapesLocale = {
     faqHeading: 'Domande, con risposta.',
     ctaHeading: 'Tiralo con le tue mani.',
     ctaBody:
-      'Insegniamo tutti e quattro questi formati in un corso di tre ore nella nostra cucina in Oltrarno: le mani in farina dal primo minuto, poi ci si siede tutti a mangiare quello che si è fatto. Max 8 ospiti, €95.',
+      'Insegniamo questi formati in un corso di tre ore nella nostra cucina in Oltrarno: le mani in farina dal primo minuto, poi ci si siede tutti a mangiare quello che si è fatto. Max 8 ospiti, €95.',
     ctaButton: 'Prenota un corso',
     ctaLink: 'Vedi il corso',
     guideHeading: 'Per approfondire',
@@ -595,7 +595,7 @@ const it: ShapesLocale = {
         h: 625,
       },
       answer:
-        'I pici sono una pasta spessa e tirata a mano della Toscana meridionale, fatta solo con farina, acqua e un filo d\'olio d\'oliva, senza uovo. Ogni pico si rotola sotto i palmi invece di essere tagliato con un coltello o una macchina, ed è per questo che non ce ne sono due dello stesso spessore e che la superficie resta abbastanza ruvida da aggrapparsi a un sugo corposo.',
+        'I pici sono una pasta spessa e tirata a mano della Toscana meridionale, fatta solo con farina, acqua e un filo d\'olio d\'oliva, senza uovo. Ogni pico si rotola sotto i palmi invece di essere tagliato con un coltello o una macchina, ed è per questo che non ce ne sono due dello stesso spessore e che la superficie resta abbastanza ruvida da aggrapparsi a un sugo corposo. Ed è anche per questo che è il formato da cui partiamo nel nostro corso di pasta di tre ore a Firenze: niente dietro cui nascondersi, solo farina, acqua e i palmi delle mani. €95, max 8 ospiti.',
       facts: [
         { label: 'Da', value: 'Siena e la Val d\'Orcia' },
         { label: 'Impasto', value: 'farina, acqua, olio; niente uovo' },
@@ -665,7 +665,7 @@ const it: ShapesLocale = {
         h: 625,
       },
       answer:
-        'Le pappardelle sono il nastro di pasta fresca più largo del repertorio toscano: strisce piatte di sfoglia all\'uovo tagliate da 2 a 3 centimetri. La larghezza non è ostentazione: esiste perché un sugo di selvaggina pesante e corposo abbia una superficie abbastanza ampia su cui posarsi invece di scivolare via.',
+        'Le pappardelle sono il nastro di pasta fresca più largo del repertorio toscano: strisce piatte di sfoglia all\'uovo tagliate da 2 a 3 centimetri. La larghezza non è ostentazione: esiste perché un sugo di selvaggina pesante e corposo abbia una superficie abbastanza ampia su cui posarsi invece di scivolare via. Tirare e tagliare a mano un nastro così largo è la parte più difficile da azzeccare a occhio, ed è uno dei tagli che affrontiamo nel nostro corso di pasta di tre ore a Firenze. €95, max 8 ospiti.',
       facts: [
         { label: 'Da', value: 'Toscana' },
         { label: 'Impasto', value: 'sfoglia all\'uovo: farina e uova' },
@@ -734,7 +734,7 @@ const it: ShapesLocale = {
         h: 625,
       },
       answer:
-        'Le tagliatelle sono nastri piatti di pasta fresca all\'uovo, tagliati a circa 6–8 millimetri. Sono il nastro di tutti i giorni dell\'Italia settentrionale e centrale: abbastanza stretti da avvolgersi sulla forchetta, abbastanza larghi da reggere un vero ragù di carne, ed è per questo che sono il formato che quasi tutti immaginano quando pensano alla pasta fresca.',
+        'Le tagliatelle sono nastri piatti di pasta fresca all\'uovo, tagliati a circa 6–8 millimetri. Sono il nastro di tutti i giorni dell\'Italia settentrionale e centrale: abbastanza stretti da avvolgersi sulla forchetta, abbastanza larghi da reggere un vero ragù di carne, ed è per questo che sono il formato che quasi tutti immaginano quando pensano alla pasta fresca. Tagliare il nastro a 6–8 millimetri regolari a mano si impara in una decina di minuti, ed è uno dei tagli che insegniamo nel nostro corso di pasta di tre ore a Firenze. €95, max 8 ospiti.',
       facts: [
         { label: 'Da', value: 'Emilia-Romagna, si fanno in tutta la Toscana' },
         { label: 'Impasto', value: 'sfoglia all\'uovo: farina e uova' },
@@ -804,7 +804,7 @@ const it: ShapesLocale = {
         h: 625,
       },
       answer:
-        'I tortelli sono fagottini di pasta fresca all\'uovo ripieni: una sfoglia, un cucchiaio di ripieno, una seconda sfoglia premuta e sigillata attorno. La versione simbolo della Toscana è il <em>tortello di patate</em>, ripieno di patate condite invece della ricotta e spinaci che quasi tutti si aspettano, e viene dal Mugello, la valle a nord di Firenze.',
+        'I tortelli sono fagottini di pasta fresca all\'uovo ripieni: una sfoglia, un cucchiaio di ripieno, una seconda sfoglia premuta e sigillata attorno. La versione simbolo della Toscana è il <em>tortello di patate</em>, ripieno di patate condite invece della ricotta e spinaci che quasi tutti si aspettano, e viene dal Mugello, la valle a nord di Firenze. Sigillarli senza lasciare aria dentro è tutta l\'abilità, ed è lì che passa gran parte della chiusura nel nostro corso di pasta di tre ore a Firenze. €95, max 8 ospiti.',
       facts: [
         { label: 'Da', value: 'il Mugello, a nord di Firenze' },
         { label: 'Impasto', value: 'sfoglia all\'uovo, tirata un po\' più spessa' },
@@ -871,7 +871,7 @@ const it: ShapesLocale = {
         h: 625,
       },
       answer:
-        'I ravioli sono fagottini piatti di pasta fresca: una nocciola di ripieno su una sfoglia all\'uovo, una seconda sfoglia sopra, l\'aria spinta fuori, il tutto sigillato e tagliato a quadrati o a tondi. Ravioli è il termine generale usato in tutta Italia; in Toscana e in Emilia la stessa idea, fatta più grande, si chiama <em>tortelli</em>.',
+        'I ravioli sono fagottini piatti di pasta fresca: una nocciola di ripieno su una sfoglia all\'uovo, una seconda sfoglia sopra, l\'aria spinta fuori, il tutto sigillato e tagliato a quadrati o a tondi. Ravioli è il termine generale usato in tutta Italia; in Toscana e in Emilia la stessa idea, fatta più grande, si chiama <em>tortelli</em>. I ravioli burro e salvia sono uno dei due formati che ogni ospite prepara a mano, e poi mangia, nel nostro corso di pasta di tre ore a Firenze. €95, max 8 ospiti.',
       facts: [
         { label: 'Da', value: 'tutta Italia; è il termine generale' },
         { label: 'Impasto', value: 'sfoglia all\'uovo, un po\' più spessa' },
@@ -1010,7 +1010,7 @@ const de: ShapesLocale = {
         h: 625,
       },
       answer:
-        'Pici sind eine dicke, von Hand gerollte Pasta aus der südlichen Toskana, gemacht aus nichts als Mehl, Wasser und etwas Olivenöl, ohne Ei. Jeder Strang wird unter den Handflächen ausgerollt statt mit Messer oder Maschine geschnitten, weshalb keine zwei gleich dick sind und die Oberfläche rau genug bleibt, um eine schwere Soße zu greifen.',
+        'Pici sind eine dicke, von Hand gerollte Pasta aus der südlichen Toskana, gemacht aus nichts als Mehl, Wasser und etwas Olivenöl, ohne Ei. Jeder Strang wird unter den Handflächen ausgerollt statt mit Messer oder Maschine geschnitten, weshalb keine zwei gleich dick sind und die Oberfläche rau genug bleibt, um eine schwere Soße zu greifen. Genau deshalb ist es auch die Form, mit der wir in unserem dreistündigen Pastakurs in Florenz anfangen: nichts, hinter dem man sich verstecken kann, nur Mehl, Wasser und die eigenen Handflächen. 95 €, max. 8 Gäste.',
       facts: [
         { label: 'Herkunft', value: 'Siena und das Val d\'Orcia' },
         { label: 'Teig', value: 'Mehl, Wasser, Olivenöl; kein Ei' },
@@ -1077,7 +1077,7 @@ const de: ShapesLocale = {
         h: 625,
       },
       answer:
-        'Pappardelle sind das breiteste frische Pastaband des toskanischen Repertoires: flache Streifen Eierteig, 20 bis 30 Millimeter breit geschnitten. Die Breite ist keine Angeberei, sondern Zweck: Eine schwere, grobe Wildsoße braucht etwas, das breit genug ist, um darauf sitzen zu bleiben statt abzurutschen.',
+        'Pappardelle sind das breiteste frische Pastaband des toskanischen Repertoires: flache Streifen Eierteig, 20 bis 30 Millimeter breit geschnitten. Die Breite ist keine Angeberei, sondern Zweck: Eine schwere, grobe Wildsoße braucht etwas, das breit genug ist, um darauf sitzen zu bleiben statt abzurutschen. Ein so breites Band von Hand auszurollen und gerade zu schneiden ist der Teil, den man nach Augenmaß am schwersten trifft, und er gehört zu den Schnitten, die wir in unserem dreistündigen Pastakurs in Florenz durchgehen. 95 €, max. 8 Gäste.',
       facts: [
         { label: 'Herkunft', value: 'Toskana' },
         { label: 'Teig', value: 'Eierteig: Mehl und Ei' },
@@ -1144,7 +1144,7 @@ const de: ShapesLocale = {
         h: 625,
       },
       answer:
-        'Tagliatelle sind flache Bänder frischer Eierpasta, etwa 6 bis 8 Millimeter breit geschnitten. Sie sind das Alltagsband Nord- und Mittelitaliens: schmal genug, um sie auf die Gabel zu drehen, breit genug, um ein richtiges Fleischragù zu tragen, weshalb sie die Form sind, die den meisten Menschen bei frischer Pasta zuerst einfällt.',
+        'Tagliatelle sind flache Bänder frischer Eierpasta, etwa 6 bis 8 Millimeter breit geschnitten. Sie sind das Alltagsband Nord- und Mittelitaliens: schmal genug, um sie auf die Gabel zu drehen, breit genug, um ein richtiges Fleischragù zu tragen, weshalb sie die Form sind, die den meisten Menschen bei frischer Pasta zuerst einfällt. Das Band von Hand auf gleichmäßige 6 bis 8 Millimeter zu schneiden lernt man in etwa zehn Minuten, und es ist einer der Schnitte, die wir in unserem dreistündigen Pastakurs in Florenz zeigen. 95 €, max. 8 Gäste.',
       facts: [
         { label: 'Herkunft', value: 'Emilia-Romagna, überall in der Toskana gemacht' },
         { label: 'Teig', value: 'Eierteig: Mehl und Ei' },
@@ -1211,7 +1211,7 @@ const de: ShapesLocale = {
         h: 625,
       },
       answer:
-        'Tortelli sind gefüllte Päckchen aus frischer Eierpasta: eine Teigbahn, ein Löffel Füllung, eine zweite Bahn darübergelegt und ringsum versiegelt. Die toskanische Signaturvariante sind <em>tortelli di patate</em>, gefüllt mit gewürzter Kartoffel statt mit Ricotta und Spinat, und sie kommen aus dem Mugello nördlich von Florenz.',
+        'Tortelli sind gefüllte Päckchen aus frischer Eierpasta: eine Teigbahn, ein Löffel Füllung, eine zweite Bahn darübergelegt und ringsum versiegelt. Die toskanische Signaturvariante sind <em>tortelli di patate</em>, gefüllt mit gewürzter Kartoffel statt mit Ricotta und Spinat, und sie kommen aus dem Mugello nördlich von Florenz. Sie zu versiegeln, ohne Luft einzuschließen, ist die eigentliche Kunst, und darauf geht der Großteil des Füll- und Faltteils unseres dreistündigen Pastakurses in Florenz. 95 €, max. 8 Gäste.',
       facts: [
         { label: 'Herkunft', value: 'Mugello, nördlich von Florenz' },
         { label: 'Teig', value: 'Eierteig, etwas dicker ausgerollt' },
@@ -1278,7 +1278,7 @@ const de: ShapesLocale = {
         h: 625,
       },
       answer:
-        'Ravioli sind flache Päckchen aus frischer Pasta: ein Häufchen Füllung auf einer Bahn Eierteig, eine zweite Bahn darüber, die Luft herausgearbeitet, das Ganze versiegelt und in Quadrate oder Kreise geschnitten. Ravioli ist der allgemeine italienische Begriff; in der Toskana und der Emilia heißt dieselbe Idee, etwas größer gemacht, <em>Tortelli</em>.',
+        'Ravioli sind flache Päckchen aus frischer Pasta: ein Häufchen Füllung auf einer Bahn Eierteig, eine zweite Bahn darüber, die Luft herausgearbeitet, das Ganze versiegelt und in Quadrate oder Kreise geschnitten. Ravioli ist der allgemeine italienische Begriff; in der Toskana und der Emilia heißt dieselbe Idee, etwas größer gemacht, <em>Tortelli</em>. Ravioli mit Butter und Salbei sind eine der beiden Formen, die bei uns jeder Gast im dreistündigen Pastakurs in Florenz selbst macht und danach isst. 95 €, max. 8 Gäste.',
       facts: [
         { label: 'Herkunft', value: 'ganz Italien; der allgemeine Begriff' },
         { label: 'Teig', value: 'Eierteig, etwas dicker ausgerollt' },
@@ -1393,7 +1393,7 @@ const fr: ShapesLocale = {
     faqHeading: 'Vos questions, nos réponses.',
     ctaHeading: 'Roulez-les vous-même.',
     ctaBody:
-      'Nous enseignons ces cinq formes en trois heures dans notre cuisine de l\'Oltrarno : les mains dans la farine dès la première minute, puis tout le monde s\'assoit pour manger ce qu\'il a fait. 8 invités maximum, 95 €.',
+      'Nous enseignons ces formes en trois heures dans notre cuisine de l\'Oltrarno : les mains dans la farine dès la première minute, puis tout le monde s\'assoit pour manger ce qu\'il a fait. 8 invités maximum, 95 €.',
     ctaButton: 'Réserver un cours de pâtes',
     ctaLink: 'Voir le cours',
     guideHeading: 'Pour aller plus loin',
@@ -1418,7 +1418,7 @@ const fr: ShapesLocale = {
         h: 625,
       },
       answer:
-        'Les pici sont une pâte épaisse, roulée à la main, du sud de la Toscane, faite de rien d\'autre que de farine, d\'eau et d\'un filet d\'huile d\'olive, sans œuf. Chaque brin est roulé sous les paumes plutôt que coupé au couteau ou à la machine, et c\'est pourquoi il n\'y en a pas deux de la même épaisseur et pourquoi la surface reste assez rugueuse pour accrocher une sauce lourde.',
+        'Les pici sont une pâte épaisse, roulée à la main, du sud de la Toscane, faite de rien d\'autre que de farine, d\'eau et d\'un filet d\'huile d\'olive, sans œuf. Chaque brin est roulé sous les paumes plutôt que coupé au couteau ou à la machine, et c\'est pourquoi il n\'y en a pas deux de la même épaisseur et pourquoi la surface reste assez rugueuse pour accrocher une sauce lourde. C\'est aussi pour cela que c\'est la forme par laquelle nous commençons dans notre cours de pâtes de trois heures à Florence : rien derrière quoi se cacher, juste de la farine, de l\'eau et vos paumes. 95 €, 8 invités maximum.',
       facts: [
         { label: 'Origine', value: 'Sienne et le Val d\'Orcia' },
         { label: 'Pâte', value: 'farine, eau, huile d\'olive ; sans œuf' },
@@ -1485,7 +1485,7 @@ const fr: ShapesLocale = {
         h: 625,
       },
       answer:
-        'Les pappardelle sont le ruban de pâte fraîche le plus large du répertoire toscan : des bandes plates de pâte à l\'œuf coupées de 2 à 3 centimètres. La largeur n\'est pas de l\'esbroufe : elle existe pour qu\'une sauce de gibier lourde et en morceaux ait une surface assez large sur laquelle se poser au lieu de glisser.',
+        'Les pappardelle sont le ruban de pâte fraîche le plus large du répertoire toscan : des bandes plates de pâte à l\'œuf coupées de 2 à 3 centimètres. La largeur n\'est pas de l\'esbroufe : elle existe pour qu\'une sauce de gibier lourde et en morceaux ait une surface assez large sur laquelle se poser au lieu de glisser. Abaisser et couper à la main un ruban aussi large est la partie la plus difficile à juger à l\'œil, et c\'est l\'une des coupes que nous travaillons dans notre cours de pâtes de trois heures à Florence. 95 €, 8 invités maximum.',
       facts: [
         { label: 'Origine', value: 'Toscane' },
         { label: 'Pâte', value: 'pâte à l\'œuf : farine et œufs' },
@@ -1552,7 +1552,7 @@ const fr: ShapesLocale = {
         h: 625,
       },
       answer:
-        'Les tagliatelle sont des rubans plats de pâte fraîche à l\'œuf, coupés à environ 6 à 8 millimètres de large. Elles sont le ruban de tous les jours du nord et du centre de l\'Italie : assez étroites pour s\'enrouler sur une fourchette, assez larges pour porter un vrai ragù de viande, et c\'est pourquoi elles sont la forme que la plupart des gens imaginent en pensant aux pâtes fraîches.',
+        'Les tagliatelle sont des rubans plats de pâte fraîche à l\'œuf, coupés à environ 6 à 8 millimètres de large. Elles sont le ruban de tous les jours du nord et du centre de l\'Italie : assez étroites pour s\'enrouler sur une fourchette, assez larges pour porter un vrai ragù de viande, et c\'est pourquoi elles sont la forme que la plupart des gens imaginent en pensant aux pâtes fraîches. Couper le ruban à 6 à 8 millimètres réguliers à la main s\'apprend en une dizaine de minutes, et c\'est l\'une des coupes que nous enseignons dans notre cours de pâtes de trois heures à Florence. 95 €, 8 invités maximum.',
       facts: [
         { label: 'Origine', value: 'Émilie-Romagne, faites dans toute la Toscane' },
         { label: 'Pâte', value: 'pâte à l\'œuf : farine et œufs' },
@@ -1619,7 +1619,7 @@ const fr: ShapesLocale = {
         h: 625,
       },
       answer:
-        'Les tortelli sont des paquets de pâte fraîche à l\'œuf farcie : une abaisse de pâte, une cuillerée de farce, une seconde abaisse pressée dessus et scellée autour. La version signature de la Toscane est le <em>tortelli di patate</em>, farci de pomme de terre assaisonnée plutôt que de la ricotta et des épinards auxquels s\'attendent la plupart des visiteurs, et il vient de la vallée du Mugello au nord de Florence.',
+        'Les tortelli sont des paquets de pâte fraîche à l\'œuf farcie : une abaisse de pâte, une cuillerée de farce, une seconde abaisse pressée dessus et scellée autour. La version signature de la Toscane est le <em>tortelli di patate</em>, farci de pomme de terre assaisonnée plutôt que de la ricotta et des épinards auxquels s\'attendent la plupart des visiteurs, et il vient de la vallée du Mugello au nord de Florence. Les sceller sans emprisonner d\'air est tout le savoir-faire, et c\'est là que passe l\'essentiel de la partie pliage de notre cours de pâtes de trois heures à Florence. 95 €, 8 invités maximum.',
       facts: [
         { label: 'Origine', value: 'le Mugello, au nord de Florence' },
         { label: 'Pâte', value: 'pâte à l\'œuf, étalée un peu plus épaisse' },
@@ -1686,7 +1686,7 @@ const fr: ShapesLocale = {
         h: 625,
       },
       answer:
-        'Les ravioli sont des paquets plats de pâte fraîche : un monticule de farce posé sur une abaisse de pâte à l\'œuf, une seconde abaisse pressée par-dessus, l\'air chassé, et le tout scellé et coupé en carrés ou en ronds. Ravioli est le terme italien large employé partout ; en Toscane et en Émilie, la même idée, en plus grand, s\'appelle <em>tortelli</em>.',
+        'Les ravioli sont des paquets plats de pâte fraîche : un monticule de farce posé sur une abaisse de pâte à l\'œuf, une seconde abaisse pressée par-dessus, l\'air chassé, et le tout scellé et coupé en carrés ou en ronds. Ravioli est le terme italien large employé partout ; en Toscane et en Émilie, la même idée, en plus grand, s\'appelle <em>tortelli</em>. Les ravioli au beurre et à la sauge sont l\'une des deux formes que chaque invité façonne à la main, puis mange, dans notre cours de pâtes de trois heures à Florence. 95 €, 8 invités maximum.',
       facts: [
         { label: 'Origine', value: 'toute l\'Italie ; le terme général' },
         { label: 'Pâte', value: 'pâte à l\'œuf, étalée un peu plus épaisse' },
@@ -1799,7 +1799,7 @@ const zh: ShapesLocale = {
     faqHeading: '常见问题',
     ctaHeading: '亲手擀一次。',
     ctaBody:
-      '我们在奥特拉诺的厨房里用三小时教授这全部五种形状：从第一分钟起双手就在面粉里，然后大家一起坐下来吃自己做的东西。最多 8 位客人，95 欧元。',
+      '我们在奥特拉诺的厨房里用三小时教授这些形状：从第一分钟起双手就在面粉里，然后大家一起坐下来吃自己做的东西。最多 8 位客人，95 欧元。',
     ctaButton: '预订意面课程',
     ctaLink: '查看课程',
     guideHeading: '延伸阅读',
@@ -1824,7 +1824,7 @@ const zh: ShapesLocale = {
         h: 625,
       },
       answer:
-        'Pici 是来自托斯卡纳南部的一种粗面，用手搓成，除了面粉、水和一点橄榄油之外别无他物，不加鸡蛋。每一根都是在手掌下搓出来的，而不是用刀或机器切出来的，所以没有两根粗细完全一样，表面也始终足够粗糙，能抓住厚重的酱汁。',
+        'Pici 是来自托斯卡纳南部的一种粗面，用手搓成，除了面粉、水和一点橄榄油之外别无他物，不加鸡蛋。每一根都是在手掌下搓出来的，而不是用刀或机器切出来的，所以没有两根粗细完全一样，表面也始终足够粗糙，能抓住厚重的酱汁。 也正因为如此，它是我们佛罗伦萨三小时意面课上最先做的形状：没有任何可以依赖的东西，只有面粉、水和你自己的手掌。95 欧元，最多 8 位客人。',
       facts: [
         { label: '产地', value: '锡耶纳与奥尔恰谷' },
         { label: '面团', value: '面粉、水、橄榄油；不加鸡蛋' },
@@ -1891,7 +1891,7 @@ const zh: ShapesLocale = {
         h: 625,
       },
       answer:
-        'Pappardelle 是托斯卡纳菜系里最宽的新鲜面带：用蛋面团切成的 2 至 3 厘米宽的扁平面条。这个宽度不是为了好看：它的存在，是为了让厚重带块的野味酱汁有一块足够宽的落脚地，而不是直接滑下去。',
+        'Pappardelle 是托斯卡纳菜系里最宽的新鲜面带：用蛋面团切成的 2 至 3 厘米宽的扁平面条。这个宽度不是为了好看：它的存在，是为了让厚重带块的野味酱汁有一块足够宽的落脚地，而不是直接滑下去。 用手把这么宽的面带擀开再切齐，是最难凭眼睛判断的一步，也是我们佛罗伦萨三小时意面课上会带着做的切法之一。95 欧元，最多 8 位客人。',
       facts: [
         { label: '产地', value: '托斯卡纳' },
         { label: '面团', value: '蛋面团：面粉与鸡蛋' },
@@ -1958,7 +1958,7 @@ const zh: ShapesLocale = {
         h: 625,
       },
       answer:
-        'Tagliatelle 是新鲜蛋面擀成的扁平面带，切成大约 6 至 8 毫米宽。它是意大利中北部的日常面带：窄到能卷上叉子，宽到能承载一份像样的肉酱，这也是为什么大多数人想到新鲜意面时，脑海里浮现的就是这个形状。',
+        'Tagliatelle 是新鲜蛋面擀成的扁平面带，切成大约 6 至 8 毫米宽。它是意大利中北部的日常面带：窄到能卷上叉子，宽到能承载一份像样的肉酱，这也是为什么大多数人想到新鲜意面时，脑海里浮现的就是这个形状。 用手把面带切成均匀的 6 至 8 毫米，大约十分钟就能学会，这也是我们在佛罗伦萨三小时意面课上教的切法之一。95 欧元，最多 8 位客人。',
       facts: [
         { label: '产地', value: '艾米利亚-罗马涅，全托斯卡纳都在做' },
         { label: '面团', value: '蛋面团：面粉与鸡蛋' },
@@ -2025,7 +2025,7 @@ const zh: ShapesLocale = {
         h: 625,
       },
       answer:
-        'Tortelli 是用新鲜蛋面包起来的带馅面饺：一张面皮，一勺馅，再压上第二张面皮并沿着馅料封口。托斯卡纳的招牌版本是 <em>tortelli di patate</em>，馅料是调过味的土豆，而不是大多数游客预期的乳清干酪配菠菜，它来自佛罗伦萨以北的穆杰罗山谷。',
+        'Tortelli 是用新鲜蛋面包起来的带馅面饺：一张面皮，一勺馅，再压上第二张面皮并沿着馅料封口。托斯卡纳的招牌版本是 <em>tortelli di patate</em>，馅料是调过味的土豆，而不是大多数游客预期的乳清干酪配菠菜，它来自佛罗伦萨以北的穆杰罗山谷。 封口时不把空气裹进去才是真正的功夫所在，我们佛罗伦萨三小时意面课上包馅的那半堂课，大部分时间都花在这里。95 欧元，最多 8 位客人。',
       facts: [
         { label: '产地', value: '佛罗伦萨以北的穆杰罗' },
         { label: '面团', value: '蛋面团，擀得略厚' },
@@ -2092,7 +2092,7 @@ const zh: ShapesLocale = {
         h: 625,
       },
       answer:
-        'Ravioli 是扁平的带馅新鲜意面：在一张蛋面皮上放一堆馅，盖上第二张面皮压实，把空气赶出去，然后封口并切成方形或圆形。Ravioli 是各地通用的意大利语广义名称；在托斯卡纳和艾米利亚，同样的东西做得更大，就叫 <em>tortelli</em>。',
+        'Ravioli 是扁平的带馅新鲜意面：在一张蛋面皮上放一堆馅，盖上第二张面皮压实，把空气赶出去，然后封口并切成方形或圆形。Ravioli 是各地通用的意大利语广义名称；在托斯卡纳和艾米利亚，同样的东西做得更大，就叫 <em>tortelli</em>。 黄油鼠尾草意式方饺，是每位客人在我们佛罗伦萨三小时意面课上亲手做、然后吃掉的两种形状之一。95 欧元，最多 8 位客人。',
       facts: [
         { label: '产地', value: '全意大利；通用名称' },
         { label: '面团', value: '蛋面团，擀得略厚' },
