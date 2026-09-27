@@ -2,6 +2,7 @@
 title: 'Choisir un cours de pâtes à Florence : 7 questions'
 description: 'Florence compte des centaines de cours de pâtes aux annonces identiques. Sept questions qui prédisent si vous aimerez, à commencer par la taille du groupe.'
 pubDate: 2026-08-11
+updatedDate: 2026-09-26
 author: 'Endri Cerhozi'
 image: '../../../assets/images/fresh-pasta-station-rolling-pin-flour.webp'
 imageAlt: 'Un petit groupe prépare des pâtes fraîches à la main autour d’une table à Florence'
@@ -50,7 +51,7 @@ Ce n’est pas malhonnête : c’est simplement facile à manquer quand on compa
 
 **Demandez : le vin est-il compris, combien, et ajoute-t-on autre chose le jour même ?**
 
-*Le nôtre comprend deux verres toscans dans les 95 €, et rien n’est ajouté à la fin.*
+*Le nôtre comprend un verre de vin toscan et un limoncello ou un café dans les 95 €, et rien n’est ajouté à la fin.*
 
 ## 3. Qui vous enseigne réellement ?
 
@@ -113,4 +114,4 @@ Si vous ne posez que deux questions, demandez **quel est le nombre maximum de pa
 
 Et quoi que vous réserviez, obtenez les conditions d’annulation par écrit avant de payer.
 
-Si vous voulez voir nos réponses en entier, [La Table du Chef](/fr/cours-de-pates-fraiches-florence/) est le cours sur lequel tout le reste est bâti: trois heures dans l’Oltrarno, quatre formes, huit personnes maximum, 95 € avec le vin dans le prix. Nous avons aussi écrit un [décryptage de ce que coûtent réellement les cours de pâtes à Florence](/fr/blog/how-much-does-a-pasta-making-class-in-florence-cost/) si vous voulez les chiffres seuls.
+Si vous voulez voir nos réponses en entier, [La Table du Chef](/fr/cours-de-pates-fraiches-florence/) est le cours sur lequel tout le reste est bâti: trois heures dans l’Oltrarno, fettuccine, ravioli et tiramisù, huit personnes maximum, 95 € avec le vin dans le prix. Nous avons aussi écrit un [décryptage de ce que coûtent réellement les cours de pâtes à Florence](/fr/blog/how-much-does-a-pasta-making-class-in-florence-cost/) si vous voulez les chiffres seuls.

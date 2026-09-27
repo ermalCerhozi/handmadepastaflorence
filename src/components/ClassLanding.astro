@@ -191,7 +191,10 @@ const reviewSchema = pageKey ? getReviewSchema(pageKey) : null;
 // The two kitchen photos show the Florence room, so they belong only on the
 // in-person Florence classes — not the online class, the team-building enquiry
 // page or the gift voucher. `prefill: 'florence'` is exactly that set.
-const showKitchenPhotos = prefill === 'florence' && !emailSubject;
+// Not on the vegan page either: the station photo has eggs in the bowls and
+// the table photo is a salumi-and-cheese board, the opposite of what that
+// visitor came to see.
+const showKitchenPhotos = prefill === 'florence' && !emailSubject && pageKey !== 'vegan';
 
 const productSchema = product && {
   '@context': 'https://schema.org',

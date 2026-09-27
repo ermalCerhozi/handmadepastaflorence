@@ -2,6 +2,7 @@
 title: 'Come scegliere un corso di pasta a Firenze: 7 domande'
 description: 'Firenze ha centinaia di corsi di pasta e gli annunci sembrano identici. Sette domande che predicono se ti piacerà, a partire dalla dimensione del gruppo.'
 pubDate: 2026-08-11
+updatedDate: 2026-09-26
 author: 'Endri Cerhozi'
 image: '../../../assets/images/fresh-pasta-station-rolling-pin-flour.webp'
 imageAlt: 'Un piccolo gruppo prepara pasta fresca a mano a un tavolo a Firenze'
@@ -50,7 +51,7 @@ Non è disonesto: è semplicemente facile non accorgersene quando confronti due 
 
 **Chiedi: il vino è incluso, quanto, e si aggiunge altro il giorno stesso?**
 
-*Il nostro comprende due calici toscani nei €95, e alla fine non si aggiunge nulla.*
+*Il nostro comprende un calice di vino toscano e un limoncello o un caffè nei €95, e alla fine non si aggiunge nulla.*
 
 ## 3. Chi ti insegna davvero?
 
@@ -113,4 +114,4 @@ Se fai solo due domande, chiedi **qual è il numero massimo di partecipanti** e 
 
 E qualunque cosa prenoti, fatti dare per iscritto le condizioni di cancellazione prima di pagare.
 
-Se vuoi vedere le nostre risposte per intero, [Il Tavolo dello Chef](/it/corso-pasta-fresca-firenze/) è il corso su cui è costruito tutto il resto: tre ore in Oltrarno, quattro formati, massimo otto persone, €95 con il vino nel prezzo. Abbiamo scritto anche un'[analisi di quanto costano davvero i corsi di pasta a Firenze](/it/blog/how-much-does-a-pasta-making-class-in-florence-cost/) se vuoi i numeri da soli.
+Se vuoi vedere le nostre risposte per intero, [Il Tavolo dello Chef](/it/corso-pasta-fresca-firenze/) è il corso su cui è costruito tutto il resto: tre ore in Oltrarno, fettuccine, ravioli e tiramisù, massimo otto persone, €95 con il vino nel prezzo. Abbiamo scritto anche un'[analisi di quanto costano davvero i corsi di pasta a Firenze](/it/blog/how-much-does-a-pasta-making-class-in-florence-cost/) se vuoi i numeri da soli.

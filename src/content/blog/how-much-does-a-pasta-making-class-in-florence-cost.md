@@ -2,7 +2,7 @@
 title: 'How Much Does a Pasta Class in Florence Cost? (2026)'
 description: 'Real 2026 price ranges for Florence cooking classes, what actually drives the price, what should be included, and the questions to ask before you book.'
 pubDate: 2026-07-08
-updatedDate: 2026-09-13
+updatedDate: 2026-09-26
 author: 'Endri Cerhozi'
 image: '../../assets/images/pasta-cooking-class-florence-group-kitchen.webp'
 imageAlt: 'Guests making fresh pasta together at a small-group class in Florence'
@@ -46,7 +46,7 @@ At €80 and up, you should not be paying extra for the essentials. A fair class
 
 So you can calibrate the ranges above against a real menu ([full details here](/pasta-making-class-florence/)):
 
-- **[The Chef's Table](/pasta-making-class-florence/)**: 3 hours, four pasta shapes, max 8 guests, ends in a sit-down lunch with two Tuscan wines included: **€95 per person**.
+- **[The Chef's Table](/pasta-making-class-florence/)**: 3 hours, fettuccine, ravioli and your own tiramisù, max 8 guests, ends at the table with a glass of Tuscan wine and a limoncello or coffee included: **€95 per person**.
 - **[Mercato & Mani](/market-tour-cooking-class-florence/)**: Sant'Ambrogio market walk, then ravioli, ragù and a seasonal dolce, max 6 guests, about 5 hours: **€145 per person**.
 - **[The Family Long-Table](/private-cooking-class-florence/)**: the whole kitchen privately, 6–14 guests: **from €680 per group**.
 - **[Live Online Class](/online-pasta-making-class/)**: streamed from our Florence kitchen, optional chilled ingredient kit shipped to you: **from €68 per person**.

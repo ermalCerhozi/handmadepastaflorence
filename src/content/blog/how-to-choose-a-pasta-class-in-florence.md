@@ -2,6 +2,7 @@
 title: 'How to choose a pasta class in Florence: 7 questions'
 description: 'Florence has hundreds of pasta classes and the listings look identical. Seven questions that predict whether you’ll enjoy it, starting with group size.'
 pubDate: 2026-08-11
+updatedDate: 2026-09-26
 author: 'Endri Cerhozi'
 image: '../../assets/images/fresh-pasta-station-rolling-pin-flour.webp'
 imageAlt: 'A small group making fresh pasta by hand at a table in Florence'
@@ -50,7 +51,7 @@ It is not dishonest; it is just easy to miss when you are comparing two listings
 
 **Ask: is wine included, how much, and is there anything else added on the day?**
 
-*Ours includes two Tuscan pours in the €95, and there is nothing added at the end.*
+*Ours includes a glass of Tuscan wine and a limoncello or coffee in the €95, and there is nothing added at the end.*
 
 ## 3. Who is actually teaching you?
 
@@ -113,4 +114,4 @@ If you only ask two questions, ask **what is the maximum group size** and **what
 
 And whichever you book, get the cancellation terms in writing before you pay.
 
-If you want to see how our answers look in full, [The Chef's Table](/pasta-making-class-florence/) is the class everything else we do is built on: three hours in the Oltrarno, four shapes, max eight people, €95 with the wine in the price. We also wrote a [breakdown of what pasta classes in Florence actually cost](/blog/how-much-does-a-pasta-making-class-in-florence-cost/) if you want the numbers on their own.
+If you want to see how our answers look in full, [The Chef's Table](/pasta-making-class-florence/) is the class everything else we do is built on: three hours in the Oltrarno, fettuccine, ravioli and tiramisù, max eight people, €95 with the wine in the price. We also wrote a [breakdown of what pasta classes in Florence actually cost](/blog/how-much-does-a-pasta-making-class-in-florence-cost/) if you want the numbers on their own.

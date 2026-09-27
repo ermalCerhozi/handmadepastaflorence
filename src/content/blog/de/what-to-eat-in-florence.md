@@ -2,6 +2,7 @@
 title: 'Essen in Florenz: der Guide eines toskanischen Kochs'
 description: 'Welche Gerichte wirklich florentinisch sind, welche Pastaformen toskanisch sind und welche berühmten italienischen Klassiker von ganz woanders kommen.'
 pubDate: 2026-09-13
+updatedDate: 2026-09-26
 author: 'Endri Cerhozi'
 image: '../../../assets/images/tuscan-antipasto-board-burrata-red-wine.webp'
 imageAlt: 'Teller mit frischer handgemachter Pasta und toskanischen Antipasti auf einem Holztisch in Florenz'
@@ -83,7 +84,7 @@ Sie finden all das in Florenz, gut gekocht. Reisen Sie nur nicht dafür hierher.
 
 ## Oder Sie machen die Pasta selbst
 
-Wer toskanisches Essen verstehen will, statt es nur zu bestellen, nimmt die Abkürzung über drei Stunden Handarbeit. In unserem [Pasta-Kurs in Florenz](/de/pasta-kurs-florenz/) rollen Sie die vier Formen von oben selbst — Pici, Tagliatelle, Pappardelle und gefüllte Tortelli — und setzen sich danach hin und essen, was Sie gemacht haben. Das ist nebenbei die günstigste Art herauszufinden, was Ihnen wirklich schmeckt, bevor Sie Geld für ein Abendessen ausgeben.
+Wer toskanisches Essen verstehen will, statt es nur zu bestellen, nimmt die Abkürzung über drei Stunden Handarbeit. In unserem [Pasta-Kurs in Florenz](/de/pasta-kurs-florenz/) machen Sie Fettuccine und gefüllte Ravioli selbst, die Köche zeigen, wie aus demselben Teig die toskanischen Formen von oben werden, und danach setzen Sie sich hin und essen, was Sie gemacht haben. Das ist nebenbei die günstigste Art herauszufinden, was Ihnen wirklich schmeckt, bevor Sie Geld für ein Abendessen ausgeben.
 
 Wenn Sie lieber dort anfangen wollen, wo die Köche anfangen: [Mercato & Mani](/de/markt-tour-kochkurs-florenz/) beginnt auf dem Markt von Sant'Ambrogio zu der Stunde, in der die Restaurants einkaufen, und der Korb entscheidet über das Menü.
 

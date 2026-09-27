@@ -2,6 +2,7 @@
 title: 'Ausflüge ab Florenz: was man in welcher Stadt isst'
 description: 'Siena, Lucca, San Gimignano und Pisa, ausgewählt nach dem, was auf dem Teller liegt: die Pasta, der Wein und das eine Gericht je Stadt.'
 pubDate: 2026-09-13
+updatedDate: 2026-09-26
 author: 'Endri Cerhozi'
 image: '../../../assets/images/handmade-pici-pasta.webp'
 imageAlt: 'Handgerollte Pici, die dicke eifreie Pasta aus Siena und der südlichen Toskana'
@@ -78,7 +79,7 @@ Pisa und Lucca liegen an derselben Bahnstrecke, etwa eine halbe Stunde auseinand
 
 Es gibt eine Version des toskanischen Landtags, die ganz ohne Fahrplan auskommt. Unser [Agriturismo-Kochkurs](/de/agriturismo-kochkurs-toskana/) findet in einer arbeitenden Gutsküche in den Hügeln außerhalb von Florenz statt, 30 bis 45 Minuten raus, für Gruppen von sechs bis zwanzig: Sie ernten im Garten, rollen Pasta mit dem Koch und essen ein langes Mittagessen. Er wird pro Gruppe angeboten und passt zu Leuten, die ohnehin ein Auto haben.
 
-Wenn Sie in der Stadt bleiben, ist die Drei-Stunden-Version in unserer Küche im Oltrarno [The Chef's Table](/de/pasta-kurs-florenz/), wo die vier Formen, die Ihnen auf diesen Ausflügen begegnen — Pici darunter — von Hand gemacht werden.
+Wenn Sie in der Stadt bleiben, ist die Drei-Stunden-Version in unserer Küche im Oltrarno [The Chef's Table](/de/pasta-kurs-florenz/), wo Sie Fettuccine und Ravioli von Hand machen und die Köche zeigen, wie aus demselben Teig die Pici werden, die Ihnen auf diesen Ausflügen begegnen.
 
 Und für die Stadt selbst ist das Gegenstück zu diesem Text: [Essen in Florenz](/de/blog/what-to-eat-in-florence/).
 

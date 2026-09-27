@@ -2,6 +2,7 @@
 title: 'Was man montags in Florenz machen kann'
 description: 'Die Uffizien und die Accademia sind montags geschlossen. Was wirklich offen hat: Dom-Komplex, Palazzo Vecchio, Santa Croce, Märkte und Oltrarno.'
 pubDate: 2026-08-11
+updatedDate: 2026-09-26
 author: 'Endri Cerhozi'
 image: '../../../assets/images/tuscan-aperitivo-buffet-table.webp'
 imageAlt: 'Ein ruhiger Platz im Oltrarno in Florenz an einem Montagnachmittag'
@@ -54,7 +55,7 @@ Ein Montag ist besser als der Tag genutzt, an dem man die Teile von Florenz mach
 
 Unseren [Pasta-Kurs](/de/pasta-kurs-florenz/) geben wir an sieben Tagen die Woche, auch montags, um 10:00, 14:30 und 18:00 Uhr. Das ist hier nicht die Regel: Die meisten Kochschulen in Florenz haben montags zu, und mehrere der größeren verlangen stillschweigend eine Mindestteilnehmerzahl, damit ein ruhiger Wochentagskurs überhaupt stattfindet.
 
-Praktisch macht das den Montag zu einem der einfachsten Tage der Woche, um einen Platz an einem kleinen Tisch zu bekommen. Drei Stunden im Oltrarno, vier Formen frische Pasta, Saucen, die Sie selbst machen, dann setzen sich alle hin und essen, mit zwei toskanischen Weinen im Preis. Höchstens acht Personen. Wenn Sie mit Kindern reisen: Der [Familienkurs](/de/familien-kochkurs-florenz/) läuft an denselben Tagen, ab sechs Jahren.
+Praktisch macht das den Montag zu einem der einfachsten Tage der Woche, um einen Platz an einem kleinen Tisch zu bekommen. Drei Stunden im Oltrarno, Fettuccine und Ravioli von Hand und Ihr eigenes Tiramisù, dann setzen sich alle hin und essen, mit einem Glas toskanischem Wein im Preis. Höchstens acht Personen. Wenn Sie mit Kindern reisen: Der [Familienkurs](/de/familien-kochkurs-florenz/) läuft an denselben Tagen, ab sechs Jahren.
 
 Es löst auch das andere Montagsproblem, nämlich das Mittagessen: Sie haben nichts reserviert, die halbe Liste ist geschlossen, und um eins stehen Sie auf einem Platz und überlegen, wo Sie essen sollen. Diese Entscheidung ist bereits getroffen.
 

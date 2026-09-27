@@ -2,7 +2,7 @@
 title: '在佛罗伦萨上意面制作课程需要多少钱？（2026年指南）'
 description: '真实的2026年佛罗伦萨烹饪课程价格区间，真正决定价格的因素是什么，应该包含哪些内容，以及预订前要问的问题。'
 pubDate: 2026-07-08
-updatedDate: 2026-09-13
+updatedDate: 2026-09-26
 author: 'Endri Cerhozi'
 image: '../../../assets/images/pasta-cooking-class-florence-group-kitchen.webp'
 imageAlt: '客人们在佛罗伦萨的小班课程中一起制作新鲜意面'
@@ -46,7 +46,7 @@ faqs:
 
 为了让你能把上述价格区间与真实的菜单进行对比（[详情请点击这里](/zh/foluolunsa-yidali-mian-kecheng/)）：
 
-- **[主厨餐桌](/zh/foluolunsa-yidali-mian-kecheng/)**：3个小时，四种意面形状，最多8位客人，以一顿丰盛午餐结束，并已包含两杯托斯卡纳葡萄酒：**每人 95 欧元**。
+- **[主厨餐桌](/zh/foluolunsa-yidali-mian-kecheng/)**：3个小时，宽面、意式饺子和您自己的提拉米苏，最多8位客人，最后在餐桌旁结束，已包含一杯托斯卡纳葡萄酒和一杯柠檬酒或咖啡：**每人 95 欧元**。
 - **[市场与手工](/zh/shichang-daolan-pengren-kecheng-foluolunsa/)**：漫步圣安布罗焦市场，然后制作 ravioli 意饺、肉酱和时令甜点，最多6位客人，约5个小时：**每人 145 欧元**。
 - **[家庭长桌](/zh/siren-pengren-kecheng-foluolunsa/)**：专属私人厨房，6-14 位客人：**每团 680 欧元起**。
 - **[在线直播课程](/zh/zaixian-yidali-mian-kecheng/)**：在我们佛罗伦萨的厨房直播，可选配冷链邮寄到你家的食材包：**每人 68 欧元起**。

@@ -2,7 +2,7 @@
 title: 'Ravioli 与 Tortelli 有什么区别？（一位托斯卡纳厨师的解释）'
 description: 'Ravioli、tortelli、tortellini 和 agnolotti 都属于带馅意面：区别在于大小、形状、馅料和产地。每个名字究竟指什么，以及在托斯卡纳它们叫什么。'
 pubDate: 2026-08-11
-updatedDate: 2026-09-13
+updatedDate: 2026-09-26
 author: 'Endri Cerhozi'
 image: '../../../assets/images/handmade-ravioli-pasta.webp'
 imageAlt: '刚做好的带馅意面，摆在撒了面粉的木案板上'
@@ -24,7 +24,7 @@ faqs:
   - q: "为什么我煮的 ravioli 会破？"
     a: "几乎总是因为里面困住了空气。用手指沿着每一小堆馅料把上层面皮压实，把空气向外赶出去，然后再封边。封边不牢、馅放太多、面皮擀得太薄，是另外三个原因。"
   - q: "可以在佛罗伦萨学做 ravioli 吗？"
-    a: "可以，带馅意面是我们在奥特拉诺三小时课程中教授的四种形状之一。我们教的是托斯卡纳版本 tortello，技法完全相同，只是名字不同；它也是课程结束时客人最引以为傲的那一种。"
+    a: "可以。在我们奥特拉诺的三小时课程里，每位客人都会亲手做意式饺子：填馅、封口，再配黄油鼠尾草吃掉。tortelli 是同一种技法做得更大；带馅意面也是课程结束时客人最引以为傲的那一种。"
 ---
 
 简短的回答：**ravioli 和 tortelli 是同一件事的两个名字。** 两者都是包了馅、夹在两张面皮之间封口的新鲜意面。Ravioli 是全国通用的统称；tortelli 是我们在托斯卡纳和艾米利亚的叫法，而且我们的通常更大。
@@ -73,4 +73,4 @@ faqs:
 
 在托斯卡纳，说 tortelli，听起来就像你用了心。在别处，ravioli 到哪儿都能听懂，也没人会纠正你。
 
-如果你想亲手做，而不只是读它：带馅意面正是[我们在奥特拉诺三小时课程](/zh/foluolunsa-yidali-mian-kecheng/)里的四种形状之一，另外三种是 pici、tagliatelle 和 pappardelle。它几乎总是课程结束时大家最自豪的那一种，主要因为它最考验耐心。有孩子就带上：[家庭课程](/zh/jiating-pengren-kecheng-foluolunsa/)6岁以上即可参加，而折小包恰恰是七岁孩子特别擅长的活儿。
+如果你想亲手做，而不只是读它：意式饺子是每位客人在[我们奥特拉诺三小时课程](/zh/foluolunsa-yidali-mian-kecheng/)里都会做的两种意面之一，另一种是手工切的宽面。它几乎总是课程结束时大家最自豪的那一种，主要因为它最考验耐心。有孩子就带上：[家庭课程](/zh/jiating-pengren-kecheng-foluolunsa/)6岁以上即可参加，而折小包恰恰是七岁孩子特别擅长的活儿。

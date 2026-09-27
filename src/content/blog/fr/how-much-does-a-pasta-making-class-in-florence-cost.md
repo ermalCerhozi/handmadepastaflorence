@@ -2,7 +2,7 @@
 title: 'Combien coûte un cours de pâtes à Florence ? (Guide 2026)'
 description: 'Les fourchettes de prix réelles en 2026 pour les cours de cuisine à Florence, ce qui fait varier le prix, et quoi demander avant de réserver.'
 pubDate: 2026-07-08
-updatedDate: 2026-09-13
+updatedDate: 2026-09-26
 author: 'Endri Cerhozi'
 image: '../../../assets/images/pasta-cooking-class-florence-group-kitchen.webp'
 imageAlt: 'Des invités préparent ensemble des pâtes fraîches lors d’un cours en petit groupe à Florence'
@@ -46,7 +46,7 @@ Quatre éléments expliquent presque chaque différence de prix que vous verrez 
 
 Afin que vous puissiez calibrer les fourchettes ci-dessus par rapport à un vrai menu ([détails complets ici](/fr/cours-de-pates-fraiches-florence/)) :
 
-- **[La Table du Chef](/fr/cours-de-pates-fraiches-florence/)**: 3 heures, quatre formes de pâtes, max 8 convives, se termine par un déjeuner assis avec deux vins toscans compris : **95 € par personne**.
+- **[La Table du Chef](/fr/cours-de-pates-fraiches-florence/)**: 3 heures, fettuccine, ravioli et votre propre tiramisù, max 8 convives, se termine à table avec un verre de vin toscan et un limoncello ou un café compris : **95 € par personne**.
 - **[Marché & Mains](/fr/cours-cuisine-visite-marche-florence/)**: promenade au marché de Sant'Ambrogio, puis raviolis, ragoût et un dolce de saison, max 6 convives, environ 5 heures : **145 € par personne**.
 - **[La Grande Table Familiale](/fr/cours-cuisine-prive-florence/)**: toute la cuisine en privé, 6 à 14 convives : **à partir de 680 € par groupe**.
 - **[Cours en Ligne en Direct](/fr/cours-pates-en-ligne/)**: diffusé depuis notre cuisine à Florence, kit d'ingrédients frais optionnel expédié chez vous : **à partir de 68 € par personne**.

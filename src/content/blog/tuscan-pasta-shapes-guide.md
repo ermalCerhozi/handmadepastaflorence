@@ -2,6 +2,7 @@
 title: 'Tuscan pasta shapes: pici, pappardelle, tortelli & more'
 description: 'A chef’s guide to Tuscany’s classic fresh pasta types: where each shape comes from, how it’s made by hand, and the sauce it was born to carry.'
 pubDate: 2026-07-08
+updatedDate: 2026-09-26
 author: 'Endri Cerhozi'
 image: '../../assets/images/handmade-pici-pasta.webp'
 imageAlt: 'Hand-rolled pici, the thick Tuscan pasta ropes, dusted with flour'
@@ -37,7 +38,7 @@ Below, a chef's guide to each: where it comes from, how it's made by hand, and t
 
 Pici are thick, uneven ropes rolled one at a time between your palms, and no two ever match. That irregularity is the whole point: a fat, chewy strand that grips sauce the way spaghetti never could. The classic pairings are **all'aglione** (a garlic-heavy tomato sauce), **cacio e pepe**, and **con le briciole**, with toasted breadcrumbs, from the days when even cheese was a luxury.
 
-Rolling pici is also the most meditative job in our kitchen, which is why it opens [The Chef's Table class](/pasta-making-class-florence/); five minutes in, everyone goes quiet.
+Rolling pici is also the most meditative job in our kitchen, which is why the chefs like to show it at [The Chef's Table class](/pasta-making-class-florence/) when there is time; five minutes in, everyone goes quiet.
 
 ## Pappardelle: the wide ribbon for game
 
@@ -64,8 +65,8 @@ Ricotta-and-spinach ravioli with butter and sage is the shape everyone knows, an
 
 If you're eating: pici if you see them, pappardelle al cinghiale if it's autumn. (Here's [where to look in Florence](/blog/where-to-eat-handmade-pasta-in-florence/).)
 
-Each of the four shapes we teach has its own page in [our pasta shape library](/pasta-shapes/): the dough, the cut, and the sauce it was built for, one shape at a time.
+Each of these shapes has its own page in [our pasta shape library](/pasta-shapes/): the dough, the cut, and the sauce it was built for, one shape at a time.
 
-If you're making: start with tagliatelle for the skill, pici for the fun, tortelli for the bragging rights. We teach all of them, four shapes per class, at [our kitchen in the Oltrarno](/pasta-making-class-florence/), or [live online](/online-pasta-making-class/) if Tuscany isn't on the calendar yet.
+If you're making: start with tagliatelle for the skill, pici for the fun, tortelli for the bragging rights. In [our kitchen in the Oltrarno](/pasta-making-class-florence/) every guest makes fettuccine and filled ravioli, and the chefs show you the Tuscan cuts from the same dough; or cook with us [live online](/online-pasta-making-class/) if Tuscany isn't on the calendar yet.
 
 And if you want to eat a shape where it comes from, pici belong to Siena and tordelli to Lucca: [day trips from Florence](/blog/day-trips-from-florence/), chosen by what is on the plate.

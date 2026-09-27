@@ -2,6 +2,7 @@
 title: 'Pasta tipica toscana: pici, pappardelle, tortelli e altri'
 description: 'La guida di uno chef ai piatti di pasta tipici della Toscana: da dove proviene ogni formato, come è fatto a mano, e il sugo nato per accompagnarlo.'
 pubDate: 2026-07-08
+updatedDate: 2026-09-26
 author: 'Endri Cerhozi'
 image: '../../../assets/images/handmade-pici-pasta.webp'
 imageAlt: 'Pici fatti a mano, i grossi spaghettoni toscani, spolverati di farina'
@@ -37,7 +38,7 @@ Qui sotto, la guida di uno chef a ciascun formato: da dove viene, come si fa a m
 
 I pici sono spaghettoni spessi e irregolari stesi uno alla volta tra i palmi delle mani, e non ce ne sono mai due uguali. Quella irregolarità è il punto centrale: un filo grosso e gommoso che cattura il sugo come gli spaghetti non potrebbero mai. Gli abbinamenti classici sono **all'aglione** (un sugo di pomodoro carico d'aglio), **cacio e pepe**, e **con le briciole**, con pangrattato tostato, dai tempi in cui persino il formaggio era un lusso.
 
-Stendere i pici è anche il lavoro più meditativo nella nostra cucina, motivo per cui apre [Il Tavolo dello Chef](/it/corso-pasta-fresca-firenze/); dopo cinque minuti, tutti diventano silenziosi.
+Stendere i pici è anche il lavoro più meditativo nella nostra cucina, motivo per cui gli chef amano mostrarli al [Tavolo dello Chef](/it/corso-pasta-fresca-firenze/) quando c'è tempo; dopo cinque minuti, tutti diventano silenziosi.
 
 ## Pappardelle: il nastro largo per la selvaggina
 
@@ -64,8 +65,8 @@ I ravioli ricotta e spinaci con burro e salvia sono il formato che tutti conosco
 
 Se stai mangiando: pici se li vedi, pappardelle al cinghiale se è autunno. (Ecco [dove cercare a Firenze](/it/blog/where-to-eat-handmade-pasta-in-florence/).)
 
-Ognuno dei quattro formati che insegniamo ha una sua pagina nella [nostra libreria dei formati di pasta](/it/formati-di-pasta-toscana/): l'impasto, il taglio e il sugo per cui è nato, un formato alla volta.
+Ognuno di questi formati ha una sua pagina nella [nostra libreria dei formati di pasta](/it/formati-di-pasta-toscana/): l'impasto, il taglio e il sugo per cui è nato, un formato alla volta.
 
-Se stai impastando: inizia con le tagliatelle per la tecnica, i pici per il divertimento, i tortelli per potertene vantare. Li insegniamo tutti, quattro formati a corso, nella [nostra cucina in Oltrarno](/it/corso-pasta-fresca-firenze/), o [in diretta online](/it/corso-pasta-online/) se la Toscana non è ancora in programma.
+Se stai impastando: inizia con le tagliatelle per la tecnica, i pici per il divertimento, i tortelli per potertene vantare. Nella [nostra cucina in Oltrarno](/it/corso-pasta-fresca-firenze/) ogni ospite prepara fettuccine e ravioli ripieni, e gli chef mostrano i formati toscani che nascono dallo stesso impasto; o [in diretta online](/it/corso-pasta-online/) se la Toscana non è ancora in programma.
 
 E se volete mangiare un formato dove è nato, i pici sono di Siena e i tordelli di Lucca: [gite da Firenze](/it/blog/day-trips-from-florence/), scelte per quello che c’è nel piatto.

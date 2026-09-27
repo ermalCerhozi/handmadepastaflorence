@@ -2,6 +2,7 @@
 title: 'Tagliatelle vs pappardelle: how wide is each ribbon?'
 description: 'Tagliatelle is cut 6–8 mm wide, pappardelle 20–30 mm. Same egg dough, different knife, and a completely different job on the plate.'
 pubDate: 2026-08-16
+updatedDate: 2026-09-26
 author: 'Endri Cerhozi'
 image: '../../assets/images/handmade-pappardelle-pasta.webp'
 imageAlt: 'Wide pappardelle ribbons and narrower tagliatelle side by side on a floured board'
@@ -64,7 +65,7 @@ A wild boar ragù is chunky. The pieces of meat need a flat surface broad enough
 
 A finer ragù, or porcini in butter, does not need that much landing area, and on a ribbon that wide it looks lost. Tagliatelle gives it the right ratio.
 
-This is the entire logic of Italian pasta shapes, and it is worth internalising because it makes every future decision obvious: **the chunkier the sauce, the more surface it needs.** Our [shapes library](/pasta-shapes/) works through the same reasoning for all four shapes we teach.
+This is the entire logic of Italian pasta shapes, and it is worth internalising because it makes every future decision obvious: **the chunkier the sauce, the more surface it needs.** Our [shapes library](/pasta-shapes/) works through the same reasoning shape by shape.
 
 ## Cutting them by hand
 
@@ -80,4 +81,4 @@ The one mistake to avoid: rolling the sheet too thin. Ribbons want a little body
 
 Boar, hare, duck, anything with big pieces in it: **pappardelle**. Fine meat ragù, mushrooms, butter, anything smooth: **tagliatelle**.
 
-And if you would rather cut them than read about them, both are in [our three-hour class in the Oltrarno](/pasta-making-class-florence/), along with pici and tortelli. Rolling the sheet is the part everyone worries about and the part that turns out to be easy; cutting a straight ribbon is the part nobody expects to be hard.
+And if you would rather cut them than read about them, come to [our three-hour class in the Oltrarno](/pasta-making-class-florence/): every guest cuts fettuccine, the ribbon between the two, and the chefs show you the wider pappardelle cut from the same sheet. Rolling the sheet is the part everyone worries about and the part that turns out to be easy; cutting a straight ribbon is the part nobody expects to be hard.

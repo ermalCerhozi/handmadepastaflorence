@@ -2,6 +2,7 @@
 title: 'Cosa mangiare a Firenze: la guida di un cuoco toscano'
 description: 'I piatti davvero fiorentini, i formati di pasta che sono toscani sul serio e i grandi classici italiani che arrivano da tutt’altra parte.'
 pubDate: 2026-09-13
+updatedDate: 2026-09-26
 author: 'Endri Cerhozi'
 image: '../../../assets/images/tuscan-antipasto-board-burrata-red-wine.webp'
 imageAlt: 'Piatti di pasta fresca fatta a mano e antipasti toscani su un tavolo di legno a Firenze'
@@ -83,7 +84,7 @@ A Firenze li trovate tutti, anche cucinati bene. Solo, non venite fin qui per qu
 
 ## Oppure la pasta la fate voi
 
-Se volete capire la cucina toscana invece di limitarvi a ordinarla, la scorciatoia sono tre ore con le mani nella farina. Nel nostro [corso di pasta fresca a Firenze](/it/corso-pasta-fresca-firenze/) tirate a mano i quattro formati qui sopra — pici, tagliatelle, pappardelle e tortelli ripieni — e poi vi sedete e mangiate quello che avete fatto. È anche il modo meno caro di scoprire che cosa vi piace davvero prima di spendere per una cena.
+Se volete capire la cucina toscana invece di limitarvi a ordinarla, la scorciatoia sono tre ore con le mani nella farina. Nel nostro [corso di pasta fresca a Firenze](/it/corso-pasta-fresca-firenze/) preparate a mano fettuccine e ravioli ripieni, gli chef vi mostrano come dallo stesso impasto nascono i formati toscani qui sopra, e poi vi sedete e mangiate quello che avete fatto. È anche il modo meno caro di scoprire che cosa vi piace davvero prima di spendere per una cena.
 
 Se preferite partire da dove partono i cuochi, [Mercato & Mani](/it/corso-cucina-tour-mercato-firenze/) comincia al mercato di Sant’Ambrogio all’ora in cui fanno la spesa i ristoranti, ed è la cesta a decidere il menù.
 

@@ -2,6 +2,7 @@
 title: 'Excursions depuis Florence : que manger dans chaque ville'
 description: 'Sienne, Lucques, San Gimignano et Pise, choisies pour ce qu’il y a dans l’assiette : les pâtes, le vin et le plat que chaque ville fait mieux.'
 pubDate: 2026-09-13
+updatedDate: 2026-09-26
 author: 'Endri Cerhozi'
 image: '../../../assets/images/handmade-pici-pasta.webp'
 imageAlt: 'Pici roulés à la main, les pâtes épaisses sans œuf de Sienne et du sud de la Toscane'
@@ -78,7 +79,7 @@ Pise et Lucques sont sur la même ligne, à une demi-heure l’une de l’autre 
 
 Il existe une version de la journée à la campagne toscane qui ne comporte aucun horaire. Notre [cours de cuisine en agritourisme](/fr/cours-cuisine-agritourisme-toscane/) se déroule dans la cuisine d’un domaine en activité dans les collines autour de Florence, à 30 ou 45 minutes, pour des groupes de six à vingt : vous cueillez au jardin, vous roulez les pâtes avec le chef, et vous déjeunez longuement. Il est facturé au groupe et convient à ceux qui ont déjà une voiture.
 
-Si vous restez en ville, la version de trois heures dans notre cuisine de l’Oltrarno est [The Chef’s Table](/fr/cours-de-pates-fraiches-florence/), où les quatre formes que vous croiserez lors de ces excursions — les pici compris — se font à la main.
+Si vous restez en ville, la version de trois heures dans notre cuisine de l’Oltrarno est [The Chef’s Table](/fr/cours-de-pates-fraiches-florence/), où l’on fait à la main des fettuccine et des ravioli, et où les chefs vous montrent comment la même pâte devient les pici que vous croiserez lors de ces excursions.
 
 Et pour la ville elle-même, le pendant de cet article est [que manger à Florence](/fr/blog/what-to-eat-in-florence/).
 

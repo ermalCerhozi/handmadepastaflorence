@@ -2,6 +2,7 @@
 title: 'Tagliatelle oder Pappardelle: Wie breit ist was?'
 description: 'Tagliatelle werden 6–8 mm breit geschnitten, Pappardelle 20–30 mm. Gleicher Eierteig, anderes Messer, völlig andere Soße.'
 pubDate: 2026-08-16
+updatedDate: 2026-09-26
 author: 'Endri Cerhozi'
 image: '../../../assets/images/handmade-pappardelle-pasta.webp'
 imageAlt: 'Breite Pappardelle und schmalere Tagliatelle nebeneinander auf einem bemehlten Brett'
@@ -64,7 +65,7 @@ Ein Wildschweinragù hat grobe Stücke. Diese Stücke brauchen eine flache Fläc
 
 Ein feineres Ragù oder Steinpilze in Butter brauchen so viel Fläche nicht und wirken auf einem so breiten Band verloren. Tagliatelle geben das richtige Verhältnis.
 
-Das ist die ganze Logik hinter den italienischen Formaten, und es lohnt sich, sie zu verinnerlichen, weil danach jede Entscheidung offensichtlich wird: **je gröber die Soße, desto mehr Fläche braucht sie.** Unser [Guide zu den toskanischen Pastaformen](/de/blog/tuscan-pasta-shapes-guide/) führt denselben Gedanken für alle vier Formen durch, die wir unterrichten.
+Das ist die ganze Logik hinter den italienischen Formaten, und es lohnt sich, sie zu verinnerlichen, weil danach jede Entscheidung offensichtlich wird: **je gröber die Soße, desto mehr Fläche braucht sie.** Unser [Guide zu den toskanischen Pastaformen](/de/blog/tuscan-pasta-shapes-guide/) führt denselben Gedanken Form für Form durch.
 
 ## Von Hand schneiden
 
@@ -80,4 +81,4 @@ Der eine Fehler, den man vermeiden sollte: den Teig zu dünn ausrollen. Bänder 
 
 Wildschwein, Hase, Ente, alles mit groben Stücken: **Pappardelle**. Feines Ragù, Pilze, Butter, alles Glatte: **Tagliatelle**.
 
-Und wenn Sie sie lieber schneiden als darüber lesen: Beide gehören zu [unserem dreistündigen Kurs im Oltrarno](/de/pasta-kurs-florenz/), zusammen mit Pici und Tortelli. Das Ausrollen ist der Teil, vor dem alle Respekt haben und der sich als einfach herausstellt. Ein gerades Band zu schneiden ist der Teil, den niemand für schwierig hält.
+Und wenn Sie sie lieber schneiden als darüber lesen: Kommen Sie in [unseren dreistündigen Kurs im Oltrarno](/de/pasta-kurs-florenz/): Jeder Gast schneidet Fettuccine, das Band zwischen den beiden, und die Köche zeigen den breiteren Pappardelle-Schnitt aus derselben Teigplatte. Das Ausrollen ist der Teil, vor dem alle Respekt haben und der sich als einfach herausstellt. Ein gerades Band zu schneiden ist der Teil, den niemand für schwierig hält.

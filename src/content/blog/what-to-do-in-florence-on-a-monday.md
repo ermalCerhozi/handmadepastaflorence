@@ -2,6 +2,7 @@
 title: 'What to do in Florence on a Monday (the Uffizi is closed)'
 description: 'The Uffizi and the Accademia close on Mondays. What is actually open: the Duomo complex, Palazzo Vecchio, Santa Croce, the markets and the Oltrarno.'
 pubDate: 2026-08-11
+updatedDate: 2026-09-26
 author: 'Endri Cerhozi'
 image: '../../assets/images/tuscan-aperitivo-buffet-table.webp'
 imageAlt: 'A quiet Florence piazza in the Oltrarno on a Monday afternoon'
@@ -54,7 +55,7 @@ A Monday is better used as the day you do the parts of Florence that are not que
 
 We teach [our pasta class](/pasta-making-class-florence/) seven days a week, Monday included, at 10:00, 14:30 and 18:00. That is not the norm here: most cooking schools in Florence take Monday off, and several of the bigger ones quietly require a minimum number of guests before a quiet weekday class runs at all.
 
-Practically, that makes Monday one of the easiest days of the week to get a seat at a small table. Three hours in the Oltrarno, four shapes of fresh pasta, sauces you make yourself, then everyone sits down and eats it with two Tuscan wines included. Max eight people. If you are travelling with children, the [family class](/family-cooking-class-florence/) runs the same days from age six.
+Practically, that makes Monday one of the easiest days of the week to get a seat at a small table. Three hours in the Oltrarno, fettuccine and ravioli made by hand and your own tiramisù, then everyone sits down and eats it with a glass of Tuscan wine included. Max eight people. If you are travelling with children, the [family class](/family-cooking-class-florence/) runs the same days from age six.
 
 It also solves the other Monday problem, which is lunch: you have booked nothing, half your list is closed, and you are standing in a piazza at one o'clock deciding where to eat. That decision is already made.
 

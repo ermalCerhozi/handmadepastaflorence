@@ -2,6 +2,7 @@
 title: 'Tagliatelle o pappardelle: quanto sono larghe davvero?'
 description: 'Le tagliatelle si tagliano a 6–8 mm, le pappardelle a 20–30 mm. Stessa sfoglia all’uovo, coltello diverso, sugo completamente diverso.'
 pubDate: 2026-08-16
+updatedDate: 2026-09-26
 author: 'Endri Cerhozi'
 image: '../../../assets/images/handmade-pappardelle-pasta.webp'
 imageAlt: 'Pappardelle larghe e tagliatelle più strette affiancate su un tagliere infarinato'
@@ -80,4 +81,4 @@ L'errore da evitare: tirare la sfoglia troppo sottile. I nastri vogliono un po' 
 
 Cinghiale, lepre, anatra, qualsiasi cosa con pezzi grossi: **pappardelle**. Ragù fine, funghi, burro, qualsiasi cosa liscia: **tagliatelle**.
 
-E se preferisci tagliarle invece di leggerne, ci sono entrambe nel [nostro corso di tre ore in Oltrarno](/it/corso-pasta-fresca-firenze/), insieme a pici e tortelli. Tirare la sfoglia è la parte che preoccupa tutti e che si rivela facile; tagliare un nastro dritto è la parte che nessuno si aspetta difficile.
+E se preferisci tagliarle invece di leggerne, vieni al [nostro corso di tre ore in Oltrarno](/it/corso-pasta-fresca-firenze/): ogni ospite taglia le fettuccine, il nastro a metà strada tra le due, e gli chef ti mostrano il taglio più largo delle pappardelle dalla stessa sfoglia. Tirare la sfoglia è la parte che preoccupa tutti e che si rivela facile; tagliare un nastro dritto è la parte che nessuno si aspetta difficile.

@@ -2,6 +2,7 @@
 title: 'Tagliatelle ou pappardelle : quelle largeur pour chacune ?'
 description: 'Les tagliatelle se coupent à 6–8 mm, les pappardelle à 20–30 mm. Même pâte à l’œuf, autre couteau, et un tout autre rôle dans l’assiette.'
 pubDate: 2026-08-16
+updatedDate: 2026-09-26
 author: 'Endri Cerhozi'
 image: '../../../assets/images/handmade-pappardelle-pasta.webp'
 imageAlt: 'Larges rubans de pappardelle et tagliatelle plus étroites côte à côte sur une planche farinée'
@@ -64,7 +65,7 @@ Un ragù de sanglier est en morceaux. Les morceaux de viande ont besoin d’une 
 
 Un ragù plus fin, ou des cèpes au beurre, n’a pas besoin d’autant de surface d’atterrissage, et sur un ruban aussi large il paraît perdu. Les tagliatelle lui donnent le bon rapport.
 
-C’est toute la logique des formes de pâtes italiennes, et elle vaut la peine d’être intégrée parce qu’elle rend toutes les décisions suivantes évidentes : **plus la sauce est en morceaux, plus il lui faut de surface.** Notre [bibliothèque des formes](/fr/formes-de-pates/) applique le même raisonnement à toutes les formes que nous enseignons.
+C’est toute la logique des formes de pâtes italiennes, et elle vaut la peine d’être intégrée parce qu’elle rend toutes les décisions suivantes évidentes : **plus la sauce est en morceaux, plus il lui faut de surface.** Notre [bibliothèque des formes](/fr/formes-de-pates/) applique le même raisonnement, forme par forme.
 
 ## Les couper à la main
 
@@ -80,4 +81,4 @@ La seule erreur à éviter : étaler l’abaisse trop fin. Les rubans veulent un
 
 Sanglier, lièvre, canard, tout ce qui a de gros morceaux : **pappardelle**. Ragù de viande fin, champignons, beurre, tout ce qui est lisse : **tagliatelle**.
 
-Et si vous préférez les couper plutôt que lire à leur sujet, les deux sont au programme de [notre cours de trois heures dans l’Oltrarno](/fr/cours-de-pates-fraiches-florence/), avec les pici et les tortelli. Étaler l’abaisse est la partie qui inquiète tout le monde et qui se révèle facile ; couper un ruban droit est celle que personne ne s’attend à trouver difficile.
+Et si vous préférez les couper plutôt que lire à leur sujet, venez à [notre cours de trois heures dans l’Oltrarno](/fr/cours-de-pates-fraiches-florence/) : chaque invité coupe des fettuccine, le ruban entre les deux, et les chefs vous montrent la coupe plus large des pappardelle dans la même abaisse. Étaler l’abaisse est la partie qui inquiète tout le monde et qui se révèle facile ; couper un ruban droit est celle que personne ne s’attend à trouver difficile.

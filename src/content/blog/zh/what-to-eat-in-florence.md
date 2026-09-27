@@ -2,6 +2,7 @@
 title: '在佛罗伦萨吃什么：托斯卡纳厨师指南'
 description: '真正属于佛罗伦萨的菜肴、真正属于托斯卡纳的意面形状，以及那些其实来自别处的著名意大利菜。'
 pubDate: 2026-09-13
+updatedDate: 2026-09-26
 author: 'Endri Cerhozi'
 image: '../../../assets/images/tuscan-antipasto-board-burrata-red-wine.webp'
 imageAlt: '佛罗伦萨木桌上的手工新鲜意面和托斯卡纳前菜'
@@ -83,7 +84,7 @@ faqs:
 
 ## 或者，自己动手做意面
 
-如果您想真正理解托斯卡纳菜，而不只是把它点上桌，最短的路径是花三个小时亲手做一次。在我们的[佛罗伦萨意面课程](/zh/foluolunsa-yidali-mian-kecheng/)上，您会亲手擀出上面那四种形状——pici、tagliatelle、pappardelle 和有馅的 tortelli——然后坐下来吃掉自己的作品。这也是在为一顿晚餐花钱之前，弄清自己到底喜欢什么的最省钱的方式。
+如果您想真正理解托斯卡纳菜，而不只是把它点上桌，最短的路径是花三个小时亲手做一次。在我们的[佛罗伦萨意面课程](/zh/foluolunsa-yidali-mian-kecheng/)上，您会亲手做宽面和有馅的意式饺子，主厨会示范同一块面团如何变成上面那些托斯卡纳形状，然后坐下来吃掉自己的作品。这也是在为一顿晚餐花钱之前，弄清自己到底喜欢什么的最省钱的方式。
 
 如果您更想从厨师出发的地方开始，[Mercato & Mani](/zh/shichang-daolan-pengren-kecheng-foluolunsa/) 从 Sant'Ambrogio 市场开始，时间正是餐厅采买的那个钟点，而菜单由当天的菜篮决定。
 

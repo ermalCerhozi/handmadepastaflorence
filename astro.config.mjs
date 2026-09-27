@@ -17,7 +17,7 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
   site: 'https://handmadepastaflorence.com',
 
-  // ONE redirect, added 2026-09-05, deliberately not covered by the blanket
+  // The merged-post redirect, added 2026-09-05, deliberately not covered by the blanket
   // "no legacy redirects" rule above. That rule was correct for URL *shapes*
   // this site stopped serving: none of them had ever registered a single GSC
   // impression. This is the opposite case. /blog/where-do-locals-eat-fresh-
@@ -30,16 +30,33 @@ export default defineConfig({
   //
   // CAVEAT: on a static build Astro emits these as meta-refresh stub pages,
   // NOT true 301s. Google treats meta-refresh as a soft redirect and usually
-  // honours it, but a server-side 301 is strictly better. The nginx rule that
-  // would do it properly lives outside this repo:
-  //   location = /blog/where-do-locals-eat-fresh-pasta-florence/ { return 301 /blog/where-to-eat-handmade-pasta-in-florence/; }
-  // (and the same for the /it/, /fr/, /de/, /zh/ prefixes).
-  redirects: Object.fromEntries(
-    ['', '/it', '/fr', '/de', '/zh'].map((prefix) => [
-      `${prefix}/blog/where-do-locals-eat-fresh-pasta-florence/`,
-      `${prefix}/blog/where-to-eat-handmade-pasta-in-florence/`,
-    ])
-  ),
+  // honours it, but a server-side 301 is strictly better. `npm run build`
+  // generates the real 301s from this map into
+  // ops/nginx/handmadepastaflorence-redirects.conf; verified live on the origin
+  // 2026-09-26 (HTTP 301). The server copy does NOT update itself — re-copy the
+  // file and reload nginx whenever this map changes.
+  redirects: {
+    ...Object.fromEntries(
+      ['', '/it', '/fr', '/de', '/zh'].map((prefix) => [
+        `${prefix}/blog/where-do-locals-eat-fresh-pasta-florence/`,
+        `${prefix}/blog/where-to-eat-handmade-pasta-in-florence/`,
+      ])
+    ),
+    // Misspelt URLs, added 2026-09-26. None of these ever existed in this repo
+    // (checked with `git log -S`); they are typos or AI-invented links that
+    // Google found elsewhere and now reports as 404s in Coverage. Each one drew
+    // impressions in the 30 Jun–26 Sep Performance export — the German what-to-
+    // eat typo ranked at position 2.7 over 17 impressions, and the German gift
+    // typo took a click — so they earn a 301 under the same rule as above: a
+    // URL with real search signal is consolidated, not dropped. Junk 404s with
+    // no plausible target (/pasta-shapes/0.6.3, a scraped zh/cn path) stay 404.
+    '/de/blog/what-to-eat-in-florenz/': '/de/blog/what-to-eat-in-florence/',
+    '/de/kochkurs-verschenken-florence/': '/de/kochkurs-verschenken-florenz/',
+    '/fr/cours-cuisine-agriturisme-toscane/': '/fr/cours-cuisine-agritourisme-toscane/',
+    '/fr/blog/best-flor-for-italian-fresh-pasta/': '/fr/blog/best-flour-for-italian-fresh-pasta/',
+    '/blog/fresh-pasta-vs-dry-pasta-italy/': '/blog/fresh-vs-dry-pasta-italy/',
+    '/blog/pasta-secca-vs-pasta-fresca': '/blog/fresh-vs-dry-pasta-italy/',
+  },
   // Keep this list in sync with `languages` in src/i18n/config.ts.
   i18n: {
     defaultLocale: 'en',

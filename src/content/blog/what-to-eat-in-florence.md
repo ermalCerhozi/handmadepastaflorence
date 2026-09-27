@@ -2,6 +2,7 @@
 title: 'What to Eat in Florence: a Tuscan Cook''s Guide'
 description: 'The dishes that are genuinely Florentine, the pasta shapes that are Tuscan, and the famous Italian plates that come from somewhere else entirely.'
 pubDate: 2026-09-13
+updatedDate: 2026-09-26
 author: 'Endri Cerhozi'
 image: '../../assets/images/tuscan-antipasto-board-burrata-red-wine.webp'
 imageAlt: 'Plates of fresh handmade pasta and Tuscan antipasti on a wooden table in Florence'
@@ -83,7 +84,7 @@ You will find all of them in Florence, cooked well. Just do not travel here for 
 
 ## Or make the pasta yourself
 
-If you want to understand Tuscan food rather than only order it, the shortest route is to spend three hours making it. In our [pasta class in Florence](/pasta-making-class-florence/) you roll the four shapes above by hand — pici, tagliatelle, pappardelle and filled tortelli — then sit down and eat what you made, which is also the cheapest way to work out what you actually like before you spend money on dinner.
+If you want to understand Tuscan food rather than only order it, the shortest route is to spend three hours making it. In our [pasta class in Florence](/pasta-making-class-florence/) you make fettuccine and filled ravioli by hand, the chefs show you how the same dough becomes the Tuscan shapes above, and then you sit down and eat what you made, which is also the cheapest way to work out what you actually like before you spend money on dinner.
 
 If you would rather start where the cooks start, [Mercato & Mani](/market-tour-cooking-class-florence/) begins at the Sant'Ambrogio market at the hour the restaurants are buying, and the basket decides the menu.
 

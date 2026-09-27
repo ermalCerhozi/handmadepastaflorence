@@ -2,6 +2,7 @@
 title: 'Toskanische Pasta: Pici, Pappardelle & Tortelli erklärt'
 description: 'Ein Guide zu den klassischen frischen Nudelsorten der Toskana: woher jede Form kommt, wie sie gemacht wird und für welche Soße sie gedacht ist.'
 pubDate: 2026-07-08
+updatedDate: 2026-09-26
 author: 'Endri Cerhozi'
 image: '../../../assets/images/handmade-pici-pasta.webp'
 imageAlt: 'Handgerollte Pici, die dicken toskanischen Pastastränge, mit Mehl bestäubt'
@@ -37,7 +38,7 @@ Unten finden Sie den Guide eines Kochs zu jeder Form: woher sie kommt, wie sie v
 
 Pici sind dicke, unregelmäßige Stränge, die einzeln zwischen den Handflächen gerollt werden, und keine zwei sind jemals gleich. Diese Unregelmäßigkeit ist genau der Punkt: ein dicker, bissfester Strang, der Soße so greift, wie Spaghetti es niemals könnten. Die klassischen Kombinationen sind **all'aglione** (eine knoblauchlastige Tomatensoße), **cacio e pepe** und **con le briciole**, mit gerösteten Semmelbröseln, aus der Zeit, als selbst Käse ein Luxus war.
 
-Das Rollen von Pici ist auch die meditativste Aufgabe in unserer Küche, weshalb damit [der Chef's Table Kurs](/de/pasta-kurs-florenz/) beginnt; nach fünf Minuten werden alle ganz still.
+Das Rollen von Pici ist auch die meditativste Aufgabe in unserer Küche, weshalb die Köche sie im [Chef's Table Kurs](/de/pasta-kurs-florenz/) gern zeigen, wenn Zeit bleibt; nach fünf Minuten werden alle ganz still.
 
 ## Pappardelle: das breite Band für Wild
 
@@ -64,6 +65,6 @@ Ricotta-Spinat-Ravioli mit Butter und Salbei ist die Form, die jeder kennt, und 
 
 Wenn Sie essen: Pici, wenn Sie sie sehen, Pappardelle al cinghiale, wenn Herbst ist. (Hier ist, [wo Sie in Florenz suchen sollten](/de/blog/where-to-eat-handmade-pasta-in-florence/).)
 
-Wenn Sie kochen: Beginnen Sie mit Tagliatelle für das Können, Pici für den Spaß, Tortelli, um damit angeben zu können. Wir unterrichten sie alle, vier Formen pro Kurs, in [unserer Küche im Oltrarno](/de/pasta-kurs-florenz/), oder [live online](/de/online-pasta-kurs/), falls die Toskana noch nicht im Kalender steht.
+Wenn Sie kochen: Beginnen Sie mit Tagliatelle für das Können, Pici für den Spaß, Tortelli, um damit angeben zu können. In [unserer Küche im Oltrarno](/de/pasta-kurs-florenz/) macht jeder Gast Fettuccine und gefüllte Ravioli, und die Köche zeigen die toskanischen Formen aus demselben Teig; oder [live online](/de/online-pasta-kurs/), falls die Toskana noch nicht im Kalender steht.
 
 Und wenn Sie eine Form dort essen wollen, wo sie herkommt: Pici gehören nach Siena, Tordelli nach Lucca. [Ausflüge ab Florenz](/de/blog/day-trips-from-florence/), ausgewählt nach dem, was auf dem Teller liegt.

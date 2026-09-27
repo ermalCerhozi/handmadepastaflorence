@@ -2,6 +2,7 @@
 title: 'Gite da Firenze: cosa si mangia in ogni città'
 description: 'Siena, Lucca, San Gimignano e Pisa scelte per quello che c’è nel piatto: la pasta, il vino e il piatto che ogni città fa meglio di Firenze.'
 pubDate: 2026-09-13
+updatedDate: 2026-09-26
 author: 'Endri Cerhozi'
 image: '../../../assets/images/handmade-pici-pasta.webp'
 imageAlt: 'Pici tirati a mano, la pasta spessa senza uovo di Siena e della Toscana meridionale'
@@ -78,7 +79,7 @@ Pisa e Lucca stanno sulla stessa linea, a mezz’ora l’una dall’altra: l’a
 
 Esiste una versione della giornata in campagna che non prevede nessun orario. Il nostro [corso di cucina in agriturismo](/it/corso-cucina-agriturismo-toscana/) si tiene nella cucina di un’azienda in attività sulle colline fuori Firenze, a 30-45 minuti, per gruppi da sei a venti: si raccoglie nell’orto, si tira la pasta con il cuoco e si pranza con calma. È quotato a gruppo e va bene per chi l’auto ce l’ha già.
 
-Se restate in città, la versione da tre ore nella nostra cucina in Oltrarno è [The Chef’s Table](/it/corso-pasta-fresca-firenze/), dove i quattro formati che incontrerete in queste gite — pici compresi — si fanno a mano.
+Se restate in città, la versione da tre ore nella nostra cucina in Oltrarno è [The Chef’s Table](/it/corso-pasta-fresca-firenze/), dove si fanno a mano fettuccine e ravioli, e gli chef vi mostrano come dallo stesso impasto nascono i pici che incontrerete in queste gite.
 
 E per la città, il pezzo gemello di questo è [cosa mangiare a Firenze](/it/blog/what-to-eat-in-florence/).
 

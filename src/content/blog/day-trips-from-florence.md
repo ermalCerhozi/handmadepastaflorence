@@ -2,6 +2,7 @@
 title: 'Day Trips from Florence: What to Eat in Each Town'
 description: 'Siena, Lucca, San Gimignano and Pisa, chosen by what is on the plate: the pasta, the wine and the one dish each town does better than Florence.'
 pubDate: 2026-09-13
+updatedDate: 2026-09-26
 author: 'Endri Cerhozi'
 image: '../../assets/images/handmade-pici-pasta.webp'
 imageAlt: 'Hand-rolled pici, the thick eggless pasta of Siena and southern Tuscany'
@@ -78,7 +79,7 @@ Pisa and Lucca sit on the same railway line, about half an hour apart, which mak
 
 There is a version of the Tuscan countryside day that does not involve a timetable at all. Our [agriturismo cooking class](/agriturismo-cooking-class-tuscany/) runs in a working estate kitchen in the hills outside Florence, 30 to 45 minutes out, for groups of six to twenty: you pick from the garden, roll pasta with the chef, and eat a long lunch. It is quoted per group and it does suit people who already have a car.
 
-If you are staying in the city, the three-hour version in our Oltrarno kitchen is [The Chef's Table](/pasta-making-class-florence/), where the four shapes you will meet on these day trips — pici among them — get made by hand.
+If you are staying in the city, the three-hour version in our Oltrarno kitchen is [The Chef's Table](/pasta-making-class-florence/), where you make fettuccine and ravioli by hand, and the chefs show you how the same dough becomes the pici you will meet on these day trips.
 
 And for the city itself, the companion piece to this one is [what to eat in Florence](/blog/what-to-eat-in-florence/).
 

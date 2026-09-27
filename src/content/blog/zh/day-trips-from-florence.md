@@ -2,6 +2,7 @@
 title: '从佛罗伦萨出发的一日游：每座城该吃什么'
 description: '锡耶纳、卢卡、圣吉米尼亚诺和比萨，按盘子里的东西来挑选：意面、葡萄酒，以及每座城比佛罗伦萨做得更好的那道菜。'
 pubDate: 2026-09-13
+updatedDate: 2026-09-26
 author: 'Endri Cerhozi'
 image: '../../../assets/images/handmade-pici-pasta.webp'
 imageAlt: '手工搓制的 pici，来自锡耶纳和托斯卡纳南部的粗身无蛋意面'
@@ -78,7 +79,7 @@ faqs:
 
 托斯卡纳乡村的一天，还有一个完全不需要看时刻表的版本。我们的[农庄烹饪课](/zh/tuosikana-nongzhuang-pengren-kecheng/)在佛罗伦萨城外山间一座仍在运作的庄园厨房里进行，车程 30 到 45 分钟，适合六到二十人的团体：先去菜园里采摘，再跟着厨师擀意面，然后慢慢吃一顿长午餐。它按团体报价，也确实更适合本来就有车的人。
 
-如果您留在城里，我们奥尔特拉诺厨房里那个三小时的版本叫 [The Chef's Table](/zh/foluolunsa-yidali-mian-kecheng/)，您会在这些一日游里遇到的四种形状——包括 pici——都会亲手做一遍。
+如果您留在城里，我们奥尔特拉诺厨房里那个三小时的版本叫 [The Chef's Table](/zh/foluolunsa-yidali-mian-kecheng/)，您会亲手做宽面和意式饺子，主厨还会示范同一块面团如何变成您在这些一日游里会遇到的 pici。
 
 至于城市本身，这篇的姊妹篇是[在佛罗伦萨吃什么](/zh/blog/what-to-eat-in-florence/)。
 

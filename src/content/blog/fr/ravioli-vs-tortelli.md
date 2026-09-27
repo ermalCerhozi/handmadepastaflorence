@@ -2,7 +2,7 @@
 title: 'Ravioli, tortelli ou tortellini : la différence'
 description: 'Ravioli, tortelli, tortellini et agnolotti sont tous des pâtes farcies : taille, forme, farce et région les séparent. Ce que chaque nom signifie.'
 pubDate: 2026-08-11
-updatedDate: 2026-09-13
+updatedDate: 2026-09-26
 author: 'Endri Cerhozi'
 image: '../../../assets/images/handmade-ravioli-pasta.webp'
 imageAlt: 'Pâtes farcies fraîchement préparées sur une planche farinée'
@@ -24,7 +24,7 @@ faqs:
   - q: "Pourquoi mes ravioli s'ouvrent-ils à la cuisson ?"
     a: "Presque toujours à cause de l'air emprisonné. Appuyez la feuille supérieure autour de chaque tas de farce avec les doigts, en chassant l'air vers l'extérieur avant de sceller le bord. Des bords mal scellés, un excès de farce et une pâte trop fine sont les trois autres causes."
   - q: "Peut-on apprendre à faire des ravioli à Florence ?"
-    a: "Oui: les pâtes farcies sont l'une des quatre formes que nous enseignons dans notre cours de trois heures dans l'Oltrarno. Nous enseignons la version toscane, le tortello, qui est la même technique sous un autre nom, et c'est la forme dont nos hôtes sont les plus fiers à la fin."
+    a: "Oui : dans notre cours de trois heures dans l'Oltrarno, chaque invité fait ses ravioli à la main, les farcit, les scelle et les mange au beurre et à la sauge. Les tortelli sont la même technique en plus grand, et les pâtes farcies sont celles dont nos hôtes sont les plus fiers à la fin."
 ---
 
 Réponse courte : **ravioli et tortelli sont la même idée sous deux noms.** Les deux sont des pâtes fraîches farcies et scellées entre deux feuilles. Ravioli est le mot général, national. Tortelli est ainsi qu'on les appelle en Toscane et en Émilie, et les nôtres sont généralement plus grands.
@@ -73,4 +73,4 @@ Que vous fassiez des ravioli à Rome ou des tortelli dans le Mugello, la méthod
 
 En Toscane, dites tortelli et vous aurez l'air d'avoir été attentif. Ailleurs, ravioli se comprend partout et personne ne vous corrigera.
 
-Et si vous voulez les faire de vos mains plutôt que d'en lire la théorie, les pâtes farcies sont l'une des quatre formes de [notre cours de trois heures dans l'Oltrarno](/fr/cours-de-pates-fraiches-florence/), avec les pici, les tagliatelles et les pappardelles. C'est immanquablement la forme dont les gens sont les plus fiers à la fin, surtout parce que c'est celle qui demande de la patience. Amenez les enfants si vous en avez : le [cours en famille](/fr/cours-cuisine-famille-florence/) commence dès six ans, et plier des coussins se révèle exactement le genre de tâche où un enfant de sept ans excelle.
+Et si vous voulez les faire de vos mains plutôt que d'en lire la théorie, les ravioli sont l'une des deux pâtes que chaque invité prépare dans [notre cours de trois heures dans l'Oltrarno](/fr/cours-de-pates-fraiches-florence/), avec les fettuccine coupées à la main. C'est immanquablement la forme dont les gens sont les plus fiers à la fin, surtout parce que c'est celle qui demande de la patience. Amenez les enfants si vous en avez : le [cours en famille](/fr/cours-cuisine-famille-florence/) commence dès six ans, et plier des coussins se révèle exactement le genre de tâche où un enfant de sept ans excelle.

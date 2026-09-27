@@ -38,7 +38,8 @@ const ARCHITECTURE_SHIP_DATE = '2026-07-27T00:00:00.000Z';
 // Homepages deliberately stay on the July date: only the zh homepage's
 // description changed, and a fresh stamp on the other four would be a false
 // signal for the sake of one 6-impression page.
-const CONTENT_PASS_2026_09_05 = '2026-09-05T00:00:00.000Z';
+// (The 2026-09-05 constant itself is gone: landings moved on to
+// LANDING_PASS_2026_09_17 and shapes to SHAPES_PASS_2026_09_26, below.)
 
 // The landing pages changed again after that, and were still claiming
 // 2026-09-05. In the 2026-09-13 pass they got the og:image fix (all 50 were
@@ -50,6 +51,12 @@ const CONTENT_PASS_2026_09_05 = '2026-09-05T00:00:00.000Z';
 // changed in either pass, and a fresh stamp on 25 unchanged URLs is the same
 // false signal this block exists to avoid.
 const LANDING_PASS_2026_09_17 = '2026-09-17T00:00:00.000Z';
+
+// Shape hub + spokes, all locales: on 2026-09-26 every "we teach this in class"
+// sentence was rewritten to match the real menu (every guest makes fettuccine
+// and ravioli; pici and pappardelle are shown, time permitting), after the
+// owner's own 2026-09-20 edits to the same sentences.
+const SHAPES_PASS_2026_09_26 = '2026-09-26T00:00:00.000Z';
 
 // The footer "Information" pages (English-only, see infoPages in
 // i18n/config.ts) shipped in this pass — real date, not a fabricated
@@ -114,7 +121,12 @@ function landingEntries(): SitemapEntry[] {
       const l = locale as Locale;
       paths[l] = `${l === defaultLocale ? '' : '/' + l}/${data!.slug}/`;
     }
-    entries.push(...toEntry(paths, LANDING_PASS_2026_09_17));
+    // A page whose facts changed after the last site-wide pass carries its own
+    // `updated` date (the same field that drives its visible "checked in" line
+    // and Course dateModified), so the sitemap tells Google about that change
+    // instead of repeating the pass date.
+    const own = page.updated ? `${page.updated}T00:00:00.000Z` : undefined;
+    entries.push(...toEntry(paths, own && own > LANDING_PASS_2026_09_17 ? own : LANDING_PASS_2026_09_17));
   }
   return entries;
 }
@@ -126,7 +138,7 @@ function shapeEntries(): SitemapEntry[] {
   // Hub — exists in every locale that has a shapes entry (en/it today).
   const hubPaths: Partial<Record<Locale, string>> = {};
   for (const l of shapeLocales) hubPaths[l] = shapesHubPath(l);
-  entries.push(...toEntry(hubPaths, CONTENT_PASS_2026_09_05));
+  entries.push(...toEntry(hubPaths, SHAPES_PASS_2026_09_26));
 
   // Spokes — only offer an alternate where that locale actually ships the shape,
   // mirroring the per-spoke filter already used in ShapePage.astro.
@@ -136,7 +148,7 @@ function shapeEntries(): SitemapEntry[] {
     for (const l of shapeLocales) {
       if (shapes[l]!.spokes.some((sp) => sp.slug === slug)) paths[l] = shapePath(l, slug);
     }
-    entries.push(...toEntry(paths, CONTENT_PASS_2026_09_05));
+    entries.push(...toEntry(paths, SHAPES_PASS_2026_09_26));
   }
   return entries;
 }

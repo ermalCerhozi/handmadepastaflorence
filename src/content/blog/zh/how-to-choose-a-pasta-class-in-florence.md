@@ -2,6 +2,7 @@
 title: '如何挑选佛罗伦萨的意面课程：真正重要的7个问题'
 description: '佛罗伦萨有数百个意面课程，而所有的介绍看起来几乎一模一样。真正能预测你是否会喜欢的七个问题：班级人数、包含什么、由谁授课，以及过敏与无麸质究竟如何处理。'
 pubDate: 2026-08-11
+updatedDate: 2026-09-26
 author: 'Endri Cerhozi'
 image: '../../../assets/images/fresh-pasta-station-rolling-pin-flour.webp'
 imageAlt: '一小群人在佛罗伦萨的餐桌旁手工制作新鲜意面'
@@ -50,7 +51,7 @@ faqs:
 
 **请问：含酒吗？含多少？当天还会加收别的吗？**
 
-*我们的95欧元里含两杯托斯卡纳葡萄酒，结束时不再加收任何费用。*
+*我们的95欧元里含一杯托斯卡纳葡萄酒和一杯柠檬酒或咖啡，结束时不再加收任何费用。*
 
 ## 3. 到底是谁在教你？
 
@@ -113,4 +114,4 @@ faqs:
 
 无论你最终订了哪一家，付款前都请把取消条款以书面形式拿到手。
 
-如果你想完整看看我们的答案，[主厨餐桌](/zh/foluolunsa-yidali-mian-kecheng/)是我们其他一切的根基：奥特拉诺的三小时，四种形状，最多八人，95欧元且酒已含在价内。我们还写过一篇[佛罗伦萨意面课程真实花费的拆解](/zh/blog/how-much-does-a-pasta-making-class-in-florence-cost/)，如果你只想看数字。
+如果你想完整看看我们的答案，[主厨餐桌](/zh/foluolunsa-yidali-mian-kecheng/)是我们其他一切的根基：奥特拉诺的三小时，宽面、意式饺子和提拉米苏，最多八人，95欧元且酒已含在价内。我们还写过一篇[佛罗伦萨意面课程真实花费的拆解](/zh/blog/how-much-does-a-pasta-making-class-in-florence-cost/)，如果你只想看数字。

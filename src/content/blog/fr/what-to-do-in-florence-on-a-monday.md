@@ -2,6 +2,7 @@
 title: 'Que faire à Florence un lundi'
 description: 'Les Offices et l’Accademia ferment le lundi. Ce qui est réellement ouvert : le Duomo, le Palazzo Vecchio, Santa Croce, les marchés et l’Oltrarno.'
 pubDate: 2026-08-11
+updatedDate: 2026-09-26
 author: 'Endri Cerhozi'
 image: '../../../assets/images/tuscan-aperitivo-buffet-table.webp'
 imageAlt: 'Une place tranquille de l’Oltrarno à Florence, un lundi après-midi'
@@ -54,7 +55,7 @@ Le lundi s’emploie mieux comme la journée où l’on fait les parties de Flor
 
 Notre [cours de pâtes](/fr/cours-de-pates-fraiches-florence/) a lieu sept jours sur sept, lundi compris, à 10h00, 14h30 et 18h00. Ce n’est pas la norme ici : la plupart des écoles de cuisine de Florence ferment le lundi, et plusieurs des plus grandes exigent discrètement un nombre minimum de participants pour qu’un cours en semaine ait vraiment lieu.
 
-Concrètement, cela fait du lundi l’un des jours les plus faciles de la semaine pour obtenir une place à une petite table. Trois heures dans l’Oltrarno, quatre formes de pâtes fraîches, des sauces que vous préparez vous-même, puis tout le monde s’assoit pour manger avec deux vins toscans compris. Huit personnes maximum. Si vous voyagez avec des enfants, le [cours en famille](/fr/cours-cuisine-famille-florence/) a lieu les mêmes jours, dès six ans.
+Concrètement, cela fait du lundi l’un des jours les plus faciles de la semaine pour obtenir une place à une petite table. Trois heures dans l’Oltrarno, des fettuccine et des ravioli faits main et votre propre tiramisù, puis tout le monde s’assoit pour manger avec un verre de vin toscan compris. Huit personnes maximum. Si vous voyagez avec des enfants, le [cours en famille](/fr/cours-cuisine-famille-florence/) a lieu les mêmes jours, dès six ans.
 
 Cela règle aussi l’autre problème du lundi, le déjeuner : vous n’avez rien réservé, la moitié de votre liste est fermée, et à treize heures vous êtes sur une place à décider où manger. Cette décision est déjà prise.
 

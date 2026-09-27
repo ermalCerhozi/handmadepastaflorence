@@ -2,6 +2,7 @@
 title: 'Ravioli e tortelli: qual è la differenza?'
 description: 'Ravioli, tortelli, tortellini e agnolotti sono tutti pasta ripiena: li separano taglia, forma, ripieno e regione. Cosa significa davvero ogni nome.'
 pubDate: 2026-08-11
+updatedDate: 2026-09-26
 author: 'Endri Cerhozi'
 image: '../../../assets/images/handmade-ravioli-pasta.webp'
 imageAlt: 'Pasta ripiena appena fatta su un tagliere infarinato'
@@ -23,7 +24,7 @@ faqs:
   - q: "Perché i miei ravioli si aprono in cottura?"
     a: "Quasi sempre per l'aria rimasta dentro. Premi la sfoglia superiore attorno a ogni mucchietto di ripieno con le dita, spingendo l'aria verso l'esterno prima di sigillare il bordo. Bordi sigillati male, ripieno eccessivo e sfoglia troppo sottile sono le altre tre cause."
   - q: "Si può imparare a fare i ravioli a Firenze?"
-    a: "Sì: la pasta ripiena è uno dei quattro formati che insegniamo nel nostro corso di tre ore in Oltrarno. Insegniamo la versione toscana, il tortello, che è la stessa tecnica con un altro nome, ed è il formato di cui gli ospiti vanno più fieri alla fine."
+    a: "Sì: nel nostro corso di tre ore in Oltrarno ogni ospite prepara a mano i ravioli, li riempie, li sigilla e li mangia con burro e salvia. I tortelli sono la stessa tecnica in formato più grande, e la pasta ripiena è quella di cui gli ospiti vanno più fieri alla fine."
 ---
 
 Risposta breve: **ravioli e tortelli sono la stessa idea con due nomi.** Entrambi sono pasta fresca riempita di qualcosa e sigillata tra due sfoglie. Ravioli è la parola generale, nazionale. Tortelli è come li chiamiamo in Toscana e in Emilia, e i nostri di solito sono più grandi.
@@ -86,4 +87,4 @@ Che tu stia facendo ravioli a Roma o tortelli nel Mugello, il metodo è lo stess
 
 In Toscana di' tortelli e sembrerà che tu abbia fatto attenzione. Altrove ravioli si capisce ovunque e nessuno ti correggerà.
 
-E se vuoi farli con le mani invece che leggerne, la pasta ripiena è uno dei quattro formati del [nostro corso di tre ore in Oltrarno](/it/corso-pasta-fresca-firenze/), insieme a pici, tagliatelle e pappardelle. È immancabilmente il formato di cui la gente va più fiera alla fine, soprattutto perché è quello che richiede pazienza. Porta i bambini, se li hai: il [corso per famiglie](/it/corso-cucina-famiglia-firenze/) parte dai sei anni, e piegare fagottini si rivela esattamente il tipo di lavoro in cui un bambino di sette anni è bravo.
+E se vuoi farli con le mani invece che leggerne, i ravioli sono una delle due paste che ogni ospite prepara nel [nostro corso di tre ore in Oltrarno](/it/corso-pasta-fresca-firenze/), insieme alle fettuccine tagliate a mano. È immancabilmente il formato di cui la gente va più fiera alla fine, soprattutto perché è quello che richiede pazienza. Porta i bambini, se li hai: il [corso per famiglie](/it/corso-cucina-famiglia-firenze/) parte dai sei anni, e piegare fagottini si rivela esattamente il tipo di lavoro in cui un bambino di sette anni è bravo.

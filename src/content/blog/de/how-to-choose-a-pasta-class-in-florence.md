@@ -2,6 +2,7 @@
 title: 'Pasta-Kurs in Florenz wählen: 7 Fragen, die zählen'
 description: 'Florenz hat Hunderte Pasta-Kurse, und alle Anzeigen lesen sich gleich. Sieben Fragen, die verraten, ob er Ihnen gefällt, beginnend mit der Gruppengröße.'
 pubDate: 2026-08-11
+updatedDate: 2026-09-26
 author: 'Endri Cerhozi'
 image: '../../../assets/images/fresh-pasta-station-rolling-pin-flour.webp'
 imageAlt: 'Eine kleine Gruppe macht an einem Tisch in Florenz frische Pasta von Hand'
@@ -50,7 +51,7 @@ Das ist nicht unredlich; es ist nur leicht zu übersehen, wenn man nachts um zw�
 
 **Fragen Sie: Ist Wein enthalten, wie viel, und kommt am Tag selbst noch etwas dazu?**
 
-*Bei uns sind zwei toskanische Gläser in den 95 € enthalten, und am Ende kommt nichts dazu.*
+*Bei uns sind ein Glas toskanischer Wein und ein Limoncello oder Kaffee in den 95 € enthalten, und am Ende kommt nichts dazu.*
 
 ## 3. Wer unterrichtet Sie tatsächlich?
 
@@ -113,4 +114,4 @@ Wenn Sie nur zwei Fragen stellen, fragen Sie **wie groß die maximale Gruppe ist
 
 Und was immer Sie buchen: Lassen Sie sich die Stornobedingungen schriftlich geben, bevor Sie zahlen.
 
-Wenn Sie unsere Antworten vollständig sehen wollen: [Der Tisch des Küchenchefs](/de/pasta-kurs-florenz/) ist der Kurs, auf dem alles andere aufbaut: drei Stunden im Oltrarno, vier Formen, höchstens acht Personen, 95 € mit dem Wein im Preis. Wir haben außerdem eine [Aufschlüsselung geschrieben, was Pasta-Kurse in Florenz wirklich kosten](/de/blog/how-much-does-a-pasta-making-class-in-florence-cost/), falls Sie nur die Zahlen wollen.
+Wenn Sie unsere Antworten vollständig sehen wollen: [Der Tisch des Küchenchefs](/de/pasta-kurs-florenz/) ist der Kurs, auf dem alles andere aufbaut: drei Stunden im Oltrarno, Fettuccine, Ravioli und Tiramisù, höchstens acht Personen, 95 € mit dem Wein im Preis. Wir haben außerdem eine [Aufschlüsselung geschrieben, was Pasta-Kurse in Florenz wirklich kosten](/de/blog/how-much-does-a-pasta-making-class-in-florence-cost/), falls Sie nur die Zahlen wollen.

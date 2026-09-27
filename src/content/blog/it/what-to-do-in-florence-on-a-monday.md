@@ -2,6 +2,7 @@
 title: 'Cosa fare a Firenze di lunedì'
 description: 'Gli Uffizi e l’Accademia sono chiusi il lunedì. Cosa è davvero aperto: il Duomo, Palazzo Vecchio, Santa Croce, i mercati e l’Oltrarno.'
 pubDate: 2026-08-11
+updatedDate: 2026-09-26
 author: 'Endri Cerhozi'
 image: '../../../assets/images/tuscan-aperitivo-buffet-table.webp'
 imageAlt: 'Una piazza tranquilla in Oltrarno a Firenze, di lunedì pomeriggio'
@@ -54,7 +55,7 @@ Il lunedì si usa meglio come il giorno in cui si fanno le parti di Firenze che 
 
 Il [nostro corso di pasta](/it/corso-pasta-fresca-firenze/) si tiene sette giorni su sette, lunedì compreso, alle 10:00, 14:30 e 18:00. Non è la norma da queste parti: quasi tutte le scuole di cucina di Firenze chiudono il lunedì, e diverse tra le più grandi richiedono in silenzio un numero minimo di ospiti perché un corso infrasettimanale scarico parta davvero.
 
-In pratica, questo rende il lunedì uno dei giorni più facili della settimana per trovare posto a un tavolo piccolo. Tre ore in Oltrarno, quattro formati di pasta fresca, i sughi che preparate voi, poi ci si siede tutti a mangiare con due calici toscani inclusi. Massimo otto persone. Se viaggiate con bambini, il [corso per famiglie](/it/corso-cucina-famiglia-firenze/) si tiene negli stessi giorni, dai sei anni in su.
+In pratica, questo rende il lunedì uno dei giorni più facili della settimana per trovare posto a un tavolo piccolo. Tre ore in Oltrarno, fettuccine e ravioli fatti a mano e il vostro tiramisù, poi ci si siede tutti a mangiare con un calice di vino toscano incluso. Massimo otto persone. Se viaggiate con bambini, il [corso per famiglie](/it/corso-cucina-famiglia-firenze/) si tiene negli stessi giorni, dai sei anni in su.
 
 Risolve anche l’altro problema del lunedì, cioè il pranzo: non avete prenotato niente, metà della lista è chiusa e alle una siete in piazza a decidere dove mangiare. Quella decisione è già presa.
 

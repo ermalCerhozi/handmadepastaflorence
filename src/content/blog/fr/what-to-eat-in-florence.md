@@ -2,6 +2,7 @@
 title: 'Que manger à Florence : le guide d’un cuisinier toscan'
 description: 'Les plats vraiment florentins, les formes de pâtes réellement toscanes, et les grands classiques italiens qui viennent de tout autre part.'
 pubDate: 2026-09-13
+updatedDate: 2026-09-26
 author: 'Endri Cerhozi'
 image: '../../../assets/images/tuscan-antipasto-board-burrata-red-wine.webp'
 imageAlt: 'Assiettes de pâtes fraîches faites main et d’antipasti toscans sur une table en bois à Florence'
@@ -83,7 +84,7 @@ Vous trouverez tout cela à Florence, et bien cuisiné. Ne faites simplement pas
 
 ## Ou faites les pâtes vous-même
 
-Pour comprendre la cuisine toscane plutôt que seulement la commander, le chemin le plus court passe par trois heures les mains dans la farine. Dans notre [cours de pâtes fraîches à Florence](/fr/cours-de-pates-fraiches-florence/), vous roulez vous-même les quatre formes ci-dessus — pici, tagliatelle, pappardelle et tortelli farcis — puis vous vous asseyez et vous mangez ce que vous avez fait. C’est aussi la façon la moins chère de découvrir ce que vous aimez vraiment avant de dépenser pour un dîner.
+Pour comprendre la cuisine toscane plutôt que seulement la commander, le chemin le plus court passe par trois heures les mains dans la farine. Dans notre [cours de pâtes fraîches à Florence](/fr/cours-de-pates-fraiches-florence/), vous faites vous-même des fettuccine et des ravioli farcis, les chefs vous montrent comment la même pâte devient les formes toscanes ci-dessus, puis vous vous asseyez et vous mangez ce que vous avez fait. C’est aussi la façon la moins chère de découvrir ce que vous aimez vraiment avant de dépenser pour un dîner.
 
 Si vous préférez commencer là où commencent les cuisiniers, [Mercato & Mani](/fr/cours-cuisine-visite-marche-florence/) démarre au marché de Sant’Ambrogio à l’heure où les restaurants font leurs achats, et c’est le panier qui décide du menu.
 

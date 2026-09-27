@@ -131,19 +131,23 @@ export function landingPath(pageKey: LandingKey, locale: Locale): string {
 
 export const landings = {
   'pasta-making': {
+    // 2026-09-26: menu aligned to what every guest gets (fettuccine, ravioli,
+    // tiramisù; one glass of wine + limoncello or coffee), replacing 'four shapes,
+    // two wines'.
+    updated: '2026-09-26',
     floatingCta: true,
     courseMode: 'Onsite',
     courseDuration: 'PT3H',
     locales: {
       en: {
         slug: 'pasta-making-class-florence',
-        title: `Pasta Making Class in Florence: 4 Shapes + Wine, €95`,
-        description: `€95, max 8 guests. A 3-hour hands-on pasta class in Florence’s Oltrarno: roll four classic shapes with two Tuscan head chefs, then eat them with wine.`,
+        title: `Pasta Making Class in Florence: Ravioli & Tiramisù, €95`,
+        description: `€95, max 8 guests. Three hands-on hours in the Oltrarno: make fettuccine, ravioli and tiramisù with two Tuscan chefs, then eat it all with wine.`,
         cl: {
           eyebrow: `The Chef’s Table · Oltrarno, Florence`,
           heading: `A pasta making class in Florence,`,
           headingItal: `around one table.`,
-          lede: `Three hands-on hours in our Oltrarno kitchen. You’ll mix, knead, roll and fold four classic pasta shapes with a chef at your elbow, then sit down together to eat everything you made, with a Tuscan sauce and two Tuscan wines, included in the price.`,
+          lede: `Three hands-on hours in our Oltrarno kitchen. You’ll mix, knead and roll your own dough with a chef at your elbow, cut fettuccine, fold ravioli and make your own tiramisù, then sit down together to eat everything you made, with a glass of Tuscan wine, included in the price.`,
           image: { src: img.handsOnGroup, alt: `Guests rolling fresh pasta at The Chef’s Table class in our Florence kitchen`, w: 800, h: 1067 },
           images: [
             { src: img.handsOnGroup, alt: `Guests rolling fresh pasta at The Chef’s Table class in our Florence kitchen`, w: 800, h: 1067 },
@@ -152,7 +156,7 @@ export const landings = {
             { src: img.handsOnChef, alt: `Guests rolling fresh pasta at The Chef’s Table class in our Florence kitchen`, w: 800, h: 1067 },
           ],
           price: `€95`,
-          priceNote: `per person · two wines included`,
+          priceNote: `per person · wine & dessert included`,
           facts: [
             { label: `Local Products`, value: `Seasonal Tuscan products`, icon: 'leaf' },
             { label: `Length`, value: `about 3 hours`, icon: 'clock' },
@@ -195,9 +199,9 @@ export const landings = {
             {
               title: `What will you actually do in the class?`,
               paras: [
-                `This is a hands-in-the-flour class from the first minute, no demos to watch from a stool. You’ll make your own dough, learn to feel when it’s ready, and work it into four classic shapes: hand-rolled pici, ribbon-cut tagliatelle and pappardelle, and filled tortelli, following the season.`,
-                `You’ll also make the sauces that belong with them: a slow <strong>ragù</strong>, <strong>burro e salvia</strong> foamed with sage, fresh <strong>pomodorini</strong>, or <strong>pesto</strong> pounded by hand, depending on the day and the season.`,
-                `Most Florence classes call twelve people a small group. Ours never seats more than eight, which is the whole reason a chef is at your elbow when a fold goes wrong instead of demonstrating at the front of the room. When the pasta is done we cook it together and sit down to a proper Tuscan lunch: what you just made, your sauce, and two Tuscan wines included in the price.`,
+                `This is a hands-in-the-flour class from the first minute, no demos to watch from a stool. You’ll make your own dough, learn to feel when it’s ready, and turn it into the two dishes every guest makes and eats: fettuccine, cut into ribbons by hand, and ravioli, filled and sealed with no air trapped inside. Then you make your own tiramisù.`,
+                `You pick the sauce for your fettuccine (<strong>tomato and basil</strong>, <strong>cacio e pepe</strong> or <strong>amatriciana</strong>) and the kitchen cooks it while you work, so the three hours stay on the pasta; the ravioli go with <strong>butter and sage</strong>. Time and season permitting, the chefs also show you how the same dough becomes the Tuscan cuts, hand-rolled pici and wide pappardelle, so you can make them at home.`,
+                `Most Florence classes call twelve people a small group. Ours never seats more than eight, which is the whole reason a chef is at your elbow when a fold goes wrong instead of demonstrating at the front of the room. When the pasta is done we cook it together and sit down to a proper Tuscan meal: the pasta you just made, your own tiramisù, a glass of wine, then limoncello or coffee, all included in the price.`,
               ],
             },
             {
@@ -211,7 +215,7 @@ export const landings = {
               paras: [],
               list: [
                 `Gluten-free? We prepare a dedicated flour blend and a clean station at no extra charge; just tell us when you book.`,
-                `Two Tuscan pours are included in the €95: a white with the table, a red with the ragù. No upsell at the end.`,
+                `A glass of Tuscan wine (or a soft drink) and a limoncello or coffee are included in the €95. No upsell at the end.`,
                 `We email you the recipes for everything you made, so the dough you learned by feel is still there next month.`,
                 `Whatever you don’t eat, you take with you: we dry it, bag it, and it goes back to the hotel with you.`,
                 `The kitchen is in the Oltrarno, near Piazza Santo Spirito; we send the exact address when you book.`,
@@ -228,13 +232,13 @@ export const landings = {
           faqs: [
             { q: `Is this class suitable for complete beginners?`, a: `Yes. Everything is taught from zero (dough, rolling, shaping), and with never more than 8 guests there’s always a chef at your elbow. Most guests have never made fresh pasta before.` },
             { q: `Do we eat the pasta we make?`, a: `Yes. Every class ends at the table with your fresh pasta, a Tuscan sauce, and a glass of local wine.` },
-            { q: `Which pasta shapes will we make?`, a: `Four classic shapes per class: typically hand-rolled pici, tagliatelle, pappardelle and filled tortelli, following the season.` },
+            { q: `Which pasta shapes will we make?`, a: `Every guest makes and eats two: fettuccine with the sauce you choose, and ravioli with butter and sage, plus your own tiramisù. Time permitting, the chefs also show you the Tuscan cuts that come from the same dough, such as pici and pappardelle.` },
             { q: `Can you cater to gluten-free diets or allergies?`, a: `Yes: we can prepare a dedicated gluten-free flour blend and a clean station at no extra charge. Just tell us about any allergies when you book.` },
             { q: `How do I book and pay?`, a: `Use the “Book this class” button to build your request. It opens a WhatsApp chat with the details filled in, and we’ll confirm availability and walk you through the rest.` },
             { q: `How much does a pasta making class in Florence cost overall?`, a: `The Chef’s Table is €95 per person. If you’re weighing it against the market tour, private buyout or online option, see our <a href="/blog/how-much-does-a-pasta-making-class-in-florence-cost/">full price breakdown</a> for all four.` },
             { q: `Is the class suitable for vegetarians?`, a: `Yes, with no changes and no surcharge. Pick tomato and basil or cacio e pepe for your fettuccine and the whole menu is vegetarian: the ravioli are butter and sage, the tiramisù is the classic one. Only the amatriciana option contains meat, and it is a choice you make on the day, not a default. Tell us in advance if anyone is vegetarian and we will have the sauce ready.` },
             { q: `Is there an evening pasta class?`, a: `Yes. The 18:00 slot runs the signature class in the evening: the same three hours and the same shapes, finishing into dinner instead of lunch. Nobody is booked in after you, so the table tends to sit longer. Ask for the evening slot when you book; it is subject to availability like any other time.` },
-            { q: `Can you do a vegan pasta class?`, a: `Yes, with advance notice. The dough goes eggless, which is how Tuscany has always made pici: flour, water and olive oil, nothing else. The sauce is tomato and basil or aglione, both naturally dairy-free, and we adapt the dessert rather than drop it. Tell us when you book so the ingredients are in the kitchen that morning.` },
+            { q: `Can you do a vegan pasta class?`, a: `Yes, with advance notice. The dough goes eggless, which is how Tuscany has always made pici: flour, water and olive oil, nothing else. The sauce is tomato and basil or aglione, both naturally dairy-free; the ravioli get a potato filling with olive oil and sage, and we adapt the dessert rather than drop it. There is no surcharge. Tell us when you book so the ingredients are in the kitchen that morning. Everything else is on the <a href="/vegan-cooking-class-florence/">vegan &amp; vegetarian class</a> page.` },
           ],
           related: [
             { title: `Mercato & Mani`, href: `/market-tour-cooking-class-florence/`, desc: `Shop Sant’Ambrogio market at dawn, then cook the basket. 5 hours, max 6 guests, €145.` },
@@ -250,20 +254,20 @@ export const landings = {
           showPastaCrumb: true,
           product: {
             name: `The Chef’s Table: Pasta Making Class in Florence`,
-            description: `A 3-hour hands-on pasta making class in Florence’s Oltrarno: four classic shapes, max 8 guests, ending in a sit-down Tuscan lunch with two wines included. Taught by two agriturismo head chefs.`,
+            description: `A 3-hour hands-on pasta making class in Florence’s Oltrarno: fettuccine, ravioli and tiramisù made by hand, max 8 guests, ending at the table with a glass of Tuscan wine. Taught by two agriturismo head chefs.`,
             price: '95',
           },
         },
       },
       it: {
         slug: 'corso-pasta-fresca-firenze',
-        title: `Corso di Pasta Fresca a Firenze: 4 Formati + Vino, €95`,
-        description: `€95, max 8 ospiti. Corso pratico di pasta fresca di 3 ore in Oltrarno: quattro formati classici con due chef toscani, poi si mangia, due calici inclusi.`,
+        title: `Corso di Pasta Fresca a Firenze: Ravioli e Tiramisù, €95`,
+        description: `€95, max 8 ospiti. Tre ore pratiche in Oltrarno: fettuccine, ravioli e tiramisù con due chef toscani, poi si mangia tutto con un calice di vino.`,
         cl: {
           eyebrow: `Il Tavolo dello Chef · Oltrarno, Firenze`,
           heading: `Un corso di pasta a Firenze,`,
           headingItal: `attorno a un tavolo.`,
-          lede: `Tre ore pratiche nella nostra cucina in Oltrarno. Mescolerai, impasterai, stenderai e piegherai quattro formati classici di pasta con uno chef al tuo fianco, per poi sederti insieme agli altri a mangiare tutto ciò che hai preparato, con un sugo toscano e due calici toscani, inclusi nel prezzo.`,
+          lede: `Tre ore pratiche nella nostra cucina in Oltrarno. Impasterai e stenderai la tua sfoglia con uno chef al tuo fianco, taglierai le fettuccine, chiuderai i ravioli e farai il tuo tiramisù, per poi sederti insieme agli altri a mangiare tutto ciò che hai preparato, con un calice di vino toscano, incluso nel prezzo.`,
           image: { src: img.handsOnGroup, alt: `Ospiti che stendono la pasta fresca al corso Il Tavolo dello Chef nella nostra cucina fiorentina`, w: 800, h: 1067 },
           images: [
             { src: img.handsOnGroup, alt: `Ospiti che stendono la pasta fresca al corso Il Tavolo dello Chef nella nostra cucina fiorentina`, w: 800, h: 1067 },
@@ -272,7 +276,7 @@ export const landings = {
             { src: img.handsOnChef, alt: `Ospiti che stendono la pasta fresca al corso Il Tavolo dello Chef nella nostra cucina fiorentina`, w: 800, h: 1067 },
           ],
           price: `€95`,
-          priceNote: `a persona · due calici inclusi`,
+          priceNote: `a persona · vino e dolce inclusi`,
           facts: [
             { label: `Prodotti Locali`, value: `Prodotti toscani di stagione`, icon: 'leaf' },
             { label: `Durata`, value: `circa 3 ore`, icon: 'clock' },
@@ -315,9 +319,9 @@ export const landings = {
             {
               title: `Cosa farai effettivamente durante il corso?`,
               paras: [
-                `Questo è un corso con "le mani in pasta" dal primo minuto, nessuna dimostrazione da guardare su uno sgabello. Preparerai il tuo impasto, imparerai a sentire quando è pronto e lo lavorerai in quattro formati classici: pici fatti a mano, tagliatelle e pappardelle tagliate a nastro, e tortelli ripieni, seguendo la stagione.`,
-                `Preparerai anche i sughi che gli appartengono: un <strong>ragù</strong> lento, <strong>burro e salvia</strong> schiumato con le foglie, <strong>pomodorini</strong> freschi o <strong>pesto</strong> pestato a mano, secondo il giorno e la stagione.`,
-                `A Firenze quasi tutti i corsi chiamano «piccolo gruppo» dodici persone. Il nostro non supera mai gli otto, ed è esattamente per questo che quando una piega non viene hai uno chef al fianco e non una dimostrazione in fondo alla stanza. Quando la pasta è finita la cuciniamo insieme e ci sediamo per un vero pranzo toscano: ciò che hai appena preparato, il tuo sugo e due calici toscani inclusi nel prezzo.`,
+                `Questo è un corso con "le mani in pasta" dal primo minuto, nessuna dimostrazione da guardare su uno sgabello. Preparerai il tuo impasto, imparerai a sentire quando è pronto e lo trasformerai nei due piatti che ogni ospite prepara e mangia: le fettuccine, tagliate a mano, e i ravioli, ripieni e sigillati senza lasciare aria dentro. Poi fai il tuo tiramisù.`,
+                `Scegli il sugo per le tue fettuccine (<strong>pomodoro e basilico</strong>, <strong>cacio e pepe</strong> o <strong>amatriciana</strong>) e la cucina lo prepara mentre lavori, così le tre ore restano sulla pasta; i ravioli si condiscono con <strong>burro e salvia</strong>. Tempo e stagione permettendo, gli chef ti mostrano anche come dallo stesso impasto nascono i formati toscani, i pici tirati a mano e le pappardelle larghe, per rifarli a casa.`,
+                `A Firenze quasi tutti i corsi chiamano «piccolo gruppo» dodici persone. Il nostro non supera mai gli otto, ed è esattamente per questo che quando una piega non viene hai uno chef al fianco e non una dimostrazione in fondo alla stanza. Quando la pasta è finita la cuciniamo insieme e ci sediamo per un vero pasto toscano: la pasta che hai appena fatto, il tuo tiramisù, un calice di vino e poi limoncello o caffè, tutto incluso nel prezzo.`,
               ],
             },
             {
@@ -331,7 +335,7 @@ export const landings = {
               paras: [],
               list: [
                 `Senza glutine? Prepariamo una miscela dedicata e una postazione pulita senza costi aggiuntivi; diccelo quando prenoti.`,
-                `Due calici toscani sono inclusi nei €95: un bianco a tavola, un rosso con il ragù. Nessun supplemento a fine corso.`,
+                `Un calice di vino toscano (o una bibita) e un limoncello o un caffè sono inclusi nei €95. Nessun supplemento a fine corso.`,
                 `Ti mandiamo per email le ricette di tutto quello che hai preparato, così l'impasto che hai imparato a sentire c'è ancora il mese prossimo.`,
                 `Quello che non mangi te lo porti via: lo facciamo asciugare, lo insacchettiamo e torna in albergo con te.`,
                 `La cucina è in Oltrarno, vicino a Piazza Santo Spirito; ti invieremo l'indirizzo esatto al momento della prenotazione.`,
@@ -348,13 +352,13 @@ export const landings = {
           faqs: [
             { q: `Questo corso è adatto a principianti assoluti?`, a: `Sì. Tutto viene insegnato da zero (impasto, stesura, formatura), e con non più di 8 ospiti c'è sempre uno chef al tuo fianco. La maggior parte degli ospiti non ha mai fatto la pasta fresca prima.` },
             { q: `Mangiamo la pasta che facciamo?`, a: `Sì. Ogni corso termina a tavola con la tua pasta fresca, un sugo toscano e un bicchiere di vino locale.` },
-            { q: `Quali formati di pasta faremo?`, a: `Quattro formati classici per corso: in genere pici, tagliatelle, pappardelle e tortelli ripieni, seguendo la stagione.` },
+            { q: `Quali formati di pasta faremo?`, a: `Ogni ospite ne prepara e mangia due: fettuccine con il sugo che scegli e ravioli burro e salvia, più il tuo tiramisù. Se c’è tempo, gli chef ti mostrano anche i formati toscani che nascono dallo stesso impasto, come pici e pappardelle.` },
             { q: `Potete soddisfare diete senza glutine o allergie?`, a: `Sì: possiamo preparare una miscela di farine senza glutine dedicata e una postazione pulita senza costi aggiuntivi. Devi solo segnalarci eventuali allergie al momento della prenotazione.` },
             { q: `Come posso prenotare e pagare?`, a: `Usa il pulsante "Prenota questo corso" per creare la tua richiesta. Si apre una chat di WhatsApp con i dettagli precompilati, noi confermeremo la disponibilità e ti guideremo nel resto.` },
             { q: `Quanto costa in tutto un corso di pasta fresca a Firenze?`, a: `La Tavola dello Chef costa €95 a persona. Se lo state confrontando con il tour del mercato, il corso privato o quello online, guardate il nostro <a href="/it/blog/how-much-does-a-pasta-making-class-in-florence-cost/">confronto completo dei prezzi</a> per tutti e quattro.` },
             { q: `Il corso è adatto ai vegetariani?`, a: `Sì, senza modifiche e senza supplemento. Scegliete pomodoro e basilico o cacio e pepe per le vostre fettuccine e tutto il menù è vegetariano: i ravioli sono burro e salvia, il tiramisù è quello classico. Solo l’opzione amatriciana contiene carne, ed è una scelta che si fa il giorno stesso, non un’impostazione predefinita. Ditecelo in anticipo e troverete il sugo già pronto.` },
             { q: `C’è un corso di pasta serale?`, a: `Sì. Il turno delle 18:00 è il corso principale di sera: le stesse tre ore e gli stessi formati, solo che sfuma nella cena invece che nel pranzo. Dopo di voi non c’è un altro gruppo, quindi al tavolo si resta più a lungo. Chiedete il turno serale quando prenotate, salvo disponibilità come per ogni altro orario.` },
-            { q: `Potete fare un corso di pasta vegano?`, a: `Sì, con un preavviso. L’impasto va senza uovo, che è poi il modo in cui la Toscana ha sempre fatto i pici: farina, acqua e olio d’oliva, nient’altro. Il sugo è pomodoro e basilico o aglione, entrambi senza latticini, e il dolce lo adattiamo invece di toglierlo. Ditecelo quando prenotate, così la mattina stessa gli ingredienti sono in cucina.` },
+            { q: `Potete fare un corso di pasta vegano?`, a: `Sì, con un preavviso. L’impasto va senza uovo, che è poi il modo in cui la Toscana ha sempre fatto i pici: farina, acqua e olio d’oliva, nient’altro. Il sugo è pomodoro e basilico o aglione, entrambi senza latticini; i ravioli hanno un ripieno di patate con olio e salvia, e il dolce lo adattiamo invece di toglierlo. Nessun supplemento. Ditecelo quando prenotate, così la mattina stessa gli ingredienti sono in cucina. Tutti i dettagli nella pagina del <a href="/it/corso-cucina-vegana-firenze/">corso vegano e vegetariano</a>.` },
           ],
           related: [
             { title: `Mercato & Mani`, href: `/it/corso-cucina-tour-mercato-firenze/`, desc: `Fai la spesa al mercato di Sant'Ambrogio all'alba, poi cucina il cesto. 5 ore, max 6 ospiti, €145.` },
@@ -370,20 +374,20 @@ export const landings = {
           showPastaCrumb: true,
           product: {
             name: `Il Tavolo dello Chef: Corso di Pasta Fresca a Firenze`,
-            description: `Un corso pratico di pasta fresca di 3 ore in Oltrarno a Firenze: quattro formati classici, max 8 ospiti, si conclude con un pranzo toscano seduti con vino. Tenuto da due chef di agriturismo.`,
+            description: `Un corso pratico di pasta fresca di 3 ore in Oltrarno a Firenze: fettuccine, ravioli e tiramisù fatti a mano, max 8 ospiti, si conclude a tavola con un calice di vino toscano. Tenuto da due chef di agriturismo.`,
             price: '95',
           },
         },
       },
       fr: {
         slug: 'cours-de-pates-fraiches-florence',
-        title: `Cours de Pâtes Fraîches à Florence : 4 Formes + Vin, 95 €`,
-        description: `95 €, max 8 personnes. Cours pratique de pâtes fraîches de 3 heures dans l'Oltrarno : quatre formes classiques, deux chefs toscans, deux vins inclus.`,
+        title: `Cours de Pâtes Fraîches Florence : Ravioli & Tiramisù, 95 €`,
+        description: `95 €, max 8 personnes. Trois heures de pratique dans l'Oltrarno : fettuccine, ravioli et tiramisù avec deux chefs toscans, puis à table avec du vin.`,
         cl: {
           eyebrow: `La Table du Chef · Oltrarno, Florence`,
           heading: `Un cours de pâtes à Florence,`,
           headingItal: `autour d'une table.`,
-          lede: `Trois heures de pratique dans notre cuisine de l'Oltrarno. Vous mélangerez, pétrirez, étalerez et plierez quatre formes classiques de pâtes avec un chef à vos côtés, puis vous vous assiérez ensemble pour manger tout ce que vous avez préparé, avec une sauce toscane et deux verres toscans, compris dans le prix.`,
+          lede: `Trois heures de pratique dans notre cuisine de l'Oltrarno. Vous pétrirez et étalerez votre propre pâte avec un chef à vos côtés, couperez des fettuccine, fermerez des ravioli et ferez votre propre tiramisù, puis vous vous assiérez ensemble pour manger tout ce que vous avez préparé, avec un verre de vin toscan, compris dans le prix.`,
           image: { src: img.handsOnGroup, alt: `Des invités étalant des pâtes fraîches lors du cours La Table du Chef dans notre cuisine de Florence`, w: 800, h: 1067 },
           images: [
             { src: img.handsOnGroup, alt: `Des invités étalant des pâtes fraîches lors du cours La Table du Chef dans notre cuisine de Florence`, w: 800, h: 1067 },
@@ -392,7 +396,7 @@ export const landings = {
             { src: img.handsOnChef, alt: `Des invités étalant des pâtes fraîches lors du cours La Table du Chef dans notre cuisine de Florence`, w: 800, h: 1067 },
           ],
           price: `95 €`,
-          priceNote: `par personne · deux verres inclus`,
+          priceNote: `par personne · vin et dessert inclus`,
           facts: [
             { label: `Produits Locaux`, value: `Produits toscans de saison`, icon: 'leaf' },
             { label: `Durée`, value: `environ 3 heures`, icon: 'clock' },
@@ -435,9 +439,9 @@ export const landings = {
             {
               title: `Que ferez-vous concrètement pendant le cours ?`,
               paras: [
-                `C'est un cours où vous mettez la main à la pâte dès la première minute, pas de démonstrations à regarder sur un tabouret. Vous préparerez votre propre pâte, apprendrez à sentir quand elle est prête, et la travaillerez en quatre formes classiques : pici roulés à la main, tagliatelles et pappardelles coupées en ruban, et tortelli farcis, selon la saison.`,
-                `Vous préparerez aussi les sauces qui leur reviennent: un <strong>ragù</strong> mijoté, un <strong>burro e salvia</strong> mousseux à la sauge, des <strong>pomodorini</strong> frais ou un <strong>pesto</strong> pilé à la main, selon le jour et la saison.`,
-                `À Florence, la plupart des cours appellent « petit groupe » douze personnes. Le nôtre ne dépasse jamais huit, et c'est précisément pour cela qu'un chef est à votre coude quand un pliage rate, au lieu de faire une démonstration au fond de la salle. Quand les pâtes sont prêtes, nous les cuisinons ensemble et nous asseyons pour un vrai déjeuner toscan: ce que vous venez de faire, votre sauce, et deux vins toscans compris dans le prix.`,
+                `C'est un cours où vous mettez la main à la pâte dès la première minute, pas de démonstrations à regarder sur un tabouret. Vous préparerez votre propre pâte, apprendrez à sentir quand elle est prête, et la transformerez en deux plats que chaque invité prépare et mange : des fettuccine coupées à la main, et des ravioli farcis et scellés sans air à l’intérieur. Puis vous faites votre propre tiramisù.`,
+                `Vous choisissez la sauce de vos fettuccine (<strong>tomate-basilic</strong>, <strong>cacio e pepe</strong> ou <strong>amatriciana</strong>) et la cuisine la prépare pendant que vous travaillez, pour que les trois heures restent consacrées aux pâtes ; les ravioli se servent au <strong>beurre et à la sauge</strong>. Si le temps et la saison le permettent, les chefs vous montrent aussi comment la même pâte devient les formes toscanes, pici roulés à la main et larges pappardelles, pour les refaire chez vous.`,
+                `À Florence, la plupart des cours appellent « petit groupe » douze personnes. Le nôtre ne dépasse jamais huit, et c'est précisément pour cela qu'un chef est à votre coude quand un pliage rate, au lieu de faire une démonstration au fond de la salle. Quand les pâtes sont prêtes, nous les cuisinons ensemble et nous asseyons pour un vrai repas toscan : les pâtes que vous venez de faire, votre tiramisù, un verre de vin puis un limoncello ou un café, le tout compris dans le prix.`,
               ],
             },
             {
@@ -451,7 +455,7 @@ export const landings = {
               paras: [],
               list: [
                 `Sans gluten ? Nous préparons un mélange de farine dédié et un poste de travail propre sans frais supplémentaires; dites-le-nous simplement lors de votre réservation.`,
-                `Deux verres toscans sont compris dans les 95 €: un blanc à table, un rouge avec le ragù. Aucun supplément à la fin.`,
+                `Un verre de vin toscan (ou une boisson sans alcool) et un limoncello ou un café sont compris dans les 95 €. Aucun supplément à la fin.`,
                 `Nous vous envoyons par email les recettes de tout ce que vous avez préparé, pour que la pâte apprise au toucher soit encore là le mois prochain.`,
                 `Ce que vous ne mangez pas, vous l'emportez: nous le faisons sécher, le mettons en sachet, et il rentre à l'hôtel avec vous.`,
                 `La cuisine est dans l'Oltrarno, près de la Piazza Santo Spirito; nous vous envoyons l'adresse exacte lors de votre réservation.`,
@@ -468,13 +472,13 @@ export const landings = {
           faqs: [
             { q: `Ce cours convient-il aux débutants complets ?`, a: `Oui. Tout est enseigné de zéro (la pâte, l'étalage, le façonnage), et avec jamais plus de 8 personnes, il y a toujours un chef à vos côtés. La plupart des invités n'ont jamais fait de pâtes fraîches auparavant.` },
             { q: `Mange-t-on les pâtes que l'on fait ?`, a: `Oui. Chaque cours se termine à table avec vos pâtes fraîches, une sauce toscane et un verre de vin local.` },
-            { q: `Quelles formes de pâtes allons-nous faire ?`, a: `Quatre formes classiques par cours: généralement des pici roulés à la main, des tagliatelles, des pappardelles et des tortelli farcis, selon la saison.` },
+            { q: `Quelles formes de pâtes allons-nous faire ?`, a: `Chaque invité en prépare et en mange deux : des fettuccine avec la sauce de votre choix et des ravioli beurre et sauge, plus votre propre tiramisù. S’il reste du temps, les chefs vous montrent aussi les formes toscanes issues de la même pâte, comme les pici et les pappardelles.` },
             { q: `Pouvez-vous répondre aux régimes sans gluten ou aux allergies ?`, a: `Oui: nous pouvons préparer un mélange de farine sans gluten dédié et un poste de travail propre sans frais supplémentaires. Parlez-nous simplement de vos allergies lors de la réservation.` },
             { q: `Comment puis-je réserver et payer ?`, a: `Utilisez le bouton "Réserver ce cours" pour formuler votre demande. Cela ouvre une discussion WhatsApp avec les détails remplis, et nous confirmerons la disponibilité et vous guiderons pour le reste.` },
             { q: `Combien coûte au total un cours de pâtes fraîches à Florence ?`, a: `La Table du Chef est à 95 € par personne. Si vous la comparez à la visite du marché, à la privatisation ou à la formule en ligne, consultez notre <a href="/fr/blog/how-much-does-a-pasta-making-class-in-florence-cost/">comparatif complet des tarifs</a> pour les quatre.` },
             { q: `Le cours convient-il aux végétariens ?`, a: `Oui, sans modification et sans supplément. Choisissez tomate-basilic ou cacio e pepe pour vos fettuccine et tout le menu est végétarien : les ravioli sont au beurre et à la sauge, le tiramisu est le classique. Seule l’option amatriciana contient de la viande, et c’est un choix que vous faites le jour même, pas un réglage par défaut. Dites-le nous à l’avance et la sauce sera prête.` },
             { q: `Y a-t-il un cours de pâtes en soirée ?`, a: `Oui. Le créneau de 18 h, c’est le cours principal le soir : les mêmes trois heures et les mêmes formes, sauf qu’il se prolonge vers le dîner plutôt que le déjeuner. Aucun groupe n’est prévu après vous, alors on reste plus longtemps à table. Demandez le créneau du soir en réservant, sous réserve de disponibilité comme pour tout autre horaire.` },
-            { q: `Pouvez-vous faire un cours de pâtes végétalien ?`, a: `Oui, avec un préavis. La pâte se fait sans œuf, ce qui est exactement la façon dont la Toscane a toujours fait les pici : farine, eau et huile d’olive, rien d’autre. La sauce est tomate-basilic ou aglione, toutes deux sans produits laitiers, et le dessert, nous l’adaptons au lieu de le supprimer. Dites-le nous en réservant, pour que les ingrédients soient en cuisine le matin même.` },
+            { q: `Pouvez-vous faire un cours de pâtes végétalien ?`, a: `Oui, avec un préavis. La pâte se fait sans œuf, ce qui est exactement la façon dont la Toscane a toujours fait les pici : farine, eau et huile d’olive, rien d’autre. La sauce est tomate-basilic ou aglione, toutes deux sans produits laitiers ; les ravioli ont une farce de pommes de terre à l’huile et à la sauge, et le dessert, nous l’adaptons au lieu de le supprimer. Sans supplément. Dites-le nous en réservant, pour que les ingrédients soient en cuisine le matin même. Tous les détails sur la page du <a href="/fr/cours-cuisine-vegan-florence/">cours vegan et végétarien</a>.` },
           ],
           related: [
             { title: `Mercato & Mani`, href: `/fr/cours-cuisine-visite-marche-florence/`, desc: `Faites vos courses au marché de Sant'Ambrogio à l'aube, puis cuisinez votre panier. 5 heures, max 6 personnes, 145 €.` },
@@ -489,7 +493,7 @@ export const landings = {
           showPastaCrumb: true,
           product: {
             name: `La Table du Chef: Cours de Pâtes Fraîches à Florence`,
-            description: `Un cours pratique de pâtes fraîches de 3 heures dans l'Oltrarno à Florence : quatre formes classiques, max 8 personnes, se terminant par un déjeuner toscan assis avec du vin. Enseigné par deux chefs d'agritourisme.`,
+            description: `Un cours pratique de pâtes fraîches de 3 heures dans l'Oltrarno à Florence : fettuccine, ravioli et tiramisù faits main, max 8 personnes, se terminant à table avec un verre de vin toscan. Enseigné par deux chefs d'agritourisme.`,
             price: '95',
           },
         },
@@ -500,13 +504,13 @@ export const landings = {
         // one click (GSC, Aug 2026). "Kochkurs" is in here because `kochkurs
         // florence` is 35 impressions at position 21.5 with no page owning the
         // generic noun, and this is the natural home for it.
-        title: `Pasta-Kurs Florenz: Kochkurs mit 4 Formen & Wein, 95 €`,
-        description: `95 €, max. 8 Gäste. Dreistündiger Pasta-Kurs im Oltrarno: vier Formen von Hand rollen mit zwei toskanischen Küchenchefs, danach gemeinsam essen. Wein inkl.`,
+        title: `Pasta-Kurs Florenz: Kochkurs mit Ravioli & Tiramisù, 95 €`,
+        description: `95 €, max. 8 Gäste. Drei Stunden im Oltrarno: Fettuccine, Ravioli und Tiramisù mit zwei toskanischen Küchenchefs, danach gemeinsam essen. Wein inkl.`,
         cl: {
           eyebrow: `Der Tisch des Küchenchefs · Oltrarno, Florenz`,
           heading: `Ein Pasta-Kurs in Florenz,`,
           headingItal: `rund um einen Tisch.`,
-          lede: `Drei praktische Stunden in unserer Küche im Oltrarno. Sie werden vier klassische Pasta-Formen mit einem Koch an Ihrer Seite mischen, kneten, ausrollen und falten und sich dann zusammensetzen, um alles zu essen, was Sie gemacht haben, mit einer toskanischen Sauce und zwei toskanischen Weinen, im Preis enthalten.`,
+          lede: `Drei praktische Stunden in unserer Küche im Oltrarno. Sie kneten und rollen Ihren eigenen Teig mit einem Koch an Ihrer Seite, schneiden Fettuccine, falten Ravioli und machen Ihr eigenes Tiramisù und setzen sich dann zusammen, um alles zu essen, was Sie gemacht haben, mit einem Glas toskanischem Wein, im Preis enthalten.`,
           image: { src: img.handsOnGroup, alt: `Gäste rollen frische Pasta beim Kurs „Der Tisch des Küchenchefs“ in unserer Küche in Florenz aus`, w: 800, h: 1067 },
           images: [
             { src: img.handsOnGroup, alt: `Gäste rollen frische Pasta beim Kurs „Der Tisch des Küchenchefs“ in unserer Küche in Florenz aus`, w: 800, h: 1067 },
@@ -515,7 +519,7 @@ export const landings = {
             { src: img.handsOnChef, alt: `Gäste rollen frische Pasta beim Kurs „Der Tisch des Küchenchefs“ in unserer Küche in Florenz aus`, w: 800, h: 1067 },
           ],
           price: `95 €`,
-          priceNote: `pro Person · zwei Gläser inklusive`,
+          priceNote: `pro Person · Wein & Dessert inklusive`,
           facts: [
             { label: `Lokale Produkte`, value: `Saisonale toskanische Produkte`, icon: 'leaf' },
             { label: `Dauer`, value: `etwa 3 Stunden`, icon: 'clock' },
@@ -558,9 +562,9 @@ export const landings = {
             {
               title: `Was werden Sie im Kurs tatsächlich tun?`,
               paras: [
-                `Dies ist ein Kurs mit den Händen im Mehl von der ersten Minute an, keine Vorführungen, die man von einem Hocker aus beobachtet. Sie machen Ihren eigenen Teig, lernen zu fühlen, wann er fertig ist, und verarbeiten ihn zu vier klassischen Formen: handgerollte Pici, bandgeschnittene Tagliatelle und Pappardelle sowie gefüllte Tortelli, je nach Saison.`,
-                `Sie machen auch die Saucen, die dazugehören: ein langsames <strong>Ragù</strong>, mit Salbei aufgeschäumte <strong>burro e salvia</strong>, frische <strong>Pomodorini</strong> oder von Hand gestoßenes <strong>Pesto</strong>, je nach Tag und Saison.`,
-                `In Florenz nennen die meisten Kurse zwölf Personen eine kleine Gruppe. Bei uns sitzen nie mehr als acht am Tisch, und genau deshalb steht ein Koch neben Ihnen, wenn eine Faltung misslingt, statt vorne etwas vorzuführen. Wenn die Nudeln fertig sind, kochen wir sie gemeinsam und setzen uns zu einem echten toskanischen Mittagessen: was Sie gerade gemacht haben, Ihre Sauce und zwei toskanische Weine, im Preis enthalten.`,
+                `Dies ist ein Kurs mit den Händen im Mehl von der ersten Minute an, keine Vorführungen, die man von einem Hocker aus beobachtet. Sie machen Ihren eigenen Teig, lernen zu fühlen, wann er fertig ist, und verarbeiten ihn zu den zwei Gerichten, die jeder Gast macht und isst: Fettuccine, von Hand in Bänder geschnitten, und Ravioli, gefüllt und ohne Luft darin verschlossen. Danach machen Sie Ihr eigenes Tiramisù.`,
+                `Sie wählen die Sauce für Ihre Fettuccine (<strong>Tomate-Basilikum</strong>, <strong>Cacio e Pepe</strong> oder <strong>Amatriciana</strong>), und die Küche kocht sie, während Sie arbeiten, damit die drei Stunden der Pasta gehören; die Ravioli gibt es mit <strong>Butter und Salbei</strong>. Wenn Zeit und Saison es erlauben, zeigen Ihnen die Köche auch, wie aus demselben Teig die toskanischen Formen werden, handgerollte Pici und breite Pappardelle, damit Sie sie zu Hause nachmachen können.`,
+                `In Florenz nennen die meisten Kurse zwölf Personen eine kleine Gruppe. Bei uns sitzen nie mehr als acht am Tisch, und genau deshalb steht ein Koch neben Ihnen, wenn eine Faltung misslingt, statt vorne etwas vorzuführen. Wenn die Nudeln fertig sind, kochen wir sie gemeinsam und setzen uns zu einem echten toskanischen Essen: die Pasta, die Sie gerade gemacht haben, Ihr Tiramisù, ein Glas Wein und danach Limoncello oder Kaffee, alles im Preis enthalten.`,
               ],
             },
             {
@@ -574,7 +578,7 @@ export const landings = {
               paras: [],
               list: [
                 `Glutenfrei? Wir bereiten ohne Aufpreis eine spezielle Mehlmischung und eine saubere Station vor; sagen Sie es uns einfach bei der Buchung.`,
-                `Zwei toskanische Gläser sind in den 95 € enthalten: ein Weißer zu Tisch, ein Roter zum Ragù. Kein Aufpreis am Ende.`,
+                `Ein Glas toskanischer Wein (oder ein alkoholfreies Getränk) und ein Limoncello oder Kaffee sind in den 95 € enthalten. Kein Aufpreis am Ende.`,
                 `Wir schicken Ihnen die Rezepte für alles, was Sie gemacht haben, per E-Mail, damit der Teig, den Sie im Gefühl haben, nächsten Monat noch da ist.`,
                 `Was Sie nicht essen, nehmen Sie mit: wir trocknen es, füllen es ab, und es fährt mit Ihnen ins Hotel zurück.`,
                 `Die Küche befindet sich im Oltrarno, in der Nähe der Piazza Santo Spirito; wir senden Ihnen bei der Buchung die genaue Adresse.`,
@@ -591,13 +595,13 @@ export const landings = {
           faqs: [
             { q: `Ist dieser Kurs für absolute Anfänger geeignet?`, a: `Ja. Alles wird von Null an gelehrt (Teig, Rollen, Formen), und mit nie mehr als 8 Gästen ist immer ein Koch an Ihrer Seite. Die meisten Gäste haben noch nie zuvor frische Pasta gemacht.` },
             { q: `Essen wir die Pasta, die wir machen?`, a: `Ja. Jeder Kurs endet am Tisch mit Ihrer frischen Pasta, einer toskanischen Sauce und einem Glas Wein aus der Region.` },
-            { q: `Welche Nudelformen werden wir machen?`, a: `Vier klassische Formen pro Kurs: typischerweise handgerollte Pici, Tagliatelle, Pappardelle und gefüllte Tortelli, je nach Saison.` },
+            { q: `Welche Nudelformen werden wir machen?`, a: `Jeder Gast macht und isst zwei: Fettuccine mit der Sauce Ihrer Wahl und Ravioli mit Butter und Salbei, dazu Ihr eigenes Tiramisù. Wenn Zeit bleibt, zeigen Ihnen die Köche auch die toskanischen Formen aus demselben Teig, etwa Pici und Pappardelle.` },
             { q: `Können Sie auf glutenfreie Diäten oder Allergien eingehen?`, a: `Ja: wir können ohne Aufpreis eine spezielle glutenfreie Mehlmischung und eine saubere Station vorbereiten. Teilen Sie uns bei der Buchung einfach eventuelle Allergien mit.` },
             { q: `Wie buche und bezahle ich?`, a: `Nutzen Sie die Schaltfläche "Diesen Kurs buchen", um Ihre Anfrage zu erstellen. Es öffnet sich ein WhatsApp-Chat mit den ausgefüllten Details, und wir bestätigen die Verfügbarkeit und führen Sie durch den Rest.` },
             { q: `Was kostet ein Pasta-Kurs in Florenz insgesamt?`, a: `Der Chef's Table kostet 95 € pro Person. Wenn Sie ihn mit der Markttour, der privaten Buchung oder dem Online-Kurs vergleichen, sehen Sie sich unseren <a href="/de/blog/how-much-does-a-pasta-making-class-in-florence-cost/">vollständigen Preisvergleich</a> für alle vier an.` },
             { q: `Ist der Kurs für Vegetarier geeignet?`, a: `Ja, ohne Änderungen und ohne Aufpreis. Nehmen Sie Tomate-Basilikum oder Cacio e Pepe zu Ihren Fettuccine, und das ganze Menü ist vegetarisch: die Ravioli sind mit Butter und Salbei, das Tiramisù ist das klassische. Nur die Amatriciana enthält Fleisch, und das ist eine Wahl, die Sie am Tag selbst treffen, keine Voreinstellung. Sagen Sie uns vorher Bescheid, dann steht die Soße bereit.` },
             { q: `Gibt es einen Abend-Pastakurs?`, a: `Ja. Der Termin um 18:00 Uhr ist der Signature-Kurs am Abend: dieselben drei Stunden, dieselben Formen, nur geht er ins Abendessen über statt ins Mittagessen. Nach Ihnen ist keine weitere Gruppe eingeplant, deshalb bleibt man länger am Tisch. Fragen Sie beim Buchen nach dem Abendtermin, je nach Verfügbarkeit wie bei jeder anderen Uhrzeit.` },
-            { q: `Können Sie einen veganen Pastakurs machen?`, a: `Ja, mit Vorlauf. Der Teig kommt ohne Ei aus, genau so, wie die Toskana Pici immer gemacht hat: Mehl, Wasser und Olivenöl, sonst nichts. Die Soße ist Tomate-Basilikum oder Aglione, beide ohne Milchprodukte, und das Dessert passen wir an, statt es wegzulassen. Sagen Sie es uns bei der Buchung, dann sind die Zutaten am selben Morgen in der Küche.` },
+            { q: `Können Sie einen veganen Pastakurs machen?`, a: `Ja, mit Vorlauf. Der Teig kommt ohne Ei aus, genau so, wie die Toskana Pici immer gemacht hat: Mehl, Wasser und Olivenöl, sonst nichts. Die Soße ist Tomate-Basilikum oder Aglione, beide ohne Milchprodukte; die Ravioli bekommen eine Kartoffelfüllung mit Olivenöl und Salbei, und das Dessert passen wir an, statt es wegzulassen. Kein Aufpreis. Sagen Sie es uns bei der Buchung, dann sind die Zutaten am selben Morgen in der Küche. Alle Details auf der Seite zum <a href="/de/veganer-kochkurs-florenz/">veganen &amp; vegetarischen Kurs</a>.` },
           ],
           related: [
             { title: `Mercato & Mani`, href: `/de/markt-tour-kochkurs-florenz/`, desc: `Kaufen Sie im Morgengrauen auf dem Sant'Ambrogio-Markt ein und kochen Sie dann den Korb. 5 Stunden, max. 6 Gäste, 145 €.` },
@@ -613,20 +617,20 @@ export const landings = {
           showPastaCrumb: true,
           product: {
             name: `Der Tisch des Küchenchefs: Pasta-Kurs in Florenz`,
-            description: `Ein 3-stündiger praktischer Pasta-Kurs in Florenz' Oltrarno: vier klassische Formen, max. 8 Gäste, endend mit einem gemeinsamen toskanischen Mittagessen mit Wein. Geleitet von zwei Agriturismo-Küchenchefs.`,
+            description: `Ein 3-stündiger praktischer Pasta-Kurs in Florenz' Oltrarno: Fettuccine, Ravioli und Tiramisù von Hand, max. 8 Gäste, endend am Tisch mit einem Glas toskanischem Wein. Geleitet von zwei Agriturismo-Küchenchefs.`,
             price: '95',
           },
         },
       },
       zh: {
         slug: 'foluolunsa-yidali-mian-kecheng',
-        title: `佛罗伦萨手工意面课程：主厨餐桌 (€95)`,
-        description: `每人95欧元，最多8位客人。佛罗伦萨奥特拉诺区的3小时手工意面课程：与两位托斯卡纳农庄主厨揉制四种经典形状，然后坐下品尝，含两杯托斯卡纳葡萄酒。`,
+        title: `佛罗伦萨手工意面课程：意式饺子与提拉米苏 (€95)`,
+        description: `每人95欧元，最多8位客人。佛罗伦萨奥特拉诺区的3小时手工意面课程：与两位托斯卡纳农庄主厨亲手做宽面、意式饺子和提拉米苏，然后坐下品尝，含一杯葡萄酒。`,
         cl: {
           eyebrow: `主厨餐桌 · 佛罗伦萨奥特拉诺`,
           heading: `佛罗伦萨的意面课程，`,
           headingItal: `围坐在一桌。`,
-          lede: `在我们的奥特拉诺厨房进行三小时的动手实践。您将与身旁的主厨一起混合、揉捏、擀平并折叠四种经典的意面形状，然后大家坐在一起，配以托斯卡纳酱汁和一杯基安蒂葡萄酒，享用您制作的所有美食。`,
+          lede: `在我们的奥特拉诺厨房进行三小时的动手实践。您将在身旁主厨的指导下揉面、擀面，切出宽面、包好意式饺子，再做一份自己的提拉米苏，然后大家坐在一起，配一杯托斯卡纳葡萄酒，享用您制作的所有美食，均已含在价格中。`,
           image: { src: img.handsOnGroup, alt: `客人们在佛罗伦萨厨房的“主厨餐桌”课程中擀制新鲜意面`, w: 800, h: 1067 },
           images: [
             { src: img.handsOnGroup, alt: `客人们在佛罗伦萨厨房的“主厨餐桌”课程中擀制新鲜意面`, w: 800, h: 1067 },
@@ -635,7 +639,7 @@ export const landings = {
             { src: img.handsOnChef, alt: `客人们在佛罗伦萨厨房的“主厨餐桌”课程中擀制新鲜意面`, w: 800, h: 1067 },
           ],
           price: `€95`,
-          priceNote: `每人 · 含两杯葡萄酒`,
+          priceNote: `每人 · 含葡萄酒与甜点`,
           facts: [
             { label: `本地食材`, value: `托斯卡纳时令食材`, icon: 'leaf' },
             { label: `时长`, value: `约3小时`, icon: 'clock' },
@@ -678,9 +682,9 @@ export const landings = {
             {
               title: `您在课程中将真正学到什么？`,
               paras: [
-                `这是一门从第一分钟起就“双手沾满面粉”的实践课程，不需要坐在凳子上看演示。您将制作自己的面团，学会感受它何时准备好，并将其制作成四种经典形状：手工揉制的pici，切成条状的tagliatelle和pappardelle，以及填馅的tortelli，具体取决于季节。`,
-                `您还会亲手制作与之相配的酱汁：慢炖的<strong>肉酱 (ragù)</strong>、用鼠尾草打发的<strong>黄油鼠尾草酱 (burro e salvia)</strong>、新鲜的<strong>小番茄酱 (pomodorini)</strong>，或手工捣制的<strong>青酱 (pesto)</strong>，视当天与时令而定。`,
-                `在佛罗伦萨，多数课程把十二人称作“小班”。我们每桌从不超过八人，正因如此，当您的折叠出了问题时，身边站着的是一位厨师，而不是教室前方的一场演示。意面做好后我们一起烹饪，然后坐下来享用一顿正宗的托斯卡纳午餐：您刚刚做的意面、您的酱汁，以及价格中已包含的两杯托斯卡纳葡萄酒。`,
+                `这是一门从第一分钟起就“双手沾满面粉”的实践课程，不需要坐在凳子上看演示。您将制作自己的面团，学会感受它何时准备好，并把它做成每位客人都会亲手制作并享用的两道菜：手工切成条的宽面（fettuccine），以及填好馅、封口时不留空气的意式饺子（ravioli）。然后做一份您自己的提拉米苏。`,
+                `宽面的酱汁由您选择（<strong>番茄罗勒</strong>、<strong>cacio e pepe</strong> 或 <strong>amatriciana</strong>），由厨房在您动手时烹制，让三个小时都专注在意面上；意式饺子配<strong>黄油鼠尾草</strong>。时间和季节允许的话，主厨还会示范同一块面团如何变成托斯卡纳的其他形状，比如手搓的 pici 和宽大的 pappardelle，方便您回家再做。`,
+                `在佛罗伦萨，多数课程把十二人称作“小班”。我们每桌从不超过八人，正因如此，当您的折叠出了问题时，身边站着的是一位厨师，而不是教室前方的一场演示。意面做好后我们一起烹饪，然后坐下来享用一顿正宗的托斯卡纳餐食：您刚刚做的意面、您自己的提拉米苏、一杯葡萄酒，最后是柠檬酒或咖啡，全部含在价格中。`,
               ],
             },
             {
@@ -694,7 +698,7 @@ export const landings = {
               paras: [],
               list: [
                 `无麸质？我们免费准备专门的面粉混合物和干净的操作台，只需在预订时告知我们。`,
-                `95欧元已包含两杯托斯卡纳葡萄酒：佐餐白葡萄酒一杯，配肉酱红葡萄酒一杯。课程结束后不再加收任何费用。`,
+                `95欧元已包含一杯托斯卡纳葡萄酒（或无酒精饮品），以及一杯柠檬酒或咖啡。课程结束后不再加收任何费用。`,
                 `我们会把您做过的所有菜谱发到您的邮箱，让您凭手感学会的那团面，下个月依然还在。`,
                 `没吃完的，您带走，我们帮您晾干、装袋，让它跟您一起回酒店。`,
                 `厨房位于奥特拉诺，靠近圣斯皮里托广场，我们会在您预订时发送确切地址。`,
@@ -711,13 +715,13 @@ export const landings = {
           faqs: [
             { q: `这门课适合完全的初学者吗？`, a: `是的。一切都从零开始教起：揉面、擀面、塑形，而且客人从不超过8人，总有一位厨师在您身旁指导。大多数客人以前从未做过新鲜的意面。` },
             { q: `我们会吃自己做的意面吗？`, a: `是的。每节课都会以您的新鲜意面、托斯卡纳酱汁和一杯当地葡萄酒的餐桌时光结束。` },
-            { q: `我们将制作哪些意面形状？`, a: `每节课制作四种经典形状：通常是手工揉制的pici、tagliatelle、pappardelle和填馅的tortelli，具体取决于季节。` },
+            { q: `我们将制作哪些意面形状？`, a: `每位客人都会亲手制作并享用两道：自选酱汁的宽面，以及黄油鼠尾草意式饺子，再加上您自己的提拉米苏。时间允许的话，主厨还会示范同一块面团做出的托斯卡纳形状，比如 pici 和 pappardelle。` },
             { q: `你们能满足无麸质饮食或过敏需求吗？`, a: `是的，我们可以免费准备专门的无麸质面粉混合物和干净的操作台。预订时请告诉我们任何过敏情况。` },
             { q: `我该如何预订和付款？`, a: `使用“预订此课程”按钮创建您的请求。它会打开一个带有预填详情的WhatsApp聊天，我们将确认可用性并指导您完成剩余步骤。` },
             { q: `在佛罗伦萨上一堂意面课总共要多少钱？`, a: `主厨餐桌为每位95欧元。如果你还在与市场导览、私人包场或线上课程做比较，可以看我们<a href="/zh/blog/how-much-does-a-pasta-making-class-in-florence-cost/">四种课程的完整价格对比</a>。` },
-            { q: `这门课适合素食者吗？`, a: `适合，无需改动，也不加收费用。意大利宽面选番茄罗勒或奶酪黑胡椒，整份菜单就是素的：方饎是黄油鼠尾草口味，提拉米苏也是经典做法。只有 amatriciana 酱含肉，而那是当天由您选择的，并非默认。提前告知我们，酱料会备好。` },
+            { q: `这门课适合素食者吗？`, a: `适合，无需改动，也不加收费用。意大利宽面选番茄罗勒或奶酪黑胡椒，整份菜单就是素的：意式饺子是黄油鼠尾草口味，提拉米苏也是经典做法。只有 amatriciana 酱含肉，而那是当天由您选择的，并非默认。提前告知我们，酱料会备好。` },
             { q: `有傍晚的意面课吗？`, a: `有。18:00 的时段就是傍晚版的招牌课程：同样三小时，同样的形状，只是最后延续到晚餐而不是午餐。您之后不会再安排下一组客人，所以大家往往会在餐桌旁多坐一会儿。预订时说明想要傍晚时段即可，与其他时段一样视档期而定。` },
-            { q: `可以做纯素的意面课吗？`, a: `可以，请提前告知。面团不加鸡蛋，这本来就是托斯卡纳做 pici 的方式：面粉、水和橄榄油，别无他物。酱汁用番茄罗勒或 aglione，两者都不含乳制品，甜点我们会调整，而不是直接取消。预订时说明即可，当天早上食材就会备在厨房里。` },
+            { q: `可以做纯素的意面课吗？`, a: `可以，请提前告知。面团不加鸡蛋，这本来就是托斯卡纳做 pici 的方式：面粉、水和橄榄油，别无他物。酱汁用番茄罗勒或 aglione，两者都不含乳制品；意式饺子改用土豆馅，配橄榄油和鼠尾草，甜点我们会调整，而不是直接取消。不加收费用。预订时说明即可，当天早上食材就会备在厨房里。详情请见<a href="/zh/sushi-pengren-kecheng-foluolunsa/">素食与纯素课程</a>页面。` },
           ],
           related: [
             { title: `Mercato & Mani`, href: `/zh/shichang-daolan-pengren-kecheng-foluolunsa/`, desc: `清晨在圣安布罗焦市场购物，然后烹饪购买的食材。5小时，最多6位客人，145欧元。` },
@@ -732,7 +736,7 @@ export const landings = {
           showPastaCrumb: true,
           product: {
             name: `主厨餐桌：佛罗伦萨手工意面课程`,
-            description: `佛罗伦萨奥特拉诺区3小时实践手工意面课程：四种经典形状，最多8位客人，以包含葡萄酒的托斯卡纳午餐结束。由两位农庄主厨授课。`,
+            description: `佛罗伦萨奥特拉诺区3小时实践手工意面课程：亲手做宽面、意式饺子和提拉米苏，最多8位客人，最后配一杯托斯卡纳葡萄酒用餐。由两位农庄主厨授课。`,
             price: '95',
           },
         },
@@ -827,7 +831,7 @@ export const landings = {
             { q: `How do I book and pay?`, a: `Use the “Book this class” button to build your request. It opens a WhatsApp chat with the details filled in, and we’ll confirm availability and walk you through the rest.` },
           ],
           related: [
-            { title: `The Chef’s Table`, href: `/pasta-making-class-florence/`, desc: `Our signature 3-hour pasta class: four shapes, one long lunch. €95.` },
+            { title: `The Chef’s Table`, href: `/pasta-making-class-florence/`, desc: `Our signature 3-hour pasta class: fettuccine, ravioli and tiramisù, one long table. €95.` },
             { title: `The Family Long-Table`, href: `/private-cooking-class-florence/`, desc: `The whole kitchen, privately yours. Birthdays, proposals, reunions, from €680.` },
             { title: `Live Online Class`, href: `/online-pasta-making-class/`, desc: `Cook with us from anywhere, live from this same kitchen, from €68.` },
             { title: `Where to eat handmade pasta in Florence`, href: `/blog/where-to-eat-handmade-pasta-in-florence/`, desc: `A pasta chef’s guide to ordering well in the city.` },
@@ -927,7 +931,7 @@ export const landings = {
             { q: `Come posso prenotare e pagare?`, a: `Usa il pulsante "Prenota questo corso" per creare la tua richiesta. Si apre una chat di WhatsApp con i dettagli precompilati, noi confermeremo la disponibilità e ti guideremo nel resto.` },
           ],
           related: [
-            { title: `Il Tavolo dello Chef`, href: `/it/corso-pasta-fresca-firenze/`, desc: `Il nostro corso di pasta di 3 ore: quattro formati, un lungo pranzo. €95.` },
+            { title: `Il Tavolo dello Chef`, href: `/it/corso-pasta-fresca-firenze/`, desc: `Il nostro corso di pasta di 3 ore: fettuccine, ravioli e tiramisù. €95.` },
             { title: `Il Lungo Tavolo di Famiglia`, href: `/it/corso-cucina-privato-firenze/`, desc: `L'intera cucina, privata per voi. Compleanni, proposte, ritrovi, da €680.` },
             { title: `Corso in Diretta Online`, href: `/it/corso-pasta-online/`, desc: `Cucina con noi da ovunque, in diretta da questa stessa cucina, da €68.` },
             { title: `Corso per Team Building`, href: `/it/corso-cucina-team-building-firenze/`, desc: `La cucina privata per le aziende: grembiuli indossati, laptop via.` },
@@ -1026,7 +1030,7 @@ export const landings = {
             { q: `Comment puis-je réserver et payer ?`, a: `Utilisez le bouton "Réserver ce cours" pour formuler votre demande. Cela ouvre une discussion WhatsApp avec les détails remplis, et nous confirmerons la disponibilité et vous guiderons pour le reste.` },
           ],
           related: [
-            { title: `La Table du Chef`, href: `/fr/cours-de-pates-fraiches-florence/`, desc: `Notre cours de pâtes signature de 3 heures: quatre formes, un long déjeuner. 95 €.` },
+            { title: `La Table du Chef`, href: `/fr/cours-de-pates-fraiches-florence/`, desc: `Notre cours de pâtes signature de 3 heures : fettuccine, ravioli et tiramisù. 95 €.` },
             { title: `La Longue Table Familiale`, href: `/fr/cours-cuisine-prive-florence/`, desc: `Toute la cuisine, pour vous en privé. Anniversaires, demandes en mariage, réunions, à partir de 680 €.` },
             { title: `Cours en Direct en Ligne`, href: `/fr/cours-pates-en-ligne/`, desc: `Cuisinez avec nous d'où vous voulez, en direct de cette même cuisine, à partir de 68 €.` },
             { title: `Cours Team Building`, href: `/fr/cours-cuisine-team-building-florence/`, desc: `La cuisine privée pour les entreprises: on met les tabliers, on range les ordinateurs.` },
@@ -1125,7 +1129,7 @@ export const landings = {
             { q: `Wie buche und bezahle ich?`, a: `Nutzen Sie die Schaltfläche "Diesen Kurs buchen", um Ihre Anfrage zu erstellen. Es öffnet sich ein WhatsApp-Chat mit den ausgefüllten Details, und wir bestätigen die Verfügbarkeit und führen Sie durch den Rest.` },
           ],
           related: [
-            { title: `Der Tisch des Küchenchefs`, href: `/de/pasta-kurs-florenz/`, desc: `Unser 3-stündiger Signature-Pasta-Kurs: vier Formen, ein langes Mittagessen. 95 €.` },
+            { title: `Der Tisch des Küchenchefs`, href: `/de/pasta-kurs-florenz/`, desc: `Unser 3-stündiger Signature-Pasta-Kurs: Fettuccine, Ravioli und Tiramisù. 95 €.` },
             { title: `Die lange Familientafel`, href: `/de/privater-kochkurs-florenz/`, desc: `Die ganze Küche, ganz privat für Sie. Geburtstage, Heiratsanträge, Treffen, ab 680 €.` },
             { title: `Live-Online-Kurs`, href: `/de/online-pasta-kurs/`, desc: `Kochen Sie mit uns von überall aus, live aus derselben Küche, ab 68 €.` },
             { title: `Teambuilding-Kurs`, href: `/de/teambuilding-kochkurs-florenz/`, desc: `Die private Küche für Unternehmen: Schürzen an, Laptops weg.` },
@@ -1224,7 +1228,7 @@ export const landings = {
             { q: `我该如何预订和付款？`, a: `使用“预订此课程”按钮创建您的请求。它会打开一个带有预填详情的WhatsApp聊天，我们将确认可用性并指导您完成剩余步骤。` },
           ],
           related: [
-            { title: `主厨餐桌`, href: `/zh/foluolunsa-yidali-mian-kecheng/`, desc: `我们招牌的3小时意面课程：四种形状，一顿丰盛的午餐。95欧元。` },
+            { title: `主厨餐桌`, href: `/zh/foluolunsa-yidali-mian-kecheng/`, desc: `我们招牌的3小时意面课程：宽面、意式饺子和提拉米苏。95欧元。` },
             { title: `家庭长桌体验`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `为您私人包场的整个厨房。生日、求婚、聚会，680欧元起。` },
             { title: `在线直播课程`, href: `/zh/zaixian-yidali-mian-kecheng/`, desc: `无论在哪里，都可以与我们一起在同一个厨房进行在线烹饪，68欧元起。` },
             { title: `团队建设课程`, href: `/zh/tuandui-jianshe-pengren-kecheng-foluolunsa/`, desc: `为企业提供的私人厨房，穿上围裙，收起电脑。` },
@@ -2158,7 +2162,7 @@ export const landings = {
             {
               title: `Why does pasta making work as a team building activity?`,
               paras: [
-                `Fresh pasta is the rare team activity where nobody can hide behind a screen and nobody needs prior skill. Everyone starts with the same pile of flour, everyone’s first pici is crooked, and an hour later the table is covered in something the team actually made together. Then you eat it, which beats a debrief.`,
+                `Fresh pasta is the rare team activity where nobody can hide behind a screen and nobody needs prior skill. Everyone starts with the same pile of flour, everyone’s first ravioli comes out lopsided, and an hour later the table is covered in something the team actually made together. Then you eat it, which beats a debrief.`,
                 `Of all the food teambuilding ideas in Florence (wine tastings, tasting walks, another aperitivo), this is the one where nobody stands at the back watching. And the kitchen is exclusively yours: no strangers, your pace, your dietary needs handled in advance.`,
               ],
             },
@@ -2280,7 +2284,7 @@ export const landings = {
             {
               title: `Perché il teambuilding in cucina funziona così bene?`,
               paras: [
-                `La pasta fresca è la rara attività di squadra in cui nessuno può nascondersi dietro uno schermo e nessuno ha bisogno di abilità pregresse. Tutti iniziano con lo stesso mucchio di farina, i primi pici di tutti sono storti e un'ora dopo il tavolo è coperto di qualcosa che il team ha effettivamente realizzato insieme. Poi lo si mangia, il che è meglio di un meeting riassuntivo.`,
+                `La pasta fresca è la rara attività di squadra in cui nessuno può nascondersi dietro uno schermo e nessuno ha bisogno di abilità pregresse. Tutti iniziano con lo stesso mucchio di farina, i primi ravioli di tutti vengono storti e un'ora dopo il tavolo è coperto di qualcosa che il team ha effettivamente realizzato insieme. Poi lo si mangia, il che è meglio di un meeting riassuntivo.`,
                 `La cucina è esclusivamente tua: niente estranei, il tuo ritmo, le tue esigenze alimentari gestite in anticipo.`,
               ],
             },
@@ -2398,7 +2402,7 @@ export const landings = {
             {
               title: `Pourquoi les pâtes sont-elles l'activité de teambuilding qui fonctionne ?`,
               paras: [
-                `Les pâtes fraîches sont la rare activité d'équipe où personne ne peut se cacher derrière un écran et où personne n'a besoin de compétences préalables. Tout le monde commence avec le même tas de farine, les premiers pici de tout le monde sont de travers, et une heure plus tard, la table est recouverte de quelque chose que l'équipe a réellement fabriqué ensemble. Ensuite, vous le mangez, ce qui vaut mieux qu'un débriefing.`,
+                `Les pâtes fraîches sont la rare activité d'équipe où personne ne peut se cacher derrière un écran et où personne n'a besoin de compétences préalables. Tout le monde commence avec le même tas de farine, les premiers ravioli de tout le monde sont de travers, et une heure plus tard, la table est recouverte de quelque chose que l'équipe a réellement fabriqué ensemble. Ensuite, vous le mangez, ce qui vaut mieux qu'un débriefing.`,
                 `La cuisine est exclusivement à vous : pas d'étrangers, votre propre rythme, vos besoins alimentaires gérés à l'avance.`,
               ],
             },
@@ -2516,7 +2520,7 @@ export const landings = {
             {
               title: `Warum funktioniert Pasta-Kochen als Teambuilding-Aktivität?`,
               paras: [
-                `Frische Pasta ist die seltene Teamaktivität, bei der sich niemand hinter einem Bildschirm verstecken kann und niemand Vorkenntnisse benötigt. Jeder beginnt mit dem gleichen Haufen Mehl, die ersten Pici von jedem sind krumm, und eine Stunde später ist der Tisch bedeckt mit etwas, das das Team tatsächlich zusammen hergestellt hat. Dann essen Sie es, das ist besser als ein Debriefing.`,
+                `Frische Pasta ist die seltene Teamaktivität, bei der sich niemand hinter einem Bildschirm verstecken kann und niemand Vorkenntnisse benötigt. Jeder beginnt mit dem gleichen Haufen Mehl, die ersten Ravioli von jedem sind schief, und eine Stunde später ist der Tisch bedeckt mit etwas, das das Team tatsächlich zusammen hergestellt hat. Dann essen Sie es, das ist besser als ein Debriefing.`,
                 `Die Küche gehört exklusiv Ihnen: keine Fremden, Ihr eigenes Tempo, Ihre Ernährungsbedürfnisse im Voraus geklärt.`,
               ],
             },
@@ -2704,17 +2708,21 @@ export const landings = {
   // — the gluten-free blend and clean station are already included at no charge,
   // so this page surfaces an existing capability that was buried in a bullet.
   'gluten-free': {
+    // 2026-09-26: menu aligned to what every guest gets (fettuccine, ravioli,
+    // tiramisù; one glass of wine + limoncello or coffee), replacing 'four shapes,
+    // two wines'.
+    updated: '2026-09-26',
     floatingCta: true,
     locales: {
       en: {
         slug: 'gluten-free-cooking-class-florence',
         title: `Gluten-Free Cooking Class Florence: No Surcharge, €95`,
-        description: `€95, no gluten-free surcharge. Your own flour blend and clean station, the same four pasta shapes as everyone else at the table. Max 8 guests, Oltrarno.`,
+        description: `€95, no gluten-free surcharge. Your own flour blend and clean station, the same fettuccine and ravioli as the rest of the table. Max 8 guests, Oltrarno.`,
         cl: {
           eyebrow: `Gluten-free · Oltrarno, Florence`,
           heading: `A gluten-free cooking class in Florence,`,
           headingItal: `at the same table.`,
-          lede: `Most kitchens treat gluten-free as a substitution made in the back. We treat it as a place setting: your own blend, your own board, your own pot, set up before you arrive, at no extra charge, so you make and eat the same four shapes as everyone else.`,
+          lede: `Most kitchens treat gluten-free as a substitution made in the back. We treat it as a place setting: your own blend, your own board, your own pot, set up before you arrive, at no extra charge, so you make and eat the same fettuccine and ravioli as everyone else.`,
           image: { src: img.plates, alt: `Plates of fresh handmade pasta served at a gluten-free cooking class in Florence`, w: 1080, h: 1327 },
           price: `€95`,
           priceNote: `per person · no gluten-free surcharge`,
@@ -2768,7 +2776,7 @@ export const landings = {
             {
               title: `What you will make`,
               paras: [
-                `The same class as everyone else, which is rather the point. You will mix and knead your own dough, learn to read it by feel: a gluten-free dough behaves differently, and we teach you what "ready" looks like without gluten to help you, and shape it into the classics: hand-rolled pici, ribbon-cut tagliatelle and pappardelle, and filled tortelli, following the season.`,
+                `The same class as everyone else, which is rather the point. You will mix and knead your own dough, learn to read it by feel: a gluten-free dough behaves differently, and we teach you what "ready" looks like without gluten to help you, and turn it into the same two dishes as the rest of the table: fettuccine cut by hand and filled ravioli.`,
                 `Then we cook it all together and sit down. Your pasta, a Tuscan sauce checked for gluten, and a glass of local wine. No separate table, no eating an hour after everyone else.`,
               ],
             },
@@ -2787,11 +2795,11 @@ export const landings = {
             { q: `Is this class safe for coeliacs?`, a: `We prepare a dedicated gluten-free flour blend, a separate station with its own board and tools, and a separate pot of cooking water, all set up before the class begins. We are honest about the limit: wheat flour is used elsewhere in the same room, so we are not a certified gluten-free kitchen. Tell us how sensitive you are when you book and we will give you a straight answer.` },
             { q: `Is there an extra charge for the gluten-free option?`, a: `No. It is €95 per person, the same as every other guest at the table. We have never charged for it and do not intend to start.` },
             { q: `Can I book if my partner or friends are not gluten-free?`, a: `Yes, and most of our gluten-free bookings are exactly that. You cook side by side at the same table with your own station, and everyone sits down to eat together at the end.` },
-            { q: `Which shapes can be made gluten-free?`, a: `All four we teach: pici, tagliatelle, pappardelle and tortelli. The dough handles differently and needs a slightly different touch, which is part of what you will learn.` },
+            { q: `Which shapes can be made gluten-free?`, a: `Both dishes on the menu: the fettuccine and the ravioli. The dough handles differently and needs a slightly different touch, which is part of what you will learn.` },
             { q: `How do I book and tell you about my diet?`, a: `Use the "Book this class" button to build your request. It opens a WhatsApp chat with the details filled in; add your dietary needs there, or email ciao@handmadepastaflorence.com, and we will confirm exactly how we will set you up.` },
           ],
           related: [
-            { title: `The Chef's Table`, href: `/pasta-making-class-florence/`, desc: `The same class, in full: four shapes, one long lunch. €95.` },
+            { title: `The Chef's Table`, href: `/pasta-making-class-florence/`, desc: `The same class, in full: fettuccine, ravioli, tiramisù. €95.` },
             { title: `Gluten-free in Florence`, href: `/blog/gluten-free-pasta-florence/`, desc: `How to eat safely as a coeliac traveller in Italy.` },
             { title: `The Family Long-Table`, href: `/private-cooking-class-florence/`, desc: `The whole kitchen privately yours, from €680.` },
             { title: `Live Online Class`, href: `/online-pasta-making-class/`, desc: `Cook with us from your own gluten-free kitchen, from €68.` },
@@ -2801,7 +2809,7 @@ export const landings = {
           breadcrumbName: `Gluten-Free Cooking Class in Florence`,
           product: {
             name: `Gluten-Free Cooking Class in Florence`,
-            description: `A 3-hour hands-on gluten-free pasta class in Florence's Oltrarno: dedicated gluten-free flour blend, separate station and cooking water, four classic shapes, max 8 guests, ending in a sit-down Tuscan lunch. No gluten-free surcharge.`,
+            description: `A 3-hour hands-on gluten-free pasta class in Florence's Oltrarno: dedicated gluten-free flour blend, separate station and cooking water, fettuccine and ravioli made by hand, max 8 guests, ending at the table. No gluten-free surcharge.`,
             price: '95',
           },
         },
@@ -2809,12 +2817,12 @@ export const landings = {
       it: {
         slug: 'corso-cucina-senza-glutine-firenze',
         title: `Corso di Cucina Senza Glutine a Firenze: Nessun Supplemento`,
-        description: `€95, senza supplemento. La tua miscela di farine, la tua postazione pulita e gli stessi quattro formati degli altri ospiti. Max 8, cucina in Oltrarno.`,
+        description: `€95, senza supplemento. La tua miscela di farine, la tua postazione pulita e le stesse fettuccine e ravioli degli altri ospiti. Max 8, cucina in Oltrarno.`,
         cl: {
           eyebrow: `Senza glutine · Oltrarno, Firenze`,
           heading: `Un corso di cucina senza glutine a Firenze,`,
           headingItal: `allo stesso tavolo.`,
-          lede: `Quasi ovunque il senza glutine è una sostituzione fatta in cucina, lontano dagli occhi. Per noi è un coperto: la tua miscela, il tuo tagliere, la tua pentola, preparati prima che tu arrivi, senza costi aggiuntivi, così prepari e mangi gli stessi quattro formati di tutti gli altri.`,
+          lede: `Quasi ovunque il senza glutine è una sostituzione fatta in cucina, lontano dagli occhi. Per noi è un coperto: la tua miscela, il tuo tagliere, la tua pentola, preparati prima che tu arrivi, senza costi aggiuntivi, così prepari e mangi le stesse fettuccine e gli stessi ravioli di tutti gli altri.`,
           image: { src: img.plates, alt: `Piatti di pasta fresca fatta a mano serviti a un corso di cucina senza glutine a Firenze`, w: 1080, h: 1327 },
           price: `€95`,
           priceNote: `a persona · nessun supplemento senza glutine`,
@@ -2868,7 +2876,7 @@ export const landings = {
             {
               title: `Cosa preparerai`,
               paras: [
-                `Lo stesso corso di tutti gli altri, che è poi il punto. Impasterai il tuo impasto, imparerai a leggerlo al tatto: un impasto senza glutine si comporta diversamente e ti insegniamo a capire quando è pronto senza il glutine ad aiutarti, e lo lavorerai nei classici: pici fatti a mano, tagliatelle e pappardelle, e tortelli ripieni, seguendo la stagione.`,
+                `Lo stesso corso di tutti gli altri, che è poi il punto. Impasterai il tuo impasto, imparerai a leggerlo al tatto: un impasto senza glutine si comporta diversamente e ti insegniamo a capire quando è pronto senza il glutine ad aiutarti, e lo trasformerai negli stessi due piatti del resto del tavolo: fettuccine tagliate a mano e ravioli ripieni.`,
                 `Poi cuciniamo tutto insieme e ci sediamo. La tua pasta, un sugo toscano verificato, e un bicchiere di vino locale. Nessun tavolo separato, nessun mangiare un'ora dopo gli altri.`,
               ],
             },
@@ -2887,11 +2895,11 @@ export const landings = {
             { q: `Questo corso è sicuro per i celiaci?`, a: `Prepariamo una miscela di farine senza glutine dedicata, una postazione separata con tagliere e attrezzi propri e una pentola d'acqua separata, tutto allestito prima dell'inizio del corso. Siamo onesti sul limite: la farina di grano viene usata altrove nella stessa stanza, quindi non siamo una cucina certificata senza glutine. Dicci quanto sei sensibile quando prenoti e ti daremo una risposta sincera.` },
             { q: `C'è un supplemento per l'opzione senza glutine?`, a: `No. Sono €95 a persona, come per ogni altro ospite al tavolo. Non l'abbiamo mai fatto pagare e non intendiamo iniziare.` },
             { q: `Posso prenotare se il mio partner o i miei amici non sono celiaci?`, a: `Sì, e la maggior parte delle nostre prenotazioni senza glutine è esattamente così. Cucinate fianco a fianco allo stesso tavolo con la tua postazione dedicata, e alla fine ci si siede a mangiare tutti insieme.` },
-            { q: `Quali formati si possono fare senza glutine?`, a: `Tutti e quattro quelli che insegniamo: pici, tagliatelle, pappardelle e tortelli. L'impasto si comporta diversamente e richiede un tocco un po' diverso, e imparare questo fa parte del corso.` },
+            { q: `Quali formati si possono fare senza glutine?`, a: `Entrambi i piatti del menù: le fettuccine e i ravioli. L'impasto si comporta diversamente e richiede un tocco un po' diverso, e imparare questo fa parte del corso.` },
             { q: `Come prenoto e vi segnalo la mia dieta?`, a: `Usa il pulsante "Prenota questo corso" per creare la tua richiesta. Si apre una chat WhatsApp con i dettagli precompilati; aggiungi lì le tue esigenze alimentari, oppure scrivi a ciao@handmadepastaflorence.com, e ti confermeremo esattamente come ti prepareremo la postazione.` },
           ],
           related: [
-            { title: `Il Tavolo dello Chef`, href: `/it/corso-pasta-fresca-firenze/`, desc: `Lo stesso corso, per intero: quattro formati, un lungo pranzo. €95.` },
+            { title: `Il Tavolo dello Chef`, href: `/it/corso-pasta-fresca-firenze/`, desc: `Lo stesso corso, per intero: fettuccine, ravioli, tiramisù. €95.` },
             { title: `Senza glutine a Firenze`, href: `/it/blog/gluten-free-pasta-florence/`, desc: `Come mangiare in sicurezza da celiaci in Italia.` },
             { title: `Il Lungo Tavolo di Famiglia`, href: `/it/corso-cucina-privato-firenze/`, desc: `L'intera cucina privata per voi, da €680.` },
             { title: `Corso in Diretta Online`, href: `/it/corso-pasta-online/`, desc: `Cucina con noi dalla tua cucina senza glutine, da €68.` },
@@ -2901,7 +2909,7 @@ export const landings = {
           breadcrumbName: `Corso di Cucina Senza Glutine a Firenze`,
           product: {
             name: `Corso di Cucina Senza Glutine a Firenze`,
-            description: `Un corso pratico di pasta senza glutine di 3 ore in Oltrarno a Firenze: miscela di farine dedicata, postazione e acqua di cottura separate, quattro formati classici, max 8 ospiti, con pranzo toscano finale. Nessun supplemento.`,
+            description: `Un corso pratico di pasta senza glutine di 3 ore in Oltrarno a Firenze: miscela di farine dedicata, postazione e acqua di cottura separate, fettuccine e ravioli fatti a mano, max 8 ospiti, con pasto finale a tavola. Nessun supplemento.`,
             price: '95',
           },
         },
@@ -2909,12 +2917,12 @@ export const landings = {
       fr: {
         slug: 'cours-cuisine-sans-gluten-florence',
         title: `Cours de Cuisine Sans Gluten à Florence : Sans Supplément`,
-        description: `95 €, sans supplément. Votre mélange de farines, votre poste de travail propre, les mêmes quatre formes que les autres. Max 8 personnes, dans l'Oltrarno.`,
+        description: `95 €, sans supplément. Votre mélange de farines, votre poste de travail propre, les mêmes fettuccine et ravioli que les autres. Max 8, dans l'Oltrarno.`,
         cl: {
           eyebrow: `Sans gluten · Oltrarno, Florence`,
           heading: `Un cours de cuisine sans gluten à Florence,`,
           headingItal: `à la même table.`,
-          lede: `Presque partout, le sans gluten est une substitution faite en cuisine, hors de votre vue. Pour nous, c'est un couvert : votre mélange, votre planche, votre casserole, préparés avant votre arrivée, sans frais supplémentaires, pour que vous prépariez et mangiez les mêmes quatre formes que tout le monde.`,
+          lede: `Presque partout, le sans gluten est une substitution faite en cuisine, hors de votre vue. Pour nous, c'est un couvert : votre mélange, votre planche, votre casserole, préparés avant votre arrivée, sans frais supplémentaires, pour que vous prépariez et mangiez les mêmes fettuccine et ravioli que tout le monde.`,
           image: { src: img.plates, alt: `Assiettes de pâtes fraîches faites main servies lors d'un cours de cuisine sans gluten à Florence`, w: 1080, h: 1327 },
           price: `95 €`,
           priceNote: `par personne · sans supplément`,
@@ -2968,7 +2976,7 @@ export const landings = {
             {
               title: `Ce que vous préparerez`,
               paras: [
-                `Le même cours que tout le monde, ce qui est précisément l'idée. Vous préparerez votre pâte, apprendrez à la lire au toucher: une pâte sans gluten se comporte autrement, et nous vous apprenons à reconnaître le bon moment sans l'aide du gluten, et la travaillerez en classiques : pici roulés à la main, tagliatelles et pappardelles, et tortelli farcis, selon la saison.`,
+                `Le même cours que tout le monde, ce qui est précisément l'idée. Vous préparerez votre pâte, apprendrez à la lire au toucher: une pâte sans gluten se comporte autrement, et nous vous apprenons à reconnaître le bon moment sans l'aide du gluten, et la transformerez en ces deux mêmes plats que le reste de la table : des fettuccine coupées à la main et des ravioli farcis.`,
                 `Ensuite nous cuisinons tout ensemble et nous nous asseyons. Vos pâtes, une sauce toscane vérifiée, et un verre de vin local. Pas de table à part, pas de repas une heure après les autres.`,
               ],
             },
@@ -2987,11 +2995,11 @@ export const landings = {
             { q: `Ce cours est-il sûr pour les personnes coeliaques ?`, a: `Nous préparons un mélange de farines sans gluten dédié, un poste séparé avec sa propre planche et ses propres outils, et une casserole d'eau séparée, le tout installé avant le début du cours. Soyons clairs sur la limite : la farine de blé est utilisée ailleurs dans la même pièce, nous ne sommes donc pas une cuisine certifiée sans gluten. Dites-nous votre degré de sensibilité à la réservation et nous vous répondrons franchement.` },
             { q: `Y a-t-il un supplément pour l'option sans gluten ?`, a: `Non. C'est 95 € par personne, comme pour tous les autres à la table. Nous ne l'avons jamais facturé et n'avons pas l'intention de commencer.` },
             { q: `Puis-je réserver si mon partenaire ou mes amis ne sont pas coeliaques ?`, a: `Oui, et la plupart de nos réservations sans gluten sont exactement cela. Vous cuisinez côte à côte à la même table avec votre poste dédié, et tout le monde se met à table ensemble à la fin.` },
-            { q: `Quelles formes peut-on faire sans gluten ?`, a: `Les quatre que nous enseignons: pici, tagliatelles, pappardelles et tortelli. La pâte se comporte différemment et demande un toucher un peu différent, ce qui fait partie de l'apprentissage.` },
+            { q: `Quelles formes peut-on faire sans gluten ?`, a: `Les deux plats du menu : les fettuccine et les ravioli. La pâte se comporte différemment et demande un toucher un peu différent, ce qui fait partie de l'apprentissage.` },
             { q: `Comment réserver et vous signaler mon régime ?`, a: `Utilisez le bouton "Réserver ce cours" pour formuler votre demande. Cela ouvre une discussion WhatsApp pré-remplie; ajoutez-y vos besoins alimentaires, ou écrivez à ciao@handmadepastaflorence.com, et nous confirmerons exactement comment nous installerons votre poste.` },
           ],
           related: [
-            { title: `La Table du Chef`, href: `/fr/cours-de-pates-fraiches-florence/`, desc: `Le même cours, en entier: quatre formes, un long déjeuner. 95 €.` },
+            { title: `La Table du Chef`, href: `/fr/cours-de-pates-fraiches-florence/`, desc: `Le même cours, en entier : fettuccine, ravioli, tiramisù. 95 €.` },
             { title: `Sans gluten à Florence`, href: `/fr/blog/gluten-free-pasta-florence/`, desc: `Comment manger en sécurité quand on est coeliaque en Italie.` },
             { title: `La Longue Table Familiale`, href: `/fr/cours-cuisine-prive-florence/`, desc: `Toute la cuisine pour vous, à partir de 680 €.` },
             { title: `Cours en Direct en Ligne`, href: `/fr/cours-pates-en-ligne/`, desc: `Cuisinez avec nous depuis votre propre cuisine sans gluten, dès 68 €.` },
@@ -3001,7 +3009,7 @@ export const landings = {
           breadcrumbName: `Cours de Cuisine Sans Gluten à Florence`,
           product: {
             name: `Cours de Cuisine Sans Gluten à Florence`,
-            description: `Un cours pratique de pâtes sans gluten de 3 heures dans l'Oltrarno à Florence : mélange de farines dédié, poste et eau de cuisson séparés, quatre formes classiques, max 8 personnes, suivi d'un déjeuner toscan. Sans supplément.`,
+            description: `Un cours pratique de pâtes sans gluten de 3 heures dans l'Oltrarno à Florence : mélange de farines dédié, poste et eau de cuisson séparés, fettuccine et ravioli faits main, max 8 personnes, suivi d'un repas à table. Sans supplément.`,
             price: '95',
           },
         },
@@ -3009,12 +3017,12 @@ export const landings = {
       de: {
         slug: 'glutenfreier-kochkurs-florenz',
         title: `Glutenfreier Kochkurs in Florenz: ohne Aufpreis, 95 €`,
-        description: `95 €, ohne Aufpreis. Eigene Mehlmischung, eigene saubere Station und dieselben vier Pastaformen wie alle anderen am Tisch. Max. 8 Gäste im Oltrarno.`,
+        description: `95 €, ohne Aufpreis. Eigene Mehlmischung, eigene saubere Station und dieselben Fettuccine und Ravioli wie alle anderen am Tisch. Max. 8 Gäste im Oltrarno.`,
         cl: {
           eyebrow: `Glutenfrei · Oltrarno, Florenz`,
           heading: `Ein glutenfreier Kochkurs in Florenz,`,
           headingItal: `am selben Tisch.`,
-          lede: `Fast überall ist glutenfrei ein Austausch, der hinten in der Küche passiert. Für uns ist es ein Gedeck: Ihre Mischung, Ihr Brett, Ihr Topf, vorbereitet, bevor Sie ankommen, ohne Aufpreis, damit Sie dieselben vier Formen machen und essen wie alle anderen.`,
+          lede: `Fast überall ist glutenfrei ein Austausch, der hinten in der Küche passiert. Für uns ist es ein Gedeck: Ihre Mischung, Ihr Brett, Ihr Topf, vorbereitet, bevor Sie ankommen, ohne Aufpreis, damit Sie dieselben Fettuccine und Ravioli machen und essen wie alle anderen.`,
           image: { src: img.plates, alt: `Teller mit frischer handgemachter Pasta bei einem glutenfreien Kochkurs in Florenz`, w: 1080, h: 1327 },
           price: `95 €`,
           priceNote: `pro Person · kein glutenfrei-Aufpreis`,
@@ -3068,7 +3076,7 @@ export const landings = {
             {
               title: `Was Sie machen werden`,
               paras: [
-                `Derselbe Kurs wie für alle anderen, und genau darum geht es. Sie kneten Ihren eigenen Teig, lernen ihn mit den Händen zu lesen: ein glutenfreier Teig verhält sich anders, und wir zeigen Ihnen, woran man ihn erkennt, wenn kein Gluten hilft, und formen ihn zu den Klassikern: handgerollte Pici, Tagliatelle und Pappardelle, gefüllte Tortelli, je nach Saison.`,
+                `Derselbe Kurs wie für alle anderen, und genau darum geht es. Sie kneten Ihren eigenen Teig, lernen ihn mit den Händen zu lesen: ein glutenfreier Teig verhält sich anders, und wir zeigen Ihnen, woran man ihn erkennt, wenn kein Gluten hilft, und verarbeiten ihn zu denselben zwei Gerichten wie der Rest des Tisches: von Hand geschnittene Fettuccine und gefüllte Ravioli.`,
                 `Dann kochen wir alles gemeinsam und setzen uns. Ihre Pasta, eine geprüfte toskanische Sauce, ein Glas Wein aus der Region. Kein separater Tisch, kein Essen eine Stunde nach den anderen.`,
               ],
             },
@@ -3087,11 +3095,11 @@ export const landings = {
             { q: `Ist dieser Kurs für Zöliakie-Betroffene sicher?`, a: `Wir bereiten eine eigene glutenfreie Mehlmischung, eine getrennte Station mit eigenem Brett und Werkzeug und einen separaten Kochtopf vor, alles aufgebaut vor Kursbeginn. Zur Grenze sind wir ehrlich: Weizenmehl wird anderswo im selben Raum verwendet, wir sind also keine zertifizierte glutenfreie Küche. Sagen Sie uns bei der Buchung, wie empfindlich Sie sind, und Sie bekommen eine gerade Antwort.` },
             { q: `Kostet die glutenfreie Option extra?`, a: `Nein. Es sind 95 € pro Person, wie für jeden anderen Gast am Tisch. Wir haben das nie berechnet und haben es auch nicht vor.` },
             { q: `Kann ich buchen, wenn mein Partner oder meine Freunde nicht glutenfrei essen?`, a: `Ja, und die meisten unserer glutenfreien Buchungen sind genau das. Sie kochen Seite an Seite am selben Tisch mit Ihrer eigenen Station, und am Ende setzen sich alle gemeinsam zum Essen.` },
-            { q: `Welche Formen lassen sich glutenfrei machen?`, a: `Alle vier, die wir unterrichten: Pici, Tagliatelle, Pappardelle und Tortelli. Der Teig verhält sich anders und braucht ein etwas anderes Gefühl, und genau das lernen Sie mit.` },
+            { q: `Welche Formen lassen sich glutenfrei machen?`, a: `Beide Gerichte auf dem Menü: die Fettuccine und die Ravioli. Der Teig verhält sich anders und braucht ein etwas anderes Gefühl, und genau das lernen Sie mit.` },
             { q: `Wie buche ich und teile meine Ernährung mit?`, a: `Nutzen Sie "Diesen Kurs buchen", um Ihre Anfrage zu erstellen. Es öffnet sich ein WhatsApp-Chat mit ausgefüllten Details; ergänzen Sie dort Ihre Bedürfnisse, oder schreiben Sie an ciao@handmadepastaflorence.com. Wir bestätigen Ihnen genau, wie wir Ihre Station aufbauen.` },
           ],
           related: [
-            { title: `Der Tisch des Küchenchefs`, href: `/de/pasta-kurs-florenz/`, desc: `Derselbe Kurs, vollständig: vier Formen, ein langes Mittagessen. 95 €.` },
+            { title: `Der Tisch des Küchenchefs`, href: `/de/pasta-kurs-florenz/`, desc: `Derselbe Kurs, vollständig: Fettuccine, Ravioli, Tiramisù. 95 €.` },
             { title: `Glutenfrei in Florenz`, href: `/de/blog/gluten-free-pasta-florence/`, desc: `Wie man als Zöliakie-Reisende in Italien sicher isst.` },
             { title: `Die lange Familientafel`, href: `/de/privater-kochkurs-florenz/`, desc: `Die ganze Küche ganz privat, ab 680 €.` },
             { title: `Live-Online-Kurs`, href: `/de/online-pasta-kurs/`, desc: `Kochen Sie mit uns aus Ihrer eigenen glutenfreien Küche, ab 68 €.` },
@@ -3101,7 +3109,7 @@ export const landings = {
           breadcrumbName: `Glutenfreier Kochkurs in Florenz`,
           product: {
             name: `Glutenfreier Kochkurs in Florenz`,
-            description: `Ein 3-stündiger praktischer glutenfreier Pastakurs in Florenz' Oltrarno: eigene glutenfreie Mehlmischung, getrennte Station und getrenntes Kochwasser, vier klassische Formen, max. 8 Gäste, mit anschließendem toskanischem Mittagessen. Ohne Aufpreis.`,
+            description: `Ein 3-stündiger praktischer glutenfreier Pastakurs in Florenz' Oltrarno: eigene glutenfreie Mehlmischung, getrennte Station und getrenntes Kochwasser, Fettuccine und Ravioli von Hand, max. 8 Gäste, mit anschließendem Essen am Tisch. Ohne Aufpreis.`,
             price: '95',
           },
         },
@@ -3109,12 +3117,12 @@ export const landings = {
       zh: {
         slug: 'wu-fuzhi-pengren-kecheng-foluolunsa',
         title: `佛罗伦萨无麸质烹饪课程：手工意面，不加收费用 (€95)`,
-        description: `佛罗伦萨的无麸质实践烹饪课程：专属面粉配方、专属清洁操作台，以及与其他客人相同的四种意面形状。奥特拉诺厨房最多8位客人，每人95欧元，无额外费用。`,
+        description: `佛罗伦萨的无麸质实践烹饪课程：专属面粉配方、专属清洁操作台，以及与其他客人相同的宽面和意式饺子。奥特拉诺厨房最多8位客人，每人95欧元，无额外费用。`,
         cl: {
           eyebrow: `无麸质 · 佛罗伦萨奥特拉诺`,
           heading: `佛罗伦萨的无麸质烹饪课程，`,
           headingItal: `同一张餐桌。`,
-          lede: `在大多数厨房里，无麸质只是后厨里悄悄做的一次替换。而在我们这里，它是一副餐具：您专属的面粉配方、专属的案板、专属的锅，在您到达之前就已备好，不收取任何额外费用，让您和其他人制作并享用同样的四种形状。`,
+          lede: `在大多数厨房里，无麸质只是后厨里悄悄做的一次替换。而在我们这里，它是一副餐具：您专属的面粉配方、专属的案板、专属的锅，在您到达之前就已备好，不收取任何额外费用，让您和其他人制作并享用同样的宽面和意式饺子。`,
           image: { src: img.plates, alt: `佛罗伦萨无麸质烹饪课程上供应的手工新鲜意面`, w: 1080, h: 1327 },
           price: `€95`,
           priceNote: `每人 · 无麸质不加价`,
@@ -3168,7 +3176,7 @@ export const landings = {
             {
               title: `您将制作什么`,
               paras: [
-                `与其他人完全相同的课程，而这正是关键所在。您将亲手和面，学会用手感判断面团：无麸质面团的表现不同，我们会教您在没有麸质帮助的情况下如何判断"到位了"，然后把它做成经典形状：手工揉制的pici、tagliatelle和pappardelle，以及填馅的tortelli，具体取决于季节。`,
+                `与其他人完全相同的课程，而这正是关键所在。您将亲手和面，学会用手感判断面团：无麸质面团的表现不同，我们会教您在没有麸质帮助的情况下如何判断"到位了"，然后把它做成和餐桌上其他人一样的两道菜：手工切的宽面和填馅的意式饺子。`,
                 `之后我们一起烹饪，然后坐下来享用。您的意面、经过确认的托斯卡纳酱汁，以及一杯当地葡萄酒。没有单独的餐桌，也不必比别人晚一个小时才吃上饭。`,
               ],
             },
@@ -3187,11 +3195,11 @@ export const landings = {
             { q: `这门课程对乳糜泻患者安全吗？`, a: `我们会准备专属的无麸质面粉配方、配有独立案板和工具的独立操作台，以及单独的一锅煮面水，全部在课程开始前布置完毕。关于局限我们也如实相告：同一空间的其他区域会使用小麦面粉，因此我们不是经过认证的无麸质厨房。请在预订时告诉我们您的敏感程度，我们会给您一个坦率的答复。` },
             { q: `无麸质选项需要额外收费吗？`, a: `不需要。每人95欧元，与餐桌上的其他客人完全相同。我们从未为此收费，今后也不打算这样做。` },
             { q: `如果我的伴侣或朋友不需要无麸质，我还能预订吗？`, a: `可以，而且我们大多数无麸质预订正是这种情况。你们在同一张桌旁并肩制作，您使用自己的专属操作台，最后大家一起坐下来共进午餐。` },
-            { q: `哪些形状可以做成无麸质的？`, a: `我们教授的全部四种：pici、tagliatelle、pappardelle和tortelli。面团的表现不同，需要略有差异的手法，而这也正是您要学习的一部分。` },
+            { q: `哪些形状可以做成无麸质的？`, a: `菜单上的两道都可以：宽面和意式饺子。面团的表现不同，需要略有差异的手法，而这也正是您要学习的一部分。` },
             { q: `我该如何预订并告知饮食需求？`, a: `使用"预订此课程"按钮创建您的请求。它会打开一个预填详情的WhatsApp聊天，请在其中补充您的饮食需求，或发送邮件至 ciao@handmadepastaflorence.com，我们会确认具体如何为您布置操作台。` },
           ],
           related: [
-            { title: `主厨餐桌`, href: `/zh/foluolunsa-yidali-mian-kecheng/`, desc: `完整的同一门课程：四种形状，一顿悠长的午餐。€95。` },
+            { title: `主厨餐桌`, href: `/zh/foluolunsa-yidali-mian-kecheng/`, desc: `完整的同一门课程：宽面、意式饺子、提拉米苏。€95。` },
             { title: `佛罗伦萨无麸质饮食`, href: `/zh/blog/gluten-free-pasta-florence/`, desc: `乳糜泻旅行者如何在意大利安全用餐。` },
             { title: `家庭长桌体验`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `整个厨房私人包场，680欧元起。` },
             { title: `在线直播课程`, href: `/zh/zaixian-yidali-mian-kecheng/`, desc: `在您自己的无麸质厨房与我们一起烹饪，68欧元起。` },
@@ -3201,7 +3209,566 @@ export const landings = {
           breadcrumbName: `佛罗伦萨无麸质烹饪课程`,
           product: {
             name: `佛罗伦萨无麸质烹饪课程`,
-            description: `佛罗伦萨奥特拉诺区3小时无麸质实践意面课程：专属无麸质面粉配方、独立操作台与煮面水、四种经典形状、最多8位客人，以托斯卡纳午餐收尾。不加收费用。`,
+            description: `佛罗伦萨奥特拉诺区3小时无麸质实践意面课程：专属无麸质面粉配方、独立操作台与煮面水、手工宽面和意式饺子、最多8位客人，最后一起用餐。不加收费用。`,
+            price: '95',
+          },
+        },
+      },
+    },
+  },
+
+  // Targets "vegan cooking class Florence" and "vegetarian cooking class
+  // Florence". Added 2026-09-26. Same pattern as `gluten-free`: it sells the
+  // same €95 Chef's Table, so no courseMode (a second Course entry for the same
+  // class would be near-duplicate structured data).
+  //
+  // Demand evidence: GSC cannot show it — no page existed, so 0 of 952 queries
+  // in the 30 Jun–26 Sep export mention vegan or vegetarian. But Viator, Pelago,
+  // Tripadvisor and Cookly all sell dedicated vegan/vegetarian pasta classes in
+  // Florence (SERP checked 2026-09-26), which is the demand signal OTAs act on.
+  //
+  // Dietary claims start from the owner-written FAQs on `pasta-making` (commit
+  // d2bc1cb, 2026-09-20). Owner decisions taken 2026-09-26 (growth over margin):
+  //   - NO surcharge for vegan or vegetarian. The price note, facts, FAQ and
+  //     schema all say so, so adding a surcharge later means changing all four;
+  //   - vegan ravioli = potato, garlic, parsley and nutmeg filling (Mugello
+  //     tortelli-di-patate style, no cheese, no egg), dressed with extra-virgin
+  //     olive oil and sage instead of butter. The kitchen must prep exactly this.
+  vegan: {
+    floatingCta: true,
+    updated: '2026-09-26',
+    locales: {
+      en: {
+        slug: 'vegan-cooking-class-florence',
+        title: `Vegan & Vegetarian Cooking Class in Florence: Pasta, €95`,
+        description: `No surcharge, vegan or vegetarian: eggless Tuscan dough, potato-filled ravioli with olive oil and sage, tiramisù adapted. €95, max 8, Oltrarno.`,
+        cl: {
+          eyebrow: `Vegan & vegetarian · Oltrarno, Florence`,
+          heading: `A vegan cooking class in Florence,`,
+          headingItal: `with nothing left out.`,
+          lede: `Tuscan pasta was plant-based long before anyone had a word for it: pici are flour, water and olive oil. Vegetarians cook the class exactly as it is. Vegans tell us when they book, and the eggless dough, the filling and the dessert are ready that morning. Neither costs a cent more.`,
+          image: { src: img.shapePici, alt: `Hand-rolled pici, the eggless Tuscan pasta at the heart of a vegan cooking class in Florence`, w: 1000, h: 625 },
+          price: `€95`,
+          priceNote: `per person · no vegan or vegetarian surcharge`,
+          facts: [
+            { label: `Local Products`, value: `Seasonal Tuscan produce`, icon: 'leaf' },
+            { label: `Length`, value: `about 3 hours`, icon: 'clock' },
+            { label: `Group size`, value: `max 8 guests`, icon: 'people' },
+            { label: `Vegetarian`, value: `no changes, no surcharge`, icon: 'tag' },
+            { label: `Vegan`, value: `eggless dough, no surcharge`, icon: 'chef-hat' },
+            { label: `Where`, value: `Oltrarno, near Santo Spirito`, icon: 'map-pin' },
+          ],
+          infoBanner: {
+            menu: {
+              title: 'Cooking class menu',
+              items: [
+                '<strong>Fettuccine</strong> with <strong>Tomato</strong> and <strong>Basil</strong> or <b>Cacio e Pepe</b> (vegan: tomato and basil or <strong>aglione</strong>)',
+                '<strong>Ravioli</strong> with <strong>Butter</strong> and <strong>Sage</strong> (vegan: potato filling, <strong>olive oil</strong> and sage)',
+                'Your own <strong>Tiramisù</strong>',
+                'Glass of <strong>Wine</strong> or non-alcoholic beverage',
+                'Glass of <strong>Limoncello</strong> or <strong>coffee</strong>',
+                'Water'
+              ],
+              text: 'Vegetarian needs <strong>no changes</strong>: skip the amatriciana, the only sauce with meat, and the whole menu is meat-free at <strong>no extra charge</strong>. For vegans the dough goes <strong>eggless</strong> and the sauce is tomato and basil or aglione, both dairy-free; the ravioli are filled with potato, garlic and parsley, the Mugello way, and dressed with olive oil and sage instead of butter; the tiramisù is adapted too, all at <strong>no extra charge</strong>. Tell us <strong>when you book</strong>, not on the day: egg dough is made at the same table, so this is not a vegan kitchen.'
+            },
+            included: {
+              title: 'What’s included',
+              items: [
+                'Theoretical and hands-on cooking instructions',
+                '<strong>English speaking</strong> chef',
+                '<strong>Fresh ingredients</strong>',
+                '<strong>Equipment provided</strong> (workspace, apron, knife, and rolling pin).'
+              ],
+              text: 'When the preparation is done, you sit down at the table. The restaurant\'s kitchen cooks everything you made, and you eat it with a glass of wine, in the center of Florence, with the people who made it with you.'
+            },
+            notIncluded: {
+              title: 'What’s not included',
+              items: [
+                'Making the sauce',
+                'Extra food and drinks'
+              ]
+            }
+          },
+          sections: [
+            {
+              title: `Is the class vegetarian as it stands?`,
+              paras: [
+                `Yes, and nothing about it is a workaround. The menu is fettuccine with a sauce you choose, ravioli with butter and sage, and your own tiramisù. Pick tomato and basil or cacio e pepe and every plate is vegetarian; the amatriciana is the only option with meat, and it is a choice you make on the day, not a default. There is no surcharge, because nothing is being substituted.`,
+                `Tell us in advance that someone is vegetarian and the sauce is ready before you arrive. Mixed tables work exactly like any other class: everyone cooks side by side and sits down together at the end.`,
+              ],
+            },
+            {
+              title: `How does a vegan pasta class work?`,
+              paras: [
+                `It starts with the dough. Ours normally uses egg; yours goes eggless, which is not a compromise but the oldest pasta in Tuscany. Pici, the hand-rolled noodle of the Sienese hills, have always been flour, water and olive oil, nothing else, and learning to read a dough without egg is its own skill.`,
+                `The sauce is tomato and basil or aglione, the Tuscan garlic-and-tomato sauce, both dairy-free as they are. The ravioli swap ricotta for the filling Tuscany already uses in the Mugello valley, potato with garlic, parsley and nutmeg, and reach the table with extra-virgin olive oil and sage instead of butter. The tiramisù is adapted rather than dropped. Tell us when you book, so the ingredients are in the kitchen that morning. None of it costs extra.`,
+              ],
+            },
+            {
+              title: `Honest about the kitchen`,
+              paras: [
+                `This is a working pasta kitchen: egg dough, cheese and butter are on the same table on the same day, so we are not a vegan kitchen and will not pretend to be. If that matters to you, say so when you book and we will talk it through, or take the kitchen privately as <a href="/private-cooking-class-florence/">The Family Long-Table</a>.`,
+              ],
+            },
+            {
+              title: `Good to know`,
+              paras: [],
+              list: [
+                `Coeliac as well? Read how the <a href="/gluten-free-cooking-class-florence/">gluten-free class</a> works and tell us both needs when you book.`,
+                `Prefer dinner? The 18:00 slot runs the same class into the evening instead of lunch, subject to availability.`,
+                `We email you the recipes afterwards, so the eggless dough works in your own kitchen too.`,
+                `Cooking from home instead? The <a href="/online-pasta-making-class/">live online class</a> runs from this same kitchen.`,
+              ],
+            },
+          ],
+          faqs: [
+            { q: `Is the class suitable for vegetarians?`, a: `Yes, with no changes and no surcharge. Pick tomato and basil or cacio e pepe for your fettuccine and the whole menu is vegetarian: the ravioli are butter and sage, the tiramisù is the classic one. Only the amatriciana option contains meat, and it is a choice you make on the day, not a default.` },
+            { q: `Can you do a vegan pasta class?`, a: `Yes, with advance notice. The dough goes eggless, which is how Tuscany has always made pici: flour, water and olive oil, nothing else. The sauce is tomato and basil or aglione, both naturally dairy-free; the ravioli get a potato filling with olive oil and sage, and we adapt the dessert rather than drop it. There is no surcharge. Tell us when you book so the ingredients are in the kitchen that morning.` },
+            { q: `Is there a surcharge?`, a: `No. Vegetarian or vegan, it is €95, the same as everyone else at the table. We would rather you came and cooked with us than paid extra for leaving out the egg.` },
+            { q: `Can I book with friends who eat everything?`, a: `Yes. Everyone cooks the same class side by side at the same table, and everyone sits down to eat together at the end.` },
+            { q: `Is the kitchen fully vegan?`, a: `No, and we would rather say so up front. Egg dough, cheese and butter are used at the same table on the same day. If that is a problem for you, tell us when you book, or book the kitchen privately.` },
+            { q: `How do I book and tell you about my diet?`, a: `Use the "Book this class" button to build your request. It opens a WhatsApp chat with the details filled in; add your dietary needs there, or email ciao@handmadepastaflorence.com, and we will confirm exactly what you will cook.` },
+          ],
+          related: [
+            { title: `The Chef's Table`, href: `/pasta-making-class-florence/`, desc: `The same class, in full, with one long lunch. €95.` },
+            { title: `Gluten-Free Class`, href: `/gluten-free-cooking-class-florence/`, desc: `Coeliac? Dedicated flour blend and station, no surcharge.` },
+            { title: `What to eat in Florence`, href: `/blog/what-to-eat-in-florence/`, desc: `The Florentine dishes worth ordering while you are here.` },
+            { title: `The Family Long-Table`, href: `/private-cooking-class-florence/`, desc: `The whole kitchen privately yours, from €680.` },
+          ],
+          ctaLabel: `Book this class`,
+          prefill: 'florence',
+          breadcrumbName: `Vegan & Vegetarian Cooking Class in Florence`,
+          product: {
+            name: `Vegan & Vegetarian Cooking Class in Florence`,
+            description: `A 3-hour hands-on pasta class in Florence's Oltrarno for vegetarians and vegans: no surcharge for either: a meat-free menu as standard, and for vegans an eggless Tuscan dough, potato-filled ravioli and dairy-free sauces on advance notice, max 8 guests, ending at the table.`,
+            price: '95',
+          },
+        },
+      },
+      it: {
+        slug: 'corso-cucina-vegana-firenze',
+        title: `Corso di Cucina Vegana e Vegetariana a Firenze: Pasta, €95`,
+        description: `Nessun supplemento, vegano o vegetariano: impasto toscano senza uovo, ravioli di patate con olio e salvia, tiramisù adattato. €95, max 8, Oltrarno.`,
+        cl: {
+          eyebrow: `Vegano e vegetariano · Oltrarno, Firenze`,
+          heading: `Un corso di cucina vegana a Firenze,`,
+          headingItal: `senza rinunciare a niente.`,
+          lede: `La pasta toscana era vegetale molto prima che esistesse la parola: i pici sono farina, acqua e olio d’oliva. I vegetariani fanno il corso così com’è. I vegani ce lo dicono quando prenotano, e impasto senza uovo, ripieno e dolce sono pronti la mattina stessa. Nessuno dei due costa un centesimo in più.`,
+          image: { src: img.shapePici, alt: `Pici tirati a mano, la pasta toscana senza uovo al centro di un corso di cucina vegana a Firenze`, w: 1000, h: 625 },
+          price: `€95`,
+          priceNote: `a persona · nessun supplemento vegano o vegetariano`,
+          facts: [
+            { label: `Prodotti Locali`, value: `Prodotti toscani di stagione`, icon: 'leaf' },
+            { label: `Durata`, value: `circa 3 ore`, icon: 'clock' },
+            { label: `Dimensione gruppo`, value: `max 8 ospiti`, icon: 'people' },
+            { label: `Vegetariano`, value: `nessuna modifica, nessun supplemento`, icon: 'tag' },
+            { label: `Vegano`, value: `impasto senza uovo, nessun supplemento`, icon: 'chef-hat' },
+            { label: `Dove`, value: `Oltrarno, vicino a Santo Spirito`, icon: 'map-pin' },
+          ],
+          infoBanner: {
+            menu: {
+              title: 'Menu del corso di cucina',
+              items: [
+                '<strong>Fettuccine</strong> con <strong>Pomodoro</strong> e <strong>Basilico</strong> o <b>Cacio e Pepe</b> (vegano: pomodoro e basilico o <strong>aglione</strong>)',
+                '<strong>Ravioli</strong> con <strong>Burro</strong> e <strong>Salvia</strong> (vegano: ripieno di patate, <strong>olio</strong> e salvia)',
+                'Il tuo <strong>Tiramisù</strong>',
+                'Bicchiere di <strong>Vino</strong> o bevanda analcolica',
+                'Bicchiere di <strong>Limoncello</strong> o <strong>caffè</strong>',
+                'Acqua'
+              ],
+              text: 'Per i vegetariani <strong>non cambia nulla</strong>: basta non scegliere l’amatriciana, l’unico sugo con carne, e tutto il menù è senza carne, <strong>senza supplemento</strong>. Per i vegani l’impasto va <strong>senza uovo</strong> e il sugo è pomodoro e basilico o aglione, entrambi senza latticini; i ravioli si riempiono di patate, aglio e prezzemolo, come nel Mugello, e si condiscono con olio e salvia invece del burro; anche il tiramisù viene adattato, tutto <strong>senza supplemento</strong>. Diccelo <strong>quando prenoti</strong>, non il giorno stesso: allo stesso tavolo si lavora anche l’impasto all’uovo, quindi non siamo una cucina vegana.'
+            },
+            included: {
+              title: 'Cosa è incluso',
+              items: [
+                'Istruzioni teoriche e pratiche di cucina',
+                'Chef che <strong>parla inglese</strong>',
+                '<strong>Ingredienti freschi</strong>',
+                '<strong>Attrezzatura fornita</strong> (postazione di lavoro, grembiule, coltello e mattarello).'
+              ],
+              text: 'Terminata la preparazione, ci si siede a tavola. La cucina del ristorante cuoce tutto ciò che hai preparato, e lo mangi con un bicchiere di vino, nel centro di Firenze, con le persone che hanno cucinato con te.'
+            },
+            notIncluded: {
+              title: 'Cosa non è incluso',
+              items: [
+                'Preparazione del sugo',
+                'Cibo e bevande extra'
+              ]
+            }
+          },
+          sections: [
+            {
+              title: `Il corso è già vegetariano così com’è?`,
+              paras: [
+                `Sì, e non c’è nessun ripiego. Il menù è fettuccine con un sugo a scelta, ravioli burro e salvia e il tuo tiramisù. Scegli pomodoro e basilico o cacio e pepe e ogni piatto è vegetariano; l’amatriciana è l’unica opzione con carne, ed è una scelta che si fa il giorno stesso, non un’impostazione predefinita. Nessun supplemento, perché non si sostituisce niente.`,
+                `Dicci in anticipo che qualcuno è vegetariano e il sugo sarà pronto prima che tu arrivi. I tavoli misti funzionano come qualsiasi altro corso: tutti cucinano fianco a fianco e alla fine ci si siede insieme.`,
+              ],
+            },
+            {
+              title: `Come funziona un corso di pasta vegano?`,
+              paras: [
+                `Si parte dall’impasto. Il nostro di solito è all’uovo; il tuo va senza uovo, che non è un compromesso ma la pasta più antica della Toscana. I pici, gli spaghettoni tirati a mano delle colline senesi, sono sempre stati farina, acqua e olio d’oliva, nient’altro, e imparare a leggere un impasto senza uovo è un’abilità a sé.`,
+                `Il sugo è pomodoro e basilico o aglione, entrambi senza latticini così come sono. I ravioli sostituiscono la ricotta con il ripieno che la Toscana usa già nel Mugello, patate con aglio, prezzemolo e noce moscata, e arrivano in tavola con olio extravergine e salvia invece del burro. Il tiramisù viene adattato invece di essere tolto. Diccelo quando prenoti, così la mattina stessa gli ingredienti sono in cucina. Niente di tutto questo costa di più.`,
+              ],
+            },
+            {
+              title: `Sinceri sulla cucina`,
+              paras: [
+                `Questa è una cucina di pasta fresca in piena attività: impasto all’uovo, formaggio e burro sono sullo stesso tavolo nello stesso giorno, quindi non siamo una cucina vegana e non fingiamo di esserlo. Se per te è importante, diccelo quando prenoti e ne parliamo, oppure prendi la cucina in esclusiva con <a href="/it/corso-cucina-privato-firenze/">Il Lungo Tavolo di Famiglia</a>.`,
+              ],
+            },
+            {
+              title: `Buono a sapersi`,
+              paras: [],
+              list: [
+                `Anche celiaco? Leggi come funziona il <a href="/it/corso-cucina-senza-glutine-firenze/">corso senza glutine</a> e segnalaci entrambe le esigenze quando prenoti.`,
+                `Preferisci la cena? Lo slot delle 18:00 porta lo stesso corso in serata invece che a pranzo, secondo disponibilità.`,
+                `Dopo il corso ti mandiamo le ricette via email, così l’impasto senza uovo funziona anche nella tua cucina.`,
+                `Preferisci cucinare da casa? Il <a href="/it/corso-pasta-online/">corso in diretta online</a> si tiene da questa stessa cucina.`,
+              ],
+            },
+          ],
+          faqs: [
+            { q: `Il corso è adatto ai vegetariani?`, a: `Sì, senza modifiche e senza supplemento. Scegli pomodoro e basilico o cacio e pepe per le tue fettuccine e tutto il menù è vegetariano: i ravioli sono burro e salvia, il tiramisù è quello classico. Solo l’opzione amatriciana contiene carne, ed è una scelta che si fa il giorno stesso, non un’impostazione predefinita.` },
+            { q: `Potete fare un corso di pasta vegano?`, a: `Sì, con un preavviso. L’impasto va senza uovo, che è poi il modo in cui la Toscana ha sempre fatto i pici: farina, acqua e olio d’oliva, nient’altro. Il sugo è pomodoro e basilico o aglione, entrambi senza latticini; i ravioli hanno un ripieno di patate con olio e salvia, e il dolce lo adattiamo invece di toglierlo. Nessun supplemento. Diccelo quando prenoti, così la mattina stessa gli ingredienti sono in cucina.` },
+            { q: `C’è un supplemento?`, a: `No. Vegetariano o vegano, sono €95, come per tutti gli altri al tavolo. Preferiamo che tu venga a cucinare con noi piuttosto che farti pagare di più per un impasto senza uovo.` },
+            { q: `Posso prenotare con amici che mangiano di tutto?`, a: `Sì. Tutti fanno lo stesso corso fianco a fianco allo stesso tavolo, e alla fine ci si siede a mangiare insieme.` },
+            { q: `La cucina è completamente vegana?`, a: `No, e preferiamo dirlo subito. Impasto all’uovo, formaggio e burro si usano allo stesso tavolo nello stesso giorno. Se per te è un problema, diccelo quando prenoti, oppure prenota la cucina in esclusiva.` },
+            { q: `Come prenoto e vi segnalo la mia dieta?`, a: `Usa il pulsante "Prenota questo corso" per creare la tua richiesta. Si apre una chat WhatsApp con i dettagli precompilati; aggiungi lì le tue esigenze alimentari, oppure scrivi a ciao@handmadepastaflorence.com, e ti confermeremo esattamente cosa cucinerai.` },
+          ],
+          related: [
+            { title: `Il Tavolo dello Chef`, href: `/it/corso-pasta-fresca-firenze/`, desc: `Lo stesso corso, per intero, con un lungo pranzo. €95.` },
+            { title: `Corso Senza Glutine`, href: `/it/corso-cucina-senza-glutine-firenze/`, desc: `Celiaco? Miscela e postazione dedicate, senza supplemento.` },
+            { title: `Cosa mangiare a Firenze`, href: `/it/blog/what-to-eat-in-florence/`, desc: `I piatti fiorentini che vale la pena ordinare.` },
+            { title: `Il Lungo Tavolo di Famiglia`, href: `/it/corso-cucina-privato-firenze/`, desc: `L'intera cucina privata per voi, da €680.` },
+          ],
+          ctaLabel: `Prenota questo corso`,
+          prefill: 'florence',
+          breadcrumbName: `Corso di Cucina Vegana e Vegetariana a Firenze`,
+          product: {
+            name: `Corso di Cucina Vegana e Vegetariana a Firenze`,
+            description: `Un corso pratico di pasta di 3 ore in Oltrarno a Firenze per vegetariani e vegani: nessun supplemento per entrambi: menù senza carne di serie e, per i vegani, impasto toscano senza uovo, ravioli di patate e sughi senza latticini su preavviso, max 8 ospiti, con pasto finale a tavola.`,
+            price: '95',
+          },
+        },
+      },
+      fr: {
+        slug: 'cours-cuisine-vegan-florence',
+        title: `Cours de Cuisine Vegan à Florence : Pâtes Fraîches, 95 €`,
+        description: `Sans supplément, vegan ou végétarien : pâte toscane sans œuf, ravioli de pommes de terre à l’huile et à la sauge, tiramisù adapté. 95 €, max 8.`,
+        cl: {
+          eyebrow: `Vegan et végétarien · Oltrarno, Florence`,
+          heading: `Un cours de cuisine vegan à Florence,`,
+          headingItal: `sans rien laisser de côté.`,
+          lede: `Les pâtes toscanes étaient végétales bien avant qu’on ait un mot pour ça : les pici, c’est farine, eau et huile d’olive. Les végétariens suivent le cours tel quel. Les vegans nous préviennent à la réservation, et la pâte sans œuf, la farce et le dessert sont prêts le matin même. Ni l’un ni l’autre ne coûte un centime de plus.`,
+          image: { src: img.shapePici, alt: `Pici roulés à la main, les pâtes toscanes sans œuf au cœur d'un cours de cuisine vegan à Florence`, w: 1000, h: 625 },
+          price: `95 €`,
+          priceNote: `par personne · sans supplément vegan ou végétarien`,
+          facts: [
+            { label: `Produits Locaux`, value: `Produits toscans de saison`, icon: 'leaf' },
+            { label: `Durée`, value: `environ 3 heures`, icon: 'clock' },
+            { label: `Taille du groupe`, value: `max 8 personnes`, icon: 'people' },
+            { label: `Végétarien`, value: `aucun changement, aucun supplément`, icon: 'tag' },
+            { label: `Vegan`, value: `pâte sans œuf, sans supplément`, icon: 'chef-hat' },
+            { label: `Lieu`, value: `Oltrarno, près de Santo Spirito`, icon: 'map-pin' },
+          ],
+          infoBanner: {
+            menu: {
+              title: 'Menu du cours de cuisine',
+              items: [
+                '<strong>Fettuccine</strong> <strong>Tomate</strong>-<strong>Basilic</strong> ou <b>Cacio e Pepe</b> (vegan : tomate-basilic ou <strong>aglione</strong>)',
+                '<strong>Ravioli</strong> au <strong>Beurre</strong> et à la <strong>Sauge</strong> (vegan : farce de pommes de terre, <strong>huile d’olive</strong> et sauge)',
+                'Votre propre <strong>Tiramisù</strong>',
+                'Verre de <strong>Vin</strong> ou boisson non alcoolisée',
+                'Verre de <strong>Limoncello</strong> ou <strong>café</strong>',
+                'Eau'
+              ],
+              text: 'Pour les végétariens, <strong>rien ne change</strong> : il suffit de ne pas choisir l’amatriciana, la seule sauce avec de la viande, et tout le menu est sans viande, <strong>sans supplément</strong>. Pour les vegans, la pâte se fait <strong>sans œuf</strong> et la sauce est tomate-basilic ou aglione, toutes deux sans produits laitiers ; les ravioli sont farcis de pommes de terre, ail et persil, comme dans le Mugello, et servis à l’huile d’olive et à la sauge au lieu du beurre ; le tiramisù est adapté lui aussi, le tout <strong>sans supplément</strong>. Prévenez-nous <strong>à la réservation</strong>, pas le jour même : la pâte aux œufs se fait à la même table, nous ne sommes donc pas une cuisine vegan.'
+            },
+            included: {
+              title: 'Ce qui est inclus',
+              items: [
+                'Instructions culinaires théoriques et pratiques',
+                'Chef <strong>anglophone</strong>',
+                '<strong>Ingrédients frais</strong>',
+                '<strong>Matériel fourni</strong> (plan de travail, tablier, couteau et rouleau à pâtisserie).'
+              ],
+              text: 'Une fois la préparation terminée, vous passez à table. La cuisine du restaurant cuit tout ce que vous avez préparé, et vous le dégustez avec un verre de vin, au centre de Florence, avec les personnes qui ont cuisiné avec vous.'
+            },
+            notIncluded: {
+              title: 'Ce qui n\'est pas inclus',
+              items: [
+                'La préparation de la sauce',
+                'Nourriture et boissons supplémentaires'
+              ]
+            }
+          },
+          sections: [
+            {
+              title: `Le cours est-il déjà végétarien tel quel ?`,
+              paras: [
+                `Oui, et ce n’est pas un pis-aller. Le menu, ce sont des fettuccine avec la sauce de votre choix, des ravioli beurre et sauge et votre propre tiramisù. Choisissez tomate-basilic ou cacio e pepe et chaque assiette est végétarienne ; l’amatriciana est la seule option avec de la viande, et c’est un choix que vous faites le jour même, pas un réglage par défaut. Aucun supplément, puisque rien n’est remplacé.`,
+                `Dites-nous à l’avance que quelqu’un est végétarien et la sauce sera prête avant votre arrivée. Les tables mixtes fonctionnent comme n’importe quel autre cours : tout le monde cuisine côte à côte et se met à table ensemble à la fin.`,
+              ],
+            },
+            {
+              title: `Comment se passe un cours de pâtes vegan ?`,
+              paras: [
+                `Tout commence par la pâte. La nôtre est normalement aux œufs ; la vôtre se fait sans œuf, ce qui n’est pas un compromis mais la pâte la plus ancienne de Toscane. Les pici, les gros spaghetti roulés à la main des collines siennoises, ont toujours été farine, eau et huile d’olive, rien d’autre, et apprendre à lire une pâte sans œuf est un savoir-faire à part entière.`,
+                `La sauce est tomate-basilic ou aglione, la sauce toscane à l’ail et à la tomate, toutes deux sans produits laitiers telles quelles. Les ravioli remplacent la ricotta par la farce que la Toscane utilise déjà dans le Mugello, pommes de terre, ail, persil et muscade, et arrivent à table à l’huile d’olive vierge extra et à la sauge au lieu du beurre. Le tiramisù est adapté plutôt que supprimé. Dites-le-nous à la réservation, pour que les ingrédients soient en cuisine le matin même. Rien de tout cela ne coûte plus cher.`,
+              ],
+            },
+            {
+              title: `Francs sur la cuisine`,
+              paras: [
+                `C’est une cuisine de pâtes en activité : pâte aux œufs, fromage et beurre sont sur la même table le même jour, nous ne sommes donc pas une cuisine vegan et ne prétendons pas l’être. Si c’est important pour vous, dites-le à la réservation et nous en parlerons, ou réservez la cuisine en privé avec <a href="/fr/cours-cuisine-prive-florence/">La Longue Table Familiale</a>.`,
+              ],
+            },
+            {
+              title: `Bon à savoir`,
+              paras: [],
+              list: [
+                `Également coeliaque ? Découvrez le <a href="/fr/cours-cuisine-sans-gluten-florence/">cours sans gluten</a> et signalez-nous les deux besoins à la réservation.`,
+                `Plutôt le soir ? Le créneau de 18 h propose le même cours en soirée au lieu du déjeuner, selon disponibilité.`,
+                `Nous vous envoyons les recettes par e-mail après le cours, pour que la pâte sans œuf marche aussi dans votre cuisine.`,
+                `Vous préférez cuisiner chez vous ? Le <a href="/fr/cours-pates-en-ligne/">cours en direct en ligne</a> a lieu depuis cette même cuisine.`,
+              ],
+            },
+          ],
+          faqs: [
+            { q: `Le cours convient-il aux végétariens ?`, a: `Oui, sans modification et sans supplément. Choisissez tomate-basilic ou cacio e pepe pour vos fettuccine et tout le menu est végétarien : les ravioli sont au beurre et à la sauge, le tiramisu est le classique. Seule l’option amatriciana contient de la viande, et c’est un choix que vous faites le jour même, pas un réglage par défaut.` },
+            { q: `Pouvez-vous faire un cours de pâtes vegan ?`, a: `Oui, avec un préavis. La pâte se fait sans œuf, ce qui est exactement la façon dont la Toscane a toujours fait les pici : farine, eau et huile d’olive, rien d’autre. La sauce est tomate-basilic ou aglione, toutes deux sans produits laitiers ; les ravioli ont une farce de pommes de terre à l’huile et à la sauge, et le dessert, nous l’adaptons au lieu de le supprimer. Sans supplément. Dites-le-nous en réservant, pour que les ingrédients soient en cuisine le matin même.` },
+            { q: `Y a-t-il un supplément ?`, a: `Non. Végétarien ou vegan, c’est 95 €, comme pour tout le monde à la table. Nous préférons que vous veniez cuisiner avec nous plutôt que de vous faire payer plus pour une pâte sans œuf.` },
+            { q: `Puis-je réserver avec des amis qui mangent de tout ?`, a: `Oui. Tout le monde suit le même cours côte à côte à la même table, et tout le monde se met à table ensemble à la fin.` },
+            { q: `La cuisine est-elle entièrement vegan ?`, a: `Non, et nous préférons le dire d’emblée. Pâte aux œufs, fromage et beurre sont utilisés à la même table le même jour. Si c’est un problème pour vous, dites-le à la réservation, ou réservez la cuisine en privé.` },
+            { q: `Comment réserver et vous signaler mon régime ?`, a: `Utilisez le bouton "Réserver ce cours" pour formuler votre demande. Cela ouvre une discussion WhatsApp pré-remplie ; ajoutez-y vos besoins alimentaires, ou écrivez à ciao@handmadepastaflorence.com, et nous vous confirmerons exactement ce que vous cuisinerez.` },
+          ],
+          related: [
+            { title: `La Table du Chef`, href: `/fr/cours-de-pates-fraiches-florence/`, desc: `Le même cours, en entier, avec un long déjeuner. 95 €.` },
+            { title: `Cours Sans Gluten`, href: `/fr/cours-cuisine-sans-gluten-florence/`, desc: `Coeliaque ? Mélange et poste dédiés, sans supplément.` },
+            { title: `Que manger à Florence`, href: `/fr/blog/what-to-eat-in-florence/`, desc: `Les plats florentins qui valent vraiment la commande.` },
+            { title: `La Longue Table Familiale`, href: `/fr/cours-cuisine-prive-florence/`, desc: `Toute la cuisine pour vous, à partir de 680 €.` },
+          ],
+          ctaLabel: `Réserver ce cours`,
+          prefill: 'florence',
+          breadcrumbName: `Cours de Cuisine Vegan et Végétarien à Florence`,
+          product: {
+            name: `Cours de Cuisine Vegan et Végétarien à Florence`,
+            description: `Un cours pratique de pâtes de 3 heures dans l'Oltrarno à Florence pour végétariens et vegans : sans supplément dans les deux cas : menu sans viande d’office et, pour les vegans, pâte toscane sans œuf, ravioli de pommes de terre et sauces sans produits laitiers sur préavis, max 8 personnes, repas à table.`,
+            price: '95',
+          },
+        },
+      },
+      de: {
+        slug: 'veganer-kochkurs-florenz',
+        title: `Veganer & vegetarischer Kochkurs in Florenz: Pasta, 95 €`,
+        description: `Ohne Aufpreis, vegan oder vegetarisch: toskanischer Teig ohne Ei, Kartoffel-Ravioli mit Olivenöl und Salbei, Tiramisù angepasst. 95 €, max. 8.`,
+        cl: {
+          eyebrow: `Vegan & vegetarisch · Oltrarno, Florenz`,
+          heading: `Ein veganer Kochkurs in Florenz,`,
+          headingItal: `ohne dass etwas fehlt.`,
+          lede: `Toskanische Pasta war pflanzlich, lange bevor es ein Wort dafür gab: Pici sind Mehl, Wasser und Olivenöl. Vegetarier machen den Kurs genau so, wie er ist. Veganer sagen es uns bei der Buchung, und Teig ohne Ei, Füllung und Dessert stehen am selben Morgen bereit. Beides kostet keinen Cent mehr.`,
+          image: { src: img.shapePici, alt: `Handgerollte Pici, die eifreie toskanische Pasta im Mittelpunkt eines veganen Kochkurses in Florenz`, w: 1000, h: 625 },
+          price: `95 €`,
+          priceNote: `pro Person · vegan & vegetarisch ohne Aufpreis`,
+          facts: [
+            { label: `Lokale Produkte`, value: `Saisonale toskanische Produkte`, icon: 'leaf' },
+            { label: `Dauer`, value: `etwa 3 Stunden`, icon: 'clock' },
+            { label: `Gruppengröße`, value: `max. 8 Gäste`, icon: 'people' },
+            { label: `Vegetarisch`, value: `keine Änderung, kein Aufpreis`, icon: 'tag' },
+            { label: `Vegan`, value: `Teig ohne Ei, ohne Aufpreis`, icon: 'chef-hat' },
+            { label: `Ort`, value: `Oltrarno, nahe Santo Spirito`, icon: 'map-pin' },
+          ],
+          infoBanner: {
+            menu: {
+              title: 'Kochkurs-Menü',
+              items: [
+                '<strong>Fettuccine</strong> mit <strong>Tomate</strong> und <strong>Basilikum</strong> oder <b>Cacio e Pepe</b> (vegan: Tomate-Basilikum oder <strong>Aglione</strong>)',
+                '<strong>Ravioli</strong> mit <strong>Butter</strong> und <strong>Salbei</strong> (vegan: Kartoffelfüllung, <strong>Olivenöl</strong> und Salbei)',
+                'Dein eigenes <strong>Tiramisù</strong>',
+                'Glas <strong>Wein</strong> oder alkoholfreies Getränk',
+                'Glas <strong>Limoncello</strong> oder <strong>Kaffee</strong>',
+                'Wasser'
+              ],
+              text: 'Für Vegetarier <strong>ändert sich nichts</strong>: Lassen Sie die Amatriciana weg, die einzige Soße mit Fleisch, und das ganze Menü ist fleischlos, <strong>ohne Aufpreis</strong>. Für Veganer kommt der Teig <strong>ohne Ei</strong> aus und die Soße ist Tomate-Basilikum oder Aglione, beide ohne Milchprodukte; die Ravioli werden mit Kartoffeln, Knoblauch und Petersilie gefüllt, wie im Mugello, und mit Olivenöl und Salbei statt Butter serviert; auch das Tiramisù wird angepasst, alles <strong>ohne Aufpreis</strong>. Sagen Sie es uns <strong>bei der Buchung</strong>, nicht erst am Tag selbst: Am selben Tisch wird auch Eierteig gemacht, wir sind also keine vegane Küche.'
+            },
+            included: {
+              title: 'Was inklusive ist',
+              items: [
+                'Theoretische und praktische Kochanweisungen',
+                '<strong>Englischsprachiger</strong> Koch',
+                '<strong>Frische Zutaten</strong>',
+                '<strong>Gestellte Ausrüstung</strong> (Arbeitsplatz, Schürze, Messer und Nudelholz).'
+              ],
+              text: 'Wenn die Zubereitung fertig ist, setzen Sie sich an den Tisch. Die Restaurantküche kocht alles, was Sie gemacht haben, und Sie essen es mit einem Glas Wein, im Zentrum von Florenz, mit den Leuten, die mit Ihnen gekocht haben.'
+            },
+            notIncluded: {
+              title: 'Was nicht inklusive ist',
+              items: [
+                'Zubereitung der Sauce',
+                'Zusätzliche Speisen und Getränke'
+              ]
+            }
+          },
+          sections: [
+            {
+              title: `Ist der Kurs so, wie er ist, schon vegetarisch?`,
+              paras: [
+                `Ja, und nichts daran ist eine Notlösung. Das Menü sind Fettuccine mit einer Soße Ihrer Wahl, Ravioli mit Butter und Salbei und Ihr eigenes Tiramisù. Nehmen Sie Tomate-Basilikum oder Cacio e Pepe, und jeder Teller ist vegetarisch; die Amatriciana ist die einzige Option mit Fleisch, und das ist eine Wahl, die Sie am Tag selbst treffen, keine Voreinstellung. Kein Aufpreis, weil nichts ersetzt wird.`,
+                `Sagen Sie uns vorher, dass jemand vegetarisch isst, dann steht die Soße bereit, bevor Sie ankommen. Gemischte Tische laufen wie jeder andere Kurs: Alle kochen Seite an Seite und setzen sich am Ende gemeinsam an den Tisch.`,
+              ],
+            },
+            {
+              title: `Wie läuft ein veganer Pastakurs ab?`,
+              paras: [
+                `Es beginnt beim Teig. Unserer ist normalerweise mit Ei; Ihrer kommt ohne Ei aus, und das ist kein Kompromiss, sondern die älteste Pasta der Toskana. Pici, die handgerollten Nudeln aus den Hügeln um Siena, waren schon immer Mehl, Wasser und Olivenöl, sonst nichts, und einen Teig ohne Ei lesen zu lernen ist eine eigene Fertigkeit.`,
+                `Die Soße ist Tomate-Basilikum oder Aglione, die toskanische Knoblauch-Tomaten-Soße, beide von sich aus ohne Milchprodukte. Die Ravioli tauschen Ricotta gegen die Füllung, die die Toskana im Mugello ohnehin verwendet, Kartoffeln mit Knoblauch, Petersilie und Muskat, und kommen mit nativem Olivenöl extra und Salbei statt Butter auf den Tisch. Das Tiramisù wird angepasst statt gestrichen. Sagen Sie es uns bei der Buchung, damit die Zutaten am selben Morgen in der Küche sind. Nichts davon kostet extra.`,
+              ],
+            },
+            {
+              title: `Ehrlich zur Küche`,
+              paras: [
+                `Dies ist eine arbeitende Pastaküche: Eierteig, Käse und Butter sind am selben Tag auf demselben Tisch, wir sind also keine vegane Küche und tun auch nicht so. Wenn Ihnen das wichtig ist, sagen Sie es bei der Buchung und wir sprechen darüber, oder buchen Sie die Küche privat als <a href="/de/privater-kochkurs-florenz/">Die lange Familientafel</a>.`,
+              ],
+            },
+            {
+              title: `Gut zu wissen`,
+              paras: [],
+              list: [
+                `Auch Zöliakie? Lesen Sie, wie der <a href="/de/glutenfreier-kochkurs-florenz/">glutenfreie Kurs</a> funktioniert, und nennen Sie uns bei der Buchung beides.`,
+                `Lieber abends? Der 18-Uhr-Termin bringt denselben Kurs in den Abend statt zum Mittagessen, je nach Verfügbarkeit.`,
+                `Wir schicken Ihnen die Rezepte nach dem Kurs per E-Mail, damit der Teig ohne Ei auch in Ihrer eigenen Küche gelingt.`,
+                `Lieber von zu Hause kochen? Der <a href="/de/online-pasta-kurs/">Live-Online-Kurs</a> läuft aus genau dieser Küche.`,
+              ],
+            },
+          ],
+          faqs: [
+            { q: `Ist der Kurs für Vegetarier geeignet?`, a: `Ja, ohne Änderungen und ohne Aufpreis. Nehmen Sie Tomate-Basilikum oder Cacio e Pepe zu Ihren Fettuccine, und das ganze Menü ist vegetarisch: die Ravioli sind mit Butter und Salbei, das Tiramisù ist das klassische. Nur die Amatriciana enthält Fleisch, und das ist eine Wahl, die Sie am Tag selbst treffen, keine Voreinstellung.` },
+            { q: `Können Sie einen veganen Pastakurs machen?`, a: `Ja, mit Vorlauf. Der Teig kommt ohne Ei aus, genau so, wie die Toskana Pici immer gemacht hat: Mehl, Wasser und Olivenöl, sonst nichts. Die Soße ist Tomate-Basilikum oder Aglione, beide ohne Milchprodukte; die Ravioli bekommen eine Kartoffelfüllung mit Olivenöl und Salbei, und das Dessert passen wir an, statt es wegzulassen. Kein Aufpreis. Sagen Sie es uns bei der Buchung, dann sind die Zutaten am selben Morgen in der Küche.` },
+            { q: `Gibt es einen Aufpreis?`, a: `Nein. Vegetarisch oder vegan, es sind 95 €, wie für alle anderen am Tisch. Uns ist lieber, dass Sie mit uns kochen, als dass Sie für einen Teig ohne Ei mehr bezahlen.` },
+            { q: `Kann ich mit Freunden buchen, die alles essen?`, a: `Ja. Alle machen denselben Kurs Seite an Seite am selben Tisch, und am Ende setzen sich alle gemeinsam zum Essen.` },
+            { q: `Ist die Küche komplett vegan?`, a: `Nein, und das sagen wir lieber gleich. Eierteig, Käse und Butter werden am selben Tag am selben Tisch verwendet. Wenn das für Sie ein Problem ist, sagen Sie es bei der Buchung, oder buchen Sie die Küche privat.` },
+            { q: `Wie buche ich und teile meine Ernährung mit?`, a: `Nutzen Sie "Diesen Kurs buchen", um Ihre Anfrage zu erstellen. Es öffnet sich ein WhatsApp-Chat mit ausgefüllten Details; ergänzen Sie dort Ihre Bedürfnisse, oder schreiben Sie an ciao@handmadepastaflorence.com. Wir bestätigen Ihnen genau, was Sie kochen werden.` },
+          ],
+          related: [
+            { title: `Der Tisch des Küchenchefs`, href: `/de/pasta-kurs-florenz/`, desc: `Derselbe Kurs, vollständig, mit einem langen Mittagessen. 95 €.` },
+            { title: `Glutenfreier Kurs`, href: `/de/glutenfreier-kochkurs-florenz/`, desc: `Zöliakie? Eigene Mehlmischung und Station, ohne Aufpreis.` },
+            { title: `Was man in Florenz essen sollte`, href: `/de/blog/what-to-eat-in-florence/`, desc: `Die Florentiner Gerichte, die sich wirklich lohnen.` },
+            { title: `Die lange Familientafel`, href: `/de/privater-kochkurs-florenz/`, desc: `Die ganze Küche ganz privat, ab 680 €.` },
+          ],
+          ctaLabel: `Diesen Kurs buchen`,
+          prefill: 'florence',
+          breadcrumbName: `Veganer & vegetarischer Kochkurs in Florenz`,
+          product: {
+            name: `Veganer & vegetarischer Kochkurs in Florenz`,
+            description: `Ein 3-stündiger praktischer Pastakurs in Florenz' Oltrarno für Vegetarier und Veganer: ohne Aufpreis für beide: fleischloses Menü als Standard und für Veganer toskanischer Teig ohne Ei, Kartoffel-Ravioli und Soßen ohne Milchprodukte mit Vorlauf, max. 8 Gäste, Essen am Tisch.`,
+            price: '95',
+          },
+        },
+      },
+      zh: {
+        slug: 'sushi-pengren-kecheng-foluolunsa',
+        title: `佛罗伦萨素食与纯素烹饪课程：手工意面 (€95)`,
+        description: `奥特拉诺的素食意面课，素食纯素都不加价：无蛋面团、土豆馅意式饺子配橄榄油鼠尾草，甜点也会调整。每人95欧元，最多8人。`,
+        cl: {
+          eyebrow: `素食与纯素 · 佛罗伦萨奥特拉诺`,
+          heading: `佛罗伦萨的纯素烹饪课程，`,
+          headingItal: `一样都不少。`,
+          lede: `早在“纯素”这个词出现之前，托斯卡纳意面就是植物性的：pici 只有面粉、水和橄榄油。素食者按原样上课。纯素客人在预订时告诉我们，无蛋面团、馅料和甜点当天早上就会备好。两者都不多收一分钱。`,
+          image: { src: img.shapePici, alt: `手工揉制的 pici，佛罗伦萨纯素烹饪课程核心的无蛋托斯卡纳意面`, w: 1000, h: 625 },
+          price: `€95`,
+          priceNote: `每人 · 素食与纯素均不加价`,
+          facts: [
+            { label: `本地食材`, value: `应季托斯卡纳食材`, icon: 'leaf' },
+            { label: `时长`, value: `约3小时`, icon: 'clock' },
+            { label: `团队规模`, value: `最多8位客人`, icon: 'people' },
+            { label: `素食`, value: `无需改动，不加价`, icon: 'tag' },
+            { label: `纯素`, value: `无蛋面团，不加价`, icon: 'chef-hat' },
+            { label: `地点`, value: `奥特拉诺，靠近圣斯皮里托`, icon: 'map-pin' },
+          ],
+          infoBanner: {
+            menu: {
+              title: '烹饪课菜单',
+              items: [
+                '<strong>宽面 Fettuccine</strong>，配<strong>番茄</strong>与<strong>罗勒</strong>或 <b>Cacio e Pepe</b>（纯素：番茄罗勒或 <strong>aglione</strong>）',
+                '<strong>意式饺子 Ravioli</strong>，配<strong>黄油</strong>与<strong>鼠尾草</strong>（纯素：土豆馅，配<strong>橄榄油</strong>与鼠尾草）',
+                '你亲手做的<strong>提拉米苏</strong>',
+                '一杯<strong>葡萄酒</strong>或无酒精饮品',
+                '一杯<strong>柠檬酒</strong>或<strong>咖啡</strong>',
+                '水'
+              ],
+              text: '素食者<strong>无需任何改动</strong>：不选唯一含肉的 amatriciana 酱，整份菜单就是素的，<strong>不加收费用</strong>。纯素客人的面团<strong>不加鸡蛋</strong>，酱汁用番茄罗勒或 aglione，两者都不含乳制品；意式饺子用土豆、大蒜和欧芹做馅（穆杰洛的传统做法），以橄榄油和鼠尾草代替黄油；提拉米苏也会调整，全部<strong>不加收费用</strong>。请<strong>在预订时</strong>告诉我们，而不是当天：同一张桌上也会制作鸡蛋面团，因此我们并非纯素厨房。'
+            },
+            included: {
+              title: '包含内容',
+              items: [
+                '理论讲解与动手烹饪指导',
+                '<strong>讲英语</strong>的主厨',
+                '<strong>新鲜食材</strong>',
+                '<strong>提供全部器具</strong>（工作台、围裙、刀具和擀面杖）。'
+              ],
+              text: '准备工作完成后，大家一起入座。餐厅的厨房会把你做的一切烹熟，你配一杯葡萄酒享用——在佛罗伦萨市中心，和一起动手做这一切的人一起。'
+            },
+            notIncluded: {
+              title: '不包含内容',
+              items: [
+                '制作酱汁',
+                '额外的食物和饮品'
+              ]
+            }
+          },
+          sections: [
+            {
+              title: `这门课本身就是素食的吗？`,
+              paras: [
+                `是的，而且没有任何将就。菜单是自选酱汁的宽面、黄油鼠尾草意式饺子，以及你亲手做的提拉米苏。选番茄罗勒或 cacio e pepe，每一道菜都是素的；amatriciana 是唯一含肉的选项，而且是当天由您选择，并非默认。不加收费用，因为没有替换任何东西。`,
+                `提前告诉我们有人吃素，酱料会在您到达前备好。混合餐桌和其他课程一样：大家并肩制作，最后一起坐下来用餐。`,
+              ],
+            },
+            {
+              title: `纯素意面课是怎样进行的？`,
+              paras: [
+                `一切从面团开始。我们平时的面团加鸡蛋；您的面团不加鸡蛋，这不是妥协，而是托斯卡纳最古老的意面。pici 是锡耶纳山丘上的手搓粗面，向来只有面粉、水和橄榄油，别无他物，而学会判断一块无蛋面团本身就是一门手艺。`,
+                `酱汁用番茄罗勒或 aglione（托斯卡纳大蒜番茄酱），两者本身都不含乳制品。意式饺子用托斯卡纳穆杰洛山谷本就使用的馅料代替乳清奶酪：土豆配大蒜、欧芹和肉豆蔻，上桌时以特级初榨橄榄油和鼠尾草代替黄油。提拉米苏会调整而不是取消。预订时告诉我们，当天早上食材就会备在厨房里。这些都不额外收费。`,
+              ],
+            },
+            {
+              title: `关于厨房，坦诚相告`,
+              paras: [
+                `这是一间正在运作的意面厨房：鸡蛋面团、奶酪和黄油在同一天出现在同一张桌上，因此我们不是纯素厨房，也不会假装是。如果这对您很重要，请在预订时说明，我们会和您沟通；或者以<a href="/zh/siren-pengren-kecheng-foluolunsa/">家庭长桌体验</a>私人包场。`,
+              ],
+            },
+            {
+              title: `须知信息`,
+              paras: [],
+              list: [
+                `同时有乳糜泻？请看看<a href="/zh/wu-fuzhi-pengren-kecheng-foluolunsa/">无麸质课程</a>的做法，并在预订时把两项需求都告诉我们。`,
+                `更想晚上上课？18:00 的时段是同一门课程，以晚餐代替午餐，视空位而定。`,
+                `课程结束后我们会通过邮件发送食谱，让无蛋面团在您自己的厨房里也能做成。`,
+                `想在家里做？<a href="/zh/zaixian-yidali-mian-kecheng/">在线直播课程</a>就在这间厨房进行。`,
+              ],
+            },
+          ],
+          faqs: [
+            { q: `这门课适合素食者吗？`, a: `适合，无需改动，也不加收费用。意大利宽面选番茄罗勒或奶酪黑胡椒，整份菜单就是素的：意式饺子是黄油鼠尾草口味，提拉米苏也是经典做法。只有 amatriciana 酱含肉，而那是当天由您选择的，并非默认。` },
+            { q: `可以做纯素的意面课吗？`, a: `可以，请提前告知。面团不加鸡蛋，这本来就是托斯卡纳做 pici 的方式：面粉、水和橄榄油，别无他物。酱汁用番茄罗勒或 aglione，两者都不含乳制品；意式饺子改用土豆馅，配橄榄油和鼠尾草，甜点我们会调整，而不是直接取消。不加收费用。预订时说明即可，当天早上食材就会备在厨房里。` },
+            { q: `需要额外付费吗？`, a: `不需要。无论素食还是纯素，都是每人95欧元，与餐桌上的其他人相同。我们宁愿您来和我们一起下厨，也不愿因为面团不加鸡蛋而多收您的钱。` },
+            { q: `我可以和不忌口的朋友一起预订吗？`, a: `可以。大家在同一张桌旁并肩上同一门课，最后一起坐下来用餐。` },
+            { q: `厨房是完全纯素的吗？`, a: `不是，我们宁愿事先说清楚。同一天同一张桌上会使用鸡蛋面团、奶酪和黄油。如果这对您是个问题，请在预订时告诉我们，或者选择私人包场。` },
+            { q: `我该如何预订并告知饮食需求？`, a: `使用"预订此课程"按钮创建您的请求。它会打开一个预填详情的WhatsApp聊天，请在其中补充您的饮食需求，或发送邮件至 ciao@handmadepastaflorence.com，我们会确认您具体要做什么。` },
+          ],
+          related: [
+            { title: `主厨餐桌`, href: `/zh/foluolunsa-yidali-mian-kecheng/`, desc: `完整的同一门课程，配一顿悠长的午餐。€95。` },
+            { title: `无麸质课程`, href: `/zh/wu-fuzhi-pengren-kecheng-foluolunsa/`, desc: `乳糜泻？专属面粉配方与操作台，不加价。` },
+            { title: `佛罗伦萨必吃美食`, href: `/zh/blog/what-to-eat-in-florence/`, desc: `来佛罗伦萨值得点的那些菜。` },
+            { title: `家庭长桌体验`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `整个厨房私人包场，680欧元起。` },
+          ],
+          ctaLabel: `预订此课程`,
+          prefill: 'florence',
+          breadcrumbName: `佛罗伦萨素食与纯素烹饪课程`,
+          product: {
+            name: `佛罗伦萨素食与纯素烹饪课程`,
+            description: `佛罗伦萨奥特拉诺区3小时素食意面实践课程：素食与纯素均不加价：素食菜单为标准配置，纯素需提前告知，面团不加鸡蛋、土豆馅意式饺子、酱汁不含乳制品，最多8位客人，最后一起用餐。`,
             price: '95',
           },
         },
@@ -3213,6 +3780,10 @@ export const landings = {
   // and hits a €680 wall. Sells the two SKUs that already exist — €95pp at the
   // shared table, or the private buyout — rather than inventing a price point.
   'for-two': {
+    // 2026-09-26: menu aligned to what every guest gets (fettuccine, ravioli,
+    // tiramisù; one glass of wine + limoncello or coffee), replacing 'four shapes,
+    // two wines'.
+    updated: '2026-09-26',
     floatingCta: true,
     locales: {
       en: {
@@ -3275,7 +3846,7 @@ export const landings = {
             {
               title: `Why is a pasta class a better date than dinner?`,
               paras: [
-                `A restaurant sits you across a table for ninety minutes. A pasta class puts you shoulder to shoulder for three hours doing something neither of you is good at yet, which is a great deal more interesting. You will be bad at tortelli together, you will fix each other's folds, and you will end up eating a lunch that has your fingerprints in it.`,
+                `A restaurant sits you across a table for ninety minutes. A pasta class puts you shoulder to shoulder for three hours doing something neither of you is good at yet, which is a great deal more interesting. You will be bad at ravioli together, you will fix each other's folds, and you will end up eating a lunch that has your fingerprints in it.`,
                 `You are also cooking with two head chefs who do this for a living (pasta for wedding feasts and farmhouse tables is the day job), so you leave able to actually make it again at home. That tends to outlast a dinner reservation.`,
               ],
             },
@@ -3285,7 +3856,7 @@ export const landings = {
               list: [
                 `Tell us if it is a birthday, anniversary, engagement or honeymoon and we will quietly make a fuss of it; that is free, and it is the part we enjoy.`,
                 `Planning a proposal? Book the <a href="/private-cooking-class-florence/">private kitchen</a> and message us first. We have done it before and we can help with the timing.`,
-                `Two Tuscan pours each are included in the €95, poured when you sit down, not billed at the end.`,
+                `A glass of Tuscan wine each is included in the €95, poured when you sit down, not billed at the end.`,
                 `Gluten-free or other allergies? A dedicated station at no extra charge; see the <a href="/gluten-free-cooking-class-florence/">gluten-free class</a>.`,
               ],
             },
@@ -3310,7 +3881,7 @@ export const landings = {
           breadcrumbName: `Pasta Class for Two in Florence`,
           product: {
             name: `Pasta Class for Two in Florence`,
-            description: `A 3-hour hands-on pasta making class for couples in Florence's Oltrarno: two places at a table of never more than eight, four classic shapes, ending in a sit-down Tuscan meal with wine. €95 per person, private buyout from €680.`,
+            description: `A 3-hour hands-on pasta making class for couples in Florence's Oltrarno: two places at a table of never more than eight, fettuccine, ravioli and tiramisù made by hand, ending in a sit-down Tuscan meal with wine. €95 per person, private buyout from €680.`,
             price: '95',
           },
         },
@@ -3375,7 +3946,7 @@ export const landings = {
             {
               title: `Perché un corso di pasta è un appuntamento migliore di una cena?`,
               paras: [
-                `Un ristorante vi mette uno di fronte all'altra per novanta minuti. Un corso di pasta vi mette spalla a spalla per tre ore a fare qualcosa in cui nessuno dei due è ancora bravo, il che è molto più interessante. Sarete pessimi con i tortelli insieme, vi correggerete le pieghe a vicenda, e finirete per mangiare un pranzo con dentro le vostre impronte.`,
+                `Un ristorante vi mette uno di fronte all'altra per novanta minuti. Un corso di pasta vi mette spalla a spalla per tre ore a fare qualcosa in cui nessuno dei due è ancora bravo, il che è molto più interessante. Sarete pessimi con i ravioli insieme, vi correggerete le pieghe a vicenda, e finirete per mangiare un pranzo con dentro le vostre impronte.`,
                 `E cucinate con due capi chef che lo fanno di mestiere (la pasta per banchetti di nozze e tavolate di agriturismo è il lavoro di tutti i giorni), quindi ve ne andate sapendola rifare davvero a casa. Di solito dura più a lungo di una prenotazione al ristorante.`,
               ],
             },
@@ -3385,7 +3956,7 @@ export const landings = {
               list: [
                 `Diteci se è un compleanno, un anniversario, un fidanzamento o un viaggio di nozze e ci faremo festa in silenzio; è gratis, ed è la parte che ci piace di più.`,
                 `State organizzando una proposta di matrimonio? Prenotate la <a href="/it/corso-cucina-privato-firenze/">cucina privata</a> e scriveteci prima. L'abbiamo già fatto e possiamo aiutarvi con i tempi.`,
-                `Due calici toscani a testa sono inclusi nei €95, versati quando vi sedete, non conteggiati alla fine.`,
+                `Un calice di vino toscano a testa è incluso nei €95, versati quando vi sedete, non conteggiati alla fine.`,
                 `Senza glutine o altre allergie? Postazione dedicata senza costi aggiuntivi; vedi il <a href="/it/corso-cucina-senza-glutine-firenze/">corso senza glutine</a>.`,
               ],
             },
@@ -3410,7 +3981,7 @@ export const landings = {
           breadcrumbName: `Corso di Pasta per Due a Firenze`,
           product: {
             name: `Corso di Pasta per Due a Firenze`,
-            description: `Un corso pratico di pasta fresca per coppie di 3 ore in Oltrarno a Firenze: due posti a un tavolo di massimo otto, quattro formati classici, con pranzo o cena toscana finale e vino. €95 a persona, privatizzazione da €680.`,
+            description: `Un corso pratico di pasta fresca per coppie di 3 ore in Oltrarno a Firenze: due posti a un tavolo di massimo otto, fettuccine, ravioli e tiramisù fatti a mano, con pranzo o cena toscana finale e vino. €95 a persona, privatizzazione da €680.`,
             price: '95',
           },
         },
@@ -3475,7 +4046,7 @@ export const landings = {
             {
               title: `Pourquoi un cours de pâtes est-il un meilleur rendez-vous qu'un dîner ?`,
               paras: [
-                `Un restaurant vous assoit face à face pendant quatre-vingt-dix minutes. Un cours de pâtes vous met épaule contre épaule pendant trois heures à faire quelque chose qu'aucun de vous ne maîtrise encore, ce qui est nettement plus intéressant. Vous serez mauvais en tortelli ensemble, vous corrigerez les pliages de l'autre, et vous finirez par manger un repas qui porte vos empreintes.`,
+                `Un restaurant vous assoit face à face pendant quatre-vingt-dix minutes. Un cours de pâtes vous met épaule contre épaule pendant trois heures à faire quelque chose qu'aucun de vous ne maîtrise encore, ce qui est nettement plus intéressant. Vous serez mauvais en ravioli ensemble, vous corrigerez les pliages de l'autre, et vous finirez par manger un repas qui porte vos empreintes.`,
                 `Vous cuisinez aussi avec deux chefs de cuisine dont c'est le métier (les pâtes pour les banquets de mariage et les grandes tablées, c'est leur quotidien), et vous repartez donc capables de refaire cela chez vous. Cela dure généralement plus longtemps qu'une réservation au restaurant.`,
               ],
             },
@@ -3485,7 +4056,7 @@ export const landings = {
               list: [
                 `Dites-nous si c'est un anniversaire, des fiançailles ou un voyage de noces et nous en ferons discrètement tout un plat; c'est gratuit, et c'est la partie que nous préférons.`,
                 `Vous préparez une demande en mariage ? Réservez la <a href="/fr/cours-cuisine-prive-florence/">cuisine privée</a> et écrivez-nous d'abord. Nous l'avons déjà fait et nous pouvons vous aider pour le timing.`,
-                `Deux verres toscans chacun sont compris dans les 95 €, servis quand vous vous asseyez, pas facturés à la fin.`,
+                `Un verre de vin toscan chacun est compris dans les 95 €, servis quand vous vous asseyez, pas facturés à la fin.`,
                 `Sans gluten ou autres allergies ? Un poste dédié sans frais supplémentaires; voir le <a href="/fr/cours-cuisine-sans-gluten-florence/">cours sans gluten</a>.`,
               ],
             },
@@ -3510,7 +4081,7 @@ export const landings = {
           breadcrumbName: `Cours de Pâtes pour Deux à Florence`,
           product: {
             name: `Cours de Pâtes pour Deux à Florence`,
-            description: `Un cours pratique de pâtes fraîches en couple de 3 heures dans l'Oltrarno à Florence : deux places à une table de huit maximum, quatre formes classiques, suivi d'un repas toscan avec du vin. 95 € par personne, privatisation dès 680 €.`,
+            description: `Un cours pratique de pâtes fraîches en couple de 3 heures dans l'Oltrarno à Florence : deux places à une table de huit maximum, fettuccine, ravioli et tiramisù faits main, suivi d'un repas toscan avec du vin. 95 € par personne, privatisation dès 680 €.`,
             price: '95',
           },
         },
@@ -3575,7 +4146,7 @@ export const landings = {
             {
               title: `Warum ist ein Pasta-Kurs ein besseres Date als ein Abendessen?`,
               paras: [
-                `Ein Restaurant setzt Sie neunzig Minuten lang gegenüber. Ein Pastakurs stellt Sie drei Stunden lang Schulter an Schulter und lässt Sie etwas tun, das noch keiner von Ihnen kann, was erheblich interessanter ist. Sie werden gemeinsam schlecht in Tortelli sein, Sie werden einander die Faltungen richten, und am Ende essen Sie ein Essen, in dem Ihre Fingerabdrücke stecken.`,
+                `Ein Restaurant setzt Sie neunzig Minuten lang gegenüber. Ein Pastakurs stellt Sie drei Stunden lang Schulter an Schulter und lässt Sie etwas tun, das noch keiner von Ihnen kann, was erheblich interessanter ist. Sie werden gemeinsam schlecht in Ravioli sein, Sie werden einander die Faltungen richten, und am Ende essen Sie ein Essen, in dem Ihre Fingerabdrücke stecken.`,
                 `Außerdem kochen Sie mit zwei Küchenchefs, die davon leben (Pasta für Hochzeitsfeste und lange Tafeln ist ihr Alltag), und gehen daher so, dass Sie es zu Hause wirklich nachmachen können. Das hält meist länger als eine Tischreservierung.`,
               ],
             },
@@ -3585,7 +4156,7 @@ export const landings = {
               list: [
                 `Sagen Sie uns, ob es ein Geburtstag, Jahrestag, eine Verlobung oder Hochzeitsreise ist, und wir machen still ein kleines Fest daraus; kostenlos, und es ist der Teil, den wir am liebsten mögen.`,
                 `Planen Sie einen Heiratsantrag? Buchen Sie die <a href="/de/privater-kochkurs-florenz/">private Küche</a> und schreiben Sie uns vorher. Wir haben das schon gemacht und helfen beim Timing.`,
-                `Zwei toskanische Gläser pro Person sind in den 95 € enthalten, eingeschenkt, wenn Sie sich setzen, nicht am Ende berechnet.`,
+                `Ein Glas toskanischer Wein pro Person ist in den 95 € enthalten, eingeschenkt, wenn Sie sich setzen, nicht am Ende berechnet.`,
                 `Glutenfrei oder andere Allergien? Eine eigene Station ohne Aufpreis; siehe den <a href="/de/glutenfreier-kochkurs-florenz/">glutenfreien Kurs</a>.`,
               ],
             },
@@ -3610,7 +4181,7 @@ export const landings = {
           breadcrumbName: `Pasta-Kurs für Zwei in Florenz`,
           product: {
             name: `Pasta-Kurs für Zwei in Florenz`,
-            description: `Ein 3-stündiger praktischer Pasta-Kurs für Paare in Florenz' Oltrarno: zwei Plätze an einem Tisch mit höchstens acht Gästen, vier klassische Formen, mit anschließendem toskanischem Essen und Wein. 95 € pro Person, Privatbuchung ab 680 €.`,
+            description: `Ein 3-stündiger praktischer Pasta-Kurs für Paare in Florenz' Oltrarno: zwei Plätze an einem Tisch mit höchstens acht Gästen, Fettuccine, Ravioli und Tiramisù von Hand, mit anschließendem toskanischem Essen und Wein. 95 € pro Person, Privatbuchung ab 680 €.`,
             price: '95',
           },
         },
@@ -3675,7 +4246,7 @@ export const landings = {
             {
               title: `为什么意面课程比晚餐更适合作为约会？`,
               paras: [
-                `餐厅让你们面对面坐九十分钟。意面课程则让你们肩并肩三个小时，一起做一件两人都还不擅长的事，这要有趣得多。你们会一起把tortelli捏得歪歪扭扭，会互相纠正对方的折法，最后吃到一顿带着你们指纹的饭菜。`,
+                `餐厅让你们面对面坐九十分钟。意面课程则让你们肩并肩三个小时，一起做一件两人都还不擅长的事，这要有趣得多。你们会一起把意式饺子捏得歪歪扭扭，会互相纠正对方的折法，最后吃到一顿带着你们指纹的饭菜。`,
                 `而且你们是在和两位以此为生的主厨一起下厨：为婚宴和农庄长桌做意面是他们的日常工作，所以离开时你们是真的学会了回家再做一次。这通常比一次餐厅订位留存得更久。`,
               ],
             },
@@ -3685,7 +4256,7 @@ export const landings = {
               list: [
                 `如果是生日、纪念日、订婚或蜜月，请告诉我们，我们会安静地为你们庆祝一下，这是免费的，也是我们最喜欢的环节。`,
                 `在筹划求婚？请预订<a href="/zh/siren-pengren-kecheng-foluolunsa/">私人厨房</a>并先与我们联系。我们做过，可以帮您把时间安排好。`,
-                `95欧元已包含每人两杯托斯卡纳葡萄酒，入座即斟，结束时不再另行收费。`,
+                `95欧元已包含每人一杯托斯卡纳葡萄酒，入座即斟，结束时不再另行收费。`,
                 `无麸质或其他过敏？专属操作台不加收费用，请看<a href="/zh/wu-fuzhi-pengren-kecheng-foluolunsa/">无麸质课程</a>。`,
               ],
             },
@@ -3710,7 +4281,7 @@ export const landings = {
           breadcrumbName: `佛罗伦萨双人意面课程`,
           product: {
             name: `佛罗伦萨双人意面课程`,
-            description: `佛罗伦萨奥特拉诺区3小时情侣手工意面课程：在最多八人的餐桌旁预订两个名额，四种经典形状，以配有葡萄酒的托斯卡纳餐食收尾。每人95欧元，私人包场680欧元起。`,
+            description: `佛罗伦萨奥特拉诺区3小时情侣手工意面课程：在最多八人的餐桌旁预订两个名额，亲手做宽面、意式饺子和提拉米苏，以配有葡萄酒的托斯卡纳餐食收尾。每人95欧元，私人包场680欧元起。`,
             price: '95',
           },
         },
@@ -3726,6 +4297,10 @@ export const landings = {
   // and the delivery format. The copy deliberately promises none of these — fill
   // them in here once decided, then this page can carry them as a selling point.
   gift: {
+    // 2026-09-26: menu aligned to what every guest gets (fettuccine, ravioli,
+    // tiramisù; one glass of wine + limoncello or coffee), replacing 'four shapes,
+    // two wines'.
+    updated: '2026-09-26',
     floatingCta: false,
     locales: {
       en: {
@@ -3783,7 +4358,7 @@ export const landings = {
             {
               title: `What are you actually giving?`,
               paras: [
-                `Three hours in a small Oltrarno kitchen with two Tuscan agriturismo head chefs, hands in the flour from the first minute, four classic pasta shapes, and a sit-down lunch of everything they made with a glass of Chianti. Never more than eight people at the table.`,
+                `Three hours in a small Oltrarno kitchen with two Tuscan agriturismo head chefs, hands in the flour from the first minute, fettuccine and ravioli made by hand, their own tiramisù, and a sit-down meal of everything they made with a glass of Chianti. Never more than eight people at the table.`,
                 `If they are not coming to Florence any time soon, the <a href="/online-pasta-making-class/">live online class</a> works just as well as a gift: same chefs, same kitchen, with an ingredient kit shipped to their door. It is the one we send most often to people abroad.`,
               ],
             },
@@ -3813,7 +4388,7 @@ export const landings = {
             { q: `Can I put a message on it?`, a: `Yes: send us the wording and we will put it on the voucher. If you want it to look like it came from you rather than from us, say so and we will keep our branding light.` },
           ],
           related: [
-            { title: `The Chef's Table`, href: `/pasta-making-class-florence/`, desc: `The class most people gift: three hours, four shapes, one long lunch. €95.` },
+            { title: `The Chef's Table`, href: `/pasta-making-class-florence/`, desc: `The class most people gift: three hours, ravioli and tiramisù, one long table. €95.` },
             { title: `Pasta Class for Two`, href: `/pasta-class-for-two-florence/`, desc: `The anniversary and wedding present, €95 each.` },
             { title: `Live Online Class`, href: `/online-pasta-making-class/`, desc: `For someone who is not in Italy, kit shipped to the door, from €68.` },
             { title: `The Family Long-Table`, href: `/private-cooking-class-florence/`, desc: `A big gift for a big occasion, the whole kitchen, from €680.` },
@@ -3882,7 +4457,7 @@ export const landings = {
             {
               title: `Cosa stai regalando davvero?`,
               paras: [
-                `Tre ore in una piccola cucina in Oltrarno con due capi chef toscani di agriturismo, le mani in farina dal primo minuto, quattro formati classici di pasta e un pranzo seduti a mangiare tutto quello che hanno preparato, con un bicchiere di Chianti. Mai più di otto persone al tavolo.`,
+                `Tre ore in una piccola cucina in Oltrarno con due capi chef toscani di agriturismo, le mani in farina dal primo minuto, fettuccine e ravioli fatti a mano, il loro tiramisù e un pasto seduti a mangiare tutto quello che hanno preparato, con un bicchiere di Chianti. Mai più di otto persone al tavolo.`,
                 `Se non verranno a Firenze a breve, anche il <a href="/it/corso-pasta-online/">corso in diretta online</a> funziona benissimo come regalo: stessi chef, stessa cucina, con un kit di ingredienti spedito a casa loro. È quello che mandiamo più spesso a chi vive all'estero.`,
               ],
             },
@@ -3912,7 +4487,7 @@ export const landings = {
             { q: `Posso aggiungere una dedica?`, a: `Sì: mandaci il testo e lo mettiamo sul buono. Se vuoi che sembri arrivato da te e non da noi, dillo e terremo il nostro marchio molto discreto.` },
           ],
           related: [
-            { title: `Il Tavolo dello Chef`, href: `/it/corso-pasta-fresca-firenze/`, desc: `Il corso più regalato: tre ore, quattro formati, un lungo pranzo. €95.` },
+            { title: `Il Tavolo dello Chef`, href: `/it/corso-pasta-fresca-firenze/`, desc: `Il corso più regalato: tre ore, ravioli e tiramisù. €95.` },
             { title: `Corso di Pasta per Due`, href: `/it/corso-pasta-per-due-firenze/`, desc: `Il regalo da anniversario e da matrimonio, €95 a testa.` },
             { title: `Corso in Diretta Online`, href: `/it/corso-pasta-online/`, desc: `Per chi non è in Italia, kit spedito a casa, da €68.` },
             { title: `Il Lungo Tavolo di Famiglia`, href: `/it/corso-cucina-privato-firenze/`, desc: `Un regalo grande per un'occasione grande, tutta la cucina, da €680.` },
@@ -3981,7 +4556,7 @@ export const landings = {
             {
               title: `Qu'offrez-vous vraiment ?`,
               paras: [
-                `Trois heures dans une petite cuisine de l'Oltrarno avec deux chefs d'agritourismes toscans, les mains dans la farine dès la première minute, quatre formes de pâtes classiques et un déjeuner assis où l'on mange tout ce qu'ils ont préparé, avec un verre de Chianti. Jamais plus de huit personnes à table.`,
+                `Trois heures dans une petite cuisine de l'Oltrarno avec deux chefs d'agritourismes toscans, les mains dans la farine dès la première minute, des fettuccine et des ravioli faits main, leur propre tiramisù et un repas assis où l'on mange tout ce qu'ils ont préparé, avec un verre de Chianti. Jamais plus de huit personnes à table.`,
                 `S'ils ne viennent pas à Florence de sitôt, le <a href="/fr/cours-pates-en-ligne/">cours en direct en ligne</a> fonctionne tout aussi bien en cadeau: mêmes chefs, même cuisine, avec un kit d'ingrédients livré chez eux. C'est celui que nous envoyons le plus souvent à l'étranger.`,
               ],
             },
@@ -4011,7 +4586,7 @@ export const landings = {
             { q: `Puis-je y ajouter un message ?`, a: `Oui: envoyez-nous le texte et nous le mettrons sur le bon. Si vous souhaitez qu'il ait l'air de venir de vous plutôt que de nous, dites-le et nous garderons notre marque très discrète.` },
           ],
           related: [
-            { title: `La Table du Chef`, href: `/fr/cours-de-pates-fraiches-florence/`, desc: `Le cours le plus offert: trois heures, quatre formes, un long déjeuner. 95 €.` },
+            { title: `La Table du Chef`, href: `/fr/cours-de-pates-fraiches-florence/`, desc: `Le cours le plus offert : trois heures, ravioli et tiramisù. 95 €.` },
             { title: `Cours de Pâtes pour Deux`, href: `/fr/cours-de-pates-pour-deux-florence/`, desc: `Le cadeau d'anniversaire de mariage, 95 € par personne.` },
             { title: `Cours en Direct en Ligne`, href: `/fr/cours-pates-en-ligne/`, desc: `Pour quelqu'un qui n'est pas en Italie, kit livré, dès 68 €.` },
             { title: `La Longue Table Familiale`, href: `/fr/cours-cuisine-prive-florence/`, desc: `Un grand cadeau pour une grande occasion, toute la cuisine, dès 680 €.` },
@@ -4080,7 +4655,7 @@ export const landings = {
             {
               title: `Was verschenken Sie eigentlich?`,
               paras: [
-                `Drei Stunden in einer kleinen Küche im Oltrarno mit zwei toskanischen Agriturismo-Küchenchefs, ab der ersten Minute die Hände im Mehl, vier klassische Pastaformen und ein gemeinsames Mittagessen aus allem, was sie gemacht haben, mit einem Glas Chianti. Nie mehr als acht Menschen am Tisch.`,
+                `Drei Stunden in einer kleinen Küche im Oltrarno mit zwei toskanischen Agriturismo-Küchenchefs, ab der ersten Minute die Hände im Mehl, Fettuccine und Ravioli von Hand, das eigene Tiramisù und ein gemeinsames Essen aus allem, was sie gemacht haben, mit einem Glas Chianti. Nie mehr als acht Menschen am Tisch.`,
                 `Wenn sie so bald nicht nach Florenz kommen, funktioniert der <a href="/de/online-pasta-kurs/">Live-Online-Kurs</a> als Geschenk genauso gut: dieselben Köche, dieselbe Küche, mit einem Zutaten-Kit an ihre Tür. Den verschicken wir am häufigsten ins Ausland.`,
               ],
             },
@@ -4110,7 +4685,7 @@ export const landings = {
             { q: `Kann ich eine persönliche Widmung daraufsetzen?`, a: `Ja: schicken Sie uns den Text und wir setzen ihn auf den Gutschein. Wenn er eher von Ihnen als von uns kommen soll, sagen Sie Bescheid, dann halten wir unser Branding sehr zurück.` },
           ],
           related: [
-            { title: `Der Tisch des Küchenchefs`, href: `/de/pasta-kurs-florenz/`, desc: `Der meistverschenkte Kurs: drei Stunden, vier Formen, ein langes Essen. 95 €.` },
+            { title: `Der Tisch des Küchenchefs`, href: `/de/pasta-kurs-florenz/`, desc: `Der meistverschenkte Kurs: drei Stunden, Ravioli und Tiramisù. 95 €.` },
             { title: `Pasta-Kurs für Zwei`, href: `/de/pasta-kurs-fuer-zwei-florenz/`, desc: `Das Geschenk zum Jahrestag und zur Hochzeit, 95 € pro Person.` },
             { title: `Live-Online-Kurs`, href: `/de/online-pasta-kurs/`, desc: `Für jemanden außerhalb Italiens, Kit an die Tür, ab 68 €.` },
             { title: `Die lange Familientafel`, href: `/de/privater-kochkurs-florenz/`, desc: `Ein großes Geschenk für einen großen Anlass, die ganze Küche, ab 680 €.` },
@@ -4179,7 +4754,7 @@ export const landings = {
             {
               title: `您真正赠送的是什么？`,
               paras: [
-                `在奥特拉诺的一间小厨房里与两位托斯卡纳农庄主厨共度三小时，从第一分钟起双手就在面粉里，四种经典意面形状，以及一顿坐下来享用自己成果的午餐，配一杯基安蒂。餐桌人数从不超过八位。`,
+                `在奥特拉诺的一间小厨房里与两位托斯卡纳农庄主厨共度三小时，从第一分钟起双手就在面粉里，亲手做宽面和意式饺子、自己的提拉米苏，以及一顿坐下来享用自己成果的餐食，配一杯基安蒂。餐桌人数从不超过八位。`,
                 `如果他们近期不会来佛罗伦萨，<a href="/zh/zaixian-yidali-mian-kecheng/">在线直播课程</a>作为礼物同样出色：同样的主厨、同样的厨房，并将食材包寄送到他们家门口。这是我们寄往海外最多的一份礼物。`,
               ],
             },
@@ -4209,7 +4784,7 @@ export const landings = {
             { q: `可以加上一段留言吗？`, a: `可以，把文字发给我们，我们会印在礼券上。如果您希望它看起来像来自您而不是来自我们，请告诉我们，我们会把品牌标识处理得很低调。` },
           ],
           related: [
-            { title: `主厨餐桌`, href: `/zh/foluolunsa-yidali-mian-kecheng/`, desc: `最常被赠送的课程：三小时，四种形状，一顿悠长的午餐。€95。` },
+            { title: `主厨餐桌`, href: `/zh/foluolunsa-yidali-mian-kecheng/`, desc: `最常被赠送的课程：三小时，意式饺子与提拉米苏。€95。` },
             { title: `双人意面课程`, href: `/zh/shuangren-yidali-mian-kecheng-foluolunsa/`, desc: `纪念日与婚礼礼物，每人€95。` },
             { title: `在线直播课程`, href: `/zh/zaixian-yidali-mian-kecheng/`, desc: `送给不在意大利的人，食材包送到家，68欧元起。` },
             { title: `家庭长桌体验`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `大场合的大礼物，整个厨房，680欧元起。` },
@@ -4227,6 +4802,10 @@ export const landings = {
   },
 
   'family': {
+    // 2026-09-26: menu aligned to what every guest gets (fettuccine, ravioli,
+    // tiramisù; one glass of wine + limoncello or coffee), replacing 'four shapes,
+    // two wines'.
+    updated: '2026-09-26',
     floatingCta: true,
     courseMode: 'Onsite',
     courseDuration: 'PT3H',
@@ -4262,7 +4841,7 @@ export const landings = {
                 'Glass of <strong>Limoncello</strong> or <strong>coffee</strong>',
                 'Water'
               ],
-              text: 'Children get the same meal minus the wine: something to drink that isn’t Chianti, and no limoncello. The two Tuscan pours are for the adults at the table.'
+              text: 'Children get the same meal minus the wine: something to drink that isn’t Chianti, and no limoncello. The wine and the limoncello are for the adults at the table.'
             },
             included: {
               title: 'What’s included',
@@ -4286,7 +4865,7 @@ export const landings = {
             {
               title: `What do the children actually do?`,
               paras: [
-                `They make pasta. Properly, not a token ball of dough at the end of the table. Each child gets their own floured board, their own dough to knead, and their own shapes to roll: pici first, because rolling a strand between your palms is the most satisfying thing a six-year-old can do with flour, then a filled shape if they are patient enough.`,
+                `They make pasta. Properly, not a token ball of dough at the end of the table. Each child gets their own floured board, their own dough to knead, and their own pasta to make: fettuccine first, because cutting ribbons from a sheet they rolled themselves is the most satisfying thing a six-year-old can do with flour, then ravioli if they are patient enough.`,
                 `Because there are never more than eight people at the table in total, a chef can stand with a child through a fold that keeps failing. That is the whole reason this works at our table and does not at a class of twelve.`,
               ],
             },
@@ -4303,7 +4882,7 @@ export const landings = {
               list: [
                 `Ages 6 and up cook with us. Under 6 are welcome to come and eat at no charge, but the boards and knives are not built for them.`,
                 `Every child needs an adult at the table with them; this is a class you do together, not a drop-off.`,
-                `Children get the same meal, minus the wine: pasta they made, a sauce, and something to drink that isn't Chianti. Two Tuscan pours are included for the adults.`,
+                `Children get the same meal, minus the wine: pasta they made, a sauce, and something to drink that isn't Chianti. A glass of wine is included for the adults.`,
                 `Knife work is limited and supervised. Boiling water stays with the chefs.`,
                 `Gluten-free or an allergy in the family? Say so when you book: dedicated station, no surcharge, same table as everyone else. See the <a href="/gluten-free-cooking-class-florence/">gluten-free class</a>.`,
                 `We email the recipes afterwards, and whatever you don't finish gets dried and bagged to take back with you, which tends to be the part children talk about.`,
@@ -4325,7 +4904,7 @@ export const landings = {
             { q: `Can you cater for a child with an allergy?`, a: `Usually yes, including coeliac: a dedicated station, its own flour blend and its own pot of water, at no extra charge and at the same table as everyone else. Send us the full list when you book rather than on the day.` },
           ],
           related: [
-            { title: `The Chef's Table`, href: `/pasta-making-class-florence/`, desc: `The same class for adults only: four shapes, one long lunch. €95.` },
+            { title: `The Chef's Table`, href: `/pasta-making-class-florence/`, desc: `The same class for adults only: fettuccine, ravioli, tiramisù. €95.` },
             { title: `The Family Long-Table`, href: `/private-cooking-class-florence/`, desc: `The whole kitchen privately yours, for bigger family groups, from €680.` },
             { title: `Mercato & Mani`, href: `/market-tour-cooking-class-florence/`, desc: `Market walk at dawn, then cook the basket. Better for teenagers than toddlers, €145.` },
             { title: `The four shapes, explained`, href: `/pasta-shapes/`, desc: `Show them what pici and tortelli are before you come.` },
@@ -4375,7 +4954,7 @@ export const landings = {
                   'Bicchiere di <strong>Limoncello</strong> o <strong>caffè</strong>',
                   'Acqua'
               ],
-              text: 'I bambini mangiano lo stesso menù, senza vino: qualcosa da bere che non sia Chianti e niente limoncello. I due calici toscani sono per gli adulti a tavola.'
+              text: 'I bambini mangiano lo stesso menù, senza vino: qualcosa da bere che non sia Chianti e niente limoncello. Il vino e il limoncello sono per gli adulti a tavola.'
               },
               included: {
                 title: 'Cosa è incluso',
@@ -4399,7 +4978,7 @@ export const landings = {
             {
               title: `Cosa fanno davvero i bambini?`,
               paras: [
-                `Fanno la pasta. Sul serio, non una pallina di impasto simbolica in fondo al tavolo. Ogni bambino ha il suo tagliere infarinato, il suo impasto da lavorare e i suoi formati da tirare: prima i pici, perché rotolare un filo di pasta tra le mani è la cosa più soddisfacente che un bambino di sei anni possa fare con la farina, poi un formato ripieno se ha la pazienza.`,
+                `Fanno la pasta. Sul serio, non una pallina di impasto simbolica in fondo al tavolo. Ogni bambino ha il suo tagliere infarinato, il suo impasto da lavorare e la sua pasta da fare: prima le fettuccine, perché tagliare nastri da una sfoglia stesa da sé è la cosa più soddisfacente che un bambino di sei anni possa fare con la farina, poi i ravioli se ha la pazienza.`,
                 `Siccome al tavolo non ci sono mai più di otto persone in tutto, uno chef può restare accanto a un bambino finché quella piega che non viene, viene. È esattamente il motivo per cui questo funziona al nostro tavolo e non in un corso da dodici.`,
               ],
             },
@@ -4416,7 +4995,7 @@ export const landings = {
               list: [
                 `Si cucina dai 6 anni in su. Sotto i 6 sono i benvenuti a venire e mangiare gratis, ma taglieri e coltelli non sono fatti per loro.`,
                 `Ogni bambino ha bisogno di un adulto al tavolo con sé: è un corso che si fa insieme, non un servizio di custodia.`,
-                `I bambini mangiano lo stesso pasto, senza vino: la pasta che hanno fatto, un sugo e qualcosa da bere che non sia Chianti. Per gli adulti due calici toscani sono inclusi.`,
+                `I bambini mangiano lo stesso pasto, senza vino: la pasta che hanno fatto, un sugo e qualcosa da bere che non sia Chianti. Per gli adulti è incluso un calice di vino.`,
                 `L'uso dei coltelli è limitato e sorvegliato. L'acqua bollente resta agli chef.`,
                 `Senza glutine o un'allergia in famiglia? Ditecelo alla prenotazione: postazione dedicata, nessun supplemento, stesso tavolo di tutti. Vedi il <a href="/it/corso-cucina-senza-glutine-firenze/">corso senza glutine</a>.`,
                 `Mandiamo le ricette per email, e quello che non finite lo facciamo asciugare e insacchettare da portare via, di solito è la parte di cui i bambini parlano di più.`,
@@ -4438,7 +5017,7 @@ export const landings = {
             { q: `Potete gestire un bambino con un'allergia?`, a: `Di solito sì, celiachia compresa: postazione dedicata, farina dedicata e pentola dedicata, senza supplemento e allo stesso tavolo di tutti gli altri. Mandateci l'elenco completo alla prenotazione, non il giorno stesso.` },
           ],
           related: [
-            { title: `Il Tavolo dello Chef`, href: `/it/corso-pasta-fresca-firenze/`, desc: `Lo stesso corso per soli adulti: quattro formati, un lungo pranzo. €95.` },
+            { title: `Il Tavolo dello Chef`, href: `/it/corso-pasta-fresca-firenze/`, desc: `Lo stesso corso per soli adulti: fettuccine, ravioli, tiramisù. €95.` },
             { title: `Il Lungo Tavolo di Famiglia`, href: `/it/corso-cucina-privato-firenze/`, desc: `Tutta la cucina solo per voi, per gruppi familiari più grandi, da €680.` },
             { title: `Mercato & Mani`, href: `/it/corso-cucina-tour-mercato-firenze/`, desc: `Mercato all'alba, poi si cucina il cesto. Meglio per adolescenti che per bambini piccoli, €145.` },
             { title: `Corso di Pasta per Due`, href: `/it/corso-pasta-per-due-firenze/`, desc: `Il regalo da anniversario e da matrimonio, €95 a testa.` },
@@ -4487,7 +5066,7 @@ export const landings = {
                   'Verre de <strong>Limoncello</strong> ou <strong>café</strong>',
                   'Eau'
               ],
-              text: 'Les enfants ont le même repas sans le vin : une boisson qui n’est pas du Chianti, et pas de limoncello. Les deux verres toscans sont pour les adultes à table.'
+              text: 'Les enfants ont le même repas sans le vin : une boisson qui n’est pas du Chianti, et pas de limoncello. Le vin et le limoncello sont pour les adultes à table.'
               },
               included: {
                 title: 'Ce qui est inclus',
@@ -4511,7 +5090,7 @@ export const landings = {
             {
               title: `Que font réellement les enfants ?`,
               paras: [
-                `Ils font des pâtes. Vraiment, pas une boulette symbolique au bout de la table. Chaque enfant a sa planche farinée, sa pâte à pétrir et ses formes à rouler : les pici d'abord, parce que rouler un brin entre ses paumes est la chose la plus satisfaisante qu'un enfant de six ans puisse faire avec de la farine, puis une forme farcie s'il en a la patience.`,
+                `Ils font des pâtes. Vraiment, pas une boulette symbolique au bout de la table. Chaque enfant a sa planche farinée, sa pâte à pétrir et ses pâtes à faire : les fettuccine d'abord, parce que couper des rubans dans une pâte qu'il a étalée lui-même est la chose la plus satisfaisante qu'un enfant de six ans puisse faire avec de la farine, puis les ravioli s'il en a la patience.`,
                 `Comme il n'y a jamais plus de huit personnes à table au total, un chef peut rester auprès d'un enfant jusqu'à ce que le pliage qui rate finisse par réussir. C'est exactement pour cela que cela fonctionne à notre table et pas dans un cours de douze.`,
               ],
             },
@@ -4528,7 +5107,7 @@ export const landings = {
               list: [
                 `On cuisine à partir de 6 ans. Les moins de 6 ans sont les bienvenus pour venir et manger gratuitement, mais les planches et les couteaux ne sont pas faits pour eux.`,
                 `Chaque enfant doit avoir un adulte à table avec lui : c'est un cours qu'on fait ensemble, pas une garderie.`,
-                `Les enfants ont le même repas, sans le vin : les pâtes qu'ils ont faites, une sauce, et autre chose que du Chianti à boire. Pour les adultes, deux verres toscans sont compris.`,
+                `Les enfants ont le même repas, sans le vin : les pâtes qu'ils ont faites, une sauce, et autre chose que du Chianti à boire. Pour les adultes, un verre de vin est compris.`,
                 `Le maniement du couteau est limité et surveillé. L'eau bouillante reste aux chefs.`,
                 `Sans gluten ou une allergie dans la famille ? Dites-le à la réservation: poste dédié, sans supplément, à la même table que tout le monde. Voir le <a href="/fr/cours-cuisine-sans-gluten-florence/">cours sans gluten</a>.`,
                 `Nous envoyons les recettes par email, et ce que vous ne finissez pas est séché et mis en sachet pour l'emporter, c'est en général la partie dont les enfants parlent.`,
@@ -4550,7 +5129,7 @@ export const landings = {
             { q: `Pouvez-vous gérer un enfant allergique ?`, a: `En général oui, cœliaque compris: un poste dédié, sa propre farine et sa propre casserole, sans supplément et à la même table que tout le monde. Envoyez-nous la liste complète à la réservation, pas le jour même.` },
           ],
           related: [
-            { title: `La Table du Chef`, href: `/fr/cours-de-pates-fraiches-florence/`, desc: `Le même cours entre adultes: quatre formes, un long déjeuner. 95 €.` },
+            { title: `La Table du Chef`, href: `/fr/cours-de-pates-fraiches-florence/`, desc: `Le même cours entre adultes : fettuccine, ravioli, tiramisù. 95 €.` },
             { title: `La Longue Table Familiale`, href: `/fr/cours-cuisine-prive-florence/`, desc: `Toute la cuisine rien que pour vous, pour les grandes familles, dès 680 €.` },
             { title: `Mercato & Mani`, href: `/fr/cours-cuisine-visite-marche-florence/`, desc: `Le marché à l'aube, puis on cuisine le panier. Mieux pour les ados que pour les tout-petits, 145 €.` },
             { title: `Cours de Pâtes pour Deux`, href: `/fr/cours-de-pates-pour-deux-florence/`, desc: `Le cadeau d'anniversaire de mariage, 95 € par personne.` },
@@ -4599,7 +5178,7 @@ export const landings = {
                   'Glas <strong>Limoncello</strong> oder <strong>Kaffee</strong>',
                   'Wasser'
               ],
-              text: 'Kinder bekommen dasselbe Essen ohne Wein: etwas zu trinken, das kein Chianti ist, und keinen Limoncello. Die zwei toskanischen Gläser sind für die Erwachsenen am Tisch.'
+              text: 'Kinder bekommen dasselbe Essen ohne Wein: etwas zu trinken, das kein Chianti ist, und keinen Limoncello. Wein und Limoncello sind für die Erwachsenen am Tisch.'
               },
               included: {
                 title: 'Was inklusive ist',
@@ -4623,7 +5202,7 @@ export const landings = {
             {
               title: `Was machen die Kinder wirklich?`,
               paras: [
-                `Sie machen Pasta. Richtig, kein symbolisches Kügelchen Teig am Tischende. Jedes Kind bekommt sein eigenes bemehltes Brett, seinen eigenen Teig zum Kneten und seine eigenen Formen: zuerst Pici, weil einen Strang zwischen den Handflächen zu rollen das Befriedigendste ist, was ein Sechsjähriger mit Mehl anstellen kann, danach eine gefüllte Form, wenn die Geduld reicht.`,
+                `Sie machen Pasta. Richtig, kein symbolisches Kügelchen Teig am Tischende. Jedes Kind bekommt sein eigenes bemehltes Brett, seinen eigenen Teig zum Kneten und seine eigene Pasta: zuerst Fettuccine, weil Bänder aus einem selbst ausgerollten Teig zu schneiden das Befriedigendste ist, was ein Sechsjähriger mit Mehl anstellen kann, danach Ravioli, wenn die Geduld reicht.`,
                 `Weil insgesamt nie mehr als acht Personen am Tisch sitzen, kann ein Koch so lange bei einem Kind bleiben, bis die Faltung sitzt. Genau deshalb funktioniert das an unserem Tisch und nicht in einem Kurs mit zwölf Leuten.`,
               ],
             },
@@ -4640,7 +5219,7 @@ export const landings = {
               list: [
                 `Gekocht wird ab 6 Jahren. Unter 6 sind herzlich willkommen mitzukommen und kostenlos mitzuessen, aber Bretter und Messer sind nicht für sie gemacht.`,
                 `Jedes Kind braucht einen Erwachsenen mit am Tisch; das ist ein Kurs, den man zusammen macht, keine Betreuung.`,
-                `Kinder bekommen dasselbe Essen, nur ohne Wein: die Pasta, die sie gemacht haben, eine Sauce und etwas zu trinken, das kein Chianti ist. Für Erwachsene sind zwei toskanische Gläser inklusive.`,
+                `Kinder bekommen dasselbe Essen, nur ohne Wein: die Pasta, die sie gemacht haben, eine Sauce und etwas zu trinken, das kein Chianti ist. Für Erwachsene ist ein Glas Wein inklusive.`,
                 `Die Messerarbeit ist begrenzt und beaufsichtigt. Kochendes Wasser bleibt bei den Köchen.`,
                 `Glutenfrei oder eine Allergie in der Familie? Sagen Sie es bei der Buchung: eigene Station, kein Aufpreis, derselbe Tisch wie alle anderen. Siehe den <a href="/de/glutenfreier-kochkurs-florenz/">glutenfreien Kurs</a>.`,
                 `Die Rezepte schicken wir hinterher per E-Mail, und was Sie nicht aufessen, wird getrocknet und abgefüllt zum Mitnehmen, das ist meistens der Teil, von dem die Kinder erzählen.`,
@@ -4662,7 +5241,7 @@ export const landings = {
             { q: `Können Sie ein Kind mit einer Allergie versorgen?`, a: `In der Regel ja, Zöliakie eingeschlossen: eine eigene Station, eine eigene Mehlmischung und ein eigener Topf, ohne Aufpreis und am selben Tisch wie alle anderen. Schicken Sie uns die vollständige Liste bei der Buchung, nicht am Tag selbst.` },
           ],
           related: [
-            { title: `Der Tisch des Küchenchefs`, href: `/de/pasta-kurs-florenz/`, desc: `Derselbe Kurs nur für Erwachsene: vier Formen, ein langes Mittagessen. 95 €.` },
+            { title: `Der Tisch des Küchenchefs`, href: `/de/pasta-kurs-florenz/`, desc: `Derselbe Kurs nur für Erwachsene: Fettuccine, Ravioli, Tiramisù. 95 €.` },
             { title: `Die lange Familientafel`, href: `/de/privater-kochkurs-florenz/`, desc: `Die ganze Küche für Sie allein, für größere Familiengruppen, ab 680 €.` },
             { title: `Mercato & Mani`, href: `/de/markt-tour-kochkurs-florenz/`, desc: `Markt im Morgengrauen, dann den Korb kochen. Eher für Teenager als für Kleinkinder, 145 €.` },
             { title: `Pasta-Kurs für Zwei`, href: `/de/pasta-kurs-fuer-zwei-florenz/`, desc: `Das Geschenk zum Jahrestag und zur Hochzeit, 95 € pro Person.` },
@@ -4711,7 +5290,7 @@ export const landings = {
                 '一杯<strong>柠檬酒</strong>或<strong>咖啡</strong>',
                 '水'
               ],
-              text: '孩子们享用同样的菜单，但不含葡萄酒：会提供非 Chianti 的饮品，也不供应柠檬酒。那两杯托斯卡纳葡萄酒是为同桌的成年人准备的。'
+              text: '孩子们享用同样的菜单，但不含葡萄酒：会提供非 Chianti 的饮品，也不供应柠檬酒。葡萄酒和柠檬酒是为同桌的成年人准备的。'
             },
             included: {
               title: '包含内容',
@@ -4735,7 +5314,7 @@ export const landings = {
             {
               title: `孩子究竟会做些什么？`,
               paras: [
-                `他们真的在做意面，不是在桌角捏一小团面意思一下。每个孩子都有自己撒好面粉的案板、自己要揉的面团、自己要搓的形状：先做pici，因为把一根面条在掌心搓出来，是一个六岁孩子用面粉能做的最有成就感的事；如果还有耐心，再做一种带馅的。`,
+                `他们真的在做意面，不是在桌角捏一小团面意思一下。每个孩子都有自己撒好面粉的案板、自己要揉的面团、自己要做的意面：先做宽面，因为从自己擀开的面皮上切出面条，是一个六岁孩子用面粉能做的最有成就感的事；如果还有耐心，再包意式饺子。`,
                 `因为整桌从不超过八个人，厨师可以一直陪着一个孩子，直到那个总也捏不好的褶子终于成型。这正是它在我们这张桌子上行得通、而在十二人的课堂上行不通的原因。`,
               ],
             },
@@ -4752,7 +5331,7 @@ export const landings = {
               list: [
                 `6岁以上可以动手做。6岁以下欢迎同行并免费用餐，但案板和刀具并不是为他们准备的。`,
                 `每个孩子都需要一位成人同桌陪同，这是一门全家一起上的课，不是托管。`,
-                `孩子享用同样的餐食，只是不含葡萄酒：他们亲手做的意面、一份酱汁，以及不是基安蒂的饮品。成人则已包含两杯托斯卡纳葡萄酒。`,
+                `孩子享用同样的餐食，只是不含葡萄酒：他们亲手做的意面、一份酱汁，以及不是基安蒂的饮品。成人则已包含一杯葡萄酒。`,
                 `用刀环节有限且全程有人看顾。沸水始终由厨师掌管。`,
                 `家里有人无麸质或有过敏？请在预订时告诉我们：专属操作台、不加价、和大家同坐一桌。请见<a href="/zh/wu-fuzhi-pengren-kecheng-foluolunsa/">无麸质课程</a>。`,
                 `课后我们会把菜谱发到您邮箱；没吃完的会为您晾干装袋带走，这通常是孩子们最爱聊起的部分。`,
@@ -4774,7 +5353,7 @@ export const landings = {
             { q: `孩子有过敏，你们能安排吗？`, a: `通常可以，包括乳糜泻，专属操作台、专属面粉配方、专属煮锅，不加价，并且与大家同坐一桌。请在预订时把完整清单发给我们，而不是当天再说。` },
           ],
           related: [
-            { title: `主厨餐桌`, href: `/zh/foluolunsa-yidali-mian-kecheng/`, desc: `同样的课程，仅限成人：四种形状，一顿悠长的午餐。95欧元。` },
+            { title: `主厨餐桌`, href: `/zh/foluolunsa-yidali-mian-kecheng/`, desc: `同样的课程，仅限成人：宽面、意式饺子、提拉米苏。95欧元。` },
             { title: `家庭长桌体验`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `整个厨房专属于你们，适合更大的家庭团体，680欧元起。` },
             { title: `市场与手工`, href: `/zh/shichang-daolan-pengren-kecheng-foluolunsa/`, desc: `清晨逛市场，然后烹饪当天的食材。更适合青少年而非幼童，145欧元。` },
             { title: `双人意面课程`, href: `/zh/shuangren-yidali-mian-kecheng-foluolunsa/`, desc: `纪念日与婚礼礼物，每人€95。` },
@@ -4891,7 +5470,7 @@ export const landings = {
             { q: `Can you cater to gluten-free diets or allergies?`, a: `Yes. Send the whole list when you enquire rather than on the day: with a group of this size, gluten-free guests and allergies are routine. A dedicated gluten-free flour blend and a separate station come at no extra charge, exactly as in our Florence kitchen. Because the class runs in a partner estate kitchen, we confirm the setup with the estate when we confirm your date.` },
           ],
           related: [
-            { title: `The Chef's Table`, href: `/pasta-making-class-florence/`, desc: `The city version: three hours in our Oltrarno kitchen, four shapes, €95.` },
+            { title: `The Chef's Table`, href: `/pasta-making-class-florence/`, desc: `The city version: three hours in our Oltrarno kitchen, ravioli and tiramisù, €95.` },
             { title: `Mercato & Mani`, href: `/market-tour-cooking-class-florence/`, desc: `Shop Sant'Ambrogio market at dawn, then cook the basket. 5 hours, €145.` },
             { title: `The Family Long-Table`, href: `/private-cooking-class-florence/`, desc: `The whole Florence kitchen, privately yours, from €680.` },
             { title: `Team Building`, href: `/team-building-cooking-class-florence/`, desc: `The same idea for companies: private kitchen, 6 to 14 people.` },
@@ -4978,7 +5557,7 @@ export const landings = {
             { q: `Potete gestire diete senza glutine o allergie?`, a: `Sì. Mandateci l’elenco completo quando scrivete, non il giorno stesso: con un gruppo di queste dimensioni, celiaci e allergie sono la normalità. Una miscela di farine senza glutine dedicata e una postazione separata non hanno alcun supplemento, esattamente come nella nostra cucina di Firenze. Poiché il corso si tiene nella cucina di un’azienda partner, confermiamo l’allestimento con l’azienda quando confermiamo la data.` },
           ],
           related: [
-            { title: `La Tavola dello Chef`, href: `/it/corso-pasta-fresca-firenze/`, desc: `La versione in città: tre ore in Oltrarno, quattro formati, €95.` },
+            { title: `La Tavola dello Chef`, href: `/it/corso-pasta-fresca-firenze/`, desc: `La versione in città: tre ore in Oltrarno, ravioli e tiramisù, €95.` },
             { title: `Mercato & Mani`, href: `/it/corso-cucina-tour-mercato-firenze/`, desc: `Spesa al mercato di Sant'Ambrogio all'alba, poi si cucina. 5 ore, €145.` },
             { title: `La Tavolata di Famiglia`, href: `/it/corso-cucina-privato-firenze/`, desc: `Tutta la cucina di Firenze solo per voi, da €680.` },
             { title: `Team Building`, href: `/it/corso-cucina-team-building-firenze/`, desc: `La stessa idea per le aziende: cucina privata, da 6 a 14 persone.` },
@@ -5065,7 +5644,7 @@ export const landings = {
             { q: `Pouvez-vous gérer les régimes sans gluten ou les allergies ?`, a: `Oui. Envoyez-nous la liste complète au moment de votre demande, pas le jour même : avec un groupe de cette taille, les convives cœliaques et les allergies sont courants. Un mélange de farines sans gluten dédié et un poste séparé sont sans supplément, exactement comme dans notre cuisine de Florence. Comme le cours se déroule dans la cuisine d’un domaine partenaire, nous confirmons l’installation avec le domaine en confirmant votre date.` },
           ],
           related: [
-            { title: `La Table du Chef`, href: `/fr/cours-de-pates-fraiches-florence/`, desc: `La version en ville : trois heures dans notre cuisine de l'Oltrarno, quatre formes, 95 €.` },
+            { title: `La Table du Chef`, href: `/fr/cours-de-pates-fraiches-florence/`, desc: `La version en ville : trois heures dans notre cuisine de l'Oltrarno, ravioli et tiramisù, 95 €.` },
             { title: `Mercato & Mani`, href: `/fr/cours-cuisine-visite-marche-florence/`, desc: `Le marché de Sant'Ambrogio à l'aube, puis on cuisine le panier. 5 heures, 145 €.` },
             { title: `La Grande Tablée`, href: `/fr/cours-cuisine-prive-florence/`, desc: `Toute la cuisine de Florence rien que pour vous, à partir de 680 €.` },
             { title: `Team Building`, href: `/fr/cours-cuisine-team-building-florence/`, desc: `La même idée pour les entreprises : cuisine privatisée, de 6 à 14 personnes.` },
@@ -5152,7 +5731,7 @@ export const landings = {
             { q: `Können Sie glutenfreie Ernährung oder Allergien berücksichtigen?`, a: `Ja. Schicken Sie uns die vollständige Liste bei der Anfrage, nicht erst am Tag selbst: Bei einer Gruppe dieser Größe sind Zöliakie und Allergien Alltag. Eine eigene glutenfreie Mehlmischung und eine separate Station kosten nichts extra, genau wie in unserer Küche in Florenz. Da der Kurs in der Küche eines Partnerguts stattfindet, stimmen wir den Aufbau mit dem Gut ab, sobald wir Ihren Termin bestätigen.` },
           ],
           related: [
-            { title: `Der Chef's Table`, href: `/de/pasta-kurs-florenz/`, desc: `Die Stadtversion: drei Stunden in unserer Oltrarno-Küche, vier Formen, 95 €.` },
+            { title: `Der Chef's Table`, href: `/de/pasta-kurs-florenz/`, desc: `Die Stadtversion: drei Stunden in unserer Oltrarno-Küche, Ravioli und Tiramisù, 95 €.` },
             { title: `Mercato & Mani`, href: `/de/markt-tour-kochkurs-florenz/`, desc: `Im Morgengrauen über den Sant'Ambrogio-Markt, dann kochen. 5 Stunden, 145 €.` },
             { title: `Die Familientafel`, href: `/de/privater-kochkurs-florenz/`, desc: `Die ganze Küche in Florenz nur für Sie, ab 680 €.` },
             { title: `Teambuilding`, href: `/de/teambuilding-kochkurs-florenz/`, desc: `Dieselbe Idee für Firmen: private Küche, 6 bis 14 Personen.` },
@@ -5239,7 +5818,7 @@ export const landings = {
             { q: `你们能否照顾无麸质饮食或过敏需求？`, a: `可以。请在咨询时就把完整清单发给我们，而不是当天才说：对于这种规模的团体，乳糜泻客人和过敏需求都很常见。专用的无麸质面粉配方和独立操作台不收取额外费用，与我们佛罗伦萨的厨房完全一致。由于课程在合作庄园的厨房举行，我们会在确认您的日期时与庄园确认具体安排。` },
           ],
           related: [
-            { title: `主厨餐桌`, href: `/zh/foluolunsa-yidali-mian-kecheng/`, desc: `市区版本：在奥特拉诺厨房三小时，四种形状，95欧元。` },
+            { title: `主厨餐桌`, href: `/zh/foluolunsa-yidali-mian-kecheng/`, desc: `市区版本：在奥特拉诺厨房三小时，意式饺子与提拉米苏，95欧元。` },
             { title: `市场与手工`, href: `/zh/shichang-daolan-pengren-kecheng-foluolunsa/`, desc: `清晨逛圣安布罗焦市场，然后烹饪当天的食材。5小时，145欧元。` },
             { title: `家庭长桌体验`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `整个佛罗伦萨厨房专属于你们，680欧元起。` },
             { title: `团队建设`, href: `/zh/tuandui-jianshe-pengren-kecheng-foluolunsa/`, desc: `同样的形式，面向企业：私人包场，6至14人。` },

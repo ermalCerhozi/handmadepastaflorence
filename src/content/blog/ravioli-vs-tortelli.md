@@ -2,6 +2,7 @@
 title: 'Ravioli vs tortelli vs tortellini: the difference'
 description: 'Ravioli, tortelli, tortellini and agnolotti are all filled pasta: size, shape, filling and region are what separate them. What each name means.'
 pubDate: 2026-08-11
+updatedDate: 2026-09-26
 author: 'Endri Cerhozi'
 image: '../../assets/images/handmade-ravioli-pasta.webp'
 imageAlt: 'Freshly made filled pasta parcels on a floured wooden board'
@@ -23,7 +24,7 @@ faqs:
   - q: "Why do my ravioli burst when I boil them?"
     a: "Almost always trapped air. Press the top sheet down around each mound of filling with your fingers and work the air outwards before sealing the edge. Under-sealed edges, overfilling, and dough rolled too thin are the other three causes."
   - q: "Can you learn to make ravioli in Florence?"
-    a: "Yes: filled pasta is one of the four shapes we teach in our three-hour class in the Oltrarno. We teach the Tuscan tortelli version, which is the same technique under a different name, and it is the shape most guests are proudest of at the end."
+    a: "Yes: every guest in our three-hour class in the Oltrarno makes ravioli by hand, filled, sealed and served with butter and sage. Tortelli are the same technique made larger, and the filled pasta is the shape most guests are proudest of at the end."
 ---
 
 Short answer: **ravioli and tortelli are the same idea under two names.** Both are fresh pasta filled with something and sealed between two sheets. Ravioli is the broad, national word. Tortelli is what we call them in Tuscany and Emilia, and ours are usually bigger.
@@ -86,4 +87,4 @@ Whether you are making ravioli in Rome or tortelli in the Mugello, the method is
 
 In Tuscany, say tortelli and you will sound like you have been paying attention. Anywhere else, ravioli is understood everywhere and nobody will correct you.
 
-And if you want to make them with your hands rather than read about them, filled pasta is one of the four shapes in [our three-hour class in the Oltrarno](/pasta-making-class-florence/), along with pici, tagliatelle and pappardelle. It is reliably the shape people are proudest of at the end, mostly because it is the one that takes patience. Bring children if you have them: the [family class](/family-cooking-class-florence/) runs from age six, and folding parcels turns out to be exactly the kind of job a seven-year-old is good at.
+And if you want to make them with your hands rather than read about them, ravioli are one of the two pastas every guest makes in [our three-hour class in the Oltrarno](/pasta-making-class-florence/), alongside hand-cut fettuccine. It is reliably the shape people are proudest of at the end, mostly because it is the one that takes patience. Bring children if you have them: the [family class](/family-cooking-class-florence/) runs from age six, and folding parcels turns out to be exactly the kind of job a seven-year-old is good at.

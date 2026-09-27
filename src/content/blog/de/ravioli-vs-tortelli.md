@@ -2,6 +2,7 @@
 title: 'Ravioli, Tortelli oder Tortellini: der Unterschied'
 description: 'Ravioli, Tortelli, Tortellini und Agnolotti sind alle gefüllte Pasta: Größe, Form, Füllung und Region trennen sie. Was jeder Name wirklich bedeutet.'
 pubDate: 2026-08-11
+updatedDate: 2026-09-26
 author: 'Endri Cerhozi'
 image: '../../../assets/images/handmade-ravioli-pasta.webp'
 imageAlt: 'Frisch gemachte gefüllte Pasta auf einem bemehlten Holzbrett'
@@ -25,7 +26,7 @@ faqs:
   - q: "Warum platzen meine Ravioli beim Kochen?"
     a: "Fast immer wegen eingeschlossener Luft. Drücken Sie die obere Teigbahn mit den Fingern rund um jedes Füllungshäufchen an und arbeiten Sie die Luft nach außen, bevor Sie den Rand versiegeln. Schlecht versiegelte Ränder, zu viel Füllung und zu dünn ausgerollter Teig sind die drei anderen Ursachen."
   - q: "Kann man in Florenz lernen, Ravioli zu machen?"
-    a: "Ja: gefüllte Pasta ist eine der vier Formen, die wir in unserem dreistündigen Kurs im Oltrarno unterrichten. Wir zeigen die toskanische Variante, den Tortello, das ist dieselbe Technik unter anderem Namen, und es ist die Form, auf die unsere Gäste am Ende am stolzesten sind."
+    a: "Ja: In unserem dreistündigen Kurs im Oltrarno macht jeder Gast Ravioli von Hand, füllt sie, verschließt sie und isst sie mit Butter und Salbei. Tortelli sind dieselbe Technik in groß, und die gefüllte Pasta ist die, auf die unsere Gäste am Ende am stolzesten sind."
 ---
 
 Kurze Antwort: **Ravioli und Tortelli sind dieselbe Idee unter zwei Namen.** Beides ist frische Pasta, mit etwas gefüllt und zwischen zwei Teigbahnen versiegelt. Ravioli ist das allgemeine, landesweite Wort. Tortelli nennen wir sie in der Toskana und in der Emilia, und unsere sind meist größer.
@@ -88,4 +89,4 @@ Ob Sie Ravioli in Rom oder Tortelli im Mugello machen, die Methode ist dieselbe,
 
 In der Toskana sagen Sie Tortelli und klingen, als hätten Sie aufgepasst. Überall sonst wird Ravioli verstanden, und niemand wird Sie korrigieren.
 
-Und wenn Sie sie mit den Händen machen wollen, statt darüber zu lesen: Gefüllte Pasta ist eine der vier Formen in [unserem dreistündigen Kurs im Oltrarno](/de/pasta-kurs-florenz/), neben Pici, Tagliatelle und Pappardelle. Es ist verlässlich die Form, auf die die Leute am Ende am stolzesten sind, vor allem, weil sie Geduld verlangt. Bringen Sie Kinder mit, wenn Sie welche haben: Der [Familienkurs](/de/familien-kochkurs-florenz/) läuft ab sechs Jahren, und Päckchen falten erweist sich als genau die Art Aufgabe, in der ein Siebenjähriger gut ist.
+Und wenn Sie sie mit den Händen machen wollen, statt darüber zu lesen: Ravioli sind eine der zwei Pastas, die jeder Gast in [unserem dreistündigen Kurs im Oltrarno](/de/pasta-kurs-florenz/) macht, neben von Hand geschnittenen Fettuccine. Es ist verlässlich die Form, auf die die Leute am Ende am stolzesten sind, vor allem, weil sie Geduld verlangt. Bringen Sie Kinder mit, wenn Sie welche haben: Der [Familienkurs](/de/familien-kochkurs-florenz/) läuft ab sechs Jahren, und Päckchen falten erweist sich als genau die Art Aufgabe, in der ein Siebenjähriger gut ist.
