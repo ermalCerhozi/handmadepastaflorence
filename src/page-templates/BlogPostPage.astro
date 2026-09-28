@@ -46,6 +46,16 @@ const publisherId = `${SITE}/#business`;
 const classKey = post.data.classKey as LandingKey | undefined;
 const ctaKey: LandingKey = classKey && classKey in landings ? classKey : 'pasta-making';
 const classesUrl = landingPath(ctaKey, lang);
+// The CTA link is labelled with its target's own name ("Team Building Cooking
+// Class", "Pasta-Kurs in Florenz") so the anchor describes the page it opens.
+// It used to say "See the classes" whatever the target was. Same English
+// fallback as landingPath() for a landing with no entry in this locale.
+const ctaEntry = landings[ctaKey].locales[lang] ?? landings[ctaKey].locales[defaultLocale];
+const ctaLabel = ctaEntry?.cl.breadcrumbName ?? t.blogPost.ctaLink;
+// The bio sentence describes the small-group pasta class, so it always links
+// there. Pointing it at `classKey` put "small-group pasta making classes" on
+// links to the online, family, agriturismo and market-tour pages.
+const bioUrl = landingPath('pasta-making', lang);
 
 // Related guides, resolved IN THE READER'S LOCALE. A slug is dropped if it has
 // no translation for this locale, so a French reader never gets an English
@@ -163,7 +173,7 @@ const faqLd = faqs.length ? faqSchema(faqs) : null;
         <aside class="po-bio" data-reveal>
           <p>
             <strong>{post.data.author}</strong> {t.blogPost.bioIs}
-            <a href={classesUrl}>{t.blogPost.bioLink}</a> {t.blogPost.bioEnd}
+            <a href={bioUrl}>{t.blogPost.bioLink}</a> {t.blogPost.bioEnd}
           </p>
         </aside>
 
@@ -174,7 +184,7 @@ const faqLd = faqs.length ? faqSchema(faqs) : null;
           </div>
           <div class="po-cta__actions">
             <button class="po-cta__btn" data-open-booking data-cta="blog-post">{t.blogPost.ctaBtn}</button>
-            <a class="po-cta__link" href={classesUrl}>{t.blogPost.ctaLink}</a>
+            <a class="po-cta__link" href={classesUrl}>{ctaLabel} <span aria-hidden="true">→</span></a>
           </div>
         </div>
       </div>

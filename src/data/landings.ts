@@ -236,6 +236,7 @@ export const landings = {
             { q: `Can you cater to gluten-free diets or allergies?`, a: `Yes: we can prepare a dedicated gluten-free flour blend and a clean station at no extra charge. Just tell us about any allergies when you book.` },
             { q: `How do I book and pay?`, a: `Use the “Book this class” button to build your request. It opens a WhatsApp chat with the details filled in, and we’ll confirm availability and walk you through the rest.` },
             { q: `How much does a pasta making class in Florence cost overall?`, a: `The Chef’s Table is €95 per person. If you’re weighing it against the market tour, private buyout or online option, see our <a href="/blog/how-much-does-a-pasta-making-class-in-florence-cost/">full price breakdown</a> for all four.` },
+            { q: `How is this different from other pasta classes in Florence?`, a: `Mostly group size and focus. The Chef’s Table is capped at 8 guests, it is about fresh pasta from start to finish, and two chefs teach it at your elbow. The larger Florence schools take bigger groups through a broader four-course menu, which suits some trips better. We compared them side by side in <a href="/blog/where-to-take-pasta-making-class-florence/">where to take a pasta making class in Florence</a>.` },
             { q: `Is the class suitable for vegetarians?`, a: `Yes, with no changes and no surcharge. Pick tomato and basil or cacio e pepe for your fettuccine and the whole menu is vegetarian: the ravioli are butter and sage, the tiramisù is the classic one. Only the amatriciana option contains meat, and it is a choice you make on the day, not a default. Tell us in advance if anyone is vegetarian and we will have the sauce ready.` },
             { q: `Is there an evening pasta class?`, a: `Yes. The 18:00 slot runs the signature class in the evening: the same three hours and the same shapes, finishing into dinner instead of lunch. Nobody is booked in after you, so the table tends to sit longer. Ask for the evening slot when you book; it is subject to availability like any other time.` },
             { q: `Can you do a vegan pasta class?`, a: `Yes, with advance notice. The dough goes eggless, which is how Tuscany has always made pici: flour, water and olive oil, nothing else. The sauce is tomato and basil or aglione, both naturally dairy-free; the ravioli get a potato filling with olive oil and sage, and we adapt the dessert rather than drop it. There is no surcharge. Tell us when you book so the ingredients are in the kitchen that morning. Everything else is on the <a href="/vegan-cooking-class-florence/">vegan &amp; vegetarian class</a> page.` },
@@ -247,6 +248,7 @@ export const landings = {
             { title: `The four shapes, explained`, href: `/pasta-shapes/`, desc: `Pici, pappardelle, tagliatelle, tortelli: what each one is and the sauce it was built for.` },
           
             { title: `Gift a Cooking Class`, href: `/gift-a-cooking-class-florence/`, desc: `A voucher instead of another object. Any class, from €68, and they pick the date.` },
+            { title: `Pasta Class for Two`, href: `/pasta-class-for-two-florence/`, desc: `The anniversary and wedding present, €95 each.` },
           ],
           ctaLabel: `Book this class`,
           prefill: 'florence',
@@ -356,6 +358,7 @@ export const landings = {
             { q: `Potete soddisfare diete senza glutine o allergie?`, a: `Sì: possiamo preparare una miscela di farine senza glutine dedicata e una postazione pulita senza costi aggiuntivi. Devi solo segnalarci eventuali allergie al momento della prenotazione.` },
             { q: `Come posso prenotare e pagare?`, a: `Usa il pulsante "Prenota questo corso" per creare la tua richiesta. Si apre una chat di WhatsApp con i dettagli precompilati, noi confermeremo la disponibilità e ti guideremo nel resto.` },
             { q: `Quanto costa in tutto un corso di pasta fresca a Firenze?`, a: `La Tavola dello Chef costa €95 a persona. Se lo state confrontando con il tour del mercato, il corso privato o quello online, guardate il nostro <a href="/it/blog/how-much-does-a-pasta-making-class-in-florence-cost/">confronto completo dei prezzi</a> per tutti e quattro.` },
+            { q: `In cosa è diverso dagli altri corsi di pasta a Firenze?`, a: `Soprattutto per numero di persone e focus. La Tavola dello Chef ha al massimo 8 ospiti, è dedicata alla pasta fresca dall'inizio alla fine e due chef la insegnano sempre al vostro fianco. Le scuole più grandi di Firenze lavorano con gruppi più numerosi e un menu più ampio di quattro portate, che per alcuni viaggi è la scelta giusta. Le abbiamo confrontate fianco a fianco nella nostra <a href="/it/blog/where-to-take-pasta-making-class-florence/">guida ai corsi di pasta a Firenze</a>.` },
             { q: `Il corso è adatto ai vegetariani?`, a: `Sì, senza modifiche e senza supplemento. Scegliete pomodoro e basilico o cacio e pepe per le vostre fettuccine e tutto il menù è vegetariano: i ravioli sono burro e salvia, il tiramisù è quello classico. Solo l’opzione amatriciana contiene carne, ed è una scelta che si fa il giorno stesso, non un’impostazione predefinita. Ditecelo in anticipo e troverete il sugo già pronto.` },
             { q: `C’è un corso di pasta serale?`, a: `Sì. Il turno delle 18:00 è il corso principale di sera: le stesse tre ore e gli stessi formati, solo che sfuma nella cena invece che nel pranzo. Dopo di voi non c’è un altro gruppo, quindi al tavolo si resta più a lungo. Chiedete il turno serale quando prenotate, salvo disponibilità come per ogni altro orario.` },
             { q: `Potete fare un corso di pasta vegano?`, a: `Sì, con un preavviso. L’impasto va senza uovo, che è poi il modo in cui la Toscana ha sempre fatto i pici: farina, acqua e olio d’oliva, nient’altro. Il sugo è pomodoro e basilico o aglione, entrambi senza latticini; i ravioli hanno un ripieno di patate con olio e salvia, e il dolce lo adattiamo invece di toglierlo. Nessun supplemento. Ditecelo quando prenotate, così la mattina stessa gli ingredienti sono in cucina. Tutti i dettagli nella pagina del <a href="/it/corso-cucina-vegana-firenze/">corso vegano e vegetariano</a>.` },
@@ -367,6 +370,7 @@ export const landings = {
             { title: `I quattro formati, spiegati`, href: `/it/formati-di-pasta-toscana/`, desc: `Pici, pappardelle, tagliatelle, tortelli: cosa sono e il sugo per cui sono nati.` },
           
             { title: `Regala un Corso di Cucina`, href: `/it/regala-corso-di-cucina-firenze/`, desc: `Un buono invece dell'ennesimo oggetto. Qualsiasi corso, da €68, con la data a scelta.` },
+            { title: `Corso di Pasta per Due`, href: `/it/corso-pasta-per-due-firenze/`, desc: `Il regalo da anniversario e da matrimonio, €95 a testa.` },
           ],
           ctaLabel: `Prenota questo corso`,
           prefill: 'florence',
@@ -476,6 +480,7 @@ export const landings = {
             { q: `Pouvez-vous répondre aux régimes sans gluten ou aux allergies ?`, a: `Oui: nous pouvons préparer un mélange de farine sans gluten dédié et un poste de travail propre sans frais supplémentaires. Parlez-nous simplement de vos allergies lors de la réservation.` },
             { q: `Comment puis-je réserver et payer ?`, a: `Utilisez le bouton "Réserver ce cours" pour formuler votre demande. Cela ouvre une discussion WhatsApp avec les détails remplis, et nous confirmerons la disponibilité et vous guiderons pour le reste.` },
             { q: `Combien coûte au total un cours de pâtes fraîches à Florence ?`, a: `La Table du Chef est à 95 € par personne. Si vous la comparez à la visite du marché, à la privatisation ou à la formule en ligne, consultez notre <a href="/fr/blog/how-much-does-a-pasta-making-class-in-florence-cost/">comparatif complet des tarifs</a> pour les quatre.` },
+            { q: `En quoi ce cours diffère-t-il des autres cours de pâtes à Florence ?`, a: `Surtout par la taille du groupe et le sujet. La Table du Chef accueille 8 personnes au maximum, elle est consacrée aux pâtes fraîches du début à la fin, et deux chefs l'animent à vos côtés. Les grandes écoles de Florence font travailler des groupes plus nombreux sur un menu plus large de quatre plats, ce qui convient mieux à certains voyages. Nous les avons comparées côte à côte dans notre <a href="/fr/blog/where-to-take-pasta-making-class-florence/">guide des cours de pâtes à Florence</a>.` },
             { q: `Le cours convient-il aux végétariens ?`, a: `Oui, sans modification et sans supplément. Choisissez tomate-basilic ou cacio e pepe pour vos fettuccine et tout le menu est végétarien : les ravioli sont au beurre et à la sauge, le tiramisu est le classique. Seule l’option amatriciana contient de la viande, et c’est un choix que vous faites le jour même, pas un réglage par défaut. Dites-le nous à l’avance et la sauce sera prête.` },
             { q: `Y a-t-il un cours de pâtes en soirée ?`, a: `Oui. Le créneau de 18 h, c’est le cours principal le soir : les mêmes trois heures et les mêmes formes, sauf qu’il se prolonge vers le dîner plutôt que le déjeuner. Aucun groupe n’est prévu après vous, alors on reste plus longtemps à table. Demandez le créneau du soir en réservant, sous réserve de disponibilité comme pour tout autre horaire.` },
             { q: `Pouvez-vous faire un cours de pâtes végétalien ?`, a: `Oui, avec un préavis. La pâte se fait sans œuf, ce qui est exactement la façon dont la Toscane a toujours fait les pici : farine, eau et huile d’olive, rien d’autre. La sauce est tomate-basilic ou aglione, toutes deux sans produits laitiers ; les ravioli ont une farce de pommes de terre à l’huile et à la sauge, et le dessert, nous l’adaptons au lieu de le supprimer. Sans supplément. Dites-le nous en réservant, pour que les ingrédients soient en cuisine le matin même. Tous les détails sur la page du <a href="/fr/cours-cuisine-vegan-florence/">cours vegan et végétarien</a>.` },
@@ -486,6 +491,7 @@ export const landings = {
             { title: `Cours en Direct en Ligne`, href: `/fr/cours-pates-en-ligne/`, desc: `Cuisinez avec nous d'où vous voulez, en direct de cette même cuisine, à partir de 68 €.` },
           
             { title: `Offrir un Cours de Cuisine`, href: `/fr/offrir-cours-de-cuisine-florence/`, desc: `Un bon plutôt qu'un objet de plus. Tous les cours, dès 68 €, la date au choix.` },
+            { title: `Cours de Pâtes pour Deux`, href: `/fr/cours-de-pates-pour-deux-florence/`, desc: `Le cadeau d'anniversaire de mariage, 95 € par personne.` },
           ],
           ctaLabel: `Réserver ce cours`,
           prefill: 'florence',
@@ -599,6 +605,7 @@ export const landings = {
             { q: `Können Sie auf glutenfreie Diäten oder Allergien eingehen?`, a: `Ja: wir können ohne Aufpreis eine spezielle glutenfreie Mehlmischung und eine saubere Station vorbereiten. Teilen Sie uns bei der Buchung einfach eventuelle Allergien mit.` },
             { q: `Wie buche und bezahle ich?`, a: `Nutzen Sie die Schaltfläche "Diesen Kurs buchen", um Ihre Anfrage zu erstellen. Es öffnet sich ein WhatsApp-Chat mit den ausgefüllten Details, und wir bestätigen die Verfügbarkeit und führen Sie durch den Rest.` },
             { q: `Was kostet ein Pasta-Kurs in Florenz insgesamt?`, a: `Der Chef's Table kostet 95 € pro Person. Wenn Sie ihn mit der Markttour, der privaten Buchung oder dem Online-Kurs vergleichen, sehen Sie sich unseren <a href="/de/blog/how-much-does-a-pasta-making-class-in-florence-cost/">vollständigen Preisvergleich</a> für alle vier an.` },
+            { q: `Was unterscheidet diesen Kurs von anderen Pasta-Kursen in Florenz?`, a: `Vor allem Gruppengröße und Fokus. Der Chef's Table hat höchstens 8 Gäste, dreht sich von Anfang bis Ende um frische Pasta, und zwei Köche stehen dabei direkt neben Ihnen. Die größeren Kochschulen in Florenz arbeiten mit größeren Gruppen und einem breiteren Menü mit vier Gängen, was für manche Reisen besser passt. Wir haben sie in unserem <a href="/de/blog/where-to-take-pasta-making-class-florence/">Vergleich der Pasta-Kurse in Florenz</a> nebeneinandergestellt.` },
             { q: `Ist der Kurs für Vegetarier geeignet?`, a: `Ja, ohne Änderungen und ohne Aufpreis. Nehmen Sie Tomate-Basilikum oder Cacio e Pepe zu Ihren Fettuccine, und das ganze Menü ist vegetarisch: die Ravioli sind mit Butter und Salbei, das Tiramisù ist das klassische. Nur die Amatriciana enthält Fleisch, und das ist eine Wahl, die Sie am Tag selbst treffen, keine Voreinstellung. Sagen Sie uns vorher Bescheid, dann steht die Soße bereit.` },
             { q: `Gibt es einen Abend-Pastakurs?`, a: `Ja. Der Termin um 18:00 Uhr ist der Signature-Kurs am Abend: dieselben drei Stunden, dieselben Formen, nur geht er ins Abendessen über statt ins Mittagessen. Nach Ihnen ist keine weitere Gruppe eingeplant, deshalb bleibt man länger am Tisch. Fragen Sie beim Buchen nach dem Abendtermin, je nach Verfügbarkeit wie bei jeder anderen Uhrzeit.` },
             { q: `Können Sie einen veganen Pastakurs machen?`, a: `Ja, mit Vorlauf. Der Teig kommt ohne Ei aus, genau so, wie die Toskana Pici immer gemacht hat: Mehl, Wasser und Olivenöl, sonst nichts. Die Soße ist Tomate-Basilikum oder Aglione, beide ohne Milchprodukte; die Ravioli bekommen eine Kartoffelfüllung mit Olivenöl und Salbei, und das Dessert passen wir an, statt es wegzulassen. Kein Aufpreis. Sagen Sie es uns bei der Buchung, dann sind die Zutaten am selben Morgen in der Küche. Alle Details auf der Seite zum <a href="/de/veganer-kochkurs-florenz/">veganen &amp; vegetarischen Kurs</a>.` },
@@ -610,6 +617,7 @@ export const landings = {
             { title: `Die vier Formen, erklärt`, href: `/de/pasta-formen/`, desc: `Pici, Pappardelle, Tagliatelle, Tortelli: was jede Form ist und die Sauce, für die sie gemacht wurde.` },
           
             { title: `Kochkurs verschenken`, href: `/de/kochkurs-verschenken-florenz/`, desc: `Ein Gutschein statt noch eines Gegenstands. Jeder Kurs, ab 68 €, Datum frei wählbar.` },
+            { title: `Pasta-Kurs für Zwei`, href: `/de/pasta-kurs-fuer-zwei-florenz/`, desc: `Das Geschenk zum Jahrestag und zur Hochzeit, 95 € pro Person.` },
           ],
           ctaLabel: `Diesen Kurs buchen`,
           prefill: 'florence',
@@ -719,6 +727,7 @@ export const landings = {
             { q: `你们能满足无麸质饮食或过敏需求吗？`, a: `是的，我们可以免费准备专门的无麸质面粉混合物和干净的操作台。预订时请告诉我们任何过敏情况。` },
             { q: `我该如何预订和付款？`, a: `使用“预订此课程”按钮创建您的请求。它会打开一个带有预填详情的WhatsApp聊天，我们将确认可用性并指导您完成剩余步骤。` },
             { q: `在佛罗伦萨上一堂意面课总共要多少钱？`, a: `主厨餐桌为每位95欧元。如果你还在与市场导览、私人包场或线上课程做比较，可以看我们<a href="/zh/blog/how-much-does-a-pasta-making-class-in-florence-cost/">四种课程的完整价格对比</a>。` },
+            { q: `这门课和佛罗伦萨其他意面课有什么不同？`, a: `主要在于人数和重点。主厨餐桌每场最多8位客人，从头到尾专注于手工新鲜意面，两位主厨始终在您身边指导。佛罗伦萨规模较大的烹饪学校人数更多，教授更全面的四道菜菜单，对某些行程来说更合适。我们在<a href="/zh/blog/where-to-take-pasta-making-class-florence/">佛罗伦萨意面课程对比指南</a>中做了详细比较。` },
             { q: `这门课适合素食者吗？`, a: `适合，无需改动，也不加收费用。意大利宽面选番茄罗勒或奶酪黑胡椒，整份菜单就是素的：意式饺子是黄油鼠尾草口味，提拉米苏也是经典做法。只有 amatriciana 酱含肉，而那是当天由您选择的，并非默认。提前告知我们，酱料会备好。` },
             { q: `有傍晚的意面课吗？`, a: `有。18:00 的时段就是傍晚版的招牌课程：同样三小时，同样的形状，只是最后延续到晚餐而不是午餐。您之后不会再安排下一组客人，所以大家往往会在餐桌旁多坐一会儿。预订时说明想要傍晚时段即可，与其他时段一样视档期而定。` },
             { q: `可以做纯素的意面课吗？`, a: `可以，请提前告知。面团不加鸡蛋，这本来就是托斯卡纳做 pici 的方式：面粉、水和橄榄油，别无他物。酱汁用番茄罗勒或 aglione，两者都不含乳制品；意式饺子改用土豆馅，配橄榄油和鼠尾草，甜点我们会调整，而不是直接取消。不加收费用。预订时说明即可，当天早上食材就会备在厨房里。详情请见<a href="/zh/sushi-pengren-kecheng-foluolunsa/">素食与纯素课程</a>页面。` },
@@ -729,6 +738,7 @@ export const landings = {
             { title: `在线直播课程`, href: `/zh/zaixian-yidali-mian-kecheng/`, desc: `无论在哪里，都可以与我们一起在同一个厨房进行在线烹饪，68欧元起。` },
           
             { title: `赠送烹饪课程`, href: `/zh/pengren-kecheng-liquan-foluolunsa/`, desc: `与其再送一件物品，不如送一张礼券。任意课程，68 欧元起，日期自选。` },
+            { title: `双人意面课程`, href: `/zh/shuangren-yidali-mian-kecheng-foluolunsa/`, desc: `纪念日与婚礼礼物，每人€95。` },
           ],
           ctaLabel: `预订此课程`,
           prefill: 'florence',
@@ -2163,7 +2173,7 @@ export const landings = {
               title: `Why does pasta making work as a team building activity?`,
               paras: [
                 `Fresh pasta is the rare team activity where nobody can hide behind a screen and nobody needs prior skill. Everyone starts with the same pile of flour, everyone’s first ravioli comes out lopsided, and an hour later the table is covered in something the team actually made together. Then you eat it, which beats a debrief.`,
-                `Of all the food teambuilding ideas in Florence (wine tastings, tasting walks, another aperitivo), this is the one where nobody stands at the back watching. And the kitchen is exclusively yours: no strangers, your pace, your dietary needs handled in advance.`,
+                `Of all the food teambuilding ideas in Florence (wine tastings, tasting walks, another aperitivo), this is the one where nobody stands at the back watching. And the kitchen is exclusively yours: no strangers, your pace, your dietary needs handled in advance. If you’re still weighing options, we compared <a href="/blog/team-building-activities-florence/">eight team building formats in Florence</a> by group size and budget.`,
               ],
             },
             {
@@ -2285,7 +2295,7 @@ export const landings = {
               title: `Perché il teambuilding in cucina funziona così bene?`,
               paras: [
                 `La pasta fresca è la rara attività di squadra in cui nessuno può nascondersi dietro uno schermo e nessuno ha bisogno di abilità pregresse. Tutti iniziano con lo stesso mucchio di farina, i primi ravioli di tutti vengono storti e un'ora dopo il tavolo è coperto di qualcosa che il team ha effettivamente realizzato insieme. Poi lo si mangia, il che è meglio di un meeting riassuntivo.`,
-                `La cucina è esclusivamente tua: niente estranei, il tuo ritmo, le tue esigenze alimentari gestite in anticipo.`,
+                `La cucina è esclusivamente tua: niente estranei, il tuo ritmo, le tue esigenze alimentari gestite in anticipo. Se state ancora valutando le alternative, abbiamo confrontato <a href="/it/blog/team-building-activities-florence/">otto formati di team building a Firenze</a> per numero di persone e budget.`,
               ],
             },
             {
@@ -2403,7 +2413,7 @@ export const landings = {
               title: `Pourquoi les pâtes sont-elles l'activité de teambuilding qui fonctionne ?`,
               paras: [
                 `Les pâtes fraîches sont la rare activité d'équipe où personne ne peut se cacher derrière un écran et où personne n'a besoin de compétences préalables. Tout le monde commence avec le même tas de farine, les premiers ravioli de tout le monde sont de travers, et une heure plus tard, la table est recouverte de quelque chose que l'équipe a réellement fabriqué ensemble. Ensuite, vous le mangez, ce qui vaut mieux qu'un débriefing.`,
-                `La cuisine est exclusivement à vous : pas d'étrangers, votre propre rythme, vos besoins alimentaires gérés à l'avance.`,
+                `La cuisine est exclusivement à vous : pas d'étrangers, votre propre rythme, vos besoins alimentaires gérés à l'avance. Si vous hésitez encore, nous avons comparé <a href="/fr/blog/team-building-activities-florence/">huit formats de team building à Florence</a> par taille de groupe et budget.`,
               ],
             },
             {
@@ -2521,7 +2531,7 @@ export const landings = {
               title: `Warum funktioniert Pasta-Kochen als Teambuilding-Aktivität?`,
               paras: [
                 `Frische Pasta ist die seltene Teamaktivität, bei der sich niemand hinter einem Bildschirm verstecken kann und niemand Vorkenntnisse benötigt. Jeder beginnt mit dem gleichen Haufen Mehl, die ersten Ravioli von jedem sind schief, und eine Stunde später ist der Tisch bedeckt mit etwas, das das Team tatsächlich zusammen hergestellt hat. Dann essen Sie es, das ist besser als ein Debriefing.`,
-                `Die Küche gehört exklusiv Ihnen: keine Fremden, Ihr eigenes Tempo, Ihre Ernährungsbedürfnisse im Voraus geklärt.`,
+                `Die Küche gehört exklusiv Ihnen: keine Fremden, Ihr eigenes Tempo, Ihre Ernährungsbedürfnisse im Voraus geklärt. Wenn Sie noch vergleichen: Wir haben <a href="/de/blog/team-building-activities-florence/">acht Teambuilding-Ideen in Florenz</a> nach Gruppengröße und Budget gegenübergestellt.`,
               ],
             },
             {
@@ -2639,7 +2649,7 @@ export const landings = {
               title: `为什么意面制作是行之有效的团建活动？`,
               paras: [
                 `新鲜意面是一项罕见的团队活动，在活动中没有人可以躲在屏幕后面，也没有人需要预先具备任何技能。每个人都从同一堆面粉开始，每个人最初做的意面都是歪歪扭扭的，而一小时后，桌面上就摆满了团队真正共同创造的成果。然后大家一起享用它，这比开总结会要好得多。`,
-                `厨房完全属于您的团队：没有陌生人打扰，按照您自己的节奏进行，且您的饮食需求会提前安排妥当。`,
+                `厨房完全属于您的团队：没有陌生人打扰，按照您自己的节奏进行，且您的饮食需求会提前安排妥当。如果您还在比较不同方案，可以看看我们按人数和预算对比的<a href="/zh/blog/team-building-activities-florence/">佛罗伦萨八种团建形式</a>。`,
               ],
             },
             {
@@ -2801,6 +2811,7 @@ export const landings = {
           related: [
             { title: `The Chef's Table`, href: `/pasta-making-class-florence/`, desc: `The same class, in full: fettuccine, ravioli, tiramisù. €95.` },
             { title: `Gluten-free in Florence`, href: `/blog/gluten-free-pasta-florence/`, desc: `How to eat safely as a coeliac traveller in Italy.` },
+            { title: `Vegan & Vegetarian Class`, href: `/vegan-cooking-class-florence/`, desc: `Eggless Tuscan dough and potato ravioli, the same €95, no surcharge.` },
             { title: `The Family Long-Table`, href: `/private-cooking-class-florence/`, desc: `The whole kitchen privately yours, from €680.` },
             { title: `Live Online Class`, href: `/online-pasta-making-class/`, desc: `Cook with us from your own gluten-free kitchen, from €68.` },
           ],
@@ -2901,6 +2912,7 @@ export const landings = {
           related: [
             { title: `Il Tavolo dello Chef`, href: `/it/corso-pasta-fresca-firenze/`, desc: `Lo stesso corso, per intero: fettuccine, ravioli, tiramisù. €95.` },
             { title: `Senza glutine a Firenze`, href: `/it/blog/gluten-free-pasta-florence/`, desc: `Come mangiare in sicurezza da celiaci in Italia.` },
+            { title: `Corso Vegano e Vegetariano`, href: `/it/corso-cucina-vegana-firenze/`, desc: `Impasto toscano senza uova e ravioli di patate, stessi €95, nessun supplemento.` },
             { title: `Il Lungo Tavolo di Famiglia`, href: `/it/corso-cucina-privato-firenze/`, desc: `L'intera cucina privata per voi, da €680.` },
             { title: `Corso in Diretta Online`, href: `/it/corso-pasta-online/`, desc: `Cucina con noi dalla tua cucina senza glutine, da €68.` },
           ],
@@ -3001,6 +3013,7 @@ export const landings = {
           related: [
             { title: `La Table du Chef`, href: `/fr/cours-de-pates-fraiches-florence/`, desc: `Le même cours, en entier : fettuccine, ravioli, tiramisù. 95 €.` },
             { title: `Sans gluten à Florence`, href: `/fr/blog/gluten-free-pasta-florence/`, desc: `Comment manger en sécurité quand on est coeliaque en Italie.` },
+            { title: `Cours Vegan et Végétarien`, href: `/fr/cours-cuisine-vegan-florence/`, desc: `Pâte toscane sans œufs et ravioli de pommes de terre, même prix de 95 €, sans supplément.` },
             { title: `La Longue Table Familiale`, href: `/fr/cours-cuisine-prive-florence/`, desc: `Toute la cuisine pour vous, à partir de 680 €.` },
             { title: `Cours en Direct en Ligne`, href: `/fr/cours-pates-en-ligne/`, desc: `Cuisinez avec nous depuis votre propre cuisine sans gluten, dès 68 €.` },
           ],
@@ -3101,6 +3114,7 @@ export const landings = {
           related: [
             { title: `Der Tisch des Küchenchefs`, href: `/de/pasta-kurs-florenz/`, desc: `Derselbe Kurs, vollständig: Fettuccine, Ravioli, Tiramisù. 95 €.` },
             { title: `Glutenfrei in Florenz`, href: `/de/blog/gluten-free-pasta-florence/`, desc: `Wie man als Zöliakie-Reisende in Italien sicher isst.` },
+            { title: `Veganer & vegetarischer Kurs`, href: `/de/veganer-kochkurs-florenz/`, desc: `Toskanischer Teig ohne Ei und Kartoffel-Ravioli, gleiche 95 €, kein Aufpreis.` },
             { title: `Die lange Familientafel`, href: `/de/privater-kochkurs-florenz/`, desc: `Die ganze Küche ganz privat, ab 680 €.` },
             { title: `Live-Online-Kurs`, href: `/de/online-pasta-kurs/`, desc: `Kochen Sie mit uns aus Ihrer eigenen glutenfreien Küche, ab 68 €.` },
           ],
@@ -3201,6 +3215,7 @@ export const landings = {
           related: [
             { title: `主厨餐桌`, href: `/zh/foluolunsa-yidali-mian-kecheng/`, desc: `完整的同一门课程：宽面、意式饺子、提拉米苏。€95。` },
             { title: `佛罗伦萨无麸质饮食`, href: `/zh/blog/gluten-free-pasta-florence/`, desc: `乳糜泻旅行者如何在意大利安全用餐。` },
+            { title: `素食与纯素课程`, href: `/zh/sushi-pengren-kecheng-foluolunsa/`, desc: `无蛋托斯卡纳面团与土豆馅意式饺子，同样每人€95，无额外费用。` },
             { title: `家庭长桌体验`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `整个厨房私人包场，680欧元起。` },
             { title: `在线直播课程`, href: `/zh/zaixian-yidali-mian-kecheng/`, desc: `在您自己的无麸质厨房与我们一起烹饪，68欧元起。` },
           ],

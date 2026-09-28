@@ -1,6 +1,6 @@
 ---
 title: 'How Much Does a Pasta Class in Florence Cost? (2026)'
-description: 'Real 2026 price ranges for Florence cooking classes, what actually drives the price, what should be included, and the questions to ask before you book.'
+description: 'A Florence chef who runs classes on what €60, €95 and €150 actually buy in 2026, the extras added at the end, and what to ask before you book.'
 pubDate: 2026-07-08
 updatedDate: 2026-09-26
 author: 'Endri Cerhozi'

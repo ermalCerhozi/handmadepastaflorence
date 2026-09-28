@@ -28,24 +28,24 @@ Per aiutarti a decidere, la tabella seguente confronta le migliori scuole di cuc
 
 | Scuola di Cucina | L'Approccio | Ideale Per | L'Atmosfera | Focus Principale | Vino Incluso |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **360 Cooking Class Experience** | Commerciale / Grandi volumi | Grandi gruppi e una rapida panoramica di un menu completo | Cucina commerciale vivace e dai ritmi serrati | Pasto standardizzato di 4 portate | Sì (Di solito vino della casa sfuso) |
-| **Mama Florence** | Commerciale / Di fascia alta | Apprendimento formale e cucina raffinata | Cucina professionale formale e curata | Cucina italiana moderna e presentazione raffinata | Sì (Di solito vino della casa sfuso) |
-| **Handmade Pasta Florence** (Noi) | Boutique / Due Amici | Calda, accogliente e rilassata, come cucinare con vecchi amici in Toscana. | Un ambiente di cucina toscana profondamente autentico, con le maniche rimboccate | Perfezionare la pasta fresca a mano, oltre a una cena tradizionale completa con antipasti e dessert | Sì (Vino in bottiglia proveniente da un'azienda vinicola locale, non vino sfuso) | 
+| **360 Cooking Class Experience** | Scuola di cucina più grande | Gruppi più numerosi e una panoramica di un menu italiano completo | Cucina vivace e conviviale | Un pasto italiano di più portate | Da verificare alla prenotazione |
+| **Mama Florence** | Scuola di cucina affermata | Imparare una gamma più ampia di piatti italiani | Cucina didattica curata e professionale | Cucina italiana più ampia e presentazione | Da verificare alla prenotazione |
+| **Handmade Pasta Florence** (Noi) | Boutique / Due Amici | Calda, accogliente e rilassata, come cucinare con vecchi amici in Toscana. | Un ambiente di cucina toscana profondamente autentico, con le maniche rimboccate | Perfezionare la pasta fresca a mano, oltre a una cena tradizionale completa con antipasti e dessert | Sì (Vino in bottiglia proveniente da un'azienda vinicola locale) | 
 
-## La grande differenza: Commerciale vs. Boutique
+## La grande differenza: le dimensioni
 
 Quando si sceglie tra queste opzioni, la più grande distinzione è la dimensione e il legame personale. 
 
-360 Cooking Class e Mama Florence sono scuole di cucina commerciali su larga scala. Funzionano come macchine ben oliate, processando alti volumi di turisti ogni giorno. A causa delle loro dimensioni, i loro corsi sono altamente standardizzati e spesso si svolgono a un ritmo rigoroso e veloce per garantire che i grandi gruppi finiscano in orario. 
+360 Cooking Class e Mama Florence sono scuole di cucina più grandi e affermate. Organizzano più corsi, con gruppi più numerosi, e coprono un menu più ampio nello stesso pomeriggio. Se ti piace una tavolata vivace e un percorso di più portate, è il formato giusto per te.
 
-**Handmade Pasta Florence è volutamente diversa.** Siamo una piccola cucina indipendente gestita da due amici, e vogliamo che rimanga così. Poiché ospitiamo solo piccoli gruppi (di solito un massimo di 6-8 persone), **offriamo un livello di flessibilità che le scuole commerciali semplicemente non possono eguagliare.**
+**Handmade Pasta Florence è volutamente diversa.** Siamo una piccola cucina indipendente gestita da due amici, e vogliamo che rimanga così. Poiché ospitiamo solo piccoli gruppi (di solito un massimo di 6-8 persone), **possiamo adattare il corso a te come un corso più grande non può fare.**
 
 Prima ancora di accettare la tua prenotazione, parliamo direttamente con te per capire esattamente cosa vuoi imparare, eventuali esigenze dietetiche e come possiamo personalizzare il menu appositamente per te. Una volta arrivati, non ci sono limiti di tempo rigidi, nessuna fretta e nessuna dimostrazione passiva. Se ci metti un po' di più per imparare ad arrotolare i *pici* o a tagliare le *pappardelle*, ti versiamo semplicemente un altro bicchiere di Chianti e andiamo avanti finché non ci riesci.
 
 ## Quale dovresti scegliere?
 
-*   Scegli **360 Cooking Class Experience** se non ti dispiacciono i gruppi più numerosi e desideri solo una rapida panoramica di una cena italiana completa.
-*   Scegli **Mama Florence** se preferisci un ambiente più formale e di osservazione incentrato sulla cucina raffinata moderna.
+*   Scegli **360 Cooking Class Experience** se ti piace un gruppo più grande e vivace e vuoi cucinare una cena italiana completa.
+*   Scegli **Mama Florence** se preferisci un corso più strutturato che copre una gamma più ampia della cucina italiana.
 *   Scegli **Handmade Pasta Florence** se vuoi mettere le mani in pasta per un'esperienza profondamente autentica e flessibile, dove impari facendo davvero il lavoro, per poi sederti a goderti esattamente ciò che hai preparato in totale pace.
 
 Pronto a rimboccarti le maniche? [Prenota un corso con noi oggi.](/it/corso-pasta-fresca-firenze/)

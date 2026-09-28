@@ -81,6 +81,8 @@ interface ShapesLocale {
     ctaHeading: string;
     ctaBody: string;
     ctaButton: string;
+    /** Names the class page it links to (its breadcrumbName), not "See the class":
+     *  this is the only link from the shape pages to a class. */
     ctaLink: string;
     guideHeading: string;
     guideBody: string;
@@ -153,7 +155,7 @@ const en: ShapesLocale = {
     ctaBody:
       'Every guest in our three-hour class in the Oltrarno makes fettuccine and ravioli by hand, and the chefs show you how the same dough becomes the other shapes here; then everyone sits down to eat what they made. Max 8 guests, €95.',
     ctaButton: 'Book a pasta class',
-    ctaLink: 'See the class',
+    ctaLink: 'Pasta Making Class in Florence',
     guideHeading: 'Going deeper',
     guideBody: 'Our full guide to Tuscany\'s fresh pasta traditions: where each shape comes from and why the region cooks the way it does.',
     guideLink: 'Read the Tuscan pasta guide',
@@ -570,7 +572,7 @@ const it: ShapesLocale = {
     ctaBody:
       'Nel nostro corso di tre ore in Oltrarno ogni ospite prepara a mano fettuccine e ravioli, e gli chef mostrano come dallo stesso impasto nascono gli altri formati; poi ci si siede tutti a mangiare quello che si è fatto. Max 8 ospiti, €95.',
     ctaButton: 'Prenota un corso',
-    ctaLink: 'Vedi il corso',
+    ctaLink: 'Corso di Pasta Fresca a Firenze',
     guideHeading: 'Per approfondire',
     guideBody: 'La nostra guida completa alle tradizioni della pasta fresca in Toscana: da dove viene ogni formato e perché la regione cucina così.',
     guideLink: 'Leggi la guida alla pasta toscana',
@@ -987,7 +989,7 @@ const de: ShapesLocale = {
     ctaBody:
       'In unserem dreistündigen Kurs im Oltrarno macht jeder Gast Fettuccine und Ravioli von Hand, und die Köche zeigen, wie aus demselben Teig die anderen Formen werden; danach setzen sich alle hin und essen, was sie gemacht haben. Max. 8 Gäste, 95 €.',
     ctaButton: 'Pasta-Kurs buchen',
-    ctaLink: 'Zum Kurs',
+    ctaLink: 'Pasta-Kurs in Florenz',
     guideHeading: 'Tiefer einsteigen',
     guideBody: 'Unser ausführlicher Guide zu den frischen Pastatraditionen der Toskana: woher jede Form kommt und warum die Region so kocht, wie sie kocht.',
     guideLink: 'Zum Guide der toskanischen Pasta',
@@ -1395,7 +1397,7 @@ const fr: ShapesLocale = {
     ctaBody:
       'Dans notre cours de trois heures dans l’Oltrarno, chaque invité façonne à la main des fettuccine et des ravioli, et les chefs montrent comment la même pâte devient les autres formes présentées ici ; puis tout le monde s’assoit pour manger ce qu’il a fait. 8 invités maximum, 95 €.',
     ctaButton: 'Réserver un cours de pâtes',
-    ctaLink: 'Voir le cours',
+    ctaLink: 'Cours de Pâtes Fraîches à Florence',
     guideHeading: 'Pour aller plus loin',
     guideBody: 'Notre guide complet des traditions de pâtes fraîches en Toscane : d\'où vient chaque forme et pourquoi la région cuisine comme elle le fait.',
     guideLink: 'Lire le guide des pâtes toscanes',
@@ -1801,7 +1803,7 @@ const zh: ShapesLocale = {
     ctaBody:
       '在我们奥特拉诺的三小时课程里，每位客人都会亲手做宽面和意式饺子，主厨还会示范同一块面团如何变成这里的其他形状；然后大家一起坐下来吃自己做的东西。最多 8 位客人，95 欧元。',
     ctaButton: '预订意面课程',
-    ctaLink: '查看课程',
+    ctaLink: '佛罗伦萨手工意面课程',
     guideHeading: '延伸阅读',
     guideBody: '我们关于托斯卡纳新鲜意面传统的完整指南：每种形状从何而来，以及这个地区为什么这样做菜。',
     guideLink: '阅读托斯卡纳意面指南',

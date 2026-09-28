@@ -28,24 +28,24 @@ To help you decide, the table below compares the top cooking schools in Florence
 
 | Cooking School | The Approach | Best For | The Vibe | Main Focus | Wine Included |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **360 Cooking Class Experience** | Commercial / High-volume | Large groups and a quick overview of a full menu | Bustling, fast-paced commercial kitchen | Standardized 4-course meal | Yes (Usually bulk house wine) |
-| **Mama Florence** | Commercial / High-end | Formal learning and fine dining | Polished, formal professional kitchen | Modern Italian cooking and refined presentation | Yes (Usually bulk house wine) |
-| **Handmade Pasta Florence** (Us) | Boutique / Two Friends | Warm, welcoming, and relaxed, like cooking with old friends in Tuscany. | A deeply authentic, sleeves-rolled-up Tuscan kitchen environment | Perfecting fresh pasta by hand, plus a full traditional dinner with appetizers and dessert | Yes (Bottled wine from a local wine farm, not bulk wine) | 
+| **360 Cooking Class Experience** | Larger cooking school | Bigger groups and an overview of a full Italian menu | Busy, sociable kitchen | A multi-course Italian meal | Check when booking |
+| **Mama Florence** | Established cooking school | Learning a wider range of Italian dishes | Polished, professional teaching kitchen | Broader Italian cooking and presentation | Check when booking |
+| **Handmade Pasta Florence** (Us) | Boutique / Two Friends | Warm, welcoming, and relaxed, like cooking with old friends in Tuscany. | A deeply authentic, sleeves-rolled-up Tuscan kitchen environment | Perfecting fresh pasta by hand, plus a full traditional dinner with appetizers and dessert | Yes (Bottled wine from a local wine farm) | 
 
-## The big difference: Commercial vs. Boutique
+## The big difference: scale
 
 When choosing between these options, the biggest distinction is scale and personal connection. 
 
-360 Cooking Class and Mama Florence are large-scale commercial cooking schools. They operate like well-oiled machines, processing high volumes of tourists every day. Because of their size, their classes are highly standardized, often moving at a strict, fast pace to ensure large groups finish on time. 
+360 Cooking Class and Mama Florence are larger, established cooking schools. They run more classes and bigger groups than we do, and cover a broader menu in the same afternoon. If you want a lively table and a tour of several courses, that format suits you well.
 
-**Handmade Pasta Florence is deliberately different.** We are a small, independent kitchen run by two friends, and we want to keep it that way. Because we only host very small groups (usually maximum 6–8 people), **we offer a level of flexibility that commercial schools simply cannot match.**
+**Handmade Pasta Florence is deliberately different.** We are a small, independent kitchen run by two friends, and we want to keep it that way. Because we only host very small groups (usually maximum 6–8 people), **we can shape the class around you in ways a larger class can't.**
 
 Before we even take your reservation, we speak with you directly to understand exactly what you want to learn, any dietary needs, and how we can tailor the menu specifically to you. Once you arrive, there are no strict time limits, no rushing, and no passive demonstrations. If it takes you a little longer to master the roll of your *pici* or cut your *pappardelle*, we just pour another glass of Chianti and keep going until you get it right.
 
 ## Which one should you choose?
 
-*   Choose **360 Cooking Class Experience** if you don't mind larger crowds and just want a fast-paced overview of a full Italian dinner.
-*   Choose **Mama Florence** if you prefer a more formal, observational environment focused on modern fine dining.
+*   Choose **360 Cooking Class Experience** if you enjoy a bigger, livelier group and want to cook your way through a full Italian dinner.
+*   Choose **Mama Florence** if you prefer a more structured class that covers a broader range of Italian cooking.
 *   Choose **Handmade Pasta Florence** if you want to get your hands in the flour for a deeply authentic and flexible experience, where you learn by actually doing the work, and then sit down to enjoy exactly what you made in total peace.
 
 Ready to roll up your sleeves? [Book a class with us today.](/pasta-making-class-florence/)

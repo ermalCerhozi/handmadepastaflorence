@@ -42,9 +42,13 @@ if (langLinks.length <= 1) return;
 <script>
   // Save preference on click
   document.querySelectorAll('.lang__opt').forEach(link => {
-    link.addEventListener('click', (e) => {
-      const lang = e.currentTarget.getAttribute('lang');
-      if (lang) localStorage.setItem('preferredLang', lang);
+    link.addEventListener('click', () => {
+      const lang = link.getAttribute('lang');
+      try {
+        if (lang) localStorage.setItem('preferredLang', lang);
+      } catch {
+        // Storage blocked (private mode, disabled cookies): just switch language.
+      }
     });
   });
 

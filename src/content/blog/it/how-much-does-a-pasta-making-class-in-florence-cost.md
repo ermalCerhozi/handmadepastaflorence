@@ -1,6 +1,6 @@
 ---
 title: 'Quanto costa un corso di pasta a Firenze? (Guida 2026)'
-description: 'Prezzi reali nel 2026 per i corsi di cucina a Firenze, cosa determina il prezzo, cosa dovrebbe essere incluso e cosa chiedere prima di prenotare.'
+description: 'Un cuoco fiorentino che insegna: cosa offrono davvero 60, 95 e 150 € nel 2026, gli extra aggiunti a fine corso e cosa chiedere prima di prenotare.'
 pubDate: 2026-07-08
 updatedDate: 2026-09-26
 author: 'Endri Cerhozi'

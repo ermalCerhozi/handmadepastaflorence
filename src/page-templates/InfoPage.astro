@@ -80,6 +80,7 @@ const updatedLabel = new Date(lastUpdated + 'T00:00:00Z').toLocaleDateString('en
 
     document.querySelectorAll<HTMLAnchorElement>('a[href]').forEach((a) => {
       const href = a.getAttribute('href');
+      if (!href) return;
       if (href === '/' || href.startsWith('/#') || href === '/blog/') {
         a.setAttribute('href', `/${preferred}${href}`);
       }

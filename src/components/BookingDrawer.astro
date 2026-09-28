@@ -145,6 +145,10 @@ const bkJsPayload = Object.fromEntries(
           </label>
         </div>
       </section>
+      <!-- Overlay scrollbars (phones, macOS, Windows 11) stay invisible until you
+           scroll, so nothing told guests the time chips were below the calendar.
+           This fade pins to the bottom edge while there is more to see. -->
+      <div class="bk__more" aria-hidden="true"><span>↓</span></div>
     </div>
 
     <!-- ===== Sticky order summary + nav ===== -->
@@ -218,7 +222,7 @@ const bkJsPayload = Object.fromEntries(
     const open = (prefill?: string | null) => {
       root.hidden = false;
       document.body.style.overflow = 'hidden';
-      requestAnimationFrame(() => root.classList.add('is-open'));
+      requestAnimationFrame(() => { root.classList.add('is-open'); updateMore(); });
       if (prefill === 'florence' || prefill === 'online') $(`[data-choice="${prefill}"]`)?.click();
     };
     const close = () => {
@@ -262,9 +266,29 @@ const bkJsPayload = Object.fromEntries(
     });
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !root.hidden) close(); });
 
+    /* ---------- "more below" cue ---------- */
+    const scrollEl = $('.bk__scroll');
+    const updateMore = () => {
+      if (!scrollEl) return;
+      const hidden = scrollEl.scrollHeight - scrollEl.clientHeight - scrollEl.scrollTop;
+      // Bottom padding alone is not "more"; only real content past the fold is.
+      const pad = parseFloat(getComputedStyle(scrollEl).paddingBottom) || 0;
+      scrollEl.classList.toggle('has-more', hidden > pad + 4);
+    };
+    scrollEl?.addEventListener('scroll', updateMore, { passive: true });
+    window.addEventListener('resize', updateMore);
+    // The summary footer grows as lines are added, which shrinks the scroll area
+    // without a scroll or resize event, so watch both boxes directly.
+    if ('ResizeObserver' in window && scrollEl) {
+      const ro = new ResizeObserver(updateMore);
+      ro.observe(scrollEl);
+      $$('.bk__view').forEach((v) => ro.observe(v));
+    }
+
     /* ---------- step navigation ---------- */
     const goTo = (n: number) => {
       state.step = Math.min(3, Math.max(1, n));
+      root.dataset.step = String(state.step); // lets CSS compact the summary on steps 1-2
       $$('[data-view]').forEach((v) => v.classList.toggle('is-active', v.dataset.view === String(state.step)));
       $$('[data-step-dot]').forEach((d) => {
         const dn = Number(d.dataset.stepDot);
@@ -284,6 +308,7 @@ const bkJsPayload = Object.fromEntries(
       const scroll = $('.bk__scroll');
       if (scroll) scroll.scrollTop = 0;
       validate();
+      updateMore();
     };
 
     $$('[data-step-dot]').forEach((d) => {
@@ -455,6 +480,17 @@ const bkJsPayload = Object.fromEntries(
         }
         row.appendChild(b);
       });
+      // On short screens the chips land below the fold right after a date is
+      // picked. Bring them up, scrolling only the drawer (scrollIntoView would
+      // also move the page behind it).
+      if (scrollEl) {
+        const gap = wrap.getBoundingClientRect().bottom - scrollEl.getBoundingClientRect().bottom;
+        if (gap > 0) {
+          const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          scrollEl.scrollTo({ top: scrollEl.scrollTop + gap + 12, behavior: reduce ? 'auto' : 'smooth' });
+        }
+      }
+      updateMore();
     };
 
     /* ---------- step 3: add-ons ---------- */
@@ -673,7 +709,30 @@ const bkJsPayload = Object.fromEntries(
   .bk__close:hover { background: var(--flour-shadow); transform: rotate(90deg); }
 
   /* ---------- views ---------- */
-  .bk__scroll { flex: 1; overflow-y: auto; padding: 1.1rem var(--bk-pad) 0.9rem; }
+  .bk__scroll {
+    flex: 1; min-height: 0; overflow-y: auto; padding: 1.1rem var(--bk-pad) 0.9rem;
+    overscroll-behavior: contain;
+    /* A visible scrollbar where the OS allows one (classic Windows/Linux, and
+       macOS Chrome/Safari via the webkit rules). Touch screens never show one;
+       .bk__more covers those. */
+    scrollbar-width: thin; scrollbar-color: var(--flour-shadow) transparent;
+  }
+  .bk__scroll::-webkit-scrollbar { width: 6px; }
+  .bk__scroll::-webkit-scrollbar-thumb { background: var(--flour-shadow); border-radius: 6px; }
+  .bk__more {
+    /* Negative top margin cancels its own height, so it never adds scroll length. */
+    position: sticky; bottom: 0;
+    height: 3rem; margin: -3rem calc(var(--bk-pad) * -1) 0;
+    display: flex; align-items: flex-end; justify-content: center; padding-bottom: 0.35rem;
+    background: linear-gradient(to bottom, transparent, var(--flour) 75%);
+    pointer-events: none; opacity: 0; transition: opacity 0.25s var(--ease);
+  }
+  .bk__more span {
+    width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center;
+    background: var(--olive); color: var(--flour); font-size: 0.8rem; font-weight: 800;
+    box-shadow: var(--shadow-lg);
+  }
+  .bk__scroll.has-more .bk__more { opacity: 1; }
   .bk__view { display: none; animation: viewIn 0.5s var(--ease) both; }
   .bk__view.is-active { display: block; }
   @keyframes viewIn { from { opacity: 0; transform: translateX(18px); } to { opacity: 1; transform: none; } }
@@ -735,8 +794,12 @@ const bkJsPayload = Object.fromEntries(
   .cal__dow span { text-align: center; font-size: 0.6rem; font-weight: 800; color: var(--charcoal-soft); }
   /* Day cells are created with document.createElement, so they never receive
      Astro's scoped-style attribute — these rules must be :global to apply. */
+  /* Fixed-height rows instead of square cells: at the drawer's 460px width a
+     square grid is ~370px tall, which pushed the time chips below the fold on
+     phones and small laptops. Height tracks the viewport so short screens get
+     the compact grid, never below a 32px tap target. */
   .cal__grid :global(.cal__day) {
-    aspect-ratio: 1; border-radius: 8px; font-weight: 600; font-size: 0.76rem; color: var(--charcoal);
+    height: clamp(32px, 5.2vh, 44px); border-radius: 8px; font-weight: 600; font-size: 0.76rem; color: var(--charcoal);
     transition: background 0.2s, color 0.2s, transform 0.2s;
   }
   .cal__grid :global(.cal__day:not(.is-off):hover) { background: var(--yolk); transform: scale(1.08); }
@@ -792,6 +855,14 @@ const bkJsPayload = Object.fromEntries(
      style writes in render(); it is presentation, so it lives here. */
   .summary__lines :global(li.summary__rule) { display: block; width: 100%; height: 0; margin: 0.3rem 0; border-top: 1px dashed var(--paper-line); }
   .summary__total { display: flex; justify-content: space-between; align-items: baseline; margin-top: 0.4rem; padding-top: 0.45rem; border-top: 1px dashed var(--paper-line); }
+  /* Short screens: on steps 1-2 the itemised summary (~250px) only repeats the
+     class and date already selected above it, and it was the main thing pushing
+     the time chips off screen. Keep the total; itemise on step 3, the review. */
+  @media (max-height: 820px) {
+    .bk:not([data-step="3"]) .summary__title,
+    .bk:not([data-step="3"]) .summary__lines { display: none; }
+    .bk:not([data-step="3"]) .summary__total { margin-top: 0; padding-top: 0; border-top: 0; }
+  }
   .summary__total span { font-size: 0.85rem; }
   .summary__total strong { font-family: var(--serif); font-size: var(--step-1); color: var(--olive); }
 
