@@ -21,8 +21,7 @@ interface SitemapEntry {
 }
 
 // The pasta-shapes hub/spokes and the money-page landing architecture (10
-// landing pages) both shipped together in the 2026-07-27 pass (see
-// REMAINING-SEO-TASKS.md), and the homepage's single-keyword rewrite landed
+// landing pages) both shipped together in the 2026-07-27 pass, and the homepage's single-keyword rewrite landed
 // in that same pass — this is the real, documented ship date, matching the
 // constant ShapePage.astro already uses for its own Article schema, rather
 // than a fabricated "today" build-time stamp.
