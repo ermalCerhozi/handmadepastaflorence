@@ -9,7 +9,6 @@
 // crawlers, schema.org JSON-LD, <link> tags).
 export { default as cookingClassGuests } from './pasta-cooking-class-florence-group-kitchen.webp';
 export { default as aperitivo } from './tuscan-aperitivo-buffet-table.webp';
-export { default as weddingCake } from './bride-serving-berry-wedding-cake-slice.webp';
 // First frames of the two clips in src/assets/video/ — each is the poster and
 // the reduced-motion fallback for its clip, so a re-encode means re-exporting
 // the matching still. Each still deliberately shares its clip's filename (only

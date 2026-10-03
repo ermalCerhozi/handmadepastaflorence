@@ -7,7 +7,7 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import BookingDrawer from '../components/BookingDrawer.astro';
-import { shapes, shapePath, shapesHubPath, type ShapeSpoke } from '../data/shapes';
+import { shapes, shapePath, shapesHubPath, SHAPES_PUBLISHED, SHAPES_MODIFIED, type ShapeSpoke } from '../data/shapes';
 import { localizePath, SITE, type Alternate } from '../i18n/utils';
 import type { Locale } from '../i18n/config';
 import { breadcrumbSchema, faqSchema } from '../utils/schema';
@@ -34,20 +34,14 @@ const breadcrumbLd = breadcrumbSchema([
   { name: spoke.name, item: canonical },
 ]);
 
-// The pasta-shapes hub + all four spokes shipped together in the 2026-07-27
-// architecture pass — there's no per-spoke date
-// tracked in the data, so this is the real, documented ship date rather than
-// a fabricated "today" timestamp.
-const SHAPES_SHIP_DATE = '2026-07-27T00:00:00.000Z';
-
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: spoke.title.split(' | ')[0],
   description: spoke.description,
   image: `${SITE}${spoke.image.src.src}`,
-  datePublished: SHAPES_SHIP_DATE,
-  dateModified: SHAPES_SHIP_DATE,
+  datePublished: SHAPES_PUBLISHED,
+  dateModified: SHAPES_MODIFIED,
   // Named Person, matching the pattern BlogPostPage.astro already uses
   // correctly — this content is editorial (chef-voice "what is X pasta")
   // just like the blog, not a business-authored notice.

@@ -18,8 +18,8 @@
 // 208 columns, well past the cut, while reporting as fine).
 
 /** Google renders roughly this many columns before truncating with an ellipsis. */
-export const TITLE_MAX = 60;
-export const DESCRIPTION_MAX = 155;
+const TITLE_MAX = 60;
+const DESCRIPTION_MAX = 155;
 
 /**
  * Approximate rendered width in Latin-character columns. CJK, Hiragana,

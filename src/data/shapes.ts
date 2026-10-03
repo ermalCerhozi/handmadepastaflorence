@@ -2151,6 +2151,12 @@ const zh: ShapesLocale = {
 
 export const shapes: Partial<Record<Locale, ShapesLocale>> = { en, it, de, fr, zh };
 
+// Hub + spokes shipped together on 2026-07-27. On 2026-09-26 every "we teach
+// this in class" sentence was rewritten to match the real menu. Read by both the
+// sitemap lastmod and each spoke's Article schema so the two can't disagree.
+export const SHAPES_PUBLISHED = '2026-07-27T00:00:00.000Z';
+export const SHAPES_MODIFIED = '2026-09-26T00:00:00.000Z';
+
 /** URL of the hub for a locale — falls back to the English hub where unshipped. */
 export function shapesHubPath(locale: Locale): string {
   const entry = shapes[locale];

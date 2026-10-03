@@ -11,7 +11,7 @@ import { getCollection } from 'astro:content';
 import { locales, defaultLocale, languages, infoPages, type Locale } from '../i18n/config';
 import { SITE, localizePath } from './../i18n/utils';
 import { landings, type LandingPage } from '../data/landings';
-import { shapes, shapePath, shapesHubPath } from '../data/shapes';
+import { shapes, shapePath, shapesHubPath, SHAPES_MODIFIED } from '../data/shapes';
 import { blogLocale, blogSlug } from './blog-locales';
 
 interface SitemapEntry {
@@ -20,46 +20,17 @@ interface SitemapEntry {
   alternates: { hreflang: string; href: string }[];
 }
 
-// The pasta-shapes hub/spokes and the money-page landing architecture (10
-// landing pages) both shipped together in the 2026-07-27 pass, and the homepage's single-keyword rewrite landed
-// in that same pass — this is the real, documented ship date, matching the
-// constant ShapePage.astro already uses for its own Article schema, rather
-// than a fabricated "today" build-time stamp.
-const ARCHITECTURE_SHIP_DATE = '2026-07-27T00:00:00.000Z';
+// Homepages: the single-keyword rewrite shipped in the 2026-07-27 architecture
+// pass. They stay on that date on purpose: a fresh stamp on unchanged pages is
+// a false freshness signal.
+const HOME_SHIP_DATE = '2026-07-27T00:00:00.000Z';
 
-// Landing pages and pasta-shape pages were all edited again in the 2026-09-05
-// content pass: every landing description rewritten to fit Google's render
-// limit, the team-building pillar expanded, the Chinese infoBanner translated
-// (it had been shipping untranslated English on all 10 landings), new related
-// cards, and all 24 over-length shape descriptions trimmed. Leaving these on
-// ARCHITECTURE_SHIP_DATE told Google "unchanged since July" for 80 URLs that
-// had in fact just changed, which suppresses exactly the recrawl we want.
-// Homepages deliberately stay on the July date: only the zh homepage's
-// description changed, and a fresh stamp on the other four would be a false
-// signal for the sake of one 6-impression page.
-// (The 2026-09-05 constant itself is gone: landings moved on to
-// LANDING_PASS_2026_09_17 and shapes to SHAPES_PASS_2026_09_26, below.)
+// Landing pages: last site-wide content pass (og:image fix, menu-panel
+// corrections, reviews, classKey/related cards). A landing with its own later
+// `updated` date uses that instead, see landingEntries().
+const LANDING_PASS_DATE = '2026-09-17T00:00:00.000Z';
 
-// The landing pages changed again after that, and were still claiming
-// 2026-09-05. In the 2026-09-13 pass they got the og:image fix (all 50 were
-// emitting `[object Object]`), the Florence sit-down menu panel removed from
-// `online` and `agriturismo` where it was factually wrong, a gluten-free and a
-// children's-drinks caveat added to the panel where it stayed, and a reviews
-// section wired in; the 2026-09-17 pass added the classKey/related work. The
-// shape pages are deliberately NOT included: nothing about their content
-// changed in either pass, and a fresh stamp on 25 unchanged URLs is the same
-// false signal this block exists to avoid.
-const LANDING_PASS_2026_09_17 = '2026-09-17T00:00:00.000Z';
-
-// Shape hub + spokes, all locales: on 2026-09-26 every "we teach this in class"
-// sentence was rewritten to match the real menu (every guest makes fettuccine
-// and ravioli; pici and pappardelle are shown, time permitting), after the
-// owner's own 2026-09-20 edits to the same sentences.
-const SHAPES_PASS_2026_09_26 = '2026-09-26T00:00:00.000Z';
-
-// The footer "Information" pages (English-only, see infoPages in
-// i18n/config.ts) shipped in this pass — real date, not a fabricated
-// build-time stamp.
+// The footer "Information" pages (English-only, see infoPages in i18n/config.ts).
 const INFO_PAGES_SHIP_DATE = '2026-09-03T00:00:00.000Z';
 
 function toEntry(paths: Partial<Record<Locale, string>>, lastmod?: string): SitemapEntry[] {
@@ -91,23 +62,30 @@ function sameSlugEntries(
   return toEntry(paths, lastmod);
 }
 
+type BlogPosts = Awaited<ReturnType<typeof getCollection<'blog'>>>;
+
+// Newest updatedDate/pubDate across posts. Same source BlogPostPage.astro uses
+// for Article.dateModified, so the sitemap and the page schema agree.
+function newestDate(posts: BlogPosts): string {
+  return posts
+    .reduce((max, p) => {
+      const d = p.data.updatedDate ?? p.data.pubDate;
+      return d > max ? d : max;
+    }, posts[0]!.data.pubDate)
+    .toISOString();
+}
+
 // Enumerates every slug in the collection, not just the English ones, and emits
 // only the locales that actually have a file. Previously this listed English
 // posts and claimed all five locales for each, which is fine while every post is
 // translated five ways and wrong the moment one isn't.
-async function blogEntries(posts: Awaited<ReturnType<typeof getCollection<'blog'>>>): Promise<SitemapEntry[]> {
+function blogEntries(posts: BlogPosts): SitemapEntry[] {
   const slugs = [...new Set(posts.map((p) => blogSlug(p.id)))];
   const entries: SitemapEntry[] = [];
   for (const slug of slugs) {
     const matches = posts.filter((p) => blogSlug(p.id) === slug);
     const present = locales.filter((l) => matches.some((p) => blogLocale(p.id) === l));
-    // Same source BlogPostPage.astro uses for Article.dateModified — keeps
-    // the sitemap and the page's own schema from disagreeing about freshness.
-    const newest = matches.reduce((max, p) => {
-      const d = p.data.updatedDate ?? p.data.pubDate;
-      return d > max ? d : max;
-    }, matches[0]!.data.pubDate);
-    entries.push(...sameSlugEntries(`/blog/${slug}/`, present, newest.toISOString()));
+    entries.push(...sameSlugEntries(`/blog/${slug}/`, present, newestDate(matches)));
   }
   return entries;
 }
@@ -125,7 +103,7 @@ function landingEntries(): SitemapEntry[] {
     // and Course dateModified), so the sitemap tells Google about that change
     // instead of repeating the pass date.
     const own = page.updated ? `${page.updated}T00:00:00.000Z` : undefined;
-    entries.push(...toEntry(paths, own && own > LANDING_PASS_2026_09_17 ? own : LANDING_PASS_2026_09_17));
+    entries.push(...toEntry(paths, own && own > LANDING_PASS_DATE ? own : LANDING_PASS_DATE));
   }
   return entries;
 }
@@ -137,7 +115,7 @@ function shapeEntries(): SitemapEntry[] {
   // Hub — exists in every locale that has a shapes entry (en/it today).
   const hubPaths: Partial<Record<Locale, string>> = {};
   for (const l of shapeLocales) hubPaths[l] = shapesHubPath(l);
-  entries.push(...toEntry(hubPaths, SHAPES_PASS_2026_09_26));
+  entries.push(...toEntry(hubPaths, SHAPES_MODIFIED));
 
   // Spokes — only offer an alternate where that locale actually ships the shape,
   // mirroring the per-spoke filter already used in ShapePage.astro.
@@ -147,26 +125,19 @@ function shapeEntries(): SitemapEntry[] {
     for (const l of shapeLocales) {
       if (shapes[l]!.spokes.some((sp) => sp.slug === slug)) paths[l] = shapePath(l, slug);
     }
-    entries.push(...toEntry(paths, SHAPES_PASS_2026_09_26));
+    entries.push(...toEntry(paths, SHAPES_MODIFIED));
   }
   return entries;
 }
 
 export async function getSitemapEntries(): Promise<SitemapEntry[]> {
   const posts = await getCollection('blog');
-  // Blog index lists every post, so its own freshness tracks the newest one.
-  const blogIndexLastmod = posts
-    .reduce((max, p) => {
-      const d = p.data.updatedDate ?? p.data.pubDate;
-      return d > max ? d : max;
-    }, posts[0]!.data.pubDate)
-    .toISOString();
-
   return [
-    ...sameSlugEntries('/', locales, ARCHITECTURE_SHIP_DATE),
-    ...sameSlugEntries('/blog/', locales, blogIndexLastmod),
+    ...sameSlugEntries('/', locales, HOME_SHIP_DATE),
+    // Blog index lists every post, so its own freshness tracks the newest one.
+    ...sameSlugEntries('/blog/', locales, newestDate(posts)),
     ...[...infoPages].flatMap((p) => sameSlugEntries(p, ['en'], INFO_PAGES_SHIP_DATE)),
-    ...(await blogEntries(posts)),
+    ...blogEntries(posts),
     ...landingEntries(),
     ...shapeEntries(),
   ];

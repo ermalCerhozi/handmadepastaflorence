@@ -32,7 +32,7 @@ export function blogPostPath(slug: string, locale: Locale): string {
  * Locales that ship this post, in `locales` order so the default locale comes
  * first and x-default resolves to it.
  */
-export async function blogPostLocales(id: string): Promise<Locale[]> {
+async function blogPostLocales(id: string): Promise<Locale[]> {
   const slug = blogSlug(id);
   const posts = await getCollection('blog');
   const present = new Set(posts.filter((p) => blogSlug(p.id) === slug).map((p) => blogLocale(p.id)));
