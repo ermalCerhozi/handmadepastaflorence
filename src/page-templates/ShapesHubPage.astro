@@ -202,7 +202,7 @@ const faqLd = faqSchema(s.hubFaqs);
     display: flex; flex-direction: column; background: var(--flour-deep); border-radius: 16px;
     overflow: hidden; transition: transform 0.35s, box-shadow 0.35s;
   }
-  .sh-card:hover { transform: translateY(-4px); box-shadow: 0 18px 40px rgba(35,35,33,0.13); }
+  .sh-card:hover { box-shadow: 0 18px 40px rgba(35,35,33,0.13); }
   .sh-card__media { aspect-ratio: 16 / 10; overflow: hidden; }
   .sh-card__media img { width: 100%; height: 100%; object-fit: cover; }
   .sh-card__body { padding: 1.4rem; display: flex; flex-direction: column; gap: 0.6rem; flex: 1; }
@@ -246,7 +246,6 @@ const faqLd = faqSchema(s.hubFaqs);
     background: var(--yolk); color: var(--olive-deep); font-weight: 800; font-size: var(--step-0);
     padding: 0.95rem 1.7rem; border-radius: 100px; transition: transform 0.3s;
   }
-  .sh-cta__btn:hover { transform: translateY(-2px); }
   .sh-cta__link { color: rgba(249,246,240,0.85); text-decoration: underline; text-underline-offset: 3px; font-size: var(--step--1); }
 
   .sh-guide { padding-bottom: clamp(3rem, 7vw, 5rem); }
