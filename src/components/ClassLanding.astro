@@ -149,6 +149,14 @@ const t = useTranslations(lang);
 const SITE = 'https://handmadepastaflorence.com';
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 
+// Responsive renditions for the hero and kitchen photos. Each srcset tops out
+// at the width the page already shipped, so large and 2x screens get the same
+// pixels as before; only smaller screens pick a lighter file. The sizes mirror
+// the CSS below: one column under the breakpoint, half the 1320px shell above.
+const srcWidths = (w: number) => [480, 640].filter((x) => x < w).concat(w);
+const heroSizes = '(min-width: 1320px) 570px, (min-width: 860px) 45vw, 92vw';
+const gallerySizes = '(min-width: 1320px) 580px, (min-width: 720px) 45vw, 92vw';
+
 // Freshness signal. Competing listings for these keywords carry "2026" in the
 // title; our class pages showed no date at all.
 //
@@ -293,7 +301,7 @@ const faqLd = faqSchema(faqs);
 <!-- id="top" lets FloatingCTA treat this hero like the homepage one -->
 <section class="lp-hero" id="top">
   <div class="shell lp-hero__inner">
-    <div class="lp-hero__text" data-reveal>
+    <div class="lp-hero__text lp-hero__intro">
       <nav class="lp-crumb" aria-label={t.lp.breadcrumbLabel}>
         <a href={localizePath('/', lang)}>{t.lp.home}</a> <span aria-hidden="true">&gt;</span>
         {showPastaCrumb && (
@@ -338,22 +346,25 @@ const faqLd = faqSchema(faqs);
         <time datetime={PAGE_UPDATED}>{t.lp.updated} {updatedLabel}</time>
       </p>
     </div>
-    <div class:list={['lp-hero__media', video && 'lp-hero__media--wide']} data-reveal style="--reveal-delay:120ms">
+    <div class:list={['lp-hero__media', 'lp-hero__intro', video && 'lp-hero__media--wide']} style="--reveal-delay:120ms">
       {images && images.length > 0 ? (
         images.map((img, i) => (
-          <Image 
-            src={img.src} 
-            alt={img.alt} 
-            width={img.w} 
-            height={img.h} 
-            loading={i === 0 ? "eager" : "lazy"} 
-            decoding="async" 
+          <Image
+            src={img.src}
+            alt={img.alt}
+            width={img.w}
+            height={img.h}
+            widths={srcWidths(img.w)}
+            sizes={heroSizes}
+            fetchpriority={i === 0 ? "high" : "low"}
+            loading={i === 0 ? "eager" : "lazy"}
+            decoding="async"
             class={i === 0 ? "lp-hero__image-fade-1" : "lp-hero__image-fade"}
             style={i > 0 ? `animation-delay: ${i * 4}s` : ""}
           />
         ))
       ) : (
-        <Image src={image.src} alt={image.alt} width={image.w} height={image.h} loading="eager" decoding="async" />
+        <Image src={image.src} alt={image.alt} width={image.w} height={image.h} widths={srcWidths(image.w)} sizes={heroSizes} fetchpriority="high" loading="eager" decoding="async" />
       )}
       {video && (
         <video
@@ -403,11 +414,11 @@ const faqLd = faqSchema(faqs);
     <section class="lp-gallery">
       <div class="shell lp-gallery__grid">
         <figure class="lp-gallery__item" data-reveal>
-          <Image src={img.cookingClass} alt={t.lp.galleryStationAlt} width={800} height={1200} loading="lazy" decoding="async" />
+          <Image src={img.cookingClass} alt={t.lp.galleryStationAlt} width={800} height={1200} widths={srcWidths(800)} sizes={gallerySizes} loading="lazy" decoding="async" />
           <figcaption>{t.lp.galleryStation}</figcaption>
         </figure>
         <figure class="lp-gallery__item" data-reveal style="--reveal-delay:90ms">
-          <Image src={img.plates} alt={t.lp.galleryTableAlt} width={800} height={1000} loading="lazy" decoding="async" />
+          <Image src={img.plates} alt={t.lp.galleryTableAlt} width={800} height={1000} widths={srcWidths(800)} sizes={gallerySizes} loading="lazy" decoding="async" />
           <figcaption>{t.lp.galleryTable}</figcaption>
         </figure>
       </div>
@@ -635,6 +646,17 @@ const faqLd = faqSchema(faqs);
   .lp-hero__price small {
     font-size: var(--step--1);
     color: rgba(249, 246, 240, 0.65);
+  }
+  /* Same fade-up as [data-reveal], but driven by CSS from first paint instead of
+     waiting for the scroll-reveal script. The hero copy is this page's LCP
+     element on mobile, and gating it on JS held LCP back by roughly a second;
+     it also stayed invisible if the script failed to load. */
+  .lp-hero__intro {
+    animation: lpHeroIn 0.9s var(--ease) both;
+    animation-delay: var(--reveal-delay, 0ms);
+  }
+  @keyframes lpHeroIn {
+    from { opacity: 0; transform: translateY(34px); }
   }
   .lp-hero__media {
     border-radius: var(--radius-lg);

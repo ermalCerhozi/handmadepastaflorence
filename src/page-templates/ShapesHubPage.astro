@@ -86,7 +86,7 @@ const faqLd = faqSchema(s.hubFaqs);
             s.spokes.map((sp, i) => (
               <a class="sh-card" href={shapePath(locale, sp.slug)} data-reveal style={`--reveal-delay:${i * 60}ms`}>
                 <div class="sh-card__media">
-                  <Image src={sp.image.src} alt={sp.image.alt} width={sp.image.w} height={sp.image.h} loading="lazy" decoding="async" />
+                  <Image src={sp.image.src} alt={sp.image.alt} width={sp.image.w} height={sp.image.h} widths={[480, 640].filter((x) => x < sp.image.w).concat(sp.image.w)} sizes="(min-width: 584px) 380px, 92vw" loading="lazy" decoding="async" />
                 </div>
                 <div class="sh-card__body">
                   <h2>{sp.name}</h2>

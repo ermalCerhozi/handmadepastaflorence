@@ -23,6 +23,10 @@ const cardMeta: CardMeta[] = [
   { img: aperitivo, w: 800, h: 1067, key: 'market-tour' },
   { img: longTablePoster, w: 720, h: 432, key: 'private', video: longTableVideo },
 ];
+// Card width per the .exp__grid rules below: 3 columns from ~1024px (never
+// wider than ~375px), 2 columns from ~663px, otherwise full width. The srcset
+// still tops out at each card's full width for 2x and 3x screens.
+const cardSizes = '(min-width: 1024px) 380px, (min-width: 663px) 45vw, 92vw';
 ---
 
 <section class="exp" id="experiences">
@@ -44,7 +48,7 @@ const cardMeta: CardMeta[] = [
         return (
         <article class="card" data-reveal style={`--reveal-delay:${i * 90}ms`}>
           <div class="card__media">
-            <Image class="card__img" src={m.img} alt={c.alt} width={m.w} height={m.h} loading="lazy" decoding="async" />
+            <Image class="card__img" src={m.img} alt={c.alt} width={m.w} height={m.h} widths={[480, 640].filter((x) => x < m.w).concat(m.w)} sizes={cardSizes} loading="lazy" decoding="async" />
             {m.video && (
               <video
                 class="card__video"

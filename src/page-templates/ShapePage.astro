@@ -75,7 +75,7 @@ const siblings = s.spokes.filter((sp) => sp.slug !== spoke.slug);
           <p class="sp-answer" set:html={spoke.answer} />
         </div>
         <div class="sp-hero__media">
-          <Image src={spoke.image.src} alt={spoke.image.alt} width={spoke.image.w} height={spoke.image.h} fetchpriority="high" loading="eager" decoding="async" />
+          <Image src={spoke.image.src} alt={spoke.image.alt} width={spoke.image.w} height={spoke.image.h} widths={[480, 640].filter((x) => x < spoke.image.w).concat(spoke.image.w)} sizes="(min-width: 1320px) 540px, (min-width: 900px) 42vw, 92vw" fetchpriority="high" loading="eager" decoding="async" />
         </div>
       </div>
     </section>
@@ -147,7 +147,7 @@ const siblings = s.spokes.filter((sp) => sp.slug !== spoke.slug);
           {
             siblings.map((sp) => (
               <a class="sp-sib__card" href={shapePath(locale, sp.slug)}>
-                <Image src={sp.image.src} alt={sp.image.alt} width={sp.image.w} height={sp.image.h} loading="lazy" decoding="async" />
+                <Image src={sp.image.src} alt={sp.image.alt} width={sp.image.w} height={sp.image.h} widths={[168, 252]} sizes="84px" loading="lazy" decoding="async" />
                 <div>
                   <h3>{sp.name}</h3>
                   <p>{sp.tagline}</p>

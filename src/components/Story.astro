@@ -1,21 +1,28 @@
 ---
-import { getImage } from 'astro:assets';
+import { Image } from 'astro:assets';
 import { getLocaleFromUrl } from '../i18n/utils';
 import { useTranslations } from '../i18n/ui';
 import { cuttingPizza, cookingClassGuests } from '../assets/images';
 const t = useTranslations(getLocaleFromUrl(Astro.url));
 
-// CSS background-image (not <img>), so <Image> doesn't apply — resolve the
-// optimized URL via getImage() and feed it in through a CSS custom property.
-const photoA = await getImage({ src: cuttingPizza, width: 800 });
-const photoB = await getImage({ src: cookingClassGuests, width: 800 });
+// Decorative photos, so alt="". They used to be CSS background-images, which
+// the browser fetches as soon as styles apply: ~120 KB for a section far below
+// the fold, downloaded during the hero's critical window on every home page.
+// As lazy <img>s laid out exactly like the old backgrounds (absolute, inset 0,
+// object-fit: cover) they only load once the visitor scrolls near them.
+// Photo A is ~82% and photo B ~74% of the media column.
+const photoSizes = '(min-width: 880px) 430px, 75vw';
 ---
 
 <section class="story" id="story">
   <div class="shell story__grid">
     <div class="story__media" data-reveal>
-      <div class="story__photo story__photo--a" style={`--photo-a:url(${photoA.src})`}></div>
-      <div class="story__photo story__photo--b" style={`--photo-b:url(${photoB.src})`}></div>
+      <div class="story__photo story__photo--a">
+        <Image class="story__img" src={cuttingPizza} alt="" width={800} widths={[480, 800]} sizes={photoSizes} loading="lazy" decoding="async" />
+      </div>
+      <div class="story__photo story__photo--b">
+        <Image class="story__img" src={cookingClassGuests} alt="" width={800} widths={[480, 800]} sizes={photoSizes} loading="lazy" decoding="async" />
+      </div>
       <span class="story__stamp">est.<br /><strong>2026</strong></span>
     </div>
     <div class="story__text" data-reveal style="--reveal-delay:120ms">
@@ -42,14 +49,15 @@ const photoB = await getImage({ src: cookingClassGuests, width: 800 });
   @media (min-width: 880px) { .story__grid { grid-template-columns: 0.9fr 1.1fr; } }
 
   .story__media { position: relative; aspect-ratio: 4 / 4.4; }
-  .story__photo { position: absolute; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); }
+  .story__photo { position: absolute; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); overflow: hidden; }
+  .story__img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
   .story__photo--a {
     inset: 0 18% 22% 0;
-    background: var(--flour-shadow) var(--photo-a) center / cover;
+    background: var(--flour-shadow);
   }
   .story__photo--b {
     inset: 30% 0 0 26%;
-    background: var(--olive) var(--photo-b) center / cover;
+    background: var(--olive);
     border: 6px solid var(--flour);
   }
   .story__photo::after {

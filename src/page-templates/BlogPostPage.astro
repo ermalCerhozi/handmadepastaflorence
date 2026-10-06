@@ -26,6 +26,14 @@ const t = useTranslations(lang);
 const SITE = 'https://handmadepastaflorence.com';
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 
+// The hero figure is this page's LCP element and is capped at 820px wide, but
+// it used to ship the full source (up to 1536px, ~270 KB) to every phone. The
+// srcset tops out at the source width, so 2x desktop screens still get every
+// pixel; smaller screens pick a lighter rendition.
+const heroWidths = [480, 640, 820, 1080]
+  .filter((w) => w < post.data.image.width)
+  .concat(post.data.image.width);
+
 // Every one of these used to branch off `isIt`, which sent /de/, /fr/ and /zh/
 // readers to the English home, blog and class pages and declared the article
 // as inLanguage 'en'. They are the two best-ranking pages on the site, so the
@@ -130,7 +138,15 @@ const faqLd = faqs.length ? faqSchema(faqs) : null;
 
       <div class="shell">
         <figure class="po-figure">
-          <Image src={post.data.image} alt={post.data.imageAlt} loading="eager" decoding="async" />
+          <Image
+            src={post.data.image}
+            alt={post.data.imageAlt}
+            widths={heroWidths}
+            sizes="(min-width: 920px) 820px, calc(100vw - 2.5rem)"
+            fetchpriority="high"
+            loading="eager"
+            decoding="async"
+          />
         </figure>
 
         <div class="po-body">
