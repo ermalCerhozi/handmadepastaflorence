@@ -9,6 +9,7 @@ classKey: 'market-tour'
 related:
   - 'where-to-eat-handmade-pasta-in-florence'
   - 'what-to-do-in-florence-on-a-monday'
+  - 'what-to-do-in-florence-on-a-sunday'
 faqs:
   - q: "Was ist das Oltrarno?"
     a: "Das Oltrarno (wörtlich jenseits des Arno) ist das linke Ufer von Florenz, das man erreicht, wenn man den Ponte Vecchio vom Duomo weg überquert. Es ist die ruhigere, eher wohnliche Hälfte der Stadt, in der sich die Piazza Santo Spirito, der Palazzo Pitti und der Boboli-Garten befinden."

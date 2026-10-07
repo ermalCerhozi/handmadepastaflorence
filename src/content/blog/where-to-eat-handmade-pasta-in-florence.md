@@ -10,6 +10,7 @@ classKey: 'pasta-making'
 related:
   - 'what-to-eat-in-florence'
   - 'tuscan-pasta-shapes-guide'
+  - 'where-to-buy-fresh-pasta-in-florence'
 faqs:
   - q: "Where is the best pasta in Florence?"
     a: "The best handmade pasta in Florence is not near the Duomo but in the trattorias around the Sant'Ambrogio market and in the Oltrarno around Santo Spirito: places with a short menu, pasta named by its shape, and a room full of Italians at 13:00. Order pici if you see them, or pappardelle al cinghiale in autumn."

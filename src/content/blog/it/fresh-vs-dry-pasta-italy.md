@@ -9,6 +9,7 @@ classKey: 'pasta-making'
 related:
   - 'best-flour-for-italian-fresh-pasta'
   - 'tuscan-pasta-shapes-guide'
+  - 'where-to-buy-fresh-pasta-in-florence'
 faqs:
   - q: "La pasta fresca è migliore della pasta secca in Italia?"
     a: "No, sono solo diverse. La pasta fresca è morbida, assorbe sughi ricchi e spesso è fatta con le uova. La pasta secca è soda, mantiene una perfetta consistenza 'al dente' ed è ideale per sughi a base di olio d'oliva o pomodoro."

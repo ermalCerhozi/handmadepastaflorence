@@ -211,6 +211,13 @@ const en: ShapesLocale = {
             '<strong>Cacio e pepe</strong> works beautifully because the rough surface grabs the cheese, and <strong>pici alle briciole</strong> (toasted breadcrumbs, garlic, oil) is the oldest and poorest of them, and quietly one of the best things in Tuscan cooking. What you will not find on real pici is cream.',
           ],
         },
+        {
+          title: 'Where to eat pici in Florence',
+          paras: [
+            'Pici are a southern Tuscan pasta, so Florence treats them as a guest from Siena, but a good trattoria will have them on the menu most of the year. Look for <em>pici all\'aglione</em> or <em>pici cacio e pepe</em> on a short menu, and look at the strand when it arrives: thick, slightly uneven and rough means rolled by hand; perfectly round and smooth means extruded.',
+            'My <a href="/blog/where-to-eat-handmade-pasta-in-florence/">guide to handmade pasta in Florence</a> covers the neighbourhoods where the real thing is easiest to find. To cook them yourself, here is <a href="/blog/where-to-buy-fresh-pasta-in-florence/">where to buy fresh pasta in Florence</a>; good dried pici from a Tuscan maker are also one of the few pasta souvenirs that travel well.',
+          ],
+        },
       ],
       faqs: [
         {
@@ -278,6 +285,13 @@ const en: ShapesLocale = {
           paras: [
             '<strong>Ragù di cinghiale</strong> (wild boar, slow-cooked with red wine, juniper and tomato) is the pairing that made this shape famous, and it remains the correct answer. <strong>Lepre</strong>, hare, is the older and richer version, and the one an old Tuscan cook would choose if they could get it.',
             'Beyond game, pappardelle take beautifully to <strong>duck ragù</strong> and to <strong>porcini</strong> in the few weeks of the year the mushrooms are worth having. The rule is simple: if the sauce is heavy, chunky and has been cooking for hours, this is the shape it wants.',
+          ],
+        },
+        {
+          title: 'Where to eat pappardelle in Florence',
+          paras: [
+            'In Florence, pappardelle are an autumn and winter dish. When the hunting season opens, <em>pappardelle al cinghiale</em> (wild boar) and, if you are lucky, <em>pappardelle alla lepre</em> (hare) come back onto trattoria menus. Order them at lunch, when the ragù has been cooking since morning.',
+            'They are also a classic of the Florentine Sunday lunch, which is worth planning a whole day around: see <a href="/blog/what-to-do-in-florence-on-a-sunday/">what to do in Florence on a Sunday</a>. For where to find them made by hand, read my <a href="/blog/where-to-eat-handmade-pasta-in-florence/">guide to handmade pasta in Florence</a>.',
           ],
         },
       ],
@@ -349,6 +363,13 @@ const en: ShapesLocale = {
             'Beyond ragù, tagliatelle are superb with <strong>mushrooms</strong>, with butter and sage when you want something quiet, and with a simple <strong>tomato and basil</strong> when the tomatoes are actually good. The ribbon is narrow enough that a light sauce still coats it properly.',
           ],
         },
+        {
+          title: 'Where to eat tagliatelle in Florence',
+          paras: [
+            'Tagliatelle come from Emilia, but they are on almost every trattoria menu in Florence, most often <em>al ragù</em> or, from late summer into autumn, <em>ai funghi porcini</em>. Because they are so common, they are also the ribbon most often bought in rather than made in house, so this is the dish where reading the menu matters most.',
+            'My <a href="/blog/where-to-eat-handmade-pasta-in-florence/">guide to handmade pasta in Florence</a> explains how to tell the difference before you order. To take some back to your kitchen, here is <a href="/blog/where-to-buy-fresh-pasta-in-florence/">where to buy fresh pasta in Florence</a> and how long it keeps.',
+          ],
+        },
       ],
       faqs: [
         {
@@ -416,6 +437,13 @@ const en: ShapesLocale = {
           paras: [
             'Very little, and that is the point. <strong>Butter and sage</strong> (foamed until it just starts to smell nutty, with a few crisped sage leaves) is the classic, and it is hard to improve on. A restrained <strong>meat ragù</strong> is the Mugello Sunday version.',
             'What ruins tortelli is a sauce that competes with the filling. You have spent an hour making something with a flavour on the inside; do not bury it. If in doubt, butter, sage and a grating of parmesan.',
+          ],
+        },
+        {
+          title: 'Where to eat tortelli in Florence',
+          paras: [
+            'The Florentine way to eat <em>tortelli di patate</em> is to drive out to the Mugello for them, the valley north of the city where they come from, usually on a Sunday. In the city, look for them on trattoria menus with butter and sage or a little meat ragù, and on a pastificio counter on Saturday morning, when Florence buys them for Sunday lunch.',
+            'Here is <a href="/blog/where-to-buy-fresh-pasta-in-florence/">where to buy fresh pasta in Florence</a>, and why Sunday lunch is the meal of the week here: <a href="/blog/what-to-do-in-florence-on-a-sunday/">what to do in Florence on a Sunday</a>.',
           ],
         },
       ],
@@ -488,6 +516,13 @@ const en: ShapesLocale = {
           paras: [
             'Roll the sheet a touch thicker than you would for ribbons: a filled shape has to survive being stuffed, sealed and boiled. Lay the filling in a line with real gaps between the mounds, because crowding them is what makes sealing impossible later. A teaspoon each is plenty.',
             'Then the part that matters: lay the second sheet over and press down <em>around each mound with your fingertips</em>, working outwards so the air escapes rather than getting trapped. Trapped air expands in boiling water and that is what bursts a raviolo. Seal firmly, cut with a wheel, and run a finger round every edge before they go anywhere near the pan.',
+          ],
+        },
+        {
+          title: 'Where to eat ravioli in Florence',
+          paras: [
+            'Ravioli are on menus all over Florence, which makes them the shape where frozen, factory-made pasta hides most easily. Look at the edges: hand-sealed ravioli are slightly irregular, a little thicker where the dough was pressed, and a good menu names the filling of the day rather than listing "ravioli" all year round.',
+            'My <a href="/blog/where-to-eat-handmade-pasta-in-florence/">guide to handmade pasta in Florence</a> has the rest of the signs, and <a href="/blog/where-to-buy-fresh-pasta-in-florence/">where to buy fresh pasta in Florence</a> covers the pastifici that sell them by weight. Ravioli are also one of the two shapes every guest makes by hand in our class, so you will recognise a hand-sealed one when you see it.',
           ],
         },
       ],
@@ -628,6 +663,13 @@ const it: ShapesLocale = {
             'Il <strong>cacio e pepe</strong> funziona benissimo perché la superficie ruvida afferra il formaggio, e i <strong>pici alle briciole</strong> (pangrattato tostato, aglio, olio) sono i più antichi e i più poveri, e in silenzio una delle cose migliori della cucina toscana. Quello che sui pici veri non troverete è la panna.',
           ],
         },
+        {
+          title: 'Dove mangiare i pici a Firenze',
+          paras: [
+            'I pici sono una pasta della Toscana del sud, e a Firenze sono un ospite arrivato da Siena, ma una buona trattoria li tiene in menù quasi tutto l\'anno. Cerca <em>pici all\'aglione</em> o <em>pici cacio e pepe</em> in un menù corto e guarda il filo quando arriva: grosso, un po\' irregolare e ruvido vuol dire appiciato a mano; perfettamente tondo e liscio vuol dire trafilato.',
+            'La mia <a href="/it/blog/where-to-eat-handmade-pasta-in-florence/">guida alla pasta fatta a mano a Firenze</a> racconta i quartieri dove è più facile trovare quella vera. Per cucinarli a casa, ecco <a href="/it/blog/where-to-buy-fresh-pasta-in-florence/">dove comprare pasta fresca a Firenze</a>; anche i pici secchi di un buon pastificio toscano sono uno dei pochi souvenir di pasta che viaggiano bene.',
+          ],
+        },
       ],
       faqs: [
         {
@@ -698,8 +740,19 @@ const it: ShapesLocale = {
             'Oltre alla selvaggina, le pappardelle stanno benissimo con il <strong>ragù d\'anatra</strong> e con i <strong>porcini</strong> nelle poche settimane all\'anno in cui vale la pena averli. La regola è semplice: se il sugo è pesante, corposo e cuoce da ore, questo è il formato che vuole.',
           ],
         },
+        {
+          title: 'Dove mangiare le pappardelle a Firenze',
+          paras: [
+            'A Firenze le pappardelle sono un piatto d\'autunno e d\'inverno. Quando si apre la caccia tornano nei menù delle trattorie le <em>pappardelle al cinghiale</em> e, se sei fortunato, le <em>pappardelle alla lepre</em>. Ordinale a pranzo, quando il ragù è sul fuoco dalla mattina.',
+            'Sono anche un classico del pranzo della domenica fiorentino, che vale la pena di organizzare per bene: leggi <a href="/it/blog/what-to-do-in-florence-on-a-sunday/">cosa fare a Firenze la domenica</a>. Per sapere dove trovarle tirate a mano, c\'è la mia <a href="/it/blog/where-to-eat-handmade-pasta-in-florence/">guida alla pasta fatta a mano a Firenze</a>.',
+          ],
+        },
       ],
       faqs: [
+        {
+          q: 'Quale pasta è più sottile delle pappardelle?',
+          a: 'Le tagliatelle: stessa sfoglia all\'uovo, ma tagliate a 6–8 mm invece che a 2–3 cm. Se è la domanda di un cruciverba ("sono più sottili delle pappardelle"), la risposta è quasi sempre tagliatelle.',
+        },
         {
           q: 'Qual è la differenza tra pappardelle e tagliatelle?',
           a: 'Larghezza e origine. Le pappardelle si tagliano a 2–3 cm e sono toscane, fatte per i sughi di selvaggina come cinghiale e lepre. Le tagliatelle si tagliano a 6–8 mm e appartengono all\'Emilia-Romagna, e stanno bene con ragù più fini e con i funghi. La sfoglia in entrambi i casi è la stessa.',
@@ -765,6 +818,13 @@ const it: ShapesLocale = {
           paras: [
             'Un vero <strong>ragù</strong> (carne di manzo e maiale macinata, cotta piano con il soffritto, il vino e pochissimo pomodoro) è l\'abbinamento, e a Bologna è l\'unico che qualcuno ammetterà. Notate con cosa non si serve: gli spaghetti. Quella è un\'invenzione straniera e ve lo faranno notare.',
             'Oltre al ragù, le tagliatelle sono ottime con i <strong>funghi</strong>, con burro e salvia quando si vuole qualcosa di quieto, e con un semplice <strong>pomodoro e basilico</strong> quando i pomodori sono davvero buoni. Il nastro è abbastanza stretto che anche un sugo leggero le veste bene.',
+          ],
+        },
+        {
+          title: 'Dove mangiare le tagliatelle a Firenze',
+          paras: [
+            'Le tagliatelle vengono dall\'Emilia, ma sono nel menù di quasi ogni trattoria fiorentina, quasi sempre <em>al ragù</em> o, da fine estate all\'autunno, <em>ai funghi porcini</em>. Proprio perché sono così comuni, sono anche il nastro che più spesso si compra fuori invece di farlo in casa: è il piatto in cui leggere bene il menù conta di più.',
+            'La mia <a href="/it/blog/where-to-eat-handmade-pasta-in-florence/">guida alla pasta fatta a mano a Firenze</a> spiega come capire la differenza prima di ordinare. Per portarne un po\' a casa, ecco <a href="/it/blog/where-to-buy-fresh-pasta-in-florence/">dove comprare pasta fresca a Firenze</a> e quanto si conserva.',
           ],
         },
       ],
@@ -837,6 +897,13 @@ const it: ShapesLocale = {
             'Quello che rovina i tortelli è un condimento che compete con il ripieno. Avete passato un\'ora a fare qualcosa che ha il sapore dentro: non seppellitelo. Nel dubbio, burro, salvia e una grattata di parmigiano.',
           ],
         },
+        {
+          title: 'Dove mangiare i tortelli a Firenze',
+          paras: [
+            'Il modo fiorentino di mangiare i <em>tortelli di patate</em> è andarli a cercare in Mugello, la valle a nord della città da cui vengono, di solito di domenica. In città cercali nei menù delle trattorie con burro e salvia o un filo di ragù, e al banco di un pastificio il sabato mattina, quando Firenze li compra per il pranzo della domenica.',
+            'Ecco <a href="/it/blog/where-to-buy-fresh-pasta-in-florence/">dove comprare pasta fresca a Firenze</a>, e perché qui il pranzo della domenica è il pasto della settimana: <a href="/it/blog/what-to-do-in-florence-on-a-sunday/">cosa fare a Firenze la domenica</a>.',
+          ],
+        },
       ],
       faqs: [
         {
@@ -902,6 +969,13 @@ const it: ShapesLocale = {
           paras: [
             'Tira la sfoglia un filo più spessa di quella per i nastri: una forma ripiena deve sopravvivere al ripieno, alla sigillatura e all\'acqua bollente. Disponi il ripieno in fila lasciando spazi veri tra una nocciola e l\'altra: ammassarle è ciò che rende impossibile sigillare dopo. Un cucchiaino ciascuna basta.',
             'Poi la parte che conta: appoggia la seconda sfoglia e premi <em>attorno a ogni nocciola con i polpastrelli</em>, lavorando verso l\'esterno perché l\'aria esca invece di restare intrappolata. L\'aria intrappolata si espande nell\'acqua bollente ed è quella che apre un raviolo. Sigilla bene, taglia con la rotella e passa un dito su ogni bordo prima che si avvicinino alla pentola.',
+          ],
+        },
+        {
+          title: 'Dove mangiare i ravioli a Firenze',
+          paras: [
+            'I ravioli sono nei menù di tutta Firenze, ed è proprio per questo che sono il formato in cui la pasta surgelata e industriale si nasconde meglio. Guarda i bordi: i ravioli chiusi a mano sono leggermente irregolari, un po\' più spessi dove la sfoglia è stata premuta, e un buon menù indica il ripieno del giorno invece di scrivere "ravioli" tutto l\'anno.',
+            'Gli altri segnali sono nella mia <a href="/it/blog/where-to-eat-handmade-pasta-in-florence/">guida alla pasta fatta a mano a Firenze</a>, e in <a href="/it/blog/where-to-buy-fresh-pasta-in-florence/">dove comprare pasta fresca a Firenze</a> trovi i pastifici che li vendono a peso. I ravioli sono anche uno dei due formati che ogni ospite chiude a mano nel nostro corso, quindi uno vero lo riconoscerai al primo sguardo.',
           ],
         },
       ],
@@ -1043,6 +1117,13 @@ const de: ShapesLocale = {
             '<strong>Cacio e pepe</strong> funktioniert wunderbar, weil die raue Oberfläche den Käse greift, und <strong>pici alle briciole</strong> (geröstete Semmelbrösel, Knoblauch, Öl) ist die älteste und ärmste davon und ganz nebenbei eines der besten Dinge der toskanischen Küche. Was Sie auf echten Pici nicht finden werden, ist Sahne.',
           ],
         },
+        {
+          title: 'Wo man in Florenz Pici isst',
+          paras: [
+            'Pici stammen aus der südlichen Toskana, in Florenz sind sie also ein Gast aus Siena, aber eine gute Trattoria hat sie fast das ganze Jahr auf der Karte. Achten Sie auf <em>pici all\'aglione</em> oder <em>pici cacio e pepe</em> auf einer kurzen Karte, und schauen Sie sich den Strang an, wenn er kommt: dick, etwas ungleichmäßig und rau heißt von Hand gerollt; perfekt rund und glatt heißt maschinell gezogen.',
+            'Mein <a href="/de/blog/where-to-eat-handmade-pasta-in-florence/">Guide zur handgemachten Pasta in Florenz</a> beschreibt die Viertel, in denen man die echte am leichtesten findet. Zum Selberkochen: <a href="/de/blog/where-to-buy-fresh-pasta-in-florence/">wo man in Florenz frische Pasta kauft</a>. Getrocknete Pici von einem guten toskanischen Hersteller gehören außerdem zu den wenigen Pasta-Mitbringseln, die gut reisen.',
+          ],
+        },
       ],
       faqs: [
         {
@@ -1108,6 +1189,13 @@ const de: ShapesLocale = {
           paras: [
             '<strong>Ragù di cinghiale</strong> (Wildschwein, langsam geschmort mit Rotwein, Wacholder und Tomate) ist die Kombination, die diese Form berühmt gemacht hat, und sie bleibt die richtige Antwort. <strong>Lepre</strong>, Hase, ist die ältere und reichere Version und die, für die sich ein alter toskanischer Koch entscheiden würde, wenn er ihn bekommt.',
             'Über Wild hinaus vertragen Pappardelle wunderbar <strong>Entenragù</strong> und <strong>Steinpilze</strong> in den wenigen Wochen im Jahr, in denen die Pilze etwas taugen. Die Regel ist einfach: Wenn die Soße schwer und grob ist und stundenlang gekocht hat, will sie diese Form.',
+          ],
+        },
+        {
+          title: 'Wo man in Florenz Pappardelle isst',
+          paras: [
+            'In Florenz sind Pappardelle ein Herbst- und Wintergericht. Wenn die Jagdsaison beginnt, kommen <em>pappardelle al cinghiale</em> (Wildschwein) und mit etwas Glück <em>pappardelle alla lepre</em> (Hase) zurück auf die Karten der Trattorien. Bestellen Sie sie mittags, wenn das Ragù seit dem Morgen köchelt.',
+            'Sie sind auch ein Klassiker des florentinischen Sonntagsessens, für das es sich lohnt, einen ganzen Tag zu planen: siehe <a href="/de/blog/what-to-do-in-florence-on-a-sunday/">Florenz am Sonntag</a>. Wo man sie handgemacht bekommt, steht in meinem <a href="/de/blog/where-to-eat-handmade-pasta-in-florence/">Guide zur handgemachten Pasta in Florenz</a>.',
           ],
         },
       ],
@@ -1177,6 +1265,13 @@ const de: ShapesLocale = {
             'Über das Ragù hinaus sind Tagliatelle hervorragend mit <strong>Pilzen</strong>, mit Butter und Salbei, wenn es leise sein soll, und mit einfacher <strong>Tomate und Basilikum</strong>, wenn die Tomaten wirklich gut sind. Das Band ist schmal genug, dass auch eine leichte Soße es noch richtig überzieht.',
           ],
         },
+        {
+          title: 'Wo man in Florenz Tagliatelle isst',
+          paras: [
+            'Tagliatelle kommen aus der Emilia, stehen aber auf fast jeder Trattoria-Karte in Florenz, meist <em>al ragù</em> oder, vom Spätsommer bis in den Herbst, <em>ai funghi porcini</em>. Gerade weil sie so verbreitet sind, sind sie auch das Band, das am häufigsten zugekauft statt selbst gemacht wird: Hier lohnt es sich am meisten, die Karte genau zu lesen.',
+            'Mein <a href="/de/blog/where-to-eat-handmade-pasta-in-florence/">Guide zur handgemachten Pasta in Florenz</a> erklärt, wie man den Unterschied vor dem Bestellen erkennt. Wer welche mitnehmen will: <a href="/de/blog/where-to-buy-fresh-pasta-in-florence/">wo man in Florenz frische Pasta kauft</a> und wie lange sie hält.',
+          ],
+        },
       ],
       faqs: [
         {
@@ -1244,6 +1339,13 @@ const de: ShapesLocale = {
             'Was Tortelli ruiniert, ist eine Soße, die mit der Füllung konkurriert. Sie haben gerade eine Stunde damit verbracht, den Geschmack nach innen zu legen; begraben Sie ihn nicht. Im Zweifel: Butter, Salbei und geriebener Parmesan.',
           ],
         },
+        {
+          title: 'Wo man in Florenz Tortelli isst',
+          paras: [
+            'Die florentinische Art, <em>tortelli di patate</em> zu essen, ist, dafür ins Mugello zu fahren, das Tal nördlich der Stadt, aus dem sie stammen, meist an einem Sonntag. In der Stadt finden Sie sie auf Trattoria-Karten mit Butter und Salbei oder etwas Fleischragù, und samstagvormittags an der Theke eines Pastificio, wenn Florenz sie für das Sonntagsessen kauft.',
+            'Hier steht, <a href="/de/blog/where-to-buy-fresh-pasta-in-florence/">wo man in Florenz frische Pasta kauft</a>, und warum das Sonntagsessen hier die Mahlzeit der Woche ist: <a href="/de/blog/what-to-do-in-florence-on-a-sunday/">Florenz am Sonntag</a>.',
+          ],
+        },
       ],
       faqs: [
         {
@@ -1309,6 +1411,13 @@ const de: ShapesLocale = {
           paras: [
             'Rollen Sie die Bahn eine Spur dicker aus als für Bänder: Eine gefüllte Form muss das Füllen, Versiegeln und Kochen überstehen. Legen Sie die Füllung in einer Reihe mit echten Abständen zwischen den Häufchen aus, denn sie zu dicht zu setzen macht das Versiegeln später unmöglich. Ein Teelöffel je Häufchen reicht.',
             'Dann der Teil, auf den es ankommt: die zweite Bahn darüberlegen und <em>rund um jedes Häufchen mit den Fingerkuppen andrücken</em>, nach außen arbeitend, damit die Luft entweicht statt eingeschlossen zu werden. Eingeschlossene Luft dehnt sich im kochenden Wasser aus, und genau das lässt einen Raviolo platzen. Fest versiegeln, mit dem Rädchen schneiden und vor dem Kochen einen Finger über jeden Rand führen.',
+          ],
+        },
+        {
+          title: 'Wo man in Florenz Ravioli isst',
+          paras: [
+            'Ravioli stehen in ganz Florenz auf den Karten, und genau deshalb versteckt sich hinter ihnen am leichtesten tiefgekühlte Fabrikpasta. Schauen Sie auf die Ränder: Von Hand verschlossene Ravioli sind leicht unregelmäßig, dort etwas dicker, wo der Teig angedrückt wurde, und eine gute Karte nennt die Füllung des Tages, statt das ganze Jahr nur "Ravioli" zu schreiben.',
+            'Die übrigen Zeichen stehen in meinem <a href="/de/blog/where-to-eat-handmade-pasta-in-florence/">Guide zur handgemachten Pasta in Florenz</a>, und unter <a href="/de/blog/where-to-buy-fresh-pasta-in-florence/">wo man in Florenz frische Pasta kauft</a> finden Sie die Pastifici, die sie nach Gewicht verkaufen. Ravioli sind außerdem eine der beiden Formen, die jeder Gast in unserem Kurs von Hand macht, Sie erkennen einen echten also auf den ersten Blick.',
           ],
         },
       ],
@@ -1451,6 +1560,13 @@ const fr: ShapesLocale = {
             'Le <strong>cacio e pepe</strong> fonctionne à merveille parce que la surface rugueuse attrape le fromage, et les <strong>pici alle briciole</strong> (chapelure grillée, ail, huile) sont les plus anciens et les plus pauvres, et discrètement l\'une des meilleures choses de la cuisine toscane. Ce que vous ne trouverez pas sur de vrais pici, c\'est de la crème.',
           ],
         },
+        {
+          title: 'Où manger des pici à Florence',
+          paras: [
+            'Les pici viennent du sud de la Toscane : à Florence, ce sont des invités venus de Sienne, mais une bonne trattoria les garde à la carte presque toute l\'année. Cherchez des <em>pici all\'aglione</em> ou des <em>pici cacio e pepe</em> sur une carte courte, et regardez le brin quand il arrive : épais, un peu irrégulier et rugueux, il a été roulé à la main ; parfaitement rond et lisse, il a été extrudé.',
+            'Mon <a href="/fr/blog/where-to-eat-handmade-pasta-in-florence/">guide des pâtes faites à la main à Florence</a> présente les quartiers où l\'on trouve le plus facilement les vraies. Pour les cuisiner vous-même, voici <a href="/fr/blog/where-to-buy-fresh-pasta-in-florence/">où acheter des pâtes fraîches à Florence</a> ; de bons pici secs d\'un artisan toscan font aussi partie des rares souvenirs de pâtes qui voyagent bien.',
+          ],
+        },
       ],
       faqs: [
         {
@@ -1516,6 +1632,13 @@ const fr: ShapesLocale = {
           paras: [
             'Le <strong>ragù de sanglier</strong> (mijoté au vin rouge, au genièvre et à la tomate) est l\'accord qui a rendu cette forme célèbre, et il reste la bonne réponse. Le <strong>lièvre</strong> est la version plus ancienne et plus riche, celle que choisirait un vieux cuisinier toscan s\'il pouvait s\'en procurer.',
             'Au-delà du gibier, les pappardelle s\'entendent très bien avec le <strong>ragù de canard</strong> et avec les <strong>cèpes</strong> pendant les quelques semaines de l\'année où ils valent la peine. La règle est simple : si la sauce est lourde, en morceaux et sur le feu depuis des heures, c\'est cette forme qu\'elle veut.',
+          ],
+        },
+        {
+          title: 'Où manger des pappardelle à Florence',
+          paras: [
+            'À Florence, les pappardelle sont un plat d\'automne et d\'hiver. À l\'ouverture de la chasse, les <em>pappardelle al cinghiale</em> (sanglier) et, avec un peu de chance, les <em>pappardelle alla lepre</em> (lièvre) reviennent sur les cartes des trattorias. Commandez-les le midi, quand le ragù mijote depuis le matin.',
+            'C\'est aussi un classique du déjeuner du dimanche florentin, qui mérite qu\'on organise toute la journée autour : voir <a href="/fr/blog/what-to-do-in-florence-on-a-sunday/">que faire à Florence le dimanche</a>. Pour savoir où les trouver faites à la main, lisez mon <a href="/fr/blog/where-to-eat-handmade-pasta-in-florence/">guide des pâtes faites à la main à Florence</a>.',
           ],
         },
       ],
@@ -1585,6 +1708,13 @@ const fr: ShapesLocale = {
             'Au-delà du ragù, les tagliatelle sont superbes avec les <strong>champignons</strong>, avec du beurre et de la sauge quand on veut quelque chose de calme, et avec une simple <strong>tomate et basilic</strong> quand les tomates sont vraiment bonnes. Le ruban est assez étroit pour qu\'une sauce légère l\'enrobe correctement.',
           ],
         },
+        {
+          title: 'Où manger des tagliatelle à Florence',
+          paras: [
+            'Les tagliatelle viennent d\'Émilie, mais elles figurent sur presque toutes les cartes de trattoria à Florence, le plus souvent <em>al ragù</em> ou, de la fin de l\'été à l\'automne, <em>ai funghi porcini</em>. Justement parce qu\'elles sont si courantes, c\'est aussi le ruban le plus souvent acheté plutôt que fait maison : c\'est le plat où il faut lire la carte avec le plus d\'attention.',
+            'Mon <a href="/fr/blog/where-to-eat-handmade-pasta-in-florence/">guide des pâtes faites à la main à Florence</a> explique comment faire la différence avant de commander. Pour en rapporter, voici <a href="/fr/blog/where-to-buy-fresh-pasta-in-florence/">où acheter des pâtes fraîches à Florence</a> et combien de temps elles se gardent.',
+          ],
+        },
       ],
       faqs: [
         {
@@ -1652,6 +1782,13 @@ const fr: ShapesLocale = {
             'Ce qui ruine les tortelli, c\'est une sauce qui rivalise avec la farce. Vous avez passé une heure à faire quelque chose dont le goût est à l\'intérieur ; ne l\'enterrez pas. Dans le doute : beurre, sauge et un peu de parmesan râpé.',
           ],
         },
+        {
+          title: 'Où manger des tortelli à Florence',
+          paras: [
+            'La façon florentine de manger des <em>tortelli di patate</em>, c\'est d\'aller les chercher dans le Mugello, la vallée au nord de la ville d\'où ils viennent, en général un dimanche. En ville, cherchez-les sur les cartes des trattorias au beurre et à la sauge ou avec un peu de ragù, et au comptoir d\'un pastificio le samedi matin, quand Florence les achète pour le déjeuner du dimanche.',
+            'Voici <a href="/fr/blog/where-to-buy-fresh-pasta-in-florence/">où acheter des pâtes fraîches à Florence</a>, et pourquoi le déjeuner du dimanche est ici le repas de la semaine : <a href="/fr/blog/what-to-do-in-florence-on-a-sunday/">que faire à Florence le dimanche</a>.',
+          ],
+        },
       ],
       faqs: [
         {
@@ -1717,6 +1854,13 @@ const fr: ShapesLocale = {
           paras: [
             'Étalez l\'abaisse un rien plus épaisse que pour des rubans : une forme farcie doit survivre au garnissage, au scellage et à l\'ébullition. Posez la farce en ligne avec de vrais écarts entre les monticules, parce que les serrer est ce qui rend le scellage impossible ensuite. Une cuillère à café chacun suffit largement.',
             'Puis la partie qui compte : posez la seconde abaisse par-dessus et pressez <em>autour de chaque monticule du bout des doigts</em>, en travaillant vers l\'extérieur pour que l\'air s\'échappe au lieu de rester piégé. L\'air emprisonné se dilate dans l\'eau bouillante et c\'est ce qui fait éclater un raviolo. Scellez fermement, coupez à la roulette, et passez un doigt sur chaque bord avant qu\'ils n\'approchent de la casserole.',
+          ],
+        },
+        {
+          title: 'Où manger des ravioli à Florence',
+          paras: [
+            'Les ravioli sont sur les cartes de tout Florence, et c\'est justement la forme derrière laquelle les pâtes surgelées et industrielles se cachent le plus facilement. Regardez les bords : des ravioli fermés à la main sont légèrement irréguliers, un peu plus épais là où la pâte a été pressée, et une bonne carte indique la farce du jour au lieu d\'afficher « ravioli » toute l\'année.',
+            'Les autres indices sont dans mon <a href="/fr/blog/where-to-eat-handmade-pasta-in-florence/">guide des pâtes faites à la main à Florence</a>, et <a href="/fr/blog/where-to-buy-fresh-pasta-in-florence/">où acheter des pâtes fraîches à Florence</a> présente les pastifici qui les vendent au poids. Les ravioli sont aussi l\'une des deux formes que chaque participant fait à la main dans notre cours : vous reconnaîtrez un vrai au premier coup d\'œil.',
           ],
         },
       ],
@@ -1857,6 +2001,13 @@ const zh: ShapesLocale = {
             '<strong>Cacio e pepe</strong> 效果极好，因为粗糙的表面能抓住奶酪；而 <strong>pici alle briciole</strong>（烤面包糠、大蒜、橄榄油）是其中最古老也最清贫的一种，却低调地属于托斯卡纳烹饪里最好的东西之列。你不会在真正的 pici 上看到的，是奶油。',
           ],
         },
+        {
+          title: '在佛罗伦萨哪里吃 pici',
+          paras: [
+            'Pici 来自托斯卡纳南部，在佛罗伦萨算是从锡耶纳来的客人，但好的小餐馆一年中大部分时间都有。在简短的菜单上找 <em>pici all\'aglione</em>（蒜香番茄）或 <em>pici cacio e pepe</em>（奶酪胡椒），端上来时看看面条：粗、略不均匀、表面粗糙，是手搓的；圆得完美又光滑，是机器挤压的。',
+            '我的<a href="/zh/blog/where-to-eat-handmade-pasta-in-florence/">佛罗伦萨手工意面指南</a>介绍了最容易找到正宗手工意面的街区。想自己做，可以看<a href="/zh/blog/where-to-buy-fresh-pasta-in-florence/">在佛罗伦萨哪里买新鲜意面</a>；托斯卡纳好作坊出品的干 pici 也是少数适合带回家的意面伴手礼。',
+          ],
+        },
       ],
       faqs: [
         {
@@ -1922,6 +2073,13 @@ const zh: ShapesLocale = {
           paras: [
             '<strong>野猪肉酱</strong>（用红酒、杜松子和番茄慢炖）是让这个形状出名的搭配，至今仍是正确答案。<strong>野兔</strong>是更古老也更浓郁的版本，如果买得到，老派的托斯卡纳厨师会选它。',
             '除了野味，pappardelle 和<strong>鸭肉酱</strong>非常合拍，也适合一年中牛肝菌值得一买的那几周里的<strong>牛肝菌</strong>。规则很简单：如果酱汁厚重、带块、已经炖了几个小时，它想要的就是这个形状。',
+          ],
+        },
+        {
+          title: '在佛罗伦萨哪里吃 pappardelle',
+          paras: [
+            '在佛罗伦萨，pappardelle 是秋冬的菜。狩猎季一开始，<em>pappardelle al cinghiale</em>（野猪肉酱）以及运气好时的 <em>pappardelle alla lepre</em>（野兔肉酱）就会回到小餐馆的菜单上。午餐时点，那时肉酱已经从早上炖到现在。',
+            '它也是佛罗伦萨周日午餐的经典，值得围绕它安排一整天：参见<a href="/zh/blog/what-to-do-in-florence-on-a-sunday/">周日在佛罗伦萨做什么</a>。想知道哪里有手工制作的，请看我的<a href="/zh/blog/where-to-eat-handmade-pasta-in-florence/">佛罗伦萨手工意面指南</a>。',
           ],
         },
       ],
@@ -1991,6 +2149,13 @@ const zh: ShapesLocale = {
             '除了肉酱，tagliatelle 配<strong>蘑菇</strong>极好，想清淡时配黄油和鼠尾草，番茄真正好的时候配简单的<strong>番茄罗勒</strong>。这个面带够窄，清爽的酱汁也能好好裹住它。',
           ],
         },
+        {
+          title: '在佛罗伦萨哪里吃 tagliatelle',
+          paras: [
+            'Tagliatelle 来自艾米利亚，但几乎每家佛罗伦萨小餐馆的菜单上都有，最常见的是 <em>al ragù</em>（肉酱），或从夏末到秋天的 <em>ai funghi porcini</em>（牛肝菌）。正因为太常见，它也是最常被外购而非店内自制的面带，所以点这道菜时最需要读懂菜单。',
+            '我的<a href="/zh/blog/where-to-eat-handmade-pasta-in-florence/">佛罗伦萨手工意面指南</a>讲了点菜前如何分辨。想带一些回去，请看<a href="/zh/blog/where-to-buy-fresh-pasta-in-florence/">在佛罗伦萨哪里买新鲜意面</a>以及能放多久。',
+          ],
+        },
       ],
       faqs: [
         {
@@ -2056,6 +2221,13 @@ const zh: ShapesLocale = {
           paras: [
             '很少，而这正是重点。<strong>黄油配鼠尾草</strong>（加热到起泡、刚开始有坚果香，配几片煎脆的鼠尾草叶）是经典，很难再改进。一份克制的<strong>肉酱</strong>是穆杰罗的周日版本。',
             '毁掉 tortelli 的，是一份和馅料争味道的酱汁。你花了一个钟头做出一样把味道藏在里面的东西；别把它埋了。拿不准的时候，就用黄油、鼠尾草和一点帕玛森。',
+          ],
+        },
+        {
+          title: '在佛罗伦萨哪里吃 tortelli',
+          paras: [
+            '佛罗伦萨人吃 <em>tortelli di patate</em>（土豆馅 tortelli）的方式，是专程开车去它的故乡、城北的穆杰洛山谷，通常是在周日。在城里，可以在小餐馆菜单上找黄油鼠尾草或少许肉酱的做法；周六上午去意面作坊的柜台也能买到，那是佛罗伦萨人为周日午餐采购的时候。',
+            '这里是<a href="/zh/blog/where-to-buy-fresh-pasta-in-florence/">在佛罗伦萨哪里买新鲜意面</a>，以及为什么周日午餐是这里一周中最重要的一餐：<a href="/zh/blog/what-to-do-in-florence-on-a-sunday/">周日在佛罗伦萨做什么</a>。',
           ],
         },
       ],
@@ -2125,6 +2297,13 @@ const zh: ShapesLocale = {
             '然后是关键的一步：盖上第二张面皮，<em>用指尖沿着每一堆馅的周围往下压</em>，向外推，让空气跑掉而不是被困住。困住的空气在沸水里膨胀，这就是 raviolo 爆开的原因。用力封紧，用滚刀切开，下锅之前用手指沿着每一条边再走一遍。',
           ],
         },
+        {
+          title: '在佛罗伦萨哪里吃 ravioli',
+          paras: [
+            '佛罗伦萨到处都有 ravioli，也正因如此，它是冷冻工厂意面最容易藏身的品种。看看边缘：手工封口的 ravioli 略不规则，按压过的地方面皮稍厚；好的菜单会写明当天的馅料，而不是一年到头只写"ravioli"。',
+            '其他辨别方法见我的<a href="/zh/blog/where-to-eat-handmade-pasta-in-florence/">佛罗伦萨手工意面指南</a>，按重量出售的意面作坊则在<a href="/zh/blog/where-to-buy-fresh-pasta-in-florence/">在佛罗伦萨哪里买新鲜意面</a>里。Ravioli 也是每位学员在我们课堂上亲手做的两种意面之一，所以你一眼就能认出手工的。',
+          ],
+        },
       ],
       faqs: [
         {
@@ -2152,10 +2331,12 @@ const zh: ShapesLocale = {
 export const shapes: Partial<Record<Locale, ShapesLocale>> = { en, it, de, fr, zh };
 
 // Hub + spokes shipped together on 2026-07-27. On 2026-09-26 every "we teach
-// this in class" sentence was rewritten to match the real menu. Read by both the
+// this in class" sentence was rewritten to match the real menu. On 2026-10-07
+// each spoke gained a "where to eat it in Florence" section linking the city
+// guides, because the spokes rank best and convert worst. Read by both the
 // sitemap lastmod and each spoke's Article schema so the two can't disagree.
 export const SHAPES_PUBLISHED = '2026-07-27T00:00:00.000Z';
-export const SHAPES_MODIFIED = '2026-09-26T00:00:00.000Z';
+export const SHAPES_MODIFIED = '2026-10-07T00:00:00.000Z';
 
 /** URL of the hub for a locale — falls back to the English hub where unshipped. */
 export function shapesHubPath(locale: Locale): string {

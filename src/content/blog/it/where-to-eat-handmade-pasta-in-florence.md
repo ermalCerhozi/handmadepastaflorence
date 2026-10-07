@@ -10,6 +10,7 @@ classKey: 'pasta-making'
 related:
   - 'what-to-eat-in-florence'
   - 'tuscan-pasta-shapes-guide'
+  - 'where-to-buy-fresh-pasta-in-florence'
 faqs:
   - q: "Dov'è la pasta migliore di Firenze?"
     a: "La pasta fresca migliore di Firenze non è vicino al Duomo, ma nelle trattorie attorno al mercato di Sant'Ambrogio e in Oltrarno intorno a Santo Spirito: locali con un menu corto, la pasta indicata col nome del formato e la sala piena di italiani alle 13:00. Ordina i pici se li vedi, o le pappardelle al cinghiale in autunno."

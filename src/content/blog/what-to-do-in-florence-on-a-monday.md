@@ -10,6 +10,7 @@ classKey: 'market-tour'
 related:
   - 'things-to-do-in-oltrarno-florence'
   - 'what-to-eat-in-florence'
+  - 'what-to-do-in-florence-on-a-sunday'
 faqs:
   - q: "Is the Uffizi open on Monday?"
     a: "No. The Uffizi Gallery is closed every Monday, as well as on 1 January and 25 December. It is open Tuesday to Sunday, 8:15 to 18:30, with last entry at 17:30."
@@ -68,4 +69,4 @@ It also solves the other Monday problem, which is lunch: you have booked nothing
 
 Nothing on that list is closed on a Monday. And you have kept the Uffizi for a morning when it is open, quieter and you are not rushing it.
 
-Travelling with children? The same logic — food and open space instead of galleries — is worked out in full in [Florence with kids](/blog/florence-with-kids/).
+Travelling with children? The same logic (food and open space instead of galleries) is worked out in full in [Florence with kids](/blog/florence-with-kids/).

@@ -9,6 +9,7 @@ classKey: 'market-tour'
 related:
   - 'where-to-eat-handmade-pasta-in-florence'
   - 'what-to-do-in-florence-on-a-monday'
+  - 'what-to-do-in-florence-on-a-sunday'
 faqs:
   - q: "什么是奥尔特拉诺（Oltrarno）？"
     a: "奥尔特拉诺，字面意思是阿诺河对岸，是佛罗伦萨的左岸，穿过远离大教堂的老桥（Ponte Vecchio）即可到达。这是这座城市更安静、更具生活气息的一半，也是圣斯皮里托广场、皮蒂宫和波波里花园的所在地。"

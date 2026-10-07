@@ -9,6 +9,7 @@ classKey: 'market-tour'
 related:
   - 'where-to-eat-handmade-pasta-in-florence'
   - 'what-to-do-in-florence-on-a-monday'
+  - 'what-to-do-in-florence-on-a-sunday'
 faqs:
   - q: "What is the Oltrarno?"
     a: "The Oltrarno (literally beyond the Arno) is the left bank of Florence, reached by crossing the Ponte Vecchio away from the Duomo. It's the city's quieter, more residential half, home to Piazza Santo Spirito, Palazzo Pitti and the Boboli Gardens."

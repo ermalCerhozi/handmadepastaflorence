@@ -10,6 +10,7 @@ classKey: 'market-tour'
 related:
   - 'where-to-eat-handmade-pasta-in-florence'
   - 'day-trips-from-florence'
+  - 'florence-food-markets-sant-ambrogio-mercato-centrale'
 faqs:
   - q: "Pour quels plats Florence est-elle connue ?"
     a: "Pour la bistecca alla fiorentina, la côte de bœuf épaisse de trois doigts, grillée sur la braise et servie saignante. Au quotidien, d’autres classiques comptent davantage : le lampredotto au coin de la rue, la ribollita et la pappa al pomodoro en hiver, la panzanella en été, les crostini di fegatini en entrée et les pappardelle au ragù de sanglier."

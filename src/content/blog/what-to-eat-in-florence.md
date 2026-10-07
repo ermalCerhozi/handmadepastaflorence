@@ -10,6 +10,7 @@ classKey: 'market-tour'
 related:
   - 'where-to-eat-handmade-pasta-in-florence'
   - 'day-trips-from-florence'
+  - 'florence-food-markets-sant-ambrogio-mercato-centrale'
 faqs:
   - q: "What food is Florence famous for?"
     a: "Bistecca alla fiorentina, the thick T-bone grilled rare over embers, is the dish the city is named for abroad. Locally the everyday classics matter more: lampredotto from a street cart, ribollita and pappa al pomodoro in winter, panzanella in summer, crostini di fegatini to start, and pappardelle with wild boar ragu."

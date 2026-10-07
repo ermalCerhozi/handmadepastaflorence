@@ -10,6 +10,7 @@ classKey: 'market-tour'
 related:
   - 'where-to-eat-handmade-pasta-in-florence'
   - 'day-trips-from-florence'
+  - 'florence-food-markets-sant-ambrogio-mercato-centrale'
 faqs:
   - q: "Wofür ist Florenz kulinarisch berühmt?"
     a: "Für die Bistecca alla Fiorentina, das drei Finger dicke T-Bone-Steak, über Glut gegrillt und blutig serviert. Im Alltag zählen aber andere Klassiker mehr: Lampredotto vom Straßenwagen, Ribollita und Pappa al Pomodoro im Winter, Panzanella im Sommer, Crostini di Fegatini vorweg und Pappardelle mit Wildschweinragù."

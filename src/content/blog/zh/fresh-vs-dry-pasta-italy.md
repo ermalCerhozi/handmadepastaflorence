@@ -9,6 +9,7 @@ classKey: 'pasta-making'
 related:
   - 'best-flour-for-italian-fresh-pasta'
   - 'tuscan-pasta-shapes-guide'
+  - 'where-to-buy-fresh-pasta-in-florence'
 faqs:
   - q: "在意大利，新鲜意大利面比干意大利面更好吗？"
     a: "不是，它们只是不同而已。新鲜意大利面口感柔软，能吸收浓郁的酱汁，通常是用鸡蛋做的。干意大利面质地坚实，保持完美的“弹牙”口感（al dente），非常适合搭配橄榄油或以番茄为基底的酱汁。"

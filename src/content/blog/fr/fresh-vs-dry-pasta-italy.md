@@ -9,6 +9,7 @@ classKey: 'pasta-making'
 related:
   - 'best-flour-for-italian-fresh-pasta'
   - 'tuscan-pasta-shapes-guide'
+  - 'where-to-buy-fresh-pasta-in-florence'
 faqs:
   - q: "Les pâtes fraîches sont-elles meilleures que les pâtes sèches en Italie ?"
     a: "Non, elles sont simplement différentes. Les pâtes fraîches sont tendres, absorbent les sauces riches et sont souvent faites avec des œufs. Les pâtes sèches sont fermes, gardent un côté 'al dente' parfait et sont idéales pour l'huile d'olive ou les sauces à base de tomates."

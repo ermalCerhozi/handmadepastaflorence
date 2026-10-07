@@ -10,6 +10,7 @@ classKey: 'market-tour'
 related:
   - 'things-to-do-in-oltrarno-florence'
   - 'what-to-eat-in-florence'
+  - 'what-to-do-in-florence-on-a-sunday'
 faqs:
   - q: "Sind die Uffizien montags geöffnet?"
     a: "Nein. Die Uffizien sind jeden Montag geschlossen, ebenso am 1. Januar und am 25. Dezember. Geöffnet ist von Dienstag bis Sonntag, 8:15 bis 18:30 Uhr, letzter Einlass um 17:30 Uhr."
