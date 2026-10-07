@@ -16,7 +16,7 @@ faqs:
   - q: "Are shops open in Florence on Sunday?"
     a: "In the historic centre, most clothing, leather and souvenir shops open on Sunday, often from late morning. Neighbourhood food shops, bakeries and the two big food markets mostly close, so buy picnic food and fresh pasta on Saturday."
   - q: "Are the markets open in Florence on Sunday?"
-    a: "The Sant'Ambrogio market is closed on Sundays, and so are the traditional stalls on the ground floor of the Mercato Centrale. The food hall upstairs at the Mercato Centrale stays open every day. Some piazzas, Santo Spirito among them, host a monthly Sunday market, so check the date."
+    a: "The Sant'Ambrogio market is closed on Sundays, and so are the traditional stalls on the ground floor of the Mercato Centrale. The food hall upstairs at the Mercato Centrale stays open every day. Piazza Santo Spirito has its own Sunday markets instead: crafts and antiques on the second Sunday of the month, organic food on the third, with a break in high summer."
   - q: "Are restaurants open in Florence on Sunday?"
     a: "Most are open for Sunday lunch, which is the big meal of the week for Florentines, so book it. Many small family trattorias close on Sunday evening or on Sunday altogether, which is why dinner takes more planning than lunch."
   - q: "Can you do a cooking class in Florence on a Sunday?"
@@ -33,9 +33,9 @@ Plan the day around that rhythm and Sunday is one of the best days of the week h
 
 > One Sunday a month is different. On the **first Sunday of the month** Italy's state museums are free for everyone. That sounds like a gift and mostly works as a queue: entry is first come, first served, and the line for the Uffizi can run across the piazza. If your Sunday is a first Sunday, either go at opening time or save the museum for another day.
 
-**Churches, with a caveat.** The Duomo, Santa Croce and the other big churches are working churches, and Sunday morning belongs to mass. Visiting hours on a Sunday are shorter and start later, so treat the Duomo complex as a Sunday afternoon plan and book the dome climb ahead.
+**Churches, with a caveat.** The Duomo, Santa Croce and the other big churches are working churches, and Sunday morning belongs to mass. The cathedral itself is closed to visitors all day on Sunday, and the dome climb only runs in the afternoon, from 12:45, so book a slot ahead. The baptistery, Giotto's bell tower and the Duomo museum keep their normal hours.
 
-**The gardens and the viewpoints.** The Boboli Gardens are open on Sundays, and the walk up to San Miniato al Monte and Piazzale Michelangelo is free and open every day. San Miniato on a Sunday evening, with the monks' sung office and the city going gold below, is one of the best free hours in Florence.
+**The gardens and the viewpoints.** The Boboli Gardens are open on Sundays, and the walk up to San Miniato al Monte and Piazzale Michelangelo is free and open every day. San Miniato on a Sunday evening, with the monks singing the 17:30 Mass in Gregorian chant and the city going gold below, is one of the best free hours in Florence.
 
 **Shops in the centre.** Around the Duomo, Via de' Tornabuoni and the San Lorenzo leather stalls, most shops open on Sunday, usually from late morning.
 
@@ -66,9 +66,9 @@ Travelling with children? The [family class](/family-cooking-class-florence/) ru
 ## Things to do in Florence on a Sunday: an itinerary that works
 
 - **Morning:** the Uffizi or the Accademia at opening time (unless it is a free first Sunday, in which case swap this with the afternoon).
-- **Late morning:** a slow walk through the Oltrarno while it is quiet, to [Piazza Santo Spirito](/blog/things-to-do-in-oltrarno-florence/) and its monthly Sunday market if your date has one.
+- **Late morning:** a slow walk through the Oltrarno while it is quiet, to [Piazza Santo Spirito](/blog/things-to-do-in-oltrarno-florence/) and its craft market if it is the second Sunday of the month, or the organic Fierucola if it is the third.
 - **Lunch:** a long trattoria lunch at 13:00, or [a pasta class](/pasta-making-class-florence/) at 10:00 that ends at the table.
-- **Afternoon:** the Boboli Gardens, or the Duomo complex once Sunday visiting hours begin.
+- **Afternoon:** the Boboli Gardens, or the dome climb (Sunday slots start at 12:45; the cathedral below stays closed to visitors).
 - **Evening:** walk up to San Miniato al Monte for sunset. Book dinner ahead, because Sunday night is when the small places close.
 
 Arriving on a Monday instead? That is a different city, worked out in [what to do in Florence on a Monday](/blog/what-to-do-in-florence-on-a-monday/).

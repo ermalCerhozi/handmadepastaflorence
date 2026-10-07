@@ -16,7 +16,7 @@ faqs:
   - q: "Haben die Geschäfte in Florenz sonntags geöffnet?"
     a: "In der Altstadt öffnen die meisten Mode-, Leder- und Souvenirgeschäfte auch sonntags, oft ab dem späten Vormittag. Lebensmittelläden im Viertel, Bäckereien und die beiden großen Märkte haben dagegen meist geschlossen. Picknick und frische Pasta kauft man also am Samstag."
   - q: "Sind die Märkte in Florenz sonntags geöffnet?"
-    a: "Der Markt von Sant'Ambrogio ist sonntags geschlossen, ebenso die traditionellen Stände im Erdgeschoss des Mercato Centrale. Die Food Hall im Obergeschoss des Mercato Centrale ist täglich geöffnet. Auf einigen Plätzen, etwa Santo Spirito, gibt es einmal im Monat einen Sonntagsmarkt; prüfen Sie das Datum."
+    a: "Der Markt von Sant'Ambrogio ist sonntags geschlossen, ebenso die traditionellen Stände im Erdgeschoss des Mercato Centrale. Die Food Hall im Obergeschoss des Mercato Centrale ist täglich geöffnet. Die Piazza Santo Spirito hat dafür eigene Sonntagsmärkte: Kunsthandwerk und Antiquitäten am zweiten Sonntag im Monat, Bio-Lebensmittel am dritten, mit einer Pause im Hochsommer."
   - q: "Haben Restaurants in Florenz sonntags geöffnet?"
     a: "Zum Mittagessen fast alle, denn das Sonntagsessen ist für Florentiner die wichtigste Mahlzeit der Woche; reservieren Sie also. Viele kleine Familientrattorien schließen am Sonntagabend oder den ganzen Sonntag, deshalb braucht das Abendessen mehr Planung als das Mittagessen."
   - q: "Kann man in Florenz sonntags einen Kochkurs machen?"
@@ -33,9 +33,9 @@ Wer den Tag nach diesem Rhythmus plant, erlebt einen der schönsten Wochentage h
 
 > Ein Sonntag im Monat ist anders. Am **ersten Sonntag im Monat** ist der Eintritt in Italiens staatliche Museen für alle frei. Das klingt nach einem Geschenk und funktioniert vor allem als Warteschlange: Einlass in der Reihenfolge der Ankunft, und die Schlange vor den Uffizien kann quer über den Platz reichen. Ist Ihr Sonntag ein erster Sonntag, gehen Sie zur Öffnung oder heben Sie sich das Museum für einen anderen Tag auf.
 
-**Die Kirchen, mit einer Einschränkung.** Der Dom, Santa Croce und die anderen großen Kirchen sind aktive Kirchen, und der Sonntagvormittag gehört der Messe. Die Besuchszeiten sind sonntags kürzer und beginnen später. Planen Sie den Dom-Komplex also für den Nachmittag und buchen Sie den Kuppelaufstieg im Voraus.
+**Die Kirchen, mit einer Einschränkung.** Der Dom, Santa Croce und die anderen großen Kirchen sind aktive Kirchen, und der Sonntagvormittag gehört der Messe. Die Kathedrale selbst ist sonntags den ganzen Tag für Besucher geschlossen, und der Kuppelaufstieg ist nur nachmittags ab 12:45 Uhr möglich; buchen Sie ein Zeitfenster im Voraus. Baptisterium, Giottos Campanile und das Dommuseum haben normale Öffnungszeiten.
 
-**Die Gärten und Aussichtspunkte.** Der Boboli-Garten ist sonntags geöffnet, und der Aufstieg nach San Miniato al Monte und zum Piazzale Michelangelo ist kostenlos und jeden Tag möglich. San Miniato am Sonntagabend, mit dem Gesang der Mönche und der Stadt, die unter einem golden wird, ist eine der schönsten kostenlosen Stunden in Florenz.
+**Die Gärten und Aussichtspunkte.** Der Boboli-Garten ist sonntags geöffnet, und der Aufstieg nach San Miniato al Monte und zum Piazzale Michelangelo ist kostenlos und jeden Tag möglich. San Miniato am Sonntagabend, wenn die Mönche um 17:30 Uhr die Messe im gregorianischen Choral singen und die Stadt unter einem golden wird, gehört zu den schönsten kostenlosen Stunden in Florenz.
 
 **Die Geschäfte im Zentrum.** Rund um den Dom, in der Via de' Tornabuoni und an den Lederständen von San Lorenzo öffnet sonntags fast alles, meist ab dem späten Vormittag.
 
@@ -66,9 +66,9 @@ Mit Kindern unterwegs? Der [Familien-Kochkurs](/de/familien-kochkurs-florenz/) f
 ## Florenz am Sonntag: ein Tagesplan, der funktioniert
 
 - **Vormittag:** die Uffizien oder die Accademia zur Öffnung (außer an einem freien ersten Sonntag; dann tauschen Sie mit dem Nachmittag).
-- **Später Vormittag:** ein langsamer Spaziergang durch den noch ruhigen Oltrarno zur [Piazza Santo Spirito](/de/blog/things-to-do-in-oltrarno-florence/) und zu ihrem monatlichen Sonntagsmarkt, falls Ihr Datum passt.
+- **Später Vormittag:** ein langsamer Spaziergang durch den noch ruhigen Oltrarno zur [Piazza Santo Spirito](/de/blog/things-to-do-in-oltrarno-florence/) mit ihrem Kunsthandwerksmarkt am zweiten Sonntag im Monat oder der Bio-Fierucola am dritten.
 - **Mittag:** ein langes Trattoria-Essen um 13:00 Uhr oder [ein Pasta-Kurs](/de/pasta-kurs-florenz/) um 10:00 Uhr, der am Tisch endet.
-- **Nachmittag:** der Boboli-Garten oder der Dom-Komplex, sobald die sonntäglichen Besuchszeiten beginnen.
+- **Nachmittag:** der Boboli-Garten oder der Kuppelaufstieg (sonntags ab 12:45 Uhr; die Kathedrale darunter bleibt für Besucher geschlossen).
 - **Abend:** hinauf nach San Miniato al Monte zum Sonnenuntergang. Reservieren Sie das Abendessen, denn sonntagabends schließen die kleinen Lokale.
 
 Sie kommen an einem Montag an? Das ist eine andere Stadt, beschrieben in [was man montags in Florenz machen kann](/de/blog/what-to-do-in-florence-on-a-monday/).

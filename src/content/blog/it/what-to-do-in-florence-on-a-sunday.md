@@ -16,7 +16,7 @@ faqs:
   - q: "I negozi sono aperti a Firenze la domenica?"
     a: "In centro storico la maggior parte dei negozi di abbigliamento, pelletteria e souvenir apre anche la domenica, spesso dalla tarda mattinata. Le botteghe alimentari di quartiere, i forni e i due grandi mercati invece chiudono, quindi la spesa e la pasta fresca si comprano il sabato."
   - q: "I mercati di Firenze sono aperti la domenica?"
-    a: "Il mercato di Sant'Ambrogio è chiuso la domenica, e lo sono anche i banchi tradizionali al piano terra del Mercato Centrale. Il piano superiore del Mercato Centrale, con i banchi di cibo pronto, è aperto tutti i giorni. Alcune piazze, tra cui Santo Spirito, ospitano un mercatino mensile la domenica: controlla la data."
+    a: "Il mercato di Sant'Ambrogio è chiuso la domenica, e lo sono anche i banchi tradizionali al piano terra del Mercato Centrale. Il piano superiore del Mercato Centrale, con i banchi di cibo pronto, è aperto tutti i giorni. Piazza Santo Spirito, invece, ha i suoi mercati della domenica: artigianato e antiquariato la seconda domenica del mese, prodotti biologici la terza, con una pausa in piena estate."
   - q: "I ristoranti sono aperti a Firenze la domenica?"
     a: "Quasi tutti sono aperti a pranzo, che per i fiorentini è il pasto più importante della settimana, quindi conviene prenotare. Molte piccole trattorie a conduzione familiare chiudono la domenica sera o tutta la domenica: per questo la cena va organizzata meglio del pranzo."
   - q: "Si può fare un corso di cucina a Firenze la domenica?"
@@ -33,9 +33,9 @@ Se organizzi la giornata seguendo questo ritmo, la domenica è uno dei giorni mi
 
 > Una domenica al mese è diversa. La **prima domenica del mese** i musei statali sono gratuiti per tutti. Sembra un regalo, ma in pratica è una coda: si entra in ordine di arrivo e la fila per gli Uffizi può attraversare tutto il piazzale. Se la tua domenica è una prima domenica, vai all'apertura oppure tieni il museo per un altro giorno.
 
-**Le chiese, con una precisazione.** Il Duomo, Santa Croce e le altre grandi chiese sono chiese vive, e la domenica mattina è dedicata alla messa. Gli orari di visita della domenica sono più brevi e iniziano più tardi: considera il complesso del Duomo un programma per il pomeriggio e prenota la salita alla cupola.
+**Le chiese, con una precisazione.** Il Duomo, Santa Croce e le altre grandi chiese sono chiese vive, e la domenica mattina è dedicata alla messa. La cattedrale è chiusa alle visite per tutta la domenica, e la salita alla cupola si fa solo il pomeriggio, dalle 12:45: prenota il turno in anticipo. Battistero, campanile di Giotto e Museo dell'Opera mantengono i loro orari normali.
 
-**I giardini e i belvedere.** Il Giardino di Boboli è aperto la domenica, e la salita a San Miniato al Monte e al Piazzale Michelangelo è gratuita e aperta tutti i giorni. San Miniato la domenica sera, con il canto dei monaci e la città che si accende d'oro sotto di te, è una delle ore gratuite più belle di Firenze.
+**I giardini e i belvedere.** Il Giardino di Boboli è aperto la domenica, e la salita a San Miniato al Monte e al Piazzale Michelangelo è gratuita e aperta tutti i giorni. San Miniato la domenica sera, con i monaci che cantano in gregoriano la messa delle 17:30 e la città che si accende d'oro sotto di te, è una delle ore gratuite più belle di Firenze.
 
 **I negozi del centro.** Intorno al Duomo, in via de' Tornabuoni e tra i banchi di pelletteria di San Lorenzo, quasi tutto apre la domenica, di solito dalla tarda mattinata.
 
@@ -66,9 +66,9 @@ Viaggi con bambini? Il [corso per famiglie](/it/corso-cucina-famiglia-firenze/) 
 ## Cosa fare a Firenze la domenica: un itinerario che funziona
 
 - **Mattina:** gli Uffizi o l'Accademia all'apertura (a meno che non sia una prima domenica gratuita: in quel caso scambiali con il pomeriggio).
-- **Tarda mattinata:** una passeggiata lenta nell'Oltrarno ancora tranquillo, fino a [piazza Santo Spirito](/it/blog/things-to-do-in-oltrarno-florence/) e al suo mercatino mensile, se la tua data coincide.
+- **Tarda mattinata:** una passeggiata lenta nell'Oltrarno ancora tranquillo, fino a [piazza Santo Spirito](/it/blog/things-to-do-in-oltrarno-florence/) e al suo mercato dell'artigianato se è la seconda domenica del mese, o alla Fierucola biologica se è la terza.
 - **Pranzo:** un lungo pranzo in trattoria alle 13:00, oppure [un corso di pasta](/it/corso-pasta-fresca-firenze/) alle 10:00 che finisce a tavola.
-- **Pomeriggio:** il Giardino di Boboli, oppure il complesso del Duomo quando iniziano gli orari di visita della domenica.
+- **Pomeriggio:** il Giardino di Boboli, oppure la salita alla cupola (la domenica i turni partono alle 12:45; la cattedrale resta chiusa alle visite).
 - **Sera:** sali a San Miniato al Monte per il tramonto. Prenota la cena, perché la domenica sera è quando i locali piccoli chiudono.
 
 Arrivi di lunedì? È un'altra città, raccontata in [cosa fare a Firenze di lunedì](/it/blog/what-to-do-in-florence-on-a-monday/).

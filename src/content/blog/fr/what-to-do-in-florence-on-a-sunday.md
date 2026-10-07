@@ -16,7 +16,7 @@ faqs:
   - q: "Les magasins sont-ils ouverts à Florence le dimanche ?"
     a: "Dans le centre historique, la plupart des boutiques de vêtements, de maroquinerie et de souvenirs ouvrent le dimanche, souvent à partir de la fin de matinée. Les commerces alimentaires de quartier, les boulangeries et les deux grands marchés ferment en général : achetez donc pique-nique et pâtes fraîches le samedi."
   - q: "Les marchés de Florence sont-ils ouverts le dimanche ?"
-    a: "Le marché de Sant'Ambrogio est fermé le dimanche, tout comme les étals traditionnels du rez-de-chaussée du Mercato Centrale. L'étage du Mercato Centrale, avec ses comptoirs de restauration, est ouvert tous les jours. Certaines places, dont Santo Spirito, accueillent un marché mensuel le dimanche : vérifiez la date."
+    a: "Le marché de Sant'Ambrogio est fermé le dimanche, tout comme les étals traditionnels du rez-de-chaussée du Mercato Centrale. L'étage du Mercato Centrale, avec ses comptoirs de restauration, est ouvert tous les jours. La piazza Santo Spirito a en revanche ses propres marchés du dimanche : artisanat et antiquités le deuxième dimanche du mois, produits bio le troisième, avec une pause en plein été."
   - q: "Les restaurants sont-ils ouverts à Florence le dimanche ?"
     a: "Presque tous ouvrent le midi, car le déjeuner du dimanche est le repas le plus important de la semaine pour les Florentins : réservez. Beaucoup de petites trattorias familiales ferment le dimanche soir ou tout le dimanche, d'où un dîner plus difficile à organiser que le déjeuner."
   - q: "Peut-on suivre un cours de cuisine à Florence le dimanche ?"
@@ -33,9 +33,9 @@ Organisez la journée selon ce rythme et le dimanche devient l'un des meilleurs 
 
 > Un dimanche par mois est différent. Le **premier dimanche du mois**, les musées d'État italiens sont gratuits pour tous. Cela ressemble à un cadeau et fonctionne surtout comme une file d'attente : entrée dans l'ordre d'arrivée, et la queue des Offices peut traverser toute la place. Si votre dimanche est un premier dimanche, allez-y à l'ouverture ou gardez le musée pour un autre jour.
 
-**Les églises, avec une nuance.** Le Duomo, Santa Croce et les autres grandes églises sont des églises vivantes, et le dimanche matin appartient à la messe. Les horaires de visite du dimanche sont plus courts et commencent plus tard : prévoyez le complexe du Duomo pour l'après-midi et réservez la montée à la coupole.
+**Les églises, avec une nuance.** Le Duomo, Santa Croce et les autres grandes églises sont des églises vivantes, et le dimanche matin appartient à la messe. La cathédrale elle-même est fermée aux visiteurs tout le dimanche, et la montée à la coupole n'a lieu que l'après-midi, à partir de 12h45 : réservez un créneau. Le baptistère, le campanile de Giotto et le musée de l'Œuvre gardent leurs horaires normaux.
 
-**Les jardins et les belvédères.** Le jardin de Boboli est ouvert le dimanche, et la montée vers San Miniato al Monte et la Piazzale Michelangelo est gratuite et possible tous les jours. San Miniato un dimanche soir, avec le chant des moines et la ville qui se dore en contrebas, est l'une des plus belles heures gratuites de Florence.
+**Les jardins et les belvédères.** Le jardin de Boboli est ouvert le dimanche, et la montée vers San Miniato al Monte et la Piazzale Michelangelo est gratuite et possible tous les jours. San Miniato un dimanche soir, avec les moines qui chantent la messe de 17h30 en grégorien et la ville qui se dore en contrebas, est l'une des plus belles heures gratuites de Florence.
 
 **Les boutiques du centre.** Autour du Duomo, via de' Tornabuoni et parmi les étals de cuir de San Lorenzo, presque tout ouvre le dimanche, en général à partir de la fin de matinée.
 
@@ -66,9 +66,9 @@ En voyage avec des enfants ? Le [cours en famille](/fr/cours-cuisine-famille-flo
 ## Que faire à Florence le dimanche : un programme qui marche
 
 - **Matin :** les Offices ou l'Accademia à l'ouverture (sauf un premier dimanche gratuit : dans ce cas, inversez avec l'après-midi).
-- **Fin de matinée :** une promenade lente dans l'Oltrarno encore calme, jusqu'à la [piazza Santo Spirito](/fr/blog/things-to-do-in-oltrarno-florence/) et son marché mensuel du dimanche si votre date tombe bien.
+- **Fin de matinée :** une promenade lente dans l'Oltrarno encore calme, jusqu'à la [piazza Santo Spirito](/fr/blog/things-to-do-in-oltrarno-florence/) et son marché d'artisanat si c'est le deuxième dimanche du mois, ou la Fierucola bio si c'est le troisième.
 - **Déjeuner :** un long déjeuner en trattoria à 13h00, ou [un cours de pâtes](/fr/cours-de-pates-fraiches-florence/) à 10h00 qui se termine à table.
-- **Après-midi :** le jardin de Boboli, ou le complexe du Duomo dès que les horaires de visite du dimanche commencent.
+- **Après-midi :** le jardin de Boboli, ou la montée à la coupole (le dimanche, créneaux à partir de 12h45 ; la cathédrale reste fermée aux visiteurs).
 - **Soir :** montez à San Miniato al Monte pour le coucher du soleil. Réservez le dîner, car le dimanche soir est le moment où les petites adresses ferment.
 
 Vous arrivez un lundi ? C'est une autre ville, racontée dans [que faire à Florence le lundi](/fr/blog/what-to-do-in-florence-on-a-monday/).
