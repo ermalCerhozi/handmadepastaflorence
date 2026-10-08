@@ -1,0 +1,45 @@
+# Template: copy unchanged to .github/workflows/deploy.yml in each site repo.
+# Every push to main is built and published on the VPS by /usr/local/bin/site-deploy.
+# The repo name is the VPS folder name, so the file is the same in every repo.
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+    # Skip pushes that only touch notes. Content markdown (e.g. src/content/**.md) still deploys.
+    paths-ignore:
+      - '*.md'
+      - 'docs/**'
+      - 'seo-audit/**'
+      - '*-audit/**'
+      - '.claude/**'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: Rebuild and publish even if this commit is already live
+        type: boolean
+        default: false
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: Build and publish on the VPS
+        env:
+          SSH_KEY: ${{ secrets.VPS_SSH_KEY }}
+          REPO: ${{ github.event.repository.name }}
+          FORCE: ${{ inputs.force && '--force' || '' }}
+          # Pinned host key. Fingerprint SHA256:pOgfabjRN9rOh0pXZD+A33cQSHLolIpHFfbTSJmkFlw
+          KNOWN_HOST: 144.91.101.152 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDvefiwGYsXzbsXAMn2vLrhnhLK0U1TF1zhoPtmUPV+8
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$SSH_KEY" > ~/.ssh/deploy
+          chmod 600 ~/.ssh/deploy
+          printf '%s\n' "$KNOWN_HOST" > ~/.ssh/known_hosts
+          ssh -i ~/.ssh/deploy -o BatchMode=yes -o ServerAliveInterval=30 \
+            ermal@144.91.101.152 "$REPO $FORCE"
