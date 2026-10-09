@@ -13,6 +13,7 @@ on:
       - 'seo-audit/**'
       - '*-audit/**'
       - '.claude/**'
+      - '.github/**'
   workflow_dispatch:
     inputs:
       force:
@@ -42,4 +43,32 @@ jobs:
           chmod 600 ~/.ssh/deploy
           printf '%s\n' "$KNOWN_HOST" > ~/.ssh/known_hosts
           ssh -i ~/.ssh/deploy -o BatchMode=yes -o ServerAliveInterval=30 \
-            ermal@144.91.101.152 "$REPO $FORCE"
+            ermal@144.91.101.152 "$REPO $FORCE" | tee "$RUNNER_TEMP/deploy.out"
+
+      # site-deploy prints the page feed between two marker lines (seo-log/FEED.md). Keep it as an
+      # artifact so /update-indexing can read what changed, per commit, without guessing from git.
+      # No markers (nothing to deploy, or an old site-deploy) means no artifact, and that is fine.
+      - name: Collect the page feed
+        if: success()
+        run: |
+          sed -n '/^SEO-FEED-BEGIN$/,/^SEO-FEED-END$/p' "$RUNNER_TEMP/deploy.out" | sed '1d;$d' > changed-pages.json
+          if [ -s changed-pages.json ] && jq -e . changed-pages.json >/dev/null; then
+            jq -r '"### Page feed: \(.repo) \(.commit)",
+              "",
+              "added \(.added|length), changed \(.changed|length), removed \(.removed|length), unchanged \(.unchanged)" + (if .baseline then " (baseline run: no lists)" else "" end),
+              "",
+              (.added[]   | "- `+` " + .),
+              (.changed[] | "- `~` " + .),
+              (.removed[] | "- `-` " + .)' changed-pages.json >> "$GITHUB_STEP_SUMMARY"
+          else
+            rm -f changed-pages.json
+          fi
+
+      - name: Save the page feed
+        if: success()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: changed-pages
+          path: changed-pages.json
+          retention-days: 90
+          if-no-files-found: ignore
