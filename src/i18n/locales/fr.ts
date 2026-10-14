@@ -152,6 +152,14 @@ const fr = {
     ],
   },
 
+  giftBand: {
+    eyebrow: 'Bons cadeaux de Noël',
+    titlePre: 'Pour Noël, offrez ',
+    titleItal: 'un cours de pâtes.',
+    desc: 'Nos bons, dès 68 €, sont envoyés par email et valables pour tous les cours (dans notre cuisine de Florence dès 95 €, ou en direct en ligne avec un kit d\'ingrédients), sans aucune date fixée.',
+    cta: 'Voir les bons cadeaux',
+  },
+
   gallery: {
     eyebrow: 'Une forme pour chaque histoire',
     titlePre: 'Découvrez les ',

@@ -66,8 +66,8 @@ Im Herbst, der besten Jahreszeit für einen Markt in Florenz: frische Steinpilze
 
 Zum Mitnehmen: gereifter Pecorino, getrocknete Steinpilze, gutes Olivenöl und bronzegezogene getrocknete Pasta reisen gut. Was man vor Ort unbedingt essen sollte, steht in [was man in Florenz essen sollte](/de/blog/what-to-eat-in-florence/).
 
-## Mit einem Koch einkaufen, dann kochen
+## Mercato Centrale oder Sant'Ambrogio: welcher Markt für einen Kochkurs?
 
-Ein Markt macht mehr Spaß mit jemandem, der Ihnen sagt, welchem Stand Sie trauen können und was Sie aus Ihrem Einkauf machen. Genau das ist die Idee unserer [Markttour mit Kochkurs](/de/markt-tour-kochkurs-florenz/), Mercato & Mani: Sie gehen mit Endri oder Marsel über den Markt von Sant'Ambrogio, wählen aus, was an diesem Morgen am besten aussieht, tragen den Korb in unsere Küche im Oltrarno und machen daraus frische Ravioli, ein langsam gekochtes Ragù und ein saisonales Dessert, und dann wird gemeinsam gegessen. Etwa fünf Stunden, maximal sechs Gäste, 145 €.
+Sant'Ambrogio, wenn Sie dort einkaufen wollen, wo die Köche von Florenz einkaufen, und genau dort beginnt unsere [Markttour mit Kochkurs in Florenz](/de/markt-tour-kochkurs-florenz/), Mercato & Mani. Der Mercato Centrale ist der bekanntere Name, aber für einen Vormittag, an dem Sie aussuchen, was gekocht wird, gewinnt der kleinere Markt, aus all den Gründen von oben. Und ein Markt macht mehr Spaß mit jemandem, der Ihnen sagt, welchem Stand Sie trauen können und was Sie aus Ihrem Einkauf machen: Sie gehen mit Endri oder Marsel über den Markt von Sant'Ambrogio, wählen aus, was an diesem Morgen am besten aussieht, tragen den Korb in unsere Küche im Oltrarno und machen daraus frische Ravioli, ein langsam gekochtes Ragù und ein saisonales Dessert, und dann wird gemeinsam gegessen. Etwa fünf Stunden, maximal sechs Gäste, 145 €.
 
 Wenig Zeit? Der dreistündige [Pasta-Kurs](/de/pasta-kurs-florenz/) lässt den Markt aus und geht direkt ans Mehl.

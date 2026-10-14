@@ -2,7 +2,7 @@
 title: 'Meilleures pâtes à la main à Florence : le guide d’un chef'
 description: 'Un chef de Florence : où manger de vraies pâtes à la main, la vérité sur les pâtes surgelées dans les cuisines bondées, et quoi commander.'
 pubDate: 2026-07-08
-updatedDate: 2026-09-05
+updatedDate: 2026-10-13
 author: 'Endri Cerhozi'
 image: '../../../assets/images/tuscan-antipasto-board-burrata-red-wine.webp'
 imageAlt: 'Assiettes de pâtes fraîches faites à la main servies sur une table toscane'
@@ -71,6 +71,20 @@ Florence est célèbre pour être une ville de viande (la bistecca est sur toute
 - **Tagliatelle ai funghi porcini**: à la fin de l'été et en automne, quand les porcini sont vrais, c'est imbattable.
 - **Ravioli ricotta e spinaci, burro e salvia**: le doux classique. Cherchez aussi les *gnudi*, une garniture "nue" sans la pâte, servie de la même manière.
 
+## Où trouver les meilleurs raviolis de Florence (et les raviolis poire et pecorino)
+
+Les meilleurs raviolis de Florence se trouvent dans les mêmes petites trattorias que les meilleures pâtes en général, autour de Sant'Ambrogio et dans l'Oltrarno, partout où la carte vous dit ce qu'il y a dedans et où la farce change avec la saison. C'est aussi pour les raviolis que la question des pâtes surgelées compte le plus, parce que les farcir et les fermer un par un est le travail le plus lent de toute cuisine de pâtes fraîches.
+
+Ce que je regarde quand l'assiette arrive :
+
+- **Le bord.** Un raviolo fermé à la main a un bord fin et un peu irrégulier, là où quelqu'un a chassé l'air. Une rangée de carrés dentelés tous identiques sort généralement d'une machine.
+- **Une farce qui a un nom.** Ricotta et épinards, pomme de terre à la façon du Mugello, ou ce que la saison apporte, écrit sur la carte. « Ravioli della casa » sans autre précision ne vous dit rien.
+- **Une sauce légère.** Beurre et sauge, ou une cuillerée de tomate. Dans un raviolo, c'est la farce qui compte, et une sauce lourde la cache.
+
+**Les raviolis poire et pecorino** sont ceux que beaucoup viennent chercher, et ils reposent sur un vieil accord toscan, à tel point qu'il existe un proverbe : *al contadino non far sapere quanto è buono il formaggio con le pere*, « ne dites pas au paysan combien le fromage est bon avec les poires ». Sur la carte, ils ne s'appellent pas toujours ravioli : cherchez aussi *fagottini* ou *fiocchi* di pecorino e pere, et lisez la farce plutôt que la forme. La farce est à la fois sucrée et salée, alors les meilleures versions gardent une sauce simple. Quand j'en commande, je veux sentir la poire.
+
+Si vous préférez les fermer de vos propres mains, les ravioli beurre et sauge sont l'une des deux pâtes que chaque convive prépare à [La Table du Chef](/fr/cours-de-pates-fraiches-florence/).
+
 ## Où chercher, quartier par quartier
 
 **Sant'Ambrogio.** Le marché où les Florentins font leurs courses (nous y emmenons notre propre [cours du marché](/fr/cours-cuisine-visite-marche-florence/)) nourrit les trattorias qui l'entourent. N'importe quel endroit situé à deux rues du marché et rempli d'Italiens à 13h00 est une valeur sûre.
@@ -78,6 +92,16 @@ Florence est célèbre pour être une ville de viande (la bistecca est sur toute
 **L'Oltrarno.** Notre côté de la rivière (Santo Spirito et San Frediano) a toujours la plus forte densité de cuisines honnêtes du centre. Les osteries autour de Santo Spirito sont fiables pour les pâtes fraîches et le vin local ; nous avons écrit un guide complet pour [passer une journée dans l'Oltrarno](/fr/blog/things-to-do-in-oltrarno-florence/).
 
 **Les institutions.** Quelques noms sur lesquels chaque Florentin débattra mais où tout le monde finit par aller : **Trattoria Mario** près du Mercato Centrale (déjeuner seulement, tables partagées, espèces; allez-y tôt), **Trattoria Sostanza** (minuscule, historique, réservez à l'avance), et autour de Santo Spirito, **Osteria Santo Spirito** et les cuisines de Borgo San Jacopo. Les horaires et les politiques de réservation changent; vérifiez avant de traverser la ville.
+
+## De bonnes pâtes faites main à Florence sans se ruiner
+
+Mangez-les à midi, à quelques rues des grands monuments : c'est là que les bonnes pâtes faites à la main coûtent le moins cher à Florence. En 2026, une assiette de pâtes dans une vraie trattoria florentine coûte environ 9–14 €, plus le *coperto* (le couvert facturé par personne pour le pain et la table) d'environ 2–4 €. Une assiette nettement plus chère avec vue sur le Duomo vous fait généralement payer la vue, pas la pâte.
+
+- **Faites des pâtes votre déjeuner.** Beaucoup de trattorias proposent à midi un menu à prix fixe, le *menù fisso*, où un primo, un secondo et un accompagnement coûtent moins cher qu'un seul plat principal le soir. Et une assiette de pâtes avec un verre de vin de la maison est un déjeuner tout à fait normal ici : à une heure, personne n'attend de vous quatre plats.
+- **Restez dans les quartiers ci-dessus.** Sant'Ambrogio et l'Oltrarno, c'est là que se trouvent les cuisines honnêtes, et leurs habitués sont des Florentins en pause déjeuner, ce qui garde aussi les prix honnêtes.
+- **Ou mangez-les debout.** Quelques comptoirs du centre cuisent les pâtes fraîches à la minute et les servent en barquette : un bon déjeuner rapide. Nous en parlons dans [où acheter des pâtes fraîches à Florence](/fr/blog/where-to-buy-fresh-pasta-in-florence/), avec où les acheter pour les cuisiner vous-même si votre location a des plaques.
+
+Quel que soit votre budget, les indices de la carte vus plus haut restent valables. Une carte courte et de saison sur une ardoise bat une longue carte plastifiée, à n'importe quel prix.
 
 ## Trois signes d'un attrape-touristes
 
@@ -88,5 +112,7 @@ Florence est célèbre pour être une ville de viande (la bistecca est sur toute
 ## L'autre option : mangez les pâtes que vous avez préparées
 
 La meilleure assiette de pâtes faites à la main à Florence est honnêtement celle que vous avez vous-même roulée vingt minutes plus tôt; je ne suis pas objectif, mais ce sont nos invités qui le disent, pas nous. Chacun de [nos cours](/fr/cours-de-pates-fraiches-florence/) se termine exactement comme un bon déjeuner de trattoria : vos pâtes, une sauce toscane, un verre de vin local, et nulle part où aller pendant un moment.
+
+Si vous lisez ceci pour le voyage de quelqu'un d'autre, cette table fait aussi un beau cadeau : nos [bons cadeaux pour un cours de cuisine](/fr/offrir-cours-de-cuisine-florence/) valent pour n'importe lequel de nos cours, commencent à 68 €, arrivent par email et laissent la date au choix de la personne qui les reçoit.
 
 Et si vous voulez la liste plus large — les six plats qui appartiennent vraiment à cette ville, et les grands classiques italiens qui viennent d’ailleurs — c’est [que manger à Florence](/fr/blog/what-to-eat-in-florence/). Pour les villes alentour, chacune a un plat que Florence ne fait pas : [excursions depuis Florence](/fr/blog/day-trips-from-florence/).

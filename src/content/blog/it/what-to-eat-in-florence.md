@@ -2,7 +2,7 @@
 title: 'Cosa mangiare a Firenze: la guida di un cuoco toscano'
 description: 'I piatti davvero fiorentini, i formati di pasta che sono toscani sul serio e i grandi classici italiani che arrivano da tutt’altra parte.'
 pubDate: 2026-09-13
-updatedDate: 2026-09-26
+updatedDate: 2026-10-13
 author: 'Endri Cerhozi'
 image: '../../../assets/images/tuscan-antipasto-board-burrata-red-wine.webp'
 imageAlt: 'Piatti di pasta fresca fatta a mano e antipasti toscani su un tavolo di legno a Firenze'
@@ -48,7 +48,9 @@ Sei piatti reggono la città, e in tre giorni si provano tutti.
 
 > Un’abitudine da conoscere: il pane toscano è senza sale. Non è un errore e non è sfortuna vostra. Esiste per essere mangiato con le cose salate — salumi, pecorino, patè di fegatini — e per fare da ossatura alle zuppe qui sopra.
 
-## Qual è la pasta davvero toscana?
+## Per quale pasta è famosa Firenze?
+
+Firenze è famosa per la pasta fresca delle colline toscane che la circondano: pici, pappardelle (soprattutto al cinghiale), tagliatelle e tortelli di patate. Sono questi quattro i formati davvero toscani in un menù fiorentino.
 
 È la parte in cui i visitatori sbagliano più spesso, perché la pasta famosa nel mondo viene quasi tutta dall’Emilia o da Roma.
 

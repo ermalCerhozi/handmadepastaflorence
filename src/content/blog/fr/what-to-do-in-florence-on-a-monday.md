@@ -60,6 +60,8 @@ Concrètement, cela fait du lundi l’un des jours les plus faciles de la semain
 
 Cela règle aussi l’autre problème du lundi, le déjeuner : vous n’avez rien réservé, la moitié de votre liste est fermée, et à treize heures vous êtes sur une place à décider où manger. Cette décision est déjà prise.
 
+Si vous organisez le voyage de quelqu’un d’autre, n’importe lequel de nos cours peut s’offrir en [bon cadeau pour un cours de cuisine](/fr/offrir-cours-de-cuisine-florence/), à partir de 68 €, envoyé par email et sans date fixée, pour que la personne choisisse elle-même son lundi.
+
 ## Choses à faire à Florence un lundi : un itinéraire qui fonctionne
 
 - **Matin :** le complexe du Duomo, la montée à la coupole d’abord, tant que les jambes sont fraîches.

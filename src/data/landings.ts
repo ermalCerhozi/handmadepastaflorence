@@ -249,6 +249,7 @@ export const landings = {
           
             { title: `Gift a Cooking Class`, href: `/gift-a-cooking-class-florence/`, desc: `A voucher instead of another object. Any class, from €68, and they pick the date.` },
             { title: `Pasta Class for Two`, href: `/pasta-class-for-two-florence/`, desc: `The anniversary and wedding present, €95 each.` },
+            { title: `Florence pasta schools compared`, href: `/blog/where-to-take-pasta-making-class-florence/`, desc: `Three Florence pasta schools side by side, ours included, and which one fits your trip.` },
           ],
           ctaLabel: `Book this class`,
           prefill: 'florence',
@@ -371,6 +372,7 @@ export const landings = {
           
             { title: `Regala un Corso di Cucina`, href: `/it/regala-corso-di-cucina-firenze/`, desc: `Un buono invece dell'ennesimo oggetto. Qualsiasi corso, da €68, con la data a scelta.` },
             { title: `Corso di Pasta per Due`, href: `/it/corso-pasta-per-due-firenze/`, desc: `Il regalo da anniversario e da matrimonio, €95 a testa.` },
+            { title: `Le scuole di pasta di Firenze a confronto`, href: `/it/blog/where-to-take-pasta-making-class-florence/`, desc: `Tre scuole di pasta di Firenze a confronto, la nostra compresa, e quale fa per il tuo viaggio.` },
           ],
           ctaLabel: `Prenota questo corso`,
           prefill: 'florence',
@@ -492,6 +494,7 @@ export const landings = {
           
             { title: `Offrir un Cours de Cuisine`, href: `/fr/offrir-cours-de-cuisine-florence/`, desc: `Un bon plutôt qu'un objet de plus. Tous les cours, dès 68 €, la date au choix.` },
             { title: `Cours de Pâtes pour Deux`, href: `/fr/cours-de-pates-pour-deux-florence/`, desc: `Le cadeau d'anniversaire de mariage, 95 € par personne.` },
+            { title: `Les écoles de pâtes de Florence comparées`, href: `/fr/blog/where-to-take-pasta-making-class-florence/`, desc: `Trois écoles de pâtes de Florence comparées, la nôtre comprise, et laquelle convient à votre voyage.` },
           ],
           ctaLabel: `Réserver ce cours`,
           prefill: 'florence',
@@ -618,6 +621,7 @@ export const landings = {
           
             { title: `Kochkurs verschenken`, href: `/de/kochkurs-verschenken-florenz/`, desc: `Ein Gutschein statt noch eines Gegenstands. Jeder Kurs, ab 68 €, Datum frei wählbar.` },
             { title: `Pasta-Kurs für Zwei`, href: `/de/pasta-kurs-fuer-zwei-florenz/`, desc: `Das Geschenk zum Jahrestag und zur Hochzeit, 95 € pro Person.` },
+            { title: `Florentiner Kochschulen im Vergleich`, href: `/de/blog/where-to-take-pasta-making-class-florence/`, desc: `Drei Pasta-Kochschulen in Florenz im Vergleich, unsere eingeschlossen, und welche zu Ihrer Reise passt.` },
           ],
           ctaLabel: `Diesen Kurs buchen`,
           prefill: 'florence',
@@ -739,6 +743,7 @@ export const landings = {
           
             { title: `赠送烹饪课程`, href: `/zh/pengren-kecheng-liquan-foluolunsa/`, desc: `与其再送一件物品，不如送一张礼券。任意课程，68 欧元起，日期自选。` },
             { title: `双人意面课程`, href: `/zh/shuangren-yidali-mian-kecheng-foluolunsa/`, desc: `纪念日与婚礼礼物，每人€95。` },
+            { title: `佛罗伦萨意面课程对比`, href: `/zh/blog/where-to-take-pasta-making-class-florence/`, desc: `佛罗伦萨三家意面课程并排对比（包括我们自己），看看哪一家适合您的行程。` },
           ],
           ctaLabel: `预订此课程`,
           prefill: 'florence',
@@ -844,6 +849,7 @@ export const landings = {
             { title: `The Chef’s Table`, href: `/pasta-making-class-florence/`, desc: `Our signature 3-hour pasta class: fettuccine, ravioli and tiramisù, one long table. €95.` },
             { title: `The Family Long-Table`, href: `/private-cooking-class-florence/`, desc: `The whole kitchen, privately yours. Birthdays, proposals, reunions, from €680.` },
             { title: `Live Online Class`, href: `/online-pasta-making-class/`, desc: `Cook with us from anywhere, live from this same kitchen, from €68.` },
+            { title: `Florence food markets: Sant’Ambrogio vs Mercato Centrale`, href: `/blog/florence-food-markets-sant-ambrogio-mercato-centrale/`, desc: `Which one Florentines actually shop at, when to go, and what to buy in season.` },
             { title: `Where to eat handmade pasta in Florence`, href: `/blog/where-to-eat-handmade-pasta-in-florence/`, desc: `A pasta chef’s guide to ordering well in the city.` },
             { title: `Team Building Class`, href: `/team-building-cooking-class-florence/`, desc: `The private kitchen for companies: aprons on, laptops away.` },
           
@@ -944,6 +950,7 @@ export const landings = {
             { title: `Il Tavolo dello Chef`, href: `/it/corso-pasta-fresca-firenze/`, desc: `Il nostro corso di pasta di 3 ore: fettuccine, ravioli e tiramisù. €95.` },
             { title: `Il Lungo Tavolo di Famiglia`, href: `/it/corso-cucina-privato-firenze/`, desc: `L'intera cucina, privata per voi. Compleanni, proposte, ritrovi, da €680.` },
             { title: `Corso in Diretta Online`, href: `/it/corso-pasta-online/`, desc: `Cucina con noi da ovunque, in diretta da questa stessa cucina, da €68.` },
+            { title: `Mercati di Firenze: Sant'Ambrogio o Mercato Centrale?`, href: `/it/blog/florence-food-markets-sant-ambrogio-mercato-centrale/`, desc: `Dove fanno la spesa i fiorentini, quando andare e cosa comprare di stagione.` },
             { title: `Corso per Team Building`, href: `/it/corso-cucina-team-building-firenze/`, desc: `La cucina privata per le aziende: grembiuli indossati, laptop via.` },
           
             { title: `Corso di Cucina in Agriturismo`, href: `/it/corso-cucina-agriturismo-toscana/`, desc: `Gruppi da 6 a 20 nella cucina di un agriturismo in attività, sulle colline fuori Firenze.` },
@@ -1043,6 +1050,7 @@ export const landings = {
             { title: `La Table du Chef`, href: `/fr/cours-de-pates-fraiches-florence/`, desc: `Notre cours de pâtes signature de 3 heures : fettuccine, ravioli et tiramisù. 95 €.` },
             { title: `La Longue Table Familiale`, href: `/fr/cours-cuisine-prive-florence/`, desc: `Toute la cuisine, pour vous en privé. Anniversaires, demandes en mariage, réunions, à partir de 680 €.` },
             { title: `Cours en Direct en Ligne`, href: `/fr/cours-pates-en-ligne/`, desc: `Cuisinez avec nous d'où vous voulez, en direct de cette même cuisine, à partir de 68 €.` },
+            { title: `Marchés de Florence : Sant'Ambrogio ou Mercato Centrale ?`, href: `/fr/blog/florence-food-markets-sant-ambrogio-mercato-centrale/`, desc: `Où les Florentins font leurs courses, quand y aller et quoi acheter selon la saison.` },
             { title: `Cours Team Building`, href: `/fr/cours-cuisine-team-building-florence/`, desc: `La cuisine privée pour les entreprises: on met les tabliers, on range les ordinateurs.` },
           
             { title: `Cours de Cuisine en Agritourisme`, href: `/fr/cours-cuisine-agritourisme-toscane/`, desc: `Groupes de 6 à 20 dans la cuisine d'une ferme en activité, dans les collines autour de Florence.` },
@@ -1142,6 +1150,7 @@ export const landings = {
             { title: `Der Tisch des Küchenchefs`, href: `/de/pasta-kurs-florenz/`, desc: `Unser 3-stündiger Signature-Pasta-Kurs: Fettuccine, Ravioli und Tiramisù. 95 €.` },
             { title: `Die lange Familientafel`, href: `/de/privater-kochkurs-florenz/`, desc: `Die ganze Küche, ganz privat für Sie. Geburtstage, Heiratsanträge, Treffen, ab 680 €.` },
             { title: `Live-Online-Kurs`, href: `/de/online-pasta-kurs/`, desc: `Kochen Sie mit uns von überall aus, live aus derselben Küche, ab 68 €.` },
+            { title: `Märkte in Florenz: Sant'Ambrogio oder Mercato Centrale?`, href: `/de/blog/florence-food-markets-sant-ambrogio-mercato-centrale/`, desc: `Wo die Florentiner einkaufen, wann man hingeht und was es gerade saisonal gibt.` },
             { title: `Teambuilding-Kurs`, href: `/de/teambuilding-kochkurs-florenz/`, desc: `Die private Küche für Unternehmen: Schürzen an, Laptops weg.` },
           
             { title: `Agriturismo-Kochkurs`, href: `/de/agriturismo-kochkurs-toskana/`, desc: `Gruppen von 6 bis 20 in der Küche eines aktiven Agriturismo in den Hügeln vor Florenz.` },
@@ -1241,6 +1250,7 @@ export const landings = {
             { title: `主厨餐桌`, href: `/zh/foluolunsa-yidali-mian-kecheng/`, desc: `我们招牌的3小时意面课程：宽面、意式饺子和提拉米苏。95欧元。` },
             { title: `家庭长桌体验`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `为您私人包场的整个厨房。生日、求婚、聚会，680欧元起。` },
             { title: `在线直播课程`, href: `/zh/zaixian-yidali-mian-kecheng/`, desc: `无论在哪里，都可以与我们一起在同一个厨房进行在线烹饪，68欧元起。` },
+            { title: `佛罗伦萨美食市场：圣安布罗焦还是中央市场？`, href: `/zh/blog/florence-food-markets-sant-ambrogio-mercato-centrale/`, desc: `本地人在哪里买菜、什么时候去、当季该买什么。` },
             { title: `团队建设课程`, href: `/zh/tuandui-jianshe-pengren-kecheng-foluolunsa/`, desc: `为企业提供的私人厨房，穿上围裙，收起电脑。` },
           
             { title: `农庄烹饪课程`, href: `/zh/tuosikana-nongzhuang-pengren-kecheng/`, desc: `6 至 20 人，在佛罗伦萨郊外山间一座仍在运作的托斯卡纳农庄厨房里。` },
@@ -1354,6 +1364,7 @@ export const landings = {
             { title: `Pasta Class for Two`, href: `/pasta-class-for-two-florence/`, desc: `The anniversary and wedding present, €95 each.` },
           
             { title: `Agriturismo Cooking Class`, href: `/agriturismo-cooking-class-tuscany/`, desc: `Groups of 6–20 in a working farm kitchen in the hills outside Florence.` },
+            { title: `Florence pasta schools compared`, href: `/blog/where-to-take-pasta-making-class-florence/`, desc: `How the bigger Florence cooking schools compare with our small kitchen, side by side.` },
           ],
           ctaLabel: `Plan your evening`,
           prefill: 'florence',
@@ -1455,6 +1466,7 @@ export const landings = {
             { title: `Corso di Pasta per Due`, href: `/it/corso-pasta-per-due-firenze/`, desc: `Il regalo da anniversario e da matrimonio, €95 a testa.` },
           
             { title: `Corso di Cucina in Agriturismo`, href: `/it/corso-cucina-agriturismo-toscana/`, desc: `Gruppi da 6 a 20 nella cucina di un agriturismo in attività, sulle colline fuori Firenze.` },
+            { title: `Le scuole di pasta di Firenze a confronto`, href: `/it/blog/where-to-take-pasta-making-class-florence/`, desc: `Come si confrontano le scuole di cucina più grandi di Firenze con la nostra piccola cucina.` },
           ],
           ctaLabel: `Pianifica la tua serata`,
           prefill: 'florence',
@@ -1556,6 +1568,7 @@ export const landings = {
             { title: `Cours de Pâtes pour Deux`, href: `/fr/cours-de-pates-pour-deux-florence/`, desc: `Le cadeau d'anniversaire de mariage, 95 € par personne.` },
           
             { title: `Cours de Cuisine en Agritourisme`, href: `/fr/cours-cuisine-agritourisme-toscane/`, desc: `Groupes de 6 à 20 dans la cuisine d'une ferme en activité, dans les collines autour de Florence.` },
+            { title: `Les écoles de pâtes de Florence comparées`, href: `/fr/blog/where-to-take-pasta-making-class-florence/`, desc: `Comment les grandes écoles de cuisine de Florence se comparent à notre petite cuisine.` },
           ],
           ctaLabel: `Planifier votre soirée`,
           prefill: 'florence',
@@ -1657,6 +1670,7 @@ export const landings = {
             { title: `Pasta-Kurs für Zwei`, href: `/de/pasta-kurs-fuer-zwei-florenz/`, desc: `Das Geschenk zum Jahrestag und zur Hochzeit, 95 € pro Person.` },
           
             { title: `Agriturismo-Kochkurs`, href: `/de/agriturismo-kochkurs-toskana/`, desc: `Gruppen von 6 bis 20 in der Küche eines aktiven Agriturismo in den Hügeln vor Florenz.` },
+            { title: `Florentiner Kochschulen im Vergleich`, href: `/de/blog/where-to-take-pasta-making-class-florence/`, desc: `Wie sich die größeren Kochschulen in Florenz mit unserer kleinen Küche vergleichen.` },
           ],
           ctaLabel: `Planen Sie Ihren Abend`,
           prefill: 'florence',
@@ -1758,6 +1772,7 @@ export const landings = {
             { title: `双人意面课程`, href: `/zh/shuangren-yidali-mian-kecheng-foluolunsa/`, desc: `纪念日与婚礼礼物，每人€95。` },
           
             { title: `农庄烹饪课程`, href: `/zh/tuosikana-nongzhuang-pengren-kecheng/`, desc: `6 至 20 人，在佛罗伦萨郊外山间一座仍在运作的托斯卡纳农庄厨房里。` },
+            { title: `佛罗伦萨意面课程对比`, href: `/zh/blog/where-to-take-pasta-making-class-florence/`, desc: `佛罗伦萨规模更大的烹饪学校与我们的小厨房并排对比。` },
           ],
           ctaLabel: `规划您的夜晚`,
           prefill: 'florence',
@@ -4311,6 +4326,10 @@ export const landings = {
   // TODO (owner decision): voucher validity period, whether it is transferable,
   // and the delivery format. The copy deliberately promises none of these — fill
   // them in here once decided, then this page can carry them as a selling point.
+  //
+  // SEASONAL (2026-10-13): every locale's description, first section and first
+  // FAQ carry a Christmas angle for the holiday gift push. Copy only, no facts
+  // changed, so `updated` stays put. Revisit in January along with GiftBand.astro.
   gift: {
     // 2026-09-26: menu aligned to what every guest gets (fettuccine, ravioli,
     // tiramisù; one glass of wine + limoncello or coffee), replacing 'four shapes,
@@ -4321,7 +4340,7 @@ export const landings = {
       en: {
         slug: 'gift-a-cooking-class-florence',
         title: `Gift a Cooking Class in Florence: Vouchers from €68`,
-        description: `Gift vouchers from €68. A hands-on pasta class in our Oltrarno kitchen from €95, or a live online class with an ingredient kit. No date locked in.`,
+        description: `Christmas gift vouchers from €68: a hands-on pasta class in Florence from €95, or a live online class with an ingredient kit. No date locked in.`,
         cl: {
           eyebrow: `Gift vouchers · Florence & online`,
           heading: `Gift a cooking class`,
@@ -4371,6 +4390,13 @@ export const landings = {
           },
           sections: [
             {
+              title: `A Christmas present they will actually use`,
+              paras: [
+                `Most presents get unwrapped, admired and put away in a cupboard by New Year. A class goes the other way: nothing to store, just time with their hands in the flour, on a day they choose for themselves, at our table in Florence or live online from their own kitchen.`,
+                `The voucher comes by email, ready to print for under the tree or to forward on the day. Nothing is booked when you buy, so they open it at Christmas and pick a slot once they know their plans. Vouchers start from €68 and work for any class: a hands-on class in our Florence kitchen from €95, or the live online class with an ingredient kit shipped to their door.`,
+              ],
+            },
+            {
               title: `What are you actually giving?`,
               paras: [
                 `Three hours in a small Oltrarno kitchen with two Tuscan agriturismo head chefs, hands in the flour from the first minute, fettuccine and ravioli made by hand, their own tiramisù, and a sit-down meal of everything they made with a glass of Chianti. Never more than eight people at the table.`,
@@ -4396,6 +4422,7 @@ export const landings = {
             },
           ],
           faqs: [
+            { q: `Can I give it as a Christmas present?`, a: `Yes. The voucher comes by email, usually the same day, ready to print or forward, and nothing is booked when you buy: they open it at Christmas and choose a date that suits them later. Vouchers start from €68 and work for any class, in our Florence kitchen or live online.` },
             { q: `How do I buy a gift voucher?`, a: `Email ciao@handmadepastaflorence.com with who it is for, the class you have in mind and any message. We confirm the amount, arrange payment and send the voucher by email, usually the same day and within one working day at the latest.` },
             { q: `Does the recipient have to pick a date now?`, a: `No. Nothing is booked when you buy. They get in touch when they know their plans and choose a slot that works for them.` },
             { q: `How long is the voucher valid?`, a: `We agree that with you when you buy rather than imposing a fixed window; tell us the situation. We would much rather they came at the right time than lost it to a deadline.` },
@@ -4420,7 +4447,7 @@ export const landings = {
       it: {
         slug: 'regala-corso-di-cucina-firenze',
         title: `Regala un Corso di Cucina a Firenze: Buoni Regalo da €68`,
-        description: `Buoni regalo da €68. Un corso pratico nella nostra cucina in Oltrarno da €95, o un corso online in diretta con kit ingredienti. Nessuna data fissata.`,
+        description: `Buoni regalo di Natale da €68: un corso pratico nella nostra cucina in Oltrarno da €95, o online in diretta con kit ingredienti. Nessuna data fissata.`,
         cl: {
           eyebrow: `Buoni regalo · Firenze e online`,
           heading: `Regala un corso di cucina`,
@@ -4470,6 +4497,13 @@ export const landings = {
             },
           sections: [
             {
+              title: `Un regalo di Natale che useranno davvero`,
+              paras: [
+                `La maggior parte dei regali si scarta, si ammira ed entro Capodanno è già in un armadio. Un corso fa il contrario: niente da conservare, solo del tempo con le mani in farina, nel giorno che scelgono loro, al nostro tavolo a Firenze o in diretta online dalla loro cucina.`,
+                `Il buono arriva via email, pronto da stampare e mettere sotto l'albero o da inoltrare il giorno stesso. Al momento dell'acquisto non si prenota nulla: lo aprono a Natale e scelgono l'orario quando hanno chiari i loro programmi. I buoni partono da €68 e valgono per qualsiasi corso: un corso pratico nella nostra cucina a Firenze da €95, o il corso in diretta online con un kit di ingredienti spedito a casa loro.`,
+              ],
+            },
+            {
               title: `Cosa stai regalando davvero?`,
               paras: [
                 `Tre ore in una piccola cucina in Oltrarno con due capi chef toscani di agriturismo, le mani in farina dal primo minuto, fettuccine e ravioli fatti a mano, il loro tiramisù e un pasto seduti a mangiare tutto quello che hanno preparato, con un bicchiere di Chianti. Mai più di otto persone al tavolo.`,
@@ -4495,6 +4529,7 @@ export const landings = {
             },
           ],
           faqs: [
+            { q: `Posso regalarlo per Natale?`, a: `Sì. Il buono arriva via email, di solito in giornata, pronto da stampare o inoltrare, e al momento dell'acquisto non si prenota nulla: lo aprono a Natale e più avanti scelgono la data che preferiscono. I buoni partono da €68 e valgono per qualsiasi corso, nella nostra cucina a Firenze o in diretta online.` },
             { q: `Come acquisto un buono regalo?`, a: `Scrivi a ciao@handmadepastaflorence.com indicando per chi è, il corso che hai in mente e l'eventuale dedica. Confermiamo l'importo, organizziamo il pagamento e inviamo il buono via email, di solito in giornata e al massimo entro un giorno lavorativo.` },
             { q: `Chi lo riceve deve scegliere subito una data?`, a: `No. Al momento dell'acquisto non si prenota nulla. Ci contatteranno quando avranno chiari i loro programmi e sceglieranno l'orario che preferiscono.` },
             { q: `Quanto vale nel tempo il buono?`, a: `Lo concordiamo con te al momento dell'acquisto invece di imporre una scadenza fissa; raccontaci la situazione. Preferiamo di gran lunga che vengano nel momento giusto piuttosto che perdere il buono per una data.` },
@@ -4519,7 +4554,7 @@ export const landings = {
       fr: {
         slug: 'offrir-cours-de-cuisine-florence',
         title: `Offrir un Cours de Cuisine à Florence : Bons Cadeaux`,
-        description: `Bons cadeaux dès 68 €. Un cours pratique dans notre cuisine de l'Oltrarno dès 95 €, ou un cours en ligne avec kit d'ingrédients. Aucune date fixée.`,
+        description: `Bons cadeaux de Noël dès 68 € : un cours pratique dans notre cuisine de l'Oltrarno dès 95 €, ou en ligne avec kit d'ingrédients. Aucune date fixée.`,
         cl: {
           eyebrow: `Bons cadeaux · Florence et en ligne`,
           heading: `Offrir un cours de cuisine`,
@@ -4569,6 +4604,13 @@ export const landings = {
             },
           sections: [
             {
+              title: `Un cadeau de Noël qu'ils utiliseront vraiment`,
+              paras: [
+                `La plupart des cadeaux sont déballés, admirés puis rangés dans un placard avant le Nouvel An. Un cours fait l'inverse : rien à ranger, juste un moment les mains dans la farine, le jour qu'ils choisissent eux-mêmes, à notre table à Florence ou en direct en ligne depuis leur propre cuisine.`,
+                `Le bon arrive par email, prêt à être imprimé et glissé sous le sapin ou transféré le jour même. Rien n'est réservé à l'achat : ils l'ouvrent à Noël et choisissent un créneau quand leurs plans sont clairs. Les bons commencent dès 68 € et valent pour tous les cours : un cours pratique dans notre cuisine de Florence dès 95 €, ou le cours en direct en ligne avec un kit d'ingrédients livré chez eux.`,
+              ],
+            },
+            {
               title: `Qu'offrez-vous vraiment ?`,
               paras: [
                 `Trois heures dans une petite cuisine de l'Oltrarno avec deux chefs d'agritourismes toscans, les mains dans la farine dès la première minute, des fettuccine et des ravioli faits main, leur propre tiramisù et un repas assis où l'on mange tout ce qu'ils ont préparé, avec un verre de Chianti. Jamais plus de huit personnes à table.`,
@@ -4594,6 +4636,7 @@ export const landings = {
             },
           ],
           faqs: [
+            { q: `Puis-je l'offrir comme cadeau de Noël ?`, a: `Oui. Le bon arrive par email, généralement le jour même, prêt à imprimer ou à transférer, et rien n'est réservé à l'achat : ils l'ouvrent à Noël et choisissent ensuite la date qui leur convient. Les bons commencent dès 68 € et valent pour tous les cours, dans notre cuisine de Florence ou en direct en ligne.` },
             { q: `Comment acheter un bon cadeau ?`, a: `Écrivez à ciao@handmadepastaflorence.com en précisant pour qui c'est, le cours envisagé et votre message. Nous confirmons le montant, organisons le paiement et envoyons le bon par email, généralement le jour même et au plus tard sous un jour ouvré.` },
             { q: `Le destinataire doit-il choisir une date tout de suite ?`, a: `Non. Rien n'est réservé à l'achat. Ils nous contactent quand leurs plans sont clairs et choisissent le créneau qui leur convient.` },
             { q: `Combien de temps le bon reste-t-il valable ?`, a: `Nous en convenons avec vous à l'achat plutôt que d'imposer une échéance fixe; expliquez-nous la situation. Nous préférons de loin qu'ils viennent au bon moment plutôt que de perdre le bon à cause d'une date.` },
@@ -4618,7 +4661,7 @@ export const landings = {
       de: {
         slug: 'kochkurs-verschenken-florenz',
         title: `Kochkurs in Florenz verschenken: Gutscheine ab 68 €`,
-        description: `Gutscheine ab 68 €. Ein Kochkurs in unserer Küche im Oltrarno ab 95 €, oder ein Live-Online-Kurs mit Zutaten-Kit. Kein festes Datum, frei wählbar.`,
+        description: `Gutscheine zu Weihnachten ab 68 €: ein Kochkurs in unserer Küche im Oltrarno ab 95 € oder ein Live-Online-Kurs mit Zutaten-Kit. Kein festes Datum.`,
         cl: {
           eyebrow: `Gutscheine · Florenz und online`,
           heading: `Einen Kochkurs verschenken`,
@@ -4668,6 +4711,13 @@ export const landings = {
             },
           sections: [
             {
+              title: `Ein Weihnachtsgeschenk, das sie wirklich nutzen`,
+              paras: [
+                `Die meisten Geschenke werden ausgepackt, bewundert und landen bis Silvester im Schrank. Ein Kurs macht es umgekehrt: nichts aufzubewahren, nur Zeit mit den Händen im Mehl, an einem Tag, den die Beschenkten selbst wählen, an unserem Tisch in Florenz oder live online aus der eigenen Küche.`,
+                `Der Gutschein kommt per E-Mail, zum Ausdrucken für unter den Baum oder zum Weiterleiten am Weihnachtsmorgen. Beim Kauf wird nichts gebucht: Die Beschenkten packen ihn an Weihnachten aus und wählen einen Termin, sobald ihre Pläne feststehen. Gutscheine gibt es ab 68 €, und sie gelten für jeden Kurs: einen Kochkurs in unserer Küche in Florenz ab 95 € oder den Live-Online-Kurs mit einem Zutaten-Kit an die Tür.`,
+              ],
+            },
+            {
               title: `Was verschenken Sie eigentlich?`,
               paras: [
                 `Drei Stunden in einer kleinen Küche im Oltrarno mit zwei toskanischen Agriturismo-Küchenchefs, ab der ersten Minute die Hände im Mehl, Fettuccine und Ravioli von Hand, das eigene Tiramisù und ein gemeinsames Essen aus allem, was sie gemacht haben, mit einem Glas Chianti. Nie mehr als acht Menschen am Tisch.`,
@@ -4693,6 +4743,7 @@ export const landings = {
             },
           ],
           faqs: [
+            { q: `Kann ich den Kurs zu Weihnachten verschenken?`, a: `Ja. Der Gutschein kommt per E-Mail, meist am selben Tag, zum Ausdrucken oder Weiterleiten, und beim Kauf wird nichts gebucht: Die Beschenkten packen ihn an Weihnachten aus und wählen später einen Termin, der ihnen passt. Gutscheine gibt es ab 68 € für jeden Kurs, in unserer Küche in Florenz oder live online.` },
             { q: `Wie kaufe ich einen Gutschein?`, a: `Schreiben Sie an ciao@handmadepastaflorence.com, für wen er ist, welchen Kurs Sie im Sinn haben und welchen Text Sie möchten. Wir bestätigen den Betrag, regeln die Zahlung und senden den Gutschein per E-Mail, meist am selben Tag und spätestens binnen eines Werktags.` },
             { q: `Müssen die Beschenkten jetzt schon ein Datum wählen?`, a: `Nein. Beim Kauf wird nichts gebucht. Sie melden sich, wenn ihre Pläne feststehen, und wählen einen Termin, der für sie passt.` },
             { q: `Wie lange ist der Gutschein gültig?`, a: `Das vereinbaren wir beim Kauf mit Ihnen, statt eine feste Frist zu setzen; schildern Sie uns die Situation. Uns ist weit lieber, dass sie zum richtigen Zeitpunkt kommen, als dass ein Datum den Gutschein verfallen lässt.` },
@@ -4717,7 +4768,7 @@ export const landings = {
       zh: {
         slug: 'pengren-kecheng-liquan-foluolunsa',
         title: `赠送佛罗伦萨烹饪课程：意面课程礼券 (68欧元起)`,
-        description: `礼券68欧元起。佛罗伦萨的亲手烹饪课程：奥特拉诺厨房95欧元起，或含食材包的在线直播课程。不锁定日期，由收礼人自己选择。`,
+        description: `圣诞礼券68欧元起。佛罗伦萨的亲手烹饪课程：奥特拉诺厨房95欧元起，或含食材包的在线直播课程。不锁定日期，由收礼人自己选择。`,
         cl: {
           eyebrow: `礼券 · 佛罗伦萨与线上`,
           heading: `赠送一堂`,
@@ -4767,6 +4818,13 @@ export const landings = {
           },
           sections: [
             {
+              title: `一份他们真正会用上的圣诞礼物`,
+              paras: [
+                `大多数礼物拆开、赞叹一番，不到新年就被收进了柜子。一堂课恰恰相反：不需要任何收纳空间，只有一段双手沾满面粉的时光，日子由他们自己挑选，可以在我们佛罗伦萨的餐桌旁，也可以在自家厨房在线直播参加。`,
+                `礼券通过邮件发送，您可以打印出来放在圣诞树下，也可以在当天直接转发。购买时不预订任何内容：他们在圣诞节拆开礼券，等行程确定后再挑选时段。礼券68欧元起，适用于任何课程：在我们佛罗伦萨厨房的亲手烹饪课程95欧元起，或将食材包寄到他们家门口的在线直播课程。`,
+              ],
+            },
+            {
               title: `您真正赠送的是什么？`,
               paras: [
                 `在奥特拉诺的一间小厨房里与两位托斯卡纳农庄主厨共度三小时，从第一分钟起双手就在面粉里，亲手做宽面和意式饺子、自己的提拉米苏，以及一顿坐下来享用自己成果的餐食，配一杯基安蒂。餐桌人数从不超过八位。`,
@@ -4792,6 +4850,7 @@ export const landings = {
             },
           ],
           faqs: [
+            { q: `可以把它当作圣诞礼物送出吗？`, a: `可以。礼券通过邮件发送，通常当天送达，可以打印或转发；购买时不会预订任何内容，他们在圣诞节拆开礼券，之后再挑选适合自己的日期。礼券68欧元起，适用于任何课程，无论是在我们佛罗伦萨的厨房还是在线直播。` },
             { q: `我该如何购买礼券？`, a: `发送邮件至 ciao@handmadepastaflorence.com，说明受赠人是谁、您考虑的课程以及留言内容。我们会确认金额、安排付款，并通过邮件发送礼券，通常当天送达，最迟不超过一个工作日。` },
             { q: `收礼人现在就必须选好日期吗？`, a: `不必。购买时不会预订任何内容。他们会在行程确定后与我们联系，挑选适合自己的时段。` },
             { q: `礼券的有效期是多久？`, a: `我们会在您购买时与您约定，而不是设定一个固定期限，请告诉我们具体情况。比起因为一个截止日期而作废，我们更希望他们在合适的时机前来。` },

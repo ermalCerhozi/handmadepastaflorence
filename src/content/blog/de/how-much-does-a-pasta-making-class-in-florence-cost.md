@@ -51,6 +51,8 @@ Damit Sie die oben genannten Spannen mit einem echten Angebot abgleichen können
 - **[The Family Long-Table](/de/privater-kochkurs-florenz/)**: die gesamte Küche privat, 6–14 Gäste: **ab 680 € pro Gruppe**.
 - **[Live-Online-Kurs](/de/online-pasta-kurs/)**: gestreamt aus unserer Küche in Florenz, optionales gekühltes Zutaten-Kit zu Ihnen nach Hause geliefert: **ab 68 € pro Person**.
 
+Wenn Sie lieber Schulen als Preisspannen vergleichen, haben wir die bekanntesten Kurse in Florenz, unseren eingeschlossen, in [unserem Vergleich der Pasta-Kochkurse in Florenz](/de/blog/where-to-take-pasta-making-class-florence/) nebeneinandergestellt.
+
 ## Fünf Fragen, die Sie vor der Buchung eines Kurses stellen sollten (auch bei unserem)
 
 1. **Was ist die maximale Gruppengröße?** Diese einzige Zahl sagt mehr über Ihr Erlebnis aus als alles andere. Über 12 Personen schauen Sie mehr zu, als dass Sie kochen.

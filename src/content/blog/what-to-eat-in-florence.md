@@ -2,7 +2,7 @@
 title: 'What to Eat in Florence: a Tuscan Cook''s Guide'
 description: 'The dishes that are genuinely Florentine, the pasta shapes that are Tuscan, and the famous Italian plates that come from somewhere else entirely.'
 pubDate: 2026-09-13
-updatedDate: 2026-09-26
+updatedDate: 2026-10-13
 author: 'Endri Cerhozi'
 image: '../../assets/images/tuscan-antipasto-board-burrata-red-wine.webp'
 imageAlt: 'Plates of fresh handmade pasta and Tuscan antipasti on a wooden table in Florence'
@@ -48,7 +48,9 @@ Six plates carry the city, and you can eat all of them in three days.
 
 > One habit worth knowing: Tuscan bread has no salt in it. This is not a mistake and it is not you being unlucky. It exists to be eaten with salty things — salumi, pecorino, liver pâté — and to be the backbone of the soups above.
 
-## What pasta is actually Tuscan?
+## What pasta is Florence known for?
+
+Florence is known for the fresh pasta of the Tuscan hills around it: pici, pappardelle (above all with wild boar), tagliatelle and potato-filled tortelli. Those four are what is actually Tuscan on a Florentine menu.
 
 This is the part visitors get wrong most often, because the pasta that is famous internationally is mostly from Emilia or Rome.
 

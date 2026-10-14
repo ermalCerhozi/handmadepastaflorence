@@ -2,7 +2,7 @@
 title: 'La migliore pasta fatta a mano a Firenze: guida di un cuoco'
 description: 'Un cuoco di Firenze: dove mangiare vera pasta fatta a mano, la verità sulla pasta surgelata nelle cucine affollate, e cosa ordinare.'
 pubDate: 2026-07-08
-updatedDate: 2026-09-05
+updatedDate: 2026-10-13
 author: 'Endri Cerhozi'
 image: '../../../assets/images/tuscan-antipasto-board-burrata-red-wine.webp'
 imageAlt: 'Piatti di pasta fresca serviti su un tavolo toscano'
@@ -73,6 +73,20 @@ Firenze è notoriamente una città di carne (la bistecca prende le cartoline), m
 
 Se vuoi sapere cosa stai guardando prima di ordinare, ognuno di quei link apre il formato nella nostra [libreria dei formati](/it/formati-di-pasta-toscana/): cos'è, quanto è largo il taglio e per quale sugo è nato.
 
+## Dove trovare i migliori ravioli di Firenze (e i ravioli pere e pecorino)
+
+I migliori ravioli di Firenze stanno nelle stesse piccole trattorie della pasta migliore in generale, intorno a Sant'Ambrogio e in Oltrarno, ovunque il menu ti dica cosa c'è dentro e il ripieno cambi con la stagione. Ed è proprio sui ravioli che la questione della pasta surgelata pesa di più, perché riempirli e chiuderli uno a uno è il lavoro più lento di qualsiasi cucina di pasta fresca.
+
+Cosa guardo quando arriva il piatto:
+
+- **Il bordo.** Un raviolo chiuso a mano ha un bordo sottile e un po' irregolare, dove qualcuno ha spinto fuori l'aria. Una fila di quadrati smerlati tutti identici di solito esce da una macchina.
+- **Un ripieno con un nome.** Ricotta e spinaci, patate alla maniera del Mugello o quello che offre la stagione, scritto sul menu. «Ravioli della casa» e basta non ti dice niente.
+- **Un condimento leggero.** Burro e salvia, o un cucchiaio di pomodoro. Nei ravioli conta il ripieno, e un sugo pesante lo nasconde.
+
+**I ravioli pere e pecorino** sono quelli che in tanti vengono a cercare, e poggiano su un abbinamento toscano antico, tanto che c'è perfino un proverbio: *al contadino non far sapere quanto è buono il formaggio con le pere*. Sul menu non sempre si chiamano ravioli: cerca anche *fagottini* o *fiocchi* di pecorino e pere, e leggi il ripieno più che il formato. Il ripieno è dolce e sapido insieme, quindi le versioni migliori tengono semplice il condimento. Quando li ordino io, voglio sentire la pera.
+
+Se preferisci chiuderli con le tue mani, i ravioli burro e salvia sono una delle due paste che ogni ospite prepara al [Tavolo dello Chef](/it/corso-pasta-fresca-firenze/).
+
 ## Dove cercare, quartiere per quartiere
 
 **Sant'Ambrogio.** Il mercato dove i fiorentini fanno la spesa (portiamo il nostro [corso con mercato](/it/corso-cucina-tour-mercato-firenze/) proprio lì) nutre le trattorie nei dintorni. Qualsiasi posto entro due strade dal mercato che sia pieno di italiani alle 13:00 è una scommessa sicura.
@@ -80,6 +94,16 @@ Se vuoi sapere cosa stai guardando prima di ordinare, ognuno di quei link apre i
 **L'Oltrarno.** La nostra parte del fiume (Santo Spirito e San Frediano) ha ancora la più alta densità di cucine oneste nel centro. Le osterie sulla piazza intorno a Santo Spirito sono affidabili per la pasta fresca e il vino locale; abbiamo scritto un'intera guida su [come trascorrere una giornata in Oltrarno](/it/blog/things-to-do-in-oltrarno-florence/).
 
 **Le istituzioni.** Alcuni nomi su cui ogni fiorentino discuterà ma dove tutti finiscono: **Trattoria Mario** vicino al Mercato Centrale (solo a pranzo, tavoli condivisi, contanti; andate presto), **Trattoria Sostanza** (minuscola, storica, prenotate in anticipo), e intorno a Santo Spirito, **Osteria Santo Spirito** e le cucine di Borgo San Jacopo. Gli orari e le politiche di prenotazione cambiano; controlla prima di attraversare la città.
+
+## Pasta fatta a mano buona a Firenze, spendendo poco
+
+Mangiala a pranzo, qualche strada più in là rispetto ai monumenti: è lì che la buona pasta fatta a mano a Firenze costa meno. Nel 2026 un piatto di pasta in una vera trattoria fiorentina costa più o meno €9–€14, più il *coperto* (la quota a persona per pane e tavola) di circa €2–€4. Un piatto che costa parecchio di più in vista del Duomo di solito ti fa pagare il panorama, non la sfoglia.
+
+- **Fai della pasta il tuo pranzo.** Molte trattorie a pranzo hanno un menù a prezzo fisso, in cui primo, secondo e contorno costano meno di un solo secondo a cena. E un piatto di pasta con un bicchiere di vino della casa è un pranzo normalissimo: all'una nessuno si aspetta quattro portate.
+- **Resta nei quartieri qui sopra.** Sant'Ambrogio e l'Oltrarno sono dove stanno le cucine oneste, e chi le frequenta sono fiorentini in pausa pranzo, il che tiene onesti anche i prezzi.
+- **Oppure mangiala in piedi.** In centro c'è qualche banco che cuoce la pasta fresca al momento e te la serve in una vaschetta: un buon pranzo veloce. Ne parliamo in [dove comprare la pasta fresca a Firenze](/it/blog/where-to-buy-fresh-pasta-in-florence/), insieme a dove comprarla da cucinare tu, se il tuo appartamento ha i fornelli.
+
+Qualunque cifra tu spenda, i segnali del menu visti sopra valgono sempre. Un menu corto e di stagione scritto sulla lavagna batte uno lungo e plastificato a qualsiasi prezzo.
 
 ## Tre segnali da trappola per turisti
 
@@ -90,5 +114,7 @@ Se vuoi sapere cosa stai guardando prima di ordinare, ognuno di quei link apre i
 ## L'altra opzione: mangia la pasta che hai preparato
 
 Il miglior piatto di pasta fresca a Firenze è onestamente quello che hai steso tu stesso venti minuti prima; sono di parte, ma i nostri ospiti lo dicono, non noi. Ognuno dei [nostri corsi](/it/corso-pasta-fresca-firenze/) finisce esattamente come un buon pranzo in trattoria: la tua pasta, un sugo toscano, un bicchiere di vino locale, e nessun posto dove dover correre.
+
+Se stai leggendo per il viaggio di qualcun altro, quel tavolo è anche un bel regalo: i nostri [buoni regalo per un corso di cucina](/it/regala-corso-di-cucina-firenze/) valgono per qualsiasi nostro corso, partono da €68, arrivano via email e la data la sceglie chi li riceve.
 
 E se volete la lista più larga — i sei piatti che appartengono davvero a questa città e i grandi classici italiani che vengono da altrove — è [cosa mangiare a Firenze](/it/blog/what-to-eat-in-florence/). Per le città intorno, ognuna ha un piatto che Firenze non fa: [gite da Firenze](/it/blog/day-trips-from-florence/).

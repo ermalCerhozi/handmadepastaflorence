@@ -60,6 +60,8 @@ Praktisch macht das den Montag zu einem der einfachsten Tage der Woche, um einen
 
 Es löst auch das andere Montagsproblem, nämlich das Mittagessen: Sie haben nichts reserviert, die halbe Liste ist geschlossen, und um eins stehen Sie auf einem Platz und überlegen, wo Sie essen sollen. Diese Entscheidung ist bereits getroffen.
 
+Wenn Sie die Reise für jemand anderen planen, lässt sich jeder unserer Kurse als [Kochkurs-Gutschein](/de/kochkurs-verschenken-florenz/) verschenken, ab 68 €, per E-Mail verschickt und ohne festes Datum, sodass sich die beschenkte Person ihren Montag selbst aussucht.
+
 ## Was man montags in Florenz unternehmen kann: ein Tagesablauf
 
 - **Vormittag:** der Dom-Komplex, zuerst der Kuppelaufstieg, solange die Beine frisch sind.

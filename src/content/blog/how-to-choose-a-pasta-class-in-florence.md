@@ -2,7 +2,7 @@
 title: 'How to choose a pasta class in Florence: 7 questions'
 description: 'Florence has hundreds of pasta classes and the listings look identical. Seven questions that predict whether you’ll enjoy it, starting with group size.'
 pubDate: 2026-08-11
-updatedDate: 2026-09-26
+updatedDate: 2026-10-13
 author: 'Endri Cerhozi'
 image: '../../assets/images/fresh-pasta-station-rolling-pin-flour.webp'
 imageAlt: 'A small group making fresh pasta by hand at a table in Florence'
@@ -107,6 +107,30 @@ Work out the real total before comparing, because the headline number is rarely 
 - VAT: normally included in Italy, but confirm it
 
 Then compare like with like. A €95 class including wine, a full meal and no surcharges is cheaper in practice than a €110 class that adds €18 for wine and charges for the gluten-free option.
+
+## How long does a cooking class in Florence last?
+
+Most cooking classes in Florence last two to three hours, and the ones that start with a market visit run to four or five. Three hours is enough to make a dough, shape it and sit down to eat it without anyone rushing you out of the door.
+
+The more useful question is what fills those hours. Ask how much of the time you spend with your hands in the flour, and whether the meal at the end is a proper sit-down lunch or dinner. A three-hour class that ends at the table replaces a meal you would otherwise pay for, which matters when you compare prices.
+
+*Ours: [The Chef's Table](/pasta-making-class-florence/) takes about three hours and ends at the table. [Mercato & Mani](/market-tour-cooking-class-florence/) starts with the Sant'Ambrogio market and runs about five hours, with six guests at most.*
+
+## What will you actually cook?
+
+In most Florence classes you cook fresh pasta by hand, usually a ribbon shape and a filled one, and many add a dessert such as tiramisù. The larger schools stretch that into a broader four-course menu with bigger groups, which suits some trips better.
+
+Ask whether you make the dough yourself, from flour and eggs, because that is the part you will want to repeat at home. And look for a listing that names the shapes: "fettuccine and ravioli" tells you what your afternoon is, "traditional Italian pasta" does not.
+
+*Ours: at [The Chef's Table](/pasta-making-class-florence/) every guest makes their own dough, turns it into fettuccine and ravioli, makes their own tiramisù and eats all of it with a glass of wine included in the €95. On [Mercato & Mani](/market-tour-cooking-class-florence/) the market sets the menu: ravioli, a ragù and a seasonal dolce, €145.*
+
+## Do you need any cooking experience?
+
+No. A pasta class in Florence is aimed at travellers, not cooks, and you can arrive never having made fresh pasta in your life. The dough is more forgiving than it looks, and a crooked first raviolo still tastes like ravioli.
+
+What experience changes is how much help you need, which brings it back to the first question: group size. At a table of eight, a beginner gets a chef at the exact moment the dough tears. At a table of twelve, they wait their turn and mostly watch.
+
+*Ours: everything is taught from zero (dough, rolling, shaping), there are never more than eight guests, and most of the people at our table have never made fresh pasta before.*
 
 ## The short version
 

@@ -63,6 +63,8 @@ Es löst auch das Sonntagsproblem einer Stadt, die mittags halb geschlossen ist:
 
 Mit Kindern unterwegs? Der [Familien-Kochkurs](/de/familien-kochkurs-florenz/) findet auch sonntags statt, ab sechs Jahren.
 
+Und wenn das Sonntagsessen ein Geschenk sein soll: Ein [Kochkurs-Gutschein](/de/kochkurs-verschenken-florenz/) gilt für jeden unserer Kurse, beginnt bei 68 €, kommt per E-Mail und überlässt den Termin der beschenkten Person.
+
 ## Florenz am Sonntag: ein Tagesplan, der funktioniert
 
 - **Vormittag:** die Uffizien oder die Accademia zur Öffnung (außer an einem freien ersten Sonntag; dann tauschen Sie mit dem Nachmittag).

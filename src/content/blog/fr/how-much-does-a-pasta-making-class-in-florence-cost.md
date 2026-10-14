@@ -51,6 +51,8 @@ Afin que vous puissiez calibrer les fourchettes ci-dessus par rapport à un vrai
 - **[La Grande Table Familiale](/fr/cours-cuisine-prive-florence/)**: toute la cuisine en privé, 6 à 14 convives : **à partir de 680 € par groupe**.
 - **[Cours en Ligne en Direct](/fr/cours-pates-en-ligne/)**: diffusé depuis notre cuisine à Florence, kit d'ingrédients frais optionnel expédié chez vous : **à partir de 68 € par personne**.
 
+Si vous préférez comparer des écoles plutôt que des fourchettes de prix, nous avons mis côte à côte les cours les plus connus de Florence, le nôtre compris, dans [où suivre un cours de pâtes à Florence](/fr/blog/where-to-take-pasta-making-class-florence/).
+
 ## Cinq questions à poser avant de réserver un cours (y compris le nôtre)
 
 1. **Quelle est la taille maximale du groupe ?** Ce seul chiffre prédit votre expérience mieux que n'importe quel autre. Au-delà de 12, vous regardez plus que vous ne cuisinez.

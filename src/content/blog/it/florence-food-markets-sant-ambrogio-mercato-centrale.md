@@ -66,8 +66,8 @@ In autunno, la stagione migliore per un mercato fiorentino: porcini freschi, cas
 
 Da portare a casa: pecorino stagionato, porcini secchi, olio buono e pasta secca trafilata al bronzo viaggiano bene. Su cosa vale la pena mangiare mentre sei qui, leggi [cosa mangiare a Firenze](/it/blog/what-to-eat-in-florence/).
 
-## Fai la spesa con uno chef, poi cucinala
+## Mercato Centrale o Sant'Ambrogio: quale mercato per un corso di cucina?
 
-Il mercato è più divertente con qualcuno che ti dice di quale banco fidarti e cosa fare con quello che hai comprato. È tutta l'idea del nostro [tour del mercato con corso di cucina](/it/corso-cucina-tour-mercato-firenze/), Mercato & Mani: giri Sant'Ambrogio con Endri o Marsel, scegli quello che è più bello quella mattina, poi porti la spesa nella nostra cucina in Oltrarno, la trasformi in ravioli freschi, un ragù lento e un dolce di stagione, e ci si siede a mangiare insieme. Circa cinque ore, massimo sei persone, 145 €.
+Sant'Ambrogio, se vuoi fare la spesa dove la fanno i cuochi fiorentini, ed è da lì che parte il nostro [tour del mercato con corso di cucina a Firenze](/it/corso-cucina-tour-mercato-firenze/), Mercato & Mani. Il Mercato Centrale è il nome più conosciuto, ma per una mattina passata a scegliere cosa cucinare vince il mercato più piccolo, per tutti i motivi visti sopra. E il mercato è più divertente con qualcuno che ti dice di quale banco fidarti e cosa fare con quello che hai comprato: giri Sant'Ambrogio con Endri o Marsel, scegli quello che è più bello quella mattina, poi porti la spesa nella nostra cucina in Oltrarno, la trasformi in ravioli freschi, un ragù lento e un dolce di stagione, e ci si siede a mangiare insieme. Circa cinque ore, massimo sei persone, 145 €.
 
 Poco tempo? Il [corso di pasta](/it/corso-pasta-fresca-firenze/) di tre ore salta il mercato e va dritto alla farina.

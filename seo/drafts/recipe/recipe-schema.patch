@@ -1,0 +1,189 @@
+diff --git a/src/content.config.ts b/src/content.config.ts
+index 800605a..bf7e731 100644
+--- a/src/content.config.ts
++++ b/src/content.config.ts
+@@ -1,6 +1,11 @@
+ import { defineCollection, z } from 'astro:content';
+ import { glob } from 'astro/loaders';
+ 
++// Day/time ISO 8601 duration (P1D, PT40M, PT1H10M). Not the full grammar:
++// recipes never need years or months, and a typo like "40 min" should fail
++// the build rather than ship invalid Recipe markup.
++const ISO_DURATION = /^P(?=\d|T\d)(\d+D)?(T(?=\d)(\d+H)?(\d+M)?(\d+S)?)?$/;
++
+ // Guides & stories — long-tail informational content that builds topical
+ // authority and links down to the class landing pages.
+ const blog = defineCollection({
+@@ -37,6 +42,31 @@ const blog = defineCollection({
+      * Slugs that do not exist in the reader's locale are dropped silently.
+      */
+     related: z.array(z.string()).optional(),
++    /**
++     * Optional structured recipe, emitted as schema.org Recipe JSON-LD next to
++     * the Article block (see BlogPostPage.astro). Only for posts whose subject
++     * IS a recipe; a guide that merely mentions a dish must not carry one.
++     *
++     * WHY: the German pasta-dough queries ("pastateig rezept original
++     * italienisch", "nudelteig selber machen"; ~30 queries, pos ~11 in the
++     * 12 Jul-12 Oct 2026 GSC export) are recipe intent, and Google only shows
++     * recipe rich results for pages with Recipe markup. Kept in frontmatter,
++     * not parsed out of the body, so the markup cannot drift from what the
++     * owner confirmed. The visible "Ingredients" / "Method" copy still lives in
++     * the markdown body: Google wants the marked-up recipe visible on the page.
++     */
++    recipe: z
++      .object({
++        yield: z.string(),
++        // ISO 8601 durations (PT40M, PT1H10M), as schema.org prepTime/totalTime require.
++        prepTime: z.string().regex(ISO_DURATION, 'prepTime must be an ISO 8601 duration, e.g. PT40M'),
++        totalTime: z.string().regex(ISO_DURATION, 'totalTime must be an ISO 8601 duration, e.g. PT1H10M'),
++        ingredients: z.array(z.string()).min(1),
++        steps: z.array(z.string()).min(1),
++        cuisine: z.string().optional(),
++        category: z.string().optional(),
++      })
++      .optional(),
+   }),
+ });
+ 
+diff --git a/src/page-templates/BlogPostPage.astro b/src/page-templates/BlogPostPage.astro
+index 399395e..cf12b4c 100644
+--- a/src/page-templates/BlogPostPage.astro
++++ b/src/page-templates/BlogPostPage.astro
+@@ -10,7 +10,7 @@ import { defaultLocale, languages } from '../i18n/config';
+ import { useTranslations } from '../i18n/ui';
+ import { getCollection } from 'astro:content';
+ import { landings, landingPath, type LandingKey } from '../data/landings';
+-import { breadcrumbSchema, faqSchema } from '../utils/schema';
++import { breadcrumbSchema, faqSchema, recipeSchema } from '../utils/schema';
+ import { blogPostAlternates, blogLocale, blogSlug, blogPostPath } from '../utils/blog-locales';
+ import { formatDate } from '../utils/format-date';
+ 
+@@ -85,21 +85,25 @@ const relatedPosts = (post.data.related ?? [])
+ // point at a URL we never built.
+ const alternates: Alternate[] = await blogPostAlternates(post.id);
+ 
++// Shared by Article and Recipe so the two blocks name the same Person.
++const authorLd = {
++  '@type': 'Person',
++  name: post.data.author,
++  jobTitle: 'Head Chef',
++  sameAs: 'https://endricerhozi.com',
++};
++const imageUrl = `${SITE}${post.data.image.src}`;
++
+ const articleSchema = {
+   '@context': 'https://schema.org',
+   '@type': 'Article',
+   headline: post.data.title,
+   description: post.data.description,
+-  image: `${SITE}${post.data.image.src}`,
++  image: imageUrl,
+   datePublished: post.data.pubDate.toISOString(),
+   dateModified: (post.data.updatedDate ?? post.data.pubDate).toISOString(),
+   inLanguage: languages[lang].htmlLang,
+-  author: {
+-    '@type': 'Person',
+-    name: post.data.author,
+-    jobTitle: 'Head Chef',
+-    sameAs: 'https://endricerhozi.com',
+-  },
++  author: authorLd,
+   publisher: { '@id': publisherId },
+   mainEntityOfPage: canonical,
+ };
+@@ -112,6 +116,20 @@ const breadcrumbLd = breadcrumbSchema([
+ 
+ const faqs = post.data.faqs ?? [];
+ const faqLd = faqs.length ? faqSchema(faqs) : null;
++
++// Only posts with a `recipe` block in frontmatter (see content.config.ts) emit
++// Recipe markup; it sits alongside the Article, not instead of it.
++const recipe = post.data.recipe;
++const recipeLd = recipe
++  ? recipeSchema({
++      name: post.data.title,
++      description: post.data.description,
++      image: imageUrl,
++      author: authorLd,
++      datePublished: post.data.pubDate.toISOString(),
++      ...recipe,
++    })
++  : null;
+ ---
+ 
+ {/* No " | Handmade Pasta Florence" suffix: it is 26 characters that Google cut
+@@ -208,6 +226,7 @@ const faqLd = faqs.length ? faqSchema(faqs) : null;
+       <script is:inline type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+       <script is:inline type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+       {faqLd && <script is:inline type="application/ld+json" set:html={JSON.stringify(faqLd)} />}
++      {recipeLd && <script is:inline type="application/ld+json" set:html={JSON.stringify(recipeLd)} />}
+     </article>
+   </main>
+   <Footer />
+diff --git a/src/utils/schema.ts b/src/utils/schema.ts
+index a5f3156..b5578f2 100644
+--- a/src/utils/schema.ts
++++ b/src/utils/schema.ts
+@@ -1,11 +1,11 @@
+ // Shared JSON-LD builders.
+ //
+-// These two shapes were hand-written in five (FAQPage) and five
++// FAQPage and BreadcrumbList were hand-written in five (FAQPage) and five
+ // (BreadcrumbList) places, all identical bar the input data. Keeping them here
+ // means a change to the markup shape lands on every page at once, and a page
+-// can't quietly drift from the others.
++// can't quietly drift from the others. Recipe lives here for the same reason.
+ //
+-// Both return standalone documents (they carry `@context`), because this site
++// All of them return standalone documents (they carry `@context`), because this site
+ // emits one <script type="application/ld+json"> per node rather than a single
+ // sitewide @graph.
+ 
+@@ -32,6 +32,46 @@ export function faqSchema(faqs: readonly Faq[]) {
+   };
+ }
+ 
++interface RecipeInput {
++  name: string;
++  description: string;
++  /** Absolute URL. */
++  image: string;
++  author: object;
++  datePublished: string;
++  yield: string;
++  prepTime: string;
++  totalTime: string;
++  ingredients: readonly string[];
++  steps: readonly string[];
++  cuisine?: string;
++  category?: string;
++}
++
++/**
++ * Recipe document. Steps become HowToStep items inside recipeInstructions,
++ * which is what Google's Recipe docs ask for; a standalone HowTo block would
++ * duplicate the same steps as a second, competing entity.
++ */
++export function recipeSchema(r: RecipeInput) {
++  return {
++    '@context': 'https://schema.org',
++    '@type': 'Recipe',
++    name: r.name,
++    description: r.description,
++    image: r.image,
++    author: r.author,
++    datePublished: r.datePublished,
++    recipeYield: r.yield,
++    prepTime: r.prepTime,
++    totalTime: r.totalTime,
++    recipeIngredient: r.ingredients,
++    recipeInstructions: r.steps.map((text) => ({ '@type': 'HowToStep', text })),
++    recipeCuisine: r.cuisine ?? 'Italian',
++    ...(r.category ? { recipeCategory: r.category } : {}),
++  };
++}
++
+ /** BreadcrumbList document. `position` is derived from trail order, so it can't skew. */
+ export function breadcrumbSchema(trail: readonly Crumb[]) {
+   return {

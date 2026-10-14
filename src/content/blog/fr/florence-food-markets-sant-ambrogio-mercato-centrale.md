@@ -66,8 +66,8 @@ C'est le marché des cuisiniers, et ça se voit : les prix sont plus bas qu'au M
 
 À rapporter : pecorino affiné, cèpes séchés, bonne huile d'olive et pâtes sèches tréfilées au bronze voyagent bien. Pour ce qui vaut la peine d'être mangé sur place, lisez [que manger à Florence](/fr/blog/what-to-eat-in-florence/).
 
-## Faire le marché avec un chef, puis cuisiner
+## Mercato Centrale ou Sant'Ambrogio : quel marché pour un cours de cuisine ?
 
-Un marché est plus amusant avec quelqu'un qui vous dit à quel étal faire confiance et quoi faire de vos achats. C'est toute l'idée de notre [visite du marché avec cours de cuisine](/fr/cours-cuisine-visite-marche-florence/), Mercato & Mani : vous parcourez Sant'Ambrogio avec Endri ou Marsel, choisissez ce qui est le plus beau ce matin-là, puis rapportez le panier dans notre cuisine de l'Oltrarno pour en faire des ravioli frais, un ragù mijoté et un dessert de saison, avant de vous attabler ensemble. Environ cinq heures, six personnes maximum, 145 €.
+Sant'Ambrogio, si vous voulez faire vos courses là où les font les cuisiniers florentins, et c'est de là que part notre [visite du marché avec cours de cuisine à Florence](/fr/cours-cuisine-visite-marche-florence/), Mercato & Mani. Le Mercato Centrale est le nom le plus connu, mais pour une matinée passée à choisir quoi cuisiner, le plus petit des deux l'emporte, pour toutes les raisons vues plus haut. Et un marché est plus amusant avec quelqu'un qui vous dit à quel étal faire confiance et quoi faire de vos achats : vous parcourez Sant'Ambrogio avec Endri ou Marsel, choisissez ce qui est le plus beau ce matin-là, puis rapportez le panier dans notre cuisine de l'Oltrarno pour en faire des ravioli frais, un ragù mijoté et un dessert de saison, avant de vous attabler ensemble. Environ cinq heures, six personnes maximum, 145 €.
 
 Peu de temps ? Le [cours de pâtes](/fr/cours-de-pates-fraiches-florence/) de trois heures saute le marché et passe directement à la farine.

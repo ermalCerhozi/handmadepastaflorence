@@ -2,7 +2,7 @@
 title: 'Toskanische Pasta: Pici, Pappardelle & Tortelli erklärt'
 description: 'Ein Guide zu den klassischen frischen Nudelsorten der Toskana: woher jede Form kommt, wie sie gemacht wird und für welche Soße sie gedacht ist.'
 pubDate: 2026-07-08
-updatedDate: 2026-09-26
+updatedDate: 2026-10-13
 author: 'Endri Cerhozi'
 image: '../../../assets/images/handmade-pici-pasta.webp'
 imageAlt: 'Handgerollte Pici, die dicken toskanischen Pastastränge, mit Mehl bestäubt'
@@ -19,7 +19,9 @@ faqs:
     a: 'Pici sind runde, dicke, handgerollte Stränge, die nur aus Mehl und Wasser bestehen, ohne Ei; Pappardelle sind flache, breite Bandnudeln, die aus einem reichhaltigen Eierteig geschnitten werden. Pici fassen knoblauchlastige Tomaten- oder Semmelbröselsoßen, während Pappardelle für langsam gekochte Wildragùs gemacht sind.'
 ---
 
-Fragen Sie, für welche Pasta Florenz berühmt ist, und Sie erhalten eine überraschende Antwort: Streng genommen ist die Stadt selbst für Rindfleisch und Kutteln berühmter als für Pasta. Aber machen Sie einen Schritt in die Hügel drumherum (wo unsere beiden Agriturismi liegen), und Sie befinden sich in einer der großen Landschaften frischer Pasta Italiens. Das sind die Formen, die wir unterrichten, essen und über die wir diskutieren.
+**Florenz und die Toskana sind für Pici, Pappardelle und Tortelli di patate bekannt:** handgerollte Pici aus den Hügeln um Siena, breite Pappardelle unter einem Wildschweinragù und die kartoffelgefüllten Tortelli aus dem Mugello. Tagliatelle und Ricotta-Spinat-Ravioli ergänzen den Alltagstisch.
+
+Das Überraschende daran: Streng genommen ist die Stadt selbst für Rindfleisch und Kutteln berühmter als für Pasta. Aber machen Sie einen Schritt in die Hügel drumherum (wo unsere beiden Agriturismi liegen), und Sie befinden sich in einer der großen Landschaften frischer Pasta Italiens. Das sind die Formen, die wir unterrichten, essen und über die wir diskutieren.
 
 **Die klassischen toskanischen Pastaformen sind:**
 

@@ -2,7 +2,7 @@
 title: 'Tuscan pasta shapes: pici, pappardelle, tortelli & more'
 description: 'A chef’s guide to Tuscany’s classic fresh pasta types: where each shape comes from, how it’s made by hand, and the sauce it was born to carry.'
 pubDate: 2026-07-08
-updatedDate: 2026-09-26
+updatedDate: 2026-10-13
 author: 'Endri Cerhozi'
 image: '../../assets/images/handmade-pici-pasta.webp'
 imageAlt: 'Hand-rolled pici, the thick Tuscan pasta ropes, dusted with flour'
@@ -19,7 +19,9 @@ faqs:
     a: 'Pici are round, thick, hand-rolled ropes made from just flour and water, with no egg; pappardelle are flat, wide ribbons cut from a rich egg dough. Pici grip garlicky tomato or breadcrumb sauces, while pappardelle are built for slow-cooked game ragùs.'
 ---
 
-Ask what pasta Florence is famous for and you'll get a surprising answer: strictly speaking, the city itself is more famous for beef and tripe than for pasta. But step into the hills around it (where our two agriturismi are), and you're in one of Italy's great fresh-pasta landscapes. These are the shapes we teach, eat and argue about.
+**Florence and Tuscany are known for pici, pappardelle and tortelli di patate:** hand-rolled pici from the Siena hills, wide pappardelle under a wild boar ragù, and the potato-filled tortelli of the Mugello. Tagliatelle and ricotta-and-spinach ravioli fill out the everyday table.
+
+The surprising part: strictly speaking, the city itself is more famous for beef and tripe than for pasta. But step into the hills around it (where our two agriturismi are), and you're in one of Italy's great fresh-pasta landscapes. These are the shapes we teach, eat and argue about.
 
 **The classic Tuscan pasta shapes are:**
 

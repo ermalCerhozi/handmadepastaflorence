@@ -2,7 +2,7 @@
 title: 'Pasta tipica toscana: pici, pappardelle, tortelli e altri'
 description: 'La guida di uno chef ai piatti di pasta tipici della Toscana: da dove proviene ogni formato, come è fatto a mano, e il sugo nato per accompagnarlo.'
 pubDate: 2026-07-08
-updatedDate: 2026-09-26
+updatedDate: 2026-10-13
 author: 'Endri Cerhozi'
 image: '../../../assets/images/handmade-pici-pasta.webp'
 imageAlt: 'Pici fatti a mano, i grossi spaghettoni toscani, spolverati di farina'
@@ -19,7 +19,9 @@ faqs:
     a: 'I pici sono spaghettoni tondi e spessi tirati a mano con sola acqua e farina, senza uovo; le pappardelle sono nastri piatti e larghi tagliati da una ricca sfoglia all''uovo. I pici trattengono i sughi all''aglione o con le briciole, mentre le pappardelle sono nate per i ragù di selvaggina a lenta cottura.'
 ---
 
-Chiedi per quale pasta Firenze è famosa e otterrai una risposta sorprendente: a rigor di logica, la città stessa è più famosa per il manzo e la trippa che per la pasta. Ma fai un passo nelle colline circostanti (dove si trovano i nostri due agriturismi), e ti ritroverai in uno dei grandi paesaggi italiani della pasta fresca. Questi sono i formati che insegniamo, mangiamo e su cui discutiamo.
+**Firenze e la Toscana sono famose per pici, pappardelle e tortelli di patate:** i pici tirati a mano delle colline senesi, le pappardelle larghe sotto il ragù di cinghiale e i tortelli ripieni di patate del Mugello. Tagliatelle e ravioli ricotta e spinaci completano la tavola di tutti i giorni.
+
+La sorpresa è un'altra: a rigor di logica, la città stessa è più famosa per il manzo e la trippa che per la pasta. Ma fai un passo nelle colline circostanti (dove si trovano i nostri due agriturismi), e ti ritroverai in uno dei grandi paesaggi italiani della pasta fresca. Questi sono i formati che insegniamo, mangiamo e su cui discutiamo.
 
 **I formati di pasta tipici della Toscana sono:**
 

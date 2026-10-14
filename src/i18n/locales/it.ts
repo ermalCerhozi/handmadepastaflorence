@@ -156,6 +156,14 @@ const it: Dict = {
     ],
   },
 
+  giftBand: {
+    eyebrow: `Buoni regalo di Natale`,
+    titlePre: `Questo Natale, regala `,
+    titleItal: `un corso di pasta.`,
+    desc: `I buoni partono da €68, arrivano via email e valgono per qualsiasi corso (nella nostra cucina a Firenze da €95, o in diretta online con un kit di ingredienti), senza nessuna data fissata.`,
+    cta: `Scopri i buoni regalo`,
+  },
+
   gallery: {
     eyebrow: `Un formato per ogni storia`,
     titlePre: `Incontra la `,

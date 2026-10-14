@@ -60,6 +60,8 @@ In pratica, questo rende il lunedì uno dei giorni più facili della settimana p
 
 Risolve anche l’altro problema del lunedì, cioè il pranzo: non avete prenotato niente, metà della lista è chiusa e alle una siete in piazza a decidere dove mangiare. Quella decisione è già presa.
 
+Se state organizzando il viaggio per qualcun altro, qualsiasi nostro corso si può regalare con un [buono regalo per un corso di cucina](/it/regala-corso-di-cucina-firenze/), da €68, inviato via email e senza una data fissata, così il lunedì se lo sceglie chi lo riceve.
+
 ## Cose da fare a Firenze di lunedì: un itinerario che funziona
 
 - **Mattina:** il complesso del Duomo, prima la salita alla cupola finché avete le gambe fresche.

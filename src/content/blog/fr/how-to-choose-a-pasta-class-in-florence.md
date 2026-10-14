@@ -2,7 +2,7 @@
 title: 'Choisir un cours de pâtes à Florence : 7 questions'
 description: 'Florence compte des centaines de cours de pâtes aux annonces identiques. Sept questions qui prédisent si vous aimerez, à commencer par la taille du groupe.'
 pubDate: 2026-08-11
-updatedDate: 2026-09-26
+updatedDate: 2026-10-13
 author: 'Endri Cerhozi'
 image: '../../../assets/images/fresh-pasta-station-rolling-pin-flour.webp'
 imageAlt: 'Un petit groupe prépare des pâtes fraîches à la main autour d’une table à Florence'
@@ -107,6 +107,30 @@ Calculez le total réel avant de comparer, car le chiffre affiché est rarement 
 - La TVA: normalement incluse en Italie, mais confirmez-le
 
 Comparez ensuite ce qui est comparable. Un cours à 95 € comprenant le vin, un repas complet et aucun supplément revient en pratique moins cher qu’un cours à 110 € qui ajoute 18 € de vin et facture l’option sans gluten.
+
+## Combien de temps dure un cours de cuisine à Florence ?
+
+La plupart des cours de cuisine à Florence durent de deux à trois heures, et ceux qui commencent par une visite du marché vont jusqu’à quatre ou cinq heures. Trois heures suffisent pour faire une pâte, la façonner et s’asseoir pour la manger sans que personne ne vous pousse vers la sortie.
+
+La question la plus utile, c’est ce que contiennent ces heures. Demandez combien de temps vous passez vraiment les mains dans la farine, et si le repas final est un vrai déjeuner, ou un vrai dîner, assis à table. Un cours de trois heures qui se termine à table remplace un repas que vous auriez payé ailleurs, et cela compte au moment de comparer les prix.
+
+*Chez nous : [La Table du Chef](/fr/cours-de-pates-fraiches-florence/) dure environ trois heures et se termine à table. [Mercato & Mani](/fr/cours-cuisine-visite-marche-florence/) commence au marché de Sant’Ambrogio et dure environ cinq heures, six personnes maximum.*
+
+## Que va-t-on vraiment cuisiner ?
+
+Dans la plupart des cours florentins, on fait des pâtes fraîches à la main, en général une pâte en rubans et une pâte farcie, et beaucoup ajoutent un dessert comme le tiramisù. Les grandes écoles élargissent le tout à un menu de quatre plats, avec des groupes plus nombreux, ce qui convient très bien à certains voyages.
+
+Demandez si vous faites la pâte vous-même, à partir de farine et d’œufs : c’est la partie que vous voudrez refaire chez vous. Et fiez-vous davantage à une annonce qui nomme les formes : « fettuccine et ravioli » vous dit à quoi ressemblera votre après-midi, « pâtes italiennes traditionnelles » ne vous dit rien.
+
+*Chez nous : à [La Table du Chef](/fr/cours-de-pates-fraiches-florence/), chaque convive fait sa propre pâte, en tire des fettuccine et des ravioli, prépare son propre tiramisù et mange le tout avec un verre de vin compris dans les 95 €. Avec [Mercato & Mani](/fr/cours-cuisine-visite-marche-florence/), c’est le marché qui fait le menu : des ravioli, un ragù et un dessert de saison, 145 €.*
+
+## Faut-il avoir de l’expérience en cuisine ?
+
+Non. Un cours de pâtes à Florence s’adresse aux voyageurs, pas aux cuisiniers, et vous pouvez arriver sans avoir jamais fait de pâtes fraîches de votre vie. La pâte pardonne plus qu’elle n’en a l’air, et un premier raviolo de travers reste un raviolo.
+
+Ce que l’expérience change, c’est l’aide dont vous aurez besoin, et l’on revient à la première question : la taille du groupe. À une table de huit, le débutant a un chef à ses côtés au moment précis où la pâte se déchire. À une table de douze, il attend son tour et regarde surtout.
+
+*Chez nous : tout est enseigné de zéro (la pâte, l’étalage, le façonnage), jamais plus de huit personnes à table, et la plupart de nos convives n’avaient jamais fait de pâtes fraîches avant de venir.*
 
 ## En résumé
 

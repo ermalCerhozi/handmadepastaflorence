@@ -63,6 +63,8 @@ It also solves the Sunday problem of a city half-closed for lunch: the one meal 
 
 Travelling with children? The [family class](/family-cooking-class-florence/) runs on Sundays too, from age six.
 
+And if the Sunday lunch is meant as a present, a [cooking class gift voucher](/gift-a-cooking-class-florence/) works for any of our classes, starts at €68, arrives by email and leaves the date to them.
+
 ## Things to do in Florence on a Sunday: an itinerary that works
 
 - **Morning:** the Uffizi or the Accademia at opening time (unless it is a free first Sunday, in which case swap this with the afternoon).

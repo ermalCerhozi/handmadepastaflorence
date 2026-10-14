@@ -148,10 +148,18 @@ const de = {
     book: 'Dies buchen',
     more: 'Alle Details',
     cards: [
-      { tag: 'Signature', name: 'Der Chef’s Table', desc: 'Drei Stunden, eine lange Tafel. Fettuccine schneiden, Ravioli falten, eigenes Tiramisù machen, und sich dann setzen, um alles, was Sie gemacht haben, mit einem Glas Chianti zu essen.', price: '95 €', meta: '3 Std. · max. 8 Gäste · Oltrarno', alt: 'Der Chef’s Table, praktischer Pasta-Kurs in unserer Küche in Florenz' },
+      { tag: 'Signature', name: 'Pasta-Kurs: Der Chef’s Table', desc: 'Drei Stunden, eine lange Tafel. Fettuccine schneiden, Ravioli falten, eigenes Tiramisù machen, und sich dann setzen, um alles, was Sie gemacht haben, mit einem Glas Chianti zu essen.', price: '95 €', meta: '3 Std. · max. 8 Gäste · Oltrarno', alt: 'Der Chef’s Table, praktischer Pasta-Kurs in unserer Küche in Florenz' },
       { tag: 'Markt + Kochen', name: 'Mercato & Mani', desc: 'Kaufen Sie im Morgengrauen mit Endri oder Marsel auf dem Sant’Ambrogio-Markt ein und verwandeln Sie den Korb dann zurück in der Küche in Ravioli, ein Ragù und ein saisonales Dolce.', price: '145 €', meta: '5 Std. · max. 6 Gäste · Marktspaziergang', alt: 'Mercato & Mani, Markttour und Pasta-Kurs in Florenz' },
       { tag: 'Privat', name: 'The Family Long-Table', desc: "Buchen Sie die ganze Küche für Geburtstage, Heiratsanträge, Treffen. Das Fest am langen Tisch, das wir jahrelang in unseren Agriturismi gekocht haben, jetzt im Herzen von Florenz.", price: 'ab 680 €', meta: 'flexibel · 6–14 Gäste · abends', alt: 'The Family Long-Table, privates Gruppen-Pasta-Erlebnis in Florenz' },
     ],
+  },
+
+  giftBand: {
+    eyebrow: 'Gutscheine zu Weihnachten',
+    titlePre: 'Verschenken Sie zu Weihnachten ',
+    titleItal: 'einen Kochkurs.',
+    desc: 'Unsere Gutscheine gibt es ab 68 €, sie kommen per E-Mail und gelten für jeden Kurs (in unserer Küche in Florenz ab 95 € oder live online mit Zutaten-Kit), ganz ohne festes Datum.',
+    cta: 'Zu den Gutscheinen',
   },
 
   gallery: {

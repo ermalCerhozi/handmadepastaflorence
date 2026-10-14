@@ -63,6 +63,8 @@ Risolve anche il problema della domenica, con mezza città chiusa per pranzo: l'
 
 Viaggi con bambini? Il [corso per famiglie](/it/corso-cucina-famiglia-firenze/) si tiene anche la domenica, dai sei anni in su.
 
+E se il pranzo della domenica vuoi regalarlo, un [buono regalo per un corso di cucina](/it/regala-corso-di-cucina-firenze/) vale per qualsiasi nostro corso, parte da €68, arriva via email e lascia la data a chi lo riceve.
+
 ## Cosa fare a Firenze la domenica: un itinerario che funziona
 
 - **Mattina:** gli Uffizi o l'Accademia all'apertura (a meno che non sia una prima domenica gratuita: in quel caso scambiali con il pomeriggio).

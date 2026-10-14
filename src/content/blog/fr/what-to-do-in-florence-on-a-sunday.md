@@ -63,6 +63,8 @@ Cela règle aussi le problème du dimanche, avec une ville à moitié fermée po
 
 En voyage avec des enfants ? Le [cours en famille](/fr/cours-cuisine-famille-florence/) a lieu aussi le dimanche, dès six ans.
 
+Et si ce déjeuner du dimanche doit être un cadeau, un [bon cadeau pour un cours de cuisine](/fr/offrir-cours-de-cuisine-florence/) vaut pour n'importe lequel de nos cours, commence à 68 €, arrive par email et laisse la date au choix de la personne qui le reçoit.
+
 ## Que faire à Florence le dimanche : un programme qui marche
 
 - **Matin :** les Offices ou l'Accademia à l'ouverture (sauf un premier dimanche gratuit : dans ce cas, inversez avec l'après-midi).

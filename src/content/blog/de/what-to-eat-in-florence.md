@@ -2,7 +2,7 @@
 title: 'Essen in Florenz: der Guide eines toskanischen Kochs'
 description: 'Welche Gerichte wirklich florentinisch sind, welche Pastaformen toskanisch sind und welche berühmten italienischen Klassiker von ganz woanders kommen.'
 pubDate: 2026-09-13
-updatedDate: 2026-09-26
+updatedDate: 2026-10-13
 author: 'Endri Cerhozi'
 image: '../../../assets/images/tuscan-antipasto-board-burrata-red-wine.webp'
 imageAlt: 'Teller mit frischer handgemachter Pasta und toskanischen Antipasti auf einem Holztisch in Florenz'
@@ -48,7 +48,9 @@ Sechs Teller tragen die Stadt, und Sie schaffen sie alle in drei Tagen.
 
 > Eine Gewohnheit, die man kennen sollte: Toskanisches Brot enthält kein Salz. Das ist kein Fehler und kein Pech. Es existiert, um mit salzigen Dingen gegessen zu werden — Salumi, Pecorino, Leberpastete — und um das Rückgrat der oben genannten Suppen zu sein.
 
-## Welche Pasta ist eigentlich toskanisch?
+## Für welche Pasta ist Florenz bekannt?
+
+Florenz ist für die frische Pasta aus den toskanischen Hügeln ringsum bekannt: Pici, Pappardelle (vor allem mit Wildschwein), Tagliatelle und Tortelli mit Kartoffelfüllung. Diese vier sind auf einer florentinischen Speisekarte das, was wirklich toskanisch ist.
 
 Das ist der Teil, bei dem Besucher am häufigsten danebenliegen, denn die international berühmten Pastagerichte kommen meist aus der Emilia oder aus Rom.
 

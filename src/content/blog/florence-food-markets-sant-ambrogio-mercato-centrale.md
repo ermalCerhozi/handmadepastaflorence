@@ -66,8 +66,8 @@ In autumn, which is the best season to visit a Florence market: fresh porcini, c
 
 For things to carry home: aged pecorino, dried porcini, good olive oil and bronze-cut dried pasta all travel well. More on what is worth eating while you are here in [what to eat in Florence](/blog/what-to-eat-in-florence/).
 
-## Shop it with a chef, then cook it
+## Mercato Centrale or Sant'Ambrogio: which market for a cooking class?
 
-A market is more fun when someone can tell you which stall to trust and what to do with what you bought. That is the whole idea of our [market tour and cooking class](/market-tour-cooking-class-florence/), Mercato & Mani: you walk Sant'Ambrogio with Endri or Marsel, choose what looks best that morning, then carry the basket back to our Oltrarno kitchen and turn it into fresh ravioli, a slow ragù and a seasonal dolce, and sit down to eat it together. About five hours, max six guests, €145.
+Sant'Ambrogio, if you want to shop where Florence's cooks shop, and that is where our [market tour and cooking class in Florence](/market-tour-cooking-class-florence/), Mercato & Mani, begins. The Mercato Centrale is the better-known name, but for a morning spent choosing what to cook, the smaller market wins for all the reasons above. And a market is more fun when someone can tell you which stall to trust and what to do with what you bought: you walk Sant'Ambrogio with Endri or Marsel, choose what looks best that morning, then carry the basket back to our Oltrarno kitchen and turn it into fresh ravioli, a slow ragù and a seasonal dolce, and sit down to eat it together. About five hours, max six guests, €145.
 
 Short on time? The three-hour [pasta class](/pasta-making-class-florence/) skips the market and goes straight to the flour.

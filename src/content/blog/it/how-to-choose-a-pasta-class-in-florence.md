@@ -2,7 +2,7 @@
 title: 'Come scegliere un corso di pasta a Firenze: 7 domande'
 description: 'Firenze ha centinaia di corsi di pasta e gli annunci sembrano identici. Sette domande che predicono se ti piacerà, a partire dalla dimensione del gruppo.'
 pubDate: 2026-08-11
-updatedDate: 2026-09-26
+updatedDate: 2026-10-13
 author: 'Endri Cerhozi'
 image: '../../../assets/images/fresh-pasta-station-rolling-pin-flour.webp'
 imageAlt: 'Un piccolo gruppo prepara pasta fresca a mano a un tavolo a Firenze'
@@ -107,6 +107,30 @@ Calcola il totale reale prima di confrontare, perché la cifra di richiamo raram
 - L'IVA: normalmente inclusa in Italia, ma conferma
 
 Poi confronta cose confrontabili. Un corso da €95 con vino, pasto completo e nessun supplemento costa meno, in pratica, di un corso da €110 che aggiunge €18 di vino e fa pagare l'opzione senza glutine.
+
+## Quanto dura un corso di cucina a Firenze?
+
+La maggior parte dei corsi di cucina a Firenze dura dalle due alle tre ore, e quelli che cominciano con la visita al mercato arrivano a quattro o cinque. Tre ore bastano per fare l'impasto, dargli forma e sedersi a mangiarlo senza che nessuno ti metta fretta per liberare il tavolo.
+
+La domanda più utile è come vengono riempite quelle ore. Chiedi quanto tempo passi davvero con le mani in pasta e se il pasto finale è un vero pranzo, o una vera cena, seduti a tavola. Un corso di tre ore che finisce a tavola sostituisce un pasto che altrimenti pagheresti a parte, e quando confronti i prezzi questo conta.
+
+*Da noi: [Il Tavolo dello Chef](/it/corso-pasta-fresca-firenze/) dura circa tre ore e finisce a tavola. [Mercato & Mani](/it/corso-cucina-tour-mercato-firenze/) comincia al mercato di Sant'Ambrogio e dura circa cinque ore, con al massimo sei ospiti.*
+
+## Cosa cucinerai davvero?
+
+Nella maggior parte dei corsi fiorentini si fa la pasta fresca a mano, di solito una pasta lunga a nastro e una ripiena, e molti aggiungono un dolce come il tiramisù. Le scuole più grandi allargano il tutto a un menù di quattro portate con gruppi più numerosi, che per certi viaggi è la scelta giusta.
+
+Chiedi se l'impasto lo fai tu, da farina e uova, perché è la parte che vorrai rifare a casa. E fidati di più di un annuncio che nomina i formati: «fettuccine e ravioli» ti dice com'è il tuo pomeriggio, «pasta tradizionale italiana» no.
+
+*Da noi: al [Tavolo dello Chef](/it/corso-pasta-fresca-firenze/) ogni ospite prepara il proprio impasto, ne ricava fettuccine e ravioli, fa il suo tiramisù e mangia tutto con un calice di vino compreso nei €95. Con [Mercato & Mani](/it/corso-cucina-tour-mercato-firenze/) il menù lo decide il mercato: ravioli, un ragù e un dolce di stagione, €145.*
+
+## Serve esperienza in cucina?
+
+No. Un corso di pasta a Firenze è pensato per chi viaggia, non per chi cucina di mestiere, e puoi presentarti senza aver mai fatto la pasta fresca in vita tua. L'impasto perdona più di quanto sembri, e un primo raviolo storto resta pur sempre un raviolo.
+
+Quello che l'esperienza cambia è quanto aiuto ti serve, e si torna alla prima domanda: il numero di partecipanti. A un tavolo da otto, chi è alle prime armi ha uno chef accanto proprio nel momento in cui la sfoglia si strappa. A un tavolo da dodici aspetta il suo turno e soprattutto guarda.
+
+*Da noi: tutto viene insegnato da zero (impasto, stesura, formatura), non ci sono mai più di otto ospiti, e la maggior parte di chi si siede al nostro tavolo non ha mai fatto la pasta fresca prima.*
 
 ## In breve
 

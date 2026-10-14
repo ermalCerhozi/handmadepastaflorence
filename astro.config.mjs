@@ -56,6 +56,12 @@ export default defineConfig({
     '/fr/blog/best-flor-for-italian-fresh-pasta/': '/fr/blog/best-flour-for-italian-fresh-pasta/',
     '/blog/fresh-pasta-vs-dry-pasta-italy/': '/blog/fresh-vs-dry-pasta-italy/',
     '/blog/pasta-secca-vs-pasta-fresca': '/blog/fresh-vs-dry-pasta-italy/',
+    // Two more misspelt URLs, added 2026-10-13. Both are live 404s that drew
+    // impressions in the 12 Jul to 12 Oct Performance export, so they get a 301
+    // under the same rule as the 2026-09-26 batch above. The flour typo is the
+    // English twin of the French one already redirected.
+    '/blog/best-flor-for-italian-fresh-pasta/': '/blog/best-flour-for-italian-fresh-pasta/',
+    '/blog/what-to-do-on-a-sunday-in-florence/': '/blog/what-to-do-in-florence-on-a-sunday/',
   },
   // Keep this list in sync with `languages` in src/i18n/config.ts.
   i18n: {

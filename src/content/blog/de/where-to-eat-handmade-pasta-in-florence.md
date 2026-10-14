@@ -2,7 +2,7 @@
 title: 'Beste handgemachte Pasta in Florenz: ein ehrlicher Guide'
 description: 'Ein Pasta-Koch aus Florenz: wo es echte handgemachte Pasta gibt, die Wahrheit über Tiefkühl-Pasta in vollen Küchen, und was man bestellen sollte.'
 pubDate: 2026-07-08
-updatedDate: 2026-09-05
+updatedDate: 2026-10-13
 author: 'Endri Cerhozi'
 image: '../../../assets/images/tuscan-antipasto-board-burrata-red-wine.webp'
 imageAlt: 'Teller mit frischer, handgemachter Pasta an einem toskanischen Tisch'
@@ -73,6 +73,20 @@ Florenz ist bekanntermaßen eine Fleischstadt (das Bistecca bekommt die Postkart
 
 Wenn Sie vor dem Bestellen wissen wollen, was vor Ihnen liegt: Jeder dieser Links öffnet die Form in unserer [Formen-Bibliothek](/de/pasta-formen/), mit Herkunft, Schnittbreite in Millimetern und der Soße, für die sie gemacht wurde.
 
+## Wo man in Florenz die besten Ravioli findet (und Ravioli mit Birne und Pecorino)
+
+Die besten Ravioli in Florenz gibt es in denselben kleinen Trattorien wie die beste Pasta überhaupt, rund um Sant'Ambrogio und im Oltrarno, überall dort, wo die Speisekarte sagt, was drin ist, und die Füllung mit der Saison wechselt. Bei Ravioli zählt die Frage nach der Tiefkühlpasta von oben auch am meisten, denn sie einzeln zu füllen und zu verschließen ist die langsamste Arbeit in jeder Pastaküche.
+
+Worauf ich achte, wenn der Teller kommt:
+
+- **Der Rand.** Ein von Hand verschlossener Raviolo hat einen dünnen, leicht unregelmäßigen Rand, wo jemand die Luft herausgedrückt hat. Eine Reihe identischer Quadrate mit gewelltem Rand kommt meist aus einer Maschine.
+- **Eine Füllung mit Namen.** Ricotta und Spinat, Kartoffel nach Mugello-Art oder was die Saison bringt, auf der Karte ausgeschrieben. "Ravioli della casa" ohne weitere Angabe sagt Ihnen gar nichts.
+- **Eine leichte Soße.** Butter und Salbei oder ein Löffel Tomate. Bei Ravioli geht es um die Füllung, und eine schwere Soße versteckt sie.
+
+**Ravioli mit Birne und Pecorino** sind die, nach denen viele suchen, und sie beruhen auf einer alten toskanischen Kombination. Es gibt sogar ein Sprichwort dazu: *al contadino non far sapere quanto è buono il formaggio con le pere*, "lass den Bauern nicht wissen, wie gut Käse mit Birnen ist". Auf der Karte heißen sie nicht immer Ravioli, achten Sie also auch auf *fagottini* oder *fiocchi* di pecorino e pere, und lesen Sie eher die Füllung als die Form. Die Füllung ist süß und salzig zugleich, deshalb halten die besten Versionen die Soße schlicht. Wenn ich sie bestelle, will ich die Birne schmecken.
+
+Wenn Sie sie lieber selbst falten: Ravioli mit Butter und Salbei sind eine der beiden Pastasorten, die jeder Gast am [Tisch des Küchenchefs](/de/pasta-kurs-florenz/) macht.
+
 ## Wo man suchen sollte, Viertel für Viertel
 
 **Sant'Ambrogio.** Der Markt, auf dem die Florentiner einkaufen (wir nehmen unseren eigenen [Marktkurs](/de/markt-tour-kochkurs-florenz/) dorthin mit), versorgt die Trattorien drumherum. Überall im Umkreis von zwei Straßen um den Markt, wo es um 13:00 Uhr voller Italiener ist, sind Sie auf der sicheren Seite.
@@ -80,6 +94,16 @@ Wenn Sie vor dem Bestellen wissen wollen, was vor Ihnen liegt: Jeder dieser Link
 **Das Oltrarno.** Unsere Seite des Flusses (Santo Spirito und San Frediano) hat immer noch die höchste Dichte an echten Küchen im Zentrum. Die Osterien auf der Piazza rund um Santo Spirito sind zuverlässig für frische Pasta und lokalen Wein; wir haben einen ganzen Guide darüber geschrieben, wie man [einen Tag im Oltrarno verbringt](/de/blog/things-to-do-in-oltrarno-florence/).
 
 **Die Institutionen.** Ein paar Namen, über die jeder Florentiner streiten wird, bei denen aber am Ende jeder landet: **Trattoria Mario** beim Mercato Centrale (nur Mittagessen, gemeinsame Tische, Barzahlung; gehen Sie früh), **Trattoria Sostanza** (winzig, historisch, im Voraus buchen) und rund um Santo Spirito die **Osteria Santo Spirito** und die Küchen des Borgo San Jacopo. Öffnungszeiten und Buchungsrichtlinien ändern sich; prüfen Sie dies, bevor Sie durch die Stadt fahren.
+
+## Gute handgemachte Pasta in Florenz für wenig Geld
+
+Essen Sie sie mittags, ein paar Straßen abseits der großen Sehenswürdigkeiten: Dort ist gute handgemachte Pasta in Florenz am günstigsten. Stand 2026 kostet ein Teller Pasta in einer echten florentinischen Trattoria etwa 9–14 €, dazu kommt der *coperto* (das Gedeck pro Person für Brot und Tisch) von etwa 2–4 €. Ein Teller, der in Sichtweite des Duomo deutlich mehr kostet, berechnet meist die Aussicht, nicht den Teig.
+
+- **Machen Sie Pasta zu Ihrem Mittagessen.** Viele Trattorien haben mittags ein Festpreismenü, das *menù fisso*, bei dem Primo, Secondo und Beilage zusammen weniger kosten als ein einziger Hauptgang am Abend. Und ein Teller Pasta mit einem Glas Hauswein ist hier ein völlig normales Mittagessen; um eins erwartet niemand vier Gänge.
+- **Bleiben Sie in den Vierteln von oben.** In Sant'Ambrogio und im Oltrarno sind die ehrlichen Küchen, und ihre Stammgäste sind Florentiner in der Mittagspause, was auch die Preise ehrlich hält.
+- **Oder essen Sie im Stehen.** Ein paar Theken im Zentrum kochen frische Pasta auf Bestellung und servieren sie in einer Schachtel, ein gutes schnelles Mittagessen. Mehr dazu in [frische Pasta kaufen in Florenz](/de/blog/where-to-buy-fresh-pasta-in-florence/), dort steht auch, wo Sie sie zum Selberkochen kaufen, falls Ihre Ferienwohnung einen Herd hat.
+
+Egal, wie viel Sie ausgeben: Die Hinweise zur Speisekarte von oben gelten weiter. Eine kurze, saisonale Karte auf der Tafel schlägt eine lange laminierte zu jedem Preis.
 
 ## Drei Anzeichen für Touristenfallen
 
@@ -90,5 +114,7 @@ Wenn Sie vor dem Bestellen wissen wollen, was vor Ihnen liegt: Jeder dieser Link
 ## Die andere Option: Essen Sie die Pasta, die Sie gemacht haben
 
 Der beste Teller handgemachte Pasta in Florenz ist ehrlich gesagt der, den Sie zwanzig Minuten zuvor selbst gerollt haben; ich bin voreingenommen, aber das sagen unsere Gäste, nicht wir. Jeder [unserer Kurse](/de/pasta-kurs-florenz/) endet genau wie ein gutes Trattoria-Mittagessen: Ihre Pasta, eine toskanische Soße, ein Glas lokaler Wein und für eine Weile kein Ort, an dem Sie sein müssten.
+
+Wenn Sie das hier für die Reise von jemand anderem lesen, ist dieser Tisch auch ein schönes Geschenk: Unsere [Kochkurs-Gutscheine](/de/kochkurs-verschenken-florenz/) gelten für jeden unserer Kurse, beginnen bei 68 €, kommen per E-Mail, und den Termin wählt die beschenkte Person selbst.
 
 Und wenn Sie die größere Liste wollen — die sechs Teller, die wirklich zu dieser Stadt gehören, und die berühmten italienischen Gerichte, die von woanders kommen — dann ist das [Essen in Florenz](/de/blog/what-to-eat-in-florence/). Für die Städte ringsum hat jede ein Gericht, das Florenz nicht macht: [Ausflüge ab Florenz](/de/blog/day-trips-from-florence/).

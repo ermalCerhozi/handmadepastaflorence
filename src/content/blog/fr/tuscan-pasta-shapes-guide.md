@@ -2,7 +2,7 @@
 title: 'Pâtes toscanes : pici, pappardelle et tortelli expliqués'
 description: 'Les pâtes fraîches classiques de Toscane : d’où vient chaque forme, comment elle est faite à la main, et la sauce qui l’accompagne.'
 pubDate: 2026-07-08
-updatedDate: 2026-09-26
+updatedDate: 2026-10-13
 author: 'Endri Cerhozi'
 image: '../../../assets/images/handmade-pici-pasta.webp'
 imageAlt: 'Pici roulés à la main, ces épaisses cordes de pâtes toscanes, saupoudrées de farine'
@@ -19,7 +19,9 @@ faqs:
     a: 'Les pici sont des cordes rondes, épaisses, roulées à la main avec seulement de la farine et de l’eau, sans œuf ; les pappardelle sont des rubans plats et larges découpés dans une riche pâte aux œufs. Les pici retiennent les sauces à l’ail, à la tomate ou à la chapelure, tandis que les pappardelle sont faites pour les ragoûts de gibier mijotés.'
 ---
 
-Demandez pour quelles pâtes Florence est célèbre et vous obtiendrez une réponse surprenante : à proprement parler, la ville elle-même est plus célèbre pour le bœuf et les tripes que pour les pâtes. Mais faites un pas dans les collines qui l'entourent (là où se trouvent nos deux agritourismes), et vous vous retrouvez dans l'un des grands paysages de pâtes fraîches d'Italie. Ce sont les formes que nous enseignons, que nous mangeons et sur lesquelles nous débattons.
+**Florence et la Toscane sont connues pour les pici, les pappardelle et les tortelli di patate :** les pici roulés à la main des collines de Sienne, les larges pappardelle sous un ragù de sanglier et les tortelli farcis à la pomme de terre du Mugello. Les tagliatelle et les raviolis ricotta-épinards complètent la table de tous les jours.
+
+Ce qui surprend : à proprement parler, la ville elle-même est plus célèbre pour le bœuf et les tripes que pour les pâtes. Mais faites un pas dans les collines qui l'entourent (là où se trouvent nos deux agritourismes), et vous vous retrouvez dans l'un des grands paysages de pâtes fraîches d'Italie. Ce sont les formes que nous enseignons, que nous mangeons et sur lesquelles nous débattons.
 
 **Les formes classiques de pâtes toscanes sont :**
 

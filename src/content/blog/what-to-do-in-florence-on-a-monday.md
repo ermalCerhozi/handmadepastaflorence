@@ -60,6 +60,8 @@ Practically, that makes Monday one of the easiest days of the week to get a seat
 
 It also solves the other Monday problem, which is lunch: you have booked nothing, half your list is closed, and you are standing in a piazza at one o'clock deciding where to eat. That decision is already made.
 
+If you are planning the trip for someone else, any of our classes can be given as a [cooking class gift voucher](/gift-a-cooking-class-florence/), from €68, sent by email and with no date locked in, so they can pick a Monday themselves.
+
 ## Things to do in Florence on a Monday: an itinerary that works
 
 - **Morning:** the Duomo complex, dome climb first while your legs are fresh.

@@ -53,6 +53,8 @@ So you can calibrate the ranges above against a real menu ([full details here](/
 
 At €95, The Chef's Table sits at the middle of the group-class band rather than the top of it, and the top of that band in Florence now runs to about €150 per person for a comparable three-and-a-half-hour group class. What you are not paying for at our price is a designer kitchen or a large room. What you are getting is a table of eight instead of twelve, two chefs who cook for a living, the wine in the price rather than added at the end, and the recipes and your leftover pasta to take home.
 
+If you would rather compare schools than price bands, we put the better-known Florence classes side by side, ours included, in [where to take a pasta making class in Florence](/blog/where-to-take-pasta-making-class-florence/).
+
 ## Five questions to ask before booking any class (including ours)
 
 1. **What's the maximum group size?** This single number predicts your experience better than anything else. Over 12, you're watching more than cooking.

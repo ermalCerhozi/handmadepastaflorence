@@ -2,7 +2,7 @@
 title: 'Que manger à Florence : le guide d’un cuisinier toscan'
 description: 'Les plats vraiment florentins, les formes de pâtes réellement toscanes, et les grands classiques italiens qui viennent de tout autre part.'
 pubDate: 2026-09-13
-updatedDate: 2026-09-26
+updatedDate: 2026-10-13
 author: 'Endri Cerhozi'
 image: '../../../assets/images/tuscan-antipasto-board-burrata-red-wine.webp'
 imageAlt: 'Assiettes de pâtes fraîches faites main et d’antipasti toscans sur une table en bois à Florence'
@@ -48,7 +48,9 @@ Six assiettes portent la ville, et trois jours suffisent à toutes les goûter.
 
 > Une habitude à connaître : le pain toscan ne contient pas de sel. Ce n’est ni une erreur ni votre malchance. Il existe pour être mangé avec des choses salées — salumi, pecorino, pâté de foie — et pour servir d’ossature aux soupes ci-dessus.
 
-## Quelles pâtes sont réellement toscanes ?
+## Pour quelles pâtes Florence est-elle connue ?
+
+Florence est connue pour les pâtes fraîches des collines toscanes qui l’entourent : les pici, les pappardelle (surtout au sanglier), les tagliatelle et les tortelli farcis à la pomme de terre. Ce sont ces quatre-là qui sont réellement toscans sur une carte florentine.
 
 C’est là que les visiteurs se trompent le plus souvent, car les pâtes célèbres à l’international viennent surtout d’Émilie ou de Rome.
 

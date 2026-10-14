@@ -165,6 +165,16 @@ const en = {
     ],
   },
 
+  // Seasonal homepage band (GiftBand.astro). Facts only from the gift landing in
+  // landings.ts: no delivery deadline, no discount.
+  giftBand: {
+    eyebrow: 'Christmas gift vouchers',
+    titlePre: 'This Christmas, give ',
+    titleItal: 'a pasta class.',
+    desc: 'Vouchers start from €68, arrive by email and work for any class (in our Florence kitchen from €95, or live online with an ingredient kit), with no date locked in.',
+    cta: 'See the gift vouchers',
+  },
+
   gallery: {
     eyebrow: 'A shape for every story',
     titlePre: 'Meet the ',
