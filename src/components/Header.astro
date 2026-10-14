@@ -5,6 +5,7 @@
 import { localizePath, getAlternates, getLocaleFromUrl, type Alternate } from '../i18n/utils';
 import { useTranslations } from '../i18n/ui';
 import { shapesHubPath } from '../data/shapes';
+import { classesPath } from '../data/classes-hub';
 import LanguageSwitcher from './LanguageSwitcher.astro';
 
 interface Props {
@@ -32,7 +33,9 @@ const langLinks = alternates ?? getAlternates(Astro.url.pathname);
     </a>
 
     <nav class="hdr__nav" aria-label="Primary" id="primary-nav">
-      <a href={`${home}#experiences`}>{t.nav.classes}</a>
+      {/* The all-classes hub, not the homepage #experiences anchor: the
+          homepage shows only the three best sellers. */}
+      <a href={classesPath(lang)}>{t.nav.classes}</a>
       {/* Points at the shapes hub, not the homepage #gallery anchor: a sitewide
           link is the cheapest authority a hub can get. */}
       <a href={shapesHubPath(lang)}>{t.nav.pasta}</a>

@@ -35,7 +35,7 @@ const faqs = t.faq.items;
 <script type="application/ld+json" set:html={JSON.stringify(faqSchema(faqs))} />
 
 <style>
-  .faq { padding-block: clamp(3.5rem, 9vh, 6rem); background: var(--flour); }
+  .faq { padding-block: var(--section-sm); background: var(--flour); }
   .faq__head { margin-bottom: clamp(2rem, 4vw, 3rem); }
   .faq__eyebrow { color: var(--terracotta); margin-bottom: 0.7rem; }
   .faq__title { font-size: var(--step-3); color: var(--olive); }

@@ -145,6 +145,7 @@ const fr = {
     intro: 'Dans chaque cours, on met les mains dans la pâte dès la première minute. De petits groupes, aucune démonstration passive à regarder, et vous dégustez le déjeuner que vous venez de préparer.',
     book: 'Réserver ceci',
     more: 'Détails complets',
+    allClasses: 'Voir tous nos cours',
     cards: [
       { tag: 'Signature', name: 'La Table du Chef', desc: 'Trois heures, une longue table. Coupez des fettuccine, fermez des ravioli, faites votre tiramisù, puis asseyez-vous pour manger tout ce que vous avez préparé avec un verre de Chianti.', price: '95 €', meta: '3 h · max 8 convives · Oltrarno', alt: 'La Table du Chef, cours pratique de fabrication de pâtes dans notre cuisine à Florence' },
       { tag: 'Marché + cuisine', name: 'Marché & Mains', desc: 'Faites vos courses au marché Sant’Ambrogio à l’aube avec Endri ou Marsel, puis transformez le panier en raviolis, ragoût et un dessert de saison de retour en cuisine.', price: '145 €', meta: '5 h · max 6 convives · visite du marché', alt: 'Marché & Mains, visite du marché et cours de pâtes à Florence' },

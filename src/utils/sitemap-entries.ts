@@ -13,6 +13,7 @@ import { SITE, localizePath } from './../i18n/utils';
 import { landings, type LandingPage } from '../data/landings';
 import { shapes, shapePath, shapesHubPath, SHAPES_MODIFIED } from '../data/shapes';
 import { blogLocale, blogSlug } from './blog-locales';
+import { classesPath } from '../data/classes-hub';
 
 interface SitemapEntry {
   loc: string;
@@ -29,6 +30,9 @@ const HOME_SHIP_DATE = '2026-07-27T00:00:00.000Z';
 // corrections, reviews, classKey/related cards). A landing with its own later
 // `updated` date uses that instead, see landingEntries().
 const LANDING_PASS_DATE = '2026-09-17T00:00:00.000Z';
+
+// The all-classes hub (src/data/classes-hub.ts), first shipped 2026-10-14.
+const CLASSES_HUB_SHIP_DATE = '2026-10-14T00:00:00.000Z';
 
 // The footer "Information" pages (English-only, see infoPages in i18n/config.ts).
 const INFO_PAGES_SHIP_DATE = '2026-09-03T00:00:00.000Z';
@@ -139,6 +143,8 @@ export async function getSitemapEntries(): Promise<SitemapEntry[]> {
     ...[...infoPages].flatMap((p) => sameSlugEntries(p, ['en'], INFO_PAGES_SHIP_DATE)),
     ...blogEntries(posts),
     ...landingEntries(),
+    // Translated slug per locale (/classes/, /it/corsi/, ...), so explicit paths.
+    ...toEntry(Object.fromEntries(locales.map((l) => [l, classesPath(l)])), CLASSES_HUB_SHIP_DATE),
     ...shapeEntries(),
   ];
 }

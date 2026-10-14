@@ -158,6 +158,7 @@ const en = {
     intro: 'Every class is hands-in-the-flour from the first minute. Small groups, no demos to watch, and you eat the lunch you just rolled.',
     book: 'Book this',
     more: 'Full details',
+    allClasses: 'See all our classes',
     cards: [
       { tag: 'Signature', name: 'The Chef’s Table', desc: 'Three hours, one long table. Cut fettuccine, fold ravioli, make your own tiramisù, then sit down to eat everything you made with a glass of Chianti.', price: '€95', meta: '3 hrs · max 8 guests · Oltrarno', alt: 'The Chef’s Table, hands-on pasta-making class in our Florence kitchen' },
       { tag: 'Market + cook', name: 'Mercato & Mani', desc: 'Shop Sant’Ambrogio market at dawn with Endri or Marsel, then turn the basket into ravioli, a ragù, and a seasonal dolce back in the kitchen.', price: '€145', meta: '5 hrs · max 6 guests · market walk', alt: 'Mercato & Mani, market tour and pasta class in Florence' },

@@ -147,6 +147,7 @@ const de = {
     intro: 'Jeder Kurs bedeutet ab der ersten Minute Hände im Mehl. Kleine Gruppen, keine Demos zum Zuschauen, und Sie essen das Mittagessen, das Sie gerade gerollt haben.',
     book: 'Dies buchen',
     more: 'Alle Details',
+    allClasses: 'Alle unsere Kurse ansehen',
     cards: [
       { tag: 'Signature', name: 'Pasta-Kurs: Der Chef’s Table', desc: 'Drei Stunden, eine lange Tafel. Fettuccine schneiden, Ravioli falten, eigenes Tiramisù machen, und sich dann setzen, um alles, was Sie gemacht haben, mit einem Glas Chianti zu essen.', price: '95 €', meta: '3 Std. · max. 8 Gäste · Oltrarno', alt: 'Der Chef’s Table, praktischer Pasta-Kurs in unserer Küche in Florenz' },
       { tag: 'Markt + Kochen', name: 'Mercato & Mani', desc: 'Kaufen Sie im Morgengrauen mit Endri oder Marsel auf dem Sant’Ambrogio-Markt ein und verwandeln Sie den Korb dann zurück in der Küche in Ravioli, ein Ragù und ein saisonales Dolce.', price: '145 €', meta: '5 Std. · max. 6 Gäste · Marktspaziergang', alt: 'Mercato & Mani, Markttour und Pasta-Kurs in Florenz' },

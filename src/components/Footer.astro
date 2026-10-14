@@ -2,6 +2,7 @@
 import { getLocaleFromUrl, localizePath } from '../i18n/utils';
 import { useTranslations } from '../i18n/ui';
 import { landingPath } from '../data/landings';
+import { classesPath } from '../data/classes-hub';
 import { shapesHubPath } from '../data/shapes';
 const lang = getLocaleFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -30,6 +31,7 @@ const year = new Date().getFullYear();
       </div>
       <nav class="ft__col">
         <h3>{t.footer.classes}</h3>
+        <a href={classesPath(lang)}>{t.exp.allClasses}</a>
         <a href={landingPath('pasta-making', lang)}>{t.footer.pastaClass}</a>
         <a href={landingPath('market-tour', lang)}>{t.footer.marketTour}</a>
         <a href={landingPath('agriturismo', lang)}>{t.footer.agriturismo}</a>
@@ -76,7 +78,7 @@ const year = new Date().getFullYear();
 </footer>
 
 <style>
-  .ft { background: var(--olive-deep); color: var(--flour); padding-block: clamp(3.5rem, 9vh, 6rem) 2rem; }
+  .ft { background: var(--olive-deep); color: var(--flour); padding-block: var(--section-sm) 2rem; }
   .ft__cta {
     display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 2rem;
     padding-bottom: clamp(2.5rem, 6vw, 4rem); border-bottom: 1px solid rgba(249,246,240,0.14);

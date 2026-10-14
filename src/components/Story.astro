@@ -44,7 +44,7 @@ const photoSizes = '(min-width: 880px) 430px, 75vw';
 </section>
 
 <style>
-  .story { padding-block: clamp(4.5rem, 12vh, 9rem); }
+  .story { padding-block: var(--section-lg); }
   .story__grid { display: grid; gap: clamp(2rem, 5vw, 4rem); align-items: center; grid-template-columns: 1fr; }
   @media (min-width: 880px) { .story__grid { grid-template-columns: 0.9fr 1.1fr; } }
 

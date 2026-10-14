@@ -3,6 +3,7 @@ import { Image } from 'astro:assets';
 import { getLocaleFromUrl } from '../i18n/utils';
 import { useTranslations } from '../i18n/ui';
 import { landingPath, type LandingKey } from '../data/landings';
+import { classesPath } from '../data/classes-hub';
 import { handsOnGroup, aperitivo, longTablePoster } from '../assets/images';
 import longTableVideo from '../assets/video/private-pasta-class-long-table-florence-agriturismo.mp4?url';
 const lang = getLocaleFromUrl(Astro.url);
@@ -83,11 +84,21 @@ const cardSizes = '(min-width: 1024px) 380px, (min-width: 663px) 45vw, 92vw';
         );
       })}
     </div>
+    {/* The homepage shows the three best sellers; every other class is on the hub. */}
+    <p class="exp__all" data-reveal>
+      <a href={classesPath(lang)}>{t.exp.allClasses} <span aria-hidden="true">→</span></a>
+    </p>
   </div>
 </section>
 
 <style>
-  .exp { padding-top: clamp(2.25rem, 6vh, 4.5rem); padding-bottom: clamp(4.5rem, 12vh, 9rem); position: relative; }
+  .exp__all { margin-top: clamp(1.6rem, 4vh, 2.4rem); text-align: center; }
+  .exp__all a {
+    display: inline-flex; gap: 0.4rem; align-items: center; font-weight: 700; font-size: var(--step-0); color: var(--olive);
+    border-bottom: 2px solid var(--yolk); padding-bottom: 3px; transition: gap 0.3s var(--ease);
+  }
+  @media (hover: hover) { .exp__all a:hover { gap: 0.7rem; } }
+  .exp { padding-top: clamp(2.25rem, 6vh, 4.5rem); padding-bottom: var(--section-lg); position: relative; }
   .exp__head {
     display: grid; gap: 1.4rem 3rem; align-items: end;
     grid-template-columns: 1fr; margin-bottom: clamp(2.5rem, 5vw, 4rem);

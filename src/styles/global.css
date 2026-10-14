@@ -56,12 +56,39 @@
 
   /* ---- Space & shape ---- */
   --gutter: clamp(1.25rem, 5vw, 5rem);
+  /* Vertical rhythm of the homepage bands. Tokens rather than per-component
+     clamps so the laptop block below can tighten every band at once; everywhere
+     else they resolve to exactly the values the components used before. */
+  --section-sm: clamp(3.5rem, 9vh, 6rem);
+  --section: clamp(4rem, 10vh, 7rem);
+  --section-lg: clamp(4.5rem, 12vh, 9rem);
   --radius: 18px;
   --radius-lg: 28px;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
   --shadow-sm: 0 4px 14px rgba(44, 58, 41, 0.08);
   --shadow-md: 0 18px 40px -18px rgba(44, 58, 41, 0.28);
   --shadow-lg: 0 40px 90px -30px rgba(33, 44, 31, 0.45);
+}
+
+/* 13-14" laptops at 125-150% display scaling report roughly 1280-1536 x 650-780
+   CSS px. The fluid scale above is driven by width alone, so it reaches its
+   maximum exactly there while the screen is barely 650px tall: measured at
+   1280x650 (2026-10-14), section titles were 64px, body text 19px, the class
+   cards, gallery and story each ran 1.4 screens and the homepage 11.5 screens.
+   This keeps the desktop layout but sizes it for the short screen. Phones (any
+   width under 1024) and tall desktop monitors never match it. The hero has its
+   own height cap in Hero.astro. */
+@media (min-width: 1024px) and (max-height: 860px) {
+  :root {
+    --step--1: 0.875rem;
+    --step-0: 1.0625rem;
+    --step-1: 1.35rem;
+    --step-2: 1.9rem;
+    --step-3: 2.6rem;
+    --section-sm: 2.75rem;
+    --section: 3.25rem;
+    --section-lg: 3.75rem;
+  }
 }
 
 *,

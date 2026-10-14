@@ -149,6 +149,7 @@ const it: Dict = {
     intro: `Ogni classe è con le mani in pasta dal primo minuto. Piccoli gruppi, nessuna dimostrazione da guardare, e mangi il pranzo che hai appena preparato.`,
     book: `Prenota ora`,
     more: `Dettagli completi`,
+    allClasses: 'Vedi tutti i nostri corsi',
     cards: [
       { tag: `Firma`, name: `Il Tavolo dello Chef`, desc: `Tre ore, un lungo tavolo. Taglia le fettuccine, chiudi i ravioli, fai il tuo tiramisù, poi siediti a mangiare tutto ciò che hai preparato con un bicchiere di Chianti.`, price: `€95`, meta: `3 ore · max 8 ospiti · Oltrarno`, alt: `Il Tavolo dello Chef, corso pratico di pasta fresca nella nostra cucina a Firenze` },
       { tag: `Mercato + cucina`, name: `Mercato & Mani`, desc: `Fai la spesa al mercato di Sant’Ambrogio all’alba con Endri o Marsel, poi trasforma il cesto in ravioli, ragù e un dolce di stagione tornando in cucina.`, price: `€145`, meta: `5 ore · max 6 ospiti · giro al mercato`, alt: `Mercato & Mani, tour del mercato e corso di pasta a Firenze` },

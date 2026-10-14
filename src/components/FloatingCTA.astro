@@ -91,4 +91,11 @@ const t = useTranslations(getLocaleFromUrl(Astro.url));
     .fab__info { display: flex; }
     .fab__btn { width: auto; }
   }
+  /* Desktop: off. From 1024px the sticky header always shows its own "Book a
+     class" button, so the bar only duplicated it, and on 13-14" laptop screens
+     it sat on top of the class cards' buttons and the gallery arrows (centred or
+     in the corner alike). Phones and tablets keep it. */
+  @media (min-width: 1024px) {
+    .fab { display: none; }
+  }
 </style>
