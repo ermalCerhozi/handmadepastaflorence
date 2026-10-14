@@ -101,7 +101,7 @@ function stars(rating: number): string {
     margin: 0; padding: 1.6rem; background: #fff; border-radius: var(--radius-lg);
     border: 1px solid var(--paper-line); box-shadow: var(--shadow-sm);
     display: flex; flex-direction: column; gap: 0.9rem; cursor: pointer;
-    transition: box-shadow 0.4s var(--ease);
+    transition: opacity 0.9s var(--ease) var(--reveal-delay, 0ms), transform 0.9s var(--ease) var(--reveal-delay, 0ms), box-shadow 0.4s var(--ease);
   }
   .quote:hover { box-shadow: var(--shadow-md); }
   .quote__stars { color: var(--yolk-deep); letter-spacing: 1px; }

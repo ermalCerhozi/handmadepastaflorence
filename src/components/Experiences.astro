@@ -118,7 +118,7 @@ const cardSizes = '(min-width: 1024px) 380px, (min-width: 663px) 45vw, 92vw';
     background: #fff; border-radius: var(--radius-lg); overflow: hidden;
     border: 1px solid var(--paper-line); box-shadow: var(--shadow-sm);
     display: flex; flex-direction: column; cursor: pointer;
-    transition: box-shadow 0.5s var(--ease);
+    transition: opacity 0.9s var(--ease) var(--reveal-delay, 0ms), transform 0.9s var(--ease) var(--reveal-delay, 0ms), box-shadow 0.5s var(--ease);
   }
   .card:hover { box-shadow: var(--shadow-lg); }
   .card__media { position: relative; aspect-ratio: 4 / 3; overflow: hidden; background: var(--flour-shadow); }

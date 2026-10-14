@@ -162,7 +162,12 @@ const ogImage = (landings['pasta-making'] as LandingPage).locales[locale]?.cl.im
     position: relative; display: flex; flex-direction: column; overflow: hidden; cursor: pointer;
     background: #fff; border-radius: var(--radius-lg);
     border: 1px solid var(--paper-line); box-shadow: var(--shadow-sm);
-    transition: box-shadow 0.5s var(--ease);
+    /* Scoped CSS outranks the global [data-reveal] rule, so a bare box-shadow
+       transition here would drop the reveal fade. Keep both, delay only the reveal. */
+    transition:
+      opacity 0.9s var(--ease) var(--reveal-delay, 0ms),
+      transform 0.9s var(--ease) var(--reveal-delay, 0ms),
+      box-shadow 0.5s var(--ease);
   }
   .ch-card:hover { box-shadow: var(--shadow-lg); }
   .ch-card__media { position: relative; aspect-ratio: 16 / 10; overflow: hidden; background: var(--flour-shadow); }
