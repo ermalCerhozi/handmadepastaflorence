@@ -54,7 +54,7 @@ const getLink = (id: string) => {
         <div class="bl-grid">
           {
             posts.map((p, i) => (
-              <a class="bl-card" href={getLink(p.id)} data-reveal style={`--reveal-delay:${i * 60}ms`}>
+              <a class="bl-card" href={getLink(p.id)} data-reveal style={`--reveal-delay:${(i % 3) * 90}ms`}>
                 <div class="bl-card__media">
                   <Image src={p.data.image} alt={p.data.imageAlt} width={640} height={400} loading="lazy" decoding="async" />
                   {p.data.badge && <span class="bl-card__badge">{p.data.badge}</span>}
@@ -100,7 +100,13 @@ const getLink = (id: string) => {
     display: flex; flex-direction: column; background: #fff;
     border: 1px solid var(--paper-line); border-radius: var(--radius-lg);
     overflow: hidden; box-shadow: var(--shadow-sm);
-    transition: box-shadow 0.4s var(--ease), transform 0.4s var(--ease);
+    /* Scoped CSS outranks the global [data-reveal] rule, so a bare box-shadow
+       transition here would drop the reveal fade. Keep both, delay only the reveal.
+       Same as .ch-card on the classes hub. */
+    transition:
+      opacity 0.9s var(--ease) var(--reveal-delay, 0ms),
+      transform 0.9s var(--ease) var(--reveal-delay, 0ms),
+      box-shadow 0.4s var(--ease);
   }
   .bl-card:hover { box-shadow: var(--shadow-lg); }
   .bl-card__media { aspect-ratio: 16 / 10; overflow: hidden; background: var(--flour-shadow); position: relative; }
