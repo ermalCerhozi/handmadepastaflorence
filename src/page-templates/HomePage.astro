@@ -20,19 +20,24 @@ import BookingDrawer from '../components/BookingDrawer.astro';
 import SectionDivider from '../components/SectionDivider.astro';
 import { getLocaleFromUrl } from '../i18n/utils';
 import { useTranslations } from '../i18n/ui';
+import { reviews } from '../data/reviews';
 
 const t = useTranslations(getLocaleFromUrl(Astro.url));
+// The best three reviews go straight under the hero, the rest after the class
+// cards, so you can't scroll far without passing one. Both blocks render nothing
+// while src/data/reviews.ts is empty; order the array best-first.
 ---
 
 <Layout title={t.meta.homeTitle} description={t.meta.homeDescription}>
   <Header />
   <main>
     <Hero />
+    <Reviews items={reviews.slice(0, 3)} />
     <WhyUs />
     <SectionDivider />
     <Experiences />
+    <Reviews items={reviews.slice(3)} id="more-reviews" head={false} showBadges={false} />
     <GiftBand />
-    <Reviews />
     <PastaGallery />
     <Story />
     <OnlineBand />

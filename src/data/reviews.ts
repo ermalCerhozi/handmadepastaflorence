@@ -40,6 +40,12 @@ interface Review {
    * deliberately kept off every individual Product.
    */
   pageKey?: LandingKey;
+  /**
+   * Set on ONE review that answers a doubt people have right before they send a
+   * request: "is it worth €95", "will a beginner keep up", "is it really small".
+   * That review is shown inside the booking drawer, next to the send button.
+   */
+  booking?: boolean;
 }
 
 /** Optional platform badges ("4.9 on Google, 120 reviews"). */

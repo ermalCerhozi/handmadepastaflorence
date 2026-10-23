@@ -17,12 +17,14 @@ interface CardMeta {
   w: number;
   h: number;
   key: LandingKey;
+  /** The booking-drawer choice this card's "Book this" button preselects. */
+  choice: 'florence' | 'market' | 'private';
   video?: string;
 }
 const cardMeta: CardMeta[] = [
-  { img: handsOnGroup, w: 800, h: 1067, key: 'pasta-making' },
-  { img: aperitivo, w: 800, h: 1067, key: 'market-tour' },
-  { img: longTablePoster, w: 720, h: 432, key: 'private', video: longTableVideo },
+  { img: handsOnGroup, w: 800, h: 1067, key: 'pasta-making', choice: 'florence' },
+  { img: aperitivo, w: 800, h: 1067, key: 'market-tour', choice: 'market' },
+  { img: longTablePoster, w: 720, h: 432, key: 'private', choice: 'private', video: longTableVideo },
 ];
 // Card width per the .exp__grid rules below: 3 columns from ~1024px (never
 // wider than ~375px), 2 columns from ~663px, otherwise full width. The srcset
@@ -74,7 +76,7 @@ const cardSizes = '(min-width: 1024px) 380px, (min-width: 663px) 45vw, 92vw';
             <p class="card__desc">{c.desc}</p>
             <p class="card__meta">{c.meta}</p>
             <div class="card__actions">
-              <button class="card__cta" data-open-booking data-cta="experience-card" data-prefill="florence">
+              <button class="card__cta" data-open-booking data-cta="experience-card" data-prefill={m.choice}>
                 {t.exp.book} <span aria-hidden="true">→</span>
               </button>
               <a class="card__more" href={href}>{t.exp.more}</a>

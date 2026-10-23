@@ -5,9 +5,15 @@
 // The final step sends the request by opening a prefilled WhatsApp chat.
 // Pricing is always tied to a visible guest count, so the total can never appear
 // "out of nowhere" — it updates the moment an experience and guest count are chosen.
-import { getLocaleFromUrl } from '../i18n/utils';
+import { getLocaleFromUrl, localizedHref } from '../i18n/utils';
 import { dictionaries, useTranslations } from '../i18n/ui';
-const t = useTranslations(getLocaleFromUrl(Astro.url));
+import { reviews } from '../data/reviews';
+import { MAILTO } from '../data/contact';
+const lang = getLocaleFromUrl(Astro.url);
+const t = useTranslations(lang);
+// The one review that answers a doubt people have right before they send.
+// Renders nothing until a real review is flagged `booking: true` in reviews.ts.
+const bookingReview = reviews.find((r) => r.booking);
 // Every locale's client-side strings, emitted as JSON and indexed at runtime by the
 // live document lang.
 // Derived from `dictionaries` rather than listed by hand: this used to name en+it
@@ -101,7 +107,7 @@ const bkJsPayload = Object.fromEntries(
             <strong data-cal-label>—</strong>
             <button class="cal__nav" data-cal-next aria-label="Next month">→</button>
           </div>
-          <div class="cal__dow"><span>L</span><span>M</span><span>M</span><span>G</span><span>V</span><span>S</span><span>D</span></div>
+          <div class="cal__dow">{t.bk.dow.map((d) => <span>{d}</span>)}</div>
           <div class="cal__grid" data-cal-grid></div>
         </div>
 
@@ -113,6 +119,12 @@ const bkJsPayload = Object.fromEntries(
 
       <!-- ===== Step 3: add-ons ===== -->
       <section class="bk__view" data-view="3">
+        <!-- Shown once the request has gone to WhatsApp, so the drawer doesn't
+             just sit there looking unsent. -->
+        <div class="bk__sent" data-sent role="status" hidden>
+          <strong>{t.bk.sentH}</strong>
+          <p>{t.bk.sentP}</p>
+        </div>
         <p class="bk__kicker">{t.bk.step3Kicker}</p>
         <h2 class="bk__h">{t.bk.step3H}</h2>
         <p class="bk__sub">{t.bk.step3Sub}</p>
@@ -144,6 +156,12 @@ const bkJsPayload = Object.fromEntries(
             <span class="switch"><input type="checkbox" /><span class="switch__track"></span></span>
           </label>
         </div>
+        {bookingReview && (
+          <figure class="bk__review">
+            <blockquote>“{bookingReview.quote}”</blockquote>
+            <figcaption>{bookingReview.name} · {bookingReview.from} · via {bookingReview.src}</figcaption>
+          </figure>
+        )}
       </section>
       <!-- Overlay scrollbars (phones, macOS, Windows 11) stay invisible until you
            scroll, so nothing told guests the time chips were below the calendar.
@@ -165,6 +183,13 @@ const bkJsPayload = Object.fromEntries(
         <button class="bk__back" data-prev hidden>{t.bk.back}</button>
         <button class="bk__next" data-next disabled>{t.bk.continue}</button>
       </div>
+      <p class="bk__assure">
+        <a href={localizedHref('/cancellation-policy/', lang)} target="_blank" rel="noopener">{t.lp.cancellation}</a>
+        {t.bk.payLater}
+      </p>
+      <!-- Not every guest has WhatsApp, least of all on a desktop. The script
+           keeps this href in step with the WhatsApp message. -->
+      <a class="bk__email" data-email-fallback href={MAILTO}>{t.bk.emailFallback}</a>
     </footer>
   </aside>
 </div>
@@ -173,6 +198,7 @@ const bkJsPayload = Object.fromEntries(
 
 <script>
   import { track, EV } from '../scripts/track';
+  import { MAILTO, WHATSAPP_URL, WHATSAPP_ICON_PATH } from '../data/contact';
 
   type State = {
     step: number;
@@ -188,15 +214,12 @@ const bkJsPayload = Object.fromEntries(
   const MIN_GUESTS = 1;
   const MAX_GUESTS = 14;
 
-  // WhatsApp business number (digits only, international format — same as endricerhozi.com).
-  const WHATSAPP_NUMBER = '393445204379';
-  // Official WhatsApp glyph, inlined so the button needs no extra asset request.
   // Width/height are set on the element itself: this SVG is injected via innerHTML,
   // so it never receives Astro's scoped-style attribute and the `.bk__wa-icon` CSS
   // rule below would not apply to it.
   const WHATSAPP_ICON =
     '<svg class="bk__wa-icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false">'
-    + '<path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.885-9.885 9.885M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.359.101 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.582 0 11.943-5.359 11.945-11.893a11.821 11.821 0 00-3.418-8.452z"/>'
+    + `<path fill="currentColor" d="${WHATSAPP_ICON_PATH}"/>`
     + '</svg>';
 
   const setupBooking = () => {
@@ -223,7 +246,12 @@ const bkJsPayload = Object.fromEntries(
       root.hidden = false;
       document.body.style.overflow = 'hidden';
       requestAnimationFrame(() => { root.classList.add('is-open'); updateMore(); });
-      if (prefill === 'florence' || prefill === 'online') $(`[data-choice="${prefill}"]`)?.click();
+      // Every class CTA names its own class. This used to accept only florence
+      // and online, so "Book" on the market-tour and private pages opened the
+      // drawer with the €95 Chef's Table already ticked.
+      if (prefill && ['florence', 'market', 'private', 'online'].includes(prefill)) {
+        $(`[data-choice="${prefill}"]`)?.click();
+      }
     };
     const close = () => {
       root.classList.remove('is-open');
@@ -307,6 +335,8 @@ const bkJsPayload = Object.fromEntries(
       }
       const scroll = $('.bk__scroll');
       if (scroll) scroll.scrollTop = 0;
+      const sent = $('[data-sent]');
+      if (sent) sent.hidden = true;
       validate();
       updateMore();
     };
@@ -549,7 +579,8 @@ const bkJsPayload = Object.fromEntries(
       return { base, addons, total };
     };
 
-    const sendRequest = () => {
+    /** The request text. WhatsApp and the email fallback both send exactly this. */
+    const buildMessage = () => {
       const T = tr();
       const { addons, total } = priceBreakdown();
       const details: string[] = [];
@@ -583,6 +614,11 @@ const bkJsPayload = Object.fromEntries(
         '',
         T.msgOutro,
       ].join('\n');
+      return { message, addonCount: addonText.length, total };
+    };
+
+    const sendRequest = () => {
+      const { message, addonCount, total } = buildMessage();
 
       // THE conversion. The funnel leaves for WhatsApp on the next line, so this
       // is the last moment anything is measurable — record it before the hand-off.
@@ -591,16 +627,19 @@ const bkJsPayload = Object.fromEntries(
         guests: state.guests,
         date: state.date || 'none',
         time: state.time || 'none',
-        addons: addonText.length,
+        addons: addonCount,
         value: total,
         currency: 'EUR',
         locale: document.documentElement.lang,
         page: location.pathname,
       });
 
-      const url = 'https://wa.me/' + WHATSAPP_NUMBER
-        + '?text=' + encodeURIComponent(message);
-      window.open(url, '_blank', 'noopener');
+      window.open(WHATSAPP_URL + '?text=' + encodeURIComponent(message), '_blank', 'noopener');
+
+      const sent = $('[data-sent]');
+      if (sent) sent.hidden = false;
+      const scroll = $('.bk__scroll');
+      if (scroll) scroll.scrollTop = 0;
     };
 
     const render = () => {
@@ -621,7 +660,7 @@ const bkJsPayload = Object.fromEntries(
 
       if (state.experience) addHeader(`${T.classLabel}:`, state.experienceName || '');
       if (state.date) {
-        addHeader(`${T.dateTime}:`, `${state.date}${state.time ? ' at ' + state.time : ''}`);
+        addHeader(`${T.dateTime}:`, `${state.date}${state.time ? ' · ' + state.time : ''}`);
       }
 
       const { base, addons, total } = priceBreakdown();
@@ -630,6 +669,12 @@ const bkJsPayload = Object.fromEntries(
       addons.forEach(add);
 
       const totalEl = $('[data-total]'); if (totalEl) totalEl.textContent = euro(total);
+
+      const mail = $<HTMLAnchorElement>('[data-email-fallback]');
+      if (mail) {
+        const subject = [T.emailSubject, state.experienceName].filter(Boolean).join(': ');
+        mail.href = `${MAILTO}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(buildMessage().message)}`;
+      }
     };
 
     buildCal();
@@ -879,4 +924,30 @@ const bkJsPayload = Object.fromEntries(
   }
   .bk__next--wa:hover:not(:disabled) { background: #1ebe5b; }
   .bk__wa-icon { width: 1.25em; height: 1.25em; flex-shrink: 0; }
+
+  /* Reassurance under the buttons on every step; the email fallback only once
+     there is a request to send. */
+  .bk__assure { margin-top: 0.55rem; font-size: 0.72rem; line-height: 1.4; color: var(--charcoal-soft); text-align: center; }
+  .bk__assure a { color: var(--olive); font-weight: 700; text-decoration: underline; text-underline-offset: 2px; }
+  .bk__email {
+    display: block; margin-top: 0.35rem; text-align: center;
+    font-size: 0.78rem; font-weight: 700; color: var(--terracotta);
+    text-decoration: underline; text-underline-offset: 2px;
+  }
+  .bk:not([data-step="3"]) .bk__email { display: none; }
+
+  .bk__sent {
+    margin-bottom: 1.1rem; padding: 0.9rem 1rem; border-radius: var(--radius);
+    background: #e7f8ee; border: 1px solid #b7e8c9; color: var(--charcoal);
+  }
+  .bk__sent[hidden] { display: none; }
+  .bk__sent strong { display: block; color: var(--olive); margin-bottom: 0.2rem; }
+  .bk__sent p { font-size: 0.8rem; line-height: 1.45; margin: 0; }
+
+  .bk__review {
+    margin: 1.2rem 0 0; padding: 1rem 1.1rem; border-radius: var(--radius);
+    background: #fff; border: 1px solid var(--paper-line);
+  }
+  .bk__review blockquote { font-family: var(--serif); font-size: 0.9rem; line-height: 1.5; color: var(--charcoal); }
+  .bk__review figcaption { margin-top: 0.5rem; font-size: 0.72rem; color: var(--charcoal-soft); }
 </style>

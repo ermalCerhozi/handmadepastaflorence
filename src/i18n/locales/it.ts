@@ -3,6 +3,18 @@
 // Italian apostrophes/quotes need no escaping.
 import type { Dict } from '../types';
 
+// Shared by the homepage FAQ and every class page booked through the drawer
+// (ClassLanding.astro appends both), so each policy is worded once per locale.
+// payFaq restates src/pages/booking-policy.astro; keep the two in step.
+const cancelFaq = {
+  q: `Qual è la vostra politica di cancellazione?`,
+  a: `Cancellazione gratuita fino a 48 ore prima del corso, nessun costo. Preferisci cambiare data? Siamo felici di riprogrammare senza costi fino a 24 ore prima del corso. Le cancellazioni entro le 48 ore, o la mancata presentazione, potrebbero comportare l'addebito dell'intero prezzo del corso. Tutti i dettagli nella nostra pagina sulla politica di cancellazione.`,
+};
+const payFaq = {
+  q: `Quando e come si paga?`,
+  a: `Inviare la richiesta non costa nulla. Quando ti confermiamo la data, un acconto del 30% con bonifico o link di pagamento con carta (Stripe) blocca il tuo posto. Il saldo si paga in contanti il giorno del corso, oppure con bonifico in anticipo se preferisci.`,
+};
+
 const it: Dict = {
   meta: {
     homeTitle: `Corsi di Cucina a Firenze: Pasta Fresca con Due Chef`,
@@ -59,6 +71,12 @@ const it: Dict = {
     relPre: `Cerchi qualcos'`,
     relItal: `altro?`,
     cancellation: `Cancellazione gratuita fino a 48h prima.`,
+    cancelFaq,
+    payFaq,
+  },
+
+  contact: {
+    ask: `Domande prima di prenotare? Scrivici su WhatsApp al`,
   },
 
   lang: {
@@ -66,18 +84,20 @@ const it: Dict = {
   },
 
   hero: {
-    eyebrow: `Firenze · appena aperto · due chef, un grande tavolo`,
+    eyebrow: `Oltrarno, Firenze · corsi tutti i giorni`,
     titleL1: `Farina, uova,`,
     titleL2: `e le tue`,
     titleItal: `mani.`,
     titleKw: `Corsi di cucina a Firenze, con le mani in pasta, da €95.`,
-    imgAlt: `Ospiti a un corso di cucina a Firenze mentre stendono la pasta fresca nella nostra cucina in Oltrarno`,
-    lede: `Prepara la vera pasta toscana insieme a due chef di agriturismo.`,
+    imgAlt: `Tagliere, mattarello, farina e uova pronti per un corso di cucina a Firenze, nella nostra cucina in Oltrarno`,
+    lede: `Stendi la pasta fresca a mano con due chef di agriturismo, poi mangiala con un calice di vino toscano.`,
     ctaReserve: `Prenota un corso`,
     ctaSee: `Vedi i corsi`,
-    proofOpened: `cucina appena aperta`,
-    proofHands: `pratica, poi mangi tutto`,
-    proofTable: `a tavola, mai di più`,
+    proof: [
+      { n: `3 ore`, l: `pratica, poi mangi tutto` },
+      { n: `max 8`, l: `a tavola, mai di più` },
+      { n: `Gratis`, l: `la cancellazione fino a 48h prima` },
+    ],
   },
 
   fab: {
@@ -136,8 +156,8 @@ const it: Dict = {
       { q: `Quanto costa un corso di pasta fresca a Firenze?`, a: `Il nostro corso esclusivo "Il Tavolo dello Chef" costa €95 a persona, e il corso "Mercato & Mani" costa €145. I corsi di gruppo privati partono da €680.` },
       { q: `Dove posso trovare pasta fresca senza glutine a Firenze?`, a: `Proprio qui nella nostra cucina! Possiamo preparare una miscela di farine senza glutine dedicata e una postazione pulita senza costi aggiuntivi. Basta segnalarci eventuali allergie al momento della prenotazione.` },
       { q: `Quando si svolgono i corsi?`, a: `I corsi iniziano alle 10:00, 14:30 e 18:00 (ora di Firenze), tutti i giorni della settimana.` },
-      { q: `Come faccio a prenotare e pagare?`, a: `Usa il pulsante "Prenota un corso" per creare la tua richiesta. Si aprirà una chat di WhatsApp con i dettagli precompilati, ti confermeremo la disponibilità e ti guideremo per il resto.` },
-      { q: `Qual è la vostra politica di cancellazione?`, a: `Cancellazione gratuita fino a 48 ore prima del corso, nessun costo. Preferisci cambiare data? Siamo felici di riprogrammare senza costi fino a 24 ore prima del corso. Le cancellazioni entro le 48 ore, o la mancata presentazione, potrebbero comportare l'addebito dell'intero prezzo del corso. Tutti i dettagli nella nostra pagina sulla politica di cancellazione.` },
+      { q: `Come faccio a prenotare e pagare?`, a: `Usa il pulsante "Prenota un corso" per creare la tua richiesta. Si aprirà una chat di WhatsApp con i dettagli precompilati, ti confermeremo la disponibilità e ti guideremo per il resto. ${payFaq.a}` },
+      cancelFaq,
     ],
   },
 
@@ -190,7 +210,7 @@ const it: Dict = {
     intro: `Collaboriamo con hotel, tour operator e aziende per portare la tavola della fattoria ai loro ospiti e team, nella nostra cucina in Oltrarno o in diretta online.`,
     ctaText: `Parlaci dei tuoi ospiti, gruppo o team. Rispondiamo entro un giorno lavorativo.`,
     ctaLabel: `Inizia una collaborazione`,
-    ctaMailto: `mailto:ciao@handmadepastaflorence.com?subject=Richiesta%20partnership%20commerciale`,
+    ctaSubject: `Richiesta partnership commerciale`,
     offers: [
       { t: `Hotel, B&B e agriturismi`, d: `Regala ai tuoi ospiti un corso di pasta da ricordare. Tariffe partner, facile prenotazione per segnalazione e lezioni in inglese o italiano. A cinque minuti dal Ponte Vecchio.`, points: [`Tariffe partner e commissioni`, `Prenotazione prioritaria per gli ospiti`, `Voucher regalo co-branded`], hrefLabel: `` },
       { t: `Team building aziendale`, d: `Grembiuli addosso, via i computer. Un corso pratico privato in cui il tuo team impasta, piega, ride e poi si siede per un lungo pranzo preparato con le proprie mani.`, points: [`Uso esclusivo della cucina, 6-14 persone`, `Chef che parlano inglese e italiano`, `Abbinamento vini e opzioni dietetiche`], hrefLabel: `Dettagli team building` },
@@ -241,6 +261,11 @@ const it: Dict = {
 
   bk: {
     ariaLabel: `Prenota un corso di pasta`,
+    dow: ['L', 'M', 'M', 'G', 'V', 'S', 'D'],
+    payLater: `Non paghi nulla finché non ti confermiamo la data.`,
+    emailFallback: `Niente WhatsApp? Mandaci la stessa richiesta via email`,
+    sentH: `La tua richiesta è pronta su WhatsApp.`,
+    sentP: `Premi invio nella chat e ti risponderemo per confermare la data, di solito in giornata. Se WhatsApp non si è aperto, usa il link email qui sotto.`,
     step1Label: `Esperienza`,
     step2Label: `Quando e chi`,
     step3Label: `Personalizza`,
@@ -282,6 +307,7 @@ const it: Dict = {
     estTotal: `Totale stimato`,
     msgIntro: `Ciao, vorrei prenotare il corso di pasta "{class}" per {guests}.`,
     msgOutro: `Grazie!`,
+    emailSubject: `Richiesta di prenotazione`,
     freeCap: `Gratis`,
     guest: `ospite`,
     guestsPlural: `ospiti`,

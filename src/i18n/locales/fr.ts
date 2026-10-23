@@ -1,3 +1,15 @@
+// Shared by the homepage FAQ and every class page booked through the drawer
+// (ClassLanding.astro appends both), so each policy is worded once per locale.
+// payFaq restates src/pages/booking-policy.astro; keep the two in step.
+const cancelFaq = {
+  q: "Quelle est votre politique d'annulation ?",
+  a: "Annulation gratuite jusqu'à 48 heures avant votre cours, sans frais. Besoin de changer de date plutôt ? Nous reprogrammons volontiers votre cours gratuitement jusqu'à 24 heures avant. Les annulations dans les 48 heures, ou les absences, peuvent entraîner la facturation du prix total du cours. Tous les détails sur notre page de politique d'annulation.",
+};
+const payFaq = {
+  q: 'Quand et comment payer ?',
+  a: 'Envoyer une demande ne vous coûte rien. Une fois votre date confirmée, un acompte de 30 % par virement ou par lien de paiement par carte (Stripe) bloque votre place. Le solde se règle en espèces le jour du cours, ou par virement à l’avance si vous préférez.',
+};
+
 const fr = {
   meta: {
     homeTitle: 'Cours de Cuisine à Florence : Pâtes Fraîches, Deux Chefs',
@@ -55,6 +67,12 @@ const fr = {
     relPre: 'Vous cherchez autre ',
     relItal: 'chose ?',
     cancellation: "Annulation gratuite jusqu'à 48h avant.",
+    cancelFaq,
+    payFaq,
+  },
+
+  contact: {
+    ask: 'Une question avant de réserver ? Écrivez-nous sur WhatsApp au',
   },
 
   lang: {
@@ -62,18 +80,20 @@ const fr = {
   },
 
   hero: {
-    eyebrow: 'Firenze · récemment ouvert · deux chefs, une grande table',
+    eyebrow: 'Oltrarno, Florence · cours tous les jours',
     titleL1: 'De la farine, des œufs,',
     titleL2: 'et vos deux',
     titleItal: 'mains.',
     titleKw: 'Cours de cuisine à Florence, les mains dans la farine, dès 95 €.',
-    imgAlt: 'Des invités à un cours de cuisine à Florence étalant des pâtes fraîches dans notre cuisine de l\'Oltrarno',
-    lede: 'Préparez de véritables pâtes toscanes aux côtés de deux chefs d\'agritourisme.',
+    imgAlt: 'Planche, rouleau à pâtisserie, farine et œufs prêts pour un cours de cuisine à Florence, dans notre cuisine de l’Oltrarno',
+    lede: 'Étalez des pâtes fraîches à la main avec deux chefs d’agritourisme, puis dégustez-les avec un verre de vin toscan.',
     ctaReserve: 'Réserver un cours',
     ctaSee: 'Voir les cours',
-    proofOpened: 'notre cuisine vient d\'ouvrir',
-    proofHands: 'pratique, puis vous mangez tout',
-    proofTable: 'à table, jamais plus',
+    proof: [
+      { n: '3 h', l: 'pratique, puis vous mangez tout' },
+      { n: '8 max', l: 'à table, jamais plus' },
+      { n: 'Gratuite', l: 'l’annulation jusqu’à 48h avant' },
+    ],
   },
 
   fab: {
@@ -132,8 +152,8 @@ const fr = {
       { q: 'Combien coûte un cours de fabrication de pâtes à Florence ?', a: 'Notre cours signature La Table du Chef coûte 95 € par personne, et le cours Marché & Mains coûte 145 €. Les cours de groupe privés commencent à 680 €.' },
       { q: 'Où puis-je trouver des pâtes fraîches sans gluten à Florence ?', a: 'Ici même dans notre cuisine ! Nous pouvons préparer un mélange de farines sans gluten dédié et un poste de travail propre sans frais supplémentaires. Indiquez-nous simplement toute allergie lors de la réservation.' },
       { q: 'Quand les cours ont-ils lieu ?', a: 'Les cours commencent à 10:00, 14:30 et 18:00 (heure de Florence), tous les jours de la semaine.' },
-      { q: 'Comment réserver et payer ?', a: "Utilisez le bouton “Réserver un cours” pour créer votre demande. Cela ouvre une discussion WhatsApp avec les détails pré-remplis, et nous confirmerons la disponibilité et vous guiderons pour le reste." },
-      { q: "Quelle est votre politique d'annulation ?", a: "Annulation gratuite jusqu'à 48 heures avant votre cours, sans frais. Besoin de changer de date plutôt ? Nous reprogrammons volontiers votre cours gratuitement jusqu'à 24 heures avant. Les annulations dans les 48 heures, ou les absences, peuvent entraîner la facturation du prix total du cours. Tous les détails sur notre page de politique d'annulation." },
+      { q: 'Comment réserver et payer ?', a: `Utilisez le bouton “Réserver un cours” pour créer votre demande. Cela ouvre une discussion WhatsApp avec les détails pré-remplis, et nous confirmerons la disponibilité et vous guiderons pour le reste. ${payFaq.a}` },
+      cancelFaq,
     ],
   },
 
@@ -186,7 +206,7 @@ const fr = {
     intro: 'Nous collaborons avec des hôtels, des voyagistes et des entreprises pour offrir la table de la ferme à leurs invités et équipes, dans notre cuisine de l\'Oltrarno ou en ligne.',
     ctaText: 'Parlez-nous de vos invités, de votre groupe ou de votre équipe. Nous vous répondrons sous un jour ouvrable.',
     ctaLabel: 'Démarrer un partenariat',
-    ctaMailto: 'mailto:ciao@handmadepastaflorence.com?subject=Demande%20de%20partenariat%20commercial',
+    ctaSubject: 'Demande de partenariat commercial',
     offers: [
       { t: 'Hôtels, B&B et agritourismes', d: 'Offrez à vos clients un cours de pâtes inoubliable. Tarifs partenaires, réservation facile et cours en anglais ou en italien. À cinq minutes du Ponte Vecchio.', points: ['Tarifs partenaires et de parrainage', 'Réservation prioritaire pour vos clients', 'Chèques cadeaux co-marqués'], hrefLabel: '' },
       { t: 'Team building d\'entreprise', d: 'Enfilez les tabliers, fermez les ordinateurs. Un cours pratique privé où votre équipe roule, plie, rit et s\'assoit ensuite pour un long déjeuner qu\'elle a elle-même préparé.', points: ['Privatisation de la cuisine, 6–14 personnes', 'Chefs anglophones', 'Accords mets-vins et options diététiques'], hrefLabel: 'Détails du team building' },
@@ -237,6 +257,11 @@ const fr = {
 
   bk: {
     ariaLabel: 'Réserver un cours de pâtes',
+    dow: ['L', 'M', 'M', 'J', 'V', 'S', 'D'],
+    payLater: 'Vous ne payez rien avant que nous ayons confirmé votre date.',
+    emailFallback: 'Pas de WhatsApp ? Envoyez-nous la même demande par e-mail',
+    sentH: 'Votre demande est prête dans WhatsApp.',
+    sentP: 'Appuyez sur envoyer dans la discussion et nous vous répondrons pour confirmer votre date, en général le jour même. Si WhatsApp ne s’est pas ouvert, utilisez le lien e-mail ci-dessous.',
     step1Label: 'Expérience',
     step2Label: 'Quand & qui',
     step3Label: 'Personnaliser',
@@ -278,6 +303,7 @@ const fr = {
     estTotal: 'Total estimé',
     msgIntro: 'Bonjour, je voudrais réserver le cours de pâtes "{class}" pour {guests}.',
     msgOutro: 'Merci !',
+    emailSubject: 'Demande de réservation',
     freeCap: 'Gratuit',
     guest: 'invité',
     guestsPlural: 'invités',

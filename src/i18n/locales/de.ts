@@ -1,5 +1,17 @@
 // German dictionary. Copied from en.ts and translated.
 
+// Shared by the homepage FAQ and every class page booked through the drawer
+// (ClassLanding.astro appends both), so each policy is worded once per locale.
+// payFaq restates src/pages/booking-policy.astro; keep the two in step.
+const cancelFaq = {
+  q: 'Wie ist Ihre Stornierungsrichtlinie?',
+  a: "Kostenlose Stornierung bis 48 Stunden vor Ihrem Kurs. Möchten Sie lieber den Termin ändern? Wir verschieben Ihren Kurs gerne kostenlos bis 24 Stunden vorher. Bei Stornierungen innerhalb von 48 Stunden oder bei Nichterscheinen kann der volle Kurspreis berechnet werden. Alle Details auf unserer Seite zur Stornierungsrichtlinie.",
+};
+const payFaq = {
+  q: 'Wann und wie bezahle ich?',
+  a: 'Das Senden einer Anfrage kostet nichts. Sobald wir Ihren Termin bestätigt haben, sichert eine Anzahlung von 30 % per Überweisung oder Kartenzahlungslink (Stripe) Ihren Platz. Den Rest zahlen Sie am Kurstag in bar oder vorab per Überweisung, wenn Ihnen das lieber ist.',
+};
+
 const de = {
   meta: {
     homeTitle: 'Kochkurs in Florenz: Frische Pasta mit zwei Chefköchen',
@@ -57,6 +69,12 @@ const de = {
     relPre: 'Suchen Sie nach etwas ',
     relItal: 'anderem?',
     cancellation: 'Kostenlose Stornierung bis 48h vorher.',
+    cancelFaq,
+    payFaq,
+  },
+
+  contact: {
+    ask: 'Fragen vor der Buchung? Schreiben Sie uns auf WhatsApp unter',
   },
 
   lang: {
@@ -64,18 +82,20 @@ const de = {
   },
 
   hero: {
-    eyebrow: 'Firenze · neu eröffnet · zwei Köche, ein langer Tisch',
+    eyebrow: 'Oltrarno, Florenz · Kurse jeden Tag',
     titleL1: 'Mehl, Eier,',
     titleL2: 'und Ihre zwei',
     titleItal: 'Hände.',
     titleKw: 'Kochkurse in Florenz, mit den Händen im Mehl, ab 95 €.',
-    imgAlt: 'Gäste bei einem Kochkurs in Florenz rollen frische Pasta in unserer Küche im Oltrarno',
-    lede: 'Rollen Sie echte toskanische Pasta an der Seite zweier Agriturismo-Chefköche.',
+    imgAlt: 'Brett, Nudelholz, Mehl und Eier, bereit für einen Kochkurs in Florenz, in unserer Küche im Oltrarno',
+    lede: 'Rollen Sie frische Pasta von Hand mit zwei Agriturismo-Chefköchen und essen Sie sie danach mit einem Glas toskanischem Wein.',
     ctaReserve: 'Kochkurs buchen',
     ctaSee: 'Kurse ansehen',
-    proofOpened: 'unsere Küche hat gerade eröffnet',
-    proofHands: 'praktisch, dann essen Sie alles auf',
-    proofTable: 'am Tisch, nie mehr als das',
+    proof: [
+      { n: '3 Std.', l: 'praktisch, dann essen Sie alles auf' },
+      { n: 'max. 8', l: 'am Tisch, nie mehr als das' },
+      { n: 'Kostenlos', l: 'stornieren bis 48h vorher' },
+    ],
   },
 
   fab: {
@@ -134,8 +154,8 @@ const de = {
       { q: 'Wie viel kostet ein Pasta-Kochkurs in Florenz?', a: 'Unser exklusiver Chef’s Table Kurs kostet 95 € pro Person, und der Mercato & Mani Kurs kostet 145 €. Private Gruppenkurse beginnen ab 680 €.' },
       { q: 'Wo finde ich handgemachte glutenfreie Pasta in Florenz?', a: 'Direkt hier in unserer Küche! Wir können ohne Aufpreis eine spezielle glutenfreie Mehlmischung und eine saubere Arbeitsstation vorbereiten. Teilen Sie uns einfach bei der Buchung etwaige Allergien mit.' },
       { q: 'Wann finden die Kurse statt?', a: 'Die Kurse beginnen um 10:00, 14:30 und 18:00 Uhr (Ortszeit Florenz), an jedem Wochentag.' },
-      { q: 'Wie kann ich buchen und bezahlen?', a: "Verwenden Sie die Schaltfläche „Kurs buchen“, um Ihre Anfrage zu erstellen. Es öffnet sich ein WhatsApp-Chat mit den vorausgefüllten Details, und wir bestätigen die Verfügbarkeit und führen Sie durch den Rest." },
-      { q: 'Wie ist Ihre Stornierungsrichtlinie?', a: "Kostenlose Stornierung bis 48 Stunden vor Ihrem Kurs. Möchten Sie lieber den Termin ändern? Wir verschieben Ihren Kurs gerne kostenlos bis 24 Stunden vorher. Bei Stornierungen innerhalb von 48 Stunden oder bei Nichterscheinen kann der volle Kurspreis berechnet werden. Alle Details auf unserer Seite zur Stornierungsrichtlinie." },
+      { q: 'Wie kann ich buchen und bezahlen?', a: `Verwenden Sie die Schaltfläche „Kurs buchen“, um Ihre Anfrage zu erstellen. Es öffnet sich ein WhatsApp-Chat mit den vorausgefüllten Details, und wir bestätigen die Verfügbarkeit und führen Sie durch den Rest. ${payFaq.a}` },
+      cancelFaq,
     ],
   },
 
@@ -188,7 +208,7 @@ const de = {
     intro: 'Wir arbeiten mit Hotels, Reiseveranstaltern und Unternehmen zusammen, um den Bauerntisch zu ihren Gästen und Teams zu bringen, in unserer Küche im Oltrarno oder live online.',
     ctaText: 'Erzählen Sie uns von Ihren Gästen, Ihrer Gruppe oder Ihrem Team. Wir antworten innerhalb eines Werktages.',
     ctaLabel: 'Partnerschaft beginnen',
-    ctaMailto: 'mailto:ciao@handmadepastaflorence.com?subject=Business%20partnership%20enquiry',
+    ctaSubject: 'Business partnership enquiry',
     offers: [
       { t: 'Hotels, B&Bs & Agriturismi', d: 'Bieten Sie Ihren Gästen einen unvergesslichen Pasta-Kurs. Partnertarife, einfache Empfehlungsbuchungen und Kurse auf Englisch oder Italienisch. Fünf Minuten vom Ponte Vecchio entfernt.', points: ['Partner- & Empfehlungsraten', 'Prioritätsbuchung für Ihre Gäste', 'Co-Branding-Geschenkgutscheine'], hrefLabel: '' },
       { t: 'Firmen-Teambuilding', d: 'Schürzen an, Laptops weg. Ein privater, praktischer Kurs, bei dem Ihr Team rollt, faltet, lacht und sich dann zu einem langen Mittagessen setzt, das es selbst gemacht hat.', points: ['Privater Küchenkauf, 6–14 Personen', 'Englischsprachige Köche', 'Weinbegleitung & Ernährungsoptionen'], hrefLabel: 'Teambuilding-Details' },
@@ -240,6 +260,11 @@ const de = {
 
   bk: {
     ariaLabel: 'Einen Pasta-Kurs buchen',
+    dow: ['M', 'D', 'M', 'D', 'F', 'S', 'S'],
+    payLater: 'Sie zahlen nichts, bevor wir Ihren Termin bestätigt haben.',
+    emailFallback: 'Kein WhatsApp? Schicken Sie uns dieselbe Anfrage per E-Mail',
+    sentH: 'Ihre Anfrage ist in WhatsApp bereit.',
+    sentP: 'Tippen Sie im Chat auf Senden. Wir antworten Ihnen mit der Bestätigung Ihres Termins, meist noch am selben Tag. Hat sich WhatsApp nicht geöffnet, nutzen Sie den E-Mail-Link unten.',
     step1Label: 'Erlebnis',
     step2Label: 'Wann & wer',
     step3Label: 'Anpassen',
@@ -283,6 +308,7 @@ const de = {
     estTotal: 'Geschätzter Gesamtbetrag',
     msgIntro: 'Hallo, ich möchte den Pasta-Kurs "{class}" für {guests} buchen.',
     msgOutro: 'Vielen Dank!',
+    emailSubject: 'Buchungsanfrage',
     freeCap: 'Kostenlos',
     guest: 'Gast',
     guestsPlural: 'Gäste',

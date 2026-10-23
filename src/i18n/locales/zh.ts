@@ -1,3 +1,15 @@
+// Shared by the homepage FAQ and every class page booked through the drawer
+// (ClassLanding.astro appends both), so each policy is worded once per locale.
+// payFaq restates src/pages/booking-policy.astro; keep the two in step.
+const cancelFaq = {
+  q: '你们的取消政策是怎样的？',
+  a: "最晚于课程开始前48小时取消，免费，无需付费。想改期而不是取消？最晚于课程开始前24小时，我们都乐意为你免费改期。若在开课前不足48小时取消或未出席，可能会被收取全额课程费用。完整政策详见我们的取消政策页面。",
+};
+const payFaq = {
+  q: '什么时候付款？怎么付？',
+  a: '发送请求不收取任何费用。我们确认日期后，支付30%的定金（银行转账或 Stripe 银行卡付款链接）即可保留名额。余款可在上课当天以现金支付，也可以提前转账。',
+};
+
 const zh = {
   meta: {
     homeTitle: '佛罗伦萨烹饪课程：与两位托斯卡纳主厨制作手工意面',
@@ -54,7 +66,13 @@ const zh = {
     faqItal: '无患。',
     relPre: '在找其他',
     relItal: '体验？',
-    cancellation: '开课前48小时内可免费取消。',
+    cancellation: '最晚于开课前48小时取消，免费。',
+    cancelFaq,
+    payFaq,
+  },
+
+  contact: {
+    ask: '预订前有疑问？WhatsApp 联系我们',
   },
 
   lang: {
@@ -62,18 +80,20 @@ const zh = {
   },
 
   hero: {
-    eyebrow: '佛罗伦萨 · 全新开张 · 两位主厨，一张长桌',
+    eyebrow: '佛罗伦萨奥尔特拉诺区 · 每天开课',
     titleL1: '面粉，鸡蛋，',
     titleL2: '还有你的',
     titleItal: '双手。',
     titleKw: '佛罗伦萨亲手实践的烹饪课程，95欧元起。',
-    imgAlt: '客人在佛罗伦萨烹饪课程中于我们的奥尔特拉诺厨房擀制新鲜意面',
-    lede: '与两位托斯卡纳农庄主厨一起亲手制作地道的意面。',
+    imgAlt: '为佛罗伦萨烹饪课程备好的案板、擀面杖、面粉和鸡蛋，摄于我们的奥尔特拉诺厨房',
+    lede: '跟两位托斯卡纳农庄主厨一起亲手擀制新鲜意面，然后配一杯托斯卡纳葡萄酒享用。',
     ctaReserve: '预订烹饪课程',
     ctaSee: '查看课程',
-    proofOpened: '我们的厨房刚刚开张',
-    proofHands: '亲手制作，然后尽情享用',
-    proofTable: '围桌而坐，人数刚刚好',
+    proof: [
+      { n: '3 小时', l: '亲手制作，然后尽情享用' },
+      { n: '最多8人', l: '围桌而坐，人数刚刚好' },
+      { n: '免费', l: '最晚开课前48小时取消' },
+    ],
   },
 
   fab: {
@@ -132,8 +152,8 @@ const zh = {
       { q: '在佛罗伦萨参加意面烹饪课程多少钱？', a: '我们的招牌主厨餐桌课程为每人 95 欧元，市场与手工课程为 145 欧元。私人团体课程起价 680 欧元。' },
       { q: '在佛罗伦萨哪里可以找到无麸质手工意面？', a: '就在我们的厨房里！我们可以免费准备专门的无麸质混合面粉和干净的操作台。预订时只需告诉我们是否有过敏情况即可。' },
       { q: '课程什么时间进行？', a: '课程时间为 10:00、14:30 和 18:00（佛罗伦萨时间），每周七天全天开放。' },
-      { q: '我该如何预订和付款？', a: "使用“预订课程”按钮来提交你的需求。它会打开一个自动填好详情的 WhatsApp 聊天窗口，我们会确认名额情况并引导你完成后续步骤。" },
-      { q: '你们的取消政策是怎样的？', a: "课程开始前48小时内可免费取消，无需付费。想改期而不是取消？我们很乐意在课程开始前24小时内为你免费改期。若在48小时内取消或未出席，可能会被收取全额课程费用。完整政策详见我们的取消政策页面。" },
+      { q: '我该如何预订和付款？', a: `使用“预订课程”按钮来提交你的需求。它会打开一个自动填好详情的 WhatsApp 聊天窗口，我们会确认名额情况并引导你完成后续步骤。 ${payFaq.a}` },
+      cancelFaq,
     ],
   },
 
@@ -186,7 +206,7 @@ const zh = {
     intro: '我们与酒店、旅行社及企业合作，将农庄的餐桌搬给他们的客人和团队，地点在我们的奥尔特拉诺厨房或通过在线直播。',
     ctaText: '告诉我们关于你的客人、团队或集体的情况。我们会在一个工作日内回复。',
     ctaLabel: '开始合作',
-    ctaMailto: 'mailto:ciao@handmadepastaflorence.com?subject=Business%20partnership%20enquiry',
+    ctaSubject: 'Business partnership enquiry',
     offers: [
       { t: '酒店、B&B 民宿 & 农庄', d: '为你的客人提供一堂难忘的意面课程。享受合作伙伴价、便捷的推荐预订，课程提供英语或意大利语。距离老桥（Ponte Vecchio）仅五分钟路程。', points: ['合作伙伴及推荐价格', '为你的客人优先预订', '联合品牌礼品券'], hrefLabel: '' },
       { t: '企业团队建设', d: '穿上围裙，放下电脑。这不仅是一场私人的手工课程，你的团队在这里揉面、折叠、欢笑，最后坐下来享用大家亲手制作的丰盛午餐。', points: ['私人包场，6-14 人', '英语授课主厨', '葡萄酒搭配 & 饮食偏好选择'], hrefLabel: '团建详情' },
@@ -238,6 +258,11 @@ const zh = {
 
   bk: {
     ariaLabel: '预订意面课程',
+    dow: ['一', '二', '三', '四', '五', '六', '日'],
+    payLater: '在我们确认日期之前，你无需支付任何费用。',
+    emailFallback: '没有 WhatsApp？用电子邮件发送同样的请求',
+    sentH: '你的请求已在 WhatsApp 中准备好。',
+    sentP: '在聊天中点击发送，我们会回复确认你的日期，通常当天回复。如果 WhatsApp 没有打开，请使用下方的电子邮件链接。',
     step1Label: '体验',
     step2Label: '时间与人数',
     step3Label: '定制',
@@ -281,6 +306,7 @@ const zh = {
     estTotal: '预计总计',
     msgIntro: '你好，我想预订“{class}”意面课程，{guests}。',
     msgOutro: '谢谢！',
+    emailSubject: '预订请求',
     freeCap: '免费',
     guest: '人',
     guestsPlural: '人',

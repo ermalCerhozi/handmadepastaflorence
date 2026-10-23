@@ -17,9 +17,13 @@ interface Props {
   items?: Review[];
   /** Hide the platform badges where they'd be sitewide claims on a single class page. */
   showBadges?: boolean;
+  /** Section id. The homepage renders two blocks, so the second needs its own. */
+  id?: string;
+  /** Hide the eyebrow and heading on a follow-up block that continues an earlier one. */
+  head?: boolean;
 }
 
-const { items = allReviews, showBadges = true } = Astro.props;
+const { items = allReviews, showBadges = true, id = 'reviews', head = true } = Astro.props;
 const t = useTranslations(getLocaleFromUrl(Astro.url));
 
 // Render the rating the guest actually gave, to the nearest half star. The
@@ -32,8 +36,9 @@ function stars(rating: number): string {
 ---
 
 {items.length > 0 && (
-<section class="rev" id="reviews">
+<section class="rev" id={id}>
   <div class="shell">
+    {head && (
     <header class="rev__head" data-reveal>
       <div>
         <p class="eyebrow rev__eyebrow">{t.reviews.eyebrow}</p>
@@ -52,6 +57,7 @@ function stars(rating: number): string {
       </div>
       )}
     </header>
+    )}
 
     <div class="rev__grid">
       {items.map((r, i) => (

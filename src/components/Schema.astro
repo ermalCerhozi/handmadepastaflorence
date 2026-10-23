@@ -10,6 +10,7 @@ import { landings, landingPath, type LandingKey, type LandingPage } from '../dat
 import { getLocaleFromUrl } from '../i18n/utils';
 import { defaultLocale, locales } from '../i18n/config';
 import { PRICE_VALID_UNTIL } from '../utils/offer-validity';
+import { EMAIL, PHONE_E164 } from '../data/contact';
 
 const SITE = 'https://handmadepastaflorence.com';
 
@@ -46,8 +47,8 @@ const localBusiness = {
   ],
   url: SITE,
   image: `${SITE}${cookingClass.src}`,
-  email: 'ciao@handmadepastaflorence.com',
-  telephone: '+393445204379',
+  email: EMAIL,
+  telephone: PHONE_E164,
   priceRange: '€€',
   // Google requires an Organization/LocalBusiness logo to be at least
   // 112x112. public/images/logo.png is 80x80 and is deliberately small - it is

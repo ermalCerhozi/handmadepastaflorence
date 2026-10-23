@@ -58,7 +58,8 @@ interface LandingContent {
   faqs: { q: string; a: string }[];
   related: { title: string; href: string; desc: string }[];
   ctaLabel: string;
-  prefill?: 'florence' | 'online';
+  /** Booking-drawer choice the CTA preselects (see data-choice in BookingDrawer.astro). */
+  prefill?: 'florence' | 'market' | 'private' | 'online';
   emailSubject?: string;
   breadcrumbName: string;
   /** When set, inserts a "Pasta" crumb (linking to the pasta-shapes hub) between Home and breadcrumbName. */
@@ -147,13 +148,12 @@ export const landings = {
           eyebrow: `The Chef’s Table · Oltrarno, Florence`,
           heading: `A pasta making class in Florence,`,
           headingItal: `around one table.`,
-          lede: `Three hands-on hours in our Oltrarno kitchen. You’ll mix, knead and roll your own dough with a chef at your elbow, cut fettuccine, fold ravioli and make your own tiramisù, then sit down together to eat everything you made, with a glass of Tuscan wine, included in the price.`,
-          image: { src: img.handsOnGroup, alt: `Guests rolling fresh pasta at The Chef’s Table class in our Florence kitchen`, w: 800, h: 1067 },
+          lede: `Three hands-on hours in our Oltrarno kitchen, with a chef at your elbow. You make the dough, cut fettuccine, fold ravioli and make your own tiramisù. Then you sit down and eat it all, with a glass of Tuscan wine included in the price.`,
+          image: { src: img.handsOnGroup, alt: `Guests rolling fresh pasta with a chef at a hands-on pasta making class`, w: 800, h: 1067 },
           images: [
-            { src: img.handsOnGroup, alt: `Guests rolling fresh pasta at The Chef’s Table class in our Florence kitchen`, w: 800, h: 1067 },
-            { src: img.privateTeamBuilding, alt: `Guests rolling fresh pasta at The Chef’s Table class in our Florence kitchen`, w: 800, h: 1067 },
-            { src: img.privateTeamBuildingJpg, alt: `Guests rolling fresh pasta at The Chef’s Table class in our Florence kitchen`, w: 800, h: 1067 },
-            { src: img.handsOnChef, alt: `Guests rolling fresh pasta at The Chef’s Table class in our Florence kitchen`, w: 800, h: 1067 },
+            { src: img.handsOnGroup, alt: `Guests rolling fresh pasta with a chef at a hands-on pasta making class`, w: 800, h: 1067 },
+            { src: img.privateTeamBuildingJpg, alt: `A class group in aprons with their chef in the kitchen after the lesson`, w: 800, h: 1067 },
+            { src: img.handsOnChef, alt: `A chef piping filling onto fresh pasta while guests shape ravioli`, w: 800, h: 1067 },
           ],
           price: `€95`,
           priceNote: `per person · wine & dessert included`,
@@ -190,7 +190,7 @@ export const landings = {
             notIncluded: {
               title: 'What’s not included',
               items: [
-                'Making the sauce',
+                'Making the sauce (the kitchen cooks it while you work on the pasta)',
                 'Extra food and drinks'
               ]
             }
@@ -199,9 +199,20 @@ export const landings = {
             {
               title: `What will you actually do in the class?`,
               paras: [
-                `This is a hands-in-the-flour class from the first minute, no demos to watch from a stool. You’ll make your own dough, learn to feel when it’s ready, and turn it into the two dishes every guest makes and eats: fettuccine, cut into ribbons by hand, and ravioli, filled and sealed with no air trapped inside. Then you make your own tiramisù.`,
-                `You pick the sauce for your fettuccine (<strong>tomato and basil</strong>, <strong>cacio e pepe</strong> or <strong>amatriciana</strong>) and the kitchen cooks it while you work, so the three hours stay on the pasta; the ravioli go with <strong>butter and sage</strong>. Time and season permitting, the chefs also show you how the same dough becomes the Tuscan cuts, hand-rolled pici and wide pappardelle, so you can make them at home.`,
-                `Most Florence classes call twelve people a small group. Ours never seats more than eight, which is the whole reason a chef is at your elbow when a fold goes wrong instead of demonstrating at the front of the room. When the pasta is done we cook it together and sit down to a proper Tuscan meal: the pasta you just made, your own tiramisù, a glass of wine, then limoncello or coffee, all included in the price.`,
+                `This is a hands-in-the-flour class from the first minute, no demos to watch from a stool.`,
+                `You’ll make your own dough, learn to feel when it’s ready, and turn it into the two dishes every guest makes and eats: fettuccine, cut into ribbons by hand, and ravioli, filled and sealed with no air trapped inside. Then you make your own tiramisù.`,
+                `You pick the sauce for your fettuccine (<strong>tomato and basil</strong>, <strong>cacio e pepe</strong> or <strong>amatriciana</strong>) and the kitchen cooks it while you work, so the three hours stay on the pasta; the ravioli go with <strong>butter and sage</strong>.`,
+                `Time and season permitting, the chefs also show you how the same dough becomes the Tuscan cuts, hand-rolled pici and wide pappardelle, so you can make them at home.`,
+                `Most Florence classes call twelve people a small group. Ours never seats more than eight, which is the whole reason a chef is at your elbow when a fold goes wrong instead of demonstrating at the front of the room.`,
+                `When the pasta is done we cook it together and sit down to a proper Tuscan meal: the pasta you just made, your own tiramisù, a glass of wine, then limoncello or coffee, all included in the price.`,
+              ],
+            },
+            {
+              title: `What you take home`,
+              paras: [],
+              list: [
+                `We email you the recipes for everything you made, so the dough you learned by feel is still there next month.`,
+                `Whatever you don’t eat, you take with you: we dry it, bag it, and it goes back to the hotel with you.`,
               ],
             },
             {
@@ -216,8 +227,6 @@ export const landings = {
               list: [
                 `Gluten-free? We prepare a dedicated flour blend and a clean station at no extra charge; just tell us when you book.`,
                 `A glass of Tuscan wine (or a soft drink) and a limoncello or coffee are included in the €95. No upsell at the end.`,
-                `We email you the recipes for everything you made, so the dough you learned by feel is still there next month.`,
-                `Whatever you don’t eat, you take with you: we dry it, bag it, and it goes back to the hotel with you.`,
                 `The kitchen is in the Oltrarno, near Piazza Santo Spirito; we send the exact address when you book.`,
                 `Want the same class with a dawn market walk first? That’s <a href="/market-tour-cooking-class-florence/">Mercato &amp; Mani</a>.`,
               ],
@@ -270,13 +279,12 @@ export const landings = {
           eyebrow: `Il Tavolo dello Chef · Oltrarno, Firenze`,
           heading: `Un corso di pasta a Firenze,`,
           headingItal: `attorno a un tavolo.`,
-          lede: `Tre ore pratiche nella nostra cucina in Oltrarno. Impasterai e stenderai la tua sfoglia con uno chef al tuo fianco, taglierai le fettuccine, chiuderai i ravioli e farai il tuo tiramisù, per poi sederti insieme agli altri a mangiare tutto ciò che hai preparato, con un calice di vino toscano, incluso nel prezzo.`,
-          image: { src: img.handsOnGroup, alt: `Ospiti che stendono la pasta fresca al corso Il Tavolo dello Chef nella nostra cucina fiorentina`, w: 800, h: 1067 },
+          lede: `Tre ore pratiche nella nostra cucina in Oltrarno, con uno chef al tuo fianco. Prepari l'impasto, tagli le fettuccine, chiudi i ravioli e fai il tuo tiramisù. Poi ti siedi e mangi tutto, con un calice di vino toscano incluso nel prezzo.`,
+          image: { src: img.handsOnGroup, alt: `Ospiti che stendono la pasta fresca con uno chef durante un corso di pasta pratico`, w: 800, h: 1067 },
           images: [
-            { src: img.handsOnGroup, alt: `Ospiti che stendono la pasta fresca al corso Il Tavolo dello Chef nella nostra cucina fiorentina`, w: 800, h: 1067 },
-            { src: img.privateTeamBuilding, alt: `Ospiti che stendono la pasta fresca al corso Il Tavolo dello Chef nella nostra cucina fiorentina`, w: 800, h: 1067 },
-            { src: img.privateTeamBuildingJpg, alt: `Ospiti che stendono la pasta fresca al corso Il Tavolo dello Chef nella nostra cucina fiorentina`, w: 800, h: 1067 },
-            { src: img.handsOnChef, alt: `Ospiti che stendono la pasta fresca al corso Il Tavolo dello Chef nella nostra cucina fiorentina`, w: 800, h: 1067 },
+            { src: img.handsOnGroup, alt: `Ospiti che stendono la pasta fresca con uno chef durante un corso di pasta pratico`, w: 800, h: 1067 },
+            { src: img.privateTeamBuildingJpg, alt: `Un gruppo di ospiti in grembiule con il loro chef in cucina dopo la lezione`, w: 800, h: 1067 },
+            { src: img.handsOnChef, alt: `Uno chef dosa il ripieno sulla pasta fresca mentre gli ospiti chiudono i ravioli`, w: 800, h: 1067 },
           ],
           price: `€95`,
           priceNote: `a persona · vino e dolce inclusi`,
@@ -313,7 +321,7 @@ export const landings = {
               notIncluded: {
                 title: 'Cosa non è incluso',
                 items: [
-                  'Preparazione del sugo',
+                  'Preparazione del sugo (ci pensa la cucina mentre tu fai la pasta)',
                   'Cibo e bevande extra'
                 ]
               }
@@ -322,9 +330,20 @@ export const landings = {
             {
               title: `Cosa farai effettivamente durante il corso?`,
               paras: [
-                `Questo è un corso con "le mani in pasta" dal primo minuto, nessuna dimostrazione da guardare su uno sgabello. Preparerai il tuo impasto, imparerai a sentire quando è pronto e lo trasformerai nei due piatti che ogni ospite prepara e mangia: le fettuccine, tagliate a mano, e i ravioli, ripieni e sigillati senza lasciare aria dentro. Poi fai il tuo tiramisù.`,
-                `Scegli il sugo per le tue fettuccine (<strong>pomodoro e basilico</strong>, <strong>cacio e pepe</strong> o <strong>amatriciana</strong>) e la cucina lo prepara mentre lavori, così le tre ore restano sulla pasta; i ravioli si condiscono con <strong>burro e salvia</strong>. Tempo e stagione permettendo, gli chef ti mostrano anche come dallo stesso impasto nascono i formati toscani, i pici tirati a mano e le pappardelle larghe, per rifarli a casa.`,
-                `A Firenze quasi tutti i corsi chiamano «piccolo gruppo» dodici persone. Il nostro non supera mai gli otto, ed è esattamente per questo che quando una piega non viene hai uno chef al fianco e non una dimostrazione in fondo alla stanza. Quando la pasta è finita la cuciniamo insieme e ci sediamo per un vero pasto toscano: la pasta che hai appena fatto, il tuo tiramisù, un calice di vino e poi limoncello o caffè, tutto incluso nel prezzo.`,
+                `Questo è un corso con "le mani in pasta" dal primo minuto, nessuna dimostrazione da guardare su uno sgabello.`,
+                `Preparerai il tuo impasto, imparerai a sentire quando è pronto e lo trasformerai nei due piatti che ogni ospite prepara e mangia: le fettuccine, tagliate a mano, e i ravioli, ripieni e sigillati senza lasciare aria dentro. Poi fai il tuo tiramisù.`,
+                `Scegli il sugo per le tue fettuccine (<strong>pomodoro e basilico</strong>, <strong>cacio e pepe</strong> o <strong>amatriciana</strong>) e la cucina lo prepara mentre lavori, così le tre ore restano sulla pasta; i ravioli si condiscono con <strong>burro e salvia</strong>.`,
+                `Tempo e stagione permettendo, gli chef ti mostrano anche come dallo stesso impasto nascono i formati toscani, i pici tirati a mano e le pappardelle larghe, per rifarli a casa.`,
+                `A Firenze quasi tutti i corsi chiamano «piccolo gruppo» dodici persone. Il nostro non supera mai gli otto, ed è esattamente per questo che quando una piega non viene hai uno chef al fianco e non una dimostrazione in fondo alla stanza.`,
+                `Quando la pasta è finita la cuciniamo insieme e ci sediamo per un vero pasto toscano: la pasta che hai appena fatto, il tuo tiramisù, un calice di vino e poi limoncello o caffè, tutto incluso nel prezzo.`,
+              ],
+            },
+            {
+              title: `Cosa ti porti a casa`,
+              paras: [],
+              list: [
+                `Ti mandiamo per email le ricette di tutto quello che hai preparato, così l'impasto che hai imparato a sentire c'è ancora il mese prossimo.`,
+                `Quello che non mangi te lo porti via: lo facciamo asciugare, lo insacchettiamo e torna in albergo con te.`,
               ],
             },
             {
@@ -339,8 +358,6 @@ export const landings = {
               list: [
                 `Senza glutine? Prepariamo una miscela dedicata e una postazione pulita senza costi aggiuntivi; diccelo quando prenoti.`,
                 `Un calice di vino toscano (o una bibita) e un limoncello o un caffè sono inclusi nei €95. Nessun supplemento a fine corso.`,
-                `Ti mandiamo per email le ricette di tutto quello che hai preparato, così l'impasto che hai imparato a sentire c'è ancora il mese prossimo.`,
-                `Quello che non mangi te lo porti via: lo facciamo asciugare, lo insacchettiamo e torna in albergo con te.`,
                 `La cucina è in Oltrarno, vicino a Piazza Santo Spirito; ti invieremo l'indirizzo esatto al momento della prenotazione.`,
                 `Vuoi lo stesso corso ma con una passeggiata al mercato all'alba? Dai un'occhiata a <a href="/it/corso-cucina-tour-mercato-firenze/">Mercato &amp; Mani</a>.`,
               ],
@@ -393,13 +410,12 @@ export const landings = {
           eyebrow: `La Table du Chef · Oltrarno, Florence`,
           heading: `Un cours de pâtes à Florence,`,
           headingItal: `autour d'une table.`,
-          lede: `Trois heures de pratique dans notre cuisine de l'Oltrarno. Vous pétrirez et étalerez votre propre pâte avec un chef à vos côtés, couperez des fettuccine, fermerez des ravioli et ferez votre propre tiramisù, puis vous vous assiérez ensemble pour manger tout ce que vous avez préparé, avec un verre de vin toscan, compris dans le prix.`,
-          image: { src: img.handsOnGroup, alt: `Des invités étalant des pâtes fraîches lors du cours La Table du Chef dans notre cuisine de Florence`, w: 800, h: 1067 },
+          lede: `Trois heures de pratique dans notre cuisine de l'Oltrarno, avec un chef à vos côtés. Vous préparez la pâte, coupez des fettuccine, fermez des ravioli et faites votre propre tiramisù. Puis vous passez à table pour tout manger, avec un verre de vin toscan compris dans le prix.`,
+          image: { src: img.handsOnGroup, alt: `Des invités étalant des pâtes fraîches avec un chef pendant un cours de pâtes pratique`, w: 800, h: 1067 },
           images: [
-            { src: img.handsOnGroup, alt: `Des invités étalant des pâtes fraîches lors du cours La Table du Chef dans notre cuisine de Florence`, w: 800, h: 1067 },
-            { src: img.privateTeamBuilding, alt: `Des invités étalant des pâtes fraîches lors du cours La Table du Chef dans notre cuisine de Florence`, w: 800, h: 1067 },
-            { src: img.privateTeamBuildingJpg, alt: `Des invités étalant des pâtes fraîches lors du cours La Table du Chef dans notre cuisine de Florence`, w: 800, h: 1067 },
-            { src: img.handsOnChef, alt: `Des invités étalant des pâtes fraîches lors du cours La Table du Chef dans notre cuisine de Florence`, w: 800, h: 1067 },
+            { src: img.handsOnGroup, alt: `Des invités étalant des pâtes fraîches avec un chef pendant un cours de pâtes pratique`, w: 800, h: 1067 },
+            { src: img.privateTeamBuildingJpg, alt: `Un groupe en tablier avec son chef dans la cuisine après le cours`, w: 800, h: 1067 },
+            { src: img.handsOnChef, alt: `Un chef dépose la farce sur la pâte fraîche pendant que les invités façonnent les ravioli`, w: 800, h: 1067 },
           ],
           price: `95 €`,
           priceNote: `par personne · vin et dessert inclus`,
@@ -436,7 +452,7 @@ export const landings = {
               notIncluded: {
                 title: 'Ce qui n\'est pas inclus',
                 items: [
-                  'La préparation de la sauce',
+                  'La préparation de la sauce (la cuisine s’en charge pendant que vous faites les pâtes)',
                   'Nourriture et boissons supplémentaires'
                 ]
               }
@@ -445,9 +461,20 @@ export const landings = {
             {
               title: `Que ferez-vous concrètement pendant le cours ?`,
               paras: [
-                `C'est un cours où vous mettez la main à la pâte dès la première minute, pas de démonstrations à regarder sur un tabouret. Vous préparerez votre propre pâte, apprendrez à sentir quand elle est prête, et la transformerez en deux plats que chaque invité prépare et mange : des fettuccine coupées à la main, et des ravioli farcis et scellés sans air à l’intérieur. Puis vous faites votre propre tiramisù.`,
-                `Vous choisissez la sauce de vos fettuccine (<strong>tomate-basilic</strong>, <strong>cacio e pepe</strong> ou <strong>amatriciana</strong>) et la cuisine la prépare pendant que vous travaillez, pour que les trois heures restent consacrées aux pâtes ; les ravioli se servent au <strong>beurre et à la sauge</strong>. Si le temps et la saison le permettent, les chefs vous montrent aussi comment la même pâte devient les formes toscanes, pici roulés à la main et larges pappardelles, pour les refaire chez vous.`,
-                `À Florence, la plupart des cours appellent « petit groupe » douze personnes. Le nôtre ne dépasse jamais huit, et c'est précisément pour cela qu'un chef est à votre coude quand un pliage rate, au lieu de faire une démonstration au fond de la salle. Quand les pâtes sont prêtes, nous les cuisinons ensemble et nous asseyons pour un vrai repas toscan : les pâtes que vous venez de faire, votre tiramisù, un verre de vin puis un limoncello ou un café, le tout compris dans le prix.`,
+                `C'est un cours où vous mettez la main à la pâte dès la première minute, pas de démonstrations à regarder sur un tabouret.`,
+                `Vous préparerez votre propre pâte, apprendrez à sentir quand elle est prête, et la transformerez en deux plats que chaque invité prépare et mange : des fettuccine coupées à la main, et des ravioli farcis et scellés sans air à l’intérieur. Puis vous faites votre propre tiramisù.`,
+                `Vous choisissez la sauce de vos fettuccine (<strong>tomate-basilic</strong>, <strong>cacio e pepe</strong> ou <strong>amatriciana</strong>) et la cuisine la prépare pendant que vous travaillez, pour que les trois heures restent consacrées aux pâtes ; les ravioli se servent au <strong>beurre et à la sauge</strong>.`,
+                `Si le temps et la saison le permettent, les chefs vous montrent aussi comment la même pâte devient les formes toscanes, pici roulés à la main et larges pappardelles, pour les refaire chez vous.`,
+                `À Florence, la plupart des cours appellent « petit groupe » douze personnes. Le nôtre ne dépasse jamais huit, et c'est précisément pour cela qu'un chef est à votre coude quand un pliage rate, au lieu de faire une démonstration au fond de la salle.`,
+                `Quand les pâtes sont prêtes, nous les cuisinons ensemble et nous asseyons pour un vrai repas toscan : les pâtes que vous venez de faire, votre tiramisù, un verre de vin puis un limoncello ou un café, le tout compris dans le prix.`,
+              ],
+            },
+            {
+              title: `Ce que vous emportez`,
+              paras: [],
+              list: [
+                `Nous vous envoyons par email les recettes de tout ce que vous avez préparé, pour que la pâte apprise au toucher soit encore là le mois prochain.`,
+                `Ce que vous ne mangez pas, vous l'emportez: nous le faisons sécher, le mettons en sachet, et il rentre à l'hôtel avec vous.`,
               ],
             },
             {
@@ -462,8 +489,6 @@ export const landings = {
               list: [
                 `Sans gluten ? Nous préparons un mélange de farine dédié et un poste de travail propre sans frais supplémentaires; dites-le-nous simplement lors de votre réservation.`,
                 `Un verre de vin toscan (ou une boisson sans alcool) et un limoncello ou un café sont compris dans les 95 €. Aucun supplément à la fin.`,
-                `Nous vous envoyons par email les recettes de tout ce que vous avez préparé, pour que la pâte apprise au toucher soit encore là le mois prochain.`,
-                `Ce que vous ne mangez pas, vous l'emportez: nous le faisons sécher, le mettons en sachet, et il rentre à l'hôtel avec vous.`,
                 `La cuisine est dans l'Oltrarno, près de la Piazza Santo Spirito; nous vous envoyons l'adresse exacte lors de votre réservation.`,
                 `Vous voulez le même cours avec une promenade au marché à l'aube d'abord ? C'est <a href="/fr/cours-cuisine-visite-marche-florence/">Mercato &amp; Mani</a>.`,
               ],
@@ -519,13 +544,12 @@ export const landings = {
           eyebrow: `Der Tisch des Küchenchefs · Oltrarno, Florenz`,
           heading: `Ein Pasta-Kurs in Florenz,`,
           headingItal: `rund um einen Tisch.`,
-          lede: `Drei praktische Stunden in unserer Küche im Oltrarno. Sie kneten und rollen Ihren eigenen Teig mit einem Koch an Ihrer Seite, schneiden Fettuccine, falten Ravioli und machen Ihr eigenes Tiramisù und setzen sich dann zusammen, um alles zu essen, was Sie gemacht haben, mit einem Glas toskanischem Wein, im Preis enthalten.`,
-          image: { src: img.handsOnGroup, alt: `Gäste rollen frische Pasta beim Kurs „Der Tisch des Küchenchefs“ in unserer Küche in Florenz aus`, w: 800, h: 1067 },
+          lede: `Drei praktische Stunden in unserer Küche im Oltrarno, mit einem Koch an Ihrer Seite. Sie machen den Teig, schneiden Fettuccine, falten Ravioli und machen Ihr eigenes Tiramisù. Danach setzen Sie sich und essen alles, mit einem Glas toskanischem Wein im Preis inbegriffen.`,
+          image: { src: img.handsOnGroup, alt: `Gäste rollen mit einem Koch frische Pasta bei einem praktischen Pasta-Kurs aus`, w: 800, h: 1067 },
           images: [
-            { src: img.handsOnGroup, alt: `Gäste rollen frische Pasta beim Kurs „Der Tisch des Küchenchefs“ in unserer Küche in Florenz aus`, w: 800, h: 1067 },
-            { src: img.privateTeamBuilding, alt: `Gäste rollen frische Pasta beim Kurs „Der Tisch des Küchenchefs“ in unserer Küche in Florenz aus`, w: 800, h: 1067 },
-            { src: img.privateTeamBuildingJpg, alt: `Gäste rollen frische Pasta beim Kurs „Der Tisch des Küchenchefs“ in unserer Küche in Florenz aus`, w: 800, h: 1067 },
-            { src: img.handsOnChef, alt: `Gäste rollen frische Pasta beim Kurs „Der Tisch des Küchenchefs“ in unserer Küche in Florenz aus`, w: 800, h: 1067 },
+            { src: img.handsOnGroup, alt: `Gäste rollen mit einem Koch frische Pasta bei einem praktischen Pasta-Kurs aus`, w: 800, h: 1067 },
+            { src: img.privateTeamBuildingJpg, alt: `Eine Kursgruppe in Schürzen mit ihrem Koch in der Küche nach dem Kurs`, w: 800, h: 1067 },
+            { src: img.handsOnChef, alt: `Ein Koch spritzt Füllung auf frischen Pastateig, während Gäste Ravioli formen`, w: 800, h: 1067 },
           ],
           price: `95 €`,
           priceNote: `pro Person · Wein & Dessert inklusive`,
@@ -562,7 +586,7 @@ export const landings = {
               notIncluded: {
                 title: 'Was nicht inklusive ist',
                 items: [
-                  'Zubereitung der Sauce',
+                  'Zubereitung der Sauce (die übernimmt die Küche, während Sie die Pasta machen)',
                   'Zusätzliche Speisen und Getränke'
                 ]
               }
@@ -571,9 +595,20 @@ export const landings = {
             {
               title: `Was werden Sie im Kurs tatsächlich tun?`,
               paras: [
-                `Dies ist ein Kurs mit den Händen im Mehl von der ersten Minute an, keine Vorführungen, die man von einem Hocker aus beobachtet. Sie machen Ihren eigenen Teig, lernen zu fühlen, wann er fertig ist, und verarbeiten ihn zu den zwei Gerichten, die jeder Gast macht und isst: Fettuccine, von Hand in Bänder geschnitten, und Ravioli, gefüllt und ohne Luft darin verschlossen. Danach machen Sie Ihr eigenes Tiramisù.`,
-                `Sie wählen die Sauce für Ihre Fettuccine (<strong>Tomate-Basilikum</strong>, <strong>Cacio e Pepe</strong> oder <strong>Amatriciana</strong>), und die Küche kocht sie, während Sie arbeiten, damit die drei Stunden der Pasta gehören; die Ravioli gibt es mit <strong>Butter und Salbei</strong>. Wenn Zeit und Saison es erlauben, zeigen Ihnen die Köche auch, wie aus demselben Teig die toskanischen Formen werden, handgerollte Pici und breite Pappardelle, damit Sie sie zu Hause nachmachen können.`,
-                `In Florenz nennen die meisten Kurse zwölf Personen eine kleine Gruppe. Bei uns sitzen nie mehr als acht am Tisch, und genau deshalb steht ein Koch neben Ihnen, wenn eine Faltung misslingt, statt vorne etwas vorzuführen. Wenn die Nudeln fertig sind, kochen wir sie gemeinsam und setzen uns zu einem echten toskanischen Essen: die Pasta, die Sie gerade gemacht haben, Ihr Tiramisù, ein Glas Wein und danach Limoncello oder Kaffee, alles im Preis enthalten.`,
+                `Dies ist ein Kurs mit den Händen im Mehl von der ersten Minute an, keine Vorführungen, die man von einem Hocker aus beobachtet.`,
+                `Sie machen Ihren eigenen Teig, lernen zu fühlen, wann er fertig ist, und verarbeiten ihn zu den zwei Gerichten, die jeder Gast macht und isst: Fettuccine, von Hand in Bänder geschnitten, und Ravioli, gefüllt und ohne Luft darin verschlossen. Danach machen Sie Ihr eigenes Tiramisù.`,
+                `Sie wählen die Sauce für Ihre Fettuccine (<strong>Tomate-Basilikum</strong>, <strong>Cacio e Pepe</strong> oder <strong>Amatriciana</strong>), und die Küche kocht sie, während Sie arbeiten, damit die drei Stunden der Pasta gehören; die Ravioli gibt es mit <strong>Butter und Salbei</strong>.`,
+                `Wenn Zeit und Saison es erlauben, zeigen Ihnen die Köche auch, wie aus demselben Teig die toskanischen Formen werden, handgerollte Pici und breite Pappardelle, damit Sie sie zu Hause nachmachen können.`,
+                `In Florenz nennen die meisten Kurse zwölf Personen eine kleine Gruppe. Bei uns sitzen nie mehr als acht am Tisch, und genau deshalb steht ein Koch neben Ihnen, wenn eine Faltung misslingt, statt vorne etwas vorzuführen.`,
+                `Wenn die Nudeln fertig sind, kochen wir sie gemeinsam und setzen uns zu einem echten toskanischen Essen: die Pasta, die Sie gerade gemacht haben, Ihr Tiramisù, ein Glas Wein und danach Limoncello oder Kaffee, alles im Preis enthalten.`,
+              ],
+            },
+            {
+              title: `Was Sie mitnehmen`,
+              paras: [],
+              list: [
+                `Wir schicken Ihnen die Rezepte für alles, was Sie gemacht haben, per E-Mail, damit der Teig, den Sie im Gefühl haben, nächsten Monat noch da ist.`,
+                `Was Sie nicht essen, nehmen Sie mit: wir trocknen es, füllen es ab, und es fährt mit Ihnen ins Hotel zurück.`,
               ],
             },
             {
@@ -588,8 +623,6 @@ export const landings = {
               list: [
                 `Glutenfrei? Wir bereiten ohne Aufpreis eine spezielle Mehlmischung und eine saubere Station vor; sagen Sie es uns einfach bei der Buchung.`,
                 `Ein Glas toskanischer Wein (oder ein alkoholfreies Getränk) und ein Limoncello oder Kaffee sind in den 95 € enthalten. Kein Aufpreis am Ende.`,
-                `Wir schicken Ihnen die Rezepte für alles, was Sie gemacht haben, per E-Mail, damit der Teig, den Sie im Gefühl haben, nächsten Monat noch da ist.`,
-                `Was Sie nicht essen, nehmen Sie mit: wir trocknen es, füllen es ab, und es fährt mit Ihnen ins Hotel zurück.`,
                 `Die Küche befindet sich im Oltrarno, in der Nähe der Piazza Santo Spirito; wir senden Ihnen bei der Buchung die genaue Adresse.`,
                 `Möchten Sie denselben Kurs mit einem morgendlichen Marktspaziergang davor? Das ist <a href="/de/markt-tour-kochkurs-florenz/">Mercato &amp; Mani</a>.`,
               ],
@@ -642,13 +675,12 @@ export const landings = {
           eyebrow: `主厨餐桌 · 佛罗伦萨奥特拉诺`,
           heading: `佛罗伦萨的意面课程，`,
           headingItal: `围坐在一桌。`,
-          lede: `在我们的奥特拉诺厨房进行三小时的动手实践。您将在身旁主厨的指导下揉面、擀面，切出宽面、包好意式饺子，再做一份自己的提拉米苏，然后大家坐在一起，配一杯托斯卡纳葡萄酒，享用您制作的所有美食，均已含在价格中。`,
-          image: { src: img.handsOnGroup, alt: `客人们在佛罗伦萨厨房的“主厨餐桌”课程中擀制新鲜意面`, w: 800, h: 1067 },
+          lede: `在我们的奥特拉诺厨房里动手三小时，主厨就在您身旁。您将亲手揉面、切宽面、包意式饺子，再做一份自己的提拉米苏。然后大家坐下来享用全部成果，配一杯托斯卡纳葡萄酒，均已含在价格中。`,
+          image: { src: img.handsOnGroup, alt: `客人们在动手意面课上与主厨一起擀制新鲜意面`, w: 800, h: 1067 },
           images: [
-            { src: img.handsOnGroup, alt: `客人们在佛罗伦萨厨房的“主厨餐桌”课程中擀制新鲜意面`, w: 800, h: 1067 },
-            { src: img.privateTeamBuilding, alt: `客人们在佛罗伦萨厨房的“主厨餐桌”课程中擀制新鲜意面`, w: 800, h: 1067 },
-            { src: img.privateTeamBuildingJpg, alt: `客人们在佛罗伦萨厨房的“主厨餐桌”课程中擀制新鲜意面`, w: 800, h: 1067 },
-            { src: img.handsOnChef, alt: `客人们在佛罗伦萨厨房的“主厨餐桌”课程中擀制新鲜意面`, w: 800, h: 1067 },
+            { src: img.handsOnGroup, alt: `客人们在动手意面课上与主厨一起擀制新鲜意面`, w: 800, h: 1067 },
+            { src: img.privateTeamBuildingJpg, alt: `课后，学员们系着围裙与主厨在厨房合影`, w: 800, h: 1067 },
+            { src: img.handsOnChef, alt: `主厨把馅料挤在新鲜面皮上，客人们一起包意式饺子`, w: 800, h: 1067 },
           ],
           price: `€95`,
           priceNote: `每人 · 含葡萄酒与甜点`,
@@ -685,7 +717,7 @@ export const landings = {
             notIncluded: {
               title: '不包含内容',
               items: [
-                '制作酱汁',
+                '制作酱汁（您做意面时由厨房烹制）',
                 '额外的食物和饮品'
               ]
             }
@@ -694,9 +726,20 @@ export const landings = {
             {
               title: `您在课程中将真正学到什么？`,
               paras: [
-                `这是一门从第一分钟起就“双手沾满面粉”的实践课程，不需要坐在凳子上看演示。您将制作自己的面团，学会感受它何时准备好，并把它做成每位客人都会亲手制作并享用的两道菜：手工切成条的宽面（fettuccine），以及填好馅、封口时不留空气的意式饺子（ravioli）。然后做一份您自己的提拉米苏。`,
-                `宽面的酱汁由您选择（<strong>番茄罗勒</strong>、<strong>cacio e pepe</strong> 或 <strong>amatriciana</strong>），由厨房在您动手时烹制，让三个小时都专注在意面上；意式饺子配<strong>黄油鼠尾草</strong>。时间和季节允许的话，主厨还会示范同一块面团如何变成托斯卡纳的其他形状，比如手搓的 pici 和宽大的 pappardelle，方便您回家再做。`,
-                `在佛罗伦萨，多数课程把十二人称作“小班”。我们每桌从不超过八人，正因如此，当您的折叠出了问题时，身边站着的是一位厨师，而不是教室前方的一场演示。意面做好后我们一起烹饪，然后坐下来享用一顿正宗的托斯卡纳餐食：您刚刚做的意面、您自己的提拉米苏、一杯葡萄酒，最后是柠檬酒或咖啡，全部含在价格中。`,
+                `这是一门从第一分钟起就“双手沾满面粉”的实践课程，不需要坐在凳子上看演示。`,
+                `您将制作自己的面团，学会感受它何时准备好，并把它做成每位客人都会亲手制作并享用的两道菜：手工切成条的宽面（fettuccine），以及填好馅、封口时不留空气的意式饺子（ravioli）。然后做一份您自己的提拉米苏。`,
+                `宽面的酱汁由您选择（<strong>番茄罗勒</strong>、<strong>cacio e pepe</strong> 或 <strong>amatriciana</strong>），由厨房在您动手时烹制，让三个小时都专注在意面上；意式饺子配<strong>黄油鼠尾草</strong>。`,
+                `时间和季节允许的话，主厨还会示范同一块面团如何变成托斯卡纳的其他形状，比如手搓的 pici 和宽大的 pappardelle，方便您回家再做。`,
+                `在佛罗伦萨，多数课程把十二人称作“小班”。我们每桌从不超过八人，正因如此，当您的折叠出了问题时，身边站着的是一位厨师，而不是教室前方的一场演示。`,
+                `意面做好后我们一起烹饪，然后坐下来享用一顿正宗的托斯卡纳餐食：您刚刚做的意面、您自己的提拉米苏、一杯葡萄酒，最后是柠檬酒或咖啡，全部含在价格中。`,
+              ],
+            },
+            {
+              title: `您能带回家的`,
+              paras: [],
+              list: [
+                `我们会把您做过的所有菜谱发到您的邮箱，让您凭手感学会的那团面，下个月依然还在。`,
+                `没吃完的，您带走，我们帮您晾干、装袋，让它跟您一起回酒店。`,
               ],
             },
             {
@@ -711,8 +754,6 @@ export const landings = {
               list: [
                 `无麸质？我们免费准备专门的面粉混合物和干净的操作台，只需在预订时告知我们。`,
                 `95欧元已包含一杯托斯卡纳葡萄酒（或无酒精饮品），以及一杯柠檬酒或咖啡。课程结束后不再加收任何费用。`,
-                `我们会把您做过的所有菜谱发到您的邮箱，让您凭手感学会的那团面，下个月依然还在。`,
-                `没吃完的，您带走，我们帮您晾干、装袋，让它跟您一起回酒店。`,
                 `厨房位于奥特拉诺，靠近圣斯皮里托广场，我们会在您预订时发送确切地址。`,
                 `想在课程前先逛一逛清晨的菜市场吗？请查看 <a href="/zh/shichang-daolan-pengren-kecheng-foluolunsa/">Mercato &amp; Mani</a>。`,
               ],
@@ -856,7 +897,7 @@ export const landings = {
             { title: `Agriturismo Cooking Class`, href: `/agriturismo-cooking-class-tuscany/`, desc: `Groups of 6–20 in a working farm kitchen in the hills outside Florence.` },
           ],
           ctaLabel: `Book this class`,
-          prefill: 'florence',
+          prefill: 'market',
           breadcrumbName: `Market Tour & Cooking Class`,
           product: {
             name: `Mercato & Mani: Market Tour & Cooking Class in Florence`,
@@ -956,7 +997,7 @@ export const landings = {
             { title: `Corso di Cucina in Agriturismo`, href: `/it/corso-cucina-agriturismo-toscana/`, desc: `Gruppi da 6 a 20 nella cucina di un agriturismo in attività, sulle colline fuori Firenze.` },
           ],
           ctaLabel: `Prenota questo corso`,
-          prefill: 'florence',
+          prefill: 'market',
           breadcrumbName: `Tour del Mercato & Corso`,
           product: {
             name: `Mercato & Mani: Tour del Mercato & Corso di Cucina a Firenze`,
@@ -1056,7 +1097,7 @@ export const landings = {
             { title: `Cours de Cuisine en Agritourisme`, href: `/fr/cours-cuisine-agritourisme-toscane/`, desc: `Groupes de 6 à 20 dans la cuisine d'une ferme en activité, dans les collines autour de Florence.` },
           ],
           ctaLabel: `Réserver ce cours`,
-          prefill: 'florence',
+          prefill: 'market',
           breadcrumbName: `Visite du Marché & Cours`,
           product: {
             name: `Mercato & Mani: Visite du Marché et Cours de Cuisine à Florence`,
@@ -1156,7 +1197,7 @@ export const landings = {
             { title: `Agriturismo-Kochkurs`, href: `/de/agriturismo-kochkurs-toskana/`, desc: `Gruppen von 6 bis 20 in der Küche eines aktiven Agriturismo in den Hügeln vor Florenz.` },
           ],
           ctaLabel: `Diesen Kurs buchen`,
-          prefill: 'florence',
+          prefill: 'market',
           breadcrumbName: `Markttour & Kochkurs`,
           product: {
             name: `Mercato & Mani: Markttour & Kochkurs in Florenz`,
@@ -1256,7 +1297,7 @@ export const landings = {
             { title: `农庄烹饪课程`, href: `/zh/tuosikana-nongzhuang-pengren-kecheng/`, desc: `6 至 20 人，在佛罗伦萨郊外山间一座仍在运作的托斯卡纳农庄厨房里。` },
           ],
           ctaLabel: `预订此课程`,
-          prefill: 'florence',
+          prefill: 'market',
           breadcrumbName: `市场导览与烹饪课程`,
           product: {
             name: `Mercato & Mani：佛罗伦萨市场导览与烹饪课程`,
@@ -1367,7 +1408,7 @@ export const landings = {
             { title: `Florence pasta schools compared`, href: `/blog/where-to-take-pasta-making-class-florence/`, desc: `How the bigger Florence cooking schools compare with our small kitchen, side by side.` },
           ],
           ctaLabel: `Plan your evening`,
-          prefill: 'florence',
+          prefill: 'private',
           breadcrumbName: `Private Cooking Class`,
           product: {
             name: `The Family Long-Table: Private Cooking Class in Florence`,
@@ -1469,7 +1510,7 @@ export const landings = {
             { title: `Le scuole di pasta di Firenze a confronto`, href: `/it/blog/where-to-take-pasta-making-class-florence/`, desc: `Come si confrontano le scuole di cucina più grandi di Firenze con la nostra piccola cucina.` },
           ],
           ctaLabel: `Pianifica la tua serata`,
-          prefill: 'florence',
+          prefill: 'private',
           breadcrumbName: `Corso di Cucina Privato`,
           product: {
             name: `Il Lungo Tavolo di Famiglia: Corso di Cucina Privato a Firenze`,
@@ -1571,7 +1612,7 @@ export const landings = {
             { title: `Les écoles de pâtes de Florence comparées`, href: `/fr/blog/where-to-take-pasta-making-class-florence/`, desc: `Comment les grandes écoles de cuisine de Florence se comparent à notre petite cuisine.` },
           ],
           ctaLabel: `Planifier votre soirée`,
-          prefill: 'florence',
+          prefill: 'private',
           breadcrumbName: `Cours de Cuisine Privé`,
           product: {
             name: `La Longue Table Familiale: Cours de Cuisine Privé à Florence`,
@@ -1673,7 +1714,7 @@ export const landings = {
             { title: `Florentiner Kochschulen im Vergleich`, href: `/de/blog/where-to-take-pasta-making-class-florence/`, desc: `Wie sich die größeren Kochschulen in Florenz mit unserer kleinen Küche vergleichen.` },
           ],
           ctaLabel: `Planen Sie Ihren Abend`,
-          prefill: 'florence',
+          prefill: 'private',
           breadcrumbName: `Privater Kochkurs`,
           product: {
             name: `Die lange Familientafel: Privater Kochkurs in Florenz`,
@@ -1775,7 +1816,7 @@ export const landings = {
             { title: `佛罗伦萨意面课程对比`, href: `/zh/blog/where-to-take-pasta-making-class-florence/`, desc: `佛罗伦萨规模更大的烹饪学校与我们的小厨房并排对比。` },
           ],
           ctaLabel: `规划您的夜晚`,
-          prefill: 'florence',
+          prefill: 'private',
           breadcrumbName: `私人烹饪课程`,
           product: {
             name: `家庭长桌体验：佛罗伦萨私人烹饪课程`,

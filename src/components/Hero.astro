@@ -5,6 +5,7 @@ import { Image } from 'astro:assets';
 import { getLocaleFromUrl } from '../i18n/utils';
 import { useTranslations } from '../i18n/ui';
 import { cookingClass } from '../assets/images';
+import { PHONE_DISPLAY, WHATSAPP_URL, WHATSAPP_ICON_PATH } from '../data/contact';
 const t = useTranslations(getLocaleFromUrl(Astro.url));
 ---
 
@@ -47,12 +48,17 @@ const t = useTranslations(getLocaleFromUrl(Astro.url));
         <span class="btn__play" aria-hidden="true">▶</span>
         {t.hero.ctaSee}
       </a>
+      <p class="hero__contact">
+      {t.contact.ask}
+      <a href={WHATSAPP_URL} target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d={WHATSAPP_ICON_PATH} /></svg>
+        {PHONE_DISPLAY}
+      </a>
+      </p>
     </div>
 
     <ul class="hero__proof" data-reveal style="--reveal-delay:760ms">
-      <li><strong>2026</strong> {t.hero.proofOpened}</li>
-      <li><strong>3 hrs</strong> {t.hero.proofHands}</li>
-      <li><strong>max 8</strong> {t.hero.proofTable}</li>
+      {t.hero.proof.map((p) => <li><strong>{p.n}</strong> {p.l}</li>)}
     </ul>
   </div>
 
@@ -136,7 +142,10 @@ const t = useTranslations(getLocaleFromUrl(Astro.url));
 <style>
   .hero {
     position: relative;
-    min-height: 100svh;
+    /* Stops short of the full screen so the white strip below shows at the
+       bottom edge: a hero that fills the screen exactly reads as the end of
+       the page. */
+    min-height: calc(100svh - clamp(2.5rem, 7svh, 4.5rem));
     display: flex;
     align-items: flex-end;
     /* Top padding reserves room for the fixed header so the eyebrow never tucks
@@ -186,13 +195,19 @@ const t = useTranslations(getLocaleFromUrl(Astro.url));
     text-shadow: 0 2px 20px rgba(0,0,0,0.35);
   }
   .hero__lede {
-    max-width: 34ch;
+    max-width: 46ch;
     margin-top: 1.6rem;
     font-size: var(--step-1);
     line-height: 1.45;
     color: rgba(249,246,240,0.92);
   }
   .hero__actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2.2rem; }
+  .hero__contact { align-self: center; font-size: var(--step--1); color: rgba(249,246,240,0.82); }
+  .hero__contact a {
+    display: inline-flex; align-items: center; gap: 0.35rem; margin-left: 0.25rem;
+    font-weight: 700; color: var(--flour); text-decoration: underline; text-underline-offset: 3px;
+  }
+  @media (hover: hover) { .hero__contact a:hover { color: var(--yolk); } }
 
   .btn {
     display: inline-flex; align-items: center; gap: 0.6rem;

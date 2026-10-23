@@ -16,6 +16,7 @@ import Reviews from './Reviews.astro';
 import { PRICE_VALID_UNTIL } from '../utils/offer-validity';
 import { formatMonthYear } from '../utils/format-date';
 import * as img from '../assets/images';
+import { MAILTO, PHONE_DISPLAY, WHATSAPP_URL, WHATSAPP_ICON_PATH } from '../data/contact';
 
 interface Fact {
   label: string;
@@ -92,7 +93,7 @@ interface Props {
   related: Related[];
   ctaLabel: string;
   /** Booking-drawer prefill; ignored when emailSubject is set. */
-  prefill?: 'florence' | 'online';
+  prefill?: 'florence' | 'market' | 'private' | 'online';
   /** When set, the CTA becomes a mailto (bespoke enquiries) instead of the drawer. */
   emailSubject?: string;
   breadcrumbName: string;
@@ -198,11 +199,12 @@ const reviewSchema = pageKey ? getReviewSchema(pageKey) : null;
 
 // The two kitchen photos show the Florence room, so they belong only on the
 // in-person Florence classes — not the online class, the team-building enquiry
-// page or the gift voucher. `prefill: 'florence'` is exactly that set.
+// page or the gift voucher. A drawer-booked page that isn't online is exactly
+// that set.
 // Not on the vegan page either: the station photo has eggs in the bowls and
 // the table photo is a salumi-and-cheese board, the opposite of what that
 // visitor came to see.
-const showKitchenPhotos = prefill === 'florence' && !emailSubject && pageKey !== 'vegan';
+const showKitchenPhotos = prefill !== 'online' && !emailSubject && pageKey !== 'vegan';
 
 const productSchema = product && {
   '@context': 'https://schema.org',
@@ -295,7 +297,17 @@ const breadcrumbLd = breadcrumbSchema([
   { name: breadcrumbName, item: canonical },
 ]);
 
-const faqLd = faqSchema(faqs);
+// People look for the refund and payment answers right before they pay, so every
+// class booked through the drawer repeats them under its own questions. Worded
+// once per locale (t.lp.cancelFaq / t.lp.payFaq). Payment is left off the online
+// class: its balance is not paid in cash on the day.
+const allFaqs = [
+  ...faqs,
+  ...(!emailSubject && prefill !== 'online' ? [t.lp.payFaq] : []),
+  ...(!emailSubject ? [t.lp.cancelFaq] : []),
+];
+
+const faqLd = faqSchema(allFaqs);
 ---
 
 <!-- id="top" lets FloatingCTA treat this hero like the homepage one -->
@@ -322,7 +334,7 @@ const faqLd = faqSchema(faqs);
           emailSubject ? (
             <a
               class="lp-hero__cta"
-              href={`mailto:ciao@handmadepastaflorence.com?subject=${encodeURIComponent(emailSubject)}`}
+              href={`${MAILTO}?subject=${encodeURIComponent(emailSubject)}`}
             >
               {ctaLabel} <span aria-hidden="true">→</span>
             </a>
@@ -342,6 +354,13 @@ const faqLd = faqSchema(faqs);
           <a href={localizedHref('/cancellation-policy/', lang)}>{t.lp.cancellation}</a>
         </p>
       )}
+      <p class="lp-hero__contact">
+        {t.contact.ask}
+        <a href={WHATSAPP_URL} target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="currentColor" d={WHATSAPP_ICON_PATH} /></svg>
+          {PHONE_DISPLAY}
+        </a>
+      </p>
       <p class="lp-hero__updated">
         <time datetime={PAGE_UPDATED}>{t.lp.updated} {updatedLabel}</time>
       </p>
@@ -404,6 +423,13 @@ const faqLd = faqSchema(faqs);
     </dl>
   </div>
 </section>
+
+{/* This class's own reviews, straight under the facts so the proof sits next to
+    the price. Rendered so the Product markup above is never claiming a review
+    the page does not show. Emits nothing until a review with this pageKey
+    exists in src/data/reviews.ts. Badges are suppressed: they are sitewide
+    platform totals and would overstate a single class's record. */}
+<Reviews items={pageReviews} showBadges={false} />
 
 {
   /* Two real photos from our own kitchen, shown on the in-person Florence
@@ -489,14 +515,9 @@ const faqLd = faqSchema(faqs);
     <h2 class="lp-faq__h">{t.lp.faqPre}<span class="font-golden font-golden--accent font-golden--wide font-golden--terracotta">{t.lp.faqItal}</span></h2>
     <div class="lp-faq__list">
       {
-        faqs.map((f, i) => (
-          <details class="lp-faq__item" data-reveal style={`--reveal-delay:${i * 50}ms`}>
-            <summary class="lp-faq__q">
-              {f.q}
-              <span class="lp-faq__icon" aria-hidden="true">
-                +
-              </span>
-            </summary>
+        allFaqs.map((f, i) => (
+          <div class="lp-faq__item" data-reveal style={`--reveal-delay:${i * 50}ms`}>
+            <h3 class="lp-faq__q">{f.q}</h3>
             {/* set:html, not {f.a}: answers may carry an inline <a> (the price
                 breakdown link on the pasta-making page, in all five locales).
                 Escaped, that printed the raw tag as visible text on the
@@ -505,18 +526,12 @@ const faqLd = faqSchema(faqs);
                 it stands. Answers are authored in landings.ts, never user
                 input. */}
             <p class="lp-faq__a" set:html={f.a} />
-          </details>
+          </div>
         ))
       }
     </div>
   </div>
 </section>
-
-{/* This class's own reviews, rendered so the Product markup above is never
-    claiming a review the page does not show. Emits nothing until a review with
-    this pageKey exists in src/data/reviews.ts. Badges are suppressed: they are
-    sitewide platform totals and would overstate a single class's record. */}
-<Reviews items={pageReviews} showBadges={false} />
 
 <section class="lp-rel">
   <div class="shell">
@@ -790,6 +805,25 @@ const faqLd = faqSchema(faqs);
   .lp-hero__cancellation a:hover {
     color: var(--flour);
   }
+  .lp-hero__contact {
+    margin-top: 0.5rem;
+    font-size: var(--step--1);
+    color: rgba(249, 246, 240, 0.82);
+  }
+  .lp-hero__contact a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-left: 0.25rem;
+    font-weight: 600;
+    color: var(--flour);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color 0.3s;
+  }
+  .lp-hero__contact a:hover {
+    color: var(--yolk);
+  }
   .lp-hero__updated {
     margin-top: 1.1rem;
     font-size: 0.78rem;
@@ -900,31 +934,14 @@ const faqLd = faqSchema(faqs);
     padding: 0 1.3rem;
     box-shadow: var(--shadow-sm);
   }
+  /* Always open: these are the search landing pages, and answers in plain view
+     do better than ones folded behind a click. */
   .lp-faq__q {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    cursor: pointer;
-    list-style: none;
-    padding: 1.1rem 0;
+    padding: 1.1rem 0 0.5rem;
     font-family: var(--serif);
     font-weight: 700;
     font-size: var(--step-0);
     color: var(--olive);
-  }
-  .lp-faq__q::-webkit-details-marker {
-    display: none;
-  }
-  .lp-faq__icon {
-    color: var(--terracotta);
-    font-size: 1.4rem;
-    line-height: 1;
-    flex-shrink: 0;
-    transition: transform 0.3s var(--ease);
-  }
-  .lp-faq__item[open] .lp-faq__icon {
-    transform: rotate(45deg);
   }
   .lp-faq__a {
     margin: 0 0 1.2rem;

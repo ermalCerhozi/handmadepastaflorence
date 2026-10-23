@@ -5,6 +5,7 @@
 import { getLocaleFromUrl } from '../i18n/utils';
 import { useTranslations } from '../i18n/ui';
 import { landingPath } from '../data/landings';
+import { MAILTO } from '../data/contact';
 const lang = getLocaleFromUrl(Astro.url);
 const t = useTranslations(lang);
 
@@ -43,7 +44,7 @@ const t = useTranslations(lang);
 
     <div class="b2b__cta" data-reveal>
       <p>{t.b2b.ctaText}</p>
-      <a class="b2b__btn" href={t.b2b.ctaMailto}>
+      <a class="b2b__btn" href={`${MAILTO}?subject=${encodeURIComponent(t.b2b.ctaSubject)}`}>
         {t.b2b.ctaLabel} <span aria-hidden="true">→</span>
       </a>
     </div>

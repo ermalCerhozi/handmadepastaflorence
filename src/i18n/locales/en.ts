@@ -4,6 +4,18 @@
 // section maps to one component. Non-translatable data (image paths, sizes,
 // landing-page keys) stays in the component and is zipped with this copy by index.
 
+// Shared by the homepage FAQ and every class page booked through the drawer
+// (ClassLanding.astro appends both), so each policy is worded once per locale.
+// payFaq restates src/pages/booking-policy.astro; keep the two in step.
+const cancelFaq = {
+  q: "What's your cancellation policy?",
+  a: "Free cancellation up to 48 hours before your class, no charge. Need a new date instead? We're happy to reschedule at no cost up to 24 hours before your class. Cancellations inside 48 hours, or no-shows, may be charged the full class price. Full details on our cancellation policy page.",
+};
+const payFaq = {
+  q: 'When do I pay, and how?',
+  a: 'Nothing is charged when you send a request. Once we confirm your date, a 30% deposit by bank transfer or card link (Stripe) holds your place. You pay the rest in cash on the day of the class, or by transfer beforehand if you prefer.',
+};
+
 const en = {
   meta: {
     // The homepage carries exactly ONE keyword ("cooking class in Florence" — the
@@ -66,6 +78,13 @@ const en = {
     relPre: 'Looking for something ',
     relItal: 'else?',
     cancellation: 'Free cancellation up to 48h before.',
+    cancelFaq,
+    payFaq,
+  },
+
+  // WhatsApp line under the hero and class-page CTAs; the number follows it.
+  contact: {
+    ask: 'Questions first? WhatsApp us at',
   },
 
   lang: {
@@ -73,20 +92,22 @@ const en = {
   },
 
   hero: {
-    eyebrow: 'Firenze · newly opened · two chefs, one long table',
+    eyebrow: 'Oltrarno, Florence · classes every day',
     titleL1: 'Flour, eggs,',
     titleL2: 'and your two',
     titleItal: 'hands.',
     // Keyword slot 2 of 4. Sits inside the <h1> at a smaller size so the emotive
     // line above it still does the conversion work.
     titleKw: 'Hands-on cooking classes in Florence, from €95.',
-    imgAlt: 'Guests at a hands-on cooking class in Florence, rolling fresh pasta in our Oltrarno kitchen',
-    lede: 'Roll real Tuscan pasta beside two agriturismo head chefs.',
+    imgAlt: 'Board, rolling pin, flour and eggs set out for a hands-on cooking class in Florence, in our Oltrarno kitchen',
+    lede: 'Roll fresh pasta by hand with two agriturismo head chefs, then eat it with a glass of Tuscan wine.',
     ctaReserve: 'Book a pasta class',
     ctaSee: 'See the classes',
-    proofOpened: 'our kitchen just opened',
-    proofHands: 'hands-on, then you eat it all',
-    proofTable: 'at the table, never more',
+    proof: [
+      { n: '3 hrs', l: 'hands-on, then you eat it all' },
+      { n: 'max 8', l: 'at the table, never more' },
+      { n: 'Free', l: 'cancellation up to 48h before' },
+    ],
   },
 
   fab: {
@@ -145,8 +166,8 @@ const en = {
       { q: 'How much does a pasta making class in Florence cost?', a: 'Our signature Chef’s Table class is €95 per person, and the Mercato & Mani class is €145. Private group classes start from €680.' },
       { q: 'Where can I find gluten-free handmade pasta in Florence?', a: 'Right here in our kitchen! We can prepare a dedicated gluten-free flour blend and a clean station at no extra charge. Just tell us about any allergies when you book.' },
       { q: 'When do classes run?', a: 'Classes start at 10:00, 14:30 and 18:00 (Florence time), every day of the week.' },
-      { q: 'How do I book and pay?', a: "Use the “Book a class” button to build your request. It opens a WhatsApp chat with the details filled in, and we’ll confirm availability and walk you through the rest." },
-      { q: "What's your cancellation policy?", a: "Free cancellation up to 48 hours before your class, no charge. Need a new date instead? We're happy to reschedule at no cost up to 24 hours before your class. Cancellations inside 48 hours, or no-shows, may be charged the full class price. Full details on our cancellation policy page." },
+      { q: 'How do I book and pay?', a: `Use the “Book a class” button to build your request. It opens a WhatsApp chat with the details filled in, and we’ll confirm availability and walk you through the rest. ${payFaq.a}` },
+      cancelFaq,
     ],
   },
 
@@ -201,7 +222,7 @@ const en = {
     intro: 'We partner with hotels, tour operators and companies to bring the farmhouse table to their guests and teams, in our Oltrarno kitchen or live online.',
     ctaText: 'Tell us about your guests, group or team. We reply within one working day.',
     ctaLabel: 'Start a partnership',
-    ctaMailto: 'mailto:ciao@handmadepastaflorence.com?subject=Business%20partnership%20enquiry',
+    ctaSubject: 'Business partnership enquiry',
     offers: [
       { t: 'Hotels, B&Bs & agriturismi', d: 'Give your guests a pasta class to remember. Partner rates, easy referral booking, and classes in English or Italian. Five minutes from the Ponte Vecchio.', points: ['Partner & referral rates', 'Priority booking for your guests', 'Co-branded gift vouchers'], hrefLabel: '' },
       { t: 'Corporate team building', d: 'Aprons on, laptops away. A private hands-on class where your team rolls, folds, laughs and then sits down to a long lunch it made itself.', points: ['Private kitchen buyout, 6–14 people', 'English-speaking chefs', 'Wine pairing & dietary options'], hrefLabel: 'Team building details' },
@@ -253,6 +274,12 @@ const en = {
 
   bk: {
     ariaLabel: 'Book a pasta class',
+    // Calendar weekday initials, Monday first (the grid is Mon-first).
+    dow: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
+    payLater: 'You pay nothing until we’ve confirmed your date.',
+    emailFallback: 'No WhatsApp? Email us the same request',
+    sentH: 'Your request is ready in WhatsApp.',
+    sentP: 'Press send in the chat and we’ll reply to confirm your date, usually the same day. If WhatsApp didn’t open, use the email link below.',
     step1Label: 'Experience',
     step2Label: 'When & who',
     step3Label: 'Customize',
@@ -296,6 +323,7 @@ const en = {
     estTotal: 'Estimated total',
     msgIntro: 'Hi, I would like to book the "{class}" pasta class for {guests}.',
     msgOutro: 'Thank you!',
+    emailSubject: 'Booking request',
     freeCap: 'Free',
     guest: 'guest',
     guestsPlural: 'guests',

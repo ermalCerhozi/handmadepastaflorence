@@ -7,6 +7,7 @@ import { useTranslations } from '../i18n/ui';
 import { shapesHubPath } from '../data/shapes';
 import { classesPath } from '../data/classes-hub';
 import LanguageSwitcher from './LanguageSwitcher.astro';
+import { PHONE_DISPLAY, WHATSAPP_URL, WHATSAPP_ICON_PATH } from '../data/contact';
 
 interface Props {
   solid?: boolean;
@@ -46,9 +47,19 @@ const langLinks = alternates ?? getAlternates(Astro.url.pathname);
         {t.nav.book}
         <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
+      <a class="hdr__wa-line" href={WHATSAPP_URL} target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d={WHATSAPP_ICON_PATH} /></svg>
+        WhatsApp {PHONE_DISPLAY}
+      </a>
     </nav>
 
     <div class="hdr__end">
+      {/* Most people won't message, but seeing a real number builds trust, and
+          the ones who do are the readiest to book. Tablet widths only: see the
+          .hdr__wa media queries. */}
+      <a class="hdr__wa" href={WHATSAPP_URL} target="_blank" rel="noopener" aria-label={`WhatsApp ${PHONE_DISPLAY}`}>
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d={WHATSAPP_ICON_PATH} /></svg>
+      </a>
       <LanguageSwitcher langLinks={langLinks} />
 
       <button class="hdr__cta hdr__cta--desktop" data-open-booking data-cta="header">
@@ -174,6 +185,25 @@ const langLinks = alternates ?? getAlternates(Astro.url.pathname);
 
   .hdr__end { display: flex; align-items: center; gap: 0.6rem; }
 
+  .hdr__wa {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 38px; height: 38px; border-radius: 8px; flex-shrink: 0;
+    transition: background 0.3s var(--ease), color 0.3s var(--ease);
+  }
+  .hdr__wa:hover { background: rgba(0, 0, 0, 0.06); }
+  /* Phones: no room beside the two-line brand name. The menu panel and the
+     hero carry the WhatsApp line there instead. */
+  @media (max-width: 599px) { .hdr__wa { display: none; } }
+  /* Desktop: the inline nav already fills the bar (German wraps at 1440px with
+     one more icon), so desktop visitors get WhatsApp in the hero, the class
+     pages, the booking drawer and the footer instead. */
+  @media (min-width: 900px) { .hdr__wa { display: none; } }
+  .hdr__wa-line {
+    display: inline-flex; align-items: center; justify-content: center; gap: 0.45rem;
+    margin-top: 0.8rem; border-bottom: none !important; font-weight: 700;
+  }
+  .hdr__wa-line::after { display: none; }
+
   .hdr__cta {
     display: none; align-items: center; gap: 0.5rem;
     background: var(--yolk); color: var(--olive-deep);
@@ -216,5 +246,6 @@ const langLinks = alternates ?? getAlternates(Astro.url.pathname);
     .hdr__cta--nav { display: none; }
     .hdr__cta--desktop { display: inline-flex; }
     .hdr__burger { display: none; }
+    .hdr__wa-line { display: none; }
   }
 </style>
