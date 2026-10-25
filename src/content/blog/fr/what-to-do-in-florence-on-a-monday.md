@@ -8,6 +8,7 @@ image: '../../../assets/images/tuscan-aperitivo-buffet-table.webp'
 imageAlt: 'Une place tranquille de l’Oltrarno à Florence, un lundi après-midi'
 classKey: 'market-tour'
 related:
+  - 'what-to-do-in-florence-during-the-protests'
   - 'things-to-do-in-oltrarno-florence'
   - 'what-to-eat-in-florence'
   - 'what-to-do-in-florence-on-a-sunday'

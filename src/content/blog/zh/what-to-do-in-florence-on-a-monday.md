@@ -8,6 +8,7 @@ image: '../../../assets/images/tuscan-aperitivo-buffet-table.webp'
 imageAlt: '周一下午，佛罗伦萨奥特拉诺区一处安静的广场'
 classKey: 'market-tour'
 related:
+  - 'what-to-do-in-florence-during-the-protests'
   - 'things-to-do-in-oltrarno-florence'
   - 'what-to-eat-in-florence'
   - 'what-to-do-in-florence-on-a-sunday'

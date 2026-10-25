@@ -7,6 +7,7 @@ image: '../../../assets/images/tuscan-antipasto-board-burrata-red-wine.webp'
 imageAlt: "Un antipasto toscan de charcuterie, pecorino et burrata avec deux verres de vin rouge, le début d'un long déjeuner de fête"
 classKey: 'pasta-making'
 related:
+  - 'what-to-do-in-florence-during-the-protests'
   - 'what-to-do-in-florence-on-a-sunday'
   - 'what-to-do-in-florence-on-a-monday'
 faqs:

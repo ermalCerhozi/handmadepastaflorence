@@ -8,6 +8,7 @@ image: '../../assets/images/handmade-pici-pasta.webp'
 imageAlt: 'Hand-rolled pici, the thick eggless pasta of Siena and southern Tuscany'
 classKey: 'agriturismo'
 related:
+  - 'what-to-do-in-florence-during-the-protests'
   - 'what-to-eat-in-florence'
   - 'where-to-eat-handmade-pasta-in-florence'
 faqs:

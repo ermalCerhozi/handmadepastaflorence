@@ -8,6 +8,7 @@ image: '../../../assets/images/handmade-pici-pasta.webp'
 imageAlt: 'Pici tirati a mano, la pasta spessa senza uovo di Siena e della Toscana meridionale'
 classKey: 'agriturismo'
 related:
+  - 'what-to-do-in-florence-during-the-protests'
   - 'what-to-eat-in-florence'
   - 'where-to-eat-handmade-pasta-in-florence'
 faqs:

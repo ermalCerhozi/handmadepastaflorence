@@ -8,6 +8,7 @@ image: '../../../assets/images/handmade-pici-pasta.webp'
 imageAlt: '手工搓制的 pici，来自锡耶纳和托斯卡纳南部的粗身无蛋意面'
 classKey: 'agriturismo'
 related:
+  - 'what-to-do-in-florence-during-the-protests'
   - 'what-to-eat-in-florence'
   - 'where-to-eat-handmade-pasta-in-florence'
 faqs:

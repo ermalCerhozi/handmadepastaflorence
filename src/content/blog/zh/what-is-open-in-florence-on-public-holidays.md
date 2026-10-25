@@ -7,6 +7,7 @@ image: '../../../assets/images/tuscan-antipasto-board-burrata-red-wine.webp'
 imageAlt: '托斯卡纳冷盘：萨拉米、佩科里诺奶酪和布拉塔奶酪，配两杯红酒，一顿漫长节日午餐的开始'
 classKey: 'pasta-making'
 related:
+  - 'what-to-do-in-florence-during-the-protests'
   - 'what-to-do-in-florence-on-a-sunday'
   - 'what-to-do-in-florence-on-a-monday'
 faqs:

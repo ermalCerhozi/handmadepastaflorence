@@ -8,6 +8,7 @@ image: '../../../assets/images/handmade-pici-pasta.webp'
 imageAlt: 'Handgerollte Pici, die dicke eifreie Pasta aus Siena und der südlichen Toskana'
 classKey: 'agriturismo'
 related:
+  - 'what-to-do-in-florence-during-the-protests'
   - 'what-to-eat-in-florence'
   - 'where-to-eat-handmade-pasta-in-florence'
 faqs:

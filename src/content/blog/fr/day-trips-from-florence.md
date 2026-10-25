@@ -8,6 +8,7 @@ image: '../../../assets/images/handmade-pici-pasta.webp'
 imageAlt: 'Pici roulés à la main, les pâtes épaisses sans œuf de Sienne et du sud de la Toscane'
 classKey: 'agriturismo'
 related:
+  - 'what-to-do-in-florence-during-the-protests'
   - 'what-to-eat-in-florence'
   - 'where-to-eat-handmade-pasta-in-florence'
 faqs:

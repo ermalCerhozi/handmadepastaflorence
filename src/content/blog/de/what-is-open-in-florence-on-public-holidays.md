@@ -7,6 +7,7 @@ image: '../../../assets/images/tuscan-antipasto-board-burrata-red-wine.webp'
 imageAlt: 'Ein toskanisches Antipasto mit Salumi, Pecorino und Burrata und zwei Gläsern Rotwein, der Anfang eines langen Feiertagsessens'
 classKey: 'pasta-making'
 related:
+  - 'what-to-do-in-florence-during-the-protests'
   - 'what-to-do-in-florence-on-a-sunday'
   - 'what-to-do-in-florence-on-a-monday'
 faqs:
