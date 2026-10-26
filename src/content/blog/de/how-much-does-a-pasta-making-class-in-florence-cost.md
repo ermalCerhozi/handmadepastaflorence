@@ -8,6 +8,7 @@ image: '../../../assets/images/pasta-cooking-class-florence-group-kitchen.webp'
 imageAlt: 'Gäste machen gemeinsam frische Pasta bei einem Kurs in einer kleinen Gruppe in Florenz'
 classKey: 'pasta-making'
 related:
+  - 'is-a-chef-led-cooking-class-in-florence-worth-it'
   - 'how-to-choose-a-pasta-class-in-florence'
   - 'where-to-take-pasta-making-class-florence'
 faqs:

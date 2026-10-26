@@ -8,6 +8,7 @@ image: '../../../assets/images/fresh-pasta-station-rolling-pin-flour.webp'
 imageAlt: 'Eine kleine Gruppe macht an einem Tisch in Florenz frische Pasta von Hand'
 classKey: 'pasta-making'
 related:
+  - 'is-a-chef-led-cooking-class-in-florence-worth-it'
   - 'how-much-does-a-pasta-making-class-in-florence-cost'
   - 'where-to-take-pasta-making-class-florence'
 faqs:

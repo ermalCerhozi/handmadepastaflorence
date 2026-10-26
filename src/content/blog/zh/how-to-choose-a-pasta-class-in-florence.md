@@ -8,6 +8,7 @@ image: '../../../assets/images/fresh-pasta-station-rolling-pin-flour.webp'
 imageAlt: '一小群人在佛罗伦萨的餐桌旁手工制作新鲜意面'
 classKey: 'pasta-making'
 related:
+  - 'is-a-chef-led-cooking-class-in-florence-worth-it'
   - 'how-much-does-a-pasta-making-class-in-florence-cost'
   - 'where-to-take-pasta-making-class-florence'
 faqs:

@@ -8,6 +8,7 @@ image: '../../../assets/images/pasta-cooking-class-florence-group-kitchen.webp'
 imageAlt: '客人们在佛罗伦萨的小班课程中一起制作新鲜意面'
 classKey: 'pasta-making'
 related:
+  - 'is-a-chef-led-cooking-class-in-florence-worth-it'
   - 'how-to-choose-a-pasta-class-in-florence'
   - 'where-to-take-pasta-making-class-florence'
 faqs:
