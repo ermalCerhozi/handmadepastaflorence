@@ -45,7 +45,7 @@ There are indeed absolutely wonderful trattorias and osterias in Florence that m
 
 However, here is the secret most restaurants won't broadcast: **it is almost physically impossible for a busy city-center restaurant to hand-make enough pasta to meet their daily demand.** 
 
-Hand-rolling dough, cutting [tagliatelle](/pasta-shapes/tagliatelle/), and hand-pinching thousands of [ravioli](/pasta-shapes/ravioli/) takes an immense amount of time, space, and labor. A busy trattoria doing 200 covers a night simply cannot keep up with that volume using only two hands and a wooden rolling pin. 
+Hand-rolling dough, cutting tagliatelle, and hand-pinching thousands of ravioli takes an immense amount of time, space, and labor. A busy trattoria doing 200 covers a night simply cannot keep up with that volume using only two hands and a wooden rolling pin. 
 
 ### So, what do they do?
 
@@ -59,7 +59,7 @@ Ask a Florentine where they eat the best fresh pasta, and they will usually give
 1. **"At my mother’s house on Sunday."**
 2. **A tiny local spot way outside the center.**
 
-Locals know that to get purely handmade, limited-batch pasta, you need to go to places with very few tables and a menu that changes daily. When that kitchen runs out of fresh [pappardelle](/pasta-shapes/pappardelle/) for the day, they cross it off the chalkboard. They don't go to the freezer.
+Locals know that to get purely handmade, limited-batch pasta, you need to go to places with very few tables and a menu that changes daily. When that kitchen runs out of fresh pappardelle for the day, they cross it off the chalkboard. They don't go to the freezer.
 
 ## What should you order in Florence?
 
@@ -116,5 +116,7 @@ Whatever you spend, the menu signs above still apply. A short, seasonal menu on 
 The best plate of handmade pasta in Florence is honestly the one you rolled yourself twenty minutes earlier; I'm biased, but our guests say it, not us. Every one of [our classes](/pasta-making-class-florence/) ends exactly like a good trattoria lunch: your pasta, a Tuscan sauce, a glass of local wine, and nowhere to be for a while.
 
 If you are reading this for someone else's trip, that table also makes a good present: our [cooking class gift vouchers](/gift-a-cooking-class-florence/) work for any of our classes, start at €68, arrive by email and leave the date to them.
+
+Travelling with children? The [family cooking class in Florence](/family-cooking-class-florence/) takes them from six years old, at €50 for ages 6 to 12 and free under six. Just the two of you? That is the [pasta class for two](/pasta-class-for-two-florence/).
 
 And if you want the wider list — the six plates that actually belong to this city, and the famous Italian dishes that come from somewhere else — that is [what to eat in Florence](/blog/what-to-eat-in-florence/). For the towns around it, each has a dish Florence does not make: [day trips from Florence](/blog/day-trips-from-florence/).

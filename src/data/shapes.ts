@@ -236,6 +236,10 @@ const en: ShapesLocale = {
           q: 'Are pici hard to make at home?',
           a: 'They are the easiest fresh pasta to start with, because you need no machine and no rolling pin, just your hands and a board. They are slow rather than difficult: rolling enough pici for four people takes a while, which is exactly why it was a job for the whole family.',
         },
+        {
+          q: 'What is the difference between pici and tonnarelli?',
+          a: 'Pici are rolled round by hand from an eggless dough of flour and water, so every strand is a slightly different thickness. Tonnarelli are cut, not rolled: an egg dough is rolled into a sheet and cut into strands with a square cross-section, about as thick as they are wide. Pici come from southern Tuscany around Siena, tonnarelli from Lazio and Abruzzo, which is why tonnarelli turn up under cacio e pepe and pici under a garlicky aglione or a meat ragu.',
+        },
       ],
       compare: { dough: 'Flour & water, no egg', cut: 'Rolled by hand, ~3 mm', sauce: 'Aglione, wild boar, cacio e pepe' },
     },
@@ -687,6 +691,10 @@ const it: ShapesLocale = {
         {
           q: 'I pici sono difficili da fare in casa?',
           a: 'Sono la pasta fresca più facile con cui iniziare, perché non servono né macchina né mattarello, solo le mani e un tagliere. Sono lunghi più che difficili: fare abbastanza pici per quattro persone richiede tempo, ed è esattamente per questo che era un lavoro per tutta la famiglia.',
+        },
+        {
+          q: 'Qual è la differenza tra pici e tonnarelli?',
+          a: 'I pici si arrotolano a mano, tondi, da un impasto senza uovo di farina e acqua, quindi ogni filo ha uno spessore un po\' diverso. I tonnarelli invece si tagliano: un impasto all\'uovo si tira in sfoglia e si taglia in fili a sezione quadrata, spessi quanto sono larghi. I pici vengono dalla Toscana meridionale, dalle parti di Siena, i tonnarelli dal Lazio e dall\'Abruzzo, ed è per questo che i tonnarelli si trovano sotto il cacio e pepe e i pici sotto l\'aglione o un ragù di carne.',
         },
       ],
       compare: { dough: 'Acqua e farina, niente uovo', cut: 'Tirati a mano, ~3 mm', sauce: 'Aglione, cinghiale, cacio e pepe' },
@@ -1142,6 +1150,10 @@ const de: ShapesLocale = {
           q: 'Sind Pici schwer selbst zu machen?',
           a: 'Sie sind die einfachste frische Pasta für den Anfang, weil weder Maschine noch Nudelholz nötig sind, nur Hände und ein Brett. Sie sind eher langsam als schwierig: genug Pici für vier Personen zu rollen dauert eine Weile, und genau deshalb war es Arbeit für die ganze Familie.',
         },
+        {
+          q: 'Was ist der Unterschied zwischen Pici und Tonnarelli?',
+          a: 'Pici werden mit der Hand rund gerollt, aus einem eifreien Teig aus Mehl und Wasser, deshalb ist jeder Strang etwas anders dick. Tonnarelli werden geschnitten, nicht gerollt: ein Eierteig wird zu einer Platte ausgerollt und in Stränge mit quadratischem Querschnitt geschnitten, etwa so dick wie breit. Pici kommen aus der südlichen Toskana um Siena, Tonnarelli aus Latium und den Abruzzen, und darum liegen Tonnarelli unter Cacio e Pepe und Pici unter Aglione oder einem Fleischragù.',
+        },
       ],
       compare: { dough: 'Mehl und Wasser, kein Ei', cut: 'Von Hand gerollt, ~3 mm', sauce: 'Aglione, Wildschwein, Cacio e pepe' },
     },
@@ -1585,6 +1597,10 @@ const fr: ShapesLocale = {
           q: 'Les pici sont-ils difficiles à faire à la maison ?',
           a: 'C\'est la pâte fraîche la plus facile pour commencer, parce qu\'il ne faut ni machine ni rouleau, seulement vos mains et une planche. Ils sont longs plutôt que difficiles : rouler assez de pici pour quatre prend un moment, et c\'est exactement pourquoi c\'était un travail de famille entière.',
         },
+        {
+          q: 'Quelle est la différence entre les pici et les tonnarelli ?',
+          a: 'Les pici sont roulés ronds à la main, à partir d\'une pâte sans œuf de farine et d\'eau, si bien que chaque brin a une épaisseur un peu différente. Les tonnarelli sont coupés et non roulés : une pâte aux œufs est étalée en feuille puis coupée en brins à section carrée, aussi épais que larges. Les pici viennent du sud de la Toscane, autour de Sienne, les tonnarelli du Latium et des Abruzzes, et c\'est pourquoi on trouve les tonnarelli sous un cacio e pepe et les pici sous un aglione ou un ragù de viande.',
+        },
       ],
       compare: { dough: 'Farine et eau, sans œuf', cut: 'Roulé à la main, environ 3 mm', sauce: 'Aglione, sanglier, cacio e pepe' },
     },
@@ -2025,6 +2041,10 @@ const zh: ShapesLocale = {
         {
           q: '在家做 pici 难吗？',
           a: '它是最容易上手的新鲜意面，因为不需要机器也不需要擀面杖，只要你的双手和一块板子。它是慢，而不是难：搓够四个人吃的 pici 要花一阵子，这正是为什么它曾经是全家一起干的活。',
+        },
+        {
+          q: 'Pici 和 tonnarelli 有什么区别？',
+          a: 'Pici 是用面粉和水做的无蛋面团，用手搓成圆形，所以每一根的粗细都略有不同。Tonnarelli 则是切出来的，不是搓出来的：鸡蛋面团擀成面皮后切成横截面为正方形的面条，厚度和宽度差不多。Pici 来自锡耶纳一带的托斯卡纳南部，tonnarelli 来自拉齐奥和阿布鲁佐，这也是为什么 tonnarelli 常配 cacio e pepe，而 pici 常配 aglione 蒜酱或肉酱。',
         },
       ],
       compare: { dough: '面粉与水，不加蛋', cut: '手搓，约 3 毫米', sauce: 'Aglione、野猪、cacio e pepe' },

@@ -2,6 +2,7 @@
 title: "What's open in Florence on holidays: Christmas to Ferragosto"
 description: 'Christmas, New Year, Easter, 1 May, San Giovanni, Ferragosto: which Florence museums, markets and Duomo sites open on each Italian public holiday.'
 pubDate: 2026-10-14
+updatedDate: 2026-10-31
 author: 'Endri Cerhozi'
 image: '../../assets/images/tuscan-antipasto-board-burrata-red-wine.webp'
 imageAlt: 'A Tuscan antipasto of salumi, pecorino and burrata with two glasses of red wine, the start of a long holiday lunch'
@@ -27,18 +28,26 @@ If you are in Florence for Christmas, Easter or a long weekend, the first questi
 
 The catch is that holiday hours change from year to year and are often published only days ahead. So this guide gives you the official rules, what happened last time, and where to check. Use it to plan, then check the official site the week before.
 
-These are the dates for the coming winter, spring and summer:
+These are the dates for the coming winter, spring and summer, with the short version of each. The sections below give the detail and the years the hours come from.
 
-- **Tuesday 8 December 2026:** the Immacolata (Immaculate Conception)
-- **Thursday 24 to Saturday 26 December 2026:** Christmas Eve, Christmas Day, Santo Stefano
-- **Thursday 31 December 2026 and Friday 1 January 2027:** New Year's Eve and New Year's Day
-- **Wednesday 6 January 2027:** Epiphany
-- **Sunday 28 and Monday 29 March 2027:** Easter Sunday and Easter Monday (Pasquetta)
-- **Sunday 25 April 2027:** Liberation Day
-- **Saturday 1 May 2027:** Labour Day
-- **Wednesday 2 June 2027:** Republic Day
-- **Thursday 24 June 2027:** San Giovanni, Florence's own patron saint's day
-- **Sunday 15 August 2027:** Ferragosto
+| Date | Big museums | Duomo monuments | Food markets |
+|---|---|---|---|
+| Tue 8 Dec 2026, Immacolata | Normal hours | Cathedral closed to visitors, dome climb from 12:45 | Sant'Ambrogio open, 7:00 to 14:00 |
+| Thu 24 Dec, Christmas Eve | Open, some close early | Open | Sant'Ambrogio open, 7:00 to 14:00 |
+| **Fri 25 Dec, Christmas Day** | **Closed** | **Closed** | Ground floor closed; the Mercato Centrale food hall has opened in recent years |
+| Sat 26 Dec, Santo Stefano | Open as usual | Open, dome climb on the holiday timetable from 12:45 | Sant'Ambrogio open |
+| Thu 31 Dec, New Year's Eve | Open, some close early | Open | Sant'Ambrogio open, 7:00 to 14:00 |
+| **Fri 1 Jan 2027, New Year's Day** | **Closed** | **Closed** | Ground floor closed; the food hall has opened in recent years |
+| Wed 6 Jan, Epiphany | Normal hours | Cathedral closed to visitors, dome climb from 12:45 | Open |
+| Sun 28 Mar, Easter Sunday | Opened in 2025 and 2026 | All closed | Closed |
+| Mon 29 Mar, Pasquetta | Monday is the closing day; several opened specially in 2025 and 2026 | Not published in advance | Check the week before |
+| Sun 25 Apr, Liberation Day | Open, and free entry in 2026 | Cathedral closed to visitors, dome climb from 12:45 | Closed except the food hall |
+| Sat 1 May, Labour Day | Open | Not published in advance | Open |
+| Wed 2 Jun, Republic Day | Open, and free entry in 2026 | Not published in advance | Open |
+| Thu 24 Jun, San Giovanni | Normal opening day | Not published in advance | Open |
+| Sun 15 Aug, Ferragosto | Open with normal hours in 2026 | Cathedral closed to visitors, dome climb from 12:45 | Closed except the food hall |
+
+The two dates to plan around are 25 December and 1 January. Everything else is a normal day with trimmed hours somewhere.
 
 ## Which days is almost everything closed in Florence?
 

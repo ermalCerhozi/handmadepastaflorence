@@ -2,6 +2,7 @@
 title: 'Firenze nei giorni festivi: cosa è aperto e cosa chiude'
 description: 'Natale, Capodanno, Pasqua, 1° maggio, San Giovanni, Ferragosto: quali musei, mercati e monumenti del Duomo sono aperti a Firenze in ogni festività.'
 pubDate: 2026-10-14
+updatedDate: 2026-10-31
 author: 'Endri Cerhozi'
 image: '../../../assets/images/tuscan-antipasto-board-burrata-red-wine.webp'
 imageAlt: 'Un antipasto toscano di salumi, pecorino e burrata con due calici di vino rosso, l''inizio di un lungo pranzo di festa'
@@ -27,18 +28,26 @@ Se sei a Firenze per Natale, per Pasqua o per un ponte, la prima domanda è semp
 
 Il problema è che gli orari delle feste cambiano di anno in anno e spesso vengono pubblicati pochi giorni prima. Per questo qui trovi le regole ufficiali, cosa è successo l'ultima volta e dove controllare. Usala per organizzarti, poi controlla il sito ufficiale la settimana prima.
 
-Ecco le date dei prossimi mesi:
+Queste sono le date per l'inverno, la primavera e l'estate che arrivano, ognuna in versione breve. Le sezioni sotto danno il dettaglio e gli anni da cui vengono gli orari.
 
-- **Martedì 8 dicembre 2026:** Immacolata Concezione
-- **Da giovedì 24 a sabato 26 dicembre 2026:** Vigilia, Natale, Santo Stefano
-- **Giovedì 31 dicembre 2026 e venerdì 1° gennaio 2027:** San Silvestro e Capodanno
-- **Mercoledì 6 gennaio 2027:** Epifania
-- **Domenica 28 e lunedì 29 marzo 2027:** Pasqua e Pasquetta
-- **Domenica 25 aprile 2027:** Festa della Liberazione
-- **Sabato 1° maggio 2027:** Festa dei Lavoratori
-- **Mercoledì 2 giugno 2027:** Festa della Repubblica
-- **Giovedì 24 giugno 2027:** San Giovanni, il patrono di Firenze
-- **Domenica 15 agosto 2027:** Ferragosto
+| Data | Grandi musei | Monumenti del Duomo | Mercati alimentari |
+|---|---|---|---|
+| Mar 8 dic 2026, Immacolata | Orari normali | Cattedrale chiusa ai visitatori, salita alla cupola dalle 12:45 | Sant'Ambrogio aperto, 7:00-14:00 |
+| Gio 24 dic, vigilia di Natale | Aperti, alcuni chiudono prima | Aperti | Sant'Ambrogio aperto, 7:00-14:00 |
+| **Ven 25 dic, Natale** | **Chiusi** | **Chiusi** | Piano terra chiuso; la food hall del Mercato Centrale ha aperto negli ultimi anni |
+| Sab 26 dic, Santo Stefano | Aperti come sempre | Aperti, salita alla cupola con orario festivo dalle 12:45 | Sant'Ambrogio aperto |
+| Gio 31 dic, San Silvestro | Aperti, alcuni chiudono prima | Aperti | Sant'Ambrogio aperto, 7:00-14:00 |
+| **Ven 1 gen 2027, Capodanno** | **Chiusi** | **Chiusi** | Piano terra chiuso; la food hall ha aperto negli ultimi anni |
+| Mer 6 gen, Epifania | Orari normali | Cattedrale chiusa ai visitatori, salita alla cupola dalle 12:45 | Aperti |
+| Dom 28 mar, Pasqua | Aperti nel 2025 e nel 2026 | Tutti chiusi | Chiusi |
+| Lun 29 mar, Pasquetta | Il lunedì è giorno di chiusura; diversi hanno aperto in via straordinaria nel 2025 e 2026 | Non pubblicato in anticipo | Da verificare la settimana prima |
+| Dom 25 apr, Liberazione | Aperti, ingresso gratuito nel 2026 | Cattedrale chiusa ai visitatori, salita alla cupola dalle 12:45 | Chiusi tranne la food hall |
+| Sab 1 mag, Festa del Lavoro | Aperti | Non pubblicato in anticipo | Aperti |
+| Mer 2 giu, Festa della Repubblica | Aperti, ingresso gratuito nel 2026 | Non pubblicato in anticipo | Aperti |
+| Gio 24 giu, San Giovanni | Giorno di apertura normale | Non pubblicato in anticipo | Aperti |
+| Dom 15 ago, Ferragosto | Aperti con orari normali nel 2026 | Cattedrale chiusa ai visitatori, salita alla cupola dalle 12:45 | Chiusi tranne la food hall |
+
+Le due date intorno a cui organizzarsi sono il 25 dicembre e il 1 gennaio. Tutto il resto è un giorno normale con gli orari ridotti da qualche parte.
 
 ## In quali giorni a Firenze è chiuso quasi tutto?
 

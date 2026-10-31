@@ -45,7 +45,7 @@ Ci sono davvero delle meravigliose trattorie e osterie a Firenze che fanno pasta
 
 Tuttavia, ecco il segreto che la maggior parte dei ristoranti non diffonderà: **è quasi fisicamente impossibile per un ristorante affollato del centro città preparare a mano abbastanza pasta per soddisfare la sua domanda quotidiana.** 
 
-Stendere l'impasto a mano, tagliare le [tagliatelle](/it/formati-di-pasta-toscana/tagliatelle/) e pizzicare a mano migliaia di [ravioli](/it/formati-di-pasta-toscana/ravioli/) richiede un'enorme quantità di tempo, spazio e manodopera. Una trattoria affollata che fa 200 coperti a sera semplicemente non riesce a tenere il passo con quel volume usando solo due mani e un mattarello di legno. 
+Stendere l'impasto a mano, tagliare le tagliatelle e pizzicare a mano migliaia di ravioli richiede un'enorme quantità di tempo, spazio e manodopera. Una trattoria affollata che fa 200 coperti a sera semplicemente non riesce a tenere il passo con quel volume usando solo due mani e un mattarello di legno. 
 
 ### Quindi, cosa fanno?
 
@@ -59,7 +59,7 @@ Chiedi a un fiorentino dove mangia la migliore pasta fresca, e di solito ti dar�
 1. **"A casa di mia madre la domenica."**
 2. **Un piccolo locale del posto ben fuori dal centro.**
 
-I locali sanno che per ottenere una pasta puramente fatta a mano e in lotti limitati, devi andare in posti con pochissimi tavoli e un menu che cambia ogni giorno. Quando in quella cucina finiscono le [pappardelle](/it/formati-di-pasta-toscana/pappardelle/) fresche per la giornata, le cancellano dalla lavagna. Non vanno al congelatore.
+I locali sanno che per ottenere una pasta puramente fatta a mano e in lotti limitati, devi andare in posti con pochissimi tavoli e un menu che cambia ogni giorno. Quando in quella cucina finiscono le pappardelle fresche per la giornata, le cancellano dalla lavagna. Non vanno al congelatore.
 
 ## Cosa ordinare a Firenze?
 
@@ -116,5 +116,7 @@ Qualunque cifra tu spenda, i segnali del menu visti sopra valgono sempre. Un men
 Il miglior piatto di pasta fresca a Firenze è onestamente quello che hai steso tu stesso venti minuti prima; sono di parte, ma i nostri ospiti lo dicono, non noi. Ognuno dei [nostri corsi](/it/corso-pasta-fresca-firenze/) finisce esattamente come un buon pranzo in trattoria: la tua pasta, un sugo toscano, un bicchiere di vino locale, e nessun posto dove dover correre.
 
 Se stai leggendo per il viaggio di qualcun altro, quel tavolo è anche un bel regalo: i nostri [buoni regalo per un corso di cucina](/it/regala-corso-di-cucina-firenze/) valgono per qualsiasi nostro corso, partono da €68, arrivano via email e la data la sceglie chi li riceve.
+
+In viaggio con bambini? Il [corso di cucina per famiglie a Firenze](/it/corso-cucina-famiglia-firenze/) li accoglie dai sei anni, €50 dai 6 ai 12 anni e gratis sotto i sei. Siete solo in due? Allora è il [corso di pasta per due](/it/corso-pasta-per-due-firenze/).
 
 E se volete la lista più larga — i sei piatti che appartengono davvero a questa città e i grandi classici italiani che vengono da altrove — è [cosa mangiare a Firenze](/it/blog/what-to-eat-in-florence/). Per le città intorno, ognuna ha un piatto che Firenze non fa: [gite da Firenze](/it/blog/day-trips-from-florence/).

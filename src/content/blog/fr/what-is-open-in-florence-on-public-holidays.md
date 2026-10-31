@@ -2,6 +2,7 @@
 title: 'Florence les jours fériés : ce qui est ouvert, ce qui ferme'
 description: "Noël, Nouvel An, Pâques, 1er mai, Saint-Jean, Ferragosto : quels musées, marchés et monuments du Duomo ouvrent à Florence chaque jour férié."
 pubDate: 2026-10-14
+updatedDate: 2026-10-31
 author: 'Endri Cerhozi'
 image: '../../../assets/images/tuscan-antipasto-board-burrata-red-wine.webp'
 imageAlt: "Un antipasto toscan de charcuterie, pecorino et burrata avec deux verres de vin rouge, le début d'un long déjeuner de fête"
@@ -27,18 +28,26 @@ Si vous êtes à Florence pour Noël, pour Pâques ou pour un pont, la première
 
 Le problème, c'est que les horaires des fêtes changent d'une année à l'autre et ne sont souvent publiés que quelques jours avant. Ce guide vous donne donc les règles officielles, ce qui s'est passé la dernière fois et où vérifier. Servez-vous-en pour vous organiser, puis vérifiez le site officiel la semaine précédente.
 
-Voici les dates des prochains mois :
+Voici les dates pour l'hiver, le printemps et l'été à venir, avec la version courte de chacune. Les sections ci-dessous donnent le détail et les années d'où viennent les horaires.
 
-- **Mardi 8 décembre 2026 :** Immaculée Conception (l'Immacolata)
-- **Du jeudi 24 au samedi 26 décembre 2026 :** veille de Noël, Noël, la Saint-Étienne (Santo Stefano)
-- **Jeudi 31 décembre 2026 et vendredi 1er janvier 2027 :** la Saint-Sylvestre et le Jour de l'An
-- **Mercredi 6 janvier 2027 :** Épiphanie
-- **Dimanche 28 et lundi 29 mars 2027 :** dimanche et lundi de Pâques (la Pasquetta)
-- **Dimanche 25 avril 2027 :** fête de la Libération
-- **Samedi 1er mai 2027 :** fête du Travail
-- **Mercredi 2 juin 2027 :** fête de la République
-- **Jeudi 24 juin 2027 :** la Saint-Jean (San Giovanni), le saint patron de Florence
-- **Dimanche 15 août 2027 :** Ferragosto (Assomption)
+| Date | Grands musées | Monuments du Duomo | Marchés alimentaires |
+|---|---|---|---|
+| Mar 8 déc 2026, Immacolata | Horaires normaux | Cathédrale fermée aux visiteurs, montée du dôme à partir de 12h45 | Sant'Ambrogio ouvert, 7h à 14h |
+| Jeu 24 déc, réveillon de Noël | Ouverts, certains ferment plus tôt | Ouverts | Sant'Ambrogio ouvert, 7h à 14h |
+| **Ven 25 déc, Noël** | **Fermés** | **Fermés** | Rez-de-chaussée fermé ; la halle du Mercato Centrale a ouvert ces dernières années |
+| Sam 26 déc, Santo Stefano | Ouverts comme d'habitude | Ouverts, montée du dôme selon l'horaire des jours fériés à partir de 12h45 | Sant'Ambrogio ouvert |
+| Jeu 31 déc, Saint-Sylvestre | Ouverts, certains ferment plus tôt | Ouverts | Sant'Ambrogio ouvert, 7h à 14h |
+| **Ven 1 jan 2027, Jour de l'An** | **Fermés** | **Fermés** | Rez-de-chaussée fermé ; la halle a ouvert ces dernières années |
+| Mer 6 jan, Épiphanie | Horaires normaux | Cathédrale fermée aux visiteurs, montée du dôme à partir de 12h45 | Ouverts |
+| Dim 28 mars, Pâques | Ouverts en 2025 et 2026 | Tous fermés | Fermés |
+| Lun 29 mars, Pasquetta | Le lundi est le jour de fermeture ; plusieurs ont ouvert exceptionnellement en 2025 et 2026 | Non publié à l'avance | À vérifier la semaine précédente |
+| Dim 25 avril, Libération | Ouverts, entrée gratuite en 2026 | Cathédrale fermée aux visiteurs, montée du dôme à partir de 12h45 | Fermés sauf la halle |
+| Sam 1 mai, Fête du Travail | Ouverts | Non publié à l'avance | Ouverts |
+| Mer 2 juin, Fête de la République | Ouverts, entrée gratuite en 2026 | Non publié à l'avance | Ouverts |
+| Jeu 24 juin, San Giovanni | Jour d'ouverture normal | Non publié à l'avance | Ouverts |
+| Dim 15 août, Ferragosto | Ouverts aux horaires normaux en 2026 | Cathédrale fermée aux visiteurs, montée du dôme à partir de 12h45 | Fermés sauf la halle |
+
+Les deux dates à contourner sont le 25 décembre et le 1er janvier. Tout le reste est un jour normal avec des horaires réduits quelque part.
 
 ## Quels jours presque tout est-il fermé à Florence ?
 

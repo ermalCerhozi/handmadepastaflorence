@@ -2,6 +2,7 @@
 title: 'Florenz an Feiertagen: Was geöffnet hat und was schließt'
 description: 'Weihnachten, Neujahr, Ostern, 1. Mai, San Giovanni, Ferragosto: welche Museen, Märkte und Dom-Monumente in Florenz an jedem Feiertag geöffnet haben.'
 pubDate: 2026-10-14
+updatedDate: 2026-10-31
 author: 'Endri Cerhozi'
 image: '../../../assets/images/tuscan-antipasto-board-burrata-red-wine.webp'
 imageAlt: 'Ein toskanisches Antipasto mit Salumi, Pecorino und Burrata und zwei Gläsern Rotwein, der Anfang eines langen Feiertagsessens'
@@ -27,18 +28,26 @@ Wer über Weihnachten, Ostern oder ein langes Wochenende in Florenz ist, stellt 
 
 Der Haken: Die Feiertagszeiten ändern sich von Jahr zu Jahr und werden oft erst wenige Tage vorher veröffentlicht. Deshalb finden Sie hier die offiziellen Regeln, was beim letzten Mal galt und wo Sie nachsehen. Planen Sie damit, und prüfen Sie die offizielle Website in der Woche davor.
 
-Das sind die Termine der kommenden Monate:
+Dies sind die Termine für den kommenden Winter, Frühling und Sommer, jeweils in der Kurzfassung. Die Abschnitte darunter geben die Details und die Jahre, aus denen die Zeiten stammen.
 
-- **Dienstag, 8. Dezember 2026:** Mariä Empfängnis (Immacolata)
-- **Donnerstag, 24., bis Samstag, 26. Dezember 2026:** Heiligabend, erster Weihnachtstag, Stephanstag (Santo Stefano)
-- **Donnerstag, 31. Dezember 2026, und Freitag, 1. Januar 2027:** Silvester und Neujahr
-- **Mittwoch, 6. Januar 2027:** Heilige Drei Könige (Epifania)
-- **Sonntag, 28., und Montag, 29. März 2027:** Ostersonntag und Ostermontag (Pasquetta)
-- **Sonntag, 25. April 2027:** Tag der Befreiung
-- **Samstag, 1. Mai 2027:** Tag der Arbeit
-- **Mittwoch, 2. Juni 2027:** Tag der Republik
-- **Donnerstag, 24. Juni 2027:** San Giovanni (Johannistag), der Tag des Stadtpatrons von Florenz
-- **Sonntag, 15. August 2027:** Ferragosto (Mariä Himmelfahrt)
+| Datum | Große Museen | Duomo-Monumente | Lebensmittelmärkte |
+|---|---|---|---|
+| Di 8. Dez 2026, Immacolata | Normale Zeiten | Kathedrale für Besucher geschlossen, Kuppelaufstieg ab 12:45 | Sant'Ambrogio offen, 7:00 bis 14:00 |
+| Do 24. Dez, Heiligabend | Offen, manche schließen früher | Offen | Sant'Ambrogio offen, 7:00 bis 14:00 |
+| **Fr 25. Dez, 1. Weihnachtstag** | **Geschlossen** | **Geschlossen** | Erdgeschoss geschlossen; die Markthalle im Mercato Centrale hat in den letzten Jahren geöffnet |
+| Sa 26. Dez, Santo Stefano | Offen wie gewohnt | Offen, Kuppelaufstieg nach Feiertagsplan ab 12:45 | Sant'Ambrogio offen |
+| Do 31. Dez, Silvester | Offen, manche schließen früher | Offen | Sant'Ambrogio offen, 7:00 bis 14:00 |
+| **Fr 1. Jan 2027, Neujahr** | **Geschlossen** | **Geschlossen** | Erdgeschoss geschlossen; die Markthalle hat in den letzten Jahren geöffnet |
+| Mi 6. Jan, Epiphanias | Normale Zeiten | Kathedrale für Besucher geschlossen, Kuppelaufstieg ab 12:45 | Offen |
+| So 28. März, Ostersonntag | 2025 und 2026 geöffnet | Alle geschlossen | Geschlossen |
+| Mo 29. März, Pasquetta | Montag ist Schließtag; mehrere öffneten 2025 und 2026 ausnahmsweise | Nicht im Voraus veröffentlicht | Vorher in der Woche prüfen |
+| So 25. April, Tag der Befreiung | Offen, 2026 mit freiem Eintritt | Kathedrale für Besucher geschlossen, Kuppelaufstieg ab 12:45 | Geschlossen außer der Markthalle |
+| Sa 1. Mai, Tag der Arbeit | Offen | Nicht im Voraus veröffentlicht | Offen |
+| Mi 2. Juni, Tag der Republik | Offen, 2026 mit freiem Eintritt | Nicht im Voraus veröffentlicht | Offen |
+| Do 24. Juni, San Giovanni | Normaler Öffnungstag | Nicht im Voraus veröffentlicht | Offen |
+| So 15. Aug, Ferragosto | 2026 mit normalen Zeiten geöffnet | Kathedrale für Besucher geschlossen, Kuppelaufstieg ab 12:45 | Geschlossen außer der Markthalle |
+
+Die zwei Termine, um die Sie herum planen sollten, sind der 25. Dezember und der 1. Januar. Alles andere ist ein normaler Tag mit irgendwo gekürzten Zeiten.
 
 ## An welchen Tagen ist in Florenz fast alles geschlossen?
 

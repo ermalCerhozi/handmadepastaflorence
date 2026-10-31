@@ -2,7 +2,7 @@
 title: 'How to choose a pasta class in Florence: 7 questions'
 description: 'Florence has hundreds of pasta classes and the listings look identical. Seven questions that predict whether you’ll enjoy it, starting with group size.'
 pubDate: 2026-08-11
-updatedDate: 2026-10-13
+updatedDate: 2026-10-31
 author: 'Endri Cerhozi'
 image: '../../assets/images/fresh-pasta-station-rolling-pin-flour.webp'
 imageAlt: 'A small group making fresh pasta by hand at a table in Florence'
@@ -22,6 +22,15 @@ faqs:
     a: "It varies enormously and you must ask specifically. The right answer mentions a dedicated flour blend, a separate station and its own pot of cooking water. Some classes charge extra for it; some decline severe allergies entirely because the kitchen is shared. A vague 'we can accommodate that' is not an answer."
   - q: "Can children take part in a pasta making class in Florence?"
     a: "Many classes accept children from about six, but there is a real difference between a class that lets a child attend and one where the child gets their own board, their own dough and a chef's attention. Ask which one you are booking."
+  - q: "How long do cooking classes in Florence usually last?"
+    a: "Two to three hours for most classes, and four to five when the class starts with a market visit. Ours runs about three hours and ends with everyone sitting down to eat what they made, so it replaces a meal rather than adding to the day."
+  - q: "Are cooking classes in Florence suitable for beginners?"
+    a: "Yes. They are aimed at travellers rather than cooks, and you can arrive never having made fresh pasta. What matters for a beginner is group size: at a table of eight a chef is there the moment the dough tears, at a table of twelve you wait your turn."
+  - q: "Which cooking class in Florence is best for couples, families or groups?"
+    a: "Couples want to know whether the table is shared or private and whether there is an evening slot. Families should check the minimum age, whether children get their own station and the child price. Groups should check the real maximum group size, and above eight guests look for a private kitchen rather than a bigger shared class."
+  - q: "Where can I book a cooking class in Florence?"
+    a: "Either directly with the cooking school or through a platform such as Viator, GetYourGuide, Airbnb Experiences or Cookly. Direct is usually cheaper and it is the only way to ask about allergies, children or group size before you pay. If you use a platform, check the date on the reviews and confirm the class still runs."
+
 ---
 
 Search for a pasta class in Florence and you will get several hundred listings that read almost identically: hands-on, small group, local chef, eat what you make, wine included. The photographs are interchangeable. The prices range from about €50 to about €150 for what is described in the same words.
@@ -94,7 +103,7 @@ Both exist in Florence and both describe themselves as family-friendly. The tell
 
 **Ask: what age, what does my child actually do, and what do they pay?**
 
-*Ours takes children from six, each with their own station, at €50 for ages 6–12 and free under six. [Details here](/family-cooking-class-florence/).*
+*Ours takes children from six, each with their own station, at €50 for ages 6–12 and free under six. [See the family cooking class in Florence](/family-cooking-class-florence/).*
 
 ## 7. What does the price actually include?
 
@@ -132,6 +141,27 @@ No. A pasta class in Florence is aimed at travellers, not cooks, and you can arr
 What experience changes is how much help you need, which brings it back to the first question: group size. At a table of eight, a beginner gets a chef at the exact moment the dough tears. At a table of twelve, they wait their turn and mostly watch.
 
 *Ours: everything is taught from zero (dough, rolling, shaping), there are never more than eight guests, and most of the people at our table have never made fresh pasta before.*
+
+## Which class suits which kind of trip?
+
+The listings rarely say who a class is for, so match it to the group you are travelling with.
+
+| Travelling as | What to check first | Ours |
+|---|---|---|
+| A couple | Whether the table is shared or yours alone, and whether there is an evening slot | [Pasta class for two](/pasta-class-for-two-florence/), or the whole kitchen as a [private class](/private-cooking-class-florence/) |
+| A family with children | The minimum age, whether children get their own station, and the child price | [Family cooking class](/family-cooking-class-florence/), ages 6 and up, €50 for ages 6 to 12 |
+| Friends, four to eight | The real maximum group size, so you are not folded into a class of twelve | [The Chef's Table](/pasta-making-class-florence/), eight guests at most |
+| A bigger group, up to fourteen | Whether the kitchen is yours and how the timing works | [Private class](/private-cooking-class-florence/) for celebrations, [team building](/team-building-cooking-class-florence/) for companies |
+| On your own | Group size again, and whether solo guests are common | [The Chef's Table](/pasta-making-class-florence/); most tables have one or two |
+| Not getting to Florence this time | Whether the ingredients arrive and whether it is live or recorded | [Live online class](/online-pasta-making-class/) with a kit |
+
+## Where can you book a cooking class in Florence?
+
+You can book directly with the school or through a booking platform such as Viator, GetYourGuide, Airbnb Experiences or Cookly. Booking direct is usually the cheaper of the two and it is the only way to ask a question before you pay, which matters for allergies, children and group size.
+
+Platform listings are worth reading for the reviews, but check the date on them and confirm the class still runs at the time you want. Listings outlive the classes they describe more often than you would expect.
+
+*Ours: [every class we run is on one page](/classes/) with its price and group size, and the booking form opens a conversation rather than taking your money first.*
 
 ## The short version
 

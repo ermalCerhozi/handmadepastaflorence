@@ -2,7 +2,7 @@
 title: 'Wie viel kostet ein Pasta-Kochkurs in Florenz? (2026 Guide)'
 description: 'Ein Florentiner Koch, der selbst Kurse gibt: was 60, 95 und 150 € 2026 wirklich bieten, welche Extras am Ende dazukommen und was Sie vorher fragen sollten.'
 pubDate: 2026-07-08
-updatedDate: 2026-09-26
+updatedDate: 2026-10-31
 author: 'Endri Cerhozi'
 image: '../../../assets/images/pasta-cooking-class-florence-group-kitchen.webp'
 imageAlt: 'Gäste machen gemeinsam frische Pasta bei einem Kurs in einer kleinen Gruppe in Florenz'
@@ -28,6 +28,16 @@ faqs:
 
 Kurze Antwort: Ab Sommer 2026 kosten die meisten **Pasta-Kochkurse in Gruppen in Florenz etwa 60–120 € pro Person**, Kombinationen aus Marktführung und Kochen liegen bei etwa **120–180 €**, und private Kurse beginnen bei ein paar hundert Euro für die Gruppe. Online-Kurse mit zugeschicktem Zutaten-Kit liegen bei etwa **50–100 €**.
 
+| Art des Kurses | Üblicher Preis in Florenz | Was dafür meist drin ist |
+|---|---|---|
+| Gruppenkurs, gemeinsamer Tisch | 60 bis 120 € pro Person | Zwei bis drei Stunden, eine oder zwei Pastaformen, das Essen, das Sie gekocht haben |
+| Markttour plus Kochkurs | 120 bis 180 € pro Person | Vier bis fünf Stunden, geführter Marktbesuch, dann Kurs und Essen |
+| Private Küche, ganze Gruppe | Ab ein paar hundert Euro pro Gruppe | Ihre Gruppe allein, flexible Zeiten, ein Menü, das Sie ändern können |
+| Live online mit Zutaten-Kit | 50 bis 100 € pro Person | Etwa zwei Stunden aus der eigenen Küche, Zutaten vorab geliefert |
+
+Vergleichen Sie den Preis pro Person, und achten Sie darauf, was außerhalb davon liegt. Wein, eine glutenfreie Option und das Essen selbst sind bei manchen Schulen im Preis und werden bei anderen am Ende dazugerechnet.
+
+
 Wir veranstalten selbst Kurse, betrachten Sie dies also als die Sichtweise aus der Küche, einschließlich dessen, was Sie für diese Preise tatsächlich bekommen sollten.
 
 ## Was bestimmt den Preis eines Pasta-Kurses in Florenz?
@@ -49,7 +59,7 @@ Damit Sie die oben genannten Spannen mit einem echten Angebot abgleichen können
 
 - **[Der Chef's Table](/de/pasta-kurs-florenz/)**: 3 Stunden, Fettuccine, Ravioli und Ihr eigenes Tiramisù, max. 8 Gäste, endet am Tisch mit einem Glas toskanischem Wein und einem Limoncello oder Kaffee inklusive: **95 € pro Person**.
 - **[Mercato & Mani](/de/markt-tour-kochkurs-florenz/)**: Sant'Ambrogio-Marktspaziergang, dann Ravioli, Ragù und ein saisonales Dolce, max. 6 Gäste, etwa 5 Stunden: **145 € pro Person**.
-- **[The Family Long-Table](/de/privater-kochkurs-florenz/)**: die gesamte Küche privat, 6–14 Gäste: **ab 680 € pro Gruppe**.
+- **[The Long-Table Feast](/de/privater-kochkurs-florenz/)**: die gesamte Küche privat, 6–14 Gäste: **ab 680 € pro Gruppe**.
 - **[Live-Online-Kurs](/de/online-pasta-kurs/)**: gestreamt aus unserer Küche in Florenz, optionales gekühltes Zutaten-Kit zu Ihnen nach Hause geliefert: **ab 68 € pro Person**.
 
 Wenn Sie lieber Schulen als Preisspannen vergleichen, haben wir die bekanntesten Kurse in Florenz, unseren eingeschlossen, in [unserem Vergleich der Pasta-Kochkurse in Florenz](/de/blog/where-to-take-pasta-making-class-florence/) nebeneinandergestellt.

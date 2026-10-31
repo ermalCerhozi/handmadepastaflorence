@@ -45,7 +45,7 @@ faqs:
 
 然而，大多数餐厅不会公开的秘密是：**对于一家繁忙的市中心餐厅来说，每天手工制作足够的意大利面来满足需求几乎是不可能的。**
 
-手工揉面、切[细面（tagliatelle）](/zh/yidali-mian-xingzhuang/tagliatelle/)、手工捏制数以千计的[意大利方饺（ravioli）](/zh/yidali-mian-xingzhuang/ravioli/)需要耗费大量的时间、空间和劳动力。一家每晚接待200位客人的繁忙小餐馆根本无法仅仅依靠两只手和一根木制擀面杖来应对这样的客流量。
+手工揉面、切细面（tagliatelle）、手工捏制数以千计的意大利方饺（ravioli）需要耗费大量的时间、空间和劳动力。一家每晚接待200位客人的繁忙小餐馆根本无法仅仅依靠两只手和一根木制擀面杖来应对这样的客流量。
 
 ### 那么，他们是如何应对的呢？
 
@@ -59,17 +59,17 @@ faqs:
 1. **“周日在我妈妈家。”**
 2. **远离市中心的一家小餐馆。**
 
-当地人知道，要吃到纯手工制作、限量供应的意大利面，你需要去那些桌子很少且菜单每天都在变化的地方。当厨房当天的生鲜[宽面（pappardelle）](/zh/yidali-mian-xingzhuang/pappardelle/)卖完时，他们会把它从小黑板上划掉。他们不会去翻冰柜。
+当地人知道，要吃到纯手工制作、限量供应的意大利面，你需要去那些桌子很少且菜单每天都在变化的地方。当厨房当天的生鲜宽面（pappardelle）卖完时，他们会把它从小黑板上划掉。他们不会去翻冰柜。
 
 ## 在佛罗伦萨应该点什么？
 
 众所周知，佛罗伦萨是一座食肉之城（牛排（bistecca）占据了明信片的版面），但托斯卡纳的新鲜意面传统同样源远流长，以下是它最受欢迎的几款：
 
-- **Pici cacio e pepe 或 all'aglione**：来自锡耶纳山区，手工揉制出的粗粗线条；嚼劲是重点。如果菜单上有 pici，点它就对了。
-- **Pappardelle al cinghiale**：宽条鸡蛋意面搭配野猪肉酱。这是托斯卡纳经典的秋季菜肴，也是我用来评判任何一家厨房水平的菜品。
-- **Tortelli di patate**：来自城市北部穆杰洛的土豆馅意面包裹，通常搭配肉酱，或黄油和鼠尾草。质朴而完美。
-- **Tagliatelle ai funghi porcini**：在夏末和秋天，当有真正的牛肝菌（porcini）时，这道菜是无与伦比的。
-- **Ravioli ricotta e spinaci, burro e salvia**：温和的经典（里科塔奶酪菠菜意饺配黄油鼠尾草）。你还可以找找 *gnudi*，“裸体”的，即没有面皮的 ravioli 馅料，同样也是搭配黄油和鼠尾草。
+- **[Pici](/zh/yidali-mian-xingzhuang/pici/) cacio e pepe 或 all'aglione**：来自锡耶纳山区，手工揉制出的粗粗线条；嚼劲是重点。如果菜单上有 pici，点它就对了。
+- **[Pappardelle](/zh/yidali-mian-xingzhuang/pappardelle/) al cinghiale**：宽条鸡蛋意面搭配野猪肉酱。这是托斯卡纳经典的秋季菜肴，也是我用来评判任何一家厨房水平的菜品。
+- **[Tortelli](/zh/yidali-mian-xingzhuang/tortelli/) di patate**：来自城市北部穆杰洛的土豆馅意面包裹，通常搭配肉酱，或黄油和鼠尾草。质朴而完美。
+- **[Tagliatelle](/zh/yidali-mian-xingzhuang/tagliatelle/) ai funghi porcini**：在夏末和秋天，当有真正的牛肝菌（porcini）时，这道菜是无与伦比的。
+- **[Ravioli](/zh/yidali-mian-xingzhuang/ravioli/) ricotta e spinaci, burro e salvia**：温和的经典（里科塔奶酪菠菜意饺配黄油鼠尾草）。你还可以找找 *gnudi*，“裸体”的，即没有面皮的 ravioli 馅料，同样也是搭配黄油和鼠尾草。
 
 ## 在佛罗伦萨哪里能吃到最好的意式饺子（以及梨子佩科里诺奶酪饺）
 
@@ -114,5 +114,7 @@ faqs:
 老实说，在佛罗伦萨最好吃的一盘手工意面，就是你二十分钟前亲手擀出来的那一盘，我可能有偏见，但这是我们的客人说的，不是我们自夸的。我们的每一节[课程](/zh/foluolunsa-yidali-mian-kecheng/)都会像一顿美好的一家小餐馆午餐一样结束：你做的意面、托斯卡纳酱汁、一杯当地葡萄酒，以及一段无所事事的悠闲时光。
 
 如果你是在替别人的旅行做功课，这张餐桌也是一份很好的礼物：我们的[烹饪课礼券](/zh/pengren-kecheng-liquan-foluolunsa/)适用于我们的任何课程，68 欧元起，通过电子邮件发送，日期由收礼的人自己选。
+
+带着孩子旅行？[佛罗伦萨家庭烹饪课程](/zh/jiating-pengren-kecheng-foluolunsa/)接受六岁以上的孩子，6 至 12 岁 50 欧元，六岁以下免费。只有你们两个人？那就是[双人意面课程](/zh/shuangren-yidali-mian-kecheng-foluolunsa/)。
 
 如果您想要更完整的那份清单——真正属于这座城市的六道菜，以及那些其实来自别处的著名意大利菜——请看[在佛罗伦萨吃什么](/zh/blog/what-to-eat-in-florence/)。至于周边的城镇，每一座都有一道佛罗伦萨不做的菜：[从佛罗伦萨出发的一日游](/zh/blog/day-trips-from-florence/)。

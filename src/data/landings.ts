@@ -249,10 +249,11 @@ export const landings = {
             { q: `Is the class suitable for vegetarians?`, a: `Yes, with no changes and no surcharge. Pick tomato and basil or cacio e pepe for your fettuccine and the whole menu is vegetarian: the ravioli are butter and sage, the tiramisù is the classic one. Only the amatriciana option contains meat, and it is a choice you make on the day, not a default. Tell us in advance if anyone is vegetarian and we will have the sauce ready.` },
             { q: `Is there an evening pasta class?`, a: `Yes. The 18:00 slot runs the signature class in the evening: the same three hours and the same shapes, finishing into dinner instead of lunch. Nobody is booked in after you, so the table tends to sit longer. Ask for the evening slot when you book; it is subject to availability like any other time.` },
             { q: `Can you do a vegan pasta class?`, a: `Yes, with advance notice. The dough goes eggless, which is how Tuscany has always made pici: flour, water and olive oil, nothing else. The sauce is tomato and basil or aglione, both naturally dairy-free; the ravioli get a potato filling with olive oil and sage, and we adapt the dessert rather than drop it. There is no surcharge. Tell us when you book so the ingredients are in the kitchen that morning. Everything else is on the <a href="/vegan-cooking-class-florence/">vegan &amp; vegetarian class</a> page.` },
+            { q: `Is this a small group cooking class, and what about bigger groups?`, a: `Yes: the table is capped at eight guests, so a chef is never more than a step away. For a group of your own, the <a href="/private-cooking-class-florence/">private cooking class</a> takes 6 to 14 with the whole kitchen to yourselves, and the <a href="/team-building-cooking-class-florence/">team building class</a> covers the same size for companies. Above 14, email us and we will tell you honestly what we can do.` },
           ],
           related: [
             { title: `Mercato & Mani`, href: `/market-tour-cooking-class-florence/`, desc: `Shop Sant’Ambrogio market at dawn, then cook the basket. 5 hours, max 6 guests, €145.` },
-            { title: `The Family Long-Table`, href: `/private-cooking-class-florence/`, desc: `The whole kitchen, privately yours. Birthdays, proposals, reunions, from €680.` },
+            { title: `Private Cooking Class in Florence`, href: `/private-cooking-class-florence/`, desc: `The whole kitchen, privately yours. Birthdays, proposals, reunions, from €680.` },
             { title: `Live Online Class`, href: `/online-pasta-making-class/`, desc: `Cook with us from anywhere, live from this same kitchen, from €68.` },
             { title: `The four shapes, explained`, href: `/pasta-shapes/`, desc: `Pici, pappardelle, tagliatelle, tortelli: what each one is and the sauce it was built for.` },
           
@@ -380,10 +381,11 @@ export const landings = {
             { q: `Il corso è adatto ai vegetariani?`, a: `Sì, senza modifiche e senza supplemento. Scegliete pomodoro e basilico o cacio e pepe per le vostre fettuccine e tutto il menù è vegetariano: i ravioli sono burro e salvia, il tiramisù è quello classico. Solo l’opzione amatriciana contiene carne, ed è una scelta che si fa il giorno stesso, non un’impostazione predefinita. Ditecelo in anticipo e troverete il sugo già pronto.` },
             { q: `C’è un corso di pasta serale?`, a: `Sì. Il turno delle 18:00 è il corso principale di sera: le stesse tre ore e gli stessi formati, solo che sfuma nella cena invece che nel pranzo. Dopo di voi non c’è un altro gruppo, quindi al tavolo si resta più a lungo. Chiedete il turno serale quando prenotate, salvo disponibilità come per ogni altro orario.` },
             { q: `Potete fare un corso di pasta vegano?`, a: `Sì, con un preavviso. L’impasto va senza uovo, che è poi il modo in cui la Toscana ha sempre fatto i pici: farina, acqua e olio d’oliva, nient’altro. Il sugo è pomodoro e basilico o aglione, entrambi senza latticini; i ravioli hanno un ripieno di patate con olio e salvia, e il dolce lo adattiamo invece di toglierlo. Nessun supplemento. Ditecelo quando prenotate, così la mattina stessa gli ingredienti sono in cucina. Tutti i dettagli nella pagina del <a href="/it/corso-cucina-vegana-firenze/">corso vegano e vegetariano</a>.` },
+            { q: `È un corso di cucina in piccoli gruppi, e per i gruppi più grandi?`, a: `Sì: il tavolo è limitato a otto ospiti, così uno chef è sempre a un passo. Per un gruppo tutto vostro, il <a href="/it/corso-cucina-privato-firenze/">corso di cucina privato</a> accoglie da 6 a 14 persone con l'intera cucina a disposizione, e il <a href="/it/corso-cucina-team-building-firenze/">corso di team building</a> copre la stessa dimensione per le aziende. Oltre le 14, scriveteci e vi diremo con sincerità cosa possiamo fare.` },
           ],
           related: [
             { title: `Mercato & Mani`, href: `/it/corso-cucina-tour-mercato-firenze/`, desc: `Fai la spesa al mercato di Sant'Ambrogio all'alba, poi cucina il cesto. 5 ore, max 6 ospiti, €145.` },
-            { title: `Il Lungo Tavolo di Famiglia`, href: `/it/corso-cucina-privato-firenze/`, desc: `L'intera cucina, privata per voi. Compleanni, proposte, ritrovi, da €680.` },
+            { title: `Corso di Cucina Privato a Firenze`, href: `/it/corso-cucina-privato-firenze/`, desc: `L'intera cucina, privata per voi. Compleanni, proposte, ritrovi, da €680.` },
             { title: `Corso in Diretta Online`, href: `/it/corso-pasta-online/`, desc: `Cucina con noi da ovunque, in diretta da questa stessa cucina, da €68.` },
             { title: `I quattro formati, spiegati`, href: `/it/formati-di-pasta-toscana/`, desc: `Pici, pappardelle, tagliatelle, tortelli: cosa sono e il sugo per cui sono nati.` },
           
@@ -511,10 +513,11 @@ export const landings = {
             { q: `Le cours convient-il aux végétariens ?`, a: `Oui, sans modification et sans supplément. Choisissez tomate-basilic ou cacio e pepe pour vos fettuccine et tout le menu est végétarien : les ravioli sont au beurre et à la sauge, le tiramisu est le classique. Seule l’option amatriciana contient de la viande, et c’est un choix que vous faites le jour même, pas un réglage par défaut. Dites-le nous à l’avance et la sauce sera prête.` },
             { q: `Y a-t-il un cours de pâtes en soirée ?`, a: `Oui. Le créneau de 18 h, c’est le cours principal le soir : les mêmes trois heures et les mêmes formes, sauf qu’il se prolonge vers le dîner plutôt que le déjeuner. Aucun groupe n’est prévu après vous, alors on reste plus longtemps à table. Demandez le créneau du soir en réservant, sous réserve de disponibilité comme pour tout autre horaire.` },
             { q: `Pouvez-vous faire un cours de pâtes végétalien ?`, a: `Oui, avec un préavis. La pâte se fait sans œuf, ce qui est exactement la façon dont la Toscane a toujours fait les pici : farine, eau et huile d’olive, rien d’autre. La sauce est tomate-basilic ou aglione, toutes deux sans produits laitiers ; les ravioli ont une farce de pommes de terre à l’huile et à la sauge, et le dessert, nous l’adaptons au lieu de le supprimer. Sans supplément. Dites-le nous en réservant, pour que les ingrédients soient en cuisine le matin même. Tous les détails sur la page du <a href="/fr/cours-cuisine-vegan-florence/">cours vegan et végétarien</a>.` },
+            { q: `Est-ce un cours de cuisine en petit groupe, et pour les groupes plus grands ?`, a: `Oui : la table est limitée à huit convives, un chef n'est donc jamais à plus d'un pas. Pour un groupe rien qu'à vous, le <a href="/fr/cours-cuisine-prive-florence/">cours de cuisine privé</a> accueille 6 à 14 personnes avec toute la cuisine, et le <a href="/fr/cours-cuisine-team-building-florence/">cours team building</a> couvre la même taille pour les entreprises. Au-delà de 14, écrivez-nous et nous vous dirons honnêtement ce que nous pouvons faire.` },
           ],
           related: [
             { title: `Mercato & Mani`, href: `/fr/cours-cuisine-visite-marche-florence/`, desc: `Faites vos courses au marché de Sant'Ambrogio à l'aube, puis cuisinez votre panier. 5 heures, max 6 personnes, 145 €.` },
-            { title: `La Longue Table Familiale`, href: `/fr/cours-cuisine-prive-florence/`, desc: `Toute la cuisine, pour vous en privé. Anniversaires, demandes en mariage, réunions, à partir de 680 €.` },
+            { title: `Cours de Cuisine Privé à Florence`, href: `/fr/cours-cuisine-prive-florence/`, desc: `Toute la cuisine, pour vous en privé. Anniversaires, demandes en mariage, réunions, à partir de 680 €.` },
             { title: `Cours en Direct en Ligne`, href: `/fr/cours-pates-en-ligne/`, desc: `Cuisinez avec nous d'où vous voulez, en direct de cette même cuisine, à partir de 68 €.` },
           
             { title: `Offrir un Cours de Cuisine`, href: `/fr/offrir-cours-de-cuisine-florence/`, desc: `Un bon plutôt qu'un objet de plus. Tous les cours, dès 68 €, la date au choix.` },
@@ -645,10 +648,11 @@ export const landings = {
             { q: `Ist der Kurs für Vegetarier geeignet?`, a: `Ja, ohne Änderungen und ohne Aufpreis. Nehmen Sie Tomate-Basilikum oder Cacio e Pepe zu Ihren Fettuccine, und das ganze Menü ist vegetarisch: die Ravioli sind mit Butter und Salbei, das Tiramisù ist das klassische. Nur die Amatriciana enthält Fleisch, und das ist eine Wahl, die Sie am Tag selbst treffen, keine Voreinstellung. Sagen Sie uns vorher Bescheid, dann steht die Soße bereit.` },
             { q: `Gibt es einen Abend-Pastakurs?`, a: `Ja. Der Termin um 18:00 Uhr ist der Signature-Kurs am Abend: dieselben drei Stunden, dieselben Formen, nur geht er ins Abendessen über statt ins Mittagessen. Nach Ihnen ist keine weitere Gruppe eingeplant, deshalb bleibt man länger am Tisch. Fragen Sie beim Buchen nach dem Abendtermin, je nach Verfügbarkeit wie bei jeder anderen Uhrzeit.` },
             { q: `Können Sie einen veganen Pastakurs machen?`, a: `Ja, mit Vorlauf. Der Teig kommt ohne Ei aus, genau so, wie die Toskana Pici immer gemacht hat: Mehl, Wasser und Olivenöl, sonst nichts. Die Soße ist Tomate-Basilikum oder Aglione, beide ohne Milchprodukte; die Ravioli bekommen eine Kartoffelfüllung mit Olivenöl und Salbei, und das Dessert passen wir an, statt es wegzulassen. Kein Aufpreis. Sagen Sie es uns bei der Buchung, dann sind die Zutaten am selben Morgen in der Küche. Alle Details auf der Seite zum <a href="/de/veganer-kochkurs-florenz/">veganen &amp; vegetarischen Kurs</a>.` },
+            { q: `Ist das ein Kochkurs in kleiner Gruppe, und was ist mit größeren Gruppen?`, a: `Ja: der Tisch ist auf acht Gäste begrenzt, ein Koch ist also nie mehr als einen Schritt entfernt. Für eine eigene Gruppe nimmt der <a href="/de/privater-kochkurs-florenz/">private Kochkurs</a> 6 bis 14 Personen mit der ganzen Küche, und der <a href="/de/teambuilding-kochkurs-florenz/">Teambuilding-Kurs</a> deckt dieselbe Größe für Firmen ab. Über 14 Personen schreiben Sie uns, dann sagen wir Ihnen ehrlich, was geht.` },
           ],
           related: [
             { title: `Mercato & Mani`, href: `/de/markt-tour-kochkurs-florenz/`, desc: `Kaufen Sie im Morgengrauen auf dem Sant'Ambrogio-Markt ein und kochen Sie dann den Korb. 5 Stunden, max. 6 Gäste, 145 €.` },
-            { title: `Die lange Familientafel`, href: `/de/privater-kochkurs-florenz/`, desc: `Die ganze Küche, ganz privat für Sie. Geburtstage, Heiratsanträge, Treffen, ab 680 €.` },
+            { title: `Privater Kochkurs in Florenz`, href: `/de/privater-kochkurs-florenz/`, desc: `Die ganze Küche, ganz privat für Sie. Geburtstage, Heiratsanträge, Treffen, ab 680 €.` },
             { title: `Live-Online-Kurs`, href: `/de/online-pasta-kurs/`, desc: `Kochen Sie mit uns von überall aus, live aus derselben Küche, ab 68 €.` },
             { title: `Die vier Formen, erklärt`, href: `/de/pasta-formen/`, desc: `Pici, Pappardelle, Tagliatelle, Tortelli: was jede Form ist und die Sauce, für die sie gemacht wurde.` },
           
@@ -776,10 +780,11 @@ export const landings = {
             { q: `这门课适合素食者吗？`, a: `适合，无需改动，也不加收费用。意大利宽面选番茄罗勒或奶酪黑胡椒，整份菜单就是素的：意式饺子是黄油鼠尾草口味，提拉米苏也是经典做法。只有 amatriciana 酱含肉，而那是当天由您选择的，并非默认。提前告知我们，酱料会备好。` },
             { q: `有傍晚的意面课吗？`, a: `有。18:00 的时段就是傍晚版的招牌课程：同样三小时，同样的形状，只是最后延续到晚餐而不是午餐。您之后不会再安排下一组客人，所以大家往往会在餐桌旁多坐一会儿。预订时说明想要傍晚时段即可，与其他时段一样视档期而定。` },
             { q: `可以做纯素的意面课吗？`, a: `可以，请提前告知。面团不加鸡蛋，这本来就是托斯卡纳做 pici 的方式：面粉、水和橄榄油，别无他物。酱汁用番茄罗勒或 aglione，两者都不含乳制品；意式饺子改用土豆馅，配橄榄油和鼠尾草，甜点我们会调整，而不是直接取消。不加收费用。预订时说明即可，当天早上食材就会备在厨房里。详情请见<a href="/zh/sushi-pengren-kecheng-foluolunsa/">素食与纯素课程</a>页面。` },
+            { q: `这是小团体烹饪课程吗？更大的团体怎么办？`, a: `是的，餐桌最多八位客人，所以主厨随时都在一步之内。如果想包下自己的团体，<a href="/zh/siren-pengren-kecheng-foluolunsa/">私人烹饪课程</a>可接待 6 至 14 人，整个厨房归你们所有；<a href="/zh/tuandui-jianshe-pengren-kecheng-foluolunsa/">团队建设课程</a>为企业提供同样的规模。超过 14 人，请写信给我们，我们会如实告诉你能做到什么。` },
           ],
           related: [
             { title: `Mercato & Mani`, href: `/zh/shichang-daolan-pengren-kecheng-foluolunsa/`, desc: `清晨在圣安布罗焦市场购物，然后烹饪购买的食材。5小时，最多6位客人，145欧元。` },
-            { title: `家庭长桌体验`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `为您私人包场的整个厨房。生日、求婚、聚会，680欧元起。` },
+            { title: `佛罗伦萨私人烹饪课程`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `为您私人包场的整个厨房。生日、求婚、聚会，680欧元起。` },
             { title: `在线直播课程`, href: `/zh/zaixian-yidali-mian-kecheng/`, desc: `无论在哪里，都可以与我们一起在同一个厨房进行在线烹饪，68欧元起。` },
           
             { title: `赠送烹饪课程`, href: `/zh/pengren-kecheng-liquan-foluolunsa/`, desc: `与其再送一件物品，不如送一张礼券。任意课程，68 欧元起，日期自选。` },
@@ -888,7 +893,7 @@ export const landings = {
           ],
           related: [
             { title: `The Chef’s Table`, href: `/pasta-making-class-florence/`, desc: `Our signature 3-hour pasta class: fettuccine, ravioli and tiramisù, one long table. €95.` },
-            { title: `The Family Long-Table`, href: `/private-cooking-class-florence/`, desc: `The whole kitchen, privately yours. Birthdays, proposals, reunions, from €680.` },
+            { title: `The Long-Table Feast`, href: `/private-cooking-class-florence/`, desc: `The whole kitchen, privately yours. Birthdays, proposals, reunions, from €680.` },
             { title: `Live Online Class`, href: `/online-pasta-making-class/`, desc: `Cook with us from anywhere, live from this same kitchen, from €68.` },
             { title: `Florence food markets: Sant’Ambrogio vs Mercato Centrale`, href: `/blog/florence-food-markets-sant-ambrogio-mercato-centrale/`, desc: `Which one Florentines actually shop at, when to go, and what to buy in season.` },
             { title: `Where to eat handmade pasta in Florence`, href: `/blog/where-to-eat-handmade-pasta-in-florence/`, desc: `A pasta chef’s guide to ordering well in the city.` },
@@ -989,7 +994,7 @@ export const landings = {
           ],
           related: [
             { title: `Il Tavolo dello Chef`, href: `/it/corso-pasta-fresca-firenze/`, desc: `Il nostro corso di pasta di 3 ore: fettuccine, ravioli e tiramisù. €95.` },
-            { title: `Il Lungo Tavolo di Famiglia`, href: `/it/corso-cucina-privato-firenze/`, desc: `L'intera cucina, privata per voi. Compleanni, proposte, ritrovi, da €680.` },
+            { title: `Il Lungo Tavolo`, href: `/it/corso-cucina-privato-firenze/`, desc: `L'intera cucina, privata per voi. Compleanni, proposte, ritrovi, da €680.` },
             { title: `Corso in Diretta Online`, href: `/it/corso-pasta-online/`, desc: `Cucina con noi da ovunque, in diretta da questa stessa cucina, da €68.` },
             { title: `Mercati di Firenze: Sant'Ambrogio o Mercato Centrale?`, href: `/it/blog/florence-food-markets-sant-ambrogio-mercato-centrale/`, desc: `Dove fanno la spesa i fiorentini, quando andare e cosa comprare di stagione.` },
             { title: `Corso per Team Building`, href: `/it/corso-cucina-team-building-firenze/`, desc: `La cucina privata per le aziende: grembiuli indossati, laptop via.` },
@@ -1089,7 +1094,7 @@ export const landings = {
           ],
           related: [
             { title: `La Table du Chef`, href: `/fr/cours-de-pates-fraiches-florence/`, desc: `Notre cours de pâtes signature de 3 heures : fettuccine, ravioli et tiramisù. 95 €.` },
-            { title: `La Longue Table Familiale`, href: `/fr/cours-cuisine-prive-florence/`, desc: `Toute la cuisine, pour vous en privé. Anniversaires, demandes en mariage, réunions, à partir de 680 €.` },
+            { title: `La Longue Table`, href: `/fr/cours-cuisine-prive-florence/`, desc: `Toute la cuisine, pour vous en privé. Anniversaires, demandes en mariage, réunions, à partir de 680 €.` },
             { title: `Cours en Direct en Ligne`, href: `/fr/cours-pates-en-ligne/`, desc: `Cuisinez avec nous d'où vous voulez, en direct de cette même cuisine, à partir de 68 €.` },
             { title: `Marchés de Florence : Sant'Ambrogio ou Mercato Centrale ?`, href: `/fr/blog/florence-food-markets-sant-ambrogio-mercato-centrale/`, desc: `Où les Florentins font leurs courses, quand y aller et quoi acheter selon la saison.` },
             { title: `Cours Team Building`, href: `/fr/cours-cuisine-team-building-florence/`, desc: `La cuisine privée pour les entreprises: on met les tabliers, on range les ordinateurs.` },
@@ -1189,7 +1194,7 @@ export const landings = {
           ],
           related: [
             { title: `Der Tisch des Küchenchefs`, href: `/de/pasta-kurs-florenz/`, desc: `Unser 3-stündiger Signature-Pasta-Kurs: Fettuccine, Ravioli und Tiramisù. 95 €.` },
-            { title: `Die lange Familientafel`, href: `/de/privater-kochkurs-florenz/`, desc: `Die ganze Küche, ganz privat für Sie. Geburtstage, Heiratsanträge, Treffen, ab 680 €.` },
+            { title: `Die lange Tafel`, href: `/de/privater-kochkurs-florenz/`, desc: `Die ganze Küche, ganz privat für Sie. Geburtstage, Heiratsanträge, Treffen, ab 680 €.` },
             { title: `Live-Online-Kurs`, href: `/de/online-pasta-kurs/`, desc: `Kochen Sie mit uns von überall aus, live aus derselben Küche, ab 68 €.` },
             { title: `Märkte in Florenz: Sant'Ambrogio oder Mercato Centrale?`, href: `/de/blog/florence-food-markets-sant-ambrogio-mercato-centrale/`, desc: `Wo die Florentiner einkaufen, wann man hingeht und was es gerade saisonal gibt.` },
             { title: `Teambuilding-Kurs`, href: `/de/teambuilding-kochkurs-florenz/`, desc: `Die private Küche für Unternehmen: Schürzen an, Laptops weg.` },
@@ -1289,7 +1294,7 @@ export const landings = {
           ],
           related: [
             { title: `主厨餐桌`, href: `/zh/foluolunsa-yidali-mian-kecheng/`, desc: `我们招牌的3小时意面课程：宽面、意式饺子和提拉米苏。95欧元。` },
-            { title: `家庭长桌体验`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `为您私人包场的整个厨房。生日、求婚、聚会，680欧元起。` },
+            { title: `长桌盛宴`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `为您私人包场的整个厨房。生日、求婚、聚会，680欧元起。` },
             { title: `在线直播课程`, href: `/zh/zaixian-yidali-mian-kecheng/`, desc: `无论在哪里，都可以与我们一起在同一个厨房进行在线烹饪，68欧元起。` },
             { title: `佛罗伦萨美食市场：圣安布罗焦还是中央市场？`, href: `/zh/blog/florence-food-markets-sant-ambrogio-mercato-centrale/`, desc: `本地人在哪里买菜、什么时候去、当季该买什么。` },
             { title: `团队建设课程`, href: `/zh/tuandui-jianshe-pengren-kecheng-foluolunsa/`, desc: `为企业提供的私人厨房，穿上围裙，收起电脑。` },
@@ -1316,14 +1321,14 @@ export const landings = {
     locales: {
       en: {
         slug: 'private-cooking-class-florence',
-        title: `Private Cooking Class in Florence: The Family Long-Table`,
+        title: `Private Cooking Class in Florence: The Long-Table Feast`,
         description: `From €680, 6–14 guests. Book the whole kitchen for a private pasta feast in Florence: birthdays, proposals, reunions, two Tuscan chefs to yourselves.`,
         cl: {
-          eyebrow: `The Family Long-Table · private events`,
+          eyebrow: `The Long-Table Feast · private events`,
           heading: `A private cooking class in Florence,`,
           headingItal: `all to yourselves.`,
           lede: `The whole kitchen, one long table, and two chefs cooking with your people only. This is the farmhouse feast we’ve hosted at our agriturismi for years (birthdays, proposals, reunions), brought to the heart of Florence.`,
-          image: { src: img.longTablePrivatePoster, alt: `Guests rolling fresh pasta down the long table at a private Family Long-Table event`, w: 720, h: 424 },
+          image: { src: img.longTablePrivatePoster, alt: `Guests rolling fresh pasta down the long table at a private Long-Table Feast event`, w: 720, h: 424 },
           price: `from €680`,
           priceNote: `private kitchen buyout`,
           facts: [
@@ -1368,7 +1373,7 @@ export const landings = {
             {
               title: `The long-table feast`,
               paras: [
-                `At our agriturismi, the long table is where every celebration ends up: everyone cooking, everyone eating, nobody checking the time. The Family Long-Table brings that evening to our Oltrarno kitchen: your group rolls and folds fresh pasta together with Endri and Marsel, then sits down to the feast it just made, with local wine on the table.`,
+                `At our agriturismi, the long table is where every celebration ends up: everyone cooking, everyone eating, nobody checking the time. The Long-Table Feast brings that evening to our Oltrarno kitchen: your group rolls and folds fresh pasta together with Endri and Marsel, then sits down to the feast it just made, with local wine on the table.`,
               ],
             },
             {
@@ -1390,7 +1395,7 @@ export const landings = {
             },
           ],
           faqs: [
-            { q: `How many people can the private class host?`, a: `The Family Long-Table hosts groups of 6 to 14 around one long table, with the whole kitchen, and both chefs, exclusively yours.` },
+            { q: `How many people can the private class host?`, a: `The Long-Table Feast hosts groups of 6 to 14 around one long table, with the whole kitchen, and both chefs, exclusively yours.` },
             { q: `How does pricing work?`, a: `The private buyout starts at €680 for the kitchen. Send us your group size and date on WhatsApp or email and we’ll confirm a quote for your evening.` },
             { q: `Can you help with a surprise, a proposal or a birthday?`, a: `Yes: proposals, birthdays and reunions are exactly what this format is for. Tell us the plan when you book and we’ll shape the evening around it.` },
             { q: `Can two people book a private cooking class?`, a: `The private buyout is priced for groups of 6–14, so for two it rarely makes sense. Most couples book The Chef’s Table (max 8 guests, €95 per person) which stays intimate. If you’d like the kitchen truly to yourselves, email ciao@handmadepastaflorence.com and we’ll quote a private session for two.` },
@@ -1411,7 +1416,7 @@ export const landings = {
           prefill: 'private',
           breadcrumbName: `Private Cooking Class`,
           product: {
-            name: `The Family Long-Table: Private Cooking Class in Florence`,
+            name: `The Long-Table Feast: Private Cooking Class in Florence`,
             description: `A private pasta-making feast in Florence for 6–14 guests: the whole Oltrarno kitchen, two agriturismo head chefs, one long table. Birthdays, proposals, reunions.`,
             price: '680',
           },
@@ -1419,14 +1424,14 @@ export const landings = {
       },
       it: {
         slug: 'corso-cucina-privato-firenze',
-        title: `Corso di Cucina Privato a Firenze: Tavolo di Famiglia`,
+        title: `Corso di Cucina Privato a Firenze: Il Lungo Tavolo`,
         description: `Da €680, 6–14 ospiti. Prenota l'intera cucina per una festa privata di pasta fresca a Firenze: compleanni, proposte, ritrovi, due chef tutti per voi.`,
         cl: {
-          eyebrow: `Il Lungo Tavolo di Famiglia · eventi privati`,
+          eyebrow: `Il Lungo Tavolo · eventi privati`,
           heading: `Un corso di cucina privato a Firenze,`,
           headingItal: `tutto per voi.`,
           lede: `L'intera cucina, un lungo tavolo e due chef che cucinano solo per le tue persone. Questa è la festa in fattoria che abbiamo ospitato nei nostri agriturismi per anni (compleanni, proposte, riunioni di famiglia), portata nel cuore di Firenze.`,
-          image: { src: img.longTablePrivatePoster, alt: `Ospiti che stendono la pasta fresca lungo il tavolo in un evento privato Il Lungo Tavolo di Famiglia`, w: 720, h: 424 },
+          image: { src: img.longTablePrivatePoster, alt: `Ospiti che stendono la pasta fresca lungo il tavolo in un evento privato Il Lungo Tavolo`, w: 720, h: 424 },
           price: `da €680`,
           priceNote: `uso esclusivo cucina`,
           facts: [
@@ -1471,7 +1476,7 @@ export const landings = {
             {
               title: `Il banchetto al lungo tavolo`,
               paras: [
-                `Nei nostri agriturismi, il lungo tavolo è dove finisce ogni celebrazione: tutti cucinano, tutti mangiano, nessuno guarda l'orologio. Il Lungo Tavolo di Famiglia porta quella serata nella nostra cucina in Oltrarno: il tuo gruppo stende e piega la pasta fresca insieme a Endri e Marsel, per poi sedersi a gustare il banchetto appena preparato, con vino locale in tavola.`,
+                `Nei nostri agriturismi, il lungo tavolo è dove finisce ogni celebrazione: tutti cucinano, tutti mangiano, nessuno guarda l'orologio. Il Lungo Tavolo porta quella serata nella nostra cucina in Oltrarno: il tuo gruppo stende e piega la pasta fresca insieme a Endri e Marsel, per poi sedersi a gustare il banchetto appena preparato, con vino locale in tavola.`,
               ],
             },
             {
@@ -1493,7 +1498,7 @@ export const landings = {
             },
           ],
           faqs: [
-            { q: `Quante persone può ospitare il corso privato?`, a: `Il Lungo Tavolo di Famiglia ospita gruppi da 6 a 14 persone attorno a un lungo tavolo, con l'intera cucina, ed entrambi gli chef, esclusivamente per voi.` },
+            { q: `Quante persone può ospitare il corso privato?`, a: `Il Lungo Tavolo ospita gruppi da 6 a 14 persone attorno a un lungo tavolo, con l'intera cucina, ed entrambi gli chef, esclusivamente per voi.` },
             { q: `Come funzionano i prezzi?`, a: `L'uso esclusivo privato parte da €680 per l'intera cucina. Inviaci la dimensione del tuo gruppo e la data su WhatsApp o e-mail e ti confermeremo un preventivo per la tua serata.` },
             { q: `Potete aiutare con una sorpresa, una proposta o un compleanno?`, a: `Sì: proposte, compleanni e riunioni sono esattamente per cosa è pensato questo formato. Dicci il piano quando prenoti e modelleremo la serata attorno ad esso.` },
             { q: `Possono prenotare un corso privato anche solo due persone?`, a: `L'uso esclusivo è pensato per gruppi di 6–14 persone, quindi per due raramente conviene. La maggior parte delle coppie sceglie Il Tavolo dello Chef (max 8 ospiti, €95 a persona) che resta comunque intimo. Se volete la cucina tutta per voi, scrivete a ciao@handmadepastaflorence.com e vi prepareremo un preventivo per una sessione privata per due.` },
@@ -1513,7 +1518,7 @@ export const landings = {
           prefill: 'private',
           breadcrumbName: `Corso di Cucina Privato`,
           product: {
-            name: `Il Lungo Tavolo di Famiglia: Corso di Cucina Privato a Firenze`,
+            name: `Il Lungo Tavolo: Corso di Cucina Privato a Firenze`,
             description: `Una festa privata per preparare la pasta a Firenze per 6–14 ospiti: l'intera cucina in Oltrarno, due chef toscani, un lungo tavolo. Compleanni, proposte, riunioni.`,
             price: '680',
           },
@@ -1521,14 +1526,14 @@ export const landings = {
       },
       fr: {
         slug: 'cours-cuisine-prive-florence',
-        title: `Cours de Cuisine Privé à Florence: La Longue Table Familiale`,
+        title: `Cours de Cuisine Privé à Florence: La Longue Table`,
         description: `Dès 680 €, 6–14 personnes. Réservez toute la cuisine pour un festin privé de pâtes à Florence : anniversaires, demandes en mariage, réunions, en soirée.`,
         cl: {
-          eyebrow: `La Longue Table Familiale · événements privés`,
+          eyebrow: `La Longue Table · événements privés`,
           heading: `Un cours de cuisine privé à Florence,`,
           headingItal: `rien que pour vous.`,
           lede: `Toute la cuisine, une longue table et deux chefs qui cuisinent uniquement avec vos proches. C'est le festin fermier que nous organisons dans nos agritourismes depuis des années (anniversaires, demandes en mariage, réunions), apporté au cœur de Florence.`,
-          image: { src: img.longTablePrivatePoster, alt: `Des invités étalant des pâtes fraîches le long de la table lors d'un événement privé La Longue Table Familiale`, w: 720, h: 424 },
+          image: { src: img.longTablePrivatePoster, alt: `Des invités étalant des pâtes fraîches le long de la table lors d'un événement privé La Longue Table`, w: 720, h: 424 },
           price: `à partir de 680 €`,
           priceNote: `privatisation de la cuisine`,
           facts: [
@@ -1573,7 +1578,7 @@ export const landings = {
             {
               title: `Le festin de la longue table`,
               paras: [
-                `Dans nos agritourismes, la longue table est l'endroit où toutes les célébrations se terminent: tout le monde cuisine, tout le monde mange, personne ne regarde l'heure. La Longue Table Familiale apporte cette soirée dans notre cuisine de l'Oltrarno : votre groupe étale et plie des pâtes fraîches avec Endri et Marsel, puis s'assoit pour déguster le festin qu'il vient de préparer, avec du vin local sur la table.`,
+                `Dans nos agritourismes, la longue table est l'endroit où toutes les célébrations se terminent: tout le monde cuisine, tout le monde mange, personne ne regarde l'heure. La Longue Table apporte cette soirée dans notre cuisine de l'Oltrarno : votre groupe étale et plie des pâtes fraîches avec Endri et Marsel, puis s'assoit pour déguster le festin qu'il vient de préparer, avec du vin local sur la table.`,
               ],
             },
             {
@@ -1595,7 +1600,7 @@ export const landings = {
             },
           ],
           faqs: [
-            { q: `Combien de personnes le cours privé peut-il accueillir ?`, a: `La Longue Table Familiale accueille des groupes de 6 à 14 personnes autour d'une longue table, avec toute la cuisine, et les deux chefs, exclusivement à vous.` },
+            { q: `Combien de personnes le cours privé peut-il accueillir ?`, a: `La Longue Table accueille des groupes de 6 à 14 personnes autour d'une longue table, avec toute la cuisine, et les deux chefs, exclusivement à vous.` },
             { q: `Comment fonctionnent les tarifs ?`, a: `La privatisation commence à 680 € pour la cuisine. Envoyez-nous la taille de votre groupe et la date sur WhatsApp ou par e-mail et nous vous confirmerons un devis pour votre soirée.` },
             { q: `Pouvez-vous aider pour une surprise, une demande en mariage ou un anniversaire ?`, a: `Oui: les demandes en mariage, les anniversaires et les réunions sont exactement la raison d'être de ce format. Expliquez-nous le plan lors de la réservation et nous organiserons la soirée autour.` },
             { q: `Deux personnes peuvent-elles réserver un cours de cuisine privé ?`, a: `La privatisation est tarifée pour des groupes de 6 à 14 personnes, donc pour deux, c'est rarement avantageux. La plupart des couples réservent La Table du Chef (max 8 personnes, 95 € par personne) ce qui reste intime. Si vous souhaitez vraiment la cuisine pour vous seuls, envoyez un e-mail à ciao@handmadepastaflorence.com et nous vous ferons un devis pour une session privée pour deux.` },
@@ -1615,7 +1620,7 @@ export const landings = {
           prefill: 'private',
           breadcrumbName: `Cours de Cuisine Privé`,
           product: {
-            name: `La Longue Table Familiale: Cours de Cuisine Privé à Florence`,
+            name: `La Longue Table: Cours de Cuisine Privé à Florence`,
             description: `Un festin privé de fabrication de pâtes à Florence pour 6–14 personnes : toute la cuisine de l'Oltrarno, deux chefs toscans, une longue table. Anniversaires, demandes en mariage, réunions.`,
             price: '680',
           },
@@ -1623,14 +1628,14 @@ export const landings = {
       },
       de: {
         slug: 'privater-kochkurs-florenz',
-        title: `Privater Kochkurs in Florenz: Die lange Familientafel`,
+        title: `Privater Kochkurs in Florenz: Die lange Tafel`,
         description: `Ab 680 €, 6–14 Gäste. Buchen Sie die ganze Küche für ein privates Pasta-Fest in Florenz: Geburtstage, Heiratsanträge, Treffen, abends, zwei Köche.`,
         cl: {
-          eyebrow: `Die lange Familientafel · private Veranstaltungen`,
+          eyebrow: `Die lange Tafel · private Veranstaltungen`,
           heading: `Ein privater Kochkurs in Florenz,`,
           headingItal: `ganz für Sie allein.`,
           lede: `Die ganze Küche, ein langer Tisch und zwei Köche, die nur mit Ihren Leuten kochen. Das ist das Bauernfest, das wir jahrelang auf unseren Agriturismi veranstaltet haben (Geburtstage, Heiratsanträge, Treffen), gebracht in das Herz von Florenz.`,
-          image: { src: img.longTablePrivatePoster, alt: `Gäste, die bei einer privaten Veranstaltung an der langen Familientafel frische Pasta ausrollen`, w: 720, h: 424 },
+          image: { src: img.longTablePrivatePoster, alt: `Gäste, die bei einer privaten Veranstaltung an der langen Tafel frische Pasta ausrollen`, w: 720, h: 424 },
           price: `ab 680 €`,
           priceNote: `private Küchenmiete`,
           facts: [
@@ -1675,7 +1680,7 @@ export const landings = {
             {
               title: `Das Fest an der langen Tafel`,
               paras: [
-                `Auf unseren Agriturismi endet jede Feier an der langen Tafel: alle kochen, alle essen, niemand schaut auf die Uhr. Die lange Familientafel bringt diesen Abend in unsere Küche im Oltrarno: Ihre Gruppe rollt und faltet zusammen mit Endri und Marsel frische Pasta und setzt sich dann an das Festmahl, das sie gerade zubereitet hat, mit Wein aus der Region auf dem Tisch.`,
+                `Auf unseren Agriturismi endet jede Feier an der langen Tafel: alle kochen, alle essen, niemand schaut auf die Uhr. Die lange Tafel bringt diesen Abend in unsere Küche im Oltrarno: Ihre Gruppe rollt und faltet zusammen mit Endri und Marsel frische Pasta und setzt sich dann an das Festmahl, das sie gerade zubereitet hat, mit Wein aus der Region auf dem Tisch.`,
               ],
             },
             {
@@ -1697,7 +1702,7 @@ export const landings = {
             },
           ],
           faqs: [
-            { q: `Wie viele Personen fasst der private Kurs?`, a: `Die lange Familientafel bietet Platz für Gruppen von 6 bis 14 Personen an einem langen Tisch, wobei die gesamte Küche, und beide Köche, exklusiv Ihnen gehören.` },
+            { q: `Wie viele Personen fasst der private Kurs?`, a: `Die lange Tafel bietet Platz für Gruppen von 6 bis 14 Personen an einem langen Tisch, wobei die gesamte Küche, und beide Köche, exklusiv Ihnen gehören.` },
             { q: `Wie funktioniert die Preisgestaltung?`, a: `Die private Miete beginnt bei 680 € für die Küche. Senden Sie uns Ihre Gruppengröße und Ihr Datum per WhatsApp oder E-Mail und wir bestätigen ein Angebot für Ihren Abend.` },
             { q: `Können Sie bei einer Überraschung helfen, einem Heiratsantrag oder einem Geburtstag?`, a: `Ja: Heiratsanträge, Geburtstage und Treffen sind genau das, wofür dieses Format gedacht ist. Teilen Sie uns den Plan bei der Buchung mit und wir gestalten den Abend darum herum.` },
             { q: `Können zwei Personen einen privaten Kochkurs buchen?`, a: `Die private Miete ist für Gruppen von 6–14 Personen kalkuliert, daher macht es für zwei selten Sinn. Die meisten Paare buchen Der Tisch des Küchenchefs (max. 8 Gäste, 95 € pro Person), der intim bleibt. Wenn Sie die Küche wirklich für sich allein haben möchten, senden Sie eine E-Mail an ciao@handmadepastaflorence.com und wir machen Ihnen ein Angebot für eine private Sitzung für zwei.` },
@@ -1717,7 +1722,7 @@ export const landings = {
           prefill: 'private',
           breadcrumbName: `Privater Kochkurs`,
           product: {
-            name: `Die lange Familientafel: Privater Kochkurs in Florenz`,
+            name: `Die lange Tafel: Privater Kochkurs in Florenz`,
             description: `Ein privates Pasta-Fest in Florenz für 6–14 Gäste: die ganze Küche im Oltrarno, zwei toskanische Köche, ein langer Tisch. Geburtstage, Heiratsanträge, Treffen.`,
             price: '680',
           },
@@ -1725,14 +1730,14 @@ export const landings = {
       },
       zh: {
         slug: 'siren-pengren-kecheng-foluolunsa',
-        title: `佛罗伦萨私人烹饪课程：家庭长桌体验`,
+        title: `佛罗伦萨私人烹饪课程：长桌盛宴`,
         description: `预订整个厨房，在佛罗伦萨举办私人的意面制作盛宴：生日、求婚、聚会。6–14位客人，晚上，两位托斯卡纳厨师专为您服务。680欧元起。`,
         cl: {
-          eyebrow: `家庭长桌体验 · 私人活动`,
+          eyebrow: `长桌盛宴 · 私人活动`,
           heading: `佛罗伦萨私人烹饪课程，`,
           headingItal: `完全属于您的空间。`,
           lede: `整个厨房、一张长桌和两位厨师只为您和您的亲友烹饪。这是我们多年来在农庄里举办的农场盛宴：生日、求婚、聚会，现在带到了佛罗伦萨的中心。`,
-          image: { src: img.longTablePrivatePoster, alt: `宾客们在“家庭长桌体验”私人活动中沿着长桌擀制新鲜意面`, w: 720, h: 424 },
+          image: { src: img.longTablePrivatePoster, alt: `宾客们在“长桌盛宴”私人活动中沿着长桌擀制新鲜意面`, w: 720, h: 424 },
           price: `从 €680 起`,
           priceNote: `私人厨房包场`,
           facts: [
@@ -1777,7 +1782,7 @@ export const landings = {
             {
               title: `长桌盛宴`,
               paras: [
-                `在我们的农庄里，长桌是每一场庆祝活动最终的归宿：每个人都在做饭，每个人都在吃，没有人看时间。“家庭长桌体验”将那个美好的夜晚带到了我们奥特拉诺的厨房：您的团队与Endri和Marsel一起擀面和折叠新鲜的意面，然后坐下来享用自己制作的盛宴，桌上还备有当地的葡萄酒。`,
+                `在我们的农庄里，长桌是每一场庆祝活动最终的归宿：每个人都在做饭，每个人都在吃，没有人看时间。“长桌盛宴”将那个美好的夜晚带到了我们奥特拉诺的厨房：您的团队与Endri和Marsel一起擀面和折叠新鲜的意面，然后坐下来享用自己制作的盛宴，桌上还备有当地的葡萄酒。`,
               ],
             },
             {
@@ -1799,7 +1804,7 @@ export const landings = {
             },
           ],
           faqs: [
-            { q: `私人课程能容纳多少人？`, a: `“家庭长桌体验”可容纳6到14人的团体围坐在一张长桌旁，整个厨房和两位厨师都专为您服务。` },
+            { q: `私人课程能容纳多少人？`, a: `“长桌盛宴”可容纳6到14人的团体围坐在一张长桌旁，整个厨房和两位厨师都专为您服务。` },
             { q: `价格是怎么算的？`, a: `厨房的私人包场起价为680欧元。在WhatsApp或通过邮件将您的团体人数和日期发送给我们，我们将确认您这晚的报价。` },
             { q: `你们能帮忙准备惊喜吗，比如求婚或生日？`, a: `是的，求婚、生日和聚会正是这种形式的初衷。在预订时告诉我们您的计划，我们将围绕它来设计这个夜晚。` },
             { q: `两个人可以预订私人烹饪课程吗？`, a: `私人包场是为6–14人的团体定价的，所以两人的话通常不太划算。大多数情侣预订“主厨餐桌”：最多8位客人，每人95欧元，这同样很私密。如果您真的很想两人独享厨房，请发送邮件至 ciao@handmadepastaflorence.com，我们会为您提供双人私人课程的报价。` },
@@ -1819,7 +1824,7 @@ export const landings = {
           prefill: 'private',
           breadcrumbName: `私人烹饪课程`,
           product: {
-            name: `家庭长桌体验：佛罗伦萨私人烹饪课程`,
+            name: `长桌盛宴：佛罗伦萨私人烹饪课程`,
             description: `在佛罗伦萨为6-14位客人举办的私人意面制作盛宴：整个奥特拉诺厨房、两位托斯卡纳农庄厨师、一张长桌。生日、求婚、聚会。`,
             price: '680',
           },
@@ -1885,7 +1890,7 @@ export const landings = {
             { title: `The Chef’s Table`, href: `/pasta-making-class-florence/`, desc: `Coming to Florence after all? The in-person original, €95.` },
             { title: `Mercato & Mani`, href: `/market-tour-cooking-class-florence/`, desc: `Dawn market walk + cooking class in Florence, €145.` },
             { title: `The four shapes, explained`, href: `/pasta-shapes/`, desc: `Meet pici, pappardelle, tagliatelle and tortelli before class.` },
-            { title: `The Family Long-Table`, href: `/private-cooking-class-florence/`, desc: `A private feast in Florence for 6–14, from €680.` },
+            { title: `Private Kitchen Buyout`, href: `/private-cooking-class-florence/`, desc: `A private feast in Florence for 6–14, from €680.` },
             { title: `Team Building Class`, href: `/team-building-cooking-class-florence/`, desc: `The private kitchen for companies: aprons on, laptops away.` },
           ],
           ctaLabel: `Book the online class`,
@@ -1950,7 +1955,7 @@ export const landings = {
           related: [
             { title: `Il Tavolo dello Chef`, href: `/it/corso-pasta-fresca-firenze/`, desc: `Verrai comunque a Firenze? L'originale corso in presenza, €95.` },
             { title: `Mercato & Mani`, href: `/it/corso-cucina-tour-mercato-firenze/`, desc: `Passeggiata al mercato all'alba + corso di cucina a Firenze, €145.` },
-            { title: `Il Lungo Tavolo di Famiglia`, href: `/it/corso-cucina-privato-firenze/`, desc: `Un banchetto privato a Firenze per 6–14 persone, da €680.` },
+            { title: `Cucina Privata in Esclusiva`, href: `/it/corso-cucina-privato-firenze/`, desc: `Un banchetto privato a Firenze per 6–14 persone, da €680.` },
             { title: `Corso per Team Building`, href: `/it/corso-cucina-team-building-firenze/`, desc: `La cucina privata per le aziende: grembiuli indossati, laptop via.` },
           ],
           ctaLabel: `Prenota il corso online`,
@@ -2015,7 +2020,7 @@ export const landings = {
           related: [
             { title: `La Table du Chef`, href: `/fr/cours-de-pates-fraiches-florence/`, desc: `Vous venez à Florence finalement ? L'original en personne, 95 €.` },
             { title: `Mercato & Mani`, href: `/fr/cours-cuisine-visite-marche-florence/`, desc: `Promenade au marché à l'aube + cours de cuisine à Florence, 145 €.` },
-            { title: `La Longue Table Familiale`, href: `/fr/cours-cuisine-prive-florence/`, desc: `Un festin privé à Florence pour 6–14 personnes, à partir de 680 €.` },
+            { title: `Privatisation de la Cuisine`, href: `/fr/cours-cuisine-prive-florence/`, desc: `Un festin privé à Florence pour 6–14 personnes, à partir de 680 €.` },
             { title: `Cours Team Building`, href: `/fr/cours-cuisine-team-building-florence/`, desc: `La cuisine privée pour les entreprises: on met les tabliers, on range les ordinateurs.` },
           ],
           ctaLabel: `Réserver le cours en ligne`,
@@ -2080,7 +2085,7 @@ export const landings = {
           related: [
             { title: `Der Tisch des Küchenchefs`, href: `/de/pasta-kurs-florenz/`, desc: `Kommen Sie doch nach Florenz? Das Original vor Ort, 95 €.` },
             { title: `Mercato & Mani`, href: `/de/markt-tour-kochkurs-florenz/`, desc: `Morgendlicher Marktspaziergang + Kochkurs in Florenz, 145 €.` },
-            { title: `Die lange Familientafel`, href: `/de/privater-kochkurs-florenz/`, desc: `Ein privates Fest in Florenz für 6–14 Personen, ab 680 €.` },
+            { title: `Private Küche Exklusiv`, href: `/de/privater-kochkurs-florenz/`, desc: `Ein privates Fest in Florenz für 6–14 Personen, ab 680 €.` },
             { title: `Teambuilding-Kurs`, href: `/de/teambuilding-kochkurs-florenz/`, desc: `Die private Küche für Unternehmen: Schürzen an, Laptops weg.` },
           ],
           ctaLabel: `Online-Kurs buchen`,
@@ -2145,7 +2150,7 @@ export const landings = {
           related: [
             { title: `主厨餐桌`, href: `/zh/foluolunsa-yidali-mian-kecheng/`, desc: `您还是要来佛罗伦萨吗？体验原汁原味的线下课程，95欧元。` },
             { title: `Mercato & Mani`, href: `/zh/shichang-daolan-pengren-kecheng-foluolunsa/`, desc: `清晨市场漫步 + 佛罗伦萨的烹饪课程，145欧元。` },
-            { title: `家庭长桌体验`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `在佛罗伦萨为6-14人准备的私人盛宴，680欧元起。` },
+            { title: `厨房私人包场`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `在佛罗伦萨为6-14人准备的私人盛宴，680欧元起。` },
             { title: `团队建设课程`, href: `/zh/tuandui-jianshe-pengren-kecheng-foluolunsa/`, desc: `为企业提供的私人厨房，穿上围裙，收起电脑。` },
           ],
           ctaLabel: `预订在线课程`,
@@ -2272,7 +2277,7 @@ export const landings = {
             { q: `What makes this different from other food team building in Florence?`, a: `Most food teambuilding in Florence is a tasting: someone pours, your team listens. Here the team does the work. Everyone gets a workspace, an apron and a rolling pin, nobody watches from the back, and the lunch on the table at the end is the thing the team made an hour earlier. The kitchen is yours alone for the session.` },
           ],
           related: [
-            { title: `The Family Long-Table`, href: `/private-cooking-class-florence/`, desc: `The same private kitchen for personal celebrations, from €680.` },
+            { title: `Private Pasta Feast in Florence`, href: `/private-cooking-class-florence/`, desc: `The same private kitchen for personal celebrations, from €680.` },
             { title: `The Chef’s Table`, href: `/pasta-making-class-florence/`, desc: `Our signature small-group class, if your team is 8 or fewer, €95 each.` },
             { title: `Live Online Class`, href: `/online-pasta-making-class/`, desc: `Remote team? Cook together from anywhere, live, from €68.` },
             { title: `Things to do in the Oltrarno`, href: `/blog/things-to-do-in-oltrarno-florence/`, desc: `Build the rest of the offsite around the neighbourhood.` },
@@ -2394,7 +2399,7 @@ export const landings = {
             { q: `Cosa distingue questo dagli altri team building enogastronomici a Firenze?`, a: `Quasi tutto il team building food a Firenze è una degustazione: qualcuno versa, il team ascolta. Qui è il team a lavorare. Ognuno ha la sua postazione, il grembiule e il mattarello, nessuno guarda da dietro, e il pranzo in tavola alla fine è quello che il team ha fatto un’ora prima. La cucina è vostra in esclusiva per tutta la sessione.` },
           ],
           related: [
-            { title: `Il Lungo Tavolo di Famiglia`, href: `/it/corso-cucina-privato-firenze/`, desc: `La stessa cucina privata per celebrazioni personali, da €680.` },
+            { title: `Banchetto Privato di Pasta Fresca`, href: `/it/corso-cucina-privato-firenze/`, desc: `La stessa cucina privata per celebrazioni personali, da €680.` },
             { title: `Il Tavolo dello Chef`, href: `/it/corso-pasta-fresca-firenze/`, desc: `Il nostro classico corso per piccoli gruppi, se il team è di 8 o meno, €95 ciascuno.` },
             { title: `Corso in Diretta Online`, href: `/it/corso-pasta-online/`, desc: `Team da remoto? Cucinate insieme da ovunque, in diretta, da €68.` },
           
@@ -2512,7 +2517,7 @@ export const landings = {
             { q: `Qu’est-ce qui change par rapport aux autres team building culinaires à Florence ?`, a: `La plupart des team building food à Florence sont des dégustations : quelqu’un sert, l’équipe écoute. Ici, c’est l’équipe qui travaille. Chacun a son poste, son tablier et son rouleau, personne ne regarde depuis le fond, et le déjeuner sur la table à la fin est celui que l’équipe a fait une heure plus tôt. La cuisine est à vous seuls pendant toute la session.` },
           ],
           related: [
-            { title: `La Longue Table Familiale`, href: `/fr/cours-cuisine-prive-florence/`, desc: `La même cuisine privée pour des célébrations personnelles, à partir de 680 €.` },
+            { title: `Festin Privé de Pâtes Fraîches`, href: `/fr/cours-cuisine-prive-florence/`, desc: `La même cuisine privée pour des célébrations personnelles, à partir de 680 €.` },
             { title: `La Table du Chef`, href: `/fr/cours-de-pates-fraiches-florence/`, desc: `Notre cours signature en petit groupe, si votre équipe compte 8 personnes ou moins, 95 € chacun.` },
             { title: `Cours en Direct en Ligne`, href: `/fr/cours-pates-en-ligne/`, desc: `Équipe à distance ? Cuisinez ensemble d'où vous voulez, en direct, à partir de 68 €.` },
           
@@ -2533,7 +2538,10 @@ export const landings = {
       },
       de: {
         slug: 'teambuilding-kochkurs-florenz',
-        title: `Teambuilding Florenz: Privater Kochkurs für 6–14 Personen`,
+        // Said "Privater Kochkurs", which is the exact primary keyword of
+        // /de/privater-kochkurs-florenz/ (GSC position 41.2). Mirrors the EN
+        // title's "Private Kitchen" instead, so the two stop competing.
+        title: `Teambuilding Florenz: Private Küche für 6–14 Personen`,
         description: `Kulinarisches Teambuilding in Florenz: Ihr Team macht frische Pasta mit zwei toskanischen Chefköchen und isst dann gemeinsam. Private Küche, 6–14.`,
         cl: {
           eyebrow: `Für Unternehmen · private Küchenmiete`,
@@ -2630,7 +2638,7 @@ export const landings = {
             { q: `Was unterscheidet das von anderem kulinarischen Teambuilding in Florenz?`, a: `Das meiste Food-Teambuilding in Florenz ist eine Verkostung: jemand schenkt ein, das Team hört zu. Hier arbeitet das Team. Jeder hat einen eigenen Platz, Schürze und Nudelholz, niemand schaut von hinten zu, und das Mittagessen auf dem Tisch ist am Ende genau das, was das Team eine Stunde vorher gemacht hat. Die Küche gehört für die Session Ihnen allein.` },
           ],
           related: [
-            { title: `Die lange Familientafel`, href: `/de/privater-kochkurs-florenz/`, desc: `Die gleiche private Küche für persönliche Feiern, ab 680 €.` },
+            { title: `Privates Pasta-Festmahl in Florenz`, href: `/de/privater-kochkurs-florenz/`, desc: `Die gleiche private Küche für persönliche Feiern, ab 680 €.` },
             { title: `Der Tisch des Küchenchefs`, href: `/de/pasta-kurs-florenz/`, desc: `Unser Signature-Kurs für kleine Gruppen, wenn Ihr Team aus 8 oder weniger besteht, 95 € pro Person.` },
             { title: `Live-Online-Kurs`, href: `/de/online-pasta-kurs/`, desc: `Remote-Team? Kochen Sie gemeinsam von überall aus, live, ab 68 €.` },
           
@@ -2748,7 +2756,7 @@ export const landings = {
             { q: `这和佛罗伦萨其他美食团建有什么不同？`, a: `佛罗伦萨大多数美食团建都是品鉴：有人倒酒，团队在听。这里是团队自己动手。每个人都有自己的操作台、围裙和擀面杖，没有人站在后排看，最后桌上的那顿午餐，就是团队一小时前亲手做的。整场活动厨房只属于你们。` },
           ],
           related: [
-            { title: `家庭长桌体验`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `同一个私人厨房，适合个人庆祝活动，680欧元起。` },
+            { title: `佛罗伦萨私人意面盛宴`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `同一个私人厨房，适合个人庆祝活动，680欧元起。` },
             { title: `主厨餐桌`, href: `/zh/foluolunsa-yidali-mian-kecheng/`, desc: `我们的招牌小团课程，如果您的团队人数在8人或以下，每人95欧元。` },
             { title: `在线直播课程`, href: `/zh/zaixian-yidali-mian-kecheng/`, desc: `远程团队？无论在哪里，都可以一起进行在线直播烹饪，68欧元起。` },
           
@@ -2853,7 +2861,7 @@ export const landings = {
                 `Mixed groups are welcome and normal: one coeliac guest and three friends who are not is the most common booking we take.`,
                 `Other allergies (egg, dairy, nuts) can usually be worked around too. Send the whole list when you book, not on the day.`,
                 `Travelling coeliac in Italy? Our guide to <a href="/blog/gluten-free-pasta-florence/">eating gluten-free in Florence</a> covers the phrases, habits and places that make it easy.`,
-                `Want it entirely private, with the kitchen to yourselves? That is <a href="/private-cooking-class-florence/">The Family Long-Table</a>.`,
+                `Want it entirely private, with the kitchen to yourselves? Book a <a href="/private-cooking-class-florence/">private cooking class in Florence</a> instead.`,
               ],
             },
           ],
@@ -2868,7 +2876,7 @@ export const landings = {
             { title: `The Chef's Table`, href: `/pasta-making-class-florence/`, desc: `The same class, in full: fettuccine, ravioli, tiramisù. €95.` },
             { title: `Gluten-free in Florence`, href: `/blog/gluten-free-pasta-florence/`, desc: `How to eat safely as a coeliac traveller in Italy.` },
             { title: `Vegan & Vegetarian Class`, href: `/vegan-cooking-class-florence/`, desc: `Eggless Tuscan dough and potato ravioli, the same €95, no surcharge.` },
-            { title: `The Family Long-Table`, href: `/private-cooking-class-florence/`, desc: `The whole kitchen privately yours, from €680.` },
+            { title: `Private Cooking Class in Florence`, href: `/private-cooking-class-florence/`, desc: `The whole kitchen privately yours, from €680.` },
             { title: `Live Online Class`, href: `/online-pasta-making-class/`, desc: `Cook with us from your own gluten-free kitchen, from €68.` },
           ],
           ctaLabel: `Book this class`,
@@ -2954,7 +2962,7 @@ export const landings = {
                 `I gruppi misti sono benvenuti e normali: un ospite celiaco e tre amici che non lo sono è la prenotazione più frequente che riceviamo.`,
                 `Anche altre allergie (uova, latticini, frutta secca) si possono quasi sempre gestire. Mandaci l'elenco completo quando prenoti, non il giorno stesso.`,
                 `Sei celiaco e in viaggio in Italia? La nostra guida per <a href="/it/blog/gluten-free-pasta-florence/">mangiare senza glutine a Firenze</a> raccoglie frasi, abitudini e posti che rendono tutto più semplice.`,
-                `Lo vuoi completamente privato, con la cucina tutta per voi? È <a href="/it/corso-cucina-privato-firenze/">Il Lungo Tavolo di Famiglia</a>.`,
+                `Lo vuoi completamente privato, con la cucina tutta per voi? Prenota invece un <a href="/it/corso-cucina-privato-firenze/">corso di cucina privato a Firenze</a>.`,
               ],
             },
           ],
@@ -2969,7 +2977,7 @@ export const landings = {
             { title: `Il Tavolo dello Chef`, href: `/it/corso-pasta-fresca-firenze/`, desc: `Lo stesso corso, per intero: fettuccine, ravioli, tiramisù. €95.` },
             { title: `Senza glutine a Firenze`, href: `/it/blog/gluten-free-pasta-florence/`, desc: `Come mangiare in sicurezza da celiaci in Italia.` },
             { title: `Corso Vegano e Vegetariano`, href: `/it/corso-cucina-vegana-firenze/`, desc: `Impasto toscano senza uova e ravioli di patate, stessi €95, nessun supplemento.` },
-            { title: `Il Lungo Tavolo di Famiglia`, href: `/it/corso-cucina-privato-firenze/`, desc: `L'intera cucina privata per voi, da €680.` },
+            { title: `Corso di Cucina Privato a Firenze`, href: `/it/corso-cucina-privato-firenze/`, desc: `L'intera cucina privata per voi, da €680.` },
             { title: `Corso in Diretta Online`, href: `/it/corso-pasta-online/`, desc: `Cucina con noi dalla tua cucina senza glutine, da €68.` },
           ],
           ctaLabel: `Prenota questo corso`,
@@ -3055,7 +3063,7 @@ export const landings = {
                 `Les groupes mixtes sont bienvenus et fréquents: une personne coeliaque et trois amis qui ne le sont pas, c'est la réservation la plus courante.`,
                 `D'autres allergies (oeuf, produits laitiers, fruits à coque) peuvent presque toujours être gérées. Envoyez-nous la liste complète à la réservation, pas le jour même.`,
                 `Voyageur coeliaque en Italie ? Notre guide pour <a href="/fr/blog/gluten-free-pasta-florence/">manger sans gluten à Florence</a> rassemble les phrases, les habitudes et les adresses qui simplifient tout.`,
-                `Vous le voulez entièrement privé, la cuisine rien que pour vous ? C'est <a href="/fr/cours-cuisine-prive-florence/">La Longue Table Familiale</a>.`,
+                `Vous le voulez entièrement privé, la cuisine rien que pour vous ? Réservez plutôt un <a href="/fr/cours-cuisine-prive-florence/">cours de cuisine privé à Florence</a>.`,
               ],
             },
           ],
@@ -3070,7 +3078,7 @@ export const landings = {
             { title: `La Table du Chef`, href: `/fr/cours-de-pates-fraiches-florence/`, desc: `Le même cours, en entier : fettuccine, ravioli, tiramisù. 95 €.` },
             { title: `Sans gluten à Florence`, href: `/fr/blog/gluten-free-pasta-florence/`, desc: `Comment manger en sécurité quand on est coeliaque en Italie.` },
             { title: `Cours Vegan et Végétarien`, href: `/fr/cours-cuisine-vegan-florence/`, desc: `Pâte toscane sans œufs et ravioli de pommes de terre, même prix de 95 €, sans supplément.` },
-            { title: `La Longue Table Familiale`, href: `/fr/cours-cuisine-prive-florence/`, desc: `Toute la cuisine pour vous, à partir de 680 €.` },
+            { title: `Cours de Cuisine Privé à Florence`, href: `/fr/cours-cuisine-prive-florence/`, desc: `Toute la cuisine pour vous, à partir de 680 €.` },
             { title: `Cours en Direct en Ligne`, href: `/fr/cours-pates-en-ligne/`, desc: `Cuisinez avec nous depuis votre propre cuisine sans gluten, dès 68 €.` },
           ],
           ctaLabel: `Réserver ce cours`,
@@ -3156,7 +3164,7 @@ export const landings = {
                 `Gemischte Gruppen sind willkommen und normal: ein Zöliakie-Gast und drei Freunde ohne ist die häufigste Buchung, die wir bekommen.`,
                 `Andere Allergien (Ei, Milch, Nüsse) lassen sich meist ebenfalls lösen. Schicken Sie uns die ganze Liste bei der Buchung, nicht am Tag selbst.`,
                 `Als Zöliakie-Betroffene auf Reisen in Italien? Unser Guide zum <a href="/de/blog/gluten-free-pasta-florence/">glutenfreien Essen in Florenz</a> sammelt die Sätze, Gewohnheiten und Adressen, die es einfach machen.`,
-                `Lieber ganz privat, mit der Küche für sich allein? Das ist <a href="/de/privater-kochkurs-florenz/">Die lange Familientafel</a>.`,
+                `Lieber ganz privat, mit der Küche für sich allein? Buchen Sie stattdessen einen <a href="/de/privater-kochkurs-florenz/">privaten Kochkurs in Florenz</a>.`,
               ],
             },
           ],
@@ -3171,7 +3179,7 @@ export const landings = {
             { title: `Der Tisch des Küchenchefs`, href: `/de/pasta-kurs-florenz/`, desc: `Derselbe Kurs, vollständig: Fettuccine, Ravioli, Tiramisù. 95 €.` },
             { title: `Glutenfrei in Florenz`, href: `/de/blog/gluten-free-pasta-florence/`, desc: `Wie man als Zöliakie-Reisende in Italien sicher isst.` },
             { title: `Veganer & vegetarischer Kurs`, href: `/de/veganer-kochkurs-florenz/`, desc: `Toskanischer Teig ohne Ei und Kartoffel-Ravioli, gleiche 95 €, kein Aufpreis.` },
-            { title: `Die lange Familientafel`, href: `/de/privater-kochkurs-florenz/`, desc: `Die ganze Küche ganz privat, ab 680 €.` },
+            { title: `Privater Kochkurs in Florenz`, href: `/de/privater-kochkurs-florenz/`, desc: `Die ganze Küche ganz privat, ab 680 €.` },
             { title: `Live-Online-Kurs`, href: `/de/online-pasta-kurs/`, desc: `Kochen Sie mit uns aus Ihrer eigenen glutenfreien Küche, ab 68 €.` },
           ],
           ctaLabel: `Diesen Kurs buchen`,
@@ -3257,7 +3265,7 @@ export const landings = {
                 `我们欢迎混合团体，这也很常见：一位乳糜泻客人和三位无需忌口的朋友，是我们最常接到的预订。`,
                 `其他过敏（鸡蛋、乳制品、坚果）通常也可以处理。请在预订时发送完整清单，而不是当天才告知。`,
                 `在意大利旅行的乳糜泻人士？我们的<a href="/zh/blog/gluten-free-pasta-florence/">佛罗伦萨无麸质饮食指南</a>整理了实用短语、习惯与去处。`,
-                `想要完全私密、整个厨房归你们所有？那就是<a href="/zh/siren-pengren-kecheng-foluolunsa/">家庭长桌体验</a>。`,
+                `想要完全私密、整个厨房归你们所有？不妨预订<a href="/zh/siren-pengren-kecheng-foluolunsa/">佛罗伦萨私人烹饪课程</a>。`,
               ],
             },
           ],
@@ -3272,7 +3280,7 @@ export const landings = {
             { title: `主厨餐桌`, href: `/zh/foluolunsa-yidali-mian-kecheng/`, desc: `完整的同一门课程：宽面、意式饺子、提拉米苏。€95。` },
             { title: `佛罗伦萨无麸质饮食`, href: `/zh/blog/gluten-free-pasta-florence/`, desc: `乳糜泻旅行者如何在意大利安全用餐。` },
             { title: `素食与纯素课程`, href: `/zh/sushi-pengren-kecheng-foluolunsa/`, desc: `无蛋托斯卡纳面团与土豆馅意式饺子，同样每人€95，无额外费用。` },
-            { title: `家庭长桌体验`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `整个厨房私人包场，680欧元起。` },
+            { title: `佛罗伦萨私人烹饪课程`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `整个厨房私人包场，680欧元起。` },
             { title: `在线直播课程`, href: `/zh/zaixian-yidali-mian-kecheng/`, desc: `在您自己的无麸质厨房与我们一起烹饪，68欧元起。` },
           ],
           ctaLabel: `预订此课程`,
@@ -3378,7 +3386,7 @@ export const landings = {
             {
               title: `Honest about the kitchen`,
               paras: [
-                `This is a working pasta kitchen: egg dough, cheese and butter are on the same table on the same day, so we are not a vegan kitchen and will not pretend to be. If that matters to you, say so when you book and we will talk it through, or take the kitchen privately as <a href="/private-cooking-class-florence/">The Family Long-Table</a>.`,
+                `This is a working pasta kitchen: egg dough, cheese and butter are on the same table on the same day, so we are not a vegan kitchen and will not pretend to be. If that matters to you, say so when you book and we will talk it through, or book a <a href="/private-cooking-class-florence/">private cooking class</a> and take the kitchen for yourselves.`,
               ],
             },
             {
@@ -3404,7 +3412,7 @@ export const landings = {
             { title: `The Chef's Table`, href: `/pasta-making-class-florence/`, desc: `The same class, in full, with one long lunch. €95.` },
             { title: `Gluten-Free Class`, href: `/gluten-free-cooking-class-florence/`, desc: `Coeliac? Dedicated flour blend and station, no surcharge.` },
             { title: `What to eat in Florence`, href: `/blog/what-to-eat-in-florence/`, desc: `The Florentine dishes worth ordering while you are here.` },
-            { title: `The Family Long-Table`, href: `/private-cooking-class-florence/`, desc: `The whole kitchen privately yours, from €680.` },
+            { title: `The Long-Table Feast`, href: `/private-cooking-class-florence/`, desc: `The whole kitchen privately yours, from €680.` },
           ],
           ctaLabel: `Book this class`,
           prefill: 'florence',
@@ -3485,7 +3493,7 @@ export const landings = {
             {
               title: `Sinceri sulla cucina`,
               paras: [
-                `Questa è una cucina di pasta fresca in piena attività: impasto all’uovo, formaggio e burro sono sullo stesso tavolo nello stesso giorno, quindi non siamo una cucina vegana e non fingiamo di esserlo. Se per te è importante, diccelo quando prenoti e ne parliamo, oppure prendi la cucina in esclusiva con <a href="/it/corso-cucina-privato-firenze/">Il Lungo Tavolo di Famiglia</a>.`,
+                `Questa è una cucina di pasta fresca in piena attività: impasto all’uovo, formaggio e burro sono sullo stesso tavolo nello stesso giorno, quindi non siamo una cucina vegana e non fingiamo di esserlo. Se per te è importante, diccelo quando prenoti e ne parliamo, oppure prenota un <a href="/it/corso-cucina-privato-firenze/">corso di cucina privato</a> e prendi la cucina in esclusiva.`,
               ],
             },
             {
@@ -3511,7 +3519,7 @@ export const landings = {
             { title: `Il Tavolo dello Chef`, href: `/it/corso-pasta-fresca-firenze/`, desc: `Lo stesso corso, per intero, con un lungo pranzo. €95.` },
             { title: `Corso Senza Glutine`, href: `/it/corso-cucina-senza-glutine-firenze/`, desc: `Celiaco? Miscela e postazione dedicate, senza supplemento.` },
             { title: `Cosa mangiare a Firenze`, href: `/it/blog/what-to-eat-in-florence/`, desc: `I piatti fiorentini che vale la pena ordinare.` },
-            { title: `Il Lungo Tavolo di Famiglia`, href: `/it/corso-cucina-privato-firenze/`, desc: `L'intera cucina privata per voi, da €680.` },
+            { title: `Il Lungo Tavolo`, href: `/it/corso-cucina-privato-firenze/`, desc: `L'intera cucina privata per voi, da €680.` },
           ],
           ctaLabel: `Prenota questo corso`,
           prefill: 'florence',
@@ -3592,7 +3600,7 @@ export const landings = {
             {
               title: `Francs sur la cuisine`,
               paras: [
-                `C’est une cuisine de pâtes en activité : pâte aux œufs, fromage et beurre sont sur la même table le même jour, nous ne sommes donc pas une cuisine vegan et ne prétendons pas l’être. Si c’est important pour vous, dites-le à la réservation et nous en parlerons, ou réservez la cuisine en privé avec <a href="/fr/cours-cuisine-prive-florence/">La Longue Table Familiale</a>.`,
+                `C’est une cuisine de pâtes en activité : pâte aux œufs, fromage et beurre sont sur la même table le même jour, nous ne sommes donc pas une cuisine vegan et ne prétendons pas l’être. Si c’est important pour vous, dites-le à la réservation et nous en parlerons, ou réservez un <a href="/fr/cours-cuisine-prive-florence/">cours de cuisine privé</a> et gardez la cuisine pour vous.`,
               ],
             },
             {
@@ -3618,7 +3626,7 @@ export const landings = {
             { title: `La Table du Chef`, href: `/fr/cours-de-pates-fraiches-florence/`, desc: `Le même cours, en entier, avec un long déjeuner. 95 €.` },
             { title: `Cours Sans Gluten`, href: `/fr/cours-cuisine-sans-gluten-florence/`, desc: `Coeliaque ? Mélange et poste dédiés, sans supplément.` },
             { title: `Que manger à Florence`, href: `/fr/blog/what-to-eat-in-florence/`, desc: `Les plats florentins qui valent vraiment la commande.` },
-            { title: `La Longue Table Familiale`, href: `/fr/cours-cuisine-prive-florence/`, desc: `Toute la cuisine pour vous, à partir de 680 €.` },
+            { title: `La Longue Table`, href: `/fr/cours-cuisine-prive-florence/`, desc: `Toute la cuisine pour vous, à partir de 680 €.` },
           ],
           ctaLabel: `Réserver ce cours`,
           prefill: 'florence',
@@ -3699,7 +3707,7 @@ export const landings = {
             {
               title: `Ehrlich zur Küche`,
               paras: [
-                `Dies ist eine arbeitende Pastaküche: Eierteig, Käse und Butter sind am selben Tag auf demselben Tisch, wir sind also keine vegane Küche und tun auch nicht so. Wenn Ihnen das wichtig ist, sagen Sie es bei der Buchung und wir sprechen darüber, oder buchen Sie die Küche privat als <a href="/de/privater-kochkurs-florenz/">Die lange Familientafel</a>.`,
+                `Dies ist eine arbeitende Pastaküche: Eierteig, Käse und Butter sind am selben Tag auf demselben Tisch, wir sind also keine vegane Küche und tun auch nicht so. Wenn Ihnen das wichtig ist, sagen Sie es bei der Buchung und wir sprechen darüber, oder buchen Sie einen <a href="/de/privater-kochkurs-florenz/">privaten Kochkurs</a> und haben die Küche für sich.`,
               ],
             },
             {
@@ -3725,7 +3733,7 @@ export const landings = {
             { title: `Der Tisch des Küchenchefs`, href: `/de/pasta-kurs-florenz/`, desc: `Derselbe Kurs, vollständig, mit einem langen Mittagessen. 95 €.` },
             { title: `Glutenfreier Kurs`, href: `/de/glutenfreier-kochkurs-florenz/`, desc: `Zöliakie? Eigene Mehlmischung und Station, ohne Aufpreis.` },
             { title: `Was man in Florenz essen sollte`, href: `/de/blog/what-to-eat-in-florence/`, desc: `Die Florentiner Gerichte, die sich wirklich lohnen.` },
-            { title: `Die lange Familientafel`, href: `/de/privater-kochkurs-florenz/`, desc: `Die ganze Küche ganz privat, ab 680 €.` },
+            { title: `Die lange Tafel`, href: `/de/privater-kochkurs-florenz/`, desc: `Die ganze Küche ganz privat, ab 680 €.` },
           ],
           ctaLabel: `Diesen Kurs buchen`,
           prefill: 'florence',
@@ -3806,7 +3814,7 @@ export const landings = {
             {
               title: `关于厨房，坦诚相告`,
               paras: [
-                `这是一间正在运作的意面厨房：鸡蛋面团、奶酪和黄油在同一天出现在同一张桌上，因此我们不是纯素厨房，也不会假装是。如果这对您很重要，请在预订时说明，我们会和您沟通；或者以<a href="/zh/siren-pengren-kecheng-foluolunsa/">家庭长桌体验</a>私人包场。`,
+                `这是一间正在运作的意面厨房：鸡蛋面团、奶酪和黄油在同一天出现在同一张桌上，因此我们不是纯素厨房，也不会假装是。如果这对您很重要，请在预订时说明，我们会和您沟通；或者预订<a href="/zh/siren-pengren-kecheng-foluolunsa/">私人烹饪课程</a>，整个厨房归你们所有。`,
               ],
             },
             {
@@ -3832,7 +3840,7 @@ export const landings = {
             { title: `主厨餐桌`, href: `/zh/foluolunsa-yidali-mian-kecheng/`, desc: `完整的同一门课程，配一顿悠长的午餐。€95。` },
             { title: `无麸质课程`, href: `/zh/wu-fuzhi-pengren-kecheng-foluolunsa/`, desc: `乳糜泻？专属面粉配方与操作台，不加价。` },
             { title: `佛罗伦萨必吃美食`, href: `/zh/blog/what-to-eat-in-florence/`, desc: `来佛罗伦萨值得点的那些菜。` },
-            { title: `家庭长桌体验`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `整个厨房私人包场，680欧元起。` },
+            { title: `长桌盛宴`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `整个厨房私人包场，680欧元起。` },
           ],
           ctaLabel: `预订此课程`,
           prefill: 'florence',
@@ -3911,7 +3919,7 @@ export const landings = {
               title: `Two ways to do it`,
               paras: [
                 `<strong>Join the table, €95 each.</strong> You book two places at our signature class. The table never has more than eight people, so it stays a small, chatty kitchen rather than a crowd, and you two work your own station side by side. This is what most couples book, and the 18:00 evening slot is the one to ask for: it runs into dinner and nobody is watching the clock.`,
-                `<strong>Take the kitchen, from €680.</strong> If you want it entirely to yourselves, our <a href="/private-cooking-class-florence/">Family Long-Table</a> is a full private buyout: your own chef, your own menu, your own hours. Couples book this for proposals, anniversaries and honeymoons, where being observed by strangers rather defeats the point.`,
+                `<strong>Take the kitchen, from €680.</strong> If you want it entirely to yourselves, our <a href="/private-cooking-class-florence/">Long-Table Feast</a> is a full private buyout: your own chef, your own menu, your own hours. Couples book this for proposals, anniversaries and honeymoons, where being observed by strangers rather defeats the point.`,
               ],
             },
             {
@@ -3934,14 +3942,14 @@ export const landings = {
           ],
           faqs: [
             { q: `Can we book a pasta class for just the two of us?`, a: `Yes. Book two places at the €95-per-person class and you join a table of never more than eight, working your own station side by side. If you want nobody else in the room at all, the private kitchen buyout starts at €680.` },
-            { q: `Is the €95 class private?`, a: `No: it is a small shared table, max 8 guests, which most couples prefer for the atmosphere. For a genuinely private class for two, book The Family Long-Table from €680.` },
+            { q: `Is the €95 class private?`, a: `No: it is a small shared table, max 8 guests, which most couples prefer for the atmosphere. For a genuinely private class for two, book The Long-Table Feast from €680.` },
             { q: `Which time is best for a date?`, a: `The 18:00 evening class. It runs into dinner, the kitchen is at its warmest, and there is no next group waiting, so nobody hurries you away from the table.` },
             { q: `We are celebrating an anniversary, can you do something?`, a: `Tell us when you book. We will make a quiet fuss of it at the table at no extra cost, and if you are planning something bigger like a proposal, message us and we will help you set it up in the private kitchen.` },
             { q: `How do we book?`, a: `Use the "Book this class" button, pick your date, time and two guests. It opens a WhatsApp chat with everything filled in and we confirm personally, or write to ciao@handmadepastaflorence.com.` },
           ],
           related: [
             { title: `The Chef's Table`, href: `/pasta-making-class-florence/`, desc: `The full detail of the class you would be joining, €95.` },
-            { title: `The Family Long-Table`, href: `/private-cooking-class-florence/`, desc: `The whole kitchen to yourselves, for proposals and anniversaries, from €680.` },
+            { title: `Private Kitchen Buyout`, href: `/private-cooking-class-florence/`, desc: `The whole kitchen to yourselves, for proposals and anniversaries, from €680.` },
             { title: `Mercato & Mani`, href: `/market-tour-cooking-class-florence/`, desc: `Make a morning of it: the market at dawn, then cook the basket, €145.` },
             { title: `Things to do in the Oltrarno`, href: `/blog/things-to-do-in-oltrarno-florence/`, desc: `Build the rest of the evening around the neighbourhood.` },
           
@@ -4011,7 +4019,7 @@ export const landings = {
               title: `Due modi per farlo`,
               paras: [
                 `<strong>Al tavolo con gli altri, €95 a testa.</strong> Prenotate due posti al nostro corso principale. Il tavolo non supera mai le otto persone, quindi resta una cucina piccola e chiacchierona invece di una folla, e voi due lavorate alla vostra postazione fianco a fianco. È quello che prenotano quasi tutte le coppie, e l'orario da chiedere è quello delle 18:00: sfuma nella cena e nessuno guarda l'orologio.`,
-                `<strong>Tutta la cucina, da €680.</strong> Se la volete davvero solo per voi, <a href="/it/corso-cucina-privato-firenze/">Il Lungo Tavolo di Famiglia</a> è la privatizzazione completa: il vostro chef, il vostro menù, i vostri orari. Le coppie lo prenotano per proposte di matrimonio, anniversari e viaggi di nozze, quando avere degli sconosciuti intorno toglie un po' il senso alla cosa.`,
+                `<strong>Tutta la cucina, da €680.</strong> Se la volete davvero solo per voi, <a href="/it/corso-cucina-privato-firenze/">Il Lungo Tavolo</a> è la privatizzazione completa: il vostro chef, il vostro menù, i vostri orari. Le coppie lo prenotano per proposte di matrimonio, anniversari e viaggi di nozze, quando avere degli sconosciuti intorno toglie un po' il senso alla cosa.`,
               ],
             },
             {
@@ -4034,14 +4042,14 @@ export const landings = {
           ],
           faqs: [
             { q: `Possiamo prenotare un corso di pasta solo per noi due?`, a: `Sì. Prenotate due posti al corso da €95 a persona e vi unite a un tavolo di massimo otto, lavorando alla vostra postazione fianco a fianco. Se non volete proprio nessun altro nella stanza, la privatizzazione della cucina parte da €680.` },
-            { q: `Il corso da €95 è privato?`, a: `No: è un piccolo tavolo condiviso, max 8 ospiti, che la maggior parte delle coppie preferisce per l'atmosfera. Per un corso davvero privato per due, prenotate Il Lungo Tavolo di Famiglia da €680.` },
+            { q: `Il corso da €95 è privato?`, a: `No: è un piccolo tavolo condiviso, max 8 ospiti, che la maggior parte delle coppie preferisce per l'atmosfera. Per un corso davvero privato per due, prenotate Il Lungo Tavolo da €680.` },
             { q: `Qual è l'orario migliore per una serata romantica?`, a: `Il corso delle 18:00. Sfuma nella cena, la cucina è al suo momento più caldo e non c'è un gruppo successivo in attesa, quindi nessuno vi manda via dal tavolo.` },
             { q: `Festeggiamo un anniversario, potete fare qualcosa?`, a: `Ditecelo quando prenotate. Faremo una piccola festa al tavolo senza costi aggiuntivi, e se state pensando a qualcosa di più grande, come una proposta, scriveteci e vi aiutiamo a organizzarla nella cucina privata.` },
             { q: `Come prenotiamo?`, a: `Usate il pulsante "Prenota questo corso", scegliete data, ora e due ospiti. Si apre una chat WhatsApp con tutto compilato e confermiamo personalmente, oppure scrivete a ciao@handmadepastaflorence.com.` },
           ],
           related: [
             { title: `Il Tavolo dello Chef`, href: `/it/corso-pasta-fresca-firenze/`, desc: `Tutti i dettagli del corso a cui vi unireste, €95.` },
-            { title: `Il Lungo Tavolo di Famiglia`, href: `/it/corso-cucina-privato-firenze/`, desc: `L'intera cucina per voi, per proposte e anniversari, da €680.` },
+            { title: `Cucina Privata in Esclusiva`, href: `/it/corso-cucina-privato-firenze/`, desc: `L'intera cucina per voi, per proposte e anniversari, da €680.` },
             { title: `Mercato & Mani`, href: `/it/corso-cucina-tour-mercato-firenze/`, desc: `Fatene una mattinata: il mercato all'alba, poi si cucina il cesto, €145.` },
             { title: `Cosa fare in Oltrarno`, href: `/it/blog/things-to-do-in-oltrarno-florence/`, desc: `Costruite il resto della serata attorno al quartiere.` },
           
@@ -4111,7 +4119,7 @@ export const landings = {
               title: `Deux façons de le faire`,
               paras: [
                 `<strong>Rejoindre la table, 95 € chacun.</strong> Vous réservez deux places à notre cours phare. La table ne dépasse jamais huit personnes : cela reste une petite cuisine bavarde plutôt qu'une foule, et vous travaillez tous les deux à votre propre poste, côte à côte. C'est ce que réservent la plupart des couples, et le créneau à demander est celui de 18h00 : il se prolonge en dîner et personne ne regarde l'heure.`,
-                `<strong>Privatiser la cuisine, dès 680 €.</strong> Si vous la voulez entièrement pour vous, <a href="/fr/cours-cuisine-prive-florence/">La Longue Table Familiale</a> est une privatisation complète : votre chef, votre menu, vos horaires. Les couples la réservent pour les demandes en mariage, les anniversaires et les voyages de noces, quand être observé par des inconnus enlève tout l'intérêt.`,
+                `<strong>Privatiser la cuisine, dès 680 €.</strong> Si vous la voulez entièrement pour vous, <a href="/fr/cours-cuisine-prive-florence/">La Longue Table</a> est une privatisation complète : votre chef, votre menu, vos horaires. Les couples la réservent pour les demandes en mariage, les anniversaires et les voyages de noces, quand être observé par des inconnus enlève tout l'intérêt.`,
               ],
             },
             {
@@ -4134,14 +4142,14 @@ export const landings = {
           ],
           faqs: [
             { q: `Pouvons-nous réserver un cours de pâtes rien que pour nous deux ?`, a: `Oui. Réservez deux places au cours à 95 € par personne et vous rejoignez une table de huit maximum, en travaillant à votre propre poste côte à côte. Si vous ne voulez personne d'autre dans la pièce, la privatisation de la cuisine démarre à 680 €.` },
-            { q: `Le cours à 95 € est-il privé ?`, a: `Non: c'est une petite table partagée, 8 personnes maximum, ce que la plupart des couples préfèrent pour l'ambiance. Pour un cours réellement privé à deux, réservez La Longue Table Familiale à partir de 680 €.` },
+            { q: `Le cours à 95 € est-il privé ?`, a: `Non: c'est une petite table partagée, 8 personnes maximum, ce que la plupart des couples préfèrent pour l'ambiance. Pour un cours réellement privé à deux, réservez La Longue Table à partir de 680 €.` },
             { q: `Quel créneau choisir pour une soirée en amoureux ?`, a: `Le cours de 18h00. Il se prolonge en dîner, la cuisine est à son moment le plus chaleureux et aucun groupe suivant n'attend, donc personne ne vous presse de quitter la table.` },
             { q: `Nous fêtons un anniversaire de couple, pouvez-vous faire quelque chose ?`, a: `Dites-le-nous à la réservation. Nous en ferons discrètement tout un plat à table, sans frais, et si vous préparez quelque chose de plus grand, comme une demande en mariage, écrivez-nous et nous vous aiderons à l'organiser dans la cuisine privée.` },
             { q: `Comment réserver ?`, a: `Utilisez le bouton "Réserver ce cours", choisissez votre date, l'heure et deux personnes. Cela ouvre une discussion WhatsApp pré-remplie et nous confirmons personnellement, ou écrivez à ciao@handmadepastaflorence.com.` },
           ],
           related: [
             { title: `La Table du Chef`, href: `/fr/cours-de-pates-fraiches-florence/`, desc: `Tout le détail du cours que vous rejoindriez, 95 €.` },
-            { title: `La Longue Table Familiale`, href: `/fr/cours-cuisine-prive-florence/`, desc: `Toute la cuisine pour vous, pour les demandes et anniversaires, dès 680 €.` },
+            { title: `Privatisation de la Cuisine`, href: `/fr/cours-cuisine-prive-florence/`, desc: `Toute la cuisine pour vous, pour les demandes et anniversaires, dès 680 €.` },
             { title: `Mercato & Mani`, href: `/fr/cours-cuisine-visite-marche-florence/`, desc: `Faites-en une matinée : le marché à l'aube, puis on cuisine le panier, 145 €.` },
             { title: `Que faire dans l'Oltrarno`, href: `/fr/blog/things-to-do-in-oltrarno-florence/`, desc: `Construisez le reste de la soirée autour du quartier.` },
           
@@ -4211,7 +4219,7 @@ export const landings = {
               title: `Zwei Wege, es zu tun`,
               paras: [
                 `<strong>An den Tisch dazu, 95 € pro Person.</strong> Sie buchen zwei Plätze in unserem Signature-Kurs. Am Tisch sitzen nie mehr als acht Menschen, es bleibt also eine kleine, gesprächige Küche statt einer Menge, und Sie beide arbeiten Seite an Seite an Ihrer eigenen Station. Das buchen die meisten Paare, und der Termin, nach dem man fragen sollte, ist 18:00 Uhr: Er geht ins Abendessen über, und niemand schaut auf die Uhr.`,
-                `<strong>Die ganze Küche, ab 680 €.</strong> Wenn Sie sie ganz für sich wollen, ist <a href="/de/privater-kochkurs-florenz/">Die lange Familientafel</a> die vollständige Privatbuchung: Ihr Koch, Ihr Menü, Ihre Zeiten. Paare buchen das für Heiratsanträge, Jahrestage und Hochzeitsreisen: Momente, bei denen fremde Zuschauer den Sinn verfehlen.`,
+                `<strong>Die ganze Küche, ab 680 €.</strong> Wenn Sie sie ganz für sich wollen, ist <a href="/de/privater-kochkurs-florenz/">Die lange Tafel</a> die vollständige Privatbuchung: Ihr Koch, Ihr Menü, Ihre Zeiten. Paare buchen das für Heiratsanträge, Jahrestage und Hochzeitsreisen: Momente, bei denen fremde Zuschauer den Sinn verfehlen.`,
               ],
             },
             {
@@ -4234,14 +4242,14 @@ export const landings = {
           ],
           faqs: [
             { q: `Können wir einen Pasta-Kurs nur für uns zwei buchen?`, a: `Ja. Buchen Sie zwei Plätze im Kurs für 95 € pro Person, und Sie kommen an einen Tisch mit höchstens acht Gästen und arbeiten Seite an Seite an Ihrer eigenen Station. Wenn Sie überhaupt niemanden sonst im Raum wollen, beginnt die private Küchenbuchung bei 680 €.` },
-            { q: `Ist der Kurs für 95 € privat?`, a: `Nein: es ist ein kleiner gemeinsamer Tisch mit maximal 8 Gästen, was die meisten Paare der Stimmung wegen bevorzugen. Für einen wirklich privaten Kurs zu zweit buchen Sie Die lange Familientafel ab 680 €.` },
+            { q: `Ist der Kurs für 95 € privat?`, a: `Nein: es ist ein kleiner gemeinsamer Tisch mit maximal 8 Gästen, was die meisten Paare der Stimmung wegen bevorzugen. Für einen wirklich privaten Kurs zu zweit buchen Sie Die lange Tafel ab 680 €.` },
             { q: `Welche Uhrzeit eignet sich für einen Abend zu zweit?`, a: `Der Kurs um 18:00 Uhr. Er geht ins Abendessen über, die Küche ist dann am wärmsten, und es wartet keine nächste Gruppe; niemand drängt Sie vom Tisch.` },
             { q: `Wir feiern einen Jahrestag, können Sie etwas machen?`, a: `Sagen Sie es uns bei der Buchung. Wir machen ohne Aufpreis ein kleines Fest daraus, und wenn Sie etwas Größeres planen, etwa einen Heiratsantrag, schreiben Sie uns; wir helfen Ihnen, es in der privaten Küche vorzubereiten.` },
             { q: `Wie buchen wir?`, a: `Nutzen Sie "Diesen Kurs buchen" und wählen Sie Datum, Uhrzeit und zwei Gäste. Es öffnet sich ein WhatsApp-Chat mit allem Ausgefüllten und wir bestätigen persönlich, oder schreiben Sie an ciao@handmadepastaflorence.com.` },
           ],
           related: [
             { title: `Der Tisch des Küchenchefs`, href: `/de/pasta-kurs-florenz/`, desc: `Alle Details des Kurses, zu dem Sie dazukommen, 95 €.` },
-            { title: `Die lange Familientafel`, href: `/de/privater-kochkurs-florenz/`, desc: `Die ganze Küche für Sie, für Anträge und Jahrestage, ab 680 €.` },
+            { title: `Private Küche Exklusiv`, href: `/de/privater-kochkurs-florenz/`, desc: `Die ganze Küche für Sie, für Anträge und Jahrestage, ab 680 €.` },
             { title: `Mercato & Mani`, href: `/de/markt-tour-kochkurs-florenz/`, desc: `Machen Sie einen Vormittag daraus: erst der Markt, dann der Korb, 145 €.` },
             { title: `Was man im Oltrarno tun kann`, href: `/de/blog/things-to-do-in-oltrarno-florence/`, desc: `Bauen Sie den Rest des Abends um das Viertel herum.` },
           
@@ -4311,7 +4319,7 @@ export const landings = {
               title: `两种方式`,
               paras: [
                 `<strong>加入公共餐桌，每人95欧元。</strong> 您预订我们招牌课程的两个名额。餐桌人数从不超过八位，因此这里始终是一间热闹的小厨房而非人群，你们俩在自己的操作台上并肩制作。这是大多数情侣的选择，而值得特意询问的时段是18:00：课程会自然延续到晚餐，没有人会看时间。`,
-                `<strong>包下整个厨房，680欧元起。</strong> 如果你们想完全独处，<a href="/zh/siren-pengren-kecheng-foluolunsa/">家庭长桌体验</a>是完整的私人包场：专属主厨、专属菜单、专属时间。情侣通常为求婚、纪念日和蜜月预订它，在这些时刻，被陌生人围观确实有点扫兴。`,
+                `<strong>包下整个厨房，680欧元起。</strong> 如果你们想完全独处，<a href="/zh/siren-pengren-kecheng-foluolunsa/">长桌盛宴</a>是完整的私人包场：专属主厨、专属菜单、专属时间。情侣通常为求婚、纪念日和蜜月预订它，在这些时刻，被陌生人围观确实有点扫兴。`,
               ],
             },
             {
@@ -4334,14 +4342,14 @@ export const landings = {
           ],
           faqs: [
             { q: `我们可以只为两个人预订意面课程吗？`, a: `可以。预订每人95欧元课程的两个名额，你们会加入一张最多八人的餐桌，在自己的操作台上并肩制作。如果你们希望房间里没有其他人，私人包场从680欧元起。` },
-            { q: `95欧元的课程是私人的吗？`, a: `不是，那是一张最多8位客人的小型共用餐桌，大多数情侣正是喜欢这样的氛围。若想要真正私密的双人课程，请预订家庭长桌体验，680欧元起。` },
+            { q: `95欧元的课程是私人的吗？`, a: `不是，那是一张最多8位客人的小型共用餐桌，大多数情侣正是喜欢这样的氛围。若想要真正私密的双人课程，请预订长桌盛宴，680欧元起。` },
             { q: `约会最适合哪个时段？`, a: `18:00的傍晚班。它会自然延续到晚餐，厨房此时最温暖，而且后面没有下一组客人在等，不会有人催你们离席。` },
             { q: `我们在庆祝纪念日，你们能做点什么吗？`, a: `预订时告诉我们。我们会在餐桌上安静地为你们庆祝，不收取额外费用；如果你们在筹划更大的惊喜，比如求婚，请与我们联系，我们会帮你们在私人厨房里安排好。` },
             { q: `我们该如何预订？`, a: `使用"预订此课程"按钮，选择日期、时间和两位客人。它会打开一个信息已填好的WhatsApp聊天，我们会亲自确认，也可以发送邮件至 ciao@handmadepastaflorence.com。` },
           ],
           related: [
             { title: `主厨餐桌`, href: `/zh/foluolunsa-yidali-mian-kecheng/`, desc: `你们将加入的这门课程的完整介绍，€95。` },
-            { title: `家庭长桌体验`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `整个厨房归你们所有，适合求婚与纪念日，680欧元起。` },
+            { title: `厨房私人包场`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `整个厨房归你们所有，适合求婚与纪念日，680欧元起。` },
             { title: `Mercato & Mani`, href: `/zh/shichang-daolan-pengren-kecheng-foluolunsa/`, desc: `把它变成一个上午：清晨逛市场，然后烹饪食材，€145。` },
             { title: `奥特拉诺有什么可玩`, href: `/zh/blog/things-to-do-in-oltrarno-florence/`, desc: `围绕这个街区安排你们剩下的夜晚。` },
           
@@ -4474,7 +4482,7 @@ export const landings = {
             { title: `The Chef's Table`, href: `/pasta-making-class-florence/`, desc: `The class most people gift: three hours, ravioli and tiramisù, one long table. €95.` },
             { title: `Pasta Class for Two`, href: `/pasta-class-for-two-florence/`, desc: `The anniversary and wedding present, €95 each.` },
             { title: `Live Online Class`, href: `/online-pasta-making-class/`, desc: `For someone who is not in Italy, kit shipped to the door, from €68.` },
-            { title: `The Family Long-Table`, href: `/private-cooking-class-florence/`, desc: `A big gift for a big occasion, the whole kitchen, from €680.` },
+            { title: `Private Pasta Feast in Florence`, href: `/private-cooking-class-florence/`, desc: `A big gift for a big occasion, the whole kitchen, from €680.` },
           ],
           ctaLabel: `Request a gift voucher`,
           emailSubject: `Gift voucher request`,
@@ -4581,7 +4589,7 @@ export const landings = {
             { title: `Il Tavolo dello Chef`, href: `/it/corso-pasta-fresca-firenze/`, desc: `Il corso più regalato: tre ore, ravioli e tiramisù. €95.` },
             { title: `Corso di Pasta per Due`, href: `/it/corso-pasta-per-due-firenze/`, desc: `Il regalo da anniversario e da matrimonio, €95 a testa.` },
             { title: `Corso in Diretta Online`, href: `/it/corso-pasta-online/`, desc: `Per chi non è in Italia, kit spedito a casa, da €68.` },
-            { title: `Il Lungo Tavolo di Famiglia`, href: `/it/corso-cucina-privato-firenze/`, desc: `Un regalo grande per un'occasione grande, tutta la cucina, da €680.` },
+            { title: `Banchetto Privato di Pasta Fresca`, href: `/it/corso-cucina-privato-firenze/`, desc: `Un regalo grande per un'occasione grande, tutta la cucina, da €680.` },
           ],
           ctaLabel: `Richiedi un buono regalo`,
           emailSubject: `Richiesta buono regalo`,
@@ -4688,7 +4696,7 @@ export const landings = {
             { title: `La Table du Chef`, href: `/fr/cours-de-pates-fraiches-florence/`, desc: `Le cours le plus offert : trois heures, ravioli et tiramisù. 95 €.` },
             { title: `Cours de Pâtes pour Deux`, href: `/fr/cours-de-pates-pour-deux-florence/`, desc: `Le cadeau d'anniversaire de mariage, 95 € par personne.` },
             { title: `Cours en Direct en Ligne`, href: `/fr/cours-pates-en-ligne/`, desc: `Pour quelqu'un qui n'est pas en Italie, kit livré, dès 68 €.` },
-            { title: `La Longue Table Familiale`, href: `/fr/cours-cuisine-prive-florence/`, desc: `Un grand cadeau pour une grande occasion, toute la cuisine, dès 680 €.` },
+            { title: `Festin Privé de Pâtes Fraîches`, href: `/fr/cours-cuisine-prive-florence/`, desc: `Un grand cadeau pour une grande occasion, toute la cuisine, dès 680 €.` },
           ],
           ctaLabel: `Demander un bon cadeau`,
           emailSubject: `Demande de bon cadeau`,
@@ -4795,7 +4803,7 @@ export const landings = {
             { title: `Der Tisch des Küchenchefs`, href: `/de/pasta-kurs-florenz/`, desc: `Der meistverschenkte Kurs: drei Stunden, Ravioli und Tiramisù. 95 €.` },
             { title: `Pasta-Kurs für Zwei`, href: `/de/pasta-kurs-fuer-zwei-florenz/`, desc: `Das Geschenk zum Jahrestag und zur Hochzeit, 95 € pro Person.` },
             { title: `Live-Online-Kurs`, href: `/de/online-pasta-kurs/`, desc: `Für jemanden außerhalb Italiens, Kit an die Tür, ab 68 €.` },
-            { title: `Die lange Familientafel`, href: `/de/privater-kochkurs-florenz/`, desc: `Ein großes Geschenk für einen großen Anlass, die ganze Küche, ab 680 €.` },
+            { title: `Privates Pasta-Festmahl in Florenz`, href: `/de/privater-kochkurs-florenz/`, desc: `Ein großes Geschenk für einen großen Anlass, die ganze Küche, ab 680 €.` },
           ],
           ctaLabel: `Gutschein anfragen`,
           emailSubject: `Gutschein-Anfrage`,
@@ -4902,7 +4910,7 @@ export const landings = {
             { title: `主厨餐桌`, href: `/zh/foluolunsa-yidali-mian-kecheng/`, desc: `最常被赠送的课程：三小时，意式饺子与提拉米苏。€95。` },
             { title: `双人意面课程`, href: `/zh/shuangren-yidali-mian-kecheng-foluolunsa/`, desc: `纪念日与婚礼礼物，每人€95。` },
             { title: `在线直播课程`, href: `/zh/zaixian-yidali-mian-kecheng/`, desc: `送给不在意大利的人，食材包送到家，68欧元起。` },
-            { title: `家庭长桌体验`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `大场合的大礼物，整个厨房，680欧元起。` },
+            { title: `佛罗伦萨私人意面盛宴`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `大场合的大礼物，整个厨房，680欧元起。` },
           ],
           ctaLabel: `申请礼券`,
           emailSubject: `礼券申请`,
@@ -5020,7 +5028,7 @@ export const landings = {
           ],
           related: [
             { title: `The Chef's Table`, href: `/pasta-making-class-florence/`, desc: `The same class for adults only: fettuccine, ravioli, tiramisù. €95.` },
-            { title: `The Family Long-Table`, href: `/private-cooking-class-florence/`, desc: `The whole kitchen privately yours, for bigger family groups, from €680.` },
+            { title: `Private Cooking Class in Florence`, href: `/private-cooking-class-florence/`, desc: `The whole kitchen privately yours, for bigger groups, from €680.` },
             { title: `Mercato & Mani`, href: `/market-tour-cooking-class-florence/`, desc: `Market walk at dawn, then cook the basket. Better for teenagers than toddlers, €145.` },
             { title: `The four shapes, explained`, href: `/pasta-shapes/`, desc: `Show them what pici and tortelli are before you come.` },
             { title: `Pasta Class for Two`, href: `/pasta-class-for-two-florence/`, desc: `The anniversary and wedding present, €95 each.` },
@@ -5133,7 +5141,7 @@ export const landings = {
           ],
           related: [
             { title: `Il Tavolo dello Chef`, href: `/it/corso-pasta-fresca-firenze/`, desc: `Lo stesso corso per soli adulti: fettuccine, ravioli, tiramisù. €95.` },
-            { title: `Il Lungo Tavolo di Famiglia`, href: `/it/corso-cucina-privato-firenze/`, desc: `Tutta la cucina solo per voi, per gruppi familiari più grandi, da €680.` },
+            { title: `Corso di Cucina Privato a Firenze`, href: `/it/corso-cucina-privato-firenze/`, desc: `Tutta la cucina solo per voi, per gruppi più grandi, da €680.` },
             { title: `Mercato & Mani`, href: `/it/corso-cucina-tour-mercato-firenze/`, desc: `Mercato all'alba, poi si cucina il cesto. Meglio per adolescenti che per bambini piccoli, €145.` },
             { title: `Corso di Pasta per Due`, href: `/it/corso-pasta-per-due-firenze/`, desc: `Il regalo da anniversario e da matrimonio, €95 a testa.` },
           
@@ -5245,7 +5253,7 @@ export const landings = {
           ],
           related: [
             { title: `La Table du Chef`, href: `/fr/cours-de-pates-fraiches-florence/`, desc: `Le même cours entre adultes : fettuccine, ravioli, tiramisù. 95 €.` },
-            { title: `La Longue Table Familiale`, href: `/fr/cours-cuisine-prive-florence/`, desc: `Toute la cuisine rien que pour vous, pour les grandes familles, dès 680 €.` },
+            { title: `Cours de Cuisine Privé à Florence`, href: `/fr/cours-cuisine-prive-florence/`, desc: `Toute la cuisine rien que pour vous, pour les grands groupes, dès 680 €.` },
             { title: `Mercato & Mani`, href: `/fr/cours-cuisine-visite-marche-florence/`, desc: `Le marché à l'aube, puis on cuisine le panier. Mieux pour les ados que pour les tout-petits, 145 €.` },
             { title: `Cours de Pâtes pour Deux`, href: `/fr/cours-de-pates-pour-deux-florence/`, desc: `Le cadeau d'anniversaire de mariage, 95 € par personne.` },
           
@@ -5357,7 +5365,7 @@ export const landings = {
           ],
           related: [
             { title: `Der Tisch des Küchenchefs`, href: `/de/pasta-kurs-florenz/`, desc: `Derselbe Kurs nur für Erwachsene: Fettuccine, Ravioli, Tiramisù. 95 €.` },
-            { title: `Die lange Familientafel`, href: `/de/privater-kochkurs-florenz/`, desc: `Die ganze Küche für Sie allein, für größere Familiengruppen, ab 680 €.` },
+            { title: `Privater Kochkurs in Florenz`, href: `/de/privater-kochkurs-florenz/`, desc: `Die ganze Küche für Sie allein, für größere Gruppen, ab 680 €.` },
             { title: `Mercato & Mani`, href: `/de/markt-tour-kochkurs-florenz/`, desc: `Markt im Morgengrauen, dann den Korb kochen. Eher für Teenager als für Kleinkinder, 145 €.` },
             { title: `Pasta-Kurs für Zwei`, href: `/de/pasta-kurs-fuer-zwei-florenz/`, desc: `Das Geschenk zum Jahrestag und zur Hochzeit, 95 € pro Person.` },
           
@@ -5469,7 +5477,7 @@ export const landings = {
           ],
           related: [
             { title: `主厨餐桌`, href: `/zh/foluolunsa-yidali-mian-kecheng/`, desc: `同样的课程，仅限成人：宽面、意式饺子、提拉米苏。95欧元。` },
-            { title: `家庭长桌体验`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `整个厨房专属于你们，适合更大的家庭团体，680欧元起。` },
+            { title: `佛罗伦萨私人烹饪课程`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `整个厨房专属于你们，适合更大的团体，680欧元起。` },
             { title: `市场与手工`, href: `/zh/shichang-daolan-pengren-kecheng-foluolunsa/`, desc: `清晨逛市场，然后烹饪当天的食材。更适合青少年而非幼童，145欧元。` },
             { title: `双人意面课程`, href: `/zh/shuangren-yidali-mian-kecheng-foluolunsa/`, desc: `纪念日与婚礼礼物，每人€95。` },
           
@@ -5587,7 +5595,7 @@ export const landings = {
           related: [
             { title: `The Chef's Table`, href: `/pasta-making-class-florence/`, desc: `The city version: three hours in our Oltrarno kitchen, ravioli and tiramisù, €95.` },
             { title: `Mercato & Mani`, href: `/market-tour-cooking-class-florence/`, desc: `Shop Sant'Ambrogio market at dawn, then cook the basket. 5 hours, €145.` },
-            { title: `The Family Long-Table`, href: `/private-cooking-class-florence/`, desc: `The whole Florence kitchen, privately yours, from €680.` },
+            { title: `The Long-Table Feast`, href: `/private-cooking-class-florence/`, desc: `The whole Florence kitchen, privately yours, from €680.` },
             { title: `Team Building`, href: `/team-building-cooking-class-florence/`, desc: `The same idea for companies: private kitchen, 6 to 14 people.` },
           ],
           ctaLabel: `Enquire about a date`,
@@ -5674,7 +5682,7 @@ export const landings = {
           related: [
             { title: `La Tavola dello Chef`, href: `/it/corso-pasta-fresca-firenze/`, desc: `La versione in città: tre ore in Oltrarno, ravioli e tiramisù, €95.` },
             { title: `Mercato & Mani`, href: `/it/corso-cucina-tour-mercato-firenze/`, desc: `Spesa al mercato di Sant'Ambrogio all'alba, poi si cucina. 5 ore, €145.` },
-            { title: `La Tavolata di Famiglia`, href: `/it/corso-cucina-privato-firenze/`, desc: `Tutta la cucina di Firenze solo per voi, da €680.` },
+            { title: `Il Lungo Tavolo`, href: `/it/corso-cucina-privato-firenze/`, desc: `Tutta la cucina di Firenze solo per voi, da €680.` },
             { title: `Team Building`, href: `/it/corso-cucina-team-building-firenze/`, desc: `La stessa idea per le aziende: cucina privata, da 6 a 14 persone.` },
           ],
           ctaLabel: `Richiedi una data`,
@@ -5761,7 +5769,7 @@ export const landings = {
           related: [
             { title: `La Table du Chef`, href: `/fr/cours-de-pates-fraiches-florence/`, desc: `La version en ville : trois heures dans notre cuisine de l'Oltrarno, ravioli et tiramisù, 95 €.` },
             { title: `Mercato & Mani`, href: `/fr/cours-cuisine-visite-marche-florence/`, desc: `Le marché de Sant'Ambrogio à l'aube, puis on cuisine le panier. 5 heures, 145 €.` },
-            { title: `La Grande Tablée`, href: `/fr/cours-cuisine-prive-florence/`, desc: `Toute la cuisine de Florence rien que pour vous, à partir de 680 €.` },
+            { title: `La Longue Table`, href: `/fr/cours-cuisine-prive-florence/`, desc: `Toute la cuisine de Florence rien que pour vous, à partir de 680 €.` },
             { title: `Team Building`, href: `/fr/cours-cuisine-team-building-florence/`, desc: `La même idée pour les entreprises : cuisine privatisée, de 6 à 14 personnes.` },
           ],
           ctaLabel: `Demander une date`,
@@ -5848,7 +5856,7 @@ export const landings = {
           related: [
             { title: `Der Chef's Table`, href: `/de/pasta-kurs-florenz/`, desc: `Die Stadtversion: drei Stunden in unserer Oltrarno-Küche, Ravioli und Tiramisù, 95 €.` },
             { title: `Mercato & Mani`, href: `/de/markt-tour-kochkurs-florenz/`, desc: `Im Morgengrauen über den Sant'Ambrogio-Markt, dann kochen. 5 Stunden, 145 €.` },
-            { title: `Die Familientafel`, href: `/de/privater-kochkurs-florenz/`, desc: `Die ganze Küche in Florenz nur für Sie, ab 680 €.` },
+            { title: `Die lange Tafel`, href: `/de/privater-kochkurs-florenz/`, desc: `Die ganze Küche in Florenz nur für Sie, ab 680 €.` },
             { title: `Teambuilding`, href: `/de/teambuilding-kochkurs-florenz/`, desc: `Dieselbe Idee für Firmen: private Küche, 6 bis 14 Personen.` },
           ],
           ctaLabel: `Termin anfragen`,
@@ -5935,7 +5943,7 @@ export const landings = {
           related: [
             { title: `主厨餐桌`, href: `/zh/foluolunsa-yidali-mian-kecheng/`, desc: `市区版本：在奥特拉诺厨房三小时，意式饺子与提拉米苏，95欧元。` },
             { title: `市场与手工`, href: `/zh/shichang-daolan-pengren-kecheng-foluolunsa/`, desc: `清晨逛圣安布罗焦市场，然后烹饪当天的食材。5小时，145欧元。` },
-            { title: `家庭长桌体验`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `整个佛罗伦萨厨房专属于你们，680欧元起。` },
+            { title: `长桌盛宴`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `整个佛罗伦萨厨房专属于你们，680欧元起。` },
             { title: `团队建设`, href: `/zh/tuandui-jianshe-pengren-kecheng-foluolunsa/`, desc: `同样的形式，面向企业：私人包场，6至14人。` },
           ],
           ctaLabel: `咨询可预订日期`,

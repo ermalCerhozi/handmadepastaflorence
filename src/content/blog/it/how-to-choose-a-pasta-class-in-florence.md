@@ -2,7 +2,7 @@
 title: 'Come scegliere un corso di pasta a Firenze: 7 domande'
 description: 'Firenze ha centinaia di corsi di pasta e gli annunci sembrano identici. Sette domande che predicono se ti piacerà, a partire dalla dimensione del gruppo.'
 pubDate: 2026-08-11
-updatedDate: 2026-10-13
+updatedDate: 2026-10-31
 author: 'Endri Cerhozi'
 image: '../../../assets/images/fresh-pasta-station-rolling-pin-flour.webp'
 imageAlt: 'Un piccolo gruppo prepara pasta fresca a mano a un tavolo a Firenze'
@@ -22,6 +22,15 @@ faqs:
     a: "Varia moltissimo e va chiesto in modo specifico. La risposta giusta parla di una miscela di farine dedicata, di una postazione separata e di una pentola d'acqua propria. Alcuni corsi fanno pagare un supplemento; altri rifiutano del tutto le allergie gravi perché la cucina è condivisa. Un generico «possiamo gestirlo» non è una risposta."
   - q: "I bambini possono partecipare a un corso di pasta a Firenze?"
     a: "Molti corsi accettano bambini dai sei anni circa, ma c'è una differenza reale tra un corso che permette a un bambino di esserci e uno in cui il bambino ha il suo tagliere, il suo impasto e l'attenzione di uno chef. Chiedi quale dei due stai prenotando."
+  - q: "Quanto dura di solito un corso di cucina a Firenze?"
+    a: "Dalle due alle tre ore per la maggior parte dei corsi, e dalle quattro alle cinque quando il corso inizia con una visita al mercato. Il nostro dura circa tre ore e finisce con tutti a tavola a mangiare quello che hanno preparato, quindi sostituisce un pasto invece di allungare la giornata."
+  - q: "I corsi di cucina a Firenze sono adatti ai principianti?"
+    a: "Sì. Sono pensati per chi viaggia, non per i cuochi, e potete arrivare senza aver mai fatto pasta fresca. Per un principiante conta la dimensione del gruppo: a un tavolo da otto uno chef è lì nel momento in cui l'impasto si strappa, a un tavolo da dodici aspettate il vostro turno."
+  - q: "Quale corso di cucina a Firenze è meglio per coppie, famiglie o gruppi?"
+    a: "Le coppie devono chiedere se il tavolo è condiviso o privato e se c'è un turno serale. Le famiglie controllano l'età minima, se i bambini hanno una postazione propria, e il prezzo bambini. I gruppi controllano la vera dimensione massima, e oltre gli otto ospiti conviene cercare una cucina privata invece di un corso condiviso più grande."
+  - q: "Dove si prenota un corso di cucina a Firenze?"
+    a: "Direttamente dalla scuola di cucina oppure tramite una piattaforma come Viator, GetYourGuide, Airbnb Experiences o Cookly. Il diretto costa di solito meno ed è l'unico modo per chiedere di allergie, bambini o dimensione del gruppo prima di pagare. Se usate una piattaforma, guardate la data delle recensioni e verificate che il corso esista ancora."
+
 ---
 
 Cerca un corso di pasta a Firenze e otterrai diverse centinaia di annunci che si leggono quasi identici: pratico, piccolo gruppo, chef locale, si mangia quello che si prepara, vino incluso. Le fotografie sono intercambiabili. I prezzi vanno da circa €50 a circa €150 per quella che viene descritta con le stesse parole.
@@ -94,7 +103,7 @@ A Firenze esistono entrambi ed entrambi si definiscono adatti alle famiglie. La 
 
 **Chiedi: da che età, cosa fa davvero mio figlio e quanto paga?**
 
-*Il nostro accoglie bambini dai sei anni, ognuno con la propria postazione, a €50 dai 6 ai 12 anni e gratis sotto i sei. [Dettagli qui](/it/corso-cucina-famiglia-firenze/).*
+*Il nostro accoglie bambini dai sei anni, ognuno con la propria postazione, a €50 dai 6 ai 12 anni e gratis sotto i sei. [Vedi il corso di cucina per famiglie a Firenze](/it/corso-cucina-famiglia-firenze/).*
 
 ## 7. Cosa comprende davvero il prezzo?
 
@@ -132,6 +141,27 @@ No. Un corso di pasta a Firenze è pensato per chi viaggia, non per chi cucina d
 Quello che l'esperienza cambia è quanto aiuto ti serve, e si torna alla prima domanda: il numero di partecipanti. A un tavolo da otto, chi è alle prime armi ha uno chef accanto proprio nel momento in cui la sfoglia si strappa. A un tavolo da dodici aspetta il suo turno e soprattutto guarda.
 
 *Da noi: tutto viene insegnato da zero (impasto, stesura, formatura), non ci sono mai più di otto ospiti, e la maggior parte di chi si siede al nostro tavolo non ha mai fatto la pasta fresca prima.*
+
+## Quale corso per quale tipo di viaggio?
+
+Gli annunci dicono raramente a chi è rivolto un corso, quindi regolatevi sul gruppo con cui viaggiate.
+
+| Viaggiate come | Cosa controllare per primo | Da noi |
+|---|---|---|
+| Coppia | Se il tavolo è condiviso o solo vostro, e se c'è un turno serale | [Corso di pasta per due](/it/corso-pasta-per-due-firenze/), o tutta la cucina come [corso privato](/it/corso-cucina-privato-firenze/) |
+| Famiglia con bambini | L'età minima, se i bambini hanno una postazione propria, e il prezzo bambini | [Corso per famiglie](/it/corso-cucina-famiglia-firenze/), dai 6 anni, €50 dai 6 ai 12 |
+| Amici, da quattro a otto | La vera dimensione massima del gruppo, per non finire in un corso da dodici | [Il Chef's Table](/it/corso-pasta-fresca-firenze/), al massimo otto ospiti |
+| Gruppo più grande, fino a quattordici | Se la cucina è vostra e come funzionano gli orari | [Corso privato](/it/corso-cucina-privato-firenze/) per le feste, [team building](/it/corso-cucina-team-building-firenze/) per le aziende |
+| Da soli | Di nuovo la dimensione del gruppo, e se i viaggiatori soli sono comuni | [Il Chef's Table](/it/corso-pasta-fresca-firenze/); a quasi ogni tavolo ce n'è uno o due |
+| Senza passare da Firenze questa volta | Se gli ingredienti arrivano e se è in diretta o registrato | [Corso online in diretta](/it/corso-pasta-online/) con il kit |
+
+## Dove si prenota un corso di cucina a Firenze?
+
+Potete prenotare direttamente dalla scuola oppure tramite una piattaforma come Viator, GetYourGuide, Airbnb Experiences o Cookly. Il diretto è di solito il meno caro dei due, ed è l'unico modo per fare una domanda prima di pagare, cosa che conta per allergie, bambini e dimensione del gruppo.
+
+Le recensioni sulle piattaforme vale la pena leggerle, ma guardate la data e verificate che il corso esista ancora nella data che vi interessa. Gli annunci sopravvivono ai corsi che descrivono più spesso di quanto si pensi.
+
+*Da noi: [tutti i corsi sono su una pagina sola](/it/corsi/) con prezzo e dimensione del gruppo, e il modulo apre una conversazione invece di prendervi prima i soldi.*
 
 ## In breve
 

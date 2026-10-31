@@ -1,4 +1,13 @@
-"""GSC export analysis for handmadepastaflorence.com (12 Jul - 12 Oct 2026)."""
+"""GSC export analysis for handmadepastaflorence.com.
+
+Usage: python seo/analyze.py <summary|pages|allq|clusters> [cluster-name] [export]
+
+The export defaults to the newest file matching seo/data/gsc-YYYY-MM-DD.xlsx, so
+dropping a fresh export in that directory is all a new round needs. Pass a path
+as the last argument to pin an older one for a before/after comparison.
+"""
+import glob
+import os
 import re
 import sys
 import warnings
@@ -10,7 +19,10 @@ pd.set_option("display.width", 220)
 pd.set_option("display.max_colwidth", 90)
 pd.set_option("display.max_rows", 2000)
 
-F = "seo/data/gsc-2026-10-13.xlsx"
+_pinned = [a for a in sys.argv[1:] if a.endswith(".xlsx")]
+# Date-stamped names sort chronologically, so max() is the newest export.
+F = _pinned[0] if _pinned else max(glob.glob("seo/data/gsc-20??-??-??.xlsx"))
+print(f"# {os.path.basename(F)}\n", file=sys.stderr)
 x = pd.read_excel(F, sheet_name=None)
 q = x["Queries"].rename(columns={"Top queries": "query"})
 p = x["Pages"].rename(columns={"Top pages": "page"})

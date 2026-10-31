@@ -1,5 +1,5 @@
 // Shared behaviour for the short silent clips that sit over a still image:
-// the Family Long-Table card (Experiences.astro) and the private-hire hero
+// the Long-Table Feast card (Experiences.astro) and the private-hire hero
 // (ClassLanding.astro).
 //
 // The still underneath is a real <Image>, not a poster="" attribute, so it is

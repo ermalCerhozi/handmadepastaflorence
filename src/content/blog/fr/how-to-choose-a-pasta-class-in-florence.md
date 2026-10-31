@@ -2,7 +2,7 @@
 title: 'Choisir un cours de pâtes à Florence : 7 questions'
 description: 'Florence compte des centaines de cours de pâtes aux annonces identiques. Sept questions qui prédisent si vous aimerez, à commencer par la taille du groupe.'
 pubDate: 2026-08-11
-updatedDate: 2026-10-13
+updatedDate: 2026-10-31
 author: 'Endri Cerhozi'
 image: '../../../assets/images/fresh-pasta-station-rolling-pin-flour.webp'
 imageAlt: 'Un petit groupe prépare des pâtes fraîches à la main autour d’une table à Florence'
@@ -22,6 +22,15 @@ faqs:
     a: "Cela varie énormément et il faut poser la question précisément. La bonne réponse mentionne une farine dédiée, un poste séparé et sa propre casserole d’eau. Certains cours facturent un supplément ; d’autres refusent carrément les allergies sévères parce que la cuisine est partagée. Un vague « on peut s’adapter » n’est pas une réponse."
   - q: "Les enfants peuvent-ils participer à un cours de pâtes à Florence ?"
     a: "Beaucoup de cours acceptent les enfants dès six ans environ, mais il y a une vraie différence entre un cours qui autorise un enfant à être là et un cours où l’enfant a sa planche, sa pâte et l’attention d’un chef. Demandez lequel des deux vous réservez."
+  - q: "Combien de temps dure un cours de cuisine à Florence ?"
+    a: "Deux à trois heures pour la plupart des cours, et quatre à cinq quand le cours commence par une visite du marché. Le nôtre dure environ trois heures et se termine par un repas de ce que vous avez préparé, il remplace donc un repas au lieu d'allonger la journée."
+  - q: "Les cours de cuisine à Florence conviennent-ils aux débutants ?"
+    a: "Oui. Ils s'adressent à des voyageurs, pas à des cuisiniers, et vous pouvez arriver sans avoir jamais fait de pâtes fraîches. Pour un débutant, ce qui compte est la taille du groupe : à une table de huit, un chef est là dès que la pâte se déchire, à une table de douze, vous attendez votre tour."
+  - q: "Quel cours de cuisine à Florence pour un couple, une famille ou un groupe ?"
+    a: "Les couples doivent demander si la table est partagée ou privée et s'il existe un créneau du soir. Les familles vérifient l'âge minimum, si les enfants ont leur propre poste, et le tarif enfant. Les groupes vérifient la vraie taille maximale, et au-delà de huit convives, cherchez une cuisine privée plutôt qu'un cours partagé plus grand."
+  - q: "Où réserver un cours de cuisine à Florence ?"
+    a: "Soit directement auprès de l'école, soit via une plateforme comme Viator, GetYourGuide, Airbnb Experiences ou Cookly. Le direct est en général moins cher et c'est le seul moyen de poser une question sur les allergies, les enfants ou la taille du groupe avant de payer. Sur une plateforme, regardez la date des avis et confirmez que le cours a toujours lieu."
+
 ---
 
 Cherchez un cours de pâtes à Florence et vous obtiendrez plusieurs centaines d’annonces presque identiques : pratique, petit groupe, chef local, on mange ce qu’on prépare, vin compris. Les photos sont interchangeables. Les prix vont d’environ 50 € à environ 150 € pour ce qui est décrit avec les mêmes mots.
@@ -94,7 +103,7 @@ Les deux existent à Florence et les deux se disent adaptés aux familles. L’i
 
 **Demandez : à partir de quel âge, que fait réellement mon enfant, et que paie-t-il ?**
 
-*Le nôtre accueille les enfants dès six ans, chacun à son poste, à 50 € de 6 à 12 ans et gratuit avant six ans. [Détails ici](/fr/cours-cuisine-famille-florence/).*
+*Le nôtre accueille les enfants dès six ans, chacun à son poste, à 50 € de 6 à 12 ans et gratuit avant six ans. [Voir le cours de cuisine en famille à Florence](/fr/cours-cuisine-famille-florence/).*
 
 ## 7. Que comprend réellement le prix ?
 
@@ -132,6 +141,27 @@ Non. Un cours de pâtes à Florence s’adresse aux voyageurs, pas aux cuisinier
 Ce que l’expérience change, c’est l’aide dont vous aurez besoin, et l’on revient à la première question : la taille du groupe. À une table de huit, le débutant a un chef à ses côtés au moment précis où la pâte se déchire. À une table de douze, il attend son tour et regarde surtout.
 
 *Chez nous : tout est enseigné de zéro (la pâte, l’étalage, le façonnage), jamais plus de huit personnes à table, et la plupart de nos convives n’avaient jamais fait de pâtes fraîches avant de venir.*
+
+## Quel cours pour quel type de voyage ?
+
+Les annonces disent rarement à qui s'adresse un cours. Fiez-vous donc au groupe avec lequel vous voyagez.
+
+| Vous voyagez | À vérifier d'abord | Chez nous |
+|---|---|---|
+| En couple | Si la table est partagée ou rien qu'à vous, et s'il existe un créneau du soir | [Cours de pâtes pour deux](/fr/cours-de-pates-pour-deux-florence/), ou toute la cuisine en [cours privé](/fr/cours-cuisine-prive-florence/) |
+| En famille avec enfants | L'âge minimum, si les enfants ont leur propre poste, et le tarif enfant | [Cours en famille](/fr/cours-cuisine-famille-florence/), dès 6 ans, 50 € de 6 à 12 ans |
+| Entre amis, quatre à huit | La vraie taille maximale du groupe, pour ne pas finir dans un cours de douze | [Le Chef's Table](/fr/cours-de-pates-fraiches-florence/), huit convives au maximum |
+| En groupe plus grand, jusqu'à quatorze | Si la cuisine est à vous et comment les horaires s'organisent | [Cours privé](/fr/cours-cuisine-prive-florence/) pour les fêtes, [team building](/fr/cours-cuisine-team-building-florence/) pour les entreprises |
+| Seul | La taille du groupe encore, et si les voyageurs seuls sont fréquents | [Le Chef's Table](/fr/cours-de-pates-fraiches-florence/) ; la plupart des tables en comptent un ou deux |
+| Sans passer par Florence cette fois | Si les ingrédients arrivent et si c'est en direct ou enregistré | [Cours en direct en ligne](/fr/cours-pates-en-ligne/) avec un kit |
+
+## Où réserver un cours de cuisine à Florence ?
+
+Vous pouvez réserver directement auprès de l'école ou passer par une plateforme comme Viator, GetYourGuide, Airbnb Experiences ou Cookly. Le direct est en général le moins cher des deux, et c'est le seul moyen de poser une question avant de payer, ce qui compte pour les allergies, les enfants et la taille du groupe.
+
+Les avis sur les plateformes valent la lecture, mais regardez leur date et vérifiez que le cours a toujours lieu à la date qui vous intéresse. Les annonces survivent aux cours qu'elles décrivent plus souvent qu'on ne le croit.
+
+*Chez nous : [tous nos cours sont sur une seule page](/fr/cours/) avec leur prix et leur taille de groupe, et le formulaire ouvre une conversation au lieu de prendre votre argent d'abord.*
 
 ## En résumé
 

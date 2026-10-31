@@ -45,7 +45,7 @@ Il y a en effet des trattorias et osterias absolument merveilleuses à Florence 
 
 Cependant, voici le secret que la plupart des restaurants ne crieront pas sur les toits : **il est presque physiquement impossible pour un restaurant très fréquenté du centre-ville de préparer à la main assez de pâtes pour répondre à la demande quotidienne.** 
 
-Pétrir la pâte à la main, couper des [tagliatelle](/fr/formes-de-pates/tagliatelle/) et pincer à la main des milliers de [ravioli](/fr/formes-de-pates/ravioli/) demande énormément de temps, d'espace et de travail. Une trattoria bondée servant 200 couverts par soirée ne peut tout simplement pas suivre ce volume en utilisant seulement deux mains et un rouleau à pâtisserie en bois. 
+Pétrir la pâte à la main, couper des tagliatelle et pincer à la main des milliers de ravioli demande énormément de temps, d'espace et de travail. Une trattoria bondée servant 200 couverts par soirée ne peut tout simplement pas suivre ce volume en utilisant seulement deux mains et un rouleau à pâtisserie en bois. 
 
 ### Alors, que font-ils ?
 
@@ -59,17 +59,17 @@ Demandez à un Florentin où il mange les meilleures pâtes fraîches, et il vou
 1. **"Chez ma mère le dimanche."**
 2. **Un tout petit endroit local bien en dehors du centre.**
 
-Les locaux savent que pour obtenir des pâtes purement faites à la main et en édition limitée, il faut aller dans des endroits avec très peu de tables et un menu qui change tous les jours. Quand cette cuisine manque de [pappardelle](/fr/formes-de-pates/pappardelle/) fraîches pour la journée, ils la rayent du tableau. Ils ne vont pas chercher dans le congélateur.
+Les locaux savent que pour obtenir des pâtes purement faites à la main et en édition limitée, il faut aller dans des endroits avec très peu de tables et un menu qui change tous les jours. Quand cette cuisine manque de pappardelle fraîches pour la journée, ils la rayent du tableau. Ils ne vont pas chercher dans le congélateur.
 
 ## Que commander à Florence ?
 
 Florence est célèbre pour être une ville de viande (la bistecca est sur toutes les cartes postales), mais la tradition des pâtes fraîches de la Toscane est profonde, et voici ses plus grands succès :
 
-- **Pici cacio e pepe ou all'aglione**: d'épaisses cordes roulées à la main des collines siennoises ; le côté moelleux est l'essentiel. Si les pici sont au menu, commandez-les.
-- **Pappardelle al cinghiale**: de larges rubans aux œufs avec un ragoût de sanglier. L'assiette toscane classique de l'automne, et le plat que j'utiliserais pour juger n'importe quelle cuisine.
-- **Tortelli di patate**: des paquets farcis de pommes de terre du Mugello, au nord de la ville, généralement servis avec un ragoût ou du beurre et de la sauge. Humble et parfait.
-- **Tagliatelle ai funghi porcini**: à la fin de l'été et en automne, quand les porcini sont vrais, c'est imbattable.
-- **Ravioli ricotta e spinaci, burro e salvia**: le doux classique. Cherchez aussi les *gnudi*, une garniture "nue" sans la pâte, servie de la même manière.
+- **[Pici](/fr/formes-de-pates/pici/) cacio e pepe ou all'aglione**: d'épaisses cordes roulées à la main des collines siennoises ; le côté moelleux est l'essentiel. Si les pici sont au menu, commandez-les.
+- **[Pappardelle](/fr/formes-de-pates/pappardelle/) al cinghiale**: de larges rubans aux œufs avec un ragoût de sanglier. L'assiette toscane classique de l'automne, et le plat que j'utiliserais pour juger n'importe quelle cuisine.
+- **[Tortelli](/fr/formes-de-pates/tortelli/) di patate**: des paquets farcis de pommes de terre du Mugello, au nord de la ville, généralement servis avec un ragoût ou du beurre et de la sauge. Humble et parfait.
+- **[Tagliatelle](/fr/formes-de-pates/tagliatelle/) ai funghi porcini**: à la fin de l'été et en automne, quand les porcini sont vrais, c'est imbattable.
+- **[Ravioli](/fr/formes-de-pates/ravioli/) ricotta e spinaci, burro e salvia**: le doux classique. Cherchez aussi les *gnudi*, une garniture "nue" sans la pâte, servie de la même manière.
 
 ## Où trouver les meilleurs raviolis de Florence (et les raviolis poire et pecorino)
 
@@ -114,5 +114,7 @@ Quel que soit votre budget, les indices de la carte vus plus haut restent valabl
 La meilleure assiette de pâtes faites à la main à Florence est honnêtement celle que vous avez vous-même roulée vingt minutes plus tôt; je ne suis pas objectif, mais ce sont nos invités qui le disent, pas nous. Chacun de [nos cours](/fr/cours-de-pates-fraiches-florence/) se termine exactement comme un bon déjeuner de trattoria : vos pâtes, une sauce toscane, un verre de vin local, et nulle part où aller pendant un moment.
 
 Si vous lisez ceci pour le voyage de quelqu'un d'autre, cette table fait aussi un beau cadeau : nos [bons cadeaux pour un cours de cuisine](/fr/offrir-cours-de-cuisine-florence/) valent pour n'importe lequel de nos cours, commencent à 68 €, arrivent par email et laissent la date au choix de la personne qui les reçoit.
+
+Vous voyagez avec des enfants ? Le [cours de cuisine en famille à Florence](/fr/cours-cuisine-famille-florence/) les accueille dès six ans, 50 € de 6 à 12 ans et gratuit avant six ans. Juste vous deux ? C'est le [cours de pâtes pour deux](/fr/cours-de-pates-pour-deux-florence/).
 
 Et si vous voulez la liste plus large — les six plats qui appartiennent vraiment à cette ville, et les grands classiques italiens qui viennent d’ailleurs — c’est [que manger à Florence](/fr/blog/what-to-eat-in-florence/). Pour les villes alentour, chacune a un plat que Florence ne fait pas : [excursions depuis Florence](/fr/blog/day-trips-from-florence/).

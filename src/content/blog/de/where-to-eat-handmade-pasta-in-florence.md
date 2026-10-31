@@ -45,7 +45,7 @@ Es gibt in Florenz in der Tat absolut wunderbare Trattorien und Osterien, die t�
 
 Hier ist jedoch das Geheimnis, das die meisten Restaurants nicht an die große Glocke hängen: **Es ist für ein geschäftiges Restaurant im Stadtzentrum fast physisch unmöglich, genug Pasta handzumachen, um die tägliche Nachfrage zu decken.** 
 
-Teig von Hand zu rollen, [Tagliatelle](/de/pasta-formen/tagliatelle/) zu schneiden und Tausende von [Ravioli](/de/pasta-formen/ravioli/) von Hand zu kneifen, erfordert eine immense Menge an Zeit, Platz und Arbeit. Eine geschäftige Trattoria, die 200 Gäste pro Abend bedient, kann dieses Volumen einfach nicht mit nur zwei Händen und einem Nudelholz bewältigen. 
+Teig von Hand zu rollen, Tagliatelle zu schneiden und Tausende von Ravioli von Hand zu kneifen, erfordert eine immense Menge an Zeit, Platz und Arbeit. Eine geschäftige Trattoria, die 200 Gäste pro Abend bedient, kann dieses Volumen einfach nicht mit nur zwei Händen und einem Nudelholz bewältigen. 
 
 ### Was machen sie also?
 
@@ -59,7 +59,7 @@ Fragen Sie einen Florentiner, wo er die beste frische Pasta isst, und er wird Ih
 1. **"Sonntags bei meiner Mutter."**
 2. **Ein winziger lokaler Ort weit außerhalb des Zentrums.**
 
-Einheimische wissen, dass man für rein handgemachte Pasta in kleinen Chargen an Orte gehen muss, die sehr wenige Tische und eine täglich wechselnde Speisekarte haben. Wenn dieser Küche für den Tag die frischen [Pappardelle](/de/pasta-formen/pappardelle/) ausgehen, streichen sie sie von der Tafel. Sie gehen nicht an den Gefrierschrank.
+Einheimische wissen, dass man für rein handgemachte Pasta in kleinen Chargen an Orte gehen muss, die sehr wenige Tische und eine täglich wechselnde Speisekarte haben. Wenn dieser Küche für den Tag die frischen Pappardelle ausgehen, streichen sie sie von der Tafel. Sie gehen nicht an den Gefrierschrank.
 
 ## Was sollte man in Florenz bestellen?
 
@@ -116,5 +116,7 @@ Egal, wie viel Sie ausgeben: Die Hinweise zur Speisekarte von oben gelten weiter
 Der beste Teller handgemachte Pasta in Florenz ist ehrlich gesagt der, den Sie zwanzig Minuten zuvor selbst gerollt haben; ich bin voreingenommen, aber das sagen unsere Gäste, nicht wir. Jeder [unserer Kurse](/de/pasta-kurs-florenz/) endet genau wie ein gutes Trattoria-Mittagessen: Ihre Pasta, eine toskanische Soße, ein Glas lokaler Wein und für eine Weile kein Ort, an dem Sie sein müssten.
 
 Wenn Sie das hier für die Reise von jemand anderem lesen, ist dieser Tisch auch ein schönes Geschenk: Unsere [Kochkurs-Gutscheine](/de/kochkurs-verschenken-florenz/) gelten für jeden unserer Kurse, beginnen bei 68 €, kommen per E-Mail, und den Termin wählt die beschenkte Person selbst.
+
+Mit Kindern unterwegs? Der [Familien-Kochkurs in Florenz](/de/familien-kochkurs-florenz/) nimmt sie ab sechs Jahren, 50 € für 6 bis 12 Jahre und kostenlos unter sechs. Nur zu zweit? Dann ist es der [Pasta-Kurs für Zwei](/de/pasta-kurs-fuer-zwei-florenz/).
 
 Und wenn Sie die größere Liste wollen — die sechs Teller, die wirklich zu dieser Stadt gehören, und die berühmten italienischen Gerichte, die von woanders kommen — dann ist das [Essen in Florenz](/de/blog/what-to-eat-in-florence/). Für die Städte ringsum hat jede ein Gericht, das Florenz nicht macht: [Ausflüge ab Florenz](/de/blog/day-trips-from-florence/).

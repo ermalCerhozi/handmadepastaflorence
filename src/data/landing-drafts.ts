@@ -105,7 +105,7 @@ export const draftLandings: Record<string, LandingPage> = {
             {
               title: `Can you run a cooking class for a large group in Florence?`,
               paras: [
-                `Yes, and we would rather do it properly than squeeze you in. Our Oltrarno kitchen is built for fourteen: past that, people stop cooking and start queueing, which is why our <a href="/team-building-cooking-class-florence/">team building class</a> and <a href="/private-cooking-class-florence/">Family Long-Table</a> stop there. Groups of fifteen and more cook with us at {{OWNER: venue for groups over 14}}, where everyone still gets their own board, their own dough and a chef close enough to rescue a fold that keeps tearing.`,
+                `Yes, and we would rather do it properly than squeeze you in. Our Oltrarno kitchen is built for fourteen: past that, people stop cooking and start queueing, which is why our <a href="/team-building-cooking-class-florence/">team building class</a> and <a href="/private-cooking-class-florence/">Long-Table Feast</a> stop there. Groups of fifteen and more cook with us at {{OWNER: venue for groups over 14}}, where everyone still gets their own board, their own dough and a chef close enough to rescue a fold that keeps tearing.`,
                 `The format does not change with the headcount: hands in the flour from the first minute, no demonstration watched from a chair, and a meal at the end made from what the group just rolled. For up to {{OWNER: max group size}} guests, {{OWNER: how groups this size are run (one session, parallel stations or split sessions)}}.`,
               ],
             },
@@ -150,7 +150,7 @@ export const draftLandings: Record<string, LandingPage> = {
             },
           ],
           faqs: [
-            { q: `How big can the group be?`, a: `From 15 up to {{OWNER: max group size}} guests. Under 15, the Oltrarno kitchen is the better fit: our <a href="/team-building-cooking-class-florence/">team building class</a> for companies or <a href="/private-cooking-class-florence/">The Family Long-Table</a> for private groups, both for 6 to 14.` },
+            { q: `How big can the group be?`, a: `From 15 up to {{OWNER: max group size}} guests. Under 15, the Oltrarno kitchen is the better fit: our <a href="/team-building-cooking-class-florence/">team building class</a> for companies or <a href="/private-cooking-class-florence/">The Long-Table Feast</a> for private groups, both for 6 to 14.` },
             { q: `Where is a large group class held?`, a: `At {{OWNER: venue for groups over 14}}. Our Oltrarno kitchen, five minutes from the Ponte Vecchio, holds fourteen at most, and we would rather move a bigger group somewhere with room than leave half of it waiting for a board. If you would like the countryside instead, our <a href="/agriturismo-cooking-class-tuscany/">agriturismo cooking class</a> takes groups of up to twenty in a working farm kitchen outside Florence.` },
             { q: `How does pricing work?`, a: `{{OWNER: price model (per person or per group) and any minimum}}. Send your numbers and dates to ciao@handmadepastaflorence.com and you will have a quote within one working day.` },
             { q: `Is this only for companies?`, a: `No. Family reunions, milestone birthdays and friends travelling together are just as welcome. The cooking is the same; tell us what the occasion is and we plan the day around it.` },
@@ -163,7 +163,7 @@ export const draftLandings: Record<string, LandingPage> = {
           ],
           related: [
             { title: `Team Building, 6 to 14`, href: `/team-building-cooking-class-florence/`, desc: `A smaller team? Our private Oltrarno kitchen, five minutes from the Ponte Vecchio.` },
-            { title: `The Family Long-Table`, href: `/private-cooking-class-florence/`, desc: `A private celebration for 6 to 14, the whole kitchen to yourselves, from €680.` },
+            { title: `The Long-Table Feast`, href: `/private-cooking-class-florence/`, desc: `A private celebration for 6 to 14, the whole kitchen to yourselves, from €680.` },
             { title: `Agriturismo Cooking Class`, href: `/agriturismo-cooking-class-tuscany/`, desc: `Up to 20 guests in a working farm kitchen in the hills outside Florence.` },
             { title: `Team building in Florence`, href: `/blog/team-building-activities-florence/`, desc: `Eight formats compared by group size and budget, from 6 people to 60 and up.` },
             { title: `Live Online Class`, href: `/online-pasta-making-class/`, desc: `Part of the team remote? Cook together live from anywhere, from €68.` },
@@ -223,7 +223,7 @@ export const draftLandings: Record<string, LandingPage> = {
             {
               title: `Si può fare un corso di cucina per un gruppo numeroso a Firenze?`,
               paras: [
-                `Sì, e preferiamo farlo bene piuttosto che stringervi. La nostra cucina in Oltrarno è pensata per quattordici persone: oltre, si smette di cucinare e si comincia a fare la fila, ed è per questo che il nostro <a href="/it/corso-cucina-team-building-firenze/">corso di team building</a> e <a href="/it/corso-cucina-privato-firenze/">Il Lungo Tavolo di Famiglia</a> si fermano lì. I gruppi da quindici in su cucinano con noi presso {{OWNER: venue for groups over 14}}, dove ognuno ha comunque il suo tagliere, il suo impasto e uno chef abbastanza vicino da salvare una chiusura che continua a strapparsi.`,
+                `Sì, e preferiamo farlo bene piuttosto che stringervi. La nostra cucina in Oltrarno è pensata per quattordici persone: oltre, si smette di cucinare e si comincia a fare la fila, ed è per questo che il nostro <a href="/it/corso-cucina-team-building-firenze/">corso di team building</a> e <a href="/it/corso-cucina-privato-firenze/">Il Lungo Tavolo</a> si fermano lì. I gruppi da quindici in su cucinano con noi presso {{OWNER: venue for groups over 14}}, dove ognuno ha comunque il suo tagliere, il suo impasto e uno chef abbastanza vicino da salvare una chiusura che continua a strapparsi.`,
                 `Il formato non cambia con il numero di persone: mani in pasta dal primo minuto, nessuna dimostrazione da guardare seduti, e alla fine un pasto fatto con quello che il gruppo ha appena tirato. Fino a {{OWNER: max group size}} ospiti, {{OWNER: how groups this size are run (one session, parallel stations or split sessions)}}.`,
               ],
             },
@@ -268,7 +268,7 @@ export const draftLandings: Record<string, LandingPage> = {
             },
           ],
           faqs: [
-            { q: `Quanto può essere grande il gruppo?`, a: `Da 15 fino a {{OWNER: max group size}} ospiti. Sotto i 15, la cucina in Oltrarno è la scelta migliore: il nostro <a href="/it/corso-cucina-team-building-firenze/">corso di team building</a> per le aziende o <a href="/it/corso-cucina-privato-firenze/">Il Lungo Tavolo di Famiglia</a> per i gruppi privati, entrambi da 6 a 14 persone.` },
+            { q: `Quanto può essere grande il gruppo?`, a: `Da 15 fino a {{OWNER: max group size}} ospiti. Sotto i 15, la cucina in Oltrarno è la scelta migliore: il nostro <a href="/it/corso-cucina-team-building-firenze/">corso di team building</a> per le aziende o <a href="/it/corso-cucina-privato-firenze/">Il Lungo Tavolo</a> per i gruppi privati, entrambi da 6 a 14 persone.` },
             { q: `Dove si tiene il corso per gruppi numerosi?`, a: `Presso {{OWNER: venue for groups over 14}}. La nostra cucina in Oltrarno, a cinque minuti da Ponte Vecchio, ospita al massimo quattordici persone, e preferiamo portare un gruppo più grande dove c'è spazio piuttosto che lasciarne metà ad aspettare un tagliere. Se preferite la campagna, il nostro <a href="/it/corso-cucina-agriturismo-toscana/">corso di cucina in agriturismo</a> accoglie gruppi fino a venti persone nella cucina di un'azienda agricola in attività fuori Firenze.` },
             { q: `Come funzionano i prezzi?`, a: `{{OWNER: price model (per person or per group) and any minimum}}. Mandate numeri e date a ciao@handmadepastaflorence.com e riceverete un preventivo entro un giorno lavorativo.` },
             { q: `È solo per le aziende?`, a: `No. Rimpatriate di famiglia, compleanni importanti e gruppi di amici in viaggio sono altrettanto benvenuti. La cucina è la stessa: diteci qual è l'occasione e organizziamo la giornata attorno a quella.` },
@@ -281,7 +281,7 @@ export const draftLandings: Record<string, LandingPage> = {
           ],
           related: [
             { title: `Team Building, da 6 a 14`, href: `/it/corso-cucina-team-building-firenze/`, desc: `Un team più piccolo? La nostra cucina privata in Oltrarno, a cinque minuti da Ponte Vecchio.` },
-            { title: `Il Lungo Tavolo di Famiglia`, href: `/it/corso-cucina-privato-firenze/`, desc: `Una festa privata da 6 a 14 persone, tutta la cucina per voi, da €680.` },
+            { title: `Il Lungo Tavolo`, href: `/it/corso-cucina-privato-firenze/`, desc: `Una festa privata da 6 a 14 persone, tutta la cucina per voi, da €680.` },
             { title: `Corso di Cucina in Agriturismo`, href: `/it/corso-cucina-agriturismo-toscana/`, desc: `Fino a 20 ospiti nella cucina di un agriturismo in attività, sulle colline fuori Firenze.` },
             { title: `Team building a Firenze`, href: `/it/blog/team-building-activities-florence/`, desc: `Otto formati a confronto per numero di persone e budget, da 6 a oltre 60.` },
             { title: `Corso in Diretta Online`, href: `/it/corso-pasta-online/`, desc: `Parte del team lavora da remoto? Cucinate insieme in diretta da ovunque, da €68.` },
@@ -341,7 +341,7 @@ export const draftLandings: Record<string, LandingPage> = {
             {
               title: `Peut-on organiser un cours de cuisine pour un grand groupe à Florence ?`,
               paras: [
-                `Oui, et nous préférons le faire correctement plutôt que de vous serrer. Notre cuisine de l'Oltrarno est pensée pour quatorze personnes : au-delà, on arrête de cuisiner et on commence à faire la queue, c'est pourquoi notre <a href="/fr/cours-cuisine-team-building-florence/">cours team building</a> et <a href="/fr/cours-cuisine-prive-florence/">La Longue Table Familiale</a> s'arrêtent là. Les groupes de quinze personnes et plus cuisinent avec nous à {{OWNER: venue for groups over 14}}, où chacun a toujours sa planche, sa pâte et un chef assez proche pour sauver un pliage qui se déchire.`,
+                `Oui, et nous préférons le faire correctement plutôt que de vous serrer. Notre cuisine de l'Oltrarno est pensée pour quatorze personnes : au-delà, on arrête de cuisiner et on commence à faire la queue, c'est pourquoi notre <a href="/fr/cours-cuisine-team-building-florence/">cours team building</a> et <a href="/fr/cours-cuisine-prive-florence/">La Longue Table</a> s'arrêtent là. Les groupes de quinze personnes et plus cuisinent avec nous à {{OWNER: venue for groups over 14}}, où chacun a toujours sa planche, sa pâte et un chef assez proche pour sauver un pliage qui se déchire.`,
                 `Le format ne change pas avec l'effectif : les mains dans la farine dès la première minute, aucune démonstration regardée depuis une chaise, et à la fin un repas fait de ce que le groupe vient d'étaler. Jusqu'à {{OWNER: max group size}} personnes, {{OWNER: how groups this size are run (one session, parallel stations or split sessions)}}.`,
               ],
             },
@@ -386,7 +386,7 @@ export const draftLandings: Record<string, LandingPage> = {
             },
           ],
           faqs: [
-            { q: `Quelle taille peut avoir le groupe ?`, a: `De 15 à {{OWNER: max group size}} personnes. En dessous de 15, la cuisine de l'Oltrarno convient mieux : notre <a href="/fr/cours-cuisine-team-building-florence/">cours team building</a> pour les entreprises ou <a href="/fr/cours-cuisine-prive-florence/">La Longue Table Familiale</a> pour les groupes privés, tous deux de 6 à 14 personnes.` },
+            { q: `Quelle taille peut avoir le groupe ?`, a: `De 15 à {{OWNER: max group size}} personnes. En dessous de 15, la cuisine de l'Oltrarno convient mieux : notre <a href="/fr/cours-cuisine-team-building-florence/">cours team building</a> pour les entreprises ou <a href="/fr/cours-cuisine-prive-florence/">La Longue Table</a> pour les groupes privés, tous deux de 6 à 14 personnes.` },
             { q: `Où se déroule un cours pour un grand groupe ?`, a: `À {{OWNER: venue for groups over 14}}. Notre cuisine de l'Oltrarno, à cinq minutes du Ponte Vecchio, accueille quatorze personnes au maximum, et nous préférons emmener un grand groupe là où il y a de la place plutôt que d'en laisser la moitié attendre une planche. Si vous préférez la campagne, notre <a href="/fr/cours-cuisine-agritourisme-toscane/">cours de cuisine en agritourisme</a> accueille des groupes jusqu'à vingt personnes dans la cuisine d'une ferme en activité près de Florence.` },
             { q: `Comment fonctionnent les tarifs ?`, a: `{{OWNER: price model (per person or per group) and any minimum}}. Envoyez votre effectif et vos dates à ciao@handmadepastaflorence.com et vous aurez un devis sous un jour ouvré.` },
             { q: `Est-ce réservé aux entreprises ?`, a: `Non. Les réunions de famille, les anniversaires marquants et les groupes d'amis en voyage sont tout aussi bienvenus. La cuisine est la même : dites-nous l'occasion et nous organisons la journée autour.` },
@@ -399,7 +399,7 @@ export const draftLandings: Record<string, LandingPage> = {
           ],
           related: [
             { title: `Team Building, 6 à 14`, href: `/fr/cours-cuisine-team-building-florence/`, desc: `Une équipe plus petite ? Notre cuisine privée de l'Oltrarno, à cinq minutes du Ponte Vecchio.` },
-            { title: `La Longue Table Familiale`, href: `/fr/cours-cuisine-prive-florence/`, desc: `Une fête privée de 6 à 14 personnes, toute la cuisine pour vous, à partir de 680 €.` },
+            { title: `La Longue Table`, href: `/fr/cours-cuisine-prive-florence/`, desc: `Une fête privée de 6 à 14 personnes, toute la cuisine pour vous, à partir de 680 €.` },
             { title: `Cours de Cuisine en Agritourisme`, href: `/fr/cours-cuisine-agritourisme-toscane/`, desc: `Jusqu'à 20 personnes dans la cuisine d'une ferme en activité, dans les collines autour de Florence.` },
             { title: `Team building à Florence`, href: `/fr/blog/team-building-activities-florence/`, desc: `Huit formats comparés par taille de groupe et budget, de 6 à plus de 60 personnes.` },
             { title: `Cours en Direct en Ligne`, href: `/fr/cours-pates-en-ligne/`, desc: `Une partie de l'équipe à distance ? Cuisinez ensemble en direct d'où vous voulez, à partir de 68 €.` },
@@ -459,7 +459,7 @@ export const draftLandings: Record<string, LandingPage> = {
             {
               title: `Gibt es in Florenz einen Kochkurs für große Gruppen?`,
               paras: [
-                `Ja, und wir machen es lieber richtig, als Sie hineinzuquetschen. Unsere Küche im Oltrarno ist für vierzehn Personen gebaut: Darüber hinaus hört man auf zu kochen und fängt an, Schlange zu stehen. Deshalb enden unser <a href="/de/teambuilding-kochkurs-florenz/">Teambuilding-Kurs</a> und <a href="/de/privater-kochkurs-florenz/">Die lange Familientafel</a> dort. Gruppen ab fünfzehn Personen kochen mit uns in {{OWNER: venue for groups over 14}}, wo trotzdem jeder sein eigenes Brett, seinen eigenen Teig und einen Koch in Reichweite hat, der eine reißende Faltung rettet.`,
+                `Ja, und wir machen es lieber richtig, als Sie hineinzuquetschen. Unsere Küche im Oltrarno ist für vierzehn Personen gebaut: Darüber hinaus hört man auf zu kochen und fängt an, Schlange zu stehen. Deshalb enden unser <a href="/de/teambuilding-kochkurs-florenz/">Teambuilding-Kurs</a> und <a href="/de/privater-kochkurs-florenz/">Die lange Tafel</a> dort. Gruppen ab fünfzehn Personen kochen mit uns in {{OWNER: venue for groups over 14}}, wo trotzdem jeder sein eigenes Brett, seinen eigenen Teig und einen Koch in Reichweite hat, der eine reißende Faltung rettet.`,
                 `Das Format ändert sich nicht mit der Personenzahl: Hände im Mehl ab der ersten Minute, keine Vorführung vom Stuhl aus, und am Ende eine Mahlzeit aus dem, was die Gruppe gerade ausgerollt hat. Bei bis zu {{OWNER: max group size}} Gästen {{OWNER: how groups this size are run (one session, parallel stations or split sessions)}}.`,
               ],
             },
@@ -504,7 +504,7 @@ export const draftLandings: Record<string, LandingPage> = {
             },
           ],
           faqs: [
-            { q: `Wie groß kann die Gruppe sein?`, a: `Von 15 bis {{OWNER: max group size}} Gäste. Unter 15 passt die Küche im Oltrarno besser: unser <a href="/de/teambuilding-kochkurs-florenz/">Teambuilding-Kurs</a> für Firmen oder <a href="/de/privater-kochkurs-florenz/">Die lange Familientafel</a> für private Gruppen, beide für 6 bis 14 Personen.` },
+            { q: `Wie groß kann die Gruppe sein?`, a: `Von 15 bis {{OWNER: max group size}} Gäste. Unter 15 passt die Küche im Oltrarno besser: unser <a href="/de/teambuilding-kochkurs-florenz/">Teambuilding-Kurs</a> für Firmen oder <a href="/de/privater-kochkurs-florenz/">Die lange Tafel</a> für private Gruppen, beide für 6 bis 14 Personen.` },
             { q: `Wo findet ein Kurs für große Gruppen statt?`, a: `In {{OWNER: venue for groups over 14}}. Unsere Küche im Oltrarno, fünf Minuten vom Ponte Vecchio, fasst höchstens vierzehn Personen, und wir bringen eine größere Gruppe lieber dorthin, wo Platz ist, als die Hälfte auf ein Brett warten zu lassen. Wenn Sie lieber aufs Land möchten, nimmt unser <a href="/de/agriturismo-kochkurs-toskana/">Agriturismo-Kochkurs</a> Gruppen bis zu zwanzig Personen in der Küche eines arbeitenden Hofs vor Florenz auf.` },
             { q: `Wie funktioniert die Preisgestaltung?`, a: `{{OWNER: price model (per person or per group) and any minimum}}. Schicken Sie Personenzahl und Termine an ciao@handmadepastaflorence.com, und Sie erhalten innerhalb eines Werktags ein Angebot.` },
             { q: `Ist das nur für Firmen?`, a: `Nein. Familientreffen, runde Geburtstage und Freundesgruppen auf Reisen sind genauso willkommen. Gekocht wird gleich; sagen Sie uns den Anlass, und wir planen den Tag darum herum.` },
@@ -517,7 +517,7 @@ export const draftLandings: Record<string, LandingPage> = {
           ],
           related: [
             { title: `Teambuilding, 6 bis 14`, href: `/de/teambuilding-kochkurs-florenz/`, desc: `Ein kleineres Team? Unsere private Küche im Oltrarno, fünf Minuten vom Ponte Vecchio.` },
-            { title: `Die lange Familientafel`, href: `/de/privater-kochkurs-florenz/`, desc: `Eine private Feier für 6 bis 14, die ganze Küche für Sie, ab 680 €.` },
+            { title: `Die lange Tafel`, href: `/de/privater-kochkurs-florenz/`, desc: `Eine private Feier für 6 bis 14, die ganze Küche für Sie, ab 680 €.` },
             { title: `Agriturismo-Kochkurs`, href: `/de/agriturismo-kochkurs-toskana/`, desc: `Bis zu 20 Gäste in der Küche eines arbeitenden Agriturismo in den Hügeln vor Florenz.` },
             { title: `Teambuilding in Florenz`, href: `/de/blog/team-building-activities-florence/`, desc: `Acht Formate nach Gruppengröße und Budget verglichen, von 6 bis über 60 Personen.` },
             { title: `Live-Online-Kurs`, href: `/de/online-pasta-kurs/`, desc: `Ein Teil des Teams arbeitet remote? Kochen Sie gemeinsam live von überall, ab 68 €.` },
@@ -577,7 +577,7 @@ export const draftLandings: Record<string, LandingPage> = {
             {
               title: `佛罗伦萨可以为大团体开设烹饪课吗？`,
               paras: [
-                `可以，而且我们宁愿把它做好，也不愿把你们硬塞进来。我们奥特拉诺的厨房是按十四人设计的：人数再多，大家就不是在做饭，而是在排队了，所以我们的<a href="/zh/tuandui-jianshe-pengren-kecheng-foluolunsa/">团队建设课程</a>和<a href="/zh/siren-pengren-kecheng-foluolunsa/">家庭长桌体验</a>都止步于此。十五人及以上的团体会在{{OWNER: venue for groups over 14}}和我们一起做饭，在那里每个人依然有自己的案板、自己的面团，还有一位离得足够近、能挽救一再破裂的折口的主厨。`,
+                `可以，而且我们宁愿把它做好，也不愿把你们硬塞进来。我们奥特拉诺的厨房是按十四人设计的：人数再多，大家就不是在做饭，而是在排队了，所以我们的<a href="/zh/tuandui-jianshe-pengren-kecheng-foluolunsa/">团队建设课程</a>和<a href="/zh/siren-pengren-kecheng-foluolunsa/">长桌盛宴</a>都止步于此。十五人及以上的团体会在{{OWNER: venue for groups over 14}}和我们一起做饭，在那里每个人依然有自己的案板、自己的面团，还有一位离得足够近、能挽救一再破裂的折口的主厨。`,
                 `形式不会因人数而改变：从第一分钟起就动手，没有坐着看的示范，最后用团体刚刚擀出的意面做成一顿饭。最多{{OWNER: max group size}}位客人，{{OWNER: how groups this size are run (one session, parallel stations or split sessions)}}。`,
               ],
             },
@@ -622,7 +622,7 @@ export const draftLandings: Record<string, LandingPage> = {
             },
           ],
           faqs: [
-            { q: `团体最多可以有多少人？`, a: `15人起，最多{{OWNER: max group size}}人。不足15人时，奥特拉诺的厨房更合适：企业可选<a href="/zh/tuandui-jianshe-pengren-kecheng-foluolunsa/">团队建设课程</a>，私人团体可选<a href="/zh/siren-pengren-kecheng-foluolunsa/">家庭长桌体验</a>，均为6至14人。` },
+            { q: `团体最多可以有多少人？`, a: `15人起，最多{{OWNER: max group size}}人。不足15人时，奥特拉诺的厨房更合适：企业可选<a href="/zh/tuandui-jianshe-pengren-kecheng-foluolunsa/">团队建设课程</a>，私人团体可选<a href="/zh/siren-pengren-kecheng-foluolunsa/">长桌盛宴</a>，均为6至14人。` },
             { q: `大团体的课程在哪里举行？`, a: `在{{OWNER: venue for groups over 14}}。我们奥特拉诺的厨房距老桥五分钟，最多容纳十四人；与其让一半人干等案板，我们宁愿把大团体带到更宽敞的地方。如果你们更喜欢乡间，我们的<a href="/zh/tuosikana-nongzhuang-pengren-kecheng/">农庄烹饪课程</a>可在佛罗伦萨郊外一座仍在运作的农庄厨房里接待最多二十人。` },
             { q: `报价是如何计算的？`, a: `{{OWNER: price model (per person or per group) and any minimum}}。把人数和日期发送至 ciao@handmadepastaflorence.com，您将在一个工作日内收到报价。` },
             { q: `只面向企业吗？`, a: `不是。家庭聚会、重要生日和结伴旅行的朋友同样欢迎。做的菜是一样的：告诉我们是什么场合，我们会围绕它安排这一天。` },
@@ -635,7 +635,7 @@ export const draftLandings: Record<string, LandingPage> = {
           ],
           related: [
             { title: `团队建设，6至14人`, href: `/zh/tuandui-jianshe-pengren-kecheng-foluolunsa/`, desc: `团队人数较少？我们奥特拉诺的私人厨房，距老桥五分钟。` },
-            { title: `家庭长桌体验`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `6至14人的私人庆祝，整个厨房专属于你们，680欧元起。` },
+            { title: `长桌盛宴`, href: `/zh/siren-pengren-kecheng-foluolunsa/`, desc: `6至14人的私人庆祝，整个厨房专属于你们，680欧元起。` },
             { title: `农庄烹饪课程`, href: `/zh/tuosikana-nongzhuang-pengren-kecheng/`, desc: `最多20人，在佛罗伦萨郊外山间一座仍在运作的农庄厨房里。` },
             { title: `佛罗伦萨团队建设`, href: `/zh/blog/team-building-activities-florence/`, desc: `按人数和预算对比八种团建形式，从6人到60人以上。` },
             { title: `在线直播课程`, href: `/zh/zaixian-yidali-mian-kecheng/`, desc: `部分同事远程办公？在任何地方一起在线直播烹饪，68欧元起。` },
