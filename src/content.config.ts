@@ -42,6 +42,13 @@ const blog = defineCollection({
      * Set `false` to keep the mid-article "Book your class" block out of a post
      * (e.g. a news piece where it would read as tone-deaf). Read by
      * src/utils/remark-inline-cta.ts at build time; default is to include it.
+     *
+     * CACHE GOTCHA: Astro's content layer caches each post's rendered body and
+     * only re-renders a post when that post changes or this file changes. So
+     * editing the plugin (or its copy in the i18n files) does NOT update posts
+     * that were already built; touch this file, or clear node_modules/.astro,
+     * to force a full re-render. A build that went wrong in the plugin can also
+     * leave posts cached without the block (or without a body).
      */
     inlineCta: z.boolean().optional(),
   }),

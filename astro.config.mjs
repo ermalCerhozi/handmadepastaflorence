@@ -1,24 +1,12 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import { unified } from '@astrojs/markdown-remark';
-
-// Plain Node loads this file too: src/scripts/generate-redirects.mjs imports it
-// (the `postbuild` step of `npm run build`) to read the `redirects` map below.
-// Plain Node cannot resolve the plugin's extensionless TypeScript imports, so a
-// static `import` of it here crashed that step on the server and blocked every
-// deploy. Importing it on first use means only Astro's own build, which runs the
-// markdown pipeline through Vite, ever loads it.
-const remarkInlineCta = () => async (tree, file) => {
-  // The CTA block is optional. If the plugin cannot be loaded, skip the block and
-  // keep the post. An uncaught error here makes Astro render the post WITHOUT ITS
-  // BODY while the build still exits 0, so the deploy looks green.
-  try {
-    const { default: plugin } = await import('./src/utils/remark-inline-cta.ts');
-    return plugin()(tree, file);
-  } catch (err) {
-    console.warn(`[remark-inline-cta] skipped for ${file?.path ?? 'unknown'}: ${err?.message ?? err}`);
-  }
-};
+// This file imports TypeScript, which only Astro can load (it reads the config
+// through Vite). Plain-Node scripts must NOT import astro.config.mjs: they take
+// `redirects` from src/data/redirects.mjs instead. A static import of this file
+// from generate-redirects.mjs failed on the server with ERR_MODULE_NOT_FOUND.
+import remarkInlineCta from './src/utils/remark-inline-cta.ts';
+import { redirects } from './src/data/redirects.mjs';
 
 // NO LEGACY REDIRECTS (removed 2026-08-23). Two dead URL shapes used to be kept
 // alive here — /<locale>/<english-slug>/ from before landings.ts had translated
@@ -46,52 +34,8 @@ export default defineConfig({
     processor: unified({ remarkPlugins: [remarkInlineCta] }),
   },
 
-  // The merged-post redirect, added 2026-09-05, deliberately not covered by the blanket
-  // "no legacy redirects" rule above. That rule was correct for URL *shapes*
-  // this site stopped serving: none of them had ever registered a single GSC
-  // impression. This is the opposite case. /blog/where-do-locals-eat-fresh-
-  // pasta-florence/ was a live, indexed post that pulled 357 impressions and
-  // 13 clicks in the 18 days to 2026-09-05 — the highest CTR of any English
-  // page on the site (10.53%) — and it was merged into where-to-eat-handmade-
-  // pasta-in-florence/ because the two competed for "best handmade pasta in
-  // Florence" and both stalled on page 2-3 in English. Dropping that URL cold
-  // would throw away real accumulated signal.
-  //
-  // CAVEAT: on a static build Astro emits these as meta-refresh stub pages,
-  // NOT true 301s. Google treats meta-refresh as a soft redirect and usually
-  // honours it, but a server-side 301 is strictly better. `npm run build`
-  // generates the real 301s from this map into
-  // ops/nginx/handmadepastaflorence-redirects.conf; verified live on the origin
-  // 2026-09-26 (HTTP 301). The server copy does NOT update itself — re-copy the
-  // file and reload nginx whenever this map changes.
-  redirects: {
-    ...Object.fromEntries(
-      ['', '/it', '/fr', '/de', '/zh'].map((prefix) => [
-        `${prefix}/blog/where-do-locals-eat-fresh-pasta-florence/`,
-        `${prefix}/blog/where-to-eat-handmade-pasta-in-florence/`,
-      ])
-    ),
-    // Misspelt URLs, added 2026-09-26. None of these ever existed in this repo
-    // (checked with `git log -S`); they are typos or AI-invented links that
-    // Google found elsewhere and now reports as 404s in Coverage. Each one drew
-    // impressions in the 30 Jun–26 Sep Performance export — the German what-to-
-    // eat typo ranked at position 2.7 over 17 impressions, and the German gift
-    // typo took a click — so they earn a 301 under the same rule as above: a
-    // URL with real search signal is consolidated, not dropped. Junk 404s with
-    // no plausible target (/pasta-shapes/0.6.3, a scraped zh/cn path) stay 404.
-    '/de/blog/what-to-eat-in-florenz/': '/de/blog/what-to-eat-in-florence/',
-    '/de/kochkurs-verschenken-florence/': '/de/kochkurs-verschenken-florenz/',
-    '/fr/cours-cuisine-agriturisme-toscane/': '/fr/cours-cuisine-agritourisme-toscane/',
-    '/fr/blog/best-flor-for-italian-fresh-pasta/': '/fr/blog/best-flour-for-italian-fresh-pasta/',
-    '/blog/fresh-pasta-vs-dry-pasta-italy/': '/blog/fresh-vs-dry-pasta-italy/',
-    '/blog/pasta-secca-vs-pasta-fresca': '/blog/fresh-vs-dry-pasta-italy/',
-    // Two more misspelt URLs, added 2026-10-13. Both are live 404s that drew
-    // impressions in the 12 Jul to 12 Oct Performance export, so they get a 301
-    // under the same rule as the 2026-09-26 batch above. The flour typo is the
-    // English twin of the French one already redirected.
-    '/blog/best-flor-for-italian-fresh-pasta/': '/blog/best-flour-for-italian-fresh-pasta/',
-    '/blog/what-to-do-on-a-sunday-in-florence/': '/blog/what-to-do-in-florence-on-a-sunday/',
-  },
+  // Redirects live in src/data/redirects.mjs (see the note there for why).
+  redirects,
   // Keep this list in sync with `languages` in src/i18n/config.ts.
   i18n: {
     defaultLocale: 'en',

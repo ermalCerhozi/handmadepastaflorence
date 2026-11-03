@@ -27,28 +27,40 @@ const POST_PATH = /[\\/]content[\\/]blog[\\/](?:(it|fr|de|zh)[\\/])?([^\\/]+)\.m
 
 export default function remarkInlineCta() {
   return (tree: Node, file: VFileLike) => {
-    const match = (file.path ?? file.history?.[0] ?? '').match(POST_PATH);
-    if (!match) return;
-    if (file.data?.astro?.frontmatter?.inlineCta === false) return;
-
-    const lang = (match[1] ?? 'en') as Locale;
-    const slug = match[2];
-    const blocks = tree.children ?? [];
-
-    const h2s = blocks.flatMap((n, i) => (n.type === 'heading' && n.depth === 2 ? [i] : []));
-    if (h2s.length < 3) return;
-
-    // Closest boundary to the middle, within the middle half of the article.
-    const middle = blocks.length / 2;
-    const at = h2s
-      .filter((i) => i >= blocks.length * 0.25 && i <= blocks.length * 0.75)
-      .sort((a, b) => Math.abs(a - middle) - Math.abs(b - middle))[0];
-    if (at === undefined) return;
-
-    const ref = `${lang === 'en' ? '' : `/${lang}`}/blog/${slug}/`;
-    blocks.splice(at, 0, {
-      type: 'html',
-      value: inlineCtaHtml(dictionaries[lang], { ref, source: 'blog-inline' }),
-    });
+    // The block is optional; the post is not. An uncaught error in a remark
+    // plugin makes Astro render the post WITHOUT ITS BODY while the build still
+    // exits 0 (a green deploy of empty pages happened once). So any failure here
+    // skips the block, says so in the build log, and leaves the post intact.
+    try {
+      insertBlock(tree, file);
+    } catch (err) {
+      console.warn(`[remark-inline-cta] skipped ${file.path ?? 'unknown file'}: ${err instanceof Error ? err.message : err}`);
+    }
   };
+}
+
+function insertBlock(tree: Node, file: VFileLike) {
+  const match = (file.path ?? file.history?.[0] ?? '').match(POST_PATH);
+  if (!match) return;
+  if (file.data?.astro?.frontmatter?.inlineCta === false) return;
+
+  const lang = (match[1] ?? 'en') as Locale;
+  const slug = match[2];
+  const blocks = tree.children ?? [];
+
+  const h2s = blocks.flatMap((n, i) => (n.type === 'heading' && n.depth === 2 ? [i] : []));
+  if (h2s.length < 3) return;
+
+  // Closest boundary to the middle, within the middle half of the article.
+  const middle = blocks.length / 2;
+  const at = h2s
+    .filter((i) => i >= blocks.length * 0.25 && i <= blocks.length * 0.75)
+    .sort((a, b) => Math.abs(a - middle) - Math.abs(b - middle))[0];
+  if (at === undefined) return;
+
+  const ref = `${lang === 'en' ? '' : `/${lang}`}/blog/${slug}/`;
+  blocks.splice(at, 0, {
+    type: 'html',
+    value: inlineCtaHtml(dictionaries[lang], { ref, source: 'blog-inline' }),
+  });
 }
