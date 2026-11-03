@@ -6,6 +6,8 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import BookingDrawer from '../components/BookingDrawer.astro';
+import BookingBanner from '../components/BookingBanner.astro';
+import HeroCta from '../components/HeroCta.astro';
 import { getLocaleFromUrl, localizePath, SITE } from '../i18n/utils';
 import { useTranslations } from '../i18n/ui';
 import { defaultLocale } from '../i18n/config';
@@ -40,12 +42,13 @@ const getLink = (id: string) => {
   description={t.meta.blogDescription}
 >
   <Header solid />
-  <main>
+  <main data-prefill-default="florence">
     <section class="bl-hero" id="top">
       <div class="shell">
         <p class="eyebrow bl-hero__eyebrow">{t.blogIndex.eyebrow}</p>
         <h1 class="bl-hero__h">{t.blogIndex.h1}<span class="font-golden font-golden--accent font-golden--yolk">{t.blogIndex.h1Ital}</span></h1>
         <p class="bl-hero__lede">{t.blogIndex.lede}</p>
+        <HeroCta source="blog-index-hero" tone="dark" />
       </div>
     </section>
 
@@ -73,6 +76,7 @@ const getLink = (id: string) => {
     </section>
   </main>
   <Footer />
+  <BookingBanner prefill="florence" />
   <BookingDrawer />
 
   <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbLd)} />

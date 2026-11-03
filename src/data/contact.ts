@@ -15,6 +15,9 @@ export const TEL_URL = `tel:${PHONE_E164}`;
 export const WHATSAPP_NUMBER = '393445204379';
 export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}`;
 
+/** wa.me link that opens a chat with `text` already typed in. */
+export const whatsappLink = (text: string) => `${WHATSAPP_URL}?text=${encodeURIComponent(text)}`;
+
 export const EMAIL = 'ciao@handmadepastaflorence.com';
 export const MAILTO = `mailto:${EMAIL}`;
 

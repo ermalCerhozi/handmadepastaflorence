@@ -205,3 +205,60 @@ h1, h2, h3, h4 {
   }
   [data-reveal] { opacity: 1; transform: none; }
 }
+
+/* ---- Conversion CTAs (blog posts, blog index, shape pages) ----
+   .cta-btn and .cta-ghost are the two buttons, .cta-link the quiet text version,
+   .cta-inline the mid-page block (markup: src/utils/cta-markup.ts).
+   The block is injected into markdown bodies, where the blog's `.po-body
+   :global(p)` / `:global(a)` rules would restyle its text and link; see the
+   specificity note on the `aside.cta-inline …` rules below. */
+.cta-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+  min-height: 48px; padding: 0.75rem 1.5rem; border-radius: 100px;
+  background: var(--terracotta); color: #fff; text-align: center;
+  font-weight: 800; font-size: var(--step-0); line-height: 1.2;
+  transition: background 0.3s;
+}
+.cta-btn--yolk { background: var(--yolk); color: var(--olive-deep); }
+@media (hover: hover) {
+  .cta-btn:hover { background: var(--terracotta-deep); }
+  .cta-btn--yolk:hover { background: var(--yolk-deep); }
+}
+.cta-ghost {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 48px; padding: 0.7rem 1.3rem; border-radius: 100px;
+  border: 1.5px solid currentColor; color: var(--olive); text-align: center;
+  font-weight: 700; font-size: var(--step--1); line-height: 1.2;
+  transition: background 0.3s, color 0.3s;
+}
+@media (hover: hover) {
+  .cta-ghost:hover { background: var(--olive); color: var(--flour); border-color: var(--olive); }
+}
+.cta-link { color: inherit; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+
+.cta-inline {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: 1rem 1.5rem; margin: 2.2rem 0; padding: clamp(1.2rem, 3vw, 1.6rem);
+  background: #fff; border: 1px solid var(--paper-line); border-left: 4px solid var(--yolk);
+  border-radius: var(--radius); box-shadow: var(--shadow-sm);
+}
+.cta-inline .cta-inline__text { flex: 1 1 18rem; }
+/* The element names below are not decoration. Astro scopes the blog's
+   `.po-body :global(p)` / `:global(a)` rules to `.po-body.astro-xxxx p` (0,2,1),
+   which beats a plain two-class selector (0,2,0); `aside.cta-inline p.…` is
+   (0,2,2), so the block keeps its own type sizes and button colours. */
+aside.cta-inline p.cta-inline__h {
+  font-family: var(--serif); font-weight: 700; font-size: var(--step-1); line-height: 1.2;
+  color: var(--olive); margin: 0 0 0.35rem;
+}
+aside.cta-inline p.cta-inline__p { font-size: var(--step--1); line-height: 1.55; color: var(--charcoal-soft); margin: 0; }
+.cta-inline .cta-inline__actions { display: flex; flex-wrap: wrap; gap: 0.7rem; }
+aside.cta-inline a.cta-ghost { color: var(--olive); text-decoration: none; }
+@media (hover: hover) {
+  aside.cta-inline a.cta-ghost:hover { color: var(--flour); }
+}
+@media (max-width: 559px) {
+  .cta-inline .cta-inline__actions { width: 100%; flex-direction: column; }
+  .cta-inline .cta-btn, .cta-inline .cta-ghost { width: 100%; }
+}
+@media print { .cta-inline { display: none; } }

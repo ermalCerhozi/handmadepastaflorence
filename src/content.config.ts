@@ -37,6 +37,12 @@ const blog = defineCollection({
      * Slugs that do not exist in the reader's locale are dropped silently.
      */
     related: z.array(z.string()).optional(),
+    /**
+     * Set `false` to keep the mid-article "Book your class" block out of a post
+     * (e.g. a news piece where it would read as tone-deaf). Read by
+     * src/utils/remark-inline-cta.ts at build time; default is to include it.
+     */
+    inlineCta: z.boolean().optional(),
   }),
 });
 

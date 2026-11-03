@@ -231,6 +231,19 @@ const de = {
     readGuide: 'Guide lesen',
   },
 
+  cta: {
+    book: 'Buchen Sie Ihren Kurs',
+    private: 'Privatkurs oder Sonderwunsch',
+    privateHint: 'Gruppen, Familien und Feiern',
+    inlineH: 'Lernen Sie es mit den eigenen Händen',
+    inlineP: 'Praxiskurse in unserer Küche in Florenz oder live online. Sie zahlen nichts, bevor wir Ihren Termin bestätigt haben.',
+    bannerText: 'Pasta-Kurse in Florenz oder online',
+    bannerBtn: 'Kurs buchen',
+    bannerClose: 'Schließen',
+    bannerLabel: 'Pasta-Kurs buchen',
+    privateMsg: 'Hallo! Ich hätte gern Informationen zu einem Privatkurs.\n\nPersonenzahl: \nAnlass: \nWunschtermine: \n\nRef.: {ref}',
+  },
+
   blogPost: {
     homeCrumb: 'Startseite',
     guidesCrumb: 'Guides',
@@ -241,7 +254,6 @@ const de = {
     bioEnd: 'im Oltrarno unterrichtet.',
     ctaH2: 'Möchten Sie es lieber mit den Händen lernen?',
     ctaP: 'Selbst rollen, falten und essen: in unserer Küche in Florenz oder live online.',
-    ctaBtn: 'Kurs buchen',
     ctaLink: 'Kurse ansehen',
     relatedTitle: 'Weiterlesen',
     relatedSub: 'Mehr Guides aus unserer Küche',

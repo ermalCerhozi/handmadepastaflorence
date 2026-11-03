@@ -1,0 +1,196 @@
+---
+// Slide-in booking banner for the content pages (blog posts, blog index, shape
+// pages). Built to stay on the right side of Google's mobile intrusive-
+// interstitial guidance: it never appears on load, covers no content with a
+// scrim, takes about a tenth of a phone screen, has no focus trap or scroll
+// lock, and is dismissible.
+//
+// WHEN: the first of 8 seconds on a visible tab, or scrolling past 40% of the
+// page. The scroll trigger is armed after 3 seconds, so reloading deep into an
+// article does not pop it instantly.
+// MEMORY: dismissing it, or tapping its Book button, hides it for 7 days via
+// localStorage (every access in try/catch; if storage is blocked it still stays
+// away for the rest of the pageview).
+// OTHER PAGES: never put this on a page that has FloatingCTA (home, class
+// landings): both are fixed to the bottom edge (z-index 250 here, 300 there) and
+// would stack. The policy pages are left out on purpose too.
+//
+// It must be rendered in the server HTML (hidden), not injected later:
+// BookingDrawer binds [data-open-booking] when its script runs.
+import { getLocaleFromUrl } from '../i18n/utils';
+import { useTranslations } from '../i18n/ui';
+
+interface Props {
+  /** Class the Book button preselects in the drawer. */
+  prefill?: 'florence' | 'market' | 'private' | 'online';
+}
+
+const { prefill = 'florence' } = Astro.props;
+const t = useTranslations(getLocaleFromUrl(Astro.url));
+---
+
+<aside class="bnr" data-banner hidden aria-label={t.cta.bannerLabel}>
+  <p class="bnr__text">{t.cta.bannerText}</p>
+  <button type="button" class="bnr__btn" data-banner-book data-open-booking data-cta="banner" data-prefill={prefill}>
+    {t.cta.bannerBtn}
+  </button>
+  <button type="button" class="bnr__close" data-banner-close aria-label={t.cta.bannerClose}>
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+  </button>
+</aside>
+
+<script>
+  import { track, EV } from '../scripts/track';
+
+  const KEY = 'hpf-bk-banner';
+  const HIDE_MS = 7 * 24 * 60 * 60 * 1000;
+  const SHOW_AFTER_MS = 8000;
+  const SCROLL_ARM_MS = 3000;
+  const SCROLL_DEPTH = 0.4;
+
+  const setupBanner = () => {
+    const bar = document.querySelector<HTMLElement>('[data-banner]');
+    if (!bar) return;
+
+    // Where storage is blocked (private windows, site data off) reads and writes
+    // throw. Then the flag lives in memory, which still covers this pageview.
+    let dismissedThisView = false;
+    const recentlyDismissed = () => {
+      if (dismissedThisView) return true;
+      try {
+        const at = Number(localStorage.getItem(KEY));
+        const age = Date.now() - at;
+        // age < 0 is a stored time in the future (clock change): treat as expired.
+        return at > 0 && age >= 0 && age < HIDE_MS;
+      } catch {
+        return false;
+      }
+    };
+    const remember = () => {
+      dismissedThisView = true;
+      try { localStorage.setItem(KEY, String(Date.now())); } catch { /* blocked: memory flag only */ }
+    };
+
+    if (recentlyDismissed()) return;
+
+    let triggered: 'timer' | 'scroll' | null = null;
+    let closed = false;     // dismissed, or the drawer was opened, this pageview
+    let atFooter = false;   // the footer has its own booking CTA
+    let visible = false;
+    let reported = false;
+
+    const render = () => {
+      const want = triggered !== null && !closed && !atFooter;
+      if (want === visible) return;
+      visible = want;
+      if (want) {
+        bar.hidden = false;
+        void bar.offsetWidth; // commit display:flex first, or the slide-in has nothing to animate from
+        bar.classList.add('is-in');
+        if (!reported) {
+          reported = true;
+          track(EV.bannerShown, { trigger: triggered ?? 'timer', page: location.pathname, locale: document.documentElement.lang });
+        }
+      } else {
+        bar.classList.remove('is-in');
+        window.setTimeout(() => { if (!visible) bar.hidden = true; }, 500);
+      }
+    };
+
+    const armedAt = Date.now() + SCROLL_ARM_MS;
+    const onScroll = () => {
+      if (triggered || Date.now() < armedAt) return;
+      const doc = document.documentElement;
+      if ((window.scrollY + window.innerHeight) / doc.scrollHeight >= SCROLL_DEPTH) fire('scroll');
+    };
+    const onVisible = () => {
+      if (document.visibilityState === 'visible') {
+        document.removeEventListener('visibilitychange', onVisible);
+        fire('timer');
+      }
+    };
+    const fire = (how: 'timer' | 'scroll') => {
+      if (triggered) return;
+      triggered = how;
+      window.removeEventListener('scroll', onScroll);
+      render();
+    };
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    // A scroll that happened inside the first 3 seconds produces no later event
+    // if the reader then stops, so look again the moment the trigger arms.
+    window.setTimeout(onScroll, SCROLL_ARM_MS + 50);
+    window.setTimeout(() => {
+      if (document.visibilityState === 'visible') fire('timer');
+      else document.addEventListener('visibilitychange', onVisible); // background tab: wait until it is seen
+    }, SHOW_AFTER_MS);
+
+    // Footer in view: hide, same as FloatingCTA.
+    const footer = document.querySelector('.ft');
+    if (footer && 'IntersectionObserver' in window) {
+      new IntersectionObserver(([e]) => { atFooter = e.isIntersecting; render(); }, { threshold: 0 }).observe(footer);
+    }
+
+    bar.querySelector('[data-banner-close]')?.addEventListener('click', () => {
+      remember();
+      closed = true;
+      track(EV.bannerDismiss, { page: location.pathname, locale: document.documentElement.lang });
+      render();
+    });
+    // The Book button opens the drawer through BookingDrawer's own handler; this
+    // only records that the banner did its job.
+    bar.querySelector('[data-banner-book]')?.addEventListener('click', remember);
+
+    // Any drawer opening (this button, hero CTA, header…) means the reader is
+    // already booking: stand down for the rest of the pageview. Listening to the
+    // tracking event keeps the banner decoupled from the drawer's code.
+    document.addEventListener('hpf:track', (e) => {
+      if ((e as CustomEvent).detail?.event === EV.drawerOpen) { closed = true; render(); }
+    });
+  };
+
+  setupBanner();
+</script>
+
+<style>
+  .bnr {
+    position: fixed; z-index: 250; left: 0; right: 0; bottom: 0;
+    display: flex; align-items: center; gap: 0.5rem;
+    padding: 0.5rem 0.4rem 0.5rem 1rem;
+    padding-bottom: calc(0.5rem + env(safe-area-inset-bottom));
+    background: var(--olive); color: var(--flour);
+    box-shadow: 0 -10px 30px -12px rgba(33, 44, 31, 0.45);
+    transform: translateY(110%); opacity: 0;
+    transition: transform 0.5s var(--ease), opacity 0.35s var(--ease);
+  }
+  .bnr[hidden] { display: none; }
+  .bnr.is-in { transform: none; opacity: 1; }
+
+  .bnr__text {
+    flex: 1; min-width: 0; margin: 0;
+    font-size: var(--step--1); font-weight: 600; line-height: 1.3;
+    display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden;
+  }
+  .bnr__btn {
+    flex: none; min-height: 44px; padding: 0.5rem 1rem; border-radius: 100px;
+    background: var(--yolk); color: var(--olive-deep);
+    font-weight: 800; font-size: var(--step--1); line-height: 1.15; white-space: nowrap;
+    transition: background 0.3s;
+  }
+  @media (hover: hover) { .bnr__btn:hover { background: var(--yolk-deep); } }
+  .bnr__close {
+    flex: none; width: 44px; height: 44px; border-radius: 50%;
+    display: grid; place-items: center; color: rgba(249, 246, 240, 0.8);
+    transition: color 0.3s, background 0.3s;
+  }
+  @media (hover: hover) { .bnr__close:hover { color: var(--flour); background: rgba(255, 255, 255, 0.1); } }
+
+  /* Desktop: a small card in the corner, not a bar across the page. */
+  @media (min-width: 640px) {
+    .bnr {
+      left: auto; right: 1.25rem; bottom: 1.25rem; width: 400px; max-width: calc(100vw - 2.5rem);
+      padding: 0.65rem 0.4rem 0.65rem 1.2rem; border-radius: 18px; box-shadow: var(--shadow-lg);
+    }
+  }
+  @media print { .bnr { display: none; } }
+</style>

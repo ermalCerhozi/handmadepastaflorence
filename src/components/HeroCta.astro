@@ -1,0 +1,41 @@
+---
+// The one "above the fold" booking CTA for content-page heroes (blog post, blog
+// index, shape pages): the Book button plus a quiet text link for groups,
+// families and celebrations. On a phone the header's Book button sits behind
+// the hamburger menu, so without this a reader has no visible way to book until
+// the end of the article.
+//
+// The button carries no data-prefill; it inherits the page's
+// data-prefill-default (see BookingDrawer.astro).
+import { getLocaleFromUrl } from '../i18n/utils';
+import { useTranslations } from '../i18n/ui';
+import { privateInquiryHref } from '../utils/cta-markup';
+
+interface Props {
+  /** `data-cta` label for the Book button; the private link gets `${source}-private`. */
+  source: string;
+  /** 'dark' = yolk button for olive heroes, 'light' = terracotta button for pale ones. */
+  tone?: 'dark' | 'light';
+}
+
+const { source, tone = 'light' } = Astro.props;
+const t = useTranslations(getLocaleFromUrl(Astro.url));
+---
+
+<div class="cta-hero">
+  <button type="button" class:list={['cta-btn', tone === 'dark' && 'cta-btn--yolk']} data-open-booking data-cta={source}>
+    {t.cta.book}
+  </button>
+  <a class="cta-link" href={privateInquiryHref(t, Astro.url.pathname)} target="_blank" rel="noopener" data-private-inquiry data-cta={`${source}-private`}>
+    {t.cta.private}
+  </a>
+</div>
+
+<style>
+  .cta-hero {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 0.7rem 1.4rem;
+    margin-top: 1.5rem;
+  }
+  .cta-link { font-size: var(--step--1); }
+  @media (max-width: 559px) { .cta-hero .cta-btn { width: 100%; } }
+</style>

@@ -233,6 +233,19 @@ const it: Dict = {
     readGuide: `Leggi la guida`,
   },
 
+  cta: {
+    book: `Prenota il tuo corso`,
+    private: `Corso privato o richiesta speciale`,
+    privateHint: `Gruppi, famiglie e feste`,
+    inlineH: `Impara a farla con le tue mani`,
+    inlineP: `Corsi pratici nella nostra cucina a Firenze o in diretta online. Non paghi nulla finché non ti confermiamo la data.`,
+    bannerText: `Corsi di pasta a Firenze o online`,
+    bannerBtn: `Prenota un corso`,
+    bannerClose: `Chiudi`,
+    bannerLabel: `Prenota un corso di pasta`,
+    privateMsg: `Ciao! Vorrei informazioni su un corso privato.\n\nNumero di persone: \nOccasione: \nDate preferite: \n\nRif.: {ref}`,
+  },
+
   blogPost: {
     homeCrumb: `Home`,
     guidesCrumb: `Guide`,
@@ -243,7 +256,6 @@ const it: Dict = {
     bioEnd: `in Oltrarno.`,
     ctaH2: `Preferisci impararlo con le tue mani?`,
     ctaP: `Stendi, piega e mangia tu stesso: nella nostra cucina a Firenze o in diretta online.`,
-    ctaBtn: `Prenota un corso`,
     ctaLink: `Scopri i corsi`,
     relatedTitle: `Continua a leggere`,
     relatedSub: `Altre guide dalla nostra cucina`,

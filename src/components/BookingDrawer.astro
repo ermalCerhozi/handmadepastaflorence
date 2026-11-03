@@ -262,14 +262,19 @@ const bkJsPayload = Object.fromEntries(
       b.addEventListener('click', (e) => {
         e.preventDefault(); // some triggers are <a href="#"> — don't jump to the top
         const el = b as HTMLElement;
+        // A button with no class of its own inherits its page's. BlogPostPage puts
+        // data-prefill-default on <article>, so a CTA injected into the markdown
+        // body (which knows nothing about landings) still opens on the right class.
+        const prefill = el.dataset.prefill
+          ?? el.closest<HTMLElement>('[data-prefill-default]')?.dataset.prefillDefault;
         track(EV.drawerOpen, {
           // data-cta names the trigger (hero, footer, floating…), so the report
           // shows which CTA actually starts bookings.
           source: el.dataset.cta || 'unlabelled',
-          prefill: el.dataset.prefill || 'none',
+          prefill: prefill || 'none',
           page: location.pathname,
         });
-        open(el.dataset.prefill);
+        open(prefill);
       }));
     $$('[data-close-booking]').forEach((b) => b.addEventListener('click', close));
 
@@ -278,6 +283,18 @@ const bkJsPayload = Object.fromEntries(
     // on the page without each component wiring its own handler.
     document.addEventListener('click', (e) => {
       const el = e.target as HTMLElement;
+      // The "Private class or special request" button is a wa.me link too, but a
+      // different kind of lead from a general message, so it is counted on its
+      // own and returns before the generic whatsapp_click below.
+      const priv = el?.closest?.('a[data-private-inquiry]') as HTMLElement | null;
+      if (priv) {
+        track(EV.privateInquiry, {
+          source: priv.dataset.cta || 'unlabelled',
+          page: location.pathname,
+          locale: document.documentElement.lang,
+        });
+        return;
+      }
       if (el?.closest?.('a[href*="wa.me"]')) {
         track(EV.whatsappClick, { page: location.pathname, locale: document.documentElement.lang });
         return;

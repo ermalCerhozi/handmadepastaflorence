@@ -1,0 +1,21 @@
+---
+// Mid-page "Book your class" block for pages that are not markdown (shape
+// spokes). The blog posts get the same block from remark-inline-cta.ts; both
+// come from inlineCtaHtml(), so the design lives in one place.
+//
+// The button carries no data-prefill; it inherits the page's
+// data-prefill-default (see BookingDrawer.astro).
+import { getLocaleFromUrl } from '../i18n/utils';
+import { useTranslations } from '../i18n/ui';
+import { inlineCtaHtml } from '../utils/cta-markup';
+
+interface Props {
+  /** `data-cta` label for the Book button. */
+  source: string;
+}
+
+const { source } = Astro.props;
+const t = useTranslations(getLocaleFromUrl(Astro.url));
+---
+
+<Fragment set:html={inlineCtaHtml(t, { ref: Astro.url.pathname, source })} />

@@ -71,4 +71,14 @@ export const EV = {
    * they would look like pages that never convert.
    */
   emailEnquiry: 'email_enquiry',
+  /**
+   * "Private class or special request" button: a WhatsApp chat for groups,
+   * families and celebrations. Counted apart from `whatsappClick` so the report
+   * can tell a bespoke enquiry from a general message.
+   */
+  privateInquiry: 'private_inquiry_click',
+  /** Slide-in booking banner appeared. `trigger` is 'timer' or 'scroll'. */
+  bannerShown: 'booking_banner_shown',
+  /** Banner dismissed with the close button (hidden for 7 days). */
+  bannerDismiss: 'booking_banner_dismiss',
 } as const;

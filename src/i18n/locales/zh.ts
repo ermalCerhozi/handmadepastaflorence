@@ -229,6 +229,19 @@ const zh = {
     readGuide: '阅读指南',
   },
 
+  cta: {
+    book: '预订你的课程',
+    private: '私人课程或特别需求',
+    privateHint: '团体、家庭与庆祝活动',
+    inlineH: '亲手做一做',
+    inlineP: '在我们佛罗伦萨的厨房或在线直播中动手学习。在我们确认日期之前，你无需支付任何费用。',
+    bannerText: '佛罗伦萨手工意面课，也可在线参加',
+    bannerBtn: '预订课程',
+    bannerClose: '关闭',
+    bannerLabel: '预订意面课程',
+    privateMsg: '你好！我想咨询私人课程。\n\n人数：\n场合：\n希望的日期：\n\n来源页面：{ref}',
+  },
+
   blogPost: {
     homeCrumb: '首页',
     guidesCrumb: '指南',
@@ -239,7 +252,6 @@ const zh = {
     bioEnd: '，地点位于奥尔特拉诺。',
     ctaH2: '更想亲手学习？',
     ctaP: '亲手揉面、折叠并亲自品尝，来到我们佛罗伦萨的厨房，或者在线直播体验。',
-    ctaBtn: '预订课程',
     ctaLink: '查看课程',
     relatedTitle: '继续阅读',
     relatedSub: '来自我们厨房的更多指南',

@@ -229,6 +229,19 @@ const fr = {
     readGuide: 'Lire le guide',
   },
 
+  cta: {
+    book: 'Réservez votre cours',
+    private: 'Cours privé ou demande spéciale',
+    privateHint: 'Groupes, familles et célébrations',
+    inlineH: 'Apprenez-le avec vos mains',
+    inlineP: 'Cours pratiques dans notre cuisine à Florence ou en direct en ligne. Vous ne payez rien avant que nous ayons confirmé votre date.',
+    bannerText: 'Cours de pâtes à Florence ou en ligne',
+    bannerBtn: 'Réserver un cours',
+    bannerClose: 'Fermer',
+    bannerLabel: 'Réserver un cours de pâtes',
+    privateMsg: 'Bonjour ! Je souhaiterais des informations sur un cours privé.\n\nNombre de personnes : \nOccasion : \nDates souhaitées : \n\nRéf. : {ref}',
+  },
+
   blogPost: {
     homeCrumb: 'Accueil',
     guidesCrumb: 'Guides',
@@ -239,7 +252,6 @@ const fr = {
     bioEnd: 'dans l\'Oltrarno.',
     ctaH2: 'Vous préférez l\'apprendre avec vos mains ?',
     ctaP: 'Roulez, pliez et mangez-les vous-même: dans notre cuisine à Florence ou en direct en ligne.',
-    ctaBtn: 'Réserver un cours',
     ctaLink: 'Voir les cours',
     relatedTitle: 'À lire ensuite',
     relatedSub: 'D’autres guides depuis notre cuisine',

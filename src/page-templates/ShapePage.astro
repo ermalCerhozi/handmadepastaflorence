@@ -7,6 +7,9 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import BookingDrawer from '../components/BookingDrawer.astro';
+import BookingBanner from '../components/BookingBanner.astro';
+import HeroCta from '../components/HeroCta.astro';
+import InlineCta from '../components/InlineCta.astro';
 import { shapes, shapePath, shapesHubPath, SHAPES_PUBLISHED, SHAPES_MODIFIED, type ShapeSpoke } from '../data/shapes';
 import { localizePath, SITE, type Alternate } from '../i18n/utils';
 import type { Locale } from '../i18n/config';
@@ -53,11 +56,15 @@ const articleSchema = {
 const faqLd = faqSchema(spoke.faqs);
 
 const siblings = s.spokes.filter((sp) => sp.slug !== spoke.slug);
+
+// The mid-page booking block goes after the middle section; spokes with fewer
+// than three are too short to interrupt (hero CTA and bottom CTA still apply).
+const midSection = spoke.sections.length >= 3 ? Math.ceil(spoke.sections.length / 2) - 1 : -1;
 ---
 
 <Layout title={spoke.title} description={spoke.description} image={spoke.image.src.src} alternates={alternates}>
   <Header solid alternates={alternates} />
-  <main>
+  <main data-prefill-default="florence">
     <section class="sp-hero" id="top">
       <div class="shell sp-hero__inner">
         <div class="sp-hero__text">
@@ -73,6 +80,7 @@ const siblings = s.spokes.filter((sp) => sp.slug !== spoke.slug);
           </h1>
           <!-- Direct answer in the first paragraph: the snippet target. -->
           <p class="sp-answer" set:html={spoke.answer} />
+          <HeroCta source="shape-hero" tone="light" />
         </div>
         <div class="sp-hero__media">
           <Image src={spoke.image.src} alt={spoke.image.alt} width={spoke.image.w} height={spoke.image.h} widths={[480, 640].filter((x) => x < spoke.image.w).concat(spoke.image.w)} sizes="(min-width: 1320px) 540px, (min-width: 900px) 42vw, 92vw" fetchpriority="high" loading="eager" decoding="async" />
@@ -99,10 +107,13 @@ const siblings = s.spokes.filter((sp) => sp.slug !== spoke.slug);
       <div class="shell sp-body__inner">
         {
           spoke.sections.map((sec, i) => (
-            <article class="sp-sec" data-reveal style={`--reveal-delay:${i * 60}ms`}>
-              <h2>{sec.title}</h2>
-              {sec.paras.map((p) => <p set:html={p} />)}
-            </article>
+            <>
+              <article class="sp-sec" data-reveal style={`--reveal-delay:${i * 60}ms`}>
+                <h2>{sec.title}</h2>
+                {sec.paras.map((p) => <p set:html={p} />)}
+              </article>
+              {i === midSection && <InlineCta source="shape-inline" />}
+            </>
           ))
         }
       </div>
@@ -161,6 +172,7 @@ const siblings = s.spokes.filter((sp) => sp.slug !== spoke.slug);
     </section>
   </main>
   <Footer />
+  <BookingBanner prefill="florence" />
   <BookingDrawer />
 
   <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbLd)} />
@@ -171,6 +183,15 @@ const siblings = s.spokes.filter((sp) => sp.slug !== spoke.slug);
 <style>
   .sp-hero { padding-block: clamp(7rem, 14vh, 10rem) clamp(2rem, 5vw, 3rem); background: var(--flour-deep); }
   .sp-hero__inner { display: grid; gap: clamp(2rem, 5vw, 3.5rem); grid-template-columns: 1fr; align-items: center; }
+  /* On a phone the direct-answer paragraph is ~400px tall and pushes the booking
+     CTA below the first screen. The paragraph stays right after the h1 in the
+     HTML (it is the snippet target, see above); only its visual order changes,
+     and only while the hero is a single column. */
+  @media (max-width: 899px) {
+    .sp-hero__text { display: flex; flex-direction: column; }
+    .sp-hero__text :global(.cta-hero) { order: 1; margin-top: 1.2rem; }
+    .sp-hero__text .sp-answer { order: 2; }
+  }
   @media (min-width: 900px) { .sp-hero__inner { grid-template-columns: 1.1fr 1fr; } }
   .sp-crumb { font-size: var(--step--1); color: rgba(35,35,33,0.55); margin-bottom: 1.2rem; }
   .sp-crumb a { text-decoration: underline; text-underline-offset: 2px; }
@@ -195,6 +216,8 @@ const siblings = s.spokes.filter((sp) => sp.slug !== spoke.slug);
 
   .sp-body { padding-block: clamp(1rem, 3vw, 2rem) clamp(3rem, 6vw, 4rem); }
   .sp-body__inner { max-width: 68ch; display: grid; gap: clamp(2rem, 4vw, 3rem); }
+  /* The grid's gap already spaces the booking block; its own margin would double it. */
+  .sp-body__inner :global(.cta-inline) { margin: 0; }
   .sp-sec h2 { font-family: var(--serif); font-size: var(--step-2); font-weight: 800; margin-bottom: 0.9rem; }
   .sp-sec p { line-height: 1.7; color: rgba(35,35,33,0.82); }
   .sp-sec p + p { margin-top: 1rem; }

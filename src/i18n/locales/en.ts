@@ -245,6 +245,26 @@ const en = {
     readGuide: 'Read the guide',
   },
 
+  // Conversion CTAs shared by blog posts, the blog index, shape pages and the
+  // slide-in banner. Copy only restates claims the site already makes elsewhere
+  // (hands-on, Florence or online, nothing paid until the date is confirmed) and
+  // names neither a price nor a location: the same block sits above a €68 online
+  // class and a €95 in-person one.
+  cta: {
+    book: 'Book your class',
+    private: 'Private class or special request',
+    privateHint: 'Groups, families & celebrations',
+    inlineH: 'Make it yourself, not just read about it',
+    inlineP: 'Hands-on classes in our Florence kitchen or live online. You pay nothing until we’ve confirmed your date.',
+    bannerText: 'Pasta classes in Florence or online',
+    bannerBtn: 'Book your class',
+    bannerClose: 'Dismiss',
+    bannerLabel: 'Book a pasta class',
+    // WhatsApp template for the private-class button. {ref} becomes the page the
+    // guest was reading, so the owner can see which page the enquiry came from.
+    privateMsg: 'Hi! I’d like to ask about a private class.\n\nGroup size: \nOccasion: \nPreferred dates: \n\nRef: {ref}',
+  },
+
   blogPost: {
     homeCrumb: 'Home',
     guidesCrumb: 'Guides',
@@ -255,7 +275,6 @@ const en = {
     bioEnd: 'in the Oltrarno.',
     ctaH2: 'Rather learn it with your hands?',
     ctaP: 'Roll, fold and eat it yourself: in our Florence kitchen or live online.',
-    ctaBtn: 'Book a class',
     ctaLink: 'See the classes',
     relatedTitle: 'Keep reading',
     relatedSub: 'More guides from our kitchen',

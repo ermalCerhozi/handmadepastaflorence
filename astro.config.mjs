@@ -1,5 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
+import { unified } from '@astrojs/markdown-remark';
+import remarkInlineCta from './src/utils/remark-inline-cta.ts';
 
 // NO LEGACY REDIRECTS (removed 2026-08-23). Two dead URL shapes used to be kept
 // alive here — /<locale>/<english-slug>/ from before landings.ts had translated
@@ -16,6 +18,16 @@ import { defineConfig } from 'astro/config';
 // https://astro.build
 export default defineConfig({
   site: 'https://handmadepastaflorence.com',
+
+  // Mid-article "Book your class" block in every blog post. See the plugin for
+  // placement rules and the `inlineCta: false` frontmatter opt-out.
+  // `markdown.remarkPlugins` is deprecated since Astro 6.4; plugins go through
+  // unified() now. @astrojs/markdown-remark is Astro's own dependency (installed
+  // at the version Astro needs), so it is imported without being listed in
+  // package.json: adding it there would also need a lockfile edit.
+  markdown: {
+    processor: unified({ remarkPlugins: [remarkInlineCta] }),
+  },
 
   // The merged-post redirect, added 2026-09-05, deliberately not covered by the blanket
   // "no legacy redirects" rule above. That rule was correct for URL *shapes*

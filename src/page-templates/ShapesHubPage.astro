@@ -8,6 +8,8 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import BookingDrawer from '../components/BookingDrawer.astro';
+import BookingBanner from '../components/BookingBanner.astro';
+import HeroCta from '../components/HeroCta.astro';
 import { shapes, shapePath, shapesHubPath } from '../data/shapes';
 import { localizePath, SITE, type Alternate } from '../i18n/utils';
 import type { Locale } from '../i18n/config';
@@ -58,7 +60,7 @@ const faqLd = faqSchema(s.hubFaqs);
   alternates={alternates}
 >
   <Header solid alternates={alternates} />
-  <main>
+  <main data-prefill-default="florence">
     <section class="sh-hero" id="top">
       <div class="shell">
         <nav class="sh-crumb" aria-label="Breadcrumb">
@@ -68,6 +70,7 @@ const faqLd = faqSchema(s.hubFaqs);
         <p class="eyebrow sh-hero__eyebrow">{s.hubEyebrow}</p>
         <h1 class="sh-hero__h">{s.hubHeading} <span class="font-golden font-golden--accent font-golden--olive">{s.hubHeadingItal}</span></h1>
         <p class="sh-hero__lede">{s.hubLede}</p>
+        <HeroCta source="shapes-hub-hero" tone="light" />
 
         <!-- Answer box: the direct-answer target for shape queries. -->
         <div class="sh-answer" data-reveal>
@@ -172,6 +175,7 @@ const faqLd = faqSchema(s.hubFaqs);
     </section>
   </main>
   <Footer />
+  <BookingBanner prefill="florence" />
   <BookingDrawer />
 
   <script type="application/ld+json" is:inline set:html={JSON.stringify(breadcrumbLd)} />
@@ -181,6 +185,9 @@ const faqLd = faqSchema(s.hubFaqs);
 
 <style>
   .sh-hero { padding-block: clamp(7rem, 14vh, 10rem) clamp(2rem, 5vw, 3rem); background: var(--flour-deep); }
+  /* Small phones: the hero CTA must stay on the first screen even with the
+     longest translation of the lede (German at 360x640 missed it by 17px). */
+  @media (max-width: 559px) { .sh-hero { padding-top: 5.5rem; } }
   .sh-crumb { font-size: var(--step--1); color: rgba(35,35,33,0.55); margin-bottom: 1.4rem; }
   .sh-crumb a { text-decoration: underline; text-underline-offset: 2px; }
   .sh-crumb span { margin-inline: 0.35rem; }
