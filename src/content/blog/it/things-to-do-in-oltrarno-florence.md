@@ -10,6 +10,7 @@ related:
   - 'where-to-eat-handmade-pasta-in-florence'
   - 'what-to-do-in-florence-on-a-monday'
   - 'what-to-do-in-florence-on-a-sunday'
+  - 'romantic-things-to-do-in-florence'
 faqs:
   - q: "Cos'è l'Oltrarno?"
     a: "L'Oltrarno (letteralmente oltre l'Arno) è la riva sinistra di Firenze, che si raggiunge attraversando Ponte Vecchio allontanandosi dal Duomo. È la metà più tranquilla e residenziale della città, con Piazza Santo Spirito, Palazzo Pitti e i Giardini di Boboli."
