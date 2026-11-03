@@ -241,6 +241,7 @@ export const landings = {
           faqs: [
             { q: `Is this class suitable for complete beginners?`, a: `Yes. Everything is taught from zero (dough, rolling, shaping), and with never more than 8 guests there’s always a chef at your elbow. Most guests have never made fresh pasta before.` },
             { q: `Do we eat the pasta we make?`, a: `Yes. Every class ends at the table with your fresh pasta, a Tuscan sauce, and a glass of local wine.` },
+            { q: `Is wine included in the cooking class?`, a: `Yes. A glass of Tuscan wine (or a soft drink) and a limoncello or coffee are included in the €95. Extra food and drinks are not included, and there is no upsell at the end.` },
             { q: `Which pasta shapes will we make?`, a: `Every guest makes and eats two: fettuccine with the sauce you choose, and ravioli with butter and sage, plus your own tiramisù. Time permitting, the chefs also show you the Tuscan cuts that come from the same dough, such as pici and pappardelle.` },
             { q: `Can you cater to gluten-free diets or allergies?`, a: `Yes: we can prepare a dedicated gluten-free flour blend and a clean station at no extra charge. Just tell us about any allergies when you book.` },
             { q: `How do I book and pay?`, a: `Use the “Book this class” button to build your request. It opens a WhatsApp chat with the details filled in, and we’ll confirm availability and walk you through the rest.` },
@@ -373,6 +374,7 @@ export const landings = {
           faqs: [
             { q: `Questo corso è adatto a principianti assoluti?`, a: `Sì. Tutto viene insegnato da zero (impasto, stesura, formatura), e con non più di 8 ospiti c'è sempre uno chef al tuo fianco. La maggior parte degli ospiti non ha mai fatto la pasta fresca prima.` },
             { q: `Mangiamo la pasta che facciamo?`, a: `Sì. Ogni corso termina a tavola con la tua pasta fresca, un sugo toscano e un bicchiere di vino locale.` },
+            { q: `Il vino è incluso nel corso di cucina?`, a: `Sì. Un calice di vino toscano (o una bibita) e un limoncello o un caffè sono inclusi nei €95. Cibo e bevande extra non sono inclusi, e non c’è nessun supplemento a fine corso.` },
             { q: `Quali formati di pasta faremo?`, a: `Ogni ospite ne prepara e mangia due: fettuccine con il sugo che scegli e ravioli burro e salvia, più il tuo tiramisù. Se c’è tempo, gli chef ti mostrano anche i formati toscani che nascono dallo stesso impasto, come pici e pappardelle.` },
             { q: `Potete soddisfare diete senza glutine o allergie?`, a: `Sì: possiamo preparare una miscela di farine senza glutine dedicata e una postazione pulita senza costi aggiuntivi. Devi solo segnalarci eventuali allergie al momento della prenotazione.` },
             { q: `Come posso prenotare e pagare?`, a: `Usa il pulsante "Prenota questo corso" per creare la tua richiesta. Si apre una chat di WhatsApp con i dettagli precompilati, noi confermeremo la disponibilità e ti guideremo nel resto.` },
@@ -505,6 +507,7 @@ export const landings = {
           faqs: [
             { q: `Ce cours convient-il aux débutants complets ?`, a: `Oui. Tout est enseigné de zéro (la pâte, l'étalage, le façonnage), et avec jamais plus de 8 personnes, il y a toujours un chef à vos côtés. La plupart des invités n'ont jamais fait de pâtes fraîches auparavant.` },
             { q: `Mange-t-on les pâtes que l'on fait ?`, a: `Oui. Chaque cours se termine à table avec vos pâtes fraîches, une sauce toscane et un verre de vin local.` },
+            { q: `Le vin est-il compris dans le cours de cuisine ?`, a: `Oui. Un verre de vin toscan (ou une boisson sans alcool) et un limoncello ou un café sont compris dans les 95 €. Les plats et boissons supplémentaires ne sont pas compris, et il n'y a aucun supplément à la fin.` },
             { q: `Quelles formes de pâtes allons-nous faire ?`, a: `Chaque invité en prépare et en mange deux : des fettuccine avec la sauce de votre choix et des ravioli beurre et sauge, plus votre propre tiramisù. S’il reste du temps, les chefs vous montrent aussi les formes toscanes issues de la même pâte, comme les pici et les pappardelles.` },
             { q: `Pouvez-vous répondre aux régimes sans gluten ou aux allergies ?`, a: `Oui: nous pouvons préparer un mélange de farine sans gluten dédié et un poste de travail propre sans frais supplémentaires. Parlez-nous simplement de vos allergies lors de la réservation.` },
             { q: `Comment puis-je réserver et payer ?`, a: `Utilisez le bouton "Réserver ce cours" pour formuler votre demande. Cela ouvre une discussion WhatsApp avec les détails remplis, et nous confirmerons la disponibilité et vous guiderons pour le reste.` },
@@ -640,6 +643,7 @@ export const landings = {
           faqs: [
             { q: `Ist dieser Kurs für absolute Anfänger geeignet?`, a: `Ja. Alles wird von Null an gelehrt (Teig, Rollen, Formen), und mit nie mehr als 8 Gästen ist immer ein Koch an Ihrer Seite. Die meisten Gäste haben noch nie zuvor frische Pasta gemacht.` },
             { q: `Essen wir die Pasta, die wir machen?`, a: `Ja. Jeder Kurs endet am Tisch mit Ihrer frischen Pasta, einer toskanischen Sauce und einem Glas Wein aus der Region.` },
+            { q: `Ist Wein im Kochkurs inbegriffen?`, a: `Ja. Ein Glas toskanischer Wein (oder ein alkoholfreies Getränk) und ein Limoncello oder Kaffee sind in den 95 € enthalten. Zusätzliches Essen und Getränke sind nicht inbegriffen, und am Ende gibt es keinen Aufpreis.` },
             { q: `Welche Nudelformen werden wir machen?`, a: `Jeder Gast macht und isst zwei: Fettuccine mit der Sauce Ihrer Wahl und Ravioli mit Butter und Salbei, dazu Ihr eigenes Tiramisù. Wenn Zeit bleibt, zeigen Ihnen die Köche auch die toskanischen Formen aus demselben Teig, etwa Pici und Pappardelle.` },
             { q: `Können Sie auf glutenfreie Diäten oder Allergien eingehen?`, a: `Ja: wir können ohne Aufpreis eine spezielle glutenfreie Mehlmischung und eine saubere Station vorbereiten. Teilen Sie uns bei der Buchung einfach eventuelle Allergien mit.` },
             { q: `Wie buche und bezahle ich?`, a: `Nutzen Sie die Schaltfläche "Diesen Kurs buchen", um Ihre Anfrage zu erstellen. Es öffnet sich ein WhatsApp-Chat mit den ausgefüllten Details, und wir bestätigen die Verfügbarkeit und führen Sie durch den Rest.` },
@@ -772,6 +776,7 @@ export const landings = {
           faqs: [
             { q: `这门课适合完全的初学者吗？`, a: `是的。一切都从零开始教起：揉面、擀面、塑形，而且客人从不超过8人，总有一位厨师在您身旁指导。大多数客人以前从未做过新鲜的意面。` },
             { q: `我们会吃自己做的意面吗？`, a: `是的。每节课都会以您的新鲜意面、托斯卡纳酱汁和一杯当地葡萄酒的餐桌时光结束。` },
+            { q: `烹饪课包含葡萄酒吗？`, a: `包含。95欧元已含一杯托斯卡纳葡萄酒（或无酒精饮品），以及一杯柠檬酒或咖啡。额外的食物和饮品不包含在内，课程结束后也不再加收任何费用。` },
             { q: `我们将制作哪些意面形状？`, a: `每位客人都会亲手制作并享用两道：自选酱汁的宽面，以及黄油鼠尾草意式饺子，再加上您自己的提拉米苏。时间允许的话，主厨还会示范同一块面团做出的托斯卡纳形状，比如 pici 和 pappardelle。` },
             { q: `你们能满足无麸质饮食或过敏需求吗？`, a: `是的，我们可以免费准备专门的无麸质面粉混合物和干净的操作台。预订时请告诉我们任何过敏情况。` },
             { q: `我该如何预订和付款？`, a: `使用“预订此课程”按钮创建您的请求。它会打开一个带有预填详情的WhatsApp聊天，我们将确认可用性并指导您完成剩余步骤。` },
@@ -1318,17 +1323,20 @@ export const landings = {
     floatingCta: true,
     courseMode: 'Onsite',
     video: longTablePrivateVideo,
+    // 2026-11-03: wine pairing on request is a new fact on this page (confirmed
+    // by the owner), so the facts date moves with it.
+    updated: '2026-11-03',
     locales: {
       en: {
         slug: 'private-cooking-class-florence',
         title: `Private Cooking Class in Florence: The Long-Table Feast`,
-        description: `From €680, 6–14 guests. Book the whole kitchen for a private pasta feast in Florence: birthdays, proposals, reunions, two Tuscan chefs to yourselves.`,
+        description: `From €680, 6–14 guests. Book the whole kitchen for a private pasta feast in Florence, with Tuscan wine: birthdays, proposals, reunions.`,
         cl: {
           eyebrow: `The Long-Table Feast · private events`,
           heading: `A private cooking class in Florence,`,
           headingItal: `all to yourselves.`,
           lede: `The whole kitchen, one long table, and two chefs cooking with your people only. This is the farmhouse feast we’ve hosted at our agriturismi for years (birthdays, proposals, reunions), brought to the heart of Florence.`,
-          image: { src: img.longTablePrivatePoster, alt: `Guests rolling fresh pasta down the long table at a private Long-Table Feast event`, w: 720, h: 424 },
+          image: { src: img.longTablePrivatePoster, alt: `Guests rolling fresh pasta down the long table at a private cooking class in Florence`, w: 720, h: 424 },
           price: `from €680`,
           priceNote: `private kitchen buyout`,
           facts: [
@@ -1336,6 +1344,7 @@ export const landings = {
             { label: `Group size`, value: `6–14 guests`, icon: 'people' },
             { label: `Format`, value: `whole-kitchen buyout`, icon: 'home' },
             { label: `Where`, value: `Oltrarno, near Santo Spirito`, icon: 'map-pin' },
+            { label: `Drinks`, value: `Tuscan wine with the meal · pairing on request`, icon: 'tag' },
             { label: `Language`, value: `English or Italian`, icon: 'globe' },
             { label: `Enquiries`, value: `answered within a day`, icon: 'mail' },
           ],
@@ -1389,6 +1398,7 @@ export const landings = {
                 `From €680 for the private kitchen, for groups of 6–14; tell us your group size and we’ll confirm a quote.`,
                 `Evenings work best, and timing is flexible for private bookings.`,
                 `Gluten-free and allergy-friendly at no extra charge; tell us about your group when you book.`,
+                `Wine: a glass of Tuscan wine with the meal is part of the menu. A wine pairing can be added and is quoted with your date; mention it when you enquire.`,
                 `Just the two of you? Most couples book <a href="/pasta-making-class-florence/">The Chef’s Table</a> (max 8 guests, €95 each), or email us for a private quote for two.`,
                 `Company outing instead of a family one? See our <a href="/team-building-cooking-class-florence/">team building cooking class</a>.`,
               ],
@@ -1399,6 +1409,7 @@ export const landings = {
             { q: `How does pricing work?`, a: `The private buyout starts at €680 for the kitchen. Send us your group size and date on WhatsApp or email and we’ll confirm a quote for your evening.` },
             { q: `Can you help with a surprise, a proposal or a birthday?`, a: `Yes: proposals, birthdays and reunions are exactly what this format is for. Tell us the plan when you book and we’ll shape the evening around it.` },
             { q: `Can two people book a private cooking class?`, a: `The private buyout is priced for groups of 6–14, so for two it rarely makes sense. Most couples book The Chef’s Table (max 8 guests, €95 per person) which stays intimate. If you’d like the kitchen truly to yourselves, email ciao@handmadepastaflorence.com and we’ll quote a private session for two.` },
+            { q: `Is wine included in the private cooking class?`, a: `Yes. Each guest gets a glass of Tuscan wine (or a non-alcoholic drink) with the meal, then limoncello or coffee. If you would like a wine pairing for the evening, we can add one and quote it with your date: mention it when you enquire.` },
             { q: `Can you cater to gluten-free diets or allergies?`, a: `Yes: we can prepare a dedicated gluten-free flour blend and a clean station at no extra charge. With a private group, just send us everyone’s needs when you book.` },
             { q: `How do I book?`, a: `Use the “Plan your evening” button to start a WhatsApp chat, or email ciao@handmadepastaflorence.com. Private evenings are planned personally, so we’ll confirm details together.` },
           ],
@@ -1417,7 +1428,7 @@ export const landings = {
           breadcrumbName: `Private Cooking Class`,
           product: {
             name: `The Long-Table Feast: Private Cooking Class in Florence`,
-            description: `A private pasta-making feast in Florence for 6–14 guests: the whole Oltrarno kitchen, two agriturismo head chefs, one long table. Birthdays, proposals, reunions.`,
+            description: `A private pasta-making feast in Florence for 6–14 guests: the whole Oltrarno kitchen, two agriturismo head chefs, one long table, local wine with the meal. Birthdays, proposals, reunions.`,
             price: '680',
           },
         },
@@ -1425,13 +1436,13 @@ export const landings = {
       it: {
         slug: 'corso-cucina-privato-firenze',
         title: `Corso di Cucina Privato a Firenze: Il Lungo Tavolo`,
-        description: `Da €680, 6–14 ospiti. Prenota l'intera cucina per una festa privata di pasta fresca a Firenze: compleanni, proposte, ritrovi, due chef tutti per voi.`,
+        description: `Da €680, 6–14 ospiti. Prenota l'intera cucina per una festa privata di pasta fresca a Firenze, con vino toscano: compleanni, proposte, ritrovi.`,
         cl: {
           eyebrow: `Il Lungo Tavolo · eventi privati`,
           heading: `Un corso di cucina privato a Firenze,`,
           headingItal: `tutto per voi.`,
           lede: `L'intera cucina, un lungo tavolo e due chef che cucinano solo per le tue persone. Questa è la festa in fattoria che abbiamo ospitato nei nostri agriturismi per anni (compleanni, proposte, riunioni di famiglia), portata nel cuore di Firenze.`,
-          image: { src: img.longTablePrivatePoster, alt: `Ospiti che stendono la pasta fresca lungo il tavolo in un evento privato Il Lungo Tavolo`, w: 720, h: 424 },
+          image: { src: img.longTablePrivatePoster, alt: `Ospiti che stendono la pasta fresca lungo il tavolo durante un corso di cucina privato a Firenze`, w: 720, h: 424 },
           price: `da €680`,
           priceNote: `uso esclusivo cucina`,
           facts: [
@@ -1440,6 +1451,7 @@ export const landings = {
             { label: `Formato`, value: `uso esclusivo della cucina`, icon: 'home' },
             { label: `Dove`, value: `Oltrarno, vicino a Santo Spirito`, icon: 'map-pin' },
             { label: `Lingua`, value: `Inglese o Italiano`, icon: 'globe' },
+            { label: `Da bere`, value: `vino toscano a tavola · abbinamento su richiesta`, icon: 'tag' },
             { label: `Risposte`, value: `entro un giorno lavorativo`, icon: 'mail' },
           ],
           infoBanner: {
@@ -1492,6 +1504,7 @@ export const landings = {
                 `Da €680 per la cucina privata, per gruppi di 6–14 persone; comunicaci la dimensione del tuo gruppo e ti confermeremo un preventivo.`,
                 `Le serate sono ideali e gli orari sono flessibili per le prenotazioni private.`,
                 `Senza glutine e per allergie senza costi aggiuntivi; comunicaci le esigenze del tuo gruppo quando prenoti.`,
+                `Vino: un calice di vino toscano a tavola fa parte del menu. Si può aggiungere un abbinamento di vini, preventivato con la data: scriveteci quando fate richiesta.`,
                 `Siete solo in due? La maggior parte delle coppie sceglie <a href="/it/corso-pasta-fresca-firenze/">Il Tavolo dello Chef</a> (max 8 ospiti, €95 a persona), oppure scrivici per un preventivo privato per due.`,
                 `Gita aziendale invece che in famiglia? Vedi il nostro <a href="/it/corso-cucina-team-building-firenze/">corso di cucina per team building</a>.`,
               ],
@@ -1502,6 +1515,7 @@ export const landings = {
             { q: `Come funzionano i prezzi?`, a: `L'uso esclusivo privato parte da €680 per l'intera cucina. Inviaci la dimensione del tuo gruppo e la data su WhatsApp o e-mail e ti confermeremo un preventivo per la tua serata.` },
             { q: `Potete aiutare con una sorpresa, una proposta o un compleanno?`, a: `Sì: proposte, compleanni e riunioni sono esattamente per cosa è pensato questo formato. Dicci il piano quando prenoti e modelleremo la serata attorno ad esso.` },
             { q: `Possono prenotare un corso privato anche solo due persone?`, a: `L'uso esclusivo è pensato per gruppi di 6–14 persone, quindi per due raramente conviene. La maggior parte delle coppie sceglie Il Tavolo dello Chef (max 8 ospiti, €95 a persona) che resta comunque intimo. Se volete la cucina tutta per voi, scrivete a ciao@handmadepastaflorence.com e vi prepareremo un preventivo per una sessione privata per due.` },
+            { q: `Il vino è incluso nel corso di cucina privato?`, a: `Sì. Ogni ospite ha un calice di vino toscano (o una bevanda analcolica) a tavola, poi limoncello o caffè. Se volete un abbinamento di vini per la serata, possiamo aggiungerlo e preventivarlo con la data: scriveteci quando fate richiesta.` },
             { q: `Potete soddisfare diete senza glutine o allergie?`, a: `Sì: possiamo preparare una miscela di farine senza glutine dedicata e una postazione pulita senza costi aggiuntivi. Con un gruppo privato, basta inviarci le esigenze di tutti al momento della prenotazione.` },
             { q: `Come posso prenotare?`, a: `Usa il pulsante "Pianifica la tua serata" per iniziare una chat su WhatsApp, o invia un'email a ciao@handmadepastaflorence.com. Le serate private sono pianificate personalmente, quindi confermeremo i dettagli insieme.` },
           ],
@@ -1519,7 +1533,7 @@ export const landings = {
           breadcrumbName: `Corso di Cucina Privato`,
           product: {
             name: `Il Lungo Tavolo: Corso di Cucina Privato a Firenze`,
-            description: `Una festa privata per preparare la pasta a Firenze per 6–14 ospiti: l'intera cucina in Oltrarno, due chef toscani, un lungo tavolo. Compleanni, proposte, riunioni.`,
+            description: `Una festa privata per preparare la pasta a Firenze per 6–14 ospiti: l'intera cucina in Oltrarno, due chef toscani, un lungo tavolo, vino locale a tavola. Compleanni, proposte, riunioni.`,
             price: '680',
           },
         },
@@ -1527,13 +1541,13 @@ export const landings = {
       fr: {
         slug: 'cours-cuisine-prive-florence',
         title: `Cours de Cuisine Privé à Florence: La Longue Table`,
-        description: `Dès 680 €, 6–14 personnes. Réservez toute la cuisine pour un festin privé de pâtes à Florence : anniversaires, demandes en mariage, réunions, en soirée.`,
+        description: `Dès 680 €, 6–14 personnes. Toute la cuisine pour un festin privé de pâtes à Florence, avec vin toscan : anniversaires, demandes en mariage, réunions.`,
         cl: {
           eyebrow: `La Longue Table · événements privés`,
           heading: `Un cours de cuisine privé à Florence,`,
           headingItal: `rien que pour vous.`,
           lede: `Toute la cuisine, une longue table et deux chefs qui cuisinent uniquement avec vos proches. C'est le festin fermier que nous organisons dans nos agritourismes depuis des années (anniversaires, demandes en mariage, réunions), apporté au cœur de Florence.`,
-          image: { src: img.longTablePrivatePoster, alt: `Des invités étalant des pâtes fraîches le long de la table lors d'un événement privé La Longue Table`, w: 720, h: 424 },
+          image: { src: img.longTablePrivatePoster, alt: `Des invités étalant des pâtes fraîches le long de la table lors d'un cours de cuisine privé à Florence`, w: 720, h: 424 },
           price: `à partir de 680 €`,
           priceNote: `privatisation de la cuisine`,
           facts: [
@@ -1542,6 +1556,7 @@ export const landings = {
             { label: `Format`, value: `privatisation complète de la cuisine`, icon: 'home' },
             { label: `Lieu`, value: `Oltrarno, près de Santo Spirito`, icon: 'map-pin' },
             { label: `Langue`, value: `Anglais ou Italien`, icon: 'globe' },
+            { label: `Boissons`, value: `vin toscan à table · accord mets-vins sur demande`, icon: 'tag' },
             { label: `Demandes`, value: `réponse sous un jour ouvré`, icon: 'mail' },
           ],
           infoBanner: {
@@ -1594,6 +1609,7 @@ export const landings = {
                 `À partir de 680 € pour la cuisine privée, pour des groupes de 6 à 14 personnes; indiquez-nous la taille de votre groupe et nous vous confirmerons un devis.`,
                 `Les soirées conviennent le mieux, et les horaires sont flexibles pour les réservations privées.`,
                 `Sans gluten et adapté aux allergies sans frais supplémentaires; parlez-nous de votre groupe lors de la réservation.`,
+                `Vin : un verre de vin toscan à table fait partie du menu. Un accord mets-vins peut s'ajouter et se chiffre avec votre date : mentionnez-le dans votre demande.`,
                 `Juste vous deux ? La plupart des couples réservent <a href="/fr/cours-de-pates-fraiches-florence/">La Table du Chef</a> (max 8 personnes, 95 € par personne), ou écrivez-nous pour un devis privé pour deux.`,
                 `Sortie d'entreprise au lieu d'une sortie en famille ? Voir notre <a href="/fr/cours-cuisine-team-building-florence/">cours de cuisine team building</a>.`,
               ],
@@ -1604,6 +1620,7 @@ export const landings = {
             { q: `Comment fonctionnent les tarifs ?`, a: `La privatisation commence à 680 € pour la cuisine. Envoyez-nous la taille de votre groupe et la date sur WhatsApp ou par e-mail et nous vous confirmerons un devis pour votre soirée.` },
             { q: `Pouvez-vous aider pour une surprise, une demande en mariage ou un anniversaire ?`, a: `Oui: les demandes en mariage, les anniversaires et les réunions sont exactement la raison d'être de ce format. Expliquez-nous le plan lors de la réservation et nous organiserons la soirée autour.` },
             { q: `Deux personnes peuvent-elles réserver un cours de cuisine privé ?`, a: `La privatisation est tarifée pour des groupes de 6 à 14 personnes, donc pour deux, c'est rarement avantageux. La plupart des couples réservent La Table du Chef (max 8 personnes, 95 € par personne) ce qui reste intime. Si vous souhaitez vraiment la cuisine pour vous seuls, envoyez un e-mail à ciao@handmadepastaflorence.com et nous vous ferons un devis pour une session privée pour deux.` },
+            { q: `Le vin est-il compris dans le cours de cuisine privé ?`, a: `Oui. Chaque invité a un verre de vin toscan (ou une boisson sans alcool) à table, puis un limoncello ou un café. Si vous souhaitez un accord mets-vins pour la soirée, nous pouvons l'ajouter et le chiffrer avec votre date : mentionnez-le dans votre demande.` },
             { q: `Pouvez-vous répondre aux régimes sans gluten ou aux allergies ?`, a: `Oui: nous pouvons préparer un mélange de farine sans gluten dédié et un poste de travail propre sans frais supplémentaires. Avec un groupe privé, envoyez-nous simplement les besoins de chacun lors de la réservation.` },
             { q: `Comment réserver ?`, a: `Utilisez le bouton "Planifier votre soirée" pour démarrer une discussion WhatsApp, ou envoyez un e-mail à ciao@handmadepastaflorence.com. Les soirées privées sont planifiées personnellement, nous confirmerons donc les détails ensemble.` },
           ],
@@ -1621,7 +1638,7 @@ export const landings = {
           breadcrumbName: `Cours de Cuisine Privé`,
           product: {
             name: `La Longue Table: Cours de Cuisine Privé à Florence`,
-            description: `Un festin privé de fabrication de pâtes à Florence pour 6–14 personnes : toute la cuisine de l'Oltrarno, deux chefs toscans, une longue table. Anniversaires, demandes en mariage, réunions.`,
+            description: `Un festin privé de fabrication de pâtes à Florence pour 6–14 personnes : toute la cuisine de l'Oltrarno, deux chefs toscans, une longue table, du vin local à table. Anniversaires, demandes en mariage, réunions.`,
             price: '680',
           },
         },
@@ -1629,13 +1646,13 @@ export const landings = {
       de: {
         slug: 'privater-kochkurs-florenz',
         title: `Privater Kochkurs in Florenz: Die lange Tafel`,
-        description: `Ab 680 €, 6–14 Gäste. Buchen Sie die ganze Küche für ein privates Pasta-Fest in Florenz: Geburtstage, Heiratsanträge, Treffen, abends, zwei Köche.`,
+        description: `Ab 680 €, 6–14 Gäste. Buchen Sie die ganze Küche für ein privates Pasta-Fest in Florenz mit toskanischem Wein: Geburtstage, Heiratsanträge, Treffen.`,
         cl: {
           eyebrow: `Die lange Tafel · private Veranstaltungen`,
           heading: `Ein privater Kochkurs in Florenz,`,
           headingItal: `ganz für Sie allein.`,
           lede: `Die ganze Küche, ein langer Tisch und zwei Köche, die nur mit Ihren Leuten kochen. Das ist das Bauernfest, das wir jahrelang auf unseren Agriturismi veranstaltet haben (Geburtstage, Heiratsanträge, Treffen), gebracht in das Herz von Florenz.`,
-          image: { src: img.longTablePrivatePoster, alt: `Gäste, die bei einer privaten Veranstaltung an der langen Tafel frische Pasta ausrollen`, w: 720, h: 424 },
+          image: { src: img.longTablePrivatePoster, alt: `Gäste, die bei einem privaten Kochkurs in Florenz an der langen Tafel frische Pasta ausrollen`, w: 720, h: 424 },
           price: `ab 680 €`,
           priceNote: `private Küchenmiete`,
           facts: [
@@ -1644,6 +1661,7 @@ export const landings = {
             { label: `Format`, value: `gesamte Küchenmiete`, icon: 'home' },
             { label: `Ort`, value: `Oltrarno, nahe Santo Spirito`, icon: 'map-pin' },
             { label: `Sprache`, value: `Englisch oder Italienisch`, icon: 'globe' },
+            { label: `Getränke`, value: `toskanischer Wein zum Essen · Weinbegleitung auf Anfrage`, icon: 'tag' },
             { label: `Anfragen`, value: `innerhalb eines Tages beantwortet`, icon: 'mail' },
           ],
           infoBanner: {
@@ -1696,6 +1714,7 @@ export const landings = {
                 `Ab 680 € für die private Küche, für Gruppen von 6–14 Personen; teilen Sie uns Ihre Gruppengröße mit und wir bestätigen ein Angebot.`,
                 `Die Abende eignen sich am besten, und die Zeiten sind für private Buchungen flexibel.`,
                 `Glutenfrei und allergiefreundlich ohne Aufpreis; erzählen Sie uns bei der Buchung von Ihrer Gruppe.`,
+                `Wein: Ein Glas toskanischer Wein zum Essen gehört zum Menü. Eine Weinbegleitung lässt sich ergänzen und wird mit Ihrem Datum angeboten; erwähnen Sie sie in Ihrer Anfrage.`,
                 `Nur Sie zwei? Die meisten Paare buchen <a href="/de/pasta-kurs-florenz/">Der Tisch des Küchenchefs</a> (max. 8 Gäste, 95 € pro Person), oder schreiben Sie uns eine E-Mail für ein privates Angebot für zwei.`,
                 `Betriebsausflug statt Familienausflug? Sehen Sie sich unseren <a href="/de/teambuilding-kochkurs-florenz/">Teambuilding-Kochkurs</a> an.`,
               ],
@@ -1706,6 +1725,7 @@ export const landings = {
             { q: `Wie funktioniert die Preisgestaltung?`, a: `Die private Miete beginnt bei 680 € für die Küche. Senden Sie uns Ihre Gruppengröße und Ihr Datum per WhatsApp oder E-Mail und wir bestätigen ein Angebot für Ihren Abend.` },
             { q: `Können Sie bei einer Überraschung helfen, einem Heiratsantrag oder einem Geburtstag?`, a: `Ja: Heiratsanträge, Geburtstage und Treffen sind genau das, wofür dieses Format gedacht ist. Teilen Sie uns den Plan bei der Buchung mit und wir gestalten den Abend darum herum.` },
             { q: `Können zwei Personen einen privaten Kochkurs buchen?`, a: `Die private Miete ist für Gruppen von 6–14 Personen kalkuliert, daher macht es für zwei selten Sinn. Die meisten Paare buchen Der Tisch des Küchenchefs (max. 8 Gäste, 95 € pro Person), der intim bleibt. Wenn Sie die Küche wirklich für sich allein haben möchten, senden Sie eine E-Mail an ciao@handmadepastaflorence.com und wir machen Ihnen ein Angebot für eine private Sitzung für zwei.` },
+            { q: `Ist Wein im privaten Kochkurs inbegriffen?`, a: `Ja. Jeder Gast bekommt zum Essen ein Glas toskanischen Wein (oder ein alkoholfreies Getränk), danach Limoncello oder Kaffee. Wenn Sie eine Weinbegleitung für den Abend wünschen, können wir sie ergänzen und mit Ihrem Datum anbieten: Erwähnen Sie sie einfach in Ihrer Anfrage.` },
             { q: `Können Sie auf glutenfreie Diäten oder Allergien eingehen?`, a: `Ja: wir können ohne Aufpreis eine spezielle glutenfreie Mehlmischung und eine saubere Station vorbereiten. Bei einer privaten Gruppe senden Sie uns bei der Buchung einfach die Bedürfnisse aller zu.` },
             { q: `Wie buche ich?`, a: `Nutzen Sie die Schaltfläche "Planen Sie Ihren Abend", um einen WhatsApp-Chat zu starten, oder senden Sie eine E-Mail an ciao@handmadepastaflorence.com. Private Abende werden persönlich geplant, daher bestätigen wir die Details gemeinsam.` },
           ],
@@ -1723,7 +1743,7 @@ export const landings = {
           breadcrumbName: `Privater Kochkurs`,
           product: {
             name: `Die lange Tafel: Privater Kochkurs in Florenz`,
-            description: `Ein privates Pasta-Fest in Florenz für 6–14 Gäste: die ganze Küche im Oltrarno, zwei toskanische Köche, ein langer Tisch. Geburtstage, Heiratsanträge, Treffen.`,
+            description: `Ein privates Pasta-Fest in Florenz für 6–14 Gäste: die ganze Küche im Oltrarno, zwei toskanische Köche, ein langer Tisch, toskanischer Wein zum Essen. Geburtstage, Heiratsanträge, Treffen.`,
             price: '680',
           },
         },
@@ -1731,13 +1751,13 @@ export const landings = {
       zh: {
         slug: 'siren-pengren-kecheng-foluolunsa',
         title: `佛罗伦萨私人烹饪课程：长桌盛宴`,
-        description: `预订整个厨房，在佛罗伦萨举办私人的意面制作盛宴：生日、求婚、聚会。6–14位客人，晚上，两位托斯卡纳厨师专为您服务。680欧元起。`,
+        description: `预订整个厨房，在佛罗伦萨举办私人意面制作盛宴，配托斯卡纳葡萄酒：生日、求婚、聚会。6–14位客人，680欧元起。`,
         cl: {
           eyebrow: `长桌盛宴 · 私人活动`,
           heading: `佛罗伦萨私人烹饪课程，`,
           headingItal: `完全属于您的空间。`,
           lede: `整个厨房、一张长桌和两位厨师只为您和您的亲友烹饪。这是我们多年来在农庄里举办的农场盛宴：生日、求婚、聚会，现在带到了佛罗伦萨的中心。`,
-          image: { src: img.longTablePrivatePoster, alt: `宾客们在“长桌盛宴”私人活动中沿着长桌擀制新鲜意面`, w: 720, h: 424 },
+          image: { src: img.longTablePrivatePoster, alt: `宾客们在佛罗伦萨的私人烹饪课程中沿着长桌擀制新鲜意面`, w: 720, h: 424 },
           price: `从 €680 起`,
           priceNote: `私人厨房包场`,
           facts: [
@@ -1746,6 +1766,7 @@ export const landings = {
             { label: `形式`, value: `整个厨房包场`, icon: 'home' },
             { label: `地点`, value: `奥特拉诺，靠近圣斯皮里托`, icon: 'map-pin' },
             { label: `语言`, value: `英语或意大利语`, icon: 'globe' },
+            { label: `饮品`, value: `用餐时配托斯卡纳葡萄酒 · 可按需加配餐酒`, icon: 'tag' },
             { label: `咨询回复`, value: `一个工作日内`, icon: 'mail' },
           ],
           infoBanner: {
@@ -1798,6 +1819,7 @@ export const landings = {
                 `私人厨房起价680欧元，适合6至14人的团体，告诉我们您的团体人数，我们将为您确认报价。`,
                 `晚上的时间最合适，私人预订的时间安排也很灵活。`,
                 `免费提供无麸质和过敏友好选项，预订时告诉我们您团体的需求。`,
+                `葡萄酒：菜单含一杯用餐时的托斯卡纳葡萄酒。可另加配餐酒，并与您的日期一并报价；咨询时告诉我们即可。`,
                 `只有你们两个人？大多数情侣会预订 <a href="/zh/foluolunsa-yidali-mian-kecheng/">主厨餐桌</a>（最多8位客人，每人95欧元），或者通过邮件联系我们获取双人私人报价。`,
                 `公司团建而不是家庭聚会？请查看我们的 <a href="/zh/tuandui-jianshe-pengren-kecheng-foluolunsa/">团队建设烹饪课程</a>。`,
               ],
@@ -1808,6 +1830,7 @@ export const landings = {
             { q: `价格是怎么算的？`, a: `厨房的私人包场起价为680欧元。在WhatsApp或通过邮件将您的团体人数和日期发送给我们，我们将确认您这晚的报价。` },
             { q: `你们能帮忙准备惊喜吗，比如求婚或生日？`, a: `是的，求婚、生日和聚会正是这种形式的初衷。在预订时告诉我们您的计划，我们将围绕它来设计这个夜晚。` },
             { q: `两个人可以预订私人烹饪课程吗？`, a: `私人包场是为6–14人的团体定价的，所以两人的话通常不太划算。大多数情侣预订“主厨餐桌”：最多8位客人，每人95欧元，这同样很私密。如果您真的很想两人独享厨房，请发送邮件至 ciao@handmadepastaflorence.com，我们会为您提供双人私人课程的报价。` },
+            { q: `私人烹饪课程包含葡萄酒吗？`, a: `包含。每位客人用餐时有一杯托斯卡纳葡萄酒（或无酒精饮品），之后是柠檬酒或咖啡。如果想为这个夜晚加配餐酒，我们可以添加并与您的日期一并报价：咨询时告诉我们即可。` },
             { q: `你们能满足无麸质饮食或过敏需求吗？`, a: `是的，我们可以免费准备专门的无麸质面粉混合物和干净的操作台。对于私人团体，只需在预订时将每个人的需求发送给我们。` },
             { q: `我该如何预订？`, a: `使用“规划您的夜晚”按钮开始WhatsApp聊天，或发送电子邮件至 ciao@handmadepastaflorence.com。私人夜晚是专人计划的，因此我们将一起确认细节。` },
           ],
@@ -1825,7 +1848,7 @@ export const landings = {
           breadcrumbName: `私人烹饪课程`,
           product: {
             name: `长桌盛宴：佛罗伦萨私人烹饪课程`,
-            description: `在佛罗伦萨为6-14位客人举办的私人意面制作盛宴：整个奥特拉诺厨房、两位托斯卡纳农庄厨师、一张长桌。生日、求婚、聚会。`,
+            description: `在佛罗伦萨为6-14位客人举办的私人意面制作盛宴：整个奥特拉诺厨房、两位托斯卡纳农庄厨师、一张长桌，用餐时配当地葡萄酒。生日、求婚、聚会。`,
             price: '680',
           },
         },
@@ -5521,7 +5544,7 @@ export const landings = {
       en: {
         slug: 'agriturismo-cooking-class-tuscany',
         title: `Agriturismo Cooking Class in Tuscany: A Working Farm Kitchen`,
-        description: `Groups of 6–20 in a working Tuscan agriturismo kitchen outside Florence. Pick from the estate garden, roll fresh pasta with the chef, then a long lunch.`,
+        description: `Half-day class for 6–20 in a working agriturismo kitchen outside Florence, popular with villa-stay groups: estate garden, fresh pasta, long lunch.`,
         cl: {
           eyebrow: `The countryside class · the hills outside Florence`,
           heading: `A cooking class in a working`,
@@ -5563,6 +5586,13 @@ export const landings = {
               ],
             },
             {
+              title: `Staying in a villa in Tuscany?`,
+              paras: [
+                `Most guests book this class as part of a villa or farm stay, which is why it runs as a half-day rather than an evening out. The class is held in one of our partner agriturismo kitchens, usually 30 to 45 minutes from Florence.`,
+                `Tell us the town your villa is in, your dates and how many of you there are. We confirm the estate, the exact address and the driving time together with your booking, so you can judge the distance from where you are staying. A car or a shared taxi is the normal way to get there.`,
+              ],
+            },
+            {
               title: `Is this somewhere to stay?`,
               paras: [
                 `Worth saying plainly, because search results mix the two up: this is a cooking class, not accommodation. Some of the estates we work with are working agriturismi with their own guest rooms, but rooms are booked with the estate and the class is booked with us. If what you want is a Tuscan farm stay that offers cooking classes, tell us that when you write and we will point you at the partners who can host you overnight, then line the timing up.`,
@@ -5588,6 +5618,7 @@ export const landings = {
             { q: `Is this the same as your Florence pasta class?`, a: `No, and they suit different trips. This is a countryside half-day in an agriturismo kitchen, best if you have a car or are already staying nearby. The Florence class is a small city kitchen in the Oltrarno, walkable from the centre and three hours long.` },
             { q: `Do we need a car?`, a: `It helps a lot. The estates are 30 to 45 minutes outside Florence and public transport out there is slow. Most groups drive or share a taxi. Tell us where you are staying and we will tell you honestly whether the trip is worth it or whether the city class suits you better.` },
             { q: `Can we stay at the agriturismo as well?`, a: `Some of the estates have guest rooms, but rooms are booked with the estate and not with us. Say so when you write and we will point you at the partners who can host you overnight.` },
+            { q: `Can you teach the class at our rental villa?`, a: `The class is held in our partner agriturismo kitchens, as described above. If you are hoping for something at your own villa, say so when you write and we will tell you honestly whether it is possible. Either way, send us the villa's town and your dates and we will confirm the estate and the driving time.` },
             { q: `How many people can join?`, a: `Six to twenty. Under six guests the Florence class is usually the better answer, and over twenty we would split you across two sessions so everyone still gets a bench.` },
             { q: `What does it cost?`, a: `It is quoted per group, because the menu, the length and the number of guests all move together. Email us your dates and numbers and you will have a price within one working day.` },
             { q: `Can you cater to gluten-free diets or allergies?`, a: `Yes. Send the whole list when you enquire rather than on the day: with a group of this size, gluten-free guests and allergies are routine. A dedicated gluten-free flour blend and a separate station come at no extra charge, exactly as in our Florence kitchen. Because the class runs in a partner estate kitchen, we confirm the setup with the estate when we confirm your date.` },
@@ -5610,7 +5641,7 @@ export const landings = {
       it: {
         slug: 'corso-cucina-agriturismo-toscana',
         title: `Corso di Cucina in Agriturismo in Toscana: Cucina Vera`,
-        description: `Gruppi da 6 a 20 nella cucina di un agriturismo toscano in attività, fuori Firenze. Si raccoglie nell'orto, si tira la pasta a mano, poi un lungo pranzo.`,
+        description: `Mezza giornata per 6–20 nella cucina di un agriturismo in attività fuori Firenze, scelta da chi soggiorna in villa: orto, pasta fresca, lungo pranzo.`,
         cl: {
           eyebrow: `Il corso in campagna · le colline fuori Firenze`,
           heading: `Un corso di cucina in una vera`,
@@ -5650,6 +5681,13 @@ export const landings = {
               ],
             },
             {
+              title: `Soggiornate in una villa in Toscana?`,
+              paras: [
+                `La maggior parte degli ospiti prenota questo corso come parte di un soggiorno in villa o in fattoria, ed è per questo che dura mezza giornata invece di essere una serata. Il corso si tiene in una delle cucine dei nostri agriturismi partner, di solito a 30-45 minuti da Firenze.`,
+                `Diteci in che località si trova la villa, le date e quanti siete. Confermiamo la tenuta, l'indirizzo esatto e il tempo di percorrenza insieme alla prenotazione, così potete valutare la distanza da dove alloggiate. L'auto o un taxi condiviso sono il modo normale per arrivare.`,
+              ],
+            },
+            {
               title: `È un posto dove dormire?`,
               paras: [
                 `Vale la pena dirlo chiaramente, perché nei risultati di ricerca le due cose si confondono: questo è un corso di cucina, non un alloggio. Alcune delle tenute con cui lavoriamo sono agriturismi in attività con le loro camere, ma le camere si prenotano con la tenuta e il corso si prenota con noi. Se cercate un soggiorno in fattoria che offra corsi di cucina, scrivetecelo e vi indirizziamo verso i partner che possono ospitarvi, poi ai tempi pensiamo noi.`,
@@ -5675,6 +5713,7 @@ export const landings = {
             { q: `È lo stesso del vostro corso a Firenze?`, a: `No, e servono a viaggi diversi. Questo è mezza giornata in campagna in una cucina di agriturismo, ideale se avete l'auto o alloggiate già in zona. Il corso di Firenze è una piccola cucina di città in Oltrarno, raggiungibile a piedi dal centro e lungo tre ore.` },
             { q: `Serve l'auto?`, a: `Aiuta molto. Le tenute sono a 30-45 minuti da Firenze e i mezzi pubblici da quelle parti sono lenti. Quasi tutti i gruppi vengono in auto o dividono un taxi. Diteci dove alloggiate e vi diremo onestamente se vale il viaggio o se vi conviene il corso in città.` },
             { q: `Possiamo anche dormire in agriturismo?`, a: `Alcune tenute hanno camere, ma si prenotano con la tenuta e non con noi. Scrivetecelo e vi indirizziamo verso i partner che possono ospitarvi per la notte.` },
+            { q: `Potete tenere il corso nella nostra villa in affitto?`, a: `Il corso si tiene nelle cucine dei nostri agriturismi partner, come descritto sopra. Se sperate in qualcosa nella vostra villa, scrivetecelo e vi diremo onestamente se è possibile. In ogni caso, mandateci la località della villa e le date e confermeremo la tenuta e il tempo di percorrenza.` },
             { q: `Quante persone possono partecipare?`, a: `Da sei a venti. Sotto le sei persone di solito il corso di Firenze è la risposta migliore, sopra le venti vi dividiamo su due sessioni così tutti hanno un banco.` },
             { q: `Quanto costa?`, a: `Si fa un preventivo per gruppo, perché menù, durata e numero di ospiti si muovono insieme. Scriveteci date e numeri e avrete un prezzo entro un giorno lavorativo.` },
             { q: `Potete gestire diete senza glutine o allergie?`, a: `Sì. Mandateci l’elenco completo quando scrivete, non il giorno stesso: con un gruppo di queste dimensioni, celiaci e allergie sono la normalità. Una miscela di farine senza glutine dedicata e una postazione separata non hanno alcun supplemento, esattamente come nella nostra cucina di Firenze. Poiché il corso si tiene nella cucina di un’azienda partner, confermiamo l’allestimento con l’azienda quando confermiamo la data.` },
@@ -5697,7 +5736,7 @@ export const landings = {
       fr: {
         slug: 'cours-cuisine-agritourisme-toscane',
         title: `Cours de Cuisine en Agritourisme en Toscane : Vraie Ferme`,
-        description: `Groupes de 6 à 20 dans la cuisine d'un agriturismo toscan en activité, près de Florence. On cueille au potager, on roule les pâtes, puis un long déjeuner.`,
+        description: `Demi-journée pour 6 à 20 dans la cuisine d'un agriturismo en activité près de Florence, prisée des séjours en villa : potager, pâtes, long déjeuner.`,
         cl: {
           eyebrow: `Le cours à la campagne · les collines autour de Florence`,
           heading: `Un cours de cuisine dans une vraie`,
@@ -5737,6 +5776,13 @@ export const landings = {
               ],
             },
             {
+              title: `Vous séjournez dans une villa en Toscane ?`,
+              paras: [
+                `La plupart de nos invités réservent ce cours dans le cadre d'un séjour en villa ou à la ferme, ce qui explique qu'il dure une demi-journée plutôt qu'une soirée. Le cours se tient dans la cuisine de l'un de nos agriturismi partenaires, en général à 30 à 45 minutes de Florence.`,
+                `Dites-nous dans quelle commune se trouve votre villa, vos dates et combien vous êtes. Nous confirmons le domaine, l'adresse exacte et le temps de trajet en même temps que votre réservation, pour que vous puissiez juger de la distance depuis votre hébergement. La voiture ou un taxi partagé reste le moyen normal d'y aller.`,
+              ],
+            },
+            {
               title: `Est-ce un hébergement ?`,
               paras: [
                 `Il vaut mieux le dire clairement, car les résultats de recherche mélangent les deux : ceci est un cours de cuisine, pas un hébergement. Certains des domaines avec lesquels nous travaillons sont des agriturismi en activité disposant de chambres, mais les chambres se réservent auprès du domaine et le cours auprès de nous. Si vous cherchez un séjour à la ferme proposant des cours de cuisine, dites-le nous et nous vous orienterons vers les partenaires capables de vous héberger, puis nous calerons les horaires.`,
@@ -5762,6 +5808,7 @@ export const landings = {
             { q: `Est-ce le même que votre cours à Florence ?`, a: `Non, et ils conviennent à des voyages différents. Ici c'est une demi-journée à la campagne dans une cuisine d'agritourisme, idéale si vous avez une voiture ou logez déjà à proximité. Le cours de Florence est une petite cuisine urbaine de l'Oltrarno, accessible à pied depuis le centre et long de trois heures.` },
             { q: `Faut-il une voiture ?`, a: `Cela aide beaucoup. Les domaines sont à 30 à 45 minutes de Florence et les transports en commun y sont lents. La plupart des groupes viennent en voiture ou partagent un taxi. Dites-nous où vous logez et nous vous dirons honnêtement si le trajet en vaut la peine.` },
             { q: `Peut-on aussi dormir sur place ?`, a: `Certains domaines ont des chambres, mais elles se réservent auprès du domaine et non auprès de nous. Signalez-le nous et nous vous orienterons vers les partenaires qui peuvent vous héberger.` },
+            { q: `Pouvez-vous donner le cours dans notre villa de location ?`, a: `Le cours se tient dans les cuisines de nos agriturismi partenaires, comme décrit plus haut. Si vous espérez quelque chose dans votre propre villa, dites-le nous en écrivant et nous vous dirons honnêtement si c'est possible. Dans tous les cas, envoyez-nous la commune de la villa et vos dates, et nous confirmerons le domaine et le temps de trajet.` },
             { q: `Combien de personnes peuvent participer ?`, a: `De six à vingt. En dessous de six, le cours de Florence est en général la meilleure réponse ; au-dessus de vingt, nous répartissons le groupe sur deux sessions pour que chacun ait un plan de travail.` },
             { q: `Combien cela coûte-t-il ?`, a: `Le tarif est établi par groupe, car le menu, la durée et le nombre d'invités bougent ensemble. Envoyez-nous vos dates et vos effectifs et vous aurez un prix sous un jour ouvré.` },
             { q: `Pouvez-vous gérer les régimes sans gluten ou les allergies ?`, a: `Oui. Envoyez-nous la liste complète au moment de votre demande, pas le jour même : avec un groupe de cette taille, les convives cœliaques et les allergies sont courants. Un mélange de farines sans gluten dédié et un poste séparé sont sans supplément, exactement comme dans notre cuisine de Florence. Comme le cours se déroule dans la cuisine d’un domaine partenaire, nous confirmons l’installation avec le domaine en confirmant votre date.` },
@@ -5784,7 +5831,7 @@ export const landings = {
       de: {
         slug: 'agriturismo-kochkurs-toskana',
         title: `Agriturismo-Kochkurs in der Toskana: Echte Hofküche`,
-        description: `Gruppen von 6 bis 20 in der Küche eines toskanischen Agriturismo in den Hügeln vor Florenz. Im Garten ernten, Pasta von Hand rollen, dann ein langes Essen.`,
+        description: `Halbtageskurs für 6 bis 20 in der Küche eines Agriturismo vor Florenz, beliebt bei Villa-Gruppen: Gutsgarten, frische Pasta, langes Essen.`,
         cl: {
           eyebrow: `Der Kurs auf dem Land · die Hügel vor Florenz`,
           heading: `Ein Kochkurs in einer echten`,
@@ -5824,6 +5871,13 @@ export const landings = {
               ],
             },
             {
+              title: `Wohnen Sie in einer Villa in der Toskana?`,
+              paras: [
+                `Die meisten Gäste buchen diesen Kurs als Teil eines Aufenthalts in einer Villa oder auf einem Landgut, deshalb dauert er einen halben Tag und ist kein Abendprogramm. Der Kurs findet in der Küche eines unserer Partner-Agriturismi statt, meist 30 bis 45 Minuten von Florenz entfernt.`,
+                `Nennen Sie uns den Ort Ihrer Villa, Ihre Daten und die Gruppengröße. Wir bestätigen mit der Buchung das Gut, die genaue Adresse und die Fahrzeit, damit Sie einschätzen können, wie weit es von Ihrer Unterkunft ist. Mit dem Auto oder einem geteilten Taxi kommt man normalerweise hin.`,
+              ],
+            },
+            {
               title: `Ist das eine Unterkunft?`,
               paras: [
                 `Das sollte man deutlich sagen, weil die Suchergebnisse beides vermischen: Dies ist ein Kochkurs, keine Unterkunft. Einige der Güter, mit denen wir arbeiten, sind arbeitende Agriturismi mit eigenen Gästezimmern, aber die Zimmer bucht man beim Gut und den Kurs bei uns. Wenn Sie einen Hofaufenthalt mit Kochkursen suchen, schreiben Sie uns das, und wir verweisen Sie an die Partner, die Sie über Nacht aufnehmen können. Um die Abstimmung kümmern wir uns.`,
@@ -5849,6 +5903,7 @@ export const landings = {
             { q: `Ist das derselbe Kurs wie in Florenz?`, a: `Nein, und beide passen zu verschiedenen Reisen. Dies ist ein halber Tag auf dem Land in einer Agriturismo-Küche, ideal mit Auto oder wenn Sie ohnehin in der Nähe wohnen. Der Kurs in Florenz ist eine kleine Stadtküche im Oltrarno, vom Zentrum zu Fuß erreichbar und drei Stunden lang.` },
             { q: `Brauchen wir ein Auto?`, a: `Es hilft sehr. Die Güter liegen 30 bis 45 Minuten außerhalb von Florenz und der öffentliche Nahverkehr ist dort langsam. Die meisten Gruppen fahren mit dem Auto oder teilen sich ein Taxi. Sagen Sie uns, wo Sie wohnen, und wir sagen Ihnen ehrlich, ob sich die Fahrt lohnt.` },
             { q: `Können wir dort auch übernachten?`, a: `Einige Güter haben Gästezimmer, sie werden aber beim Gut gebucht und nicht bei uns. Sagen Sie uns Bescheid, und wir verweisen Sie an die Partner, die Sie aufnehmen können.` },
+            { q: `Können Sie den Kurs in unserer gemieteten Villa geben?`, a: `Der Kurs findet in den Küchen unserer Partner-Agriturismi statt, wie oben beschrieben. Wenn Sie sich etwas in Ihrer eigenen Villa wünschen, sagen Sie es uns beim Schreiben, und wir sagen Ihnen ehrlich, ob es möglich ist. Schicken Sie uns in jedem Fall den Ort der Villa und Ihre Daten, dann bestätigen wir das Gut und die Fahrzeit.` },
             { q: `Wie viele Personen können teilnehmen?`, a: `Sechs bis zwanzig. Unter sechs Gästen ist der Kurs in Florenz meist die bessere Antwort, über zwanzig teilen wir Sie auf zwei Durchgänge auf, damit jeder einen Arbeitsplatz hat.` },
             { q: `Was kostet es?`, a: `Der Preis wird pro Gruppe erstellt, weil Menü, Dauer und Gästezahl zusammenhängen. Schicken Sie uns Daten und Personenzahl, und Sie haben innerhalb eines Werktags einen Preis.` },
             { q: `Können Sie glutenfreie Ernährung oder Allergien berücksichtigen?`, a: `Ja. Schicken Sie uns die vollständige Liste bei der Anfrage, nicht erst am Tag selbst: Bei einer Gruppe dieser Größe sind Zöliakie und Allergien Alltag. Eine eigene glutenfreie Mehlmischung und eine separate Station kosten nichts extra, genau wie in unserer Küche in Florenz. Da der Kurs in der Küche eines Partnerguts stattfindet, stimmen wir den Aufbau mit dem Gut ab, sobald wir Ihren Termin bestätigen.` },
@@ -5871,7 +5926,7 @@ export const landings = {
       zh: {
         slug: 'tuosikana-nongzhuang-pengren-kecheng',
         title: `托斯卡纳农庄烹饪课程：在真正的农场厨房里`,
-        description: `在佛罗伦萨郊外山间一家仍在运营的农庄厨房里上一堂动手烹饪课。先去菜园采摘，再跟主厨手工擀制意面，最后大家围坐共享一顿长午餐。6至20人成团。`,
+        description: `在佛罗伦萨郊外仍在运营的农庄厨房里的半天课程，6至20人，深受住别墅的团队欢迎：菜园采摘、手工意面、悠长午餐。`,
         cl: {
           eyebrow: `乡间课程 · 佛罗伦萨郊外的山间`,
           heading: `一堂在真正农庄厨房里的`,
@@ -5911,6 +5966,13 @@ export const landings = {
               ],
             },
             {
+              title: `住在托斯卡纳的别墅里？`,
+              paras: [
+                `大多数客人会把这堂课安排在别墅或农庄住宿行程之中，所以它是半天的课程，而不是一场晚间活动。课程在我们合作的某一家农庄厨房里进行，通常距佛罗伦萨30至45分钟。`,
+                `请告诉我们别墅所在的城镇、日期和人数。我们会在确认预订时一并确认庄园、具体地址和车程，方便你判断离住处有多远。自驾或合乘出租车是通常的前往方式。`,
+              ],
+            },
+            {
               title: `这里可以住宿吗？`,
               paras: [
                 `这一点值得说清楚，因为搜索结果常把两件事混为一谈：这是一堂烹饪课，不是住宿。我们合作的部分庄园确实是仍在运营、设有客房的农庄，但客房要向庄园预订，课程要向我们预订。如果你想找的是"农庄住宿＋烹饪课程"，写信时告诉我们，我们会为你指向可以提供过夜的合作庄园，时间衔接也交给我们来安排。`,
@@ -5936,6 +5998,7 @@ export const landings = {
             { q: `这和你们在佛罗伦萨的意面课是同一个吗？`, a: `不是，两者适合不同的行程。这一堂是乡间的半天课程，在农庄厨房里进行，适合有车或本来就住在附近的客人。佛罗伦萨那堂课在奥特拉诺区的小厨房，从市中心步行可达，时长三小时。` },
             { q: `需要开车吗？`, a: `会方便很多。这些庄园距佛罗伦萨30至45分钟，那一带的公共交通很慢。大多数团队自驾或合乘出租车。告诉我们你住在哪里，我们会诚实地告诉你这趟是否值得。` },
             { q: `我们可以顺便住在农庄吗？`, a: `部分庄园设有客房，但需要向庄园预订，而不是向我们预订。写信时说一声，我们会为你指向可以提供过夜的合作庄园。` },
+            { q: `你们可以到我们租的别墅里授课吗？`, a: `课程在我们合作的农庄厨房里进行，如上文所述。如果你希望在自己的别墅里上课，写信时告诉我们，我们会如实告知是否可行。无论如何，请把别墅所在的城镇和日期发给我们，我们会确认庄园和车程。` },
             { q: `可以有多少人参加？`, a: `六到二十人。少于六人时，通常佛罗伦萨那堂课是更好的选择；超过二十人，我们会分成两场，确保每个人都有自己的操作台。` },
             { q: `费用是多少？`, a: `按团报价，因为菜单、时长和人数是联动的。把日期和人数发给我们，一个工作日内你就会收到价格。` },
             { q: `你们能否照顾无麸质饮食或过敏需求？`, a: `可以。请在咨询时就把完整清单发给我们，而不是当天才说：对于这种规模的团体，乳糜泻客人和过敏需求都很常见。专用的无麸质面粉配方和独立操作台不收取额外费用，与我们佛罗伦萨的厨房完全一致。由于课程在合作庄园的厨房举行，我们会在确认您的日期时与庄园确认具体安排。` },
