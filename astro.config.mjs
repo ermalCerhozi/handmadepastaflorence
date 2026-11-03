@@ -9,8 +9,15 @@ import { unified } from '@astrojs/markdown-remark';
 // deploy. Importing it on first use means only Astro's own build, which runs the
 // markdown pipeline through Vite, ever loads it.
 const remarkInlineCta = () => async (tree, file) => {
-  const { default: plugin } = await import('./src/utils/remark-inline-cta.ts');
-  return plugin()(tree, file);
+  // The CTA block is optional. If the plugin cannot be loaded, skip the block and
+  // keep the post. An uncaught error here makes Astro render the post WITHOUT ITS
+  // BODY while the build still exits 0, so the deploy looks green.
+  try {
+    const { default: plugin } = await import('./src/utils/remark-inline-cta.ts');
+    return plugin()(tree, file);
+  } catch (err) {
+    console.warn(`[remark-inline-cta] skipped for ${file?.path ?? 'unknown'}: ${err?.message ?? err}`);
+  }
 };
 
 // NO LEGACY REDIRECTS (removed 2026-08-23). Two dead URL shapes used to be kept

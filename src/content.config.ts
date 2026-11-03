@@ -3,6 +3,7 @@ import { glob } from 'astro/loaders';
 
 // Guides & stories — long-tail informational content that builds topical
 // authority and links down to the class landing pages.
+// Content cache reset 2026-11-03: see astro.config.mjs (remark-inline-cta guard).
 const blog = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/blog' }),
   schema: ({ image }) => z.object({
