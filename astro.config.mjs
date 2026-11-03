@@ -1,7 +1,17 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import { unified } from '@astrojs/markdown-remark';
-import remarkInlineCta from './src/utils/remark-inline-cta.ts';
+
+// Plain Node loads this file too: src/scripts/generate-redirects.mjs imports it
+// (the `postbuild` step of `npm run build`) to read the `redirects` map below.
+// Plain Node cannot resolve the plugin's extensionless TypeScript imports, so a
+// static `import` of it here crashed that step on the server and blocked every
+// deploy. Importing it on first use means only Astro's own build, which runs the
+// markdown pipeline through Vite, ever loads it.
+const remarkInlineCta = () => async (tree, file) => {
+  const { default: plugin } = await import('./src/utils/remark-inline-cta.ts');
+  return plugin()(tree, file);
+};
 
 // NO LEGACY REDIRECTS (removed 2026-08-23). Two dead URL shapes used to be kept
 // alive here — /<locale>/<english-slug>/ from before landings.ts had translated
